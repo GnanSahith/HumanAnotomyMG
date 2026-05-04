@@ -1,0 +1,39 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependencies
+node_modules
+dist
+dist-ssr
+v1_build
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Generated data
+parsed_organs.json
+pdf_content.txt
+*.zip
+*.rar
+*.7z
+
+# Temp/Script files
+parse_pdf.cjs
+parse_pdf.js
+parse_pdf.py
+build_data.js
+generate_data.js

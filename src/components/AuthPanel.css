@@ -1,0 +1,317 @@
+.auth-panel {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    width: 380px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    z-index: 50;
+    animation: slideInAuth 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+}
+
+@keyframes slideInAuth {
+    from {
+        opacity: 0;
+        transform: translate(40px, -50%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0, -50%);
+    }
+}
+
+/* consolidated standalone logic at bottom */
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.auth-header {
+    text-align: left;
+}
+
+.auth-header h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.auth-header p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.5;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 16px;
+    color: var(--text-tertiary);
+}
+
+.input-group input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 14px 16px 14px 44px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.input-group input:focus {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: rgba(10, 132, 255, 0.5);
+    box-shadow: 0 0 0 2px rgba(10, 132, 255, 0.2);
+}
+
+.input-group input::placeholder {
+    color: var(--text-tertiary);
+}
+
+/* Ensure AuthPanel fits nicely */
+.auth-panel.standalone {
+    position: static;
+    transform: none;
+    margin: 0;
+    max-width: 100%;
+    animation: popIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.action-button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+.submit-button {
+    background: var(--accent);
+    color: #fff;
+    margin-top: 8px;
+}
+
+.submit-button:hover:not(:disabled) {
+    background: #148eff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(10, 132, 255, 0.3);
+}
+
+.submit-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.premium-button {
+    background: linear-gradient(135deg, #bf5af2 0%, #0a84ff 100%);
+    color: #fff;
+    margin-top: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.premium-button:hover:not(:disabled) {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(191, 90, 242, 0.4);
+}
+
+.auth-error {
+    color: #ff3b30;
+    font-size: 13px;
+    background: rgba(255, 59, 48, 0.1);
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 59, 48, 0.2);
+}
+
+.auth-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 16px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.auth-footer p {
+    font-size: 13px;
+    color: var(--text-tertiary);
+}
+
+.text-button {
+    background: none;
+    border: none;
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+}
+
+.text-button:hover {
+    color: #fff;
+}
+
+.switch-mode-button {
+    font-weight: 600;
+}
+
+/* Dashboard Styles */
+.user-icon-wrapper {
+    width: 48px;
+    height: 48px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: var(--accent);
+}
+
+.user-details {
+    padding-bottom: 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.welcome-text {
+    font-size: 16px;
+}
+
+.user-name {
+    color: #fff;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.user-email {
+    font-size: 13px;
+    color: var(--text-tertiary);
+    margin-top: 4px;
+}
+
+.subscription-status {
+    padding: 8px 0;
+}
+
+.status-active,
+.status-inactive {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.status-active {
+    flex-direction: row;
+    align-items: center;
+    color: #32d74b;
+    /* iOS Green */
+    font-weight: 500;
+    font-size: 15px;
+    background: rgba(50, 215, 75, 0.1);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(50, 215, 75, 0.2);
+}
+
+.status-inactive {
+    color: #fff;
+    font-weight: 500;
+    font-size: 15px;
+    align-items: flex-start;
+}
+
+.status-inactive .status-icon {
+    color: #ffd60a;
+    /* iOS Yellow/Gold */
+}
+
+.upgrade-prompt {
+    font-size: 13px;
+    color: var(--text-secondary);
+    font-weight: 400;
+}
+
+.logout-button {
+    color: var(--text-secondary);
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.logout-button:hover {
+    color: #ff3b30;
+}
+
+.spinner {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* =========================================================================
+   MOBILE RESPONSIVENESS (9:16)
+   ========================================================================= */
+@media (max-width: 768px) {
+    .auth-panel {
+        position: relative;
+        right: auto;
+        top: auto;
+        transform: none;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 24px;
+        animation: none;
+        opacity: 1;
+    }
+}
