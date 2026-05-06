@@ -41,17 +41,32 @@
   padding: 0;
   box-sizing: border-box;
   transition: background-color 1.2s ease, color 1.2s ease, border-color 1.2s ease, opacity 1.2s ease, box-shadow 1.2s ease, transform 1.2s ease;
+  
+  /* Kill all internal scrollbars */
+  scrollbar-width: none !important;
+  -ms-overflow-style: none !important;
+}
+
+*::-webkit-scrollbar {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+html, body, #root {
+  height: 100vh;
+  height: 100dvh; /* Modern mobile viewport height */
+  width: 100vw;
+  overflow: hidden !important; /* Force completely disable scrolling */
+  position: fixed; /* Stop mobile rubber-banding / bounce */
+  top: 0;
+  left: 0;
 }
 
 body {
   font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
   background-color: var(--bg-dark);
   color: var(--text-main);
-  min-height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-  overflow-y: auto;
-  position: relative;
   -webkit-font-smoothing: antialiased;
 }
 
