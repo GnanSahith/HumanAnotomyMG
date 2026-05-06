@@ -1,4 +1,5 @@
 {
+  "name": "human-anotomy-mg",
   "installCommand": "npm install --legacy-peer-deps",
   "rewrites": [
     {

@@ -37,3 +37,5 @@ parse_pdf.js
 parse_pdf.py
 build_data.js
 generate_data.js
+.vercel
+.env*.local

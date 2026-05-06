@@ -83,9 +83,7 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
             height: '100%', 
             minHeight: '600px', 
             background: '#fff',
-            filter: 'invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.9)',
-            borderRadius: '0 0 24px 24px',
-            overflow: 'hidden'
+            filter: 'invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.9)'
         }}>
             <div ref={containerRef} style={{ width: '100%', height: '100%' }}></div>
         </div>
