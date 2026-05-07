@@ -446,7 +446,7 @@ body {
   height: 100vh;
   height: 100dvh;
   width: 100vw;
-  padding: 0; /* Removing 24px global padding to allow full-screen layouts */
+  padding: 110px 24px 24px 24px; /* Pushes all internal layouts securely below the fixed header pill */
   overflow: hidden;
 }
 

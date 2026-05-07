@@ -173,7 +173,7 @@ export default function MathsSimulationView({ onBack }) {
                 flexDirection: 'column', 
                 height: '100%', 
                 overflowY: 'auto', 
-                padding: '100px 40px 40px 40px', 
+                padding: '0px 16px 40px 16px', 
                 alignItems: 'center',
                 backgroundColor: 'rgba(74, 64, 150, 0.1)' 
             }}>
@@ -328,7 +328,7 @@ export default function MathsSimulationView({ onBack }) {
         const categoryData = mathCurriculum[activeCategory];
         
         return (
-            <div className="maths-layout" style={{ flexDirection: 'column', height: '100%', overflowY: 'auto', padding: '100px 40px 40px 40px', alignItems: 'center' }}>
+            <div className="maths-layout" style={{ flexDirection: 'column', height: '100%', overflowY: 'auto', padding: '0px 16px 40px 16px', alignItems: 'center' }}>
                 <div style={{ width: '100%', maxWidth: '1200px' }}>
                     
                     <div style={{ display: 'flex', alignItems: 'center', marginBottom: '40px' }}>
@@ -362,7 +362,7 @@ export default function MathsSimulationView({ onBack }) {
         const specificMaterialTitle = topicMaterials[activeMaterialIndex]?.title;
         
         return (
-            <div className="maths-layout" style={{ padding: '100px 20px 20px 20px', display: 'flex', flexDirection: 'column', height: '100%' }}>
+            <div className="maths-layout" style={{ padding: '0px 0px 20px 0px', display: 'flex', flexDirection: 'column', height: '100%' }}>
                 {/* Main Interactive Screen Area - Full Width */}
                 <div className="glass-panel" style={{ flex: 1, borderRadius: '24px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                     
