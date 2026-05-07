@@ -1218,10 +1218,6 @@ model-viewer {
 @media (max-width: 768px) {
 
   /* Top Navigation */
-  body {
-    overflow-y: auto !important;
-    height: auto !important;
-  }
   
   .global-top-bar {
     padding: 10px 15px;
@@ -1285,10 +1281,10 @@ model-viewer {
 
   /* App Container Padding */
   .app-container {
-    padding: 16px;
-    height: auto !important;
-    min-height: 100vh;
-    overflow-y: visible !important;
+    padding: 100px 16px 16px 16px !important; /* Mobile padding to clear header */
+    height: 100vh !important;
+    height: 100dvh !important;
+    overflow: hidden !important;
   }
 
   /* Hide breadcrumbs on mobile to prevent overlapping */
