@@ -33,14 +33,11 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
         function initApplet() {
             if (!containerRef.current || !isMounted) return;
             
-            // Calculate height carefully. Fallback if 0.
-            const w = containerRef.current.clientWidth || 800;
-            const h = containerRef.current.clientHeight || 600;
-
             const parameters = {
                 "id": `ggbApplet_${id}`,
-                "width": w,
-                "height": h,
+                "width": 1200,
+                "height": 650,
+                "scaleContainerClass": "geogebra-scaler",
                 "showMenuBar": false,
                 "showAlgebraInput": false,
                 "showToolBar": false,
@@ -78,14 +75,20 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
     }, [ggbUrl, id]);
 
     return (
-        <div style={{ 
-            width: '100%', 
-            height: '100%', 
-            minHeight: 0, 
-            background: '#fff',
-            filter: 'invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.9)'
-        }}>
-            <div ref={containerRef} style={{ width: '100%', height: '100%' }}></div>
+        <div 
+            className="geogebra-scaler"
+            style={{ 
+                width: '100%', 
+                height: '100%', 
+                minHeight: 0, 
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                background: '#fff',
+                filter: 'invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.9)'
+            }}
+        >
+            <div ref={containerRef}></div>
         </div>
     );
 };
