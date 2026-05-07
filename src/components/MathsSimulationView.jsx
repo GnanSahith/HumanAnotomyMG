@@ -33,28 +33,27 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
         function initApplet() {
             if (!containerRef.current || !isMounted) return;
             
-            const w = containerRef.current.parentElement.clientWidth || 800;
-            const h = containerRef.current.parentElement.clientHeight || 600;
+            const wrapperW = containerRef.current.parentElement.clientWidth || 800;
+            const wrapperH = containerRef.current.parentElement.clientHeight || 600;
 
-            // Enforce safe aspect ratios to prevent text overlapping internally
-            let finalW = w;
-            let finalH = h;
-            const ratio = w / h;
-            
-            if (ratio > 1.8) {
-                finalW = h * 1.8; // Prevent ultra-wide squishing on laptops
-            } else if (ratio < 0.8) {
-                finalH = w * 1.25; // Prevent ultra-tall squishing on mobile phones
-            }
-            
-            // Force the container to be the exact safe dimensions so flexbox can center it perfectly
-            containerRef.current.style.width = `${finalW}px`;
-            containerRef.current.style.height = `${finalH}px`;
+            // Target a fixed, healthy 16:9 ratio internal resolution to prevent text overlap natively
+            const targetW = 1000;
+            const targetH = 650;
+
+            // Calculate the uniform scale factor so it perfectly fits the screen
+            const scale = Math.min(wrapperW / targetW, wrapperH / targetH);
+
+            // Apply strict sizing and transform to the containerRef directly
+            containerRef.current.style.width = `${targetW}px`;
+            containerRef.current.style.height = `${targetH}px`;
+            containerRef.current.style.transform = `scale(${scale})`;
+            containerRef.current.style.transformOrigin = 'center center';
+            containerRef.current.style.flexShrink = '0';
 
             const parameters = {
                 "id": `ggbApplet_${id}`,
-                "width": finalW,
-                "height": finalH,
+                "width": targetW,
+                "height": targetH,
                 "showMenuBar": false,
                 "showAlgebraInput": false,
                 "showToolBar": false,
@@ -100,7 +99,8 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
                 justifyContent: 'center',
                 alignItems: 'center',
                 background: '#fff',
-                filter: 'invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.9)'
+                filter: 'invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.9)',
+                overflow: 'hidden'
             }}
         >
             <div ref={containerRef}></div>
