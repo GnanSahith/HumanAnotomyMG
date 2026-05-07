@@ -943,6 +943,68 @@ p {
   font-size: 14px;
 }
 
+/* ========================================= */
+/* MOBILE RESPONSIVE FIXES (THE "GLITCH" PATCH) */
+/* ========================================= */
+@media (max-width: 768px) {
+  /* 1. Fix Mathematics Portal Padding & Crowding */
+  .maths-layout {
+    padding: 80px 16px 20px 16px !important;
+  }
+
+  /* 2. Fix Giant Title & Back Button alignment */
+  .maths-layout h1 {
+    font-size: 22px !important;
+    margin: 0 0 0 12px !important;
+    line-height: 1.2 !important;
+  }
+  
+  .maths-layout p {
+    font-size: 14px !important;
+    margin-bottom: 24px !important;
+  }
+
+  /* 3. Fix the Simulation Player Header Overlap */
+  .maths-layout .glass-panel > div:first-child {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 12px 16px !important;
+    gap: 12px !important;
+  }
+
+  .maths-layout .glass-panel h2 {
+    margin: 0 !important;
+    font-size: 16px !important;
+    line-height: 1.3 !important;
+  }
+  
+  .maths-layout .glass-panel h2 span {
+    display: block !important;
+    margin-left: 0 !important;
+    margin-top: 4px !important;
+  }
+
+  /* 4. Fix Landing Page Header Horizontal Overflow */
+  .global-header {
+    flex-wrap: wrap !important;
+    gap: 8px !important;
+    justify-content: center !important;
+    padding: 12px 16px !important;
+    width: 100% !important;
+  }
+
+  /* 5. Force single column for grids on small screens */
+  .maths-layout > div > div[style*="grid"] {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  /* 6. Fix Simulation Container scaling on mobile */
+  #ggb-element {
+    min-height: 400px !important;
+  }
+}
+
 .breadcrumbs button {
   background: none;
   border: none;
