@@ -368,9 +368,9 @@ export default function MathsSimulationView({ onBack }) {
                         <button onClick={() => setViewState('curriculum_grid')} className="back-btn" style={{ padding: '8px 16px', background: 'rgba(255,255,255,0.1)', borderRadius: '100px', border: 'none', color: '#fff', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', backdropFilter: 'blur(10px)' }}>
                             <ArrowLeft size={18} /> {categoryData.label}
                         </button>
-                        <h2 style={{ margin: '0', fontSize: '18px', fontWeight: '600', color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.5)', flex: '1 1 250px', minWidth: 0, wordBreak: 'break-word', lineHeight: '1.4' }}>
+                        <h2 style={{ margin: '0', fontSize: '18px', fontWeight: '600', color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.5)', flex: '1 1 100%', minWidth: 0, overflowWrap: 'anywhere', lineHeight: '1.4' }}>
                             {activeTopicData ? activeTopicData.label : 'Simulation Module'}
-                            {specificMaterialTitle && <span style={{ opacity: 0.7, fontSize: '15px', marginLeft: '12px', fontWeight: '400', display: 'inline-block' }}>- {specificMaterialTitle}</span>}
+                            {specificMaterialTitle && <span style={{ opacity: 0.7, fontSize: '15px', marginLeft: '8px', fontWeight: '400' }}>- {specificMaterialTitle}</span>}
                         </h2>
                         
                         {/* Safe Pagination Controls */}
