@@ -154,11 +154,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   position: relative;
   z-index: 50;
-  padding: 40px;
+  padding: 0px 20px 40px 20px;
+  overflow-y: auto;
 }
 
 .mygnan-topbar {
@@ -1403,20 +1404,26 @@ model-viewer {
   /* NEW MOBILE STRUCTURE OVERRIDES */
 
   .global-header-pill {
-    padding: 12px 20px;
-    width: 92%;
-    top: 24px;
+    padding: 12px 12px;
+    width: 96%;
+    top: 16px;
     border-radius: 16px;
+  }
+  
+  .global-header-pill img {
+    height: 32px !important;
+  }
+  
+  .custom-dropdown-container span {
+    display: none !important;
   }
 
   .mygnan-container {
-    padding: 20px !important;
+    padding: 0px !important;
     justify-content: flex-start !important;
     align-items: center;
-    padding-top: 120px !important;
-    height: auto !important;
-    min-height: 100vh;
-    overflow-y: visible !important;
+    height: 100% !important;
+    overflow-y: auto !important;
     text-align: center;
   }
 
