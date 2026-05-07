@@ -81,7 +81,7 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
         <div style={{ 
             width: '100%', 
             height: '100%', 
-            minHeight: '600px', 
+            minHeight: 0, 
             background: '#fff',
             filter: 'invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.9)'
         }}>
@@ -371,7 +371,7 @@ export default function MathsSimulationView({ onBack }) {
                         <button onClick={() => setViewState('curriculum_grid')} className="back-btn" style={{ padding: '8px 16px', background: 'rgba(255,255,255,0.1)', borderRadius: '100px', border: 'none', color: '#fff', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', backdropFilter: 'blur(10px)' }}>
                             <ArrowLeft size={18} /> {categoryData.label}
                         </button>
-                        <h2 style={{ margin: '0 0 0 20px', fontSize: '20px', fontWeight: '600', color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.5)' }}>
+                        <h2 style={{ margin: '0 0 0 20px', fontSize: '20px', fontWeight: '600', color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.5)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', flex: 1 }}>
                             {activeTopicData ? activeTopicData.label : 'Simulation Module'}
                             {specificMaterialTitle && <span style={{ opacity: 0.7, fontSize: '16px', marginLeft: '12px', fontWeight: '400' }}>- {specificMaterialTitle}</span>}
                         </h2>
