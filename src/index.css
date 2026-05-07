@@ -446,7 +446,7 @@ body {
   height: 100vh;
   height: 100dvh;
   width: 100vw;
-  padding: 110px 24px 24px 24px; /* Pushes all internal layouts securely below the fixed header pill */
+  padding: 130px 24px 24px 24px; /* Creates a comfortable gap below the fixed header pill */
   overflow: hidden;
 }
 
