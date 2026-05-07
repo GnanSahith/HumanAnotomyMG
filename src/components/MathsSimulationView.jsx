@@ -130,28 +130,7 @@ export default function MathsSimulationView({ onBack }) {
                 <div style={{ width: '100%', height: '100%', position: 'relative' }}>
                     <GeoGebraPlayer key={currentMaterial.url} ggbUrl={currentMaterial.url} id={currentMaterial.id || 'sim'} />
                     
-                    {/* Navigation if multiple materials exist for this topic */}
-                    {topicMaterials.length > 1 && (
-                        <div style={{ position: 'absolute', bottom: '24px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '12px', background: 'rgba(0,0,0,0.6)', padding: '12px 24px', borderRadius: '100px', backdropFilter: 'blur(10px)', zIndex: 10, alignItems: 'center' }}>
-                            <button 
-                                onClick={() => setActiveMaterialIndex(i => Math.max(0, i - 1))}
-                                disabled={activeMaterialIndex === 0}
-                                style={{ background: 'transparent', border: 'none', color: activeMaterialIndex === 0 ? 'rgba(255,255,255,0.2)' : '#fff', cursor: activeMaterialIndex === 0 ? 'default' : 'pointer' }}
-                            >
-                                Prev
-                            </button>
-                            <span style={{ color: '#fff', fontSize: '14px', fontWeight: '600' }}>
-                                Part {activeMaterialIndex + 1} of {topicMaterials.length}
-                            </span>
-                            <button 
-                                onClick={() => setActiveMaterialIndex(i => Math.min(topicMaterials.length - 1, i + 1))}
-                                disabled={activeMaterialIndex === topicMaterials.length - 1}
-                                style={{ background: 'transparent', border: 'none', color: activeMaterialIndex === topicMaterials.length - 1 ? 'rgba(255,255,255,0.2)' : '#fff', cursor: activeMaterialIndex === topicMaterials.length - 1 ? 'default' : 'pointer' }}
-                            >
-                                Next
-                            </button>
-                        </div>
-                    )}
+
                 </div>
             );
         }
@@ -375,6 +354,29 @@ export default function MathsSimulationView({ onBack }) {
                             {activeTopicData ? activeTopicData.label : 'Simulation Module'}
                             {specificMaterialTitle && <span style={{ opacity: 0.7, fontSize: '16px', marginLeft: '12px', fontWeight: '400' }}>- {specificMaterialTitle}</span>}
                         </h2>
+                        
+                        {/* Safe Pagination Controls (Moved to Header) */}
+                        {topicMaterials.length > 1 && (
+                            <div style={{ display: 'flex', gap: '12px', background: 'rgba(255,255,255,0.1)', padding: '8px 20px', borderRadius: '100px', alignItems: 'center', marginLeft: '20px' }}>
+                                <button 
+                                    onClick={() => setActiveMaterialIndex(i => Math.max(0, i - 1))}
+                                    disabled={activeMaterialIndex === 0}
+                                    style={{ background: 'transparent', border: 'none', color: activeMaterialIndex === 0 ? 'rgba(255,255,255,0.2)' : '#fff', cursor: activeMaterialIndex === 0 ? 'default' : 'pointer', fontWeight: '600' }}
+                                >
+                                    Prev
+                                </button>
+                                <span style={{ color: '#fff', fontSize: '14px', fontWeight: '600' }}>
+                                    Part {activeMaterialIndex + 1} of {topicMaterials.length}
+                                </span>
+                                <button 
+                                    onClick={() => setActiveMaterialIndex(i => Math.min(topicMaterials.length - 1, i + 1))}
+                                    disabled={activeMaterialIndex === topicMaterials.length - 1}
+                                    style={{ background: 'transparent', border: 'none', color: activeMaterialIndex === topicMaterials.length - 1 ? 'rgba(255,255,255,0.2)' : '#fff', cursor: activeMaterialIndex === topicMaterials.length - 1 ? 'default' : 'pointer', fontWeight: '600' }}
+                                >
+                                    Next
+                                </button>
+                            </div>
+                        )}
                     </div>
 
                     <div style={{ flex: 1, position: 'relative' }}>
