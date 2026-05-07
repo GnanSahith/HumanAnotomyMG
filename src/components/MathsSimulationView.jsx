@@ -33,11 +33,24 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
         function initApplet() {
             if (!containerRef.current || !isMounted) return;
             
+            const w = containerRef.current.parentElement.clientWidth || 800;
+            const h = containerRef.current.parentElement.clientHeight || 600;
+
+            // Enforce safe aspect ratios to prevent text overlapping internally
+            let finalW = w;
+            let finalH = h;
+            const ratio = w / h;
+            
+            if (ratio > 1.8) {
+                finalW = h * 1.8; // Prevent ultra-wide squishing on laptops
+            } else if (ratio < 0.8) {
+                finalH = w * 1.25; // Prevent ultra-tall squishing on mobile phones
+            }
+
             const parameters = {
                 "id": `ggbApplet_${id}`,
-                "width": 1200,
-                "height": 650,
-                "scaleContainerClass": "geogebra-scaler",
+                "width": finalW,
+                "height": finalH,
                 "showMenuBar": false,
                 "showAlgebraInput": false,
                 "showToolBar": false,
@@ -76,11 +89,9 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
 
     return (
         <div 
-            className="geogebra-scaler"
             style={{ 
                 width: '100%', 
                 height: '100%', 
-                minHeight: 0, 
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -348,19 +359,19 @@ export default function MathsSimulationView({ onBack }) {
                 {/* Main Interactive Screen Area - Full Width */}
                 <div className="glass-panel" style={{ flex: 1, borderRadius: '24px', overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
                     
-                    {/* Header Region (No longer absolute to avoid covering the applet) */}
-                    <div style={{ padding: '16px 24px', display: 'flex', alignItems: 'center', background: 'rgba(0,0,0,0.2)', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+                    {/* Header Region (Responsive Wrap) */}
+                    <div style={{ padding: '16px 24px', display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '16px', background: 'rgba(0,0,0,0.2)', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
                         <button onClick={() => setViewState('curriculum_grid')} className="back-btn" style={{ padding: '8px 16px', background: 'rgba(255,255,255,0.1)', borderRadius: '100px', border: 'none', color: '#fff', display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer', backdropFilter: 'blur(10px)' }}>
                             <ArrowLeft size={18} /> {categoryData.label}
                         </button>
-                        <h2 style={{ margin: '0 0 0 20px', fontSize: '20px', fontWeight: '600', color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.5)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', flex: 1 }}>
+                        <h2 style={{ margin: '0', fontSize: '20px', fontWeight: '600', color: '#fff', textShadow: '0 2px 4px rgba(0,0,0,0.5)', flex: '1 1 250px' }}>
                             {activeTopicData ? activeTopicData.label : 'Simulation Module'}
                             {specificMaterialTitle && <span style={{ opacity: 0.7, fontSize: '16px', marginLeft: '12px', fontWeight: '400' }}>- {specificMaterialTitle}</span>}
                         </h2>
                         
-                        {/* Safe Pagination Controls (Moved to Header) */}
+                        {/* Safe Pagination Controls */}
                         {topicMaterials.length > 1 && (
-                            <div style={{ display: 'flex', gap: '12px', background: 'rgba(255,255,255,0.1)', padding: '8px 20px', borderRadius: '100px', alignItems: 'center', marginLeft: '20px' }}>
+                            <div style={{ display: 'flex', gap: '12px', background: 'rgba(255,255,255,0.1)', padding: '8px 20px', borderRadius: '100px', alignItems: 'center', marginLeft: 'auto' }}>
                                 <button 
                                     onClick={() => setActiveMaterialIndex(i => Math.max(0, i - 1))}
                                     disabled={activeMaterialIndex === 0}
