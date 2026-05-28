@@ -1,0 +1,317 @@
+{
+    "phys_1": {
+        "title": "Projectile Motion",
+        "description": "Interactive Projectile Motion simulation",
+        "url": "/simulations/projectile-motion_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_2": {
+        "title": "Forces and Motion: Basics",
+        "description": "Interactive Forces and Motion: Basics simulation",
+        "url": "/simulations/forces-and-motion-basics_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/forces-and-motion-basics/latest/forces-and-motion-basics-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_3": {
+        "title": "Gravity and Orbits",
+        "description": "Interactive Gravity and Orbits simulation",
+        "url": "/simulations/gravity-and-orbits_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/gravity-and-orbits/latest/gravity-and-orbits-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_4": {
+        "title": "Friction",
+        "description": "Interactive Friction simulation",
+        "url": "/simulations/friction_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/friction/latest/friction-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_5": {
+        "title": "Energy Skate Park",
+        "description": "Interactive Energy Skate Park simulation",
+        "url": "/simulations/energy-skate-park_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_6": {
+        "title": "Masses and Springs",
+        "description": "Interactive Masses and Springs simulation",
+        "url": "/simulations/masses-and-springs_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/masses-and-springs/latest/masses-and-springs-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_7": {
+        "title": "Pendulum Lab",
+        "description": "Interactive Pendulum Lab simulation",
+        "url": "/simulations/pendulum-lab_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_8": {
+        "title": "Balancing Act",
+        "description": "Interactive Balancing Act simulation",
+        "url": "/simulations/balancing-act_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_9": {
+        "title": "Collision Lab",
+        "description": "Interactive Collision Lab simulation",
+        "url": "/simulations/collision-lab_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_10": {
+        "title": "Center and Variability",
+        "description": "Interactive Center and Variability simulation",
+        "url": "/simulations/center-and-variability_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/center-and-variability/latest/center-and-variability-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_11": {
+        "title": "Energy Skate Park: Basics",
+        "description": "Interactive Energy Skate Park: Basics simulation",
+        "url": "/simulations/energy-skate-park-basics_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics-600.png",
+        "category": "Work, Energy & Power"
+    },
+    "phys_12": {
+        "title": "Hooke's Law",
+        "description": "Interactive Hooke's Law simulation",
+        "url": "/simulations/hookes-law_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/hookes-law/latest/hookes-law-600.png",
+        "category": "Work, Energy & Power"
+    },
+    "phys_13": {
+        "title": "Masses and Springs: Basics",
+        "description": "Interactive Masses and Springs: Basics simulation",
+        "url": "/simulations/masses-and-springs-basics_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/masses-and-springs-basics/latest/masses-and-springs-basics-600.png",
+        "category": "Work, Energy & Power"
+    },
+    "phys_14": {
+        "title": "States of Matter",
+        "description": "Interactive States of Matter simulation",
+        "url": "/simulations/states-of-matter_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter-600.png",
+        "category": "Heat & Thermodynamics"
+    },
+    "phys_15": {
+        "title": "States of Matter: Basics",
+        "description": "Interactive States of Matter: Basics simulation",
+        "url": "/simulations/states-of-matter-basics_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics-600.png",
+        "category": "Heat & Thermodynamics"
+    },
+    "phys_16": {
+        "title": "Gas Properties",
+        "description": "Interactive Gas Properties simulation",
+        "url": "/simulations/gas-properties_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties-600.png",
+        "category": "Heat & Thermodynamics"
+    },
+    "phys_17": {
+        "title": "Diffusion",
+        "description": "Interactive Diffusion simulation",
+        "url": "/simulations/diffusion_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion-600.png",
+        "category": "Heat & Thermodynamics"
+    },
+    "phys_18": {
+        "title": "Energy Forms and Changes",
+        "description": "Interactive Energy Forms and Changes simulation",
+        "url": "/simulations/energy-forms-and-changes_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes-600.png",
+        "category": "Heat & Thermodynamics"
+    },
+    "phys_19": {
+        "title": "Blackbody Spectrum",
+        "description": "Interactive Blackbody Spectrum simulation",
+        "url": "/simulations/blackbody-spectrum_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum-600.png",
+        "category": "Heat & Thermodynamics"
+    },
+    "phys_20": {
+        "title": "Wave on a String",
+        "description": "Interactive Wave on a String simulation",
+        "url": "/simulations/wave-on-a-string_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string-600.png",
+        "category": "Sound & Waves"
+    },
+    "phys_21": {
+        "title": "Wave Interference",
+        "description": "Interactive Wave Interference simulation",
+        "url": "/simulations/wave-interference_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/wave-interference/latest/wave-interference-600.png",
+        "category": "Sound & Waves"
+    },
+    "phys_22": {
+        "title": "Sound Waves",
+        "description": "Interactive Sound Waves simulation",
+        "url": "/simulations/sound-waves_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/sound-waves/latest/sound-waves-600.png",
+        "category": "Sound & Waves"
+    },
+    "phys_23": {
+        "title": "Normal Modes",
+        "description": "Interactive Normal Modes simulation",
+        "url": "/simulations/normal-modes_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/normal-modes/latest/normal-modes-600.png",
+        "category": "Sound & Waves"
+    },
+    "phys_24": {
+        "title": "Fourier: Making Waves",
+        "description": "Interactive Fourier: Making Waves simulation",
+        "url": "/simulations/fourier-making-waves_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves-600.png",
+        "category": "Sound & Waves"
+    },
+    "phys_25": {
+        "title": "Circuit Construction Kit: DC",
+        "description": "Interactive Circuit Construction Kit: DC simulation",
+        "url": "/simulations/circuit-construction-kit-dc_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc/latest/circuit-construction-kit-dc-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_26": {
+        "title": "Circuit Construction Kit: DC - Virtual Lab",
+        "description": "Interactive Circuit Construction Kit: DC - Virtual Lab simulation",
+        "url": "/simulations/circuit-construction-kit-dc-virtual-lab_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/circuit-construction-kit-dc-virtual-lab/latest/circuit-construction-kit-dc-virtual-lab-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_27": {
+        "title": "Circuit Construction Kit: AC",
+        "description": "Interactive Circuit Construction Kit: AC simulation",
+        "url": "/simulations/circuit-construction-kit-ac_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/circuit-construction-kit-ac/latest/circuit-construction-kit-ac-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_28": {
+        "title": "Charges and Fields",
+        "description": "Interactive Charges and Fields simulation",
+        "url": "/simulations/charges-and-fields_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_29": {
+        "title": "Faraday's Law",
+        "description": "Interactive Faraday's Law simulation",
+        "url": "/simulations/faradays-law_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/faradays-law/latest/faradays-law-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_30": {
+        "title": "Ohm's Law",
+        "description": "Interactive Ohm's Law simulation",
+        "url": "/simulations/ohms-law_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/ohms-law/latest/ohms-law-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_31": {
+        "title": "Coulomb's Law",
+        "description": "Interactive Coulomb's Law simulation",
+        "url": "/simulations/coulombs-law_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_32": {
+        "title": "John Travoltage",
+        "description": "Interactive John Travoltage simulation",
+        "url": "/simulations/john-travoltage_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/john-travoltage/latest/john-travoltage-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_33": {
+        "title": "Capacitor Lab: Basics",
+        "description": "Interactive Capacitor Lab: Basics simulation",
+        "url": "/simulations/capacitor-lab-basics_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/capacitor-lab-basics/latest/capacitor-lab-basics-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_34": {
+        "title": "Resistance in a Wire",
+        "description": "Interactive Resistance in a Wire simulation",
+        "url": "/simulations/resistance-in-a-wire_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/resistance-in-a-wire/latest/resistance-in-a-wire-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_35": {
+        "title": "Balloons and Static Electricity",
+        "description": "Interactive Balloons and Static Electricity simulation",
+        "url": "/simulations/balloons-and-static-electricity_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity-600.png",
+        "category": "Electricity & Magnets"
+    },
+    "phys_36": {
+        "title": "Bending Light",
+        "description": "Interactive Bending Light simulation",
+        "url": "/simulations/bending-light_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/bending-light/latest/bending-light-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_37": {
+        "title": "Color Vision",
+        "description": "Interactive Color Vision simulation",
+        "url": "/simulations/color-vision_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/color-vision/latest/color-vision-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_38": {
+        "title": "Molecules and Light",
+        "description": "Interactive Molecules and Light simulation",
+        "url": "/simulations/molecules-and-light_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_39": {
+        "title": "Rutherford Scattering",
+        "description": "Interactive Rutherford Scattering simulation",
+        "url": "/simulations/rutherford-scattering_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_40": {
+        "title": "Models of the Hydrogen Atom",
+        "description": "Interactive Models of the Hydrogen Atom simulation",
+        "url": "/simulations/models-of-the-hydrogen-atom_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/models-of-the-hydrogen-atom/latest/models-of-the-hydrogen-atom-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_41": {
+        "title": "Photoelectric Effect",
+        "description": "Interactive Photoelectric Effect simulation",
+        "url": "/simulations/photoelectric_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/photoelectric/latest/photoelectric-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_42": {
+        "title": "Lasers",
+        "description": "Interactive Lasers simulation",
+        "url": "/simulations/lasers_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/lasers/latest/lasers-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_43": {
+        "title": "Neon Lights",
+        "description": "Interactive Neon Lights simulation",
+        "url": "/simulations/neon-lights-and-other-discharge-lamps_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/neon-lights-and-other-discharge-lamps/latest/neon-lights-and-other-discharge-lamps-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_44": {
+        "title": "Microwaves",
+        "description": "Interactive Microwaves simulation",
+        "url": "/simulations/microwaves_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/microwaves/latest/microwaves-600.png",
+        "category": "Light & Quantum"
+    },
+    "phys_45": {
+        "title": "Simplified MRI",
+        "description": "Interactive Simplified MRI simulation",
+        "url": "/simulations/mri_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/mri/latest/mri-600.png",
+        "category": "Light & Quantum"
+    }
+}

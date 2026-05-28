@@ -20,6 +20,20 @@ export default function LandingView({ onEnter }) {
         }, 600);
     };
 
+    const handleChemistryClick = () => {
+        setIsAnimatingOut(true);
+        setTimeout(() => {
+            onEnter('chemistry');
+        }, 600);
+    };
+
+    const handlePhysicsClick = () => {
+        setIsAnimatingOut(true);
+        setTimeout(() => {
+            onEnter('physics');
+        }, 600);
+    };
+
     return (
         <div className={`mygnan-container ${isAnimatingOut ? 'fade-out' : ''}`}>
             {/* Application Dashboard Grid */}
@@ -41,13 +55,15 @@ export default function LandingView({ onEnter }) {
                     </div>
                 </div>
 
-                {/* CHEMISTRY - Coming Soon */}
-                <div className="mygnan-card glass-panel mygnan-card-soon">
+                {/* CHEMISTRY - Active Simulation Portal */}
+                <div className="mygnan-card glass-panel mygnan-card-active" onClick={handleChemistryClick}>
                     <div className="mygnan-card-header">
-                        <div className="mygnan-icon-container" style={{ filter: 'grayscale(100%)', opacity: 0.5 }}>
+                        <div className="mygnan-icon-container">
                             <FlaskConical size={38} color="#ff375f" />
                         </div>
-                        <div className="mygnan-badge-soon">Coming Soon</div>
+                        <div style={{ background: 'rgba(255,55,95,0.2)', padding: '8px 16px', borderRadius: '100px', display: 'flex', alignItems: 'center', gap: '8px', color: '#fff', fontSize: '13px', fontWeight: 600, border: '1px solid rgba(255,55,95,0.3)' }}>
+                            Active Module <ArrowRight size={14} />
+                        </div>
                     </div>
                     <div className="mygnan-title">
                         <h2>{t('Chemistry')}</h2>
@@ -55,13 +71,15 @@ export default function LandingView({ onEnter }) {
                     </div>
                 </div>
 
-                {/* PHYSICS - Coming Soon */}
-                <div className="mygnan-card glass-panel mygnan-card-soon">
+                {/* PHYSICS - Active Simulation Portal */}
+                <div className="mygnan-card glass-panel mygnan-card-active" onClick={handlePhysicsClick}>
                     <div className="mygnan-card-header">
-                        <div className="mygnan-icon-container" style={{ filter: 'grayscale(100%)', opacity: 0.5 }}>
+                        <div className="mygnan-icon-container">
                             <Atom size={38} color="#bf5af2" />
                         </div>
-                        <div className="mygnan-badge-soon">Coming Soon</div>
+                        <div style={{ background: 'rgba(191,90,242,0.2)', padding: '8px 16px', borderRadius: '100px', display: 'flex', alignItems: 'center', gap: '8px', color: '#fff', fontSize: '13px', fontWeight: 600, border: '1px solid rgba(191,90,242,0.3)' }}>
+                            Active Module <ArrowRight size={14} />
+                        </div>
                     </div>
                     <div className="mygnan-title">
                         <h2>{t('Physics')}</h2>

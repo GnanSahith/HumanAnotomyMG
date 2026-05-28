@@ -10,11 +10,19 @@ import InteractiveTestView from './components/InteractiveTestView';
 import InteractiveDigestiveView from './components/InteractiveDigestiveView_v2'; // V2: label tracks organ
 import HumanAnatomyDigestiveView from './components/HumanAnatomyDigestiveView';
 import MathsSimulationView from './components/MathsSimulationView';
-import { ChevronRight, Globe, User, ChevronDown, Sun, Moon } from 'lucide-react';
+import ChemistrySimulationView from './components/ChemistrySimulationView';
+import PhysicsSimulationView from './components/PhysicsSimulationView';
+import MainLandingView from './components/MainLandingView';
+import AcademicsView from './components/AcademicsView';
+import SubjectContentView from './components/SubjectContentView';
+import { ChevronRight, Globe, ChevronDown, Sun, Moon } from 'lucide-react';
+import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 import { useLanguage } from './LanguageContext';
 
 function App() {
   const { currentLanguage, toggleLanguage, t } = useLanguage();
+  const [appMode, setAppMode] = useState('root'); // 'root', 'academics', 'subject_content', 'simulations'
+  const [activeSubject, setActiveSubject] = useState(null);
   const [isLanding, setIsLanding] = useState(true);
   const [activeModule, setActiveModule] = useState(null);
   const [isAccountView, setIsAccountView] = useState(false);
@@ -45,7 +53,11 @@ function App() {
   // Handlers
   const handleSelectSystem = (systemId) => {
     setActiveSystemId(systemId);
-    setActiveOrganId(null); // Reset organ when changing system
+    if (systemId === 'digestive') {
+      setActiveOrganId('digestive_entire');
+    } else {
+      setActiveOrganId(null);
+    }
   };
 
   const handleBackToSystems = () => {
@@ -55,12 +67,23 @@ function App() {
   };
 
   const handleReturnToPortal = () => {
+    setAppMode('root');
+    setActiveSubject(null);
     setIsLanding(true);
     setActiveModule(null);
+    setActiveSystemId(null);
+    setActiveOrganId(null);
+  };
+
+  const handleBackToSimulations = () => {
+    setIsLanding(true);
+    setActiveModule(null);
+    setActiveSystemId(null);
+    setActiveOrganId(null);
   };
 
   return (
-    <div className="app-container">
+    <div className={`app-container ${appMode === 'simulations' && (activeModule === 'maths' || activeModule === 'chemistry' || activeModule === 'physics') ? 'maths-view-active' : ''}`}>
       {/* Background blobs for Apple Vision Pro style feeling */}
       <div className="bg-blob blob-1"></div>
       <div className="bg-blob blob-2"></div>
@@ -114,73 +137,115 @@ function App() {
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>
 
-            <button
-              onClick={() => setIsAccountView(true)}
-              style={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                border: '1px solid rgba(255, 255, 255, 0.2)',
-                borderRadius: '50%',
-                width: '40px',
-                height: '40px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--accent)',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease'
-              }}
-              onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'; e.currentTarget.style.color = '#fff'; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.color = 'var(--accent)'; }}
-            >
-              <User size={20} />
-            </button>
+            <SignedIn>
+              <UserButton 
+                afterSignOutUrl="/"
+                appearance={{
+                  elements: {
+                    userButtonAvatarBox: {
+                      width: '40px',
+                      height: '40px'
+                    }
+                  }
+                }}
+              />
+            </SignedIn>
+            <SignedOut>
+              <SignInButton mode="modal">
+                <button
+                  style={{
+                    background: 'var(--accent)',
+                    border: 'none',
+                    borderRadius: '20px',
+                    padding: '8px 20px',
+                    color: '#fff',
+                    cursor: 'pointer',
+                    fontWeight: 600,
+                    fontSize: '14px',
+                    transition: 'all 0.2s ease',
+                    boxShadow: '0 4px 14px 0 rgba(10, 132, 255, 0.39)',
+                    marginLeft: '8px'
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)' }}
+                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'none' }}
+                >
+                  Sign In
+                </button>
+              </SignInButton>
+            </SignedOut>
           </div>
         </header>
 
       {/* Breadcrumbs for deep navigation */}
-      {activeOrgan && (
+      {activeSystem && (
         <div className="breadcrumbs glass-panel">
           <button onClick={handleBackToSystems}>Systems</button>
           <ChevronRight size={14} />
-          <button onClick={() => setActiveOrganId(null)}>{t(activeSystem.name)}</button>
-          <ChevronRight size={14} />
-          <span className="current">{t(activeOrgan.name).replace(' (Model Coming Soon)', '')}</span>
+          {activeOrgan ? (
+            <>
+              <button onClick={() => setActiveOrganId(null)}>{t(activeSystem.name)}</button>
+              <ChevronRight size={14} />
+              <span className="current">{t(activeOrgan.name).replace(' (Model Coming Soon)', '')}</span>
+            </>
+          ) : (
+            <span className="current">{t(activeSystem.name)}</span>
+          )}
         </div>
       )}
 
       {/* Main Routing */}
-      {isLanding ? (
-        <LandingView onEnter={(module) => { setIsLanding(false); setActiveModule(module); }} />
-      ) : activeModule === 'maths' ? (
-        <MathsSimulationView onBack={handleReturnToPortal} />
-      ) : activeModule === 'biology' && isAccountView ? (
-        <AccountView />
-      ) : activeModule === 'biology' && !activeSystemId ? (
-        <HomeView systems={systemsData} onSelectSystem={handleSelectSystem} />
-      ) : activeModule === 'biology' && activeSystemId === 'cars' ? (
-        <InteractiveTestView onBack={handleBackToSystems} />
-      ) : activeModule === 'biology' && activeSystemId === 'digestive_interactive' ? (
-        <InteractiveDigestiveView onBack={handleBackToSystems} />
-      ) : activeModule === 'biology' && activeSystemId === 'digestive_combined' ? (
-        <HumanAnatomyDigestiveView onBack={handleBackToSystems} />
-      ) : activeModule === 'biology' ? (
-        <div className="system-container fade-in-scale">
-          {/* Always show the System View base (Sidebar) */}
-          <SystemView
-            system={activeSystem}
-            onBack={handleBackToSystems}
-            onSelectOrgan={setActiveOrganId}
-            activeOrganId={activeOrganId}
-          />
-
-          {/* If an organ is selected, overlay or inject the Organ views */}
-          {activeOrgan && (
-            <div className="organ-content-area">
-              <ModelViewer activeOrgan={activeOrgan} />
-              <DetailsView activeOrgan={activeOrgan} />
-            </div>
-          )}
-        </div>
+      {appMode === 'root' ? (
+        <MainLandingView onSelectRoute={setAppMode} />
+      ) : appMode === 'academics' ? (
+        <AcademicsView onSelectSubject={(subject) => {
+          setActiveSubject(subject);
+          setAppMode('subject_content');
+        }} />
+      ) : appMode === 'subject_content' ? (
+        <SubjectContentView 
+          subject={activeSubject} 
+          onBack={() => {
+            setActiveSubject(null);
+            setAppMode('academics');
+          }} 
+        />
+      ) : appMode === 'simulations' ? (
+        isLanding ? (
+          <LandingView onEnter={(module) => { setIsLanding(false); setActiveModule(module); }} />
+        ) : activeModule === 'maths' ? (
+          <MathsSimulationView onBack={handleBackToSimulations} />
+        ) : activeModule === 'chemistry' ? (
+          <ChemistrySimulationView onBack={handleBackToSimulations} />
+        ) : activeModule === 'physics' ? (
+          <PhysicsSimulationView onBack={handleBackToSimulations} />
+        ) : activeModule === 'biology' && isAccountView ? (
+          <AccountView />
+        ) : activeModule === 'biology' && !activeSystemId ? (
+          <HomeView systems={systemsData} onSelectSystem={handleSelectSystem} />
+        ) : activeModule === 'biology' && activeSystemId === 'cars' ? (
+          <InteractiveTestView onBack={handleBackToSystems} />
+        ) : activeModule === 'biology' && activeSystemId === 'digestive_interactive' ? (
+          <InteractiveDigestiveView onBack={handleBackToSystems} />
+        ) : activeModule === 'biology' && activeSystemId === 'digestive_combined' ? (
+          <HumanAnatomyDigestiveView onBack={handleBackToSystems} />
+        ) : activeModule === 'biology' ? (
+          <div className="system-container fade-in-scale">
+            {/* Use the 3-panel layout via SystemView children */}
+            <SystemView
+              system={activeSystem}
+              onBack={handleBackToSystems}
+              onSelectOrgan={setActiveOrganId}
+              activeOrganId={activeOrganId}
+            >
+              {activeOrgan && (
+                <>
+                  <ModelViewer activeOrgan={activeOrgan} />
+                  <DetailsView activeOrgan={activeOrgan} />
+                </>
+              )}
+            </SystemView>
+          </div>
+        ) : null
       ) : null}
     </div>
   );

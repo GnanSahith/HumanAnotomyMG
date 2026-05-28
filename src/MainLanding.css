@@ -1,0 +1,108 @@
+.split-landing-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1; /* Sit behind the floating header pill */
+}
+
+.split-half {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: flex 0.6s cubic-bezier(0.16, 1, 0.3, 1), background 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.academics-half {
+  background: rgba(59, 130, 246, 0.03); /* Extremely subtle blue tint */
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.simulations-half {
+  background: rgba(234, 179, 8, 0.03); /* Extremely subtle gold tint */
+}
+
+/* Expand the hovered half to take up 60% of the screen */
+.split-half:hover {
+  flex: 1.3;
+}
+
+.academics-half:hover {
+  background: rgba(59, 130, 246, 0.08);
+}
+
+.simulations-half:hover {
+  background: rgba(234, 179, 8, 0.08);
+}
+
+.split-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 450px;
+  padding: 2rem;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Slightly scale up the content on hover */
+.split-half:hover .split-content {
+  transform: scale(1.05);
+}
+
+.split-icon {
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.4));
+  transition: transform 0.6s ease;
+}
+
+.simulations-half .split-icon {
+  color: #eab308;
+  filter: drop-shadow(0 0 20px rgba(234, 179, 8, 0.4));
+}
+
+.split-half:hover .split-icon {
+  transform: translateY(-10px);
+}
+
+.split-half h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  letter-spacing: -1.5px;
+}
+
+.split-half p {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+@media (max-width: 900px) {
+  .split-landing-container {
+    flex-direction: column;
+  }
+  .split-half {
+    width: 100%;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .split-half h1 {
+    font-size: 3rem;
+  }
+  .split-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+  }
+}

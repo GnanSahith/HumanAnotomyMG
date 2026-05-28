@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChevronLeft, Box, Menu, X } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
-export default function SystemView({ system, onBack, onSelectOrgan, activeOrganId }) {
+export default function SystemView({ system, onBack, onSelectOrgan, activeOrganId, children }) {
     const { t } = useLanguage();
     const [showMobileSidebar, setShowMobileSidebar] = useState(false);
 
@@ -10,23 +10,18 @@ export default function SystemView({ system, onBack, onSelectOrgan, activeOrganI
 
     return (
         <div className="system-view">
-            {/* iOS Style Header */}
-            <div className="ios-header glass-panel">
-                <button className="back-btn" onClick={onBack}>
-                    <ChevronLeft size={24} />
-                    <span>{t('Systems')}</span>
+            {/* Mobile Sidebar Toggle (Floating) */}
+            {activeOrganId && (
+                <button 
+                    className="mobile-toggle-btn" 
+                    onClick={() => setShowMobileSidebar(!showMobileSidebar)}
+                    style={{ position: 'absolute', top: '16px', right: '24px', zIndex: 1100 }}
+                >
+                    {showMobileSidebar ? <X size={20} /> : <Menu size={20} />}
                 </button>
-                <h2>{t(system.name)}</h2>
-                <div style={{ width: 80, display: 'flex', justifyContent: 'flex-end' }}>
-                    {activeOrganId && (
-                        <button className="mobile-toggle-btn" onClick={() => setShowMobileSidebar(!showMobileSidebar)}>
-                            {showMobileSidebar ? <X size={20} /> : <Menu size={20} />}
-                        </button>
-                    )}
-                </div>
-            </div>
+            )}
 
-            <div className={`system-layout ${activeOrganId ? 'organ-active' : ''} ${showMobileSidebar ? 'mobile-sidebar-open' : ''}`}>
+            <div className={`digestive-grid ${activeOrganId ? 'organ-active' : ''} ${showMobileSidebar ? 'mobile-sidebar-open' : ''}`}>
                 {/* Organs Sidebar Menu */}
                 <aside className="system-sidebar glass-panel">
                     <div className="sidebar-header">
@@ -62,9 +57,12 @@ export default function SystemView({ system, onBack, onSelectOrgan, activeOrganI
                     </ul>
                 </aside>
 
+                {/* If an organ is active, show the 3-panel layout components (ModelViewer + Details) */}
+                {activeOrganId && children}
+
                 {/* Info Panel when no organ is selected */}
                 {!activeOrganId && (
-                    <div className="system-overview glass-panel">
+                    <div className="system-overview glass-panel" style={{ gridColumn: '2 / -1' }}>
                         <div className="system-overview-header">
                             <div className="system-hero-icon">
                                 {/* Icon injection handled in parent usually, fallback here */}

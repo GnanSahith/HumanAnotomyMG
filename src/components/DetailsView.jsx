@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useLanguage } from '../LanguageContext';
-import { Zap, Trophy, XCircle, CheckCircle } from 'lucide-react';
+import { Zap, Trophy, XCircle, CheckCircle, Play } from 'lucide-react';
 import { systemsData } from '../data';
 
 const digestiveSystem = systemsData.find(s => s.id === 'digestive');
@@ -15,6 +15,9 @@ export default function DetailsView({ activeOrgan }) {
     const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
     const [score, setScore] = useState(0);
     const [userChoice, setUserChoice] = useState(null);
+
+    // Video State
+    const [showVideo, setShowVideo] = useState(false);
 
     // Sync active mesh glow state globally whenever question changes
     useEffect(() => {
@@ -202,7 +205,7 @@ export default function DetailsView({ activeOrgan }) {
                 <p>{t(activeOrgan.description)}</p>
 
                 <div className="stat-grid">
-                    {activeOrgan.details.map((detail, index) => (
+                    {(activeOrgan.details || []).map((detail, index) => (
                         <div key={index} className="stat-card">
                             <div className="stat-label">{t(detail.label)}</div>
                             <div className="stat-value">{t(detail.value)}</div>
@@ -211,19 +214,144 @@ export default function DetailsView({ activeOrgan }) {
                 </div>
             </div>
             
-            {/* Native Quiz Button injected right at the bottom when Entire Digestive System is active! */}
+            {/* Simulation Controls for Entire Digestive System */}
             {isFullSystem && (
-                <div style={{ paddingTop: '16px', marginTop: '16px', borderTop: '1px solid rgba(255,255,255,0.05)' }}>
+                <div style={{ paddingTop: '16px', marginTop: '16px', borderTop: '1px solid rgba(255,255,255,0.05)', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                    
+                    {/* Attractive Video Play Button */}
+                    <button 
+                        onClick={() => setShowVideo(true)} 
+                        style={{
+                            width: '100%', 
+                            background: 'linear-gradient(135deg, rgba(10,132,255,0.85), rgba(0,80,200,0.85))',
+                            color: '#fff', 
+                            border: '1px solid rgba(10,132,255,0.4)',
+                            padding: '14px 20px', 
+                            borderRadius: '16px', 
+                            fontWeight: 700,
+                            cursor: 'pointer', 
+                            display: 'flex', 
+                            alignItems: 'center', 
+                            justifyContent: 'center', 
+                            gap: '10px',
+                            boxShadow: '0 8px 25px -5px rgba(10,132,255,0.4)',
+                            transition: 'all 0.3s cubic-bezier(0.4, 0, 0.2, 1)',
+                            fontSize: '15px',
+                            letterSpacing: '0.02em'
+                        }}
+                        onMouseEnter={(e) => {
+                            e.currentTarget.style.transform = 'translateY(-2px)';
+                            e.currentTarget.style.boxShadow = '0 12px 30px -5px rgba(10,132,255,0.6)';
+                        }}
+                        onMouseLeave={(e) => {
+                            e.currentTarget.style.transform = 'translateY(0)';
+                            e.currentTarget.style.boxShadow = '0 8px 25px -5px rgba(10,132,255,0.4)';
+                        }}
+                    >
+                        <div style={{ 
+                            background: 'rgba(255,255,255,0.2)', 
+                            borderRadius: '50%', 
+                            width: '28px', 
+                            height: '28px', 
+                            display: 'flex', 
+                            alignItems: 'center', 
+                            justifyContent: 'center' 
+                        }}>
+                            <Play size={14} fill="white" />
+                        </div>
+                        Watch the Digestive Process
+                    </button>
+
+                    {/* Native Quiz Button */}
                     <button onClick={handleStartQuiz} style={{
-                        width: '100%', background: 'linear-gradient(135deg, rgba(255,159,10,0.85), rgba(255,100,10,0.85))',
-                        color: '#fff', border: '1px solid rgba(255,159,10,0.5)',
-                        padding: '12px 20px', borderRadius: '12px', fontWeight: 600,
-                        cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
-                    }}>
+                        width: '100%', 
+                        background: 'rgba(255,159,10,0.15)',
+                        color: '#ff9f0a', 
+                        border: '1px solid rgba(255,159,10,0.3)',
+                        padding: '12px 20px', 
+                        borderRadius: '16px', 
+                        fontWeight: 600,
+                        cursor: 'pointer', 
+                        display: 'flex', 
+                        alignItems: 'center', 
+                        justifyContent: 'center', 
+                        gap: '8px',
+                        transition: 'all 0.2s ease',
+                        fontSize: '14px'
+                    }}
+                    onMouseEnter={(e) => {
+                        e.currentTarget.style.background = 'rgba(255,159,10,0.25)';
+                    }}
+                    onMouseLeave={(e) => {
+                        e.currentTarget.style.background = 'rgba(255,159,10,0.15)';
+                    }}
+                    >
                         <Zap size={16}/> Start Challenge
                     </button>
+                </div>
+            )}
+
+            {/* Video Overlay Modal */}
+            {showVideo && (
+                <div style={{
+                    position: 'fixed',
+                    top: 0, left: 0, right: 0, bottom: 0,
+                    zIndex: 9999,
+                    background: 'rgba(0,0,0,0.95)',
+                    backdropFilter: 'blur(15px)',
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    padding: '20px'
+                }} className="fade-in">
+                    <button 
+                        onClick={() => setShowVideo(false)}
+                        style={{
+                            position: 'absolute',
+                            top: '30px',
+                            right: '30px',
+                            background: 'rgba(255,255,255,0.1)',
+                            border: '1px solid rgba(255,255,255,0.1)',
+                            color: '#fff',
+                            width: '44px',
+                            height: '44px',
+                            borderRadius: '50%',
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            zIndex: 10000
+                        }}
+                    >
+                        <XCircle size={24} />
+                    </button>
+
+                    <div style={{
+                        width: '100%',
+                        maxWidth: '1000px',
+                        aspectRatio: '16/9',
+                        background: '#000',
+                        borderRadius: '24px',
+                        overflow: 'hidden',
+                        boxShadow: '0 30px 60px -12px rgba(0,0,0,0.5)',
+                        border: '1px solid rgba(255,255,255,0.1)'
+                    }}>
+                        <video 
+                            src="./assets/videos/digestive_process.mp4" 
+                            controls 
+                            autoPlay 
+                            style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                        />
+                    </div>
+                    
+                    <div style={{ marginTop: '30px', textAlign: 'center' }}>
+                        <h2 style={{ fontSize: '24px', fontWeight: 700, margin: '0 0 10px 0', color: '#fff' }}>Digestive System Simulation</h2>
+                        <p style={{ opacity: 0.6, fontSize: '15px', margin: 0 }}>Visualizing the entire process of digestion from ingestion to elimination.</p>
+                    </div>
                 </div>
             )}
         </div>
     );
 }
+

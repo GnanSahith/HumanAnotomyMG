@@ -190,12 +190,11 @@ body {
 .mygnan-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(2, minmax(280px, 1fr));
   gap: 32px;
   max-width: 1100px;
   width: 100%;
-  height: 70vh;
-  max-height: 800px;
+  min-height: min(70vh, 800px);
   animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -277,14 +276,14 @@ body {
 }
 
 .mygnan-title h2 {
-  font-size: 3rem;
+  font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 8px;
 }
 
 .mygnan-title p {
-  font-size: 1.1rem;
+  font-size: clamp(0.9rem, 1.5vw, 1.1rem);
   color: var(--text-tertiary);
   margin-bottom: 0px;
 }
@@ -448,7 +447,7 @@ body {
   height: 100vh;
   height: 100dvh;
   width: 100vw;
-  padding: 130px 24px 24px 24px; /* Creates a comfortable gap below the fixed header pill */
+  padding: 135px 24px 24px 24px; /* Balanced padding to clear fixed header and breadcrumbs */
   overflow: hidden;
 }
 
@@ -485,7 +484,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 100px;
+  padding-top: 30px; /* Reduced redundant padding */
   overflow-y: auto;
   gap: 40px;
 }
@@ -625,7 +624,7 @@ p {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding-top: 80px;
+  padding-top: 10px; /* Slight breathing room below fixed elements */
 }
 
 /* iOS Navigation Header */
@@ -674,7 +673,7 @@ p {
 }
 
 .system-sidebar {
-  width: 320px;
+  width: 100%;
   padding: 24px;
   display: flex;
   flex-direction: column;
@@ -717,6 +716,20 @@ p {
   color: #fff;
   border-color: rgba(255, 255, 255, 0.2);
   box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.organ-btn .icon-wrapper {
+  width: 32px !important;
+  height: 32px !important;
+  margin: 0 !important;
+  border-radius: 8px !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  box-shadow: none !important;
+  flex-shrink: 0;
+}
+
+.organ-btn.active .icon-wrapper {
+  background: rgba(255, 255, 255, 0.25) !important;
 }
 
 .organ-btn-text {
@@ -935,7 +948,7 @@ p {
 
 .breadcrumbs {
   position: fixed;
-  top: 24px;
+  top: 96px; /* perfectly centered between the 79px header bottom and 145px content top */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -1174,7 +1187,7 @@ model-viewer {
 /* --- Responsive Structure Classes --- */
 .global-header-pill {
   position: fixed;
-  top: 32px;
+  top: 10px; /* Move slightly higher to utilize top space */
   left: 50%;
   transform: translateX(-50%);
   width: 92%;
@@ -1195,19 +1208,37 @@ model-viewer {
 
 .digestive-grid {
   display: grid;
-  grid-template-columns: 240px 1fr 300px;
-  gap: 12px;
+  grid-template-columns: 280px 1fr 340px;
+  gap: 16px;
   flex: 1;
   min-height: 0;
-  padding: 12px;
+  padding: 12px 24px;
 }
+
+.digestive-grid .system-sidebar,
+.digestive-grid .detail-panel,
+.digestive-grid .viewer-container {
+  width: 100% !important;
+  min-width: 0;
+  margin: 0;
+}
+
+.maths-grid {
+  display: grid;
+  grid-template-columns: 200px 1fr 240px;
+  gap: 8px;
+  flex: 1;
+  min-height: 0;
+  padding: 4px;
+}
+
 
 .maths-layout {
   height: 100%;
   display: flex;
   flex-direction: row;
   background-color: transparent;
-  padding-top: 100px;
+  padding-top: 20px; /* Reduced redundant padding */
   padding-bottom: 20px;
   color: #fff;
 }
@@ -1478,6 +1509,21 @@ model-viewer {
     flex-shrink: 0;
   }
 
+  .maths-grid {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+    overflow-y: auto;
+  }
+
+  /* The main interactive simulation player needs fixed height on mobile */
+  .maths-grid > .glass-panel:nth-child(2) {
+    height: 450px;
+    flex-shrink: 0;
+  }
+
+
   .maths-layout {
     flex-direction: column;
     padding-top: 80px;
@@ -1497,3 +1543,137 @@ model-viewer {
     min-height: 400px;
   }
 }
+.katex { 
+  color: #bfdbfe !important;
+}
+
+.katex * {
+  color: inherit !important;
+}
+
+.math-display { 
+  background: #1e1e1e !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5) !important;
+  padding: 35px 20px 20px 20px !important;
+  margin: 24px 0 !important;
+  overflow-x: auto !important;
+  position: relative !important;
+}
+
+.math-display::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+  box-shadow: 20px 0 0 #ffbd2e, 40px 0 0 #27c93f;
+}
+
+.math-display .katex-display {
+  margin: 0 !important;
+  text-align: center !important;
+}
+
+.math-display .katex {
+  background: transparent !important;
+  padding: 0 !important;
+  font-size: 1.2rem !important;
+  color: #e2e8f0 !important;
+}
+
+.section-header {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 14px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.header-given {
+  background: linear-gradient(135deg, #4ade80, #3b82f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom-color: rgba(59, 130, 246, 0.2);
+}
+
+.header-formula {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom-color: rgba(168, 85, 247, 0.2);
+}
+
+.header-calc {
+  background: linear-gradient(135deg, #f59e0b, #ef4444);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom-color: rgba(245, 158, 11, 0.2);
+}
+
+.header-conclusion {
+  background: linear-gradient(135deg, #10b981, #059669);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-bottom-color: rgba(16, 185, 129, 0.2);
+}
+
+.data-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.data-list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.6;
+}
+
+.data-list li::before {
+  content: "•";
+  color: #3b82f6;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  top: -2px;
+}
+
+.final-answer p { margin-bottom: 12px; }
+
+/* =========================================================================
+   MATHS LAYOUT OPTIMIZATIONS (SPACING & FILL SCREEN GAP CORRECTION)
+   ========================================================================= */
+@media (min-width: 769px) {
+  .app-container.maths-view-active {
+    padding: 100px 0 0 0 !important;
+  }
+
+  .app-container.maths-view-active .global-header-pill {
+    width: calc(100vw - 4px) !important;
+    max-width: none !important;
+    border-radius: 16px !important; /* closer to ios-header */
+  }
+
+  .app-container.maths-view-active .maths-layout {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .app-container.maths-view-active .maths-grid {
+    padding: 0px !important;
+    gap: 6px !important;
+  }
+}
+
