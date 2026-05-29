@@ -15,8 +15,8 @@ import PhysicsSimulationView from './components/PhysicsSimulationView';
 import MainLandingView from './components/MainLandingView';
 import AcademicsView from './components/AcademicsView';
 import SubjectContentView from './components/SubjectContentView';
-import { ChevronRight, Globe, ChevronDown, Sun, Moon } from 'lucide-react';
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
+import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut } from 'lucide-react';
+import LoginModal from './components/LoginModal';
 import { useLanguage } from './LanguageContext';
 
 function App() {
@@ -30,6 +30,10 @@ function App() {
   const [activeOrganId, setActiveOrganId] = useState(null);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [theme, setTheme] = useState('dark');
+  const [isAuthenticated, setIsAuthenticated] = useState(() => {
+    return localStorage.getItem('human_anatomy_auth') === 'true';
+  });
+  const [showLoginModal, setShowLoginModal] = useState(false);
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -80,6 +84,21 @@ function App() {
     setActiveModule(null);
     setActiveSystemId(null);
     setActiveOrganId(null);
+  };
+
+  const handleAuthRequiredNavigation = (module) => {
+    if (!isAuthenticated) {
+      setShowLoginModal(true);
+      return;
+    }
+    setIsLanding(false);
+    setActiveModule(module);
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('human_anatomy_auth');
+    setIsAuthenticated(false);
+    handleReturnToPortal();
   };
 
   return (
@@ -137,42 +156,45 @@ function App() {
               {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
             </button>
 
-            <SignedIn>
-              <UserButton 
-                afterSignOutUrl="/"
-                appearance={{
-                  elements: {
-                    userButtonAvatarBox: {
-                      width: '40px',
-                      height: '40px'
-                    }
-                  }
+            {isAuthenticated ? (
+              <button
+                onClick={handleLogout}
+                style={{
+                  background: 'var(--accent)',
+                  border: 'none',
+                  borderRadius: '20px',
+                  padding: '8px 20px',
+                  color: '#fff',
+                  cursor: 'pointer',
+                  fontWeight: 600,
+                  fontSize: '14px',
+                  display: 'flex', alignItems: 'center', gap: '8px',
+                  transition: 'all 0.2s ease',
+                  marginLeft: '8px'
                 }}
-              />
-            </SignedIn>
-            <SignedOut>
-              <SignInButton mode="modal">
-                <button
-                  style={{
-                    background: 'var(--accent)',
-                    border: 'none',
-                    borderRadius: '20px',
-                    padding: '8px 20px',
-                    color: '#fff',
-                    cursor: 'pointer',
-                    fontWeight: 600,
-                    fontSize: '14px',
-                    transition: 'all 0.2s ease',
-                    boxShadow: '0 4px 14px 0 rgba(10, 132, 255, 0.39)',
-                    marginLeft: '8px'
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)' }}
-                  onMouseLeave={(e) => { e.currentTarget.style.transform = 'none' }}
-                >
-                  Sign In
-                </button>
-              </SignInButton>
-            </SignedOut>
+              >
+                Logout <LogOut size={16} />
+              </button>
+            ) : (
+              <button
+                onClick={() => setShowLoginModal(true)}
+                style={{
+                  background: 'var(--accent)',
+                  border: 'none',
+                  borderRadius: '20px',
+                  padding: '8px 20px',
+                  color: '#fff',
+                  cursor: 'pointer',
+                  fontWeight: 600,
+                  fontSize: '14px',
+                  transition: 'all 0.2s ease',
+                  boxShadow: '0 4px 14px 0 rgba(10, 132, 255, 0.39)',
+                  marginLeft: '8px'
+                }}
+              >
+                Sign In
+              </button>
+            )}
           </div>
         </header>
 
@@ -195,7 +217,14 @@ function App() {
 
       {/* Main Routing */}
       {appMode === 'root' ? (
-        <MainLandingView onSelectRoute={setAppMode} />
+        <MainLandingView onSelectRoute={(route) => {
+          if (route === 'simulations') {
+            handleAuthRequiredNavigation('all');
+            setAppMode('simulations');
+          } else {
+            setAppMode(route);
+          }
+        }} />
       ) : appMode === 'academics' ? (
         <AcademicsView onSelectSubject={(subject) => {
           setActiveSubject(subject);
@@ -211,7 +240,7 @@ function App() {
         />
       ) : appMode === 'simulations' ? (
         isLanding ? (
-          <LandingView onEnter={(module) => { setIsLanding(false); setActiveModule(module); }} />
+          <LandingView onEnter={handleAuthRequiredNavigation} />
         ) : activeModule === 'maths' ? (
           <MathsSimulationView onBack={handleBackToSimulations} />
         ) : activeModule === 'chemistry' ? (
@@ -247,6 +276,16 @@ function App() {
           </div>
         ) : null
       ) : null}
+
+      <LoginModal 
+        isOpen={showLoginModal} 
+        onClose={() => setShowLoginModal(false)}
+        onSuccess={() => {
+          setIsAuthenticated(true);
+          localStorage.setItem('human_anatomy_auth', 'true');
+          setShowLoginModal(false);
+        }}
+      />
     </div>
   );
 }

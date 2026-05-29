@@ -1,12 +1,8 @@
 import React from 'react';
 import { BookOpen, MonitorPlay } from 'lucide-react';
-import { useUser, useClerk } from '@clerk/clerk-react';
 import '../MainLanding.css';
 
 const MainLandingView = ({ onSelectRoute }) => {
-  const { isSignedIn } = useUser();
-  const { openSignIn } = useClerk();
-
   return (
     <div className="split-landing-container">
       <div className="split-half academics-half" onClick={() => onSelectRoute('academics')}>
