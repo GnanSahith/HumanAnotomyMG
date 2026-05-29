@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import { X, Lock, User, ArrowRight } from 'lucide-react';
 
 const VALID_CREDENTIALS = [
-    { username: 'user1', password: 'password1' },
-    { username: 'user2', password: 'password1' },
-    { username: 'user3', password: 'password1' },
-    { username: 'user4', password: 'password1' },
-    { username: 'user5', password: 'password1' },
+    { username: 'CharanKumar@MG', password: 'Charan@MG' },
+    { username: 'SandhyaRekha@MG', password: 'Sandhya@MG' },
+    { username: 'GnanSahith@MG', password: 'Gnan@MG' },
+    { username: 'VishnuKranthi@MG', password: 'Vishnu@MG' }
 ];
 
 export default function LoginModal({ isOpen, onClose, onSuccess }) {
