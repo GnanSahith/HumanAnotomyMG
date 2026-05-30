@@ -83,7 +83,7 @@ export default function PricingView({ onBack }) {
                         width: '320px', padding: '32px', borderRadius: '24px',
                         display: 'flex', flexDirection: 'column', position: 'relative',
                         border: '1px solid var(--accent)', background: 'linear-gradient(180deg, rgba(107,78,255,0.1) 0%, rgba(0,0,0,0) 100%)',
-                        boxShadow: '0 20px 40px rgba(107,78,255,0.15)'
+                        boxShadow: '0 20px 40px rgba(107,78,255,0.15)', overflow: 'visible'
                     }}>
                         <div style={{
                             position: 'absolute', top: '-14px', left: '50%', transform: 'translateX(-50%)',
