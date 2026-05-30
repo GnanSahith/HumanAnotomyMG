@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { X, Lock, User, ArrowRight, Code, GraduationCap } from 'lucide-react';
 import { SignIn } from '@clerk/clerk-react';
 
