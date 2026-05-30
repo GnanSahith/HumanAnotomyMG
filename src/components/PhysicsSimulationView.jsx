@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { ArrowLeft, PlayCircle, Atom, Search, X } from 'lucide-react';
+import { ArrowLeft, PlayCircle, Atom, Search, X, Lock } from 'lucide-react';
 import physicsSimulations from '../data/physicsSimulations.json';
 import { useLanguage } from '../LanguageContext';
 
-export default function PhysicsSimulationView({ onBack }) {
+export default function PhysicsSimulationView({ onBack, handleLockedItemClick }) {
     const { t } = useLanguage();
     const [searchQuery, setSearchQuery] = useState('');
     const [activeSimulation, setActiveSimulation] = useState(null);
@@ -192,14 +192,23 @@ export default function PhysicsSimulationView({ onBack }) {
                                 gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
                                 gap: '24px'
                             }}>
-                                {sims.map((sim) => (
+                                {sims.map((sim, index) => {
+                                    const isLocked = index >= 2;
+                                    return (
                                         <div 
                                             key={sim.id}
                                             className="glass-panel"
                                             onClick={() => {
-                                                setActiveSimulation(sim);
-                                                setIsLoadingSim(true);
-                                                setTimeout(() => setIsLoadingSim(false), 4500); // Hide splash after 4.5s
+                                                const openSim = () => {
+                                                    setActiveSimulation(sim);
+                                                    setIsLoadingSim(true);
+                                                    setTimeout(() => setIsLoadingSim(false), 4500);
+                                                };
+                                                if (isLocked) {
+                                                    handleLockedItemClick(openSim);
+                                                } else {
+                                                    openSim();
+                                                }
                                             }}
                                             style={{
                                                 borderRadius: '24px',
@@ -252,6 +261,18 @@ export default function PhysicsSimulationView({ onBack }) {
                                             {/* Secondary edge blur to obscure any remaining watermarks */}
                                             <div style={{ position: 'absolute', bottom: '-10px', right: '-10px', width: '120px', height: '50px', background: '#000', filter: 'blur(15px)', zIndex: 2, opacity: 0.7 }}></div>
 
+                                            {isLocked && (
+                                                <div style={{
+                                                    position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+                                                    background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(4px)',
+                                                    zIndex: 4, display: 'flex', flexDirection: 'column',
+                                                    alignItems: 'center', justifyContent: 'center', gap: '8px'
+                                                }}>
+                                                    <Lock size={32} color="#fff" />
+                                                    <span style={{ fontSize: '14px', fontWeight: 600, color: '#fff', background: 'var(--accent)', padding: '4px 12px', borderRadius: '100px' }}>Premium Access</span>
+                                                </div>
+                                            )}
+
                                             <div style={{
                                                 position: 'absolute',
                                                 top: 0, left: 0, right: 0, bottom: 0,
@@ -276,7 +297,8 @@ export default function PhysicsSimulationView({ onBack }) {
                                             </p>
                                         </div>
                                     </div>
-                                ))}
+                                    );
+                                })}
                             </div>
                         </div>
                     ))}

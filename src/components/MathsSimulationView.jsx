@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { 
     ArrowLeft, Combine, Shapes, Type, Gamepad2, Grid as GridIcon, Scaling, 
     Hexagon, FlipHorizontal, Triangle, Copy, Ruler, RefreshCw, Box, MoveDiagonal,
-    Activity, Hash, Calculator, Dices, Layers, PlayCircle,
+    Activity, Hash, Calculator, Dices, Layers, PlayCircle, Lock,
     ChevronRight, BookOpen, Zap, CheckCircle, XCircle, Trophy, Info
 } from 'lucide-react';
 import { mathCurriculum } from '../data/mathCurriculum';
@@ -132,17 +132,6 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
         </div>
     );
 };
-
-// Subcomponents (Current Placeholders)
-import AdjacentAngles from './MathsModules/AdjacentAngles';
-import PartsOfAngle from './MathsModules/PartsOfAngle';
-import NamingAngles from './MathsModules/NamingAngles';
-import DrawingAnglesGame from './MathsModules/DrawingAnglesGame';
-import CoordinatePlotter from './MathsModules/CoordinatePlotter';
-import TriangleClassifier from './MathsModules/TriangleClassifier';
-import GeometricEntities from './MathsModules/GeometricEntities';
-import LineSymmetry from './MathsModules/LineSymmetry';
-import PolygonExplorer from './MathsModules/PolygonExplorer';
 
 const mathQuizDatabase = {
     algebra: [
@@ -284,18 +273,13 @@ const getBadgeInfo = (title) => {
     }
 };
 
-export default function MathsSimulationView({ onBack }) {
-    // Top-level router state: 'main_categories' -> 'curriculum_grid' -> 'simulation'
+export default function MathsSimulationView({ onBack, handleLockedItemClick }) {
     const [viewState, setViewState] = useState('main_categories');
-    // Active category for the second level (e.g., 'algebra', 'geometry')
     const [activeCategory, setActiveCategory] = useState(null);
-    // Active topic for the third level (e.g., 'algebra_as_patterns')
     const [activeTopic, setActiveTopic] = useState(null);
-    // Active specific material simulation index
     const [activeMaterialIndex, setActiveMaterialIndex] = useState(0);
 
-    // Quiz States
-    const [quizState, setQuizState] = useState('idle'); // idle | active | answered | results
+    const [quizState, setQuizState] = useState('idle'); 
     const [quizQuestions, setQuizQuestions] = useState([]);
     const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
     const [score, setScore] = useState(0);
@@ -305,7 +289,6 @@ export default function MathsSimulationView({ onBack }) {
         const cat = activeCategory || 'algebra';
         const questionsList = mathQuizDatabase[cat] || mathQuizDatabase.algebra;
         
-        // Clone and shuffle
         const shuffled = [...questionsList]
             .map(q => ({
                 ...q,
@@ -348,7 +331,6 @@ export default function MathsSimulationView({ onBack }) {
     ];
 
     const renderActiveModule = () => {
-        // Find all materials for the selected topic
         const topicMaterials = Object.values(mathSimulations || {}).filter(m => m.parentTopic === activeTopic);
         
         if (topicMaterials.length > 0) {
@@ -356,13 +338,10 @@ export default function MathsSimulationView({ onBack }) {
             return (
                 <div style={{ width: '100%', height: '100%', position: 'relative' }}>
                     <GeoGebraPlayer key={currentMaterial.url} ggbUrl={currentMaterial.url} id={currentMaterial.id || 'sim'} />
-                    
-
                 </div>
             );
         }
         
-        // Placeholder for topics not yet downloaded
         return (
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100%', color: 'rgba(255,255,255,0.5)' }}>
                 <PlayCircle size={64} style={{ marginBottom: '20px', opacity: 0.5 }} />
@@ -372,7 +351,6 @@ export default function MathsSimulationView({ onBack }) {
         );
     };
 
-    // --- PHASE 1: Main Categories View ---
     if (viewState === 'main_categories') {
         return (
             <div className="maths-layout" style={{ 
@@ -472,7 +450,6 @@ export default function MathsSimulationView({ onBack }) {
         );
     }
 
-    // --- Sub Grid View (Dynamic Mapping) ---
     const TopicCard = ({ label, id, isActive, onClick }) => (
         <div 
             onClick={onClick}
@@ -541,9 +518,16 @@ export default function MathsSimulationView({ onBack }) {
                         id={topic.id}
                         isActive={false}
                         onClick={() => {
-                            setActiveTopic(topic.id);
-                            setActiveMaterialIndex(0);
-                            setViewState('simulation');
+                            const openTopic = () => {
+                                setActiveTopic(topic.id);
+                                setActiveMaterialIndex(0);
+                                setViewState('simulation');
+                            };
+                            if (handleLockedItemClick) {
+                                handleLockedItemClick(openTopic);
+                            } else {
+                                openTopic();
+                            }
                         }}
                     />
                 ))}
@@ -598,20 +582,15 @@ export default function MathsSimulationView({ onBack }) {
         );
     }
 
-    // --- Interactive Simulation State ---
     if (viewState === 'simulation' && activeCategory) {
         const categoryData = mathCurriculum[activeCategory];
-        // Flatten all topics to find current title
         const allTopics = categoryData.grades.reduce((acc, grade) => [...acc, ...grade.topics], []);
         const activeTopicData = allTopics.find(t => t.id === activeTopic);
-        
-        // Get the specific title for the material if loaded
         const topicMaterials = Object.values(mathSimulations || {}).filter(m => m.parentTopic === activeTopic);
         const specificMaterialTitle = topicMaterials[activeMaterialIndex]?.title;
         
         return (
             <div className="maths-layout" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
-                {/* Header */}
                 <div className="ios-header glass-panel" style={{ 
                     position: 'relative',
                     height: '46px', 
@@ -672,10 +651,8 @@ export default function MathsSimulationView({ onBack }) {
                     </h2>
                 </div>
 
-                {/* 3-Panel Grid */}
                 <div className="maths-grid">
                     
-                    {/* LEFT PANEL: Parts List */}
                     <aside className="glass-panel" style={{
                         display: 'flex', 
                         flexDirection: 'column', 
@@ -695,6 +672,7 @@ export default function MathsSimulationView({ onBack }) {
                             {topicMaterials.length > 0 ? (
                                 topicMaterials.map((material, idx) => {
                                     const isActive = idx === activeMaterialIndex;
+                                    const isLocked = idx >= 3;
                                     const cleanedTitle = cleanMaterialTitle(material.title);
                                     const badge = getBadgeInfo(material.title);
                                     
@@ -702,8 +680,15 @@ export default function MathsSimulationView({ onBack }) {
                                         <li key={material.id || idx}>
                                             <button
                                                 onClick={() => {
-                                                    setActiveMaterialIndex(idx);
-                                                    setQuizState('idle');
+                                                    const openPart = () => {
+                                                        setActiveMaterialIndex(idx);
+                                                        setQuizState('idle');
+                                                    };
+                                                    if (isLocked && handleLockedItemClick) {
+                                                        handleLockedItemClick(openPart);
+                                                    } else {
+                                                        openPart();
+                                                    }
                                                 }}
                                                 style={{
                                                     width: '100%', 
@@ -724,12 +709,6 @@ export default function MathsSimulationView({ onBack }) {
                                                     textAlign: 'left',
                                                     marginBottom: '8px',
                                                 }}
-                                                onMouseEnter={(e) => {
-                                                    if (!isActive) e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
-                                                }}
-                                                onMouseLeave={(e) => {
-                                                    if (!isActive) e.currentTarget.style.background = 'transparent';
-                                                }}
                                             >
                                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', width: '100%' }}>
                                                     <span style={{
@@ -741,7 +720,7 @@ export default function MathsSimulationView({ onBack }) {
                                                         background: badge.bg,
                                                         color: badge.color
                                                     }}>
-                                                        {badge.text}
+                                                        {isLocked ? <Lock size={10} /> : badge.text}
                                                     </span>
                                                     <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.4)', marginLeft: 'auto' }}>
                                                         Part {idx + 1}
@@ -772,7 +751,6 @@ export default function MathsSimulationView({ onBack }) {
                         </ul>
                     </aside>
 
-                    {/* MIDDLE PANEL: GeoGebra Simulation */}
                     <div className="glass-panel" style={{
                         position: 'relative', 
                         borderRadius: '16px', 
@@ -793,46 +771,6 @@ export default function MathsSimulationView({ onBack }) {
                                 <PlayCircle size={16} color="#0a84ff" />
                                 {specificMaterialTitle ? cleanMaterialTitle(specificMaterialTitle) : 'Simulation Canvas'}
                             </h3>
-                            {topicMaterials.length > 1 && (
-                                <div style={{ display: 'flex', gap: '6px' }}>
-                                    <button 
-                                        onClick={() => {
-                                            setActiveMaterialIndex(i => Math.max(0, i - 1));
-                                            setQuizState('idle');
-                                        }}
-                                        disabled={activeMaterialIndex === 0}
-                                        style={{ 
-                                            background: 'rgba(255,255,255,0.08)', 
-                                            border: 'none', 
-                                            borderRadius: '6px', 
-                                            color: activeMaterialIndex === 0 ? 'rgba(255,255,255,0.2)' : '#fff', 
-                                            padding: '4px 8px',
-                                            fontSize: '11px',
-                                            cursor: activeMaterialIndex === 0 ? 'default' : 'pointer'
-                                        }}
-                                    >
-                                        Prev
-                                    </button>
-                                    <button 
-                                        onClick={() => {
-                                            setActiveMaterialIndex(i => Math.min(topicMaterials.length - 1, i + 1));
-                                            setQuizState('idle');
-                                        }}
-                                        disabled={activeMaterialIndex === topicMaterials.length - 1}
-                                        style={{ 
-                                            background: 'rgba(255,255,255,0.08)', 
-                                            border: 'none', 
-                                            borderRadius: '6px', 
-                                            color: activeMaterialIndex === topicMaterials.length - 1 ? 'rgba(255,255,255,0.2)' : '#fff', 
-                                            padding: '4px 8px',
-                                            fontSize: '11px',
-                                            cursor: activeMaterialIndex === topicMaterials.length - 1 ? 'default' : 'pointer'
-                                        }}
-                                    >
-                                        Next
-                                    </button>
-                                </div>
-                            )}
                         </div>
 
                         <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
@@ -840,7 +778,6 @@ export default function MathsSimulationView({ onBack }) {
                         </div>
                     </div>
 
-                    {/* RIGHT PANEL: Concepts & Quiz Details */}
                     <aside className="glass-panel" style={{
                         display: 'flex', 
                         flexDirection: 'column', 
@@ -864,7 +801,6 @@ export default function MathsSimulationView({ onBack }) {
 
                         {quizState === 'idle' ? (
                             <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', padding: '6px' }}>
-                                {/* Dynamic Category Concepts Rendering */}
                                 {(() => {
                                     const concepts = categoryConcepts[activeCategory] || categoryConcepts.algebra;
                                     return (
@@ -1003,14 +939,7 @@ export default function MathsSimulationView({ onBack }) {
                                                         color: '#fff', textAlign: 'left', fontSize: '13px', lineHeight: 1.4,
                                                         cursor: quizState === 'answered' ? 'default' : 'pointer',
                                                         opacity, transition: 'all 0.2s', display: 'flex', alignItems: 'center', gap: '12px'
-                                                    }}
-                                                    onMouseEnter={(e) => {
-                                                        if (quizState === 'active') e.currentTarget.style.background = 'rgba(255,255,255,0.12)';
-                                                    }}
-                                                    onMouseLeave={(e) => {
-                                                        if (quizState === 'active') e.currentTarget.style.background = 'rgba(255,255,255,0.06)';
-                                                    }}
-                                                    >
+                                                    }}>
                                                         {quizState === 'answered' && isCorrect && <CheckCircle size={18} color="#30d158" style={{flexShrink: 0}}/>}
                                                         {quizState === 'answered' && !isCorrect && userChoice === opt && <XCircle size={18} color="#ff453a" style={{flexShrink: 0}}/>}
                                                         <span style={{flex: 1}}>{opt}</span>

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { X, Lock, User, ArrowRight } from 'lucide-react';
+import { X, Lock, User, ArrowRight, Code, GraduationCap } from 'lucide-react';
+import { SignIn } from '@clerk/clerk-react';
 
 const VALID_CREDENTIALS = [
     { username: 'CharanKumar@MG', password: 'Charan@MG' },
@@ -9,6 +9,7 @@ const VALID_CREDENTIALS = [
 ];
 
 export default function LoginModal({ isOpen, onClose, onSuccess }) {
+    const [activeTab, setActiveTab] = useState('student'); // 'developer' or 'student'
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -63,23 +64,54 @@ export default function LoginModal({ isOpen, onClose, onSuccess }) {
                     <X size={18} />
                 </button>
 
-                <div style={{ textAlign: 'center', marginBottom: '32px' }}>
-                    <div style={{
-                        width: '64px', height: '64px', borderRadius: '16px',
-                        background: 'linear-gradient(135deg, rgba(107,78,255,0.2) 0%, rgba(107,78,255,0.05) 100%)',
-                        display: 'flex', alignItems: 'center', justifyContent: 'center',
-                        margin: '0 auto 16px', border: '1px solid rgba(107,78,255,0.3)'
-                    }}>
-                        <Lock size={32} color="#6B4EFF" />
-                    </div>
-                    <h2 style={{ margin: '0 0 8px 0', color: '#fff', fontSize: '24px', fontWeight: 700 }}>Exclusive Access</h2>
-                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '14px' }}>
-                        Please enter your credentials to access the simulation library.
-                    </p>
+                <div style={{ display: 'flex', gap: '8px', marginBottom: '32px', background: 'rgba(255,255,255,0.05)', padding: '6px', borderRadius: '16px' }}>
+                    <button 
+                        onClick={() => setActiveTab('student')}
+                        style={{
+                            flex: 1, padding: '12px', borderRadius: '12px', border: 'none',
+                            background: activeTab === 'student' ? '#6B4EFF' : 'transparent',
+                            color: activeTab === 'student' ? '#fff' : 'rgba(255,255,255,0.6)',
+                            fontWeight: 600, fontSize: '14px', cursor: 'pointer',
+                            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                            transition: 'all 0.2s'
+                        }}
+                    >
+                        <GraduationCap size={18} /> Student Mode
+                    </button>
+                    <button 
+                        onClick={() => setActiveTab('developer')}
+                        style={{
+                            flex: 1, padding: '12px', borderRadius: '12px', border: 'none',
+                            background: activeTab === 'developer' ? 'rgba(255,255,255,0.1)' : 'transparent',
+                            color: activeTab === 'developer' ? '#fff' : 'rgba(255,255,255,0.6)',
+                            fontWeight: 600, fontSize: '14px', cursor: 'pointer',
+                            display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
+                            transition: 'all 0.2s'
+                        }}
+                    >
+                        <Code size={18} /> Developer Mode
+                    </button>
                 </div>
 
-                <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-                    <div style={{ position: 'relative' }}>
+                {activeTab === 'developer' ? (
+                    <>
+                        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+                            <div style={{
+                                width: '64px', height: '64px', borderRadius: '16px',
+                                background: 'linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.02) 100%)',
+                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                margin: '0 auto 16px', border: '1px solid rgba(255,255,255,0.2)'
+                            }}>
+                                <Code size={32} color="#fff" />
+                            </div>
+                            <h2 style={{ margin: '0 0 8px 0', color: '#fff', fontSize: '24px', fontWeight: 700 }}>Developer Access</h2>
+                            <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '14px' }}>
+                                Use root credentials to bypass all restrictions.
+                            </p>
+                        </div>
+
+                        <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                            <div style={{ position: 'relative' }}>
                         <div style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.4)' }}>
                             <User size={18} />
                         </div>
@@ -127,21 +159,27 @@ export default function LoginModal({ isOpen, onClose, onSuccess }) {
                         </div>
                     )}
 
-                    <button 
-                        type="submit"
-                        style={{
-                            width: '100%', padding: '16px', marginTop: '8px',
-                            background: '#6B4EFF', color: '#fff', border: 'none',
-                            borderRadius: '12px', fontSize: '16px', fontWeight: 600,
-                            cursor: 'pointer', display: 'flex', alignItems: 'center',
-                            justifyContent: 'center', gap: '8px', transition: 'background 0.2s'
-                        }}
-                        onMouseEnter={(e) => e.currentTarget.style.background = '#583bd6'}
-                        onMouseLeave={(e) => e.currentTarget.style.background = '#6B4EFF'}
-                    >
-                        Login <ArrowRight size={18} />
-                    </button>
-                </form>
+                            <button 
+                                type="submit"
+                                style={{
+                                    width: '100%', padding: '16px', marginTop: '8px',
+                                    background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)',
+                                    borderRadius: '12px', fontSize: '16px', fontWeight: 600,
+                                    cursor: 'pointer', display: 'flex', alignItems: 'center',
+                                    justifyContent: 'center', gap: '8px', transition: 'all 0.2s'
+                                }}
+                                onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.2)'}
+                                onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
+                            >
+                                Root Login <ArrowRight size={18} />
+                            </button>
+                        </form>
+                    </>
+                ) : (
+                    <div style={{ display: 'flex', justifyContent: 'center', margin: '0 -20px' }}>
+                        <SignIn routing="hash" />
+                    </div>
+                )}
             </div>
         </div>
     );

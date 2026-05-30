@@ -15,13 +15,16 @@ import PhysicsSimulationView from './components/PhysicsSimulationView';
 import MainLandingView from './components/MainLandingView';
 import AcademicsView from './components/AcademicsView';
 import SubjectContentView from './components/SubjectContentView';
+import PricingView from './components/PricingView';
 import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut } from 'lucide-react';
+import { useUser, UserButton } from '@clerk/clerk-react';
 import LoginModal from './components/LoginModal';
 import { useLanguage } from './LanguageContext';
 
 function App() {
   const { currentLanguage, toggleLanguage, t } = useLanguage();
-  const [appMode, setAppMode] = useState('root'); // 'root', 'academics', 'subject_content', 'simulations'
+  const { isSignedIn } = useUser();
+  const [appMode, setAppMode] = useState('root'); // 'root', 'academics', 'subject_content', 'simulations', 'pricing'
   const [activeSubject, setActiveSubject] = useState(null);
   const [isLanding, setIsLanding] = useState(true);
   const [activeModule, setActiveModule] = useState(null);
@@ -87,12 +90,18 @@ function App() {
   };
 
   const handleAuthRequiredNavigation = (module) => {
-    if (!isAuthenticated) {
-      setShowLoginModal(true);
-      return;
-    }
     setIsLanding(false);
     setActiveModule(module);
+  };
+
+  const handleLockedItemClick = (onSuccess) => {
+    if (isAuthenticated) {
+      onSuccess();
+    } else if (isSignedIn) {
+      setAppMode('pricing');
+    } else {
+      setShowLoginModal(true);
+    }
   };
 
   const handleLogout = () => {
@@ -157,24 +166,38 @@ function App() {
             </button>
 
             {isAuthenticated ? (
-              <button
-                onClick={handleLogout}
-                style={{
-                  background: 'var(--accent)',
-                  border: 'none',
-                  borderRadius: '20px',
-                  padding: '8px 20px',
-                  color: '#fff',
-                  cursor: 'pointer',
-                  fontWeight: 600,
-                  fontSize: '14px',
-                  display: 'flex', alignItems: 'center', gap: '8px',
-                  transition: 'all 0.2s ease',
-                  marginLeft: '8px'
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px' }}>Root Admin</span>
+                <button
+                  onClick={handleLogout}
+                  style={{
+                    background: 'var(--accent)',
+                    border: 'none',
+                    borderRadius: '20px',
+                    padding: '8px 20px',
+                    color: '#fff',
+                    cursor: 'pointer',
+                    fontWeight: 600,
+                    fontSize: '14px',
+                    display: 'flex', alignItems: 'center', gap: '8px',
+                    transition: 'all 0.2s ease'
+                  }}
+                >
+                  Logout <LogOut size={16} />
+                </button>
+              </div>
+            ) : isSignedIn ? (
+              <UserButton 
+                afterSignOutUrl="/"
+                appearance={{
+                  elements: {
+                    userButtonAvatarBox: {
+                      width: '40px',
+                      height: '40px'
+                    }
+                  }
                 }}
-              >
-                Logout <LogOut size={16} />
-              </button>
+              />
             ) : (
               <button
                 onClick={() => setShowLoginModal(true)}
@@ -217,14 +240,9 @@ function App() {
 
       {/* Main Routing */}
       {appMode === 'root' ? (
-        <MainLandingView onSelectRoute={(route) => {
-          if (route === 'simulations') {
-            handleAuthRequiredNavigation('all');
-            setAppMode('simulations');
-          } else {
-            setAppMode(route);
-          }
-        }} />
+        <MainLandingView onSelectRoute={setAppMode} />
+      ) : appMode === 'pricing' ? (
+        <PricingView onBack={() => setAppMode('simulations')} />
       ) : appMode === 'academics' ? (
         <AcademicsView onSelectSubject={(subject) => {
           setActiveSubject(subject);
@@ -242,11 +260,11 @@ function App() {
         isLanding ? (
           <LandingView onEnter={handleAuthRequiredNavigation} />
         ) : activeModule === 'maths' ? (
-          <MathsSimulationView onBack={handleBackToSimulations} />
+          <MathsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} />
         ) : activeModule === 'chemistry' ? (
-          <ChemistrySimulationView onBack={handleBackToSimulations} />
+          <ChemistrySimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} />
         ) : activeModule === 'physics' ? (
-          <PhysicsSimulationView onBack={handleBackToSimulations} />
+          <PhysicsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} />
         ) : activeModule === 'biology' && isAccountView ? (
           <AccountView />
         ) : activeModule === 'biology' && !activeSystemId ? (
