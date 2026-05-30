@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { X, Lock, User, ArrowRight, Code, GraduationCap } from 'lucide-react';
 import { SignIn } from '@clerk/clerk-react';
+import { dark } from '@clerk/themes';
 
 const VALID_CREDENTIALS = [
     { username: 'CharanKumar@MG', password: 'Charan@MG' },
@@ -178,7 +179,55 @@ export default function LoginModal({ isOpen, onClose, onSuccess }) {
                     </>
                 ) : (
                     <div style={{ display: 'flex', justifyContent: 'center', margin: '0 -20px' }}>
-                        <SignIn routing="hash" />
+                        <SignIn 
+                            routing="hash" 
+                            appearance={{
+                                baseTheme: dark,
+                                variables: {
+                                    colorPrimary: '#6B4EFF',
+                                    colorBackground: 'transparent',
+                                    colorInputBackground: 'rgba(255,255,255,0.05)',
+                                    colorInputText: '#fff',
+                                    colorText: '#fff',
+                                },
+                                elements: {
+                                    card: {
+                                        boxShadow: 'none',
+                                        background: 'transparent',
+                                    },
+                                    headerTitle: {
+                                        fontSize: '24px',
+                                        fontWeight: '700',
+                                    },
+                                    headerSubtitle: {
+                                        color: 'rgba(255,255,255,0.6)',
+                                    },
+                                    socialButtonsBlockButton: {
+                                        backgroundColor: 'rgba(255,255,255,0.05)',
+                                        border: '1px solid rgba(255,255,255,0.1)',
+                                        transition: 'all 0.2s',
+                                        '&:hover': {
+                                            backgroundColor: 'rgba(255,255,255,0.1)',
+                                        }
+                                    },
+                                    formButtonPrimary: {
+                                        backgroundColor: '#6B4EFF',
+                                        '&:hover': {
+                                            backgroundColor: '#583bd6',
+                                        }
+                                    },
+                                    footerActionText: {
+                                        color: 'rgba(255,255,255,0.6)',
+                                    },
+                                    footerActionLink: {
+                                        color: '#6B4EFF',
+                                        '&:hover': {
+                                            color: '#8b75ff',
+                                        }
+                                    }
+                                }
+                            }}
+                        />
                     </div>
                 )}
             </div>
