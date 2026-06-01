@@ -136,10 +136,10 @@ export default function CustomPendulumLab() {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
+            <div style={{ display: 'flex', flex: 1, overflow: 'hidden', height: '100%', minHeight: 0 }}>
                 
                 {/* SVG Canvas Area */}
-                <div style={{ flex: 1, position: 'relative', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ flex: 1, position: 'relative', height: '100%', minHeight: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     
                     {/* Background Grid for visual context */}
                     <div style={{
@@ -148,7 +148,7 @@ export default function CustomPendulumLab() {
                         backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)'
                     }}></div>
 
-                    <svg width="100%" height="100%" viewBox="-250 -50 500 500" preserveAspectRatio="xMidYMin meet" style={{ position: 'relative', zIndex: 2 }}>
+                    <svg viewBox="-250 -50 500 500" preserveAspectRatio="xMidYMin meet" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', zIndex: 2 }}>
                         {/* Pivot Mount */}
                         <rect x="-30" y="-10" width="60" height="10" fill="rgba(255,255,255,0.1)" rx="4" />
                         <circle cx="0" cy="0" r="4" fill="#0a84ff" />
