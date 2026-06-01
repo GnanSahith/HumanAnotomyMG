@@ -245,29 +245,29 @@ export default function CustomProjectileMotion() {
                             {/* Ground */}
                             <rect x="-400" y="0" width="2800" height="250" fill="rgba(19, 46, 27, 0.6)" />
                             {/* Distance Markers */}
-                            <image href="/assets/projectile_motion/6_Distance_Markers.png" x="-400" y="-10" width="2800" height="60" preserveAspectRatio="none" />
+                            <image href="/assets/projectile_motion/6_Distance_Markers.png" x="-400" y="-10" width="2800" height="120" preserveAspectRatio="none" />
                         </g>
 
                         {/* Outer Border Stroke */}
                         <rect x="-400" y="-1050" width="2800" height="1300" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="6" rx="24" />
                         
                         {/* Target on ground (BasketBall Hoop) */}
-                        <image href="/assets/projectile_motion/4.BasketBallHoop.png" x={25 * scale - 60} y="-150" width="120" height="150" preserveAspectRatio="xMidYMid meet" />
+                        <image href="/assets/projectile_motion/4.BasketBallHoop.png" x={25 * scale - 120} y="-250" width="240" height="280" preserveAspectRatio="xMidYMid meet" />
 
                         {/* Pedestal */}
                         {height > 0 && (
-                            <image href="/assets/projectile_motion/3_Tower.png" x="-80" y={-(height * scale)} width="160" height={height * scale + 30} preserveAspectRatio="none" />
+                            <image href="/assets/projectile_motion/3_Tower.png" x="-120" y={-(height * scale)} width="240" height={height * scale + 50} preserveAspectRatio="none" />
                         )}
 
                         {/* Launcher Base (Non-rotating) */}
                         <g transform={`translate(0, ${-(height * scale)})`}>
-                            <image href="/assets/projectile_motion/1A_LauncherBase.png" x="-50" y="-50" width="100" height="100" />
+                            <image href="/assets/projectile_motion/1A_LauncherBase.png" x="-120" y="-120" width="240" height="240" preserveAspectRatio="xMidYMid meet" />
                         </g>
 
                         {/* Launcher Barrel (Rotating) */}
                         <g transform={`translate(0, ${-(height * scale)}) rotate(${-angle})`}>
                             {/* The barrel image needs to pivot around its left side, so we offset x appropriately */}
-                            <image href="/assets/projectile_motion/1B_LauncherBarrel.png" x="-40" y="-40" width="160" height="80" />
+                            <image href="/assets/projectile_motion/1B_LauncherBarrel.png" x="-60" y="-60" width="300" height="120" preserveAspectRatio="xMidYMid meet" />
                         </g>
 
                         {/* Trail */}
@@ -287,7 +287,7 @@ export default function CustomProjectileMotion() {
 
                         {/* Projectile (Basketball) */}
                         {(() => {
-                            const visualRadius = Math.max(30, diameter * 50);
+                            const visualRadius = Math.max(60, diameter * 100);
                             return (
                                 <image 
                                     href="/assets/projectile_motion/2_BasketBall.png" 
