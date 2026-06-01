@@ -1,5 +1,12 @@
 {
     "phys_1": {
+        "title": "Projectile Motion",
+        "description": "Interactive Projectile Motion simulation",
+        "url": "/simulations/projectile-motion_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_1_mg": {
         "title": "Projectile Motion MG",
         "description": "Interactive Projectile Motion simulation (Native Custom Build)",
         "url": "/simulations/projectile-motion_en.html",
@@ -44,6 +51,13 @@
     },
     "phys_7": {
         "title": "Pendulum Lab",
+        "description": "Interactive Pendulum Lab simulation",
+        "url": "/simulations/pendulum-lab_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab-600.png",
+        "category": "Motion & Mechanics"
+    },
+    "phys_7_mg": {
+        "title": "Pendulum Lab MG",
         "description": "Interactive Pendulum Lab simulation (Native Custom Build)",
         "url": "/simulations/pendulum-lab_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab-600.png",

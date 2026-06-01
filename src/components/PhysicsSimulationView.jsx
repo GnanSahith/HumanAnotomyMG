@@ -123,7 +123,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             position: 'relative'
                         }}>
                         {activeSimulation.isNative ? (
-                            activeSimulation.id === 'phys_1' ? <CustomProjectileMotion /> : <CustomPendulumLab />
+                            activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion /> : <CustomPendulumLab />
                         ) : (
                             <>
                                 <iframe 
