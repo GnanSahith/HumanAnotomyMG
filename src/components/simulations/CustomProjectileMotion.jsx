@@ -153,9 +153,10 @@ export default function CustomProjectileMotion() {
         const vY = -compY * scaleFactor; // Invert Y for SVG
         if (Math.hypot(vX, vY) < 1) return null;
         
+        const markerId = color === '#00f0ff' ? 'cyan' : 'red';
         return (
             <g>
-                <line x1={startX} y1={startY} x2={startX + vX} y2={startY + vY} stroke={color} strokeWidth="6" markerEnd={`url(#arrowhead-${color})`} />
+                <line x1={startX} y1={startY} x2={startX + vX} y2={startY + vY} stroke={color} strokeWidth="6" markerEnd={`url(#arrowhead-${markerId})`} />
             </g>
         );
     };
@@ -219,10 +220,10 @@ export default function CustomProjectileMotion() {
                                 <stop offset="100%" stopColor="#ff9f0a" />
                             </radialGradient>
                             
-                            <marker id="arrowhead-#00f0ff" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                            <marker id="arrowhead-cyan" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
                                 <polygon points="0 0, 6 3, 0 6" fill="#00f0ff" />
                             </marker>
-                            <marker id="arrowhead-#ff375f" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+                            <marker id="arrowhead-red" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
                                 <polygon points="0 0, 6 3, 0 6" fill="#ff375f" />
                             </marker>
 
