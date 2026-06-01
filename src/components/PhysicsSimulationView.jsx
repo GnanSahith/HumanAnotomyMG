@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ArrowLeft, PlayCircle, Atom, Search, X, Lock } from 'lucide-react';
 import physicsSimulations from '../data/physicsSimulations.json';
 import { useLanguage } from '../LanguageContext';
+import CustomPendulumLab from './simulations/CustomPendulumLab';
 
 export default function PhysicsSimulationView({ onBack, handleLockedItemClick }) {
     const { t } = useLanguage();
@@ -120,25 +121,31 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             height: '100%',
                             position: 'relative'
                         }}>
-                        <iframe 
-                            src={activeSimulation.url} 
-                            width="100%" 
-                            height="100%" 
-                            style={{ border: 'none' }}
-                            allowFullScreen
-                            title={activeSimulation.title}
-                        ></iframe>
-                        
-                        {/* Hides the PhET logo in the bottom right corner */}
-                        <div style={{
-                            position: 'absolute',
-                            bottom: 0,
-                            right: 0,
-                            width: '160px',
-                            height: '45px',
-                            background: '#000',
-                            zIndex: 10
-                        }}></div>
+                        {activeSimulation.isNative ? (
+                            <CustomPendulumLab />
+                        ) : (
+                            <>
+                                <iframe 
+                                    src={activeSimulation.url} 
+                                    width="100%" 
+                                    height="100%" 
+                                    style={{ border: 'none' }}
+                                    allowFullScreen
+                                    title={activeSimulation.title}
+                                ></iframe>
+                                
+                                {/* Hides the PhET logo in the bottom right corner */}
+                                <div style={{
+                                    position: 'absolute',
+                                    bottom: 0,
+                                    right: 0,
+                                    width: '160px',
+                                    height: '45px',
+                                    background: '#000',
+                                    zIndex: 10
+                                }}></div>
+                            </>
+                        )}
 
                         {/* Loading Screen Overlay to hide PhET splash screen */}
                         {isLoadingSim && (

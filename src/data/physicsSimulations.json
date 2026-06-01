@@ -43,10 +43,11 @@
     },
     "phys_7": {
         "title": "Pendulum Lab",
-        "description": "Interactive Pendulum Lab simulation",
+        "description": "Interactive Pendulum Lab simulation (Native Custom Build)",
         "url": "/simulations/pendulum-lab_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab-600.png",
-        "category": "Motion & Mechanics"
+        "category": "Motion & Mechanics",
+        "isNative": true
     },
     "phys_8": {
         "title": "Balancing Act",
