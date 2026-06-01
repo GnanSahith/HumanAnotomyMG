@@ -238,32 +238,36 @@ export default function CustomProjectileMotion() {
                         </clipPath>
                         <g clipPath="url(#simBoxClip)">
                             {/* Sky */}
-                            <rect x="-400" y="-1050" width="2800" height="1050" fill="#151522" />
+                            <image href="/assets/projectile_motion/10_Sky_BackGround.png" x="-400" y="-1050" width="2800" height="1300" preserveAspectRatio="xMidYMid slice" />
                             {/* Sky Grid */}
                             <rect x="-400" y="-1050" width="2800" height="1050" fill="url(#svgGrid)" />
                             
                             {/* Ground */}
-                            <rect x="-400" y="0" width="2800" height="250" fill="#132e1b" />
-                            {/* Grass line */}
-                            <line x1="-400" y1="0" x2="2400" y2="0" stroke="#30d158" strokeWidth="6" />
+                            <rect x="-400" y="0" width="2800" height="250" fill="rgba(19, 46, 27, 0.6)" />
+                            {/* Distance Markers */}
+                            <image href="/assets/projectile_motion/6_Distance_Markers.png" x="-400" y="-10" width="2800" height="60" preserveAspectRatio="none" />
                         </g>
 
                         {/* Outer Border Stroke */}
                         <rect x="-400" y="-1050" width="2800" height="1300" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="6" rx="24" />
                         
-                        {/* Target on ground (e.g. at 25m) */}
-                        <ellipse cx={25 * scale} cy="0" rx="30" ry="10" fill="rgba(255,55,95,0.3)" stroke="#ff375f" strokeWidth="4" />
-                        <ellipse cx={25 * scale} cy="0" rx="10" ry="3" fill="#ff375f" />
+                        {/* Target on ground (BasketBall Hoop) */}
+                        <image href="/assets/projectile_motion/4.BasketBallHoop.png" x={25 * scale - 60} y="-150" width="120" height="150" preserveAspectRatio="xMidYMid meet" />
 
                         {/* Pedestal */}
                         {height > 0 && (
-                            <rect x="-40" y={-(height * scale)} width="80" height={height * scale} fill="rgba(255,255,255,0.15)" rx="4" />
+                            <image href="/assets/projectile_motion/3_Tower.png" x="-80" y={-(height * scale)} width="160" height={height * scale + 30} preserveAspectRatio="none" />
                         )}
 
-                        {/* Launcher */}
+                        {/* Launcher Base (Non-rotating) */}
+                        <g transform={`translate(0, ${-(height * scale)})`}>
+                            <image href="/assets/projectile_motion/1A_LauncherBase.png" x="-50" y="-50" width="100" height="100" />
+                        </g>
+
+                        {/* Launcher Barrel (Rotating) */}
                         <g transform={`translate(0, ${-(height * scale)}) rotate(${-angle})`}>
-                            <rect x="-30" y="-30" width="130" height="60" fill="rgba(255,255,255,0.1)" rx="12" />
-                            <circle cx="0" cy="0" r="38" fill="var(--accent)" />
+                            {/* The barrel image needs to pivot around its left side, so we offset x appropriately */}
+                            <image href="/assets/projectile_motion/1B_LauncherBarrel.png" x="-40" y="-40" width="160" height="80" />
                         </g>
 
                         {/* Trail */}
@@ -281,15 +285,21 @@ export default function CustomProjectileMotion() {
                         {showVelocity && renderVector(projectilePos.x, -projectilePos.y, vectors.vx, vectors.vy, '#00f0ff', 4)}
                         {showAcceleration && renderVector(projectilePos.x, -projectilePos.y, vectors.ax, vectors.ay, '#ff375f', 12)}
 
-                        {/* Projectile */}
-                        <circle 
-                            cx={projectilePos.x} 
-                            cy={-projectilePos.y}
-                            r={Math.max(20, diameter * 50)} // Scale visual radius slightly by diameter
-                            fill="url(#projectileGradient)" 
-                            filter="drop-shadow(0 0 10px rgba(255,159,10,0.6))"
-                        />
-                        <circle cx={projectilePos.x - 8} cy={-projectilePos.y - 8} r="8" fill="rgba(255,255,255,0.6)" />
+                        {/* Projectile (Basketball) */}
+                        {(() => {
+                            const visualRadius = Math.max(30, diameter * 50);
+                            return (
+                                <image 
+                                    href="/assets/projectile_motion/2_BasketBall.png" 
+                                    x={projectilePos.x - visualRadius} 
+                                    y={-projectilePos.y - visualRadius} 
+                                    width={visualRadius * 2} 
+                                    height={visualRadius * 2} 
+                                    preserveAspectRatio="xMidYMid meet"
+                                    filter="drop-shadow(0 10px 20px rgba(0,0,0,0.5))"
+                                />
+                            );
+                        })()}
                     </svg>
 
                 </div>
