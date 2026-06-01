@@ -210,9 +210,9 @@ export default function CustomProjectileMotion() {
 
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden', height: '100%', minHeight: 0 }}>
                 {/* SVG Canvas */}
-                <div style={{ flex: 1, position: 'relative', height: '100%', minHeight: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
+                <div style={{ flex: 1, position: 'relative', height: '100%', minHeight: 0 }}>
                     
-                    <svg viewBox="-400 -1050 2800 1300" preserveAspectRatio="xMidYMid meet" style={{ width: '100%', height: '100%', zIndex: 2, filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.5))' }}>
+                    <svg viewBox="-400 -1050 2800 1300" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', top: 24, left: 24, width: 'calc(100% - 48px)', height: 'calc(100% - 48px)', zIndex: 2 }}>
                         
                         <defs>
                             <radialGradient id="projectileGradient" cx="30%" cy="30%" r="70%">
