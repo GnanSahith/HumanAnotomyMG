@@ -139,7 +139,7 @@ export default function CustomPendulumLab() {
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
                 
                 {/* SVG Canvas Area */}
-                <div style={{ flex: 1, position: 'relative' }}>
+                <div style={{ flex: 1, position: 'relative', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     
                     {/* Background Grid for visual context */}
                     <div style={{

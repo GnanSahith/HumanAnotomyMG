@@ -141,7 +141,7 @@ export default function CustomProjectileMotion() {
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden' }}>
                 
                 {/* SVG Canvas Area */}
-                <div style={{ flex: 1, position: 'relative' }}>
+                <div style={{ flex: 1, position: 'relative', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     
                     {/* Background Grid for visual context */}
                     <div style={{
@@ -150,7 +150,7 @@ export default function CustomProjectileMotion() {
                         backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)'
                     }}></div>
 
-                    <svg width="100%" height="100%" viewBox="-50 -450 800 600" preserveAspectRatio="xMidYMid meet" style={{ position: 'relative', zIndex: 2 }}>
+                    <svg width="100%" height="100%" viewBox="-100 -500 900 700" preserveAspectRatio="xMidYMid meet" style={{ position: 'relative', zIndex: 2 }}>
                         {/* Ground */}
                         <line x1="-50" y1="0" x2="800" y2="0" stroke="rgba(255,255,255,0.2)" strokeWidth="4" />
                         
