@@ -212,7 +212,7 @@ export default function CustomProjectileMotion() {
                 {/* SVG Canvas */}
                 <div style={{ flex: 1, position: 'relative', height: '100%', minHeight: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
                     
-                    <svg viewBox="-150 -1050 2200 1300" preserveAspectRatio="xMidYMid meet" style={{ width: '100%', height: '100%', zIndex: 2 }}>
+                    <svg viewBox="-400 -1050 2800 1300" preserveAspectRatio="xMidYMid meet" style={{ width: '100%', height: '100%', zIndex: 2, filter: 'drop-shadow(0 20px 40px rgba(0,0,0,0.5))' }}>
                         
                         <defs>
                             <radialGradient id="projectileGradient" cx="30%" cy="30%" r="70%">
@@ -232,12 +232,24 @@ export default function CustomProjectileMotion() {
                             </pattern>
                         </defs>
 
-                        {/* Simulation Border Box */}
-                        <rect x="-150" y="-1050" width="2200" height="1300" fill="url(#svgGrid)" rx="16" />
-                        <rect x="-150" y="-1050" width="2200" height="1300" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="8" rx="16" />
+                        {/* Simulation Physical Box (Sky & Ground) */}
+                        <clipPath id="simBoxClip">
+                            <rect x="-400" y="-1050" width="2800" height="1300" rx="24" />
+                        </clipPath>
+                        <g clipPath="url(#simBoxClip)">
+                            {/* Sky */}
+                            <rect x="-400" y="-1050" width="2800" height="1050" fill="#151522" />
+                            {/* Sky Grid */}
+                            <rect x="-400" y="-1050" width="2800" height="1050" fill="url(#svgGrid)" />
+                            
+                            {/* Ground */}
+                            <rect x="-400" y="0" width="2800" height="250" fill="#132e1b" />
+                            {/* Grass line */}
+                            <line x1="-400" y1="0" x2="2400" y2="0" stroke="#30d158" strokeWidth="6" />
+                        </g>
 
-                        {/* Ground Rectangle */}
-                        <rect x="-150" y="0" width="2200" height="250" fill="rgba(48, 209, 88, 0.15)" stroke="#30d158" strokeWidth="4" />
+                        {/* Outer Border Stroke */}
+                        <rect x="-400" y="-1050" width="2800" height="1300" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="6" rx="24" />
                         
                         {/* Target on ground (e.g. at 25m) */}
                         <ellipse cx={25 * scale} cy="0" rx="30" ry="10" fill="rgba(255,55,95,0.3)" stroke="#ff375f" strokeWidth="4" />
