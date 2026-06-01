@@ -12,9 +12,9 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
     const [isLoadingSim, setIsLoadingSim] = useState(false);
 
 
-    const filteredSimulations = Object.values(physicsSimulations).filter(sim => 
-        sim.title.toLowerCase().includes(searchQuery.toLowerCase())
-    );
+    const filteredSimulations = Object.entries(physicsSimulations)
+        .map(([id, sim]) => ({ ...sim, id }))
+        .filter(sim => sim.title.toLowerCase().includes(searchQuery.toLowerCase()));
 
     return (
         <div className="maths-sim-container fade-in" style={{ 
