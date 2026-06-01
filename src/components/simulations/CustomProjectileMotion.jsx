@@ -209,16 +209,9 @@ export default function CustomProjectileMotion() {
 
             <div style={{ display: 'flex', flex: 1, overflow: 'hidden', height: '100%', minHeight: 0 }}>
                 {/* SVG Canvas */}
-                <div style={{ flex: 1, position: 'relative', height: '100%', minHeight: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ flex: 1, position: 'relative', height: '100%', minHeight: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
                     
-                    {/* Background Grid */}
-                    <div style={{
-                        position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
-                        backgroundSize: '40px 40px',
-                        backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)'
-                    }}></div>
-
-                    <svg viewBox="-150 -1050 2200 1300" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', zIndex: 2 }}>
+                    <svg viewBox="-150 -1050 2200 1300" preserveAspectRatio="xMidYMid meet" style={{ width: '100%', height: '100%', zIndex: 2 }}>
                         
                         <defs>
                             <radialGradient id="projectileGradient" cx="30%" cy="30%" r="70%">
@@ -232,10 +225,18 @@ export default function CustomProjectileMotion() {
                             <marker id="arrowhead-#ff375f" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
                                 <polygon points="0 0, 6 3, 0 6" fill="#ff375f" />
                             </marker>
+
+                            <pattern id="svgGrid" width="50" height="50" patternUnits="userSpaceOnUse">
+                                <path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="2"/>
+                            </pattern>
                         </defs>
 
-                        {/* Ground */}
-                        <line x1="-150" y1="0" x2="3000" y2="0" stroke="rgba(255,255,255,0.2)" strokeWidth="16" />
+                        {/* Simulation Border Box */}
+                        <rect x="-150" y="-1050" width="2200" height="1300" fill="url(#svgGrid)" rx="16" />
+                        <rect x="-150" y="-1050" width="2200" height="1300" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="8" rx="16" />
+
+                        {/* Ground Rectangle */}
+                        <rect x="-150" y="0" width="2200" height="250" fill="rgba(48, 209, 88, 0.15)" stroke="#30d158" strokeWidth="4" />
                         
                         {/* Target on ground (e.g. at 25m) */}
                         <ellipse cx={25 * scale} cy="0" rx="30" ry="10" fill="rgba(255,55,95,0.3)" stroke="#ff375f" strokeWidth="4" />
