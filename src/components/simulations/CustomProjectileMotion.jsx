@@ -13,6 +13,7 @@ export default function CustomProjectileMotion() {
     const timeRef = useRef(0);
     const lastTimeRef = useRef(0);
     const requestRef = useRef(null);
+    const lastPathPosRef = useRef({ x: 0, y: 0 });
 
     // Visual State
     const [projectilePos, setProjectilePos] = useState({ x: 0, y: 0 });
@@ -47,8 +48,11 @@ export default function CustomProjectileMotion() {
 
         setProjectilePos({ x: visualX, y: visualY });
         
-        // Add to path trace every few frames to save memory
-        if (Math.random() > 0.5) {
+        // Add to path trace cleanly using distance threshold for a smooth trail
+        const dx = visualX - lastPathPosRef.current.x;
+        const dy = visualY - lastPathPosRef.current.y;
+        if (dx * dx + dy * dy > 1600) { // 40 units spacing
+            lastPathPosRef.current = { x: visualX, y: visualY };
             setPath(prev => [...prev, { x: visualX, y: visualY }]);
         }
 
@@ -83,6 +87,7 @@ export default function CustomProjectileMotion() {
         timeRef.current = 0;
         setProjectilePos({ x: 0, y: 0 });
         setPath([]);
+        lastPathPosRef.current = { x: 0, y: 0 };
     };
 
     return (
@@ -150,26 +155,36 @@ export default function CustomProjectileMotion() {
                         backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)'
                     }}></div>
 
-                    <svg viewBox="-100 -500 900 700" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', zIndex: 2 }}>
+                    <svg viewBox="-150 -1050 2200 1300" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', zIndex: 2 }}>
                         {/* Ground */}
-                        <line x1="-50" y1="0" x2="800" y2="0" stroke="rgba(255,255,255,0.2)" strokeWidth="4" />
+                        <line x1="-150" y1="0" x2="3000" y2="0" stroke="rgba(255,255,255,0.2)" strokeWidth="16" />
                         
                         {/* Launcher (Cannon visual) */}
                         <g transform={`translate(0, 0) rotate(${-angle})`}>
-                            <rect x="-10" y="-10" width="40" height="20" fill="rgba(255,255,255,0.1)" rx="4" />
-                            <circle cx="0" cy="0" r="12" fill="var(--accent)" />
+                            <rect x="-30" y="-30" width="130" height="60" fill="rgba(255,255,255,0.1)" rx="12" />
+                            <circle cx="0" cy="0" r="38" fill="var(--accent)" />
                         </g>
 
                         {/* Trail */}
-                        {path.map((p, i) => (
-                            <circle key={i} cx={p.x} cy={-p.y} r="2" fill="rgba(10,132,255,0.4)" />
-                        ))}
+                        {path.map((p, i) => {
+                            const progress = i / path.length;
+                            const coreOpacity = 0.2 + progress * 0.8;
+                            const glowOpacity = 0.05 + progress * 0.25;
+                            return (
+                                <g key={i}>
+                                    {/* Neon Glow */}
+                                    <circle cx={p.x} cy={-p.y} r="24" fill={`rgba(0, 240, 255, ${glowOpacity})`} />
+                                    {/* Bright Core */}
+                                    <circle cx={p.x} cy={-p.y} r="6" fill={`rgba(255, 255, 255, ${coreOpacity})`} />
+                                </g>
+                            );
+                        })}
                         
                         {/* Projectile */}
                         <circle 
                             cx={projectilePos.x} 
                             cy={-projectilePos.y} // SVG y-axis is inverted (0 is top)
-                            r="10" 
+                            r="34" 
                             fill="url(#projectileGradient)" 
                             filter="drop-shadow(0 0 10px rgba(255,159,10,0.6))"
                         />

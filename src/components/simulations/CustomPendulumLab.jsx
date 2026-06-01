@@ -148,30 +148,30 @@ export default function CustomPendulumLab() {
                         backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)'
                     }}></div>
 
-                    <svg viewBox="-250 -50 500 500" preserveAspectRatio="xMidYMin meet" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', zIndex: 2 }}>
+                    <svg viewBox="-200 -50 400 450" preserveAspectRatio="xMidYMin meet" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', zIndex: 2 }}>
                         {/* Pivot Mount */}
-                        <rect x="-30" y="-10" width="60" height="10" fill="rgba(255,255,255,0.1)" rx="4" />
-                        <circle cx="0" cy="0" r="4" fill="#0a84ff" />
+                        <rect x="-45" y="-15" width="90" height="15" fill="rgba(255,255,255,0.1)" rx="6" />
+                        <circle cx="0" cy="0" r="6" fill="#0a84ff" />
                         
                         {/* String */}
                         <line 
                             x1="0" y1="0" 
                             x2={bobPos.x} y2={bobPos.y} 
                             stroke="rgba(255,255,255,0.4)" 
-                            strokeWidth="2" 
+                            strokeWidth="4" 
                         />
                         
                         {/* Bob (Mass) */}
                         <circle 
                             cx={bobPos.x} 
                             cy={bobPos.y} 
-                            r={Math.max(10, mass * 15)} // Radius scales visually with mass
+                            r={Math.max(15, mass * 25)} // Radius scales visually with mass
                             fill="url(#bobGradient)" 
                             filter="drop-shadow(0 10px 20px rgba(10,132,255,0.4))"
                         />
                         
                         {/* Highlight dot on bob */}
-                        <circle cx={bobPos.x - (mass*3)} cy={bobPos.y - (mass*3)} r={Math.max(2, mass * 3)} fill="rgba(255,255,255,0.6)" />
+                        <circle cx={bobPos.x - (mass*5)} cy={bobPos.y - (mass*5)} r={Math.max(3, mass * 5)} fill="rgba(255,255,255,0.6)" />
 
                         <defs>
                             <radialGradient id="bobGradient" cx="30%" cy="30%" r="70%">
