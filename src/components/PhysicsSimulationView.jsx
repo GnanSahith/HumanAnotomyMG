@@ -3,6 +3,7 @@ import { ArrowLeft, PlayCircle, Atom, Search, X, Lock } from 'lucide-react';
 import physicsSimulations from '../data/physicsSimulations.json';
 import { useLanguage } from '../LanguageContext';
 import CustomPendulumLab from './simulations/CustomPendulumLab';
+import CustomProjectileMotion from './simulations/CustomProjectileMotion';
 
 export default function PhysicsSimulationView({ onBack, handleLockedItemClick }) {
     const { t } = useLanguage();
@@ -122,7 +123,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             position: 'relative'
                         }}>
                         {activeSimulation.isNative ? (
-                            <CustomPendulumLab />
+                            activeSimulation.id === 'phys_1' ? <CustomProjectileMotion /> : <CustomPendulumLab />
                         ) : (
                             <>
                                 <iframe 

@@ -1,10 +1,11 @@
 {
     "phys_1": {
-        "title": "Projectile Motion",
-        "description": "Interactive Projectile Motion simulation",
+        "title": "Projectile Motion MG",
+        "description": "Interactive Projectile Motion simulation (Native Custom Build)",
         "url": "/simulations/projectile-motion_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion-600.png",
-        "category": "Motion & Mechanics"
+        "category": "Motion & Mechanics",
+        "isNative": true
     },
     "phys_2": {
         "title": "Forces and Motion: Basics",
