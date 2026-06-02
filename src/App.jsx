@@ -36,6 +36,9 @@ function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
     return localStorage.getItem('human_anatomy_auth') === 'true';
   });
+  const [loggedInUsername, setLoggedInUsername] = useState(() => {
+    return localStorage.getItem('logged_in_username') || '';
+  });
   const [showLoginModal, setShowLoginModal] = useState(false);
   const dropdownRef = useRef(null);
 
@@ -106,7 +109,9 @@ function App() {
 
   const handleLogout = () => {
     localStorage.removeItem('human_anatomy_auth');
+    localStorage.removeItem('logged_in_username');
     setIsAuthenticated(false);
+    setLoggedInUsername('');
     handleReturnToPortal();
   };
 
@@ -258,7 +263,7 @@ function App() {
         />
       ) : appMode === 'simulations' ? (
         isLanding ? (
-          <LandingView onEnter={handleAuthRequiredNavigation} />
+          <LandingView onEnter={handleAuthRequiredNavigation} loggedInUsername={loggedInUsername} />
         ) : activeModule === 'maths' ? (
           <MathsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} />
         ) : activeModule === 'chemistry' ? (
@@ -298,9 +303,13 @@ function App() {
       <LoginModal 
         isOpen={showLoginModal} 
         onClose={() => setShowLoginModal(false)}
-        onSuccess={() => {
+        onSuccess={(username) => {
           setIsAuthenticated(true);
           localStorage.setItem('human_anatomy_auth', 'true');
+          if (username) {
+              localStorage.setItem('logged_in_username', username);
+              setLoggedInUsername(username);
+          }
           setShowLoginModal(false);
         }}
       />

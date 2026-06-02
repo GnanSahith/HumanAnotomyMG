@@ -7,11 +7,12 @@ const VALID_CREDENTIALS = [
     { username: 'CharanKumar@MG', password: 'Charan@MG' },
     { username: 'SandhyaRekha@MG', password: 'Sandhya@MG' },
     { username: 'GnanSahith@MG', password: 'Gnan@MG' },
-    { username: 'VishnuKranthi@MG', password: 'Vishnu@MG' }
+    { username: 'VishnuKranthi@MG', password: 'Vishnu@MG' },
+    { username: 'MyGnanAD', password: 'Charan@123' }
 ];
 
 export default function LoginModal({ isOpen, onClose, onSuccess }) {
-    const [activeTab, setActiveTab] = useState('student'); // 'developer' or 'student'
+    const [activeTab, setActiveTab] = useState('student'); // 'administrator' or 'student'
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
@@ -26,7 +27,7 @@ export default function LoginModal({ isOpen, onClose, onSuccess }) {
 
         if (isValid) {
             setError('');
-            onSuccess();
+            onSuccess(username);
         } else {
             setError('Invalid username or password');
         }
@@ -81,21 +82,21 @@ export default function LoginModal({ isOpen, onClose, onSuccess }) {
                         <GraduationCap size={18} /> Student Mode
                     </button>
                     <button 
-                        onClick={() => setActiveTab('developer')}
+                        onClick={() => setActiveTab('administrator')}
                         style={{
                             flex: 1, padding: '12px', borderRadius: '12px', border: 'none',
-                            background: activeTab === 'developer' ? 'rgba(255,255,255,0.1)' : 'transparent',
-                            color: activeTab === 'developer' ? '#fff' : 'rgba(255,255,255,0.6)',
+                            background: activeTab === 'administrator' ? 'rgba(255,255,255,0.1)' : 'transparent',
+                            color: activeTab === 'administrator' ? '#fff' : 'rgba(255,255,255,0.6)',
                             fontWeight: 600, fontSize: '14px', cursor: 'pointer',
                             display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px',
                             transition: 'all 0.2s'
                         }}
                     >
-                        <Code size={18} /> Developer Mode
+                        <Code size={18} /> Administrator Mode
                     </button>
                 </div>
 
-                {activeTab === 'developer' ? (
+                {activeTab === 'administrator' ? (
                     <>
                         <div style={{ textAlign: 'center', marginBottom: '32px' }}>
                             <div style={{
@@ -106,7 +107,7 @@ export default function LoginModal({ isOpen, onClose, onSuccess }) {
                             }}>
                                 <Code size={32} color="#fff" />
                             </div>
-                            <h2 style={{ margin: '0 0 8px 0', color: '#fff', fontSize: '24px', fontWeight: 700 }}>Developer Access</h2>
+                            <h2 style={{ margin: '0 0 8px 0', color: '#fff', fontSize: '24px', fontWeight: 700 }}>Administrator Access</h2>
                             <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '14px' }}>
                                 Use root credentials to bypass all restrictions.
                             </p>
