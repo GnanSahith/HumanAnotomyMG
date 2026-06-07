@@ -94,7 +94,7 @@ export default function CustomForcesAndMotion({ onBack, title }) {
     };
 
     // Helper for drawing vectors
-    const renderArrow = (x, y, value, color, label, scale = 0.5, yOffset = 0) => {
+    const renderArrow = (x, y, value, color, label, scale = 0.5) => {
         if (Math.abs(value) < 1) return null;
         
         const length = value * scale;
@@ -104,7 +104,7 @@ export default function CustomForcesAndMotion({ onBack, title }) {
         const finalX = x + (dir * clampedLength);
 
         return (
-            <g transform={`translate(0, ${yOffset})`}>
+            <g>
                 <line x1={x} y1={y} x2={finalX} y2={y} stroke={color} strokeWidth="8" markerEnd={`url(#arrowhead-${color.replace('#','')})`} />
                 <text x={x + (dir * clampedLength / 2)} y={y - 12} fill={color} fontSize="16" fontWeight="bold" textAnchor="middle">{label}</text>
             </g>
@@ -226,23 +226,21 @@ export default function CustomForcesAndMotion({ onBack, title }) {
                         <g transform="translate(0, 100)">
                             {/* Visual Pushers (always visible, interactive) */}
                             <g 
-                                transform="translate(-140, -60)" 
+                                transform="translate(-50, -70)" 
                                 style={{ cursor: 'pointer' }}
                                 onClick={() => setAppliedForce(prev => Math.min(prev + 50, 500))}
                             >
-                                <path d="M -60 -30 L 0 -15 L 0 15 L -60 30 Z" fill={appliedForce > 0 ? "#ff9f0a" : "rgba(255,159,10,0.3)"} opacity="0.8" />
-                                <path d="M 0 -15 L 20 0 L 0 15 Z" fill={appliedForce > 0 ? "#ff9f0a" : "rgba(255,159,10,0.3)"} />
-                                <text x="-30" y="5" fill="#fff" fontSize="14" fontWeight="bold" textAnchor="middle">PUSH &gt;</text>
+                                <path d="M -80 -25 L 0 -15 L 0 15 L -80 25 Z" fill={appliedForce > 0 ? "#ff9f0a" : "rgba(255,159,10,0.3)"} opacity="0.9" />
+                                <text x="-40" y="5" fill="#fff" fontSize="14" fontWeight="bold" textAnchor="middle">PUSH &gt;</text>
                             </g>
 
                             <g 
-                                transform="translate(140, -60)" 
+                                transform="translate(50, -70)" 
                                 style={{ cursor: 'pointer' }}
                                 onClick={() => setAppliedForce(prev => Math.max(prev - 50, -500))}
                             >
-                                <path d="M 60 -30 L 0 -15 L 0 15 L 60 30 Z" fill={appliedForce < 0 ? "#ff9f0a" : "rgba(255,159,10,0.3)"} opacity="0.8" />
-                                <path d="M 0 -15 L -20 0 L 0 15 Z" fill={appliedForce < 0 ? "#ff9f0a" : "rgba(255,159,10,0.3)"} />
-                                <text x="30" y="5" fill="#fff" fontSize="14" fontWeight="bold" textAnchor="middle">&lt; PUSH</text>
+                                <path d="M 80 -25 L 0 -15 L 0 15 L 80 25 Z" fill={appliedForce < 0 ? "#ff9f0a" : "rgba(255,159,10,0.3)"} opacity="0.9" />
+                                <text x="40" y="5" fill="#fff" fontSize="14" fontWeight="bold" textAnchor="middle">&lt; PUSH</text>
                             </g>
 
                             {/* The Box & Skateboard */}
@@ -265,16 +263,16 @@ export default function CustomForcesAndMotion({ onBack, title }) {
                                 
                                 {/* Force Vectors attached to the box */}
                                 {/* Applied Force (Orange) */}
-                                {renderArrow(0, -60, appliedForce, '#ff9f0a', `Applied: ${Math.round(appliedForce)}N`, 0.4, -60)}
+                                {renderArrow(0, -70, appliedForce, '#ff9f0a', `Applied: ${Math.round(appliedForce)}N`, 0.4)}
                                 
                                 {/* Friction Force (Red) */}
-                                {renderArrow(0, -60, frictionForceVisual, '#ff375f', `Friction: ${Math.round(frictionForceVisual)}N`, 0.4, 25)}
+                                {renderArrow(0, -20, frictionForceVisual, '#ff375f', `Friction: ${Math.round(frictionForceVisual)}N`, 0.4)}
                                 
                                 {/* Net Force (Green) */}
-                                {renderArrow(0, -140, netForceVisual, '#30d158', `Net: ${Math.round(netForceVisual)}N`, 0.4, 0)}
+                                {renderArrow(0, -150, netForceVisual, '#30d158', `Net: ${Math.round(netForceVisual)}N`, 0.4)}
 
                                 {/* Velocity (Cyan) */}
-                                {renderArrow(0, -180, velocityVisual * 20, '#00f0ff', `v: ${velocityVisual.toFixed(1)} m/s`, 1, 0)}
+                                {renderArrow(0, -200, velocityVisual * 20, '#00f0ff', `v: ${velocityVisual.toFixed(1)} m/s`, 1)}
                             </g>
                         </g>
 
