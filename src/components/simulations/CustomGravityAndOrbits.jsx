@@ -23,8 +23,8 @@ const INITIAL_STATES = {
     [SCENARIOS.SUN_EARTH_MOON]: {
         bodies: [
             { id: 'sun', label: 'Sun', x: 0, y: 0, vx: 0, vy: 0, mass: 10000, radius: 35, color: '#f1c40f', fixed: true, path: [] },
-            { id: 'earth', label: 'Earth', x: 200, y: 0, vx: 0, vy: 2.236, mass: 100, radius: 12, color: '#3498db', fixed: false, path: [] },
-            { id: 'moon', label: 'Moon', x: 220, y: 0, vx: 0, vy: 2.943, mass: 1, radius: 5, color: '#bdc3c7', fixed: false, path: [] }
+            { id: 'earth', label: 'Earth', x: 200, y: 0, vx: 0, vy: 2.236, mass: 2000, radius: 12, color: '#3498db', fixed: false, path: [] },
+            { id: 'moon', label: 'Moon', x: 220, y: 0, vx: 0, vy: 5.398, mass: 1, radius: 5, color: '#bdc3c7', fixed: false, path: [] }
         ],
         G: 0.1,
         timeScale: 1,
