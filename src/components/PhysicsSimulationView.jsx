@@ -4,6 +4,7 @@ import physicsSimulations from '../data/physicsSimulations.json';
 import { useLanguage } from '../LanguageContext';
 import CustomPendulumLab from './simulations/CustomPendulumLab';
 import CustomProjectileMotion from './simulations/CustomProjectileMotion';
+import CustomForcesAndMotion from './simulations/CustomForcesAndMotion';
 
 export default function PhysicsSimulationView({ onBack, handleLockedItemClick }) {
     const { t } = useLanguage();
@@ -126,7 +127,9 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             position: 'relative'
                         }}>
                         {activeSimulation.isNative ? (
-                            activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : <CustomPendulumLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} />
+                            activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_2_mg' ? <CustomForcesAndMotion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            <CustomPendulumLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} />
                         ) : (
                             <>
                                 <iframe 
