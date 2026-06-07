@@ -1,16 +1,20 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowLeft, RotateCcw, Thermometer } from 'lucide-react';
 
 const CustomFriction = ({ onBack, title }) => {
     const canvasRef = useRef(null);
+    const bookRef = useRef(null);
+    const thermoRef = useRef(null);
     
-    // Physics and interaction state
-    const [temperature, setTemperature] = useState(0); // 0 to 1
-    const [bookX, setBookX] = useState(0); // offset of the top book
-    const [isDragging, setIsDragging] = useState(false);
+    // Physics and interaction state stored in refs to prevent re-renders
+    const stateRef = useRef({
+        temperature: 0,
+        bookX: 0,
+        isDragging: false,
+        lastMouseX: null
+    });
     
     const requestRef = useRef();
-    const lastMouseX = useRef(null);
     const atomsRef = useRef([]);
 
     // Initialize atoms
@@ -47,123 +51,123 @@ const CustomFriction = ({ onBack, title }) => {
             }
         }
         atomsRef.current = atoms;
+        
+        if (stateRef.current) {
+            stateRef.current.temperature = 0;
+            stateRef.current.bookX = 0;
+            stateRef.current.isDragging = false;
+        }
+        
+        updateDOM();
+    };
+
+    const updateDOM = () => {
+        const s = stateRef.current;
+        if (bookRef.current) {
+            bookRef.current.style.transform = `translateX(${s.bookX}px)`;
+            bookRef.current.style.cursor = s.isDragging ? 'grabbing' : 'grab';
+        }
+        if (thermoRef.current) {
+            thermoRef.current.style.height = `${Math.max(10, s.temperature * 100)}%`;
+        }
     };
 
     useEffect(() => {
         initAtoms();
-    }, []);
-
-    // Animation Loop
-    const animate = () => {
-        setTemperature(prev => {
-            let newTemp = prev - 0.002; // Cooling
-            if (newTemp < 0) newTemp = 0;
-            return newTemp;
-        });
-
-        if (canvasRef.current && atomsRef.current.length > 0) {
-            const canvas = canvasRef.current;
-            const ctx = canvas.getContext('2d');
-            const width = canvas.width;
-            const height = canvas.height;
-
-            ctx.clearRect(0, 0, width, height);
+        
+        const animate = () => {
+            const s = stateRef.current;
             
-            // Draw background lens
-            ctx.save();
-            ctx.translate(width / 2, height / 2);
+            // Cooling
+            s.temperature -= 0.002;
+            if (s.temperature < 0) s.temperature = 0;
+            
+            updateDOM();
 
-            // Update and draw atoms
-            setTemperature(currentTemp => {
-                const jiggle = currentTemp * 25; // max 25px jiggle
+            if (canvasRef.current && atomsRef.current.length > 0) {
+                const canvas = canvasRef.current;
+                const ctx = canvas.getContext('2d');
+                const width = canvas.width;
+                const height = canvas.height;
+
+                ctx.clearRect(0, 0, width, height);
+                ctx.save();
+                ctx.translate(width / 2, height / 2);
+
+                const jiggle = s.temperature * 25;
                 
                 atomsRef.current.forEach(atom => {
                     if (atom.detached) {
                         atom.x += atom.vx;
                         atom.y += atom.vy;
-                        atom.vy += 0.5; // gravity for detached atoms
+                        atom.vy += 0.5;
                     } else {
-                        // Base position plus jiggle
                         let bx = atom.baseX;
-                        if (atom.type === 'top') bx += bookX;
+                        if (atom.type === 'top') bx += s.bookX;
                         
                         atom.x = bx + (Math.random() - 0.5) * jiggle;
                         atom.y = atom.baseY + (Math.random() - 0.5) * jiggle;
 
-                        // Check detach condition
-                        if (currentTemp > 0.95 && Math.random() < 0.05 && atom.type === 'top' && atom.baseY > -50) {
+                        if (s.temperature > 0.95 && Math.random() < 0.05 && atom.type === 'top' && atom.baseY > -50) {
                             atom.detached = true;
                             atom.vx = (Math.random() - 0.5) * 20;
                             atom.vy = -Math.random() * 20;
                         }
                     }
 
-                    // Draw atom
                     ctx.beginPath();
                     ctx.arc(atom.x, atom.y, 14, 0, Math.PI * 2);
                     ctx.fillStyle = atom.color;
                     ctx.fill();
-                    // Atom shading
+                    
                     ctx.beginPath();
                     ctx.arc(atom.x - 4, atom.y - 4, 4, 0, Math.PI * 2);
                     ctx.fillStyle = 'rgba(255,255,255,0.4)';
                     ctx.fill();
                 });
                 
-                return currentTemp;
-            });
-
-            ctx.restore();
-        }
-        requestRef.current = requestAnimationFrame(animate);
-    };
-
-    useEffect(() => {
+                ctx.restore();
+            }
+            requestRef.current = requestAnimationFrame(animate);
+        };
+        
         requestRef.current = requestAnimationFrame(animate);
         return () => cancelAnimationFrame(requestRef.current);
-    }, [bookX]);
+    }, []);
 
     const handlePointerDown = (e) => {
-        setIsDragging(true);
-        lastMouseX.current = e.clientX;
+        e.target.setPointerCapture(e.pointerId);
+        stateRef.current.isDragging = true;
+        stateRef.current.lastMouseX = e.clientX;
+        updateDOM();
     };
 
     const handlePointerMove = (e) => {
-        if (!isDragging) return;
-        const dx = e.clientX - lastMouseX.current;
-        lastMouseX.current = e.clientX;
+        const s = stateRef.current;
+        if (!s.isDragging) return;
         
-        setBookX(prev => {
-            const nextX = prev + dx;
-            // Limit dragging range
-            if (nextX > 150) return 150;
-            if (nextX < -150) return -150;
-            return nextX;
-        });
+        const dx = e.clientX - s.lastMouseX;
+        s.lastMouseX = e.clientX;
+        
+        s.bookX += dx;
+        if (s.bookX > 150) s.bookX = 150;
+        if (s.bookX < -150) s.bookX = -150;
 
-        // Generate heat based on movement
-        setTemperature(prev => {
-            let nextTemp = prev + Math.abs(dx) * 0.005;
-            if (nextTemp > 1) nextTemp = 1;
-            return nextTemp;
-        });
+        s.temperature += Math.abs(dx) * 0.005;
+        if (s.temperature > 1) s.temperature = 1;
+        
+        updateDOM();
     };
 
-    const handlePointerUp = () => {
-        setIsDragging(false);
-        lastMouseX.current = null;
-    };
-
-    const handleReset = () => {
-        setTemperature(0);
-        setBookX(0);
-        setIsDragging(false);
-        initAtoms();
+    const handlePointerUp = (e) => {
+        stateRef.current.isDragging = false;
+        stateRef.current.lastMouseX = null;
+        e.target.releasePointerCapture(e.pointerId);
+        updateDOM();
     };
 
     return (
         <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', color: '#fff' }}>
-            {/* Header */}
             <div style={{ padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10, background: 'rgba(0,0,0,0.5)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
                     <button 
@@ -175,22 +179,22 @@ const CustomFriction = ({ onBack, title }) => {
                     <h2 style={{ margin: 0, fontSize: '24px', fontWeight: 'bold' }}>{title}</h2>
                 </div>
                 <button 
-                    onClick={handleReset}
+                    onClick={initAtoms}
                     style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#e74c3c', border: 'none', padding: '8px 16px', borderRadius: '100px', color: '#fff', cursor: 'pointer', fontWeight: 'bold' }}
                 >
                     <RotateCcw size={18} /> Reset
                 </button>
             </div>
 
-            {/* Main Content */}
             <div style={{ flex: 1, display: 'flex', padding: '40px', gap: '40px', overflow: 'hidden' }}>
-                
-                {/* Books Area */}
                 <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                     
-                    {/* Chemistry Book (Top - Draggable) */}
                     <div 
+                        ref={bookRef}
                         onPointerDown={handlePointerDown}
+                        onPointerMove={handlePointerMove}
+                        onPointerUp={handlePointerUp}
+                        onPointerCancel={handlePointerUp}
                         style={{
                             width: '300px',
                             height: '60px',
@@ -201,8 +205,7 @@ const CustomFriction = ({ onBack, title }) => {
                             justifyContent: 'center',
                             fontWeight: 'bold',
                             fontSize: '24px',
-                            transform: `translateX(${bookX}px)`,
-                            cursor: isDragging ? 'grabbing' : 'grab',
+                            cursor: 'grab',
                             boxShadow: '0 10px 20px rgba(0,0,0,0.3), inset 0 2px 5px rgba(255,255,255,0.3)',
                             userSelect: 'none',
                             touchAction: 'none',
@@ -212,7 +215,6 @@ const CustomFriction = ({ onBack, title }) => {
                         Chemistry
                     </div>
 
-                    {/* Physics Book (Bottom - Fixed) */}
                     <div 
                         style={{
                             width: '300px',
@@ -233,20 +235,8 @@ const CustomFriction = ({ onBack, title }) => {
                     >
                         Physics
                     </div>
-
-                    {/* Magnifying connection line could go here */}
-                    <div style={{
-                        position: 'absolute',
-                        right: '-20px',
-                        top: '50%',
-                        width: '80px',
-                        height: '2px',
-                        background: 'rgba(255,255,255,0.2)',
-                        transform: 'translateY(-50%)'
-                    }} />
                 </div>
 
-                {/* Magnifier / Atoms Canvas */}
                 <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
                     <div style={{
                         width: '400px',
@@ -267,9 +257,8 @@ const CustomFriction = ({ onBack, title }) => {
                     </div>
                 </div>
 
-                {/* Thermometer */}
                 <div style={{ width: '100px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
-                    <Thermometer size={48} color={temperature > 0.8 ? '#e74c3c' : '#bdc3c7'} />
+                    <Thermometer size={48} color={'#e74c3c'} />
                     <div style={{
                         width: '30px',
                         height: '300px',
@@ -279,33 +268,22 @@ const CustomFriction = ({ onBack, title }) => {
                         position: 'relative',
                         overflow: 'hidden'
                     }}>
-                        {/* Red liquid */}
-                        <div style={{
-                            position: 'absolute',
-                            bottom: 0,
-                            left: 0,
-                            right: 0,
-                            height: `${Math.max(10, temperature * 100)}%`,
-                            background: 'linear-gradient(to top, #c0392b, #e74c3c)',
-                            transition: 'height 0.1s linear',
-                            borderRadius: '20px'
-                        }} />
+                        <div 
+                            ref={thermoRef}
+                            style={{
+                                position: 'absolute',
+                                bottom: 0,
+                                left: 0,
+                                right: 0,
+                                height: '10%',
+                                background: 'linear-gradient(to top, #c0392b, #e74c3c)',
+                                borderRadius: '20px'
+                            }} 
+                        />
                     </div>
                     <div style={{ fontWeight: 'bold' }}>Temperature</div>
                 </div>
-
             </div>
-
-            {/* Global pointer handlers to allow dragging outside the book bounds */}
-            {isDragging && (
-                <div 
-                    style={{ position: 'absolute', inset: 0, zIndex: 9999, cursor: 'grabbing' }}
-                    onPointerMove={handlePointerMove}
-                    onPointerUp={handlePointerUp}
-                    onPointerCancel={handlePointerUp}
-                    onPointerLeave={handlePointerUp}
-                />
-            )}
         </div>
     );
 };
