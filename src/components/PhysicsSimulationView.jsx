@@ -78,30 +78,32 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
 
             {activeSimulation ? (
                 <div style={{ padding: '0 24px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexShrink: 0 }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                            <div style={{ padding: '8px', background: 'rgba(191,90,242,0.2)', borderRadius: '12px', border: '1px solid rgba(191,90,242,0.3)' }}>
-                                <Atom size={24} color="#bf5af2" />
+                    {!activeSimulation.isNative && (
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexShrink: 0 }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                                <div style={{ padding: '8px', background: 'rgba(191,90,242,0.2)', borderRadius: '12px', border: '1px solid rgba(191,90,242,0.3)' }}>
+                                    <Atom size={24} color="#bf5af2" />
+                                </div>
+                                <h2 style={{ fontSize: '24px', margin: 0, fontWeight: 600 }}>{activeSimulation.title}</h2>
                             </div>
-                            <h2 style={{ fontSize: '24px', margin: 0, fontWeight: 600 }}>{activeSimulation.title}</h2>
+                            <button 
+                                onClick={() => setActiveSimulation(null)}
+                                style={{
+                                    display: 'flex', alignItems: 'center', gap: '8px',
+                                    background: 'rgba(255, 255, 255, 0.1)',
+                                    border: '1px solid rgba(255, 255, 255, 0.2)',
+                                    padding: '8px 16px', borderRadius: '100px',
+                                    color: '#fff', cursor: 'pointer',
+                                    transition: 'all 0.2s',
+                                    fontWeight: 500
+                                }}
+                                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)'; e.currentTarget.style.borderColor = '#ff375f'; }}
+                                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
+                            >
+                                <ArrowLeft size={16} /> Back to Library
+                            </button>
                         </div>
-                        <button 
-                            onClick={() => setActiveSimulation(null)}
-                            style={{
-                                display: 'flex', alignItems: 'center', gap: '8px',
-                                background: 'rgba(255, 255, 255, 0.1)',
-                                border: '1px solid rgba(255, 255, 255, 0.2)',
-                                padding: '8px 16px', borderRadius: '100px',
-                                color: '#fff', cursor: 'pointer',
-                                transition: 'all 0.2s',
-                                fontWeight: 500
-                            }}
-                            onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)'; e.currentTarget.style.borderColor = '#ff375f'; }}
-                            onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
-                        >
-                            <ArrowLeft size={18} /> Back to Library
-                        </button>
-                    </div>
+                    )}
                     
                     {/* The Simulation Container */}
                     <div style={{
@@ -124,7 +126,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             position: 'relative'
                         }}>
                         {activeSimulation.isNative ? (
-                            activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion /> : <CustomPendulumLab />
+                            activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : <CustomPendulumLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} />
                         ) : (
                             <>
                                 <iframe 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, RotateCcw, Settings2, Target, Wind, Crosshair } from 'lucide-react';
+import { Play, Pause, RotateCcw, Settings2, Target, Wind, Crosshair, Atom, ArrowLeft } from 'lucide-react';
 
-export default function CustomProjectileMotion() {
+export default function CustomProjectileMotion({ onBack, title }) {
     const [isPlaying, setIsPlaying] = useState(false);
     
     // Core Physics Parameters
@@ -175,11 +175,13 @@ export default function CustomProjectileMotion() {
                 borderBottom: '1px solid rgba(255,255,255,0.05)',
                 background: 'rgba(255,255,255,0.02)'
             }}>
-                <div>
-                    <h2 style={{ margin: 0, fontSize: '20px', fontWeight: 600, color: 'var(--accent)' }}>Projectile Motion Advanced</h2>
-                    <p style={{ margin: 0, fontSize: '13px', color: 'rgba(255,255,255,0.5)' }}>Interactive Physics Engine (Euler Integration)</p>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+                    <div style={{ padding: '8px', background: 'rgba(191,90,242,0.2)', borderRadius: '12px', border: '1px solid rgba(191,90,242,0.3)' }}>
+                        <Atom size={24} color="#bf5af2" />
+                    </div>
+                    <h2 style={{ fontSize: '24px', margin: 0, fontWeight: 600, color: '#fff' }}>{title || 'Projectile Motion MG'}</h2>
                 </div>
-                <div style={{ display: 'flex', gap: '12px' }}>
+                <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
                     <button 
                         onClick={() => {
                             if (!isPlaying && posRef.current.y <= 0 && timeRef.current > 0) handleReset(); 
@@ -205,6 +207,25 @@ export default function CustomProjectileMotion() {
                     >
                         <RotateCcw size={18} /> Reset
                     </button>
+                    {onBack && (
+                        <button 
+                            onClick={onBack}
+                            style={{
+                                display: 'flex', alignItems: 'center', gap: '8px',
+                                background: 'rgba(255, 255, 255, 0.1)',
+                                border: '1px solid rgba(255, 255, 255, 0.2)',
+                                padding: '8px 16px', borderRadius: '100px',
+                                color: '#fff', cursor: 'pointer',
+                                transition: 'all 0.2s',
+                                fontWeight: 500,
+                                marginLeft: '12px'
+                            }}
+                            onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)'; e.currentTarget.style.borderColor = '#ff375f'; }}
+                            onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
+                        >
+                            <ArrowLeft size={16} /> Back to Library
+                        </button>
+                    )}
                 </div>
             </div>
 
