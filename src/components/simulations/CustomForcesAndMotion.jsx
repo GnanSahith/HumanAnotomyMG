@@ -105,7 +105,7 @@ export default function CustomForcesAndMotion({ onBack, title }) {
 
         return (
             <g>
-                <line x1={x} y1={y} x2={finalX} y2={y} stroke={color} strokeWidth="8" markerEnd={`url(#arrowhead-${color.replace('#','')})`} />
+                <line x1={x} y1={y} x2={finalX} y2={y} stroke={color} strokeWidth="6" markerEnd={`url(#arrowhead-${color.replace('#','')})`} />
                 <text 
                     x={x + (dir * clampedLength / 2)} 
                     y={y + textOffset} 
@@ -200,17 +200,17 @@ export default function CustomForcesAndMotion({ onBack, title }) {
 
                     <svg viewBox="-500 -300 1000 600" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', zIndex: 2, userSelect: 'none' }}>
                         <defs>
-                            <marker id="arrowhead-ff9f0a" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                                <polygon points="0 0, 6 3, 0 6" fill="#ff9f0a" />
+                            <marker id="arrowhead-ff9f0a" markerWidth="4" markerHeight="4" refX="3.5" refY="2" orient="auto">
+                                <polygon points="0 0, 4 2, 0 4" fill="#ff9f0a" />
                             </marker>
-                            <marker id="arrowhead-ff375f" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                                <polygon points="0 0, 6 3, 0 6" fill="#ff375f" />
+                            <marker id="arrowhead-ff375f" markerWidth="4" markerHeight="4" refX="3.5" refY="2" orient="auto">
+                                <polygon points="0 0, 4 2, 0 4" fill="#ff375f" />
                             </marker>
-                            <marker id="arrowhead-30d158" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                                <polygon points="0 0, 6 3, 0 6" fill="#30d158" />
+                            <marker id="arrowhead-30d158" markerWidth="4" markerHeight="4" refX="3.5" refY="2" orient="auto">
+                                <polygon points="0 0, 4 2, 0 4" fill="#30d158" />
                             </marker>
-                            <marker id="arrowhead-00f0ff" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-                                <polygon points="0 0, 6 3, 0 6" fill="#00f0ff" />
+                            <marker id="arrowhead-00f0ff" markerWidth="4" markerHeight="4" refX="3.5" refY="2" orient="auto">
+                                <polygon points="0 0, 4 2, 0 4" fill="#00f0ff" />
                             </marker>
 
                             <linearGradient id="boxGrad" x1="0" y1="0" x2="0" y2="1">
