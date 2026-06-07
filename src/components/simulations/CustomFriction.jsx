@@ -201,7 +201,7 @@ const CustomFriction = ({ onBack, title }) => {
                             justifyContent: 'center',
                             fontWeight: 'bold',
                             fontSize: '24px',
-                            transform: \`translateX(\${bookX}px)\`,
+                            transform: `translateX(${bookX}px)`,
                             cursor: isDragging ? 'grabbing' : 'grab',
                             boxShadow: '0 10px 20px rgba(0,0,0,0.3), inset 0 2px 5px rgba(255,255,255,0.3)',
                             userSelect: 'none',
@@ -285,7 +285,7 @@ const CustomFriction = ({ onBack, title }) => {
                             bottom: 0,
                             left: 0,
                             right: 0,
-                            height: \`\${Math.max(10, temperature * 100)}%\`,
+                            height: `${Math.max(10, temperature * 100)}%`,
                             background: 'linear-gradient(to top, #c0392b, #e74c3c)',
                             transition: 'height 0.1s linear',
                             borderRadius: '20px'
