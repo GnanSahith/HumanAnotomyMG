@@ -66,6 +66,14 @@
         "thumbnail": "https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park-600.png",
         "category": "Motion & Mechanics"
     },
+    "phys_5_mg": {
+        "title": "Energy Skate Park MG",
+        "description": "Interactive Energy Skate Park simulation (Native Custom Build)",
+        "url": "/simulations/energy-skate-park_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/energy-skate-park/latest/energy-skate-park-600.png",
+        "category": "Motion & Mechanics",
+        "isNative": true
+    },
     "phys_6": {
         "title": "Masses and Springs",
         "description": "Interactive Masses and Springs simulation",

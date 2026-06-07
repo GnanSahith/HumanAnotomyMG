@@ -7,6 +7,7 @@ import CustomProjectileMotion from './simulations/CustomProjectileMotion';
 import CustomForcesAndMotion from './simulations/CustomForcesAndMotion';
 import CustomGravityAndOrbits from './simulations/CustomGravityAndOrbits';
 import CustomFriction from './simulations/CustomFriction';
+import CustomEnergySkatePark from './simulations/CustomEnergySkatePark';
 
 export default function PhysicsSimulationView({ onBack, handleLockedItemClick }) {
     const { t } = useLanguage();
@@ -133,6 +134,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             activeSimulation.id === 'phys_2_mg' ? <CustomForcesAndMotion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
                             activeSimulation.id === 'phys_3_mg' ? <CustomGravityAndOrbits onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
                             activeSimulation.id === 'phys_4_mg' ? <CustomFriction onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_5_mg' ? <CustomEnergySkatePark onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
                             <CustomPendulumLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} />
                         ) : (
                             <>
