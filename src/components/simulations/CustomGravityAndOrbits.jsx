@@ -292,6 +292,15 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
         ctx.restore();
     };
 
+    const getOrbitTarget = (bodyId, currentScenario) => {
+        if (currentScenario === SCENARIOS.SUN_EARTH && bodyId === 'earth') return 'sun';
+        if (currentScenario === SCENARIOS.SUN_EARTH_MOON && bodyId === 'earth') return 'sun';
+        if (currentScenario === SCENARIOS.SUN_EARTH_MOON && bodyId === 'moon') return 'earth';
+        if (currentScenario === SCENARIOS.EARTH_MOON && bodyId === 'moon') return 'earth';
+        if (currentScenario === SCENARIOS.EARTH_SATELLITE && bodyId === 'satellite') return 'earth';
+        return null;
+    };
+
     const handlePointerDown = (e) => {
         const rect = canvasRef.current.getBoundingClientRect();
         const mouseX = e.clientX - rect.left - rect.width / 2;
@@ -304,7 +313,7 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
             const dx = mouseX - b.x;
             const dy = mouseY - b.y;
             // Increase grab radius slightly to make grabbing easier
-            if (dx * dx + dy * dy <= (b.radius + 10) * (b.radius + 10)) {
+            if (dx * dx + dy * dy <= (b.radius + 15) * (b.radius + 15)) {
                 stateRef.current.draggingId = b.id;
                 // Temporarily pause physics if dragging so it doesn't fight the user
                 setIsPlaying(false);
@@ -319,15 +328,55 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
         const mouseX = e.clientX - rect.left - rect.width / 2;
         const mouseY = e.clientY - rect.top - rect.height / 2;
 
-        const body = stateRef.current.bodies.find(b => b.id === stateRef.current.draggingId);
+        const state = stateRef.current;
+        const body = state.bodies.find(b => b.id === state.draggingId);
+        
         if (body) {
+            const dx = mouseX - body.x;
+            const dy = mouseY - body.y;
+            
             body.x = mouseX;
             body.y = mouseY;
-            // Clear path since it teleported
             body.path = [];
-            // If dragging the earth, maybe clear the moon's path too to avoid weird lines
-            if (body.id === 'earth') {
-                stateRef.current.bodies.forEach(b => { if (b.id !== 'sun') b.path = []; });
+            
+            // If dragging earth in 3-body, move moon too
+            if (scenario === SCENARIOS.SUN_EARTH_MOON && body.id === 'earth') {
+                const moon = state.bodies.find(b => b.id === 'moon');
+                if (moon) {
+                    moon.x += dx;
+                    moon.y += dy;
+                    moon.path = [];
+                }
+            }
+
+            // Recalculate perfectly circular orbital velocities
+            const updateVelocityForOrbit = (bId) => {
+                const targetId = getOrbitTarget(bId, scenario);
+                if (!targetId) return;
+                
+                const b = state.bodies.find(x => x.id === bId);
+                const target = state.bodies.find(x => x.id === targetId);
+                if (!b || !target) return;
+                
+                const rdx = b.x - target.x;
+                const rdy = b.y - target.y;
+                const r = Math.sqrt(rdx * rdx + rdy * rdy);
+                
+                if (r > 0) {
+                    const vMag = Math.sqrt(state.G * target.mass / r);
+                    // Tangent vector: (-rdy, rdx) normalized
+                    const tx = -rdy / r;
+                    const ty = rdx / r;
+                    
+                    // Base velocity is the target's velocity (for the moon, it adds earth's velocity)
+                    b.vx = target.vx + tx * vMag;
+                    b.vy = target.vy + ty * vMag;
+                }
+            };
+
+            updateVelocityForOrbit(body.id);
+            if (scenario === SCENARIOS.SUN_EARTH_MOON && body.id === 'earth') {
+                updateVelocityForOrbit('moon');
             }
         }
     };
