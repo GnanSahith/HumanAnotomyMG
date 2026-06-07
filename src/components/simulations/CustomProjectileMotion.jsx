@@ -299,15 +299,15 @@ export default function CustomProjectileMotion() {
                     width: '340px', background: 'rgba(0,0,0,0.3)', borderLeft: '1px solid rgba(255,255,255,0.05)',
                     display: 'flex', flexDirection: 'column'
                 }}>
-                    <div style={{ padding: '24px', display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
+                    <div style={{ padding: '16px 20px', display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)' }}>
                         <Settings2 size={20} color="rgba(255,255,255,0.7)" />
                         <h3 style={{ margin: 0, fontSize: '15px', fontWeight: 600, color: 'rgba(255,255,255,0.7)' }}>Simulation Parameters</h3>
                     </div>
 
-                    <div style={{ flex: 1, overflowY: 'auto', padding: '24px', display: 'flex', flexDirection: 'column', gap: '32px' }}>
+                    <div style={{ flex: 1, overflowY: 'auto', padding: '16px 20px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                         
                         {/* Initial Launch Parameters */}
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                             <div>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
                                     <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Initial Velocity (v)</label>
@@ -336,7 +336,7 @@ export default function CustomProjectileMotion() {
                         <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
 
                         {/* Object Properties */}
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                             <div>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
                                     <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Mass</label>
@@ -357,7 +357,7 @@ export default function CustomProjectileMotion() {
                         <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
 
                         {/* Environment & Forces */}
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                             <div>
                                 <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
                                     <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Gravity</label>
