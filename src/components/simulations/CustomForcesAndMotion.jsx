@@ -1,25 +1,22 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Play, Pause, RotateCcw, Settings2, Atom, ArrowLeft } from 'lucide-react';
+import { RotateCcw, Settings2, Atom, ArrowLeft } from 'lucide-react';
 
 export default function CustomForcesAndMotion({ onBack, title }) {
-    const [isPlaying, setIsPlaying] = useState(false);
-    
     // Core Physics Parameters
     const [mass, setMass] = useState(50); // kg
     const [appliedForce, setAppliedForce] = useState(0); // N
     const [frictionMu, setFrictionMu] = useState(0.2); // Kinetic friction coefficient (0 to 0.5)
     const gravity = 9.8; // m/s^2
 
-    // State Variables
+    // State Variables (Ref for physics loop)
     const posRef = useRef(0); // meters
     const velRef = useRef(0); // m/s
     const lastTimeRef = useRef(0);
     const requestRef = useRef(null);
 
     // Visual State
-    const [boxX, setBoxX] = useState(0);
+    const [boxX, setBoxX] = useState(0); // This will track ground/background offset instead
     const [velocityVisual, setVelocityVisual] = useState(0);
-    const [accelerationVisual, setAccelerationVisual] = useState(0);
     const [frictionForceVisual, setFrictionForceVisual] = useState(0);
     const [netForceVisual, setNetForceVisual] = useState(0);
 
@@ -36,7 +33,6 @@ export default function CustomForcesAndMotion({ onBack, title }) {
 
         // Calculate Physics
         const normalForce = mass * gravity;
-        
         let frictionForce = 0;
         
         // Static vs Kinetic friction logic
@@ -61,65 +57,37 @@ export default function CustomForcesAndMotion({ onBack, title }) {
         const acceleration = netForce / mass;
 
         velRef.current += acceleration * safeDt;
-        posRef.current += velRef.current * safeDt;
-
-        // Wrap around logic if the box goes too far off screen (optional, let's just let it go for now or wrap it)
-        // Let's cap the position to keep it in view, or let the user reset.
-        if (posRef.current > 20 || posRef.current < -20) {
-            velRef.current = 0; // Hit invisible wall
+        
+        // Stop completely if very slow and no net force
+        if (Math.abs(velRef.current) < 0.05 && Math.abs(netForce) < 0.1) {
+            velRef.current = 0;
         }
+
+        posRef.current += velRef.current * safeDt;
 
         // Update visuals
         setBoxX(posRef.current * 40); // 40px per meter
         setVelocityVisual(velRef.current);
-        setAccelerationVisual(acceleration);
         setFrictionForceVisual(frictionForce);
         setNetForceVisual(netForce);
 
         requestRef.current = requestAnimationFrame(updatePhysics);
     };
 
+    // Run physics infinitely
     useEffect(() => {
-        if (isPlaying) {
-            lastTimeRef.current = performance.now();
-            requestRef.current = requestAnimationFrame(updatePhysics);
-        } else {
-            // Paused, update visuals once based on current parameters (especially if user is tweaking force)
-            const normalForce = mass * gravity;
-            let frictionForce = 0;
-            
-            if (Math.abs(velRef.current) < 0.01) {
-                const maxStaticFriction = (frictionMu + 0.1) * normalForce;
-                if (Math.abs(appliedForce) <= maxStaticFriction) {
-                    frictionForce = appliedForce;
-                } else {
-                    frictionForce = Math.sign(appliedForce) * frictionMu * normalForce;
-                }
-            } else {
-                frictionForce = Math.sign(velRef.current) * frictionMu * normalForce;
-            }
-
-            const netForce = appliedForce - frictionForce;
-            const acceleration = netForce / mass;
-            
-            setFrictionForceVisual(frictionForce);
-            setNetForceVisual(netForce);
-            setAccelerationVisual(acceleration);
-
-            if (requestRef.current) cancelAnimationFrame(requestRef.current);
-        }
+        lastTimeRef.current = performance.now();
+        requestRef.current = requestAnimationFrame(updatePhysics);
         return () => {
             if (requestRef.current) cancelAnimationFrame(requestRef.current);
         };
-    }, [isPlaying, appliedForce, mass, frictionMu]);
+    }, [appliedForce, mass, frictionMu]); // Rebind if parameters change
 
     const handleReset = () => {
-        setIsPlaying(false);
         posRef.current = 0;
         velRef.current = 0;
         setBoxX(0);
         setVelocityVisual(0);
-        setAccelerationVisual(0);
         setAppliedForce(0);
         setFrictionForceVisual(0);
         setNetForceVisual(0);
@@ -132,16 +100,20 @@ export default function CustomForcesAndMotion({ onBack, title }) {
         const length = value * scale;
         const dir = Math.sign(length);
         const absLength = Math.abs(length);
-        const clampedLength = Math.min(Math.max(absLength, 20), 200); // Visual bounds for arrow
+        const clampedLength = Math.min(Math.max(absLength, 30), 250); // Visual bounds for arrow
         const finalX = x + (dir * clampedLength);
 
         return (
             <g transform={`translate(0, ${yOffset})`}>
-                <line x1={x} y1={y} x2={finalX} y2={y} stroke={color} strokeWidth="6" markerEnd={`url(#arrowhead-${color.replace('#','')})`} />
-                <text x={x + (dir * clampedLength / 2)} y={y - 12} fill={color} fontSize="14" fontWeight="bold" textAnchor="middle">{label}</text>
+                <line x1={x} y1={y} x2={finalX} y2={y} stroke={color} strokeWidth="8" markerEnd={`url(#arrowhead-${color.replace('#','')})`} />
+                <text x={x + (dir * clampedLength / 2)} y={y - 12} fill={color} fontSize="16" fontWeight="bold" textAnchor="middle">{label}</text>
             </g>
         );
     };
+
+    // Background shift for infinite scroll
+    const bgOffset = -(boxX % 40);
+    const groundOffset = -(boxX % 200);
 
     return (
         <div style={{
@@ -190,19 +162,6 @@ export default function CustomForcesAndMotion({ onBack, title }) {
                 {/* Right Side: Controls */}
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
                     <button 
-                        onClick={() => setIsPlaying(!isPlaying)}
-                        style={{
-                            background: isPlaying ? 'rgba(255,55,95,0.2)' : 'rgba(10,132,255,0.2)',
-                            color: isPlaying ? '#ff375f' : '#0a84ff',
-                            border: 'none', padding: '10px 20px', borderRadius: '100px',
-                            display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer',
-                            fontWeight: 600, transition: 'all 0.2s'
-                        }}
-                    >
-                        {isPlaying ? <Pause size={18} /> : <Play size={18} />}
-                        {isPlaying ? 'Pause' : 'Play'}
-                    </button>
-                    <button 
                         onClick={handleReset}
                         style={{
                             background: 'rgba(255,255,255,0.1)', color: '#fff', border: 'none', padding: '10px 16px', 
@@ -218,10 +177,11 @@ export default function CustomForcesAndMotion({ onBack, title }) {
                 {/* SVG Canvas Area */}
                 <div style={{ flex: 1, position: 'relative', minHeight: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', background: '#1a1a24' }}>
                     
-                    {/* Background Grid */}
+                    {/* Background Grid - scrolling dynamically */}
                     <div style={{
                         position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
                         backgroundSize: '40px 40px',
+                        backgroundPosition: `${bgOffset}px 0px`,
                         backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)'
                     }}></div>
 
@@ -244,36 +204,72 @@ export default function CustomForcesAndMotion({ onBack, title }) {
                                 <stop offset="0%" stopColor="#8d6e63" />
                                 <stop offset="100%" stopColor="#5d4037" />
                             </linearGradient>
+
+                            <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+                                <stop offset="0%" stopColor="#2a2a35" />
+                                <stop offset="100%" stopColor="#12121A" />
+                            </linearGradient>
+                            
+                            <pattern id="woodPattern" width="200" height="40" patternUnits="userSpaceOnUse" patternTransform={`translate(${groundOffset}, 0)`}>
+                                <path d="M0 10 Q 50 20 100 10 T 200 10 M0 30 Q 50 40 100 30 T 200 30" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="2" />
+                            </pattern>
                         </defs>
 
-                        {/* Ground */}
-                        <rect x="-1000" y="100" width="2000" height="400" fill="#2a2a35" />
-                        <line x1="-1000" y1="100" x2="1000" y2="100" stroke="#4a4a5e" strokeWidth="4" />
+                        {/* Infinite Ground */}
+                        <g transform="translate(0, 100)">
+                            <rect x="-1000" y="0" width="2000" height="400" fill="url(#groundGrad)" />
+                            <rect x="-1000" y="0" width="2000" height="400" fill="url(#woodPattern)" />
+                            <line x1="-1000" y1="0" x2="1000" y2="0" stroke="#4a4a5e" strokeWidth="8" />
+                        </g>
 
-                        {/* Camera translation for moving box */}
-                        {/* We will translate the world inversely to the box X, to keep box somewhat centered, OR just move the box.
-                            Let's just move the box, since the ground is infinite.
-                        */}
-                        <g transform={`translate(${boxX}, 0)`}>
-                            
-                            {/* The Box */}
-                            {/* Origin is bottom center of the box to align with ground y=100 */}
-                            <g transform="translate(0, 100)">
-                                <rect x="-60" y="-120" width="120" height="120" rx="8" fill="url(#boxGrad)" stroke="#4e342e" strokeWidth="4" />
+                        {/* Static Camera - Box stays in center */}
+                        <g transform="translate(0, 100)">
+                            {/* Visual Pusher (appears when appliedForce is not 0) */}
+                            {appliedForce > 0 && (
+                                <g transform="translate(-100, -60)">
+                                    <path d="M -80 -40 L 0 -20 L 0 20 L -80 40 Z" fill="#ff9f0a" opacity="0.8" />
+                                    <path d="M 0 -20 L 30 0 L 0 20 Z" fill="#ff9f0a" />
+                                    <text x="-40" y="5" fill="#fff" fontSize="16" fontWeight="bold" textAnchor="middle">PUSH</text>
+                                </g>
+                            )}
+                            {appliedForce < 0 && (
+                                <g transform="translate(100, -60)">
+                                    <path d="M 80 -40 L 0 -20 L 0 20 L 80 40 Z" fill="#ff9f0a" opacity="0.8" />
+                                    <path d="M 0 -20 L -30 0 L 0 20 Z" fill="#ff9f0a" />
+                                    <text x="40" y="5" fill="#fff" fontSize="16" fontWeight="bold" textAnchor="middle">PUSH</text>
+                                </g>
+                            )}
+
+                            {/* The Box & Skateboard */}
+                            <g transform="translate(0, 0)">
+                                {/* Skateboard Wheels (spinning based on position) */}
+                                <g transform="translate(-30, -10)">
+                                    <circle cx="0" cy="0" r="10" fill="#222" stroke="#666" strokeWidth="3" />
+                                    <line x1="0" y1="-10" x2="0" y2="10" stroke="#888" strokeWidth="2" transform={`rotate(${boxX * 2})`} />
+                                </g>
+                                <g transform="translate(30, -10)">
+                                    <circle cx="0" cy="0" r="10" fill="#222" stroke="#666" strokeWidth="3" />
+                                    <line x1="0" y1="-10" x2="0" y2="10" stroke="#888" strokeWidth="2" transform={`rotate(${boxX * 2})`} />
+                                </g>
+                                {/* Skateboard Board */}
+                                <rect x="-60" y="-20" width="120" height="10" rx="4" fill="#ff375f" />
+
+                                {/* The Crate */}
+                                <rect x="-50" y="-120" width="100" height="100" rx="8" fill="url(#boxGrad)" stroke="#4e342e" strokeWidth="4" />
                                 <text x="0" y="-55" fill="#fff" fontSize="24" fontWeight="bold" textAnchor="middle">{mass} kg</text>
                                 
                                 {/* Force Vectors attached to the box */}
                                 {/* Applied Force (Orange) */}
-                                {renderArrow(0, -60, appliedForce, '#ff9f0a', `Applied Force: ${appliedForce}N`, 0.4, -40)}
+                                {renderArrow(0, -70, appliedForce, '#ff9f0a', `Applied: ${appliedForce}N`, 0.4, -40)}
                                 
                                 {/* Friction Force (Red) */}
-                                {renderArrow(0, -60, frictionForceVisual, '#ff375f', `Friction: ${Math.round(frictionForceVisual)}N`, 0.4, 40)}
+                                {renderArrow(0, -70, frictionForceVisual, '#ff375f', `Friction: ${Math.round(frictionForceVisual)}N`, 0.4, 40)}
                                 
                                 {/* Net Force (Green) */}
-                                {renderArrow(0, -140, netForceVisual, '#30d158', `Sum of Forces: ${Math.round(netForceVisual)}N`, 0.4, 0)}
+                                {renderArrow(0, -150, netForceVisual, '#30d158', `Sum: ${Math.round(netForceVisual)}N`, 0.4, 0)}
 
                                 {/* Velocity (Cyan) */}
-                                {renderArrow(0, -180, velocityVisual * 10, '#00f0ff', `Velocity: ${velocityVisual.toFixed(1)} m/s`, 1, 0)}
+                                {renderArrow(0, -190, velocityVisual * 20, '#00f0ff', `v: ${velocityVisual.toFixed(1)} m/s`, 1, 0)}
                             </g>
                         </g>
 
