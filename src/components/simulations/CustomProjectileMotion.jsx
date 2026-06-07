@@ -208,9 +208,9 @@ export default function CustomProjectileMotion() {
                 </div>
             </div>
 
-            <div style={{ display: 'flex', flex: 1, overflow: 'hidden', height: '100%', minHeight: 0 }}>
+            <div style={{ display: 'flex', flex: 1, overflow: 'hidden', minHeight: 0 }}>
                 {/* SVG Canvas */}
-                <div style={{ flex: 1, position: 'relative', height: '100%', minHeight: 0 }}>
+                <div style={{ flex: 1, position: 'relative', minHeight: 0 }}>
                     
                     <svg viewBox="-400 -1050 2800 1300" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', top: 24, left: 24, width: 'calc(100% - 48px)', height: 'calc(100% - 48px)', zIndex: 2 }}>
                         
