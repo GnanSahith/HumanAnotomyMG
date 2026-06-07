@@ -51,6 +51,14 @@
         "thumbnail": "https://phet.colorado.edu/sims/html/friction/latest/friction-600.png",
         "category": "Motion & Mechanics"
     },
+    "phys_4_mg": {
+        "title": "Friction MG",
+        "description": "Interactive Friction simulation (Native Custom Build)",
+        "url": "/simulations/friction_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/friction/latest/friction-600.png",
+        "category": "Motion & Mechanics",
+        "isNative": true
+    },
     "phys_5": {
         "title": "Energy Skate Park",
         "description": "Interactive Energy Skate Park simulation",
