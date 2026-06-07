@@ -13,38 +13,38 @@ const SCENARIOS = {
 const INITIAL_STATES = {
     [SCENARIOS.SUN_EARTH]: {
         bodies: [
-            { id: 'sun', label: 'Sun', x: 0, y: 0, vx: 0, vy: 0, mass: 333000, radius: 35, color: '#f1c40f', fixed: true, path: [] },
-            { id: 'earth', label: 'Earth', x: 200, y: 0, vx: 0, vy: 8.16, mass: 1, radius: 12, color: '#3498db', fixed: false, path: [] }
+            { id: 'sun', label: 'Sun', x: 0, y: 0, vx: 0, vy: 0, mass: 10000, radius: 35, color: '#f1c40f', fixed: true, path: [] },
+            { id: 'earth', label: 'Earth', x: 200, y: 0, vx: 0, vy: 2.236, mass: 1, radius: 12, color: '#3498db', fixed: false, path: [] }
         ],
-        G: 0.0002,
+        G: 0.1,
         timeScale: 1,
         daysPerTick: 0.5
     },
     [SCENARIOS.SUN_EARTH_MOON]: {
         bodies: [
-            { id: 'sun', label: 'Sun', x: 0, y: 0, vx: 0, vy: 0, mass: 333000, radius: 35, color: '#f1c40f', fixed: true, path: [] },
-            { id: 'earth', label: 'Earth', x: 200, y: 0, vx: 0, vy: 8.16, mass: 1000, radius: 12, color: '#3498db', fixed: false, path: [] },
-            { id: 'moon', label: 'Moon', x: 230, y: 0, vx: 0, vy: 10.74, mass: 10, radius: 5, color: '#bdc3c7', fixed: false, path: [] }
+            { id: 'sun', label: 'Sun', x: 0, y: 0, vx: 0, vy: 0, mass: 10000, radius: 35, color: '#f1c40f', fixed: true, path: [] },
+            { id: 'earth', label: 'Earth', x: 200, y: 0, vx: 0, vy: 2.236, mass: 100, radius: 12, color: '#3498db', fixed: false, path: [] },
+            { id: 'moon', label: 'Moon', x: 220, y: 0, vx: 0, vy: 2.943, mass: 1, radius: 5, color: '#bdc3c7', fixed: false, path: [] }
         ],
-        G: 0.0002,
+        G: 0.1,
         timeScale: 1,
         daysPerTick: 0.5
     },
     [SCENARIOS.EARTH_MOON]: {
         bodies: [
-            { id: 'earth', label: 'Earth', x: 0, y: 0, vx: 0, vy: 0, mass: 100000, radius: 35, color: '#3498db', fixed: true, path: [] },
-            { id: 'moon', label: 'Moon', x: 150, y: 0, vx: 0, vy: 11.5, mass: 1200, radius: 10, color: '#bdc3c7', fixed: false, path: [] }
+            { id: 'earth', label: 'Earth', x: 0, y: 0, vx: 0, vy: 0, mass: 5000, radius: 35, color: '#3498db', fixed: true, path: [] },
+            { id: 'moon', label: 'Moon', x: 150, y: 0, vx: 0, vy: 1.826, mass: 50, radius: 10, color: '#bdc3c7', fixed: false, path: [] }
         ],
-        G: 0.00133,
+        G: 0.1,
         timeScale: 1,
         daysPerTick: 0.1
     },
     [SCENARIOS.EARTH_SATELLITE]: {
         bodies: [
-            { id: 'earth', label: 'Earth', x: 0, y: 0, vx: 0, vy: 0, mass: 100000, radius: 35, color: '#3498db', fixed: true, path: [] },
-            { id: 'satellite', label: 'Satellite', x: 100, y: 0, vx: 0, vy: 16.3, mass: 1, radius: 6, color: '#e74c3c', fixed: false, path: [] }
+            { id: 'earth', label: 'Earth', x: 0, y: 0, vx: 0, vy: 0, mass: 5000, radius: 35, color: '#3498db', fixed: true, path: [] },
+            { id: 'satellite', label: 'Satellite', x: 60, y: 0, vx: 0, vy: 2.887, mass: 1, radius: 6, color: '#e74c3c', fixed: false, path: [] }
         ],
-        G: 0.00266,
+        G: 0.1,
         timeScale: 1,
         daysPerTick: 0.05
     }
