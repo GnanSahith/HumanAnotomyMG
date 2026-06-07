@@ -20,8 +20,8 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
         <div className="maths-sim-container fade-in" style={{ 
             paddingBottom: activeSimulation ? '0' : '100px', 
             flex: 1, 
+            minHeight: 0,
             overflowY: activeSimulation ? 'hidden' : 'auto', 
-            height: '100%', 
             display: activeSimulation ? 'flex' : 'block', 
             flexDirection: activeSimulation ? 'column' : 'unset' 
         }}>
@@ -77,7 +77,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
             )}
 
             {activeSimulation ? (
-                <div style={{ padding: '0 24px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1 }} className="fade-in">
+                <div style={{ padding: '0 24px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexShrink: 0 }}>
                         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
                             <div style={{ padding: '8px', background: 'rgba(191,90,242,0.2)', borderRadius: '12px', border: '1px solid rgba(191,90,242,0.3)' }}>
@@ -106,6 +106,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                     {/* The Simulation Container */}
                     <div style={{
                         flex: 1,
+                        minHeight: 0,
                         width: '100%',
                         background: '#000',
                         borderRadius: '16px',
