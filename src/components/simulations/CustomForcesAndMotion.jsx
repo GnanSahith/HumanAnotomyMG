@@ -263,21 +263,21 @@ export default function CustomForcesAndMotion({ onBack, title }) {
                                 
                                 {/* Force Vectors attached to the box */}
                                 {/* Applied Force (Orange) */}
-                                {renderArrow(0, -70, appliedForce, '#ff9f0a', `Applied: ${Math.round(appliedForce)}N`, 0.4)}
+                                {renderArrow(0, -140, appliedForce, '#ff9f0a', `Applied: ${Math.round(appliedForce)}N`, 0.4)}
                                 
                                 {/* Friction Force (Red) */}
-                                {renderArrow(0, -20, frictionForceVisual, '#ff375f', `Friction: ${Math.round(frictionForceVisual)}N`, 0.4)}
+                                {renderArrow(0, -10, frictionForceVisual, '#ff375f', `Friction: ${Math.round(frictionForceVisual)}N`, 0.4)}
                                 
                                 {/* Net Force (Green) */}
-                                {renderArrow(0, -150, netForceVisual, '#30d158', `Net: ${Math.round(netForceVisual)}N`, 0.4)}
+                                {renderArrow(0, -180, netForceVisual, '#30d158', `Net: ${Math.round(netForceVisual)}N`, 0.4)}
 
                                 {/* Velocity (Cyan) */}
-                                {renderArrow(0, -200, velocityVisual * 20, '#00f0ff', `v: ${velocityVisual.toFixed(1)} m/s`, 1)}
+                                {renderArrow(0, -220, velocityVisual * 20, '#00f0ff', `v: ${velocityVisual.toFixed(1)} m/s`, 1)}
                             </g>
                         </g>
 
                         {/* Speedometer UI overlay on SVG */}
-                        <g transform="translate(0, -220)">
+                        <g transform="translate(0, -270)">
                             <rect x="-150" y="-40" width="300" height="80" rx="16" fill="rgba(0,0,0,0.5)" border="1px solid rgba(255,255,255,0.1)" />
                             <text x="0" y="-10" fill="#00f0ff" fontSize="16" fontWeight="600" textAnchor="middle">Speed (v)</text>
                             <text x="0" y="20" fill="#fff" fontSize="24" fontWeight="bold" textAnchor="middle">{Math.abs(velocityVisual).toFixed(1)} m/s</text>
