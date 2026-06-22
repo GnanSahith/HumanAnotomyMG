@@ -28,12 +28,12 @@ export default function CustomMassesAndSprings({ onBack, title }) {
 
     // UI/Simulation Toggles
     const [slowMotion, setSlowMotion] = useState(false);
-    const [showVelocity, setShowVelocity] = useState(false);
-    const [showForces, setShowForces] = useState(false);
-    const [showEnergy, setShowEnergy] = useState(false);
+    const [showVelocity, setShowVelocity] = useState(true);
+    const [showForces, setShowForces] = useState(true);
+    const [showEnergy, setShowEnergy] = useState(true);
     
     // Tools
-    const [showStopwatch, setShowStopwatch] = useState(false);
+    const [showStopwatch, setShowStopwatch] = useState(true);
     const [stopwatchTime, setStopwatchTime] = useState(0);
     const [stopwatchRunning, setStopwatchRunning] = useState(false);
 
@@ -457,7 +457,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
 
             {/* Top Header Bar */}
             <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
                     {onBack && (
                         <button onClick={onBack} className="glass-btn back-btn">
                             <ArrowLeft size={16} /> Back
@@ -665,30 +665,6 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                 <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
-                    <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
-                        <input type="checkbox" checked={showEnergy} onChange={(e) => setShowEnergy(e.target.checked)} style={{ width: '18px', height: '18px', accentColor: '#3498db' }} />
-                        <span style={{ fontSize: '14px', color: '#2ecc71', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <BarChart2 size={16} /> Show Energy Graph
-                        </span>
-                    </label>
-                    <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
-                        <input type="checkbox" checked={showStopwatch} onChange={(e) => setShowStopwatch(e.target.checked)} style={{ width: '18px', height: '18px', accentColor: '#3498db' }} />
-                        <span style={{ fontSize: '14px', color: '#3498db', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <Timer size={16} /> Show Stopwatch
-                        </span>
-                    </label>
-                    <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
-                        <input type="checkbox" checked={showVelocity} onChange={(e) => setShowVelocity(e.target.checked)} style={{ width: '18px', height: '18px', accentColor: '#3498db' }} />
-                        <span style={{ fontSize: '14px', color: '#f1c40f', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <Crosshair size={16} /> Velocity Vector
-                        </span>
-                    </label>
-                    <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
-                        <input type="checkbox" checked={showForces} onChange={(e) => setShowForces(e.target.checked)} style={{ width: '18px', height: '18px', accentColor: '#3498db' }} />
-                        <span style={{ fontSize: '14px', color: '#3498db', fontWeight: 500, display: 'flex', alignItems: 'center', gap: '6px' }}>
-                            <Crosshair size={16} /> Force Vectors
-                        </span>
-                    </label>
                     <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', marginTop: '4px' }}>
                         <input type="checkbox" checked={slowMotion} onChange={(e) => setSlowMotion(e.target.checked)} style={{ width: '18px', height: '18px', accentColor: '#3498db' }} />
                         <span style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>🐢 Slow Motion Playback</span>
