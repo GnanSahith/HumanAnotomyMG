@@ -1524,7 +1524,7 @@ export default function CustomBalancingAct({ onBack, title }) {
                 <span className="font-semibold text-purple-300 block flex items-center gap-1"><HelpCircle size={13} /> Lab Tip</span>
                 <p>Drag blocks, people, or mystery boxes from the shelf at the bottom. If dropped near the seesaw, they snap to placement ticks. Stack multiple items on top of each other at the same slot!</p>
               </div>
-            </section>
+            </div>
           ) : (
             /* GAME MODE SECTION PANEL */
             <section 
