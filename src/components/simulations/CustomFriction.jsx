@@ -167,28 +167,64 @@ const CustomFriction = ({ onBack, title }) => {
     };
 
     return (
-        <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', color: '#fff' }}>
-            <div style={{ padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10, background: 'rgba(0,0,0,0.5)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                    <button 
-                        onClick={onBack}
-                        style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: 'none', padding: '8px 16px', borderRadius: '100px', color: '#fff', cursor: 'pointer' }}
-                    >
-                        <ArrowLeft size={18} /> Back
-                    </button>
-                    <h2 style={{ margin: 0, fontSize: '24px', fontWeight: 'bold' }}>{title}</h2>
-                </div>
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
+            <style>{`
+                .glass-btn-back { transition: all 0.3s ease; }
+                .glass-btn-back:hover { background: rgba(255, 55, 95, 0.8) !important; border-color: #ff375f !important; }
+                .glass-btn-reset { transition: all 0.3s ease; }
+                .glass-btn-reset:hover { background: rgba(52, 152, 219, 0.4) !important; border-color: #3498db !important; }
+            `}</style>
+            
+            {/* Top Header Bar */}
+            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10 }}>
+                <button 
+                    onClick={onBack}
+                    className="glass-btn-back"
+                    style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', color: 'white', padding: '10px 20px', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease' }}
+                >
+                    <ArrowLeft size={18} /> Back
+                </button>
+                <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
+                    {title}
+                </h2>
                 <button 
                     onClick={initAtoms}
-                    style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#e74c3c', border: 'none', padding: '8px 16px', borderRadius: '100px', color: '#fff', cursor: 'pointer', fontWeight: 'bold' }}
+                    className="glass-btn-reset"
+                    style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', color: 'white', padding: '10px 20px', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease' }}
                 >
                     <RotateCcw size={18} /> Reset
                 </button>
             </div>
 
-            <div style={{ flex: 1, display: 'flex', padding: '40px', gap: '40px', overflow: 'hidden' }}>
-                <div style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                    
+            {/* Left Floating Control Panel (Books) */}
+            <div style={{
+                position: 'absolute',
+                left: '40px',
+                top: '120px',
+                bottom: '40px',
+                width: '340px',
+                background: 'rgba(20, 20, 30, 0.8)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(12px)',
+                padding: '20px',
+                borderRadius: '16px',
+                zIndex: 10,
+                color: 'white',
+                fontFamily: "'Inter', sans-serif",
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxSizing: 'border-box'
+            }}>
+                <div style={{ marginBottom: '40px', textAlign: 'center' }}>
+                    <h3 style={{ margin: '0 0 10px 0', fontSize: '20px', color: '#3498db', fontWeight: '600' }}>Friction Simulation</h3>
+                    <p style={{ margin: 0, fontSize: '14px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.5' }}>
+                        Drag the top book back and forth to create friction and heat.
+                    </p>
+                </div>
+
+                <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', gap: '4px' }}>
                     <div 
                         ref={bookRef}
                         onPointerDown={handlePointerDown}
@@ -196,17 +232,18 @@ const CustomFriction = ({ onBack, title }) => {
                         onPointerUp={handlePointerUp}
                         onPointerCancel={handlePointerUp}
                         style={{
-                            width: '300px',
+                            width: '260px',
                             height: '60px',
-                            background: '#2ecc71',
+                            background: 'linear-gradient(135deg, #2ecc71, #27ae60)',
+                            border: '1px solid rgba(255,255,255,0.2)',
                             borderRadius: '8px',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             fontWeight: 'bold',
-                            fontSize: '24px',
+                            fontSize: '22px',
                             cursor: 'grab',
-                            boxShadow: '0 10px 20px rgba(0,0,0,0.3), inset 0 2px 5px rgba(255,255,255,0.3)',
+                            boxShadow: '0 8px 16px rgba(0,0,0,0.4), inset 0 2px 4px rgba(255,255,255,0.3)',
                             userSelect: 'none',
                             touchAction: 'none',
                             zIndex: 2
@@ -217,18 +254,19 @@ const CustomFriction = ({ onBack, title }) => {
 
                     <div 
                         style={{
-                            width: '300px',
+                            width: '260px',
                             height: '60px',
-                            background: '#f1c40f',
+                            background: 'linear-gradient(135deg, #f1c40f, #f39c12)',
+                            border: '1px solid rgba(255,255,255,0.2)',
                             borderRadius: '8px',
                             display: 'flex',
                             alignItems: 'center',
                             justifyContent: 'center',
                             fontWeight: 'bold',
-                            fontSize: '24px',
-                            color: '#000',
+                            fontSize: '22px',
+                            color: '#1a1a2e',
                             marginTop: '-2px',
-                            boxShadow: '0 10px 20px rgba(0,0,0,0.3), inset 0 2px 5px rgba(255,255,255,0.3)',
+                            boxShadow: '0 8px 16px rgba(0,0,0,0.4), inset 0 2px 4px rgba(255,255,255,0.3)',
                             userSelect: 'none',
                             zIndex: 1
                         }}
@@ -236,53 +274,89 @@ const CustomFriction = ({ onBack, title }) => {
                         Physics
                     </div>
                 </div>
+            </div>
 
-                <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
-                    <div style={{
-                        width: '400px',
-                        height: '400px',
-                        borderRadius: '50%',
-                        background: 'rgba(0,0,0,0.4)',
-                        border: '8px solid #555',
-                        boxShadow: '0 0 50px rgba(0,0,0,0.5), inset 0 0 50px rgba(0,0,0,0.8)',
-                        overflow: 'hidden',
-                        position: 'relative'
-                    }}>
-                        <canvas 
-                            ref={canvasRef}
-                            width={400}
-                            height={400}
-                            style={{ width: '100%', height: '100%', display: 'block' }}
-                        />
-                    </div>
-                </div>
+            {/* Canvas / Main View */}
+            <div style={{ 
+                position: 'absolute', 
+                inset: 0, 
+                zIndex: 1, 
+                display: 'flex', 
+                alignItems: 'center', 
+                justifyContent: 'center',
+                pointerEvents: 'none'
+            }}>
+               <div style={{
+                   width: '400px',
+                   height: '400px',
+                   borderRadius: '50%',
+                   background: 'rgba(10, 10, 20, 0.6)',
+                   border: '4px solid rgba(52, 152, 219, 0.3)',
+                   boxShadow: '0 0 40px rgba(52, 152, 219, 0.2), inset 0 0 40px rgba(0, 0, 0, 0.8)',
+                   overflow: 'hidden',
+                   position: 'relative',
+                   backdropFilter: 'blur(4px)',
+                   pointerEvents: 'auto'
+               }}>
+                   <canvas 
+                       ref={canvasRef}
+                       width={400}
+                       height={400}
+                       style={{ width: '100%', height: '100%', display: 'block' }}
+                   />
+               </div>
+            </div>
 
-                <div style={{ width: '100px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
-                    <Thermometer size={48} color={'#e74c3c'} />
-                    <div style={{
-                        width: '30px',
-                        height: '300px',
-                        background: 'rgba(255,255,255,0.1)',
-                        borderRadius: '20px',
-                        border: '2px solid rgba(255,255,255,0.2)',
-                        position: 'relative',
-                        overflow: 'hidden'
-                    }}>
-                        <div 
-                            ref={thermoRef}
-                            style={{
-                                position: 'absolute',
-                                bottom: 0,
-                                left: 0,
-                                right: 0,
-                                height: '10%',
-                                background: 'linear-gradient(to top, #c0392b, #e74c3c)',
-                                borderRadius: '20px'
-                            }} 
-                        />
-                    </div>
-                    <div style={{ fontWeight: 'bold' }}>Temperature</div>
+            {/* Right Floating Control Panel (Thermometer) */}
+            <div style={{
+                position: 'absolute',
+                right: '40px',
+                top: '120px',
+                bottom: '40px',
+                width: '140px',
+                background: 'rgba(20, 20, 30, 0.8)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(12px)',
+                padding: '20px',
+                borderRadius: '16px',
+                zIndex: 10,
+                color: 'white',
+                fontFamily: "'Inter', sans-serif",
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '20px',
+                boxSizing: 'border-box'
+            }}>
+                <Thermometer size={40} color={'#ff375f'} style={{ filter: 'drop-shadow(0 0 8px rgba(255, 55, 95, 0.5))' }} />
+                <div style={{
+                    width: '24px',
+                    flex: 1,
+                    maxHeight: '260px',
+                    background: 'rgba(255,255,255,0.05)',
+                    borderRadius: '12px',
+                    border: '2px solid rgba(255,255,255,0.1)',
+                    position: 'relative',
+                    overflow: 'hidden',
+                    boxShadow: 'inset 0 0 10px rgba(0,0,0,0.5)'
+                }}>
+                    <div 
+                        ref={thermoRef}
+                        style={{
+                            position: 'absolute',
+                            bottom: 0,
+                            left: 0,
+                            right: 0,
+                            height: '10%',
+                            background: 'linear-gradient(to top, #ff375f, #ff7b93)',
+                            borderRadius: '12px',
+                            boxShadow: '0 0 10px rgba(255, 55, 95, 0.8)',
+                            transition: 'height 0.1s ease'
+                        }} 
+                    />
                 </div>
+                <div style={{ fontWeight: '600', fontSize: '14px', color: 'rgba(255,255,255,0.8)' }}>Temperature</div>
             </div>
         </div>
     );

@@ -345,129 +345,223 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
     };
 
     return (
-        <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', color: '#fff' }}>
-            <div style={{ padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.5)', zIndex: 10 }}>
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
+            <style>{`
+                .btn-back {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .btn-back:hover {
+                    background: rgba(255, 55, 95, 0.8) !important;
+                    border-color: #ff375f !important;
+                    box-shadow: 0 0 15px rgba(255, 55, 95, 0.4);
+                }
+                .btn-reset {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                .btn-reset:hover {
+                    background: rgba(52, 152, 219, 0.4) !important;
+                    border-color: #3498db !important;
+                    box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
+                }
+                .btn-play-pause {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: rgba(255, 255, 255, 0.1);
+                    border: 1px solid rgba(255, 255, 255, 0.2);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    padding: 10px 20px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+                .btn-play-pause:hover {
+                    background: rgba(255, 255, 255, 0.2) !important;
+                    border-color: rgba(255, 255, 255, 0.4) !important;
+                    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+                }
+                /* Custom styling for floating panel scrollbar */
+                .floating-panel::-webkit-scrollbar {
+                    width: 6px;
+                }
+                .floating-panel::-webkit-scrollbar-track {
+                    background: rgba(0, 0, 0, 0.1);
+                    border-radius: 3px;
+                }
+                .floating-panel::-webkit-scrollbar-thumb {
+                    background: rgba(255, 255, 255, 0.2);
+                    border-radius: 3px;
+                }
+                .floating-panel::-webkit-scrollbar-thumb:hover {
+                    background: rgba(255, 255, 255, 0.4);
+                }
+            `}</style>
+
+            {/* Top Header Bar */}
+            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10 }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.1)', border: 'none', padding: '8px 16px', borderRadius: '100px', color: '#fff', cursor: 'pointer' }}>
+                    <button className="btn-back" onClick={onBack}>
                         <ArrowLeft size={18} /> Back
                     </button>
-                    <h2 style={{ margin: 0, fontSize: '24px', fontWeight: 'bold' }}>{title}</h2>
+                    <h2 style={{ margin: 0, color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>{title}</h2>
                 </div>
                 
                 <div style={{ display: 'flex', gap: '10px' }}>
-                    <button onClick={() => stateRef.current.isPlaying = !stateRef.current.isPlaying} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', padding: '8px', borderRadius: '50%', color: '#fff', cursor: 'pointer' }}>
+                    <button className="btn-play-pause" onClick={() => stateRef.current.isPlaying = !stateRef.current.isPlaying}>
                         <Play size={20} />
                     </button>
-                    <button onClick={handleReset} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#e74c3c', border: 'none', padding: '8px 16px', borderRadius: '100px', color: '#fff', cursor: 'pointer', fontWeight: 'bold' }}>
+                    <button className="btn-reset" onClick={handleReset}>
                         <RotateCcw size={18} /> Reset
                     </button>
                 </div>
             </div>
 
-            <div style={{ flex: 1, display: 'flex', position: 'relative' }}>
-                <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
-                    <canvas 
-                        ref={canvasRef}
-                        width={800}
-                        height={600}
-                        style={{ width: '100%', height: '100%', display: 'block', cursor: 'crosshair', background: 'linear-gradient(to bottom, #1a1a2e, #16213e)' }}
-                        onPointerDown={handlePointerDown}
-                        onPointerMove={handlePointerMove}
-                        onPointerUp={handlePointerUp}
-                        onPointerCancel={handlePointerUp}
-                    />
-                </div>
+            {/* Canvas / Main View */}
+            <canvas 
+                ref={canvasRef}
+                width={800}
+                height={600}
+                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', display: 'block', cursor: 'crosshair', background: 'radial-gradient(circle, #1a1a3a 0%, #0a0a1a 100%)', zIndex: 1 }}
+                onPointerDown={handlePointerDown}
+                onPointerMove={handlePointerMove}
+                onPointerUp={handlePointerUp}
+                onPointerCancel={handlePointerUp}
+            />
 
-                {/* Right Controls Panel */}
-                <div style={{ width: '350px', background: 'rgba(0,0,0,0.8)', borderLeft: '1px solid rgba(255,255,255,0.1)', display: 'flex', flexDirection: 'column' }}>
-                    
-                    {/* Bar Graph */}
-                    {showBarGraph && (
-                        <div style={{ padding: '20px', borderBottom: '1px solid rgba(255,255,255,0.1)', height: '250px', display: 'flex', flexDirection: 'column' }}>
-                            <h3 style={{ margin: '0 0 10px 0', fontSize: '16px' }}>Energy</h3>
-                            <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'flex-end', gap: '10px' }}>
-                                {[
-                                    { label: 'Kinetic', color: '#2ecc71' },
-                                    { label: 'Potential', color: '#3498db' },
-                                    { label: 'Thermal', color: '#e74c3c' },
-                                    { label: 'Total', color: '#f1c40f' }
-                                ].map((item, i) => (
-                                    <div key={item.label} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '40px', height: '100%' }}>
-                                        <div style={{ flex: 1, width: '100%', display: 'flex', alignItems: 'flex-end', background: 'rgba(255,255,255,0.05)', borderRadius: '4px' }}>
-                                            <div ref={barsRef} style={{ display: i===0 ? 'block' : 'none' }}></div>
-                                            {/* We inject the children manually to keep React out of loop */}
-                                        </div>
+            {/* Right Controls Panel */}
+            <div className="floating-panel" style={{
+                position: 'absolute',
+                right: '40px',
+                top: '120px',
+                bottom: '40px',
+                width: '350px',
+                overflowY: 'auto',
+                background: 'rgba(20, 20, 30, 0.8)',
+                border: '1px solid rgba(255, 255, 255, 0.1)',
+                backdropFilter: 'blur(12px)',
+                padding: '20px',
+                borderRadius: '16px',
+                zIndex: 10,
+                color: 'white',
+                fontFamily: "'Inter', sans-serif",
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '20px'
+            }}>
+                
+                {/* Bar Graph */}
+                {showBarGraph && (
+                    <div style={{ borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '20px', height: '250px', display: 'flex', flexDirection: 'column' }}>
+                        <h3 style={{ margin: '0 0 10px 0', fontSize: '16px', fontWeight: '600' }}>Energy</h3>
+                        <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'flex-end', gap: '10px' }}>
+                            {[
+                                { label: 'Kinetic', color: '#2ecc71' },
+                                { label: 'Potential', color: '#3498db' },
+                                { label: 'Thermal', color: '#e74c3c' },
+                                { label: 'Total', color: '#f1c40f' }
+                            ].map((item, i) => (
+                                <div key={item.label} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '40px', height: '100%' }}>
+                                    <div style={{ flex: 1, width: '100%', display: 'flex', alignItems: 'flex-end', background: 'rgba(255,255,255,0.05)', borderRadius: '4px' }}>
+                                        <div ref={barsRef} style={{ display: i===0 ? 'block' : 'none' }}></div>
+                                        {/* We inject the children manually to keep React out of loop */}
                                     </div>
-                                ))}
-                            </div>
-                            
-                            {/* Bar Containers */}
-                            <div ref={barsRef} style={{ display: 'none' }}>
-                                <div style={{ background: '#2ecc71', width: '40px', transition: 'none' }}></div>
-                                <div style={{ background: '#3498db', width: '40px', transition: 'none' }}></div>
-                                <div style={{ background: '#e74c3c', width: '40px', transition: 'none' }}></div>
-                                <div style={{ background: '#f1c40f', width: '40px', transition: 'none' }}></div>
-                            </div>
-
-                            {/* Actual Rendering of Bars */}
-                            <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'flex-end', gap: '10px', marginTop: '-185px', pointerEvents: 'none' }}>
-                                <div style={{ height: '100%', width: '40px', display: 'flex', alignItems: 'flex-end' }}><div id="bar-ke" style={{ width: '100%', background: '#2ecc71', borderRadius: '4px 4px 0 0' }}></div></div>
-                                <div style={{ height: '100%', width: '40px', display: 'flex', alignItems: 'flex-end' }}><div id="bar-pe" style={{ width: '100%', background: '#3498db', borderRadius: '4px 4px 0 0' }}></div></div>
-                                <div style={{ height: '100%', width: '40px', display: 'flex', alignItems: 'flex-end' }}><div id="bar-te" style={{ width: '100%', background: '#e74c3c', borderRadius: '4px 4px 0 0' }}></div></div>
-                                <div style={{ height: '100%', width: '40px', display: 'flex', alignItems: 'flex-end' }}><div id="bar-tot" style={{ width: '100%', background: '#f1c40f', borderRadius: '4px 4px 0 0' }}></div></div>
-                            </div>
-                            <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '10px', fontSize: '12px', color: '#aaa' }}>
-                                <span>Kinetic</span><span>Potential</span><span>Thermal</span><span>Total</span>
-                            </div>
+                                </div>
+                            ))}
                         </div>
-                    )}
-
-                    <div style={{ padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px', overflowY: 'auto' }}>
-                        {/* Toggles */}
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', background: 'rgba(255,255,255,0.05)', padding: '16px', borderRadius: '12px' }}>
-                            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
-                                <input type="checkbox" checked={showPieChart} onChange={e => setShowPieChart(e.target.checked)} />
-                                Pie Chart
-                            </label>
-                            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
-                                <input type="checkbox" checked={showBarGraph} onChange={e => setShowBarGraph(e.target.checked)} />
-                                Bar Graph
-                            </label>
-                            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer' }}>
-                                <input type="checkbox" checked={showGrid} onChange={e => setShowGrid(e.target.checked)} />
-                                Grid
-                            </label>
+                        
+                        {/* Bar Containers */}
+                        <div ref={barsRef} style={{ display: 'none' }}>
+                            <div style={{ background: '#2ecc71', width: '40px', transition: 'none' }}></div>
+                            <div style={{ background: '#3498db', width: '40px', transition: 'none' }}></div>
+                            <div style={{ background: '#e74c3c', width: '40px', transition: 'none' }}></div>
+                            <div style={{ background: '#f1c40f', width: '40px', transition: 'none' }}></div>
                         </div>
 
-                        {/* Controls */}
-                        <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', background: 'rgba(255,255,255,0.05)', padding: '16px', borderRadius: '12px' }}>
-                            <div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                                    <label>Friction</label>
-                                    <span>{friction === 0 ? 'None' : friction.toFixed(2)}</span>
-                                </div>
-                                <input type="range" min="0" max="0.5" step="0.01" value={friction} onChange={e => setFriction(parseFloat(e.target.value))} style={{ width: '100%', accentColor: '#bf5af2' }} />
-                            </div>
-
-                            <div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                                    <label>Gravity</label>
-                                    <span>{gravity} m/s²</span>
-                                </div>
-                                <input type="range" min="1" max="20" step="0.1" value={gravity} onChange={e => setGravity(parseFloat(e.target.value))} style={{ width: '100%', accentColor: '#bf5af2' }} />
-                            </div>
-
-                            <div>
-                                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
-                                    <label>Mass</label>
-                                    <span>{mass} kg</span>
-                                </div>
-                                <input type="range" min="5" max="100" step="1" value={mass} onChange={e => setMass(parseFloat(e.target.value))} style={{ width: '100%', accentColor: '#bf5af2' }} />
-                            </div>
+                        {/* Actual Rendering of Bars */}
+                        <div style={{ flex: 1, display: 'flex', justifyContent: 'space-around', alignItems: 'flex-end', gap: '10px', marginTop: '-185px', pointerEvents: 'none' }}>
+                            <div style={{ height: '100%', width: '40px', display: 'flex', alignItems: 'flex-end' }}><div id="bar-ke" style={{ width: '100%', background: '#2ecc71', borderRadius: '4px 4px 0 0' }}></div></div>
+                            <div style={{ height: '100%', width: '40px', display: 'flex', alignItems: 'flex-end' }}><div id="bar-pe" style={{ width: '100%', background: '#3498db', borderRadius: '4px 4px 0 0' }}></div></div>
+                            <div style={{ height: '100%', width: '40px', display: 'flex', alignItems: 'flex-end' }}><div id="bar-te" style={{ width: '100%', background: '#e74c3c', borderRadius: '4px 4px 0 0' }}></div></div>
+                            <div style={{ height: '100%', width: '40px', display: 'flex', alignItems: 'flex-end' }}><div id="bar-tot" style={{ width: '100%', background: '#f1c40f', borderRadius: '4px 4px 0 0' }}></div></div>
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '10px', fontSize: '12px', color: '#aaa' }}>
+                            <span>Kinetic</span><span>Potential</span><span>Thermal</span><span>Total</span>
                         </div>
                     </div>
+                )}
 
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    {/* Toggles */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px', background: 'rgba(255,255,255,0.05)', padding: '16px', borderRadius: '12px' }}>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontSize: '14px' }}>
+                            <input type="checkbox" checked={showPieChart} onChange={e => setShowPieChart(e.target.checked)} style={{ accentColor: '#3498db' }} />
+                            Pie Chart
+                        </label>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontSize: '14px' }}>
+                            <input type="checkbox" checked={showBarGraph} onChange={e => setShowBarGraph(e.target.checked)} style={{ accentColor: '#3498db' }} />
+                            Bar Graph
+                        </label>
+                        <label style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', fontSize: '14px' }}>
+                            <input type="checkbox" checked={showGrid} onChange={e => setShowGrid(e.target.checked)} style={{ accentColor: '#3498db' }} />
+                            Grid
+                        </label>
+                    </div>
+
+                    {/* Controls */}
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '24px', background: 'rgba(255,255,255,0.05)', padding: '16px', borderRadius: '12px' }}>
+                        <div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '14px' }}>
+                                <label style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Friction</label>
+                                <span style={{ fontWeight: '500' }}>{friction === 0 ? 'None' : friction.toFixed(2)}</span>
+                            </div>
+                            <input type="range" min="0" max="0.5" step="0.01" value={friction} onChange={e => setFriction(parseFloat(e.target.value))} style={{ width: '100%', accentColor: '#3498db' }} />
+                        </div>
+
+                        <div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '14px' }}>
+                                <label style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Gravity</label>
+                                <span style={{ fontWeight: '500' }}>{gravity} m/s²</span>
+                            </div>
+                            <input type="range" min="1" max="20" step="0.1" value={gravity} onChange={e => setGravity(parseFloat(e.target.value))} style={{ width: '100%', accentColor: '#2ecc71' }} />
+                        </div>
+
+                        <div>
+                            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px', fontSize: '14px' }}>
+                                <label style={{ color: 'rgba(255, 255, 255, 0.8)' }}>Mass</label>
+                                <span style={{ fontWeight: '500' }}>{mass} kg</span>
+                            </div>
+                            <input type="range" min="5" max="100" step="1" value={mass} onChange={e => setMass(parseFloat(e.target.value))} style={{ width: '100%', accentColor: '#bf5af2' }} />
+                        </div>
+                    </div>
                 </div>
+
             </div>
             
             {/* We will hook the DOM refs to the actual visual bars */}

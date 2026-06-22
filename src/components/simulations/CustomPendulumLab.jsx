@@ -88,214 +88,225 @@ export default function CustomPendulumLab({ onBack, title }) {
         });
     };
 
+    const headerButtonStyle = {
+        background: 'rgba(255, 255, 255, 0.1)',
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        backdropFilter: 'blur(10px)',
+        color: 'white',
+        padding: '10px 20px',
+        borderRadius: '8px',
+        cursor: 'pointer',
+        transition: 'all 0.3s ease'
+    };
+
+    const backButtonStyle = {
+        ...headerButtonStyle,
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        fontWeight: 500
+    };
+
+    const actionButtonStyle = {
+        ...headerButtonStyle,
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        fontWeight: 600
+    };
+
     return (
-        <div style={{
-            width: '100%', height: '100%',
-            display: 'flex', flexDirection: 'column',
-            background: 'linear-gradient(180deg, #12121A 0%, #0a0a0f 100%)',
-            color: '#fff', position: 'relative', overflow: 'hidden'
-        }}>
-            
-            {/* Top Bar */}
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
+            <style>{`
+                .btn-back-hover:hover {
+                    background: rgba(255, 55, 95, 0.8) !important;
+                    border-color: #ff375f !important;
+                }
+                .btn-action-hover:hover {
+                    background: rgba(52, 152, 219, 0.4) !important;
+                    border-color: #3498db !important;
+                }
+            `}</style>
+
+            {/* Top Header Bar */}
             <div style={{
-                padding: '16px 24px',
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                borderBottom: '1px solid rgba(255,255,255,0.05)',
-                background: 'rgba(255,255,255,0.02)'
+                position: 'absolute', top: '20px', left: '20px', right: '20px',
+                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                zIndex: 10
             }}>
                 {/* Left Side: Back Button */}
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
                     {onBack && (
                         <button 
                             onClick={onBack}
-                            style={{
-                                display: 'flex', alignItems: 'center', gap: '8px',
-                                background: 'rgba(255, 255, 255, 0.1)',
-                                border: '1px solid rgba(255, 255, 255, 0.2)',
-                                padding: '8px 16px', borderRadius: '100px',
-                                color: '#fff', cursor: 'pointer',
-                                transition: 'all 0.2s',
-                                fontWeight: 500
-                            }}
-                            onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)'; e.currentTarget.style.borderColor = '#ff375f'; }}
-                            onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
+                            className="btn-back-hover"
+                            style={backButtonStyle}
                         >
                             <ArrowLeft size={16} /> Back to Library
                         </button>
                     )}
                 </div>
 
-                {/* Center: Title & Icon */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>
-                    <div style={{ padding: '8px', background: 'rgba(191,90,242,0.2)', borderRadius: '12px', border: '1px solid rgba(191,90,242,0.3)' }}>
-                        <Atom size={24} color="#bf5af2" />
-                    </div>
-                    <h2 style={{ fontSize: '24px', margin: 0, fontWeight: 600, color: '#fff' }}>{title || 'Pendulum Lab MG'}</h2>
-                </div>
+                {/* Center: Title */}
+                <h2 style={{
+                    color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600',
+                    textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0
+                }}>
+                    {title || 'Pendulum Lab MG'}
+                </h2>
 
-                {/* Right Side: Controls */}
+                {/* Right Side: Action Buttons */}
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
                     <button 
                         onClick={() => setIsPlaying(!isPlaying)}
-                        style={{
-                            background: isPlaying ? 'rgba(255,55,95,0.2)' : 'rgba(10,132,255,0.2)',
-                            color: isPlaying ? '#ff375f' : '#0a84ff',
-                            border: 'none', padding: '10px 20px', borderRadius: '100px',
-                            display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer',
-                            fontWeight: 600, transition: 'all 0.2s'
-                        }}
+                        className="btn-action-hover"
+                        style={actionButtonStyle}
                     >
                         {isPlaying ? <Pause size={18} /> : <Play size={18} />}
                         {isPlaying ? 'Pause' : 'Play'}
                     </button>
                     <button 
                         onClick={handleReset}
-                        style={{
-                            background: 'rgba(255,255,255,0.1)',
-                            color: '#fff',
-                            border: 'none', padding: '10px 16px', borderRadius: '100px',
-                            display: 'flex', alignItems: 'center', gap: '8px', cursor: 'pointer',
-                            fontWeight: 600, transition: 'all 0.2s'
-                        }}
+                        className="btn-action-hover"
+                        style={actionButtonStyle}
                     >
                         <RotateCcw size={18} /> Reset
                     </button>
                 </div>
             </div>
 
-            <div style={{ display: 'flex', flex: 1, overflow: 'hidden', height: '100%', minHeight: 0 }}>
-                
-                {/* SVG Canvas Area */}
-                <div style={{ flex: 1, position: 'relative', height: '100%', minHeight: 0, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            {/* Canvas / SVG Main View */}
+            <div style={{
+                position: 'absolute', inset: 0, zIndex: 1,
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                pointerEvents: 'auto'
+            }}>
+                {/* Background Grid for visual context */}
+                <div style={{
+                    position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
+                    backgroundSize: '40px 40px',
+                    backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)'
+                }}></div>
+
+                <svg viewBox="-200 -50 400 450" preserveAspectRatio="xMidYMin meet" style={{ width: '100%', height: '100%', zIndex: 2 }}>
+                    {/* Pivot Mount */}
+                    <rect x="-45" y="-15" width="90" height="15" fill="rgba(255,255,255,0.1)" rx="6" />
+                    <circle cx="0" cy="0" r="6" fill="#0a84ff" />
                     
-                    {/* Background Grid for visual context */}
-                    <div style={{
-                        position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
-                        backgroundSize: '40px 40px',
-                        backgroundImage: 'linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px)'
-                    }}></div>
+                    {/* String */}
+                    <line 
+                        x1="0" y1="0" 
+                        x2={bobPos.x} y2={bobPos.y} 
+                        stroke="rgba(255,255,255,0.4)" 
+                        strokeWidth="4" 
+                    />
+                    
+                    {/* Bob (Mass) */}
+                    <circle 
+                        cx={bobPos.x} 
+                        cy={bobPos.y} 
+                        r={Math.max(15, mass * 25)} // Radius scales visually with mass
+                        fill="url(#bobGradient)" 
+                        filter="drop-shadow(0 10px 20px rgba(10,132,255,0.4))"
+                    />
+                    
+                    {/* Highlight dot on bob */}
+                    <circle cx={bobPos.x - (mass*5)} cy={bobPos.y - (mass*5)} r={Math.max(3, mass * 5)} fill="rgba(255,255,255,0.6)" />
 
-                    <svg viewBox="-200 -50 400 450" preserveAspectRatio="xMidYMin meet" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, width: '100%', height: '100%', zIndex: 2 }}>
-                        {/* Pivot Mount */}
-                        <rect x="-45" y="-15" width="90" height="15" fill="rgba(255,255,255,0.1)" rx="6" />
-                        <circle cx="0" cy="0" r="6" fill="#0a84ff" />
-                        
-                        {/* String */}
-                        <line 
-                            x1="0" y1="0" 
-                            x2={bobPos.x} y2={bobPos.y} 
-                            stroke="rgba(255,255,255,0.4)" 
-                            strokeWidth="4" 
-                        />
-                        
-                        {/* Bob (Mass) */}
-                        <circle 
-                            cx={bobPos.x} 
-                            cy={bobPos.y} 
-                            r={Math.max(15, mass * 25)} // Radius scales visually with mass
-                            fill="url(#bobGradient)" 
-                            filter="drop-shadow(0 10px 20px rgba(10,132,255,0.4))"
-                        />
-                        
-                        {/* Highlight dot on bob */}
-                        <circle cx={bobPos.x - (mass*5)} cy={bobPos.y - (mass*5)} r={Math.max(3, mass * 5)} fill="rgba(255,255,255,0.6)" />
+                    <defs>
+                        <radialGradient id="bobGradient" cx="30%" cy="30%" r="70%">
+                            <stop offset="0%" stopColor="#47a1ff" />
+                            <stop offset="100%" stopColor="#0a84ff" />
+                        </radialGradient>
+                    </defs>
+                </svg>
+            </div>
 
-                        <defs>
-                            <radialGradient id="bobGradient" cx="30%" cy="30%" r="70%">
-                                <stop offset="0%" stopColor="#47a1ff" />
-                                <stop offset="100%" stopColor="#0a84ff" />
-                            </radialGradient>
-                        </defs>
-                    </svg>
-
+            {/* Controls Floating Panel */}
+            <div style={{
+                position: 'absolute', right: '40px', top: '120px', bottom: '40px', width: '320px', overflowY: 'auto',
+                background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+                padding: '20px', borderRadius: '16px', zIndex: 10, color: 'white', fontFamily: "'Inter', sans-serif",
+                display: 'flex', flexDirection: 'column', gap: '32px'
+            }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px' }}>
+                    <Settings2 size={20} />
+                    <h3 style={{ margin: 0, fontSize: '15px', fontWeight: 600 }}>Simulation Parameters</h3>
                 </div>
 
-                {/* Controls Sidebar */}
-                <div style={{
-                    width: '320px', background: 'rgba(0,0,0,0.3)',
-                    borderLeft: '1px solid rgba(255,255,255,0.05)',
-                    padding: '24px', display: 'flex', flexDirection: 'column', gap: '32px',
-                    overflowY: 'auto'
-                }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px' }}>
-                        <Settings2 size={20} />
-                        <h3 style={{ margin: 0, fontSize: '15px', fontWeight: 600 }}>Simulation Parameters</h3>
+                {/* Length Control */}
+                <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
+                        <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>String Length (L)</label>
+                        <span style={{ fontSize: '14px', color: '#3498db', fontWeight: 700 }}>{length / 100} m</span>
                     </div>
+                    <input 
+                        type="range" 
+                        min="10" max="200" 
+                        value={length} 
+                        onChange={(e) => setLength(Number(e.target.value))}
+                        style={{ width: '100%', accentColor: '#3498db', cursor: 'pointer' }}
+                    />
+                </div>
 
-                    {/* Length Control */}
-                    <div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-                            <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>String Length (L)</label>
-                            <span style={{ fontSize: '14px', color: '#0a84ff', fontWeight: 700 }}>{length / 100} m</span>
-                        </div>
-                        <input 
-                            type="range" 
-                            min="10" max="200" 
-                            value={length} 
-                            onChange={(e) => setLength(Number(e.target.value))}
-                            style={{ width: '100%', accentColor: '#0a84ff' }}
-                        />
+                {/* Mass Control */}
+                <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
+                        <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Mass (m)</label>
+                        <span style={{ fontSize: '14px', color: '#2ecc71', fontWeight: 700 }}>{mass} kg</span>
                     </div>
+                    <input 
+                        type="range" 
+                        min="0.1" max="3" step="0.1"
+                        value={mass} 
+                        onChange={(e) => setMass(Number(e.target.value))}
+                        style={{ width: '100%', accentColor: '#2ecc71', cursor: 'pointer' }}
+                    />
+                </div>
 
-                    {/* Mass Control */}
-                    <div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-                            <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Mass (m)</label>
-                            <span style={{ fontSize: '14px', color: '#0a84ff', fontWeight: 700 }}>{mass} kg</span>
-                        </div>
-                        <input 
-                            type="range" 
-                            min="0.1" max="3" step="0.1"
-                            value={mass} 
-                            onChange={(e) => setMass(Number(e.target.value))}
-                            style={{ width: '100%', accentColor: '#0a84ff' }}
-                        />
+                {/* Gravity Control */}
+                <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
+                        <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Gravity (g)</label>
+                        <span style={{ fontSize: '14px', color: '#bf5af2', fontWeight: 700 }}>{gravity} m/s²</span>
                     </div>
+                    <select 
+                        value={gravity}
+                        onChange={(e) => setGravity(Number(e.target.value))}
+                        style={{ 
+                            width: '100%', padding: '12px', borderRadius: '8px', 
+                            background: '#1e1e2f', color: '#fff',
+                            border: '1px solid rgba(255,255,255,0.1)', outline: 'none',
+                            cursor: 'pointer'
+                        }}
+                    >
+                        <option value="9.81" style={{background: '#1e1e2f', color: '#fff'}}>Earth (9.81 m/s²)</option>
+                        <option value="1.62" style={{background: '#1e1e2f', color: '#fff'}}>Moon (1.62 m/s²)</option>
+                        <option value="24.79" style={{background: '#1e1e2f', color: '#fff'}}>Jupiter (24.79 m/s²)</option>
+                        <option value="0" style={{background: '#1e1e2f', color: '#fff'}}>Zero Gravity (0 m/s²)</option>
+                    </select>
+                </div>
 
-                    {/* Gravity Control */}
-                    <div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-                            <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Gravity (g)</label>
-                            <span style={{ fontSize: '14px', color: '#0a84ff', fontWeight: 700 }}>{gravity} m/s²</span>
-                        </div>
-                        <select 
-                            value={gravity}
-                            onChange={(e) => setGravity(Number(e.target.value))}
-                            style={{ 
-                                width: '100%', padding: '12px', borderRadius: '8px', 
-                                background: 'rgba(255,255,255,0.05)', color: '#fff',
-                                border: '1px solid rgba(255,255,255,0.1)', outline: 'none'
-                            }}
-                        >
-                            <option value="9.81" style={{color: '#000'}}>Earth (9.81 m/s²)</option>
-                            <option value="1.62" style={{color: '#000'}}>Moon (1.62 m/s²)</option>
-                            <option value="24.79" style={{color: '#000'}}>Jupiter (24.79 m/s²)</option>
-                            <option value="0" style={{color: '#000'}}>Zero Gravity (0 m/s²)</option>
-                        </select>
+                {/* Friction Control */}
+                <div>
+                    <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
+                        <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Friction (Damping)</label>
+                        <span style={{ fontSize: '14px', color: '#ff375f', fontWeight: 700 }}>{(friction * 1000).toFixed(1)}</span>
                     </div>
-
-                    {/* Friction Control */}
-                    <div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '12px' }}>
-                            <label style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Friction (Damping)</label>
-                            <span style={{ fontSize: '14px', color: '#0a84ff', fontWeight: 700 }}>{(friction * 1000).toFixed(1)}</span>
-                        </div>
-                        <input 
-                            type="range" 
-                            min="0" max="0.02" step="0.001"
-                            value={friction} 
-                            onChange={(e) => setFriction(Number(e.target.value))}
-                            style={{ width: '100%', accentColor: '#0a84ff' }}
-                        />
-                    </div>
-                    
-                    <div style={{ marginTop: 'auto', background: 'rgba(10,132,255,0.1)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(10,132,255,0.2)' }}>
-                        <h4 style={{ margin: '0 0 8px 0', color: '#0a84ff', fontSize: '14px' }}>How it works</h4>
-                        <p style={{ margin: 0, fontSize: '12px', color: 'rgba(255,255,255,0.7)', lineHeight: 1.5 }}>
-                            This simulation computes real-time angular acceleration <span style={{fontFamily: 'monospace'}}>α = -(g/L)sin(θ)</span> natively using React and SVG. 
-                        </p>
-                    </div>
-
+                    <input 
+                        type="range" 
+                        min="0" max="0.02" step="0.001"
+                        value={friction} 
+                        onChange={(e) => setFriction(Number(e.target.value))}
+                        style={{ width: '100%', accentColor: '#ff375f', cursor: 'pointer' }}
+                    />
+                </div>
+                
+                <div style={{ marginTop: 'auto', background: 'rgba(52, 152, 219, 0.1)', padding: '16px', borderRadius: '12px', border: '1px solid rgba(52, 152, 219, 0.2)' }}>
+                    <h4 style={{ margin: '0 0 8px 0', color: '#3498db', fontSize: '14px' }}>How it works</h4>
+                    <p style={{ margin: 0, fontSize: '12px', color: 'rgba(255,255,255,0.7)', lineHeight: 1.5 }}>
+                        This simulation computes real-time angular acceleration <span style={{fontFamily: 'monospace'}}>α = -(g/L)sin(θ)</span> natively using React and SVG. 
+                    </p>
                 </div>
             </div>
         </div>

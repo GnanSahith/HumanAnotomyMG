@@ -25,6 +25,7 @@
     "fbx2gltf": "^0.9.7-p1",
     "katex": "^0.16.46",
     "lucide-react": "^0.577.0",
+    "matter-js": "^0.20.0",
     "pdf-parse": "^2.4.5",
     "pdf2json": "^4.0.2",
     "pngjs": "^7.0.0",

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, PlayCircle, Atom, Search, X, Lock } from 'lucide-react';
+import { ArrowLeft, PlayCircle, Atom, Search, X, Lock, Eye, EyeOff } from 'lucide-react';
 import physicsSimulations from '../data/physicsSimulations.json';
 import { useLanguage } from '../LanguageContext';
 import CustomPendulumLab from './simulations/CustomPendulumLab';
@@ -8,80 +8,149 @@ import CustomForcesAndMotion from './simulations/CustomForcesAndMotion';
 import CustomGravityAndOrbits from './simulations/CustomGravityAndOrbits';
 import CustomFriction from './simulations/CustomFriction';
 import CustomEnergySkatePark from './simulations/CustomEnergySkatePark';
+import CustomMassesAndSprings from './simulations/CustomMassesAndSprings';
+import CustomStatesOfMatter from './simulations/CustomStatesOfMatter';
+import CustomStatesOfMatterBasics from './simulations/CustomStatesOfMatterBasics';
+import CustomWaveInterference from './simulations/CustomWaveInterference';
+import CustomSoundWaves from './simulations/SoundWaves_mg';
+import CustomGasProperties from './simulations/CustomGasProperties';
+
+import CustomBalancingAct from './simulations/CustomBalancingAct';
+import CustomCollisionLab from './simulations/CustomCollisionLab';
+import CustomCenterandVariability from './simulations/CustomCenterandVariability';
+import CustomEnergySkateParkBasics from './simulations/CustomEnergySkateParkBasics';
+import CustomHookesLaw from './simulations/CustomHookesLaw';
+import CustomMassesandSpringsBasics from './simulations/CustomMassesandSpringsBasics';
+import CustomDiffusion from './simulations/CustomDiffusion';
+import CustomEnergyFormsandChanges from './simulations/CustomEnergyFormsandChanges';
+import CustomBlackbodySpectrum from './simulations/CustomBlackbodySpectrum';
+import CustomWaveonaString from './simulations/CustomWaveonaString';
+import CustomNormalModes from './simulations/CustomNormalModes';
+import CustomFourierMakingWaves from './simulations/CustomFourierMakingWaves';
+import CustomCircuitConstructionKitDC from './simulations/CustomCircuitConstructionKitDC';
+import CustomCircuitConstructionKitDCVirtualLab from './simulations/CustomCircuitConstructionKitDCVirtualLab';
+import CustomCircuitConstructionKitAC from './simulations/CustomCircuitConstructionKitAC';
+import CustomChargesandFields from './simulations/CustomChargesandFields';
+import CustomFaradaysLaw from './simulations/CustomFaradaysLaw';
+import CustomOhmsLaw from './simulations/CustomOhmsLaw';
+import CustomCoulombsLaw from './simulations/CustomCoulombsLaw';
+import CustomJohnTravoltage from './simulations/CustomJohnTravoltage';
+import CustomCapacitorLabBasics from './simulations/CustomCapacitorLabBasics';
+import CustomResistanceinaWire from './simulations/CustomResistanceinaWire';
+import CustomBalloonsandStaticElectricity from './simulations/CustomBalloonsandStaticElectricity';
+import CustomBendingLight from './simulations/CustomBendingLight';
+import CustomColorVision from './simulations/CustomColorVision';
+import CustomMoleculesandLight from './simulations/CustomMoleculesandLight';
+import CustomRutherfordScattering from './simulations/CustomRutherfordScattering';
+import CustomModelsoftheHydrogenAtom from './simulations/CustomModelsoftheHydrogenAtom';
+import CustomPhotoelectricEffect from './simulations/CustomPhotoelectricEffect';
+import CustomLasers from './simulations/CustomLasers';
+import CustomNeonLights from './simulations/CustomNeonLights';
+import CustomMicrowaves from './simulations/CustomMicrowaves';
+import CustomSimplifiedMRI from './simulations/CustomSimplifiedMRI';
+
+import SimulationLibraryLayout from './SimulationLibraryLayout';
 
 export default function PhysicsSimulationView({ onBack, handleLockedItemClick }) {
     const { t } = useLanguage();
-    const [searchQuery, setSearchQuery] = useState('');
     const [activeSimulation, setActiveSimulation] = useState(null);
     const [isLoadingSim, setIsLoadingSim] = useState(false);
 
 
-    const filteredSimulations = Object.entries(physicsSimulations)
-        .map(([id, sim]) => ({ ...sim, id }))
-        .filter(sim => sim.title.toLowerCase().includes(searchQuery.toLowerCase()));
+
+    const loggedInUsername = localStorage.getItem('logged_in_username') || '';
+    const [approvedSims, setApprovedSims] = useState(() => {
+        try {
+            const stored = localStorage.getItem('showcase_approved_physics_sims');
+            return stored ? JSON.parse(stored) : ['phys_1_mg', 'phys_2_mg', 'phys_3_mg', 'phys_4_mg', 'phys_7_mg'];
+        } catch (e) {
+            return [];
+        }
+    });
+
+    const toggleApproval = () => {
+        if (!activeSimulation) return;
+        setApprovedSims(prev => {
+            const newArr = prev.includes(activeSimulation.id) 
+                ? prev.filter(id => id !== activeSimulation.id)
+                : [...prev, activeSimulation.id];
+            localStorage.setItem('showcase_approved_physics_sims', JSON.stringify(newArr));
+            return newArr;
+        });
+    };
+    const subjectOptions = React.useMemo(() => {
+        const categories = new Set(Object.values(physicsSimulations).map(s => s.category).filter(Boolean));
+        return Array.from(categories).map(cat => ({ id: cat, label: cat }));
+    }, []);
+
+    const filters = [
+        {
+            id: 'subject',
+            label: 'Subject',
+            options: subjectOptions
+        },
+        {
+            id: 'grade',
+            label: 'Grade Level',
+            options: [
+                { id: 'elementary', label: 'Elementary School' },
+                { id: 'middle', label: 'Middle School' },
+                { id: 'high', label: 'High School' },
+                { id: 'university', label: 'University' }
+            ]
+        }
+    ];
+
+    const matchFilter = (sim, filterId, activeOptions) => {
+        if (filterId === 'subject') {
+            return activeOptions.includes(sim.category);
+        }
+        if (filterId === 'grade') {
+            // Mock grade filtering since backend lacks grade data
+            // Deterministically assign a grade based on title length so filtering works visually
+            const sum = sim.title.split('').reduce((a, b) => a + b.charCodeAt(0), 0);
+            const mockGrade = sum % 4; // 0: elementary, 1: middle, 2: high, 3: university
+            if (activeOptions.includes('elementary') && mockGrade === 0) return true;
+            if (activeOptions.includes('middle') && mockGrade === 1) return true;
+            if (activeOptions.includes('high') && mockGrade === 2) return true;
+            if (activeOptions.includes('university') && mockGrade === 3) return true;
+            return false;
+        }
+        return true;
+    };
+
+        const simArray = React.useMemo(() => {
+        let arr = Object.entries(physicsSimulations).map(([id, sim]) => ({ ...sim, id }));
+        if (loggedInUsername === 'MGRoot01') {
+            arr = arr.filter(sim => approvedSims.includes(sim.id));
+        }
+        return arr;
+    }, [loggedInUsername, approvedSims]);
+
+    const handleSimClick = (sim) => {
+        setActiveSimulation(sim);
+        setIsLoadingSim(true);
+        setTimeout(() => setIsLoadingSim(false), 4500);
+    };
+
+    if (!activeSimulation) {
+        return (
+            <SimulationLibraryLayout
+                title="Physics Interactive Library"
+                icon={<Atom size={36} color="#bf5af2" />}
+                simulations={simArray}
+                filters={filters}
+                onSimulationClick={handleSimClick}
+                onBack={onBack}
+                handleLockedItemClick={handleLockedItemClick}
+                matchFilter={matchFilter}
+            />
+        );
+    }
 
     return (
-        <div className="maths-sim-container fade-in" style={{ 
-            paddingBottom: activeSimulation ? '0' : '100px', 
-            flex: 1, 
-            minHeight: 0,
-            overflowY: activeSimulation ? 'hidden' : 'auto', 
-            display: activeSimulation ? 'flex' : 'block', 
-            flexDirection: activeSimulation ? 'column' : 'unset' 
-        }}>
-            {!activeSimulation && (
-                <div className="maths-header glass-panel" style={{ padding: '24px', margin: '24px', borderRadius: '24px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                            <button 
-                                onClick={onBack}
-                                style={{
-                                    display: 'flex', alignItems: 'center', gap: '8px',
-                                    background: 'rgba(255, 255, 255, 0.1)',
-                                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                                    padding: '8px 16px', borderRadius: '100px',
-                                    color: '#fff', cursor: 'pointer',
-                                    transition: 'all 0.2s'
-                                }}
-                                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.3)'; }}
-                                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
-                            >
-                                <ArrowLeft size={18} /> {t('Back to Portal')}
-                            </button>
-                            <h1 style={{ fontSize: '32px', margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '12px' }}>
-                                <Atom size={36} color="#bf5af2" />
-                                {t('Physics Interactive Library')}
-                            </h1>
-                        </div>
-                    </div>
-
-                    <div style={{ position: 'relative', width: '100%', maxWidth: '600px' }}>
-                        <Search size={20} color="rgba(255,255,255,0.5)" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)' }} />
-                        <input 
-                            type="text" 
-                            placeholder={t("Explore our growing collection of interactive physics simulations covering Mechanics, Waves, Thermodynamics, Electricity, and Quantum Phenomena...")}
-                            value={searchQuery}
-                            onChange={(e) => setSearchQuery(e.target.value)}
-                            style={{
-                                width: '100%',
-                                padding: '16px 20px 16px 48px',
-                                background: 'rgba(0,0,0,0.4)',
-                                border: '1px solid rgba(255,255,255,0.1)',
-                                borderRadius: '16px',
-                                color: '#fff',
-                                fontSize: '16px',
-                                outline: 'none',
-                                transition: 'border-color 0.2s'
-                            }}
-                            onFocus={(e) => e.target.style.borderColor = '#ff375f'}
-                            onBlur={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
-                        />
-                    </div>
-                </div>
-            )}
-
-            {activeSimulation ? (
-                <div style={{ padding: '0 24px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
+        <div className="maths-sim-container fade-in" style={{ paddingBottom: '0', flex: 1, minHeight: 0, overflowY: 'hidden', display: 'flex', flexDirection: 'column' }}>
+            <div style={{ padding: '0 24px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
                     {!activeSimulation.isNative && (
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexShrink: 0 }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
@@ -90,6 +159,22 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                                 </div>
                                 <h2 style={{ fontSize: '24px', margin: 0, fontWeight: 600 }}>{activeSimulation.title}</h2>
                             </div>
+                                                        {loggedInUsername !== 'MGRoot01' && (
+                                <button
+                                    onClick={toggleApproval}
+                                    style={{
+                                        display: 'flex', alignItems: 'center', gap: '8px',
+                                        background: approvedSims.includes(activeSimulation.id) ? 'rgba(48,209,88,0.2)' : 'rgba(255,255,255,0.05)',
+                                        border: approvedSims.includes(activeSimulation.id) ? '1px solid rgba(48,209,88,0.4)' : '1px solid rgba(255,255,255,0.1)',
+                                        padding: '8px 16px', borderRadius: '100px',
+                                        color: approvedSims.includes(activeSimulation.id) ? '#30d158' : 'rgba(255,255,255,0.7)',
+                                        cursor: 'pointer', transition: 'all 0.2s', fontWeight: 500,
+                                        marginRight: 'auto', marginLeft: '24px'
+                                    }}
+                                >
+                                    {approvedSims.includes(activeSimulation.id) ? <><Eye size={16} /> Approved for Showcase</> : <><EyeOff size={16} /> Hidden from Showcase</>}
+                                </button>
+                            )}
                             <button 
                                 onClick={() => setActiveSimulation(null)}
                                 style={{
@@ -123,7 +208,6 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                         alignItems: 'center',
                         justifyContent: 'center'
                     }}>
-                        {/* We use a wrapper with aspect-ratio to keep it constrained neatly regardless of screen size */}
                         <div style={{
                             width: '100%',
                             height: '100%',
@@ -135,6 +219,45 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             activeSimulation.id === 'phys_3_mg' ? <CustomGravityAndOrbits onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
                             activeSimulation.id === 'phys_4_mg' ? <CustomFriction onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
                             activeSimulation.id === 'phys_5_mg' ? <CustomEnergySkatePark onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_6_mg' ? <CustomMassesAndSprings onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_14_mg' ? <CustomStatesOfMatter onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_15_mg' ? <CustomStatesOfMatterBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_16_mg' ? <CustomGasProperties onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_21_mg' ? <CustomWaveInterference onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_22_mg' ? <CustomSoundWaves onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_8_mg' ? <CustomBalancingAct onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_9_mg' ? <CustomCollisionLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_10_mg' ? <CustomCenterandVariability onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_11_mg' ? <CustomEnergySkateParkBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_12_mg' ? <CustomHookesLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_13_mg' ? <CustomMassesandSpringsBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_17_mg' ? <CustomDiffusion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_18_mg' ? <CustomEnergyFormsandChanges onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_19_mg' ? <CustomBlackbodySpectrum onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_20_mg' ? <CustomWaveonaString onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_23_mg' ? <CustomNormalModes onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_24_mg' ? <CustomFourierMakingWaves onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_25_mg' ? <CustomCircuitConstructionKitDC onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_26_mg' ? <CustomCircuitConstructionKitDCVirtualLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_27_mg' ? <CustomCircuitConstructionKitAC onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_28_mg' ? <CustomChargesandFields onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_29_mg' ? <CustomFaradaysLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_30_mg' ? <CustomOhmsLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_31_mg' ? <CustomCoulombsLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_32_mg' ? <CustomJohnTravoltage onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_33_mg' ? <CustomCapacitorLabBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_34_mg' ? <CustomResistanceinaWire onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_35_mg' ? <CustomBalloonsandStaticElectricity onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_36_mg' ? <CustomBendingLight onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_37_mg' ? <CustomColorVision onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_38_mg' ? <CustomMoleculesandLight onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_39_mg' ? <CustomRutherfordScattering onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_40_mg' ? <CustomModelsoftheHydrogenAtom onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_41_mg' ? <CustomPhotoelectricEffect onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_42_mg' ? <CustomLasers onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_43_mg' ? <CustomNeonLights onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_44_mg' ? <CustomMicrowaves onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
+                            activeSimulation.id === 'phys_45_mg' ? <CustomSimplifiedMRI onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
                             <CustomPendulumLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} />
                         ) : (
                             <>
@@ -189,142 +312,9 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             </div>
                         )}
                         </div>
-                    </div>
+     
                 </div>
-            ) : (
-
-                <div style={{ padding: '0 24px', display: 'flex', flexDirection: 'column', gap: '48px' }}>
-                    {Object.entries(
-                        filteredSimulations.reduce((acc, sim) => {
-                            if (!acc[sim.category]) acc[sim.category] = [];
-                            acc[sim.category].push(sim);
-                            return acc;
-                        }, {})
-                    ).map(([category, sims]) => (
-                        <div key={category} style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px' }}>
-                                <div style={{ width: '4px', height: '24px', background: '#bf5af2', borderRadius: '4px' }}></div>
-                                <h2 style={{ fontSize: '24px', margin: 0, fontWeight: 600 }}>{category}</h2>
-                                <span style={{ background: 'rgba(255,255,255,0.1)', padding: '4px 12px', borderRadius: '100px', fontSize: '12px', color: 'rgba(255,255,255,0.7)' }}>{sims.length} Simulations</span>
-                            </div>
-                            <div style={{
-                                display: 'grid',
-                                gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-                                gap: '24px'
-                            }}>
-                                {sims.map((sim, index) => {
-                                    const isLocked = index >= 2;
-                                    return (
-                                        <div 
-                                            key={sim.id}
-                                            className="glass-panel"
-                                            onClick={() => {
-                                                const openSim = () => {
-                                                    setActiveSimulation(sim);
-                                                    setIsLoadingSim(true);
-                                                    setTimeout(() => setIsLoadingSim(false), 4500);
-                                                };
-                                                if (isLocked) {
-                                                    handleLockedItemClick(openSim);
-                                                } else {
-                                                    openSim();
-                                                }
-                                            }}
-                                            style={{
-                                                borderRadius: '24px',
-                                                overflow: 'hidden',
-                                                cursor: 'pointer',
-                                                transition: 'transform 0.2s, box-shadow 0.2s',
-                                                border: '1px solid rgba(255,255,255,0.1)',
-                                                background: 'rgba(0,0,0,0.2)',
-                                                position: 'relative'
-                                            }}
-                                            onMouseEnter={e => {
-                                                e.currentTarget.style.transform = 'translateY(-5px)';
-                                                e.currentTarget.style.boxShadow = '0 10px 30px rgba(255, 55, 95, 0.2)';
-                                                e.currentTarget.style.borderColor = 'rgba(255, 55, 95, 0.5)';
-                                            }}
-                                            onMouseLeave={e => {
-                                                e.currentTarget.style.transform = 'translateY(0)';
-                                                e.currentTarget.style.boxShadow = 'none';
-                                                e.currentTarget.style.borderColor = 'rgba(255,255,255,0.1)';
-                                            }}
-                                        >
-                                        <div style={{ height: '180px', position: 'relative', overflow: 'hidden', background: 'linear-gradient(135deg, rgba(191,90,242,0.05) 0%, rgba(191,90,242,0.2) 100%)' }}>
-                                            <div style={{ 
-                                                position: 'absolute', top: '-20%', right: '-10%', 
-                                                width: '150px', height: '150px', borderRadius: '50%',
-                                                background: 'radial-gradient(circle, rgba(191,90,242,0.4) 0%, rgba(0,0,0,0) 70%)',
-                                                filter: 'blur(20px)'
-                                            }}></div>
-                                            <div style={{ 
-                                                position: 'absolute', bottom: '-20%', left: '-10%', 
-                                                width: '200px', height: '200px', borderRadius: '50%',
-                                                background: 'radial-gradient(circle, rgba(10,132,255,0.2) 0%, rgba(0,0,0,0) 70%)',
-                                                filter: 'blur(30px)'
-                                            }}></div>
-                                            <div style={{
-                                                position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
-                                                display: 'flex', alignItems: 'center', justifyContent: 'center'
-                                            }}>
-                                                <Atom size={64} color="rgba(191,90,242,0.8)" style={{ filter: 'drop-shadow(0 0 10px rgba(191,90,242,0.5))' }} />
-                                            </div>
-                                            
-                                            {/* Scaled image to crop out edge watermarks */}
-                                            <img 
-                                                src={sim.thumbnail} 
-                                                alt={sim.title} 
-                                                style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 1, transform: 'scale(1.15)', pointerEvents: 'none' }}
-                                                onError={(e) => { e.target.style.display = 'none'; }}
-                                            />
-                                            
-                                            {/* Secondary edge blur to obscure any remaining watermarks */}
-                                            <div style={{ position: 'absolute', bottom: '-10px', right: '-10px', width: '120px', height: '50px', background: '#000', filter: 'blur(15px)', zIndex: 2, opacity: 0.7 }}></div>
-
-                                            {isLocked && (
-                                                <div style={{
-                                                    position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
-                                                    background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(4px)',
-                                                    zIndex: 4, display: 'flex', flexDirection: 'column',
-                                                    alignItems: 'center', justifyContent: 'center', gap: '8px'
-                                                }}>
-                                                    <Lock size={32} color="#fff" />
-                                                    <span style={{ fontSize: '14px', fontWeight: 600, color: '#fff', background: 'var(--accent)', padding: '4px 12px', borderRadius: '100px' }}>Premium Access</span>
-                                                </div>
-                                            )}
-
-                                            <div style={{
-                                                position: 'absolute',
-                                                top: 0, left: 0, right: 0, bottom: 0,
-                                                background: 'rgba(0,0,0,0.3)',
-                                                display: 'flex',
-                                                alignItems: 'center',
-                                                justifyContent: 'center',
-                                                opacity: 0,
-                                                transition: 'opacity 0.2s',
-                                                zIndex: 3
-                                            }}
-                                            onMouseEnter={e => e.currentTarget.style.opacity = 1}
-                                            onMouseLeave={e => e.currentTarget.style.opacity = 0}
-                                            >
-                                                <PlayCircle size={64} color="#fff" />
-                                            </div>
-                                        </div>
-                                        <div style={{ padding: '20px' }}>
-                                            <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', color: '#fff', fontWeight: 600 }}>{sim.title}</h3>
-                                            <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '13px', lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
-                                                {sim.description}
-                                            </p>
-                                        </div>
-                                    </div>
-                                    );
-                                })}
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-            )}
+            </div>
         </div>
     );
 }

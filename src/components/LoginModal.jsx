@@ -8,7 +8,8 @@ const VALID_CREDENTIALS = [
     { username: 'SandhyaRekha@MG', password: 'Sandhya@MG' },
     { username: 'GnanSahith@MG', password: 'Gnan@MG' },
     { username: 'VishnuKranthi@MG', password: 'Vishnu@MG' },
-    { username: 'MyGnanAD', password: 'Charan@123' }
+    { username: 'MyGnanAD', password: 'Charan@123' },
+    { username: 'MGRoot01', password: 'MG@123' }
 ];
 
 export default function LoginModal({ isOpen, onClose, onSuccess }) {

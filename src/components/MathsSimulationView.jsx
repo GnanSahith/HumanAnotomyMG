@@ -273,17 +273,32 @@ const getBadgeInfo = (title) => {
     }
 };
 
-export default function MathsSimulationView({ onBack, handleLockedItemClick }) {
-    const [viewState, setViewState] = useState('main_categories');
-    const [activeCategory, setActiveCategory] = useState(null);
-    const [activeTopic, setActiveTopic] = useState(null);
-    const [activeMaterialIndex, setActiveMaterialIndex] = useState(0);
+import SimulationLibraryLayout from './SimulationLibraryLayout';
+
+export default function MathsSimulationView({ onBack }) {
+    const { t } = useLanguage();
+    const [activeSimulation, setActiveSimulation] = useState(null);
+    const [isLoadingSim, setIsLoadingSim] = useState(false);
 
     const [quizState, setQuizState] = useState('idle'); 
     const [quizQuestions, setQuizQuestions] = useState([]);
     const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
     const [score, setScore] = useState(0);
     const [userChoice, setUserChoice] = useState(null);
+
+    const activeCategory = activeSimulation ? activeSimulation.category : null;
+    const activeTopic = activeSimulation ? activeSimulation.parentTopic : null;
+    
+    // Determine the material index within the topic
+    const topicMaterials = React.useMemo(() => {
+        if (!activeTopic) return [];
+        return Object.values(mathSimulations || {}).filter(m => m.parentTopic === activeTopic);
+    }, [activeTopic]);
+
+    const activeMaterialIndex = React.useMemo(() => {
+        if (!activeSimulation) return 0;
+        return Math.max(0, topicMaterials.findIndex(m => m.id === activeSimulation.id));
+    }, [activeSimulation, topicMaterials]);
 
     const handleStartQuiz = () => {
         const cat = activeCategory || 'algebra';
@@ -321,18 +336,7 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick }) {
         }
     };
 
-    const mainCategories = [
-        { id: 'algebra', label: 'Algebra', count: 277, icon: <Activity size={36} color="#6B4EFF" /> },
-        { id: 'geometry', label: 'Geometry', count: 155, icon: <Shapes size={36} color="#F2C94C" /> },
-        { id: 'measurement', label: 'Measurement', count: 146, icon: <Ruler size={36} color="#2D9CDB" /> },
-        { id: 'number_sense', label: 'Number Sense', count: 184, icon: <Hash size={36} color="#27AE60" /> },
-        { id: 'operations', label: 'Operations', count: 221, icon: <Calculator size={36} color="#EB5757" /> },
-        { id: 'probability', label: 'Probability and Statistics', count: 77, icon: <Dices size={36} color="#9B51E0" /> },
-    ];
-
     const renderActiveModule = () => {
-        const topicMaterials = Object.values(mathSimulations || {}).filter(m => m.parentTopic === activeTopic);
-        
         if (topicMaterials.length > 0) {
             const currentMaterial = topicMaterials[activeMaterialIndex] || topicMaterials[0];
             return (
@@ -351,245 +355,71 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick }) {
         );
     };
 
-    if (viewState === 'main_categories') {
-        return (
-            <div className="maths-layout" style={{ 
-                flexDirection: 'column', 
-                height: '100%', 
-                overflowY: 'auto', 
-                padding: '0px 16px 40px 16px', 
-                alignItems: 'center',
-                backgroundColor: 'rgba(74, 64, 150, 0.1)' 
-            }}>
-                <div style={{ width: '92%', maxWidth: '1600px' }}>
-                    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px', marginBottom: '24px', flexWrap: 'nowrap' }}>
-                        <button 
-                            onClick={onBack} 
-                            className="back-btn" 
-                            style={{ 
-                                padding: '10px 20px', 
-                                background: 'rgba(255,255,255,0.1)', 
-                                borderRadius: '100px', 
-                                border: 'none', 
-                                color: '#fff', 
-                                display: 'flex', 
-                                alignItems: 'center', 
-                                justifyContent: 'center',
-                                gap: '8px', 
-                                cursor: 'pointer',
-                                fontSize: '15px',
-                                fontWeight: 500,
-                                transition: 'all 0.2s',
-                                whiteSpace: 'nowrap'
-                            }}
-                        >
-                            <ArrowLeft size={16} /> Back to Portal
-                        </button>
-                        <h1 style={{ margin: 0, fontSize: '36px', fontWeight: '800', lineHeight: '1.2', whiteSpace: 'nowrap' }}>
-                            Mathematics Interactive Library
-                        </h1>
-                    </div>
-                    
-                    <p style={{ margin: '0 0 40px 0', color: 'rgba(255,255,255,0.7)', fontSize: '18px', maxWidth: '800px', lineHeight: '1.6' }}>
-                        Explore 1,060 interactive math modules ranging from elementary geometry to advanced calculus. Powered dynamically for seamless learning.
-                    </p>
+    const subjectOptions = React.useMemo(() => {
+        return Object.entries(mathCurriculum).map(([key, data]) => ({
+            id: key,
+            label: data.label
+        }));
+    }, []);
 
-                    <div style={{ 
-                        display: 'grid', 
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', 
-                        gap: '24px' 
-                    }}>
-                        {mainCategories.map((cat) => (
-                            <div 
-                                key={cat.id}
-                                onClick={() => {
-                                    setActiveCategory(cat.id);
-                                    setViewState('curriculum_grid');
-                                }}
-                                style={{
-                                    background: '#ffffff',
-                                    borderRadius: '16px',
-                                    padding: '24px',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    gap: '24px',
-                                    cursor: 'pointer',
-                                    transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-                                    boxShadow: '0 8px 24px rgba(0,0,0,0.1)',
-                                    color: '#333'
-                                }}
-                                onMouseEnter={(e) => {
-                                    e.currentTarget.style.transform = 'translateY(-6px)';
-                                    e.currentTarget.style.boxShadow = '0 16px 32px rgba(0,0,0,0.2)';
-                                }}
-                                onMouseLeave={(e) => {
-                                    e.currentTarget.style.transform = 'translateY(0)';
-                                    e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.1)';
-                                }}
-                            >
-                                <div style={{ 
-                                    width: '80px', 
-                                    height: '80px', 
-                                    background: 'rgba(0,0,0,0.04)', 
-                                    borderRadius: '16px', 
-                                    display: 'flex', 
-                                    alignItems: 'center', 
-                                    justifyContent: 'center' 
-                                }}>
-                                    {cat.icon}
-                                </div>
-                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                                    <h2 style={{ margin: 0, fontSize: '24px', fontWeight: '600', color: '#1a1a1a' }}>{cat.label}</h2>
-                                    <span style={{ fontSize: '16px', fontWeight: '500', color: '#6B4EFF' }}>{cat.count} Resources</span>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
+    const filters = [
+        {
+            id: 'subject',
+            label: 'Subject',
+            options: subjectOptions
+        },
+        {
+            id: 'grade',
+            label: 'Grade Level',
+            options: [
+                { id: 'elementary', label: 'Upper Elementary (Grades 4-5)' },
+                { id: 'middle', label: 'Middle School (Grades 6-8)' },
+                { id: 'high', label: 'High School (Grades 9-12)' }
+            ]
+        }
+    ];
+
+    const matchFilter = (sim, filterId, activeOptions) => {
+        if (filterId === 'subject') {
+            return activeOptions.includes(sim.category);
+        }
+        if (filterId === 'grade') {
+            if (activeOptions.includes('elementary') && sim.title.includes('4-5')) return true;
+            if (activeOptions.includes('middle') && sim.title.includes('6-8')) return true;
+            if (activeOptions.includes('high') && sim.title.includes('9-12')) return true;
+            return false;
+        }
+        return true;
+    };
+
+    const simArray = React.useMemo(() => {
+        return Object.entries(mathSimulations).map(([id, sim]) => ({ ...sim, id }));
+    }, []);
+
+    const handleSimClick = (sim) => {
+        setActiveSimulation(sim);
+        setIsLoadingSim(true);
+        setTimeout(() => setIsLoadingSim(false), 2000);
+    };
+
+    if (!activeSimulation) {
+        return (
+            <SimulationLibraryLayout
+                title="Mathematics Interactive Library"
+                icon={<Sigma size={36} color="#ffd60a" />}
+                simulations={simArray}
+                filters={filters}
+                onSimulationClick={handleSimClick}
+                onBack={onBack}
+                matchFilter={matchFilter}
+            />
         );
     }
 
-    const TopicCard = ({ label, id, isActive, onClick }) => (
-        <div 
-            onClick={onClick}
-            style={{
-                background: 'rgba(255,255,255,0.03)',
-                border: isActive ? '1px solid rgba(255, 214, 10, 0.4)' : '1px solid rgba(255,255,255,0.08)',
-                borderRadius: '12px',
-                padding: '16px',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '16px',
-                cursor: 'pointer',
-                transition: 'all 0.3s ease',
-            }}
-            onMouseEnter={(e) => {
-                e.currentTarget.style.background = 'rgba(255, 214, 10, 0.1)';
-                e.currentTarget.style.transform = 'translateY(-2px)';
-            }}
-            onMouseLeave={(e) => {
-                e.currentTarget.style.background = 'rgba(255,255,255,0.03)';
-                e.currentTarget.style.transform = 'translateY(0)';
-            }}
-        >
-            <div style={{
-                background: 'rgba(255,255,255,0.05)',
-                color: 'rgba(255,255,255,0.5)',
-                padding: '10px',
-                borderRadius: '8px',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-            }}>
-                <Layers size={18} />
-            </div>
-            <div style={{ 
-                color: '#fff', 
-                fontSize: '15px', 
-                fontWeight: 500 
-            }}>
-                {label}
-            </div>
-        </div>
-    );
+    const categoryData = mathCurriculum[activeCategory];
+    const specificMaterialTitle = activeSimulation.title;
 
-    const GradeSection = ({ title, topics }) => (
-        <div style={{ marginBottom: '40px' }}>
-            <h3 style={{ 
-                color: 'rgba(255,255,255,0.6)', 
-                fontSize: '16px', 
-                fontWeight: 600, 
-                marginBottom: '16px',
-                letterSpacing: '0.05em',
-                textTransform: 'uppercase'
-            }}>
-                {title}
-            </h3>
-            <div style={{ 
-                display: 'grid', 
-                gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', 
-                gap: '16px' 
-            }}>
-                {topics.map((topic) => (
-                    <TopicCard 
-                        key={topic.id} 
-                        label={topic.label} 
-                        id={topic.id}
-                        isActive={false}
-                        onClick={() => {
-                            const openTopic = () => {
-                                setActiveTopic(topic.id);
-                                setActiveMaterialIndex(0);
-                                setViewState('simulation');
-                            };
-                            if (handleLockedItemClick) {
-                                handleLockedItemClick(openTopic);
-                            } else {
-                                openTopic();
-                            }
-                        }}
-                    />
-                ))}
-            </div>
-        </div>
-    );
-
-    if (viewState === 'curriculum_grid' && activeCategory && mathCurriculum[activeCategory]) {
-        const categoryData = mathCurriculum[activeCategory];
-        
-        return (
-            <div className="maths-layout" style={{ flexDirection: 'column', height: '100%', overflowY: 'auto', padding: '0px 0px 40px 0px', alignItems: 'center' }}>
-                <div style={{ width: '92%', maxWidth: '1600px' }}>
-                    
-                    <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px', marginBottom: '40px', flexWrap: 'nowrap' }}>
-                        <button 
-                            onClick={() => setViewState('main_categories')} 
-                            className="back-btn" 
-                            style={{ 
-                                padding: '10px 20px', 
-                                background: 'rgba(255,255,255,0.1)', 
-                                borderRadius: '100px', 
-                                border: 'none', 
-                                color: '#fff', 
-                                display: 'flex', 
-                                alignItems: 'center', 
-                                justifyContent: 'center',
-                                gap: '8px', 
-                                cursor: 'pointer',
-                                fontSize: '15px',
-                                fontWeight: 500,
-                                transition: 'all 0.2s',
-                                whiteSpace: 'nowrap'
-                            }}
-                        >
-                            <ArrowLeft size={16} /> Categories
-                        </button>
-                        <h1 style={{ margin: 0, fontSize: '32px', fontWeight: '800', lineHeight: '1.2', whiteSpace: 'nowrap' }}>
-                            {categoryData.label} Curriculum
-                        </h1>
-                    </div>
-
-                    {categoryData.grades.map((grade, index) => (
-                        <GradeSection 
-                            key={index}
-                            title={grade.title}
-                            topics={grade.topics}
-                        />
-                    ))}
-                </div>
-            </div>
-        );
-    }
-
-    if (viewState === 'simulation' && activeCategory) {
-        const categoryData = mathCurriculum[activeCategory];
-        const allTopics = categoryData.grades.reduce((acc, grade) => [...acc, ...grade.topics], []);
-        const activeTopicData = allTopics.find(t => t.id === activeTopic);
-        const topicMaterials = Object.values(mathSimulations || {}).filter(m => m.parentTopic === activeTopic);
-        const specificMaterialTitle = topicMaterials[activeMaterialIndex]?.title;
-        
-        return (
+    return (
             <div className="maths-layout" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                 <div className="ios-header glass-panel" style={{ 
                     position: 'relative',
@@ -969,7 +799,4 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick }) {
                 </div>
             </div>
         );
-    }
-
-    return null;
 }
