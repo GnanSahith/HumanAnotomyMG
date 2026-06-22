@@ -457,36 +457,9 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
                 alignItems: 'center',
                 zIndex: 10
             }}>
-                <button
-                    onClick={onBack}
-                    style={{
-                        background: 'rgba(255, 255, 255, 0.1)',
-                        border: '1px solid rgba(255, 255, 255, 0.2)',
-                        color: 'white',
-                        padding: '8px 16px',
-                        borderRadius: '8px',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '8px',
-                        backdropFilter: 'blur(10px)',
-                        transition: 'all 0.2s',
-                        fontFamily: "'Inter', sans-serif"
-                    }}
-                    onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)'; e.currentTarget.style.borderColor = '#ff375f'; }}
-                    onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
-                >
-                    <ArrowLeft size={16} /> Back to Library
-                </button>
+                {null}
 
-                <h2 style={{
-                    margin: 0,
-                    color: 'white',
-                    fontFamily: "'Inter', sans-serif",
-                    fontSize: '24px',
-                    fontWeight: '600',
-                    textShadow: '0 2px 10px rgba(0,0,0,0.5)'
-                }}>{title}</h2>
+                {null}
 
                 <div style={{ display: 'flex', gap: '10px' }}>
                     <button

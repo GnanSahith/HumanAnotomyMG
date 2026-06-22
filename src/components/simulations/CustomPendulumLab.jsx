@@ -136,24 +136,11 @@ export default function CustomPendulumLab({ onBack, title }) {
             }}>
                 {/* Left Side: Back Button */}
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
-                    {onBack && (
-                        <button 
-                            onClick={onBack}
-                            className="btn-back-hover"
-                            style={backButtonStyle}
-                        >
-                            <ArrowLeft size={16} /> Back to Library
-                        </button>
-                    )}
+                    {null}
                 </div>
 
                 {/* Center: Title */}
-                <h2 style={{
-                    color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600',
-                    textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0
-                }}>
-                    {title || 'Pendulum Lab MG'}
-                </h2>
+                {null}
 
                 {/* Right Side: Action Buttons */}
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>

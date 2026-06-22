@@ -184,16 +184,8 @@ const CustomFriction = ({ onBack, title }) => {
             
             {/* Top Header Bar */}
             <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10 }}>
-                <button 
-                    onClick={onBack}
-                    className="glass-btn-back"
-                    style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', color: 'white', padding: '10px 20px', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease' }}
-                >
-                    <ArrowLeft size={18} /> Back
-                </button>
-                <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-                    {title}
-                </h2>
+                {null}
+                {null}
                 <button 
                     onClick={initAtoms}
                     className="glass-btn-reset"
