@@ -1657,45 +1657,44 @@ function CustomCollisionLabInner({ onBack, title }) {
 
                         {/* Tab 4: Physics Help & Explainer */}
                         {activeTab === 'info' && (
-                            <div className="flex flex-col gap-4 text-xs text-slate-300 leading-relaxed /40 p-4 rounded-xl border border-slate-800">
-                                <h4 className="text-white font-bold text-sm flex items-center gap-1.5 border-b border-slate-850 pb-1.5 mb-1">
-                                    <Info size={14} className="text-sky-400" /> Scientific Principles
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', color: 'rgba(255,255,255,0.8)', fontSize: '14px', lineHeight: '1.6' }}>
+                                <h4 style={{ color: '#fff', fontSize: '16px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px', margin: 0 }}>
+                                    <Info size={18} color="#3498db" /> Scientific Principles
                                 </h4>
                                 <div>
-                                    <h5 className="text-sky-300 font-semibold mb-1">Conservation of Momentum</h5>
-                                    <p>
+                                    <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>Conservation of Momentum</h5>
+                                    <p style={{ margin: '0 0 12px 0' }}>
                                         In any system free of external forces, the total momentum remains constant:
                                     </p>
-                                    <code className="block p-2 rounded my-1.5 text-center font-mono text-emerald-400 border border-slate-800" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+                                    <code style={{ display: 'block', padding: '12px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#2ecc71', fontFamily: 'monospace', textAlign: 'center', marginBottom: '8px', fontSize: '14px' }}>
                                         m₁v₁ + m₂v₂ = m₁v₁' + m₂v₂'
                                     </code>
-                                    <p className="text-[10px] text-slate-400">
+                                    <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>
                                         Observe that the "Total Momentum" in the dashboard remains constant through impacts (except when bouncing off walls).
                                     </p>
                                 </div>
+                                <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
                                 <div>
-                                    <h5 className="text-sky-300 font-semibold mb-1">Restitution Coefficient (e)</h5>
-                                    <p>
+                                    <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>Restitution Coefficient (e)</h5>
+                                    <p style={{ margin: '0 0 12px 0' }}>
                                         Elasticity governs energy conversion during impact:
                                     </p>
-                                    <code className="block p-2 rounded my-1.5 text-center font-mono text-emerald-400 border border-slate-800" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
-                                        e = |v₂' - v₁'| / |v₁ - v₂|
-                                    </code>
-                                    <ul className="list-disc list-inside text-[10px] text-slate-450 mt-1 flex flex-col gap-1">
-                                        <li><strong>Elastic (e = 100%):</strong> Total kinetic energy is conserved.</li>
-                                        <li><strong>Inelastic (0% &lt; e &lt; 100%):</strong> Kinetic energy is lost, turning into friction/heat.</li>
-                                        <li><strong>Sticky (e = 0%):</strong> Maximizes kinetic energy loss; particles merge.</li>
+                                    <ul style={{ paddingLeft: '20px', margin: 0, display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                        <li><strong style={{ color: '#fff' }}>100% (e=1):</strong> Perfectly elastic. Kinetic Energy is perfectly conserved.</li>
+                                        <li><strong style={{ color: '#fff' }}>0% (e=0):</strong> Perfectly inelastic. Maximum KE is converted into internal/thermal energy, bodies stick.</li>
+                                        <li><strong style={{ color: '#fff' }}>Partial:</strong> Some KE is lost as heat/deformation.</li>
                                     </ul>
                                 </div>
+                                <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
                                 <div>
-                                    <h5 className="text-sky-300 font-semibold mb-1">Kinetic Energy</h5>
-                                    <p>
+                                    <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>Kinetic Energy</h5>
+                                    <p style={{ margin: '0 0 12px 0' }}>
                                         The energy of translation is calculated as:
                                     </p>
-                                    <code className="block p-2 rounded my-1.5 text-center font-mono text-emerald-400 border border-slate-800" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+                                    <code style={{ display: 'block', padding: '12px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#2ecc71', fontFamily: 'monospace', textAlign: 'center', marginBottom: '8px', fontSize: '14px' }}>
                                         KE = ½ m v² = ½ m (v_x² + v_y²)
                                     </code>
-                                    <p className="text-[10px] text-slate-400">
+                                    <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.5)', margin: 0 }}>
                                         In inelastic collisions, notice the reduction in system KE, and trace the "KE Lost" readout.
                                     </p>
                                 </div>

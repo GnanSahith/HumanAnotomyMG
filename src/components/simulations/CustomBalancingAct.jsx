@@ -1521,9 +1521,9 @@ export default function CustomBalancingAct({ onBack, title }) {
               </div>
 
               {/* Info tip panel */}
-              <div className="/50 rounded-xl p-3 border border-white/5 space-y-2 text-xs text-slate-400 leading-relaxed">
-                <span className="font-semibold text-purple-300 block flex items-center gap-1"><HelpCircle size={13} /> Lab Tip</span>
-                <p>Drag blocks, people, or mystery boxes from the shelf at the bottom. If dropped near the seesaw, they snap to placement ticks. Stack multiple items on top of each other at the same slot!</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', color: 'rgba(255,255,255,0.8)', fontSize: '12px', lineHeight: '1.6', background: 'rgba(20, 20, 30, 0.5)', border: '1px solid rgba(255,255,255,0.05)', padding: '12px', borderRadius: '12px' }}>
+                <span style={{ fontWeight: '600', color: '#9b59b6', display: 'flex', alignItems: 'center', gap: '4px' }}><HelpCircle size={14} /> Lab Tip</span>
+                <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)' }}>Drag blocks, people, or mystery boxes from the shelf at the bottom. If dropped near the seesaw, they snap to placement ticks. Stack multiple items on top of each other at the same slot!</p>
               </div>
             </div>
           ) : (
@@ -1771,33 +1771,29 @@ export default function CustomBalancingAct({ onBack, title }) {
           )}
 
           {/* Educational Formula Reference Box */}
-          <section 
-            style={{
-              background: 'rgba(20, 20, 30, 0.8)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              backdropFilter: 'blur(12px)',
-              padding: '20px',
-              borderRadius: '16px',
-              color: 'white',
-              fontFamily: "'Inter', sans-serif"
-            }}
-            className="space-y-4"
-          >
-            <h3 className="font-bold text-sm text-slate-200 border-b border-white/5 pb-2">Physics Reference</h3>
-            <div className="space-y-3 text-xs leading-relaxed text-slate-400">
-              <div>
-                <span className="font-semibold text-slate-300 block mb-0.5">Rotational Torque</span>
-                <code className="text-purple-300 font-mono text-[11px]">Torque (τ) = F × d = (m × g) × d</code>
-                <p className="mt-1">Where <code className="font-mono">d</code> is the distance from the pivot, <code className="font-mono">m</code> is the mass, and <code className="font-mono">g</code> is gravity (9.81 m/s²).</p>
-              </div>
-
-              <div>
-                <span className="font-semibold text-slate-300 block mb-0.5">Condition for Balance</span>
-                <code className="text-purple-300 font-mono text-[11px]">Σ τ_left = Σ τ_right</code>
-                <p className="mt-1">For a seesaw to remain perfectly horizontal, the sum of all counterclockwise torques on the left must equal the sum of all clockwise torques on the right.</p>
-              </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', color: 'rgba(255,255,255,0.8)', fontSize: '14px', lineHeight: '1.6', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', padding: '20px', borderRadius: '16px' }}>
+            <h4 style={{ color: '#fff', fontSize: '16px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px', margin: 0 }}>
+              <Info size={18} color="#3498db" /> Physics Reference
+            </h4>
+            
+            <div>
+              <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>Rotational Torque</h5>
+              <code style={{ display: 'block', padding: '12px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#2ecc71', fontFamily: 'monospace', textAlign: 'center', marginBottom: '8px', fontSize: '14px' }}>
+                Torque (τ) = F × d = (m × g) × d
+              </code>
+              <p style={{ margin: '0 0 12px 0' }}>Where <code style={{ fontFamily: 'monospace', color: '#3498db' }}>d</code> is the distance from the pivot, <code style={{ fontFamily: 'monospace', color: '#3498db' }}>m</code> is the mass, and <code style={{ fontFamily: 'monospace', color: '#3498db' }}>g</code> is gravity (9.81 m/s²).</p>
             </div>
-          </section>
+
+            <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+
+            <div>
+              <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>Condition for Balance</h5>
+              <code style={{ display: 'block', padding: '12px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#2ecc71', fontFamily: 'monospace', textAlign: 'center', marginBottom: '8px', fontSize: '14px' }}>
+                Σ τ_left = Σ τ_right
+              </code>
+              <p style={{ margin: '0 0 12px 0' }}>For a seesaw to remain perfectly horizontal, the sum of all counterclockwise torques on the left must equal the sum of all clockwise torques on the right.</p>
+            </div>
+          </div>
         </div>
       </main>
     </div>
