@@ -67,6 +67,13 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
 
     const requestRef = useRef();
     const canvasRef = useRef(null);
+    
+    const [windowSize, setWindowSize] = useState({ w: window.innerWidth, h: window.innerHeight });
+    useEffect(() => {
+        const handleResize = () => setWindowSize({ w: window.innerWidth, h: window.innerHeight });
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     const stateRef = useRef({ ...JSON.parse(JSON.stringify(INITIAL_STATES[SCENARIOS.SUN_EARTH])) });
 
     // Handle resetting the simulation
@@ -668,14 +675,25 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
 
             {/* Canvas Container */}
             <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
-                <canvas 
+                
+            <div style={{ position: 'absolute', top: '80px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ 
+                    width: 800, 
+                    height: 600, 
+                    transform: `scale(${Math.min((windowSize.w - 410) / 800, (windowSize.h - 100) / 600)})`, 
+                    transformOrigin: 'center center' 
+                }}>
+                    <canvas 
                     ref={canvasRef}
-                    style={{ width: '100%', height: '100%', display: 'block', cursor: 'grab' }}
+                    style={{ width: '100%', height: '100%', display: 'block', cursor: 'crosshair', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}
                     onPointerDown={handlePointerDown}
                     onPointerMove={handlePointerMove}
                     onPointerUp={handlePointerUp}
                     onPointerLeave={handlePointerUp}
                 />
+                </div>
+            </div>
+        
             </div>
         </div>
     );

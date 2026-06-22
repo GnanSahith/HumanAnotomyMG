@@ -7,6 +7,13 @@ const CustomFriction = ({ onBack, title }) => {
     const thermoRef = useRef(null);
     
     // Physics and interaction state stored in refs to prevent re-renders
+    
+    const [windowSize, setWindowSize] = useState({ w: window.innerWidth, h: window.innerHeight });
+    useEffect(() => {
+        const handleResize = () => setWindowSize({ w: window.innerWidth, h: window.innerHeight });
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     const stateRef = useRef({
         temperature: 0,
         bookX: 0,
@@ -146,7 +153,7 @@ const CustomFriction = ({ onBack, title }) => {
         const s = stateRef.current;
         if (!s.isDragging) return;
         
-        const dx = e.clientX - s.lastMouseX;
+        const dx = (e.clientX - s.lastMouseX) * (canvas.width / rect.width);
         s.lastMouseX = e.clientX;
         
         s.bookX += dx;
@@ -298,12 +305,23 @@ const CustomFriction = ({ onBack, title }) => {
                    backdropFilter: 'blur(4px)',
                    pointerEvents: 'auto'
                }}>
-                   <canvas 
+                   
+            <div style={{ position: 'absolute', top: '80px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ 
+                    width: 800, 
+                    height: 600, 
+                    transform: `scale(${Math.min((windowSize.w - 410) / 800, (windowSize.h - 100) / 600)})`, 
+                    transformOrigin: 'center center' 
+                }}>
+                    <canvas 
                        ref={canvasRef}
                        width={400}
                        height={400}
-                       style={{ width: '100%', height: '100%', display: 'block' }}
+                       style={{ width: '100%', height: '100%', display: 'block', cursor: 'crosshair', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}
                    />
+                </div>
+            </div>
+        
                </div>
             </div>
 

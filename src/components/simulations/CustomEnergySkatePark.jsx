@@ -17,6 +17,13 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
     const [gravity, setGravity] = useState(9.8);
     const [mass, setMass] = useState(50); // kg
 
+    
+    const [windowSize, setWindowSize] = useState({ w: window.innerWidth, h: window.innerHeight });
+    useEffect(() => {
+        const handleResize = () => setWindowSize({ w: window.innerWidth, h: window.innerHeight });
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
     const stateRef = useRef({
         p1: { x: 100, y: 150 },
         p2: { x: 400, y: 450 },
@@ -276,8 +283,8 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
     const handlePointerDown = (e) => {
         const canvas = canvasRef.current;
         const rect = canvas.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+        const x = (e.clientX - rect.left) * (canvas.width / rect.width);
+        const y = (e.clientY - rect.top) * (canvas.height / rect.height);
         const s = stateRef.current;
 
         s.lastMouseX = x;
@@ -305,8 +312,8 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
 
         const canvas = canvasRef.current;
         const rect = canvas.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
+        const x = (e.clientX - rect.left) * (canvas.width / rect.width);
+        const y = (e.clientY - rect.top) * (canvas.height / rect.height);
 
         if (s.dragTarget === 'skater') {
             s.skater.x = x;
@@ -444,16 +451,27 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
             </div>
 
             {/* Canvas / Main View */}
-            <canvas 
+            
+            <div style={{ position: 'absolute', top: '80px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <div style={{ 
+                    width: 800, 
+                    height: 600, 
+                    transform: `scale(${Math.min((windowSize.w - 410) / 800, (windowSize.h - 100) / 600)})`, 
+                    transformOrigin: 'center center' 
+                }}>
+                    <canvas 
                 ref={canvasRef}
                 width={800}
                 height={600}
-                style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', display: 'block', cursor: 'crosshair', background: 'radial-gradient(circle, #1a1a3a 0%, #0a0a1a 100%)', zIndex: 1 }}
+                style={{ width: '100%', height: '100%', display: 'block', cursor: 'crosshair', background: 'radial-gradient(circle, #1a1a3a 0%, #0a0a1a 100%)', borderRadius: '16px', boxShadow: '0 10px 30px rgba(0,0,0,0.5)' }}
                 onPointerDown={handlePointerDown}
                 onPointerMove={handlePointerMove}
                 onPointerUp={handlePointerUp}
                 onPointerCancel={handlePointerUp}
             />
+                </div>
+            </div>
+    
 
             {/* Right Controls Panel */}
             <div className="floating-panel" style={{

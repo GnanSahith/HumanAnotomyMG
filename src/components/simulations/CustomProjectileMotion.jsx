@@ -506,7 +506,7 @@ export default function CustomProjectileMotion({ onBack, title }) {
             </div>
 
             {/* SVG Canvas Container */}
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
+            <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: '360px', zIndex: 1 }}>
                 <svg 
                     viewBox="-400 -1050 2800 1300" 
                     preserveAspectRatio="xMidYMid meet" 
