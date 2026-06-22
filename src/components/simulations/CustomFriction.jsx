@@ -310,7 +310,7 @@ const CustomFriction = ({ onBack, title }) => {
                 <div style={{ 
                     width: 800, 
                     height: 600, 
-                    transform: `scale(${Math.min((windowSize.w - 410) / 800, (windowSize.h - 100) / 600)})`, 
+                    transform: `scale(${Math.min(Math.max(windowSize.w - 410, 100) / 800, Math.max(windowSize.h - 100, 100) / 600)})`, 
                     transformOrigin: 'center center' 
                 }}>
                     <canvas 

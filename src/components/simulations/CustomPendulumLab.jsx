@@ -177,7 +177,7 @@ export default function CustomPendulumLab({ onBack, title }) {
 
             {/* Canvas / SVG Main View */}
             <div style={{
-                position: 'absolute', top: 0, bottom: 0, left: 0, right: '360px', zIndex: 1,
+                position: 'absolute', top: 0, bottom: 0, left: 0, right: '360px', minWidth: '400px', zIndex: 1,
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 pointerEvents: 'auto'
             }}>

@@ -195,7 +195,7 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
                     const theta = Math.atan(slope);
                     
                     // a = g*sin(theta)
-                    let a = -gravity * 0.1 * Math.sin(theta);
+                    let a = gravity * 0.1 * Math.sin(theta);
                     
                     // Friction
                     if (friction > 0 && Math.abs(sk.vPath) > 0.01) {
@@ -456,7 +456,7 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
                 <div style={{ 
                     width: 800, 
                     height: 600, 
-                    transform: `scale(${Math.min((windowSize.w - 410) / 800, (windowSize.h - 100) / 600)})`, 
+                    transform: `scale(${Math.min(Math.max(windowSize.w - 410, 100) / 800, Math.max(windowSize.h - 100, 100) / 600)})`, 
                     transformOrigin: 'center center' 
                 }}>
                     <canvas 

@@ -325,7 +325,7 @@ export default function CustomForcesAndMotion({ onBack, title }) {
             </div>
 
             {/* SVG Canvas Container */}
-            <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: '360px', zIndex: 1 }}>
+            <div style={{ position: 'absolute', top: 0, bottom: 0, left: 0, right: '360px', minWidth: '400px', zIndex: 1 }}>
                 {/* Background Grid - scrolling dynamically */}
                 <div style={{
                     position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
