@@ -404,7 +404,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
     };
 
     return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
+        <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: '#0a0a1a', overflow: 'hidden' }}>
             <style>{`
                 .glass-btn {
                     background: rgba(255, 255, 255, 0.1);
@@ -456,7 +456,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
             `}</style>
 
             {/* Top Header Bar */}
-            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10 }}>
+            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
                     {onBack && (
                         <button onClick={onBack} className="glass-btn back-btn">
@@ -465,10 +465,8 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                     )}
                 </div>
                 <div>
-                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-                        <span style={{ background: 'rgba(10, 10, 26, 0.7)', padding: '8px 24px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)' }}>
-                            {title || 'Masses and Springs'}
-                        </span>
+                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                        {title || 'Masses and Springs MG'}
                     </h2>
                 </div>
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
@@ -482,6 +480,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
             </div>
 
             {/* SVG Main View */}
+            <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
             <svg ref={svgRef} viewBox="-400 0 800 800" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1 }}>
                 <defs>
                     <radialGradient id="massGradient" cx="30%" cy="30%" r="70%">
@@ -696,6 +695,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                         <span style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>🐢 Slow Motion Playback</span>
                     </label>
                 </div>
+            </div>
             </div>
         </div>
     );
