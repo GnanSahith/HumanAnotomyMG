@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { Play, Pause, RotateCcw, ArrowLeft, Check, Award, Eye, EyeOff, Sparkles, HelpCircle, Columns } from 'lucide-react';
+import { Play, Pause, RotateCcw, ArrowLeft, Check, Award, Eye, EyeOff, Sparkles, HelpCircle, Columns, Info } from 'lucide-react';
 
 // External mutation helpers to satisfy strict react-hooks/immutability lint rules
 const setProp = (obj, key, val) => {
