@@ -1305,18 +1305,32 @@ export default function CustomBalancingAct({ onBack, title }) {
       `}</style>
 
       {/* Header controls bar */}
-      
+      <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+              {onBack && (
+                  <button onClick={onBack} className="glass-btn back-btn" style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
+                      ← Back
+                  </button>
+              )}
+          </div>
+          <div>
+              <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                  {title || 'Balancing Act MG'}
+              </h2>
+          </div>
+          <div style={{ flex: 1 }} />
+      </div>
 
       {/* Main Workspace viewport */}
-      <main style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
+      <main style={{ flex: 1, position: 'relative', zIndex: 1 }}>
         {/* Canvas display wrapper */}
         <div 
           style={{
             position: 'absolute',
             left: '40px',
             right: '420px',
-            top: '120px',
-            bottom: '40px',
+            top: '20px',
+            bottom: '20px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -1402,8 +1416,8 @@ export default function CustomBalancingAct({ onBack, title }) {
           style={{
             position: 'absolute',
             right: '40px',
-            top: '120px',
-            bottom: '40px',
+            top: '20px',
+            bottom: '20px',
             width: '360px',
             overflowY: 'auto',
             display: 'flex',

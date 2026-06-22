@@ -1135,7 +1135,7 @@ function CustomCollisionLabInner({ onBack, title }) {
     // LAYOUT RENDERING
     // ==========================================
     return (
-        <div className="w-full h-full flex flex-col text-slate-100 font-sans antialiased overflow-hidden" style={{ paddingTop: '80px', height: '100%' }}>
+        <div className="w-full h-full flex flex-col text-slate-100 font-sans antialiased overflow-hidden" style={{ height: '100%' }}>
             {/* Simulation Header */}
             
 
@@ -1689,19 +1689,23 @@ function CustomCollisionLabInner({ onBack, title }) {
 
 export default function CustomCollisionLab({ onBack, title }) {
     return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-                {onBack ? (
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
-                        ← Back
-                    </button>
-                ) : <div />}
-                <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-                    {title || 'Simulation'}
-                </h1>
-                <div style={{ width: '100px' }}></div>
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                    {onBack && (
+                        <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
+                            ← Back
+                        </button>
+                    )}
+                </div>
+                <div>
+                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                        {title || 'Collision Lab MG'}
+                    </h2>
+                </div>
+                <div style={{ flex: 1 }} />
             </div>
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto' }}>
+            <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
                  <CustomCollisionLabInner onBack={null} title={""} />
             </div>
         </div>
