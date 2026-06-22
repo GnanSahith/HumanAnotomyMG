@@ -11,6 +11,7 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
     const [showPieChart, setShowPieChart] = useState(true);
     const [showBarGraph, setShowBarGraph] = useState(true);
     const [showGrid, setShowGrid] = useState(false);
+    const [stickToTrack, setStickToTrack] = useState(false);
     
     // Sliders
     const [friction, setFriction] = useState(0); // 0 to 0.5
@@ -39,6 +40,7 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
         },
         thermalEnergy: 0,
         isPlaying: true,
+        stickToTrack: false,
         dragTarget: null, // 'p1', 'p2', 'p3', or 'skater'
         lastMouseX: 0,
         lastMouseY: 0
@@ -52,6 +54,11 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
         const C = (p2.x * p3.x * (p2.x - p3.x) * p1.y + p3.x * p1.x * (p3.x - p1.x) * p2.y + p1.x * p2.x * (p1.x - p2.x) * p3.y) / denom;
         return { A, B, C };
     };
+
+    
+    useEffect(() => {
+        stateRef.current.stickToTrack = stickToTrack;
+    }, [stickToTrack]);
 
     const updateDOM = () => {
         const s = stateRef.current;
@@ -214,13 +221,24 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
                     sk.x += dx;
                     sk.y = A * sk.x * sk.x + B * sk.x + C;
 
+                    
+                    
                     // Check if flying off track
                     if (sk.x < s.p1.x || sk.x > s.p3.x) {
-                        sk.isAirborne = true;
-                        sk.vx = sk.vPath * Math.cos(theta);
-                        sk.vy = sk.vPath * Math.sin(theta);
-                        sk.vPath = 0;
+                        if (!s.stickToTrack) {
+                            sk.isAirborne = true;
+                            sk.vx = sk.vPath * Math.cos(theta);
+                            sk.vy = sk.vPath * Math.sin(theta);
+                            sk.vPath = 0;
+                        } else {
+                            // Hit the bumper and reverse direction
+                            if (sk.x < s.p1.x) sk.x = s.p1.x + 1;
+                            if (sk.x > s.p3.x) sk.x = s.p3.x - 1;
+                            sk.vPath = 0; // The acceleration will pull them back down
+                        }
                     }
+
+
                 }
             }
 
@@ -254,13 +272,52 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
             });
 
             // Draw Skater
+            const slope = sk.isAirborne ? Math.atan2(sk.vy, sk.vx) : Math.atan(2 * A * sk.x + B);
+            ctx.save();
+            ctx.translate(sk.x, sk.y);
+            ctx.rotate(slope);
+            
+            // Draw Skateboard Board
             ctx.beginPath();
-            ctx.arc(sk.x, sk.y - 15, 15, 0, Math.PI * 2);
-            ctx.fillStyle = '#9b59b6';
+            ctx.roundRect(-20, -8, 40, 6, 3);
+            ctx.fillStyle = '#e67e22'; 
             ctx.fill();
+            
+            // Draw Wheels
+            ctx.beginPath();
+            ctx.arc(-12, 0, 4, 0, Math.PI * 2);
+            ctx.arc(12, 0, 4, 0, Math.PI * 2);
+            ctx.fillStyle = '#fff';
+            ctx.fill();
+            
+            // Draw Stick Figure
+            ctx.beginPath();
             ctx.strokeStyle = '#fff';
-            ctx.lineWidth = 2;
+            ctx.lineWidth = 3;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            // Body
+            ctx.moveTo(0, -10);
+            ctx.lineTo(0, -25);
+            // Legs
+            ctx.moveTo(0, -10);
+            ctx.lineTo(-10, -8); // back leg bent
+            ctx.moveTo(0, -10);
+            ctx.lineTo(12, -8);  // front leg extended
+            // Arms
+            ctx.moveTo(0, -20);
+            ctx.lineTo(-12, -25); // back arm up
+            ctx.moveTo(0, -20);
+            ctx.lineTo(12, -15);  // front arm forward
             ctx.stroke();
+            
+            // Head
+            ctx.beginPath();
+            ctx.arc(0, -32, 6, 0, Math.PI*2);
+            ctx.fillStyle = '#f1c40f';
+            ctx.fill();
+            
+            ctx.restore();
 
             // Draw Pie Chart
             if (showPieChart) {
