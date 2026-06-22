@@ -481,7 +481,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
 
             {/* SVG Main View */}
             <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
-            <svg ref={svgRef} viewBox="-400 0 800 800" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1 }}>
+            <svg ref={svgRef} viewBox="-800 0 1600 800" preserveAspectRatio="xMidYMid slice" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1 }}>
                 <defs>
                     <radialGradient id="massGradient" cx="30%" cy="30%" r="70%">
                         <stop offset="0%" stopColor="#2ecc71" />
@@ -497,9 +497,8 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                     <pattern id="svgGrid" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M 50 0 L 0 0 0 50" fill="none" stroke="rgba(255,255,255,0.03)" strokeWidth="2"/></pattern>
                 </defs>
 
-                <rect x="-400" y="0" width="800" height="800" fill="#0a0a1a" pointerEvents="none" />
-                <rect x="-400" y="0" width="800" height="800" fill="url(#svgGrid)" pointerEvents="none" />
-                <rect x="-400" y="0" width="800" height="800" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="6" rx="24" pointerEvents="none" />
+                <rect x="-4000" y="-1000" width="8000" height="4000" fill="#0a0a1a" pointerEvents="none" />
+                <rect x="-4000" y="-1000" width="8000" height="4000" fill="url(#svgGrid)" pointerEvents="none" />
                 
                 <rect x="-250" y="0" width="500" height="15" fill="rgba(255, 255, 255, 0.8)" rx="4" pointerEvents="none" />
                 
@@ -536,7 +535,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
 
             {/* Stopwatch Overlay */}
             {showStopwatch && (
-                <div style={{ ...panelStyle, position: 'absolute', left: '40px', top: '120px', width: '250px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div style={{ ...panelStyle, position: 'absolute', left: '40px', top: '20px', width: '250px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <span style={{ color: '#fff', fontWeight: 'bold' }}>Stopwatch</span>
                         <button onClick={() => setShowStopwatch(false)} style={{ background: 'none', border: 'none', color: '#ff375f', cursor: 'pointer', fontSize: '16px' }}>✕</button>
@@ -557,7 +556,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
 
             {/* Energy Graph Overlay */}
             {showEnergy && (
-                <div style={{ ...panelStyle, position: 'absolute', left: '40px', bottom: '40px', width: '250px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div style={{ ...panelStyle, position: 'absolute', left: '40px', bottom: '20px', width: '250px', display: 'flex', flexDirection: 'column', gap: '12px' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                         <span style={{ color: '#fff', fontWeight: 'bold' }}>Energy Graph (Spring {selectedSpringId})</span>
                         <button onClick={() => setShowEnergy(false)} style={{ background: 'none', border: 'none', color: '#ff375f', cursor: 'pointer', fontSize: '16px' }}>✕</button>
@@ -597,7 +596,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
             )}
 
             {/* Right Control Panel */}
-            <div style={{ ...panelStyle, position: 'absolute', right: '40px', top: '120px', bottom: '40px', width: '340px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <div style={{ ...panelStyle, position: 'absolute', right: '40px', top: '20px', bottom: '20px', width: '340px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px' }}>
                     <Settings2 size={20} color="rgba(255,255,255,0.7)" />
                     <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>Simulation Parameters</h3>
