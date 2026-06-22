@@ -1154,7 +1154,7 @@ function CustomCollisionLabInner({ onBack, title }) {
                     <button onClick={togglePlay} className="glass-btn play-btn">
                         {isPlaying ? <Pause size={18} /> : <Play size={18} />} {isPlaying ? 'Pause' : 'Play'}
                     </button>
-                    <button onClick={resetSimulation} className="glass-btn reset-btn">
+                    <button onClick={handleReset} className="glass-btn reset-btn">
                         <RotateCcw size={18} /> Reset
                     </button>
                 </div>

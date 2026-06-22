@@ -378,12 +378,17 @@ export default function CustomBalancingAct({ onBack, title }) {
   };
 
   // Drag and Drop Event listeners
-  const handleMouseDown = (e) => {
+  const getMouseCoordinates = (e) => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas) return { mx: 0, my: 0 };
     const rect = canvas.getBoundingClientRect();
-    const mx = e.clientX - rect.left;
-    const my = e.clientY - rect.top;
+    const mx = ((e.clientX - rect.left) / rect.width) * canvas.width;
+    const my = ((e.clientY - rect.top) / rect.height) * canvas.height;
+    return { mx, my };
+  };
+
+  const handleMouseDown = (e) => {
+    const { mx, my } = getMouseCoordinates(e);
 
     const state = simStateRef.current;
     setProp(state.mouse, 'isDown', true);
@@ -469,11 +474,7 @@ export default function CustomBalancingAct({ onBack, title }) {
   };
 
   const handleMouseMove = (e) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const rect = canvas.getBoundingClientRect();
-    const mx = e.clientX - rect.left;
-    const my = e.clientY - rect.top;
+    const { mx, my } = getMouseCoordinates(e);
 
     const state = simStateRef.current;
     setProp(state.mouse, 'x', mx);
@@ -1386,8 +1387,8 @@ export default function CustomBalancingAct({ onBack, title }) {
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
-              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
-              className="cursor-grab active:cursor-grabbing touch-none block"
+              style={{ maxWidth: '100%', maxHeight: '100%', aspectRatio: '800 / 550' }}
+              className="cursor-grab active:cursor-grabbing touch-none block shadow-xl"
             />
 
             {/* Interactive Lab toolbox items selection tabs */}
