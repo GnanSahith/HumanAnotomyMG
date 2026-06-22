@@ -369,6 +369,7 @@
 .final-answer strong {
   color: #4ade80; /* Bright green for answer highlight */
 }
+.toolbar-btn {
   border-radius: 4px;
   border: 1px solid var(--border-color);
   background: var(--bg-secondary);
