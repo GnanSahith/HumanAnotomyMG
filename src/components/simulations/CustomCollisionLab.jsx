@@ -1136,8 +1136,32 @@ function CustomCollisionLabInner({ onBack, title }) {
     // ==========================================
     return (
         <div className="w-full h-full flex flex-col text-slate-100 font-sans antialiased overflow-hidden" style={{ height: '100%' }}>
+            {/* Header controls bar */}
+            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                    {onBack && (
+                        <button onClick={onBack} className="glass-btn back-btn">
+                            <ArrowLeft size={16} /> Back
+                        </button>
+                    )}
+                </div>
+                <div>
+                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                        {title || 'Collision Lab MG'}
+                    </h2>
+                </div>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+                    <button onClick={togglePlay} className="glass-btn play-btn">
+                        {isPlaying ? <Pause size={18} /> : <Play size={18} />} {isPlaying ? 'Pause' : 'Play'}
+                    </button>
+                    <button onClick={resetSimulation} className="glass-btn reset-btn">
+                        <RotateCcw size={18} /> Reset
+                    </button>
+                </div>
+            </div>
+
             {/* Main Interactive Screen */}
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none' }}>
+            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'none' }}>
                 
                 {/* Left/Center: Canvas Viewport (Full Screen Left) */}
                 <div style={{
@@ -1354,33 +1378,31 @@ function CustomCollisionLabInner({ onBack, title }) {
                         {activeTab === 'setup' && (
                             <div className="flex flex-col gap-5">
                                 {/* Mode Selection */}
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wide">Dimension Mode</label>
-                                    <div className="grid grid-cols-2 gap-2 p-1 /65 rounded-lg border border-slate-800">
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                    <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Dimension Mode</label>
+                                    <div style={{ display: 'flex', gap: '8px' }}>
                                         <button
                                             onClick={() => handleModeToggle('1d')}
-                                            className={`py-1.5 text-xs font-semibold rounded-md transition ${
-                                                mode === '1d' ? 'bg-sky-500/20 text-sky-400 border border-sky-500/30' : 'text-slate-400 hover:text-slate-300 border border-transparent'
-                                            }`}
+                                            style={{ flex: 1, padding: '10px', background: mode === '1d' ? 'rgba(52,152,219,0.3)' : 'rgba(255,255,255,0.05)', color: '#fff', border: mode === '1d' ? '1px solid #3498db' : '1px solid transparent', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600 }}
                                         >
                                             1D Collision
                                         </button>
                                         <button
                                             onClick={() => handleModeToggle('2d')}
-                                            className={`py-1.5 text-xs font-semibold rounded-md transition ${
-                                                mode === '2d' ? 'bg-sky-500/20 text-sky-400 border border-sky-500/30' : 'text-slate-400 hover:text-slate-300 border border-transparent'
-                                            }`}
+                                            style={{ flex: 1, padding: '10px', background: mode === '2d' ? 'rgba(52,152,219,0.3)' : 'rgba(255,255,255,0.05)', color: '#fff', border: mode === '2d' ? '1px solid #3498db' : '1px solid transparent', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600 }}
                                         >
                                             2D Collision
                                         </button>
                                     </div>
                                 </div>
 
+                                <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+
                                 {/* Elasticity Slider */}
-                                <div className="flex flex-col gap-2">
-                                    <div className="flex justify-between items-center text-xs font-bold text-slate-400 uppercase tracking-wide">
-                                        <span>Elasticity (Restitution)</span>
-                                        <span className="font-mono text-sky-400">{Math.round(elasticity * 100)}%</span>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Elasticity</label>
+                                        <span style={{ fontSize: '14px', color: '#3498db', fontWeight: 700 }}>{Math.round(elasticity * 100)}%</span>
                                     </div>
                                     <input
                                         type="range"
@@ -1389,56 +1411,56 @@ function CustomCollisionLabInner({ onBack, title }) {
                                         step="0.01"
                                         value={elasticity}
                                         onChange={(e) => setElasticity(parseFloat(e.target.value))}
-                                        className="w-full h-1 rounded-lg appearance-none cursor-pointer accent-sky-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                        style={{ width: '100%', accentColor: '#3498db' }}
                                     />
                                     <div className="flex justify-between text-[10px] text-slate-500">
-                                        <span>0% (Sticky)</span>
-                                        <span>50% (Partial)</span>
-                                        <span>100% (Elastic)</span>
+                                        <span>Sticky</span>
+                                        <span>Partial</span>
+                                        <span>Elastic</span>
                                     </div>
                                 </div>
 
+                                <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+
                                 {/* View options */}
-                                <div className="flex flex-col gap-3 /35 p-3.5 rounded-xl border border-slate-850">
-                                    <div className="text-xs font-bold text-slate-400 uppercase tracking-wide border-b border-slate-800/80 pb-1.5">
-                                        Display Elements
-                                    </div>
-                                    <div className="flex flex-col gap-2.5 text-xs">
-                                        <label className="flex items-center gap-2.5 cursor-pointer text-slate-300 hover:text-white">
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                                    <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '4px' }}>Display Elements</label>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                                        <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
                                             <input
                                                 type="checkbox"
                                                 checked={showGrid}
                                                 onChange={(e) => setShowGrid(e.target.checked)}
-                                                className="rounded border-slate-700 text-sky-400 focus:ring-sky-400/50"
+                                                style={{ width: '18px', height: '18px', accentColor: '#3498db' }}
                                             />
-                                            <span>Show Coordinate Grid</span>
+                                            <span style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Show Coordinate Grid</span>
                                         </label>
-                                        <label className="flex items-center gap-2.5 cursor-pointer text-slate-300 hover:text-white">
+                                        <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
                                             <input
                                                 type="checkbox"
                                                 checked={showTrails}
                                                 onChange={(e) => setShowTrails(e.target.checked)}
-                                                className="rounded border-slate-700 text-sky-400 focus:ring-sky-400/50"
+                                                style={{ width: '18px', height: '18px', accentColor: '#3498db' }}
                                             />
-                                            <span>Show Motion Trails</span>
+                                            <span style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Show Motion Trails</span>
                                         </label>
-                                        <label className="flex items-center gap-2.5 cursor-pointer text-slate-300 hover:text-white">
+                                        <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
                                             <input
                                                 type="checkbox"
                                                 checked={showCenterOfMass}
                                                 onChange={(e) => setShowCenterOfMass(e.target.checked)}
-                                                className="rounded border-slate-700 text-sky-400 focus:ring-sky-400/50"
+                                                style={{ width: '18px', height: '18px', accentColor: '#3498db' }}
                                             />
-                                            <span>Show Center of Mass</span>
+                                            <span style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Show Center of Mass</span>
                                         </label>
                                     </div>
                                     
-                                    <div className="flex flex-col gap-2 mt-2">
-                                        <label className="text-[11px] font-semibold text-slate-400">Vector Overlays</label>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginTop: '8px' }}>
+                                        <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Vector Overlays</label>
                                         <select
                                             value={vectorType}
                                             onChange={(e) => setVectorType(e.target.value)}
-                                            className="w-full border border-slate-800 text-xs text-slate-300 rounded px-2 py-1.5 focus:outline-none focus:border-sky-500" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                            style={{ width: '100%', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', padding: '8px', borderRadius: '8px', color: 'white', fontSize: '14px' }}
                                         >
                                             <option value="both">Show Velocity & Momentum</option>
                                             <option value="velocity">Show Velocity Only (Green)</option>
@@ -1448,20 +1470,25 @@ function CustomCollisionLabInner({ onBack, title }) {
                                     </div>
                                 </div>
 
+                                <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+
                                 {/* Presets Selectors */}
-                                <div className="flex flex-col gap-2">
-                                    <label className="text-xs font-bold text-slate-400 uppercase tracking-wide flex items-center gap-1">
-                                        <Sparkles size={13} className="text-sky-400" /> Experiment Presets
-                                    </label>
-                                    <div className="flex flex-col gap-1.5">
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                    <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Experiment Presets</label>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
                                         {PRESETS.map((p, idx) => (
                                             <button
                                                 key={idx}
                                                 onClick={() => loadPreset(p)}
-                                                className="w-full px-3 py-2 text-left /40 hover: text-xs rounded-lg border border-slate-800 hover:border-slate-700 transition flex flex-col gap-0.5" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                                style={{ padding: '10px', background: 'rgba(255,255,255,0.05)', color: '#fff', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, textAlign: 'left', display: 'flex', alignItems: 'center', gap: '8px' }}
+                                                onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)' }}
+                                                onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.05)' }}
                                             >
-                                                <span className="font-semibold text-slate-200 hover:text-sky-400">{p.name}</span>
-                                                <span className="text-[10px] text-slate-500 leading-snug">{p.desc}</span>
+                                                <Sparkles size={14} color="#3498db" /> 
+                                                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                                                    <span>{p.name}</span>
+                                                    <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.5)' }}>{p.desc}</span>
+                                                </div>
                                             </button>
                                         ))}
                                     </div>
@@ -1470,18 +1497,14 @@ function CustomCollisionLabInner({ onBack, title }) {
                         )}
 
                         {/* Tab 2: Ball 1 Parameters */}
+                        {/* Tab 2: Ball 1 Controls */}
                         {activeTab === 'ball1' && (
                             <div className="flex flex-col gap-5">
-                                <div className="p-3 bg-sky-950/20 rounded-xl border border-sky-500/15 flex flex-col gap-1 text-xs">
-                                    <span className="font-bold text-sky-400">Ball 1 Config (Cyan)</span>
-                                    <span className="text-slate-400 leading-relaxed">Modify parameters below. Changes take effect immediately.</span>
-                                </div>
-
                                 {/* Mass Slider */}
-                                <div className="flex flex-col gap-2">
-                                    <div className="flex justify-between items-center text-xs font-bold text-slate-400">
-                                        <span>Mass</span>
-                                        <span className="font-mono text-sky-400">{mass1.toFixed(1)} kg</span>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Mass</label>
+                                        <span style={{ fontSize: '14px', color: '#3498db', fontWeight: 700 }}>{mass1.toFixed(1)} kg</span>
                                     </div>
                                     <input
                                         type="range"
@@ -1489,8 +1512,8 @@ function CustomCollisionLabInner({ onBack, title }) {
                                         max="10.0"
                                         step="0.1"
                                         value={mass1}
-                                        onChange={(e) => handleMassChange(1, parseFloat(e.target.value))}
-                                        className="w-full h-1 rounded-lg appearance-none cursor-pointer accent-sky-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                        onChange={(e) => setMass1(parseFloat(e.target.value))}
+                                        style={{ width: '100%', accentColor: '#3498db' }}
                                     />
                                     <div className="flex justify-between text-[10px] text-slate-500">
                                         <span>0.2 kg</span>
@@ -1499,11 +1522,13 @@ function CustomCollisionLabInner({ onBack, title }) {
                                     </div>
                                 </div>
 
+                                <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+
                                 {/* Vx Slider */}
-                                <div className="flex flex-col gap-2">
-                                    <div className="flex justify-between items-center text-xs font-bold text-slate-400">
-                                        <span>Initial Velocity X (Vx)</span>
-                                        <span className="font-mono text-sky-400">{initVx1.toFixed(1)} m/s</span>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Initial Velocity X (Vx)</label>
+                                        <span style={{ fontSize: '14px', color: '#3498db', fontWeight: 700 }}>{initVx1.toFixed(1)} m/s</span>
                                     </div>
                                     <input
                                         type="range"
@@ -1512,7 +1537,7 @@ function CustomCollisionLabInner({ onBack, title }) {
                                         step="0.1"
                                         value={initVx1}
                                         onChange={(e) => handleVelocitySliderChange(1, 'x', parseFloat(e.target.value))}
-                                        className="w-full h-1 rounded-lg appearance-none cursor-pointer accent-sky-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                        style={{ width: '100%', accentColor: '#3498db' }}
                                     />
                                     <div className="flex justify-between text-[10px] text-slate-500">
                                         <span>-6.0 m/s</span>
@@ -1523,10 +1548,10 @@ function CustomCollisionLabInner({ onBack, title }) {
 
                                 {/* Vy Slider (Only rendered in 2D mode) */}
                                 {mode === '2d' ? (
-                                    <div className="flex flex-col gap-2">
-                                        <div className="flex justify-between items-center text-xs font-bold text-slate-400">
-                                            <span>Initial Velocity Y (Vy)</span>
-                                            <span className="font-mono text-sky-400">{initVy1.toFixed(1)} m/s</span>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Initial Velocity Y (Vy)</label>
+                                            <span style={{ fontSize: '14px', color: '#3498db', fontWeight: 700 }}>{initVy1.toFixed(1)} m/s</span>
                                         </div>
                                         <input
                                             type="range"
@@ -1535,7 +1560,7 @@ function CustomCollisionLabInner({ onBack, title }) {
                                             step="0.1"
                                             value={initVy1}
                                             onChange={(e) => handleVelocitySliderChange(1, 'y', parseFloat(e.target.value))}
-                                            className="w-full h-1 rounded-lg appearance-none cursor-pointer accent-sky-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                            style={{ width: '100%', accentColor: '#3498db' }}
                                         />
                                         <div className="flex justify-between text-[10px] text-slate-500">
                                             <span>-6.0 m/s</span>
@@ -1551,19 +1576,14 @@ function CustomCollisionLabInner({ onBack, title }) {
                             </div>
                         )}
 
-                        {/* Tab 3: Ball 2 Parameters */}
+                        {/* Tab 3: Ball 2 Controls */}
                         {activeTab === 'ball2' && (
                             <div className="flex flex-col gap-5">
-                                <div className="p-3 bg-rose-950/20 rounded-xl border border-rose-500/15 flex flex-col gap-1 text-xs">
-                                    <span className="font-bold text-rose-400">Ball 2 Config (Rose)</span>
-                                    <span className="text-slate-400 leading-relaxed">Modify parameters below. Changes take effect immediately.</span>
-                                </div>
-
                                 {/* Mass Slider */}
-                                <div className="flex flex-col gap-2">
-                                    <div className="flex justify-between items-center text-xs font-bold text-slate-400">
-                                        <span>Mass</span>
-                                        <span className="font-mono text-rose-400">{mass2.toFixed(1)} kg</span>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Mass</label>
+                                        <span style={{ fontSize: '14px', color: '#ff375f', fontWeight: 700 }}>{mass2.toFixed(1)} kg</span>
                                     </div>
                                     <input
                                         type="range"
@@ -1571,8 +1591,8 @@ function CustomCollisionLabInner({ onBack, title }) {
                                         max="10.0"
                                         step="0.1"
                                         value={mass2}
-                                        onChange={(e) => handleMassChange(2, parseFloat(e.target.value))}
-                                        className="w-full h-1 rounded-lg appearance-none cursor-pointer accent-rose-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                        onChange={(e) => setMass2(parseFloat(e.target.value))}
+                                        style={{ width: '100%', accentColor: '#ff375f' }}
                                     />
                                     <div className="flex justify-between text-[10px] text-slate-500">
                                         <span>0.2 kg</span>
@@ -1581,11 +1601,13 @@ function CustomCollisionLabInner({ onBack, title }) {
                                     </div>
                                 </div>
 
+                                <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+
                                 {/* Vx Slider */}
-                                <div className="flex flex-col gap-2">
-                                    <div className="flex justify-between items-center text-xs font-bold text-slate-400">
-                                        <span>Initial Velocity X (Vx)</span>
-                                        <span className="font-mono text-rose-400">{initVx2.toFixed(1)} m/s</span>
+                                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                        <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Initial Velocity X (Vx)</label>
+                                        <span style={{ fontSize: '14px', color: '#ff375f', fontWeight: 700 }}>{initVx2.toFixed(1)} m/s</span>
                                     </div>
                                     <input
                                         type="range"
@@ -1594,7 +1616,7 @@ function CustomCollisionLabInner({ onBack, title }) {
                                         step="0.1"
                                         value={initVx2}
                                         onChange={(e) => handleVelocitySliderChange(2, 'x', parseFloat(e.target.value))}
-                                        className="w-full h-1 rounded-lg appearance-none cursor-pointer accent-rose-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                        style={{ width: '100%', accentColor: '#ff375f' }}
                                     />
                                     <div className="flex justify-between text-[10px] text-slate-500">
                                         <span>-6.0 m/s</span>
@@ -1605,10 +1627,10 @@ function CustomCollisionLabInner({ onBack, title }) {
 
                                 {/* Vy Slider (Only rendered in 2D mode) */}
                                 {mode === '2d' ? (
-                                    <div className="flex flex-col gap-2">
-                                        <div className="flex justify-between items-center text-xs font-bold text-slate-400">
-                                            <span>Initial Velocity Y (Vy)</span>
-                                            <span className="font-mono text-rose-400">{initVy2.toFixed(1)} m/s</span>
+                                    <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                                            <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Initial Velocity Y (Vy)</label>
+                                            <span style={{ fontSize: '14px', color: '#ff375f', fontWeight: 700 }}>{initVy2.toFixed(1)} m/s</span>
                                         </div>
                                         <input
                                             type="range"
@@ -1617,7 +1639,7 @@ function CustomCollisionLabInner({ onBack, title }) {
                                             step="0.1"
                                             value={initVy2}
                                             onChange={(e) => handleVelocitySliderChange(2, 'y', parseFloat(e.target.value))}
-                                            className="w-full h-1 rounded-lg appearance-none cursor-pointer accent-rose-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
+                                            style={{ width: '100%', accentColor: '#ff375f' }}
                                         />
                                         <div className="flex justify-between text-[10px] text-slate-500">
                                             <span>-6.0 m/s</span>
@@ -1691,23 +1713,56 @@ function CustomCollisionLabInner({ onBack, title }) {
 export default function CustomCollisionLab({ onBack, title }) {
     return (
         <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
-            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
-                    {onBack && (
-                        <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
-                            ← Back
-                        </button>
-                    )}
-                </div>
-                <div>
-                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
-                        {title || 'Collision Lab MG'}
-                    </h2>
-                </div>
-                <div style={{ flex: 1 }} />
-            </div>
+            <style>{`
+                .glass-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    background: rgba(255, 255, 255, 0.05);
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+                .glass-btn:hover { background: rgba(255, 255, 255, 0.1); }
+                .play-btn { background: rgba(46, 204, 113, 0.2); border-color: rgba(46, 204, 113, 0.3); color: #2ecc71; }
+                .play-btn:hover { background: rgba(46, 204, 113, 0.3); }
+                .reset-btn { background: rgba(231, 76, 60, 0.2); border-color: rgba(231, 76, 60, 0.3); color: #e74c3c; }
+                .reset-btn:hover { background: rgba(231, 76, 60, 0.3); }
+
+                .sim-select {
+                    width: 100%;
+                    padding: 10px 12px;
+                    border-radius: 8px;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    color: #fff;
+                    font-size: 14px;
+                    font-weight: 500;
+                    appearance: none;
+                    outline: none;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                }
+                .sim-select:hover {
+                    background: rgba(255, 255, 255, 0.1);
+                    border-color: rgba(255, 255, 255, 0.2);
+                }
+                .sim-select:focus {
+                    border-color: #3498db;
+                    background: rgba(20, 20, 30, 0.9);
+                }
+                .sim-select option {
+                    background: #14141e;
+                    color: #fff;
+                }
+            `}</style>
             <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
-                 <CustomCollisionLabInner onBack={null} title={""} />
+                 <CustomCollisionLabInner onBack={onBack} title={title} />
             </div>
         </div>
     );

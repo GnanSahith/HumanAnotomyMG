@@ -1240,24 +1240,54 @@ export default function CustomBalancingAct({ onBack, title }) {
     <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }} className="flex flex-col select-none font-sans text-white h-full">
       <style>{`
         .glass-btn {
-          background: rgba(255, 255, 255, 0.1);
-          border: 1px solid rgba(255, 255, 255, 0.2);
-          backdrop-filter: blur(10px);
-          color: white;
-          padding: 10px 20px;
-          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          padding: 8px 16px;
+          border-radius: 20px;
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          background: rgba(255, 255, 255, 0.05);
+          color: #fff;
+          font-size: 14px;
+          font-weight: 600;
           cursor: pointer;
           transition: all 0.3s ease;
-          outline: none;
         }
         .glass-btn:hover {
-          transform: translateY(-1px);
+          background: rgba(255, 255, 255, 0.1);
         }
-        .glass-btn-back:hover {
-          background: rgba(255, 55, 95, 0.8) !important;
-          border-color: #ff375f !important;
-          box-shadow: 0 0 12px rgba(255, 55, 95, 0.4);
+        .play-btn { background: rgba(46, 204, 113, 0.2); border-color: rgba(46, 204, 113, 0.3); color: #2ecc71; }
+        .play-btn:hover { background: rgba(46, 204, 113, 0.3); }
+        .reset-btn { background: rgba(231, 76, 60, 0.2); border-color: rgba(231, 76, 60, 0.3); color: #e74c3c; }
+        .reset-btn:hover { background: rgba(231, 76, 60, 0.3); }
+        
+        .sim-select {
+          width: 100%;
+          padding: 10px 12px;
+          border-radius: 8px;
+          background: rgba(255, 255, 255, 0.05);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          appearance: none;
+          outline: none;
+          cursor: pointer;
+          transition: all 0.2s ease;
         }
+        .sim-select:hover {
+          background: rgba(255, 255, 255, 0.1);
+          border-color: rgba(255, 255, 255, 0.2);
+        }
+        .sim-select:focus {
+          border-color: #3498db;
+          background: rgba(20, 20, 30, 0.9);
+        }
+        .sim-select option {
+          background: #14141e;
+          color: #fff;
+        }
+
         .glass-btn-blue:hover {
           background: rgba(52, 152, 219, 0.4) !important;
           border-color: #3498db !important;
@@ -1308,8 +1338,8 @@ export default function CustomBalancingAct({ onBack, title }) {
       <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
           <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
               {onBack && (
-                  <button onClick={onBack} className="glass-btn back-btn" style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
-                      ← Back
+                  <button onClick={onBack} className="glass-btn back-btn">
+                      <ArrowLeft size={16} /> Back
                   </button>
               )}
           </div>
@@ -1318,7 +1348,11 @@ export default function CustomBalancingAct({ onBack, title }) {
                   {title || 'Balancing Act MG'}
               </h2>
           </div>
-          <div style={{ flex: 1 }} />
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+              <button onClick={() => resetSimulation(true)} className="glass-btn reset-btn">
+                  <RotateCcw size={18} /> Reset
+              </button>
+          </div>
       </div>
 
       {/* Main Workspace viewport */}
@@ -1440,81 +1474,47 @@ export default function CustomBalancingAct({ onBack, title }) {
             <div className="space-y-6">
               <div className="flex items-center justify-between border-b border-white/5 pb-3">
                 <h2 className="font-bold text-base text-slate-200">Simulation Controls</h2>
-                <button 
-                  onClick={() => resetSimulation(true)}
-                  className="glass-btn glass-btn-blue flex items-center gap-1.5"
-                  style={{
-                    padding: '6px 12px',
-                    fontSize: '11px',
-                    borderRadius: '6px'
-                  }}
-                >
-                  <RotateCcw size={12} /> Clear Lab
-                </button>
               </div>
 
               {/* Pillars support raising toggle */}
-              <div className="space-y-3">
-                <label className="text-[11px] font-bold text-slate-400 uppercase tracking-wider block">Pillars Support</label>
-                <div className="grid grid-cols-2 gap-2 /85 p-1 rounded-xl border border-white/5">
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500 }}>Pillars Support</label>
+                <div style={{ display: 'flex', gap: '8px' }}>
                   <button
                     onClick={() => setPillarsOn(true)}
-                    className="flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-semibold cursor-pointer transition-all glass-btn-blue"
-                    style={{
-                      background: pillarsOn ? 'rgba(52, 152, 219, 0.4)' : 'transparent',
-                      border: pillarsOn ? '1px solid #3498db' : '1px solid transparent',
-                      color: 'white'
-                    }}
+                    style={{ flex: 1, padding: '10px', background: pillarsOn ? 'rgba(52,152,219,0.3)' : 'rgba(255,255,255,0.05)', color: '#fff', border: pillarsOn ? '1px solid #3498db' : '1px solid transparent', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
                   >
-                    <Columns size={14} /> Locked Flat
+                    <Columns size={16} /> Locked Flat
                   </button>
                   <button
                     onClick={() => setPillarsOn(false)}
-                    className="flex items-center justify-center gap-2 py-2 rounded-lg text-xs font-semibold cursor-pointer transition-all glass-btn-blue"
-                    style={{
-                      background: !pillarsOn ? 'rgba(52, 152, 219, 0.4)' : 'transparent',
-                      border: !pillarsOn ? '1px solid #3498db' : '1px solid transparent',
-                      color: 'white'
-                    }}
+                    style={{ flex: 1, padding: '10px', background: !pillarsOn ? 'rgba(52,152,219,0.3)' : 'rgba(255,255,255,0.05)', color: '#fff', border: !pillarsOn ? '1px solid #3498db' : '1px solid transparent', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}
                   >
-                    <Play size={14} /> Free Swing
+                    <Play size={16} /> Free Swing
                   </button>
                 </div>
               </div>
 
+              <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+
               {/* Overlays checkboxes */}
-              <div className="space-y-4 pt-2 border-t border-white/5">
-                <h3 className="text-xs font-bold text-slate-400 uppercase tracking-wider">Visual Overlays</h3>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                <label style={{ fontSize: '14px', color: 'rgba(255,255,255,0.7)', fontWeight: 500, marginBottom: '4px' }}>Visual Overlays</label>
                 
-                <div className="space-y-3">
-                  <label className="flex items-center gap-3 cursor-pointer group text-sm text-slate-300">
-                    <button
-                      onClick={() => setShowForces(!showForces)}
-                      className={`w-5 h-5 flex items-center justify-center rounded border transition-all glass-btn-blue ${showForces ? 'bg-[#3498db]/60 border-[#3498db] text-white' : 'border-white/20 bg-white/5 group-hover:border-white/40'}`}
-                    >
-                      {showForces ? <Eye size={12} /> : <EyeOff size={12} />}
-                    </button>
-                    <span>Show Force Vectors (Gravity)</span>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
+                    <input type="checkbox" checked={showForces} onChange={(e) => setShowForces(e.target.checked)} style={{ width: '18px', height: '18px', accentColor: '#3498db' }} />
+                    <span style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Show Force Vectors (Gravity)</span>
                   </label>
 
-                  <label className="flex items-center gap-3 cursor-pointer group text-sm text-slate-300">
-                    <button
-                      onClick={() => setShowMarks(!showMarks)}
-                      className={`w-5 h-5 flex items-center justify-center rounded border transition-all glass-btn-blue ${showMarks ? 'bg-[#3498db]/60 border-[#3498db] text-white' : 'border-white/20 bg-white/5 group-hover:border-white/40'}`}
-                    >
-                      {showMarks ? <Eye size={12} /> : <EyeOff size={12} />}
-                    </button>
-                    <span>Show Ruler Level Marks</span>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
+                    <input type="checkbox" checked={showMarks} onChange={(e) => setShowMarks(e.target.checked)} style={{ width: '18px', height: '18px', accentColor: '#3498db' }} />
+                    <span style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Show Ruler Level Marks</span>
                   </label>
 
-                  <label className="flex items-center gap-3 cursor-pointer group text-sm text-slate-300">
-                    <button
-                      onClick={() => setShowLabels(!showLabels)}
-                      className={`w-5 h-5 flex items-center justify-center rounded border transition-all glass-btn-blue ${showLabels ? 'bg-[#3498db]/60 border-[#3498db] text-white' : 'border-white/20 bg-white/5 group-hover:border-white/40'}`}
-                    >
-                      {showLabels ? <Eye size={12} /> : <EyeOff size={12} />}
-                    </button>
-                    <span>Show Mass Labels</span>
+                  <label style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
+                    <input type="checkbox" checked={showLabels} onChange={(e) => setShowLabels(e.target.checked)} style={{ width: '18px', height: '18px', accentColor: '#3498db' }} />
+                    <span style={{ fontSize: '14px', color: '#fff', fontWeight: 500 }}>Show Mass Labels</span>
                   </label>
                 </div>
               </div>
