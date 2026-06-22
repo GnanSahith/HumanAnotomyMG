@@ -1136,26 +1136,24 @@ function CustomCollisionLabInner({ onBack, title }) {
     // ==========================================
     return (
         <div className="w-full h-full flex flex-col text-slate-100 font-sans antialiased overflow-hidden" style={{ height: '100%' }}>
-            {/* Simulation Header */}
-            
-
             {/* Main Interactive Screen */}
             <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none' }}>
                 
-                {/* Left/Center: Viewport Panel (3 Columns) */}
+                {/* Left/Center: Canvas Viewport (Full Screen Left) */}
                 <div style={{
                     position: 'absolute',
-                    inset: 0,
-                    padding: '20px',
-                    paddingRight: '340px',
+                    left: 0,
+                    right: '340px',
+                    top: 0,
+                    bottom: 0,
                     display: 'flex',
                     flexDirection: 'column',
-                    gap: '20px',
-                    overflowY: 'auto'
+                    pointerEvents: 'auto',
+                    overflow: 'hidden'
                 }}>
                     {/* Interactive Canvas Viewport */}
-                    <div className="relative rounded-2xl border border-slate-800 overflow-hidden shadow-2xl flex flex-col" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
-                        <div className="px-4 py-2.5 /80 border-b border-slate-800/60 flex justify-between items-center text-xs text-slate-400 font-medium">
+                    <div className="relative w-full flex-1 overflow-hidden flex flex-col bg-[#0a0a1a]">
+                        <div className="px-4 py-2.5 /80 border-b border-white/5 flex justify-between items-center text-xs text-slate-400 font-medium z-10 bg-[rgba(20,20,30,0.8)]">
                             <div className="flex items-center gap-2">
                                 <span className="inline-block w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
                                 <span>Interactive Physics Viewport (800m × 450m scale)</span>
@@ -1166,7 +1164,7 @@ function CustomCollisionLabInner({ onBack, title }) {
                         </div>
 
                         {/* HTML5 Canvas */}
-                        <div className="relative aspect-[16/9] w-full bg-[#0b1329] cursor-default">
+                        <div className="relative flex-1 w-full cursor-default">
                             <canvas
                                 ref={canvasRef}
                                 width={800}
@@ -1175,13 +1173,14 @@ function CustomCollisionLabInner({ onBack, title }) {
                                 onMouseMove={handleCanvasMouseMove}
                                 onMouseUp={handleCanvasMouseUp}
                                 onMouseLeave={handleCanvasMouseUp}
-                                className="absolute inset-0 w-full h-full block"
+                                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                                className="absolute inset-0 block"
                             />
                         </div>
 
                         {/* Top-Right Canvas Overlay (Fast Readout) */}
-                        <div className="absolute top-12 left-4 /70 backdrop-blur-md p-3 rounded-xl border border-slate-800 text-xs flex flex-col gap-1.5 shadow-lg select-none pointer-events-none">
-                            <div className="text-slate-400 font-semibold uppercase tracking-wider text-[9px] border-b border-slate-800 pb-1 mb-1">
+                        <div className="absolute top-12 left-4 /70 backdrop-blur-md p-3 rounded-xl border border-white/5 text-xs flex flex-col gap-1.5 shadow-lg select-none pointer-events-none bg-[rgba(20,20,30,0.8)] z-10">
+                            <div className="text-slate-400 font-semibold uppercase tracking-wider text-[9px] border-b border-white/5 pb-1 mb-1">
                                 System Overview
                             </div>
                             <div className="flex justify-between gap-6">
@@ -1200,17 +1199,17 @@ function CustomCollisionLabInner({ onBack, title }) {
                     </div>
 
                     {/* Bottom: Numerical Dashboard Panel */}
-                    <div className="backdrop-blur-md border border-slate-800/80 rounded-2xl p-5 shadow-xl flex flex-col gap-4" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
-                        <div className="flex items-center gap-2 border-b border-slate-800 pb-3">
+                    <div className="backdrop-blur-md border-t border-white/5 p-5 shadow-xl flex flex-col gap-4 z-10 shrink-0" style={{ background: 'rgba(20, 20, 30, 0.95)', color: 'white' }}>
+                        <div className="flex items-center gap-2 border-b border-white/5 pb-3">
                             <Info size={18} className="text-sky-400" />
-                            <h3 className="font-semibold text-white">Metrics Dashboard</h3>
+                            <h3 className="font-semibold text-white m-0">Metrics Dashboard</h3>
                         </div>
 
                         {/* Stats Table */}
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
                             {/* Ball 1 Card */}
-                            <div className="/45 p-4 rounded-xl border border-sky-500/20 flex flex-col gap-2.5">
-                                <div className="flex items-center justify-between border-b border-slate-800 pb-1.5">
+                            <div className="p-4 rounded-xl border border-sky-500/20 flex flex-col gap-2.5 bg-sky-950/10">
+                                <div className="flex items-center justify-between border-b border-white/5 pb-1.5">
                                     <span className="font-bold text-sky-400 flex items-center gap-1.5">
                                         <span className="w-2.5 h-2.5 rounded-full bg-sky-400" /> Ball 1 (Cyan)
                                     </span>
@@ -1229,14 +1228,14 @@ function CustomCollisionLabInner({ onBack, title }) {
                                     <div className="text-right text-amber-300"><span ref={b1PyRef}>0.00</span> kg·m/s</div>
                                     <div className="text-slate-400 font-semibold">Total |p|:</div>
                                     <div className="text-right text-amber-400 font-semibold"><span ref={b1PRef}>0.00</span> kg·m/s</div>
-                                    <div className="text-slate-400 font-semibold border-t border-slate-800/40 pt-1">Kinetic Energy:</div>
-                                    <div className="text-right text-emerald-400 font-semibold border-t border-slate-800/40 pt-1"><span ref={b1KERef}>0.00 J</span></div>
+                                    <div className="text-slate-400 font-semibold border-t border-white/5 pt-1">Kinetic Energy:</div>
+                                    <div className="text-right text-emerald-400 font-semibold border-t border-white/5 pt-1"><span ref={b1KERef}>0.00 J</span></div>
                                 </div>
                             </div>
 
                             {/* Ball 2 Card */}
-                            <div className="/45 p-4 rounded-xl border border-rose-500/20 flex flex-col gap-2.5">
-                                <div className="flex items-center justify-between border-b border-slate-800 pb-1.5">
+                            <div className="p-4 rounded-xl border border-rose-500/20 flex flex-col gap-2.5 bg-rose-950/10">
+                                <div className="flex items-center justify-between border-b border-white/5 pb-1.5">
                                     <span className="font-bold text-rose-400 flex items-center gap-1.5">
                                         <span className="w-2.5 h-2.5 rounded-full bg-rose-400" /> Ball 2 (Rose)
                                     </span>
@@ -1255,14 +1254,14 @@ function CustomCollisionLabInner({ onBack, title }) {
                                     <div className="text-right text-amber-300"><span ref={b2PyRef}>0.00</span> kg·m/s</div>
                                     <div className="text-slate-400 font-semibold">Total |p|:</div>
                                     <div className="text-right text-amber-400 font-semibold"><span ref={b2PRef}>0.00</span> kg·m/s</div>
-                                    <div className="text-slate-400 font-semibold border-t border-slate-800/40 pt-1">Kinetic Energy:</div>
-                                    <div className="text-right text-emerald-400 font-semibold border-t border-slate-800/40 pt-1"><span ref={b2KERef}>0.00 J</span></div>
+                                    <div className="text-slate-400 font-semibold border-t border-white/5 pt-1">Kinetic Energy:</div>
+                                    <div className="text-right text-emerald-400 font-semibold border-t border-white/5 pt-1"><span ref={b2KERef}>0.00 J</span></div>
                                 </div>
                             </div>
 
                             {/* Total System Card */}
-                            <div className="/70 p-4 rounded-xl border border-slate-800 flex flex-col gap-2.5 shadow-inner">
-                                <div className="flex items-center justify-between border-b border-slate-800 pb-1.5">
+                            <div className="p-4 rounded-xl border border-white/5 flex flex-col gap-2.5 bg-white/5">
+                                <div className="flex items-center justify-between border-b border-white/5 pb-1.5">
                                     <span className="font-bold text-white flex items-center gap-1.5">
                                         Total System Values
                                     </span>
@@ -1276,7 +1275,7 @@ function CustomCollisionLabInner({ onBack, title }) {
                                     <div className="text-slate-400">Net Momentum Py:</div>
                                     <div className="text-right text-slate-200"><span ref={totalPyRef}>0.00</span> kg·m/s</div>
                                     
-                                    <div className="col-span-2 border-t border-slate-800/60 my-1" />
+                                    <div className="col-span-2 border-t border-white/5 my-1" />
                                     
                                     <div className="text-slate-300 font-semibold">Total Momentum:</div>
                                     <div className="text-right text-amber-400 font-bold"><span ref={totalPRef}>0.00</span> kg·m/s</div>
@@ -1292,24 +1291,26 @@ function CustomCollisionLabInner({ onBack, title }) {
                     </div>
                 </div>
 
-                {/* Right: Sidebar Control Panel (1 Column) */}
+                {/* Right Side Control panel */}
                 <div style={{
                     position: 'absolute',
-                    top: '20px',
-                    right: '20px',
-                    width: '300px',
-                    maxHeight: 'calc(100% - 40px)',
-                    background: 'rgba(20, 20, 30, 0.8)',
-                    border: '1px solid rgba(255,255,255,0.1)',
-                    backdropFilter: 'blur(12px)',
-                    borderRadius: '16px',
-                    zIndex: 10,
-                    color: 'white',
-                    fontFamily: "'Inter', sans-serif",
+                    right: '0px',
+                    top: '0px',
+                    bottom: '0px',
+                    width: '340px',
+                    overflowY: 'auto',
                     display: 'flex',
                     flexDirection: 'column',
-                    overflow: 'hidden'
-                }}>
+                    gap: '24px',
+                    background: 'rgba(20, 20, 30, 0.8)',
+                    borderLeft: '1px solid rgba(255,255,255,0.1)',
+                    backdropFilter: 'blur(12px)',
+                    WebkitBackdropFilter: 'blur(12px)',
+                    padding: '20px',
+                    color: 'white',
+                    pointerEvents: 'auto',
+                    fontFamily: "'Inter', sans-serif"
+                }} className="scrollbar-hide">
                     {/* Tab Selection */}
                     <div className="flex border-b border-slate-800 /50">
                         <button

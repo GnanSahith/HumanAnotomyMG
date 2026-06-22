@@ -1323,14 +1323,14 @@ export default function CustomBalancingAct({ onBack, title }) {
 
       {/* Main Workspace viewport */}
       <main style={{ flex: 1, position: 'relative', zIndex: 1 }}>
-        {/* Canvas display wrapper */}
+        {/* Canvas display wrapper - Full Screen Left Side */}
         <div 
           style={{
             position: 'absolute',
-            left: '40px',
-            right: '420px',
-            top: '20px',
-            bottom: '20px',
+            left: 0,
+            right: '380px',
+            top: 0,
+            bottom: 0,
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -1339,8 +1339,8 @@ export default function CustomBalancingAct({ onBack, title }) {
           className="canvas-container-responsive"
         >
           <div 
-            style={{ position: 'relative' }} 
-            className="w-full max-w-[800px] aspect-[8/5.5] rounded-2xl bg-[#0c0c1f]/40 border border-white/5 shadow-2xl overflow-hidden backdrop-blur-sm"
+            style={{ position: 'relative', width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center' }} 
+            className="overflow-hidden"
           >
             <canvas
               ref={canvasRef}
@@ -1352,7 +1352,8 @@ export default function CustomBalancingAct({ onBack, title }) {
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
-              className="w-full h-full cursor-grab active:cursor-grabbing touch-none block"
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+              className="cursor-grab active:cursor-grabbing touch-none block"
             />
 
             {/* Interactive Lab toolbox items selection tabs */}
@@ -1360,7 +1361,7 @@ export default function CustomBalancingAct({ onBack, title }) {
               <div 
                 style={{
                   position: 'absolute',
-                  bottom: '110px',
+                  bottom: '40px',
                   left: '50%',
                   transform: 'translateX(-50%)',
                   display: 'flex',
@@ -1415,31 +1416,28 @@ export default function CustomBalancingAct({ onBack, title }) {
         <div 
           style={{
             position: 'absolute',
-            right: '40px',
+            right: '20px',
             top: '20px',
             bottom: '20px',
-            width: '360px',
+            width: '340px',
             overflowY: 'auto',
             display: 'flex',
             flexDirection: 'column',
             gap: '24px',
-            zIndex: 10
+            zIndex: 10,
+            background: 'rgba(20, 20, 30, 0.8)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(12px)',
+            WebkitBackdropFilter: 'blur(12px)',
+            padding: '20px',
+            borderRadius: '16px',
+            color: 'white',
+            fontFamily: "'Inter', sans-serif"
           }}
-          className="controls-panel-responsive"
+          className="controls-panel-responsive scrollbar-hide"
         >
           {currentMode !== 'game' ? (
-            <section 
-              style={{
-                background: 'rgba(20, 20, 30, 0.8)',
-                border: '1px solid rgba(255,255,255,0.1)',
-                backdropFilter: 'blur(12px)',
-                padding: '20px',
-                borderRadius: '16px',
-                color: 'white',
-                fontFamily: "'Inter', sans-serif"
-              }}
-              className="space-y-6"
-            >
+            <div className="space-y-6">
               <div className="flex items-center justify-between border-b border-white/5 pb-3">
                 <h2 className="font-bold text-base text-slate-200">Simulation Controls</h2>
                 <button 
