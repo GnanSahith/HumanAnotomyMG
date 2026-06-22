@@ -131,7 +131,8 @@ export default function CustomPendulumLab({ onBack, title }) {
             {/* Top Header Bar */}
             <div style={{
                 position: 'absolute', top: '20px', left: '20px', right: '20px',
-                display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                display: 'flex', justifyContent: 'flex-end',
+                alignItems: 'center',
                 zIndex: 10
             }}>
                 {/* Left Side: Back Button */}

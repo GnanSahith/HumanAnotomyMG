@@ -137,7 +137,7 @@ export default function CustomForcesAndMotion({ onBack, title }) {
                 left: '20px',
                 right: '20px',
                 display: 'flex',
-                justifyContent: 'space-between',
+                justifyContent: 'flex-end',
                 alignItems: 'center',
                 zIndex: 10
             }}>
