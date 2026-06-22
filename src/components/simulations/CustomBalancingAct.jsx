@@ -382,8 +382,22 @@ export default function CustomBalancingAct({ onBack, title }) {
     const canvas = canvasRef.current;
     if (!canvas) return { mx: 0, my: 0 };
     const rect = canvas.getBoundingClientRect();
-    const mx = ((e.clientX - rect.left) / rect.width) * canvas.width;
-    const my = ((e.clientY - rect.top) / rect.height) * canvas.height;
+    
+    // Calculate the actual rendered dimensions with objectFit: contain
+    const scaleX = rect.width / canvas.width;
+    const scaleY = rect.height / canvas.height;
+    const scale = Math.min(scaleX, scaleY);
+    
+    const renderedWidth = canvas.width * scale;
+    const renderedHeight = canvas.height * scale;
+    
+    // Calculate the letterbox offsets
+    const offsetX = (rect.width - renderedWidth) / 2;
+    const offsetY = (rect.height - renderedHeight) / 2;
+    
+    const mx = (e.clientX - rect.left - offsetX) / scale;
+    const my = (e.clientY - rect.top - offsetY) / scale;
+    
     return { mx, my };
   };
 
@@ -1387,7 +1401,7 @@ export default function CustomBalancingAct({ onBack, title }) {
               onTouchStart={handleTouchStart}
               onTouchMove={handleTouchMove}
               onTouchEnd={handleTouchEnd}
-              style={{ maxWidth: '100%', maxHeight: '100%', aspectRatio: '800 / 550' }}
+              style={{ width: '100%', height: '100%', objectFit: 'contain' }}
               className="cursor-grab active:cursor-grabbing touch-none block shadow-xl"
             />
 
