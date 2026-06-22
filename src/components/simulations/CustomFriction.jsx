@@ -183,7 +183,106 @@ const CustomFriction = ({ onBack, title }) => {
             `}</style>
             
             {/* Top Header Bar */}
-            
+            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10 }}>
+                <button 
+                    onClick={onBack}
+                    className="glass-btn-back"
+                    style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', color: 'white', padding: '10px 20px', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease' }}
+                >
+                    <ArrowLeft size={18} /> Back
+                </button>
+                <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
+                    {title}
+                </h2>
+                <button 
+                    onClick={initAtoms}
+                    className="glass-btn-reset"
+                    style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', color: 'white', padding: '10px 20px', borderRadius: '8px', cursor: 'pointer', transition: 'all 0.3s ease' }}
+                >
+                    <RotateCcw size={18} /> Reset
+                </button>
+            </div>
+
+            {/* Left Floating Control Panel (Books) */}
+            <div style={{
+                position: 'absolute',
+                left: '40px',
+                top: '120px',
+                bottom: '40px',
+                width: '340px',
+                background: 'rgba(20, 20, 30, 0.8)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(12px)',
+                padding: '20px',
+                borderRadius: '16px',
+                zIndex: 10,
+                color: 'white',
+                fontFamily: "'Inter', sans-serif",
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxSizing: 'border-box'
+            }}>
+                <div style={{ marginBottom: '40px', textAlign: 'center' }}>
+                    <h3 style={{ margin: '0 0 10px 0', fontSize: '20px', color: '#3498db', fontWeight: '600' }}>Friction Simulation</h3>
+                    <p style={{ margin: 0, fontSize: '14px', color: 'rgba(255,255,255,0.6)', lineHeight: '1.5' }}>
+                        Drag the top book back and forth to create friction and heat.
+                    </p>
+                </div>
+
+                <div style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%', gap: '4px' }}>
+                    <div 
+                        ref={bookRef}
+                        onPointerDown={handlePointerDown}
+                        onPointerMove={handlePointerMove}
+                        onPointerUp={handlePointerUp}
+                        onPointerCancel={handlePointerUp}
+                        style={{
+                            width: '260px',
+                            height: '60px',
+                            background: 'linear-gradient(135deg, #2ecc71, #27ae60)',
+                            border: '1px solid rgba(255,255,255,0.2)',
+                            borderRadius: '8px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontWeight: 'bold',
+                            fontSize: '22px',
+                            cursor: 'grab',
+                            boxShadow: '0 8px 16px rgba(0,0,0,0.4), inset 0 2px 4px rgba(255,255,255,0.3)',
+                            userSelect: 'none',
+                            touchAction: 'none',
+                            zIndex: 2
+                        }}
+                    >
+                        Chemistry
+                    </div>
+
+                    <div 
+                        style={{
+                            width: '260px',
+                            height: '60px',
+                            background: 'linear-gradient(135deg, #f1c40f, #f39c12)',
+                            border: '1px solid rgba(255,255,255,0.2)',
+                            borderRadius: '8px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            fontWeight: 'bold',
+                            fontSize: '22px',
+                            color: '#1a1a2e',
+                            marginTop: '-2px',
+                            boxShadow: '0 8px 16px rgba(0,0,0,0.4), inset 0 2px 4px rgba(255,255,255,0.3)',
+                            userSelect: 'none',
+                            zIndex: 1
+                        }}
+                    >
+                        Physics
+                    </div>
+                </div>
+            </div>
+
             {/* Canvas / Main View */}
             <div style={{ 
                 position: 'absolute', 
@@ -207,7 +306,7 @@ const CustomFriction = ({ onBack, title }) => {
                    pointerEvents: 'auto'
                }}>
                    
-            <div style={{ position: 'absolute', top: '20px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ position: 'absolute', top: '80px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ 
                     width: 800, 
                     height: 600, 

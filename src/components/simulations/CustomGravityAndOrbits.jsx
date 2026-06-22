@@ -447,12 +447,76 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
     return (
         <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a' }}>
             {/* Header */}
-            
+            <div style={{
+                position: 'absolute',
+                top: '20px',
+                left: '20px',
+                right: '20px',
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                zIndex: 10
+            }}>
+                <button
+                    onClick={onBack}
+                    style={{
+                        background: 'rgba(255, 255, 255, 0.1)',
+                        border: '1px solid rgba(255, 255, 255, 0.2)',
+                        color: 'white',
+                        padding: '8px 16px',
+                        borderRadius: '8px',
+                        cursor: 'pointer',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '8px',
+                        backdropFilter: 'blur(10px)',
+                        transition: 'all 0.2s',
+                        fontFamily: "'Inter', sans-serif"
+                    }}
+                    onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)'; e.currentTarget.style.borderColor = '#ff375f'; }}
+                    onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
+                >
+                    <ArrowLeft size={16} /> Back to Library
+                </button>
+
+                <h2 style={{
+                    margin: 0,
+                    color: 'white',
+                    fontFamily: "'Inter', sans-serif",
+                    fontSize: '24px',
+                    fontWeight: '600',
+                    textShadow: '0 2px 10px rgba(0,0,0,0.5)'
+                }}>{title}</h2>
+
+                <div style={{ display: 'flex', gap: '10px' }}>
+                    <button
+                        onClick={handleReset}
+                        style={{
+                            background: 'rgba(52, 152, 219, 0.2)',
+                            border: '1px solid rgba(52, 152, 219, 0.4)',
+                            color: '#3498db',
+                            padding: '8px 16px',
+                            borderRadius: '8px',
+                            cursor: 'pointer',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            backdropFilter: 'blur(10px)',
+                            transition: 'all 0.2s',
+                            fontFamily: "'Inter', sans-serif"
+                        }}
+                        onMouseEnter={e => { e.currentTarget.style.background = 'rgba(52, 152, 219, 0.4)'; }}
+                        onMouseLeave={e => { e.currentTarget.style.background = 'rgba(52, 152, 219, 0.2)'; }}
+                    >
+                        <RotateCcw size={16} /> Reset
+                    </button>
+                </div>
+            </div>
 
             {/* Left Panel: Toggles and Time */}
             <div style={{
                 position: 'absolute',
-                top: '20px',
+                top: '90px',
                 left: '20px',
                 background: 'rgba(20, 20, 30, 0.8)',
                 border: '1px solid rgba(255,255,255,0.1)',
@@ -527,7 +591,7 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
             {/* Right Panel: Scenarios */}
             <div style={{
                 position: 'absolute',
-                top: '20px',
+                top: '90px',
                 right: '20px',
                 background: 'rgba(20, 20, 30, 0.8)',
                 border: '1px solid rgba(255,255,255,0.1)',
@@ -612,7 +676,7 @@ const CustomGravityAndOrbits = ({ onBack, title }) => {
             {/* Canvas Container */}
             <div style={{ position: 'absolute', inset: 0, zIndex: 1 }}>
                 
-            <div style={{ position: 'absolute', top: '20px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ position: 'absolute', top: '80px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ 
                     width: 800, 
                     height: 600, 

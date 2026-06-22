@@ -489,11 +489,27 @@ const CustomEnergySkatePark = ({ onBack, title }) => {
             `}</style>
 
             {/* Top Header Bar */}
-            
+            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10 }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    <button className="btn-back" onClick={onBack}>
+                        <ArrowLeft size={18} /> Back
+                    </button>
+                    <h2 style={{ margin: 0, color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>{title}</h2>
+                </div>
+                
+                <div style={{ display: 'flex', gap: '10px' }}>
+                    <button className="btn-play-pause" onClick={() => stateRef.current.isPlaying = !stateRef.current.isPlaying}>
+                        <Play size={20} />
+                    </button>
+                    <button className="btn-reset" onClick={handleReset}>
+                        <RotateCcw size={18} /> Reset
+                    </button>
+                </div>
+            </div>
 
             {/* Canvas / Main View */}
             
-            <div style={{ position: 'absolute', top: '20px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ position: 'absolute', top: '80px', bottom: '20px', left: '20px', right: '390px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <div style={{ 
                     width: 800, 
                     height: 600, 
