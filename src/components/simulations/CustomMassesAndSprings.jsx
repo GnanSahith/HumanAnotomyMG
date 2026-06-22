@@ -315,7 +315,9 @@ export default function CustomMassesAndSprings({ onBack, title }) {
             ps.isDragging = true;
             ps.vy = 0;
             ps.thermalEnergy = 0;
-            setSelectedSpringId(id);
+            if (selectedSpringId !== id) {
+                setSelectedSpringId(id);
+            }
         }
     };
     
@@ -349,17 +351,18 @@ export default function CustomMassesAndSprings({ onBack, title }) {
     };
 
     // Drag handling for ruler
+    const rulerGRef = useRef(null);
     const handleRulerDown = (e) => {
         e.currentTarget.setPointerCapture(e.pointerId);
         isDraggingRulerRef.current = true;
     };
     const handleRulerMove = (e) => {
-        if (!isDraggingRulerRef.current || !svgRef.current) return;
+        if (!isDraggingRulerRef.current || !svgRef.current || !rulerGRef.current) return;
         const pt = svgRef.current.createSVGPoint();
         pt.x = e.clientX;
         pt.y = e.clientY;
         const svgP = pt.matrixTransform(svgRef.current.getScreenCTM().inverse());
-        setRulerPos({ x: svgP.x, y: svgP.y });
+        rulerGRef.current.setAttribute('transform', `translate(${svgP.x}, ${svgP.y})`);
     };
     const handleRulerUp = (e) => {
         if (isDraggingRulerRef.current) {
@@ -463,7 +466,9 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                 </div>
                 <div>
                     <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-                        {title || 'Masses and Springs'}
+                        <span style={{ background: 'rgba(10, 10, 26, 0.7)', padding: '8px 24px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)' }}>
+                            {title || 'Masses and Springs'}
+                        </span>
                     </h2>
                 </div>
                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
@@ -521,7 +526,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                 })}
 
                 {/* Ruler */}
-                <g transform={`translate(${rulerPos.x}, ${rulerPos.y})`} onPointerDown={handleRulerDown} onPointerMove={handleRulerMove} onPointerUp={handleRulerUp} onPointerCancel={handleRulerUp} style={{ cursor: 'grab', touchAction: 'none' }}>
+                <g ref={rulerGRef} transform={`translate(300, 100)`} onPointerDown={handleRulerDown} onPointerMove={handleRulerMove} onPointerUp={handleRulerUp} onPointerCancel={handleRulerUp} style={{ cursor: 'grab', touchAction: 'none' }}>
                     <rect x="-15" y="0" width="30" height="400" fill="#f1c40f" rx="4" />
                     {Array.from({ length: 41 }).map((_, i) => (
                         <line key={i} x1={i % 10 === 0 ? "-15" : "-5"} y1={i * 10} x2="15" y2={i * 10} stroke="#000" strokeWidth="2" />
