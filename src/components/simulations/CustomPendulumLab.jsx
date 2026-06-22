@@ -129,39 +129,7 @@ export default function CustomPendulumLab({ onBack, title }) {
             `}</style>
 
             {/* Top Header Bar */}
-            <div style={{
-                position: 'absolute', top: '20px', left: '20px', right: '20px',
-                display: 'flex', justifyContent: 'flex-end',
-                alignItems: 'center',
-                zIndex: 10
-            }}>
-                {/* Left Side: Back Button */}
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
-                    {null}
-                </div>
-
-                {/* Center: Title */}
-                {null}
-
-                {/* Right Side: Action Buttons */}
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
-                    <button 
-                        onClick={() => setIsPlaying(!isPlaying)}
-                        className="btn-action-hover"
-                        style={actionButtonStyle}
-                    >
-                        {isPlaying ? <Pause size={18} /> : <Play size={18} />}
-                        {isPlaying ? 'Pause' : 'Play'}
-                    </button>
-                    <button 
-                        onClick={handleReset}
-                        className="btn-action-hover"
-                        style={actionButtonStyle}
-                    >
-                        <RotateCcw size={18} /> Reset
-                    </button>
-                </div>
-            </div>
+            
 
             {/* Canvas / SVG Main View */}
             <div style={{

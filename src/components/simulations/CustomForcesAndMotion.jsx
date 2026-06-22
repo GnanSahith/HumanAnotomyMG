@@ -131,49 +131,12 @@ export default function CustomForcesAndMotion({ onBack, title }) {
     return (
         <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
             {/* Header */}
-            <div style={{
-                position: 'absolute',
-                top: '20px',
-                left: '20px',
-                right: '20px',
-                display: 'flex',
-                justifyContent: 'flex-end',
-                alignItems: 'center',
-                zIndex: 10
-            }}>
-                null
-
-                {null}
-
-                <div style={{ display: 'flex', gap: '10px' }}>
-                    <button
-                        onClick={handleReset}
-                        style={{
-                            background: 'rgba(52, 152, 219, 0.2)',
-                            border: '1px solid rgba(52, 152, 219, 0.4)',
-                            color: '#3498db',
-                            padding: '8px 16px',
-                            borderRadius: '8px',
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '8px',
-                            backdropFilter: 'blur(10px)',
-                            transition: 'all 0.2s',
-                            fontFamily: "'Inter', sans-serif"
-                        }}
-                        onMouseEnter={e => { e.currentTarget.style.background = 'rgba(52, 152, 219, 0.4)'; }}
-                        onMouseLeave={e => { e.currentTarget.style.background = 'rgba(52, 152, 219, 0.2)'; }}
-                    >
-                        <RotateCcw size={16} /> Reset
-                    </button>
-                </div>
-            </div>
+            
 
             {/* Left Panel: Speedometer & Info */}
             <div style={{
                 position: 'absolute',
-                top: '90px',
+                top: '20px',
                 left: '20px',
                 background: 'rgba(20, 20, 30, 0.8)',
                 border: '1px solid rgba(255,255,255,0.1)',
@@ -216,7 +179,7 @@ export default function CustomForcesAndMotion({ onBack, title }) {
             {/* Right Panel: Controls */}
             <div style={{
                 position: 'absolute',
-                top: '90px',
+                top: '20px',
                 right: '20px',
                 background: 'rgba(20, 20, 30, 0.8)',
                 border: '1px solid rgba(255,255,255,0.1)',

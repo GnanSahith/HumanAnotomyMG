@@ -180,49 +180,12 @@ export default function CustomProjectileMotion({ onBack, title }) {
     return (
         <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden', color: '#fff' }}>
             {/* Header */}
-            <div style={{
-                position: 'absolute',
-                top: '20px',
-                left: '20px',
-                right: '20px',
-                display: 'flex',
-                justifyContent: 'flex-end',
-                alignItems: 'center',
-                zIndex: 10
-            }}>
-                {null}
-
-                {null}
-
-                <div style={{ display: 'flex', gap: '10px' }}>
-                    <button
-                        onClick={handleReset}
-                        style={{
-                            background: 'rgba(52, 152, 219, 0.2)',
-                            border: '1px solid rgba(52, 152, 219, 0.4)',
-                            color: '#3498db',
-                            padding: '8px 16px',
-                            borderRadius: '8px',
-                            cursor: 'pointer',
-                            display: 'flex',
-                            alignItems: 'center',
-                            gap: '8px',
-                            backdropFilter: 'blur(10px)',
-                            transition: 'all 0.2s',
-                            fontFamily: "'Inter', sans-serif"
-                        }}
-                        onMouseEnter={e => { e.currentTarget.style.background = 'rgba(52, 152, 219, 0.4)'; }}
-                        onMouseLeave={e => { e.currentTarget.style.background = 'rgba(52, 152, 219, 0.2)'; }}
-                    >
-                        <RotateCcw size={16} /> Reset
-                    </button>
-                </div>
-            </div>
+            
 
             {/* Left Control Panel: Display, Playback, and Pause/Launch */}
             <div style={{
                 position: 'absolute',
-                top: '90px',
+                top: '20px',
                 left: '20px',
                 background: 'rgba(20, 20, 30, 0.8)',
                 border: '1px solid rgba(255,255,255,0.1)',
@@ -312,7 +275,7 @@ export default function CustomProjectileMotion({ onBack, title }) {
             {/* Right Control Panel: Scrollable parameters */}
             <div style={{
                 position: 'absolute',
-                top: '90px',
+                top: '20px',
                 right: '20px',
                 bottom: '20px',
                 width: '320px',
@@ -329,9 +292,11 @@ export default function CustomProjectileMotion({ onBack, title }) {
                 flexDirection: 'column',
                 gap: '20px'
             }}>
-                <h3 style={{ margin: '0 0 5px 0', fontSize: '16px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
-                    Parameters
-                </h3>
+                
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', margin: '0 0 15px 0', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
+                    <h3 style={{ margin: 0, fontSize: '16px' }}>Parameters</h3>
+                    <button onClick={handleReset} style={{ background: 'rgba(52, 152, 219, 0.2)', border: '1px solid rgba(52, 152, 219, 0.4)', color: '#3498db', padding: '6px 12px', borderRadius: '6px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px', fontSize: '12px', fontWeight: 600, transition: 'all 0.2s' }} onMouseEnter={e => { e.currentTarget.style.background = 'rgba(52, 152, 219, 0.4)'; }} onMouseLeave={e => { e.currentTarget.style.background = 'rgba(52, 152, 219, 0.2)'; }}><RotateCcw size={14} /> Reset</button>
+                </div>
 
                 <div>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
