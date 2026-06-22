@@ -386,15 +386,12 @@ function CustomCenterandVariabilityInner({ onBack, title }) {
   const isOverTrash = draggingDotId && pointerPos.x > 710 && pointerPos.y < 70;
 
   return (
-    <div className="h-full text-white font-sans flex flex-col" style={{ paddingTop: '90px', height: '100%', width: '100%', overflowY: 'auto' }}>
-      {/* Top Header */}
-      
-
+    <div className="text-white font-sans flex flex-col h-full w-full" style={{ overflowY: 'auto', padding: '20px' }}>
       {/* Main Workspace Layout */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none' }}>
+      <div style={{ flex: 1, display: 'flex', flexDirection: 'column', gap: '20px' }}>
         
-        {/* Left 3 Columns: Interactive SVG Workspace & Stats Details */}
-        <div className="xl:col-span-3 space-y-6 flex flex-col">
+        {/* Top: Interactive SVG Workspace */}
+        <div className="flex flex-col space-y-6">
           
           {/* Main Simulation Plot Container */}
           <div className="border border-white/10 rounded-2xl p-5 backdrop-blur-md shadow-xl flex flex-col justify-between" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
@@ -1019,29 +1016,33 @@ function CustomCenterandVariabilityInner({ onBack, title }) {
                   </div>
                 </div>
               ) : (
-                <div className="space-y-4 text-xs text-slate-300 font-mono /40 p-4 border border-white/5 rounded-xl">
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', color: 'rgba(255,255,255,0.8)', fontSize: '14px', lineHeight: '1.6', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', padding: '20px', borderRadius: '16px' }}>
+                  <h4 style={{ color: '#fff', fontSize: '16px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px', margin: 0 }}>
+                    <Info size={18} color="#3498db" /> Math Formula & Concepts
+                  </h4>
+                  
                   <div>
-                    <h4 className="text-sm font-bold text-white mb-1">1. Mean (Arithmetic Average)</h4>
-                    <p className="mb-1">Calculates the balance point of the system. If you imagine the axis as a see-saw and each dot as a block of equal weight, the mean is where the fulcrum must be placed to keep it perfectly level.</p>
-                    <code className="text-sky-400">Formula: μ = (Σ x_i) / N</code>
+                    <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>1. Mean (Arithmetic Average)</h5>
+                    <p style={{ margin: '0 0 12px 0' }}>Calculates the balance point of the system. If you imagine the axis as a see-saw and each dot as a block of equal weight, the mean is where the fulcrum must be placed to keep it perfectly level.</p>
+                    <code style={{ display: 'block', padding: '12px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#2ecc71', fontFamily: 'monospace', textAlign: 'center', marginBottom: '8px', fontSize: '14px' }}>Formula: μ = (Σ x_i) / N</code>
                   </div>
-                  <div className="h-px bg-white/5" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }} />
+                  <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
                   <div>
-                    <h4 className="text-sm font-bold text-white mb-1">2. Median (Q2 / Middle Value)</h4>
-                    <p className="mb-1">The value dividing the sorted dataset exactly in half. Unlike the mean, the median is highly resistant to extreme outliers.</p>
-                    <code className="text-sky-400">Formula: Value at index (N+1)/2 if N is odd; average of two middle values if N is even.</code>
+                    <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>2. Median (Q2 / Middle Value)</h5>
+                    <p style={{ margin: '0 0 12px 0' }}>The value dividing the sorted dataset exactly in half. Unlike the mean, the median is highly resistant to extreme outliers.</p>
+                    <code style={{ display: 'block', padding: '12px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#2ecc71', fontFamily: 'monospace', textAlign: 'center', marginBottom: '8px', fontSize: '14px' }}>Formula: Value at index (N+1)/2 if N is odd; average of two middle values if N is even.</code>
                   </div>
-                  <div className="h-px bg-white/5" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }} />
+                  <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
                   <div>
-                    <h4 className="text-sm font-bold text-white mb-1">3. Standard Deviation (σ)</h4>
-                    <p className="mb-1">Measures standard variability. Tells you how far data points typically sit from the mean. Roughly 68% of normal data falls within 1 SD.</p>
-                    <code className="text-sky-400">Population Formula: σ = √[ Σ(x_i - μ)² / N ]</code>
+                    <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>3. Standard Deviation (σ)</h5>
+                    <p style={{ margin: '0 0 12px 0' }}>Measures standard variability. Tells you how far data points typically sit from the mean. Roughly 68% of normal data falls within 1 SD.</p>
+                    <code style={{ display: 'block', padding: '12px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#2ecc71', fontFamily: 'monospace', textAlign: 'center', marginBottom: '8px', fontSize: '14px' }}>Population Formula: σ = √[ Σ(x_i - μ)² / N ]</code>
                   </div>
-                  <div className="h-px bg-white/5" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }} />
+                  <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
                   <div>
-                    <h4 className="text-sm font-bold text-white mb-1">4. Mean Absolute Deviation (MAD)</h4>
-                    <p className="mb-1">Similar to Standard Deviation, MAD represents the average of absolute deviations from the mean. It is simpler to calculate and has no squaring step.</p>
-                    <code className="text-sky-400">Formula: MAD = [ Σ|x_i - μ| ] / N</code>
+                    <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>4. Mean Absolute Deviation (MAD)</h5>
+                    <p style={{ margin: '0 0 12px 0' }}>Similar to Standard Deviation, MAD represents the average of absolute deviations from the mean. It is simpler to calculate and has no squaring step.</p>
+                    <code style={{ display: 'block', padding: '12px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px', color: '#2ecc71', fontFamily: 'monospace', textAlign: 'center', marginBottom: '8px', fontSize: '14px' }}>Formula: MAD = [ Σ|x_i - μ| ] / N</code>
                   </div>
                 </div>
               )}
@@ -1340,19 +1341,52 @@ function CustomCenterandVariabilityInner({ onBack, title }) {
 
 export default function CustomCenterandVariability({ onBack, title }) {
     return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-                {onBack ? (
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
-                        ← Back
-                    </button>
-                ) : <div />}
-                <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-                    {title || 'Simulation'}
-                </h1>
-                <div style={{ width: '100px' }}></div>
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+            <style>{`
+                .glass-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                }
+                .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+                .glass-btn:active { transform: translateY(1px); }
+                .glass-btn-blue { background: rgba(52, 152, 219, 0.15); border-color: rgba(52, 152, 219, 0.3); color: #3498db; }
+                .glass-btn-blue:hover { background: rgba(52, 152, 219, 0.25); }
+                .reset-btn { background: rgba(231, 76, 60, 0.2); border-color: rgba(231, 76, 60, 0.3); color: #e74c3c; }
+                .reset-btn:hover { background: rgba(231, 76, 60, 0.3); }
+            `}</style>
+
+            {/* Standardized Header */}
+            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                     {onBack && (
+                         <button onClick={onBack} className="glass-btn">
+                             <ArrowLeft size={16} /> Back
+                         </button>
+                     )}
+                 </div>
+                 <div>
+                     <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                         {title || 'Center and Variability MG'}
+                     </h2>
+                 </div>
+                 <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+                     {/* Placeholder for flex alignment. Inner component has reset button? Let's check inner component. */}
+                 </div>
             </div>
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto' }}>
+
+            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', display: 'flex', flexDirection: 'column' }}>
                  <CustomCenterandVariabilityInner onBack={null} title={""} />
             </div>
         </div>
