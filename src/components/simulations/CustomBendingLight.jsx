@@ -1107,7 +1107,7 @@ export default function CustomBendingLight({ onBack, title }) {
             maxHeight: '100%',
             zIndex: 1,
             objectFit: 'contain',
-            cursor: getCursor(),
+            cursor: 'default',
             background: '#0e111a',
             borderRadius: '16px',
             border: '1px solid rgba(255,255,255,0.05)',
