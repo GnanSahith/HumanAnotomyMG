@@ -70,7 +70,7 @@
         "title": "Energy Skate Park MG",
         "description": "Interactive Energy Skate Park simulation (Native Custom Build)",
         "url": "/simulations/energy-skate-park_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Energy+Skate+Park+MG",
+        "thumbnail": "/thumbnails/energy_skate_park_thumb_1782195471123.png",
         "category": "Motion & Mechanics",
         "isNative": true
     },
@@ -85,7 +85,7 @@
         "title": "Masses and Springs MG",
         "description": "Interactive Masses and Springs simulation (Native Custom Build)",
         "url": "/simulations/masses-and-springs_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Masses+and+Springs+MG",
+        "thumbnail": "/thumbnails/masses_and_springs_thumb_1782195484201.png",
         "category": "Motion & Mechanics",
         "isNative": true
     },
@@ -115,7 +115,7 @@
         "title": "Balancing Act MG",
         "description": "Interactive Balancing Act simulation (Native Custom Build)",
         "url": "/simulations/balancing-act_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Balancing+Act+MG",
+        "thumbnail": "/thumbnails/balancing_act_thumb_1782195498118.png",
         "category": "Motion & Mechanics",
         "isNative": true
     },
@@ -130,7 +130,7 @@
         "title": "Collision Lab MG",
         "description": "Interactive Collision Lab simulation (Native Custom Build)",
         "url": "/simulations/collision-lab_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Collision+Lab+MG",
+        "thumbnail": "/thumbnails/collision_lab_thumb_1782195510970.png",
         "category": "Motion & Mechanics",
         "isNative": true
     },
@@ -160,7 +160,7 @@
         "title": "Energy Skate Park: Basics MG",
         "description": "Interactive Energy Skate Park: Basics simulation (Native Custom Build)",
         "url": "/simulations/energy-skate-park-basics_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Energy+Skate+Park:+Basics+MG",
+        "thumbnail": "/thumbnails/energy_skate_park_thumb_1782195471123.png",
         "category": "Work, Energy & Power",
         "isNative": true
     },
@@ -250,7 +250,7 @@
         "title": "Diffusion MG",
         "description": "Interactive Diffusion simulation (Native Custom Build)",
         "url": "/simulations/diffusion_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Diffusion+MG",
+        "thumbnail": "/thumbnails/diffusion_thumb_1782195429103.png",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -370,7 +370,7 @@
         "title": "Circuit Construction Kit: DC MG",
         "description": "Interactive Circuit Construction Kit: DC simulation (Native Custom Build)",
         "url": "/simulations/circuit-construction-kit-dc_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Circuit+Construction+Kit:+DC+MG",
+        "thumbnail": "/thumbnails/circuit_dc_thumb_1782158254598.png",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -385,7 +385,7 @@
         "title": "Circuit Construction Kit: DC - Virtual Lab MG",
         "description": "Interactive Circuit Construction Kit: DC - Virtual Lab simulation (Native Custom Build)",
         "url": "/simulations/circuit-construction-kit-dc-virtual-lab_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Circuit+Construction+Kit:+DC+-+Virtual+Lab+MG",
+        "thumbnail": "/thumbnails/circuit_dc_thumb_1782158254598.png",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -400,7 +400,7 @@
         "title": "Circuit Construction Kit: AC MG",
         "description": "Interactive Circuit Construction Kit: AC simulation (Native Custom Build)",
         "url": "/simulations/circuit-construction-kit-ac_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Circuit+Construction+Kit:+AC+MG",
+        "thumbnail": "/thumbnails/circuit_ac_thumb_1782158243893.png",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -415,7 +415,7 @@
         "title": "Charges and Fields MG",
         "description": "Interactive Charges and Fields simulation (Native Custom Build)",
         "url": "/simulations/charges-and-fields_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Charges+and+Fields+MG",
+        "thumbnail": "/thumbnails/charges_fields_thumb_1782158223351.png",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -430,7 +430,7 @@
         "title": "Faraday's Law MG",
         "description": "Interactive Faraday's Law simulation (Native Custom Build)",
         "url": "/simulations/faradays-law_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Faraday's+Law+MG",
+        "thumbnail": "/thumbnails/faradays_law_thumb_1782195440186.png",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -460,7 +460,7 @@
         "title": "Coulomb's Law MG",
         "description": "Interactive Coulomb's Law simulation (Native Custom Build)",
         "url": "/simulations/coulombs-law_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Coulomb's+Law+MG",
+        "thumbnail": "/thumbnails/coulombs_law_thumb_1782195415663.png",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -520,7 +520,7 @@
         "title": "Balloons and Static Electricity MG",
         "description": "Interactive Balloons and Static Electricity simulation (Native Custom Build)",
         "url": "/simulations/balloons-and-static-electricity_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Balloons+and+Static+Electricity+MG",
+        "thumbnail": "/thumbnails/balloons_thumb_1782158201008.png",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -535,7 +535,7 @@
         "title": "Bending Light MG",
         "description": "Interactive Bending Light simulation (Native Custom Build)",
         "url": "/simulations/bending-light_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Bending+Light+MG",
+        "thumbnail": "/thumbnails/bending_light_thumb_1782158212747.png",
         "category": "Light & Quantum",
         "isNative": true
     },
@@ -550,7 +550,7 @@
         "title": "Color Vision MG",
         "description": "Interactive Color Vision simulation (Native Custom Build)",
         "url": "/simulations/color-vision_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Color+Vision+MG",
+        "thumbnail": "/thumbnails/color_vision_thumb_1782158264872.png",
         "category": "Light & Quantum",
         "isNative": true
     },

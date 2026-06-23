@@ -25,10 +25,31 @@ const CustomFaradaysLawInner = ({ onBack, title }) => {
     state.current.lastTime = performance.now();
   }, []);
 
+  const getMouseCoordinates = (e) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return { mx: 0, my: 0 };
+    const rect = canvas.getBoundingClientRect();
+    const clientX = e.clientX;
+    const clientY = e.clientY;
+    
+    const scaleX = rect.width / canvas.width;
+    const scaleY = rect.height / canvas.height;
+    const scale = Math.min(scaleX, scaleY);
+    
+    const displayedWidth = canvas.width * scale;
+    const displayedHeight = canvas.height * scale;
+    
+    const offsetX = (rect.width - displayedWidth) / 2;
+    const offsetY = (rect.height - displayedHeight) / 2;
+    
+    const mx = (clientX - rect.left - offsetX) / scale;
+    const my = (clientY - rect.top - offsetY) / scale;
+    
+    return { mx, my };
+  };
+
   const handleMouseDown = (e) => {
-    const rect = canvasRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const { mx: x, my: y } = getMouseCoordinates(e);
     
     const mx = state.current.magnetX;
     const my = state.current.magnetY;
@@ -40,8 +61,7 @@ const CustomFaradaysLawInner = ({ onBack, title }) => {
 
   const handleMouseMove = (e) => {
     if (!state.current.isDragging) return;
-    const rect = canvasRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
+    const { mx: x } = getMouseCoordinates(e);
     state.current.magnetX = x;
   };
 
@@ -308,10 +328,10 @@ const CustomFaradaysLawInner = ({ onBack, title }) => {
       </div>
 
       {/* Canvas / Main View */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', padding: '90px 340px 90px 40px', gap: '20px' }}>
+      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
         
         {/* Main Canvas View */}
-        <div style={{ border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', overflow: 'hidden', background: 'rgba(20,20,30,0.4)', backdropFilter: 'blur(8px)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: '800px', height: '400px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', overflow: 'hidden', background: 'rgba(20,20,30,0.4)', backdropFilter: 'blur(8px)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}>
           <canvas
             ref={canvasRef}
             width={800}
@@ -320,7 +340,7 @@ const CustomFaradaysLawInner = ({ onBack, title }) => {
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseLeave}
-            style={{ display: 'block', cursor: isDraggingState ? 'grabbing' : 'grab' }}
+            style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block', cursor: isDraggingState ? 'grabbing' : 'grab' }}
           />
         </div>
         
@@ -413,5 +433,46 @@ const CustomFaradaysLawInner = ({ onBack, title }) => {
 };
 
 export default function CustomFaradaysLaw({ onBack, title }) {
-    return <CustomFaradaysLawInner onBack={onBack} title={title || "Faraday's Law of Induction"} />;
+    return (
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+            <style>{`
+                .glass-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                }
+                .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+            `}</style>
+            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                    {onBack && (
+                        <button onClick={onBack} className="glass-btn">
+                            ← Back
+                        </button>
+                    )}
+                </div>
+                <div>
+                    <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                        {title || "Faraday's Law of Induction"}
+                    </h1>
+                </div>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+                </div>
+            </div>
+            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto' }}>
+                 <CustomFaradaysLawInner onBack={null} title={""} />
+            </div>
+        </div>
+    );
 }

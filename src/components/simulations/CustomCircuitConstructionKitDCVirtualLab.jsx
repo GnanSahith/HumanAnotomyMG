@@ -1016,39 +1016,52 @@ export default function CustomCircuitConstructionKitDCVirtualLab({ onBack, title
     return () => cancelAnimationFrame(animId);
   }, []);
 
-  // --- Drag and Drop Mouse Handlers ---
-  const handleMouseDown = (e) => {
+  // --- Drag and Drop Mouse Handlers
+  const getMouseCoordinates = (e) => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
-    
-    // Get mouse coordinates
+    if (!canvas) return { x: 0, y: 0 };
     const rect = canvas.getBoundingClientRect();
+    
+    const scaleX = rect.width / canvas.width;
+    const scaleY = rect.height / canvas.height;
+    const scale = Math.min(scaleX, scaleY);
+    
+    const renderedWidth = canvas.width * scale;
+    const renderedHeight = canvas.height * scale;
+    
+    const offsetX = (rect.width - renderedWidth) / 2;
+    const offsetY = (rect.height - renderedHeight) / 2;
+    
     const clientX = e.touches ? e.touches[0].clientX : e.clientX;
     const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-    const mx = clientX - rect.left;
-    const my = clientY - rect.top;
     
-    // 1. Probe clicks
-    if (voltmeterEnabled) {
-      const red = redProbeRef.current;
-      if (Math.hypot(mx - red.x, my - red.y) < 16) {
+    const mx = (clientX - rect.left - offsetX) / scale;
+    const my = (clientY - rect.top - offsetY) / scale;
+    
+    return { mx, my };
+  };
+
+  const handleMouseDown = (e) => {
+    const { mx, my } = getMouseCoordinates(e);
+    
+    // 1. Check Probes (Voltmeter & Ammeter)
+    if (showMeters) {
+      // Voltmeter probes
+      if (Math.hypot(mx - redProbeRef.current.x, my - redProbeRef.current.y) < 20) {
         draggedElementRef.current = { type: 'voltmeter-red' };
-        red.isDragged = true;
+        redProbeRef.current.isDragged = true;
         return;
       }
-      const black = blackProbeRef.current;
-      if (Math.hypot(mx - black.x, my - black.y) < 16) {
+      if (Math.hypot(mx - blackProbeRef.current.x, my - blackProbeRef.current.y) < 20) {
         draggedElementRef.current = { type: 'voltmeter-black' };
-        black.isDragged = true;
+        blackProbeRef.current.isDragged = true;
         return;
       }
-    }
-    
-    if (ammeterEnabled) {
-      const amm = ammeterProbeRef.current;
-      if (Math.hypot(mx - amm.x, my - amm.y) < 20) {
+      
+      // Ammeter probe
+      if (Math.hypot(mx - ammeterProbeRef.current.x, my - ammeterProbeRef.current.y) < 25) {
         draggedElementRef.current = { type: 'ammeter-probe' };
-        amm.isDragged = true;
+        ammeterProbeRef.current.isDragged = true;
         return;
       }
     }
@@ -1138,19 +1151,11 @@ export default function CustomCircuitConstructionKitDCVirtualLab({ onBack, title
 
   const handleMouseMove = (e) => {
     if (!draggedElementRef.current) return;
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    
-    const rect = canvas.getBoundingClientRect();
-    const clientX = e.touches ? e.touches[0].clientX : e.clientX;
-    const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-    const mx = clientX - rect.left;
-    const my = clientY - rect.top;
+    const { mx, my } = getMouseCoordinates(e);
     
     const drag = draggedElementRef.current;
     
     // Constraint bounds: Keep dragging within canvas
-    const cx = Math.max(5, Math.min(canvas.width - 5, mx));
     const cy = Math.max(5, Math.min(canvas.height - 5, my));
     
     if (drag.type === 'voltmeter-red') {
@@ -1241,11 +1246,7 @@ export default function CustomCircuitConstructionKitDCVirtualLab({ onBack, title
     const drag = draggedElementRef.current;
     if (!drag) return;
     
-    const canvas = canvasRef.current;
-    const rect = canvas.getBoundingClientRect();
-    const clientX = e.changedTouches ? e.changedTouches[0].clientX : e.clientX;
-    const clientY = e.changedTouches ? e.changedTouches[0].clientY : e.clientY;
-    const mx = clientX - rect.left;
+    const { mx } = getMouseCoordinates(e);
     
     // If voltmeter/ammeter probes released in the tool bench, dock them back
     if (drag.type === 'voltmeter-red' || drag.type === 'voltmeter-black') {

@@ -1110,80 +1110,73 @@ function CustomColorVisionInner({ onBack, title }) {
   };
 
   return (
-    <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }} className="text-white font-sans selection:bg-purple-500/30">
+    <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }} className="text-white font-sans selection:bg-purple-500/30">
       
-      {/* Top Header Bar */}
-      <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-        {onBack ? (
-          <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
-            ← Back
-          </button>
-        ) : <div />}
-        <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-          {title || 'Color Vision'}
-        </h1>
-        <button
-          onClick={() => setShowInfoModal(true)}
-          style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}
-        >
-          <Info size={16} />
-          Info
-        </button>
+      {/* Standardized Header */}
+      <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+              {onBack && (
+                  <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', borderRadius: '20px', background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' }}>
+                      <ArrowLeft size={16} /> Back
+                  </button>
+              )}
+          </div>
+          <div>
+              <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                  {title || 'Color Vision'}
+              </h2>
+          </div>
+          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+              <button onClick={() => setShowInfoModal(true)} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', borderRadius: '20px', background: 'rgba(52, 152, 219, 0.15)', border: '1px solid rgba(52, 152, 219, 0.3)', color: '#3498db', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' }}>
+                  <Info size={16} /> Info
+              </button>
+          </div>
       </div>
 
       {/* Canvas Viewport (Center) */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '90px 340px 90px 340px' }}>
-        <div className="relative backdrop-blur-md border border-zinc-800/80 rounded-2xl p-4 shadow-xl flex flex-col gap-3" style={{ width: '820px' }}>
-          
-          {/* Simulation Options Quick Bar */}
-          <div className="flex items-center justify-between border-b border-zinc-800/50 pb-2">
-            <span className="text-xs font-semibold tracking-wider text-zinc-400 uppercase flex items-center gap-1.5">
-              <Sparkles size={13} className="text-purple-400" />
-              Live Physics Sandbox
-            </span>
-            
-            {/* Beam render mode toggle */}
-            <div className="flex gap-1 p-0.5 rounded-lg border border-zinc-800 bg-zinc-950/40">
-              <button
-                onClick={() => setBeamDisplay('particles')}
-                className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
-                  beamDisplay === 'particles' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
-                }`}
-              >
-                Photons
-              </button>
-              <button
-                onClick={() => setBeamDisplay('solid')}
-                className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
-                  beamDisplay === 'solid' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
-                }`}
-              >
-                Solid Beam
-              </button>
-              <button
-                onClick={() => setBeamDisplay('both')}
-                className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
-                  beamDisplay === 'both' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
-                }`}
-              >
-                Both
-              </button>
-            </div>
-          </div>
+      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto' }}>
+        <canvas
+          ref={canvasRef}
+          width={800}
+          height={450}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'contain',
+            pointerEvents: 'auto',
+            background: '#050510'
+          }}
+        />
 
-          {/* Canvas Viewport */}
-          <div className="relative rounded-xl overflow-hidden border border-zinc-900 shadow-inner group bg-black/40">
-            <canvas
-              ref={canvasRef}
-              width={800}
-              height={450}
-              className="w-full h-auto block"
-            />
-            
-            {/* Particle indicator overlay */}
-            <div className="absolute bottom-3 left-3 px-2 py-1 backdrop-blur border border-zinc-800/60 text-[10px] text-zinc-400 rounded-md pointer-events-none bg-black/50">
-              Viewport Resolution: 800×450 | {beamDisplay === 'particles' ? 'Particle Physics' : beamDisplay === 'solid' ? 'Additive Screen Mix' : 'Hybrid Rendering'}
-            </div>
+        {/* HUD over Canvas */}
+        <div style={{ position: 'absolute', top: '10px', left: '330px', right: '330px', pointerEvents: 'none', display: 'flex', justifyContent: 'center' }}>
+          <div className="flex gap-1 p-0.5 rounded-lg border border-zinc-800 bg-zinc-950/80 backdrop-blur-md pointer-events-auto">
+            <button
+              onClick={() => setBeamDisplay('particles')}
+              className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
+                beamDisplay === 'particles' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
+              }`}
+            >
+              Photons
+            </button>
+            <button
+              onClick={() => setBeamDisplay('solid')}
+              className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
+                beamDisplay === 'solid' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
+              }`}
+            >
+              Solid Beam
+            </button>
+            <button
+              onClick={() => setBeamDisplay('both')}
+              className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
+                beamDisplay === 'both' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
+              }`}
+            >
+              Both
+            </button>
           </div>
         </div>
       </div>

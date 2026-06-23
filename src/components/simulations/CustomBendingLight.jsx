@@ -925,12 +925,31 @@ export default function CustomBendingLight({ onBack, title }) {
   };
 
   // --- Mouse & Drag Interactivity Handlers ---
-  const handleMouseDown = (e) => {
+  const getMouseCoordinates = (e) => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas) return { x: 0, y: 0 };
     const rect = canvas.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * canvas.width;
-    const y = ((e.clientY - rect.top) / rect.height) * canvas.height;
+    
+    // Calculate the actual rendered dimensions with objectFit: contain
+    const scaleX = rect.width / canvas.width;
+    const scaleY = rect.height / canvas.height;
+    const scale = Math.min(scaleX, scaleY);
+    
+    const renderedWidth = canvas.width * scale;
+    const renderedHeight = canvas.height * scale;
+    
+    // Calculate the letterbox offsets
+    const offsetX = (rect.width - renderedWidth) / 2;
+    const offsetY = (rect.height - renderedHeight) / 2;
+    
+    const x = (e.clientX - rect.left - offsetX) / scale;
+    const y = (e.clientY - rect.top - offsetY) / scale;
+    
+    return { x, y };
+  };
+
+  const handleMouseDown = (e) => {
+    const { x, y } = getMouseCoordinates(e);
 
     // Laser Source position check
     const theta1Rad = (laserAngle * Math.PI) / 180;
@@ -982,9 +1001,7 @@ export default function CustomBendingLight({ onBack, title }) {
     if (!dragStateRef.current) return;
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const rect = canvas.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * canvas.width;
-    const y = ((e.clientY - rect.top) / rect.height) * canvas.height;
+    const { x, y } = getMouseCoordinates(e);
 
     if (dragStateRef.current === 'laser') {
       const dx = 400 - x;
@@ -1026,83 +1043,74 @@ export default function CustomBendingLight({ onBack, title }) {
   return (
     <div
       className="select-none"
-      style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}
+      style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}
     >
-      {/* Canvas / Main View */}
-      <canvas
-        ref={canvasRef}
-        width={800}
-        height={500}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-        style={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          zIndex: 1,
-          objectFit: 'contain',
-          cursor: 'crosshair'
-        }}
-      />
+      <style>{`
+        .glass-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+        .glass-btn:active { transform: translateY(1px); }
+        .glass-btn-blue { background: rgba(52, 152, 219, 0.15); border-color: rgba(52, 152, 219, 0.3); color: #3498db; }
+        .glass-btn-blue:hover { background: rgba(52, 152, 219, 0.25); }
+        .reset-btn { background: rgba(231, 76, 60, 0.2); border-color: rgba(231, 76, 60, 0.3); color: #e74c3c; }
+        .reset-btn:hover { background: rgba(231, 76, 60, 0.3); }
+      `}</style>
 
-      {/* Top Header Bar */}
-      <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 10 }}>
-        {/* Back Button */}
-        <button
-          onClick={() => onBack && onBack()}
-          onMouseEnter={() => setIsBackHovered(true)}
-          onMouseLeave={() => setIsBackHovered(false)}
-          style={{
-            background: isBackHovered ? 'rgba(255, 55, 95, 0.8)' : 'rgba(255, 255, 255, 0.1)',
-            border: isBackHovered ? '1px solid #ff375f' : '1px solid rgba(255, 255, 255, 0.2)',
-            backdropFilter: 'blur(10px)',
-            color: 'white',
-            borderRadius: '20px',
-            padding: '8px 16px',
-            transition: 'all 0.2s ease',
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            outline: 'none'
-          }}
-        >
-          <ArrowLeft size={16} />
-          <span>Back</span>
-        </button>
-
-        {/* Title */}
-        <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-          {title || "Optics Lab: Bending Light"}
-        </h1>
-
-        {/* Reset Button */}
-        <button
-          onClick={resetSim}
-          onMouseEnter={() => setIsResetHovered(true)}
-          onMouseLeave={() => setIsResetHovered(false)}
-          style={{
-            background: isResetHovered ? 'rgba(52, 152, 219, 0.4)' : 'rgba(255, 255, 255, 0.1)',
-            border: '1px solid rgba(255, 255, 255, 0.2)',
-            backdropFilter: 'blur(10px)',
-            color: 'white',
-            borderRadius: '20px',
-            padding: '8px 16px',
-            transition: 'all 0.2s ease',
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '8px',
-            outline: 'none'
-          }}
-        >
-          <RotateCcw size={16} />
-          <span>Reset</span>
-        </button>
+      {/* Standardized Header */}
+      <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+         <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+             {onBack && (
+                 <button onClick={onBack} className="glass-btn">
+                     <ArrowLeft size={16} /> Back
+                 </button>
+             )}
+         </div>
+         <div>
+             <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                 {title || 'Optics Lab: Bending Light'}
+             </h2>
+         </div>
+         <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+             <button onClick={resetSim} className="glass-btn reset-btn">
+                 <RotateCcw size={18} /> Reset All
+             </button>
+         </div>
       </div>
+
+      <div style={{ flex: 1, position: 'relative', zIndex: 1 }}>
+        {/* Canvas / Main View */}
+        <canvas
+          ref={canvasRef}
+          width={800}
+          height={500}
+          onMouseDown={handleMouseDown}
+          onMouseMove={handleMouseMove}
+          onMouseUp={handleMouseUp}
+          onMouseLeave={handleMouseUp}
+          style={{
+            position: 'absolute',
+            inset: 0,
+            width: '100%',
+            height: '100%',
+            zIndex: 1,
+            objectFit: 'contain',
+            cursor: 'crosshair'
+          }}
+        />
 
       {/* Floating Medium Info Panels on the Left */}
       <div style={{ position: 'absolute', left: '20px', top: '100px', display: 'flex', flexDirection: 'column', gap: '12px', zIndex: 10, pointerEvents: 'none' }}>
@@ -1516,15 +1524,23 @@ export default function CustomBendingLight({ onBack, title }) {
         </div>
 
         {/* Physics Quick Help */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', borderTop: '1px solid rgba(255, 255, 255, 0.05)', paddingTop: '16px', fontSize: '11px', color: '#888', lineHeight: '1.4' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#eee', fontWeight: 'bold' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', borderTop: '1px solid rgba(255, 255, 255, 0.05)', paddingTop: '16px', fontSize: '11px', color: 'rgba(255,255,255,0.8)', lineHeight: '1.4' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: '#3498db', fontWeight: 'bold' }}>
             <HelpCircle size={14} />
-            <span>Quick Help</span>
+            <span>Physics Reference</span>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <span><strong>Snell's Law:</strong> n₁·sin(θ₁) = n₂·sin(θ₂). Light bends toward the normal in denser media.</span>
-            <span><strong>Total Internal Reflection:</strong> Occurs when θ₁ &gt; θ_c and n₁ &gt; n₂.</span>
+            <div style={{ background: 'rgba(20, 20, 30, 0.8)', padding: '10px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+              <div style={{ color: '#3498db', fontWeight: 'bold', marginBottom: '4px' }}>Snell's Law</div>
+              <div style={{ fontFamily: 'monospace', color: '#2ecc71', fontSize: '12px', marginBottom: '4px' }}>n₁·sin(θ₁) = n₂·sin(θ₂)</div>
+              <div style={{ fontSize: '11px' }}>Light bends toward the normal in denser media.</div>
+            </div>
+            <div style={{ background: 'rgba(20, 20, 30, 0.8)', padding: '10px', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.05)' }}>
+              <div style={{ color: '#3498db', fontWeight: 'bold', marginBottom: '4px' }}>Total Internal Reflection</div>
+              <div style={{ fontFamily: 'monospace', color: '#2ecc71', fontSize: '12px', marginBottom: '4px' }}>θ₁ &gt; θ_c and n₁ &gt; n₂</div>
+            </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

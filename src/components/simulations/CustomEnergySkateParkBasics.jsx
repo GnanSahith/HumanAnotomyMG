@@ -894,13 +894,34 @@ function CustomEnergySkateParkBasicsInner({ onBack, title }) {
     return () => cancelAnimationFrame(animFrameId);
   }, [trackType]);
 
+  const getMouseCoordinates = (e) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return { mx: 0, my: 0 };
+    const rect = canvas.getBoundingClientRect();
+    const clientX = e.clientX;
+    const clientY = e.clientY;
+    
+    const scaleX = rect.width / canvas.width;
+    const scaleY = rect.height / canvas.height;
+    const scale = Math.min(scaleX, scaleY);
+    
+    const displayedWidth = canvas.width * scale;
+    const displayedHeight = canvas.height * scale;
+    
+    const offsetX = (rect.width - displayedWidth) / 2;
+    const offsetY = (rect.height - displayedHeight) / 2;
+    
+    const mx = (clientX - rect.left - offsetX) / scale;
+    const my = (clientY - rect.top - offsetY) / scale;
+    
+    return { mx, my };
+  };
+
   // Pointer dragging event handlers
   const handlePointerDown = (e) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const { mx: x, my: y } = getMouseCoordinates(e);
     const p = physicsRef.current;
 
     // Draggable Reference Line Handle
@@ -931,9 +952,7 @@ function CustomEnergySkateParkBasicsInner({ onBack, title }) {
   const handlePointerMove = (e) => {
     const canvas = canvasRef.current;
     if (!canvas) return;
-    const rect = canvas.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const { mx: x, my: y } = getMouseCoordinates(e);
     const p = physicsRef.current;
 
     if (p.isDraggingReferenceLine) {
@@ -1009,25 +1028,21 @@ function CustomEnergySkateParkBasicsInner({ onBack, title }) {
           pointerEvents: 'auto',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center',
-          paddingTop: '80px',
-          paddingBottom: '80px',
-          paddingRight: '340px'
+          justifyContent: 'center'
         }}>
           <canvas
             ref={canvasRef}
             width={800}
             height={600}
             style={{
+              position: 'absolute',
+              inset: 0,
               width: '100%',
               height: '100%',
-              maxWidth: '800px',
-              maxHeight: '600px',
+              objectFit: 'contain',
               display: 'block',
               cursor: 'crosshair',
-              borderRadius: '12px',
-              boxShadow: '0 20px 25px -5px rgb(0 0 0 / 0.5)',
-              border: '1px solid rgba(255, 255, 255, 0.05)'
+              background: '#050510'
             }}
             onPointerDown={handlePointerDown}
             onPointerMove={handlePointerMove}
@@ -1566,19 +1581,43 @@ function CustomEnergySkateParkBasicsInner({ onBack, title }) {
 
 export default function CustomEnergySkateParkBasics({ onBack, title }) {
     return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-                {onBack ? (
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
-                        ← Back
-                    </button>
-                ) : <div />}
-                <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-                    {title || 'Simulation'}
-                </h1>
-                <div style={{ width: '100px' }}></div>
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+            <style>{`
+                .glass-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                }
+                .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+            `}</style>
+            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                    {onBack && (
+                        <button onClick={onBack} className="glass-btn">
+                            <ArrowLeft size={16} /> Back
+                        </button>
+                    )}
+                </div>
+                <div>
+                    <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                        {title || 'Energy Skate Park Basics MG'}
+                    </h1>
+                </div>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+                </div>
             </div>
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto' }}>
+            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto' }}>
                  <CustomEnergySkateParkBasicsInner onBack={null} title={""} />
             </div>
         </div>

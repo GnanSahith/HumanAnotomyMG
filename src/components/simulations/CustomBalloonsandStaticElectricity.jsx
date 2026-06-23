@@ -67,11 +67,11 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
 
   // Simulation state
   const stateRef = useRef({
-    width: 800,
-    height: 600,
+    width: 1100,
+    height: 750,
     balloons: [],
-    sweater: { x: 60, y: 100, width: 180, height: 400, charges: [] },
-    wall: { x: 640, y: 40, width: 120, height: 520, charges: [] },
+    sweater: { x: 80, y: 150, width: 180, height: 400, charges: [] },
+    wall: { x: 600, y: 120, width: 120, height: 520, charges: [] },
     draggedBalloon: null,
     lastTime: performance.now(),
     sparks: [], // Spark effects: {x, y, vx, vy, alpha, size, color}
@@ -684,12 +684,31 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
   }, []);
 
   // Event Handlers for Dragging
-  const handleMouseDown = (e) => {
+  const getMouseCoordinates = (e) => {
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!canvas) return { x: 0, y: 0 };
     const rect = canvas.getBoundingClientRect();
-    const x = (e.clientX - rect.left) * (canvas.width / rect.width);
-    const y = (e.clientY - rect.top) * (canvas.height / rect.height);
+    
+    // Calculate the actual rendered dimensions with objectFit: contain
+    const scaleX = rect.width / canvas.width;
+    const scaleY = rect.height / canvas.height;
+    const scale = Math.min(scaleX, scaleY);
+    
+    const renderedWidth = canvas.width * scale;
+    const renderedHeight = canvas.height * scale;
+    
+    // Calculate the letterbox offsets
+    const offsetX = (rect.width - renderedWidth) / 2;
+    const offsetY = (rect.height - renderedHeight) / 2;
+    
+    const x = (e.clientX - rect.left - offsetX) / scale;
+    const y = (e.clientY - rect.top - offsetY) / scale;
+    
+    return { x, y };
+  };
+
+  const handleMouseDown = (e) => {
+    const { x, y } = getMouseCoordinates(e);
 
     const s = stateRef.current;
     
@@ -706,10 +725,7 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
   const handleMouseMove = (e) => {
     const s = stateRef.current;
     if (s.draggedBalloon) {
-      const canvas = canvasRef.current;
-      const rect = canvas.getBoundingClientRect();
-      let x = (e.clientX - rect.left) * (canvas.width / rect.width);
-      let y = (e.clientY - rect.top) * (canvas.height / rect.height);
+      let { x, y } = getMouseCoordinates(e);
       
       // Clamp within boundaries
       const rightLimit = settingsRef.current.showWall ? s.wall.x - s.draggedBalloon.radius : s.width - s.draggedBalloon.radius;
@@ -747,15 +763,62 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
   };
 
   return (
-    <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
-      {/* Top Header Bar */}
-      
+    <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+      <style>{`
+        .glass-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+        .glass-btn:active { transform: translateY(1px); }
+        .glass-btn-blue { background: rgba(52, 152, 219, 0.15); border-color: rgba(52, 152, 219, 0.3); color: #3498db; }
+        .glass-btn-blue:hover { background: rgba(52, 152, 219, 0.25); }
+        .reset-btn { background: rgba(231, 76, 60, 0.2); border-color: rgba(231, 76, 60, 0.3); color: #e74c3c; }
+        .reset-btn:hover { background: rgba(231, 76, 60, 0.3); }
+      `}</style>
 
-      {/* Main View: Canvas */}
+      {/* Standardized Header */}
+      <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+         <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+             {onBack && (
+                 <button onClick={onBack} className="glass-btn">
+                     <ArrowLeft size={16} /> Back
+                 </button>
+             )}
+         </div>
+         <div>
+             <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                 {title || 'Balloons & Static Electricity MG'}
+             </h2>
+         </div>
+         <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+             <button onClick={handleResetEverything} className="glass-btn reset-btn">
+                 <RotateCcw size={18} /> Reset All
+             </button>
+             <button onClick={() => setShowInfoModal(true)} className="glass-btn glass-btn-blue">
+                 <Info size={18} /> Theory
+             </button>
+         </div>
+      </div>
+
+      <div style={{ flex: 1, position: 'relative', zIndex: 1 }}>
+        {/* Main View: Canvas */}
       <canvas
         ref={canvasRef}
-        width={800}
-        height={600}
+        width={1100}
+        height={750}
         style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1, objectFit: 'contain', cursor: 'grab' }}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
@@ -1051,57 +1114,35 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
         </div>
       </section>
 
+      </div> {/* End Main View Container */}
+
       {/* Educational Information Modal */}
       {showInfoModal && (
         <div style={{ position: 'fixed', inset: 0, background: 'rgba(0, 0, 0, 0.7)', backdropFilter: 'blur(4px)', zIndex: 100, display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '16px' }}>
-          <div style={{ background: '#14141e', border: '1px solid rgba(255, 255, 255, 0.15)', borderRadius: '24px', maxWidth: '500px', width: '100%', padding: '24px', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', display: 'flex', flexDirection: 'column', gap: '24px', color: 'white', fontFamily: "'Inter', sans-serif" }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '12px', borderBottom: '1px solid rgba(255, 255, 255, 0.1)', paddingBottom: '16px' }}>
-              <div style={{ padding: '8px', background: 'rgba(52, 152, 219, 0.2)', border: '1px solid rgba(52, 152, 219, 0.3)', borderRadius: '12px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Info size={20} style={{ color: '#3498db' }} />
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', color: 'rgba(255,255,255,0.8)', fontSize: '14px', lineHeight: '1.6', background: 'rgba(20, 20, 30, 0.95)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(20px)', padding: '24px', borderRadius: '16px', maxWidth: '550px', width: '100%', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', fontFamily: "'Inter', sans-serif" }}>
+            <h4 style={{ color: '#fff', fontSize: '20px', fontWeight: 'bold', display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '16px', margin: 0 }}>
+              <Info size={22} color="#3498db" /> How Static Electricity Works
+            </h4>
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxHeight: '400px', overflowY: 'auto', paddingRight: '8px' }}>
+              <div>
+                <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>1. Friction and Charge Transfer</h5>
+                <p style={{ margin: '0 0 12px 0' }}>Objects are normally electrically neutral, containing equal positive and negative charges. When you rub the balloon against the sweater, the friction causes mobile electrons (negative charges) to transfer from the sweater's wool fibers to the balloon. The balloon gets a net negative charge, leaving the sweater with a net positive charge.</p>
               </div>
-              <h2 style={{ fontSize: '20px', fontWeight: '700', margin: 0 }}>How Static Electricity Works</h2>
+              <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+              <div>
+                <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>2. Attraction and Repulsion</h5>
+                <p style={{ margin: '0 0 12px 0' }}>Opposite charges attract each other, and like charges repel. The negatively charged balloon is attracted to the positively charged sweater. If you introduce a second balloon and rub it as well, the two negative balloons will repel each other, pushing apart in mid-air.</p>
+              </div>
+              <hr style={{ border: 'none', borderTop: '1px solid rgba(255,255,255,0.1)', margin: 0 }} />
+              <div>
+                <h5 style={{ color: '#3498db', fontWeight: '600', margin: '0 0 8px 0', fontSize: '15px' }}>3. Polarization / Induction</h5>
+                <p style={{ margin: '0 0 12px 0' }}>When you bring the negative balloon near the neutral wall, it repels the mobile electrons on the surface of the wall, pushing them deeper inside. This polarization leaves the surface of the wall with a positive charge. The balloon is then attracted to the wall because the positive wall surface is closer than the repelled electrons.</p>
+              </div>
             </div>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxHeight: '350px', overflowY: 'auto', paddingRight: '8px', fontSize: '14px', lineHeight: '1.6', color: 'rgba(255, 255, 255, 0.8)' }}>
-              <section style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <h3 style={{ fontWeight: '700', color: 'white', fontSize: '15px', margin: 0 }}>1. Friction and Charge Transfer</h3>
-                <p style={{ margin: 0 }}>
-                  Objects are normally electrically neutral, containing equal positive and negative charges. When you rub the balloon against the sweater, the friction causes mobile electrons (negative charges) to transfer from the sweater's wool fibers to the balloon. The balloon gets a net negative charge, leaving the sweater with a net positive charge.
-                </p>
-              </section>
-
-              <section style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <h3 style={{ fontWeight: '700', color: 'white', fontSize: '15px', margin: 0 }}>2. Attraction and Repulsion</h3>
-                <p style={{ margin: 0 }}>
-                  Opposite charges attract each other, and like charges repel. The negatively charged balloon is attracted to the positively charged sweater. If you introduce a second balloon and rub it as well, the two negative balloons will repel each other, pushing apart in mid-air.
-                </p>
-              </section>
-
-              <section style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-                <h3 style={{ fontWeight: '700', color: 'white', fontSize: '15px', margin: 0 }}>3. Polarization / Induction</h3>
-                <p style={{ margin: 0 }}>
-                  When you bring the negative balloon near the neutral wall, it repels the mobile electrons on the surface of the wall, pushing them deeper inside. This polarization leaves the surface of the wall with a positive charge. The balloon is then attracted to the wall because the positive wall surface is closer than the repelled electrons.
-                </p>
-              </section>
-            </div>
-
-            <div style={{ paddingTop: '8px', borderTop: '1px solid rgba(255, 255, 255, 0.1)', display: 'flex', justifyContent: 'flex-end' }}>
-              <button
-                onClick={() => setShowInfoModal(false)}
-                style={{
-                  background: 'white',
-                  border: 'none',
-                  color: '#0a0a1a',
-                  fontWeight: '700',
-                  padding: '10px 24px',
-                  borderRadius: '9999px',
-                  cursor: 'pointer',
-                  fontSize: '14px',
-                  transition: 'background 0.2s ease'
-                }}
-                onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255, 255, 255, 0.9)'}
-                onMouseLeave={(e) => e.currentTarget.style.background = 'white'}
-              >
+            <div style={{ paddingTop: '16px', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', justifyContent: 'flex-end' }}>
+              <button onClick={() => setShowInfoModal(false)} className="glass-btn glass-btn-blue">
                 Got it!
               </button>
             </div>

@@ -62,7 +62,22 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
     const [approvedSims, setApprovedSims] = useState(() => {
         try {
             const stored = localStorage.getItem('showcase_approved_physics_sims');
-            return stored ? JSON.parse(stored) : ['phys_1_mg', 'phys_2_mg', 'phys_3_mg', 'phys_4_mg', 'phys_7_mg'];
+            const defaultApproved = [
+                'phys_1_mg', 'phys_2_mg', 'phys_3_mg', 'phys_4_mg', 'phys_7_mg',
+                'phys_35_mg', 'phys_36_mg', 'phys_28_mg', 'phys_27_mg', 'phys_25_mg', 
+                'phys_26_mg', 'phys_37_mg', 'phys_31_mg', 'phys_17_mg', 'phys_11_mg', 'phys_29_mg',
+                'phys_5_mg', 'phys_6_mg', 'phys_8_mg', 'phys_9_mg'
+            ];
+            
+            // If there's stored data, we merge in the defaults to ensure the newly approved ones show up
+            if (stored) {
+                const parsed = JSON.parse(stored);
+                const merged = Array.from(new Set([...parsed, ...defaultApproved]));
+                localStorage.setItem('showcase_approved_physics_sims', JSON.stringify(merged));
+                return merged;
+            }
+            
+            return defaultApproved;
         } catch (e) {
             return [];
         }

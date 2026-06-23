@@ -209,64 +209,68 @@ export default function CustomCircuitConstructionKitAC({ onBack, title }) {
     };
 
     return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', minHeight: '100vh', overflow: 'hidden', color: '#fff' }}>
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
             <style>{`
-                .ds-btn-glass {
-                    background: rgba(255, 255, 255, 0.1) !important;
-                    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-                    backdrop-filter: blur(10px) !important;
-                    -webkit-backdrop-filter: blur(10px) !important;
-                    color: white !important;
-                    cursor: pointer !important;
-                    transition: all 0.3s ease !important;
-                    border-radius: 8px !important;
-                    padding: 10px 20px !important;
-                    display: inline-flex !important;
-                    align-items: center !important;
-                    justify-content: center !important;
-                    font-weight: 500 !important;
-                    font-size: 14px !important;
-                    outline: none !important;
-                    text-decoration: none !important;
+                .glass-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
                 }
-                .ds-btn-back:hover {
-                    background: rgba(255, 55, 95, 0.8) !important;
-                    border-color: #ff375f !important;
-                    box-shadow: 0 0 15px rgba(255, 55, 95, 0.4) !important;
-                }
-                .ds-btn-reset:hover {
-                    background: rgba(52, 152, 219, 0.4) !important;
-                    border-color: #3498db !important;
-                    box-shadow: 0 0 15px rgba(52, 152, 219, 0.2) !important;
-                }
+                .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+                .glass-btn:active { transform: translateY(1px); }
+                .glass-btn-blue { background: rgba(52, 152, 219, 0.15); border-color: rgba(52, 152, 219, 0.3); color: #3498db; }
+                .glass-btn-blue:hover { background: rgba(52, 152, 219, 0.25); }
+                .reset-btn { background: rgba(231, 76, 60, 0.2); border-color: rgba(231, 76, 60, 0.3); color: #e74c3c; }
+                .reset-btn:hover { background: rgba(231, 76, 60, 0.3); }
             `}</style>
 
-            {/* Top Header Bar */}
-            
+            {/* Standardized Header */}
+            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                    {onBack && (
+                        <button onClick={onBack} className="glass-btn">
+                            <ArrowLeft size={16} /> Back
+                        </button>
+                    )}
+                </div>
+                <div>
+                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                        {title || 'Circuit Construction Kit AC MG'}
+                    </h2>
+                </div>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+                    <button onClick={handleReset} className="glass-btn reset-btn">
+                        <RotateCcw size={16} /> Reset
+                    </button>
+                </div>
+            </div>
 
-            {/* Canvas Wrapper */}
-            <div style={{
-                position: 'absolute',
-                inset: 0,
-                zIndex: 1,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                pointerEvents: 'none'
-            }}>
+            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto' }}>
                 <canvas 
                     ref={canvasRef} 
                     width={800} 
                     height={500} 
                     style={{ 
+                        position: 'absolute',
+                        inset: 0,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'contain',
                         pointerEvents: 'auto',
-                        background: '#050510', 
-                        borderRadius: '16px', 
-                        border: '1px solid rgba(255, 255, 255, 0.1)',
-                        boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5)'
+                        background: '#050510'
                     }} 
                 />
-            </div>
 
             {/* Control Panel */}
             <div style={{
@@ -415,6 +419,7 @@ export default function CustomCircuitConstructionKitAC({ onBack, title }) {
                     <span>Time:</span>
                     <span style={{ fontFamily: 'monospace', color: '#3498db', fontWeight: 'bold' }}>{time.toFixed(3)} s</span>
                 </div>
+            </div>
             </div>
         </div>
     );

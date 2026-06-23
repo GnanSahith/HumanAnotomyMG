@@ -1,4 +1,5 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
+import { ArrowLeft } from 'lucide-react';
 
 const CustomChargesAndFieldsInner = () => {
   const canvasRef = useRef(null);
@@ -90,10 +91,29 @@ const CustomChargesAndFieldsInner = () => {
     draw();
   }, [draw]);
 
+  const getMouseCoordinates = (e) => {
+    const canvas = canvasRef.current;
+    if (!canvas) return { x: 0, y: 0 };
+    const rect = canvas.getBoundingClientRect();
+    
+    const scaleX = rect.width / canvas.width;
+    const scaleY = rect.height / canvas.height;
+    const scale = Math.min(scaleX, scaleY);
+    
+    const renderedWidth = canvas.width * scale;
+    const renderedHeight = canvas.height * scale;
+    
+    const offsetX = (rect.width - renderedWidth) / 2;
+    const offsetY = (rect.height - renderedHeight) / 2;
+    
+    const x = (e.clientX - rect.left - offsetX) / scale;
+    const y = (e.clientY - rect.top - offsetY) / scale;
+    
+    return { x, y };
+  };
+
   const handleMouseDown = (e) => {
-    const rect = canvasRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
+    const { x, y } = getMouseCoordinates(e);
 
     const clickedCharge = charges.find(c => {
       const dx = c.x - x;
@@ -108,9 +128,7 @@ const CustomChargesAndFieldsInner = () => {
 
   const handleMouseMove = (e) => {
     if (draggingCharge !== null) {
-      const rect = canvasRef.current.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+      const { x, y } = getMouseCoordinates(e);
 
       setCharges(charges.map(c => 
         c.id === draggingCharge ? { ...c, x, y } : c
@@ -137,26 +155,26 @@ const CustomChargesAndFieldsInner = () => {
 
   return (
     <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
-      {/* Centered Canvas Container */}
-      <div style={{
-        pointerEvents: 'auto',
-        background: 'rgba(255, 255, 255, 0.02)',
-        border: '1px solid rgba(255, 255, 255, 0.05)',
-        borderRadius: '24px',
-        padding: '16px',
-        boxShadow: '0 8px 32px 0 rgba(0, 0, 0, 0.37)'
-      }}>
-        <canvas
-          ref={canvasRef}
-          width={800}
-          height={600}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onMouseLeave={handleMouseUp}
-          style={{ cursor: 'crosshair', display: 'block', borderRadius: '16px', background: '#050510' }}
-        />
-      </div>
+      {/* Main View: Canvas */}
+      <canvas
+        ref={canvasRef}
+        width={800}
+        height={600}
+        onMouseDown={handleMouseDown}
+        onMouseMove={handleMouseMove}
+        onMouseUp={handleMouseUp}
+        onMouseLeave={handleMouseUp}
+        style={{
+          position: 'absolute',
+          inset: 0,
+          width: '100%',
+          height: '100%',
+          objectFit: 'contain',
+          cursor: 'crosshair',
+          pointerEvents: 'auto',
+          zIndex: 1
+        }}
+      />
 
       {/* Floating Control Panel */}
       <div style={{
@@ -287,19 +305,52 @@ const CustomChargesAndFieldsInner = () => {
 
 export default function CustomChargesAndFields({ onBack, title }) {
     return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-                {onBack ? (
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
-                        ← Back
-                    </button>
-                ) : <div />}
-                <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
-                    {title || "Charges and Fields"}
-                </h1>
-                <div style={{ width: '100px' }}></div>
+        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+            <style>{`
+                .glass-btn {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    padding: 8px 16px;
+                    border-radius: 20px;
+                    background: rgba(255, 255, 255, 0.05);
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    backdrop-filter: blur(10px);
+                    color: white;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    transition: all 0.2s ease;
+                }
+                .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
+                .glass-btn:active { transform: translateY(1px); }
+                .glass-btn-blue { background: rgba(52, 152, 219, 0.15); border-color: rgba(52, 152, 219, 0.3); color: #3498db; }
+                .glass-btn-blue:hover { background: rgba(52, 152, 219, 0.25); }
+                .reset-btn { background: rgba(231, 76, 60, 0.2); border-color: rgba(231, 76, 60, 0.3); color: #e74c3c; }
+                .reset-btn:hover { background: rgba(231, 76, 60, 0.3); }
+            `}</style>
+
+            {/* Standardized Header */}
+            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
+                    {onBack && (
+                        <button onClick={onBack} className="glass-btn">
+                            <ArrowLeft size={16} /> Back
+                        </button>
+                    )}
+                </div>
+                <div>
+                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                        {title || 'Charges and Fields MG'}
+                    </h2>
+                </div>
+                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+                    {/* Placeholder for global actions */}
+                </div>
             </div>
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto' }}>
+
+            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto' }}>
                  <CustomChargesAndFieldsInner />
             </div>
         </div>
