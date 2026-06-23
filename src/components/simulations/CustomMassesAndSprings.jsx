@@ -377,7 +377,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
     const renderSpringPath = (ps, s) => {
         const springLength = Math.max(0.1, ps.y * scale - 20);
         return (
-            <g ref={el => springRefs.current[s.id] = el} transform={`translate(${s.xOffset}, 0) scale(1, ${springLength / 100})`}>
+            <g ref={el => springRefs.current[s.id] = el} transform={`translate(${s.xOffset}, 0) scale(1, ${springLength / 100})`} style={{ transformOrigin: '0px 0px' }}>
                 <path d={baseSpringPath} fill="none" stroke="rgba(255, 255, 255, 0.6)" strokeWidth="4" vectorEffect="non-scaling-stroke" strokeLinejoin="round" pointerEvents="none" />
             </g>
         );
