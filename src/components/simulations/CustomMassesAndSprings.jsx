@@ -377,7 +377,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
     const renderSpringPath = (ps, s) => {
         const springLength = Math.max(0.1, ps.y * scale - 20);
         return (
-            <g ref={el => springRefs.current[s.id] = el} transform={`translate(${s.xOffset}, 0) scale(1, ${springLength / 100})`} style={{ transformOrigin: '0px 0px' }}>
+            <g ref={el => springRefs.current[s.id] = el} transform={`translate(${s.xOffset}, 0) scale(1, ${springLength / 100})`} style={{ transformOrigin: '0px 0px', transition: 'none' }}>
                 <path d={baseSpringPath} fill="none" stroke="rgba(255, 255, 255, 0.6)" strokeWidth="4" vectorEffect="non-scaling-stroke" strokeLinejoin="round" pointerEvents="none" />
             </g>
         );
@@ -519,7 +519,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                             
                             <line x1={s.xOffset - 80} y1={(restLength + (s.massValue * gravity) / s.k) * scale} x2={s.xOffset + 80} y2={(restLength + (s.massValue * gravity) / s.k) * scale} stroke="rgba(255,255,255,0.2)" strokeWidth="2" strokeDasharray="10, 10" pointerEvents="none" />
 
-                            <g ref={el => massRefs.current[s.id] = el} transform={`translate(${s.xOffset}, ${ps.y * scale})`} onPointerDown={(e) => handlePointerDown(e, s.id)} onPointerMove={(e) => handlePointerMove(e, s.id)} onPointerUp={(e) => handlePointerUp(e, s.id)} onPointerCancel={(e) => handlePointerUp(e, s.id)} style={{ cursor: 'grab', touchAction: 'none' }}>
+                            <g ref={el => massRefs.current[s.id] = el} transform={`translate(${s.xOffset}, ${ps.y * scale})`} onPointerDown={(e) => handlePointerDown(e, s.id)} onPointerMove={(e) => handlePointerMove(e, s.id)} onPointerUp={(e) => handlePointerUp(e, s.id)} onPointerCancel={(e) => handlePointerUp(e, s.id)} style={{ cursor: 'grab', touchAction: 'none', transition: 'none' }}>
                                 <rect x={-40} y="-20" width={80} height={80} fill={isSelected ? "url(#selectedMassGradient)" : "url(#massGradient)"} rx="8" filter={isSelected ? "drop-shadow(0 0 10px rgba(52,152,219,0.6))" : "drop-shadow(0 0 10px rgba(46,204,113,0.4))"} />
                                 <text x="0" y={25} textAnchor="middle" fill="#fff" fontSize="16" fontWeight="bold" pointerEvents="none">{s.massLabel}</text>
                             </g>
@@ -528,7 +528,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                 })}
 
                 {/* Ruler */}
-                <g ref={rulerGRef} transform={`translate(300, 100)`} onPointerDown={handleRulerDown} onPointerMove={handleRulerMove} onPointerUp={handleRulerUp} onPointerCancel={handleRulerUp} style={{ cursor: 'grab', touchAction: 'none' }}>
+                <g ref={rulerGRef} transform={`translate(300, 100)`} onPointerDown={handleRulerDown} onPointerMove={handleRulerMove} onPointerUp={handleRulerUp} onPointerCancel={handleRulerUp} style={{ cursor: 'grab', touchAction: 'none', transition: 'none' }}>
                     <rect x="-15" y="0" width="30" height="400" fill="#f1c40f" rx="4" />
                     {Array.from({ length: 41 }).map((_, i) => (
                         <line key={i} x1={i % 10 === 0 ? "-15" : "-5"} y1={i * 10} x2="15" y2={i * 10} stroke="#000" strokeWidth="2" />
