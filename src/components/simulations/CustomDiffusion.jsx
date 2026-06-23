@@ -696,6 +696,5 @@ export default function CustomDiffusion({ onBack, title }) {
                 </div>
             </div>
         </div>
-        </div>
     );
 }
