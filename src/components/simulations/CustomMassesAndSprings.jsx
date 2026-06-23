@@ -77,21 +77,19 @@ export default function CustomMassesAndSprings({ onBack, title }) {
 
     const scale = 100; // pixels per meter
 
-    const getSpringPathStr = (y, s) => {
+    const baseSpringPath = (() => {
         const coils = 15;
         const width = 30;
-        const startY = 0;
-        const endY = y * scale - 20; 
-        if (endY <= startY) return "";
-        const deltaY = (endY - startY) / (coils * 2);
-        let pathStr = `M ${s.xOffset} ${startY}`;
+        const endY = 100;
+        const deltaY = endY / (coils * 2);
+        let pathStr = `M 0 0`;
         for (let i = 0; i < coils; i++) {
-            pathStr += ` L ${s.xOffset + width/2} ${startY + deltaY * (2*i + 0.5)}`;
-            pathStr += ` L ${s.xOffset - width/2} ${startY + deltaY * (2*i + 1.5)}`;
+            pathStr += ` L ${width/2} ${deltaY * (2*i + 0.5)}`;
+            pathStr += ` L ${-width/2} ${deltaY * (2*i + 1.5)}`;
         }
-        pathStr += ` L ${s.xOffset} ${endY}`;
+        pathStr += ` L 0 ${endY}`;
         return pathStr;
-    };
+    })();
 
     const updateVisuals = () => {
         physicsRef.current.forEach(ps => {
@@ -102,7 +100,8 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                 massRefs.current[s.id].setAttribute('transform', `translate(${s.xOffset}, ${ps.y * scale})`);
             }
             if (springRefs.current[s.id]) {
-                springRefs.current[s.id].setAttribute('d', getSpringPathStr(ps.y, s));
+                const springLength = Math.max(0.1, ps.y * scale - 20);
+                springRefs.current[s.id].setAttribute('transform', `translate(${s.xOffset}, 0) scale(1, ${springLength / 100})`);
             }
             
             if (forceSpringRefs.current[s.id]) {
@@ -376,7 +375,12 @@ export default function CustomMassesAndSprings({ onBack, title }) {
     };
 
     const renderSpringPath = (ps, s) => {
-        return <path ref={el => springRefs.current[s.id] = el} d={getSpringPathStr(ps.y, s)} fill="none" stroke="rgba(255, 255, 255, 0.6)" strokeWidth="4" strokeLinejoin="round" pointerEvents="none" />;
+        const springLength = Math.max(0.1, ps.y * scale - 20);
+        return (
+            <g ref={el => springRefs.current[s.id] = el} transform={`translate(${s.xOffset}, 0) scale(1, ${springLength / 100})`}>
+                <path d={baseSpringPath} fill="none" stroke="rgba(255, 255, 255, 0.6)" strokeWidth="4" vectorEffect="non-scaling-stroke" strokeLinejoin="round" pointerEvents="none" />
+            </g>
+        );
     };
 
     const renderVector = (startX, startY, compY, color, scaleFactor, refObj, sId) => {
