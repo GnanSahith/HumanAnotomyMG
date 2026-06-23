@@ -294,10 +294,11 @@ const CustomFaradaysLawInner = ({ onBack, title }) => {
     <div style={{
       width: '100%', height: '100%',
       position: 'relative', background: '#0a0a1a', overflow: 'hidden',
-      fontFamily: "'Inter', sans-serif", color: '#fff'
+      fontFamily: "'Inter', sans-serif", color: '#fff',
+      display: 'flex', flexDirection: 'column'
     }}>
       {/* Top Header Bar */}
-      <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
+      <div style={{ position: 'absolute', top: '20px', left: '20px', right: '340px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
         {onBack ? (
           <button 
             onClick={onBack}
@@ -328,10 +329,10 @@ const CustomFaradaysLawInner = ({ onBack, title }) => {
       </div>
 
       {/* Canvas / Main View */}
-      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
+      <div style={{ flex: 1, padding: '90px 340px 20px 20px', boxSizing: 'border-box', position: 'relative', zIndex: 1, pointerEvents: 'auto', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '20px' }}>
         
         {/* Main Canvas View */}
-        <div style={{ position: 'relative', width: '100%', maxWidth: '800px', height: '400px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', overflow: 'hidden', background: 'rgba(20,20,30,0.4)', backdropFilter: 'blur(8px)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}>
+        <div style={{ position: 'relative', width: '100%', maxWidth: '800px', flex: 1, minHeight: '300px', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', overflow: 'hidden', background: 'rgba(20,20,30,0.4)', backdropFilter: 'blur(8px)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}>
           <canvas
             ref={canvasRef}
             width={800}
@@ -345,24 +346,24 @@ const CustomFaradaysLawInner = ({ onBack, title }) => {
         </div>
         
         {/* Graph view */}
-        <div style={{ width: '100%', maxWidth: '800px', padding: '16px', background: 'rgba(20,20,30,0.6)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '16px', backdropFilter: 'blur(8px)' }}>
+        <div style={{ width: '100%', maxWidth: '800px', height: '140px', flexShrink: 0, padding: '16px', background: 'rgba(20,20,30,0.6)', border: '1px solid rgba(255,255,255,0.05)', borderRadius: '16px', backdropFilter: 'blur(8px)', boxSizing: 'border-box' }}>
           <span style={{ fontSize: '13px', fontWeight: 600, color: 'rgba(255,255,255,0.6)', display: 'block', marginBottom: '8px' }}>EMF vs Time (Oscilloscope)</span>
           <canvas 
             ref={graphCanvasRef} 
             width={800} 
             height={100} 
-            style={{ display: 'block', width: '100%', height: '100px', backgroundColor: 'rgba(0,0,0,0.2)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px' }}
+            style={{ display: 'block', width: '100%', height: 'calc(100% - 25px)', backgroundColor: 'rgba(0,0,0,0.2)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '8px' }}
           />
         </div>
       </div>
 
       {/* Floating Control Panel */}
       <div style={{
-        position: 'absolute', top: '90px', right: '20px', width: '300px',
+        position: 'absolute', top: '20px', right: '20px', width: '300px',
         background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)',
         backdropFilter: 'blur(12px)', padding: '20px', borderRadius: '16px',
         zIndex: 10, color: 'white', fontFamily: "'Inter', sans-serif",
-        maxHeight: 'calc(100% - 130px)', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '20px'
+        maxHeight: 'calc(100% - 40px)', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '20px', boxSizing: 'border-box'
       }}>
         
         <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
