@@ -755,6 +755,20 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     }
   };
 
+  const handleResetAll = () => {
+    setComponents([]);
+    setSelectedCompId(null);
+    setCurrentFlowType('electrons');
+    setIsSchematic(false);
+    setShowVoltmeter(false);
+    setShowAmmeter(false);
+    setVoltmeterBox({ x: 620, y: 350 });
+    setVoltmeterRed({ x: 600, y: 450 });
+    setVoltmeterBlack({ x: 670, y: 450 });
+    setAmmeterProbe({ x: 620, y: 250 });
+    setBurnoutNotice(null);
+  };
+
   const handleMouseUp = (e) => {
     if (dragging && dragging.type === 'body') {
       const canvas = canvasRef.current;
