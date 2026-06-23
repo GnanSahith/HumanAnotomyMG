@@ -1122,8 +1122,10 @@ function CustomColorVisionInner({ onBack, title }) {
               )}
           </div>
           <div>
-              <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
-                  {title || 'Color Vision'}
+              <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
+                  <span style={{ background: 'rgba(10, 10, 26, 0.7)', padding: '8px 24px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)' }}>
+                      {title || 'Color Vision'}
+                  </span>
               </h2>
           </div>
           <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
@@ -1154,28 +1156,22 @@ function CustomColorVisionInner({ onBack, title }) {
 
         {/* HUD over Canvas */}
         <div style={{ position: 'absolute', top: '10px', left: '330px', right: '330px', pointerEvents: 'none', display: 'flex', justifyContent: 'center' }}>
-          <div className="flex gap-1 p-0.5 rounded-lg border border-zinc-800 bg-zinc-950/80 backdrop-blur-md pointer-events-auto">
+          <div style={{ display: 'flex', gap: '6px', padding: '6px', borderRadius: '100px', background: 'rgba(20, 20, 30, 0.6)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', pointerEvents: 'auto', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }}>
             <button
               onClick={() => setBeamDisplay('particles')}
-              className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
-                beamDisplay === 'particles' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
-              }`}
+              style={{ padding: '8px 20px', borderRadius: '100px', background: beamDisplay === 'particles' ? 'rgba(52, 152, 219, 0.2)' : 'transparent', color: beamDisplay === 'particles' ? '#3498db' : 'rgba(255, 255, 255, 0.7)', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', border: beamDisplay === 'particles' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent' }}
             >
               Photons
             </button>
             <button
               onClick={() => setBeamDisplay('solid')}
-              className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
-                beamDisplay === 'solid' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
-              }`}
+              style={{ padding: '8px 20px', borderRadius: '100px', background: beamDisplay === 'solid' ? 'rgba(52, 152, 219, 0.2)' : 'transparent', color: beamDisplay === 'solid' ? '#3498db' : 'rgba(255, 255, 255, 0.7)', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', border: beamDisplay === 'solid' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent' }}
             >
               Solid Beam
             </button>
             <button
               onClick={() => setBeamDisplay('both')}
-              className={`px-2 py-1 text-[11px] font-medium rounded-md transition ${
-                beamDisplay === 'both' ? 'bg-indigo-600/80 text-white shadow-sm' : 'text-zinc-400 hover:text-white'
-              }`}
+              style={{ padding: '8px 20px', borderRadius: '100px', background: beamDisplay === 'both' ? 'rgba(52, 152, 219, 0.2)' : 'transparent', color: beamDisplay === 'both' ? '#3498db' : 'rgba(255, 255, 255, 0.7)', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', border: beamDisplay === 'both' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent' }}
             >
               Both
             </button>
