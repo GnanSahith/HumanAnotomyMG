@@ -88,16 +88,18 @@ const CustomCoulombsLawInner = () => {
     <div style={{ display: 'flex', flexDirection: 'column', width: '100%', height: '100%', position: 'relative' }}>
       
       {/* Canvas View */}
-      <div style={{
-        flex: 1,
-        position: 'relative',
-        zIndex: 1,
-        pointerEvents: 'auto',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        gap: '12px'
+      <div style={{ 
+        flex: 1, 
+        position: 'relative', 
+        zIndex: 1, 
+        pointerEvents: 'none', 
+        display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center', 
+        justifyContent: 'center', 
+        gap: '12px',
+        padding: '20px 360px 20px 20px',
+        boxSizing: 'border-box'
       }}>
         <canvas 
           ref={canvasRef} 

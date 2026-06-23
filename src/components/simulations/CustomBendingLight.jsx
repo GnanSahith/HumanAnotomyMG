@@ -1091,7 +1091,7 @@ export default function CustomBendingLight({ onBack, title }) {
          </div>
       </div>
 
-      <div style={{ flex: 1, position: 'relative', zIndex: 1 }}>
+      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', padding: '20px 360px 20px 240px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {/* Canvas / Main View */}
         <canvas
           ref={canvasRef}
@@ -1102,13 +1102,16 @@ export default function CustomBendingLight({ onBack, title }) {
           onMouseUp={handleMouseUp}
           onMouseLeave={handleMouseUp}
           style={{
-            position: 'absolute',
-            inset: 0,
             width: '100%',
             height: '100%',
+            maxHeight: '100%',
             zIndex: 1,
             objectFit: 'contain',
-            cursor: 'crosshair'
+            cursor: getCursor(),
+            background: '#0e111a',
+            borderRadius: '16px',
+            border: '1px solid rgba(255,255,255,0.05)',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
           }}
         />
 

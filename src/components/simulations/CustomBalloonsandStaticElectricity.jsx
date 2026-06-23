@@ -813,13 +813,13 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
          </div>
       </div>
 
-      <div style={{ flex: 1, position: 'relative', zIndex: 1 }}>
+      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', padding: '20px 360px 20px 340px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {/* Main View: Canvas */}
       <canvas
         ref={canvasRef}
         width={1100}
         height={750}
-        style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1, objectFit: 'contain', cursor: 'grab' }}
+        style={{ width: '100%', height: '100%', maxHeight: '100%', zIndex: 1, objectFit: 'contain', cursor: 'grab', background: '#0a0a1a', borderRadius: '16px', border: '1px solid rgba(255,255,255,0.05)', boxShadow: '0 8px 32px rgba(0,0,0,0.4)' }}
         onMouseDown={handleMouseDown}
         onMouseMove={handleMouseMove}
         onMouseUp={handleMouseUp}

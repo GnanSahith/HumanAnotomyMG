@@ -1677,7 +1677,7 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
           </div>
       </div>
 
-      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto' }}>
+      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', padding: '20px 360px 20px 20px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
         {/* Canvas */}
         <canvas
           ref={canvasRef}
@@ -1690,13 +1690,15 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
           onTouchMove={handleTouchMove}
           onTouchEnd={handleTouchEnd}
           style={{
-            position: 'absolute',
-            inset: 0,
             width: '100%',
             height: '100%',
+            maxHeight: '100%',
             objectFit: 'contain',
             pointerEvents: 'auto',
-            background: '#050510'
+            background: '#050510',
+            borderRadius: '16px',
+            border: '1px solid rgba(255,255,255,0.05)',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
           }}
         />
       </div>

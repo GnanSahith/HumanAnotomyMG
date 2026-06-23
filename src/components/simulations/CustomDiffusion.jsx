@@ -374,16 +374,7 @@ export default function CustomDiffusion({ onBack, title }) {
                 </div>
             </div>
 
-            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto' }}>{/* Canvas / Main View */}
-            <div style={{
-                position: 'absolute',
-                inset: 0,
-                zIndex: 1,
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
-                pointerEvents: 'none'
-            }}>
+            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', padding: '20px 360px 20px 360px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{/* Canvas / Main View */}
                 <div style={{
                     position: 'relative',
                     width: '100%',

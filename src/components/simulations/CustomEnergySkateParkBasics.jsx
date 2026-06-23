@@ -1022,27 +1022,31 @@ function CustomEnergySkateParkBasicsInner({ onBack, title }) {
         
         {/* Canvas Simulation Window */}
         <div style={{
-          position: 'absolute',
-          inset: 0,
+          flex: 1,
+          position: 'relative',
           zIndex: 1,
           pointerEvents: 'auto',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center'
+          justifyContent: 'center',
+          padding: '20px 340px 20px 20px',
+          boxSizing: 'border-box'
         }}>
           <canvas
             ref={canvasRef}
             width={800}
             height={600}
             style={{
-              position: 'absolute',
-              inset: 0,
               width: '100%',
               height: '100%',
+              maxHeight: '100%',
               objectFit: 'contain',
               display: 'block',
               cursor: 'crosshair',
-              background: '#050510'
+              background: '#050510',
+              borderRadius: '16px',
+              border: '1px solid rgba(255,255,255,0.05)',
+              boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
             }}
             onPointerDown={handlePointerDown}
             onPointerMove={handlePointerMove}

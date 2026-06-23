@@ -1428,16 +1428,18 @@ export default function CustomCircuitConstructionKitDCVirtualLab({ onBack, title
       {/* Canvas Wrapper */}
       <div 
         style={{ 
-          position: 'absolute', 
-          inset: 0, 
+          position: 'relative', 
           zIndex: 1, 
           display: 'flex', 
           alignItems: 'center', 
           justifyContent: 'center',
-          pointerEvents: 'none'
+          pointerEvents: 'none',
+          padding: '20px 360px 20px 320px',
+          boxSizing: 'border-box',
+          flex: 1
         }}
       >
-        <div className="rounded-2xl border border-slate-850 overflow-hidden shadow-2xl" style={{ pointerEvents: 'auto', position: 'relative',  background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+        <div className="rounded-2xl overflow-hidden shadow-2xl" style={{ pointerEvents: 'auto', position: 'relative', width: '100%', height: '100%', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)' }}>
           <canvas
             ref={canvasRef}
             width={800}

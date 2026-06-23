@@ -154,7 +154,7 @@ const CustomChargesAndFieldsInner = () => {
   };
 
   return (
-    <div style={{ position: 'absolute', inset: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' }}>
+    <div style={{ position: 'absolute', inset: 0, pointerEvents: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '20px 360px 20px 20px', boxSizing: 'border-box' }}>
       {/* Main View: Canvas */}
       <canvas
         ref={canvasRef}
@@ -165,14 +165,17 @@ const CustomChargesAndFieldsInner = () => {
         onMouseUp={handleMouseUp}
         onMouseLeave={handleMouseUp}
         style={{
-          position: 'absolute',
-          inset: 0,
           width: '100%',
           height: '100%',
+          maxHeight: '100%',
           objectFit: 'contain',
           cursor: 'crosshair',
           pointerEvents: 'auto',
-          zIndex: 1
+          zIndex: 1,
+          background: '#0a0a1a',
+          borderRadius: '16px',
+          border: '1px solid rgba(255,255,255,0.05)',
+          boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
         }}
       />
 
