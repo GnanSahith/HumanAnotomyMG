@@ -869,8 +869,6 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
           zIndex: 10,
           color: 'white',
           fontFamily: "'Inter', sans-serif",
-          maxHeight: 'calc(65% - 110px)',
-          overflowY: 'auto',
           display: 'flex',
           flexDirection: 'column',
           gap: '20px'
@@ -1061,9 +1059,8 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
       <section 
         style={{
           position: 'absolute',
-          right: '20px',
-          bottom: '20px',
-          top: 'calc(65% + 10px)',
+          left: '20px',
+          top: '100px',
           width: '320px',
           background: 'rgba(20, 20, 30, 0.8)',
           border: '1px solid rgba(255,255,255,0.1)',
@@ -1073,8 +1070,6 @@ export default function CustomBalloonsandStaticElectricity({ onBack, title }) {
           zIndex: 10,
           color: 'white',
           fontFamily: "'Inter', sans-serif",
-          maxHeight: 'calc(35% - 40px)',
-          overflowY: 'auto',
           display: 'flex',
           flexDirection: 'column',
           gap: '16px'
