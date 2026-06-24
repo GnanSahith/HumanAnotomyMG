@@ -419,7 +419,7 @@ export default function MathsSimulationView({ onBack }) {
     }, [accessLevel, approvedSims]);
 
     const handleSimClick = (sim) => {
-        if (accessLevel === 'CLERK') {
+        if (accessLevel !== 'ROOT') {
             alert('Currently Locked');
             return;
         }
