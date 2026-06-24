@@ -392,11 +392,37 @@ export default function MathsSimulationView({ onBack }) {
         return true;
     };
 
+    const loggedInUsername = localStorage.getItem('logged_in_username') || '';
+    const [approvedSims, setApprovedSims] = useState(() => {
+        try {
+            return JSON.parse(localStorage.getItem('showcase_approved_maths_sims') || '[]');
+        } catch (e) {
+            return [];
+        }
+    });
+
+    const accessLevel = React.useMemo(() => {
+        const rootUsers = ['GnanSahith@MG', 'MGRoot01', 'MyGnanAD'];
+        const approvedUsers = ['CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG'];
+        if (rootUsers.includes(loggedInUsername)) return 'ROOT';
+        if (approvedUsers.includes(loggedInUsername)) return 'APPROVED_ONLY';
+        return 'CLERK';
+    }, [loggedInUsername]);
+
     const simArray = React.useMemo(() => {
-        return Object.entries(mathSimulations).map(([id, sim]) => ({ ...sim, id }));
-    }, []);
+        let arr = Object.entries(mathSimulations).map(([id, sim]) => ({ ...sim, id }));
+        if (accessLevel === 'ROOT') {
+            return arr;
+        } else {
+            return arr.filter(sim => approvedSims.includes(sim.id));
+        }
+    }, [accessLevel, approvedSims]);
 
     const handleSimClick = (sim) => {
+        if (accessLevel === 'CLERK') {
+            alert('Currently Locked');
+            return;
+        }
         setActiveSimulation(sim);
         setIsLoadingSim(true);
         setTimeout(() => setIsLoadingSim(false), 2000);

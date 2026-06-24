@@ -115,6 +115,16 @@ function App() {
     handleReturnToPortal();
   };
 
+  const handleRouteSelect = (route) => {
+    if (route === 'simulations') {
+      if (!isAuthenticated && !isSignedIn) {
+        setShowLoginModal(true);
+        return;
+      }
+    }
+    setAppMode(route);
+  };
+
   return (
     <div className={`app-container ${appMode === 'simulations' && (activeModule === 'maths' || activeModule === 'chemistry' || activeModule === 'physics') ? 'maths-view-active' : ''}`}>
       {/* Background blobs for Apple Vision Pro style feeling */}
@@ -245,7 +255,7 @@ function App() {
 
       {/* Main Routing */}
       {appMode === 'root' ? (
-        <MainLandingView onSelectRoute={setAppMode} />
+        <MainLandingView onSelectRoute={handleRouteSelect} />
       ) : appMode === 'pricing' ? (
         <PricingView onBack={() => setAppMode('simulations')} />
       ) : appMode === 'academics' ? (
@@ -265,11 +275,11 @@ function App() {
         isLanding ? (
           <LandingView onEnter={handleAuthRequiredNavigation} loggedInUsername={loggedInUsername} />
         ) : activeModule === 'maths' ? (
-          <MathsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} />
+          <MathsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} />
         ) : activeModule === 'chemistry' ? (
-          <ChemistrySimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} />
+          <ChemistrySimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} />
         ) : activeModule === 'physics' ? (
-          <PhysicsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} />
+          <PhysicsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} />
         ) : activeModule === 'biology' && isAccountView ? (
           <AccountView />
         ) : activeModule === 'biology' && !activeSystemId ? (

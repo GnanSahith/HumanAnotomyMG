@@ -31,13 +31,22 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick 
         });
     };
 
+    const accessLevel = React.useMemo(() => {
+        const rootUsers = ['GnanSahith@MG', 'MGRoot01', 'MyGnanAD'];
+        const approvedUsers = ['CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG'];
+        if (rootUsers.includes(loggedInUsername)) return 'ROOT';
+        if (approvedUsers.includes(loggedInUsername)) return 'APPROVED_ONLY';
+        return 'CLERK';
+    }, [loggedInUsername]);
+
     const simArray = React.useMemo(() => {
         let arr = chemistrySimulations.map(sim => ({ ...sim, id: sim.id || sim.title.replace(/\s+/g, '') }));
-        if (loggedInUsername === 'MGRoot01') {
-            arr = arr.filter(sim => approvedSims.includes(sim.id));
+        if (accessLevel === 'ROOT') {
+            return arr;
+        } else {
+            return arr.filter(sim => approvedSims.includes(sim.id));
         }
-        return arr;
-    }, [loggedInUsername, approvedSims]);
+    }, [accessLevel, approvedSims]);
     const subjectOptions = React.useMemo(() => {
         const categories = new Set(chemistrySimulations.map(s => s.category).filter(Boolean));
         return Array.from(categories).map(cat => ({ id: cat, label: cat }));
@@ -78,6 +87,10 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick 
     };
 
     const handleSimClick = (sim) => {
+        if (accessLevel === 'CLERK') {
+            alert('Currently Locked');
+            return;
+        }
         setActiveSimulation(sim);
         setIsLoadingSim(true);
         setTimeout(() => setIsLoadingSim(false), 4500);

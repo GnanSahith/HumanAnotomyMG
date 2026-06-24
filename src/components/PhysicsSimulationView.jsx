@@ -134,15 +134,28 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
         return true;
     };
 
-        const simArray = React.useMemo(() => {
+    const accessLevel = React.useMemo(() => {
+        const rootUsers = ['GnanSahith@MG', 'MGRoot01', 'MyGnanAD'];
+        const approvedUsers = ['CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG'];
+        if (rootUsers.includes(loggedInUsername)) return 'ROOT';
+        if (approvedUsers.includes(loggedInUsername)) return 'APPROVED_ONLY';
+        return 'CLERK';
+    }, [loggedInUsername]);
+
+    const simArray = React.useMemo(() => {
         let arr = Object.entries(physicsSimulations).map(([id, sim]) => ({ ...sim, id }));
-        if (loggedInUsername === 'MGRoot01') {
-            arr = arr.filter(sim => approvedSims.includes(sim.id));
+        if (accessLevel === 'ROOT') {
+            return arr;
+        } else {
+            return arr.filter(sim => approvedSims.includes(sim.id));
         }
-        return arr;
-    }, [loggedInUsername, approvedSims]);
+    }, [accessLevel, approvedSims]);
 
     const handleSimClick = (sim) => {
+        if (accessLevel === 'CLERK') {
+            alert('Currently Locked');
+            return;
+        }
         setActiveSimulation(sim);
         setIsLoadingSim(true);
         setTimeout(() => setIsLoadingSim(false), 4500);
