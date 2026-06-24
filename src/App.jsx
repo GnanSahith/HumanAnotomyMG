@@ -182,7 +182,9 @@ function App() {
 
             {isAuthenticated ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px' }}>Root Admin</span>
+                <span style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px' }}>
+                  {loggedInUsername.replace('@MG', '')}
+                </span>
                 <button
                   onClick={handleLogout}
                   style={{

@@ -147,7 +147,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
         if (accessLevel === 'ROOT') {
             return arr;
         } else {
-            return arr.filter(sim => approvedSims.includes(sim.id));
+            return arr.filter(sim => approvedSims.includes(sim.id) && sim.isNative);
         }
     }, [accessLevel, approvedSims]);
 
