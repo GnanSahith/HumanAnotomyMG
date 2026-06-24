@@ -1434,7 +1434,7 @@ export default function CustomCircuitConstructionKitDCVirtualLab({ onBack, title
           alignItems: 'center', 
           justifyContent: 'center',
           pointerEvents: 'none',
-          padding: '20px 360px 20px 320px',
+          padding: '20px',
           boxSizing: 'border-box',
           flex: 1
         }}
@@ -1491,10 +1491,26 @@ export default function CustomCircuitConstructionKitDCVirtualLab({ onBack, title
               <button
                 key={item.type}
                 onClick={() => handleAddComponent(item.type)}
-                className={`flex flex-col items-center gap-2 p-3.5 rounded-xl border transition-all hover:scale-103 active:scale-97 text-center font-medium ${item.color}`}
+                className="flex flex-col items-center gap-2 p-3.5 transition-all text-center font-medium"
+                style={{ 
+                  background: 'rgba(255, 255, 255, 0.05)', 
+                  border: '1px solid rgba(255, 255, 255, 0.1)', 
+                  backdropFilter: 'blur(10px)', 
+                  borderRadius: '12px',
+                  color: 'white',
+                  cursor: 'pointer'
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = 'rgba(255, 255, 255, 0.05)';
+                  e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                }}
               >
-                <item.icon size={22} className="stroke-[2]" />
-                <span className="text-xs">{item.label}</span>
+                <item.icon size={22} style={{ color: item.color.includes('yellow') ? '#f1c40f' : item.color.includes('emerald') ? '#2ecc71' : item.color.includes('orange') ? '#e67e22' : item.color.includes('cyan') ? '#00bcd4' : '#9b59b6' }} />
+                <span className="text-xs" style={{ color: 'rgba(255, 255, 255, 0.8)' }}>{item.label}</span>
               </button>
             ))}
           </div>
