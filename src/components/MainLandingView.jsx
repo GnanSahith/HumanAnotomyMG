@@ -16,13 +16,7 @@ const MainLandingView = ({ onSelectRoute, isSignedIn, isAuthenticated }) => {
       </div>
       <div 
         className="split-half simulations-half" 
-        onClick={() => {
-          if (isSimulationsLocked) {
-            alert("Simulations are restricted to Administrator and Root logins only.");
-            return;
-          }
-          onSelectRoute('simulations');
-        }}
+        onClick={() => onSelectRoute('simulations')}
         style={isSimulationsLocked ? { opacity: 0.5, cursor: 'not-allowed', filter: 'grayscale(0.8)' } : {}}
       >
         <div className="split-content">
