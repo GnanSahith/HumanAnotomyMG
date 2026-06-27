@@ -1,8 +1,10 @@
 import React from 'react';
-import { BookOpen, MonitorPlay } from 'lucide-react';
+import { BookOpen, MonitorPlay, Lock } from 'lucide-react';
 import '../MainLanding.css';
 
-const MainLandingView = ({ onSelectRoute }) => {
+const MainLandingView = ({ onSelectRoute, isSignedIn, isAuthenticated }) => {
+  const isSimulationsLocked = isSignedIn && !isAuthenticated;
+
   return (
     <div className="split-landing-container">
       <div className="split-half academics-half" onClick={() => onSelectRoute('academics')}>
@@ -12,10 +14,20 @@ const MainLandingView = ({ onSelectRoute }) => {
           <p>Comprehensive study materials, NCERT solutions, concepts, and board preparation.</p>
         </div>
       </div>
-      <div className="split-half simulations-half" onClick={() => onSelectRoute('simulations')}>
+      <div 
+        className="split-half simulations-half" 
+        onClick={() => {
+          if (isSimulationsLocked) {
+            alert("Simulations are restricted to Administrator and Root logins only.");
+            return;
+          }
+          onSelectRoute('simulations');
+        }}
+        style={isSimulationsLocked ? { opacity: 0.5, cursor: 'not-allowed', filter: 'grayscale(0.8)' } : {}}
+      >
         <div className="split-content">
-          <MonitorPlay size={80} className="split-icon" />
-          <h1>Simulations</h1>
+          {isSimulationsLocked ? <Lock size={80} className="split-icon" style={{ color: '#ff4d4d' }} /> : <MonitorPlay size={80} className="split-icon" />}
+          <h1>Simulations {isSimulationsLocked && '(Locked)'}</h1>
           <p>Interactive 3D models and practical simulations for Math, Physics, Chemistry, and Biology.</p>
         </div>
       </div>

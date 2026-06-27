@@ -257,7 +257,7 @@ function App() {
 
       {/* Main Routing */}
       {appMode === 'root' ? (
-        <MainLandingView onSelectRoute={handleRouteSelect} />
+        <MainLandingView onSelectRoute={handleRouteSelect} isSignedIn={isSignedIn} isAuthenticated={isAuthenticated} />
       ) : appMode === 'pricing' ? (
         <PricingView onBack={() => setAppMode('simulations')} />
       ) : appMode === 'academics' ? (
