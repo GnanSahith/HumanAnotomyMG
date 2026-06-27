@@ -1,20 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-  Play, 
-  Pause, 
-  RotateCcw, 
-  SkipForward, 
-  Sliders, 
-  Eye, 
-  Layers, 
-  Lightbulb, 
-  Info, 
-  Sparkles, 
-  Activity, 
-  BookOpen, 
-  ArrowLeft, 
-  HelpCircle 
-} from 'lucide-react';
+import { Play, Pause, RotateCcw, SkipForward, Sliders, Eye, Layers, Lightbulb, Info, Sparkles, Activity, BookOpen, ArrowLeft, HelpCircle, Settings2 } from 'lucide-react';
 
 // ============================================================================
 // PHYSICS & BIOLOGICAL HELPER FUNCTIONS (FILE-LEVEL)
@@ -28,9 +13,10 @@ import {
  * @param {number} wavelength - Wavelength in nanometers (nm)
  * @returns {{r: number, g: number, b: number}} RGB color object [0-255]
  */
-const wavelengthToRGB = (wavelength) => {
-  let r = 0, g = 0, b = 0;
-  
+const wavelengthToRGB = wavelength => {
+  let r = 0,
+    g = 0,
+    b = 0;
   if (wavelength >= 380 && wavelength < 440) {
     r = -(wavelength - 440) / (440 - 380);
     g = 0.0;
@@ -66,10 +52,8 @@ const wavelengthToRGB = (wavelength) => {
   } else if (wavelength >= 700 && wavelength <= 780) {
     factor = 0.3 + 0.7 * (780 - wavelength) / (780 - 700);
   }
-
   const gamma = 0.8;
-  const adjust = (c) => Math.round(c === 0 ? 0 : 255 * Math.pow(c * factor, gamma));
-
+  const adjust = c => Math.round(c === 0 ? 0 : 255 * Math.pow(c * factor, gamma));
   return {
     r: adjust(r),
     g: adjust(g),
@@ -89,39 +73,71 @@ const wavelengthToRGB = (wavelength) => {
 const getColorName = (r, g, b) => {
   const sum = r + g + b;
   if (sum < 15) return 'Darkness (Black)';
-  
+
   // Normalized vectors
   const rN = r / 255;
   const gN = g / 255;
   const bN = b / 255;
-  
-  const baseColors = [
-    { name: 'Red', r: 1, g: 0, b: 0 },
-    { name: 'Orange', r: 1, g: 0.5, b: 0 },
-    { name: 'Yellow', r: 1, g: 1, b: 0 },
-    { name: 'Green', r: 0, g: 1, b: 0 },
-    { name: 'Cyan', r: 0, g: 1, b: 1 },
-    { name: 'Blue', r: 0, g: 0, b: 1 },
-    { name: 'Purple', r: 0.5, g: 0, b: 0.8 },
-    { name: 'Magenta', r: 1, g: 0, b: 1 },
-    { name: 'White', r: 1, g: 1, b: 1 },
-    { name: 'Grey', r: 0.5, g: 0.5, b: 0.5 }
-  ];
-
+  const baseColors = [{
+    name: 'Red',
+    r: 1,
+    g: 0,
+    b: 0
+  }, {
+    name: 'Orange',
+    r: 1,
+    g: 0.5,
+    b: 0
+  }, {
+    name: 'Yellow',
+    r: 1,
+    g: 1,
+    b: 0
+  }, {
+    name: 'Green',
+    r: 0,
+    g: 1,
+    b: 0
+  }, {
+    name: 'Cyan',
+    r: 0,
+    g: 1,
+    b: 1
+  }, {
+    name: 'Blue',
+    r: 0,
+    g: 0,
+    b: 1
+  }, {
+    name: 'Purple',
+    r: 0.5,
+    g: 0,
+    b: 0.8
+  }, {
+    name: 'Magenta',
+    r: 1,
+    g: 0,
+    b: 1
+  }, {
+    name: 'White',
+    r: 1,
+    g: 1,
+    b: 1
+  }, {
+    name: 'Grey',
+    r: 0.5,
+    g: 0.5,
+    b: 0.5
+  }];
   let bestName = 'Unknown';
   let minDistance = Infinity;
   for (const c of baseColors) {
-    const dist = Math.sqrt(
-      Math.pow(rN - c.r, 2) +
-      Math.pow(gN - c.g, 2) +
-      Math.pow(bN - c.b, 2)
-    );
+    const dist = Math.sqrt(Math.pow(rN - c.r, 2) + Math.pow(gN - c.g, 2) + Math.pow(bN - c.b, 2));
     if (dist < minDistance) {
       minDistance = dist;
       bestName = c.name;
     }
   }
-
   if (sum > 720) return 'Bright White';
   if (sum < 100) return `Dim ${bestName}`;
   return bestName;
@@ -131,9 +147,9 @@ const getColorName = (r, g, b) => {
  * Approximations of human cone receptor sensitivity curves (L, M, S cones).
  * Sensitivities are modeled as Gaussian distributions.
  */
-const getLSensitivity = (wl) => Math.exp(-0.5 * Math.pow((wl - 560) / 45, 2)); // Peak: 560nm (Red-Yellow)
-const getMSensitivity = (wl) => Math.exp(-0.5 * Math.pow((wl - 530) / 40, 2)); // Peak: 530nm (Green)
-const getSSensitivity = (wl) => Math.exp(-0.5 * Math.pow((wl - 420) / 30, 2)); // Peak: 420nm (Blue)
+const getLSensitivity = wl => Math.exp(-0.5 * Math.pow((wl - 560) / 45, 2)); // Peak: 560nm (Red-Yellow)
+const getMSensitivity = wl => Math.exp(-0.5 * Math.pow((wl - 530) / 40, 2)); // Peak: 530nm (Green)
+const getSSensitivity = wl => Math.exp(-0.5 * Math.pow((wl - 420) / 30, 2)); // Peak: 420nm (Blue)
 
 // ============================================================================
 // CANVAS VECTOR DRAWING HELPERS
@@ -144,14 +160,16 @@ const getSSensitivity = (wl) => Math.exp(-0.5 * Math.pow((wl - 420) / 30, 2)); /
  */
 const drawBulb = (ctx, x, y, color, intensity, size = 30) => {
   ctx.save();
-  
+
   // Radial glow gradient for lit bulb
   if (intensity > 0) {
     const gradient = ctx.createRadialGradient(x, y, size * 0.1, x, y, size * 2.5);
     // Parse input rgb string to rgba to apply intensity alpha
     const match = color.match(/\d+/g);
     if (match && match.length >= 3) {
-      const r = match[0], g = match[1], b = match[2];
+      const r = match[0],
+        g = match[1],
+        b = match[2];
       gradient.addColorStop(0, `rgba(${r}, ${g}, ${b}, ${intensity})`);
       gradient.addColorStop(0.3, `rgba(${r}, ${g}, ${b}, ${intensity * 0.4})`);
       gradient.addColorStop(1, 'rgba(0, 0, 0, 0)');
@@ -168,7 +186,6 @@ const drawBulb = (ctx, x, y, color, intensity, size = 30) => {
   // Draw lightbulb body silhouette
   ctx.strokeStyle = 'rgba(255, 255, 255, 0.8)';
   ctx.lineWidth = 2.5;
-
   ctx.beginPath();
   // Bulby round top
   ctx.arc(x, y, size * 0.8, -Math.PI / 6, 7 * Math.PI / 6, true);
@@ -205,7 +222,6 @@ const drawBulb = (ctx, x, y, color, intensity, size = 30) => {
   ctx.strokeStyle = intensity > 0 ? '#ffffff' : 'rgba(255, 255, 255, 0.3)';
   ctx.lineWidth = 1.5;
   ctx.stroke();
-
   ctx.restore();
 };
 
@@ -214,7 +230,7 @@ const drawBulb = (ctx, x, y, color, intensity, size = 30) => {
  */
 const drawThoughtBubble = (ctx, bx, by, rgb) => {
   ctx.save();
-  
+
   // Outer glassmorphism container for thought bubble
   ctx.beginPath();
   ctx.roundRect(bx - 90, by - 45, 180, 75, 16);
@@ -230,7 +246,6 @@ const drawThoughtBubble = (ctx, bx, by, rgb) => {
   ctx.fillStyle = 'rgba(20, 20, 25, 0.85)';
   ctx.fill();
   ctx.stroke();
-
   ctx.beginPath();
   ctx.arc(bx - 45, by + 58, 6, 0, Math.PI * 2);
   ctx.fillStyle = 'rgba(20, 20, 25, 0.85)';
@@ -265,16 +280,13 @@ const drawThoughtBubble = (ctx, bx, by, rgb) => {
   ctx.font = 'bold 12px sans-serif';
   ctx.textAlign = 'left';
   ctx.fillText('Perception', bx - 18, by - 12);
-
   ctx.font = '11px sans-serif';
   ctx.fillStyle = '#a1a1aa';
   const colorName = getColorName(rgb.r, rgb.g, rgb.b);
   ctx.fillText(colorName, bx - 18, by + 4);
-
   ctx.font = '9px monospace';
   ctx.fillStyle = '#71717a';
   ctx.fillText(`RGB(${rgb.r},${rgb.g},${rgb.b})`, bx - 18, by + 18);
-
   ctx.restore();
 };
 
@@ -283,12 +295,11 @@ const drawThoughtBubble = (ctx, bx, by, rgb) => {
  */
 const drawHead = (ctx, x, y, perceivedRGB) => {
   ctx.save();
-  
+
   // 1. Draw head silhouette (facing left)
   ctx.beginPath();
   ctx.strokeStyle = 'rgba(161, 161, 170, 0.5)';
   ctx.lineWidth = 3;
-  
   ctx.moveTo(x + 50, y + 140); // throat
   ctx.quadraticCurveTo(x + 75, y + 50, x + 75, y - 40); // back of skull
   ctx.quadraticCurveTo(x + 65, y - 110, x - 5, y - 110); // crown
@@ -307,7 +318,7 @@ const drawHead = (ctx, x, y, perceivedRGB) => {
   // 2. Draw eye anatomy detail
   const eyeX = x - 46;
   const eyeY = y - 24;
-  
+
   // Eyeball (white)
   ctx.beginPath();
   ctx.arc(eyeX, eyeY, 13, 0, Math.PI * 2);
@@ -318,7 +329,7 @@ const drawHead = (ctx, x, y, perceivedRGB) => {
   ctx.stroke();
 
   // Iris (dynamic reaction: size/opacity varies slightly based on brightness)
-  const isDark = (perceivedRGB.r + perceivedRGB.g + perceivedRGB.b) < 15;
+  const isDark = perceivedRGB.r + perceivedRGB.g + perceivedRGB.b < 15;
   ctx.beginPath();
   ctx.arc(eyeX - 3, eyeY, 7, 0, Math.PI * 2);
   ctx.fillStyle = isDark ? '#27272a' : '#2563eb'; // blue iris when lit, dark when unlit
@@ -348,9 +359,7 @@ const drawHead = (ctx, x, y, perceivedRGB) => {
 
   // Squiggly brain cognitive path (glows with the color perceived by the brain)
   ctx.beginPath();
-  ctx.strokeStyle = perceivedRGB.r + perceivedRGB.g + perceivedRGB.b > 0 
-    ? `rgba(${perceivedRGB.r}, ${perceivedRGB.g}, ${perceivedRGB.b}, 0.8)` 
-    : 'rgba(63, 63, 70, 0.4)';
+  ctx.strokeStyle = perceivedRGB.r + perceivedRGB.g + perceivedRGB.b > 0 ? `rgba(${perceivedRGB.r}, ${perceivedRGB.g}, ${perceivedRGB.b}, 0.8)` : 'rgba(63, 63, 70, 0.4)';
   ctx.lineWidth = 2.5;
   ctx.arc(brainX - 8, brainY - 8, 14, Math.PI, 1.7 * Math.PI);
   ctx.arc(brainX + 8, brainY - 8, 14, 1.3 * Math.PI, 2 * Math.PI);
@@ -362,9 +371,7 @@ const drawHead = (ctx, x, y, perceivedRGB) => {
   ctx.beginPath();
   ctx.moveTo(eyeX + 10, eyeY);
   ctx.bezierCurveTo(brainX - 30, eyeY + 10, brainX - 25, brainY + 20, brainX, brainY);
-  ctx.strokeStyle = perceivedRGB.r + perceivedRGB.g + perceivedRGB.b > 0 
-    ? `rgba(${perceivedRGB.r}, ${perceivedRGB.g}, ${perceivedRGB.b}, 0.55)` 
-    : 'rgba(63, 63, 70, 0.3)';
+  ctx.strokeStyle = perceivedRGB.r + perceivedRGB.g + perceivedRGB.b > 0 ? `rgba(${perceivedRGB.r}, ${perceivedRGB.g}, ${perceivedRGB.b}, 0.55)` : 'rgba(63, 63, 70, 0.3)';
   ctx.lineWidth = 2;
   ctx.setLineDash([3, 3]);
   ctx.stroke();
@@ -372,7 +379,6 @@ const drawHead = (ctx, x, y, perceivedRGB) => {
 
   // 4. Draw Thought Bubble
   drawThoughtBubble(ctx, x - 10, y - 175, perceivedRGB);
-
   ctx.restore();
 };
 
@@ -380,14 +386,17 @@ const drawHead = (ctx, x, y, perceivedRGB) => {
 // MAIN COMPONENT
 // ============================================================================
 
-function CustomColorVisionInner({ onBack, title }) {
+function CustomColorVisionInner({
+  onBack,
+  title
+}) {
   // --------------------------------------------------------------------------
   // REACT STATE (Controls, Modes, and Panel Displays)
   // --------------------------------------------------------------------------
   const [mode, setMode] = useState('single'); // 'single' | 'rgb'
   const [bulbWavelength, setBulbWavelength] = useState(550); // Single bulb wavelength (nm)
   const [bulbIntensity, setBulbIntensity] = useState(1.0); // Single bulb intensity (0 to 1)
-  
+
   // Filter settings
   const [filterActive, setFilterActive] = useState(false);
   const [filterWavelength, setFilterWavelength] = useState(500); // Filter wavelength center (nm)
@@ -426,10 +435,7 @@ function CustomColorVisionInner({ onBack, title }) {
       beamDisplay,
       isPlaying
     };
-  }, [
-    mode, bulbWavelength, bulbIntensity, filterActive, filterWavelength, 
-    filterWidth, redIntensity, greenIntensity, blueIntensity, beamDisplay, isPlaying
-  ]);
+  }, [mode, bulbWavelength, bulbIntensity, filterActive, filterWavelength, filterWidth, redIntensity, greenIntensity, blueIntensity, beamDisplay, isPlaying]);
 
   // --------------------------------------------------------------------------
   // L, M, S CONE ACTIVATION MATH FOR UI METERS
@@ -437,7 +443,6 @@ function CustomColorVisionInner({ onBack, title }) {
   let coneL = 0;
   let coneM = 0;
   let coneS = 0;
-
   if (mode === 'single') {
     let trans = 1.0;
     if (filterActive) {
@@ -450,15 +455,9 @@ function CustomColorVisionInner({ onBack, title }) {
     coneS = effIntensity * getSSensitivity(bulbWavelength);
   } else {
     // RGB Bulbs behave as three monochromatic emitters: Red(650nm), Green(530nm), Blue(460nm)
-    coneL = (redIntensity * getLSensitivity(650)) + 
-            (greenIntensity * getLSensitivity(530)) + 
-            (blueIntensity * getLSensitivity(460));
-    coneM = (redIntensity * getMSensitivity(650)) + 
-            (greenIntensity * getMSensitivity(530)) + 
-            (blueIntensity * getMSensitivity(460));
-    coneS = (redIntensity * getSSensitivity(650)) + 
-            (greenIntensity * getSSensitivity(530)) + 
-            (blueIntensity * getSSensitivity(460));
+    coneL = redIntensity * getLSensitivity(650) + greenIntensity * getLSensitivity(530) + blueIntensity * getLSensitivity(460);
+    coneM = redIntensity * getMSensitivity(650) + greenIntensity * getMSensitivity(530) + blueIntensity * getMSensitivity(460);
+    coneS = redIntensity * getSSensitivity(650) + greenIntensity * getSSensitivity(530) + blueIntensity * getSSensitivity(460);
   }
 
   // Convert receptor signals to normalized percentages [0-100%]
@@ -467,7 +466,11 @@ function CustomColorVisionInner({ onBack, title }) {
   const sActivation = Math.min(100, Math.round(coneS * 100));
 
   // Compute live perceived color values for reference inside React UI
-  let perceivedRGB = { r: 0, g: 0, b: 0 };
+  let perceivedRGB = {
+    r: 0,
+    g: 0,
+    b: 0
+  };
   if (mode === 'single') {
     const raw = wavelengthToRGB(bulbWavelength);
     let trans = 1.0;
@@ -504,7 +507,6 @@ function CustomColorVisionInner({ onBack, title }) {
     const updatePhysics = () => {
       const settings = settingsRef.current;
       if (!settings.isPlaying) return;
-
       const particles = particlesRef.current;
       const splashes = splashesRef.current;
 
@@ -546,7 +548,7 @@ function CustomColorVisionInner({ onBack, title }) {
                 x: 80,
                 y: 150 + (Math.random() - 0.5) * 10,
                 vx: vx,
-                vy: (dy / dx) * vx + (Math.random() - 0.5) * 0.4,
+                vy: dy / dx * vx + (Math.random() - 0.5) * 0.4,
                 color: 'rgb(255, 0, 0)',
                 wavelength: 650,
                 size: 2.8 + Math.random() * 2,
@@ -570,7 +572,7 @@ function CustomColorVisionInner({ onBack, title }) {
                 x: 80,
                 y: 250 + (Math.random() - 0.5) * 10,
                 vx: vx,
-                vy: (dy / dx) * vx + (Math.random() - 0.5) * 0.4,
+                vy: dy / dx * vx + (Math.random() - 0.5) * 0.4,
                 color: 'rgb(0, 255, 0)',
                 wavelength: 530,
                 size: 2.8 + Math.random() * 2,
@@ -594,7 +596,7 @@ function CustomColorVisionInner({ onBack, title }) {
                 x: 80,
                 y: 350 + (Math.random() - 0.5) * 10,
                 vx: vx,
-                vy: (dy / dx) * vx + (Math.random() - 0.5) * 0.4,
+                vy: dy / dx * vx + (Math.random() - 0.5) * 0.4,
                 color: 'rgb(0, 0, 255)',
                 wavelength: 460,
                 size: 2.8 + Math.random() * 2,
@@ -611,7 +613,6 @@ function CustomColorVisionInner({ onBack, title }) {
       const activeParticles = [];
       for (let i = 0; i < particles.length; i++) {
         const p = particles[i];
-
         if (p.blocked) {
           // Slow down and fade out blocked photons
           p.vx *= 0.75;
@@ -630,13 +631,12 @@ function CustomColorVisionInner({ onBack, title }) {
           // Bandpass filter boundary at x = 380 in Single Bulb Mode
           if (settings.mode === 'single' && settings.filterActive && !p.passedFilter && p.x >= 380) {
             p.passedFilter = true;
-            
+
             // Calculate transmission probability T based on Gaussian curve
             const lambda_b = p.wavelength;
             const lambda_f = settings.filterWavelength;
             const sigma = settings.filterWidth / 2;
             const T = Math.exp(-0.5 * Math.pow((lambda_b - lambda_f) / sigma, 2));
-
             if (Math.random() > T) {
               // Photon gets absorbed by the filter material
               p.blocked = true;
@@ -653,7 +653,8 @@ function CustomColorVisionInner({ onBack, title }) {
               splashes.push({
                 x: 625,
                 y: p.y,
-                vx: -(1 + Math.random() * 1.5), // fly back slightly
+                vx: -(1 + Math.random() * 1.5),
+                // fly back slightly
                 vy: (Math.random() - 0.5) * 3,
                 color: p.color,
                 size: p.size * 0.6,
@@ -666,7 +667,6 @@ function CustomColorVisionInner({ onBack, title }) {
           }
         }
       }
-
       particlesRef.current = activeParticles;
 
       // 3. Update Retina absorption splash particles
@@ -710,11 +710,14 @@ function CustomColorVisionInner({ onBack, title }) {
         ctx.lineTo(canvas.width, y);
         ctx.stroke();
       }
-
       const settings = settingsRef.current;
 
       // Live computation of perceived color values
-      let livePerceived = { r: 0, g: 0, b: 0 };
+      let livePerceived = {
+        r: 0,
+        g: 0,
+        b: 0
+      };
       if (settings.mode === 'single') {
         const raw = wavelengthToRGB(settings.bulbWavelength);
         let trans = 1.0;
@@ -739,16 +742,13 @@ function CustomColorVisionInner({ onBack, title }) {
       if (settings.beamDisplay === 'solid' || settings.beamDisplay === 'both') {
         ctx.save();
         ctx.globalCompositeOperation = 'screen';
-
         if (settings.mode === 'single') {
           const rgb = wavelengthToRGB(settings.bulbWavelength);
-          
           if (settings.filterActive) {
             // Beam 1: Bulb to Filter (pre-filtered beam)
             const gradient1 = ctx.createLinearGradient(80, 250, 380, 250);
             gradient1.addColorStop(0, `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${settings.bulbIntensity * 0.45})`);
             gradient1.addColorStop(1, `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${settings.bulbIntensity * 0.3})`);
-            
             ctx.fillStyle = gradient1;
             ctx.beginPath();
             ctx.moveTo(80, 238);
@@ -762,12 +762,10 @@ function CustomColorVisionInner({ onBack, title }) {
             const sigma = settings.filterWidth / 2;
             const trans = Math.exp(-0.5 * Math.pow((settings.bulbWavelength - settings.filterWavelength) / sigma, 2));
             const activeIntensity = settings.bulbIntensity * trans;
-
             if (activeIntensity > 0.005) {
               const gradient2 = ctx.createLinearGradient(380, 250, 620, 250);
               gradient2.addColorStop(0, `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${activeIntensity * 0.45})`);
               gradient2.addColorStop(1, `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${activeIntensity * 0.08})`);
-              
               ctx.fillStyle = gradient2;
               ctx.beginPath();
               ctx.moveTo(380, 202);
@@ -782,7 +780,6 @@ function CustomColorVisionInner({ onBack, title }) {
             const gradient = ctx.createLinearGradient(80, 250, 625, 250);
             gradient.addColorStop(0, `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${settings.bulbIntensity * 0.45})`);
             gradient.addColorStop(1, `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${settings.bulbIntensity * 0.08})`);
-
             ctx.fillStyle = gradient;
             ctx.beginPath();
             ctx.moveTo(80, 238);
@@ -849,7 +846,6 @@ function CustomColorVisionInner({ onBack, title }) {
           const p = particles[i];
           ctx.beginPath();
           ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
-          
           if (p.blocked) {
             ctx.fillStyle = `rgba(80, 80, 90, ${p.alpha * 0.35})`;
           } else {
@@ -927,11 +923,10 @@ function CustomColorVisionInner({ onBack, title }) {
 
         // Glass filter pane background (translucent gradient)
         ctx.save();
-        const glassGrad = ctx.createLinearGradient(fx - visWidth/2, 250, fx + visWidth/2, 250);
+        const glassGrad = ctx.createLinearGradient(fx - visWidth / 2, 250, fx + visWidth / 2, 250);
         glassGrad.addColorStop(0, `rgba(${frgb.r}, ${frgb.g}, ${frgb.b}, 0.75)`);
         glassGrad.addColorStop(0.5, `rgba(${frgb.r}, ${frgb.g}, ${frgb.b}, 0.3)`);
         glassGrad.addColorStop(1, `rgba(${frgb.r}, ${frgb.g}, ${frgb.b}, 0.85)`);
-        
         ctx.fillStyle = glassGrad;
         ctx.fillRect(fx - visWidth / 2, 90, visWidth, 270);
 
@@ -974,7 +969,7 @@ function CustomColorVisionInner({ onBack, title }) {
   // Steps the animation forward by 1 frame manually when paused
   const handleStep = () => {
     if (isPlaying) return;
-    
+
     // Temporarily trigger animation frame logic once
     const particles = particlesRef.current;
     const splashes = splashesRef.current;
@@ -1047,7 +1042,6 @@ function CustomColorVisionInner({ onBack, title }) {
       const p = particles[i];
       p.x += p.vx;
       p.y += p.vy;
-
       if (mode === 'single' && filterActive && !p.passedFilter && p.x >= 380) {
         p.passedFilter = true;
         const sigma = filterWidth / 2;
@@ -1058,7 +1052,6 @@ function CustomColorVisionInner({ onBack, title }) {
           p.alpha *= T;
         }
       }
-
       if (p.blocked) {
         p.alpha -= 0.2;
         if (p.alpha > 0) nextParticles.push(p);
@@ -1108,71 +1101,184 @@ function CustomColorVisionInner({ onBack, title }) {
     particlesRef.current = [];
     splashesRef.current = [];
   };
-
-  return (
-    <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }} className="text-white font-sans selection:bg-purple-500/30">
+  return <div style={{
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    background: '#0a0a1a',
+    display: 'flex',
+    flexDirection: 'column',
+    overflow: 'hidden'
+  }} className="text-white font-sans selection:bg-purple-500/30">
       
       {/* Standardized Header */}
-      <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
-          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
-              {onBack && (
-                  <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', borderRadius: '20px', background: 'rgba(255, 255, 255, 0.05)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' }}>
+      <div style={{
+      height: '80px',
+      flexShrink: 0,
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      padding: '0 20px',
+      borderBottom: '1px solid rgba(255,255,255,0.05)',
+      zIndex: 10
+    }}>
+          <div style={{
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center'
+      }}>
+              {onBack && <button onClick={onBack} style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          padding: '8px 16px',
+          borderRadius: '20px',
+          background: 'rgba(255, 255, 255, 0.05)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          backdropFilter: 'blur(10px)',
+          color: 'white',
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '14px',
+          fontWeight: '600',
+          cursor: 'pointer',
+          transition: 'all 0.2s ease'
+        }}>
                       <ArrowLeft size={16} /> Back
-                  </button>
-              )}
+                  </button>}
           </div>
           <div>
-              <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0, textShadow: '0 2px 10px rgba(0,0,0,0.5)' }}>
-                  <span style={{ background: 'rgba(10, 10, 26, 0.7)', padding: '8px 24px', borderRadius: '100px', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(8px)' }}>
+              <h2 style={{
+          color: 'white',
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '24px',
+          fontWeight: '600',
+          margin: 0,
+          textShadow: '0 2px 10px rgba(0,0,0,0.5)'
+        }}>
+                  <span style={{
+            background: 'rgba(10, 10, 26, 0.7)',
+            padding: '8px 24px',
+            borderRadius: '100px',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(8px)'
+          }}>
                       {title || 'Color Vision'}
                   </span>
               </h2>
           </div>
-          <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
-              <button onClick={() => setShowInfoModal(true)} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', borderRadius: '20px', background: 'rgba(52, 152, 219, 0.15)', border: '1px solid rgba(52, 152, 219, 0.3)', color: '#3498db', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease' }}>
+          <div style={{
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'flex-end',
+        gap: '12px',
+        alignItems: 'center'
+      }}>
+              <button onClick={() => setShowInfoModal(true)} style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          padding: '8px 16px',
+          borderRadius: '20px',
+          background: 'rgba(52, 152, 219, 0.15)',
+          border: '1px solid rgba(52, 152, 219, 0.3)',
+          color: '#3498db',
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '14px',
+          fontWeight: '600',
+          cursor: 'pointer',
+          transition: 'all 0.2s ease'
+        }}>
                   <Info size={16} /> Info
               </button>
           </div>
       </div>
 
       {/* Canvas Viewport (Center) */}
-      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', padding: '20px 340px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <canvas
-          ref={canvasRef}
-          width={800}
-          height={450}
-          style={{
-            width: '100%',
-            height: '100%',
-            maxHeight: '100%',
-            objectFit: 'contain',
-            pointerEvents: 'auto',
-            background: '#050510',
-            borderRadius: '16px',
-            border: '1px solid rgba(255,255,255,0.1)',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
-          }}
-        />
+      <div style={{
+      flex: 1,
+      position: 'relative',
+      zIndex: 1,
+      pointerEvents: 'auto',
+      padding: '20px 340px',
+      boxSizing: 'border-box',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }}>
+        <canvas ref={canvasRef} width={800} height={450} style={{
+        width: '100%',
+        height: '100%',
+        maxHeight: '100%',
+        objectFit: 'contain',
+        pointerEvents: 'auto',
+        background: '#050510',
+        borderRadius: '16px',
+        border: '1px solid rgba(255,255,255,0.1)',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
+      }} />
 
         {/* HUD over Canvas */}
-        <div style={{ position: 'absolute', top: '10px', left: '330px', right: '330px', pointerEvents: 'none', display: 'flex', justifyContent: 'center' }}>
-          <div style={{ display: 'flex', gap: '6px', padding: '6px', borderRadius: '100px', background: 'rgba(20, 20, 30, 0.6)', border: '1px solid rgba(255, 255, 255, 0.1)', backdropFilter: 'blur(10px)', pointerEvents: 'auto', boxShadow: '0 4px 15px rgba(0,0,0,0.3)' }}>
-            <button
-              onClick={() => setBeamDisplay('particles')}
-              style={{ padding: '8px 20px', borderRadius: '100px', background: beamDisplay === 'particles' ? 'rgba(52, 152, 219, 0.2)' : 'transparent', color: beamDisplay === 'particles' ? '#3498db' : 'rgba(255, 255, 255, 0.7)', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', border: beamDisplay === 'particles' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent' }}
-            >
+        <div style={{
+        position: 'absolute',
+        top: '10px',
+        left: '330px',
+        right: '330px',
+        pointerEvents: 'none',
+        display: 'flex',
+        justifyContent: 'center'
+      }}>
+          <div style={{
+          display: 'flex',
+          gap: '6px',
+          padding: '6px',
+          borderRadius: '100px',
+          background: 'rgba(20, 20, 30, 0.6)',
+          border: '1px solid rgba(255, 255, 255, 0.1)',
+          backdropFilter: 'blur(10px)',
+          pointerEvents: 'auto',
+          boxShadow: '0 4px 15px rgba(0,0,0,0.3)'
+        }}>
+            <button onClick={() => setBeamDisplay('particles')} style={{
+            padding: '8px 20px',
+            borderRadius: '100px',
+            background: beamDisplay === 'particles' ? 'rgba(52, 152, 219, 0.2)' : 'transparent',
+            color: beamDisplay === 'particles' ? '#3498db' : 'rgba(255, 255, 255, 0.7)',
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '14px',
+            fontWeight: '600',
+            cursor: 'pointer',
+            transition: 'all 0.2s ease',
+            border: beamDisplay === 'particles' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent'
+          }}>
               Photons
             </button>
-            <button
-              onClick={() => setBeamDisplay('solid')}
-              style={{ padding: '8px 20px', borderRadius: '100px', background: beamDisplay === 'solid' ? 'rgba(52, 152, 219, 0.2)' : 'transparent', color: beamDisplay === 'solid' ? '#3498db' : 'rgba(255, 255, 255, 0.7)', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', border: beamDisplay === 'solid' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent' }}
-            >
+            <button onClick={() => setBeamDisplay('solid')} style={{
+            padding: '8px 20px',
+            borderRadius: '100px',
+            background: beamDisplay === 'solid' ? 'rgba(52, 152, 219, 0.2)' : 'transparent',
+            color: beamDisplay === 'solid' ? '#3498db' : 'rgba(255, 255, 255, 0.7)',
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '14px',
+            fontWeight: '600',
+            cursor: 'pointer',
+            transition: 'all 0.2s ease',
+            border: beamDisplay === 'solid' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent'
+          }}>
               Solid Beam
             </button>
-            <button
-              onClick={() => setBeamDisplay('both')}
-              style={{ padding: '8px 20px', borderRadius: '100px', background: beamDisplay === 'both' ? 'rgba(52, 152, 219, 0.2)' : 'transparent', color: beamDisplay === 'both' ? '#3498db' : 'rgba(255, 255, 255, 0.7)', fontFamily: "'Inter', sans-serif", fontSize: '14px', fontWeight: '600', cursor: 'pointer', transition: 'all 0.2s ease', border: beamDisplay === 'both' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent' }}
-            >
+            <button onClick={() => setBeamDisplay('both')} style={{
+            padding: '8px 20px',
+            borderRadius: '100px',
+            background: beamDisplay === 'both' ? 'rgba(52, 152, 219, 0.2)' : 'transparent',
+            color: beamDisplay === 'both' ? '#3498db' : 'rgba(255, 255, 255, 0.7)',
+            fontFamily: "'Inter', sans-serif",
+            fontSize: '14px',
+            fontWeight: '600',
+            cursor: 'pointer',
+            transition: 'all 0.2s ease',
+            border: beamDisplay === 'both' ? '1px solid rgba(52, 152, 219, 0.4)' : '1px solid transparent'
+          }}>
               Both
             </button>
           </div>
@@ -1180,7 +1286,22 @@ function CustomColorVisionInner({ onBack, title }) {
       </div>
 
       {/* Left Panel: Retinal Activations (LMS Cones) & perceived retina color & Trichromatic theory info */}
-      <div style={{ position: 'absolute', top: '90px', left: '20px', width: '300px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', padding: '20px', borderRadius: '16px', zIndex: 10, color: 'white', fontFamily: "'Inter', sans-serif", maxHeight: 'calc(100% - 110px)', overflowY: 'auto' }}>
+      <div style={{
+      position: 'absolute',
+      top: '90px',
+      left: '20px',
+      width: '300px',
+      background: 'rgba(20, 20, 30, 0.8)',
+      border: '1px solid rgba(255,255,255,0.1)',
+      backdropFilter: 'blur(12px)',
+      padding: '20px',
+      borderRadius: '16px',
+      zIndex: 10,
+      color: 'white',
+      fontFamily: "'Inter', sans-serif",
+      maxHeight: 'calc(100% - 110px)',
+      overflowY: 'auto'
+    }}>
         <h3 className="text-sm font-semibold text-zinc-300 flex items-center gap-2 mb-4 border-b border-zinc-800 pb-2">
           <Activity size={16} className="text-emerald-400" />
           Retina Response
@@ -1196,10 +1317,9 @@ function CustomColorVisionInner({ onBack, title }) {
               </span>
             </div>
             <div className="w-full h-2 bg-zinc-950 overflow-hidden rounded-full">
-              <div 
-                className="h-full bg-rose-500 transition-all duration-150"
-                style={{ width: `${lActivation}%` }}
-              />
+              <div className="h-full bg-rose-500 transition-all duration-150" style={{
+              width: `${lActivation}%`
+            }} />
             </div>
             <span className="text-[10px] text-zinc-500 leading-normal">Peak: 560 nm (Red/Yellow)</span>
           </div>
@@ -1213,10 +1333,9 @@ function CustomColorVisionInner({ onBack, title }) {
               </span>
             </div>
             <div className="w-full h-2 bg-zinc-950 overflow-hidden rounded-full">
-              <div 
-                className="h-full bg-emerald-500 transition-all duration-150"
-                style={{ width: `${mActivation}%` }}
-              />
+              <div className="h-full bg-emerald-500 transition-all duration-150" style={{
+              width: `${mActivation}%`
+            }} />
             </div>
             <span className="text-[10px] text-zinc-500 leading-normal">Peak: 530 nm (Green/Yellow)</span>
           </div>
@@ -1230,10 +1349,9 @@ function CustomColorVisionInner({ onBack, title }) {
               </span>
             </div>
             <div className="w-full h-2 bg-zinc-950 overflow-hidden rounded-full">
-              <div 
-                className="h-full bg-indigo-500 transition-all duration-150"
-                style={{ width: `${sActivation}%` }}
-              />
+              <div className="h-full bg-indigo-500 transition-all duration-150" style={{
+              width: `${sActivation}%`
+            }} />
             </div>
             <span className="text-[10px] text-zinc-500 leading-normal">Peak: 420 nm (Violet/Blue)</span>
           </div>
@@ -1248,10 +1366,9 @@ function CustomColorVisionInner({ onBack, title }) {
               <span className="font-semibold text-white">
                 {getColorName(perceivedRGB.r, perceivedRGB.g, perceivedRGB.b)}
               </span>
-              <span 
-                className="w-4 h-4 rounded-md border border-zinc-800 inline-block"
-                style={{ backgroundColor: `rgb(${perceivedRGB.r}, ${perceivedRGB.g}, ${perceivedRGB.b})` }}
-              />
+              <span className="w-4 h-4 rounded-md border border-zinc-800 inline-block" style={{
+              backgroundColor: `rgb(${perceivedRGB.r}, ${perceivedRGB.g}, ${perceivedRGB.b})`
+            }} />
             </div>
           </div>
 
@@ -1269,7 +1386,22 @@ function CustomColorVisionInner({ onBack, title }) {
       </div>
 
       {/* Right Panel: Controls & parameters */}
-      <div style={{ position: 'absolute', top: '90px', right: '20px', width: '300px', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', padding: '20px', borderRadius: '16px', zIndex: 10, color: 'white', fontFamily: "'Inter', sans-serif", maxHeight: 'calc(100% - 110px)', overflowY: 'auto' }}>
+      <div style={{
+      position: 'absolute',
+      top: '90px',
+      right: '20px',
+      width: '300px',
+      background: 'rgba(20, 20, 30, 0.8)',
+      border: '1px solid rgba(255,255,255,0.1)',
+      backdropFilter: 'blur(12px)',
+      padding: '20px',
+      borderRadius: '16px',
+      zIndex: 10,
+      color: 'white',
+      fontFamily: "'Inter', sans-serif",
+      maxHeight: 'calc(100% - 110px)',
+      overflowY: 'auto'
+    }}>
         <h3 className="text-sm font-semibold text-zinc-300 flex items-center gap-2 mb-4 border-b border-zinc-800 pb-2">
           <Sliders size={16} className="text-purple-400" />
           Controls
@@ -1277,31 +1409,17 @@ function CustomColorVisionInner({ onBack, title }) {
 
         {/* Simulation mode select tabs */}
         <div className="flex gap-1 bg-zinc-950/40 p-1 rounded-xl mb-4 border border-zinc-800/40">
-          <button
-            onClick={() => {
-              setMode('single');
-              particlesRef.current = [];
-            }}
-            className={`flex-1 py-1.5 rounded-lg text-[11px] font-semibold tracking-wider uppercase transition flex items-center justify-center gap-1.5 ${
-              mode === 'single' 
-                ? 'bg-indigo-600/80 text-white shadow-md' 
-                : 'text-zinc-400 hover:text-zinc-200'
-            }`}
-          >
+          <button onClick={() => {
+          setMode('single');
+          particlesRef.current = [];
+        }} className={`flex-1 py-1.5 rounded-lg text-[11px] font-semibold tracking-wider uppercase transition flex items-center justify-center gap-1.5 ${mode === 'single' ? 'bg-indigo-600/80 text-white shadow-md' : 'text-zinc-400 hover:text-zinc-200'}`}>
             <Lightbulb size={12} />
             Single
           </button>
-          <button
-            onClick={() => {
-              setMode('rgb');
-              particlesRef.current = [];
-            }}
-            className={`flex-1 py-1.5 rounded-lg text-[11px] font-semibold tracking-wider uppercase transition flex items-center justify-center gap-1.5 ${
-              mode === 'rgb' 
-                ? 'bg-indigo-600/80 text-white shadow-md' 
-                : 'text-zinc-400 hover:text-zinc-200'
-            }`}
-          >
+          <button onClick={() => {
+          setMode('rgb');
+          particlesRef.current = [];
+        }} className={`flex-1 py-1.5 rounded-lg text-[11px] font-semibold tracking-wider uppercase transition flex items-center justify-center gap-1.5 ${mode === 'rgb' ? 'bg-indigo-600/80 text-white shadow-md' : 'text-zinc-400 hover:text-zinc-200'}`}>
             <Sliders size={12} />
             RGB
           </button>
@@ -1310,8 +1428,7 @@ function CustomColorVisionInner({ onBack, title }) {
         {/* DYNAMIC SETTINGS SLIDER PANEL */}
         <div className="flex flex-col gap-4">
           {/* A. SINGLE BULB MODE CONTROLS */}
-          {mode === 'single' && (
-            <div className="flex flex-col gap-4">
+          {mode === 'single' && <div className="flex flex-col gap-4">
               
               {/* Wavelength Slider */}
               <div className="flex flex-col gap-1.5">
@@ -1324,26 +1441,14 @@ function CustomColorVisionInner({ onBack, title }) {
                 
                 {/* Spectral color slider track */}
                 <div className="relative w-full h-3 rounded-md overflow-hidden border border-zinc-800">
-                  <div 
-                    className="absolute inset-0 pointer-events-none"
-                    style={{
-                      background: 'linear-gradient(to right, #700070 0%, #0000ff 17%, #00ffff 33%, #00ff00 50%, #ffff00 67%, #ff7f00 83%, #ff0000 100%)'
-                    }}
-                  />
-                  <input 
-                    type="range" 
-                    min="380" 
-                    max="780"
-                    step="1"
-                    value={bulbWavelength}
-                    onChange={(e) => setBulbWavelength(Number(e.target.value))}
-                    className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                  />
+                  <div className="absolute inset-0 pointer-events-none" style={{
+                background: 'linear-gradient(to right, #700070 0%, #0000ff 17%, #00ffff 33%, #00ff00 50%, #ffff00 67%, #ff7f00 83%, #ff0000 100%)'
+              }} />
+                  <input type="range" min="380" max="780" step="1" value={bulbWavelength} onChange={e => setBulbWavelength(Number(e.target.value))} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
                   {/* Interactive slide indicator circle */}
-                  <div 
-                    className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-white border border-zinc-900 rounded-full pointer-events-none shadow-md"
-                    style={{ left: `calc(${((bulbWavelength - 380) / 400) * 100}% - 7px)` }}
-                  />
+                  <div className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-white border border-zinc-900 rounded-full pointer-events-none shadow-md" style={{
+                left: `calc(${(bulbWavelength - 380) / 400 * 100}% - 7px)`
+              }} />
                 </div>
               </div>
 
@@ -1355,15 +1460,7 @@ function CustomColorVisionInner({ onBack, title }) {
                     {Math.round(bulbIntensity * 100)}%
                   </span>
                 </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="1"
-                  step="0.01"
-                  value={bulbIntensity}
-                  onChange={(e) => setBulbIntensity(Number(e.target.value))}
-                  className="w-full accent-indigo-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800"
-                />
+                <input type="range" min="0" max="1" step="0.01" value={bulbIntensity} onChange={e => setBulbIntensity(Number(e.target.value))} className="w-full accent-indigo-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800" />
               </div>
 
               {/* Filter Active Toggle Card */}
@@ -1373,23 +1470,15 @@ function CustomColorVisionInner({ onBack, title }) {
                     <Layers size={14} className={filterActive ? 'text-indigo-400' : 'text-zinc-500'} />
                     <span className="text-xs font-semibold text-zinc-300">Wavelength Filter</span>
                   </div>
-                  <button
-                    onClick={() => {
-                      setFilterActive(!filterActive);
-                      particlesRef.current = [];
-                    }}
-                    className={`w-9 h-4.5 rounded-full p-0.5 transition-colors duration-200 focus:outline-none bg-zinc-700 ${
-                      filterActive ? 'bg-indigo-600' : ''
-                    }`}
-                  >
-                    <div className={`bg-white w-3.5 h-3.5 rounded-full shadow-md transform duration-200 ${
-                      filterActive ? 'translate-x-4.5' : 'translate-x-0'
-                    }`} />
+                  <button onClick={() => {
+                setFilterActive(!filterActive);
+                particlesRef.current = [];
+              }} className={`w-9 h-4.5 rounded-full p-0.5 transition-colors duration-200 focus:outline-none bg-zinc-700 ${filterActive ? 'bg-indigo-600' : ''}`}>
+                    <div className={`bg-white w-3.5 h-3.5 rounded-full shadow-md transform duration-200 ${filterActive ? 'translate-x-4.5' : 'translate-x-0'}`} />
                   </button>
                 </div>
 
-                {filterActive && (
-                  <div className="flex flex-col gap-3 mt-1 border-t border-zinc-800/60 pt-2.5">
+                {filterActive && <div className="flex flex-col gap-3 mt-1 border-t border-zinc-800/60 pt-2.5">
                     
                     {/* Filter Wavelength */}
                     <div className="flex flex-col gap-1.5">
@@ -1402,25 +1491,13 @@ function CustomColorVisionInner({ onBack, title }) {
                       
                       {/* Spectrum track for filter */}
                       <div className="relative w-full h-3 rounded-md overflow-hidden border border-zinc-800">
-                        <div 
-                          className="absolute inset-0 pointer-events-none"
-                          style={{
-                            background: 'linear-gradient(to right, #700070 0%, #0000ff 17%, #00ffff 33%, #00ff00 50%, #ffff00 67%, #ff7f00 83%, #ff0000 100%)'
-                          }}
-                        />
-                        <input 
-                          type="range" 
-                          min="380" 
-                          max="780"
-                          step="1"
-                          value={filterWavelength}
-                          onChange={(e) => setFilterWavelength(Number(e.target.value))}
-                          className="absolute inset-0 w-full h-full opacity-0 cursor-pointer"
-                        />
-                        <div 
-                          className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-white border border-zinc-900 rounded-full pointer-events-none shadow-md"
-                          style={{ left: `calc(${((filterWavelength - 380) / 400) * 100}% - 7px)` }}
-                        />
+                        <div className="absolute inset-0 pointer-events-none" style={{
+                    background: 'linear-gradient(to right, #700070 0%, #0000ff 17%, #00ffff 33%, #00ff00 50%, #ffff00 67%, #ff7f00 83%, #ff0000 100%)'
+                  }} />
+                        <input type="range" min="380" max="780" step="1" value={filterWavelength} onChange={e => setFilterWavelength(Number(e.target.value))} className="absolute inset-0 w-full h-full opacity-0 cursor-pointer" />
+                        <div className="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 bg-white border border-zinc-900 rounded-full pointer-events-none shadow-md" style={{
+                    left: `calc(${(filterWavelength - 380) / 400 * 100}% - 7px)`
+                  }} />
                       </div>
                     </div>
 
@@ -1432,25 +1509,14 @@ function CustomColorVisionInner({ onBack, title }) {
                           ±{filterWidth} nm
                         </span>
                       </div>
-                      <input
-                        type="range"
-                        min="10"
-                        max="120"
-                        step="1"
-                        value={filterWidth}
-                        onChange={(e) => setFilterWidth(Number(e.target.value))}
-                        className="w-full accent-indigo-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800"
-                      />
+                      <input type="range" min="10" max="120" step="1" value={filterWidth} onChange={e => setFilterWidth(Number(e.target.value))} className="w-full accent-indigo-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800" />
                     </div>
-                  </div>
-                )}
+                  </div>}
               </div>
-            </div>
-          )}
+            </div>}
 
           {/* B. RGB BULBS MODE CONTROLS */}
-          {mode === 'rgb' && (
-            <div className="flex flex-col gap-3">
+          {mode === 'rgb' && <div className="flex flex-col gap-3">
               {/* Red Intensity */}
               <div className="flex flex-col gap-1.5 bg-rose-950/20 border border-rose-900/10 p-2.5 rounded-xl">
                 <div className="flex justify-between text-xs">
@@ -1462,15 +1528,7 @@ function CustomColorVisionInner({ onBack, title }) {
                     {Math.round(redIntensity * 100)}%
                   </span>
                 </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="1"
-                  step="0.01"
-                  value={redIntensity}
-                  onChange={(e) => setRedIntensity(Number(e.target.value))}
-                  className="w-full accent-red-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800"
-                />
+                <input type="range" min="0" max="1" step="0.01" value={redIntensity} onChange={e => setRedIntensity(Number(e.target.value))} className="w-full accent-red-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800" />
               </div>
 
               {/* Green Intensity */}
@@ -1484,15 +1542,7 @@ function CustomColorVisionInner({ onBack, title }) {
                     {Math.round(greenIntensity * 100)}%
                   </span>
                 </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="1"
-                  step="0.01"
-                  value={greenIntensity}
-                  onChange={(e) => setGreenIntensity(Number(e.target.value))}
-                  className="w-full accent-emerald-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800"
-                />
+                <input type="range" min="0" max="1" step="0.01" value={greenIntensity} onChange={e => setGreenIntensity(Number(e.target.value))} className="w-full accent-emerald-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800" />
               </div>
 
               {/* Blue Intensity */}
@@ -1506,18 +1556,9 @@ function CustomColorVisionInner({ onBack, title }) {
                     {Math.round(blueIntensity * 100)}%
                   </span>
                 </div>
-                <input
-                  type="range"
-                  min="0"
-                  max="1"
-                  step="0.01"
-                  value={blueIntensity}
-                  onChange={(e) => setBlueIntensity(Number(e.target.value))}
-                  className="w-full accent-blue-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800"
-                />
+                <input type="range" min="0" max="1" step="0.01" value={blueIntensity} onChange={e => setBlueIntensity(Number(e.target.value))} className="w-full accent-blue-500 h-1.5 rounded-lg appearance-none cursor-pointer bg-zinc-800" />
               </div>
-            </div>
-          )}
+            </div>}
 
           {/* Educational theory for filters */}
           <div className="border-t border-zinc-800/60 pt-3 flex flex-col gap-1.5 mt-2">
@@ -1533,18 +1574,14 @@ function CustomColorVisionInner({ onBack, title }) {
       </div>
 
       {/* DETAILED INFO MODAL */}
-      {showInfoModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-md transition duration-300 bg-black/40">
+      {showInfoModal && <div className="fixed inset-0 z-50 flex items-center justify-center p-4 backdrop-blur-md transition duration-300 bg-black/40">
           <div className="border border-zinc-800 rounded-2xl max-w-2xl w-full p-6 shadow-2xl flex flex-col gap-4 max-h-[85vh] overflow-y-auto bg-zinc-950">
             <div className="flex items-center justify-between border-b border-zinc-800 pb-3">
               <h2 className="text-lg font-bold text-white flex items-center gap-2">
                 <Info className="text-indigo-400" />
                 The Physics & Biology of Color Vision
               </h2>
-              <button
-                onClick={() => setShowInfoModal(false)}
-                className="text-zinc-400 hover:text-white text-xs font-semibold px-2 py-1 rounded-lg transition"
-              >
+              <button onClick={() => setShowInfoModal(false)} className="text-zinc-400 hover:text-white text-xs font-semibold px-2 py-1 rounded-lg transition">
                 Close
               </button>
             </div>
@@ -1599,23 +1636,18 @@ function CustomColorVisionInner({ onBack, title }) {
             </div>
 
             <div className="border-t border-zinc-800 pt-3 flex justify-end">
-              <button
-                onClick={() => setShowInfoModal(false)}
-                className="px-5 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-semibold shadow transition duration-200"
-              >
+              <button onClick={() => setShowInfoModal(false)} className="px-5 py-1.5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-lg text-xs font-semibold shadow transition duration-200">
                 Get Started
               </button>
             </div>
           </div>
-        </div>
-      )}
+        </div>}
 
-    </div>
-  );
+    </div>;
 }
-
-export default function CustomColorVision({ onBack, title }) {
-    return (
-        <CustomColorVisionInner onBack={onBack} title={title} />
-    );
+export default function CustomColorVision({
+  onBack,
+  title
+}) {
+  return <CustomColorVisionInner onBack={onBack} title={title} />;
 }

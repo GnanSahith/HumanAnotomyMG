@@ -1,446 +1,450 @@
 import React, { useRef, useState, useEffect, useCallback } from 'react';
-import { ArrowLeft, Play, Pause, RotateCcw, Zap, Info, Activity, Sliders, RefreshCw } from 'lucide-react';
+import { ArrowLeft, Play, Pause, RotateCcw, Zap, Info, Activity, Sliders, RefreshCw, Settings2 } from 'lucide-react';
 
 // Gyromagnetic ratio scaled for visible simulation speed (4*pi rad/s per Tesla)
 const GAMMA_SIM = 4.0 * Math.PI;
 
 // Tissue relaxation presets
 const TISSUE_PRESETS = {
-  fat: { T1: 600, T2: 80, name: 'Fat Tissue' },
-  muscle: { T1: 1200, T2: 50, name: 'Muscle Tissue' },
-  csf: { T1: 2800, T2: 240, name: 'Cerebrospinal Fluid (CSF)' },
-  tumor: { T1: 1800, T2: 110, name: 'Pathology / Tumor' },
-  custom: { T1: 1000, T2: 100, name: 'Custom Material' }
+  fat: {
+    T1: 600,
+    T2: 80,
+    name: 'Fat Tissue'
+  },
+  muscle: {
+    T1: 1200,
+    T2: 50,
+    name: 'Muscle Tissue'
+  },
+  csf: {
+    T1: 2800,
+    T2: 240,
+    name: 'Cerebrospinal Fluid (CSF)'
+  },
+  tumor: {
+    T1: 1800,
+    T2: 110,
+    name: 'Pathology / Tumor'
+  },
+  custom: {
+    T1: 1000,
+    T2: 100,
+    name: 'Custom Material'
+  }
 };
 
 // --- Rendering Functions moved to Module scope ---
 function drawGridCanvas(canvas, state, rfActive, phi) {
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+  const dpr = window.devicePixelRatio || 1;
+  const width = canvas.width / dpr;
+  const height = canvas.height / dpr;
+  ctx.save();
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, width, height);
+  const cx = width / 2;
+  const cy = height / 2 + 10;
 
-    const dpr = window.devicePixelRatio || 1;
-    const width = canvas.width / dpr;
-    const height = canvas.height / dpr;
+  // Draw static magnetic field B0 lines in background
+  ctx.strokeStyle = `rgba(191, 90, 242, ${0.03 + state.B0 / 3.0 * 0.12})`;
+  ctx.lineWidth = 1;
+  const lines = Math.floor(state.B0 * 4) + 3;
+  for (let i = 0; i < lines; i++) {
+    const lx = cx - 130 + 260 / (lines - 1) * i;
+    ctx.beginPath();
+    ctx.moveTo(lx, cy + 70);
+    ctx.lineTo(lx, cy - 70);
+    ctx.stroke();
 
-    ctx.save();
-    ctx.scale(dpr, dpr);
-    ctx.clearRect(0, 0, width, height);
+    // Field arrow head
+    ctx.fillStyle = `rgba(191, 90, 242, ${0.08 + state.B0 / 3.0 * 0.2})`;
+    ctx.beginPath();
+    ctx.moveTo(lx, cy - 75);
+    ctx.lineTo(lx - 3, cy - 69);
+    ctx.lineTo(lx + 3, cy - 69);
+    ctx.fill();
+  }
 
-    const cx = width / 2;
-    const cy = height / 2 + 10;
+  // Draw scanner bore back cylinder ring
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+  ctx.lineWidth = 2;
+  ctx.beginPath();
+  ctx.ellipse(cx, cy - 20, 160, 75, 0, 0, 2 * Math.PI);
+  ctx.stroke();
 
-    // Draw static magnetic field B0 lines in background
-    ctx.strokeStyle = `rgba(191, 90, 242, ${0.03 + (state.B0 / 3.0) * 0.12})`;
-    ctx.lineWidth = 1;
-    const lines = Math.floor(state.B0 * 4) + 3;
-    for (let i = 0; i < lines; i++) {
-      const lx = cx - 130 + (260 / (lines - 1)) * i;
+  // Draw RF transmitter plates on sides
+  // Left coil
+  ctx.fillStyle = rfActive ? 'rgba(255, 159, 10, 0.18)' : 'rgba(255, 255, 255, 0.03)';
+  ctx.strokeStyle = rfActive ? 'rgba(255, 159, 10, 0.8)' : 'rgba(255, 255, 255, 0.15)';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.ellipse(cx - 150, cy, 10, 30, Math.PI / 6, 0, 2 * Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  // Right coil
+  ctx.fillStyle = rfActive ? 'rgba(255, 159, 10, 0.18)' : 'rgba(255, 255, 255, 0.03)';
+  ctx.strokeStyle = rfActive ? 'rgba(255, 159, 10, 0.8)' : 'rgba(255, 255, 255, 0.15)';
+  ctx.beginPath();
+  ctx.ellipse(cx + 150, cy, 10, 30, -Math.PI / 6, 0, 2 * Math.PI);
+  ctx.fill();
+  ctx.stroke();
+
+  // Draw RF waves crossing the bore
+  if (rfActive) {
+    ctx.strokeStyle = `rgba(255, 159, 10, ${0.2 + 0.3 * Math.sin(phi * 4.5)})`;
+    ctx.lineWidth = 1.2;
+    const amplitude = 10 * (state.rfAmplitude / 0.5);
+    for (let offset = -20; offset <= 20; offset += 20) {
       ctx.beginPath();
-      ctx.moveTo(lx, cy + 70);
-      ctx.lineTo(lx, cy - 70);
+      for (let x = cx - 150; x <= cx + 150; x += 5) {
+        const y = cy + offset + Math.sin((x - cx) * 0.07 + phi * 5) * amplitude;
+        if (x === cx - 150) ctx.moveTo(x, y);else ctx.lineTo(x, y);
+      }
       ctx.stroke();
-
-      // Field arrow head
-      ctx.fillStyle = `rgba(191, 90, 242, ${0.08 + (state.B0 / 3.0) * 0.2})`;
-      ctx.beginPath();
-      ctx.moveTo(lx, cy - 75);
-      ctx.lineTo(lx - 3, cy - 69);
-      ctx.lineTo(lx + 3, cy - 69);
-      ctx.fill();
     }
+  }
 
-    // Draw scanner bore back cylinder ring
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
-    ctx.lineWidth = 2;
-    ctx.beginPath();
-    ctx.ellipse(cx, cy - 20, 160, 75, 0, 0, 2 * Math.PI);
-    ctx.stroke();
+  // Draw 3D isometric grid of precessing spins
+  const N = 5;
+  const sX = 20; // 3D X-axis scaling
+  const sY = 20; // 3D Y-axis scaling
+  const sZ = 38; // 3D Z-axis scaling (vertical height)
 
-    // Draw RF transmitter plates on sides
-    // Left coil
-    ctx.fillStyle = rfActive ? 'rgba(255, 159, 10, 0.18)' : 'rgba(255, 255, 255, 0.03)';
-    ctx.strokeStyle = rfActive ? 'rgba(255, 159, 10, 0.8)' : 'rgba(255, 255, 255, 0.15)';
-    ctx.lineWidth = 1.5;
-    ctx.beginPath();
-    ctx.ellipse(cx - 150, cy, 10, 30, Math.PI / 6, 0, 2 * Math.PI);
-    ctx.fill();
-    ctx.stroke();
-
-    // Right coil
-    ctx.fillStyle = rfActive ? 'rgba(255, 159, 10, 0.18)' : 'rgba(255, 255, 255, 0.03)';
-    ctx.strokeStyle = rfActive ? 'rgba(255, 159, 10, 0.8)' : 'rgba(255, 255, 255, 0.15)';
-    ctx.beginPath();
-    ctx.ellipse(cx + 150, cy, 10, 30, -Math.PI / 6, 0, 2 * Math.PI);
-    ctx.fill();
-    ctx.stroke();
-
-    // Draw RF waves crossing the bore
-    if (rfActive) {
-      ctx.strokeStyle = `rgba(255, 159, 10, ${0.2 + 0.3 * Math.sin(phi * 4.5)})`;
-      ctx.lineWidth = 1.2;
-      const amplitude = 10 * (state.rfAmplitude / 0.5);
-      for (let offset = -20; offset <= 20; offset += 20) {
-        ctx.beginPath();
-        for (let x = cx - 150; x <= cx + 150; x += 5) {
-          const y = cy + offset + Math.sin((x - cx) * 0.07 + phi * 5) * amplitude;
-          if (x === cx - 150) ctx.moveTo(x, y);
-          else ctx.lineTo(x, y);
-        }
-        ctx.stroke();
-      }
-    }
-
-    // Draw 3D isometric grid of precessing spins
-    const N = 5;
-    const sX = 20; // 3D X-axis scaling
-    const sY = 20; // 3D Y-axis scaling
-    const sZ = 38; // 3D Z-axis scaling (vertical height)
-
-    // Isometric projection mapping: converts 3D spins to 2D screen coordinates
-    const project = (bx, by, x3d, y3d, z3d) => {
-      const aX = Math.PI / 6;       // 30 deg axis
-      const aY = 5.0 * Math.PI / 6; // 150 deg axis
-      const px = bx + x3d * sX * Math.cos(aX) + y3d * sY * Math.cos(aY);
-      const py = by + x3d * sX * Math.sin(aX) + y3d * sY * Math.sin(aY) - z3d * sZ;
-      return { x: px, y: py };
+  // Isometric projection mapping: converts 3D spins to 2D screen coordinates
+  const project = (bx, by, x3d, y3d, z3d) => {
+    const aX = Math.PI / 6; // 30 deg axis
+    const aY = 5.0 * Math.PI / 6; // 150 deg axis
+    const px = bx + x3d * sX * Math.cos(aX) + y3d * sY * Math.cos(aY);
+    const py = by + x3d * sX * Math.sin(aX) + y3d * sY * Math.sin(aY) - z3d * sZ;
+    return {
+      x: px,
+      y: py
     };
+  };
 
-    // Draw spins back-to-front (depth sorted)
-    for (let r = 0; r < N; r++) {
-      for (let c = 0; c < N; c++) {
-        const spin = state.spins[r * N + c];
-        const xGrid = r - 2;
-        const yGrid = c - 2;
+  // Draw spins back-to-front (depth sorted)
+  for (let r = 0; r < N; r++) {
+    for (let c = 0; c < N; c++) {
+      const spin = state.spins[r * N + c];
+      const xGrid = r - 2;
+      const yGrid = c - 2;
 
-        // Base center of this spin on screen
-        const baseX = cx + (xGrid - yGrid) * 32;
-        const baseY = cy + (xGrid + yGrid) * 16 + 10;
+      // Base center of this spin on screen
+      const baseX = cx + (xGrid - yGrid) * 32;
+      const baseY = cy + (xGrid + yGrid) * 16 + 10;
 
-        // Draw spin base transverse plane ellipse
-        ctx.strokeStyle = 'rgba(255, 255, 255, 0.06)';
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.ellipse(baseX, baseY, sX * 0.8, sY * 0.4, 0, 0, 2 * Math.PI);
-        ctx.stroke();
-
-        // Project arrow tip
-        const tip = project(baseX, baseY, spin.x, spin.y, spin.z);
-
-        // Interpolate arrow color based on transverse vs longitudinal magnitude
-        const mxy = Math.sqrt(spin.x * spin.x + spin.y * spin.y);
-        // Spin-up equilibrium is Red (#ff375f), flipped transverse is Cyan (#0a84ff)
-        const red = Math.round(255 - mxy * 245);
-        const green = Math.round(55 + mxy * 77);
-        const blue = Math.round(95 + mxy * 160);
-        const color = `rgb(${red}, ${green}, ${blue})`;
-
-        // Draw arrow shaft
-        ctx.strokeStyle = color;
-        ctx.lineWidth = 2.0;
-        ctx.beginPath();
-        ctx.moveTo(baseX, baseY);
-        ctx.lineTo(tip.x, tip.y);
-        ctx.stroke();
-
-        // Draw arrowhead pointing along 3D orientation
-        const dx = tip.x - baseX;
-        const dy = tip.y - baseY;
-        const len = Math.sqrt(dx*dx + dy*dy);
-        if (len > 2) {
-          const ux = dx / len;
-          const uy = dy / len;
-          ctx.fillStyle = color;
-          ctx.beginPath();
-          ctx.moveTo(tip.x, tip.y);
-          ctx.lineTo(tip.x - ux * 5 + uy * 2, tip.y - uy * 5 - ux * 2);
-          ctx.lineTo(tip.x - ux * 5 - uy * 2, tip.y - uy * 5 + ux * 2);
-          ctx.fill();
-        }
-      }
-    }
-
-    // Draw scanner bore front opening (lays on top for 3D overlay)
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.22)';
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.ellipse(cx, cy + 20, 180, 85, 0, 0, 2 * Math.PI);
-    ctx.stroke();
-
-    // Bore rim detail lines
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.ellipse(cx, cy + 18, 175, 82, 0, 0, 2 * Math.PI);
-    ctx.stroke();
-
-    ctx.restore();
-}
-
-function drawMacroCanvas(canvas, state, rfActive, phi) {
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const dpr = window.devicePixelRatio || 1;
-    const width = canvas.width / dpr;
-    const height = canvas.height / dpr;
-
-    ctx.save();
-    ctx.scale(dpr, dpr);
-    ctx.clearRect(0, 0, width, height);
-
-    const cx = width / 2;
-    const cy = height / 2;
-    const radius = 55;
-
-    // Draw sphere wireframe outer circle
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
-    ctx.stroke();
-
-    // Draw Z-axis (B0 direction)
-    ctx.strokeStyle = 'rgba(191, 90, 242, 0.25)';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(cx, cy - radius - 5);
-    ctx.lineTo(cx, cy + radius + 5);
-    ctx.stroke();
-
-    // Z-axis Arrow head
-    ctx.fillStyle = 'rgba(191, 90, 242, 0.5)';
-    ctx.beginPath();
-    ctx.moveTo(cx, cy - radius - 8);
-    ctx.lineTo(cx - 3, cy - radius - 2);
-    ctx.lineTo(cx + 3, cy - radius - 2);
-    ctx.fill();
-
-    // Label B0
-    ctx.fillStyle = '#bf5af2';
-    ctx.font = '10px monospace';
-    ctx.fillText('B₀', cx + 6, cy - radius);
-
-    // Draw transverse XY-plane ellipse
-    ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
-    ctx.beginPath();
-    ctx.ellipse(cx, cy, radius, radius * 0.35, 0, 0, 2 * Math.PI);
-    ctx.stroke();
-
-    // Project function for Bloch sphere
-    const projectSphere = (x3d, y3d, z3d) => {
-      const aX = Math.PI / 6;
-      const aY = 5.0 * Math.PI / 6;
-      const px = cx + x3d * radius * Math.cos(aX) + y3d * radius * Math.cos(aY);
-      const py = cy + x3d * radius * Math.sin(aX) + y3d * radius * Math.sin(aY) - z3d * radius;
-      return { x: px, y: py };
-    };
-
-    const macro = state.macroSpin;
-    const mxy = Math.sqrt(macro.x * macro.x + macro.y * macro.y);
-
-    // Draw precession circular envelope at current Mz height
-    if (mxy > 0.03) {
-      ctx.strokeStyle = 'rgba(10, 132, 255, 0.18)';
+      // Draw spin base transverse plane ellipse
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.06)';
       ctx.lineWidth = 1;
-      ctx.setLineDash([2, 2]);
       ctx.beginPath();
-      for (let a = 0; a <= 2 * Math.PI + 0.1; a += 0.1) {
-        const pt = projectSphere(mxy * Math.cos(a), mxy * Math.sin(a), macro.z);
-        if (a === 0) ctx.moveTo(pt.x, pt.y);
-        else ctx.lineTo(pt.x, pt.y);
-      }
-      ctx.stroke();
-      ctx.setLineDash([]);
-    }
-
-    // Draw rotating RF field B1 vector (lies in XY-plane, z = 0)
-    if (rfActive) {
-      const ptB1 = projectSphere(0.7 * Math.cos(phi), 0.7 * Math.sin(phi), 0);
-      ctx.strokeStyle = '#ff9f0a';
-      ctx.lineWidth = 1.5;
-      ctx.beginPath();
-      ctx.moveTo(cx, cy);
-      ctx.lineTo(ptB1.x, ptB1.y);
+      ctx.ellipse(baseX, baseY, sX * 0.8, sY * 0.4, 0, 0, 2 * Math.PI);
       ctx.stroke();
 
-      // B1 Arrowhead
-      const dxB1 = ptB1.x - cx;
-      const dyB1 = ptB1.y - cy;
-      const lenB1 = Math.sqrt(dxB1*dxB1 + dyB1*dyB1);
-      if (lenB1 > 0) {
-        const ux = dxB1 / lenB1;
-        const uy = dyB1 / lenB1;
-        ctx.fillStyle = '#ff9f0a';
+      // Project arrow tip
+      const tip = project(baseX, baseY, spin.x, spin.y, spin.z);
+
+      // Interpolate arrow color based on transverse vs longitudinal magnitude
+      const mxy = Math.sqrt(spin.x * spin.x + spin.y * spin.y);
+      // Spin-up equilibrium is Red (#ff375f), flipped transverse is Cyan (#0a84ff)
+      const red = Math.round(255 - mxy * 245);
+      const green = Math.round(55 + mxy * 77);
+      const blue = Math.round(95 + mxy * 160);
+      const color = `rgb(${red}, ${green}, ${blue})`;
+
+      // Draw arrow shaft
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 2.0;
+      ctx.beginPath();
+      ctx.moveTo(baseX, baseY);
+      ctx.lineTo(tip.x, tip.y);
+      ctx.stroke();
+
+      // Draw arrowhead pointing along 3D orientation
+      const dx = tip.x - baseX;
+      const dy = tip.y - baseY;
+      const len = Math.sqrt(dx * dx + dy * dy);
+      if (len > 2) {
+        const ux = dx / len;
+        const uy = dy / len;
+        ctx.fillStyle = color;
         ctx.beginPath();
-        ctx.moveTo(ptB1.x, ptB1.y);
-        ctx.lineTo(ptB1.x - ux * 4 + uy * 2, ptB1.y - uy * 4 - ux * 2);
-        ctx.lineTo(ptB1.x - ux * 4 - uy * 2, ptB1.y - uy * 4 + ux * 2);
+        ctx.moveTo(tip.x, tip.y);
+        ctx.lineTo(tip.x - ux * 5 + uy * 2, tip.y - uy * 5 - ux * 2);
+        ctx.lineTo(tip.x - ux * 5 - uy * 2, tip.y - uy * 5 + ux * 2);
         ctx.fill();
       }
-
-      ctx.fillStyle = '#ff9f0a';
-      ctx.font = '9px monospace';
-      ctx.fillText('B₁', ptB1.x + 5, ptB1.y + 2);
     }
+  }
 
-    // Draw macro spin magnetization vector M
-    const tip = projectSphere(macro.x, macro.y, macro.z);
-    const red = Math.round(255 - mxy * 245);
-    const green = Math.round(55 + mxy * 77);
-    const blue = Math.round(95 + mxy * 160);
-    const color = `rgb(${red}, ${green}, ${blue})`;
+  // Draw scanner bore front opening (lays on top for 3D overlay)
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.22)';
+  ctx.lineWidth = 3;
+  ctx.beginPath();
+  ctx.ellipse(cx, cy + 20, 180, 85, 0, 0, 2 * Math.PI);
+  ctx.stroke();
 
-    ctx.strokeStyle = color;
-    ctx.lineWidth = 3.0;
+  // Bore rim detail lines
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.04)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.ellipse(cx, cy + 18, 175, 82, 0, 0, 2 * Math.PI);
+  ctx.stroke();
+  ctx.restore();
+}
+function drawMacroCanvas(canvas, state, rfActive, phi) {
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+  const dpr = window.devicePixelRatio || 1;
+  const width = canvas.width / dpr;
+  const height = canvas.height / dpr;
+  ctx.save();
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, width, height);
+  const cx = width / 2;
+  const cy = height / 2;
+  const radius = 55;
+
+  // Draw sphere wireframe outer circle
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.12)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.arc(cx, cy, radius, 0, 2 * Math.PI);
+  ctx.stroke();
+
+  // Draw Z-axis (B0 direction)
+  ctx.strokeStyle = 'rgba(191, 90, 242, 0.25)';
+  ctx.lineWidth = 1;
+  ctx.beginPath();
+  ctx.moveTo(cx, cy - radius - 5);
+  ctx.lineTo(cx, cy + radius + 5);
+  ctx.stroke();
+
+  // Z-axis Arrow head
+  ctx.fillStyle = 'rgba(191, 90, 242, 0.5)';
+  ctx.beginPath();
+  ctx.moveTo(cx, cy - radius - 8);
+  ctx.lineTo(cx - 3, cy - radius - 2);
+  ctx.lineTo(cx + 3, cy - radius - 2);
+  ctx.fill();
+
+  // Label B0
+  ctx.fillStyle = '#bf5af2';
+  ctx.font = '10px monospace';
+  ctx.fillText('B₀', cx + 6, cy - radius);
+
+  // Draw transverse XY-plane ellipse
+  ctx.strokeStyle = 'rgba(255, 255, 255, 0.08)';
+  ctx.beginPath();
+  ctx.ellipse(cx, cy, radius, radius * 0.35, 0, 0, 2 * Math.PI);
+  ctx.stroke();
+
+  // Project function for Bloch sphere
+  const projectSphere = (x3d, y3d, z3d) => {
+    const aX = Math.PI / 6;
+    const aY = 5.0 * Math.PI / 6;
+    const px = cx + x3d * radius * Math.cos(aX) + y3d * radius * Math.cos(aY);
+    const py = cy + x3d * radius * Math.sin(aX) + y3d * radius * Math.sin(aY) - z3d * radius;
+    return {
+      x: px,
+      y: py
+    };
+  };
+  const macro = state.macroSpin;
+  const mxy = Math.sqrt(macro.x * macro.x + macro.y * macro.y);
+
+  // Draw precession circular envelope at current Mz height
+  if (mxy > 0.03) {
+    ctx.strokeStyle = 'rgba(10, 132, 255, 0.18)';
+    ctx.lineWidth = 1;
+    ctx.setLineDash([2, 2]);
+    ctx.beginPath();
+    for (let a = 0; a <= 2 * Math.PI + 0.1; a += 0.1) {
+      const pt = projectSphere(mxy * Math.cos(a), mxy * Math.sin(a), macro.z);
+      if (a === 0) ctx.moveTo(pt.x, pt.y);else ctx.lineTo(pt.x, pt.y);
+    }
+    ctx.stroke();
+    ctx.setLineDash([]);
+  }
+
+  // Draw rotating RF field B1 vector (lies in XY-plane, z = 0)
+  if (rfActive) {
+    const ptB1 = projectSphere(0.7 * Math.cos(phi), 0.7 * Math.sin(phi), 0);
+    ctx.strokeStyle = '#ff9f0a';
+    ctx.lineWidth = 1.5;
     ctx.beginPath();
     ctx.moveTo(cx, cy);
-    ctx.lineTo(tip.x, tip.y);
+    ctx.lineTo(ptB1.x, ptB1.y);
     ctx.stroke();
 
-    // Magnetization Arrowhead
-    const dx = tip.x - cx;
-    const dy = tip.y - cy;
-    const len = Math.sqrt(dx*dx + dy*dy);
-    if (len > 2) {
-      const ux = dx / len;
-      const uy = dy / len;
-      ctx.fillStyle = color;
+    // B1 Arrowhead
+    const dxB1 = ptB1.x - cx;
+    const dyB1 = ptB1.y - cy;
+    const lenB1 = Math.sqrt(dxB1 * dxB1 + dyB1 * dyB1);
+    if (lenB1 > 0) {
+      const ux = dxB1 / lenB1;
+      const uy = dyB1 / lenB1;
+      ctx.fillStyle = '#ff9f0a';
       ctx.beginPath();
-      ctx.moveTo(tip.x, tip.y);
-      ctx.lineTo(tip.x - ux * 7 + uy * 3, tip.y - uy * 7 - ux * 3);
-      ctx.lineTo(tip.x - ux * 7 - uy * 3, tip.y - uy * 7 + ux * 3);
+      ctx.moveTo(ptB1.x, ptB1.y);
+      ctx.lineTo(ptB1.x - ux * 4 + uy * 2, ptB1.y - uy * 4 - ux * 2);
+      ctx.lineTo(ptB1.x - ux * 4 - uy * 2, ptB1.y - uy * 4 + ux * 2);
       ctx.fill();
     }
-
-    ctx.fillStyle = color;
-    ctx.font = 'bold 11px Inter, sans-serif';
-    ctx.fillText('M', tip.x + 5, tip.y - 3);
-
-    ctx.restore();
-}
-
-function drawGraphCanvas(canvas, state) {
-    if (!canvas) return;
-    const ctx = canvas.getContext('2d');
-    if (!ctx) return;
-
-    const dpr = window.devicePixelRatio || 1;
-    const width = canvas.width / dpr;
-    const height = canvas.height / dpr;
-
-    ctx.save();
-    ctx.scale(dpr, dpr);
-    ctx.clearRect(0, 0, width, height);
-
-    // Oscilloscope screen background
-    ctx.fillStyle = '#0a0a0f';
-    ctx.fillRect(0, 0, width, height);
-
-    // Draw grid lines
-    ctx.strokeStyle = '#14141e';
-    ctx.lineWidth = 1;
-    const rows = 4;
-    const cols = 8;
-    for (let r = 1; r < rows; r++) {
-      const y = (height / rows) * r;
-      ctx.beginPath();
-      ctx.moveTo(0, y);
-      ctx.lineTo(width, y);
-      ctx.stroke();
-    }
-    for (let c = 1; c < cols; c++) {
-      const x = (width / cols) * c;
-      ctx.beginPath();
-      ctx.moveTo(x, 0);
-      ctx.lineTo(x, height);
-      ctx.stroke();
-    }
-
-    const history = state.graphHistory;
-    if (history.length < 2) {
-      ctx.restore();
-      return;
-    }
-
-    const midY = height / 2;
-    const rfScale = height * 0.22;
-    const fidScale = height * 0.38;
-
-    // Draw RF pulse regions (translucent yellow background bars)
-    ctx.fillStyle = 'rgba(255, 159, 10, 0.04)';
-    let inPulseRegion = false;
-    let regionStartIdx = 0;
-    for (let i = 0; i < history.length; i++) {
-      const active = Math.abs(history[i].rf) > 0.005;
-      if (active && !inPulseRegion) {
-        inPulseRegion = true;
-        regionStartIdx = i;
-      } else if (!active && inPulseRegion) {
-        inPulseRegion = false;
-        const xStart = (width / 500) * regionStartIdx;
-        const xEnd = (width / 500) * i;
-        ctx.fillRect(xStart, 0, xEnd - xStart, height);
-        
-        ctx.strokeStyle = 'rgba(255, 159, 10, 0.12)';
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.moveTo(xStart, 0); ctx.lineTo(xStart, height);
-        ctx.moveTo(xEnd, 0); ctx.lineTo(xEnd, height);
-        ctx.stroke();
-      }
-    }
-    if (inPulseRegion) {
-      const xStart = (width / 500) * regionStartIdx;
-      ctx.fillRect(xStart, 0, width - xStart, height);
-    }
-
-    // Plot RF Transmit Trace (Orange)
-    ctx.strokeStyle = '#ff9f0a';
-    ctx.lineWidth = 1.2;
-    ctx.beginPath();
-    let rfStarted = false;
-    for (let i = 0; i < history.length; i++) {
-      const x = (width / 500) * i;
-      const y = midY - history[i].rf * rfScale;
-      if (!rfStarted) {
-        ctx.moveTo(x, y);
-        rfStarted = true;
-      } else {
-        ctx.lineTo(x, y);
-      }
-    }
-    ctx.stroke();
-
-    // Plot FID / Spin Echo Signal Trace (Neon Blue)
-    ctx.strokeStyle = '#0a84ff';
-    ctx.lineWidth = 1.8;
-    ctx.beginPath();
-    let fidStarted = false;
-    for (let i = 0; i < history.length; i++) {
-      const x = (width / 500) * i;
-      const y = midY - history[i].fid * fidScale;
-      if (!fidStarted) {
-        ctx.moveTo(x, y);
-        fidStarted = true;
-      } else {
-        ctx.lineTo(x, y);
-      }
-    }
-    ctx.stroke();
-
-    // Labels & Legends overlay
-    ctx.fillStyle = 'rgba(255,255,255,0.45)';
-    ctx.font = '10px Inter, sans-serif';
-    ctx.fillText('FID / Receiver Signal (Mx)', 10, 16);
-    
     ctx.fillStyle = '#ff9f0a';
-    ctx.fillText('RF Transmit', width - 85, 16);
+    ctx.font = '9px monospace';
+    ctx.fillText('B₁', ptB1.x + 5, ptB1.y + 2);
+  }
 
-    ctx.restore();
+  // Draw macro spin magnetization vector M
+  const tip = projectSphere(macro.x, macro.y, macro.z);
+  const red = Math.round(255 - mxy * 245);
+  const green = Math.round(55 + mxy * 77);
+  const blue = Math.round(95 + mxy * 160);
+  const color = `rgb(${red}, ${green}, ${blue})`;
+  ctx.strokeStyle = color;
+  ctx.lineWidth = 3.0;
+  ctx.beginPath();
+  ctx.moveTo(cx, cy);
+  ctx.lineTo(tip.x, tip.y);
+  ctx.stroke();
+
+  // Magnetization Arrowhead
+  const dx = tip.x - cx;
+  const dy = tip.y - cy;
+  const len = Math.sqrt(dx * dx + dy * dy);
+  if (len > 2) {
+    const ux = dx / len;
+    const uy = dy / len;
+    ctx.fillStyle = color;
+    ctx.beginPath();
+    ctx.moveTo(tip.x, tip.y);
+    ctx.lineTo(tip.x - ux * 7 + uy * 3, tip.y - uy * 7 - ux * 3);
+    ctx.lineTo(tip.x - ux * 7 - uy * 3, tip.y - uy * 7 + ux * 3);
+    ctx.fill();
+  }
+  ctx.fillStyle = color;
+  ctx.font = 'bold 11px Inter, sans-serif';
+  ctx.fillText('M', tip.x + 5, tip.y - 3);
+  ctx.restore();
 }
+function drawGraphCanvas(canvas, state) {
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+  const dpr = window.devicePixelRatio || 1;
+  const width = canvas.width / dpr;
+  const height = canvas.height / dpr;
+  ctx.save();
+  ctx.scale(dpr, dpr);
+  ctx.clearRect(0, 0, width, height);
 
+  // Oscilloscope screen background
+  ctx.fillStyle = '#0a0a0f';
+  ctx.fillRect(0, 0, width, height);
+
+  // Draw grid lines
+  ctx.strokeStyle = '#14141e';
+  ctx.lineWidth = 1;
+  const rows = 4;
+  const cols = 8;
+  for (let r = 1; r < rows; r++) {
+    const y = height / rows * r;
+    ctx.beginPath();
+    ctx.moveTo(0, y);
+    ctx.lineTo(width, y);
+    ctx.stroke();
+  }
+  for (let c = 1; c < cols; c++) {
+    const x = width / cols * c;
+    ctx.beginPath();
+    ctx.moveTo(x, 0);
+    ctx.lineTo(x, height);
+    ctx.stroke();
+  }
+  const history = state.graphHistory;
+  if (history.length < 2) {
+    ctx.restore();
+    return;
+  }
+  const midY = height / 2;
+  const rfScale = height * 0.22;
+  const fidScale = height * 0.38;
+
+  // Draw RF pulse regions (translucent yellow background bars)
+  ctx.fillStyle = 'rgba(255, 159, 10, 0.04)';
+  let inPulseRegion = false;
+  let regionStartIdx = 0;
+  for (let i = 0; i < history.length; i++) {
+    const active = Math.abs(history[i].rf) > 0.005;
+    if (active && !inPulseRegion) {
+      inPulseRegion = true;
+      regionStartIdx = i;
+    } else if (!active && inPulseRegion) {
+      inPulseRegion = false;
+      const xStart = width / 500 * regionStartIdx;
+      const xEnd = width / 500 * i;
+      ctx.fillRect(xStart, 0, xEnd - xStart, height);
+      ctx.strokeStyle = 'rgba(255, 159, 10, 0.12)';
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.moveTo(xStart, 0);
+      ctx.lineTo(xStart, height);
+      ctx.moveTo(xEnd, 0);
+      ctx.lineTo(xEnd, height);
+      ctx.stroke();
+    }
+  }
+  if (inPulseRegion) {
+    const xStart = width / 500 * regionStartIdx;
+    ctx.fillRect(xStart, 0, width - xStart, height);
+  }
+
+  // Plot RF Transmit Trace (Orange)
+  ctx.strokeStyle = '#ff9f0a';
+  ctx.lineWidth = 1.2;
+  ctx.beginPath();
+  let rfStarted = false;
+  for (let i = 0; i < history.length; i++) {
+    const x = width / 500 * i;
+    const y = midY - history[i].rf * rfScale;
+    if (!rfStarted) {
+      ctx.moveTo(x, y);
+      rfStarted = true;
+    } else {
+      ctx.lineTo(x, y);
+    }
+  }
+  ctx.stroke();
+
+  // Plot FID / Spin Echo Signal Trace (Neon Blue)
+  ctx.strokeStyle = '#0a84ff';
+  ctx.lineWidth = 1.8;
+  ctx.beginPath();
+  let fidStarted = false;
+  for (let i = 0; i < history.length; i++) {
+    const x = width / 500 * i;
+    const y = midY - history[i].fid * fidScale;
+    if (!fidStarted) {
+      ctx.moveTo(x, y);
+      fidStarted = true;
+    } else {
+      ctx.lineTo(x, y);
+    }
+  }
+  ctx.stroke();
+
+  // Labels & Legends overlay
+  ctx.fillStyle = 'rgba(255,255,255,0.45)';
+  ctx.font = '10px Inter, sans-serif';
+  ctx.fillText('FID / Receiver Signal (Mx)', 10, 16);
+  ctx.fillStyle = '#ff9f0a';
+  ctx.fillText('RF Transmit', width - 85, 16);
+  ctx.restore();
+}
 const CustomSimplifiedMRIInner = () => {
   // --- React State for Sliders & UI Controls ---
   const [B0, setB0] = useState(1.5); // Tesla (0.5 to 3.0)
@@ -467,13 +471,18 @@ const CustomSimplifiedMRIInner = () => {
   // Simulation physics state stored in Ref to prevent useState thashing
   const simStateRef = useRef({
     spins: [],
-    macroSpin: { x: 0, y: 0, z: 1 },
+    macroSpin: {
+      x: 0,
+      y: 0,
+      z: 1
+    },
     graphHistory: [],
     rfPhase: 0,
     rfPulseTimeRemaining: 0,
     rfPulseDuration: 0,
     rfPulseActive: false,
-    rfPulseType: null, // 90 or 180
+    rfPulseType: null,
+    // 90 or 180
     manualRFActive: false,
     elapsedTime: 0,
     netMx: 0,
@@ -484,8 +493,10 @@ const CustomSimplifiedMRIInner = () => {
     inhomogeneity: 0.015,
     rfFrequency: 63.87,
     rfAmplitude: 0.2,
-    T1: 1.0, // seconds
-    T2: 0.1, // seconds
+    T1: 1.0,
+    // seconds
+    T2: 0.1,
+    // seconds
     isPaused: false
   });
 
@@ -500,10 +511,9 @@ const CustomSimplifiedMRIInner = () => {
         const xGrid = r - 2;
         const yGrid = c - 2;
         // Spatial magnetic gradient + pseudorandom local variations
-        const gradient = (xGrid / 2.0) * 0.4 + (yGrid / 2.0) * 0.3;
+        const gradient = xGrid / 2.0 * 0.4 + yGrid / 2.0 * 0.3;
         const noise = Math.sin(r * 1.9 + c * 3.1) * 0.3;
         const factor = Math.max(-1, Math.min(1, gradient + noise));
-
         spins.push({
           r,
           c,
@@ -527,7 +537,11 @@ const CustomSimplifiedMRIInner = () => {
       s.y = 0;
       s.z = 1;
     });
-    state.macroSpin = { x: 0, y: 0, z: 1 };
+    state.macroSpin = {
+      x: 0,
+      y: 0,
+      z: 1
+    };
     state.graphHistory = [];
     state.rfPhase = 0;
     state.rfPulseTimeRemaining = 0;
@@ -540,7 +554,6 @@ const CustomSimplifiedMRIInner = () => {
     state.netMy = 0;
     state.netMz = 1;
   };
-
   const snapToResonance = () => {
     const f0 = parseFloat((42.58 * B0).toFixed(2));
     setRfFrequency(f0);
@@ -574,7 +587,7 @@ const CustomSimplifiedMRIInner = () => {
   }, [B0]);
 
   // --- Preset Selection ---
-  const handlePresetChange = (presetKey) => {
+  const handlePresetChange = presetKey => {
     setTissuePreset(presetKey);
     if (presetKey !== 'custom') {
       const val = TISSUE_PRESETS[presetKey];
@@ -584,8 +597,7 @@ const CustomSimplifiedMRIInner = () => {
       setT2(safeT2);
     }
   };
-
-  const handleT1SliderChange = (e) => {
+  const handleT1SliderChange = e => {
     const val = parseInt(e.target.value, 10);
     setT1(val);
     setTissuePreset('custom');
@@ -593,14 +605,12 @@ const CustomSimplifiedMRIInner = () => {
       setT2(val);
     }
   };
-
-  const handleT2SliderChange = (e) => {
+  const handleT2SliderChange = e => {
     const val = parseInt(e.target.value, 10);
     const safeVal = Math.min(val, T1);
     setT2(safeVal);
     setTissuePreset('custom');
   };
-
   const send90Pulse = () => {
     snapToResonance();
     const state = simStateRef.current;
@@ -613,7 +623,6 @@ const CustomSimplifiedMRIInner = () => {
     state.rfPulseType = 90;
     state.rfPhase = 0; // Lock initial RF phase for aligned tipping
   };
-
   const send180Pulse = () => {
     snapToResonance();
     const state = simStateRef.current;
@@ -625,7 +634,6 @@ const CustomSimplifiedMRIInner = () => {
     state.rfPulseType = 180;
     state.rfPhase = 0;
   };
-
   const triggerInstant180 = () => {
     const state = simStateRef.current;
     // Invert the transverse phases (y -> -y) and invert longitudinal spins (z -> -z)
@@ -642,7 +650,6 @@ const CustomSimplifiedMRIInner = () => {
   useEffect(() => {
     let frameId;
     let lastTime = performance.now();
-
     const resizeCanvas = (canvas, w, h) => {
       const dpr = window.devicePixelRatio || 1;
       if (canvas.style.width !== `${w}px` || canvas.style.height !== `${h}px`) {
@@ -652,11 +659,9 @@ const CustomSimplifiedMRIInner = () => {
         canvas.style.height = `${h}px`;
       }
     };
-
-    const loop = (time) => {
+    const loop = time => {
       const dt = Math.min((time - lastTime) / 1000.0, 0.1); // Cap delta to prevent Euler explosion
       lastTime = time;
-
       const state = simStateRef.current;
 
       // Handle dynamic canvas resizing to fit parent panels sharp on high-DPI
@@ -699,13 +704,16 @@ const CustomSimplifiedMRIInner = () => {
           const userFreqSim = GAMMA_SIM * (state.rfFrequency / 42.58);
           state.rfPhase += userFreqSim * dt;
         }
-
         state.rfPhase = state.rfPhase % (2 * Math.PI);
         phi = state.rfPhase;
         const B1_field = rfActive ? state.rfAmplitude : 0;
 
         // 1. Update Macro Spin (ideal spin experiencing zero inhomogeneity)
-        let { x: mx, y: my, z: mz } = state.macroSpin;
+        let {
+          x: mx,
+          y: my,
+          z: mz
+        } = state.macroSpin;
 
         // Precession around static Z-field B0
         const w0Macro = GAMMA_SIM * state.B0;
@@ -747,17 +755,26 @@ const CustomSimplifiedMRIInner = () => {
         // Clamping to unit sphere limit
         const magM = Math.sqrt(mx * mx + my * my + mz * mz);
         if (magM > 1.0) {
-          mx /= magM; my /= magM; mz /= magM;
+          mx /= magM;
+          my /= magM;
+          mz /= magM;
         }
-        state.macroSpin = { x: mx, y: my, z: mz };
+        state.macroSpin = {
+          x: mx,
+          y: my,
+          z: mz
+        };
 
         // 2. Update Grid Proton Spins (inhomogeneous ensemble)
         let netMx = 0;
         let netMy = 0;
         let netMz = 0;
-
         state.spins.forEach(spin => {
-          let { x: sx, y: sy, z: sz } = spin;
+          let {
+            x: sx,
+            y: sy,
+            z: sz
+          } = spin;
 
           // Precession around local inhomogeneous B0 field
           const localB0 = state.B0 * (1.0 + state.inhomogeneity * spin.inhomogeneityFactor);
@@ -775,15 +792,12 @@ const CustomSimplifiedMRIInner = () => {
             const dBeta = GAMMA_SIM * B1_field * dt;
             const cosP = Math.cos(phi);
             const sinP = Math.sin(phi);
-
             const x1 = sx * cosP + sy * sinP;
             const y1 = -sx * sinP + sy * cosP;
             const z1 = sz;
-
             const x2 = x1;
             const y2 = y1 * Math.cos(dBeta) - z1 * Math.sin(dBeta);
             const z2 = y1 * Math.sin(dBeta) + z1 * Math.cos(dBeta);
-
             sx = x2 * cosP - y2 * sinP;
             sy = x2 * sinP + y2 * cosP;
             sz = z2;
@@ -797,13 +811,13 @@ const CustomSimplifiedMRIInner = () => {
           // Clamping
           const mag = Math.sqrt(sx * sx + sy * sy + sz * sz);
           if (mag > 1.0) {
-            sx /= mag; sy /= mag; sz /= mag;
+            sx /= mag;
+            sy /= mag;
+            sz /= mag;
           }
-
           spin.x = sx;
           spin.y = sy;
           spin.z = sz;
-
           netMx += sx;
           netMy += sy;
           netMz += sz;
@@ -822,7 +836,6 @@ const CustomSimplifiedMRIInner = () => {
           fid: state.netMx,
           time: state.elapsedTime
         });
-
         if (state.graphHistory.length > 500) {
           state.graphHistory.shift();
         }
@@ -856,18 +869,15 @@ const CustomSimplifiedMRIInner = () => {
       drawGridCanvas(gridCanvasRef.current, state, rfActive, phi);
       drawMacroCanvas(macroCanvasRef.current, state, rfActive, phi);
       drawGraphCanvas(graphCanvasRef.current, state);
-
       frameId = requestAnimationFrame(loop);
     };
-
     frameId = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(frameId);
   }, []);
-
-  return (
-    <div className="mri-sim-container">
+  return <div className="mri-sim-container">
       {/* Dynamic inline styles for glassmorphism and responsiveness */}
-      <style dangerouslySetInnerHTML={{ __html: `
+      <style dangerouslySetInnerHTML={{
+      __html: `
         .mri-sim-container {
           display: flex;
           flex-direction: column;
@@ -1282,7 +1292,8 @@ const CustomSimplifiedMRIInner = () => {
         .mri-tab-pane li {
           margin-bottom: 4px;
         }
-      ` }} />
+      `
+    }} />
 
       {/* Top Banner Header */}
       
@@ -1301,36 +1312,29 @@ const CustomSimplifiedMRIInner = () => {
             <div className="mri-slider-group">
               <div className="mri-slider-label">
                 <span>Field Strength B₀</span>
-                <span style={{ color: '#bf5af2', fontWeight: 'bold' }}>{B0.toFixed(1)} Tesla</span>
+                <span style={{
+                color: '#bf5af2',
+                fontWeight: 'bold'
+              }}>{B0.toFixed(1)} Tesla</span>
               </div>
-              <input 
-                type="range" 
-                min="0.5" 
-                max="3.0" 
-                step="0.1" 
-                value={B0} 
-                onChange={(e) => setB0(parseFloat(e.target.value))}
-                className="mri-slider"
-              />
+              <input type="range" min="0.5" max="3.0" step="0.1" value={B0} onChange={e => setB0(parseFloat(e.target.value))} className="mri-slider" />
               <span className="mri-slider-desc">
-                Protons precess at Larmor Frequency (42.58 MHz/T × B₀) = <span ref={larmorTextRef} style={{ color: '#bf5af2', fontWeight: 'bold' }} />
+                Protons precess at Larmor Frequency (42.58 MHz/T × B₀) = <span ref={larmorTextRef} style={{
+                color: '#bf5af2',
+                fontWeight: 'bold'
+              }} />
               </span>
             </div>
 
             <div className="mri-slider-group">
               <div className="mri-slider-label">
                 <span>Field Inhomogeneity (ΔB₀)</span>
-                <span style={{ color: '#ff375f', fontWeight: 'bold' }}>{inhomogeneity.toFixed(1)}%</span>
+                <span style={{
+                color: '#ff375f',
+                fontWeight: 'bold'
+              }}>{inhomogeneity.toFixed(1)}%</span>
               </div>
-              <input 
-                type="range" 
-                min="0.0" 
-                max="5.0" 
-                step="0.1" 
-                value={inhomogeneity} 
-                onChange={(e) => setInhomogeneity(parseFloat(e.target.value))}
-                className="mri-slider"
-              />
+              <input type="range" min="0.0" max="5.0" step="0.1" value={inhomogeneity} onChange={e => setInhomogeneity(parseFloat(e.target.value))} className="mri-slider" />
               <span className="mri-slider-desc">
                 Spatial field variations accelerate spin-spin dephasing (shorter T₂*).
               </span>
@@ -1346,24 +1350,26 @@ const CustomSimplifiedMRIInner = () => {
             <div className="mri-slider-group">
               <div className="mri-slider-label">
                 <span>RF Frequency</span>
-                <span style={{ color: '#ff9f0a', fontWeight: 'bold' }}>{rfFrequency.toFixed(2)} MHz</span>
+                <span style={{
+                color: '#ff9f0a',
+                fontWeight: 'bold'
+              }}>{rfFrequency.toFixed(2)} MHz</span>
               </div>
-              <input 
-                type="range" 
-                min="10" 
-                max="140" 
-                step="0.1" 
-                value={rfFrequency} 
-                onChange={(e) => setRfFrequency(parseFloat(e.target.value))}
-                className="mri-slider rf"
-              />
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginTop: '2px' }}>
+              <input type="range" min="10" max="140" step="0.1" value={rfFrequency} onChange={e => setRfFrequency(parseFloat(e.target.value))} className="mri-slider rf" />
+              <div style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              alignItems: 'center',
+              marginTop: '2px'
+            }}>
                 <span className="mri-slider-desc">Frequency of the excitation pulses.</span>
-                <button 
-                  className="mri-preset-btn" 
-                  onClick={snapToResonance}
-                  style={{ padding: '3px 8px', borderRadius: '4px', background: 'rgba(255, 159, 10, 0.1)', borderColor: 'rgba(255,159,10,0.3)', color: '#ff9f0a' }}
-                >
+                <button className="mri-preset-btn" onClick={snapToResonance} style={{
+                padding: '3px 8px',
+                borderRadius: '4px',
+                background: 'rgba(255, 159, 10, 0.1)',
+                borderColor: 'rgba(255,159,10,0.3)',
+                color: '#ff9f0a'
+              }}>
                   Tune Resonance
                 </button>
               </div>
@@ -1372,32 +1378,34 @@ const CustomSimplifiedMRIInner = () => {
             <div className="mri-slider-group">
               <div className="mri-slider-label">
                 <span>RF Wave Amplitude (B₁)</span>
-                <span style={{ color: '#ff9f0a', fontWeight: 'bold' }}>{rfAmplitude.toFixed(2)} T</span>
+                <span style={{
+                color: '#ff9f0a',
+                fontWeight: 'bold'
+              }}>{rfAmplitude.toFixed(2)} T</span>
               </div>
-              <input 
-                type="range" 
-                min="0.05" 
-                max="0.5" 
-                step="0.01" 
-                value={rfAmplitude} 
-                onChange={(e) => setRfAmplitude(parseFloat(e.target.value))}
-                className="mri-slider rf"
-              />
+              <input type="range" min="0.05" max="0.5" step="0.01" value={rfAmplitude} onChange={e => setRfAmplitude(parseFloat(e.target.value))} className="mri-slider rf" />
               <span className="mri-slider-desc">Tipping torque strength. Higher B₁ tips spins faster.</span>
             </div>
 
             <div className="mri-pulse-btns">
-              <button 
-                className="mri-transmit-btn"
-                onMouseDown={() => { simStateRef.current.manualRFActive = true; }}
-                onMouseUp={() => { simStateRef.current.manualRFActive = false; }}
-                onMouseLeave={() => { simStateRef.current.manualRFActive = false; }}
-                onTouchStart={() => { simStateRef.current.manualRFActive = true; }}
-                onTouchEnd={() => { simStateRef.current.manualRFActive = false; }}
-              >
+              <button className="mri-transmit-btn" onMouseDown={() => {
+              simStateRef.current.manualRFActive = true;
+            }} onMouseUp={() => {
+              simStateRef.current.manualRFActive = false;
+            }} onMouseLeave={() => {
+              simStateRef.current.manualRFActive = false;
+            }} onTouchStart={() => {
+              simStateRef.current.manualRFActive = true;
+            }} onTouchEnd={() => {
+              simStateRef.current.manualRFActive = false;
+            }}>
                 <Zap size={14} fill="currentColor" /> Hold to Transmit RF
               </button>
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px' }}>
+              <div style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              gap: '8px'
+            }}>
                 <button className="mri-pulse-btn" onClick={send90Pulse}>
                   90° Pulse
                 </button>
@@ -1417,49 +1425,35 @@ const CustomSimplifiedMRIInner = () => {
               <Activity size={16} color="#0a84ff" /> Tissue Properties
             </h2>
 
-            <div className="mri-presets" style={{ marginBottom: '14px' }}>
-              {Object.keys(TISSUE_PRESETS).map(key => (
-                <button 
-                  key={key}
-                  className={`mri-preset-btn ${tissuePreset === key ? 'active' : ''}`}
-                  onClick={() => handlePresetChange(key)}
-                >
+            <div className="mri-presets" style={{
+            marginBottom: '14px'
+          }}>
+              {Object.keys(TISSUE_PRESETS).map(key => <button key={key} className={`mri-preset-btn ${tissuePreset === key ? 'active' : ''}`} onClick={() => handlePresetChange(key)}>
                   {TISSUE_PRESETS[key].name.split(' ')[0]}
-                </button>
-              ))}
+                </button>)}
             </div>
 
             <div className="mri-slider-group">
               <div className="mri-slider-label">
                 <span>T₁ (Longitudinal Recovery)</span>
-                <span style={{ color: '#0a84ff', fontWeight: 'bold' }}>{T1} ms</span>
+                <span style={{
+                color: '#0a84ff',
+                fontWeight: 'bold'
+              }}>{T1} ms</span>
               </div>
-              <input 
-                type="range" 
-                min="200" 
-                max="3000" 
-                step="50" 
-                value={T1} 
-                onChange={handleT1SliderChange}
-                className="mri-slider"
-              />
+              <input type="range" min="200" max="3000" step="50" value={T1} onChange={handleT1SliderChange} className="mri-slider" />
               <span className="mri-slider-desc">Spin alignment recovery rate along B₀ direction.</span>
             </div>
 
             <div className="mri-slider-group">
               <div className="mri-slider-label">
                 <span>T₂ (Transverse Decay)</span>
-                <span style={{ color: '#0a84ff', fontWeight: 'bold' }}>{T2} ms</span>
+                <span style={{
+                color: '#0a84ff',
+                fontWeight: 'bold'
+              }}>{T2} ms</span>
               </div>
-              <input 
-                type="range" 
-                min="20" 
-                max="500" 
-                step="10" 
-                value={T2} 
-                onChange={handleT2SliderChange}
-                className="mri-slider"
-              />
+              <input type="range" min="20" max="500" step="10" value={T2} onChange={handleT2SliderChange} className="mri-slider" />
               <span className="mri-slider-desc">Spin phase decay rate in transverse XY plane.</span>
             </div>
           </section>
@@ -1474,11 +1468,18 @@ const CustomSimplifiedMRIInner = () => {
             <div className="mri-viz-header">
               <span className="mri-viz-title" ref={statusTextRef}>State: Idle</span>
               <div className="mri-metrics">
-                <span>Transverse (Mxy): <span ref={mxyTextRef} className="mri-metric-val" style={{ color: '#0a84ff' }}>0.0%</span></span>
-                <span>Longitudinal (Mz): <span ref={mzTextRef} className="mri-metric-val" style={{ color: '#ff375f' }}>100.0%</span></span>
+                <span>Transverse (Mxy): <span ref={mxyTextRef} className="mri-metric-val" style={{
+                  color: '#0a84ff'
+                }}>0.0%</span></span>
+                <span>Longitudinal (Mz): <span ref={mzTextRef} className="mri-metric-val" style={{
+                  color: '#ff375f'
+                }}>100.0%</span></span>
               </div>
             </div>
-            <canvas ref={gridCanvasRef} style={{ display: 'block', flex: 1 }} />
+            <canvas ref={gridCanvasRef} style={{
+            display: 'block',
+            flex: 1
+          }} />
           </div>
 
           {/* Lower Displays row: Bloch sphere + oscilloscope */}
@@ -1486,18 +1487,32 @@ const CustomSimplifiedMRIInner = () => {
             
             {/* Single Proton Bloch Sphere */}
             <div className="mri-bloch-card">
-              <div className="mri-viz-header" style={{ padding: '6px 10px' }}>
-                <span className="mri-viz-title" style={{ fontSize: '11px' }}>Bloch Sphere (Macro Spin)</span>
+              <div className="mri-viz-header" style={{
+              padding: '6px 10px'
+            }}>
+                <span className="mri-viz-title" style={{
+                fontSize: '11px'
+              }}>Bloch Sphere (Macro Spin)</span>
               </div>
-              <canvas ref={macroCanvasRef} style={{ display: 'block', flex: 1 }} />
+              <canvas ref={macroCanvasRef} style={{
+              display: 'block',
+              flex: 1
+            }} />
             </div>
 
             {/* Scope Graph */}
             <div className="mri-graph-card">
-              <div className="mri-viz-header" style={{ padding: '6px 10px' }}>
-                <span className="mri-viz-title" style={{ fontSize: '11px' }}>Live Signal Scope (RF Pulse & Received FID/Echo)</span>
+              <div className="mri-viz-header" style={{
+              padding: '6px 10px'
+            }}>
+                <span className="mri-viz-title" style={{
+                fontSize: '11px'
+              }}>Live Signal Scope (RF Pulse & Received FID/Echo)</span>
               </div>
-              <canvas ref={graphCanvasRef} style={{ display: 'block', flex: 1 }} />
+              <canvas ref={graphCanvasRef} style={{
+              display: 'block',
+              flex: 1
+            }} />
             </div>
 
           </div>
@@ -1509,35 +1524,22 @@ const CustomSimplifiedMRIInner = () => {
       {/* Physics Academy section */}
       <footer className="mri-academy">
         <nav className="mri-tabs">
-          <button 
-            className={`mri-tab-btn ${activeTab === 'how-to' ? 'active' : ''}`}
-            onClick={() => setActiveTab('how-to')}
-          >
+          <button className={`mri-tab-btn ${activeTab === 'how-to' ? 'active' : ''}`} onClick={() => setActiveTab('how-to')}>
             How-To Guide
           </button>
-          <button 
-            className={`mri-tab-btn ${activeTab === 'precession' ? 'active' : ''}`}
-            onClick={() => setActiveTab('precession')}
-          >
+          <button className={`mri-tab-btn ${activeTab === 'precession' ? 'active' : ''}`} onClick={() => setActiveTab('precession')}>
             Larmor Precession
           </button>
-          <button 
-            className={`mri-tab-btn ${activeTab === 'relaxation' ? 'active' : ''}`}
-            onClick={() => setActiveTab('relaxation')}
-          >
+          <button className={`mri-tab-btn ${activeTab === 'relaxation' ? 'active' : ''}`} onClick={() => setActiveTab('relaxation')}>
             T₁ & T₂ Relaxation
           </button>
-          <button 
-            className={`mri-tab-btn ${activeTab === 'echo' ? 'active' : ''}`}
-            onClick={() => setActiveTab('echo')}
-          >
+          <button className={`mri-tab-btn ${activeTab === 'echo' ? 'active' : ''}`} onClick={() => setActiveTab('echo')}>
             The Spin Echo
           </button>
         </nav>
 
         <div className="mri-tab-pane">
-          {activeTab === 'how-to' && (
-            <div>
+          {activeTab === 'how-to' && <div>
               <h3>How to Operate the Simulator</h3>
               <p>Follow these steps to observe core MRI physical phenomena:</p>
               <ul>
@@ -1545,22 +1547,24 @@ const CustomSimplifiedMRIInner = () => {
                 <li><strong>Step 2: Dephasing</strong>. Set the <strong>Field Inhomogeneity</strong> slider to 1.5% or higher. Notice how after the 90° excitation, the grid spins begin to separate/spread in their precession phase. This phase coherence loss causes the net transverse magnetization (Mxy) to decay rapidly, reducing the FID signal.</li>
                 <li><strong>Step 3: Refocusing</strong>. While the spins are dephasing, click the <strong>Instant 180° Refocus</strong> or the <strong>180° Inversion</strong> button. Watch the spins rotate/flip. The faster spins are placed behind the slower spins, and as precession continues, they refocus together. A peak (the <strong>Spin Echo</strong>) will appear on the oscilloscope at double the delay time!</li>
               </ul>
-            </div>
-          )}
+            </div>}
 
-          {activeTab === 'precession' && (
-            <div>
+          {activeTab === 'precession' && <div>
               <h3>Larmor Precession & Resonance</h3>
               <p>Hydrogen protons (¹H nuclei) possess spin and an associated magnetic moment. In the main magnetic field B₀, they precess around the field axis at a specific rate called the Larmor frequency:</p>
-              <p style={{ fontFamily: 'monospace', background: 'rgba(255,255,255,0.03)', padding: '6px 12px', borderRadius: '6px', display: 'inline-block' }}>
+              <p style={{
+            fontFamily: 'monospace',
+            background: 'rgba(255,255,255,0.03)',
+            padding: '6px 12px',
+            borderRadius: '6px',
+            display: 'inline-block'
+          }}>
                 f₀ = γ · B₀ / (2·π) &nbsp; &nbsp; [γ / 2π = 42.58 MHz / Tesla for Hydrogen]
               </p>
               <p>This means in a 1.5 Tesla scanner, protons precess at exactly 63.87 MHz. Tipping them requires an alternating RF magnetic field (B₁) rotating in-phase with the precession (Resonance). If your RF frequency is off-resonance (try tuning the transmitter frequency manually away from Larmor), the tipping torque cancels out and no excitation occurs.</p>
-            </div>
-          )}
+            </div>}
 
-          {activeTab === 'relaxation' && (
-            <div>
+          {activeTab === 'relaxation' && <div>
               <h3>T₁ Longitudinal Recovery & T₂ Transverse Decay</h3>
               <p>After the RF pulse is turned off, the spin system returns to its original thermodynamic state via two processes:</p>
               <ul>
@@ -1568,43 +1572,77 @@ const CustomSimplifiedMRIInner = () => {
                 <li><strong>T₂ (Spin-Spin Relaxation):</strong> The spins interact with each other's magnetic fields, causing them to phase-drift (dephase). The transverse magnetization Mxy decays exponentially with time constant T₂.</li>
                 <li><strong>T₂* (Effective Transverse Decay):</strong> In real-life magnets, field inhomogeneities (ΔB₀) accelerate this dephasing. The signal decays much faster with time constant T₂* (where 1/T₂* = 1/T₂ + γ·ΔB₀).</li>
               </ul>
-            </div>
-          )}
+            </div>}
 
-          {activeTab === 'echo' && (
-            <div>
+          {activeTab === 'echo' && <div>
               <h3>The Spin Echo Effect (Erwin Hahn, 1950)</h3>
               <p>The rapid signal decay caused by spatial field inhomogeneity (ΔB₀) can be reversed because it is a deterministic process (each spin precesses faster or slower based on its static position in space).</p>
               <p>Applying a 180° RF pulse at time τ after the initial 90° pulse flips the spins in the XY plane. This places the spins that were precessing faster (which had moved ahead in phase) behind the slower ones. Since they continue precessing at their same local speeds, the faster ones catch up to the slower ones. At time 2τ, all spins re-align in phase, creating a momentary signal recovery peak called the <strong>Spin Echo</strong>.</p>
               <p>This refocusing removes the effects of static magnetic field inhomogeneities, allowing the true T₂ relaxation properties of tissue to be measured.</p>
-            </div>
-          )}
+            </div>}
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
-
-
-
-export default function CustomSimplifiedMRI({ onBack, title }) {
-    return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-                {onBack ? (
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
+export default function CustomSimplifiedMRI({
+  onBack,
+  title
+}) {
+  return <div style={{
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    background: '#0a0a1a',
+    overflow: 'hidden'
+  }}>
+            <div style={{
+      position: 'absolute',
+      top: '20px',
+      left: '20px',
+      right: '20px',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      zIndex: 100
+    }}>
+                {onBack ? <button onClick={onBack} style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        background: 'rgba(255, 255, 255, 0.1)',
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        backdropFilter: 'blur(10px)',
+        padding: '10px 20px',
+        borderRadius: '12px',
+        color: '#fff',
+        cursor: 'pointer',
+        transition: 'all 0.3s ease',
+        fontWeight: 600,
+        fontFamily: "'Inter', sans-serif"
+      }}>
                         ← Back
-                    </button>
-                ) : <div />}
-                <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
+                    </button> : <div />}
+                <h1 style={{
+        color: 'white',
+        fontFamily: "'Inter', sans-serif",
+        fontSize: '24px',
+        fontWeight: '600',
+        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
+        margin: 0
+      }}>
                     {title || 'Simulation'}
                 </h1>
-                <div style={{ width: '100px' }}></div>
+                <div style={{
+        width: '100px'
+      }}></div>
             </div>
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto' }}>
+            <div style={{
+      position: 'absolute',
+      inset: 0,
+      zIndex: 1,
+      pointerEvents: 'auto'
+    }}>
                  <CustomSimplifiedMRIInner onBack={null} title={""} />
             </div>
-        </div>
-    );
+        </div>;
 }

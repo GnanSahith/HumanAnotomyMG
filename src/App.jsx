@@ -117,7 +117,7 @@ function App() {
 
   const handleRouteSelect = (route) => {
     if (route === 'simulations') {
-      if (!isAuthenticated && !isSignedIn) {
+      if (!isAuthenticated) {
         setShowLoginModal(true);
         return;
       }
@@ -315,6 +315,7 @@ function App() {
       <LoginModal 
         isOpen={showLoginModal} 
         onClose={() => setShowLoginModal(false)}
+        defaultTab={isSignedIn ? 'administrator' : 'student'}
         onSuccess={(username) => {
           setIsAuthenticated(true);
           localStorage.setItem('human_anatomy_auth', 'true');

@@ -1,29 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import {
-  ArrowLeft,
-  RotateCcw,
-  Zap,
-  ZapOff,
-  Sliders,
-  Activity,
-  Power,
-  Lightbulb,
-  Layers,
-  Trash2,
-  Plus,
-  HelpCircle,
-  Check,
-  Eye,
-  Settings,
-  Sparkles,
-  AlertCircle
-} from 'lucide-react';
+import { ArrowLeft, RotateCcw, Zap, ZapOff, Sliders, Activity, Power, Lightbulb, Layers, Trash2, Plus, HelpCircle, Check, Eye, Settings, Sparkles, AlertCircle, Play, Pause, Settings2 } from 'lucide-react';
 
 // Gaussian elimination solver with pivoting for robust MNA
 function solveLinearSystem(A, Z) {
   const n = Z.length;
   const mat = A.map((row, i) => [...row, Z[i]]);
-  
   for (let i = 0; i < n; i++) {
     // Find pivot row
     let maxRow = i;
@@ -32,17 +13,17 @@ function solveLinearSystem(A, Z) {
         maxRow = k;
       }
     }
-    
+
     // Swap rows
     const temp = mat[i];
     mat[i] = mat[maxRow];
     mat[maxRow] = temp;
-    
+
     // Check for singular matrix (or extremely close)
     if (Math.abs(mat[i][i]) < 1e-12) {
       continue;
     }
-    
+
     // Row reduction
     for (let k = i + 1; k < n; k++) {
       const factor = mat[k][i] / mat[i][i];
@@ -51,7 +32,7 @@ function solveLinearSystem(A, Z) {
       }
     }
   }
-  
+
   // Back substitution
   const X = new Array(n).fill(0);
   for (let i = n - 1; i >= 0; i--) {
@@ -67,7 +48,6 @@ function solveLinearSystem(A, Z) {
   }
   return X;
 }
-
 let audioCtx = null;
 const getAudioContext = () => {
   if (!audioCtx) {
@@ -81,27 +61,21 @@ const getAudioContext = () => {
   }
   return audioCtx;
 };
-
-const playSound = (type) => {
+const playSound = type => {
   try {
     const ctx = getAudioContext();
     if (!ctx) return;
-
     const now = ctx.currentTime;
-
     if (type === 'connect') {
       const osc = ctx.createOscillator();
       const gain = ctx.createGain();
       osc.connect(gain);
       gain.connect(ctx.destination);
-
       osc.type = 'triangle';
       osc.frequency.setValueAtTime(150, now);
       osc.frequency.exponentialRampToValueAtTime(800, now + 0.1);
-      
       gain.gain.setValueAtTime(0.15, now);
       gain.gain.exponentialRampToValueAtTime(0.01, now + 0.1);
-      
       osc.start(now);
       osc.stop(now + 0.1);
     } else if (type === 'click') {
@@ -109,14 +83,11 @@ const playSound = (type) => {
       const gain = ctx.createGain();
       osc.connect(gain);
       gain.connect(ctx.destination);
-
       osc.type = 'sine';
       osc.frequency.setValueAtTime(800, now);
       osc.frequency.exponentialRampToValueAtTime(200, now + 0.05);
-      
       gain.gain.setValueAtTime(0.1, now);
       gain.gain.exponentialRampToValueAtTime(0.01, now + 0.05);
-      
       osc.start(now);
       osc.stop(now + 0.05);
     } else if (type === 'burnout') {
@@ -124,26 +95,20 @@ const playSound = (type) => {
       const gain1 = ctx.createGain();
       osc1.connect(gain1);
       gain1.connect(ctx.destination);
-
       osc1.type = 'sawtooth';
       osc1.frequency.setValueAtTime(100, now);
       osc1.frequency.linearRampToValueAtTime(20, now + 0.5);
-
       gain1.gain.setValueAtTime(0.2, now);
       gain1.gain.exponentialRampToValueAtTime(0.01, now + 0.5);
-
       const osc2 = ctx.createOscillator();
       const gain2 = ctx.createGain();
       osc2.connect(gain2);
       gain2.connect(ctx.destination);
-
       osc2.type = 'triangle';
       osc2.frequency.setValueAtTime(300, now);
       osc2.frequency.linearRampToValueAtTime(50, now + 0.3);
-
       gain2.gain.setValueAtTime(0.15, now);
       gain2.gain.exponentialRampToValueAtTime(0.01, now + 0.3);
-
       osc1.start(now);
       osc1.stop(now + 0.5);
       osc2.start(now);
@@ -155,40 +120,45 @@ const playSound = (type) => {
 };
 
 // Convert resistance to standard 3-band color code
-const getResistorColors = (value) => {
-  const colorMap = [
-    '#000000', // black 0
-    '#8b5a2b', // brown 1
-    '#ef4444', // red 2
-    '#f97316', // orange 3
-    '#eab308', // yellow 4
-    '#22c55e', // green 5
-    '#3b82f6', // blue 6
-    '#a855f7', // violet 7
-    '#6b7280', // grey 8
-    '#ffffff'  // white 9
+const getResistorColors = value => {
+  const colorMap = ['#000000',
+  // black 0
+  '#8b5a2b',
+  // brown 1
+  '#ef4444',
+  // red 2
+  '#f97316',
+  // orange 3
+  '#eab308',
+  // yellow 4
+  '#22c55e',
+  // green 5
+  '#3b82f6',
+  // blue 6
+  '#a855f7',
+  // violet 7
+  '#6b7280',
+  // grey 8
+  '#ffffff' // white 9
   ];
-
   if (value < 0.1) return ['#000000', '#000000', '#000000'];
-
   const str = value.toExponential(1); // e.g. "4.7e+1"
   const matches = str.match(/^(\d)\.(\d)e\+?(-?\d+)$/);
   if (!matches) return ['#8b5a2b', '#000000', '#000000'];
-
   const d1 = parseInt(matches[1]);
   const d2 = parseInt(matches[2]);
   const exp = parseInt(matches[3]);
-
   const multExp = exp - 1;
   let multColor = '#000000';
   if (multExp === -1) multColor = '#ffd700'; // gold multiplier
   else if (multExp === -2) multColor = '#c0c0c0'; // silver multiplier
   else if (multExp >= 0 && multExp <= 9) multColor = colorMap[multExp];
-
   return [colorMap[d1], colorMap[d2], multColor];
 };
-
-export default function CustomCircuitConstructionKitDC({ onBack, title }) {
+export default function CustomCircuitConstructionKitDC({
+  onBack,
+  title
+}) {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
   const wasSnappedRef = useRef(false);
@@ -197,70 +167,368 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
   const [components, setComponents] = useState([]);
   const [selectedCompId, setSelectedCompId] = useState(null);
   const [dragging, setDragging] = useState(null); // { type, compId, termNum, offsetX, offsetY }
-  
+
   // UI controls
   const [currentFlowType, setCurrentFlowType] = useState('electrons'); // 'electrons', 'conventional', 'none'
   const [isSchematic, setIsSchematic] = useState(false);
   const [snapToGrid, setSnapToGrid] = useState(true);
   const [showVoltmeter, setShowVoltmeter] = useState(false);
   const [showAmmeter, setShowAmmeter] = useState(false);
-  
+
   // Tool probe positions
-  const [voltmeterBox, setVoltmeterBox] = useState({ x: 620, y: 350 });
-  const [voltmeterRed, setVoltmeterRed] = useState({ x: 600, y: 450 });
-  const [voltmeterBlack, setVoltmeterBlack] = useState({ x: 670, y: 450 });
-  const [ammeterProbe, setAmmeterProbe] = useState({ x: 620, y: 250 });
-  
+  const [voltmeterBox, setVoltmeterBox] = useState({
+    x: 620,
+    y: 350
+  });
+  const [voltmeterRed, setVoltmeterRed] = useState({
+    x: 600,
+    y: 450
+  });
+  const [voltmeterBlack, setVoltmeterBlack] = useState({
+    x: 670,
+    y: 450
+  });
+  const [ammeterProbe, setAmmeterProbe] = useState({
+    x: 620,
+    y: 250
+  });
+
   // Simulation warnings / notifications
   const [burnoutNotice, setBurnoutNotice] = useState(null);
-  
+
   // Presets definition
-  const loadPreset = (presetName) => {
+  const loadPreset = presetName => {
     setSelectedCompId(null);
     setBurnoutNotice(null);
-    
     if (presetName === 'simple') {
-      setComponents([
-        { id: 'bat_1', type: 'battery', x1: 200, y1: 400, x2: 350, y2: 400, value: 9, label: 'Battery', isOpen: false, isBurnedOut: false },
-        { id: 'wire_1', type: 'wire', x1: 350, y1: 400, x2: 500, y2: 400, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'sw_1', type: 'switch', x1: 500, y1: 400, x2: 500, y2: 250, value: 0, label: 'Switch', isOpen: false, isBurnedOut: false },
-        { id: 'bulb_1', type: 'bulb', x1: 500, y1: 250, x2: 350, y2: 250, value: 10, label: 'Light Bulb', isOpen: false, isBurnedOut: false },
-        { id: 'res_1', type: 'resistor', x1: 350, y1: 250, x2: 200, y2: 250, value: 10, label: 'Resistor', isOpen: false, isBurnedOut: false },
-        { id: 'wire_2', type: 'wire', x1: 200, y1: 250, x2: 200, y2: 400, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false }
-      ]);
+      setComponents([{
+        id: 'bat_1',
+        type: 'battery',
+        x1: 200,
+        y1: 400,
+        x2: 350,
+        y2: 400,
+        value: 9,
+        label: 'Battery',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_1',
+        type: 'wire',
+        x1: 350,
+        y1: 400,
+        x2: 500,
+        y2: 400,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'sw_1',
+        type: 'switch',
+        x1: 500,
+        y1: 400,
+        x2: 500,
+        y2: 250,
+        value: 0,
+        label: 'Switch',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'bulb_1',
+        type: 'bulb',
+        x1: 500,
+        y1: 250,
+        x2: 350,
+        y2: 250,
+        value: 10,
+        label: 'Light Bulb',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'res_1',
+        type: 'resistor',
+        x1: 350,
+        y1: 250,
+        x2: 200,
+        y2: 250,
+        value: 10,
+        label: 'Resistor',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_2',
+        type: 'wire',
+        x1: 200,
+        y1: 250,
+        x2: 200,
+        y2: 400,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }]);
     } else if (presetName === 'series') {
-      setComponents([
-        { id: 'bat_1', type: 'battery', x1: 150, y1: 400, x2: 300, y2: 400, value: 12, label: 'Battery', isOpen: false, isBurnedOut: false },
-        { id: 'wire_1', type: 'wire', x1: 300, y1: 400, x2: 450, y2: 400, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'sw_1', type: 'switch', x1: 450, y1: 400, x2: 550, y2: 400, value: 0, label: 'Switch', isOpen: false, isBurnedOut: false },
-        { id: 'wire_2', type: 'wire', x1: 550, y1: 400, x2: 550, y2: 250, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'bulb_1', type: 'bulb', x1: 550, y1: 250, x2: 400, y2: 250, value: 10, label: 'Bulb 1', isOpen: false, isBurnedOut: false },
-        { id: 'bulb_2', type: 'bulb', x1: 400, y1: 250, x2: 250, y2: 250, value: 10, label: 'Bulb 2', isOpen: false, isBurnedOut: false },
-        { id: 'wire_3', type: 'wire', x1: 250, y1: 250, x2: 150, y2: 250, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'wire_4', type: 'wire', x1: 150, y1: 250, x2: 150, y2: 400, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false }
-      ]);
+      setComponents([{
+        id: 'bat_1',
+        type: 'battery',
+        x1: 150,
+        y1: 400,
+        x2: 300,
+        y2: 400,
+        value: 12,
+        label: 'Battery',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_1',
+        type: 'wire',
+        x1: 300,
+        y1: 400,
+        x2: 450,
+        y2: 400,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'sw_1',
+        type: 'switch',
+        x1: 450,
+        y1: 400,
+        x2: 550,
+        y2: 400,
+        value: 0,
+        label: 'Switch',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_2',
+        type: 'wire',
+        x1: 550,
+        y1: 400,
+        x2: 550,
+        y2: 250,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'bulb_1',
+        type: 'bulb',
+        x1: 550,
+        y1: 250,
+        x2: 400,
+        y2: 250,
+        value: 10,
+        label: 'Bulb 1',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'bulb_2',
+        type: 'bulb',
+        x1: 400,
+        y1: 250,
+        x2: 250,
+        y2: 250,
+        value: 10,
+        label: 'Bulb 2',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_3',
+        type: 'wire',
+        x1: 250,
+        y1: 250,
+        x2: 150,
+        y2: 250,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_4',
+        type: 'wire',
+        x1: 150,
+        y1: 250,
+        x2: 150,
+        y2: 400,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }]);
     } else if (presetName === 'parallel') {
-      setComponents([
-        { id: 'bat_1', type: 'battery', x1: 150, y1: 450, x2: 300, y2: 450, value: 9, label: 'Battery', isOpen: false, isBurnedOut: false },
-        { id: 'wire_1', type: 'wire', x1: 300, y1: 450, x2: 500, y2: 450, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'sw_1', type: 'switch', x1: 500, y1: 450, x2: 500, y2: 300, value: 0, label: 'Switch', isOpen: false, isBurnedOut: false },
-        { id: 'wire_2', type: 'wire', x1: 500, y1: 300, x2: 500, y2: 150, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'bulb_1', type: 'bulb', x1: 500, y1: 300, x2: 350, y2: 300, value: 10, label: 'Bulb 1', isOpen: false, isBurnedOut: false },
-        { id: 'bulb_2', type: 'bulb', x1: 500, y1: 150, x2: 350, y2: 150, value: 10, label: 'Bulb 2', isOpen: false, isBurnedOut: false },
-        { id: 'wire_3', type: 'wire', x1: 350, y1: 150, x2: 350, y2: 300, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'wire_4', type: 'wire', x1: 350, y1: 300, x2: 150, y2: 300, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'wire_5', type: 'wire', x1: 150, y1: 300, x2: 150, y2: 450, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false }
-      ]);
+      setComponents([{
+        id: 'bat_1',
+        type: 'battery',
+        x1: 150,
+        y1: 450,
+        x2: 300,
+        y2: 450,
+        value: 9,
+        label: 'Battery',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_1',
+        type: 'wire',
+        x1: 300,
+        y1: 450,
+        x2: 500,
+        y2: 450,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'sw_1',
+        type: 'switch',
+        x1: 500,
+        y1: 450,
+        x2: 500,
+        y2: 300,
+        value: 0,
+        label: 'Switch',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_2',
+        type: 'wire',
+        x1: 500,
+        y1: 300,
+        x2: 500,
+        y2: 150,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'bulb_1',
+        type: 'bulb',
+        x1: 500,
+        y1: 300,
+        x2: 350,
+        y2: 300,
+        value: 10,
+        label: 'Bulb 1',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'bulb_2',
+        type: 'bulb',
+        x1: 500,
+        y1: 150,
+        x2: 350,
+        y2: 150,
+        value: 10,
+        label: 'Bulb 2',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_3',
+        type: 'wire',
+        x1: 350,
+        y1: 150,
+        x2: 350,
+        y2: 300,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_4',
+        type: 'wire',
+        x1: 350,
+        y1: 300,
+        x2: 150,
+        y2: 300,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_5',
+        type: 'wire',
+        x1: 150,
+        y1: 300,
+        x2: 150,
+        y2: 450,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }]);
     } else if (presetName === 'short') {
-      setComponents([
-        { id: 'bat_1', type: 'battery', x1: 200, y1: 400, x2: 350, y2: 400, value: 9, label: 'Battery', isOpen: false, isBurnedOut: false },
-        { id: 'wire_1', type: 'wire', x1: 350, y1: 400, x2: 500, y2: 400, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'bulb_1', type: 'bulb', x1: 500, y1: 400, x2: 500, y2: 250, value: 10, label: 'Bulb', isOpen: false, isBurnedOut: false },
-        { id: 'wire_2', type: 'wire', x1: 500, y1: 250, x2: 200, y2: 250, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        { id: 'wire_3', type: 'wire', x1: 200, y1: 250, x2: 200, y2: 400, value: 0, label: 'Wire', isOpen: false, isBurnedOut: false },
-        // Short-circuit bypass switch (parallel to the bulb)
-        { id: 'sw_short', type: 'switch', x1: 350, y1: 400, x2: 350, y2: 250, value: 0, label: 'Bypass Switch', isOpen: true, isBurnedOut: false }
-      ]);
+      setComponents([{
+        id: 'bat_1',
+        type: 'battery',
+        x1: 200,
+        y1: 400,
+        x2: 350,
+        y2: 400,
+        value: 9,
+        label: 'Battery',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_1',
+        type: 'wire',
+        x1: 350,
+        y1: 400,
+        x2: 500,
+        y2: 400,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'bulb_1',
+        type: 'bulb',
+        x1: 500,
+        y1: 400,
+        x2: 500,
+        y2: 250,
+        value: 10,
+        label: 'Bulb',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_2',
+        type: 'wire',
+        x1: 500,
+        y1: 250,
+        x2: 200,
+        y2: 250,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      }, {
+        id: 'wire_3',
+        type: 'wire',
+        x1: 200,
+        y1: 250,
+        x2: 200,
+        y2: 400,
+        value: 0,
+        label: 'Wire',
+        isOpen: false,
+        isBurnedOut: false
+      },
+      // Short-circuit bypass switch (parallel to the bulb)
+      {
+        id: 'sw_short',
+        type: 'switch',
+        x1: 350,
+        y1: 400,
+        x2: 350,
+        y2: 250,
+        value: 0,
+        label: 'Bypass Switch',
+        isOpen: true,
+        isBurnedOut: false
+      }]);
     } else {
       setComponents([]);
     }
@@ -277,27 +545,35 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     const dy = y2 - y1;
     const lenSq = dx * dx + dy * dy;
     if (lenSq === 0) return Math.hypot(px - x1, py - y1);
-    
     let t = ((px - x1) * dx + (py - y1) * dy) / lenSq;
     t = Math.max(0, Math.min(1, t));
-    
     const projX = x1 + t * dx;
     const projY = y1 + t * dy;
     return Math.hypot(px - projX, py - projY);
   };
 
   // Dynamic solver
-  const solveCircuit = useCallback((compList) => {
+  const solveCircuit = useCallback(compList => {
     // 1. Collect all terminals
     const terminals = [];
     compList.forEach(c => {
-      terminals.push({ compId: c.id, num: 1, x: c.x1, y: c.y1 });
-      terminals.push({ compId: c.id, num: 2, x: c.x2, y: c.y2 });
+      terminals.push({
+        compId: c.id,
+        num: 1,
+        x: c.x1,
+        y: c.y1
+      });
+      terminals.push({
+        compId: c.id,
+        num: 2,
+        x: c.x2,
+        y: c.y2
+      });
     });
 
     // 2. Union-Find to group terminals into nodes
     const parent = {};
-    const find = (id) => {
+    const find = id => {
       if (parent[id] === undefined) parent[id] = id;
       if (parent[id] === id) return id;
       return parent[id] = find(parent[id]);
@@ -307,9 +583,8 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       const r2 = find(id2);
       if (r1 !== r2) parent[r1] = r2;
     };
-
     const getTermKey = (compId, num) => `${compId}_${num}`;
-    
+
     // Snap distance is 5px for unioning
     for (let i = 0; i < terminals.length; i++) {
       for (let j = i + 1; j < terminals.length; j++) {
@@ -329,12 +604,16 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       if (!nodeGroups[root]) nodeGroups[root] = [];
       nodeGroups[root].push(key);
     });
-
     const nodeRoots = Object.keys(nodeGroups);
     const K = nodeRoots.length; // Total physical nodes
 
     if (K <= 1) {
-      return { voltages: {}, currents: {}, getNodeId: () => 0, K };
+      return {
+        voltages: {},
+        currents: {},
+        getNodeId: () => 0,
+        K
+      };
     }
 
     // Choose Ground Node (Node 0). Find negative terminal of battery.
@@ -348,7 +627,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     if (!groundRoot && nodeRoots.length > 0) {
       groundRoot = nodeRoots[0];
     }
-
     const rootToNodeIndex = {};
     let indexCounter = 1;
     nodeRoots.forEach(root => {
@@ -358,7 +636,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         rootToNodeIndex[root] = indexCounter++;
       }
     });
-
     const getNodeId = (compId, num) => {
       const key = getTermKey(compId, num);
       const root = find(key);
@@ -368,9 +645,10 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     // Voltage sources
     const activeBatteries = compList.filter(c => c.type === 'battery' && !c.isBurnedOut);
     const M = activeBatteries.length;
-
-    const S = (K - 1) + M;
-    const A = Array.from({ length: S }, () => new Array(S).fill(0));
+    const S = K - 1 + M;
+    const A = Array.from({
+      length: S
+    }, () => new Array(S).fill(0));
     const Z = new Array(S).fill(0);
 
     // Shunts to ground to prevent singular matrices in open sub-circuits
@@ -382,19 +660,16 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     // Add passives (resistors, bulbs, wires, closed switches)
     compList.forEach(c => {
       if (c.isBurnedOut) return;
-      
       let R = null;
       if (c.type === 'resistor' || c.type === 'bulb') {
         R = c.value;
-      } else if (c.type === 'wire' || (c.type === 'switch' && !c.isOpen)) {
+      } else if (c.type === 'wire' || c.type === 'switch' && !c.isOpen) {
         R = 0.02; // small resistance for wire/closed switch
       }
-
       if (R !== null) {
         const a = getNodeId(c.id, 1);
         const b = getNodeId(c.id, 2);
         const g = 1 / R;
-
         if (a > 0) A[a - 1][a - 1] += g;
         if (b > 0) A[b - 1][b - 1] += g;
         if (a > 0 && b > 0) {
@@ -408,8 +683,8 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     activeBatteries.forEach((bat, idx) => {
       const a = getNodeId(bat.id, 1); // positive
       const b = getNodeId(bat.id, 2); // negative
-      const row = (K - 1) + idx;
-      const col = (K - 1) + idx;
+      const row = K - 1 + idx;
+      const col = K - 1 + idx;
       const V = bat.value;
       const Rint = 0.1; // battery internal resistance
 
@@ -417,7 +692,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       if (b > 0 && a !== b) A[row][b - 1] = -1;
       A[row][col] = -Rint; // V_a - V_b - I_bat * Rint = V
       Z[row] = V;
-
       if (a > 0) A[a - 1][col] += 1;
       if (b > 0) A[b - 1][col] -= 1;
     });
@@ -426,7 +700,9 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     const X = solveLinearSystem(A, Z);
 
     // Extract node voltages
-    const nodeVoltages = { 0: 0 };
+    const nodeVoltages = {
+      0: 0
+    };
     for (let i = 1; i < K; i++) {
       nodeVoltages[i] = X[i - 1];
     }
@@ -438,12 +714,11 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         currents[c.id] = 0;
         return;
       }
-
       if (c.type === 'resistor' || c.type === 'bulb') {
         const a = getNodeId(c.id, 1);
         const b = getNodeId(c.id, 2);
         currents[c.id] = (nodeVoltages[a] - nodeVoltages[b]) / c.value;
-      } else if (c.type === 'wire' || (c.type === 'switch' && !c.isOpen)) {
+      } else if (c.type === 'wire' || c.type === 'switch' && !c.isOpen) {
         const a = getNodeId(c.id, 1);
         const b = getNodeId(c.id, 2);
         currents[c.id] = (nodeVoltages[a] - nodeVoltages[b]) / 0.02;
@@ -454,13 +729,17 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
 
     // Batteries currents from X
     activeBatteries.forEach((bat, idx) => {
-      const col = (K - 1) + idx;
+      const col = K - 1 + idx;
       // Conventional current flows from negative (-) to positive (+) internally in a discharging battery,
       // which is opposite of X[col] (current leaving positive terminal).
       currents[bat.id] = -X[col];
     });
-
-    return { voltages: nodeVoltages, currents, getNodeId, K };
+    return {
+      voltages: nodeVoltages,
+      currents,
+      getNodeId,
+      K
+    };
   }, []);
 
   // Compute circuit state
@@ -470,27 +749,26 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
   useEffect(() => {
     let burnoutOccurred = false;
     let burnedCompName = '';
-
     const updated = components.map(c => {
       if (c.isBurnedOut) return c;
-
       const current = circuitState.currents[c.id] || 0;
       const power = current * current * (c.type === 'battery' ? 0.1 : c.value || 0.02);
-
       let limit = Infinity;
-      if (c.type === 'bulb') limit = 35;       // Bulb power limit 35W
-      if (c.type === 'resistor') limit = 25;   // Resistor limit 25W
-      if (c.type === 'wire') limit = 150;      // Wire fuses at 150W
-      if (c.type === 'switch') limit = 150;    // Switch fuses at 150W
+      if (c.type === 'bulb') limit = 35; // Bulb power limit 35W
+      if (c.type === 'resistor') limit = 25; // Resistor limit 25W
+      if (c.type === 'wire') limit = 150; // Wire fuses at 150W
+      if (c.type === 'switch') limit = 150; // Switch fuses at 150W
 
       if (power > limit) {
         burnoutOccurred = true;
         burnedCompName = c.label;
-        return { ...c, isBurnedOut: true };
+        return {
+          ...c,
+          isBurnedOut: true
+        };
       }
       return c;
     });
-
     if (burnoutOccurred) {
       playSound('burnout');
       setComponents(updated);
@@ -499,11 +777,10 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
   }, [components, circuitState, solveCircuit]);
 
   // Add component handler
-  const handleAddComponent = (type) => {
+  const handleAddComponent = type => {
     const canvas = canvasRef.current;
     const cx = canvas ? canvas.width / 2 : 400;
     const cy = canvas ? canvas.height / 2 : 300;
-
     let newComp = {
       id: `${type}_${Date.now()}_${Math.floor(Math.random() * 1000)}`,
       type,
@@ -514,7 +791,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       isOpen: false,
       isBurnedOut: false
     };
-
     switch (type) {
       case 'wire':
         newComp.value = 0;
@@ -540,81 +816,103 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       default:
         return;
     }
-
     setComponents(prev => [...prev, newComp]);
     setSelectedCompId(newComp.id);
   };
-
-  const getMouseCoordinates = (e) => {
+  const getMouseCoordinates = e => {
     const canvas = canvasRef.current;
-    if (!canvas) return { x: 0, y: 0 };
+    if (!canvas) return {
+      x: 0,
+      y: 0
+    };
     const rect = canvas.getBoundingClientRect();
-    
     const scaleX = rect.width / canvas.width;
     const scaleY = rect.height / canvas.height;
     const scale = Math.min(scaleX, scaleY);
-    
     const renderedWidth = canvas.width * scale;
     const renderedHeight = canvas.height * scale;
-    
     const offsetX = (rect.width - renderedWidth) / 2;
     const offsetY = (rect.height - renderedHeight) / 2;
-    
     const x = (e.clientX - rect.left - offsetX) / scale;
     const y = (e.clientY - rect.top - offsetY) / scale;
-    
-    return { x, y };
+    return {
+      x,
+      y
+    };
   };
 
   // Mouse handlers
-  const handleMouseDown = (e) => {
-    const { x, y } = getMouseCoordinates(e);
+  const handleMouseDown = e => {
+    const {
+      x,
+      y
+    } = getMouseCoordinates(e);
 
     // 1. Drag red probe
     if (showVoltmeter && Math.hypot(x - voltmeterRed.x, y - voltmeterRed.y) < 20) {
-      setDragging({ type: 'voltmeterRed' });
+      setDragging({
+        type: 'voltmeterRed'
+      });
       return;
     }
 
     // 2. Drag black probe
     if (showVoltmeter && Math.hypot(x - voltmeterBlack.x, y - voltmeterBlack.y) < 20) {
-      setDragging({ type: 'voltmeterBlack' });
+      setDragging({
+        type: 'voltmeterBlack'
+      });
       return;
     }
 
     // 3. Drag voltmeter box
     if (showVoltmeter && x >= voltmeterBox.x && x <= voltmeterBox.x + 150 && y >= voltmeterBox.y && y <= voltmeterBox.y + 80) {
-      setDragging({ type: 'voltmeterBox', offsetX: x - voltmeterBox.x, offsetY: y - voltmeterBox.y });
+      setDragging({
+        type: 'voltmeterBox',
+        offsetX: x - voltmeterBox.x,
+        offsetY: y - voltmeterBox.y
+      });
       return;
     }
 
     // 4. Drag ammeter probe
     if (showAmmeter && Math.hypot(x - ammeterProbe.x, y - ammeterProbe.y) < 25) {
-      setDragging({ type: 'ammeterProbe', offsetX: x - ammeterProbe.x, offsetY: y - ammeterProbe.y });
+      setDragging({
+        type: 'ammeterProbe',
+        offsetX: x - ammeterProbe.x,
+        offsetY: y - ammeterProbe.y
+      });
       return;
     }
 
     // 5. Drag component terminals
     for (let c of components) {
       if (Math.hypot(x - c.x1, y - c.y1) < 14) {
-        setDragging({ type: 'terminal', compId: c.id, termNum: 1 });
+        setDragging({
+          type: 'terminal',
+          compId: c.id,
+          termNum: 1
+        });
         setSelectedCompId(c.id);
         const tx = c.x1;
         const ty = c.y1;
         wasSnappedRef.current = components.some(other => {
           if (other.id === c.id) return false;
-          return (Math.hypot(tx - other.x1, ty - other.y1) < 1) || (Math.hypot(tx - other.x2, ty - other.y2) < 1);
+          return Math.hypot(tx - other.x1, ty - other.y1) < 1 || Math.hypot(tx - other.x2, ty - other.y2) < 1;
         });
         return;
       }
       if (Math.hypot(x - c.x2, y - c.y2) < 14) {
-        setDragging({ type: 'terminal', compId: c.id, termNum: 2 });
+        setDragging({
+          type: 'terminal',
+          compId: c.id,
+          termNum: 2
+        });
         setSelectedCompId(c.id);
         const tx = c.x2;
         const ty = c.y2;
         wasSnappedRef.current = components.some(other => {
           if (other.id === c.id) return false;
-          return (Math.hypot(tx - other.x1, ty - other.y1) < 1) || (Math.hypot(tx - other.x2, ty - other.y2) < 1);
+          return Math.hypot(tx - other.x1, ty - other.y1) < 1 || Math.hypot(tx - other.x2, ty - other.y2) < 1;
         });
         return;
       }
@@ -641,25 +939,37 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     // Deselect if clicking on canvas background
     setSelectedCompId(null);
   };
-
-  const handleMouseMove = (e) => {
+  const handleMouseMove = e => {
     if (!dragging) return;
-    const { x, y } = getMouseCoordinates(e);
-
+    const {
+      x,
+      y
+    } = getMouseCoordinates(e);
     if (dragging.type === 'voltmeterRed') {
-      setVoltmeterRed({ x: Math.max(10, Math.min(790, x)), y: Math.max(10, Math.min(590, y)) });
+      setVoltmeterRed({
+        x: Math.max(10, Math.min(790, x)),
+        y: Math.max(10, Math.min(590, y))
+      });
     } else if (dragging.type === 'voltmeterBlack') {
-      setVoltmeterBlack({ x: Math.max(10, Math.min(790, x)), y: Math.max(10, Math.min(590, y)) });
+      setVoltmeterBlack({
+        x: Math.max(10, Math.min(790, x)),
+        y: Math.max(10, Math.min(590, y))
+      });
     } else if (dragging.type === 'voltmeterBox') {
       setVoltmeterBox({
         x: Math.max(0, Math.min(650, x - dragging.offsetX)),
         y: Math.max(0, Math.min(520, y - dragging.offsetY))
       });
     } else if (dragging.type === 'ammeterProbe') {
-      setAmmeterProbe({ x: Math.max(10, Math.min(790, x)), y: Math.max(10, Math.min(590, y)) });
+      setAmmeterProbe({
+        x: Math.max(10, Math.min(790, x)),
+        y: Math.max(10, Math.min(590, y))
+      });
     } else if (dragging.type === 'terminal') {
-      const { compId, termNum } = dragging;
-      
+      const {
+        compId,
+        termNum
+      } = dragging;
       let targetX = x;
       let targetY = y;
       let snapped = false;
@@ -680,7 +990,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
           break;
         }
       }
-
       if (snapped && !wasSnappedRef.current) {
         playSound('connect');
       }
@@ -696,25 +1005,36 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       // Constrain inside canvas
       targetX = Math.max(10, Math.min(790, targetX));
       targetY = Math.max(10, Math.min(590, targetY));
-
       setComponents(prev => prev.map(c => {
         if (c.id === compId) {
-          return termNum === 1
-            ? { ...c, x1: targetX, y1: targetY }
-            : { ...c, x2: targetX, y2: targetY };
+          return termNum === 1 ? {
+            ...c,
+            x1: targetX,
+            y1: targetY
+          } : {
+            ...c,
+            x2: targetX,
+            y2: targetY
+          };
         }
         return c;
       }));
     } else if (dragging.type === 'body') {
-      const { compId, startX1, startY1, startX2, startY2, clickX, clickY } = dragging;
+      const {
+        compId,
+        startX1,
+        startY1,
+        startX2,
+        startY2,
+        clickX,
+        clickY
+      } = dragging;
       let dx = x - clickX;
       let dy = y - clickY;
-
       let tx1 = startX1 + dx;
       let ty1 = startY1 + dy;
       let tx2 = startX2 + dx;
       let ty2 = startY2 + dy;
-
       if (snapToGrid) {
         const grid = 20;
         tx1 = Math.round(tx1 / grid) * grid;
@@ -728,33 +1048,40 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       const maxX = Math.max(tx1, tx2);
       const minY = Math.min(ty1, ty2);
       const maxY = Math.max(ty1, ty2);
-
       if (minX < 10) {
         const diff = 10 - minX;
-        tx1 += diff; tx2 += diff;
+        tx1 += diff;
+        tx2 += diff;
       }
       if (maxX > 790) {
         const diff = 790 - maxX;
-        tx1 += diff; tx2 += diff;
+        tx1 += diff;
+        tx2 += diff;
       }
       if (minY < 10) {
         const diff = 10 - minY;
-        ty1 += diff; ty2 += diff;
+        ty1 += diff;
+        ty2 += diff;
       }
       if (maxY > 590) {
         const diff = 590 - maxY;
-        ty1 += diff; ty2 += diff;
+        ty1 += diff;
+        ty2 += diff;
       }
-
       setComponents(prev => prev.map(c => {
         if (c.id === compId) {
-          return { ...c, x1: tx1, y1: ty1, x2: tx2, y2: ty2 };
+          return {
+            ...c,
+            x1: tx1,
+            y1: ty1,
+            x2: tx2,
+            y2: ty2
+          };
         }
         return c;
       }));
     }
   };
-
   const handleResetAll = () => {
     setComponents([]);
     setSelectedCompId(null);
@@ -762,14 +1089,25 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     setIsSchematic(false);
     setShowVoltmeter(false);
     setShowAmmeter(false);
-    setVoltmeterBox({ x: 620, y: 350 });
-    setVoltmeterRed({ x: 600, y: 450 });
-    setVoltmeterBlack({ x: 670, y: 450 });
-    setAmmeterProbe({ x: 620, y: 250 });
+    setVoltmeterBox({
+      x: 620,
+      y: 350
+    });
+    setVoltmeterRed({
+      x: 600,
+      y: 450
+    });
+    setVoltmeterBlack({
+      x: 670,
+      y: 450
+    });
+    setAmmeterProbe({
+      x: 620,
+      y: 250
+    });
     setBurnoutNotice(null);
   };
-
-  const handleMouseUp = (e) => {
+  const handleMouseUp = e => {
     if (dragging && dragging.type === 'body') {
       const canvas = canvasRef.current;
       if (canvas) {
@@ -777,7 +1115,7 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         const x = (e.clientX - rect.left) * (canvas.width / rect.width);
         const y = (e.clientY - rect.top) * (canvas.height / rect.height);
         const dist = Math.hypot(x - dragging.clickX, y - dragging.clickY);
-        
+
         // Knife switch toggled if not dragged much
         if (dist < 4) {
           const c = components.find(comp => comp.id === dragging.compId);
@@ -785,7 +1123,10 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             playSound('click');
             setComponents(prev => prev.map(comp => {
               if (comp.id === c.id) {
-                return { ...comp, isOpen: !comp.isOpen };
+                return {
+                  ...comp,
+                  isOpen: !comp.isOpen
+                };
               }
               return comp;
             }));
@@ -797,19 +1138,17 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
   };
 
   // Touch support
-  const handleTouchStart = (e) => {
+  const handleTouchStart = e => {
     if (e.touches.length === 1) {
       handleMouseDown(e.touches[0]);
     }
   };
-
-  const handleTouchMove = (e) => {
+  const handleTouchMove = e => {
     if (e.touches.length === 1) {
       handleMouseMove(e.touches[0]);
     }
   };
-
-  const handleTouchEnd = (e) => {
+  const handleTouchEnd = e => {
     handleMouseUp(e);
   };
 
@@ -843,7 +1182,10 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     if (!selectedCompId) return;
     setComponents(prev => prev.map(c => {
       if (c.id === selectedCompId) {
-        return { ...c, isBurnedOut: false };
+        return {
+          ...c,
+          isBurnedOut: false
+        };
       }
       return c;
     }));
@@ -857,7 +1199,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
   let voltmeterReading = null;
   let voltmeterSnapRed = null;
   let voltmeterSnapBlack = null;
-
   if (showVoltmeter) {
     let closestRedNode = null;
     let closestBlackNode = null;
@@ -868,18 +1209,43 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     components.forEach(c => {
       const n1 = circuitState.getNodeId(c.id, 1);
       const n2 = circuitState.getNodeId(c.id, 2);
-
       const dRed1 = Math.hypot(voltmeterRed.x - c.x1, voltmeterRed.y - c.y1);
       const dRed2 = Math.hypot(voltmeterRed.x - c.x2, voltmeterRed.y - c.y2);
       const dBlack1 = Math.hypot(voltmeterBlack.x - c.x1, voltmeterBlack.y - c.y1);
       const dBlack2 = Math.hypot(voltmeterBlack.x - c.x2, voltmeterBlack.y - c.y2);
-
-      if (dRed1 < minRedDist) { minRedDist = dRed1; closestRedNode = n1; voltmeterSnapRed = { x: c.x1, y: c.y1 }; }
-      if (dRed2 < minRedDist) { minRedDist = dRed2; closestRedNode = n2; voltmeterSnapRed = { x: c.x2, y: c.y2 }; }
-      if (dBlack1 < minBlackDist) { minBlackDist = dBlack1; closestBlackNode = n1; voltmeterSnapBlack = { x: c.x1, y: c.y1 }; }
-      if (dBlack2 < minBlackDist) { minBlackDist = dBlack2; closestBlackNode = n2; voltmeterSnapBlack = { x: c.x2, y: c.y2 }; }
+      if (dRed1 < minRedDist) {
+        minRedDist = dRed1;
+        closestRedNode = n1;
+        voltmeterSnapRed = {
+          x: c.x1,
+          y: c.y1
+        };
+      }
+      if (dRed2 < minRedDist) {
+        minRedDist = dRed2;
+        closestRedNode = n2;
+        voltmeterSnapRed = {
+          x: c.x2,
+          y: c.y2
+        };
+      }
+      if (dBlack1 < minBlackDist) {
+        minBlackDist = dBlack1;
+        closestBlackNode = n1;
+        voltmeterSnapBlack = {
+          x: c.x1,
+          y: c.y1
+        };
+      }
+      if (dBlack2 < minBlackDist) {
+        minBlackDist = dBlack2;
+        closestBlackNode = n2;
+        voltmeterSnapBlack = {
+          x: c.x2,
+          y: c.y2
+        };
+      }
     });
-
     if (closestRedNode !== null && closestBlackNode !== null) {
       const vRed = circuitState.voltages[closestRedNode] || 0;
       const vBlack = circuitState.voltages[closestBlackNode] || 0;
@@ -890,7 +1256,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
   // Ammeter reading calculation
   let ammeterReading = 0;
   let hoveredCompId = null;
-
   if (showAmmeter) {
     let minHoverDist = 22;
     components.forEach(c => {
@@ -900,7 +1265,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         hoveredCompId = c.id;
       }
     });
-
     if (hoveredCompId) {
       ammeterReading = Math.abs(circuitState.currents[hoveredCompId] || 0);
     }
@@ -912,7 +1276,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
     let animationFrameId;
-
     const render = () => {
       const width = canvas.width;
       const height = canvas.height;
@@ -921,7 +1284,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       // 1. Draw Grid Background
       ctx.fillStyle = '#0f172a'; // slate-900 background
       ctx.fillRect(0, 0, width, height);
-
       ctx.fillStyle = 'rgba(51, 65, 85, 0.4)'; // slate-700 grid dots
       const gridSpacing = 20;
       for (let x = gridSpacing; x < width; x += gridSpacing) {
@@ -954,7 +1316,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.bezierCurveTo(10, -5, 14, 10, 0, 10);
         ctx.closePath();
         ctx.fill();
-
         ctx.fillStyle = 'rgba(249, 115, 22, 0.95)'; // Orange
         ctx.beginPath();
         ctx.moveTo(0, 8);
@@ -962,7 +1323,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.bezierCurveTo(6, -3, 9, 8, 0, 8);
         ctx.closePath();
         ctx.fill();
-
         ctx.fillStyle = 'rgba(253, 224, 71, 1)'; // Yellow Core
         ctx.beginPath();
         ctx.moveTo(0, 5);
@@ -970,7 +1330,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.bezierCurveTo(3, 2, 5, 5, 0, 5);
         ctx.closePath();
         ctx.fill();
-
         ctx.restore();
       };
 
@@ -989,14 +1348,12 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         const px = parseFloat(xStr);
         const py = parseFloat(yStr);
         const count = joints[key];
-
         if (count > 1) {
           ctx.strokeStyle = 'rgba(34, 197, 94, 0.6)'; // Neon green circle ring
           ctx.lineWidth = 1.5;
           ctx.beginPath();
           ctx.arc(px, py, 6, 0, Math.PI * 2);
           ctx.stroke();
-
           ctx.fillStyle = '#22c55e'; // green dot inside
           ctx.beginPath();
           ctx.arc(px, py, 2.5, 0, Math.PI * 2);
@@ -1020,7 +1377,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         const len = Math.hypot(dx, dy);
         const angle = Math.atan2(dy, dx);
         const current = circuitState.currents[c.id] || 0;
-
         ctx.save();
         ctx.translate(c.x1, c.y1);
         ctx.rotate(angle);
@@ -1035,12 +1391,10 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
           ctx.stroke();
           ctx.setLineDash([]);
         }
-
         if (isSchematic) {
           // ==================== SCHEMATIC VIEW ====================
           ctx.strokeStyle = '#94a3b8'; // slate-400
           ctx.lineWidth = 3.5;
-
           if (c.type === 'wire') {
             ctx.beginPath();
             ctx.moveTo(0, 0);
@@ -1061,7 +1415,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             ctx.moveTo(len / 2 + 8, -15);
             ctx.lineTo(len / 2 + 8, 15); // positive plate (long)
             ctx.stroke();
-
             ctx.strokeStyle = '#64748b'; // negative grey
             ctx.lineWidth = 5.5;
             ctx.beginPath();
@@ -1173,7 +1526,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             ctx.moveTo(0, 0);
             ctx.lineTo(len, 0);
             ctx.stroke();
-
             ctx.strokeStyle = '#475569';
             ctx.lineWidth = 4;
             ctx.beginPath();
@@ -1195,13 +1547,23 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             // Negative side (black/grey)
             ctx.fillStyle = '#1e293b';
             ctx.beginPath();
-            ctx.roundRect(len / 2 - 25, -12, 35, 24, { tl: 4, bl: 4, tr: 0, br: 0 });
+            ctx.roundRect(len / 2 - 25, -12, 35, 24, {
+              tl: 4,
+              bl: 4,
+              tr: 0,
+              br: 0
+            });
             ctx.fill();
 
             // Positive side (gold/orange)
             ctx.fillStyle = '#d97706';
             ctx.beginPath();
-            ctx.roundRect(len / 2 + 10, -12, 12, 24, { tl: 0, bl: 0, tr: 4, br: 4 });
+            ctx.roundRect(len / 2 + 10, -12, 12, 24, {
+              tl: 0,
+              bl: 0,
+              tr: 4,
+              br: 4
+            });
             ctx.fill();
 
             // Positive metal tip nub
@@ -1264,7 +1626,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             ctx.moveTo(len / 2 + 15, 0);
             ctx.lineTo(len, 0);
             ctx.stroke();
-
             const glowIntensity = Math.abs(current);
             // Draw glow behind the bulb if functioning
             if (!c.isBurnedOut && glowIntensity > 0.01) {
@@ -1284,7 +1645,7 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
               ctx.lineWidth = 1.5;
               const rayCount = 8;
               for (let i = 0; i < rayCount; i++) {
-                const rayAngle = (i / rayCount) * Math.PI * 2;
+                const rayAngle = i / rayCount * Math.PI * 2;
                 ctx.beginPath();
                 ctx.moveTo(len / 2 + Math.cos(rayAngle) * 16, Math.sin(rayAngle) * 16);
                 ctx.lineTo(len / 2 + Math.cos(rayAngle) * (16 + glowRad * 0.4), Math.sin(rayAngle) * (16 + glowRad * 0.4));
@@ -1395,28 +1756,25 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
           const speedMultiplier = 40; // speed of electron flow
           const time = Date.now() / 1000;
           const dotSpacing = 28;
-          
+
           // Speed matches current magnitude
           const speed = current * speedMultiplier;
-          
+
           // Particle direction:
           // Electrons flow opposite to conventional current (from negative to positive terminal).
           // If current > 0 (flows terminal 1 -> 2), electrons flow 2 -> 1.
           const isElectronDir = currentFlowType === 'electrons';
           const directionFactor = isElectronDir ? -1 : 1;
-
           ctx.fillStyle = isElectronDir ? '#22d3ee' : '#fbbf24'; // cyan for e-, gold for conventional
           const particleCount = Math.floor(len / dotSpacing);
-          const startOffset = (time * speed * directionFactor) % dotSpacing;
-
+          const startOffset = time * speed * directionFactor % dotSpacing;
           for (let i = 0; i <= particleCount; i++) {
             let px = (i * dotSpacing + startOffset) % len;
             if (px < 0) px += len;
-
             ctx.beginPath();
             ctx.arc(px, 0, isElectronDir ? 3.5 : 4, 0, Math.PI * 2);
             ctx.fill();
-            
+
             // Draw visual indicator for electron '-' sign
             if (isElectronDir) {
               ctx.fillStyle = '#0891b2';
@@ -1430,12 +1788,10 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.fillStyle = '#94a3b8';
         ctx.font = '10px sans-serif';
         ctx.textAlign = 'center';
-
         let valText = '';
         if (c.type === 'battery') valText = `${c.value.toFixed(1)} V`;
         if (c.type === 'resistor' || c.type === 'bulb') valText = `${c.value.toFixed(1)} \u03A9`;
         if (c.isBurnedOut) valText = 'BURNED OUT';
-
         ctx.fillText(c.label, len / 2, 28);
         if (valText) {
           ctx.fillText(valText, len / 2, 40);
@@ -1445,7 +1801,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         if (c.isBurnedOut) {
           drawFlame(len / 2, 0, 1.1);
         }
-
         ctx.restore();
       });
 
@@ -1459,11 +1814,7 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.lineWidth = 3.5;
         ctx.beginPath();
         ctx.moveTo(boxCenterX - 30, boxCenterY);
-        ctx.bezierCurveTo(
-          boxCenterX - 30, boxCenterY + 120,
-          voltmeterRed.x, voltmeterRed.y - 100,
-          voltmeterRed.x, voltmeterRed.y
-        );
+        ctx.bezierCurveTo(boxCenterX - 30, boxCenterY + 120, voltmeterRed.x, voltmeterRed.y - 100, voltmeterRed.x, voltmeterRed.y);
         ctx.stroke();
 
         // Draw black probe wire
@@ -1471,11 +1822,7 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.lineWidth = 3.5;
         ctx.beginPath();
         ctx.moveTo(boxCenterX + 30, boxCenterY);
-        ctx.bezierCurveTo(
-          boxCenterX + 30, boxCenterY + 120,
-          voltmeterBlack.x, voltmeterBlack.y - 100,
-          voltmeterBlack.x, voltmeterBlack.y
-        );
+        ctx.bezierCurveTo(boxCenterX + 30, boxCenterY + 120, voltmeterBlack.x, voltmeterBlack.y - 100, voltmeterBlack.x, voltmeterBlack.y);
         ctx.stroke();
 
         // Draw snapping connection guides if probes are close to nodes
@@ -1488,7 +1835,6 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
           ctx.stroke();
           ctx.setLineDash([]);
         }
-
         if (voltmeterSnapBlack) {
           ctx.strokeStyle = 'rgba(74, 85, 104, 0.6)';
           ctx.lineWidth = 2;
@@ -1504,14 +1850,12 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.beginPath();
         ctx.arc(voltmeterRed.x, voltmeterRed.y, 9, 0, Math.PI * 2);
         ctx.fill();
-
         ctx.strokeStyle = '#fca5a5';
         ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.moveTo(voltmeterRed.x, voltmeterRed.y);
         ctx.lineTo(voltmeterRed.x, voltmeterRed.y - 15); // metal pin tip
         ctx.stroke();
-
         ctx.fillStyle = '#ffffff';
         ctx.font = 'bold 10px sans-serif';
         ctx.textAlign = 'center';
@@ -1523,14 +1867,12 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.beginPath();
         ctx.arc(voltmeterBlack.x, voltmeterBlack.y, 9, 0, Math.PI * 2);
         ctx.fill();
-
         ctx.strokeStyle = '#94a3b8';
         ctx.lineWidth = 2;
         ctx.beginPath();
         ctx.moveTo(voltmeterBlack.x, voltmeterBlack.y);
         ctx.lineTo(voltmeterBlack.x, voltmeterBlack.y - 15); // metal tip
         ctx.stroke();
-
         ctx.fillStyle = '#ffffff';
         ctx.fillText('-', voltmeterBlack.x, voltmeterBlack.y);
 
@@ -1554,9 +1896,7 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.font = 'bold 16px Courier New, monospace';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
-        const readingString = voltmeterReading !== null
-          ? `${voltmeterReading.toFixed(2)} V`
-          : '--- V';
+        const readingString = voltmeterReading !== null ? `${voltmeterReading.toFixed(2)} V` : '--- V';
         ctx.fillText(readingString, voltmeterBox.x + 75, voltmeterBox.y + 31);
 
         // Box label
@@ -1604,24 +1944,22 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
         ctx.textBaseline = 'middle';
         ctx.fillText(`${ammeterReading.toFixed(2)} A`, ammeterProbe.x, ammeterProbe.y);
       }
-
       animationFrameId = requestAnimationFrame(render);
     };
-
     render();
-
     return () => {
       cancelAnimationFrame(animationFrameId);
     };
   }, [components, circuitState, showVoltmeter, voltmeterReading, voltmeterBox, voltmeterRed, voltmeterBlack, voltmeterSnapRed, voltmeterSnapBlack, showAmmeter, ammeterReading, ammeterProbe, hoveredCompId, currentFlowType, isSchematic, selectedCompId]);
-
-
-  return (
-    <div
-      ref={containerRef}
-      className="text-slate-100 font-sans selection:bg-sky-500 selection:text-white"
-      style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}
-    >
+  return <div ref={containerRef} className="text-slate-100 font-sans selection:bg-sky-500 selection:text-white" style={{
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    background: '#0a0a1a',
+    display: 'flex',
+    flexDirection: 'column',
+    overflow: 'hidden'
+  }}>
       <style>{`
         .glass-btn {
           display: flex;
@@ -1657,52 +1995,48 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       `}</style>
 
       {/* Canvas */}
-      <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto', padding: '20px', boxSizing: 'border-box', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <canvas
-          ref={canvasRef}
-          width={800}
-          height={600}
-          onMouseDown={handleMouseDown}
-          onMouseMove={handleMouseMove}
-          onMouseUp={handleMouseUp}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={handleTouchEnd}
-          style={{
-            width: '100%',
-            height: '100%',
-            maxHeight: '100%',
-            objectFit: 'contain',
-            pointerEvents: 'auto',
-            background: '#050510',
-            borderRadius: '16px',
-            border: '1px solid rgba(255,255,255,0.05)',
-            boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
-          }}
-        />
+      <div style={{
+      flex: 1,
+      position: 'relative',
+      zIndex: 1,
+      pointerEvents: 'auto',
+      padding: '20px',
+      boxSizing: 'border-box',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }}>
+        <canvas ref={canvasRef} width={800} height={600} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd} style={{
+        width: '100%',
+        height: '100%',
+        maxHeight: '100%',
+        objectFit: 'contain',
+        pointerEvents: 'auto',
+        background: '#050510',
+        borderRadius: '16px',
+        border: '1px solid rgba(255,255,255,0.05)',
+        boxShadow: '0 8px 32px rgba(0,0,0,0.4)'
+      }} />
       </div>
 
       {/* Help Overlay HUD */}
-      <div
-        style={{
-          position: 'absolute',
-          bottom: '20px',
-          left: '20px',
-          width: '280px',
-          background: 'rgba(20, 20, 30, 0.8)',
-          border: '1px solid rgba(255,255,255,0.1)',
-          backdropFilter: 'blur(12px)',
-          WebkitBackdropFilter: 'blur(12px)',
-          padding: '16px',
-          borderRadius: '16px',
-          zIndex: 10,
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          pointerEvents: 'none',
-          fontSize: '12px'
-        }}
-        className="space-y-1.5"
-      >
+      <div style={{
+      position: 'absolute',
+      bottom: '20px',
+      left: '20px',
+      width: '280px',
+      background: 'rgba(20, 20, 30, 0.8)',
+      border: '1px solid rgba(255,255,255,0.1)',
+      backdropFilter: 'blur(12px)',
+      WebkitBackdropFilter: 'blur(12px)',
+      padding: '16px',
+      borderRadius: '16px',
+      zIndex: 10,
+      color: 'white',
+      fontFamily: "'Inter', sans-serif",
+      pointerEvents: 'none',
+      fontSize: '12px'
+    }} className="space-y-1.5">
         <div className="font-semibold text-slate-200 flex items-center space-x-1">
           <HelpCircle className="w-3.5 h-3.5 text-sky-400" />
           <span>Interactive Controls</span>
@@ -1715,37 +2049,50 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
       </div>
 
       {/* Burnout alarm */}
-      {burnoutNotice && (
-        <div
-          style={{
-            position: 'absolute',
-            top: '100px',
-            left: '20px',
-            width: '280px',
-            background: 'rgba(127, 29, 29, 0.8)',
-            border: '1px solid rgba(239, 68, 68, 0.3)',
-            backdropFilter: 'blur(12px)',
-            WebkitBackdropFilter: 'blur(12px)',
-            padding: '16px',
-            borderRadius: '16px',
-            zIndex: 10,
-            color: 'white',
-            fontFamily: "'Inter', sans-serif",
-            fontSize: '12px'
-          }}
-          className="animate-pulse flex items-start space-x-2"
-        >
+      {burnoutNotice && <div style={{
+      position: 'absolute',
+      top: '100px',
+      left: '20px',
+      width: '280px',
+      background: 'rgba(127, 29, 29, 0.8)',
+      border: '1px solid rgba(239, 68, 68, 0.3)',
+      backdropFilter: 'blur(12px)',
+      WebkitBackdropFilter: 'blur(12px)',
+      padding: '16px',
+      borderRadius: '16px',
+      zIndex: 10,
+      color: 'white',
+      fontFamily: "'Inter', sans-serif",
+      fontSize: '12px'
+    }} className="animate-pulse flex items-start space-x-2">
           <AlertCircle className="w-4 h-4 text-red-400 mt-0.5 shrink-0" />
           <div>
             <div className="font-bold text-red-100">Component Burned Out!</div>
             <div>{burnoutNotice}</div>
             <div className="text-[10px] text-red-300 mt-1">Select the component and click "Repair" to restore.</div>
           </div>
-        </div>
-      )}
+        </div>}
 
       {/* Control Sidebar (Floating Aside Panel) */}
-      <aside style={{ position: 'absolute', top: '90px', right: '20px', width: '320px', maxHeight: 'calc(100% - 110px)', overflowY: 'auto', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white', zIndex: 10, pointerEvents: 'auto', padding: '20px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+      <aside style={{
+      position: 'absolute',
+      top: '90px',
+      right: '20px',
+      width: '320px',
+      maxHeight: 'calc(100% - 110px)',
+      overflowY: 'auto',
+      background: 'rgba(20, 20, 30, 0.8)',
+      border: '1px solid rgba(255,255,255,0.1)',
+      backdropFilter: 'blur(12px)',
+      borderRadius: '16px',
+      color: 'white',
+      zIndex: 10,
+      pointerEvents: 'auto',
+      padding: '20px',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '16px'
+    }}>
         {/* Section 1: Component Palette */}
         <div className="pb-4 border-b border-white/10">
           <h3 className="text-sm font-bold tracking-wider text-slate-400 uppercase mb-3 flex items-center space-x-2">
@@ -1753,38 +2100,23 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             <span>Add Components</span>
           </h3>
           <div className="grid grid-cols-2 gap-2">
-            <button
-              onClick={() => handleAddComponent('wire')}
-              className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item"
-            >
+            <button onClick={() => handleAddComponent('wire')} className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item">
               <div className="w-3 h-3 rounded-full" />
               <span>Wire</span>
             </button>
-            <button
-              onClick={() => handleAddComponent('battery')}
-              className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item"
-            >
+            <button onClick={() => handleAddComponent('battery')} className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item">
               <Zap className="w-4 h-4 text-amber-500" />
               <span>Battery</span>
             </button>
-            <button
-              onClick={() => handleAddComponent('resistor')}
-              className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item"
-            >
+            <button onClick={() => handleAddComponent('resistor')} className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item">
               <Sliders className="w-4 h-4 text-rose-500" />
               <span>Resistor</span>
             </button>
-            <button
-              onClick={() => handleAddComponent('bulb')}
-              className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item"
-            >
+            <button onClick={() => handleAddComponent('bulb')} className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item">
               <Lightbulb className="w-4 h-4 text-yellow-400" />
               <span>Light Bulb</span>
             </button>
-            <button
-              onClick={() => handleAddComponent('switch')}
-              className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item"
-            >
+            <button onClick={() => handleAddComponent('switch')} className="flex items-center space-x-2 px-3 py-2 rounded-lg text-xs font-medium text-slate-200 transition ds-sidebar-item">
               <Power className="w-4 h-4 text-indigo-400" />
               <span>Switch</span>
             </button>
@@ -1798,42 +2130,70 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             <span>Measurement Tools</span>
           </h3>
           <div className="space-y-3">
-            <label className="flex items-center justify-between p-2 rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:bg-white/10 transition" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+            <label className="flex items-center justify-between p-2 rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:bg-white/10 transition" style={{
+            background: 'rgba(20, 20, 30, 0.8)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '16px',
+            color: 'white'
+          }}>
               <span className="text-xs text-slate-200 flex items-center space-x-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-red-500" />
                 <span>Enable Voltmeter</span>
               </span>
-              <input
-                type="checkbox"
-                checked={showVoltmeter}
-                onChange={(e) => {
-                  setShowVoltmeter(e.target.checked);
-                  if (e.target.checked) {
-                    setVoltmeterBox({ x: 580, y: 120 });
-                    setVoltmeterRed({ x: 550, y: 220 });
-                    setVoltmeterBlack({ x: 620, y: 220 });
-                  }
-                }}
-                className="rounded border-slate-600 focus:ring-[#3498db] focus:ring-offset-slate-900 w-4 h-4" style={{ accentColor: '#3498db',  background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-              />
+              <input type="checkbox" checked={showVoltmeter} onChange={e => {
+              setShowVoltmeter(e.target.checked);
+              if (e.target.checked) {
+                setVoltmeterBox({
+                  x: 580,
+                  y: 120
+                });
+                setVoltmeterRed({
+                  x: 550,
+                  y: 220
+                });
+                setVoltmeterBlack({
+                  x: 620,
+                  y: 220
+                });
+              }
+            }} className="rounded border-slate-600 focus:ring-[#3498db] focus:ring-offset-slate-900 w-4 h-4" style={{
+              accentColor: '#3498db',
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
             </label>
 
-            <label className="flex items-center justify-between p-2 rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:bg-white/10 transition" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+            <label className="flex items-center justify-between p-2 rounded-lg bg-white/5 border border-white/10 cursor-pointer hover:bg-white/10 transition" style={{
+            background: 'rgba(20, 20, 30, 0.8)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '16px',
+            color: 'white'
+          }}>
               <span className="text-xs text-slate-200 flex items-center space-x-2">
                 <span className="w-2.5 h-2.5 rounded-full bg-cyan-400" />
                 <span>Enable Ammeter</span>
               </span>
-              <input
-                type="checkbox"
-                checked={showAmmeter}
-                onChange={(e) => {
-                  setShowAmmeter(e.target.checked);
-                  if (e.target.checked) {
-                    setAmmeterProbe({ x: 600, y: 150 });
-                  }
-                }}
-                className="rounded border-slate-600 focus:ring-[#3498db] focus:ring-offset-slate-900 w-4 h-4" style={{ accentColor: '#3498db',  background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-              />
+              <input type="checkbox" checked={showAmmeter} onChange={e => {
+              setShowAmmeter(e.target.checked);
+              if (e.target.checked) {
+                setAmmeterProbe({
+                  x: 600,
+                  y: 150
+                });
+              }
+            }} className="rounded border-slate-600 focus:ring-[#3498db] focus:ring-offset-slate-900 w-4 h-4" style={{
+              accentColor: '#3498db',
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
             </label>
           </div>
         </div>
@@ -1849,22 +2209,13 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             <div>
               <label className="text-[11px] font-semibold text-slate-400 block mb-1.5 uppercase">Current Flow Visuals</label>
               <div className="grid grid-cols-3 gap-1 p-1 rounded-lg border border-white/10">
-                <button
-                  onClick={() => setCurrentFlowType('electrons')}
-                  className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${currentFlowType === 'electrons' ? 'bg-cyan-500 text-slate-950' : 'text-slate-400 hover:text-slate-200'}`}
-                >
+                <button onClick={() => setCurrentFlowType('electrons')} className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${currentFlowType === 'electrons' ? 'bg-cyan-500 text-slate-950' : 'text-slate-400 hover:text-slate-200'}`}>
                   Electrons
                 </button>
-                <button
-                  onClick={() => setCurrentFlowType('conventional')}
-                  className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${currentFlowType === 'conventional' ? 'bg-amber-500 text-slate-950' : 'text-slate-400 hover:text-slate-200'}`}
-                >
+                <button onClick={() => setCurrentFlowType('conventional')} className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${currentFlowType === 'conventional' ? 'bg-amber-500 text-slate-950' : 'text-slate-400 hover:text-slate-200'}`}>
                   Conventional
                 </button>
-                <button
-                  onClick={() => setCurrentFlowType('none')}
-                  className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${currentFlowType === 'none' ? 'bg-white/10 text-slate-200' : 'text-slate-400 hover:text-slate-200'}`}
-                >
+                <button onClick={() => setCurrentFlowType('none')} className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${currentFlowType === 'none' ? 'bg-white/10 text-slate-200' : 'text-slate-400 hover:text-slate-200'}`}>
                   None
                 </button>
               </div>
@@ -1874,16 +2225,10 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             <div>
               <label className="text-[11px] font-semibold text-slate-400 block mb-1.5 uppercase">Display View Mode</label>
               <div className="grid grid-cols-2 gap-1 p-1 rounded-lg border border-white/10">
-                <button
-                  onClick={() => setIsSchematic(false)}
-                  className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${!isSchematic ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-slate-200'}`}
-                >
+                <button onClick={() => setIsSchematic(false)} className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${!isSchematic ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-slate-200'}`}>
                   Realistic
                 </button>
-                <button
-                  onClick={() => setIsSchematic(true)}
-                  className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${isSchematic ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-slate-200'}`}
-                >
+                <button onClick={() => setIsSchematic(true)} className={`text-[10px] py-1 px-1.5 rounded font-medium transition ${isSchematic ? 'bg-indigo-600 text-white' : 'text-slate-400 hover:text-slate-200'}`}>
                   Schematic
                 </button>
               </div>
@@ -1892,13 +2237,9 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             {/* Grid lock toggle */}
             <label className="flex items-center justify-between p-1 cursor-pointer">
               <span className="text-xs text-slate-300">Lock to Grid (20px)</span>
-              <input
-                type="checkbox"
-                checked={snapToGrid}
-                onChange={(e) => setSnapToGrid(e.target.checked)}
-                style={{ accentColor: '#3498db' }}
-                className="rounded border-slate-700 focus:ring-[#3498db] focus:ring-offset-slate-900 w-4 h-4"
-              />
+              <input type="checkbox" checked={snapToGrid} onChange={e => setSnapToGrid(e.target.checked)} style={{
+              accentColor: '#3498db'
+            }} className="rounded border-slate-700 focus:ring-[#3498db] focus:ring-offset-slate-900 w-4 h-4" />
             </label>
           </div>
         </div>
@@ -1910,8 +2251,7 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
             <span>Component Editor</span>
           </h3>
 
-          {selectedComp ? (
-            <div className="space-y-4 p-3 border border-white/10 rounded-xl">
+          {selectedComp ? <div className="space-y-4 p-3 border border-white/10 rounded-xl">
               <div>
                 <div className="text-xs text-slate-400 uppercase font-semibold">Type</div>
                 <div className="text-sm font-bold capitalize text-white flex items-center space-x-1.5 mt-0.5">
@@ -1927,94 +2267,71 @@ export default function CustomCircuitConstructionKitDC({ onBack, title }) {
               {/* Status indicator */}
               <div>
                 <div className="text-xs text-slate-400 uppercase font-semibold">Status</div>
-                {selectedComp.isBurnedOut ? (
-                  <span className="inline-flex items-center space-x-1 text-[10px] font-bold px-2 py-0.5 rounded bg-red-950/80 border border-red-800 text-red-400 mt-1">
+                {selectedComp.isBurnedOut ? <span className="inline-flex items-center space-x-1 text-[10px] font-bold px-2 py-0.5 rounded bg-red-950/80 border border-red-800 text-red-400 mt-1">
                     <ZapOff className="w-3 h-3" />
                     <span>FUSED / BURNED OUT</span>
-                  </span>
-                ) : selectedComp.type === 'switch' ? (
-                  <span className={`inline-block text-[10px] font-bold px-2 py-0.5 rounded border mt-1 ${selectedComp.isOpen ? 'bg-indigo-950/80 border-indigo-800 text-indigo-300' : 'bg-emerald-950/80 border-emerald-800 text-emerald-300'}`}>
+                  </span> : selectedComp.type === 'switch' ? <span className={`inline-block text-[10px] font-bold px-2 py-0.5 rounded border mt-1 ${selectedComp.isOpen ? 'bg-indigo-950/80 border-indigo-800 text-indigo-300' : 'bg-emerald-950/80 border-emerald-800 text-emerald-300'}`}>
                     {selectedComp.isOpen ? 'OPEN' : 'CLOSED'}
-                  </span>
-                ) : (
-                  <span className="inline-flex items-center space-x-1 text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-800 text-emerald-300 mt-1">
+                  </span> : <span className="inline-flex items-center space-x-1 text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-950/80 border border-emerald-800 text-emerald-300 mt-1">
                     <Check className="w-3 h-3" />
                     <span>FUNCTIONAL</span>
-                  </span>
-                )}
+                  </span>}
               </div>
 
               {/* Value adjustment slider */}
-              {['battery', 'resistor', 'bulb'].includes(selectedComp.type) && (
-                <div>
+              {['battery', 'resistor', 'bulb'].includes(selectedComp.type) && <div>
                   <label className="flex items-center justify-between text-xs text-slate-400 font-semibold mb-1">
                     <span>
                       {selectedComp.type === 'battery' ? 'Voltage (V)' : 'Resistance (\u03A9)'}
                     </span>
-                    <span className="text-white font-mono px-1.5 py-0.5 rounded text-[11px]" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+                    <span className="text-white font-mono px-1.5 py-0.5 rounded text-[11px]" style={{
+                background: 'rgba(20, 20, 30, 0.8)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(12px)',
+                borderRadius: '16px',
+                color: 'white'
+              }}>
                       {selectedComp.value.toFixed(1)}
                       {selectedComp.type === 'battery' ? ' V' : ' \u03A9'}
                     </span>
                   </label>
-                  <input
-                    type="range"
-                    min={selectedComp.type === 'battery' ? '0.0' : '0.5'}
-                    max={selectedComp.type === 'battery' ? '120.0' : '100.0'}
-                    step={selectedComp.type === 'battery' ? '1.0' : '0.5'}
-                    value={selectedComp.value}
-                    disabled={selectedComp.isBurnedOut}
-                    onChange={(e) => {
-                      const val = parseFloat(e.target.value);
-                      setComponents(prev => prev.map(c => {
-                        if (c.id === selectedCompId) {
-                          return { ...c, value: val };
-                        }
-                        return c;
-                      }));
-                    }}
-                    style={{ accentColor: '#3498db' }}
-                    className="w-full h-1.5 rounded-lg appearance-none cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed"
-                  />
-                </div>
-              )}
+                  <input type="range" min={selectedComp.type === 'battery' ? '0.0' : '0.5'} max={selectedComp.type === 'battery' ? '120.0' : '100.0'} step={selectedComp.type === 'battery' ? '1.0' : '0.5'} value={selectedComp.value} disabled={selectedComp.isBurnedOut} onChange={e => {
+              const val = parseFloat(e.target.value);
+              setComponents(prev => prev.map(c => {
+                if (c.id === selectedCompId) {
+                  return {
+                    ...c,
+                    value: val
+                  };
+                }
+                return c;
+              }));
+            }} style={{
+              accentColor: '#3498db'
+            }} className="w-full h-1.5 rounded-lg appearance-none cursor-pointer disabled:opacity-40 disabled:cursor-not-allowed" />
+                </div>}
 
               {/* Action buttons */}
               <div className="flex flex-col space-y-2 pt-2">
-                {selectedComp.isBurnedOut && (
-                  <button
-                    onClick={handleRepair}
-                    className="flex items-center justify-center space-x-1 w-full px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-semibold shadow transition"
-                  >
+                {selectedComp.isBurnedOut && <button onClick={handleRepair} className="flex items-center justify-center space-x-1 w-full px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-semibold shadow transition">
                     <Sparkles className="w-3.5 h-3.5" />
                     <span>Repair Component</span>
-                  </button>
-                )}
+                  </button>}
 
-                <button
-                  onClick={handleDisconnect}
-                  className="flex items-center justify-center space-x-1 w-full px-3 py-1.5 rounded-lg text-slate-300 text-xs font-semibold ds-sidebar-item"
-                  title="Separate endpoints to break snaps"
-                >
+                <button onClick={handleDisconnect} className="flex items-center justify-center space-x-1 w-full px-3 py-1.5 rounded-lg text-slate-300 text-xs font-semibold ds-sidebar-item" title="Separate endpoints to break snaps">
                   <span>Unsnap Terminals</span>
                 </button>
 
-                <button
-                  onClick={handleDelete}
-                  className="flex items-center justify-center space-x-1 w-full px-3 py-1.5 rounded-lg bg-red-950/40 hover:bg-red-900/50 border border-red-800/40 text-red-300 text-xs font-semibold transition"
-                >
+                <button onClick={handleDelete} className="flex items-center justify-center space-x-1 w-full px-3 py-1.5 rounded-lg bg-red-950/40 hover:bg-red-900/50 border border-red-800/40 text-red-300 text-xs font-semibold transition">
                   <Trash2 className="w-3.5 h-3.5 text-red-400" />
                   <span>Delete Component</span>
                 </button>
               </div>
-            </div>
-          ) : (
-            <div className="flex flex-col items-center justify-center py-8 px-4 text-center border border-dashed border-white/10 rounded-xl text-slate-500">
+            </div> : <div className="flex flex-col items-center justify-center py-8 px-4 text-center border border-dashed border-white/10 rounded-xl text-slate-500">
               <Sliders className="w-8 h-8 text-slate-700 mb-2" />
               <p className="text-xs">Select a component on the canvas to configure parameters, delete, or disconnect it.</p>
-            </div>
-          )}
+            </div>}
         </div>
       </aside>
-    </div>
-  );
+    </div>;
 }

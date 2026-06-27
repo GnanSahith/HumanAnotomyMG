@@ -79,39 +79,85 @@
  */
 
 import React, { useState, useEffect, useRef } from 'react';
-import { 
-  ArrowLeft, 
-  Play, 
-  Pause, 
-  RotateCcw, 
-  HelpCircle, 
-  Activity, 
-  Sun, 
-  Sliders, 
-  Info, 
-  BookOpen, 
-  Layers,
-  Sparkles
-} from 'lucide-react';
+import { ArrowLeft, Play, Pause, RotateCcw, HelpCircle, Activity, Sun, Sliders, Info, BookOpen, Layers, Sparkles, Settings2 } from 'lucide-react';
 
 // Transition energy and wavelength data
-const TRANSITIONS = [
-  { from: 1, to: 2, wl: 121.57, energy: 10.20, name: 'Lyman-α (UV)' },
-  { from: 1, to: 3, wl: 102.57, energy: 12.09, name: 'Lyman-β (UV)' },
-  { from: 1, to: 4, wl: 97.25, energy: 12.75, name: 'Lyman-γ (UV)' },
-  { from: 1, to: 5, wl: 94.97, energy: 13.06, name: 'Lyman-δ (UV)' },
-  { from: 1, to: 6, wl: 93.78, energy: 13.22, name: 'Lyman-ε (UV)' },
-  { from: 3, to: 2, wl: 656.28, energy: 1.89, name: 'Balmer-α (Red)' },
-  { from: 4, to: 2, wl: 486.13, energy: 2.55, name: 'Balmer-β (Cyan)' },
-  { from: 5, to: 2, wl: 434.05, energy: 2.86, name: 'Balmer-γ (Blue)' },
-  { from: 6, to: 2, wl: 410.17, energy: 3.02, name: 'Balmer-δ (Violet)' },
-  { from: 4, to: 3, wl: 1875.1, energy: 0.66, name: 'Paschen-α (IR)' },
-  { from: 5, to: 3, wl: 1281.8, energy: 0.97, name: 'Paschen-β (IR)' },
-  { from: 6, to: 3, wl: 1093.8, energy: 1.13, name: 'Paschen-γ (IR)' }
-];
+const TRANSITIONS = [{
+  from: 1,
+  to: 2,
+  wl: 121.57,
+  energy: 10.20,
+  name: 'Lyman-α (UV)'
+}, {
+  from: 1,
+  to: 3,
+  wl: 102.57,
+  energy: 12.09,
+  name: 'Lyman-β (UV)'
+}, {
+  from: 1,
+  to: 4,
+  wl: 97.25,
+  energy: 12.75,
+  name: 'Lyman-γ (UV)'
+}, {
+  from: 1,
+  to: 5,
+  wl: 94.97,
+  energy: 13.06,
+  name: 'Lyman-δ (UV)'
+}, {
+  from: 1,
+  to: 6,
+  wl: 93.78,
+  energy: 13.22,
+  name: 'Lyman-ε (UV)'
+}, {
+  from: 3,
+  to: 2,
+  wl: 656.28,
+  energy: 1.89,
+  name: 'Balmer-α (Red)'
+}, {
+  from: 4,
+  to: 2,
+  wl: 486.13,
+  energy: 2.55,
+  name: 'Balmer-β (Cyan)'
+}, {
+  from: 5,
+  to: 2,
+  wl: 434.05,
+  energy: 2.86,
+  name: 'Balmer-γ (Blue)'
+}, {
+  from: 6,
+  to: 2,
+  wl: 410.17,
+  energy: 3.02,
+  name: 'Balmer-δ (Violet)'
+}, {
+  from: 4,
+  to: 3,
+  wl: 1875.1,
+  energy: 0.66,
+  name: 'Paschen-α (IR)'
+}, {
+  from: 5,
+  to: 3,
+  wl: 1281.8,
+  energy: 0.97,
+  name: 'Paschen-β (IR)'
+}, {
+  from: 6,
+  to: 3,
+  wl: 1093.8,
+  energy: 1.13,
+  name: 'Paschen-γ (IR)'
+}];
 
 // Helper to convert wavelength (nm) to RGB color string
-const wavelengthToColor = (wl) => {
+const wavelengthToColor = wl => {
   if (wl < 380) {
     // UV: Deep Violet/Purple with lower opacity representation
     return 'rgba(168, 85, 247, 0.8)';
@@ -120,8 +166,9 @@ const wavelengthToColor = (wl) => {
     // IR: Deep Red
     return 'rgba(239, 68, 68, 0.7)';
   }
-
-  let r = 0, g = 0, b = 0;
+  let r = 0,
+    g = 0,
+    b = 0;
   if (wl >= 380 && wl < 440) {
     r = -(wl - 440) / (440 - 380);
     g = 0.0;
@@ -155,11 +202,9 @@ const wavelengthToColor = (wl) => {
   } else if (wl > 700 && wl <= 780) {
     factor = 0.3 + 0.7 * (780 - wl) / (780 - 700);
   }
-
   const R = Math.round(r * factor * 255);
   const G = Math.round(g * factor * 255);
   const B = Math.round(b * factor * 255);
-
   return `rgb(${R}, ${G}, ${B})`;
 };
 
@@ -185,7 +230,7 @@ function radialWavefunction(n, l, r) {
     if (l === 0) {
       return (96.0 - 72.0 * r + 12.0 * r * r - r * r * r) * Math.exp(-r / 4.0) / 96.0;
     } else if (l === 1) {
-      return r * (80.0 - 20.0 * r + r * r) * Math.exp(-r / 4.0) * (Math.sqrt(5/3) / 128.0);
+      return r * (80.0 - 20.0 * r + r * r) * Math.exp(-r / 4.0) * (Math.sqrt(5 / 3) / 128.0);
     } else if (l === 2) {
       return r * r * (12.0 - r) * Math.exp(-r / 4.0) / (768.0 * Math.sqrt(5));
     } else if (l === 3) {
@@ -215,8 +260,10 @@ function angularDensity(l, m, cosTheta, sinTheta) {
   }
   return 1.0;
 }
-
-function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
+function CustomModelsoftheHydrogenAtomInner({
+  onBack,
+  title
+}) {
   const [model, setModel] = useState('Bohr'); // 'Bohr' or 'Quantum'
   const [lightType, setLightType] = useState('White'); // 'White' or 'Monochromatic'
   const [wavelength, setWavelength] = useState(121.6); // 95 to 700 nm
@@ -242,42 +289,50 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
   const spectrometerCanvasRef = useRef(null);
   const loopRef = useRef(null);
   const stateRef = useRef({
-    photons: [],         // incoming light beam photons
-    emittedPhotons: [],  // emitted photons spreading outwards
-    electronLevel: 1,    // n = 1 to 6 (tracks state inside the physics loop)
-    excitedLifetime: 0,  // remaining frames before transition down
-    electronAngle: 0,    // Bohr model electron position angle
+    photons: [],
+    // incoming light beam photons
+    emittedPhotons: [],
+    // emitted photons spreading outwards
+    electronLevel: 1,
+    // n = 1 to 6 (tracks state inside the physics loop)
+    excitedLifetime: 0,
+    // remaining frames before transition down
+    electronAngle: 0,
+    // Bohr model electron position angle
     lastWavelength: 121.6,
     beamTimer: 0,
     quantumN: 1,
     quantumL: 0,
     quantumM: 0,
-    flashIntensity: 0    // for absorption transition splash screen effect
+    flashIntensity: 0 // for absorption transition splash screen effect
   });
 
   // Sync React states to ref for loop access
   useEffect(() => {
     stateRef.current.electronLevel = bohrLevel;
   }, [bohrLevel]);
-
   useEffect(() => {
     stateRef.current.quantumN = qN;
     stateRef.current.quantumL = qL;
     stateRef.current.quantumM = qM;
   }, [qN, qL, qM]);
-
   useEffect(() => {
     stateRef.current.lastWavelength = wavelength;
   }, [wavelength]);
 
   // Log helper
-  const addLog = (message) => {
-    const timestamp = new Date().toLocaleTimeString([], { hour12: false });
-    setHistoryLog(prev => [{ time: timestamp, msg: message }, ...prev].slice(0, 100));
+  const addLog = message => {
+    const timestamp = new Date().toLocaleTimeString([], {
+      hour12: false
+    });
+    setHistoryLog(prev => [{
+      time: timestamp,
+      msg: message
+    }, ...prev].slice(0, 100));
   };
 
   // Helper to add lines to spectrometer
-  const recordEmission = (wl) => {
+  const recordEmission = wl => {
     // Round to 1 decimal place
     const roundedWl = Math.round(wl * 10) / 10;
     setSpectrometerCounts(prev => ({
@@ -288,7 +343,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
   };
 
   // Preset button action
-  const applyPreset = (wl) => {
+  const applyPreset = wl => {
     setLightType('Monochromatic');
     setWavelength(wl);
     addLog(`Light source set to monochromatic wavelength: ${wl} nm`);
@@ -317,14 +372,13 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
   };
 
   // Manual state controls
-  const handleManualBohrLevel = (n) => {
+  const handleManualBohrLevel = n => {
     setBohrLevel(n);
     if (n > 1) {
       stateRef.current.excitedLifetime = 120 + Math.random() * 80;
     }
     addLog(`Manually set Bohr electron level to n=${n}`);
   };
-
   const handleManualQuantumState = (n, l, m) => {
     setQN(n);
     setQL(l);
@@ -360,7 +414,6 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
     offscreen.height = 300;
     const ctx = offscreen.getContext('2d');
     if (!ctx) return;
-
     ctx.clearRect(0, 0, 300, 300);
     const scale = 25.0 / qN; // Scaling factor so orbitals fit nicely
 
@@ -369,7 +422,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
     const step = 3;
     for (let x = -150; x <= 150; x += step) {
       for (let y = -150; y <= 150; y += step) {
-        const r_val = Math.sqrt(x*x + y*y) / scale;
+        const r_val = Math.sqrt(x * x + y * y) / scale;
         if (r_val === 0) continue;
         const cosT = y / (r_val * scale);
         const sinT = x / (r_val * scale);
@@ -386,25 +439,23 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
       const y = py - 150;
       for (let px = 0; px < 300; px++) {
         const x = px - 150;
-        const r_val = Math.sqrt(x*x + y*y) / scale;
-        
+        const r_val = Math.sqrt(x * x + y * y) / scale;
         let brightness = 0;
         if (r_val > 0) {
           const cosT = y / (r_val * scale);
           const sinT = x / (r_val * scale);
           const R = radialWavefunction(qN, qL, r_val);
           const A = angularDensity(qL, qM, cosT, sinT);
-          brightness = (R * R * A) / maxP;
+          brightness = R * R * A / maxP;
         }
-
         if (brightness > 0.005) {
           // Adjust threshold brightness mapping
           const intensity = Math.min(1.0, brightness) * 230;
-          
+
           // Map phase angle in the XY plane to color hue for complex phase visualization
           const angle = Math.atan2(x, y);
           const phase = qM * angle;
-          const hue = ((phase * 180 / Math.PI) + 360) % 360;
+          const hue = (phase * 180 / Math.PI + 360) % 360;
 
           // Convert HSL (hue, 100%, 60%) to RGB
           let r, g, b;
@@ -416,24 +467,41 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
           } else {
             // Variable phase: colorful representation
             const hVal = hue / 60;
-            const xVal = (1 - Math.abs((hVal % 2) - 1));
-            if (hVal >= 0 && hVal < 1) { r = 1; g = xVal; b = 0; }
-            else if (hVal >= 1 && hVal < 2) { r = xVal; g = 1; b = 0; }
-            else if (hVal >= 2 && hVal < 3) { r = 0; g = 1; b = xVal; }
-            else if (hVal >= 3 && hVal < 4) { r = 0; g = xVal; b = 1; }
-            else if (hVal >= 4 && hVal < 5) { r = xVal; g = 0; b = 1; }
-            else { r = 1; g = 0; b = xVal; }
-            
+            const xVal = 1 - Math.abs(hVal % 2 - 1);
+            if (hVal >= 0 && hVal < 1) {
+              r = 1;
+              g = xVal;
+              b = 0;
+            } else if (hVal >= 1 && hVal < 2) {
+              r = xVal;
+              g = 1;
+              b = 0;
+            } else if (hVal >= 2 && hVal < 3) {
+              r = 0;
+              g = 1;
+              b = xVal;
+            } else if (hVal >= 3 && hVal < 4) {
+              r = 0;
+              g = xVal;
+              b = 1;
+            } else if (hVal >= 4 && hVal < 5) {
+              r = xVal;
+              g = 0;
+              b = 1;
+            } else {
+              r = 1;
+              g = 0;
+              b = xVal;
+            }
             r = Math.round(r * 255);
             g = Math.round(g * 255);
             b = Math.round(b * 255);
           }
-
           const idx = (py * 300 + px) * 4;
-          imgData.data[idx] = r;     // R
-          imgData.data[idx+1] = g;   // G
-          imgData.data[idx+2] = b;   // B
-          imgData.data[idx+3] = intensity; // Alpha channel maps to density
+          imgData.data[idx] = r; // R
+          imgData.data[idx + 1] = g; // G
+          imgData.data[idx + 2] = b; // B
+          imgData.data[idx + 3] = intensity; // Alpha channel maps to density
         }
       }
     }
@@ -446,17 +514,15 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
     const canvas = canvasRef.current;
     if (!canvas) return;
     const ctx = canvas.getContext('2d');
-    
+
     // Radii of Bohr orbits in pixels (n = 1 to 6)
     const bohrRadii = [0, 45, 80, 115, 145, 170, 190];
-
     const updateAndDraw = () => {
       if (!canvas || !ctx) return;
       const width = canvas.width;
       const height = canvas.height;
       const cx = width / 2;
       const cy = height / 2;
-
       ctx.clearRect(0, 0, width, height);
 
       // --- Background Stars/Glow Effect ---
@@ -476,7 +542,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
       ctx.shadowBlur = 15;
       ctx.shadowColor = nozzleColor;
       ctx.beginPath();
-      ctx.arc(30, cy, 10, -Math.PI/2, Math.PI/2);
+      ctx.arc(30, cy, 10, -Math.PI / 2, Math.PI / 2);
       ctx.fill();
       ctx.shadowBlur = 0;
 
@@ -491,7 +557,6 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         const beamThreshold = [180, 120, 60, 30, 15][beamIntensity - 1];
         if (stateRef.current.beamTimer >= beamThreshold) {
           stateRef.current.beamTimer = 0;
-          
           let wl = wavelength;
           if (lightType === 'White') {
             // Generate a flat random spectrum (90 to 700 nm)
@@ -551,7 +616,6 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         if (running) {
           const scale = 25.0 / stateRef.current.quantumN;
           ctx.fillStyle = 'rgba(255, 255, 255, 0.55)';
-          
           let dotsCount = 0;
           let attempts = 0;
           while (dotsCount < 18 && attempts < 100) {
@@ -559,20 +623,19 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
             // Sample a random point in box
             const rx = (Math.random() - 0.5) * 300;
             const ry = (Math.random() - 0.5) * 300;
-            const r_val = Math.sqrt(rx*rx + ry*ry) / scale;
+            const r_val = Math.sqrt(rx * rx + ry * ry) / scale;
             if (r_val === 0) continue;
-            
             const cosT = ry / (r_val * scale);
             const sinT = rx / (r_val * scale);
             const R = radialWavefunction(stateRef.current.quantumN, stateRef.current.quantumL, r_val);
             const A = angularDensity(stateRef.current.quantumL, stateRef.current.quantumM, cosT, sinT);
-            
+
             // Rejection sampling against maximum possible density boundary
             const P = R * R * A;
             const maxVal = 0.5; // Estimated normalization limit
             if (Math.random() < P / maxVal) {
               ctx.beginPath();
-              ctx.arc(cx + rx, cy + ry, 1, 0, 2*Math.PI);
+              ctx.arc(cx + rx, cy + ry, 1, 0, 2 * Math.PI);
               ctx.fill();
               dotsCount++;
             }
@@ -604,8 +667,10 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
       ctx.strokeStyle = '#ffffff';
       ctx.lineWidth = 1.2;
       ctx.beginPath();
-      ctx.moveTo(cx - 2, cy); ctx.lineTo(cx + 2, cy);
-      ctx.moveTo(cx, cy - 2); ctx.lineTo(cx, cy + 2);
+      ctx.moveTo(cx - 2, cy);
+      ctx.lineTo(cx + 2, cy);
+      ctx.moveTo(cx, cy - 2);
+      ctx.lineTo(cx, cy + 2);
       ctx.stroke();
 
       // --- 4. Physics & Rendering: Update incoming photons ---
@@ -624,8 +689,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
           const waveX = p.x + sx;
           const envelope = Math.exp(-Math.pow(sx / 7, 2)); // Gaussian envelope
           const waveY = p.y + Math.sin((p.x - sx) * 0.45) * 6 * envelope;
-          if (sx === -15) ctx.moveTo(waveX, waveY);
-          else ctx.lineTo(waveX, waveY);
+          if (sx === -15) ctx.moveTo(waveX, waveY);else ctx.lineTo(waveX, waveY);
         }
         ctx.stroke();
 
@@ -641,17 +705,16 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         if (currentN === 1 && !p.absorbed && p.x >= cx - 35 && p.x <= cx + 15) {
           // Check energy matches
           const photonEnergy = 1239.84 / p.wl;
-          
           let targetExcitation = 0;
           for (let tn = 2; tn <= 6; tn++) {
             // Delta E = 13.6 * (1 - 1/n^2)
             const deltaE = 13.606 * (1.0 - 1.0 / (tn * tn));
-            if (Math.abs(photonEnergy - deltaE) < 0.15) { // Absorption energy tolerance
+            if (Math.abs(photonEnergy - deltaE) < 0.15) {
+              // Absorption energy tolerance
               targetExcitation = tn;
               break;
             }
           }
-
           if (targetExcitation > 0) {
             p.absorbed = true;
             // Transition the state
@@ -668,13 +731,13 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
               stateRef.current.quantumL = 1;
               stateRef.current.quantumM = randomM;
             }
-            
+
             // Set excited state lifetime (number of frames before cascading down)
             stateRef.current.excitedLifetime = 90 + Math.random() * 60;
             stateRef.current.flashIntensity = 1.0; // trigger glowing absorption splash
 
             addLog(`Photon ABSORBED! Wavelength: ${Math.round(p.wl * 10) / 10} nm. Ground state electron EXCITED to shell n=${targetExcitation}`);
-            
+
             // Remove the absorbed photon
             activePhotons.splice(i, 1);
             continue;
@@ -692,10 +755,9 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         const radius = bohrRadii[stateRef.current.electronLevel];
         if (running) {
           // Orbit velocity decreases for higher energy orbits: omega is proportional to 1 / n^1.5
-          const omega = (0.065 / Math.pow(stateRef.current.electronLevel, 1.5)) * simSpeed;
+          const omega = 0.065 / Math.pow(stateRef.current.electronLevel, 1.5) * simSpeed;
           stateRef.current.electronAngle += omega;
         }
-        
         const ex = cx + radius * Math.cos(stateRef.current.electronAngle);
         const ey = cy + radius * Math.sin(stateRef.current.electronAngle);
 
@@ -707,7 +769,6 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         ctx.arc(ex, ey, 5.5, 0, 2 * Math.PI);
         ctx.fill();
         ctx.shadowBlur = 0;
-        
         ctx.strokeStyle = '#ffffff';
         ctx.lineWidth = 1.5;
         ctx.stroke();
@@ -718,11 +779,9 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
       if (currentLevel > 1) {
         if (running) {
           stateRef.current.excitedLifetime -= simSpeed;
-          
           if (stateRef.current.excitedLifetime <= 0) {
             // Decay to a lower level
             let nextLevel = 1;
-            
             if (model === 'Bohr') {
               // Bohr model decay: choose any lower state randomly
               nextLevel = Math.floor(Math.random() * (currentLevel - 1)) + 1;
@@ -738,10 +797,9 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                 // For other shells, checks if there is any subshell that obeys selection rules.
                 possibleNextLevels.push(tn);
               }
-
               nextLevel = possibleNextLevels[Math.floor(Math.random() * possibleNextLevels.length)];
               setQN(nextLevel);
-              
+
               // Set l' obeying selection rules: l' = l - 1 or l' = l + 1
               const currentL = stateRef.current.quantumL;
               let nextL = 0;
@@ -754,10 +812,9 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
               } else {
                 nextL = 0; // Ground state must be 1s (l=0)
               }
-              
+
               // Choose new m' from -l' to +l'
               const nextM = nextL === 0 ? 0 : Math.floor(Math.random() * (2 * nextL + 1)) - nextL;
-
               setQL(nextL);
               setQM(nextM);
               stateRef.current.quantumN = nextLevel;
@@ -768,7 +825,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
             // Calculate emission energy & wavelength
             const energyDiff = 13.606 * (1.0 / (nextLevel * nextLevel) - 1.0 / (currentLevel * currentLevel));
             const emitWavelength = 1239.84 / energyDiff;
-            
+
             // Spawn emitted photon wave outward in a random angle
             const emitAngle = Math.random() * 2 * Math.PI;
             stateRef.current.emittedPhotons.push({
@@ -800,7 +857,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         if (running) {
           ep.x += ep.vx;
           ep.y += ep.vy;
-          ep.distanceEmitted += Math.sqrt(ep.vx*ep.vx + ep.vy*ep.vy);
+          ep.distanceEmitted += Math.sqrt(ep.vx * ep.vx + ep.vy * ep.vy);
         }
 
         // Draw outgoing wavepacket (circular wavefront ripples of wavelength colors)
@@ -812,7 +869,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
           const ringRadius = ep.distanceEmitted - ring * 8;
           if (ringRadius > 0) {
             ctx.beginPath();
-            ctx.arc(cx, cy, ringRadius, 0, 2*Math.PI);
+            ctx.arc(cx, cy, ringRadius, 0, 2 * Math.PI);
             // Alpha fades out as it expands
             const alpha = Math.max(0, 1 - ringRadius / (width * 0.7));
             ctx.globalAlpha = alpha;
@@ -843,9 +900,8 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         ctx.strokeStyle = `rgba(168, 85, 247, ${stateRef.current.flashIntensity})`;
         ctx.lineWidth = 4;
         ctx.beginPath();
-        ctx.arc(cx, cy, (1.0 - stateRef.current.flashIntensity) * 140, 0, 2*Math.PI);
+        ctx.arc(cx, cy, (1.0 - stateRef.current.flashIntensity) * 140, 0, 2 * Math.PI);
         ctx.stroke();
-
         if (running) {
           stateRef.current.flashIntensity -= 0.04 * simSpeed;
         }
@@ -854,7 +910,6 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
       // Repeat loop
       loopRef.current = requestAnimationFrame(updateAndDraw);
     };
-
     loopRef.current = requestAnimationFrame(updateAndDraw);
     return () => {
       if (loopRef.current) {
@@ -870,7 +925,6 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
     const ctx = canvas.getContext('2d');
     const w = canvas.width;
     const h = canvas.height;
-
     ctx.clearRect(0, 0, w, h);
 
     // Draw dark background spectrum bar
@@ -879,10 +933,10 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
     specGrad.addColorStop(0.0, 'rgba(168, 85, 247, 0.05)'); // Deep UV
     specGrad.addColorStop(0.2, 'rgba(168, 85, 247, 0.25)'); // Near UV / Violet
     specGrad.addColorStop(0.35, 'rgba(59, 130, 246, 0.25)'); // Blue
-    specGrad.addColorStop(0.5, 'rgba(34, 197, 94, 0.25)');  // Green
-    specGrad.addColorStop(0.75, 'rgba(234, 179, 8, 0.25)');  // Yellow/Orange
-    specGrad.addColorStop(0.9, 'rgba(239, 68, 68, 0.25)');   // Red
-    specGrad.addColorStop(1.0, 'rgba(239, 68, 68, 0.05)');   // Near IR
+    specGrad.addColorStop(0.5, 'rgba(34, 197, 94, 0.25)'); // Green
+    specGrad.addColorStop(0.75, 'rgba(234, 179, 8, 0.25)'); // Yellow/Orange
+    specGrad.addColorStop(0.9, 'rgba(239, 68, 68, 0.25)'); // Red
+    specGrad.addColorStop(1.0, 'rgba(239, 68, 68, 0.05)'); // Near IR
 
     ctx.fillStyle = specGrad;
     ctx.fillRect(0, 0, w, h);
@@ -892,20 +946,19 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
     ctx.lineWidth = 1;
     for (let wlMark = 100; wlMark <= 700; wlMark += 100) {
       // Map 90nm to 700nm to 0 to w
-      const mx = ((wlMark - 90) / 610) * w;
+      const mx = (wlMark - 90) / 610 * w;
       ctx.beginPath();
       ctx.moveTo(mx, 0);
       ctx.lineTo(mx, h);
       ctx.stroke();
-
       ctx.fillStyle = '#64748b';
       ctx.font = '8px monospace';
       ctx.fillText(`${wlMark}nm`, mx - 12, h - 4);
     }
 
     // Draw active vertical line spectrum peaks based on logged photons
-    spectrometerLogs.forEach((wl) => {
-      const x = ((wl - 90) / 610) * w;
+    spectrometerLogs.forEach(wl => {
+      const x = (wl - 90) / 610 * w;
       if (x >= 0 && x <= w) {
         ctx.strokeStyle = wavelengthToColor(wl);
         ctx.shadowBlur = 4;
@@ -918,23 +971,31 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         ctx.shadowBlur = 0;
       }
     });
-
   }, [spectrometerLogs]);
-
-  return (
-    <div className="w-full h-full h-full flex flex-col text-white font-sans select-none">
+  return <div className="w-full h-full h-full flex flex-col text-white font-sans select-none">
       
       {/* 1. Header Navigation Bar */}
       
 
       {/* 2. Main Workspace Layout */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none' }}>
+      <div style={{
+      position: 'absolute',
+      inset: 0,
+      zIndex: 1,
+      pointerEvents: 'none'
+    }}>
         
         {/* Left Side Column: Visualization & Spectrometer (Column Span 8) */}
         <section className="lg:col-span-7 xl:col-span-8 flex flex-col gap-5 h-full">
           
           {/* Main Simulation Sandbox Canvas */}
-          <div className="relative flex-1 border border-white/5 rounded-2xl overflow-hidden flex flex-col items-center justify-center p-2 shadow-2xl min-h-[460px]" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+          <div className="relative flex-1 border border-white/5 rounded-2xl overflow-hidden flex flex-col items-center justify-center p-2 shadow-2xl min-h-[460px]" style={{
+          background: 'rgba(20, 20, 30, 0.8)',
+          border: '1px solid rgba(255,255,255,0.1)',
+          backdropFilter: 'blur(12px)',
+          borderRadius: '16px',
+          color: 'white'
+        }}>
             
             {/* Visual labels overlay */}
             <div className="absolute top-4 left-4 flex flex-col gap-1 text-xs text-slate-400 pointer-events-none">
@@ -942,11 +1003,9 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                 <Sun size={14} className="text-amber-400" />
                 Beam Source: {lightType}
               </span>
-              {lightType === 'Monochromatic' && (
-                <span className="font-mono text-slate-400">
-                  λ = {wavelength.toFixed(1)} nm ({ (1239.84 / wavelength).toFixed(2) } eV)
-                </span>
-              )}
+              {lightType === 'Monochromatic' && <span className="font-mono text-slate-400">
+                  λ = {wavelength.toFixed(1)} nm ({(1239.84 / wavelength).toFixed(2)} eV)
+                </span>}
             </div>
 
             <div className="absolute top-4 right-4 flex items-center gap-2 pointer-events-none">
@@ -956,12 +1015,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
             </div>
 
             {/* Simulation Canvas */}
-            <canvas
-              ref={canvasRef}
-              width={720}
-              height={440}
-              className="w-full h-full max-w-[720px] max-h-[440px] rounded-xl border border-white/5 shadow-inner"
-            />
+            <canvas ref={canvasRef} width={720} height={440} className="w-full h-full max-w-[720px] max-h-[440px] rounded-xl border border-white/5 shadow-inner" />
 
             {/* Quick Status Bar */}
             <div className="w-full max-w-[720px] mt-2 px-2 flex justify-between items-center text-[11px] font-mono text-slate-500">
@@ -971,28 +1025,32 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
           </div>
 
           {/* Spectrometer Analysis Unit */}
-          <div className="border border-white/5 rounded-2xl p-5 shadow-lg flex flex-col gap-4" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+          <div className="border border-white/5 rounded-2xl p-5 shadow-lg flex flex-col gap-4" style={{
+          background: 'rgba(20, 20, 30, 0.8)',
+          border: '1px solid rgba(255,255,255,0.1)',
+          backdropFilter: 'blur(12px)',
+          borderRadius: '16px',
+          color: 'white'
+        }}>
             <div className="flex items-center justify-between border-b border-white/5 pb-3">
               <div className="flex items-center gap-2">
                 <Activity size={18} className="text-cyan-400" />
                 <h2 className="text-sm font-semibold tracking-wide text-slate-100">Spectrograph Detector</h2>
               </div>
-              <button 
-                onClick={clearSpectrometer}
-                className="text-[10px] text-slate-400 hover:text-rose-400 underline uppercase tracking-wider"
-              >
+              <button onClick={clearSpectrometer} className="text-[10px] text-slate-400 hover:text-rose-400 underline uppercase tracking-wider">
                 Clear Data
               </button>
             </div>
 
             <div className="w-full rounded-lg p-2 border border-white/5 relative">
-              <div className="absolute -top-1 left-2 px-1 text-[9px] text-slate-500 font-mono" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>EMISSION LINES RECORDED</div>
-              <canvas 
-                ref={spectrometerCanvasRef}
-                width={700}
-                height={80}
-                className="w-full h-16 rounded"
-              />
+              <div className="absolute -top-1 left-2 px-1 text-[9px] text-slate-500 font-mono" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }}>EMISSION LINES RECORDED</div>
+              <canvas ref={spectrometerCanvasRef} width={700} height={80} className="w-full h-16 rounded" />
               <div className="flex justify-between px-1 mt-1 text-[9px] text-slate-500 font-mono">
                 <span>90nm (Ultra-Violet)</span>
                 <span>380nm (Visible Purple)</span>
@@ -1003,59 +1061,40 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
 
             {/* Counts table grid */}
             <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2">
-              {TRANSITIONS.filter(t => spectrometerCounts[t.wl] > 0).map(t => (
-                <div key={t.wl} className="flex flex-col /60 p-2 rounded border border-white/5">
+              {TRANSITIONS.filter(t => spectrometerCounts[t.wl] > 0).map(t => <div key={t.wl} className="flex flex-col /60 p-2 rounded border border-white/5">
                   <span className="text-[9px] text-slate-400 font-semibold truncate" title={t.name}>{t.name}</span>
                   <div className="flex items-baseline justify-between mt-1">
                     <span className="text-xs font-mono font-bold text-white">{t.wl}nm</span>
                     <span className="text-xs font-mono font-extrabold text-cyan-400">×{spectrometerCounts[t.wl]}</span>
                   </div>
-                </div>
-              ))}
-              {Object.keys(spectrometerCounts).length === 0 && (
-                <div className="col-span-full py-2 text-center text-xs text-slate-500 italic">
+                </div>)}
+              {Object.keys(spectrometerCounts).length === 0 && <div className="col-span-full py-2 text-center text-xs text-slate-500 italic">
                   No photons detected yet. Shine light matching a level difference (e.g. 121.6nm) to trigger absorption, excitation, and cascading emission.
-                </div>
-              )}
+                </div>}
             </div>
           </div>
         </section>
 
         {/* Right Side Column: Parameter Controls, Theory, and Log (Column Span 4) */}
-        <section className="lg:col-span-5 xl:col-span-4 flex flex-col border border-white/5 rounded-2xl shadow-xl overflow-hidden h-full min-h-[580px]" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+        <section className="lg:col-span-5 xl:col-span-4 flex flex-col border border-white/5 rounded-2xl shadow-xl overflow-hidden h-full min-h-[580px]" style={{
+        background: 'rgba(20, 20, 30, 0.8)',
+        border: '1px solid rgba(255,255,255,0.1)',
+        backdropFilter: 'blur(12px)',
+        borderRadius: '16px',
+        color: 'white'
+      }}>
           
           {/* Section Tabs */}
           <div className="flex border-b border-white/5 /50">
-            <button
-              onClick={() => setActiveTab('Controls')}
-              className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider border-b-2 transition-all flex items-center justify-center gap-1.5 ${
-                activeTab === 'Controls' 
-                  ? 'border-purple-500 text-white ' 
-                  : 'border-transparent text-slate-400 hover:text-slate-200'
-              }`}
-            >
+            <button onClick={() => setActiveTab('Controls')} className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider border-b-2 transition-all flex items-center justify-center gap-1.5 ${activeTab === 'Controls' ? 'border-purple-500 text-white ' : 'border-transparent text-slate-400 hover:text-slate-200'}`}>
               <Sliders size={13} />
               Controls
             </button>
-            <button
-              onClick={() => setActiveTab('Theory')}
-              className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider border-b-2 transition-all flex items-center justify-center gap-1.5 ${
-                activeTab === 'Theory' 
-                  ? 'border-purple-500 text-white ' 
-                  : 'border-transparent text-slate-400 hover:text-slate-200'
-              }`}
-            >
+            <button onClick={() => setActiveTab('Theory')} className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider border-b-2 transition-all flex items-center justify-center gap-1.5 ${activeTab === 'Theory' ? 'border-purple-500 text-white ' : 'border-transparent text-slate-400 hover:text-slate-200'}`}>
               <BookOpen size={13} />
               Physics Info
             </button>
-            <button
-              onClick={() => setActiveTab('Log')}
-              className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider border-b-2 transition-all flex items-center justify-center gap-1.5 ${
-                activeTab === 'Log' 
-                  ? 'border-purple-500 text-white ' 
-                  : 'border-transparent text-slate-400 hover:text-slate-200'
-              }`}
-            >
+            <button onClick={() => setActiveTab('Log')} className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider border-b-2 transition-all flex items-center justify-center gap-1.5 ${activeTab === 'Log' ? 'border-purple-500 text-white ' : 'border-transparent text-slate-400 hover:text-slate-200'}`}>
               <Activity size={13} />
               Event Log
             </button>
@@ -1064,8 +1103,7 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
           {/* Tab Content Body */}
           <div className="flex-1 p-5 overflow-y-auto max-h-[600px]">
             
-            {activeTab === 'Controls' && (
-              <div className="flex flex-col gap-6">
+            {activeTab === 'Controls' && <div className="flex flex-col gap-6">
                 
                 {/* A. Model Switcher */}
                 <div className="flex flex-col gap-2">
@@ -1073,24 +1111,16 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                     <Layers size={13} /> Atomic Physics Model
                   </label>
                   <div className="grid grid-cols-2 gap-2 p-1 rounded-xl border border-white/5">
-                    <button
-                      onClick={() => { setModel('Bohr'); addLog('Switched to Bohr Model view'); }}
-                      className={`py-2 rounded-lg text-xs font-bold transition-all ${
-                        model === 'Bohr' 
-                          ? 'bg-purple-600 text-white shadow-md' 
-                          : 'text-slate-400 hover:text-slate-200'
-                      }`}
-                    >
+                    <button onClick={() => {
+                  setModel('Bohr');
+                  addLog('Switched to Bohr Model view');
+                }} className={`py-2 rounded-lg text-xs font-bold transition-all ${model === 'Bohr' ? 'bg-purple-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-200'}`}>
                       Bohr Orbits (1913)
                     </button>
-                    <button
-                      onClick={() => { setModel('Quantum'); addLog('Switched to Schrödinger Wave Cloud view'); }}
-                      className={`py-2 rounded-lg text-xs font-bold transition-all ${
-                        model === 'Quantum' 
-                          ? 'bg-purple-600 text-white shadow-md' 
-                          : 'text-slate-400 hover:text-slate-200'
-                      }`}
-                    >
+                    <button onClick={() => {
+                  setModel('Quantum');
+                  addLog('Switched to Schrödinger Wave Cloud view');
+                }} className={`py-2 rounded-lg text-xs font-bold transition-all ${model === 'Quantum' ? 'bg-purple-600 text-white shadow-md' : 'text-slate-400 hover:text-slate-200'}`}>
                       Quantum Cloud (1926)
                     </button>
                   </div>
@@ -1103,104 +1133,82 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                   </h3>
                   
                   <div className="grid grid-cols-2 gap-2">
-                    <button
-                      onClick={() => setLightType('White')}
-                      className={`py-1.5 rounded-lg text-xs font-semibold border transition-all ${
-                        lightType === 'White' 
-                          ? 'bg-white text-slate-900 border-white' 
-                          : 'border-slate-800 text-slate-400 hover:text-slate-200'
-                      }`}
-                    >
+                    <button onClick={() => setLightType('White')} className={`py-1.5 rounded-lg text-xs font-semibold border transition-all ${lightType === 'White' ? 'bg-white text-slate-900 border-white' : 'border-slate-800 text-slate-400 hover:text-slate-200'}`}>
                       White Light (Continuous)
                     </button>
-                    <button
-                      onClick={() => setLightType('Monochromatic')}
-                      className={`py-1.5 rounded-lg text-xs font-semibold border transition-all ${
-                        lightType === 'Monochromatic' 
-                          ? 'bg-purple-600 text-white border-purple-600' 
-                          : 'border-slate-800 text-slate-400 hover:text-slate-200'
-                      }`}
-                    >
+                    <button onClick={() => setLightType('Monochromatic')} className={`py-1.5 rounded-lg text-xs font-semibold border transition-all ${lightType === 'Monochromatic' ? 'bg-purple-600 text-white border-purple-600' : 'border-slate-800 text-slate-400 hover:text-slate-200'}`}>
                       Monochromatic
                     </button>
                   </div>
 
-                  {lightType === 'Monochromatic' && (
-                    <div className="flex flex-col gap-3 pt-2">
+                  {lightType === 'Monochromatic' && <div className="flex flex-col gap-3 pt-2">
                       <div className="flex justify-between items-center text-xs">
                         <span className="text-slate-400">Wavelength</span>
                         <span className="font-mono text-purple-400 font-bold">{wavelength} nm</span>
                       </div>
-                      <input
-                        type="range"
-                        min="95"
-                        max="700"
-                        step="0.5"
-                        value={wavelength}
-                        onChange={(e) => setWavelength(Number(e.target.value))}
-                        className="w-full accent-purple-500 h-1 rounded"
-                        style={{
-                          background: `linear-gradient(to right, #a855f7 0%, #3b82f6 30%, #22c55e 60%, #eab308 80%, #ef4444 100%)`
-                        }}
-                      />
+                      <input type="range" min="95" max="700" step="0.5" value={wavelength} onChange={e => setWavelength(Number(e.target.value))} className="w-full accent-purple-500 h-1 rounded" style={{
+                  background: `linear-gradient(to right, #a855f7 0%, #3b82f6 30%, #22c55e 60%, #eab308 80%, #ef4444 100%)`
+                }} />
                       
                       {/* Presets Grid */}
                       <div className="flex flex-col gap-1.5 mt-1">
                         <span className="text-[10px] font-bold text-slate-500 tracking-wider uppercase">Tuning Presets (n=1 excitation)</span>
                         <div className="grid grid-cols-2 gap-1.5">
-                          <button
-                            onClick={() => applyPreset(121.6)}
-                            className="py-1 px-2 text-[10px] font-semibold hover: text-slate-200 rounded transition-all truncate" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-                            title="Lyman-Alpha (121.6nm) -> excites n=1 to n=2"
-                          >
+                          <button onClick={() => applyPreset(121.6)} className="py-1 px-2 text-[10px] font-semibold hover: text-slate-200 rounded transition-all truncate" style={{
+                      background: 'rgba(20, 20, 30, 0.8)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      backdropFilter: 'blur(12px)',
+                      borderRadius: '16px',
+                      color: 'white'
+                    }} title="Lyman-Alpha (121.6nm) -> excites n=1 to n=2">
                             n = 2 (121.6nm)
                           </button>
-                          <button
-                            onClick={() => applyPreset(102.6)}
-                            className="py-1 px-2 text-[10px] font-semibold hover: text-slate-200 rounded transition-all truncate" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-                            title="Lyman-Beta (102.6nm) -> excites n=1 to n=3"
-                          >
+                          <button onClick={() => applyPreset(102.6)} className="py-1 px-2 text-[10px] font-semibold hover: text-slate-200 rounded transition-all truncate" style={{
+                      background: 'rgba(20, 20, 30, 0.8)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      backdropFilter: 'blur(12px)',
+                      borderRadius: '16px',
+                      color: 'white'
+                    }} title="Lyman-Beta (102.6nm) -> excites n=1 to n=3">
                             n = 3 (102.6nm)
                           </button>
-                          <button
-                            onClick={() => applyPreset(97.2)}
-                            className="py-1 px-2 text-[10px] font-semibold hover: text-slate-200 rounded transition-all truncate" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-                            title="Lyman-Gamma (97.2nm) -> excites n=1 to n=4"
-                          >
+                          <button onClick={() => applyPreset(97.2)} className="py-1 px-2 text-[10px] font-semibold hover: text-slate-200 rounded transition-all truncate" style={{
+                      background: 'rgba(20, 20, 30, 0.8)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      backdropFilter: 'blur(12px)',
+                      borderRadius: '16px',
+                      color: 'white'
+                    }} title="Lyman-Gamma (97.2nm) -> excites n=1 to n=4">
                             n = 4 (97.2nm)
                           </button>
-                          <button
-                            onClick={() => applyPreset(95.0)}
-                            className="py-1 px-2 text-[10px] font-semibold hover: text-slate-200 rounded transition-all truncate" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-                            title="Lyman-Delta (95.0nm) -> excites n=1 to n=5"
-                          >
+                          <button onClick={() => applyPreset(95.0)} className="py-1 px-2 text-[10px] font-semibold hover: text-slate-200 rounded transition-all truncate" style={{
+                      background: 'rgba(20, 20, 30, 0.8)',
+                      border: '1px solid rgba(255,255,255,0.1)',
+                      backdropFilter: 'blur(12px)',
+                      borderRadius: '16px',
+                      color: 'white'
+                    }} title="Lyman-Delta (95.0nm) -> excites n=1 to n=5">
                             n = 5 (95.0nm)
                           </button>
                         </div>
                       </div>
-                    </div>
-                  )}
+                    </div>}
 
                   <div className="flex flex-col gap-2 pt-2 border-t border-white/5">
                     <div className="flex justify-between items-center text-xs">
                       <span className="text-slate-400">Photon Stream Rate</span>
                       <span className="font-mono text-slate-300 font-bold">{beamIntensity} / 5</span>
                     </div>
-                    <input
-                      type="range"
-                      min="1"
-                      max="5"
-                      step="1"
-                      value={beamIntensity}
-                      onChange={(e) => setBeamIntensity(Number(e.target.value))}
-                      className="w-full accent-purple-500 h-1 rounded" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-                    />
+                    <input type="range" min="1" max="5" step="1" value={beamIntensity} onChange={e => setBeamIntensity(Number(e.target.value))} className="w-full accent-purple-500 h-1 rounded" style={{
+                  background: 'rgba(20, 20, 30, 0.8)',
+                  border: '1px solid rgba(255,255,255,0.1)',
+                  backdropFilter: 'blur(12px)',
+                  borderRadius: '16px',
+                  color: 'white'
+                }} />
                   </div>
 
-                  <button
-                    onClick={fireSinglePhoton}
-                    className="w-full mt-1 py-2 rounded bg-purple-600 hover:bg-purple-500 active:bg-purple-700 text-xs font-bold tracking-wide transition-all shadow"
-                  >
+                  <button onClick={fireSinglePhoton} className="w-full mt-1 py-2 rounded bg-purple-600 hover:bg-purple-500 active:bg-purple-700 text-xs font-bold tracking-wide transition-all shadow">
                     Fire Single Photon
                   </button>
                 </div>
@@ -1211,27 +1219,14 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                     <Activity size={14} className="text-purple-400" /> Manual Atomic State Control
                   </h3>
                   
-                  {model === 'Bohr' ? (
-                    <div className="flex flex-col gap-3">
+                  {model === 'Bohr' ? <div className="flex flex-col gap-3">
                       <span className="text-[11px] text-slate-400 italic">Force electron to orbital shell:</span>
                       <div className="grid grid-cols-6 gap-1">
-                        {[1, 2, 3, 4, 5, 6].map(n => (
-                          <button
-                            key={n}
-                            onClick={() => handleManualBohrLevel(n)}
-                            className={`py-1.5 rounded font-mono text-xs font-bold transition-all border ${
-                              bohrLevel === n 
-                                ? 'bg-purple-600 text-white border-purple-500' 
-                                : ' text-slate-400 hover:text-slate-200 border-transparent'
-                            }`}
-                          >
+                        {[1, 2, 3, 4, 5, 6].map(n => <button key={n} onClick={() => handleManualBohrLevel(n)} className={`py-1.5 rounded font-mono text-xs font-bold transition-all border ${bohrLevel === n ? 'bg-purple-600 text-white border-purple-500' : ' text-slate-400 hover:text-slate-200 border-transparent'}`}>
                             n={n}
-                          </button>
-                        ))}
+                          </button>)}
                       </div>
-                    </div>
-                  ) : (
-                    <div className="flex flex-col gap-3">
+                    </div> : <div className="flex flex-col gap-3">
                       <span className="text-[11px] text-slate-400 italic">Force quantum number states:</span>
                       
                       <div className="flex flex-col gap-2">
@@ -1240,22 +1235,14 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                           <span className="text-white font-bold">{qN}</span>
                         </div>
                         <div className="grid grid-cols-4 gap-1">
-                          {[1, 2, 3, 4].map(n => (
-                            <button
-                              key={n}
-                              onClick={() => {
-                                // Clamp valid l when n changes
-                                const newL = Math.min(qL, n - 1);
-                                const newM = Math.min(Math.max(qM, -newL), newL);
-                                handleManualQuantumState(n, newL, newM);
-                              }}
-                              className={`py-1.5 rounded font-mono text-xs font-bold transition-all ${
-                                qN === n ? 'bg-cyan-600 text-white' : ' text-slate-400'
-                              }`}
-                            >
+                          {[1, 2, 3, 4].map(n => <button key={n} onClick={() => {
+                      // Clamp valid l when n changes
+                      const newL = Math.min(qL, n - 1);
+                      const newM = Math.min(Math.max(qM, -newL), newL);
+                      handleManualQuantumState(n, newL, newM);
+                    }} className={`py-1.5 rounded font-mono text-xs font-bold transition-all ${qN === n ? 'bg-cyan-600 text-white' : ' text-slate-400'}`}>
                               n={n}
-                            </button>
-                          ))}
+                            </button>)}
                         </div>
                       </div>
 
@@ -1268,28 +1255,15 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                         </div>
                         <div className="grid grid-cols-4 gap-1">
                           {[0, 1, 2, 3].map(l => {
-                            const disabled = l >= qN;
-                            return (
-                              <button
-                                key={l}
-                                disabled={disabled}
-                                onClick={() => {
-                                  // Clamp valid m when l changes
-                                  const newM = Math.min(Math.max(qM, -l), l);
-                                  handleManualQuantumState(qN, l, newM);
-                                }}
-                                className={`py-1.5 rounded font-mono text-xs font-bold transition-all ${
-                                  disabled 
-                                    ? ' text-slate-700 cursor-not-allowed' 
-                                    : qL === l 
-                                      ? 'bg-cyan-600 text-white' 
-                                      : ' text-slate-400'
-                                }`}
-                              >
+                      const disabled = l >= qN;
+                      return <button key={l} disabled={disabled} onClick={() => {
+                        // Clamp valid m when l changes
+                        const newM = Math.min(Math.max(qM, -l), l);
+                        handleManualQuantumState(qN, l, newM);
+                      }} className={`py-1.5 rounded font-mono text-xs font-bold transition-all ${disabled ? ' text-slate-700 cursor-not-allowed' : qL === l ? 'bg-cyan-600 text-white' : ' text-slate-400'}`}>
                                 l={l}
-                              </button>
-                            );
-                          })}
+                              </button>;
+                    })}
                         </div>
                       </div>
 
@@ -1300,28 +1274,14 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                         </div>
                         <div className="grid grid-cols-7 gap-1">
                           {[-3, -2, -1, 0, 1, 2, 3].map(m => {
-                            const disabled = Math.abs(m) > qL;
-                            return (
-                              <button
-                                key={m}
-                                disabled={disabled}
-                                onClick={() => handleManualQuantumState(qN, qL, m)}
-                                className={`py-1 rounded font-mono text-[10px] font-bold transition-all ${
-                                  disabled 
-                                    ? ' text-slate-700 cursor-not-allowed' 
-                                    : qM === m 
-                                      ? 'bg-cyan-600 text-white' 
-                                      : ' text-slate-400'
-                                }`}
-                              >
+                      const disabled = Math.abs(m) > qL;
+                      return <button key={m} disabled={disabled} onClick={() => handleManualQuantumState(qN, qL, m)} className={`py-1 rounded font-mono text-[10px] font-bold transition-all ${disabled ? ' text-slate-700 cursor-not-allowed' : qM === m ? 'bg-cyan-600 text-white' : ' text-slate-400'}`}>
                                 {m > 0 ? `+${m}` : m}
-                              </button>
-                            );
-                          })}
+                              </button>;
+                    })}
                         </div>
                       </div>
-                    </div>
-                  )}
+                    </div>}
                 </div>
 
                 {/* D. Additional simulation options */}
@@ -1335,27 +1295,15 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                     <span className="font-mono text-slate-300 font-bold">{simSpeed}x</span>
                   </div>
                   <div className="grid grid-cols-3 gap-2">
-                    {[1, 2, 4].map((s) => (
-                      <button
-                        key={s}
-                        onClick={() => setSimSpeed(s)}
-                        className={`py-1 text-xs rounded font-bold border transition-all ${
-                          simSpeed === s 
-                            ? 'bg-purple-600 text-white border-purple-500 shadow' 
-                            : 'border-slate-800 text-slate-400 hover:text-slate-200'
-                        }`}
-                      >
+                    {[1, 2, 4].map(s => <button key={s} onClick={() => setSimSpeed(s)} className={`py-1 text-xs rounded font-bold border transition-all ${simSpeed === s ? 'bg-purple-600 text-white border-purple-500 shadow' : 'border-slate-800 text-slate-400 hover:text-slate-200'}`}>
                         {s}x Speed
-                      </button>
-                    ))}
+                      </button>)}
                   </div>
                 </div>
 
-              </div>
-            )}
+              </div>}
 
-            {activeTab === 'Theory' && (
-              <div className="flex flex-col gap-4 text-xs text-slate-300 leading-relaxed">
+            {activeTab === 'Theory' && <div className="flex flex-col gap-4 text-xs text-slate-300 leading-relaxed">
                 
                 <div>
                   <h3 className="text-sm font-bold text-white mb-1">The Bohr Hydrogen Model (1913)</h3>
@@ -1399,25 +1347,18 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
                   </p>
                 </div>
 
-              </div>
-            )}
+              </div>}
 
-            {activeTab === 'Log' && (
-              <div className="flex flex-col gap-2">
+            {activeTab === 'Log' && <div className="flex flex-col gap-2">
                 <span className="text-[10px] font-bold text-slate-500 tracking-wider uppercase mb-1">Live Simulation Event Log</span>
                 <div className="flex flex-col gap-1.5 font-mono text-[10px] text-slate-400 overflow-y-auto max-h-[460px] pr-1">
-                  {historyLog.map((item, index) => (
-                    <div key={index} className="flex gap-2 py-1 border-b border-white/5 align-top">
+                  {historyLog.map((item, index) => <div key={index} className="flex gap-2 py-1 border-b border-white/5 align-top">
                       <span className="text-purple-400 shrink-0">[{item.time}]</span>
                       <span className="text-slate-300 leading-tight">{item.msg}</span>
-                    </div>
-                  ))}
-                  {historyLog.length === 0 && (
-                    <span className="text-slate-600 italic py-4 text-center">No simulation events logged yet.</span>
-                  )}
+                    </div>)}
+                  {historyLog.length === 0 && <span className="text-slate-600 italic py-4 text-center">No simulation events logged yet.</span>}
                 </div>
-              </div>
-            )}
+              </div>}
 
           </div>
 
@@ -1451,28 +1392,67 @@ function CustomModelsoftheHydrogenAtomInner({ onBack, title }) {
         </section>
 
       </div>
-    </div>
-  );
+    </div>;
 }
-
-
-export default function CustomModelsoftheHydrogenAtom({ onBack, title }) {
-    return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-                {onBack ? (
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
+export default function CustomModelsoftheHydrogenAtom({
+  onBack,
+  title
+}) {
+  return <div style={{
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    background: '#0a0a1a',
+    overflow: 'hidden'
+  }}>
+            <div style={{
+      position: 'absolute',
+      top: '20px',
+      left: '20px',
+      right: '20px',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      zIndex: 100
+    }}>
+                {onBack ? <button onClick={onBack} style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        background: 'rgba(255, 255, 255, 0.1)',
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        backdropFilter: 'blur(10px)',
+        padding: '10px 20px',
+        borderRadius: '12px',
+        color: '#fff',
+        cursor: 'pointer',
+        transition: 'all 0.3s ease',
+        fontWeight: 600,
+        fontFamily: "'Inter', sans-serif"
+      }}>
                         ← Back
-                    </button>
-                ) : <div />}
-                <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
+                    </button> : <div />}
+                <h1 style={{
+        color: 'white',
+        fontFamily: "'Inter', sans-serif",
+        fontSize: '24px',
+        fontWeight: '600',
+        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
+        margin: 0
+      }}>
                     {title || 'Simulation'}
                 </h1>
-                <div style={{ width: '100px' }}></div>
+                <div style={{
+        width: '100px'
+      }}></div>
             </div>
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto' }}>
+            <div style={{
+      position: 'absolute',
+      inset: 0,
+      zIndex: 1,
+      pointerEvents: 'auto'
+    }}>
                  <CustomModelsoftheHydrogenAtomInner onBack={null} title={""} />
             </div>
-        </div>
-    );
+        </div>;
 }

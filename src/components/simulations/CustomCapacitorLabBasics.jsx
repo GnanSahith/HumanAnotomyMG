@@ -1,18 +1,19 @@
 import { useState, useEffect, useRef } from 'react';
-import { ArrowLeft, RotateCcw, Zap, Gauge, Sun, Battery, HelpCircle } from 'lucide-react';
+import { ArrowLeft, RotateCcw, Zap, Gauge, Sun, Battery, HelpCircle, Play, Pause, Settings2 } from 'lucide-react';
 
 // Linear path interpolation helper (defined outside component to prevent render cycles/lint warnings)
 const getPointOnPath = (vertices, t) => {
-  if (vertices.length === 0) return { x: 0, y: 0 };
+  if (vertices.length === 0) return {
+    x: 0,
+    y: 0
+  };
   const totalSegments = vertices.length - 1;
   const position = t * totalSegments;
   const index = Math.floor(position);
   const fraction = position - index;
-  
   if (index >= totalSegments) {
     return vertices[vertices.length - 1];
   }
-  
   const p1 = vertices[index];
   const p2 = vertices[index + 1];
   return {
@@ -37,49 +38,119 @@ const checkConnection = (px, py, w, Y_top, Y_bottom) => {
 
 // Switch routing wiring coordinate paths generator helper
 const getBatteryVertices = (w, Y_top, Y_bottom) => {
-  return [
-    { x: 120, y: 340 }, // Battery bottom
-    { x: 120, y: 460 },
-    { x: 380 - w / 2, y: 460 },
-    { x: 380 - w / 2, y: Y_bottom }, // Bottom plate
-    { x: 380 - w / 2, y: Y_top }, // Top plate
-    { x: 380 - w / 2 - 20, y: Y_top },
-    { x: 380 - w / 2 - 20, y: 430 },
-    { x: 380, y: 430 }, // Switch Pivot
-    { x: 300, y: 390 }, // Switch Battery Terminal
-    { x: 300, y: 110 },
-    { x: 120, y: 110 },
-    { x: 120, y: 220 } // Battery top
+  return [{
+    x: 120,
+    y: 340
+  },
+  // Battery bottom
+  {
+    x: 120,
+    y: 460
+  }, {
+    x: 380 - w / 2,
+    y: 460
+  }, {
+    x: 380 - w / 2,
+    y: Y_bottom
+  },
+  // Bottom plate
+  {
+    x: 380 - w / 2,
+    y: Y_top
+  },
+  // Top plate
+  {
+    x: 380 - w / 2 - 20,
+    y: Y_top
+  }, {
+    x: 380 - w / 2 - 20,
+    y: 430
+  }, {
+    x: 380,
+    y: 430
+  },
+  // Switch Pivot
+  {
+    x: 300,
+    y: 390
+  },
+  // Switch Battery Terminal
+  {
+    x: 300,
+    y: 110
+  }, {
+    x: 120,
+    y: 110
+  }, {
+    x: 120,
+    y: 220
+  } // Battery top
   ];
 };
-
 const getLightbulbVertices = (w, Y_top, Y_bottom) => {
-  return [
-    { x: 380 - w / 2, y: Y_bottom }, // Bottom plate
-    { x: 380 - w / 2, y: 460 },
-    { x: 655, y: 460 },
-    { x: 655, y: 335 }, // Bulb terminal 2
-    { x: 640, y: 290 }, // Bulb filament center
-    { x: 625, y: 335 }, // Bulb terminal 1
-    { x: 625, y: 110 },
-    { x: 460, y: 110 },
-    { x: 460, y: 390 }, // Switch Bulb Terminal
-    { x: 380, y: 430 }, // Switch Pivot
-    { x: 380 - w / 2 - 20, y: 430 },
-    { x: 380 - w / 2 - 20, y: Y_top },
-    { x: 380 - w / 2, y: Y_top } // Top plate
+  return [{
+    x: 380 - w / 2,
+    y: Y_bottom
+  },
+  // Bottom plate
+  {
+    x: 380 - w / 2,
+    y: 460
+  }, {
+    x: 655,
+    y: 460
+  }, {
+    x: 655,
+    y: 335
+  },
+  // Bulb terminal 2
+  {
+    x: 640,
+    y: 290
+  },
+  // Bulb filament center
+  {
+    x: 625,
+    y: 335
+  },
+  // Bulb terminal 1
+  {
+    x: 625,
+    y: 110
+  }, {
+    x: 460,
+    y: 110
+  }, {
+    x: 460,
+    y: 390
+  },
+  // Switch Bulb Terminal
+  {
+    x: 380,
+    y: 430
+  },
+  // Switch Pivot
+  {
+    x: 380 - w / 2 - 20,
+    y: 430
+  }, {
+    x: 380 - w / 2 - 20,
+    y: Y_top
+  }, {
+    x: 380 - w / 2,
+    y: Y_top
+  } // Top plate
   ];
 };
-
 const CustomCapacitorLabBasicsInner = () => {
   const canvasRef = useRef(null);
-  
+
   // React state for controls and synchronization
   const [area, setArea] = useState(200); // mm^2 (100 to 400)
   const [separation, setSeparation] = useState(5.0); // mm (2.0 to 10.0)
   const [batteryVoltage, setBatteryVoltage] = useState(1.5); // Volts (-1.5 to +1.5)
   const [connectionMode, setConnectionMode] = useState('battery'); // 'battery', 'disconnect', 'lightbulb'
-  
+
   const [showFieldLines, setShowFieldLines] = useState(true);
   const [showCharges, setShowCharges] = useState(true);
   const [showVoltmeter, setShowVoltmeter] = useState(false);
@@ -99,35 +170,52 @@ const CustomCapacitorLabBasicsInner = () => {
     separation: 5.0,
     batteryVoltage: 1.5,
     connectionMode: 'battery',
-    voltage: 1.5, // Current capacitor voltage
-    charge: 0.0, // Current capacitor charge (pC)
-    lastTime: 0, // Initialized inside tick loop to avoid impure performance.now() call during render
-    currentBuffer: 0.0, // Low-passed current for electron animation
+    voltage: 1.5,
+    // Current capacitor voltage
+    charge: 0.0,
+    // Current capacitor charge (pC)
+    lastTime: 0,
+    // Initialized inside tick loop to avoid impure performance.now() call during render
+    currentBuffer: 0.0,
+    // Low-passed current for electron animation
 
     // Draggable Voltmeter state
-    voltmeter: { x: 550, y: 80 },
-    probeRed: { x: 520, y: 150, docked: true },
-    probeBlack: { x: 580, y: 150, docked: true },
-    draggedElement: null, // 'voltmeter' | 'probeRed' | 'probeBlack' | 'topPlate' | 'rightEdge' | 'batterySlider'
-    dragOffset: { x: 0, y: 0 },
-
+    voltmeter: {
+      x: 550,
+      y: 80
+    },
+    probeRed: {
+      x: 520,
+      y: 150,
+      docked: true
+    },
+    probeBlack: {
+      x: 580,
+      y: 150,
+      docked: true
+    },
+    draggedElement: null,
+    // 'voltmeter' | 'probeRed' | 'probeBlack' | 'topPlate' | 'rightEdge' | 'batterySlider'
+    dragOffset: {
+      x: 0,
+      y: 0
+    },
     // Electron flow animation progress (0 to 1)
-    electrons: Array.from({ length: 18 }, (_, i) => i / 18),
+    electrons: Array.from({
+      length: 18
+    }, (_, i) => i / 18)
   });
 
   // Keep stateRef in sync with React state
   useEffect(() => {
     stateRef.current.area = area;
   }, [area]);
-
   useEffect(() => {
     stateRef.current.separation = separation;
   }, [separation]);
-
   useEffect(() => {
     stateRef.current.batteryVoltage = batteryVoltage;
   }, [batteryVoltage]);
-
   useEffect(() => {
     stateRef.current.connectionMode = connectionMode;
   }, [connectionMode]);
@@ -136,31 +224,34 @@ const CustomCapacitorLabBasicsInner = () => {
   const dist = (x1, y1, x2, y2) => Math.hypot(x2 - x1, y2 - y1);
 
   // Coordinate helper for objectFit contain mapping
-  const getMouseCoordinates = (e) => {
+  const getMouseCoordinates = e => {
     const canvas = canvasRef.current;
-    if (!canvas) return { x: 0, y: 0 };
+    if (!canvas) return {
+      x: 0,
+      y: 0
+    };
     const rect = canvas.getBoundingClientRect();
-    
     const scaleX = rect.width / canvas.width;
     const scaleY = rect.height / canvas.height;
     const scale = Math.min(scaleX, scaleY);
-    
     const renderedWidth = canvas.width * scale;
     const renderedHeight = canvas.height * scale;
-    
     const offsetX = (rect.width - renderedWidth) / 2;
     const offsetY = (rect.height - renderedHeight) / 2;
-    
     const x = (e.clientX - rect.left - offsetX) / scale;
     const y = (e.clientY - rect.top - offsetY) / scale;
-    
-    return { x, y };
+    return {
+      x,
+      y
+    };
   };
 
   // Handle Canvas MouseDown (Hit Testing)
-  const handleMouseDown = (e) => {
-    const { x: mx, y: my } = getMouseCoordinates(e);
-
+  const handleMouseDown = e => {
+    const {
+      x: mx,
+      y: my
+    } = getMouseCoordinates(e);
     const s = stateRef.current;
     const w = s.area * 0.5;
     const Y_top = 220 - s.separation * 8;
@@ -180,16 +271,18 @@ const CustomCapacitorLabBasicsInner = () => {
 
     // 3. Voltmeter body hit test
     if (showVoltmeter) {
-      if (mx >= s.voltmeter.x - 70 && mx <= s.voltmeter.x + 70 &&
-          my >= s.voltmeter.y - 40 && my <= s.voltmeter.y + 40) {
+      if (mx >= s.voltmeter.x - 70 && mx <= s.voltmeter.x + 70 && my >= s.voltmeter.y - 40 && my <= s.voltmeter.y + 40) {
         s.draggedElement = 'voltmeter';
-        s.dragOffset = { x: mx - s.voltmeter.x, y: my - s.voltmeter.y };
+        s.dragOffset = {
+          x: mx - s.voltmeter.x,
+          y: my - s.voltmeter.y
+        };
         return;
       }
     }
 
     // 4. Battery slider handle hit test
-    const Y_handle = 280 - (s.batteryVoltage / 1.5) * 60;
+    const Y_handle = 280 - s.batteryVoltage / 1.5 * 60;
     if (mx >= 55 && mx <= 85 && my >= Y_handle - 10 && my <= Y_handle + 10) {
       s.draggedElement = 'batterySlider';
       return;
@@ -220,12 +313,13 @@ const CustomCapacitorLabBasicsInner = () => {
   };
 
   // Handle Canvas MouseMove (Dragging)
-  const handleMouseMove = (e) => {
+  const handleMouseMove = e => {
     const s = stateRef.current;
     if (!s.draggedElement) return;
-
-    const { x: mx, y: my } = getMouseCoordinates(e);
-
+    const {
+      x: mx,
+      y: my
+    } = getMouseCoordinates(e);
     if (s.draggedElement === 'probeRed') {
       s.probeRed.x = mx;
       s.probeRed.y = my;
@@ -247,7 +341,6 @@ const CustomCapacitorLabBasicsInner = () => {
     } else if (s.draggedElement === 'voltmeter') {
       s.voltmeter.x = Math.max(80, Math.min(canvas.width - 80, mx - s.dragOffset.x));
       s.voltmeter.y = Math.max(50, Math.min(canvas.height - 50, my - s.dragOffset.y));
-
       if (s.probeRed.docked) {
         s.probeRed.x = s.voltmeter.x - 30;
         s.probeRed.y = s.voltmeter.y + 40;
@@ -259,7 +352,7 @@ const CustomCapacitorLabBasicsInner = () => {
     } else if (s.draggedElement === 'batterySlider') {
       const cy = Math.max(220, Math.min(340, my));
       const dy = 280 - cy;
-      const v = (dy / 60) * 1.5;
+      const v = dy / 60 * 1.5;
       setBatteryVoltage(Number(v.toFixed(3)));
     } else if (s.draggedElement === 'topPlate') {
       const newY_top = my - s.dragOffset.y;
@@ -286,21 +379,30 @@ const CustomCapacitorLabBasicsInner = () => {
     setShowFieldLines(true);
     setShowCharges(true);
     setShowVoltmeter(false);
-
     const s = stateRef.current;
     s.voltage = 1.5;
     s.charge = 0.0;
     s.currentBuffer = 0.0;
-    s.voltmeter = { x: 550, y: 80 };
-    s.probeRed = { x: 520, y: 150, docked: true };
-    s.probeBlack = { x: 580, y: 150, docked: true };
+    s.voltmeter = {
+      x: 550,
+      y: 80
+    };
+    s.probeRed = {
+      x: 520,
+      y: 150,
+      docked: true
+    };
+    s.probeBlack = {
+      x: 580,
+      y: 150,
+      docked: true
+    };
     s.draggedElement = null;
   };
 
   // Animation & Physics simulation loop (60fps requestAnimationFrame)
   useEffect(() => {
     let animId;
-
     const tick = () => {
       const canvas = canvasRef.current;
       if (!canvas) {
@@ -309,7 +411,6 @@ const CustomCapacitorLabBasicsInner = () => {
       }
       const ctx = canvas.getContext('2d');
       const now = performance.now();
-      
       const s = stateRef.current;
       if (s.lastTime === 0) {
         s.lastTime = now;
@@ -323,7 +424,6 @@ const CustomCapacitorLabBasicsInner = () => {
       const C = 0.008854 * s.area / s.separation; // in pF
 
       let oldVoltage = s.voltage;
-
       if (s.connectionMode === 'battery') {
         s.voltage = s.batteryVoltage;
         s.charge = C * s.voltage;
@@ -340,7 +440,7 @@ const CustomCapacitorLabBasicsInner = () => {
       }
 
       // Track current flow (dQ / dt) for electron drift animation
-      const dQ = (s.voltage * C) - (oldVoltage * C);
+      const dQ = s.voltage * C - oldVoltage * C;
       const instantCurrent = dt > 0 ? dQ / dt : 0;
       // Low-pass filter the current to avoid glitchy movements
       s.currentBuffer = s.currentBuffer * 0.9 + instantCurrent * 0.1;
@@ -351,26 +451,24 @@ const CustomCapacitorLabBasicsInner = () => {
       // Update React-independent Bar Meters in the DOM directly (high performance)
       if (capacitanceBarRef.current) {
         // Max capacitance is when Area = 400, Sep = 2.0 => C = 0.008854 * 400 / 2.0 = 1.77 pF
-        const pct = Math.min(100, (C / 1.8) * 100);
+        const pct = Math.min(100, C / 1.8 * 100);
         capacitanceBarRef.current.style.width = `${pct}%`;
       }
       if (capacitanceValRef.current) {
         capacitanceValRef.current.textContent = `${C.toFixed(3)} pF`;
       }
-
       if (chargeBarRef.current) {
         // Max charge magnitude is when C = 1.77, V = 1.5 => Q = 2.655 pC
         const Q_mag = Math.abs(s.charge);
-        const pct = Math.min(100, (Q_mag / 2.7) * 100);
+        const pct = Math.min(100, Q_mag / 2.7 * 100);
         chargeBarRef.current.style.width = `${pct}%`;
       }
       if (chargeValRef.current) {
         chargeValRef.current.textContent = `${Math.abs(s.charge).toFixed(3)} pC`;
       }
-
       if (energyBarRef.current) {
         // Max energy is when C = 1.77, V = 1.5 => U = 0.5 * 1.77 * 2.25 = 1.99 pJ
-        const pct = Math.min(100, (U / 2.0) * 100);
+        const pct = Math.min(100, U / 2.0 * 100);
         energyBarRef.current.style.width = `${pct}%`;
       }
       if (energyValRef.current) {
@@ -385,12 +483,17 @@ const CustomCapacitorLabBasicsInner = () => {
       ctx.lineWidth = 1;
       const gridSize = 25;
       for (let x = 0; x < canvas.width; x += gridSize) {
-        ctx.beginPath(); ctx.moveTo(x, 0); ctx.lineTo(x, canvas.height); ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, canvas.height);
+        ctx.stroke();
       }
       for (let y = 0; y < canvas.height; y += gridSize) {
-        ctx.beginPath(); ctx.moveTo(0, y); ctx.lineTo(canvas.width, y); ctx.stroke();
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(canvas.width, y);
+        ctx.stroke();
       }
-
       const w = s.area * 0.5;
       const Y_top = 220 - s.separation * 8;
       const Y_bottom = 220 + s.separation * 8;
@@ -432,7 +535,6 @@ const CustomCapacitorLabBasicsInner = () => {
       ctx.lineTo(655, 460);
       ctx.lineTo(655, 335); // bulb terminal 2
       ctx.stroke();
-
       ctx.beginPath();
       ctx.moveTo(380 - w / 2, 460); // bottom plate junction
       ctx.lineTo(380 - w / 2, Y_bottom); // Bottom plate edge
@@ -441,10 +543,16 @@ const CustomCapacitorLabBasicsInner = () => {
       // 3. Render Switch Contact Terminals and Knife Arm
       // Switch contacts
       ctx.fillStyle = '#64748b';
-      ctx.beginPath(); ctx.arc(300, 390, 8, 0, Math.PI * 2); ctx.fill(); // Battery contact
-      ctx.beginPath(); ctx.arc(460, 390, 8, 0, Math.PI * 2); ctx.fill(); // Lightbulb contact
+      ctx.beginPath();
+      ctx.arc(300, 390, 8, 0, Math.PI * 2);
+      ctx.fill(); // Battery contact
+      ctx.beginPath();
+      ctx.arc(460, 390, 8, 0, Math.PI * 2);
+      ctx.fill(); // Lightbulb contact
       ctx.fillStyle = '#e2e8f0';
-      ctx.beginPath(); ctx.arc(380, 430, 9, 0, Math.PI * 2); ctx.fill(); // Pivot terminal
+      ctx.beginPath();
+      ctx.arc(380, 430, 9, 0, Math.PI * 2);
+      ctx.fill(); // Pivot terminal
 
       // Knife blade arm
       ctx.save();
@@ -496,7 +604,7 @@ const CustomCapacitorLabBasicsInner = () => {
       ctx.stroke();
 
       // Battery slider handle
-      const Y_handle = 280 - (s.batteryVoltage / 1.5) * 60;
+      const Y_handle = 280 - s.batteryVoltage / 1.5 * 60;
       const handleGrad = ctx.createLinearGradient(55, 0, 85, 0);
       handleGrad.addColorStop(0, '#ef4444');
       handleGrad.addColorStop(0.5, '#f87171');
@@ -523,15 +631,14 @@ const CustomCapacitorLabBasicsInner = () => {
 
       // Glow effect if discharging
       if (s.connectionMode === 'lightbulb' && Math.abs(s.voltage) > 0.01) {
-        const glowRadius = 30 + (Math.abs(s.voltage) / 1.5) * 80;
+        const glowRadius = 30 + Math.abs(s.voltage) / 1.5 * 80;
         const opacity = Math.min(0.85, (Math.abs(s.voltage) / 1.5) ** 2);
-        
+
         // Radial glow gradient
         const radGlow = ctx.createRadialGradient(bulbX, bulbY - 10, 10, bulbX, bulbY - 10, glowRadius);
         radGlow.addColorStop(0, `rgba(253, 224, 71, ${opacity})`);
         radGlow.addColorStop(0.5, `rgba(234, 179, 8, ${opacity * 0.35})`);
         radGlow.addColorStop(1, 'rgba(234, 179, 8, 0)');
-        
         ctx.fillStyle = radGlow;
         ctx.beginPath();
         ctx.arc(bulbX, bulbY - 10, glowRadius, 0, Math.PI * 2);
@@ -542,9 +649,9 @@ const CustomCapacitorLabBasicsInner = () => {
         ctx.strokeStyle = `rgba(253, 224, 71, ${opacity * 0.85})`;
         ctx.lineWidth = 2.5;
         for (let i = 0; i < numRays; i++) {
-          const angle = (i * Math.PI * 2) / numRays;
+          const angle = i * Math.PI * 2 / numRays;
           const rayStart = 38;
-          const rayLen = 15 + (Math.abs(s.voltage) / 1.5) * 25;
+          const rayLen = 15 + Math.abs(s.voltage) / 1.5 * 25;
           ctx.beginPath();
           ctx.moveTo(bulbX + Math.cos(angle) * rayStart, bulbY - 10 + Math.sin(angle) * rayStart);
           ctx.lineTo(bulbX + Math.cos(angle) * (rayStart + rayLen), bulbY - 10 + Math.sin(angle) * (rayStart + rayLen));
@@ -581,7 +688,7 @@ const CustomCapacitorLabBasicsInner = () => {
       ctx.stroke();
 
       // Filament loop
-      ctx.strokeStyle = (s.connectionMode === 'lightbulb' && Math.abs(s.voltage) > 0.01) ? '#f59e0b' : '#78716c';
+      ctx.strokeStyle = s.connectionMode === 'lightbulb' && Math.abs(s.voltage) > 0.01 ? '#f59e0b' : '#78716c';
       ctx.lineWidth = 2.5;
       ctx.beginPath();
       ctx.moveTo(bulbX - 5, bulbY + 2);
@@ -602,8 +709,7 @@ const CustomCapacitorLabBasicsInner = () => {
         // Draw vertical field lines with direction arrows
         for (let i = 0; i < numLines; i++) {
           const fraction = numLines > 1 ? i / (numLines - 1) : 0.5;
-          const lx = (380 - w / 2) + fraction * w;
-
+          const lx = 380 - w / 2 + fraction * w;
           ctx.beginPath();
           ctx.moveTo(lx, Y_top + 4);
           ctx.lineTo(lx, Y_bottom - 4);
@@ -613,7 +719,6 @@ const CustomCapacitorLabBasicsInner = () => {
           const isTopPositive = s.voltage > 0;
           const arrowY = (Y_top + Y_bottom) / 2;
           const arrowDir = isTopPositive ? 1 : -1;
-
           ctx.fillStyle = `rgba(147, 51, 234, ${opacity})`;
           ctx.beginPath();
           ctx.moveTo(lx, arrowY + arrowDir * 6);
@@ -627,14 +732,13 @@ const CustomCapacitorLabBasicsInner = () => {
 
       // 7. Render Capacitor Plates (Metallic look with handles)
       ctx.save();
-      
+
       // Top Plate (Positive plate if V > 0)
-      const topPlateGrad = ctx.createLinearGradient(380 - w/2, 0, 380 + w/2, 0);
+      const topPlateGrad = ctx.createLinearGradient(380 - w / 2, 0, 380 + w / 2, 0);
       topPlateGrad.addColorStop(0, '#64748b');
       topPlateGrad.addColorStop(0.3, '#94a3b8');
       topPlateGrad.addColorStop(0.7, '#64748b');
       topPlateGrad.addColorStop(1, '#475569');
-      
       ctx.fillStyle = topPlateGrad;
       ctx.beginPath();
       ctx.roundRect(380 - w / 2, Y_top - 4, w, 8, 3);
@@ -661,14 +765,16 @@ const CustomCapacitorLabBasicsInner = () => {
       ctx.lineTo(375, Y_top - 12);
       ctx.lineTo(385, Y_top - 12);
       ctx.closePath();
-      ctx.fill(); ctx.stroke();
+      ctx.fill();
+      ctx.stroke();
       // Down arrow
       ctx.beginPath();
       ctx.moveTo(380, Y_top - 6);
       ctx.lineTo(375, Y_top - 12);
       ctx.lineTo(385, Y_top - 12);
       ctx.closePath();
-      ctx.fill(); ctx.stroke();
+      ctx.fill();
+      ctx.stroke();
 
       // Right edge Area handle (double-headed horizontal arrow)
       const x_edge = 380 + w / 2;
@@ -710,13 +816,11 @@ const CustomCapacitorLabBasicsInner = () => {
         const Q_mag = Math.abs(s.charge);
         const maxDisplayCharges = 22;
         const numSymbols = Math.max(1, Math.min(maxDisplayCharges, Math.round(Q_mag * 8)));
-
         const topIsPositive = s.voltage > 0;
-
         for (let i = 0; i < numSymbols; i++) {
           const fraction = numSymbols > 1 ? i / (numSymbols - 1) : 0.5;
           // Space charges along the plate width
-          const cx = (380 - w / 2 + 10) + fraction * (w - 20);
+          const cx = 380 - w / 2 + 10 + fraction * (w - 20);
 
           // Top Plate charges
           ctx.fillStyle = topIsPositive ? '#f87171' : '#60a5fa';
@@ -730,23 +834,19 @@ const CustomCapacitorLabBasicsInner = () => {
       }
 
       // 9. Electron flow animation along wires
-      const activePath = s.connectionMode === 'battery' 
-        ? getBatteryVertices(w, Y_top, Y_bottom)
-        : (s.connectionMode === 'lightbulb' ? getLightbulbVertices(w, Y_top, Y_bottom) : null);
-
+      const activePath = s.connectionMode === 'battery' ? getBatteryVertices(w, Y_top, Y_bottom) : s.connectionMode === 'lightbulb' ? getLightbulbVertices(w, Y_top, Y_bottom) : null;
       if (activePath && activePath.length > 1) {
         ctx.save();
         // Determine drift speed based on active mode
         let driftSpeed = 0.0;
         let flowDir = 1.0;
-
         if (s.connectionMode === 'battery') {
           // speed based on voltage-change transient buffer
           driftSpeed = Math.abs(s.currentBuffer) * 35.0;
           flowDir = s.batteryVoltage > 0 ? -1.0 : 1.0;
         } else if (s.connectionMode === 'lightbulb') {
           // speed based on discharge current (proportional to capacitor voltage)
-          driftSpeed = (Math.abs(s.voltage) / 1.5) * 8.0;
+          driftSpeed = Math.abs(s.voltage) / 1.5 * 8.0;
           flowDir = s.charge > 0 ? -1.0 : 1.0;
         }
 
@@ -765,7 +865,6 @@ const CustomCapacitorLabBasicsInner = () => {
           ctx.beginPath();
           ctx.arc(pos.x, pos.y, 4.5, 0, Math.PI * 2);
           ctx.fill();
-
           ctx.fillStyle = '#fff';
           ctx.font = '7px sans-serif';
           ctx.textAlign = 'center';
@@ -784,15 +883,10 @@ const CustomCapacitorLabBasicsInner = () => {
         // Perform probe node connection checks
         const redNode = checkConnection(s.probeRed.x, s.probeRed.y, w, Y_top, Y_bottom);
         const blackNode = checkConnection(s.probeBlack.x, s.probeBlack.y, w, Y_top, Y_bottom);
-
         let redV = null;
         let blackV = null;
-        if (redNode === 'top') redV = s.voltage;
-        else if (redNode === 'bottom') redV = 0;
-
-        if (blackNode === 'top') blackV = s.voltage;
-        else if (blackNode === 'bottom') blackV = 0;
-
+        if (redNode === 'top') redV = s.voltage;else if (redNode === 'bottom') redV = 0;
+        if (blackNode === 'top') blackV = s.voltage;else if (blackNode === 'bottom') blackV = 0;
         let measuredDiff = null;
         if (redV !== null && blackV !== null) {
           measuredDiff = redV - blackV;
@@ -819,7 +913,6 @@ const CustomCapacitorLabBasicsInner = () => {
         ctx.shadowBlur = 12;
         ctx.shadowOffsetX = 0;
         ctx.shadowOffsetY = 6;
-
         ctx.fillStyle = 'rgba(15, 23, 42, 0.96)'; // deep navy slate
         ctx.strokeStyle = 'rgba(255,255,255,0.15)';
         ctx.lineWidth = 2.5;
@@ -857,9 +950,13 @@ const CustomCapacitorLabBasicsInner = () => {
 
         // Socket terminals
         ctx.fillStyle = '#ef4444';
-        ctx.beginPath(); ctx.arc(vx - 30, vy + 40, 5, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath();
+        ctx.arc(vx - 30, vy + 40, 5, 0, Math.PI * 2);
+        ctx.fill();
         ctx.fillStyle = '#334155';
-        ctx.beginPath(); ctx.arc(vx + 30, vy + 40, 5, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath();
+        ctx.arc(vx + 30, vy + 40, 5, 0, Math.PI * 2);
+        ctx.fill();
 
         // Draw Probe handles and tips
         // Red probe
@@ -876,7 +973,9 @@ const CustomCapacitorLabBasicsInner = () => {
         ctx.fill();
         // Red cap
         ctx.fillStyle = '#b91c1c';
-        ctx.beginPath(); ctx.arc(0, 14, 4, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath();
+        ctx.arc(0, 14, 4, 0, Math.PI * 2);
+        ctx.fill();
         ctx.restore();
 
         // Black probe
@@ -893,193 +992,263 @@ const CustomCapacitorLabBasicsInner = () => {
         ctx.fill();
         // Black cap
         ctx.fillStyle = '#0f172a';
-        ctx.beginPath(); ctx.arc(0, 14, 4, 0, Math.PI * 2); ctx.fill();
+        ctx.beginPath();
+        ctx.arc(0, 14, 4, 0, Math.PI * 2);
+        ctx.fill();
         ctx.restore();
-
         ctx.restore();
       }
-
       animId = requestAnimationFrame(tick);
     };
-
     animId = requestAnimationFrame(tick);
-
     return () => cancelAnimationFrame(animId);
   }, [showFieldLines, showCharges, showVoltmeter]);
-
-  return (
-    <div style={{
-      width: '100%',
-      height: '100%',
+  return <div style={{
+    width: '100%',
+    height: '100%',
+    position: 'absolute',
+    inset: 0,
+    fontFamily: 'Inter, system-ui, sans-serif',
+    color: '#f8fafc',
+    pointerEvents: 'none'
+  }}>
+      {/* Main View: Canvas */}
+      <canvas ref={canvasRef} width={800} height={500} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} onTouchStart={e => {
+      const touch = e.touches[0];
+      handleMouseDown(touch);
+    }} onTouchMove={e => {
+      const touch = e.touches[0];
+      handleMouseMove(touch);
+    }} onTouchEnd={handleMouseUp} style={{
       position: 'absolute',
       inset: 0,
-      fontFamily: 'Inter, system-ui, sans-serif',
-      color: '#f8fafc',
-      pointerEvents: 'none'
-    }}>
-      {/* Main View: Canvas */}
-      <canvas
-        ref={canvasRef}
-        width={800}
-        height={500}
-        onMouseDown={handleMouseDown}
-        onMouseMove={handleMouseMove}
-        onMouseUp={handleMouseUp}
-        onMouseLeave={handleMouseUp}
-        onTouchStart={(e) => {
-          const touch = e.touches[0];
-          handleMouseDown(touch);
-        }}
-        onTouchMove={(e) => {
-          const touch = e.touches[0];
-          handleMouseMove(touch);
-        }}
-        onTouchEnd={handleMouseUp}
-        style={{
-          position: 'absolute',
-          inset: 0,
-          width: '100%',
-          height: '100%',
-          objectFit: 'contain',
-          cursor: 'crosshair',
-          touchAction: 'none',
-          pointerEvents: 'auto',
-          zIndex: 1
-        }}
-      />
+      width: '100%',
+      height: '100%',
+      objectFit: 'contain',
+      cursor: 'crosshair',
+      touchAction: 'none',
+      pointerEvents: 'auto',
+      zIndex: 1
+    }} />
 
       {/* Floating Left Panel: Measurements */}
       <div style={{
-        position: 'absolute',
-        top: '90px',
-        left: '20px',
-        width: '280px',
-        background: 'rgba(20, 20, 30, 0.8)',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
-        backdropFilter: 'blur(12px)',
-        padding: '20px',
-        borderRadius: '16px',
-        zIndex: 10,
-        color: 'white',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '16px',
-        pointerEvents: 'auto'
+      position: 'absolute',
+      top: '90px',
+      left: '20px',
+      width: '280px',
+      background: 'rgba(20, 20, 30, 0.8)',
+      border: '1px solid rgba(255, 255, 255, 0.1)',
+      backdropFilter: 'blur(12px)',
+      padding: '20px',
+      borderRadius: '16px',
+      zIndex: 10,
+      color: 'white',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '16px',
+      pointerEvents: 'auto'
+    }}>
+        <h3 style={{
+        fontSize: '16px',
+        fontWeight: '600',
+        borderBottom: '1px solid rgba(255,255,255,0.1)',
+        paddingBottom: '8px',
+        margin: 0
       }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '8px', margin: 0 }}>
           Measurements
         </h3>
 
         {/* Capacitance Meter */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontSize: '12px', fontWeight: 600, color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Zap size={14} style={{ color: '#38bdf8' }} />
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px'
+      }}>
+          <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}>
+            <span style={{
+            fontSize: '12px',
+            fontWeight: 600,
+            color: '#94a3b8',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px'
+          }}>
+              <Zap size={14} style={{
+              color: '#38bdf8'
+            }} />
               CAPACITANCE
             </span>
-            <span ref={capacitanceValRef} style={{ fontSize: '13px', fontWeight: 'bold', fontFamily: 'monospace', color: '#f1f5f9' }}>
+            <span ref={capacitanceValRef} style={{
+            fontSize: '13px',
+            fontWeight: 'bold',
+            fontFamily: 'monospace',
+            color: '#f1f5f9'
+          }}>
               0.000 pF
             </span>
           </div>
-          <div style={{ height: '6px', backgroundColor: '#0f172a', borderRadius: '3px', overflow: 'hidden' }}>
+          <div style={{
+          height: '6px',
+          backgroundColor: '#0f172a',
+          borderRadius: '3px',
+          overflow: 'hidden'
+        }}>
             <div ref={capacitanceBarRef} style={{
-              height: '100%',
-              width: '0%',
-              backgroundImage: 'linear-gradient(to right, #38bdf8, #0ea5e9)',
-              boxShadow: '0 0 8px rgba(56, 189, 248, 0.4)',
-              borderRadius: '3px',
-              transition: 'width 0.1s ease-out'
-            }} />
+            height: '100%',
+            width: '0%',
+            backgroundImage: 'linear-gradient(to right, #38bdf8, #0ea5e9)',
+            boxShadow: '0 0 8px rgba(56, 189, 248, 0.4)',
+            borderRadius: '3px',
+            transition: 'width 0.1s ease-out'
+          }} />
           </div>
         </div>
 
         {/* Plate Charge Meter */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontSize: '12px', fontWeight: 600, color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Gauge size={14} style={{ color: '#a855f7' }} />
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px'
+      }}>
+          <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}>
+            <span style={{
+            fontSize: '12px',
+            fontWeight: 600,
+            color: '#94a3b8',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px'
+          }}>
+              <Gauge size={14} style={{
+              color: '#a855f7'
+            }} />
               PLATE CHARGE
             </span>
-            <span ref={chargeValRef} style={{ fontSize: '13px', fontWeight: 'bold', fontFamily: 'monospace', color: '#f1f5f9' }}>
+            <span ref={chargeValRef} style={{
+            fontSize: '13px',
+            fontWeight: 'bold',
+            fontFamily: 'monospace',
+            color: '#f1f5f9'
+          }}>
               0.000 pC
             </span>
           </div>
-          <div style={{ height: '6px', backgroundColor: '#0f172a', borderRadius: '3px', overflow: 'hidden' }}>
+          <div style={{
+          height: '6px',
+          backgroundColor: '#0f172a',
+          borderRadius: '3px',
+          overflow: 'hidden'
+        }}>
             <div ref={chargeBarRef} style={{
-              height: '100%',
-              width: '0%',
-              backgroundImage: 'linear-gradient(to right, #c084fc, #a855f7)',
-              boxShadow: '0 0 8px rgba(168, 85, 247, 0.4)',
-              borderRadius: '3px',
-              transition: 'width 0.1s ease-out'
-            }} />
+            height: '100%',
+            width: '0%',
+            backgroundImage: 'linear-gradient(to right, #c084fc, #a855f7)',
+            boxShadow: '0 0 8px rgba(168, 85, 247, 0.4)',
+            borderRadius: '3px',
+            transition: 'width 0.1s ease-out'
+          }} />
           </div>
         </div>
 
         {/* Stored Energy Meter */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <span style={{ fontSize: '12px', fontWeight: 600, color: '#94a3b8', display: 'flex', alignItems: 'center', gap: '6px' }}>
-              <Sun size={14} style={{ color: '#10b981' }} />
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px'
+      }}>
+          <div style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center'
+        }}>
+            <span style={{
+            fontSize: '12px',
+            fontWeight: 600,
+            color: '#94a3b8',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '6px'
+          }}>
+              <Sun size={14} style={{
+              color: '#10b981'
+            }} />
               STORED ENERGY
             </span>
-            <span ref={energyValRef} style={{ fontSize: '13px', fontWeight: 'bold', fontFamily: 'monospace', color: '#f1f5f9' }}>
+            <span ref={energyValRef} style={{
+            fontSize: '13px',
+            fontWeight: 'bold',
+            fontFamily: 'monospace',
+            color: '#f1f5f9'
+          }}>
               0.000 pJ
             </span>
           </div>
-          <div style={{ height: '6px', backgroundColor: '#0f172a', borderRadius: '3px', overflow: 'hidden' }}>
+          <div style={{
+          height: '6px',
+          backgroundColor: '#0f172a',
+          borderRadius: '3px',
+          overflow: 'hidden'
+        }}>
             <div ref={energyBarRef} style={{
-              height: '100%',
-              width: '0%',
-              backgroundImage: 'linear-gradient(to right, #34d399, #10b981)',
-              boxShadow: '0 0 8px rgba(16, 185, 129, 0.4)',
-              borderRadius: '3px',
-              transition: 'width 0.1s ease-out'
-            }} />
+            height: '100%',
+            width: '0%',
+            backgroundImage: 'linear-gradient(to right, #34d399, #10b981)',
+            boxShadow: '0 0 8px rgba(16, 185, 129, 0.4)',
+            borderRadius: '3px',
+            transition: 'width 0.1s ease-out'
+          }} />
           </div>
         </div>
 
         {/* Resets / Help Actions */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginTop: '16px' }}>
-          <button
-            onClick={() => setShowHelp(!showHelp)}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '6px',
-              padding: '8px 12px',
-              borderRadius: '8px',
-              background: 'rgba(255,255,255,0.05)',
-              border: '1px solid rgba(255,255,255,0.1)',
-              color: '#fff',
-              cursor: 'pointer',
-              fontSize: '12px',
-              fontWeight: '600',
-              transition: 'all 0.2s'
-            }}
-          >
+        <div style={{
+        display: 'grid',
+        gridTemplateColumns: '1fr 1fr',
+        gap: '8px',
+        marginTop: '16px'
+      }}>
+          <button onClick={() => setShowHelp(!showHelp)} style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '6px',
+          padding: '8px 12px',
+          borderRadius: '8px',
+          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          border: '1px solid rgba(255,255,255,0.1)',
+          color: '#fff',
+          cursor: 'pointer',
+          fontSize: '12px',
+          fontWeight: '600',
+          transition: 'all 0.2s'
+        }}>
             <HelpCircle size={13} />
             {showHelp ? 'Hide Guide' : 'Guide'}
           </button>
-          <button
-            onClick={handleReset}
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              gap: '6px',
-              padding: '8px 12px',
-              borderRadius: '8px',
-              background: 'rgba(56, 189, 248, 0.15)',
-              border: '1px solid rgba(56, 189, 248, 0.3)',
-              color: '#38bdf8',
-              cursor: 'pointer',
-              fontSize: '12px',
-              fontWeight: '600',
-              transition: 'all 0.2s'
-            }}
-          >
+          <button onClick={handleReset} style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          gap: '6px',
+          padding: '8px 12px',
+          borderRadius: '8px',
+          background: 'rgba(56, 189, 248, 0.15)',
+          border: '1px solid rgba(56, 189, 248, 0.3)',
+          color: '#38bdf8',
+          cursor: 'pointer',
+          fontSize: '12px',
+          fontWeight: '600',
+          transition: 'all 0.2s'
+        }}>
             <RotateCcw size={13} />
             Reset
           </button>
@@ -1088,100 +1257,106 @@ const CustomCapacitorLabBasicsInner = () => {
 
       {/* Floating Right Panel: Settings */}
       <div style={{
-        position: 'absolute',
-        top: '90px',
-        right: '20px',
-        width: '320px',
-        maxHeight: 'calc(100% - 120px)',
-        overflowY: 'auto',
-        background: 'rgba(20, 20, 30, 0.8)',
-        border: '1px solid rgba(255, 255, 255, 0.1)',
-        backdropFilter: 'blur(12px)',
-        padding: '20px',
-        borderRadius: '16px',
-        zIndex: 10,
-        color: 'white',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '20px',
-        pointerEvents: 'auto'
+      position: 'absolute',
+      top: '90px',
+      right: '20px',
+      width: '320px',
+      maxHeight: 'calc(100% - 120px)',
+      overflowY: 'auto',
+      background: 'rgba(20, 20, 30, 0.8)',
+      border: '1px solid rgba(255, 255, 255, 0.1)',
+      backdropFilter: 'blur(12px)',
+      padding: '20px',
+      borderRadius: '16px',
+      zIndex: 10,
+      color: 'white',
+      display: 'flex',
+      flexDirection: 'column',
+      gap: '20px',
+      pointerEvents: 'auto'
+    }}>
+        <h3 style={{
+        fontSize: '16px',
+        fontWeight: '600',
+        borderBottom: '1px solid rgba(255,255,255,0.1)',
+        paddingBottom: '8px',
+        margin: 0
       }}>
-        <h3 style={{ fontSize: '16px', fontWeight: '600', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '8px', margin: 0 }}>
           Settings
         </h3>
 
         {/* Connection Mode Selection */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-          <label style={{ fontSize: '11px', fontWeight: 'bold', color: '#94a3b8', letterSpacing: '0.5px' }}>CONNECTION MODE</label>
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '8px'
+      }}>
+          <label style={{
+          fontSize: '11px',
+          fontWeight: 'bold',
+          color: '#94a3b8',
+          letterSpacing: '0.5px'
+        }}>CONNECTION MODE</label>
           <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '6px',
+          backgroundColor: 'rgba(15, 23, 42, 0.4)',
+          padding: '6px',
+          borderRadius: '12px',
+          border: '1px solid rgba(255, 255, 255, 0.05)'
+        }}>
+            <button onClick={() => setConnectionMode('battery')} style={{
+            backgroundColor: connectionMode === 'battery' ? 'rgba(56, 189, 248, 0.15)' : 'transparent',
+            border: connectionMode === 'battery' ? '1px solid rgba(56, 189, 248, 0.3)' : '1px solid transparent',
+            color: connectionMode === 'battery' ? '#38bdf8' : '#94a3b8',
+            padding: '8px 12px',
+            borderRadius: '8px',
+            textAlign: 'left',
+            cursor: 'pointer',
+            fontSize: '13px',
+            fontWeight: 600,
+            transition: 'all 0.2s',
             display: 'flex',
-            flexDirection: 'column',
-            gap: '6px',
-            backgroundColor: 'rgba(15, 23, 42, 0.4)',
-            padding: '6px',
-            borderRadius: '12px',
-            border: '1px solid rgba(255, 255, 255, 0.05)'
+            alignItems: 'center',
+            gap: '8px'
           }}>
-            <button
-              onClick={() => setConnectionMode('battery')}
-              style={{
-                backgroundColor: connectionMode === 'battery' ? 'rgba(56, 189, 248, 0.15)' : 'transparent',
-                border: connectionMode === 'battery' ? '1px solid rgba(56, 189, 248, 0.3)' : '1px solid transparent',
-                color: connectionMode === 'battery' ? '#38bdf8' : '#94a3b8',
-                padding: '8px 12px',
-                borderRadius: '8px',
-                textAlign: 'left',
-                cursor: 'pointer',
-                fontSize: '13px',
-                fontWeight: 600,
-                transition: 'all 0.2s',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-            >
               <Battery size={14} />
               Connect Battery
             </button>
-            <button
-              onClick={() => setConnectionMode('disconnect')}
-              style={{
-                backgroundColor: connectionMode === 'disconnect' ? 'rgba(255, 255, 255, 0.08)' : 'transparent',
-                border: connectionMode === 'disconnect' ? '1px solid rgba(255, 255, 255, 0.15)' : '1px solid transparent',
-                color: connectionMode === 'disconnect' ? '#f8fafc' : '#94a3b8',
-                padding: '8px 12px',
-                borderRadius: '8px',
-                textAlign: 'left',
-                cursor: 'pointer',
-                fontSize: '13px',
-                fontWeight: 600,
-                transition: 'all 0.2s',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-            >
+            <button onClick={() => setConnectionMode('disconnect')} style={{
+            backgroundColor: connectionMode === 'disconnect' ? 'rgba(255, 255, 255, 0.08)' : 'transparent',
+            border: connectionMode === 'disconnect' ? '1px solid rgba(255, 255, 255, 0.15)' : '1px solid transparent',
+            color: connectionMode === 'disconnect' ? '#f8fafc' : '#94a3b8',
+            padding: '8px 12px',
+            borderRadius: '8px',
+            textAlign: 'left',
+            cursor: 'pointer',
+            fontSize: '13px',
+            fontWeight: 600,
+            transition: 'all 0.2s',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px'
+          }}>
               <Zap size={14} />
               Disconnect
             </button>
-            <button
-              onClick={() => setConnectionMode('lightbulb')}
-              style={{
-                backgroundColor: connectionMode === 'lightbulb' ? 'rgba(234, 179, 8, 0.15)' : 'transparent',
-                border: connectionMode === 'lightbulb' ? '1px solid rgba(234, 179, 8, 0.3)' : '1px solid transparent',
-                color: connectionMode === 'lightbulb' ? '#f59e0b' : '#94a3b8',
-                padding: '8px 12px',
-                borderRadius: '8px',
-                textAlign: 'left',
-                cursor: 'pointer',
-                fontSize: '13px',
-                fontWeight: 600,
-                transition: 'all 0.2s',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px'
-              }}
-            >
+            <button onClick={() => setConnectionMode('lightbulb')} style={{
+            backgroundColor: connectionMode === 'lightbulb' ? 'rgba(234, 179, 8, 0.15)' : 'transparent',
+            border: connectionMode === 'lightbulb' ? '1px solid rgba(234, 179, 8, 0.3)' : '1px solid transparent',
+            color: connectionMode === 'lightbulb' ? '#f59e0b' : '#94a3b8',
+            padding: '8px 12px',
+            borderRadius: '8px',
+            textAlign: 'left',
+            cursor: 'pointer',
+            fontSize: '13px',
+            fontWeight: 600,
+            transition: 'all 0.2s',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px'
+          }}>
               <Sun size={14} />
               Connect Lightbulb
             </button>
@@ -1189,137 +1364,186 @@ const CustomCapacitorLabBasicsInner = () => {
         </div>
 
         {/* Sliders */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '16px'
+      }}>
           {/* Plate Area Slider */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <label style={{ fontSize: '11px', fontWeight: 'bold', color: '#94a3b8' }}>PLATE AREA</label>
-              <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#38bdf8', fontFamily: 'monospace' }}>{area} mm²</span>
+          <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '6px'
+        }}>
+            <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center'
+          }}>
+              <label style={{
+              fontSize: '11px',
+              fontWeight: 'bold',
+              color: '#94a3b8'
+            }}>PLATE AREA</label>
+              <span style={{
+              fontSize: '13px',
+              fontWeight: 'bold',
+              color: '#38bdf8',
+              fontFamily: 'monospace'
+            }}>{area} mm²</span>
             </div>
-            <input
-              type="range"
-              min="100"
-              max="400"
-              step="10"
-              value={area}
-              onChange={(e) => setArea(Number(e.target.value))}
-              style={{
-                width: '100%',
-                height: '6px',
-                background: '#1e293b',
-                borderRadius: '3px',
-                outline: 'none',
-                cursor: 'pointer',
-                accentColor: '#38bdf8'
-              }}
-            />
+            <input type="range" min="100" max="400" step="10" value={area} onChange={e => setArea(Number(e.target.value))} style={{
+            width: '100%',
+            height: '6px',
+            background: '#1e293b',
+            borderRadius: '3px',
+            outline: 'none',
+            cursor: 'pointer',
+            accentColor: '#38bdf8'
+          }} />
           </div>
 
           {/* Plate Separation Slider */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <label style={{ fontSize: '11px', fontWeight: 'bold', color: '#94a3b8' }}>PLATE SEPARATION</label>
-              <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#38bdf8', fontFamily: 'monospace' }}>{separation.toFixed(1)} mm</span>
+          <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '6px'
+        }}>
+            <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center'
+          }}>
+              <label style={{
+              fontSize: '11px',
+              fontWeight: 'bold',
+              color: '#94a3b8'
+            }}>PLATE SEPARATION</label>
+              <span style={{
+              fontSize: '13px',
+              fontWeight: 'bold',
+              color: '#38bdf8',
+              fontFamily: 'monospace'
+            }}>{separation.toFixed(1)} mm</span>
             </div>
-            <input
-              type="range"
-              min="2.0"
-              max="10.0"
-              step="0.1"
-              value={separation}
-              onChange={(e) => setSeparation(Number(e.target.value))}
-              style={{
-                width: '100%',
-                height: '6px',
-                background: '#1e293b',
-                borderRadius: '3px',
-                outline: 'none',
-                cursor: 'pointer',
-                accentColor: '#38bdf8'
-              }}
-            />
+            <input type="range" min="2.0" max="10.0" step="0.1" value={separation} onChange={e => setSeparation(Number(e.target.value))} style={{
+            width: '100%',
+            height: '6px',
+            background: '#1e293b',
+            borderRadius: '3px',
+            outline: 'none',
+            cursor: 'pointer',
+            accentColor: '#38bdf8'
+          }} />
           </div>
 
           {/* Battery Voltage Slider */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-              <label style={{ fontSize: '11px', fontWeight: 'bold', color: '#94a3b8' }}>BATTERY VOLTAGE</label>
-              <span style={{ fontSize: '13px', fontWeight: 'bold', color: '#38bdf8', fontFamily: 'monospace' }}>
+          <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '6px'
+        }}>
+            <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
+            alignItems: 'center'
+          }}>
+              <label style={{
+              fontSize: '11px',
+              fontWeight: 'bold',
+              color: '#94a3b8'
+            }}>BATTERY VOLTAGE</label>
+              <span style={{
+              fontSize: '13px',
+              fontWeight: 'bold',
+              color: '#38bdf8',
+              fontFamily: 'monospace'
+            }}>
                 {batteryVoltage >= 0 ? '+' : ''}{batteryVoltage.toFixed(2)} V
               </span>
             </div>
-            <input
-              type="range"
-              min="-1.50"
-              max="1.50"
-              step="0.05"
-              value={batteryVoltage}
-              onChange={(e) => setBatteryVoltage(Number(e.target.value))}
-              disabled={connectionMode !== 'battery'}
-              style={{
-                width: '100%',
-                height: '6px',
-                background: '#1e293b',
-                borderRadius: '3px',
-                outline: 'none',
-                cursor: connectionMode === 'battery' ? 'pointer' : 'not-allowed',
-                opacity: connectionMode === 'battery' ? 1.0 : 0.4,
-                accentColor: '#ef4444'
-              }}
-            />
+            <input type="range" min="-1.50" max="1.50" step="0.05" value={batteryVoltage} onChange={e => setBatteryVoltage(Number(e.target.value))} disabled={connectionMode !== 'battery'} style={{
+            width: '100%',
+            height: '6px',
+            background: '#1e293b',
+            borderRadius: '3px',
+            outline: 'none',
+            cursor: connectionMode === 'battery' ? 'pointer' : 'not-allowed',
+            opacity: connectionMode === 'battery' ? 1.0 : 0.4,
+            accentColor: '#ef4444'
+          }} />
           </div>
         </div>
 
         {/* Visual Options / Toggles */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-          <label style={{ fontSize: '11px', fontWeight: 'bold', color: '#94a3b8', letterSpacing: '0.5px' }}>VISUALIZATIONS</label>
+        <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '12px'
+      }}>
+          <label style={{
+          fontSize: '11px',
+          fontWeight: 'bold',
+          color: '#94a3b8',
+          letterSpacing: '0.5px'
+        }}>VISUALIZATIONS</label>
           
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+          <div style={{
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '10px'
+        }}>
             {/* Show Field Lines */}
-            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: '#cbd5e1', cursor: 'pointer' }}>
-              <input
-                type="checkbox"
-                checked={showFieldLines}
-                onChange={(e) => setShowFieldLines(e.target.checked)}
-                style={{
-                  width: '15px',
-                  height: '15px',
-                  accentColor: '#a855f7',
-                  cursor: 'pointer'
-                }}
-              />
+            <label style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            fontSize: '13px',
+            color: '#cbd5e1',
+            cursor: 'pointer'
+          }}>
+              <input type="checkbox" checked={showFieldLines} onChange={e => setShowFieldLines(e.target.checked)} style={{
+              width: '15px',
+              height: '15px',
+              accentColor: '#a855f7',
+              cursor: 'pointer'
+            }} />
               Electric Field Lines
             </label>
 
             {/* Show Charges */}
-            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: '#cbd5e1', cursor: 'pointer' }}>
-              <input
-                type="checkbox"
-                checked={showCharges}
-                onChange={(e) => setShowCharges(e.target.checked)}
-                style={{
-                  width: '15px',
-                  height: '15px',
-                  accentColor: '#a855f7',
-                  cursor: 'pointer'
-                }}
-              />
+            <label style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            fontSize: '13px',
+            color: '#cbd5e1',
+            cursor: 'pointer'
+          }}>
+              <input type="checkbox" checked={showCharges} onChange={e => setShowCharges(e.target.checked)} style={{
+              width: '15px',
+              height: '15px',
+              accentColor: '#a855f7',
+              cursor: 'pointer'
+            }} />
               Plate Charges (+ / -)
             </label>
 
             {/* Show Voltmeter */}
-            <label style={{ display: 'flex', alignItems: 'center', gap: '10px', fontSize: '13px', color: '#cbd5e1', cursor: 'pointer' }}>
-              <input
-                type="checkbox"
-                checked={showVoltmeter}
-                onChange={(e) => setShowVoltmeter(e.target.checked)}
-                style={{
-                  width: '15px',
-                  height: '15px',
-                  accentColor: '#a855f7',
-                  cursor: 'pointer'
-                }}
-              />
+            <label style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            fontSize: '13px',
+            color: '#cbd5e1',
+            cursor: 'pointer'
+          }}>
+              <input type="checkbox" checked={showVoltmeter} onChange={e => setShowVoltmeter(e.target.checked)} style={{
+              width: '15px',
+              height: '15px',
+              accentColor: '#a855f7',
+              cursor: 'pointer'
+            }} />
               Active Voltmeter Probe
             </label>
           </div>
@@ -1327,40 +1551,56 @@ const CustomCapacitorLabBasicsInner = () => {
       </div>
 
       {/* Floating Bottom Center: Help Guide overlay */}
-      {showHelp && (
-        <div style={{
-          position: 'absolute',
-          bottom: '20px',
-          left: '320px',
-          right: '360px',
-          background: 'rgba(15, 23, 42, 0.95)',
-          border: '1px solid rgba(56, 189, 248, 0.3)',
-          borderRadius: '16px',
-          padding: '16px',
-          zIndex: 10,
-          fontSize: '12px',
-          color: '#cbd5e1',
-          pointerEvents: 'auto',
-          boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
-          maxHeight: '150px',
-          overflowY: 'auto'
-        }}>
-          <h4 style={{ color: '#38bdf8', margin: '0 0 6px 0', fontSize: '13px' }}>Guide</h4>
-          <ul style={{ paddingLeft: '16px', margin: 0, display: 'flex', flexDirection: 'column', gap: '4px' }}>
+      {showHelp && <div style={{
+      position: 'absolute',
+      bottom: '20px',
+      left: '320px',
+      right: '360px',
+      background: 'rgba(15, 23, 42, 0.95)',
+      border: '1px solid rgba(56, 189, 248, 0.3)',
+      borderRadius: '16px',
+      padding: '16px',
+      zIndex: 10,
+      fontSize: '12px',
+      color: '#cbd5e1',
+      pointerEvents: 'auto',
+      boxShadow: '0 4px 20px rgba(0,0,0,0.5)',
+      maxHeight: '150px',
+      overflowY: 'auto'
+    }}>
+          <h4 style={{
+        color: '#38bdf8',
+        margin: '0 0 6px 0',
+        fontSize: '13px'
+      }}>Guide</h4>
+          <ul style={{
+        paddingLeft: '16px',
+        margin: 0,
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '4px'
+      }}>
             <li>Drag top plate vertically to change separation. Drag right edge of top plate to adjust surface area.</li>
             <li>Select "Connect Battery" and drag the battery slider to charge.</li>
             <li>Select "Connect Lightbulb" to discharge through filament.</li>
             <li>With Voltmeter Probe enabled, drag the voltmeter body and position the red/black probes on top/bottom plates to measure voltage.</li>
           </ul>
-        </div>
-      )}
-    </div>
-  );
+        </div>}
+    </div>;
 };
-
-export default function CustomCapacitorLabBasics({ onBack, title }) {
-    return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+export default function CustomCapacitorLabBasics({
+  onBack,
+  title
+}) {
+  return <div style={{
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    background: '#0a0a1a',
+    display: 'flex',
+    flexDirection: 'column',
+    overflow: 'hidden'
+  }}>
             <style>{`
                 .glass-btn {
                     display: flex;
@@ -1387,27 +1627,55 @@ export default function CustomCapacitorLabBasics({ onBack, title }) {
             `}</style>
 
             {/* Standardized Header */}
-            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
-                    {onBack && (
-                        <button onClick={onBack} className="glass-btn">
+            <div style={{
+      height: '80px',
+      flexShrink: 0,
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      padding: '0 20px',
+      borderBottom: '1px solid rgba(255,255,255,0.05)',
+      zIndex: 10
+    }}>
+                <div style={{
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center'
+      }}>
+                    {onBack && <button onClick={onBack} className="glass-btn">
                             <ArrowLeft size={16} /> Back
-                        </button>
-                    )}
+                        </button>}
                 </div>
                 <div>
-                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
+                    <h2 style={{
+          color: 'white',
+          fontFamily: "'Inter', sans-serif",
+          fontSize: '24px',
+          fontWeight: '600',
+          margin: 0
+        }}>
                         {title || 'Capacitor Lab Basics'}
                     </h2>
                 </div>
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
+                <div style={{
+        flex: 1,
+        display: 'flex',
+        justifyContent: 'flex-end',
+        gap: '12px',
+        alignItems: 'center'
+      }}>
                     {/* Inner handles actions */}
                 </div>
             </div>
 
-            <div style={{ flex: 1, position: 'relative', zIndex: 1, pointerEvents: 'auto' }}>
+            <div style={{
+      flex: 1,
+      position: 'relative',
+      zIndex: 1,
+      pointerEvents: 'auto'
+    }}>
                  <CustomCapacitorLabBasicsInner />
             </div>
-        </div>
-    );
+        </div>;
 }

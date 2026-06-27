@@ -4,6 +4,30 @@ import chemistrySimulations from '../data/chemistrySimulations.json';
 import { useLanguage } from '../LanguageContext';
 import SimulationLibraryLayout from './SimulationLibraryLayout';
 
+import CustomBalancingAct from './simulations/CustomBalancingAct';
+import CustomBalloonsandStaticElectricity from './simulations/CustomBalloonsandStaticElectricity';
+import CustomBlackbodySpectrum from './simulations/CustomBlackbodySpectrum';
+import CustomCoulombsLaw from './simulations/CustomCoulombsLaw';
+
+import CustomAcidBaseSolutions from './simulations/CustomAcidBaseSolutions';
+import CustomDensity from './simulations/CustomDensity';
+import CustomBalancingChemicalEquations from './simulations/CustomBalancingChemicalEquations';
+
+import CustomBuildAnAtom from './simulations/CustomBuildAnAtom';
+import CustomBuoyancy from './simulations/CustomBuoyancy';
+import CustomConcentration from './simulations/CustomConcentration';
+import CustomDiffusion from './simulations/CustomDiffusion';
+import CustomEnergyFormsandChanges from './simulations/CustomEnergyFormsandChanges';
+import CustomFourierMakingWaves from './simulations/CustomFourierMakingWaves';
+import CustomGasProperties from './simulations/CustomGasProperties';
+
+import CustomAtomicInteractions from './simulations/CustomAtomicInteractions';
+import CustomBeersLawLab from './simulations/CustomBeersLawLab';
+import CustomBuildAMolecule from './simulations/CustomBuildAMolecule';
+import CustomBuildANucleus from './simulations/CustomBuildANucleus';
+import CustomBuoyancyBasics from './simulations/CustomBuoyancyBasics';
+import CustomGasesIntro from './simulations/CustomGasesIntro';
+
 export default function ChemistrySimulationView({ onBack, handleLockedItemClick }) {
     const { t } = useLanguage();
     const [activeSimulation, setActiveSimulation] = useState(null);
@@ -14,7 +38,24 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick 
     const loggedInUsername = localStorage.getItem('logged_in_username') || '';
     const [approvedSims, setApprovedSims] = useState(() => {
         try {
-            return JSON.parse(localStorage.getItem('showcase_approved_chemistry_sims') || '[]');
+            const stored = localStorage.getItem('showcase_approved_chemistry_sims');
+            const defaultApproved = [
+                'acid-base-solutions_mg', 'atomic-interactions_mg', 'balancing-act_mg',
+                'balancing-chemical-equations_mg', 'balloons-and-static-electricity_mg', 'beers-law-lab_mg',
+                'blackbody-spectrum_mg', 'build-a-molecule_mg', 'build-a-nucleus_mg',
+                'build-an-atom_mg', 'buoyancy_mg', 'buoyancy-basics_mg',
+                'concentration_mg', 'coulombs-law_mg', 'density_mg',
+                'diffusion_mg', 'energy-forms-and-changes_mg', 'fourier-making-waves_mg',
+                'gas-properties_mg', 'gases-intro_mg'
+            ];
+            
+            if (stored) {
+                const parsed = JSON.parse(stored);
+                const merged = Array.from(new Set([...parsed, ...defaultApproved]));
+                localStorage.setItem('showcase_approved_chemistry_sims', JSON.stringify(merged));
+                return merged;
+            }
+            return defaultApproved;
         } catch (e) {
             return [];
         }
@@ -155,8 +196,30 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick 
                 
                 <div style={{ flex: 1, width: '100%', background: '#000', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-                        <iframe src={activeSimulation.url} width="100%" height="100%" style={{ border: 'none' }} allowFullScreen title={activeSimulation.title}></iframe>
-                        <div style={{ position: 'absolute', bottom: 0, right: 0, width: '160px', height: '45px', background: '#000', zIndex: 10 }}></div>
+                        {activeSimulation.id === 'balancing-act_mg' ? <CustomBalancingAct onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'balloons-and-static-electricity_mg' ? <CustomBalloonsandStaticElectricity onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'blackbody-spectrum_mg' ? <CustomBlackbodySpectrum onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'coulombs-law_mg' ? <CustomCoulombsLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'acid-base-solutions_mg' ? <CustomAcidBaseSolutions onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'density_mg' ? <CustomDensity onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'balancing-chemical-equations_mg' ? <CustomBalancingChemicalEquations onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'build-an-atom_mg' ? <CustomBuildAnAtom onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'buoyancy_mg' ? <CustomBuoyancy onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'concentration_mg' ? <CustomConcentration onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'diffusion_mg' ? <CustomDiffusion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'energy-forms-and-changes_mg' ? <CustomEnergyFormsandChanges onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'fourier-making-waves_mg' ? <CustomFourierMakingWaves onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'gas-properties_mg' ? <CustomGasProperties onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'atomic-interactions_mg' ? <CustomAtomicInteractions onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'beers-law-lab_mg' ? <CustomBeersLawLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'build-a-molecule_mg' ? <CustomBuildAMolecule onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'build-a-nucleus_mg' ? <CustomBuildANucleus onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'buoyancy-basics_mg' ? <CustomBuoyancyBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'gases-intro_mg' ? <CustomGasesIntro onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        <>
+                            <iframe src={activeSimulation.url} width="100%" height="100%" style={{ border: 'none' }} allowFullScreen title={activeSimulation.title}></iframe>
+                            <div style={{ position: 'absolute', bottom: 0, right: 0, width: '160px', height: '45px', background: '#000', zIndex: 10 }}></div>
+                        </>}
                         {isLoadingSim && (
                             <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%)', zIndex: 20, display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>
                                 <FlaskConical size={64} color="#ff375f" style={{ marginBottom: '24px', animation: 'pulse 1.5s infinite' }} />

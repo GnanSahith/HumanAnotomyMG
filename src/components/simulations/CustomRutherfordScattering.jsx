@@ -82,39 +82,55 @@
  */
 
 import React, { useState, useEffect, useRef, useMemo } from 'react';
-import { 
-  Play, 
-  Pause, 
-  RotateCcw, 
-  Sliders, 
-  Info, 
-  HelpCircle, 
-  Sparkles, 
-  Activity, 
-  Trash2, 
-  ArrowLeft, 
-  ChevronRight,
-  Layers,
-  Settings2,
-  TrendingUp,
-  Award
-} from 'lucide-react';
+import { Play, Pause, RotateCcw, Sliders, Info, HelpCircle, Sparkles, Activity, Trash2, ArrowLeft, ChevronRight, Layers, Settings2, TrendingUp, Award } from 'lucide-react';
 
 // Element presets for target nucleus
 const PRESETS = {
-  Au: { name: 'Gold (Au)', Z: 79, symbol: 'Au', color: '#fbbf24', radius: 12 },
-  Pb: { name: 'Lead (Pb)', Z: 82, symbol: 'Pb', color: '#94a3b8', radius: 13 },
-  Ag: { name: 'Silver (Ag)', Z: 47, symbol: 'Ag', color: '#cbd5e1', radius: 10 },
-  Cu: { name: 'Copper (Cu)', Z: 29, symbol: 'Cu', color: '#f97316', radius: 8 },
-  C:  { name: 'Carbon (C)', Z: 6, symbol: 'C', color: '#4b5563', radius: 6 },
+  Au: {
+    name: 'Gold (Au)',
+    Z: 79,
+    symbol: 'Au',
+    color: '#fbbf24',
+    radius: 12
+  },
+  Pb: {
+    name: 'Lead (Pb)',
+    Z: 82,
+    symbol: 'Pb',
+    color: '#94a3b8',
+    radius: 13
+  },
+  Ag: {
+    name: 'Silver (Ag)',
+    Z: 47,
+    symbol: 'Ag',
+    color: '#cbd5e1',
+    radius: 10
+  },
+  Cu: {
+    name: 'Copper (Cu)',
+    Z: 29,
+    symbol: 'Cu',
+    color: '#f97316',
+    radius: 8
+  },
+  C: {
+    name: 'Carbon (C)',
+    Z: 6,
+    symbol: 'C',
+    color: '#4b5563',
+    radius: 6
+  }
 };
-
-function CustomRutherfordScatteringInner({ onBack, title }) {
+function CustomRutherfordScatteringInner({
+  onBack,
+  title
+}) {
   // --- STATE VARIABLES ---
   const [modelMode, setModelMode] = useState('rutherford'); // 'rutherford' or 'plumPudding'
   const [selectedPreset, setSelectedPreset] = useState('Au');
   const [nucleusZ, setNucleusZ] = useState(79);
-  
+
   // Alpha particle properties
   const [alphaEnergy, setAlphaEnergy] = useState(5.0); // MeV, controls speed
   const [beamPosition, setBeamPosition] = useState(0); // Vertical offset from center
@@ -134,13 +150,20 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
   const [stats, setStats] = useState({
     fired: 0,
     detected: 0,
-    backscattered: 0, // > 90 deg
-    forwardscattered: 0, // <= 90 deg
+    backscattered: 0,
+    // > 90 deg
+    forwardscattered: 0,
+    // <= 90 deg
     maxAngle: 0
   });
 
   // Track the most recently active particle's energy state for educational display
-  const [energyMonitor, setEnergyMonitor] = useState({ ke: 0, pe: 0, total: 0, active: false });
+  const [energyMonitor, setEnergyMonitor] = useState({
+    ke: 0,
+    pe: 0,
+    total: 0,
+    active: false
+  });
 
   // Theory panel toggle
   const [showTheory, setShowTheory] = useState(true);
@@ -151,7 +174,13 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
   const lastSpawnTimeRef = useRef(0);
   const particlesRef = useRef([]); // Mutable array for high-performance physics ticks
   const historyPathsRef = useRef([]); // Store old tracks for rendering
-  const statsRef = useRef({ fired: 0, detected: 0, backscattered: 0, forwardscattered: 0, maxAngle: 0 });
+  const statsRef = useRef({
+    fired: 0,
+    detected: 0,
+    backscattered: 0,
+    forwardscattered: 0,
+    maxAngle: 0
+  });
 
   // Physics constants (tuned for canvas scale 800x500)
   const CANVAS_WIDTH = 800;
@@ -163,7 +192,7 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
   const SOFTENING_FACTOR_SQ = 64; // epsilon^2 to avoid division by zero/extreme jumps
 
   // Sync selected element preset with nucleusZ
-  const handlePresetChange = (key) => {
+  const handlePresetChange = key => {
     setSelectedPreset(key);
     if (key !== 'custom') {
       setNucleusZ(PRESETS[key].Z);
@@ -172,15 +201,15 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
 
   // Convert MeV to initial speed v0
   // v = sqrt(2*E/m) -> scaled for visualization
-  const getInitialSpeed = (energy) => {
+  const getInitialSpeed = energy => {
     return 3.0 + Math.sqrt(energy) * 1.5;
   };
 
   // Create a single particle
-  const spawnParticle = (yOffset) => {
+  const spawnParticle = yOffset => {
     const v0 = getInitialSpeed(alphaEnergy);
     const id = Math.random().toString(36).substring(2, 9);
-    
+
     // Choose vertical start position: yOffset can be passed (e.g. for sweeps) 
     // or randomized within beamWidth around beamPosition
     let startY = CENTER_Y + beamPosition;
@@ -189,7 +218,6 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
     } else if (beamWidth > 0) {
       startY += (Math.random() - 0.5) * beamWidth;
     }
-
     const newParticle = {
       id,
       x: 20,
@@ -197,13 +225,16 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
       vx: v0,
       vy: 0,
       initialY: startY,
-      path: [{ x: 20, y: startY }],
-      color: `hsl(${130 + Math.random() * 40}, 95%, 60%)`, // Neon green variations
+      path: [{
+        x: 20,
+        y: startY
+      }],
+      color: `hsl(${130 + Math.random() * 40}, 95%, 60%)`,
+      // Neon green variations
       active: true,
       lastKe: 0.5 * 4 * v0 * v0,
-      lastPe: 0,
+      lastPe: 0
     };
-
     particlesRef.current.push(newParticle);
     statsRef.current.fired += 1;
     updateStatsState();
@@ -221,7 +252,6 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
       spawnParticle(0);
       return;
     }
-    
     for (let i = 0; i < numParticles; i++) {
       const fraction = i / (numParticles - 1) - 0.5; // -0.5 to 0.5
       const yOffset = fraction * beamWidth;
@@ -234,9 +264,26 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
     particlesRef.current = [];
     historyPathsRef.current = [];
     setScatteringAngles([]);
-    statsRef.current = { fired: 0, detected: 0, backscattered: 0, forwardscattered: 0, maxAngle: 0 };
-    setStats({ fired: 0, detected: 0, backscattered: 0, forwardscattered: 0, maxAngle: 0 });
-    setEnergyMonitor({ ke: 0, pe: 0, total: 0, active: false });
+    statsRef.current = {
+      fired: 0,
+      detected: 0,
+      backscattered: 0,
+      forwardscattered: 0,
+      maxAngle: 0
+    };
+    setStats({
+      fired: 0,
+      detected: 0,
+      backscattered: 0,
+      forwardscattered: 0,
+      maxAngle: 0
+    });
+    setEnergyMonitor({
+      ke: 0,
+      pe: 0,
+      total: 0,
+      active: false
+    });
   };
 
   // Reset simulation to default values
@@ -259,7 +306,9 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
 
   // Helper to push statistics safely
   const updateStatsState = () => {
-    setStats({ ...statsRef.current });
+    setStats({
+      ...statsRef.current
+    });
   };
 
   // --- PHYSICS ENGINE & ANIMATION LOOP ---
@@ -269,7 +318,9 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
     const ctx = canvas.getContext('2d');
 
     // Create vibrating positions for electrons in Plum Pudding mode
-    const electronPositions = Array.from({ length: 14 }, () => {
+    const electronPositions = Array.from({
+      length: 14
+    }, () => {
       const angle = Math.random() * Math.PI * 2;
       const radius = Math.random() * (PLUM_PUDDING_RADIUS - 15);
       return {
@@ -280,15 +331,21 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
     });
 
     // Orbiting angles for planetary electrons in Rutherford mode
-    const planetaryElectrons = [
-      { r: 160, angle: 0, speed: 0.04 },
-      { r: 210, angle: Math.PI * 0.6, speed: 0.03 },
-      { r: 250, angle: Math.PI * 1.3, speed: 0.02 }
-    ];
-
+    const planetaryElectrons = [{
+      r: 160,
+      angle: 0,
+      speed: 0.04
+    }, {
+      r: 210,
+      angle: Math.PI * 0.6,
+      speed: 0.03
+    }, {
+      r: 250,
+      angle: Math.PI * 1.3,
+      speed: 0.02
+    }];
     let lastFrameTime = performance.now();
-
-    const loop = (time) => {
+    const loop = time => {
       const deltaMs = time - lastFrameTime;
       lastFrameTime = time;
 
@@ -307,9 +364,7 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
         // Total dt per frame depends on simSpeed
         const dt = simSpeed * (Math.min(deltaMs, 33) / 16.6) * 1.0; // Normalized around 60fps
         const stepDt = dt / subSteps;
-
         const activeParticles = particlesRef.current;
-
         for (let s = 0; s < subSteps; s++) {
           for (let i = 0; i < activeParticles.length; i++) {
             const p = activeParticles[i];
@@ -323,31 +378,30 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
             // Compute Electrostatic repulsions
             let ax = 0;
             let ay = 0;
-
             if (modelMode === 'rutherford') {
               // Point-like concentrated nucleus repulsion
               // F = k * q1 * q2 / r^2
               const denom = r * (r * r + SOFTENING_FACTOR_SQ);
               if (denom > 0.001) {
                 // acceleration magnitude a = F/m (we treat alpha mass as constant = 4)
-                const aMag = (COULOMB_CONSTANT * nucleusZ * 2) / 4;
-                ax = (aMag * dx) / denom;
-                ay = (aMag * dy) / denom;
+                const aMag = COULOMB_CONSTANT * nucleusZ * 2 / 4;
+                ax = aMag * dx / denom;
+                ay = aMag * dy / denom;
               }
             } else {
               // Plum Pudding Atom Mode (diffuse spherical positive charge)
               if (r < PLUM_PUDDING_RADIUS) {
                 // Inside the sphere: E is linear with r (F = k * q1 * q2 * r / R^3)
-                const aMagInside = (COULOMB_CONSTANT * nucleusZ * 2) / (4 * Math.pow(PLUM_PUDDING_RADIUS, 3));
+                const aMagInside = COULOMB_CONSTANT * nucleusZ * 2 / (4 * Math.pow(PLUM_PUDDING_RADIUS, 3));
                 ax = aMagInside * dx;
                 ay = aMagInside * dy;
               } else {
                 // Outside the sphere: behaves like point charge
                 const denom = r * (r * r + SOFTENING_FACTOR_SQ);
                 if (denom > 0.001) {
-                  const aMag = (COULOMB_CONSTANT * nucleusZ * 2) / 4;
-                  ax = (aMag * dx) / denom;
-                  ay = (aMag * dy) / denom;
+                  const aMag = COULOMB_CONSTANT * nucleusZ * 2 / 4;
+                  ax = aMag * dx / denom;
+                  ay = aMag * dy / denom;
                 }
               }
             }
@@ -364,17 +418,17 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
             const mass = 4.0;
             const vSq = p.vx * p.vx + p.vy * p.vy;
             p.lastKe = 0.5 * mass * vSq;
-            
+
             // Potential Energy U = k * q1 * q2 / r
             if (modelMode === 'rutherford') {
-              p.lastPe = (COULOMB_CONSTANT * nucleusZ * 2) / Math.max(r, 4);
+              p.lastPe = COULOMB_CONSTANT * nucleusZ * 2 / Math.max(r, 4);
             } else {
               if (r < PLUM_PUDDING_RADIUS) {
                 // U inside charged sphere: U(r) = (k*q1*q2 / (2*R)) * (3 - r^2/R^2)
-                const u0 = (COULOMB_CONSTANT * nucleusZ * 2) / (2 * PLUM_PUDDING_RADIUS);
-                p.lastPe = u0 * (3.0 - (r * r) / (PLUM_PUDDING_RADIUS * PLUM_PUDDING_RADIUS));
+                const u0 = COULOMB_CONSTANT * nucleusZ * 2 / (2 * PLUM_PUDDING_RADIUS);
+                p.lastPe = u0 * (3.0 - r * r / (PLUM_PUDDING_RADIUS * PLUM_PUDDING_RADIUS));
               } else {
-                p.lastPe = (COULOMB_CONSTANT * nucleusZ * 2) / r;
+                p.lastPe = COULOMB_CONSTANT * nucleusZ * 2 / r;
               }
             }
 
@@ -383,7 +437,10 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
               const lastPt = p.path[p.path.length - 1];
               const distFromLast = lastPt ? Math.sqrt(Math.pow(p.x - lastPt.x, 2) + Math.pow(p.y - lastPt.y, 2)) : 999;
               if (distFromLast > 1.5) {
-                p.path.push({ x: p.x, y: p.y });
+                p.path.push({
+                  x: p.x,
+                  y: p.y
+                });
                 if (p.path.length > 250) {
                   p.path.shift();
                 }
@@ -448,7 +505,10 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
             active: true
           });
         } else {
-          setEnergyMonitor(prev => ({ ...prev, active: false }));
+          setEnergyMonitor(prev => ({
+            ...prev,
+            active: false
+          }));
         }
 
         // Update electron positions (vibrating/orbiting for animation visual)
@@ -490,7 +550,6 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
         gradient.addColorStop(1, 'rgba(239, 68, 68, 0)');
         ctx.fillStyle = gradient;
         ctx.fill();
-
         ctx.strokeStyle = 'rgba(239, 68, 68, 0.45)';
         ctx.lineWidth = 2;
         ctx.setLineDash([5, 5]);
@@ -507,7 +566,6 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
         electronPositions.forEach((el, index) => {
           const ex = CENTER_X + Math.cos(el.angle) * el.r;
           const ey = CENTER_Y + Math.sin(el.angle) * el.r;
-
           ctx.beginPath();
           ctx.arc(ex, ey, 5, 0, Math.PI * 2);
           ctx.fillStyle = '#10b981'; // Green electrons
@@ -539,7 +597,6 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
           ctx.arc(ex, ey, 4.5, 0, Math.PI * 2);
           ctx.fillStyle = '#3b82f6'; // Blue electron
           ctx.fill();
-
           ctx.fillStyle = '#ffffff';
           ctx.font = 'bold 9px Arial';
           ctx.textAlign = 'center';
@@ -555,11 +612,11 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
       ctx.strokeStyle = '#475569';
       ctx.lineWidth = 2;
       ctx.strokeRect(5, gunY - 15, 25, 30);
-      
+
       // Draw golden barrel tip
       ctx.fillStyle = '#4b5563';
       ctx.fillRect(30, gunY - 7, 8, 14);
-      
+
       // Draw collimator slit visualization
       ctx.fillStyle = '#ef4444';
       ctx.fillRect(37, gunY - 3, 2, 6);
@@ -583,7 +640,6 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
         historyPathsRef.current.forEach(historyItem => {
           const path = historyItem.path;
           if (path.length < 2) return;
-
           ctx.beginPath();
           ctx.moveTo(path[0].x, path[0].y);
           for (let k = 1; k < path.length; k++) {
@@ -630,23 +686,21 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
           const dx = p.x - CENTER_X;
           const dy = p.y - CENTER_Y;
           const r = Math.sqrt(dx * dx + dy * dy);
-          
           let fMag = 0;
           if (modelMode === 'rutherford') {
-            fMag = (COULOMB_CONSTANT * nucleusZ * 20) / (r * r + SOFTENING_FACTOR_SQ);
+            fMag = COULOMB_CONSTANT * nucleusZ * 20 / (r * r + SOFTENING_FACTOR_SQ);
           } else {
             if (r < PLUM_PUDDING_RADIUS) {
-              fMag = (COULOMB_CONSTANT * nucleusZ * 20 * r) / Math.pow(PLUM_PUDDING_RADIUS, 3);
+              fMag = COULOMB_CONSTANT * nucleusZ * 20 * r / Math.pow(PLUM_PUDDING_RADIUS, 3);
             } else {
-              fMag = (COULOMB_CONSTANT * nucleusZ * 20) / (r * r + SOFTENING_FACTOR_SQ);
+              fMag = COULOMB_CONSTANT * nucleusZ * 20 / (r * r + SOFTENING_FACTOR_SQ);
             }
           }
 
           // Force vector points radially outward
           if (r > 0) {
-            const fx = (dx / r) * fMag * 4; // Scale arrow for visualization
-            const fy = (dy / r) * fMag * 4;
-
+            const fx = dx / r * fMag * 4; // Scale arrow for visualization
+            const fy = dy / r * fMag * 4;
             ctx.strokeStyle = '#ef4444'; // Red force arrow
             ctx.lineWidth = 2;
             ctx.beginPath();
@@ -659,14 +713,8 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
             ctx.fillStyle = '#ef4444';
             ctx.beginPath();
             ctx.moveTo(p.x + fx, p.y + fy);
-            ctx.lineTo(
-              p.x + fx - 8 * Math.cos(arrowAngle - Math.PI / 6),
-              p.y + fy - 8 * Math.sin(arrowAngle - Math.PI / 6)
-            );
-            ctx.lineTo(
-              p.x + fx - 8 * Math.cos(arrowAngle + Math.PI / 6),
-              p.y + fy - 8 * Math.sin(arrowAngle + Math.PI / 6)
-            );
+            ctx.lineTo(p.x + fx - 8 * Math.cos(arrowAngle - Math.PI / 6), p.y + fy - 8 * Math.sin(arrowAngle - Math.PI / 6));
+            ctx.lineTo(p.x + fx - 8 * Math.cos(arrowAngle + Math.PI / 6), p.y + fy - 8 * Math.sin(arrowAngle + Math.PI / 6));
             ctx.closePath();
             ctx.fill();
           }
@@ -675,7 +723,11 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
 
       // Draw target nucleus at center (Rutherford mode)
       if (modelMode === 'rutherford') {
-        const presetObj = PRESETS[selectedPreset] || { color: '#ef4444', radius: 10, name: 'Custom' };
+        const presetObj = PRESETS[selectedPreset] || {
+          color: '#ef4444',
+          radius: 10,
+          name: 'Custom'
+        };
         const radius = presetObj.radius || 10;
         const color = presetObj.color || '#fbbf24';
 
@@ -706,29 +758,26 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
         ctx.textAlign = 'center';
         ctx.fillText(`${presetObj.name || 'Nucleus'} (+${nucleusZ}e)`, CENTER_X, CENTER_Y - radius - 8);
       }
-
       animationRef.current = requestAnimationFrame(loop);
     };
-
     animationRef.current = requestAnimationFrame(loop);
     return () => cancelAnimationFrame(animationRef.current);
   }, [isPlaying, modelMode, selectedPreset, nucleusZ, alphaEnergy, beamPosition, beamWidth, firingRate, continuousFiring, showTracks, persistentTracks, showForces, simSpeed]);
-
 
   // --- ANGLE HISTOGRAM CALCULATION ---
   // Create 12 bins of 15-degree width from 0 to 180 degrees
   const BIN_WIDTH = 15;
   const NUM_BINS = 12;
   const binnedData = useMemo(() => {
-    const bins = Array.from({ length: NUM_BINS }, (_, i) => ({
+    const bins = Array.from({
+      length: NUM_BINS
+    }, (_, i) => ({
       min: i * BIN_WIDTH,
       max: (i + 1) * BIN_WIDTH,
       count: 0,
       percent: 0
     }));
-
     if (scatteringAngles.length === 0) return bins;
-
     scatteringAngles.forEach(angle => {
       // Clamp just in case
       const clampedAngle = Math.max(0, Math.min(179.9, angle));
@@ -737,28 +786,28 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
         bins[binIdx].count += 1;
       }
     });
-
     bins.forEach(b => {
-      b.percent = (b.count / scatteringAngles.length) * 100;
+      b.percent = b.count / scatteringAngles.length * 100;
     });
-
     return bins;
   }, [scatteringAngles]);
-
   const maxBinCount = useMemo(() => {
     return Math.max(...binnedData.map(b => b.count), 1);
   }, [binnedData]);
 
-
   // --- JSX RENDER ---
-  return (
-    <div className="w-full h-full h-full flex flex-col text-white font-sans select-none">
+  return <div className="w-full h-full h-full flex flex-col text-white font-sans select-none">
       
       {/* 1. Header Navigation Bar */}
       
 
       {/* 2. Main Layout Area */}
-      <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'none' }}>
+      <div style={{
+      position: 'absolute',
+      inset: 0,
+      zIndex: 1,
+      pointerEvents: 'none'
+    }}>
         
         {/* LEFT COLUMN: Simulation Canvas and Stats */}
         <div className="flex-1 flex flex-col items-center p-6 gap-6 overflow-y-auto">
@@ -782,12 +831,7 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
               <span className="text-emerald-400 block font-mono text-xs font-semibold">Z = {nucleusZ}</span>
             </div>
 
-            <canvas
-              ref={canvasRef}
-              width={CANVAS_WIDTH}
-              height={CANVAS_HEIGHT}
-              className="block w-full h-auto aspect-[8/5] cursor-default"
-            />
+            <canvas ref={canvasRef} width={CANVAS_WIDTH} height={CANVAS_HEIGHT} className="block w-full h-auto aspect-[8/5] cursor-default" />
 
             {/* Simulated beam label */}
             <div className="absolute bottom-4 left-4 text-xs font-mono text-slate-400 /80 px-2 py-1 rounded border border-white/5">
@@ -802,16 +846,10 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
               Alpha particles have charge +2e and mass ~4 amu.
             </span>
             <div className="flex gap-4">
-              <button 
-                onClick={handleFireSweep} 
-                className="text-emerald-400 hover:text-emerald-300 font-bold border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 rounded-lg transition-all"
-              >
+              <button onClick={handleFireSweep} className="text-emerald-400 hover:text-emerald-300 font-bold border border-emerald-500/20 bg-emerald-500/10 px-3 py-1.5 rounded-lg transition-all">
                 Launch Flood Sweep (15 particles)
               </button>
-              <button 
-                onClick={handleClearData} 
-                className="text-rose-400 hover:text-rose-300 font-bold border border-rose-500/20 bg-rose-500/10 px-3 py-1.5 rounded-lg transition-all"
-              >
+              <button onClick={handleClearData} className="text-rose-400 hover:text-rose-300 font-bold border border-rose-500/20 bg-rose-500/10 px-3 py-1.5 rounded-lg transition-all">
                 Clear Screen & Stats
               </button>
             </div>
@@ -820,33 +858,57 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
           {/* Real-time statistics widgets */}
           <div className="w-full max-w-[800px] grid grid-cols-2 sm:grid-cols-4 gap-4">
             
-            <div className="border border-white/5 rounded-xl p-4 flex flex-col justify-between" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+            <div className="border border-white/5 rounded-xl p-4 flex flex-col justify-between" style={{
+            background: 'rgba(20, 20, 30, 0.8)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '16px',
+            color: 'white'
+          }}>
               <span className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Fired Alphas</span>
               <div className="flex items-baseline gap-1.5 mt-2">
                 <span className="text-2xl font-black font-mono text-white">{stats.fired}</span>
               </div>
             </div>
 
-            <div className="border border-white/5 rounded-xl p-4 flex flex-col justify-between" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+            <div className="border border-white/5 rounded-xl p-4 flex flex-col justify-between" style={{
+            background: 'rgba(20, 20, 30, 0.8)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '16px',
+            color: 'white'
+          }}>
               <span className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Detected / Escaped</span>
               <div className="flex items-baseline gap-1.5 mt-2">
                 <span className="text-2xl font-black font-mono text-slate-300">{stats.detected}</span>
               </div>
             </div>
 
-            <div className="border border-white/5 rounded-xl p-4 flex flex-col justify-between" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+            <div className="border border-white/5 rounded-xl p-4 flex flex-col justify-between" style={{
+            background: 'rgba(20, 20, 30, 0.8)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '16px',
+            color: 'white'
+          }}>
               <span className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Backscattered ({'>'}90°)</span>
               <div className="flex items-baseline gap-1.5 mt-2">
                 <span className="text-2xl font-black font-mono text-amber-400">
                   {stats.backscattered}
                 </span>
                 <span className="text-xs text-slate-400">
-                  ({stats.detected > 0 ? ((stats.backscattered / stats.detected) * 100).toFixed(2) : 0}%)
+                  ({stats.detected > 0 ? (stats.backscattered / stats.detected * 100).toFixed(2) : 0}%)
                 </span>
               </div>
             </div>
 
-            <div className="border border-white/5 rounded-xl p-4 flex flex-col justify-between" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+            <div className="border border-white/5 rounded-xl p-4 flex flex-col justify-between" style={{
+            background: 'rgba(20, 20, 30, 0.8)',
+            border: '1px solid rgba(255,255,255,0.1)',
+            backdropFilter: 'blur(12px)',
+            borderRadius: '16px',
+            color: 'white'
+          }}>
               <span className="text-[10px] text-slate-400 uppercase font-bold tracking-wider">Max Deflection</span>
               <div className="flex items-baseline gap-1.5 mt-2">
                 <span className="text-2xl font-black font-mono text-emerald-400">{stats.maxAngle.toFixed(1)}°</span>
@@ -856,14 +918,19 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
           </div>
 
           {/* Energy Monitor Section */}
-          <div className="w-full max-w-[800px] border border-white/5 rounded-xl p-4" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+          <div className="w-full max-w-[800px] border border-white/5 rounded-xl p-4" style={{
+          background: 'rgba(20, 20, 30, 0.8)',
+          border: '1px solid rgba(255,255,255,0.1)',
+          backdropFilter: 'blur(12px)',
+          borderRadius: '16px',
+          color: 'white'
+        }}>
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 mb-3 flex items-center gap-1.5">
               <TrendingUp size={14} className="text-sky-400" />
               <span>Real-Time Energetics Monitor (Last Particle)</span>
             </h3>
             
-            {energyMonitor.active ? (
-              <div className="space-y-3">
+            {energyMonitor.active ? <div className="space-y-3">
                 <div className="grid grid-cols-3 gap-2 text-xs font-mono">
                   <div className="/40 p-2 rounded border border-white/5">
                     <span className="text-slate-400 block text-[9px]">KINETIC ENERGY (KE)</span>
@@ -875,39 +942,56 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
                   </div>
                   <div className="/40 p-2 rounded border border-white/5">
                     <span className="text-slate-400 block text-[9px]">TOTAL MECHANICAL ENERGY</span>
-                    <span className="text-white font-bold">{(energyMonitor.total).toFixed(1)} units</span>
+                    <span className="text-white font-bold">{energyMonitor.total.toFixed(1)} units</span>
                   </div>
                 </div>
 
                 {/* Energy balance bar */}
-                <div className="h-2.5 rounded-full overflow-hidden flex" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
-                  <div 
-                    style={{ width: `${(energyMonitor.ke / Math.max(energyMonitor.total, 1)) * 100}%` }}
-                    className="bg-emerald-500 h-full transition-all duration-75"
-                    title="Kinetic Energy Share"
-                  />
-                  <div 
-                    style={{ width: `${(energyMonitor.pe / Math.max(energyMonitor.total, 1)) * 100}%` }}
-                    className="bg-amber-500 h-full transition-all duration-75"
-                    title="Potential Energy Share"
-                  />
+                <div className="h-2.5 rounded-full overflow-hidden flex" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }}>
+                  <div style={{
+                width: `${energyMonitor.ke / Math.max(energyMonitor.total, 1) * 100}%`
+              }} className="bg-emerald-500 h-full transition-all duration-75" title="Kinetic Energy Share" />
+                  <div style={{
+                width: `${energyMonitor.pe / Math.max(energyMonitor.total, 1) * 100}%`
+              }} className="bg-amber-500 h-full transition-all duration-75" title="Potential Energy Share" />
                 </div>
                 <div className="flex justify-between text-[9px] text-slate-500 font-mono">
                   <span>Pure Kinetic (Infinite Separation)</span>
                   <span>Pure Potential (Closest Approach)</span>
                 </div>
-              </div>
-            ) : (
-              <div className="text-center text-xs text-slate-500 py-3">
+              </div> : <div className="text-center text-xs text-slate-500 py-3">
                 No active alpha particles in field. Launch particles to monitor energy conservation.
-              </div>
-            )}
+              </div>}
           </div>
 
         </div>
 
         {/* RIGHT COLUMN: Controls Sidebar */}
-        <aside style={{ position: 'absolute', top: '90px', right: '20px', width: '320px', maxHeight: 'calc(100% - 110px)', overflowY: 'auto', background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white', zIndex: 10, pointerEvents: 'auto', padding: '20px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+        <aside style={{
+        position: 'absolute',
+        top: '90px',
+        right: '20px',
+        width: '320px',
+        maxHeight: 'calc(100% - 110px)',
+        overflowY: 'auto',
+        background: 'rgba(20, 20, 30, 0.8)',
+        border: '1px solid rgba(255,255,255,0.1)',
+        backdropFilter: 'blur(12px)',
+        borderRadius: '16px',
+        color: 'white',
+        zIndex: 10,
+        pointerEvents: 'auto',
+        padding: '20px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '16px'
+      }}>
           
           {/* Section: Model Mode Selector */}
           <div className="p-5 border-b border-white/5 space-y-4">
@@ -917,34 +1001,20 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
             </h3>
 
             <div className="grid grid-cols-2 gap-2">
-              <button
-                onClick={() => {
-                  setModelMode('rutherford');
-                  handleClearData();
-                }}
-                className={`p-3 rounded-xl border text-left transition-all flex flex-col justify-between h-24 ${
-                  modelMode === 'rutherford' 
-                    ? 'bg-amber-500/10 border-amber-500/40 text-amber-400' 
-                    : '/40 border-white/5 text-slate-400 hover:text-slate-200 hover:'
-                }`}
-              >
+              <button onClick={() => {
+              setModelMode('rutherford');
+              handleClearData();
+            }} className={`p-3 rounded-xl border text-left transition-all flex flex-col justify-between h-24 ${modelMode === 'rutherford' ? 'bg-amber-500/10 border-amber-500/40 text-amber-400' : '/40 border-white/5 text-slate-400 hover:text-slate-200 hover:'}`}>
                 <span className="font-bold text-xs uppercase tracking-wider">Rutherford Model</span>
                 <span className="text-[10px] text-slate-400 mt-1 leading-tight block">
                   Concentrated core at center causes major backscattering.
                 </span>
               </button>
 
-              <button
-                onClick={() => {
-                  setModelMode('plumPudding');
-                  handleClearData();
-                }}
-                className={`p-3 rounded-xl border text-left transition-all flex flex-col justify-between h-24 ${
-                  modelMode === 'plumPudding' 
-                    ? 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400' 
-                    : '/40 border-white/5 text-slate-400 hover:text-slate-200 hover:'
-                }`}
-              >
+              <button onClick={() => {
+              setModelMode('plumPudding');
+              handleClearData();
+            }} className={`p-3 rounded-xl border text-left transition-all flex flex-col justify-between h-24 ${modelMode === 'plumPudding' ? 'bg-emerald-500/10 border-emerald-500/40 text-emerald-400' : '/40 border-white/5 text-slate-400 hover:text-slate-200 hover:'}`}>
                 <span className="font-bold text-xs uppercase tracking-wider">Plum Pudding</span>
                 <span className="text-[10px] text-slate-400 mt-1 leading-tight block">
                   Diffuse positive charge. Particles pass straight through.
@@ -954,35 +1024,17 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
           </div>
 
           {/* Section: Target Nucleus Controls */}
-          {modelMode === 'rutherford' && (
-            <div className="p-5 border-b border-white/5 space-y-4">
+          {modelMode === 'rutherford' && <div className="p-5 border-b border-white/5 space-y-4">
               <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-1.5">
                 <Settings2 size={14} className="text-amber-400" />
                 <span>Target Element Presets</span>
               </h3>
 
               <div className="flex flex-wrap gap-1.5">
-                {Object.keys(PRESETS).map(key => (
-                  <button
-                    key={key}
-                    onClick={() => handlePresetChange(key)}
-                    className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
-                      selectedPreset === key 
-                        ? ' border-amber-500 text-amber-400' 
-                        : '/40 border-white/5 text-slate-400 hover:text-slate-200'
-                    }`}
-                  >
+                {Object.keys(PRESETS).map(key => <button key={key} onClick={() => handlePresetChange(key)} className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${selectedPreset === key ? ' border-amber-500 text-amber-400' : '/40 border-white/5 text-slate-400 hover:text-slate-200'}`}>
                     {PRESETS[key].symbol}
-                  </button>
-                ))}
-                <button
-                  onClick={() => setSelectedPreset('custom')}
-                  className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${
-                    selectedPreset === 'custom' 
-                      ? ' border-amber-500 text-amber-400' 
-                      : '/40 border-white/5 text-slate-400 hover:text-slate-200'
-                  }`}
-                >
+                  </button>)}
+                <button onClick={() => setSelectedPreset('custom')} className={`px-3 py-1.5 rounded-lg text-xs font-semibold border transition-all ${selectedPreset === 'custom' ? ' border-amber-500 text-amber-400' : '/40 border-white/5 text-slate-400 hover:text-slate-200'}`}>
                   Custom Z
                 </button>
               </div>
@@ -993,23 +1045,21 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
                   <span className="text-slate-300">Target Atomic Number (Z)</span>
                   <span className="font-mono text-amber-400 font-bold">{nucleusZ} protons</span>
                 </div>
-                <input
-                  type="range"
-                  min="1"
-                  max="120"
-                  value={nucleusZ}
-                  onChange={(e) => {
-                    setNucleusZ(parseInt(e.target.value));
-                    setSelectedPreset('custom');
-                  }}
-                  className="w-full h-1.5 rounded-lg appearance-none cursor-pointer accent-amber-500" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-                />
+                <input type="range" min="1" max="120" value={nucleusZ} onChange={e => {
+              setNucleusZ(parseInt(e.target.value));
+              setSelectedPreset('custom');
+            }} className="w-full h-1.5 rounded-lg appearance-none cursor-pointer accent-amber-500" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
                 <span className="text-[10px] text-slate-500 leading-tight block">
                   Increasing Z increases repulsive charge force (F ∝ Z), creating wider deflection angles.
                 </span>
               </div>
-            </div>
-          )}
+            </div>}
 
           {/* Section: Alpha Beam Physics Sliders */}
           <div className="p-5 border-b border-white/5 space-y-4">
@@ -1024,15 +1074,13 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
                 <span className="text-slate-300">Alpha Particle Energy</span>
                 <span className="font-mono text-cyan-400 font-bold">{alphaEnergy.toFixed(1)} MeV</span>
               </div>
-              <input
-                type="range"
-                min="1.0"
-                max="12.0"
-                step="0.5"
-                value={alphaEnergy}
-                onChange={(e) => setAlphaEnergy(parseFloat(e.target.value))}
-                className="w-full h-1.5 rounded-lg appearance-none cursor-pointer accent-cyan-500" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-              />
+              <input type="range" min="1.0" max="12.0" step="0.5" value={alphaEnergy} onChange={e => setAlphaEnergy(parseFloat(e.target.value))} className="w-full h-1.5 rounded-lg appearance-none cursor-pointer accent-cyan-500" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
               <span className="text-[10px] text-slate-500 leading-tight block">
                 Higher energy increases incoming speed. Faster particles spend less time in the electric field, leading to smaller deflection angles.
               </span>
@@ -1044,14 +1092,13 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
                 <span className="text-slate-300">Beam Vertical Align</span>
                 <span className="font-mono text-cyan-400 font-bold">{beamPosition > 0 ? `+${beamPosition}` : beamPosition} px</span>
               </div>
-              <input
-                type="range"
-                min="-120"
-                max="120"
-                value={beamPosition}
-                onChange={(e) => setBeamPosition(parseInt(e.target.value))}
-                className="w-full h-1.5 rounded-lg appearance-none cursor-pointer accent-cyan-500" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-              />
+              <input type="range" min="-120" max="120" value={beamPosition} onChange={e => setBeamPosition(parseInt(e.target.value))} className="w-full h-1.5 rounded-lg appearance-none cursor-pointer accent-cyan-500" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
             </div>
 
             {/* Beam Spread Width */}
@@ -1060,14 +1107,13 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
                 <span className="text-slate-300">Beam Spread (Width)</span>
                 <span className="font-mono text-cyan-400 font-bold">{beamWidth} px</span>
               </div>
-              <input
-                type="range"
-                min="0"
-                max="160"
-                value={beamWidth}
-                onChange={(e) => setBeamWidth(parseInt(e.target.value))}
-                className="w-full h-1.5 rounded-lg appearance-none cursor-pointer accent-cyan-500" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-              />
+              <input type="range" min="0" max="160" value={beamWidth} onChange={e => setBeamWidth(parseInt(e.target.value))} className="w-full h-1.5 rounded-lg appearance-none cursor-pointer accent-cyan-500" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
               <span className="text-[10px] text-slate-500 leading-tight block">
                 Defines the vertical dispersion of incoming alphas. Broad sweeps show multiple deflection curves at once.
               </span>
@@ -1077,34 +1123,24 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
             <div className="space-y-3 pt-2">
               <div className="flex items-center justify-between">
                 <span className="text-xs text-slate-300 font-medium">Continuous Stream</span>
-                <button
-                  onClick={() => setContinuousFiring(!continuousFiring)}
-                  className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all border ${
-                    continuousFiring 
-                      ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' 
-                      : ' border-white/5 text-slate-400'
-                  }`}
-                >
+                <button onClick={() => setContinuousFiring(!continuousFiring)} className={`px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all border ${continuousFiring ? 'bg-emerald-500/10 border-emerald-500/20 text-emerald-400' : ' border-white/5 text-slate-400'}`}>
                   {continuousFiring ? 'Active' : 'Disabled'}
                 </button>
               </div>
 
-              {continuousFiring && (
-                <div className="space-y-2">
+              {continuousFiring && <div className="space-y-2">
                   <div className="flex justify-between text-xs font-medium">
                     <span className="text-slate-400">Firing Frequency</span>
                     <span className="font-mono text-slate-400">{firingRate} particles/sec</span>
                   </div>
-                  <input
-                    type="range"
-                    min="1"
-                    max="20"
-                    value={firingRate}
-                    onChange={(e) => setFiringRate(parseInt(e.target.value))}
-                    className="w-full h-1 rounded accent-slate-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-                  />
-                </div>
-              )}
+                  <input type="range" min="1" max="20" value={firingRate} onChange={e => setFiringRate(parseInt(e.target.value))} className="w-full h-1 rounded accent-slate-400" style={{
+                background: 'rgba(20, 20, 30, 0.8)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(12px)',
+                borderRadius: '16px',
+                color: 'white'
+              }} />
+                </div>}
 
               {/* Simulation speed multiplier */}
               <div className="space-y-2">
@@ -1112,15 +1148,13 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
                   <span className="text-slate-400">Simulation Speed</span>
                   <span className="font-mono text-slate-400">{simSpeed.toFixed(1)}x</span>
                 </div>
-                <input
-                  type="range"
-                  min="0.2"
-                  max="2.5"
-                  step="0.1"
-                  value={simSpeed}
-                  onChange={(e) => setSimSpeed(parseFloat(e.target.value))}
-                  className="w-full h-1 rounded accent-slate-400" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-                />
+                <input type="range" min="0.2" max="2.5" step="0.1" value={simSpeed} onChange={e => setSimSpeed(parseFloat(e.target.value))} className="w-full h-1 rounded accent-slate-400" style={{
+                background: 'rgba(20, 20, 30, 0.8)',
+                border: '1px solid rgba(255,255,255,0.1)',
+                backdropFilter: 'blur(12px)',
+                borderRadius: '16px',
+                color: 'white'
+              }} />
               </div>
             </div>
           </div>
@@ -1130,33 +1164,35 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
             <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">Display Options</h3>
             
             <label className="flex items-center gap-2.5 text-xs text-slate-300 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={showTracks}
-                onChange={(e) => setShowTracks(e.target.checked)}
-                className="rounded border-white/10 text-emerald-500 focus:ring-0 w-4 h-4 cursor-pointer" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-              />
+              <input type="checkbox" checked={showTracks} onChange={e => setShowTracks(e.target.checked)} className="rounded border-white/10 text-emerald-500 focus:ring-0 w-4 h-4 cursor-pointer" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
               <span>Draw Particle Trails</span>
             </label>
 
             <label className="flex items-center gap-2.5 text-xs text-slate-300 cursor-pointer">
-              <input
-                type="checkbox"
-                disabled={!showTracks}
-                checked={persistentTracks}
-                onChange={(e) => setPersistentTracks(e.target.checked)}
-                className="rounded border-white/10 text-emerald-500 focus:ring-0 w-4 h-4 cursor-pointer disabled:opacity-50" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-              />
+              <input type="checkbox" disabled={!showTracks} checked={persistentTracks} onChange={e => setPersistentTracks(e.target.checked)} className="rounded border-white/10 text-emerald-500 focus:ring-0 w-4 h-4 cursor-pointer disabled:opacity-50" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
               <span className={showTracks ? '' : 'opacity-50'}>Keep Historical Paths (Last 30)</span>
             </label>
 
             <label className="flex items-center gap-2.5 text-xs text-slate-300 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={showForces}
-                onChange={(e) => setShowForces(e.target.checked)}
-                className="rounded border-white/10 text-emerald-500 focus:ring-0 w-4 h-4 cursor-pointer" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}
-              />
+              <input type="checkbox" checked={showForces} onChange={e => setShowForces(e.target.checked)} className="rounded border-white/10 text-emerald-500 focus:ring-0 w-4 h-4 cursor-pointer" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }} />
               <span>Show Coulomb Force Vectors (Red Arrows)</span>
             </label>
           </div>
@@ -1177,32 +1213,27 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
             <div className="/60 rounded-xl p-4 border border-white/5 space-y-3">
               <div className="h-32 w-full flex items-end gap-1.5 relative pt-4">
                 
-                {scatteringAngles.length === 0 ? (
-                  <div className="absolute inset-0 flex items-center justify-center text-xs text-slate-600 font-mono">
+                {scatteringAngles.length === 0 ? <div className="absolute inset-0 flex items-center justify-center text-xs text-slate-600 font-mono">
                     No data recorded yet
-                  </div>
-                ) : (
-                  binnedData.map((bin, index) => {
-                    const barHeightPct = (bin.count / maxBinCount) * 100;
-                    return (
-                      <div key={index} className="flex-1 h-full flex flex-col justify-end items-center group relative cursor-pointer">
+                  </div> : binnedData.map((bin, index) => {
+                const barHeightPct = bin.count / maxBinCount * 100;
+                return <div key={index} className="flex-1 h-full flex flex-col justify-end items-center group relative cursor-pointer">
                         {/* Bar Segment */}
-                        <div 
-                          style={{ height: `${Math.max(barHeightPct, 2)}%` }}
-                          className={`w-full rounded-t transition-all duration-300 ${
-                            bin.min >= 90 
-                              ? 'bg-amber-500 hover:bg-amber-400' 
-                              : 'bg-emerald-500 hover:bg-emerald-400'
-                          }`}
-                        />
+                        <div style={{
+                    height: `${Math.max(barHeightPct, 2)}%`
+                  }} className={`w-full rounded-t transition-all duration-300 ${bin.min >= 90 ? 'bg-amber-500 hover:bg-amber-400' : 'bg-emerald-500 hover:bg-emerald-400'}`} />
                         {/* Tooltip on hover */}
-                        <div className="absolute bottom-full mb-1 scale-0 group-hover:scale-100 transition-all origin-bottom text-[9px] text-slate-200 px-1.5 py-1 rounded border border-white/10 z-20 pointer-events-none whitespace-nowrap shadow-xl font-mono" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+                        <div className="absolute bottom-full mb-1 scale-0 group-hover:scale-100 transition-all origin-bottom text-[9px] text-slate-200 px-1.5 py-1 rounded border border-white/10 z-20 pointer-events-none whitespace-nowrap shadow-xl font-mono" style={{
+                    background: 'rgba(20, 20, 30, 0.8)',
+                    border: '1px solid rgba(255,255,255,0.1)',
+                    backdropFilter: 'blur(12px)',
+                    borderRadius: '16px',
+                    color: 'white'
+                  }}>
                           {bin.min}-{bin.max}°: {bin.count} ({bin.percent.toFixed(1)}%)
                         </div>
-                      </div>
-                    );
-                  })
-                )}
+                      </div>;
+              })}
 
               </div>
 
@@ -1216,7 +1247,13 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
               </div>
 
               {/* Educational Highlight indicator */}
-              <div className="text-[10px] p-2.5 rounded-lg border border-white/5 leading-normal space-y-1.5" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
+              <div className="text-[10px] p-2.5 rounded-lg border border-white/5 leading-normal space-y-1.5" style={{
+              background: 'rgba(20, 20, 30, 0.8)',
+              border: '1px solid rgba(255,255,255,0.1)',
+              backdropFilter: 'blur(12px)',
+              borderRadius: '16px',
+              color: 'white'
+            }}>
                 <div className="flex items-center gap-1.5">
                   <span className="w-2.5 h-2.5 bg-emerald-500 rounded" />
                   <span className="text-slate-300 font-medium">Forward Scatter (0° - 90°)</span>
@@ -1226,26 +1263,25 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
                   <span className="text-slate-300 font-medium">Backscatter (90° - 180°)</span>
                 </div>
                 <p className="text-slate-400 mt-1 text-[9px]">
-                  {modelMode === 'rutherford' ? (
-                    <span className="text-amber-300">
+                  {modelMode === 'rutherford' ? <span className="text-amber-300">
                       Rutherford core creates a tail of backscattering (90°-180°). This proves a highly dense core exists!
-                    </span>
-                  ) : (
-                    <span className="text-slate-500">
+                    </span> : <span className="text-slate-500">
                       Plum Pudding positive charge is too weak to deflect particles above 10°. Backscattering is 0.00%.
-                    </span>
-                  )}
+                    </span>}
                 </p>
               </div>
             </div>
           </div>
 
           {/* Quick Help theory card */}
-          <div className="p-5 mt-auto border-t border-white/5" style={{ background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)', borderRadius: '16px', color: 'white' }}>
-            <button
-              onClick={() => setShowTheory(!showTheory)}
-              className="w-full flex justify-between items-center text-xs font-bold text-slate-400 hover:text-white uppercase tracking-wider"
-            >
+          <div className="p-5 mt-auto border-t border-white/5" style={{
+          background: 'rgba(20, 20, 30, 0.8)',
+          border: '1px solid rgba(255,255,255,0.1)',
+          backdropFilter: 'blur(12px)',
+          borderRadius: '16px',
+          color: 'white'
+        }}>
+            <button onClick={() => setShowTheory(!showTheory)} className="w-full flex justify-between items-center text-xs font-bold text-slate-400 hover:text-white uppercase tracking-wider">
               <span className="flex items-center gap-1.5">
                 <HelpCircle size={14} className="text-purple-400" />
                 Theory & Historical Context
@@ -1253,8 +1289,7 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
               <ChevronRight size={14} className={`transform transition-transform ${showTheory ? 'rotate-90' : ''}`} />
             </button>
 
-            {showTheory && (
-              <div className="mt-3.5 space-y-3 text-[11px] text-slate-400 leading-relaxed border-t border-white/5 pt-3">
+            {showTheory && <div className="mt-3.5 space-y-3 text-[11px] text-slate-400 leading-relaxed border-t border-white/5 pt-3">
                 <p>
                   <strong>How the nucleus was discovered:</strong> In 1909, Geiger and Marsden fired alpha particles (+2e) at gold foil. Under the <em>Plum Pudding Model</em>, the massive alpha particles were expected to pass through with near-zero deflection because the positive charge was thought to be diffuse and spread out over the whole atom.
                 </p>
@@ -1264,34 +1299,72 @@ function CustomRutherfordScatteringInner({ onBack, title }) {
                 <p>
                   <strong>Try it yourself:</strong> Switch between the two modes. In Plum Pudding mode, watch the particles pass straight through with minor deflections. Then, switch to Rutherford mode and fire a broad sweep of particles. Watch how the particles that pass very close to the center undergo extreme 180-degree deflections!
                 </p>
-              </div>
-            )}
+              </div>}
           </div>
 
         </aside>
       </div>
-    </div>
-  );
+    </div>;
 }
-
-
-export default function CustomRutherfordScattering({ onBack, title }) {
-    return (
-        <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
-            <div style={{ position: 'absolute', top: '20px', left: '20px', right: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', zIndex: 100 }}>
-                {onBack ? (
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)', backdropFilter: 'blur(10px)', padding: '10px 20px', borderRadius: '12px', color: '#fff', cursor: 'pointer', transition: 'all 0.3s ease', fontWeight: 600, fontFamily: "'Inter', sans-serif" }}>
+export default function CustomRutherfordScattering({
+  onBack,
+  title
+}) {
+  return <div style={{
+    width: '100%',
+    height: '100%',
+    position: 'relative',
+    background: '#0a0a1a',
+    overflow: 'hidden'
+  }}>
+            <div style={{
+      position: 'absolute',
+      top: '20px',
+      left: '20px',
+      right: '20px',
+      display: 'flex',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      zIndex: 100
+    }}>
+                {onBack ? <button onClick={onBack} style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '8px',
+        background: 'rgba(255, 255, 255, 0.1)',
+        border: '1px solid rgba(255, 255, 255, 0.2)',
+        backdropFilter: 'blur(10px)',
+        padding: '10px 20px',
+        borderRadius: '12px',
+        color: '#fff',
+        cursor: 'pointer',
+        transition: 'all 0.3s ease',
+        fontWeight: 600,
+        fontFamily: "'Inter', sans-serif"
+      }}>
                         ← Back
-                    </button>
-                ) : <div />}
-                <h1 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', textShadow: '0 2px 10px rgba(0,0,0,0.5)', margin: 0 }}>
+                    </button> : <div />}
+                <h1 style={{
+        color: 'white',
+        fontFamily: "'Inter', sans-serif",
+        fontSize: '24px',
+        fontWeight: '600',
+        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
+        margin: 0
+      }}>
                     {title || 'Simulation'}
                 </h1>
-                <div style={{ width: '100px' }}></div>
+                <div style={{
+        width: '100px'
+      }}></div>
             </div>
-            <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto' }}>
+            <div style={{
+      position: 'absolute',
+      inset: 0,
+      zIndex: 1,
+      pointerEvents: 'auto'
+    }}>
                  <CustomRutherfordScatteringInner onBack={null} title={""} />
             </div>
-        </div>
-    );
+        </div>;
 }

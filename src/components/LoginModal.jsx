@@ -12,11 +12,16 @@ const VALID_CREDENTIALS = [
     { username: 'MGRoot01', password: 'MG@123' }
 ];
 
-export default function LoginModal({ isOpen, onClose, onSuccess }) {
-    const [activeTab, setActiveTab] = useState('student'); // 'administrator' or 'student'
+export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 'student' }) {
+    const [activeTab, setActiveTab] = useState(defaultTab); // 'administrator' or 'student'
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+
+    // Reset tab if defaultTab changes when modal opens
+    React.useEffect(() => {
+        if (isOpen) setActiveTab(defaultTab);
+    }, [isOpen, defaultTab]);
 
     if (!isOpen) return null;
 

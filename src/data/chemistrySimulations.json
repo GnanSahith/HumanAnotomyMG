@@ -8,12 +8,30 @@
         "category": "Solutions, Acids & Bases"
     },
     {
+        "id": "acid-base-solutions_mg",
+        "title": "Acid-Base Solutions MG",
+        "description": "Interactive Acid-Base Solutions simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/acid-base-solutions/latest/acid-base-solutions_en.html",
+        "thumbnail": "/thumbnails/acid_base_thumb.png",
+        "category": "Solutions, Acids & Bases",
+        "isNative": true
+    },
+    {
         "id": "atomic-interactions",
         "title": "Atomic Interactions",
         "description": "Interactive Atomic Interactions simulation",
         "url": "https://phet.colorado.edu/sims/html/atomic-interactions/latest/atomic-interactions_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/atomic-interactions/latest/atomic-interactions-600.png",
         "category": "Atoms & Molecules"
+    },
+    {
+        "id": "atomic-interactions_mg",
+        "title": "Atomic Interactions MG",
+        "description": "Interactive Atomic Interactions simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/atomic-interactions/latest/atomic-interactions_en.html",
+        "thumbnail": "/thumbnails/atomic_interactions_thumb.png",
+        "category": "Atoms & Molecules",
+        "isNative": true
     },
     {
         "id": "balancing-act",
@@ -24,12 +42,30 @@
         "category": "Reactions & Stoichiometry"
     },
     {
+        "id": "balancing-act_mg",
+        "title": "Balancing Act MG",
+        "description": "Interactive Balancing Act simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act-600.png",
+        "category": "Reactions & Stoichiometry",
+        "isNative": true
+    },
+    {
         "id": "balancing-chemical-equations",
         "title": "Balancing Chemical Equations",
         "description": "Interactive Balancing Chemical Equations simulation",
         "url": "https://phet.colorado.edu/sims/html/balancing-chemical-equations/latest/balancing-chemical-equations_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/balancing-chemical-equations/latest/balancing-chemical-equations-600.png",
         "category": "Reactions & Stoichiometry"
+    },
+    {
+        "id": "balancing-chemical-equations_mg",
+        "title": "Balancing Chemical Equations MG",
+        "description": "Interactive Balancing Chemical Equations simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/balancing-chemical-equations/latest/balancing-chemical-equations_en.html",
+        "thumbnail": "/thumbnails/balancing_chemical_equations_thumb.png",
+        "category": "Reactions & Stoichiometry",
+        "isNative": true
     },
     {
         "id": "balloons-and-static-electricity",
@@ -40,12 +76,30 @@
         "category": "Quantum & Advanced Chemistry"
     },
     {
+        "id": "balloons-and-static-electricity_mg",
+        "title": "Balloons and Static Electricity MG",
+        "description": "Interactive Balloons and Static Electricity simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity-600.png",
+        "category": "Quantum & Advanced Chemistry",
+        "isNative": true
+    },
+    {
         "id": "beers-law-lab",
         "title": "Beer's Law Lab",
         "description": "Interactive Beer's Law Lab simulation",
         "url": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab-600.png",
         "category": "Solutions, Acids & Bases"
+    },
+    {
+        "id": "beers-law-lab_mg",
+        "title": "Beer's Law Lab MG",
+        "description": "Interactive Beer's Law Lab simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/beers-law-lab/latest/beers-law-lab_en.html",
+        "thumbnail": "/thumbnails/beers_law_thumb.png",
+        "category": "Solutions, Acids & Bases",
+        "isNative": true
     },
     {
         "id": "blackbody-spectrum",
@@ -56,12 +110,30 @@
         "category": "Quantum & Advanced Chemistry"
     },
     {
+        "id": "blackbody-spectrum_mg",
+        "title": "Blackbody Spectrum MG",
+        "description": "Interactive Blackbody Spectrum simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum-600.png",
+        "category": "Quantum & Advanced Chemistry",
+        "isNative": true
+    },
+    {
         "id": "build-a-molecule",
         "title": "Build a Molecule",
         "description": "Interactive Build a Molecule simulation",
         "url": "https://phet.colorado.edu/sims/html/build-a-molecule/latest/build-a-molecule_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/build-a-molecule/latest/build-a-molecule-600.png",
         "category": "Atoms & Molecules"
+    },
+    {
+        "id": "build-a-molecule_mg",
+        "title": "Build a Molecule MG",
+        "description": "Interactive Build a Molecule simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/build-a-molecule/latest/build-a-molecule_en.html",
+        "thumbnail": "/thumbnails/build_a_molecule_thumb.png",
+        "category": "Atoms & Molecules",
+        "isNative": true
     },
     {
         "id": "build-a-nucleus",
@@ -72,12 +144,30 @@
         "category": "Atoms & Molecules"
     },
     {
+        "id": "build-a-nucleus_mg",
+        "title": "Build a Nucleus MG",
+        "description": "Interactive Build a Nucleus simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/build-a-nucleus/latest/build-a-nucleus_en.html",
+        "thumbnail": "/thumbnails/build_a_nucleus_thumb.png",
+        "category": "Atoms & Molecules",
+        "isNative": true
+    },
+    {
         "id": "build-an-atom",
         "title": "Build an Atom",
         "description": "Interactive Build an Atom simulation",
         "url": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom-600.png",
         "category": "Atoms & Molecules"
+    },
+    {
+        "id": "build-an-atom_mg",
+        "title": "Build an Atom MG",
+        "description": "Interactive Build an Atom simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/build-an-atom/latest/build-an-atom_en.html",
+        "thumbnail": "/thumbnails/build_an_atom_thumb.png",
+        "category": "Atoms & Molecules",
+        "isNative": true
     },
     {
         "id": "buoyancy",
@@ -88,12 +178,30 @@
         "category": "Thermodynamics & Gases"
     },
     {
+        "id": "buoyancy_mg",
+        "title": "Buoyancy MG",
+        "description": "Interactive Buoyancy simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/buoyancy/latest/buoyancy_en.html",
+        "thumbnail": "/thumbnails/buoyancy_thumb.png",
+        "category": "Thermodynamics & Gases",
+        "isNative": true
+    },
+    {
         "id": "buoyancy-basics",
         "title": "Buoyancy: Basics",
         "description": "Interactive Buoyancy: Basics simulation",
         "url": "https://phet.colorado.edu/sims/html/buoyancy-basics/latest/buoyancy-basics_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/buoyancy-basics/latest/buoyancy-basics-600.png",
         "category": "Thermodynamics & Gases"
+    },
+    {
+        "id": "buoyancy-basics_mg",
+        "title": "Buoyancy: Basics MG",
+        "description": "Interactive Buoyancy: Basics simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/buoyancy-basics/latest/buoyancy-basics_en.html",
+        "thumbnail": "/thumbnails/buoyancy_basics_thumb.png",
+        "category": "Thermodynamics & Gases",
+        "isNative": true
     },
     {
         "id": "concentration",
@@ -104,12 +212,30 @@
         "category": "Solutions, Acids & Bases"
     },
     {
+        "id": "concentration_mg",
+        "title": "Concentration MG",
+        "description": "Interactive Concentration simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/concentration/latest/concentration_en.html",
+        "thumbnail": "/thumbnails/concentration_thumb.png",
+        "category": "Solutions, Acids & Bases",
+        "isNative": true
+    },
+    {
         "id": "coulombs-law",
         "title": "Coulomb's Law",
         "description": "Interactive Coulomb's Law simulation",
         "url": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law-600.png",
         "category": "Quantum & Advanced Chemistry"
+    },
+    {
+        "id": "coulombs-law_mg",
+        "title": "Coulomb's Law MG",
+        "description": "Interactive Coulomb's Law simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law-600.png",
+        "category": "Quantum & Advanced Chemistry",
+        "isNative": true
     },
     {
         "id": "density",
@@ -120,12 +246,30 @@
         "category": "Thermodynamics & Gases"
     },
     {
+        "id": "density_mg",
+        "title": "Density MG",
+        "description": "Interactive Density simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/density/latest/density_en.html",
+        "thumbnail": "/thumbnails/density_thumb.png",
+        "category": "Thermodynamics & Gases",
+        "isNative": true
+    },
+    {
         "id": "diffusion",
         "title": "Diffusion",
         "description": "Interactive Diffusion simulation",
         "url": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion-600.png",
         "category": "Thermodynamics & Gases"
+    },
+    {
+        "id": "diffusion_mg",
+        "title": "Diffusion MG",
+        "description": "Interactive Diffusion simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion-600.png",
+        "category": "Thermodynamics & Gases",
+        "isNative": true
     },
     {
         "id": "energy-forms-and-changes",
@@ -136,12 +280,30 @@
         "category": "Thermodynamics & Gases"
     },
     {
+        "id": "energy-forms-and-changes_mg",
+        "title": "Energy Forms and Changes MG",
+        "description": "Interactive Energy Forms and Changes simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes-600.png",
+        "category": "Thermodynamics & Gases",
+        "isNative": true
+    },
+    {
         "id": "fourier-making-waves",
         "title": "Fourier: Making Waves",
         "description": "Interactive Fourier: Making Waves simulation",
         "url": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves-600.png",
         "category": "Quantum & Advanced Chemistry"
+    },
+    {
+        "id": "fourier-making-waves_mg",
+        "title": "Fourier: Making Waves MG",
+        "description": "Interactive Fourier: Making Waves simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves-600.png",
+        "category": "Quantum & Advanced Chemistry",
+        "isNative": true
     },
     {
         "id": "gas-properties",
@@ -152,12 +314,30 @@
         "category": "Thermodynamics & Gases"
     },
     {
+        "id": "gas-properties_mg",
+        "title": "Gas Properties MG",
+        "description": "Interactive Gas Properties simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_en.html",
+        "thumbnail": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties-600.png",
+        "category": "Thermodynamics & Gases",
+        "isNative": true
+    },
+    {
         "id": "gases-intro",
         "title": "Gases Intro",
         "description": "Interactive Gases Intro simulation",
         "url": "https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro_en.html",
         "thumbnail": "https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro-600.png",
         "category": "Thermodynamics & Gases"
+    },
+    {
+        "id": "gases-intro_mg",
+        "title": "Gases Intro MG",
+        "description": "Interactive Gases Intro simulation (Native Custom Build)",
+        "url": "https://phet.colorado.edu/sims/html/gases-intro/latest/gases-intro_en.html",
+        "thumbnail": "/thumbnails/gases_intro_thumb.png",
+        "category": "Thermodynamics & Gases",
+        "isNative": true
     },
     {
         "id": "isotopes-and-atomic-mass",
