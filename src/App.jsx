@@ -274,7 +274,15 @@ function App() {
           }} 
         />
       ) : appMode === 'simulations' ? (
-        isLanding ? (
+        !isAuthenticated ? (
+          <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '100vh', color: '#fff', gap: '20px' }}>
+            <h2 style={{ fontSize: '32px' }}>Access Denied</h2>
+            <p style={{ color: 'rgba(255,255,255,0.6)' }}>Simulations are exclusively available to Administrator and Root logins.</p>
+            <button onClick={handleReturnToPortal} style={{ padding: '12px 24px', background: 'var(--accent)', border: 'none', borderRadius: '8px', color: '#fff', cursor: 'pointer', fontWeight: 600 }}>
+              Return to Home
+            </button>
+          </div>
+        ) : isLanding ? (
           <LandingView onEnter={handleAuthRequiredNavigation} loggedInUsername={loggedInUsername} />
         ) : activeModule === 'maths' ? (
           <MathsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} />
