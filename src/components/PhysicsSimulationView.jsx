@@ -152,7 +152,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
     }, [accessLevel, approvedSims]);
 
     const handleSimClick = (sim) => {
-        if (accessLevel !== 'ROOT') {
+        if (accessLevel === 'CLERK') {
             alert('Currently Locked');
             return;
         }

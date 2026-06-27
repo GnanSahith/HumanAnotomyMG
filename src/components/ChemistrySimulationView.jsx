@@ -128,7 +128,7 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick 
     };
 
     const handleSimClick = (sim) => {
-        if (accessLevel !== 'ROOT') {
+        if (accessLevel === 'CLERK') {
             alert('Currently Locked');
             return;
         }
