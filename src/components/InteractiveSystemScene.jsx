@@ -91,6 +91,12 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) 
                 clone.add(cleanMesh);
             }
         });
+        
+        // Expose valid meshes for the Quiz challenge
+        const validNames = [];
+        clone.traverse(c => { if(c.isMesh) validNames.push(c.name); });
+        window.digestiveValidMeshes = validNames;
+        
         return clone;
     }, [scene]);
 
