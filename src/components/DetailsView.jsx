@@ -8,6 +8,25 @@ const cleanName = (raw) => (raw || 'Organ').replace(/_01/g, '').replace(/_/g, ' 
 
 export default function DetailsView({ activeOrgan }) {
     const { t } = useLanguage();
+
+    const [heldOrganMeshName, setHeldOrganMeshName] = useState(null);
+    const [lastHeldOrganMeshName, setLastHeldOrganMeshName] = useState(null);
+
+    useEffect(() => {
+        const handleHeld = (e) => {
+            setHeldOrganMeshName(e.detail);
+            setLastHeldOrganMeshName(e.detail);
+        };
+        const handleReleased = () => {
+            setHeldOrganMeshName(null);
+        };
+        window.addEventListener('ORGAN_HELD', handleHeld);
+        window.addEventListener('ORGAN_RELEASED', handleReleased);
+        return () => {
+            window.removeEventListener('ORGAN_HELD', handleHeld);
+            window.removeEventListener('ORGAN_RELEASED', handleReleased);
+        };
+    }, []);
     
     // Quiz State Variables
     const [quizState, setQuizState] = useState('idle');
@@ -195,20 +214,55 @@ export default function DetailsView({ activeOrgan }) {
         );
     }
 
+    const getOrganDataByMeshName = (meshName) => {
+        if (!meshName) return null;
+        let system = systemsData.find(s => activeOrgan && activeOrgan.id && s.id === activeOrgan.id.split('_')[0]) || digestiveSystem;
+        if (!system) return null;
+        
+        let targetOrgan = system.organs.find(o => o.modelSrc && o.modelSrc.includes(meshName)) || 
+                          system.organs.find(o => o.name.en.toLowerCase() === cleanName(meshName).toLowerCase());
+        
+        if (targetOrgan) return targetOrgan;
+        
+        return {
+            id: meshName,
+            name: { en: cleanName(meshName) },
+            description: { en: "Sub-component of the " + (activeOrgan.name.en || 'system') }
+        };
+    };
+
+    const displayOrgan = getOrganDataByMeshName(heldOrganMeshName) || getOrganDataByMeshName(lastHeldOrganMeshName) || activeOrgan;
+    const isShowingSubOrgan = displayOrgan !== activeOrgan;
+
     // Default Details Renderer
     return (
-        <div className="detail-panel glass-panel" key={activeOrgan.id} style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+        <div className="detail-panel glass-panel" key={displayOrgan.id || activeOrgan.id} style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
             <div style={{ flex: 1, overflowY: 'auto' }}>
-                <h2>{t(activeOrgan.name).replace(' (Model Coming Soon)', '')}</h2>
+                {isShowingSubOrgan && (
+                    <div style={{
+                        display: 'inline-block',
+                        background: heldOrganMeshName ? 'rgba(48,209,88,0.2)' : 'rgba(255,159,10,0.2)',
+                        color: heldOrganMeshName ? '#30d158' : '#ff9f0a',
+                        padding: '4px 8px',
+                        borderRadius: '4px',
+                        fontSize: '12px',
+                        fontWeight: 'bold',
+                        marginBottom: '8px',
+                        textTransform: 'uppercase'
+                    }}>
+                        {heldOrganMeshName ? 'Currently Holding' : 'Last Held'}
+                    </div>
+                )}
+                <h2>{t(displayOrgan.name || {en: 'Organ'}).replace(' (Model Coming Soon)', '')}</h2>
                 <div style={{ height: "1px", background: "var(--border-color)", width: "100%", margin: "16px 0" }} />
 
-                <p>{t(activeOrgan.description)}</p>
+                <p>{t(displayOrgan.description || {en: 'No description available.'})}</p>
 
                 <div className="stat-grid">
-                    {(activeOrgan.details || []).map((detail, index) => (
+                    {(displayOrgan.details || []).map((detail, index) => (
                         <div key={index} className="stat-card">
-                            <div className="stat-label">{t(detail.label)}</div>
-                            <div className="stat-value">{t(detail.value)}</div>
+                            <div className="stat-label">{t(detail.label || {en: 'Detail'})}</div>
+                            <div className="stat-value">{t(detail.value || {en: '-'})}</div>
                         </div>
                     ))}
                 </div>

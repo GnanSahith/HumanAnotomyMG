@@ -162,6 +162,7 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) 
             setGlow(ds.mesh, false);
             setIsDragging(false);
             if (labelRef?.current) labelRef.current.style.display = 'none';
+            window.dispatchEvent(new CustomEvent('ORGAN_RELEASED'));
             dragState.current = null;
         }
     });
@@ -201,6 +202,7 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) 
         setGlow(mesh, true);
         setIsDragging(true);
         document.body.style.cursor = 'grabbing';
+        window.dispatchEvent(new CustomEvent('ORGAN_HELD', { detail: (mesh.name || 'Unknown').replace(/_/g, ' ') }));
         e.target.setPointerCapture(e.pointerId);
     }, [ownScene, setGlow, setIsDragging]);
 
