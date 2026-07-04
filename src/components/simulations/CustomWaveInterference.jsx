@@ -7,6 +7,10 @@ export default function CustomWaveInterference({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
   // Parameters
   const [numSources, setNumSources] = useState(2);
@@ -21,6 +25,10 @@ export default function CustomWaveInterference({
   const containerWidth = 600;
   const containerHeight = 600;
   const renderCanvas = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(renderCanvas);
+      return;
+    }
     if (!isPlaying) {
       requestRef.current = requestAnimationFrame(renderCanvas);
       return;

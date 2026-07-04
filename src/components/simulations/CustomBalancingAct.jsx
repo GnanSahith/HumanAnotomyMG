@@ -292,8 +292,15 @@ const challenges = [
 }];
 export default function CustomBalancingAct({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   // Mode selection and controls
   const [currentMode, setCurrentMode] = useState('intro'); // 'intro' | 'lab' | 'game'
   const [activeCategory, setActiveCategory] = useState('bricks'); // 'bricks' | 'people' | 'mystery'
@@ -1292,6 +1299,10 @@ export default function CustomBalancingAct({
       setProp(state, 'stars', state.stars.filter(s => s.y < 550));
     };
     const update = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(update);
+      return;
+    }
       if (!running) return;
       const state = simStateRef.current;
       const dt = 1 / 60;

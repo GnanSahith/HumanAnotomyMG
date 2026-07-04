@@ -404,6 +404,10 @@ const CustomCapacitorLabBasicsInner = () => {
   useEffect(() => {
     let animId;
     const tick = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(tick);
+      return;
+    }
       const canvas = canvasRef.current;
       if (!canvas) {
         animId = requestAnimationFrame(tick);
@@ -1590,8 +1594,15 @@ const CustomCapacitorLabBasicsInner = () => {
 };
 export default function CustomCapacitorLabBasics({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <div style={{
     width: '100%',
     height: '100%',

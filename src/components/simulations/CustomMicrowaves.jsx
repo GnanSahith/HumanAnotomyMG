@@ -8,6 +8,10 @@ const CustomMicrowavesInner = ({
   const [localIsPlaying, setLocalIsPlaying] = useState(false);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [amplitude, setAmplitude] = useState(50);
   const [frequency, setFrequency] = useState(50);
   const [moleculeCount, setMoleculeCount] = useState(20);
@@ -48,6 +52,10 @@ const CustomMicrowavesInner = ({
     let animationFrameId;
     let lastTime = performance.now();
     const render = currentTime => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(render);
+      return;
+    }
       const deltaTime = (currentTime - lastTime) / 1000;
       lastTime = currentTime;
       const canvas = canvasRef.current;

@@ -7,6 +7,10 @@ export default function CustomStatesOfMatter({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
   // Core Parameters
   const [substance, setSubstance] = useState('Neon');
@@ -108,6 +112,11 @@ export default function CustomStatesOfMatter({
     initParticles(phase, substance, temperature);
   }, [phase, substance]);
   const updatePhysics = () => {
+    if (!isPlayingRef.current) {
+      if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
+      requestRef.current = requestAnimationFrame(updatePhysics);
+      return;
+    }
     if (!isPlaying) {
       requestRef.current = requestAnimationFrame(updatePhysics);
       return;

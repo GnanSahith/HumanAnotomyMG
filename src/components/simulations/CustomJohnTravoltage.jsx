@@ -339,6 +339,10 @@ function CustomJohnTravoltageInner() {
       };
     };
     const loop = timestamp => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(loop);
+      return;
+    }
       let dt = (timestamp - lastTime) / 1000;
       if (dt > 0.1) dt = 0.1; // clamp delta to protect physics calculations
       lastTime = timestamp;
@@ -1062,8 +1066,15 @@ function CustomJohnTravoltageInner() {
 }
 export default function CustomJohnTravoltage({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <div style={{
     width: '100%',
     height: '100%',

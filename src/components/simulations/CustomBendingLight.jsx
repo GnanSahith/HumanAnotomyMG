@@ -152,6 +152,10 @@ export default function CustomBendingLight({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [isBackHovered, setIsBackHovered] = useState(false);
   const [isResetHovered, setIsResetHovered] = useState(false);
   const [laserAngle, setLaserAngle] = useState(30); // in degrees relative to normal
@@ -259,6 +263,10 @@ export default function CustomBendingLight({
   // --- Main Draw & Physics Update Loop ---
   useEffect(() => {
     const render = timestamp => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(render);
+      return;
+    }
       const canvas = canvasRef.current;
       if (!canvas) return;
       const ctx = canvas.getContext('2d');

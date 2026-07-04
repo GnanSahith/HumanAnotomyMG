@@ -58,6 +58,11 @@ function Customphys_12Inner({ onBack, title = "Hooke's Law" }) {
         
         let reqId;
         const updatePhysics = () => {
+    if (!isPlayingRef.current) {
+      if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
+      requestRef.current = requestAnimationFrame(updatePhysics);
+      return;
+    }
             Matter.Engine.update(engine, 1000 / 60);
             
             // Constrain Y positions to 250
@@ -501,7 +506,16 @@ function Customphys_12Inner({ onBack, title = "Hooke's Law" }) {
 }
 
 
-export default function Customphys_12({ onBack, title }) {
+export default function Customphys_12({
+  onBack, title, isPlaying: globalIsPlaying, syncPlayState
+}) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
     return (
         <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
             

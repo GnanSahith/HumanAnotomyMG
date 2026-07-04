@@ -1134,8 +1134,11 @@ function CustomCenterandVariabilityInner({
 }
 export default function CustomCenterandVariability({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   return <div style={{
     width: '100%',
     height: '100%',

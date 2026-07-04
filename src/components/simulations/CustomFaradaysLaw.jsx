@@ -80,6 +80,10 @@ const CustomFaradaysLawInner = ({
     const graphCtx = graphCanvas.getContext('2d');
     let animationFrameId;
     const draw = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(draw);
+      return;
+    }
       const now = performance.now();
       const dt = (now - state.current.lastTime) / 1000;
       state.current.lastTime = now;
@@ -502,8 +506,15 @@ const CustomFaradaysLawInner = ({
 };
 export default function CustomFaradaysLaw({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <div style={{
     width: '100%',
     height: '100%',

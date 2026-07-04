@@ -16,6 +16,10 @@ export default function CustomDensity({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [canvasSize, setCanvasSize] = useState({ width: 800, height: 600 });
 
   const canvasRef = useRef(null);
@@ -131,6 +135,10 @@ export default function CustomDensity({
     });
     window.addEventListener('touchend', handleMouseUp);
     const updateAndDraw = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(updateAndDraw);
+      return;
+    }
       if (lastTimeRef.current != null) {
         const dt = (time - lastTimeRef.current) / 1000;
         const deltaT = Math.min(dt, 0.05);

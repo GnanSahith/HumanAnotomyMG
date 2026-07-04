@@ -130,8 +130,15 @@ function solveLinearSystem(A, b) {
 }
 export default function CustomCircuitConstructionKitDCVirtualLab({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   // --- Simulation Settings and States ---
   const [representation, setRepresentation] = useState('lifelike'); // 'lifelike' | 'schematic'
   const [showElectrons, setShowElectrons] = useState(true);
@@ -406,6 +413,10 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
     let animId;
     let t = 0;
     const draw = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(draw);
+      return;
+    }
       const canvas = canvasRef.current;
       if (!canvas) return;
       const ctx = canvas.getContext('2d');

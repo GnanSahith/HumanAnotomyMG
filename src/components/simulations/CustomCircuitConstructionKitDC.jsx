@@ -157,8 +157,15 @@ const getResistorColors = value => {
 };
 export default function CustomCircuitConstructionKitDC({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
   const wasSnappedRef = useRef(false);
@@ -1277,6 +1284,10 @@ export default function CustomCircuitConstructionKitDC({
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     const render = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(render);
+      return;
+    }
       const width = canvas.width;
       const height = canvas.height;
       ctx.clearRect(0, 0, width, height);

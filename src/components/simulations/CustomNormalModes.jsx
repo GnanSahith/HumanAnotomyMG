@@ -82,6 +82,10 @@ function CustomNormalModesInner({
     let animationFrame;
     let lastTime = performance.now();
     const animate = currentTime => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(animate);
+      return;
+    }
       const realDelta = (currentTime - lastTime) / 1000;
       const delta = realDelta * speed;
       lastTime = currentTime;
@@ -1176,7 +1180,14 @@ function CustomNormalModesInner({
 }
 export default function CustomNormalModes({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <CustomNormalModesInner onBack={onBack} title={title || 'Normal Modes & Coupled Oscillators'} />;
 }

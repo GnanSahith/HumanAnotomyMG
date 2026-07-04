@@ -7,6 +7,10 @@ export default function CustomProjectileMotion({
   const [localIsPlaying, setLocalIsPlaying] = useState(false);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
   // Core Physics Parameters
   const [velocity, setVelocity] = useState(15); // m/s

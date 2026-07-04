@@ -335,8 +335,11 @@ const CoefficientControl = ({
 };
 export default function CustomBalancingChemicalEquations({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [activeReactionIdx, setActiveReactionIdx] = useState(0);
   const reaction = REACTIONS[activeReactionIdx];
   const [coeffs, setCoeffs] = useState({

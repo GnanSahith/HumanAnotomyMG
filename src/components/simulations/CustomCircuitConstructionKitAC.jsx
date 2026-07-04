@@ -126,8 +126,15 @@ class MNA {
 }
 export default function CustomCircuitConstructionKitAC({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [time, setTime] = useState(0);
   const canvasRef = useRef(null);
   const [running, setRunning] = useState(true);
@@ -173,6 +180,10 @@ export default function CustomCircuitConstructionKitAC({
   useEffect(() => {
     let animationFrameId;
     const tick = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(tick);
+      return;
+    }
       if (running && mnaRef.current) {
         for (let i = 0; i < 10; i++) {
           timeRef.current += DT;

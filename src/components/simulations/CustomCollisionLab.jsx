@@ -205,6 +205,10 @@ function CustomCollisionLabInner({
   const [localIsPlaying, setLocalIsPlaying] = useState(false);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [mode, setMode] = useState('2d'); // '1d' or '2d'
   const [elasticity, setElasticity] = useState(1.0); // 0.0 to 1.0
 
@@ -795,6 +799,10 @@ function CustomCollisionLabInner({
   useEffect(() => {
     let lastTime = performance.now();
     const tick = now => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(tick);
+      return;
+    }
       // Delta time capped at 0.1s to prevent extreme jumps during lag spikes
       const dt = Math.min((now - lastTime) / 1000, 0.1);
       lastTime = now;

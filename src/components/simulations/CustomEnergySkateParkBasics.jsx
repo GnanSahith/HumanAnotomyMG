@@ -844,6 +844,10 @@ function CustomEnergySkateParkBasicsInner({
     let animFrameId;
     let frameCount = 0;
     const tick = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(tick);
+      return;
+    }
       const p = physicsRef.current;
       const settings = settingsRef.current;
       frameCount++;
@@ -1787,8 +1791,15 @@ function CustomEnergySkateParkBasicsInner({
 }
 export default function CustomEnergySkateParkBasics({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <div style={{
     width: '100%',
     height: '100%',

@@ -42,6 +42,10 @@ export default function CustomBuildAMolecule() {
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [atoms, setAtoms] = useState([]);
   const [targetMolecules, setTargetMolecules] = useState([{
     name: 'Water (H2O)',
@@ -192,6 +196,10 @@ export default function CustomBuildAMolecule() {
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     const renderLoop = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(renderLoop);
+      return;
+    }
       draw(ctx, canvasSize.width, canvasSize.height);
       animationFrameId = requestAnimationFrame(renderLoop);
     };

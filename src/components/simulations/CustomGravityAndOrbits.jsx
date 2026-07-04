@@ -160,6 +160,10 @@ const CustomGravityAndOrbits = ({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [isFastForward, setIsFastForward] = useState(false);
   const [daysPassed, setDaysPassed] = useState(0);
   const requestRef = useRef();
@@ -192,6 +196,11 @@ const CustomGravityAndOrbits = ({
     handleReset();
   }, [scenario]);
   const updatePhysics = () => {
+    if (!isPlayingRef.current) {
+      if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
+      requestRef.current = requestAnimationFrame(updatePhysics);
+      return;
+    }
     if (!isPlaying) return;
     const state = stateRef.current;
     const bodies = state.bodies;

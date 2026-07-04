@@ -75,6 +75,10 @@ export default function CustomBuildANucleus() {
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [protons, setProtons] = useState(0);
   const [neutrons, setNeutrons] = useState(0);
   const [particles, setParticles] = useState([]);
@@ -149,6 +153,10 @@ export default function CustomBuildANucleus() {
     let animationFrameId;
     let lastTime = performance.now();
     const render = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(render);
+      return;
+    }
       const dt = (time - lastTime) / 1000;
       lastTime = time;
       const canvas = canvasRef.current;

@@ -2,8 +2,15 @@ import React, { useState, useEffect, useRef } from 'react';
 import { RotateCcw, ArrowLeft, Play, Pause, Settings2 } from 'lucide-react';
 export default function CustomForcesAndMotion({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   // Core Physics Parameters
   const [mass, setMass] = useState(50); // kg
   const [appliedForce, setAppliedForce] = useState(0); // N
@@ -22,6 +29,10 @@ export default function CustomForcesAndMotion({
   const [frictionForceVisual, setFrictionForceVisual] = useState(0);
   const [netForceVisual, setNetForceVisual] = useState(0);
   const updatePhysics = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(updatePhysics);
+      return;
+    }
     if (!lastTimeRef.current) {
       lastTimeRef.current = time;
       requestRef.current = requestAnimationFrame(updatePhysics);

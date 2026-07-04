@@ -1139,6 +1139,10 @@ function CustomMoleculesandLightInner({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [lightOn, setLightOn] = useState(false);
   const [emissionRate, setEmissionRate] = useState(5);
   const [emissionStyle, setEmissionStyle] = useState('continuous');
@@ -1241,6 +1245,10 @@ function CustomMoleculesandLightInner({
     if (!canvas) return;
     let animId;
     const runLoop = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(runLoop);
+      return;
+    }
       const state = stateRef.current;
       if (state) {
         if (state.isPlaying) {

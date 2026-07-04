@@ -412,6 +412,10 @@ function CustomColorVisionInner({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [showInfoModal, setShowInfoModal] = useState(false);
 
   // --------------------------------------------------------------------------
@@ -507,6 +511,11 @@ function CustomColorVisionInner({
      * Evaluates photon transmission coefficients at the filter barrier (Gaussian bandpass filter).
      */
     const updatePhysics = () => {
+    if (!isPlayingRef.current) {
+      if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
+      requestRef.current = requestAnimationFrame(updatePhysics);
+      return;
+    }
       const settings = settingsRef.current;
       if (!settings.isPlaying) return;
       const particles = particlesRef.current;

@@ -146,6 +146,10 @@ function CustomRutherfordScatteringInner({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
   // Simulation data & stats
   const [scatteringAngles, setScatteringAngles] = useState([]);
@@ -348,6 +352,10 @@ function CustomRutherfordScatteringInner({
     }];
     let lastFrameTime = performance.now();
     const loop = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(loop);
+      return;
+    }
       const deltaMs = time - lastFrameTime;
       lastFrameTime = time;
 

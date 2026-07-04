@@ -241,6 +241,10 @@ function CustomModelsOfHydrogenAtomInner() {
     const canvas = spectrometerRef.current;
     const ctx = canvas.getContext('2d');
     const drawSpec = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(drawSpec);
+      return;
+    }
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Draw spectrum background
@@ -681,8 +685,15 @@ function CustomModelsOfHydrogenAtomInner() {
 }
 export default function CustomModelsOfHydrogenAtom({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <div style={{
     width: '100%',
     height: '100%',

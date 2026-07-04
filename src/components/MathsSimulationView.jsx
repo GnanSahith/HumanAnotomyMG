@@ -396,7 +396,17 @@ export default function MathsSimulationView({ onBack }) {
     const loggedInUsername = localStorage.getItem('logged_in_username') || '';
     const [approvedSims, setApprovedSims] = useState(() => {
         try {
-            return JSON.parse(localStorage.getItem('showcase_approved_maths_sims') || '[]');
+            const stored = localStorage.getItem('showcase_approved_maths_sims');
+            const defaultApproved = [
+                'hkpdxysv','dmvzqbqj','b5apx95m','pnrnkvrj','wcdguqjf','wmmt7xhr','rh4usghq','t4fkp845','zdthcuav','d9mmpebw','ccra2fmc','dncz2ppm','hfefkxwu','njttrs7f','peyfxhzs','yacyvtjn','wnhzbdam','vgp6zrta','pqmvhxzq','daqswvxv','fhqqu6w6','fusbjz9b','yabgjfmd','tjkyk2hj','nyhvjcaq','mnruf8bu','qcrgez64','e4wvxtvh','nkckjvyv','jjdh8gf3'
+            ];
+            if (stored) {
+                const parsed = JSON.parse(stored);
+                const merged = Array.from(new Set([...parsed, ...defaultApproved]));
+                localStorage.setItem('showcase_approved_maths_sims', JSON.stringify(merged));
+                return merged;
+            }
+            return defaultApproved;
         } catch (e) {
             return [];
         }

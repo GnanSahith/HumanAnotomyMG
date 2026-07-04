@@ -60,6 +60,10 @@ const CustomNeonLightsInner = ({
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     const draw = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(draw);
+      return;
+    }
       const now = performance.now();
       if (state.current.lastTime === 0) state.current.lastTime = now;
       const dt = (now - state.current.lastTime) / 1000;
@@ -419,7 +423,14 @@ const CustomNeonLightsInner = ({
 };
 export default function CustomNeonLights({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <CustomNeonLightsInner onBack={onBack} title={title || 'Neon Lights Simulation'} />;
 }

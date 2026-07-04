@@ -93,8 +93,15 @@ const OUTPUTS = {
 };
 export default function CustomEnergyFormsAndChanges({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [source, setSource] = useState('faucet');
   const [converter, setConverter] = useState('generator');
   const [output, setOutput] = useState('water_heater');
@@ -151,6 +158,10 @@ export default function CustomEnergyFormsAndChanges({
   useEffect(() => {
     let lastTime = performance.now();
     const update = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(update);
+      return;
+    }
       const dt = (time - lastTime) / 1000;
       lastTime = time;
       if (isRunning) {

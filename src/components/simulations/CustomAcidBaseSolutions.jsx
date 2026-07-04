@@ -7,6 +7,10 @@ export default function CustomAcidBaseSolutions({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [solutionType, setSolutionType] = useState('weak_acid'); // water, strong_acid, weak_acid, strong_base, weak_base
   const [concentration, setConcentration] = useState(0.01); // 0.001 to 1 M
   const [strength, setStrength] = useState(0.00001); // Ka or Kb: 10^-7 to 10^-2
@@ -166,6 +170,10 @@ export default function CustomAcidBaseSolutions({
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     const animate = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(animate);
+      return;
+    }
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Draw background gradient

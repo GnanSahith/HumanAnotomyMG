@@ -769,6 +769,10 @@ function CustomMassesandSpringsBasicsInner({
     let requestID;
     let lastTime = performance.now();
     const loop = now => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(loop);
+      return;
+    }
       let dt = (now - lastTime) / 1000;
       lastTime = now;
 

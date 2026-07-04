@@ -16,6 +16,10 @@ function CustomFourierMakingWavesInner({
     let animationFrame;
     let lastTime = performance.now();
     const animate = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(animate);
+      return;
+    }
       if (playing) {
         const delta = (time - lastTime) / 1000;
         setTimeOffset(prev => prev + delta * 2);
@@ -183,7 +187,14 @@ function CustomFourierMakingWavesInner({
 }
 export default function CustomFourierMakingWaves({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <CustomFourierMakingWavesInner onBack={onBack} title={title || 'Fourier: Making Waves'} />;
 }

@@ -20,6 +20,10 @@ const CustomBuoyancyBasics = ({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [canvasSize, setCanvasSize] = useState({ width: 800, height: 600 });
 
   const resetSimulation = () => {
@@ -245,6 +249,10 @@ const CustomBuoyancyBasics = ({
       ctx.fillText(`Liquid Vol: ${currentLiquidVol.toFixed(1)} L`, 20, state.liquid.level + 30);
     };
     const loop = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(loop);
+      return;
+    }
       const dt = Math.min(time - lastTime, 32);
       lastTime = time;
       if (isPlaying) updatePhysics(dt);

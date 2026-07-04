@@ -61,8 +61,15 @@ const checkStability = (p, n) => {
 };
 export default function CustomBuildAnAtom({
   onBack,
-  title = "Build an Atom"
+  title = "Build an Atom", isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const canvasRef = useRef(null);
   const [protons, setProtons] = useState(0);
   const [neutrons, setNeutrons] = useState(0);
@@ -84,6 +91,10 @@ export default function CustomBuildAnAtom({
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     const render = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(render);
+      return;
+    }
       // Clear
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const cx = canvas.width / 2;

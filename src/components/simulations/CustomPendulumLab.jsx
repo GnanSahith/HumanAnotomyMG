@@ -7,6 +7,10 @@ export default function CustomPendulumLab({
   const [localIsPlaying, setLocalIsPlaying] = useState(false);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
   // Physics Parameters
   const [length, setLength] = useState(100); // cm
@@ -26,6 +30,10 @@ export default function CustomPendulumLab({
     y: 0
   });
   const updatePhysics = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(updatePhysics);
+      return;
+    }
     if (!lastTimeRef.current) {
       lastTimeRef.current = time;
       requestRef.current = requestAnimationFrame(updatePhysics);

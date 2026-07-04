@@ -68,6 +68,10 @@ const CustomBuoyancy = ({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const containerRef = useRef(null);
   useEffect(() => {
     const observer = new ResizeObserver(entries => {
@@ -280,6 +284,10 @@ const CustomBuoyancy = ({
     const ctx = canvas.getContext('2d');
     let lastTime = performance.now();
     const loop = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(loop);
+      return;
+    }
       const dt = Math.min((time - lastTime) / 1000, 0.05);
       lastTime = time;
       if (isPlaying) updatePhysics(dt);

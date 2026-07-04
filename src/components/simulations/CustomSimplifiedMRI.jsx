@@ -660,6 +660,10 @@ const CustomSimplifiedMRIInner = () => {
       }
     };
     const loop = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(loop);
+      return;
+    }
       const dt = Math.min((time - lastTime) / 1000.0, 0.1); // Cap delta to prevent Euler explosion
       lastTime = time;
       const state = simStateRef.current;
@@ -1586,8 +1590,15 @@ const CustomSimplifiedMRIInner = () => {
 };
 export default function CustomSimplifiedMRI({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   return <div style={{
     width: '100%',
     height: '100%',

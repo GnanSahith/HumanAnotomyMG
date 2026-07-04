@@ -54,6 +54,10 @@ export default function CustomConcentration({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
   const [canvasSize, setCanvasSize] = useState({ width: 800, height: 600 });
   const [volume, setVolume] = useState(0.5); // Liters, max 1.0, min 0.0
   const [moles, setMoles] = useState(0.0); // Moles of solute
@@ -159,6 +163,10 @@ export default function CustomConcentration({
     };
     let animationId;
     const animate = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(animate);
+      return;
+    }
       draw();
       animationId = requestAnimationFrame(animate);
     };

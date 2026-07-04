@@ -5,6 +5,10 @@ export default function GenericSim({ onBack, title, isPlaying: globalIsPlaying, 
     const [localIsPlaying, setLocalIsPlaying] = useState(false);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
     const [param1, setParam1] = useState(50);
     const [param2, setParam2] = useState(50);
     const [param3, setParam3] = useState(50);
@@ -18,6 +22,10 @@ export default function GenericSim({ onBack, title, isPlaying: globalIsPlaying, 
         const ctx = canvas.getContext('2d');
         
         const animate = () => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(animate);
+      return;
+    }
             if (isPlaying) {
                 stateRef.current.time += 0.05;
             }

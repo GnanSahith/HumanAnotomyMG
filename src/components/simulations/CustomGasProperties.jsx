@@ -7,6 +7,10 @@ export default function CustomGasProperties({
   const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
 
   // Core Parameters
   const [temperature, setTemperature] = useState(300); // K
@@ -85,6 +89,10 @@ export default function CustomGasProperties({
     scaleVelocitiesToTemperature(particlesRef.current, temperature);
   }, [temperature]);
   const updatePhysics = time => {
+    if (!isPlayingRef.current) {
+      requestAnimationFrame(updatePhysics);
+      return;
+    }
     if (!isPlaying) {
       lastTimeRef.current = time;
       requestRef.current = requestAnimationFrame(updatePhysics);

@@ -5,6 +5,10 @@ export default function CustomSoundWaves({ onBack, title, isPlaying: globalIsPla
     const [localIsPlaying, setLocalIsPlaying] = useState(true);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
     
     // Core Parameters
     const [frequency, setFrequency] = useState(5);
@@ -63,6 +67,11 @@ export default function CustomSoundWaves({ onBack, title, isPlaying: globalIsPla
     };
 
     const updatePhysics = () => {
+    if (!isPlayingRef.current) {
+      if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
+      requestRef.current = requestAnimationFrame(updatePhysics);
+      return;
+    }
         if (!isPlaying) {
             requestRef.current = requestAnimationFrame(updatePhysics);
             return;

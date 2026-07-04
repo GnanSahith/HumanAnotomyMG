@@ -6,6 +6,10 @@ export default function CustomMassesAndSprings({ onBack, title, isPlaying: globa
     const [localIsPlaying, setLocalIsPlaying] = useState(false);
     const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
     const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
+  const isPlayingRef = useRef(isPlaying);
+  useEffect(() => {
+    isPlayingRef.current = isPlaying;
+  }, [isPlaying]);
     
     // Core Physics Parameters
     const [gravity, setGravity] = useState(9.81); // m/s^2
@@ -205,6 +209,11 @@ export default function CustomMassesAndSprings({ onBack, title, isPlaying: globa
     }, [springs, gravity]);
 
     const updatePhysics = (time) => {
+    if (!isPlayingRef.current) {
+      if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = time;
+      requestRef.current = requestAnimationFrame(updatePhysics);
+      return;
+    }
         if (!lastTimeRef.current) {
             lastTimeRef.current = time;
             requestRef.current = requestAnimationFrame(updatePhysics);
