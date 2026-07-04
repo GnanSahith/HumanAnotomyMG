@@ -498,53 +498,6 @@ function CustomNormalModesInner({
     fontFamily: "'Inter', sans-serif",
     color: '#fff'
   }}>
-          {/* Top Header Bar */}
-          <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 100
-    }}>
-            {onBack ? <button onClick={onBack} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-      }}>
-                <ArrowLeft className="h-4 w-4" /> Back
-              </button> : <div />}
-            <h1 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0
-      }}>
-              {title || 'Normal Modes & Coupled Oscillators'}
-            </h1>
-            <div style={{
-        width: '100px'
-      }} />
-          </div>
-
           {/* Canvas / Main View */}
           <div style={{
       position: 'absolute',
@@ -659,7 +612,7 @@ function CustomNormalModesInner({
           {/* Floating Analysis Panels (Left overlay) */}
           {(showFrequencies || showPhaseWheels || showIndividual) && <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       left: '20px',
       width: '300px',
       background: 'rgba(20, 20, 30, 0.8)',
@@ -881,7 +834,7 @@ function CustomNormalModesInner({
           {/* Control Panels (floating/overlay Right) */}
           <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       width: '300px',
       background: 'rgba(20, 20, 30, 0.8)',
@@ -1012,7 +965,7 @@ function CustomNormalModesInner({
         }}>Damping</span>
               <div style={{
           display: 'flex',
-          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
           borderRadius: '8px',
           padding: '4px'
         }}>
@@ -1048,7 +1001,7 @@ function CustomNormalModesInner({
         }}>Tension</span>
               <div style={{
           display: 'flex',
-          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
           borderRadius: '8px',
           padding: '4px'
         }}>

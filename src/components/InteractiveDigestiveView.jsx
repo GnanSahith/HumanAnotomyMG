@@ -275,7 +275,7 @@ export default function InteractiveDigestiveView({ onBack }) {
                                     />
                                 </Center>
                             </Bounds>
-                            <Environment preset="city" />
+                            {/* Environment removed */}
                         </Suspense>
 
                         {/* Disabled while organ is being dragged so the orbit

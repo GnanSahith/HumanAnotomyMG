@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
+import { useLanguage } from '../LanguageContext';
 import { 
     ArrowLeft, Combine, Shapes, Type, Gamepad2, Grid as GridIcon, Scaling, 
     Hexagon, FlipHorizontal, Triangle, Copy, Ruler, RefreshCw, Box, MoveDiagonal,
     Activity, Hash, Calculator, Dices, Layers, PlayCircle, Lock,
-    ChevronRight, BookOpen, Zap, CheckCircle, XCircle, Trophy, Info
+    ChevronRight, BookOpen, Zap, CheckCircle, XCircle, Trophy, Info, Sigma
 } from 'lucide-react';
 import { mathCurriculum } from '../data/mathCurriculum';
 import mathSimulations from '../data/mathSimulations.json';

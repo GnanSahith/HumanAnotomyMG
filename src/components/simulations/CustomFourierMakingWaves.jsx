@@ -95,18 +95,7 @@ function CustomFourierMakingWavesInner({
   return (
     <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', background: '#0a0a1a', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
         
-        {/* 1. Transparent Header (NO BACK BUTTONS, NO TITLES) */}
-        {/* Move Play/Pause and Reset buttons here, floated to the right */}
-        <div style={{ padding: '16px 24px', display: 'flex', justifyContent: 'flex-end', alignItems: 'center', background: 'transparent', zIndex: 10 }}>
-            <div style={{ display: 'flex', gap: '12px' }}>
-                <button onClick={() => setPlaying(!playing)} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', color: '#fff', cursor: 'pointer', fontWeight: 600 }}>
-                    {playing ? <Pause size={18} /> : <Play size={18} />} {playing ? 'Pause' : 'Play'}
-                </button>
-                <button onClick={resetSimulation} style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '20px', color: '#fff', cursor: 'pointer', fontWeight: 600 }}>
-                    <RotateCcw size={18} /> Reset
-                </button>
-            </div>
-        </div>
+        
         
         {/* 2. Full Bleed Canvas Container */}
         <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }} ref={containerRef}>

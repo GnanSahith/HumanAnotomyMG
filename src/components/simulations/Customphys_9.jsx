@@ -6,7 +6,9 @@ const Customphys_9Inner = () => {
   const engineRef = useRef(null);
   const renderRef = useRef(null);
   const runnerRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [mass1, setMass1] = useState(1);
   const [vel1, setVel1] = useState(5);
   const [mass2, setMass2] = useState(1);
@@ -203,7 +205,7 @@ const Customphys_9Inner = () => {
       {/* Floating Left Panel: Live Physics Telemetry */}
       <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       left: '20px',
       width: '280px',
       background: 'rgba(20, 20, 30, 0.8)',
@@ -343,215 +345,12 @@ const Customphys_9Inner = () => {
       </div>
 
       {/* Floating Right Panel: Settings & Simulation Controls */}
-      <div style={{
-      position: 'absolute',
-      top: '90px',
-      right: '20px',
-      width: '320px',
-      maxHeight: 'calc(100% - 110px)',
-      overflowY: 'auto',
-      background: 'rgba(20, 20, 30, 0.8)',
-      border: '1px solid rgba(255, 255, 255, 0.1)',
-      backdropFilter: 'blur(12px)',
-      padding: '20px',
-      borderRadius: '16px',
-      zIndex: 10,
-      color: 'white',
-      fontFamily: "'Inter', sans-serif",
-      display: 'flex',
-      flexDirection: 'column',
-      gap: '16px',
-      pointerEvents: 'auto'
-    }}>
-        <h3 style={{
-        fontSize: '16px',
-        fontWeight: '600',
-        borderBottom: '1px solid rgba(255,255,255,0.1)',
-        paddingBottom: '8px',
-        margin: 0
-      }}>
-          Simulation Controls
-        </h3>
-
-        {/* Object 1 Config */}
-        <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '8px'
-      }}>
-          <span style={{
-          fontSize: '11px',
-          color: '#ff4444',
-          fontWeight: '600',
-          letterSpacing: '0.05em'
-        }}>OBJECT 1 CONFIG</span>
-          
-          <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '2px'
-        }}>
-            <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            fontSize: '12px'
-          }}>
-              <span>Mass:</span>
-              <span style={{
-              fontWeight: '600'
-            }}>{mass1} kg</span>
-            </div>
-            <input type="range" min="0.5" max="5" step="0.5" value={mass1} onChange={e => setMass1(Number(e.target.value))} disabled={isPlaying} style={{
-            accentColor: '#ff4444',
-            cursor: isPlaying ? 'not-allowed' : 'pointer'
-          }} />
-          </div>
-
-          <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '2px'
-        }}>
-            <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            fontSize: '12px'
-          }}>
-              <span>Velocity:</span>
-              <span style={{
-              fontWeight: '600'
-            }}>{vel1} m/s</span>
-            </div>
-            <input type="range" min="-10" max="10" step="1" value={vel1} onChange={e => setVel1(Number(e.target.value))} disabled={isPlaying} style={{
-            accentColor: '#ff4444',
-            cursor: isPlaying ? 'not-allowed' : 'pointer'
-          }} />
-          </div>
-        </div>
-
-        {/* Object 2 Config */}
-        <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '8px',
-        borderTop: '1px solid rgba(255,255,255,0.05)',
-        paddingTop: '10px'
-      }}>
-          <span style={{
-          fontSize: '11px',
-          color: '#3b82f6',
-          fontWeight: '600',
-          letterSpacing: '0.05em'
-        }}>OBJECT 2 CONFIG</span>
-          
-          <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '2px'
-        }}>
-            <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            fontSize: '12px'
-          }}>
-              <span>Mass:</span>
-              <span style={{
-              fontWeight: '600'
-            }}>{mass2} kg</span>
-            </div>
-            <input type="range" min="0.5" max="5" step="0.5" value={mass2} onChange={e => setMass2(Number(e.target.value))} disabled={isPlaying} style={{
-            accentColor: '#3b82f6',
-            cursor: isPlaying ? 'not-allowed' : 'pointer'
-          }} />
-          </div>
-
-          <div style={{
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '2px'
-        }}>
-            <div style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            fontSize: '12px'
-          }}>
-              <span>Velocity:</span>
-              <span style={{
-              fontWeight: '600'
-            }}>{vel2} m/s</span>
-            </div>
-            <input type="range" min="-10" max="10" step="1" value={vel2} onChange={e => setVel2(Number(e.target.value))} disabled={isPlaying} style={{
-            accentColor: '#3b82f6',
-            cursor: isPlaying ? 'not-allowed' : 'pointer'
-          }} />
-          </div>
-        </div>
-
-        {/* Elasticity Config */}
-        <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '6px',
-        borderTop: '1px solid rgba(255,255,255,0.05)',
-        paddingTop: '10px'
-      }}>
-          <div style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          fontSize: '12px'
-        }}>
-            <span style={{
-            color: '#cbd5e1'
-          }}>Elasticity (Restitution):</span>
-            <span style={{
-            fontWeight: '600'
-          }}>{elasticity}</span>
-          </div>
-          <input type="range" min="0" max="1" step="0.1" value={elasticity} onChange={e => setElasticity(Number(e.target.value))} disabled={isPlaying} style={{
-          accentColor: '#a855f7',
-          cursor: isPlaying ? 'not-allowed' : 'pointer'
-        }} />
-        </div>
-
-        {/* Play/Pause/Reset Action Buttons */}
-        <div style={{
-        display: 'grid',
-        gridTemplateColumns: '1fr 1fr',
-        gap: '8px',
-        borderTop: '1px solid rgba(255,255,255,0.05)',
-        paddingTop: '12px'
-      }}>
-          <button onClick={() => setIsPlaying(!isPlaying)} style={{
-          padding: '10px',
-          background: isPlaying ? 'rgba(245, 158, 11, 0.2)' : 'rgba(16, 185, 129, 0.2)',
-          border: isPlaying ? '1px solid rgba(245, 158, 11, 0.4)' : '1px solid rgba(16, 185, 129, 0.4)',
-          borderRadius: '8px',
-          color: isPlaying ? '#fbbf24' : '#10b981',
-          fontWeight: '600',
-          cursor: 'pointer',
-          transition: 'all 0.2s'
-        }}>
-            {isPlaying ? 'Pause' : 'Start'}
-          </button>
-          <button onClick={handleReset} style={{
-          padding: '10px',
-          background: 'rgba(255, 255, 255, 0.05)',
-          border: '1px solid rgba(255, 255, 255, 0.1)',
-          borderRadius: '8px',
-          color: '#fff',
-          fontWeight: '600',
-          cursor: 'pointer',
-          transition: 'all 0.2s'
-        }}>
-            Reset
-          </button>
-        </div>
-      </div>
+      
     </div>;
 };
 export default function Customphys_9({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
   return <div style={{
     width: '100%',
@@ -560,47 +359,7 @@ export default function Customphys_9({
     background: '#0a0a1a',
     overflow: 'hidden'
   }}>
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 100
-    }}>
-                {onBack ? <button onClick={onBack} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }}>
-                        ← Back
-                    </button> : <div />}
-                <h1 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0
-      }}>
-                    {title || "1D Collision Lab"}
-                </h1>
-                <div style={{
-        width: '100px'
-      }}></div>
-            </div>
+            
             <div style={{
       position: 'absolute',
       inset: 0,

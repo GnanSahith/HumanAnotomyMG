@@ -196,13 +196,15 @@ const PRESETS = [{
 }];
 function CustomCollisionLabInner({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
   // ==========================================
   // REACT STATE FOR UI CONTROLS
   // ==========================================
   const [activeTab, setActiveTab] = useState('setup');
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [mode, setMode] = useState('2d'); // '1d' or '2d'
   const [elasticity, setElasticity] = useState(1.0); // 0.0 to 1.0
 
@@ -1114,53 +1116,7 @@ function CustomCollisionLabInner({
   return <div className="w-full h-full flex flex-col text-slate-100 font-sans antialiased overflow-hidden" style={{
     height: '100%'
   }}>
-            {/* Header controls bar */}
-            <div style={{
-      height: '80px',
-      flexShrink: 0,
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '0 20px',
-      borderBottom: '1px solid rgba(255,255,255,0.05)',
-      zIndex: 10
-    }}>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-      }}>
-                    {onBack && <button onClick={onBack} className="glass-btn back-btn">
-                            <ArrowLeft size={16} /> Back
-                        </button>}
-                </div>
-                <div>
-                    <h2 style={{
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '24px',
-          fontWeight: '600',
-          margin: 0
-        }}>
-                        {title || 'Collision Lab MG'}
-                    </h2>
-                </div>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-                    <button onClick={togglePlay} className="glass-btn play-btn">
-                        {isPlaying ? <Pause size={18} /> : <Play size={18} />} {isPlaying ? 'Pause' : 'Play'}
-                    </button>
-                    <button onClick={handleReset} className="glass-btn reset-btn">
-                        <RotateCcw size={18} /> Reset
-                    </button>
-                </div>
-            </div>
+            
 
             {/* Main Interactive Screen */}
             <div style={{
@@ -1570,7 +1526,7 @@ function CustomCollisionLabInner({
               }}>
                                         {PRESETS.map((p, idx) => <button key={idx} onClick={() => loadPreset(p)} style={{
                   padding: '10px',
-                  background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+                  background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
                   color: '#fff',
                   border: '1px solid rgba(255,255,255,0.1)',
                   borderRadius: '8px',

@@ -2,10 +2,12 @@ import React, { useRef, useState, useEffect, useCallback } from 'react';
 import { Play, Pause, RotateCcw, ArrowLeft, Settings2 } from 'lucide-react';
 const CustomMicrowavesInner = ({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) => {
   const canvasRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [amplitude, setAmplitude] = useState(50);
   const [frequency, setFrequency] = useState(50);
   const [moleculeCount, setMoleculeCount] = useState(20);
@@ -201,71 +203,6 @@ const CustomMicrowavesInner = ({
     fontFamily: "'Inter', sans-serif",
     color: '#fff'
   }}>
-      {/* Top Header Bar */}
-      <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 100
-    }}>
-        {onBack ? <button onClick={onBack} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-      }}>
-            Back
-          </button> : <div />}
-        <h1 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0
-      }}>
-          {title || 'Microwaves & Water Molecules'}
-        </h1>
-        <button onClick={handleReset} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-      }}>
-          Reset
-        </button>
-      </div>
-
       {/* Canvas / Main View */}
       <div style={{
       position: 'absolute',
@@ -340,7 +277,7 @@ const CustomMicrowavesInner = ({
       {/* Floating Control Panel */}
       <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       width: '300px',
       background: 'rgba(20, 20, 30, 0.8)',

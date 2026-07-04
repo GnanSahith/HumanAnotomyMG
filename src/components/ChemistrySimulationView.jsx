@@ -3,6 +3,7 @@ import { ArrowLeft, FlaskConical, Lock, Eye, EyeOff } from 'lucide-react';
 import chemistrySimulations from '../data/chemistrySimulations.json';
 import { useLanguage } from '../LanguageContext';
 import SimulationLibraryLayout from './SimulationLibraryLayout';
+import SimulationHeader from './SimulationHeader';
 
 import CustomBalancingAct from './simulations/CustomBalancingAct';
 import CustomBalloonsandStaticElectricity from './simulations/CustomBalloonsandStaticElectricity';
@@ -32,6 +33,19 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick 
     const { t } = useLanguage();
     const [activeSimulation, setActiveSimulation] = useState(null);
     const [isLoadingSim, setIsLoadingSim] = useState(false);
+    const [simKey, setSimKey] = useState(0);
+    const [isPlaying, setIsPlaying] = useState(true);
+
+    const handleReset = () => {
+        setSimKey(k => k + 1);
+        setIsPlaying(true);
+    };
+    const handleTogglePlay = () => setIsPlaying(p => !p);
+    const handleBackToLibrary = () => {
+        setActiveSimulation(null);
+        setSimKey(0);
+        setIsPlaying(true);
+    };
 
 
 
@@ -154,68 +168,58 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick 
 
     return (
         <div className="maths-sim-container fade-in" style={{ paddingBottom: '0', flex: 1, minHeight: 0, overflowY: 'hidden', display: 'flex', flexDirection: 'column' }}>
-            <div style={{ padding: '0 24px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
-                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexShrink: 0 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                        <div style={{ padding: '8px', background: 'rgba(255,55,95,0.2)', borderRadius: '12px', border: '1px solid rgba(255,55,95,0.3)' }}>
-                            <FlaskConical size={24} color="#ff375f" />
-                        </div>
-                        <h2 style={{ fontSize: '24px', margin: 0, fontWeight: 600 }}>{activeSimulation.title}</h2>
-                    </div>
-                                        {loggedInUsername !== 'MGRoot01' && (
+            {/* ── Unified Simulation Header ── */}
+            <SimulationHeader
+                title={activeSimulation.title}
+                onBack={handleBackToLibrary}
+                isPlaying={isPlaying}
+                onTogglePlay={handleTogglePlay}
+                onReset={handleReset}
+                subject="chemistry"
+            />
+
+            <div style={{ padding: '0 16px 16px 16px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
+                {/* Admin-only approval toggle */}
+                {loggedInUsername !== 'MGRoot01' && (
+                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px', flexShrink: 0 }}>
                         <button
                             onClick={toggleApproval}
                             style={{
                                 display: 'flex', alignItems: 'center', gap: '8px',
                                 background: approvedSims.includes(activeSimulation.id) ? 'rgba(48,209,88,0.2)' : 'rgba(255,255,255,0.05)',
                                 border: approvedSims.includes(activeSimulation.id) ? '1px solid rgba(48,209,88,0.4)' : '1px solid rgba(255,255,255,0.1)',
-                                padding: '8px 16px', borderRadius: '100px',
+                                padding: '6px 14px', borderRadius: '100px',
                                 color: approvedSims.includes(activeSimulation.id) ? '#30d158' : 'rgba(255,255,255,0.7)',
-                                cursor: 'pointer', transition: 'all 0.2s', fontWeight: 500,
-                                marginRight: 'auto', marginLeft: '24px'
+                                cursor: 'pointer', transition: 'all 0.2s', fontWeight: 500, fontSize: '13px',
                             }}
                         >
-                            {approvedSims.includes(activeSimulation.id) ? <><Eye size={16} /> Approved for Showcase</> : <><EyeOff size={16} /> Hidden from Showcase</>}
+                            {approvedSims.includes(activeSimulation.id) ? <><Eye size={14} /> Approved for Showcase</> : <><EyeOff size={14} /> Hidden from Showcase</>}
                         </button>
-                    )}
-                    <button 
-                        onClick={() => setActiveSimulation(null)}
-                        style={{
-                            display: 'flex', alignItems: 'center', gap: '8px',
-                            background: 'rgba(255, 255, 255, 0.1)',
-                            border: '1px solid rgba(255, 255, 255, 0.2)',
-                            padding: '8px 16px', borderRadius: '100px',
-                            color: '#fff', cursor: 'pointer',
-                            transition: 'all 0.2s',
-                            fontWeight: 500
-                        }}
-                    >
-                        <ArrowLeft size={16} /> Back to Library
-                    </button>
-                </div>
-                
+                    </div>
+                )}
+
                 <div style={{ flex: 1, width: '100%', background: '#000', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-                        {activeSimulation.id === 'balancing-act_mg' ? <CustomBalancingAct onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'balloons-and-static-electricity_mg' ? <CustomBalloonsandStaticElectricity onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'blackbody-spectrum_mg' ? <CustomBlackbodySpectrum onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'coulombs-law_mg' ? <CustomCoulombsLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'acid-base-solutions_mg' ? <CustomAcidBaseSolutions onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'density_mg' ? <CustomDensity onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'balancing-chemical-equations_mg' ? <CustomBalancingChemicalEquations onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'build-an-atom_mg' ? <CustomBuildAnAtom onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'buoyancy_mg' ? <CustomBuoyancy onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'concentration_mg' ? <CustomConcentration onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'diffusion_mg' ? <CustomDiffusion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'energy-forms-and-changes_mg' ? <CustomEnergyFormsandChanges onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'fourier-making-waves_mg' ? <CustomFourierMakingWaves onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'gas-properties_mg' ? <CustomGasProperties onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'atomic-interactions_mg' ? <CustomAtomicInteractions onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'beers-law-lab_mg' ? <CustomBeersLawLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'build-a-molecule_mg' ? <CustomBuildAMolecule onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'build-a-nucleus_mg' ? <CustomBuildANucleus onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'buoyancy-basics_mg' ? <CustomBuoyancyBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
-                        activeSimulation.id === 'gases-intro_mg' ? <CustomGasesIntro onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> :
+                        {activeSimulation.id === 'balancing-act_mg' ? <CustomBalancingAct key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'balloons-and-static-electricity_mg' ? <CustomBalloonsandStaticElectricity key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'blackbody-spectrum_mg' ? <CustomBlackbodySpectrum key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'coulombs-law_mg' ? <CustomCoulombsLaw key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'acid-base-solutions_mg' ? <CustomAcidBaseSolutions key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'density_mg' ? <CustomDensity key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'balancing-chemical-equations_mg' ? <CustomBalancingChemicalEquations key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'build-an-atom_mg' ? <CustomBuildAnAtom key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'buoyancy_mg' ? <CustomBuoyancy key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'concentration_mg' ? <CustomConcentration key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'diffusion_mg' ? <CustomDiffusion key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'energy-forms-and-changes_mg' ? <CustomEnergyFormsandChanges key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'fourier-making-waves_mg' ? <CustomFourierMakingWaves key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'gas-properties_mg' ? <CustomGasProperties key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'atomic-interactions_mg' ? <CustomAtomicInteractions key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'beers-law-lab_mg' ? <CustomBeersLawLab key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'build-a-molecule_mg' ? <CustomBuildAMolecule key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'build-a-nucleus_mg' ? <CustomBuildANucleus key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'buoyancy-basics_mg' ? <CustomBuoyancyBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        activeSimulation.id === 'gases-intro_mg' ? <CustomGasesIntro key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
                         <>
                             <iframe src={activeSimulation.url} width="100%" height="100%" style={{ border: 'none' }} allowFullScreen title={activeSimulation.title}></iframe>
                             <div style={{ position: 'absolute', bottom: 0, right: 0, width: '160px', height: '45px', background: '#000', zIndex: 10 }}></div>

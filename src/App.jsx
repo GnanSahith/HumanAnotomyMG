@@ -311,8 +311,8 @@ function App() {
             >
               {activeOrgan && (
                 <>
-                  <ModelViewer activeOrgan={activeOrgan} />
-                  <DetailsView activeOrgan={activeOrgan} />
+                  <ModelViewer activeOrgan={activeOrgan} activeSystem={activeSystem} />
+                  <DetailsView activeOrgan={activeOrgan} activeSystem={activeSystem} />
                 </>
               )}
             </SystemView>

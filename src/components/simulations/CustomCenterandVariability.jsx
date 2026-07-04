@@ -1171,47 +1171,7 @@ export default function CustomCenterandVariability({
             `}</style>
 
             {/* Standardized Header */}
-            <div style={{
-      height: '80px',
-      flexShrink: 0,
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '0 20px',
-      borderBottom: '1px solid rgba(255,255,255,0.05)',
-      zIndex: 10
-    }}>
-                 <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-      }}>
-                     {onBack && <button onClick={onBack} className="glass-btn">
-                             <ArrowLeft size={16} /> Back
-                         </button>}
-                 </div>
-                 <div>
-                     <h2 style={{
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '24px',
-          fontWeight: '600',
-          margin: 0
-        }}>
-                         {title || 'Center and Variability MG'}
-                     </h2>
-                 </div>
-                 <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-                     {/* Placeholder for flex alignment. Inner component has reset button? Let's check inner component. */}
-                 </div>
-            </div>
+            
 
             <div style={{
       flex: 1,

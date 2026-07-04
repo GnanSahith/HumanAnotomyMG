@@ -51,7 +51,9 @@ export default function CustomConcentration({
   // State
   const [solute, setSolute] = useState('DrinkMix');
   const [soluteForm, setSoluteForm] = useState('solid'); // 'solid' or 'liquid'
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [canvasSize, setCanvasSize] = useState({ width: 800, height: 600 });
   const [volume, setVolume] = useState(0.5); // Liters, max 1.0, min 0.0
   const [moles, setMoles] = useState(0.0); // Moles of solute

@@ -2076,7 +2076,7 @@ export default function CustomCircuitConstructionKitDC({
       {/* Control Sidebar (Floating Aside Panel) */}
       <aside style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       width: '320px',
       maxHeight: 'calc(100% - 110px)',

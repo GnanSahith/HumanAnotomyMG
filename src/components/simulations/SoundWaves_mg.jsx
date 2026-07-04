@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, Activity, ArrowLeft, Volume2, Radio } from 'lucide-react';
 
-export default function CustomSoundWaves({ onBack, title }) {
-    const [isPlaying, setIsPlaying] = useState(true);
+export default function CustomSoundWaves({ onBack, title, isPlaying: globalIsPlaying, syncPlayState }) {
+    const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
     
     // Core Parameters
     const [frequency, setFrequency] = useState(5);
@@ -103,26 +105,7 @@ export default function CustomSoundWaves({ onBack, title }) {
                 background: 'rgba(255,255,255,0.02)'
             }}>
                 {/* Left Side: Back Button */}
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start' }}>
-                    {onBack && (
-                        <button 
-                            onClick={onBack}
-                            style={{
-                                display: 'flex', alignItems: 'center', gap: '8px',
-                                background: 'rgba(255, 255, 255, 0.1)',
-                                border: '1px solid rgba(255, 255, 255, 0.2)',
-                                padding: '8px 16px', borderRadius: '100px',
-                                color: '#fff', cursor: 'pointer',
-                                transition: 'all 0.2s',
-                                fontWeight: 500
-                            }}
-                            onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)'; e.currentTarget.style.borderColor = '#ff375f'; }}
-                            onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
-                        >
-                            <ArrowLeft size={16} /> Back to Library
-                        </button>
-                    )}
-                </div>
+                
 
                 {/* Center: Title & Icon */}
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '16px' }}>

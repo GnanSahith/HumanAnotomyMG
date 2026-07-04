@@ -39,7 +39,9 @@ export default function CustomBuildAMolecule() {
     width: 800,
     height: 600
   });
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [atoms, setAtoms] = useState([]);
   const [targetMolecules, setTargetMolecules] = useState([{
     name: 'Water (H2O)',

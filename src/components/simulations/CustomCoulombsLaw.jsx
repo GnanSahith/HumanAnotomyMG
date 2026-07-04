@@ -123,7 +123,7 @@ const CustomCoulombsLawInner = () => {
       {/* Floating Control Panel */}
       <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       width: '320px',
       background: 'rgba(20, 20, 30, 0.8)',
@@ -339,42 +339,7 @@ export default function CustomCoulombsLaw({
     overflow: 'hidden'
   }}>
             
-            <div style={{
-      height: '80px',
-      flexShrink: 0,
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '0 20px',
-      borderBottom: '1px solid rgba(255,255,255,0.05)',
-      zIndex: 10
-    }}>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-      }}>                                    </div>
-                <div>
-                    <h1 style={{
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '24px',
-          fontWeight: '600',
-          margin: 0
-        }}>
-                        {title || "Coulomb's Law"}
-                    </h1>
-                </div>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-                </div>
-            </div>
+            
             <div style={{
       flex: 1,
       position: 'relative',

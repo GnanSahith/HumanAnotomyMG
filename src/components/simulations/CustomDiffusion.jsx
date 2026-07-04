@@ -2,12 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, ArrowLeft, Target, Timer } from 'lucide-react';
 export default function CustomDiffusion({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
   const canvasRef = useRef(null);
   const requestRef = useRef(null);
   const particlesRef = useRef([]);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [dividerRemoved, setDividerRemoved] = useState(false);
   const [showCenterOfMass, setShowCenterOfMass] = useState(false);
   const [showData, setShowData] = useState(true);
@@ -359,48 +361,7 @@ export default function CustomDiffusion({
     fontFamily: 'system-ui, -apple-system, sans-serif'
   }}>
         
-        {/* 1. Transparent Header (NO BACK BUTTONS, NO TITLES) */}
-        {/* Move Play/Pause and Reset buttons here, floated to the right */}
-        <div style={{
-      padding: '16px 24px',
-      display: 'flex',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-      background: 'transparent',
-      zIndex: 10
-    }}>
-            <div style={{
-        display: 'flex',
-        gap: '12px'
-      }}>
-                <button onClick={() => setIsPlaying(!isPlaying)}  style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          background: 'rgba(255, 255, 255, 0.05)',
-          border: '1px solid rgba(255, 255, 255, 0.1)',
-          borderRadius: '20px',
-          color: isPlaying ? '#ff375f' : '#2ecc71',
-          cursor: 'pointer'
-        }}>
-                    {isPlaying ? <Pause size={18} /> : <Play size={18} />} {isPlaying ? 'Pause' : 'Play'}
-                </button>
-                <button onClick={initParticles}  style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          background: 'rgba(255, 255, 255, 0.05)',
-          border: '1px solid rgba(255, 255, 255, 0.1)',
-          borderRadius: '20px',
-          color: '#fff',
-          cursor: 'pointer'
-        }}>
-                    <RotateCcw size={18} /> Reset
-                </button>
-            </div>
-        </div>
+        
         
         {/* 2. Full Bleed Canvas Container */}
         <div style={{

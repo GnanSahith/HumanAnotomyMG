@@ -65,7 +65,9 @@ const CustomBuoyancy = ({
     width: 800,
     height: 600
   });
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const containerRef = useRef(null);
   useEffect(() => {
     const observer = new ResizeObserver(entries => {

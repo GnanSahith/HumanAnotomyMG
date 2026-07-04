@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, Flame, Snowflake, Atom, ArrowLeft, Droplets, Wind, Box } from 'lucide-react';
 export default function CustomStatesOfMatter({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
 
   // Core Parameters
   const [substance, setSubstance] = useState('Neon');
@@ -289,122 +291,6 @@ export default function CustomStatesOfMatter({
     position: 'relative',
     background: '#0a0a1a'
   }}>
-            {/* Top Header Bar */}
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 10
-    }}>
-                {/* Back Button */}
-                {onBack ? <button onClick={onBack} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)';
-        e.currentTarget.style.borderColor = '#ff375f';
-        e.currentTarget.style.boxShadow = '0 0 15px rgba(255, 55, 95, 0.4)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-        e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-        e.currentTarget.style.boxShadow = 'none';
-      }}>
-                        <ArrowLeft size={16} /> Back
-                    </button> : <div />}
-
-                {/* Title */}
-                <h1 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0,
-        display: 'flex',
-        alignItems: 'center',
-        gap: '12px'
-      }}>
-                    <Atom size={28} color="#bf5af2" style={{
-          filter: 'drop-shadow(0 0 8px rgba(191,90,242,0.6))'
-        }} />
-                    {title || 'States of Matter'}
-                </h1>
-
-                {/* Play/Pause & Reset Controls */}
-                <div style={{
-        display: 'flex',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-                    <button onClick={() => setIsPlaying(!isPlaying)} style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          background: 'rgba(255, 255, 255, 0.1)',
-          border: '1px solid rgba(255, 255, 255, 0.2)',
-          backdropFilter: 'blur(10px)',
-          padding: '10px 20px',
-          borderRadius: '12px',
-          color: isPlaying ? '#ff375f' : '#2ecc71',
-          cursor: 'pointer',
-          transition: 'all 0.3s ease',
-          fontWeight: 600,
-          fontFamily: "'Inter', sans-serif"
-        }} onMouseEnter={e => {
-          e.currentTarget.style.background = isPlaying ? 'rgba(255, 55, 95, 0.2)' : 'rgba(46, 204, 113, 0.2)';
-          e.currentTarget.style.borderColor = isPlaying ? '#ff375f' : '#2ecc71';
-          e.currentTarget.style.boxShadow = isPlaying ? '0 0 15px rgba(255, 55, 95, 0.2)' : '0 0 15px rgba(46, 204, 113, 0.2)';
-        }} onMouseLeave={e => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-          e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-          e.currentTarget.style.boxShadow = 'none';
-        }}>
-                        {isPlaying ? <Pause size={18} /> : <Play size={18} />}
-                        {isPlaying ? 'Pause' : 'Play'}
-                    </button>
-                    <button onClick={() => initParticles(phase, substance, temperature)} style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          background: 'rgba(255, 255, 255, 0.1)',
-          border: '1px solid rgba(255, 255, 255, 0.2)',
-          backdropFilter: 'blur(10px)',
-          padding: '10px 20px',
-          borderRadius: '12px',
-          color: '#fff',
-          cursor: 'pointer',
-          transition: 'all 0.3s ease',
-          fontWeight: 600,
-          fontFamily: "'Inter', sans-serif"
-        }} onMouseEnter={e => {
-          e.currentTarget.style.background = 'rgba(52, 152, 219, 0.4)';
-          e.currentTarget.style.borderColor = '#3498db';
-          e.currentTarget.style.boxShadow = '0 0 15px rgba(52, 152, 219, 0.3)';
-        }} onMouseLeave={e => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-          e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-          e.currentTarget.style.boxShadow = 'none';
-        }}>
-                        <RotateCcw size={18} /> Reset
-                    </button>
-                </div>
-            </div>
-
             {/* Canvas / Main View */}
             <div style={{
       position: 'absolute',
@@ -440,7 +326,7 @@ export default function CustomStatesOfMatter({
           bottom: '0',
           height: '80%',
           width: '20px',
-          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
           borderRadius: '10px',
           display: 'flex',
           flexDirection: 'column',

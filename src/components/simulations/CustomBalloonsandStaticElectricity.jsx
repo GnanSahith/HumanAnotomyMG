@@ -750,39 +750,7 @@ export default function CustomBalloonsandStaticElectricity({
       
 
       {/* Standardized Header */}
-      <div style={{
-      height: '80px',
-      flexShrink: 0,
-      display: 'flex',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-      padding: '0 20px',
-      zIndex: 10
-    }}>
-         <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-      }}>                      </div>
-         <div>
-             
-         </div>
-         <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-             <button onClick={handleResetEverything} >
-                 <RotateCcw size={18} /> Reset All
-             </button>
-             <button onClick={() => setShowInfoModal(true)} >
-                 <Info size={18} /> Theory
-             </button>
-         </div>
-      </div>
+      
 
       <div style={{
       flex: 1,

@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Settings, Play, Pause, RotateCcw, Settings2, Flame, Snowflake, ArrowLeft, Wind, Maximize, Minimize } from 'lucide-react';
 export default function CustomGasProperties({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
 
   // Core Parameters
   const [temperature, setTemperature] = useState(300); // K
@@ -259,50 +261,7 @@ export default function CustomGasProperties({
     fontFamily: 'system-ui, -apple-system, sans-serif'
   }}>
         
-        {/* 1. Transparent Header (NO BACK BUTTONS, NO TITLES) */}
-        {/* Move Play/Pause and Reset buttons here, floated to the right */}
-        <div style={{
-      padding: '16px 24px',
-      display: 'flex',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-      background: 'transparent',
-      zIndex: 10
-    }}>
-            <div style={{
-        display: 'flex',
-        gap: '12px'
-      }}>
-                <button onClick={() => setIsPlaying(!isPlaying)} style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          background: 'rgba(255,255,255,0.05)',
-          border: '1px solid rgba(255,255,255,0.1)',
-          borderRadius: '20px',
-          color: isPlaying ? '#ff375f' : '#2ecc71',
-          cursor: 'pointer',
-          fontWeight: 600
-        }}>
-                    {isPlaying ? <Pause size={18} /> : <Play size={18} />} {isPlaying ? 'Pause' : 'Play'}
-                </button>
-                <button onClick={initParticles} style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          background: 'rgba(255,255,255,0.05)',
-          border: '1px solid rgba(255,255,255,0.1)',
-          borderRadius: '20px',
-          color: '#fff',
-          cursor: 'pointer',
-          fontWeight: 600
-        }}>
-                    <RotateCcw size={18} /> Reset
-                </button>
-            </div>
-        </div>
+        
         
         {/* 2. Full Bleed Canvas Container */}
         <div style={{

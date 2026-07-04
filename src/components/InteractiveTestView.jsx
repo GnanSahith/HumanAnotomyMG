@@ -217,7 +217,7 @@ export default function InteractiveTestView({ onBack }) {
                                     />
                                 </Center>
                             </Bounds>
-                            <Environment preset="city" />
+                            {/* Environment removed */}
                         </Suspense>
 
                         <OrbitControls makeDefault minPolarAngle={0} maxPolarAngle={Math.PI / 1.5} />

@@ -7,7 +7,7 @@ import { InteractiveSystemScene } from './InteractiveSystemScene';
 
 import InteractiveWrapper from './InteractiveWrapper';
 
-export default function ModelViewer({ activeOrgan }) {
+export default function ModelViewer({ activeOrgan, activeSystem }) {
     const [isLoading, setIsLoading] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
     const viewerRef = useRef(null);
@@ -43,16 +43,17 @@ export default function ModelViewer({ activeOrgan }) {
                             <div className="loading-pulse" />
                         </div>
                     )}
-                    {(activeOrgan.id.endsWith('_entire') || activeOrgan.modelSrc?.endsWith('.fbx')) ? (
+                    {(activeOrgan.id.endsWith('_entire') || activeOrgan.modelSrc?.endsWith('.fbx') || activeOrgan.modelSrc?.includes('Digestive_System_01.glb')) ? (
                         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
                             <Canvas
                                 camera={{ position: [0, 5, 20], fov: 45, near: 0.1, far: 1000 }}
                                 style={{ touchAction: 'none' }}
                                 gl={{ antialias: true, powerPreference: 'high-performance' }}
                             >
-                                <ambientLight intensity={0.6} />
-                                <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} />
-                                <pointLight position={[-10, -10, -10]} intensity={0.4} />
+                                <ambientLight intensity={1.2} />
+                                <directionalLight position={[5, 10, 15]} intensity={1.5} />
+                                <directionalLight position={[-5, 5, -15]} intensity={0.8} />
+                                <pointLight position={[0, -10, 0]} intensity={0.5} />
 
                                 <Suspense fallback={<Loader />}>
                                     <Bounds fit clip margin={1.2}>
@@ -62,10 +63,10 @@ export default function ModelViewer({ activeOrgan }) {
                                                 onSelectPart={(part) => console.log('Selected in Combined View:', part)}
                                                 setIsDragging={setIsDragging}
                                                 labelRef={labelRef}
+                                                activeSystem={activeSystem}
                                             />
                                         </Center>
                                     </Bounds>
-                                    <Environment preset="city" />
                                 </Suspense>
 
                                 <OrbitControls
@@ -99,8 +100,9 @@ export default function ModelViewer({ activeOrgan }) {
                                     animation: organLabelPulse 1.5s ease-in-out infinite;
                                     white-space: nowrap;
                                     text-shadow: 0 0 14px rgba(120,190,255,0.95), 0 1px 3px rgba(0,0,0,0.5);
-                                    z-index: 10;
+                                    z-index: 9999;
                                     margin-top: 0;
+                                    will-change: transform;
                                 }
                             `}</style>
                             <div ref={labelRef} className="organ-tracking-label" />

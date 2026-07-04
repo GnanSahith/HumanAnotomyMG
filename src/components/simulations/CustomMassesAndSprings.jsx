@@ -2,8 +2,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, Wind, Crosshair, ArrowLeft, Activity, Ruler, Timer, BarChart2 } from 'lucide-react';
 
-export default function CustomMassesAndSprings({ onBack, title }) {
-    const [isPlaying, setIsPlaying] = useState(false);
+export default function CustomMassesAndSprings({ onBack, title, isPlaying: globalIsPlaying, syncPlayState }) {
+    const [localIsPlaying, setLocalIsPlaying] = useState(false);
+    const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+    const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
     
     // Core Physics Parameters
     const [gravity, setGravity] = useState(9.81); // m/s^2
@@ -459,29 +461,7 @@ export default function CustomMassesAndSprings({ onBack, title }) {
                 }
             `}</style>
 
-            {/* Top Header Bar */}
-            <div style={{ height: '80px', flexShrink: 0, display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '0 20px', borderBottom: '1px solid rgba(255,255,255,0.05)', zIndex: 10 }}>
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-start', alignItems: 'center' }}>
-                    {onBack && (
-                        <button onClick={onBack} className="glass-btn back-btn">
-                            <ArrowLeft size={16} /> Back
-                        </button>
-                    )}
-                </div>
-                <div>
-                    <h2 style={{ color: 'white', fontFamily: "'Inter', sans-serif", fontSize: '24px', fontWeight: '600', margin: 0 }}>
-                        {title || 'Masses and Springs MG'}
-                    </h2>
-                </div>
-                <div style={{ flex: 1, display: 'flex', justifyContent: 'flex-end', gap: '12px', alignItems: 'center' }}>
-                    <button onClick={() => setIsPlaying(!isPlaying)} className="glass-btn play-btn">
-                        {isPlaying ? <Pause size={18} /> : <Play size={18} />} {isPlaying ? 'Pause' : 'Play'}
-                    </button>
-                    <button onClick={handleReset} className="glass-btn reset-btn">
-                        <RotateCcw size={18} /> Reset
-                    </button>
-                </div>
-            </div>
+            {/* Top Header Bar Removed */}
 
             {/* SVG Main View */}
             <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>

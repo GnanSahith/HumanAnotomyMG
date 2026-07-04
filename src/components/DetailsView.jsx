@@ -3,10 +3,10 @@ import { useLanguage } from '../LanguageContext';
 import { Zap, Trophy, XCircle, CheckCircle, Play } from 'lucide-react';
 import { systemsData } from '../data';
 
-const digestiveSystem = systemsData.find(s => s.id === 'digestive');
+
 const cleanName = (raw) => (raw || 'Organ').replace(/_01/g, '').replace(/_/g, ' ');
 
-export default function DetailsView({ activeOrgan }) {
+export default function DetailsView({ activeOrgan, activeSystem }) {
     const { t } = useLanguage();
 
     const [heldOrganMeshName, setHeldOrganMeshName] = useState(null);
@@ -60,23 +60,29 @@ export default function DetailsView({ activeOrgan }) {
         );
     }
 
-    const isFullSystem = activeOrgan.id === 'digestive_entire';
+    const isFullSystem = activeOrgan.id.endsWith('_entire');
 
     const handleStartQuiz = () => {
-        if (!window.digestiveValidMeshes || window.digestiveValidMeshes.length === 0) {
+        if (!window.activeValidMeshes || window.activeValidMeshes.length === 0) {
             alert("3D model is still loading. Please wait a moment!");
             return;
         }
 
-        const validMeshes = window.digestiveValidMeshes.filter(m => 
-            !m.includes('Boxes') && !m.includes('System') && !m.includes('Human Skeleton') && !m.includes('Skull') && !m.includes('Rotten Brain')
-        );
+        const validMeshes = window.activeValidMeshes.filter(m => {
+            if (m.includes('Boxes') || m.includes('System') || m.includes('Human Skeleton') || m.includes('Skull') || m.includes('Rotten Brain')) return false;
+            
+            // Only allow meshes that map to a known organ in our data
+            const mappedOrgan = activeSystem.organs.find(o => 
+                (o.modelSrc && o.modelSrc.includes(m)) || 
+                (o.name.en.toLowerCase() === cleanName(m).toLowerCase())
+            );
+            return !!mappedOrgan;
+        });
         
         let qs = [];
         for (let i = 0; i < 10; i++) {
             const targetMesh = validMeshes[Math.floor(Math.random() * validMeshes.length)];
-            const targetOrgan = digestiveSystem.organs.find(o => o.modelSrc && o.modelSrc.includes(targetMesh)) || 
-                                digestiveSystem.organs.find(o => o.name.en.toLowerCase() === cleanName(targetMesh).toLowerCase());
+            const targetOrgan = activeSystem.organs.find(o => (o.modelSrc && o.modelSrc.includes(targetMesh)) || o.name.en.toLowerCase() === cleanName(targetMesh).toLowerCase());
             
             const isFunctionality = Math.random() > 0.5 && targetOrgan?.description?.en;
             
@@ -91,10 +97,9 @@ export default function DetailsView({ activeOrgan }) {
             options.sort(() => Math.random() - 0.5);
             
             const formattedOptions = options.map(opt => {
-                const optOrgan = digestiveSystem.organs.find(o => o.modelSrc && o.modelSrc.includes(opt.mesh)) || 
-                                 digestiveSystem.organs.find(o => o.name.en.toLowerCase() === cleanName(opt.mesh).toLowerCase());
+                const optOrgan = activeSystem.organs.find(o => (o.modelSrc && o.modelSrc.includes(opt.mesh)) || o.name.en.toLowerCase() === cleanName(opt.mesh).toLowerCase());
                 
-                let label = cleanName(opt.mesh);
+                let label = optOrgan ? optOrgan.name.en : cleanName(opt.mesh);
                 if (isFunctionality && optOrgan && optOrgan.description && optOrgan.description.en) {
                     let desc = optOrgan.description.en.replace(/Scientific\s+Name:.*?Description:\s*/i, '').replace(/[-]+Page \(\d+\) Break[-]+/g, '').trim();
                     label = desc.length > 85 ? desc.substring(0, 85) + '...' : desc;
@@ -133,6 +138,17 @@ export default function DetailsView({ activeOrgan }) {
             setQuizState('results');
         }
     };
+
+    useEffect(() => {
+        if (quizState === 'active' || quizState === 'answered') {
+            const currentQ = quizQuestions[currentQuestionIdx];
+            if (currentQ && currentQ.targetMeshName) {
+                window.dispatchEvent(new CustomEvent('QUIZ_HIGHLIGHT_PART', { detail: currentQ.targetMeshName }));
+            }
+        } else {
+            window.dispatchEvent(new CustomEvent('QUIZ_HIGHLIGHT_PART', { detail: null }));
+        }
+    }, [quizState, currentQuestionIdx, quizQuestions]);
 
     // Render Quiz Interface when Active
     if (isFullSystem && quizState !== 'idle') {
@@ -216,7 +232,7 @@ export default function DetailsView({ activeOrgan }) {
 
     const getOrganDataByMeshName = (meshName) => {
         if (!meshName) return null;
-        let system = systemsData.find(s => activeOrgan && activeOrgan.id && s.id === activeOrgan.id.split('_')[0]) || digestiveSystem;
+        let system = systemsData.find(s => activeOrgan && activeOrgan.id && s.id === activeOrgan.id.split('_')[0]) || activeSystem;
         if (!system) return null;
         
         let targetOrgan = system.organs.find(o => o.modelSrc && o.modelSrc.includes(meshName)) || 

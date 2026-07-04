@@ -1034,7 +1034,7 @@ const CustomCapacitorLabBasicsInner = () => {
       {/* Floating Left Panel: Measurements */}
       <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       left: '20px',
       width: '280px',
       background: 'rgba(20, 20, 30, 0.8)',
@@ -1223,7 +1223,7 @@ const CustomCapacitorLabBasicsInner = () => {
           gap: '6px',
           padding: '8px 12px',
           borderRadius: '8px',
-          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
           border: '1px solid rgba(255,255,255,0.1)',
           color: '#fff',
           cursor: 'pointer',
@@ -1258,7 +1258,7 @@ const CustomCapacitorLabBasicsInner = () => {
       {/* Floating Right Panel: Settings */}
       <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       width: '320px',
       maxHeight: 'calc(100% - 120px)',
@@ -1627,47 +1627,7 @@ export default function CustomCapacitorLabBasics({
             `}</style>
 
             {/* Standardized Header */}
-            <div style={{
-      height: '80px',
-      flexShrink: 0,
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '0 20px',
-      borderBottom: '1px solid rgba(255,255,255,0.05)',
-      zIndex: 10
-    }}>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-      }}>
-                    {onBack && <button onClick={onBack} className="glass-btn">
-                            <ArrowLeft size={16} /> Back
-                        </button>}
-                </div>
-                <div>
-                    <h2 style={{
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '24px',
-          fontWeight: '600',
-          margin: 0
-        }}>
-                        {title || 'Capacitor Lab Basics'}
-                    </h2>
-                </div>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-                    {/* Inner handles actions */}
-                </div>
-            </div>
+            
 
             <div style={{
       flex: 1,

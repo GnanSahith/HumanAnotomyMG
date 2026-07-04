@@ -294,36 +294,7 @@ const CustomGasesIntro = ({
     fontFamily: 'system-ui, -apple-system, sans-serif'
   }}>
         
-        {/* 1. Transparent Header (NO BACK BUTTONS, NO TITLES) */}
-        {/* Move Play/Pause and Reset buttons here, floated to the right */}
-        <div style={{
-      padding: '16px 24px',
-      display: 'flex',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-      background: 'transparent',
-      zIndex: 10
-    }}>
-            <div style={{
-        display: 'flex',
-        gap: '12px'
-      }}>
-                <button onClick={reset} style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          background: 'rgba(255,255,255,0.05)',
-          border: '1px solid rgba(255,255,255,0.1)',
-          borderRadius: '20px',
-          color: '#fff',
-          cursor: 'pointer',
-          fontWeight: 600
-        }}>
-                    Reset
-                </button>
-            </div>
-        </div>
+        
         
         {/* 2. Full Bleed Canvas Container */}
         <div style={{

@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, ArrowLeft } from 'lucide-react';
 function CustomBlackbodySpectrumInner() {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [param1, setParam1] = useState(50);
   const [param2, setParam2] = useState(50);
   const [param3, setParam3] = useState(50);
@@ -136,7 +138,7 @@ function CustomBlackbodySpectrumInner() {
             {/* Control Panels (floating/overlay) */}
             <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       width: '300px',
       background: 'rgba(255,255,255,0.05)',

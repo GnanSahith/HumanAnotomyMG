@@ -992,9 +992,6 @@ function CustomEnergySkateParkBasicsInner({
     background: 'transparent',
     fontFamily: "'Inter', sans-serif"
   }}>
-      {/* Top Header Bar */}
-      
-
       {/* Main Workspace Layout */}
       <div style={{
       flex: 1,
@@ -1050,7 +1047,7 @@ function CustomEnergySkateParkBasicsInner({
         {/* Right Glassmorphic Control Panel */}
         <aside style={{
         position: 'absolute',
-        top: '90px',
+        top: '20px',
         right: '20px',
         width: '300px',
         maxHeight: 'calc(100% - 180px)',
@@ -1820,46 +1817,7 @@ export default function CustomEnergySkateParkBasics({
                 }
                 .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
             `}</style>
-            <div style={{
-      height: '80px',
-      flexShrink: 0,
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '0 20px',
-      borderBottom: '1px solid rgba(255,255,255,0.05)',
-      zIndex: 10
-    }}>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-      }}>
-                    {onBack && <button onClick={onBack} className="glass-btn">
-                            <ArrowLeft size={16} /> Back
-                        </button>}
-                </div>
-                <div>
-                    <h1 style={{
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '24px',
-          fontWeight: '600',
-          margin: 0
-        }}>
-                        {title || 'Energy Skate Park Basics MG'}
-                    </h1>
-                </div>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-                </div>
-            </div>
+            
             <div style={{
       flex: 1,
       position: 'relative',

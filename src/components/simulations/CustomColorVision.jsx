@@ -388,7 +388,7 @@ const drawHead = (ctx, x, y, perceivedRGB) => {
 
 function CustomColorVisionInner({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
   // --------------------------------------------------------------------------
   // REACT STATE (Controls, Modes, and Panel Displays)
@@ -409,7 +409,9 @@ function CustomColorVisionInner({
 
   // Display details
   const [beamDisplay, setBeamDisplay] = useState('particles'); // 'particles' | 'solid' | 'both'
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [showInfoModal, setShowInfoModal] = useState(false);
 
   // --------------------------------------------------------------------------
@@ -1112,87 +1114,7 @@ function CustomColorVisionInner({
   }} className="text-white font-sans selection:bg-purple-500/30">
       
       {/* Standardized Header */}
-      <div style={{
-      height: '80px',
-      flexShrink: 0,
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '0 20px',
-      borderBottom: '1px solid rgba(255,255,255,0.05)',
-      zIndex: 10
-    }}>
-          <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-      }}>
-              {onBack && <button onClick={onBack} style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          borderRadius: '20px',
-          background: 'rgba(255, 255, 255, 0.05)',
-          border: '1px solid rgba(255, 255, 255, 0.1)',
-          backdropFilter: 'blur(10px)',
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '14px',
-          fontWeight: '600',
-          cursor: 'pointer',
-          transition: 'all 0.2s ease'
-        }}>
-                      <ArrowLeft size={16} /> Back
-                  </button>}
-          </div>
-          <div>
-              <h2 style={{
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '24px',
-          fontWeight: '600',
-          margin: 0,
-          textShadow: '0 2px 10px rgba(0,0,0,0.5)'
-        }}>
-                  <span style={{
-            background: 'rgba(10, 10, 26, 0.7)',
-            padding: '8px 24px',
-            borderRadius: '100px',
-            border: '1px solid rgba(255,255,255,0.1)',
-            backdropFilter: 'blur(8px)'
-          }}>
-                      {title || 'Color Vision'}
-                  </span>
-              </h2>
-          </div>
-          <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-              <button onClick={() => setShowInfoModal(true)} style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          borderRadius: '20px',
-          background: 'rgba(52, 152, 219, 0.15)',
-          border: '1px solid rgba(52, 152, 219, 0.3)',
-          color: '#3498db',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '14px',
-          fontWeight: '600',
-          cursor: 'pointer',
-          transition: 'all 0.2s ease'
-        }}>
-                  <Info size={16} /> Info
-              </button>
-          </div>
-      </div>
+      
 
       {/* Canvas Viewport (Center) */}
       <div style={{
@@ -1288,7 +1210,7 @@ function CustomColorVisionInner({
       {/* Left Panel: Retinal Activations (LMS Cones) & perceived retina color & Trichromatic theory info */}
       <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       left: '20px',
       width: '300px',
       background: 'rgba(20, 20, 30, 0.8)',
@@ -1388,7 +1310,7 @@ function CustomColorVisionInner({
       {/* Right Panel: Controls & parameters */}
       <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       width: '300px',
       background: 'rgba(20, 20, 30, 0.8)',

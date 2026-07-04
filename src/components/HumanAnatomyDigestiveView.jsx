@@ -615,7 +615,7 @@ export default function HumanAnatomyDigestiveView({ onBack }) {
                                     />
                                 </Center>
                             </Bounds>
-                            <Environment preset="studio" />
+                            {/* Environment removed */}
                         </Suspense>
 
                         <OrbitControls

@@ -524,47 +524,7 @@ const CustomEnergySkatePark = ({
                 }
             `}</style>
 
-            {/* Top Header Bar */}
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 10
-    }}>
-                <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '20px'
-      }}>
-                    <button className="btn-back" onClick={onBack}>
-                        <ArrowLeft size={18} /> Back
-                    </button>
-                    <h2 style={{
-          margin: 0,
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '24px',
-          fontWeight: '600',
-          textShadow: '0 2px 10px rgba(0,0,0,0.5)'
-        }}>{title}</h2>
-                </div>
-                
-                <div style={{
-        display: 'flex',
-        gap: '10px'
-      }}>
-                    <button className="btn-play-pause" onClick={() => stateRef.current.isPlaying = !stateRef.current.isPlaying}>
-                        <Play size={20} />
-                    </button>
-                    <button className="btn-reset" onClick={handleReset}>
-                        <RotateCcw size={18} /> Reset
-                    </button>
-                </div>
-            </div>
+            
 
             {/* Canvas / Main View */}
             
@@ -662,7 +622,7 @@ const CustomEnergySkatePark = ({
               width: '100%',
               display: 'flex',
               alignItems: 'flex-end',
-              background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+              background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
               borderRadius: '4px'
             }}>
                                         <div ref={barsRef} style={{
@@ -771,7 +731,7 @@ const CustomEnergySkatePark = ({
           display: 'flex',
           flexDirection: 'column',
           gap: '12px',
-          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
           padding: '16px',
           borderRadius: '12px'
         }}>
@@ -818,7 +778,7 @@ const CustomEnergySkatePark = ({
           display: 'flex',
           flexDirection: 'column',
           gap: '24px',
-          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
           padding: '16px',
           borderRadius: '12px'
         }}>

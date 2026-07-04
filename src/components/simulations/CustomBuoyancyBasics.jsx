@@ -17,7 +17,9 @@ const CustomBuoyancyBasics = ({
   const [customBlockDensity, setCustomBlockDensity] = useState(1.0);
   const [customFluidDensity, setCustomFluidDensity] = useState(1.0);
   const [showForces, setShowForces] = useState(false);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [canvasSize, setCanvasSize] = useState({ width: 800, height: 600 });
 
   const resetSimulation = () => {

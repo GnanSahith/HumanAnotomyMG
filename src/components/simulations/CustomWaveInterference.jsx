@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, Activity, Droplets, Atom, ArrowLeft, Maximize2 } from 'lucide-react';
 export default function CustomWaveInterference({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
 
   // Parameters
   const [numSources, setNumSources] = useState(2);
@@ -121,147 +123,13 @@ export default function CustomWaveInterference({
     color: '#fff',
     fontFamily: "'Inter', sans-serif"
   }}>
-            {/* Header */}
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 10
-    }}>
-                {onBack && <button onClick={onBack} style={{
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        color: 'white',
-        padding: '8px 16px',
-        borderRadius: '8px',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        backdropFilter: 'blur(10px)',
-        transition: 'all 0.2s',
-        fontFamily: "'Inter', sans-serif",
-        fontWeight: '500'
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)';
-        e.currentTarget.style.borderColor = '#ff375f';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-        e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-      }}>
-                        <ArrowLeft size={16} /> Back to Library
-                    </button>}
-                
-                <h2 style={{
-        margin: 0,
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        display: 'flex',
-        alignItems: 'center',
-        gap: '12px'
-      }}>
-                    <div style={{
-          padding: '8px',
-          background: 'rgba(191,90,242,0.2)',
-          borderRadius: '12px',
-          border: '1px solid rgba(191,90,242,0.3)',
-          display: 'flex',
-          alignItems: 'center'
-        }}>
-                        <Activity size={24} color="#bf5af2" />
-                    </div>
-                    {title || 'Wave Interference MG'}
-                </h2>
-
-                <div style={{
-        display: 'flex',
-        gap: '10px'
-      }}>
-                    <button onClick={resetSim} style={{
-          background: 'rgba(255, 255, 255, 0.1)',
-          border: '1px solid rgba(255, 255, 255, 0.2)',
-          color: 'white',
-          padding: '8px 16px',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          backdropFilter: 'blur(10px)',
-          transition: 'all 0.2s',
-          fontFamily: "'Inter', sans-serif"
-        }} onMouseEnter={e => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-        }} onMouseLeave={e => {
-          e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-        }}>
-                        <RotateCcw size={16} /> Reset
-                    </button>
-                </div>
-            </div>
-
             {/* Left Control Panel: Playback Controls */}
-            <div style={{
-      position: 'absolute',
-      top: '90px',
-      left: '20px',
-      background: 'rgba(20, 20, 30, 0.8)',
-      border: '1px solid rgba(255,255,255,0.1)',
-      backdropFilter: 'blur(12px)',
-      padding: '20px',
-      borderRadius: '16px',
-      width: '240px',
-      zIndex: 10,
-      color: 'white',
-      fontFamily: "'Inter', sans-serif"
-    }}>
-                <h3 style={{
-        margin: '0 0 15px 0',
-        fontSize: '16px',
-        borderBottom: '1px solid rgba(255,255,255,0.1)',
-        paddingBottom: '10px',
-        color: '#fff',
-        fontWeight: '600'
-      }}>
-                    Controls
-                </h3>
-                <button onClick={() => setIsPlaying(!isPlaying)} style={{
-        background: isPlaying ? 'rgba(231, 76, 60, 0.2)' : 'rgba(46, 204, 113, 0.2)',
-        border: `1px solid ${isPlaying ? 'rgba(231, 76, 60, 0.4)' : 'rgba(46, 204, 113, 0.4)'}`,
-        color: isPlaying ? '#e74c3c' : '#2ecc71',
-        padding: '10px 16px',
-        borderRadius: '8px',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        gap: '8px',
-        width: '100%',
-        backdropFilter: 'blur(10px)',
-        transition: 'all 0.2s',
-        fontFamily: "'Inter', sans-serif",
-        fontWeight: '600'
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = isPlaying ? 'rgba(231, 76, 60, 0.4)' : 'rgba(46, 204, 113, 0.4)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = isPlaying ? 'rgba(231, 76, 60, 0.2)' : 'rgba(46, 204, 113, 0.2)';
-      }}>
-                    {isPlaying ? <Pause size={18} /> : <Play size={18} />}
-                    {isPlaying ? 'Pause' : 'Play'}
-                </button>
-            </div>
+            
 
             {/* Right Control Panel: Parameters */}
             <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       background: 'rgba(20, 20, 30, 0.8)',
       border: '1px solid rgba(255,255,255,0.1)',

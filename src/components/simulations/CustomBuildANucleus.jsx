@@ -72,7 +72,9 @@ export default function CustomBuildANucleus() {
     width: 600,
     height: 500
   });
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [protons, setProtons] = useState(0);
   const [neutrons, setNeutrons] = useState(0);
   const [particles, setParticles] = useState([]);

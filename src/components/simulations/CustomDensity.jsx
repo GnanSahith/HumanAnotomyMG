@@ -5,7 +5,7 @@ const WATER_DENSITY = 1.0; // kg/L
 
 export default function CustomDensity({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
   const [mass, setMass] = useState(5); // kg
   const [volume, setVolume] = useState(5); // L
@@ -13,7 +13,9 @@ export default function CustomDensity({
   const [activeFluid, setActiveFluid] = useState('water');
   const [customFluidDensity, setCustomFluidDensity] = useState(1.0);
   const [showForces, setShowForces] = useState(true);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [canvasSize, setCanvasSize] = useState({ width: 800, height: 600 });
 
   const canvasRef = useRef(null);

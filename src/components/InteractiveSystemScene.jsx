@@ -5,25 +5,25 @@ import { useGLTF, useFBX } from '@react-three/drei';
 
 const _projVec = new THREE.Vector3();
 
-export function InteractiveSystemScene({ modelSrc, onSelectPart, setIsDragging, labelRef }) {
+export function InteractiveSystemScene({ modelSrc, onSelectPart, setIsDragging, labelRef, activeSystem }) {
     if (modelSrc && modelSrc.endsWith('.fbx')) {
-        return <FBXLoaderWrapper modelSrc={modelSrc} onSelectPart={onSelectPart} setIsDragging={setIsDragging} labelRef={labelRef} />;
+        return <FBXLoaderWrapper modelSrc={modelSrc} onSelectPart={onSelectPart} setIsDragging={setIsDragging} labelRef={labelRef} activeSystem={activeSystem} />;
     }
-    return <GLTFLoaderWrapper modelSrc={modelSrc || 'https://res.cloudinary.com/dy1gyundx/raw/upload/v1777577834/Digestive_System_01.glb'} onSelectPart={onSelectPart} setIsDragging={setIsDragging} labelRef={labelRef} />;
+    return <GLTFLoaderWrapper modelSrc={modelSrc || 'https://res.cloudinary.com/dy1gyundx/raw/upload/v1777577834/Digestive_System_01.glb'} onSelectPart={onSelectPart} setIsDragging={setIsDragging} labelRef={labelRef} activeSystem={activeSystem} />;
 }
 
-function FBXLoaderWrapper({ modelSrc, onSelectPart, setIsDragging, labelRef }) {
+function FBXLoaderWrapper({ modelSrc, onSelectPart, setIsDragging, labelRef, activeSystem }) {
     const scene = useFBX(modelSrc);
-    return <InteractiveSceneCore scene={scene} onSelectPart={onSelectPart} setIsDragging={setIsDragging} labelRef={labelRef} />;
+    return <InteractiveSceneCore scene={scene} onSelectPart={onSelectPart} setIsDragging={setIsDragging} labelRef={labelRef} activeSystem={activeSystem} />;
 }
 
-function GLTFLoaderWrapper({ modelSrc, onSelectPart, setIsDragging, labelRef }) {
+function GLTFLoaderWrapper({ modelSrc, onSelectPart, setIsDragging, labelRef, activeSystem }) {
     const { scene } = useGLTF(modelSrc);
-    return <InteractiveSceneCore scene={scene} onSelectPart={onSelectPart} setIsDragging={setIsDragging} labelRef={labelRef} />;
+    return <InteractiveSceneCore scene={scene} onSelectPart={onSelectPart} setIsDragging={setIsDragging} labelRef={labelRef} activeSystem={activeSystem} />;
 }
 
-function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) {
-    const { camera, size } = useThree();
+function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, activeSystem }) {
+    const { camera, size, controls } = useThree();
 
     const ownScene = React.useMemo(() => {
         scene.updateMatrixWorld(true);
@@ -38,31 +38,25 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) 
                 geometry.boundingBox.getCenter(center);
                 geometry.translate(-center.x, -center.y, -center.z);
 
-                const getMat = (m, childName = '') => { 
-                    const n = childName.toLowerCase();
-                    let hexColor = 0xdddddd; // default neutral
-                    
-                    if (n.includes('heart') || n.includes('arter')) hexColor = 0xe63946; // Bright red
-                    else if (n.includes('vein')) hexColor = 0x457b9d; // Blue
-                    else if (n.includes('brain') || n.includes('nerv') || n.includes('lobe')) hexColor = 0xf1faee; // Soft neural
-                    else if (n.includes('lung') || n.includes('bronch') || n.includes('alveol')) hexColor = 0xffb5a7; // Soft lung pink
-                    else if (n.includes('diaphragm') || n.includes('muscle')) hexColor = 0xe07a5f; // Muscle red
-                    else if (n.includes('larynx') || n.includes('trachea')) hexColor = 0xa8dadc; // Cartilage light blue
-                    else if (n.includes('pharynx') || n.includes('nose') || n.includes('mouth')) hexColor = 0xffcad4; // Tissue pink
-                    else if (n.includes('thyroid')) hexColor = 0xf4a261; // Glandular
+                // Fix generic mesh names from the 3D model
+                let nodeName = child.name;
+                if (nodeName.toLowerCase() === 'mesh') {
+                    nodeName = 'Salivary_Glands';
+                }
 
-                    if (!m) return new THREE.MeshStandardMaterial({ color: hexColor, roughness: 0.85, metalness: 0.1 });
+                const getMat = (m, childName = '') => { 
+                    if (!m) return new THREE.MeshStandardMaterial({ color: 0xdddddd, roughness: 0.85, metalness: 0.1 });
                     
                     let c;
                     if (m.isMeshStandardMaterial) {
                         c = m.clone();
-                        // If color is pure white or missing, override it
-                        if (c.color.getHex() === 0xffffff || c.color.getHex() === 0x000000) {
-                            c.color.setHex(hexColor);
-                        }
                     } else {
+                        // Upgrade legacy/FBX materials to Standard for consistent PBR look
                         c = new THREE.MeshStandardMaterial({
-                            color: hexColor, // Force assigned color
+                            color: m.color ? m.color.clone() : new THREE.Color(0xffffff),
+                            map: m.map || null,
+                            normalMap: m.normalMap || null,
+                            emissiveMap: m.emissiveMap || null,
                             transparent: m.transparent || false,
                             opacity: m.opacity !== undefined ? m.opacity : 1,
                             side: m.side !== undefined ? m.side : THREE.FrontSide
@@ -71,31 +65,49 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) 
                     
                     c.roughness = 0.85; 
                     c.metalness = 0.1;
+                    
+                    // CRITICAL FBX FIXES to reveal original realistic textures:
+                    // 1. Disable vertex colors. FBX exporters frequently export empty vertex color arrays as pure black, tinting the whole model black.
+                    c.vertexColors = false; 
+                    
+                    // 2. Fix base color multiplication.
+                    if (c.map) {
+                        // If it has a texture map but the base color is black/very dark, it will tint the texture black!
+                        // We must reset the base color to white so the authentic texture shines through naturally.
+                        if (c.color && c.color.r < 0.1 && c.color.g < 0.1 && c.color.b < 0.1) {
+                            c.color.setHex(0xffffff);
+                        }
+                    } else if (c.color && c.color.r < 0.05 && c.color.g < 0.05 && c.color.b < 0.05) {
+                        // If it has NO texture map, and it is pitch black, it's a broken material export.
+                        // We set it to a neutral light color so we can at least see the geometry shading.
+                        c.color.setHex(0xdddddd);
+                    }
+                    
                     c.emissiveIntensity = 0; 
                     return c; 
                 };
 
                 let mat;
                 if (!child.material) {
-                    mat = getMat(null, child.name);
+                    mat = getMat(null, nodeName);
                 } else {
                     mat = Array.isArray(child.material) 
-                        ? child.material.map(m => getMat(m, child.name)) 
-                        : getMat(child.material, child.name);
+                        ? child.material.map(m => getMat(m, nodeName)) 
+                        : getMat(child.material, nodeName);
                 }
                 
                 const cleanMesh = new THREE.Mesh(geometry, mat);
                 cleanMesh.position.copy(center);
-                cleanMesh.name = child.name;
+                cleanMesh.name = nodeName;
                 cleanMesh.userData = { ...child.userData };
                 clone.add(cleanMesh);
             }
         });
         
-        // Expose valid meshes for the Quiz challenge
+        // Expose valid meshes for the Quiz challenge (universal)
         const validNames = [];
         clone.traverse(c => { if(c.isMesh) validNames.push(c.name); });
-        window.digestiveValidMeshes = validNames;
+        window.activeValidMeshes = validNames;
         
         return clone;
     }, [scene]);
@@ -126,9 +138,16 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) 
             const orig = Array.isArray(child.material)
                 ? child.material.map(m => m.clone())
                 : child.material.clone();
+            const createGlowMat = (m) => {
+                const c = m.clone();
+                c.emissive = new THREE.Color('#00e5ff');
+                // Use a moderate emissive intensity so it tints the texture rather than blowing it out to pure white
+                c.emissiveIntensity = 0.7; 
+                return c;
+            };
             const glow = Array.isArray(child.material)
-                ? child.material.map(m => { const c = m.clone(); c.emissive = new THREE.Color('#0a84ff'); c.emissiveIntensity = 0.6; return c; })
-                : (() => { const c = child.material.clone(); c.emissive = new THREE.Color('#0a84ff'); c.emissiveIntensity = 0.6; return c; })();
+                ? child.material.map(createGlowMat)
+                : createGlowMat(child.material);
             map.set(child.uuid, { orig, glow });
         });
         return map;
@@ -142,34 +161,126 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) 
 
     const hoveredRef  = useRef(null);
     const dragState   = useRef(null);
+    const quizHighlightRef = useRef(null);
+
+    useEffect(() => {
+        const handleQuizHighlight = (e) => {
+            const targetMeshName = e.detail;
+            if (!targetMeshName) {
+                if (quizHighlightRef.current) {
+                    if (quizHighlightRef.current !== hoveredRef.current && (!dragState.current || quizHighlightRef.current !== dragState.current.mesh)) {
+                        setGlow(quizHighlightRef.current, false);
+                    }
+                    quizHighlightRef.current = null;
+                }
+                return;
+            }
+            
+            ownScene.traverse(child => {
+                if (child.isMesh) {
+                    if (child.name === targetMeshName) {
+                        quizHighlightRef.current = child;
+                        setGlow(child, true);
+                    } else {
+                        if (child !== hoveredRef.current && (!dragState.current || child !== dragState.current.mesh)) {
+                            setGlow(child, false);
+                        }
+                    }
+                }
+            });
+        };
+
+        window.addEventListener('QUIZ_HIGHLIGHT_PART', handleQuizHighlight);
+        return () => window.removeEventListener('QUIZ_HIGHLIGHT_PART', handleQuizHighlight);
+    }, [ownScene, setGlow]);
     const downAt      = useRef({ x: 0, y: 0 });
     const targetWorld = useRef(new THREE.Vector3());
     const lerpWorld   = useRef(new THREE.Vector3());
 
-    useFrame(() => {
+    useFrame((state) => {
         const ds = dragState.current;
-        if (!ds) return;
+        let activeMesh = null;
 
-        lerpWorld.current.lerp(targetWorld.current, 0.2);
-        ds.mesh.position.copy(lerpWorld.current);
+        if (quizHighlightRef.current && !ds && controls) {
+            // Breathing glow effect
+            const time = state.clock.elapsedTime;
+            // sine wave mapped from 0.0 to 1.0
+            const pulse = (Math.sin(time * 3.0) + 1) / 2; 
+            
+            // Intensity pulses from 0.1 (almost no glow) to 0.4 (very subtle glow)
+            const intensity = 0.1 + (0.4 - 0.1) * pulse;
+            
+            // Keep color constant deep cyan, no white at all
+            const currentColor = new THREE.Color('#00e5ff');
+            
+            const updateMat = (m) => {
+                if (m.emissive) m.emissive.copy(currentColor);
+                if (m.emissiveIntensity !== undefined) m.emissiveIntensity = intensity;
+            };
 
-        if (labelRef?.current) {
-            _projVec.copy(lerpWorld.current).project(camera);
-            const x = (_projVec.x * 0.5 + 0.5) * size.width;
-            const y = (-(_projVec.y * 0.5) + 0.5) * size.height;
-            labelRef.current.style.display = 'block';
-            labelRef.current.style.transform = `translate(-50%, -150%) translate(${x}px, ${y}px)`;
-            labelRef.current.textContent = (ds.mesh.name || 'Unknown').replace(/_/g, ' ');
+            if (Array.isArray(quizHighlightRef.current.material)) {
+                quizHighlightRef.current.material.forEach(updateMat);
+            } else if (quizHighlightRef.current.material) {
+                updateMat(quizHighlightRef.current.material);
+            }
+
+            const center = new THREE.Vector3();
+            if (quizHighlightRef.current.geometry.boundingBox) {
+                quizHighlightRef.current.geometry.boundingBox.getCenter(center);
+            }
+            quizHighlightRef.current.localToWorld(center);
+            
+            // Slowly interpolate controls target to the organ center
+            controls.target.lerp(center, 0.03);
+            
+            // Slowly zoom in
+            const currentDist = camera.position.distanceTo(controls.target);
+            const targetDist = 12; // Desired zoom distance
+            if (currentDist > targetDist) {
+                const dir = new THREE.Vector3().subVectors(camera.position, controls.target).normalize();
+                const newPos = controls.target.clone().add(dir.multiplyScalar(Math.max(targetDist, currentDist - 0.1)));
+                camera.position.lerp(newPos, 0.05);
+            }
+            
+            // Enable auto rotation slowly
+            controls.autoRotate = true;
+            controls.autoRotateSpeed = 1.0;
+        } else if (controls) {
+            // Restore default when not highlighting
+            controls.autoRotate = false;
         }
 
-        if (ds.returning && ds.mesh.position.distanceTo(ds.originWorldPos) < 0.05) {
-            ds.mesh.position.copy(ds.originWorldPos);
-            ds.origParent.attach(ds.mesh);
-            setGlow(ds.mesh, false);
-            setIsDragging(false);
-            if (labelRef?.current) labelRef.current.style.display = 'none';
-            window.dispatchEvent(new CustomEvent('ORGAN_RELEASED'));
-            dragState.current = null;
+        if (ds) {
+            lerpWorld.current.lerp(targetWorld.current, 0.4);
+            ds.mesh.position.copy(lerpWorld.current);
+            ds.mesh.updateMatrixWorld(); // Fixes the 1-frame tracking lag
+            activeMesh = ds.mesh;
+
+            if (ds.returning && ds.mesh.position.distanceTo(ds.originWorldPos) < 0.05) {
+                ds.mesh.position.copy(ds.originWorldPos);
+                ds.mesh.updateMatrixWorld();
+                ds.origParent.attach(ds.mesh);
+                setGlow(ds.mesh, false);
+                setIsDragging(false);
+                window.dispatchEvent(new CustomEvent('ORGAN_RELEASED'));
+                dragState.current = null;
+                activeMesh = hoveredRef.current || null;
+            }
+        } else if (hoveredRef.current) {
+            activeMesh = hoveredRef.current;
+        }
+
+        if (labelRef?.current) {
+            if (activeMesh) {
+                _projVec.setFromMatrixPosition(activeMesh.matrixWorld).project(camera);
+                const x = (_projVec.x * 0.5 + 0.5) * size.width;
+                const y = (-(_projVec.y * 0.5) + 0.5) * size.height;
+                labelRef.current.style.display = 'block';
+                labelRef.current.style.transform = `translate(-50%, -150%) translate(${x}px, ${y}px)`;
+                labelRef.current.textContent = (activeMesh.name || 'Unknown').replace(/_/g, ' ');
+            } else {
+                labelRef.current.style.display = 'none';
+            }
         }
     });
 
@@ -185,7 +296,9 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef }) 
         e.stopPropagation();
         if (dragState.current) return;
         if (hoveredRef.current === e.object) {
-            setGlow(e.object, false);
+            if (quizHighlightRef.current !== e.object) {
+                setGlow(e.object, false);
+            }
             hoveredRef.current = null;
             document.body.style.cursor = 'auto';
         }

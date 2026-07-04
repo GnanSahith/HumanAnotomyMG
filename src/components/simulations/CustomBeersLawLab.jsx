@@ -93,7 +93,9 @@ const CustomBeersLawLab = () => {
     width: 800,
     height: 600
   });
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [laserOn, setLaserOn] = useState(false);
   const [mode, setMode] = useState('transmittance'); // 'absorbance' or 'transmittance'
   const [soluteKey, setSoluteKey] = useState('drink_mix');

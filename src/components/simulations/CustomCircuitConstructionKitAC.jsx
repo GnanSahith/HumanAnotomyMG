@@ -328,7 +328,7 @@ export default function CustomCircuitConstructionKitAC({
             {/* Control Panel */}
             <div style={{
         position: 'absolute',
-        top: '90px',
+        top: '20px',
         right: '20px',
         width: '340px',
         bottom: '20px',

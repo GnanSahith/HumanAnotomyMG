@@ -265,71 +265,6 @@ const CustomFaradaysLawInner = ({
     display: 'flex',
     flexDirection: 'column'
   }}>
-      {/* Top Header Bar */}
-      <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '340px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 100
-    }}>
-        {onBack ? <button onClick={onBack} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-      }}>
-            Back
-          </button> : <div />}
-        <h1 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0
-      }}>
-          {title || "Faraday's Law of Induction"}
-        </h1>
-        <button onClick={handleResetMagnet} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-      }}>
-          Reset Magnet
-        </button>
-      </div>
-
       {/* Canvas / Main View */}
       <div style={{
       flex: 1,
@@ -597,46 +532,7 @@ export default function CustomFaradaysLaw({
                 }
                 .glass-btn:hover { background: rgba(255, 255, 255, 0.1); transform: translateY(-1px); }
             `}</style>
-            <div style={{
-      height: '80px',
-      flexShrink: 0,
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      padding: '0 20px',
-      borderBottom: '1px solid rgba(255,255,255,0.05)',
-      zIndex: 10
-    }}>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center'
-      }}>
-                    {onBack && <button onClick={onBack} className="glass-btn">
-                            ← Back
-                        </button>}
-                </div>
-                <div>
-                    <h1 style={{
-          color: 'white',
-          fontFamily: "'Inter', sans-serif",
-          fontSize: '24px',
-          fontWeight: '600',
-          margin: 0
-        }}>
-                        {title || "Faraday's Law of Induction"}
-                    </h1>
-                </div>
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-                </div>
-            </div>
+            
             <div style={{
       flex: 1,
       position: 'relative',

@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, Atom, ArrowLeft } from 'lucide-react';
 export default function CustomPendulumLab({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
 
   // Physics Parameters
   const [length, setLength] = useState(100); // cm
@@ -127,57 +129,7 @@ export default function CustomPendulumLab({
                 }
             `}</style>
 
-            {/* Top Header Bar */}
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 10
-    }}>
-                {/* Left Side: Back Button */}
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-start'
-      }}>
-                    {onBack && <button onClick={onBack} className="btn-back-hover" style={backButtonStyle}>
-                            <ArrowLeft size={16} /> Back to Library
-                        </button>}
-                </div>
-
-                {/* Center: Title */}
-                <h2 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0
-      }}>
-                    {title || 'Pendulum Lab MG'}
-                </h2>
-
-                {/* Right Side: Action Buttons */}
-                <div style={{
-        flex: 1,
-        display: 'flex',
-        justifyContent: 'flex-end',
-        gap: '12px',
-        alignItems: 'center'
-      }}>
-                    <button onClick={() => setIsPlaying(!isPlaying)} className="btn-action-hover" style={actionButtonStyle}>
-                        {isPlaying ? <Pause size={18} /> : <Play size={18} />}
-                        {isPlaying ? 'Pause' : 'Play'}
-                    </button>
-                    <button onClick={handleReset} className="btn-action-hover" style={actionButtonStyle}>
-                        <RotateCcw size={18} /> Reset
-                    </button>
-                </div>
-            </div>
+            
 
             {/* Canvas / SVG Main View */}
             <div style={{

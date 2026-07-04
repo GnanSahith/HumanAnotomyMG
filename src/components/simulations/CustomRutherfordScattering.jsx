@@ -124,7 +124,7 @@ const PRESETS = {
 };
 function CustomRutherfordScatteringInner({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
   // --- STATE VARIABLES ---
   const [modelMode, setModelMode] = useState('rutherford'); // 'rutherford' or 'plumPudding'
@@ -143,7 +143,9 @@ function CustomRutherfordScatteringInner({
   const [persistentTracks, setPersistentTracks] = useState(true);
   const [showForces, setShowForces] = useState(false);
   const [simSpeed, setSimSpeed] = useState(1.0); // Speed modifier
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
 
   // Simulation data & stats
   const [scatteringAngles, setScatteringAngles] = useState([]);
@@ -975,7 +977,7 @@ function CustomRutherfordScatteringInner({
         {/* RIGHT COLUMN: Controls Sidebar */}
         <aside style={{
         position: 'absolute',
-        top: '90px',
+        top: '20px',
         right: '20px',
         width: '320px',
         maxHeight: 'calc(100% - 110px)',
@@ -1317,47 +1319,7 @@ export default function CustomRutherfordScattering({
     background: '#0a0a1a',
     overflow: 'hidden'
   }}>
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 100
-    }}>
-                {onBack ? <button onClick={onBack} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }}>
-                        ← Back
-                    </button> : <div />}
-                <h1 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0
-      }}>
-                    {title || 'Simulation'}
-                </h1>
-                <div style={{
-        width: '100px'
-      }}></div>
-            </div>
+            
             <div style={{
       position: 'absolute',
       inset: 0,

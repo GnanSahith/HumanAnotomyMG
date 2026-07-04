@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, PlayCircle, Atom, Search, X, Lock, Eye, EyeOff } from 'lucide-react';
+import SimulationHeader from './SimulationHeader';
 import physicsSimulations from '../data/physicsSimulations.json';
 import { useLanguage } from '../LanguageContext';
 import CustomPendulumLab from './simulations/CustomPendulumLab';
@@ -55,6 +56,19 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
     const { t } = useLanguage();
     const [activeSimulation, setActiveSimulation] = useState(null);
     const [isLoadingSim, setIsLoadingSim] = useState(false);
+    const [simKey, setSimKey] = useState(0);
+    const [isPlaying, setIsPlaying] = useState(true);
+
+    const handleReset = () => {
+        setSimKey(k => k + 1);
+        setIsPlaying(true);
+    };
+    const handleTogglePlay = () => setIsPlaying(p => !p);
+    const handleBackToLibrary = () => {
+        setActiveSimulation(null);
+        setSimKey(0);
+        setIsPlaying(true);
+    };
 
 
 
@@ -178,50 +192,36 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
 
     return (
         <div className="maths-sim-container fade-in" style={{ paddingBottom: '0', flex: 1, minHeight: 0, overflowY: 'hidden', display: 'flex', flexDirection: 'column' }}>
-            <div style={{ padding: '0 24px 24px 24px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
-                    {!activeSimulation.isNative && (
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px', flexShrink: 0 }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                                <div style={{ padding: '8px', background: 'rgba(191,90,242,0.2)', borderRadius: '12px', border: '1px solid rgba(191,90,242,0.3)' }}>
-                                    <Atom size={24} color="#bf5af2" />
-                                </div>
-                                <h2 style={{ fontSize: '24px', margin: 0, fontWeight: 600 }}>{activeSimulation.title}</h2>
-                            </div>
-                                                        {loggedInUsername !== 'MGRoot01' && (
-                                <button
-                                    onClick={toggleApproval}
-                                    style={{
-                                        display: 'flex', alignItems: 'center', gap: '8px',
-                                        background: approvedSims.includes(activeSimulation.id) ? 'rgba(48,209,88,0.2)' : 'rgba(255,255,255,0.05)',
-                                        border: approvedSims.includes(activeSimulation.id) ? '1px solid rgba(48,209,88,0.4)' : '1px solid rgba(255,255,255,0.1)',
-                                        padding: '8px 16px', borderRadius: '100px',
-                                        color: approvedSims.includes(activeSimulation.id) ? '#30d158' : 'rgba(255,255,255,0.7)',
-                                        cursor: 'pointer', transition: 'all 0.2s', fontWeight: 500,
-                                        marginRight: 'auto', marginLeft: '24px'
-                                    }}
-                                >
-                                    {approvedSims.includes(activeSimulation.id) ? <><Eye size={16} /> Approved for Showcase</> : <><EyeOff size={16} /> Hidden from Showcase</>}
-                                </button>
-                            )}
-                            <button 
-                                onClick={() => setActiveSimulation(null)}
+            {/* ── Unified Simulation Header ── */}
+            <SimulationHeader
+                title={activeSimulation.title}
+                onBack={handleBackToLibrary}
+                isPlaying={isPlaying}
+                onTogglePlay={handleTogglePlay}
+                onReset={handleReset}
+                subject="physics"
+            />
+
+            <div style={{ padding: '0 16px 16px 16px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
+                    {/* Admin-only approval toggle */}
+                    {!activeSimulation.isNative && loggedInUsername !== 'MGRoot01' && (
+                        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px', flexShrink: 0 }}>
+                            <button
+                                onClick={toggleApproval}
                                 style={{
                                     display: 'flex', alignItems: 'center', gap: '8px',
-                                    background: 'rgba(255, 255, 255, 0.1)',
-                                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                                    padding: '8px 16px', borderRadius: '100px',
-                                    color: '#fff', cursor: 'pointer',
-                                    transition: 'all 0.2s',
-                                    fontWeight: 500
+                                    background: approvedSims.includes(activeSimulation.id) ? 'rgba(48,209,88,0.2)' : 'rgba(255,255,255,0.05)',
+                                    border: approvedSims.includes(activeSimulation.id) ? '1px solid rgba(48,209,88,0.4)' : '1px solid rgba(255,255,255,0.1)',
+                                    padding: '6px 14px', borderRadius: '100px',
+                                    color: approvedSims.includes(activeSimulation.id) ? '#30d158' : 'rgba(255,255,255,0.7)',
+                                    cursor: 'pointer', transition: 'all 0.2s', fontWeight: 500, fontSize: '13px',
                                 }}
-                                onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)'; e.currentTarget.style.borderColor = '#ff375f'; }}
-                                onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)'; }}
                             >
-                                <ArrowLeft size={16} /> Back to Library
+                                {approvedSims.includes(activeSimulation.id) ? <><Eye size={14} /> Approved for Showcase</> : <><EyeOff size={14} /> Hidden from Showcase</>}
                             </button>
                         </div>
                     )}
-                    
+
                     {/* The Simulation Container */}
                     <div style={{
                         flex: 1,
@@ -236,57 +236,53 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                         alignItems: 'center',
                         justifyContent: 'center'
                     }}>
-                        <div style={{
-                            width: '100%',
-                            height: '100%',
-                            position: 'relative'
-                        }}>
+                        <div style={{ width: '100%', height: '100%', position: 'relative' }}>
                         {activeSimulation.isNative ? (
-                            activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_2_mg' ? <CustomForcesAndMotion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_3_mg' ? <CustomGravityAndOrbits onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_4_mg' ? <CustomFriction onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_5_mg' ? <CustomEnergySkatePark onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_6_mg' ? <CustomMassesAndSprings onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_14_mg' ? <CustomStatesOfMatter onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_15_mg' ? <CustomStatesOfMatterBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_16_mg' ? <CustomGasProperties onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_21_mg' ? <CustomWaveInterference onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_22_mg' ? <CustomSoundWaves onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_8_mg' ? <CustomBalancingAct onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_9_mg' ? <CustomCollisionLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_10_mg' ? <CustomCenterandVariability onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_11_mg' ? <CustomEnergySkateParkBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_12_mg' ? <CustomHookesLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_13_mg' ? <CustomMassesandSpringsBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_17_mg' ? <CustomDiffusion onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_18_mg' ? <CustomEnergyFormsandChanges onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_19_mg' ? <CustomBlackbodySpectrum onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_20_mg' ? <CustomWaveonaString onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_23_mg' ? <CustomNormalModes onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_24_mg' ? <CustomFourierMakingWaves onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_25_mg' ? <CustomCircuitConstructionKitDC onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_26_mg' ? <CustomCircuitConstructionKitDCVirtualLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_27_mg' ? <CustomCircuitConstructionKitAC onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_28_mg' ? <CustomChargesandFields onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_29_mg' ? <CustomFaradaysLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_30_mg' ? <CustomOhmsLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_31_mg' ? <CustomCoulombsLaw onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_32_mg' ? <CustomJohnTravoltage onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_33_mg' ? <CustomCapacitorLabBasics onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_34_mg' ? <CustomResistanceinaWire onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_35_mg' ? <CustomBalloonsandStaticElectricity onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_36_mg' ? <CustomBendingLight onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_37_mg' ? <CustomColorVision onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_38_mg' ? <CustomMoleculesandLight onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_39_mg' ? <CustomRutherfordScattering onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_40_mg' ? <CustomModelsoftheHydrogenAtom onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_41_mg' ? <CustomPhotoelectricEffect onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_42_mg' ? <CustomLasers onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_43_mg' ? <CustomNeonLights onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_44_mg' ? <CustomMicrowaves onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            activeSimulation.id === 'phys_45_mg' ? <CustomSimplifiedMRI onBack={() => setActiveSimulation(null)} title={activeSimulation.title} /> : 
-                            <CustomPendulumLab onBack={() => setActiveSimulation(null)} title={activeSimulation.title} />
+                            activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_2_mg' ? <CustomForcesAndMotion key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_3_mg' ? <CustomGravityAndOrbits key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_4_mg' ? <CustomFriction key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_5_mg' ? <CustomEnergySkatePark key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_6_mg' ? <CustomMassesAndSprings key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_14_mg' ? <CustomStatesOfMatter key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_15_mg' ? <CustomStatesOfMatterBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_16_mg' ? <CustomGasProperties key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_21_mg' ? <CustomWaveInterference key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_22_mg' ? <CustomSoundWaves key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_8_mg' ? <CustomBalancingAct key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_9_mg' ? <CustomCollisionLab key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_10_mg' ? <CustomCenterandVariability key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_11_mg' ? <CustomEnergySkateParkBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_12_mg' ? <CustomHookesLaw key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_13_mg' ? <CustomMassesandSpringsBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_17_mg' ? <CustomDiffusion key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_18_mg' ? <CustomEnergyFormsandChanges key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_19_mg' ? <CustomBlackbodySpectrum key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_20_mg' ? <CustomWaveonaString key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_23_mg' ? <CustomNormalModes key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_24_mg' ? <CustomFourierMakingWaves key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_25_mg' ? <CustomCircuitConstructionKitDC key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_26_mg' ? <CustomCircuitConstructionKitDCVirtualLab key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_27_mg' ? <CustomCircuitConstructionKitAC key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_28_mg' ? <CustomChargesandFields key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_29_mg' ? <CustomFaradaysLaw key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_30_mg' ? <CustomOhmsLaw key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_31_mg' ? <CustomCoulombsLaw key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_32_mg' ? <CustomJohnTravoltage key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_33_mg' ? <CustomCapacitorLabBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_34_mg' ? <CustomResistanceinaWire key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_35_mg' ? <CustomBalloonsandStaticElectricity key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_36_mg' ? <CustomBendingLight key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_37_mg' ? <CustomColorVision key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_38_mg' ? <CustomMoleculesandLight key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_39_mg' ? <CustomRutherfordScattering key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_40_mg' ? <CustomModelsoftheHydrogenAtom key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_41_mg' ? <CustomPhotoelectricEffect key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_42_mg' ? <CustomLasers key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_43_mg' ? <CustomNeonLights key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_44_mg' ? <CustomMicrowaves key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_45_mg' ? <CustomSimplifiedMRI key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            <CustomPendulumLab key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} />
                         ) : (
                             <>
                                 <iframe 
@@ -297,16 +293,11 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                                     allowFullScreen
                                     title={activeSimulation.title}
                                 ></iframe>
-                                
                                 {/* Hides the PhET logo in the bottom right corner */}
                                 <div style={{
-                                    position: 'absolute',
-                                    bottom: 0,
-                                    right: 0,
-                                    width: '160px',
-                                    height: '45px',
-                                    background: '#000',
-                                    zIndex: 10
+                                    position: 'absolute', bottom: 0, right: 0,
+                                    width: '160px', height: '45px',
+                                    background: '#000', zIndex: 10
                                 }}></div>
                             </>
                         )}
@@ -314,33 +305,20 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                         {/* Loading Screen Overlay to hide PhET splash screen */}
                         {isLoadingSim && (
                             <div style={{
-                                position: 'absolute',
-                                top: 0, left: 0, right: 0, bottom: 0,
+                                position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,
                                 background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%)',
-                                zIndex: 20,
-                                display: 'flex',
-                                flexDirection: 'column',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                color: '#fff'
+                                zIndex: 20, display: 'flex', flexDirection: 'column',
+                                alignItems: 'center', justifyContent: 'center', color: '#fff'
                             }}>
                                 <Atom size={64} color="#bf5af2" style={{ marginBottom: '24px', animation: 'pulse 1.5s infinite' }} />
                                 <h3 style={{ fontSize: '24px', margin: '0 0 8px 0', fontWeight: 600 }}>Loading Engine...</h3>
                                 <p style={{ color: 'rgba(255,255,255,0.6)', margin: 0 }}>Initializing interactive physics simulation</p>
-                                
-                                <div style={{ 
-                                    width: '200px', height: '4px', background: 'rgba(255,255,255,0.1)', 
-                                    borderRadius: '100px', marginTop: '32px', overflow: 'hidden'
-                                }}>
-                                    <div style={{ 
-                                        width: '100%', height: '100%', background: '#ff375f',
-                                        animation: 'loadingBar 4.5s linear forwards'
-                                    }}></div>
+                                <div style={{ width: '200px', height: '4px', background: 'rgba(255,255,255,0.1)', borderRadius: '100px', marginTop: '32px', overflow: 'hidden' }}>
+                                    <div style={{ width: '100%', height: '100%', background: '#ff375f', animation: 'loadingBar 4.5s linear forwards' }}></div>
                                 </div>
                             </div>
                         )}
                         </div>
-     
                 </div>
             </div>
         </div>

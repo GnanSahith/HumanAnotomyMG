@@ -145,7 +145,7 @@ const INITIAL_STATES = {
 };
 const CustomGravityAndOrbits = ({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) => {
   const [scenario, setScenario] = useState(SCENARIOS.SUN_EARTH);
   const [gravityEnabled, setGravityEnabled] = useState(true);
@@ -157,7 +157,9 @@ const CustomGravityAndOrbits = ({
   const [showGrid, setShowGrid] = useState(false);
 
   // Controls
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [isFastForward, setIsFastForward] = useState(false);
   const [daysPassed, setDaysPassed] = useState(0);
   const requestRef = useRef();
@@ -537,184 +539,13 @@ const CustomGravityAndOrbits = ({
     position: 'relative',
     background: '#0a0a1a'
   }}>
-            {/* Header */}
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 10
-    }}>
-                <button onClick={onBack} style={{
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        color: 'white',
-        padding: '8px 16px',
-        borderRadius: '8px',
-        cursor: 'pointer',
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        backdropFilter: 'blur(10px)',
-        transition: 'all 0.2s',
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 55, 95, 0.8)';
-        e.currentTarget.style.borderColor = '#ff375f';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-        e.currentTarget.style.borderColor = 'rgba(255, 255, 255, 0.2)';
-      }}>
-                    <ArrowLeft size={16} /> Back to Library
-                </button>
-
-                <h2 style={{
-        margin: 0,
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)'
-      }}>{title}</h2>
-
-                <div style={{
-        display: 'flex',
-        gap: '10px'
-      }}>
-                    <button onClick={handleReset} style={{
-          background: 'rgba(52, 152, 219, 0.2)',
-          border: '1px solid rgba(52, 152, 219, 0.4)',
-          color: '#3498db',
-          padding: '8px 16px',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '8px',
-          backdropFilter: 'blur(10px)',
-          transition: 'all 0.2s',
-          fontFamily: "'Inter', sans-serif"
-        }} onMouseEnter={e => {
-          e.currentTarget.style.background = 'rgba(52, 152, 219, 0.4)';
-        }} onMouseLeave={e => {
-          e.currentTarget.style.background = 'rgba(52, 152, 219, 0.2)';
-        }}>
-                        <RotateCcw size={16} /> Reset
-                    </button>
-                </div>
-            </div>
-
             {/* Left Panel: Toggles and Time */}
-            <div style={{
-      position: 'absolute',
-      top: '90px',
-      left: '20px',
-      background: 'rgba(20, 20, 30, 0.8)',
-      border: '1px solid rgba(255,255,255,0.1)',
-      backdropFilter: 'blur(12px)',
-      padding: '20px',
-      borderRadius: '16px',
-      width: '260px',
-      zIndex: 10,
-      color: 'white',
-      fontFamily: "'Inter', sans-serif"
-    }}>
-                <h3 style={{
-        margin: '0 0 15px 0',
-        fontSize: '16px',
-        borderBottom: '1px solid rgba(255,255,255,0.1)',
-        paddingBottom: '10px'
-      }}>
-                    Display
-                </h3>
-                <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '8px',
-        marginBottom: '20px'
-      }}>
-                    <CheckboxItem label="Gravity Force" checked={showGravityForce} onChange={setShowGravityForce} colorIndicator="rgba(231, 76, 60, 0.9)" />
-                    <CheckboxItem label="Velocity" checked={showVelocity} onChange={setShowVelocity} colorIndicator="rgba(46, 204, 113, 0.9)" />
-                    <CheckboxItem label="Path" checked={showPath} onChange={setShowPath} />
-                    <CheckboxItem label="Grid" checked={showGrid} onChange={setShowGrid} />
-                </div>
-
-                <h3 style={{
-        margin: '0 0 15px 0',
-        fontSize: '16px',
-        borderBottom: '1px solid rgba(255,255,255,0.1)',
-        paddingBottom: '10px'
-      }}>
-                    Simulation Time
-                </h3>
-                <div style={{
-        background: 'rgba(0,0,0,0.5)',
-        padding: '10px',
-        borderRadius: '8px',
-        textAlign: 'center',
-        marginBottom: '15px'
-      }}>
-                    <div style={{
-          fontSize: '24px',
-          fontWeight: '600',
-          fontFamily: 'monospace'
-        }}>
-                        {Math.floor(daysPassed)}
-                    </div>
-                    <div style={{
-          fontSize: '12px',
-          color: 'rgba(255,255,255,0.6)',
-          textTransform: 'uppercase'
-        }}>Earth Days</div>
-                </div>
-
-                <div style={{
-        display: 'flex',
-        gap: '10px',
-        justifyContent: 'center'
-      }}>
-                    <button onClick={() => {
-          setIsPlaying(!isPlaying);
-          setIsFastForward(false);
-        }} style={{
-          background: isPlaying && !isFastForward ? '#3498db' : 'rgba(255,255,255,0.1)',
-          border: 'none',
-          color: 'white',
-          padding: '10px',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          flex: 1,
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-                        {isPlaying && !isFastForward ? <Pause size={20} /> : <Play size={20} />}
-                    </button>
-                    <button onClick={() => {
-          setIsPlaying(true);
-          setIsFastForward(true);
-        }} style={{
-          background: isFastForward ? '#f1c40f' : 'rgba(255,255,255,0.1)',
-          border: 'none',
-          color: 'white',
-          padding: '10px',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          flex: 1,
-          display: 'flex',
-          justifyContent: 'center'
-        }}>
-                        <FastForward size={20} />
-                    </button>
-                </div>
-            </div>
+            
 
             {/* Right Panel: Scenarios */}
             <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       background: 'rgba(20, 20, 30, 0.8)',
       border: '1px solid rgba(255,255,255,0.1)',

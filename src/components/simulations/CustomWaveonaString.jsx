@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { RotateCcw, Settings2, Activity, ArrowLeft, Play, Pause, Circle } from 'lucide-react';
 function CustomWaveOnAStringInner({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
   // String properties
   const numPoints = 80;
@@ -15,7 +15,9 @@ function CustomWaveOnAStringInner({
   const [frequency, setFrequency] = useState(1.50); // 0.00 to 3.00
   const [damping, setDamping] = useState(0.05); // 0 to 0.5
   const [tension, setTension] = useState(0.5); // 0.1 to 0.9
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [manualY, setManualY] = useState(0);
 
   // Visuals
@@ -111,71 +113,6 @@ function CustomWaveOnAStringInner({
     fontFamily: "'Inter', sans-serif",
     color: '#fff'
   }}>
-            {/* Top Header Bar */}
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 100
-    }}>
-                {onBack ? <button onClick={onBack} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-      }}>
-                        <ArrowLeft size={16} /> Back
-                    </button> : <div />}
-                <h1 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0
-      }}>
-                    {title || 'Wave on a String'}
-                </h1>
-                <button onClick={handleReset} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }} onMouseEnter={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)';
-      }} onMouseLeave={e => {
-        e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)';
-      }}>
-                    <RotateCcw size={16} /> Restart
-                </button>
-            </div>
-
             {/* Canvas / Main View */}
             <div style={{
       position: 'absolute',
@@ -266,7 +203,7 @@ function CustomWaveOnAStringInner({
             {/* Control Panels (floating/overlay) */}
             <div style={{
       position: 'absolute',
-      top: '90px',
+      top: '20px',
       right: '20px',
       width: '300px',
       background: 'rgba(20, 20, 30, 0.8)',
@@ -313,7 +250,7 @@ function CustomWaveOnAStringInner({
         }}>Left End</label>
                     <div style={{
           display: 'flex',
-          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
           borderRadius: '8px',
           padding: '4px'
         }}>
@@ -389,7 +326,7 @@ function CustomWaveOnAStringInner({
         }}>Right End</label>
                     <div style={{
           display: 'flex',
-          background: 'rgba(20, 20, 30, 0.8)', border: '1px solid rgba(255,255,255,0.1)', backdropFilter: 'blur(12px)',
+          background: 'rgba(20, 20, 30, 0.8)', backdropFilter: 'blur(12px)',
           borderRadius: '8px',
           padding: '4px'
         }}>

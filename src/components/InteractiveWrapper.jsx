@@ -52,7 +52,7 @@ export default function InteractiveWrapper() {
                             />
                         </Center>
                     </Bounds>
-                    <Environment preset="studio" />
+                    {/* Environment removed */}
                 </Suspense>
 
                 <OrbitControls makeDefault enabled={!isDragging} minPolarAngle={0} maxPolarAngle={Math.PI / 1.5} />

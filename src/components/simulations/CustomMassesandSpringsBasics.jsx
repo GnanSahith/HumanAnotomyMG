@@ -2,12 +2,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, ArrowLeft, Activity, Ruler, Timer, BarChart2, BookOpen, Info, HelpCircle } from 'lucide-react';
 function CustomMassesandSpringsBasicsInner({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
   // ----------------------------------------------------
   // State Variables (React-controlled for UI settings)
   // ----------------------------------------------------
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [speedMode, setSpeedMode] = useState('normal'); // 'normal' | 'slow'
   const [springConstant, setSpringConstant] = useState(5); // Slider scale 1-10
   const [dampingPreset, setDampingPreset] = useState('friction'); // 'none' | 'friction' | 'lots'
@@ -831,7 +833,6 @@ function CustomMassesandSpringsBasicsInner({
     height: '100%',
     overflowY: 'auto'
   }}>
-            {/* Header controls bar */}
             <div className="flex justify-end items-center px-6 py-4 border-b border-white/5 bg-white/[0.01] backdrop-blur-md sticky top-0 z-50">
                 <div className="flex items-center gap-4">
                     {/* Play/Pause control */}
@@ -1245,47 +1246,7 @@ export default function CustomMassesandSpringsBasics({
     background: '#0a0a1a',
     overflow: 'hidden'
   }}>
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      left: '20px',
-      right: '20px',
-      display: 'flex',
-      justifyContent: 'space-between',
-      alignItems: 'center',
-      zIndex: 100
-    }}>
-                {onBack ? <button onClick={onBack} style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        background: 'rgba(255, 255, 255, 0.1)',
-        border: '1px solid rgba(255, 255, 255, 0.2)',
-        backdropFilter: 'blur(10px)',
-        padding: '10px 20px',
-        borderRadius: '12px',
-        color: '#fff',
-        cursor: 'pointer',
-        transition: 'all 0.3s ease',
-        fontWeight: 600,
-        fontFamily: "'Inter', sans-serif"
-      }}>
-                        ← Back
-                    </button> : <div />}
-                <h1 style={{
-        color: 'white',
-        fontFamily: "'Inter', sans-serif",
-        fontSize: '24px',
-        fontWeight: '600',
-        textShadow: '0 2px 10px rgba(0,0,0,0.5)',
-        margin: 0
-      }}>
-                    {title || 'Simulation'}
-                </h1>
-                <div style={{
-        width: '100px'
-      }}></div>
-            </div>
+            
             <div style={{
       position: 'absolute',
       inset: 0,

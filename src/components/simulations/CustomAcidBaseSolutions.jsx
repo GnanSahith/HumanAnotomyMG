@@ -2,9 +2,11 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, ArrowLeft, Droplet, Microscope, Eye } from 'lucide-react';
 export default function CustomAcidBaseSolutions({
   onBack,
-  title
+  title, isPlaying: globalIsPlaying, syncPlayState
 }) {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [localIsPlaying, setLocalIsPlaying] = useState(true);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
   const [solutionType, setSolutionType] = useState('weak_acid'); // water, strong_acid, weak_acid, strong_base, weak_base
   const [concentration, setConcentration] = useState(0.01); // 0.001 to 1 M
   const [strength, setStrength] = useState(0.00001); // Ka or Kb: 10^-7 to 10^-2
@@ -336,51 +338,7 @@ export default function CustomAcidBaseSolutions({
     background: '#0a0a1a',
     fontFamily: 'system-ui, -apple-system, sans-serif'
   }}>
-      {/* 1. Transparent Header (NO BACK BUTTONS, NO TITLES) */}
-      <div style={{
-      padding: '16px 24px',
-      display: 'flex',
-      justifyContent: 'flex-end',
-      alignItems: 'center',
-      background: 'transparent',
-      zIndex: 10
-    }}>
-          <div style={{
-        display: 'flex',
-        gap: '12px'
-      }}>
-              <button onClick={() => setIsPlaying(!isPlaying)} style={{
-          background: 'rgba(255, 255, 255, 0.1)',
-          border: '1px solid rgba(255, 255, 255, 0.2)',
-          borderRadius: '8px',
-          color: 'white',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          transition: 'all 0.2s ease'
-        }}>
-                  {isPlaying ? <Pause size={18} /> : <Play size={18} />} {isPlaying ? 'Pause' : 'Play'}
-              </button>
-              <button onClick={initParticles} style={{
-          background: 'rgba(255, 255, 255, 0.1)',
-          border: '1px solid rgba(255, 255, 255, 0.2)',
-          borderRadius: '8px',
-          color: 'white',
-          cursor: 'pointer',
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '8px',
-          padding: '8px 16px',
-          transition: 'all 0.2s ease'
-        }}>
-                  <RotateCcw size={18} /> Reset
-              </button>
-          </div>
-      </div>
+      
       
       {/* 2. Full Bleed Canvas Container */}
       <div style={{

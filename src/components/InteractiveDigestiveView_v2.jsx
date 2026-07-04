@@ -72,9 +72,10 @@ export default function InteractiveDigestiveView({ onBack }) {
                         style={{ touchAction: 'none' }}
                         gl={{ antialias: true, powerPreference: 'high-performance' }}
                     >
-                        <ambientLight intensity={0.6} />
-                        <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} intensity={1} />
-                        <pointLight position={[-10, -10, -10]} intensity={0.4} />
+                        <ambientLight intensity={1.2} />
+                        <directionalLight position={[5, 10, 15]} intensity={1.5} />
+                        <directionalLight position={[-5, 5, -15]} intensity={0.8} />
+                        <pointLight position={[0, -10, 0]} intensity={0.5} />
 
                         <Suspense fallback={<Loader />}>
                             <Bounds fit clip margin={1.2}>
@@ -87,7 +88,6 @@ export default function InteractiveDigestiveView({ onBack }) {
                                     />
                                 </Center>
                             </Bounds>
-                            <Environment preset="city" />
                         </Suspense>
 
                         <OrbitControls

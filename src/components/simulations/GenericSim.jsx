@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, ArrowLeft } from 'lucide-react';
 
-export default function GenericSim({ onBack, title }) {
-    const [isPlaying, setIsPlaying] = useState(false);
+export default function GenericSim({ onBack, title, isPlaying: globalIsPlaying, syncPlayState }) {
+    const [localIsPlaying, setLocalIsPlaying] = useState(false);
+  const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
+  const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;
     const [param1, setParam1] = useState(50);
     const [param2, setParam2] = useState(50);
     const [param3, setParam3] = useState(50);
@@ -61,12 +63,7 @@ export default function GenericSim({ onBack, title }) {
     return (
         <div style={{ width: '100%', height: '100%', display: 'flex', flexDirection: 'column', color: '#fff' }}>
             <div style={{ padding: '20px', display: 'flex', justifyContent: 'space-between', alignItems: 'center', background: 'rgba(0,0,0,0.5)' }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
-                    <button onClick={onBack} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: 'rgba(255,255,255,0.1)', border: 'none', padding: '8px 16px', borderRadius: '100px', color: '#fff', cursor: 'pointer' }}>
-                        <ArrowLeft size={18} /> Back
-                    </button>
-                    <h2 style={{ margin: 0, fontSize: '24px', fontWeight: 'bold' }}>{title}</h2>
-                </div>
+                
                 <div style={{ display: 'flex', gap: '10px' }}>
                     <button onClick={() => setIsPlaying(!isPlaying)} style={{ display: 'flex', alignItems: 'center', gap: '8px', background: isPlaying ? '#e74c3c' : '#2ecc71', border: 'none', padding: '8px 16px', borderRadius: '100px', color: '#fff', cursor: 'pointer', fontWeight: 'bold' }}>
                         {isPlaying ? <Pause size={18} /> : <Play size={18} />} {isPlaying ? 'Pause' : 'Play'}
