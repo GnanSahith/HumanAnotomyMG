@@ -301,7 +301,14 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
     );
   }
 
-  if (!chapterQuestions || chapterQuestions.length === 0) {
+  const validQuestions = (chapterQuestions || []).filter(qaObj => {
+    const qLower = qaObj.q.toLowerCase();
+    const isSeoHeading = qLower.includes('cbse class') || qLower.includes('ncert solutions') || qLower.includes('important questions');
+    const isMissingAnswer = qaObj.a === 'Detailed solution available.' || qaObj.a.trim().length < 10;
+    return !isSeoHeading && !isMissingAnswer;
+  });
+
+  if (!validQuestions || validQuestions.length === 0) {
     return (
       <div className="rich-chapter-content">
         <div className="no-chapters-box" style={{ marginTop: '20px' }}>
@@ -315,7 +322,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
   return (
     <div className="reader-layout">
       <div className="rich-chapter-content fade-in-scale">
-        {chapterQuestions.map((qaObj, index) => {
+        {validQuestions.map((qaObj, index) => {
           const num = index + 1;
           return (
             <div key={num} id={`q-${chapterNum}-${num}`} className="qna-block glass-panel">
@@ -407,7 +414,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
       <div className="quick-nav-sidebar fade-in-scale">
         <h3>Index</h3>
         <div className="nav-grid">
-          {chapterQuestions.map((_, index) => {
+          {validQuestions.map((_, index) => {
             const num = index + 1;
             return (
               <button key={num} onClick={() => scrollToQ(`q-${chapterNum}-${num}`)}>
