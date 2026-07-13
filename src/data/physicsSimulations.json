@@ -235,7 +235,7 @@
         "title": "Gas Properties MG",
         "description": "Interactive Gas Properties simulation (Native Custom Build)",
         "url": "/simulations/gas-properties_en.html",
-        "thumbnail": "/thumbnails/phys_16_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_16_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -265,7 +265,7 @@
         "title": "Energy Forms and Changes MG",
         "description": "Interactive Energy Forms and Changes simulation (Native Custom Build)",
         "url": "/simulations/energy-forms-and-changes_en.html",
-        "thumbnail": "/thumbnails/phys_18_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_18_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -280,7 +280,7 @@
         "title": "Blackbody Spectrum MG",
         "description": "Interactive Blackbody Spectrum simulation (Native Custom Build)",
         "url": "/simulations/blackbody-spectrum_en.html",
-        "thumbnail": "/thumbnails/phys_19_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_19_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -295,7 +295,7 @@
         "title": "Wave on a String MG",
         "description": "Interactive Wave on a String simulation (Native Custom Build)",
         "url": "/simulations/wave-on-a-string_en.html",
-        "thumbnail": "/thumbnails/phys_20_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_20_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -310,7 +310,7 @@
         "title": "Wave Interference MG",
         "description": "Interactive Wave Interference simulation (Native Custom Build)",
         "url": "/simulations/wave-interference_en.html",
-        "thumbnail": "/thumbnails/phys_21_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_21_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
