@@ -145,7 +145,7 @@
         "title": "Center and Variability MG",
         "description": "Interactive Center and Variability simulation (Native Custom Build)",
         "url": "/simulations/center-and-variability_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Center+and+Variability+MG",
+        "thumbnail": "/thumbnails/phys_10_mg_gen.jpg",
         "category": "Motion & Mechanics",
         "isNative": true
     },
@@ -175,7 +175,7 @@
         "title": "Hooke's Law MG",
         "description": "Interactive Hooke's Law simulation (Native Custom Build)",
         "url": "/simulations/hookes-law_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Hooke's+Law+MG",
+        "thumbnail": "/thumbnails/phys_12_mg_gen.jpg",
         "category": "Work, Energy & Power",
         "isNative": true
     },
@@ -190,7 +190,7 @@
         "title": "Masses and Springs: Basics MG",
         "description": "Interactive Masses and Springs: Basics simulation (Native Custom Build)",
         "url": "/simulations/masses-and-springs-basics_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Masses+and+Springs:+Basics+MG",
+        "thumbnail": "/thumbnails/phys_13_mg_gen.jpg",
         "category": "Work, Energy & Power",
         "isNative": true
     },
@@ -205,7 +205,7 @@
         "title": "States of Matter MG",
         "description": "Interactive States of Matter simulation (Native Custom Build)",
         "url": "/simulations/states-of-matter_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=States+of+Matter+MG",
+        "thumbnail": "/thumbnails/phys_14_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -220,7 +220,7 @@
         "title": "States of Matter: Basics MG",
         "description": "Interactive States of Matter: Basics simulation (Native Custom Build)",
         "url": "/simulations/states-of-matter-basics_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=States+of+Matter:+Basics+MG",
+        "thumbnail": "/thumbnails/phys_15_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -235,7 +235,7 @@
         "title": "Gas Properties MG",
         "description": "Interactive Gas Properties simulation (Native Custom Build)",
         "url": "/simulations/gas-properties_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Gas+Properties+MG",
+        "thumbnail": "/thumbnails/phys_16_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -265,7 +265,7 @@
         "title": "Energy Forms and Changes MG",
         "description": "Interactive Energy Forms and Changes simulation (Native Custom Build)",
         "url": "/simulations/energy-forms-and-changes_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Energy+Forms+and+Changes+MG",
+        "thumbnail": "/thumbnails/phys_18_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -280,7 +280,7 @@
         "title": "Blackbody Spectrum MG",
         "description": "Interactive Blackbody Spectrum simulation (Native Custom Build)",
         "url": "/simulations/blackbody-spectrum_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Blackbody+Spectrum+MG",
+        "thumbnail": "/thumbnails/phys_19_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -295,7 +295,7 @@
         "title": "Wave on a String MG",
         "description": "Interactive Wave on a String simulation (Native Custom Build)",
         "url": "/simulations/wave-on-a-string_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Wave+on+a+String+MG",
+        "thumbnail": "/thumbnails/phys_20_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -310,7 +310,7 @@
         "title": "Wave Interference MG",
         "description": "Interactive Wave Interference simulation (Native Custom Build)",
         "url": "/simulations/wave-interference_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Wave+Interference+MG",
+        "thumbnail": "/thumbnails/phys_21_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -325,7 +325,7 @@
         "title": "Sound Waves MG",
         "description": "Interactive Sound Waves simulation (Native Custom Build)",
         "url": "/simulations/sound-waves_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Sound+Waves+MG",
+        "thumbnail": "/thumbnails/phys_22_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -340,7 +340,7 @@
         "title": "Normal Modes MG",
         "description": "Interactive Normal Modes simulation (Native Custom Build)",
         "url": "/simulations/normal-modes_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Normal+Modes+MG",
+        "thumbnail": "/thumbnails/phys_23_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -355,7 +355,7 @@
         "title": "Fourier: Making Waves MG",
         "description": "Interactive Fourier: Making Waves simulation (Native Custom Build)",
         "url": "/simulations/fourier-making-waves_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Fourier:+Making+Waves+MG",
+        "thumbnail": "/thumbnails/phys_24_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -445,7 +445,7 @@
         "title": "Ohm's Law MG",
         "description": "Interactive Ohm's Law simulation (Native Custom Build)",
         "url": "/simulations/ohms-law_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Ohm's+Law+MG",
+        "thumbnail": "/thumbnails/phys_30_mg_gen.jpg",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -475,7 +475,7 @@
         "title": "John Travoltage MG",
         "description": "Interactive John Travoltage simulation (Native Custom Build)",
         "url": "/simulations/john-travoltage_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=John+Travoltage+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_32_mg_gen.jpg",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -490,7 +490,7 @@
         "title": "Capacitor Lab: Basics MG",
         "description": "Interactive Capacitor Lab: Basics simulation (Native Custom Build)",
         "url": "/simulations/capacitor-lab-basics_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Capacitor+Lab:+Basics+MG",
+        "thumbnail": "/thumbnails/phys_33_mg_gen.jpg",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -505,7 +505,7 @@
         "title": "Resistance in a Wire MG",
         "description": "Interactive Resistance in a Wire simulation (Native Custom Build)",
         "url": "/simulations/resistance-in-a-wire_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Resistance+in+a+Wire+MG",
+        "thumbnail": "/thumbnails/phys_34_mg_gen.jpg",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -565,7 +565,7 @@
         "title": "Molecules and Light MG",
         "description": "Interactive Molecules and Light simulation (Native Custom Build)",
         "url": "/simulations/molecules-and-light_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Molecules+and+Light+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_38_mg_gen.jpg",
         "category": "Light & Quantum",
         "isNative": true
     },
@@ -580,7 +580,7 @@
         "title": "Rutherford Scattering MG",
         "description": "Interactive Rutherford Scattering simulation (Native Custom Build)",
         "url": "/simulations/rutherford-scattering_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Rutherford+Scattering+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_39_mg_gen.jpg",
         "category": "Light & Quantum",
         "isNative": true
     },
@@ -595,7 +595,7 @@
         "title": "Models of the Hydrogen Atom MG",
         "description": "Interactive Models of the Hydrogen Atom simulation (Native Custom Build)",
         "url": "/simulations/models-of-the-hydrogen-atom_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Models+of+the+Hydrogen+Atom+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_40_mg_gen.jpg",
         "category": "Light & Quantum",
         "isNative": true
     },
@@ -610,7 +610,7 @@
         "title": "Photoelectric Effect MG",
         "description": "Interactive Photoelectric Effect simulation (Native Custom Build)",
         "url": "/simulations/photoelectric_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Photoelectric+Effect+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_41_mg_gen.jpg",
         "category": "Light & Quantum",
         "isNative": true
     },
@@ -625,7 +625,7 @@
         "title": "Lasers MG",
         "description": "Interactive Lasers simulation (Native Custom Build)",
         "url": "/simulations/lasers_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Lasers+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_42_mg_gen.jpg",
         "category": "Light & Quantum",
         "isNative": true
     },
@@ -640,7 +640,7 @@
         "title": "Neon Lights MG",
         "description": "Interactive Neon Lights simulation (Native Custom Build)",
         "url": "/simulations/neon-lights-and-other-discharge-lamps_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Neon+Lights+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_43_mg_gen.jpg",
         "category": "Light & Quantum",
         "isNative": true
     },
@@ -655,7 +655,7 @@
         "title": "Microwaves MG",
         "description": "Interactive Microwaves simulation (Native Custom Build)",
         "url": "/simulations/microwaves_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Microwaves+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_44_mg_gen.jpg",
         "category": "Light & Quantum",
         "isNative": true
     },
@@ -670,7 +670,7 @@
         "title": "Simplified MRI MG",
         "description": "Interactive Simplified MRI simulation (Native Custom Build)",
         "url": "/simulations/mri_en.html",
-        "thumbnail": "https://placehold.co/600x400/222222/bf5af2?text=Simplified+MRI+MG",
+        "thumbnail": "/thumbnails/phys_thumb_phys_45_mg_gen.jpg",
         "category": "Light & Quantum",
         "isNative": true
     }
