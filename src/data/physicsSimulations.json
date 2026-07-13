@@ -325,7 +325,7 @@
         "title": "Sound Waves MG",
         "description": "Interactive Sound Waves simulation (Native Custom Build)",
         "url": "/simulations/sound-waves_en.html",
-        "thumbnail": "/thumbnails/phys_22_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_22_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -340,7 +340,7 @@
         "title": "Normal Modes MG",
         "description": "Interactive Normal Modes simulation (Native Custom Build)",
         "url": "/simulations/normal-modes_en.html",
-        "thumbnail": "/thumbnails/phys_23_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_23_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -355,7 +355,7 @@
         "title": "Fourier: Making Waves MG",
         "description": "Interactive Fourier: Making Waves simulation (Native Custom Build)",
         "url": "/simulations/fourier-making-waves_en.html",
-        "thumbnail": "/thumbnails/phys_24_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_24_mg_gen.jpg",
         "category": "Sound & Waves",
         "isNative": true
     },
@@ -445,7 +445,7 @@
         "title": "Ohm's Law MG",
         "description": "Interactive Ohm's Law simulation (Native Custom Build)",
         "url": "/simulations/ohms-law_en.html",
-        "thumbnail": "/thumbnails/phys_30_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_30_mg_gen.jpg",
         "category": "Electricity & Magnets",
         "isNative": true
     },
@@ -490,7 +490,7 @@
         "title": "Capacitor Lab: Basics MG",
         "description": "Interactive Capacitor Lab: Basics simulation (Native Custom Build)",
         "url": "/simulations/capacitor-lab-basics_en.html",
-        "thumbnail": "/thumbnails/phys_33_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_33_mg_gen.jpg",
         "category": "Electricity & Magnets",
         "isNative": true
     },
