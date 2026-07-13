@@ -471,7 +471,7 @@
         "title": "Molecules and Light MG",
         "description": "Interactive Molecules and Light simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/molecules-and-light/latest/molecules-and-light-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_molecules-and-light-mg_gen.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -488,7 +488,7 @@
         "title": "pH Scale MG",
         "description": "Interactive pH Scale simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_ph-scale-mg_gen.jpg",
         "category": "Solutions, Acids & Bases",
         "isNative": true
     },
@@ -505,7 +505,7 @@
         "title": "pH Scale: Basics MG",
         "description": "Interactive pH Scale: Basics simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/ph-scale-basics/latest/ph-scale-basics_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/ph-scale-basics/latest/ph-scale-basics-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_ph-scale-basics-mg_gen.jpg",
         "category": "Solutions, Acids & Bases",
         "isNative": true
     },
@@ -522,7 +522,7 @@
         "title": "Quantum Coin Toss MG",
         "description": "Interactive Quantum Coin Toss simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/quantum-coin-toss/latest/quantum-coin-toss_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/quantum-coin-toss/latest/quantum-coin-toss-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_quantum-coin-toss-mg_gen.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
@@ -539,7 +539,7 @@
         "title": "Quantum Measurement MG",
         "description": "Interactive Quantum Measurement simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/quantum-measurement/latest/quantum-measurement_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/quantum-measurement/latest/quantum-measurement-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_quantum-measurement-mg_gen.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
