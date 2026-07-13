@@ -1,20 +1,20 @@
 export default {
   "1": [
     {
-      "q": "1. The post office is _________ the hospital.\nAnswer:\nThe post office is near the hospital.",
-      "a": "Detailed solution available."
+      "q": "1. The post office is _________ the hospital.",
+      "a": "wer:\nThe post office is near the hospital."
     },
     {
-      "q": "2. There is a bookstore _________ the Children\u2019s Park.\nAnswer:\nThere is a bookstore in front of the Children\u2019s Park.",
-      "a": "Detailed solution available."
+      "q": "2. There is a bookstore _________ the Children\u2019s Park.",
+      "a": "wer:\nThere is a bookstore in front of the Children\u2019s Park."
     },
     {
-      "q": "3. The bank is _________ the school.\nAnswer:\nThe bank is behind the school.",
-      "a": "Detailed solution available."
+      "q": "3. The bank is _________ the school.",
+      "a": "wer:\nThe bank is behind the school."
     },
     {
-      "q": "4. There is an ambulance _________ the post office and the hospital.\nAnswer:\nAn ambulance is located between the post office and the hospital.\nLet us Write (Pages 6-7)\nA. Look at the pictures and answer the questions given below.\nQuestion 1. What is Lubang doing to help his injured friend, and what will they do next?\nAnswer:\nLubang is supporting his injured friend while helping him walk. After that, they will visit a nearby clinic or call an adult for further assistance.\nQuestion 2. What are Obang, Manya and Tina doing, and what will they do next?\nAnswer:\nObang, Manya, and Tina are cleaning their classroom. After that, they will dispose of the garbage in the dustbin and may also plant some saplings.\nQuestion 3. What is Anna doing, and what will the old lady do next?\nAnswer:\nAnna is helping an elderly woman cross the road. After that, the woman will thank Anna and reach the other side safely.\nQuestion 4.\nWhat are Zakir, Gulpreet, and Gilashree doing, and what will they do next?\nAnswer:\nZakir, Gulpreet, and Gilashree are working together to make a drawing. After that, they will present it to their class or teacher.\nQuestion 5. What are the students doing, and what will the teacher do next?\nAnswer:\nThe teacher is asking questions, and the students are raising their hands to respond. After that, the teacher may continue the lesson or ask more questions.\nLet us Do (Pages 7-8)\nA. Working Together\nCreate your symbol for togetherness by following the simple steps given below and paste a picture of what you have created in the box.\nSteps",
-      "a": "Detailed solution available."
+      "q": "4. There is an ambulance _________ the post office and the hospital.",
+      "a": "wer:\nAn ambulance is located between the post office and the hospital.\nLet us Write (Pages 6-7)\nA. Look at the pictures and answer the questions given below.\nQuestion 1. What is Lubang doing to help his injured friend, and what will they do next?\nAnswer:\nLubang is supporting his injured friend while helping him walk. After that, they will visit a nearby clinic or call an adult for further assistance.\nQuestion 2. What are Obang, Manya and Tina doing, and what will they do next?\nAnswer:\nObang, Manya, and Tina are cleaning their classroom. After that, they will dispose of the garbage in the dustbin and may also plant some saplings.\nQuestion 3. What is Anna doing, and what will the old lady do next?\nAnswer:\nAnna is helping an elderly woman cross the road. After that, the woman will thank Anna and reach the other side safely.\nQuestion 4.\nWhat are Zakir, Gulpreet, and Gilashree doing, and what will they do next?\nAnswer:\nZakir, Gulpreet, and Gilashree are working together to make a drawing. After that, they will present it to their class or teacher.\nQuestion 5. What are the students doing, and what will the teacher do next?\nAnswer:\nThe teacher is asking questions, and the students are raising their hands to respond. After that, the teacher may continue the lesson or ask more questions.\nLet us Do (Pages 7-8)\nA. Working Together\nCreate your symbol for togetherness by following the simple steps given below and paste a picture of what you have created in the box.\nSteps"
     },
     {
       "q": "2. Draw one side of a body including head, neck, hand, dress, leg, and shoe. (You can draw a boy or a girl).",
@@ -29,8 +29,8 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Colour it based on your choice with crayons or sketch pens.\nAnswer:\nStudents should do it by themselves.\nB. Paste a picture of what you have created.\nAnswer:\nStudents should do it by themselves.\nWhy Teamwork Matters \u2013 NCERT Solutions Class 4 English Santoor Chapter 1 Together We Can\nThe poem\nTogether We Can\nhelps students learn about the power of\nteamwork, unity, and helping each other\n. NCERT Solutions Class 4 English Santoor Chapter 1 for 2026-27 provides a clear understanding of these important values for exams and for life.\nBy solving chapter exercises and practicing the\nNCERT-based questions\n, students can boost confidence and improve their answers in tests. Focus on sharing, working together, and expressing your thoughts clearly for high marks in board exams.\nFor best results, regularly read, discuss, and\npractice the Class 4 English Santoor exercises\n. Remember, teamwork in learning leads to more fun, better understanding, and stronger friendships. Stay united and shine brighter together!",
-      "a": "Detailed solution available."
+      "q": "5. Colour it based on your choice with crayons or sketch pens.",
+      "a": "wer:\nStudents should do it by themselves.\nB. Paste a picture of what you have created.\nAnswer:\nStudents should do it by themselves.\nWhy Teamwork Matters \u2013 NCERT Solutions Class 4 English Santoor Chapter 1 Together We Can\nThe poem\nTogether We Can\nhelps students learn about the power of\nteamwork, unity, and helping each other\n. NCERT Solutions Class 4 English Santoor Chapter 1 for 2026-27 provides a clear understanding of these important values for exams and for life.\nBy solving chapter exercises and practicing the\nNCERT-based questions\n, students can boost confidence and improve their answers in tests. Focus on sharing, working together, and expressing your thoughts clearly for high marks in board exams.\nFor best results, regularly read, discuss, and\npractice the Class 4 English Santoor exercises\n. Remember, teamwork in learning leads to more fun, better understanding, and stronger friendships. Stay united and shine brighter together!"
     }
   ],
   "2": [

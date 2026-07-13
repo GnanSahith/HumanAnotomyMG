@@ -57,8 +57,8 @@ export default {
       "a": "Ashutosh Goenka was working at the \u2018top level management\u2019.\n(b) State three other functions being performed by Ashutosh Goenka.\nAns:\nAshutosh Goenka must perform these three functions:\nHe needs to organise all the physical and human resources required.\nHe must formulate objectives and set goals for the organization.\nHe must assign work to the middle level managers and guide them accordingly."
     },
     {
-      "q": "19. Rishitosh Mukherjee has recently joined AMV Ltd, A company manufacturing refrigerators. He found that his department was under-staffed and other departments were not cooperating with his department for smooth functioning of the organization. Therefore, he ensured that his department has the required number of employees and its cooperation with other departments has improved.\n(a)Identify the level at which Rishitosh Mukerjee was working.\nAns\n: Rishitosh Mukherjee was working at the \u2018middle level management\u2019.\n(b) Also, state three more functions required to be performed by Rishitosh Mukerjee at this level.",
-      "a": "Rishitosh Mukherjee needs to perform following three functions:\nHe needs to assign work to the lower level managers and guide them so that desired objectives are achieved.\nHe needs to inform the top level management regarding the market demands and requirements of physical and human resources.\nHe must also motivate and control the activities of lower level management so that they achieve desired results."
+      "q": "19. Rishitosh Mukherjee has recently joined AMV Ltd, A company manufacturing refrigerators. He found that his department was under-staffed and other departments were not cooperating with his department for smooth functioning of the organization. Therefore, he ensured that his department has the required number of employees and its cooperation with other departments has improved.\n(a)Identify the level at which Rishitosh Mukerjee was working.",
+      "a": "Rishitosh Mukherjee was working at the \u2018middle level management\u2019.\n(b) Also, state three more functions required to be performed by Rishitosh Mukerjee at this level.\nAns:\nRishitosh Mukherjee needs to perform following three functions:\nHe needs to assign work to the lower level managers and guide them so that desired objectives are achieved.\nHe needs to inform the top level management regarding the market demands and requirements of physical and human resources.\nHe must also motivate and control the activities of lower level management so that they achieve desired results."
     },
     {
       "q": "20. How is management all pervasive?",
@@ -175,8 +175,8 @@ export default {
       "a": "The following are the importance of principles of management:\nProvides managers with useful insights into reality:\nThe principles of management are formed after experimentation and practice. So they provide ideas, hints or guidelines to cope up with similar business problems.\nOptimum utilisation of resources and effective administration:\nThe cause and effect relationship helps managers to foresee the effect of their decisions and actions thus, enabling them to use resources most effectively i.e., maximum benefit with minimum cost.\nScientific decisions:\nPrinciples of management are based on experiments, observations and logic. Hence, they provide realistic, timely and objective assessment of the given situation.\nMeeting changing requirements:\nThe flexible nature of principles of management provides opportunities to managers to modify principles to meet the needs of the dynamic business environment.\nFulfilling Social Responsibility:\nBy incorporating values as a part of principles has enabled businesses to fulfil social responsibilities. Providing equal opportunities, following environment-friendly production techniques, producing good quality products are examples of social responsibilities of business.\nManagement training, education and research:\nThe principles of management and the managerial experiences are used as case studies to train employees or for further modification or development of principles already applied."
     },
     {
-      "q": "23. Discuss the differences between the contributions of Taylor and Fayol.\nAns\n: The difference between the contributions of Taylor and Fayol are:\nBasis\nF.W. Taylor\nHenry Fayol\nPersonality\nTaylor was a mechanical engineer.\nFayol was a mining engineer\nTitle\nFather of scientific management\nFather of general management\nFocus\nTaylor explained the factory shop floor working to improve productivity.\nFayol explained what must be included as managerial tasks to improve overall administration.\nUnity of Command\nHe believed in functional foremanship where workers received commands/instructions from more than one specialized boss.\nHe believed that every individual must have one boss and there should be a chain of authority. He developed the principle of unity of command, unity of direction and scalar chain.\nBasis of information\nInformation is based on observations, experimentation, and analysis of various available methods of completing a specific task.\nInformation is based on personal experience while working in various managerial positions.\nApplication\nIt is applicable to business enterprises involved in manufacturing activities.\nApplicable to all kinds of business enterprises, manufacturing, trading or service organizations.",
-      "a": "Detailed solution available."
+      "q": "23. Discuss the differences between the contributions of Taylor and Fayol.",
+      "a": "The difference between the contributions of Taylor and Fayol are:\nBasis\nF.W. Taylor\nHenry Fayol\nPersonality\nTaylor was a mechanical engineer.\nFayol was a mining engineer\nTitle\nFather of scientific management\nFather of general management\nFocus\nTaylor explained the factory shop floor working to improve productivity.\nFayol explained what must be included as managerial tasks to improve overall administration.\nUnity of Command\nHe believed in functional foremanship where workers received commands/instructions from more than one specialized boss.\nHe believed that every individual must have one boss and there should be a chain of authority. He developed the principle of unity of command, unity of direction and scalar chain.\nBasis of information\nInformation is based on observations, experimentation, and analysis of various available methods of completing a specific task.\nInformation is based on personal experience while working in various managerial positions.\nApplication\nIt is applicable to business enterprises involved in manufacturing activities.\nApplicable to all kinds of business enterprises, manufacturing, trading or service organizations."
     },
     {
       "q": "24. Explain why is it said that principles of management are 'mainly behavioural' and 'contingent' in nature. Also explain how principles of management \u2018provides managers with useful insights into reality' and 'helps in thoughtful decision-making'.",
@@ -217,8 +217,8 @@ export default {
       "a": "In order to cope with the shifting technological environment a firm must remain conscious about the current changes in the technological field. Thereafter they must acclimate to such change to gain the benefit of new technology. Hence, they need to keep innovating and finding new ways so as to cope with the changing technological environment."
     },
     {
-      "q": "6. What is meant by opportunities?\nAns\nOpportunity refers to the positive exterior trends that have the potential to add value to an enterprise.",
-      "a": "Detailed solution available."
+      "q": "6. What is meant by opportunities?",
+      "a": "Opportunity refers to the positive exterior trends that have the potential to add value to an enterprise."
     },
     {
       "q": "7. What do you mean by Globalization?",
@@ -323,12 +323,12 @@ export default {
       "a": "The prescribed approach or manner in which a work must be completed is referred to as the method."
     },
     {
-      "q": "2. What is planning?\nAns\n: Planning entails deciding what to do and how to do it ahead of time. It is a fundamental managerial function.",
-      "a": "Detailed solution available."
+      "q": "2. What is planning?",
+      "a": "Planning entails deciding what to do and how to do it ahead of time. It is a fundamental managerial function."
     },
     {
-      "q": "3. What all qualities are required for doing planning?\nAns\n: Intelligence, creativity, foresightedness, and sound judgement are few qualities required for planning.",
-      "a": "Detailed solution available."
+      "q": "3. What all qualities are required for doing planning?",
+      "a": "Intelligence, creativity, foresightedness, and sound judgement are few qualities required for planning."
     },
     {
       "q": "4. Name and state the aspect of financial management that enables one to foresee the fund requirements both in terms of 'the quantum' and 'in terms of the timings\".",
@@ -351,8 +351,8 @@ export default {
       "a": "Setting objectives for the organization."
     },
     {
-      "q": "9. Define 'Objective'?\nAns\n: Objectives are desired future positions that the management would like to reach. These are quantitative and measurable in nature.",
-      "a": "Detailed solution available."
+      "q": "9. Define 'Objective'?",
+      "a": "Objectives are desired future positions that the management would like to reach. These are quantitative and measurable in nature."
     },
     {
       "q": "10. Define 'Strategy\".",
@@ -395,8 +395,8 @@ export default {
       "a": "A budget is a numerically based strategy that quantifies desired data. A budget is a numerical description of projected results for a specific time period in the future. A sales budget, for example, aids in estimating the sales of a specific product in several places over the course of a month."
     },
     {
-      "q": "24. How can (i) Political climate and (ii) Policies of competitors obstruct planning?\nAns\n: The following are the explanations:\nPlanning stymied by the political climate:\nWhen the government restricts corporate practises or implements new trade regulations, business plans may be disrupted. Furthermore, political unrest has an impact on corporate strategies. Consider a change in taxation policy, it may obstruct all the plans that a firm has prepared.\nPlanning can be obstructive owing to rival policies:\nChanges in corporate policy may be influenced by competitor policies. For example, a corporate enterprise's pricing policy may alter as a result of competitors' discounting practises.\nLong Answer Questions (5 or 6 Marks)",
-      "a": "Detailed solution available."
+      "q": "24. How can (i) Political climate and (ii) Policies of competitors obstruct planning?",
+      "a": "The following are the explanations:\nPlanning stymied by the political climate:\nWhen the government restricts corporate practises or implements new trade regulations, business plans may be disrupted. Furthermore, political unrest has an impact on corporate strategies. Consider a change in taxation policy, it may obstruct all the plans that a firm has prepared.\nPlanning can be obstructive owing to rival policies:\nChanges in corporate policy may be influenced by competitor policies. For example, a corporate enterprise's pricing policy may alter as a result of competitors' discounting practises.\nLong Answer Questions (5 or 6 Marks)"
     },
     {
       "q": "25. Two years ago Nishant, completed his degree in Textile Engineering. He worked for sometime in a company manufacturing readymade garments. He was not happy in the company and decided to have his own readymade garments manufacturing unit. He set the objectives and the targets and formulate action plan to achieve the same. One of his objectives was to earn 80% profit on the amount invested in the first year. It was decided that raw materials like cloth, thread, buttons etc, will be purchased on two months credit. He also decided to follow the steps required for marketing the products through his own outlets.\nHe appointed Ritesh as a production manager, who decides the exact manner in which the production activities are to be carried out. Ritesh also prepared a statement showing the requirement of workers in the factory throughout the year. Nishant informed Ritesh about his sales target for different products area wise for the forthcoming quarter.\nA penalty of Rs. 200 per day was announced for the workers who found smoking in the factory premises.\nQuoting lines from the above para identify and explain the different types of plans discussed.",
@@ -489,8 +489,8 @@ export default {
       "a": "The Manager is answerable because obligation has been created without granting authority. The principle of parity of authority and responsibility has been despoiled.\n21. \u201cAuthority can be delegated but accountability cannot.\u201d Explain the statement.\nAns:\nAccording to the principle of complete responsibility, authority can be delegated but responsibility and accountability cannot be delegated by a manager. The manager is answerable or accountable to his own higher for both, the tasks that he has allottedhis subordinates and the acts of his subordinates.\nLong Answer Type Questions (5 OR 6 MARKS)"
     },
     {
-      "q": "22. A company has been registered under the Companies Act with an authorized share capital of Rs. 20,000 crores. Its registered office is situated in Delhi and manufacturing unit in a backward district of Rajasthan. Its marketing department is situated in Bhopal. The company is manufacturing Fast Moving Consumer Goods (FMCG).\n(i) Suggest with the help of a diagram a suitable organization structure for the company.\nAns.\nDivisional Structure\nii) State any three advantages of this organization structure.",
-      "a": "Advantages of Divisional structure:\n(i) Each division can work as an independent unit.\n(ii) Divisional management improves the use of resources.\n(iii) Promotes flexibility as each division is independent.\n(iv Removes need for direct supervision of division by corporate managers."
+      "q": "22. A company has been registered under the Companies Act with an authorized share capital of Rs. 20,000 crores. Its registered office is situated in Delhi and manufacturing unit in a backward district of Rajasthan. Its marketing department is situated in Bhopal. The company is manufacturing Fast Moving Consumer Goods (FMCG).\n(i) Suggest with the help of a diagram a suitable organization structure for the company.",
+      "a": "Divisional Structure\nii) State any three advantages of this organization structure.\nAns:\nAdvantages of Divisional structure:\n(i) Each division can work as an independent unit.\n(ii) Divisional management improves the use of resources.\n(iii) Promotes flexibility as each division is independent.\n(iv Removes need for direct supervision of division by corporate managers."
     },
     {
       "q": "23. Aman Chadha started 'Bulls Eye' a company for providing cyber security solutions to businesses. Its objective is to prevent, detect and respond to cyber attacks and protect critical data. He was a hardworking software engineer and an expert in cyber security. His reputation grew rapidly as he was not only a person of integrity but also did his work with utmost honesty and sincerity. The business started growing day by day.\nHe was delighted when he was offered a big project by the Ministry of Defence. While working on the project, he found that the volume of work made it impractical for him to handle all the work by himself. He decided to expand the team. The company maintained a close liaison with a local engineering college. During a campus placement, Ishan and Vrinda were appointed to work for the new project.\nHe found the new employees capable, enthusiastic and trustworthy. Aman Chadha was thus, able to focus on objectives and with the help of Ishan and Vrinda, the project was completed on time. Not only this Aman Chadha was also able to extend his area of operations. On the other hand Ishan and Vrinda also got opportunities to develop and exercise initiative.\n(i) Identify and briefly explain the concept used by Aman Chadha in the above case which helped him in focusing on objectives.\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 (CBSE BOARD 2017 )",
@@ -549,8 +549,8 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "25. Distinguish between centralization and decentralization.\nAns :\nFollowing are the differential factors between Centralization and Decentralization.\nBasis of Difference\nCentralization\nDecentralization\nAuthority\nHere, all the higher positions in the company as well as in the management hold the decision-making authority.\nIn decentralization, the management disbands the decision-making authority across the organization and brings it closer to the source of action and information.\nEnvironmental\ncondition\nCentralization is more appropriate in stable environmental conditions.\nIf the environment is complex and uncertain the organization requires a greater amount of decentralization.\nPreference\nIf the lower level managers are not very competent or experienced enough to take decisions, organizations tend to prefer centralization.\nIf the lower level managers are competent enough to make the decisions, organizations will benefit from decentralization.\nManage risk\nIf the organization faces a risk or threat, it relies more on centralized policies.\nFor centralization to be effectively practiced, the organizational culture must be more open and trusting.\nrequirement\nTo run a big organization effectively, centralization is required.\nIf the organization is a multi-located one with branches at different geographical locations a greater amount of decentralization is required.\nControl\nIt depends largely on the mindset of the people. If the managers believe in having a tighter control over the happenings in an organization, the practice of centralization will prevail.\nIf, on the contrary, managers are more flexible in their attitude, a decentralization policy will prevail.",
-      "a": "Detailed solution available."
+      "q": "25. Distinguish between centralization and decentralization.",
+      "a": "Following are the differential factors between Centralization and Decentralization.\nBasis of Difference\nCentralization\nDecentralization\nAuthority\nHere, all the higher positions in the company as well as in the management hold the decision-making authority.\nIn decentralization, the management disbands the decision-making authority across the organization and brings it closer to the source of action and information.\nEnvironmental\ncondition\nCentralization is more appropriate in stable environmental conditions.\nIf the environment is complex and uncertain the organization requires a greater amount of decentralization.\nPreference\nIf the lower level managers are not very competent or experienced enough to take decisions, organizations tend to prefer centralization.\nIf the lower level managers are competent enough to make the decisions, organizations will benefit from decentralization.\nManage risk\nIf the organization faces a risk or threat, it relies more on centralized policies.\nFor centralization to be effectively practiced, the organizational culture must be more open and trusting.\nrequirement\nTo run a big organization effectively, centralization is required.\nIf the organization is a multi-located one with branches at different geographical locations a greater amount of decentralization is required.\nControl\nIt depends largely on the mindset of the people. If the managers believe in having a tighter control over the happenings in an organization, the practice of centralization will prevail.\nIf, on the contrary, managers are more flexible in their attitude, a decentralization policy will prevail."
     },
     {
       "q": "26.\nHow is functional structure different from a divisional structure?",
@@ -689,8 +689,8 @@ export default {
       "a": "Directing"
     },
     {
-      "q": "4. The function of directing is performed by every manager from the top executive position. Which characteristic of directing is referred to here?\nAns\n: At every level of management directing takes place.",
-      "a": "Detailed solution available."
+      "q": "4. The function of directing is performed by every manager from the top executive position. Which characteristic of directing is referred to here?",
+      "a": "At every level of management directing takes place."
     },
     {
       "q": "5. It means overseeing the subordinates at work. Which element of directing is referred to?",
@@ -729,8 +729,8 @@ export default {
       "a": "Self-Actualization"
     },
     {
-      "q": "14. Which element in the communication process relates to the process of converting encoded symbols of the sender?\nAns.\nDecoding\nShort Answer Questions (3 or 4 Marks)",
-      "a": "Detailed solution available."
+      "q": "14. Which element in the communication process relates to the process of converting encoded symbols of the sender?",
+      "a": "Decoding\nShort Answer Questions (3 or 4 Marks)"
     },
     {
       "q": "15. Neha was a regional sales manager in \"Good Luck Garments Ltd' for the last ten years. During the retirement of the marketing manager, Neha applied for the same job, because she was extremely talented and had devoted all her hard work to the position of marketing manager. However, the company's top executives decided to complete this post by choosing the best person outside the company. As a result, Neha was devastated and had to lose her job. When a new marketing manager joined, one of his biggest problems was how to motivate Neha to her previous level of performance?\nSuggest any three non-financial benefits a new marketing manager could use to promote Neha.",
@@ -971,8 +971,8 @@ export default {
       "a": "The function \"transportation\" is concerned with the target market's cost and location."
     },
     {
-      "q": "8. Name the marketing function which is concerned with informing the customers about the firm's products.\nAns\n: The marketing function of promotion is focused on alerting clients about a company's products.",
-      "a": "Detailed solution available."
+      "q": "8. Name the marketing function which is concerned with informing the customers about the firm's products.",
+      "a": "The marketing function of promotion is focused on alerting clients about a company's products."
     },
     {
       "q": "9. Sunita took her niece, Aishwarya for shopping to 'Benetton' to buy her a dress on the occasion of her birthday. She was delighted when on payment for the dress she got a discount voucher to get 20% off for a meal of Rs 500 or above at a famous eating joint. Identify the technique of sales promotion used by the company in the above situation.",
@@ -983,8 +983,8 @@ export default {
       "a": "The technique of sales promotion being used by the company is 'Product Combination\".\nShort Answer Questions (3 or 4 Marks Questions)"
     },
     {
-      "q": "11. Ajay was appointed as a marketing head of \"Alfa Enterprise' manufacturers of toothpaste and toothbrushes. His target sale was 2,000 units a month. Apart from thinking about various channels of distribution to achieve the target he himself started visiting schools in backward areas. He found that even after taking various steps and counselling, some school children had not started brushing their teeth. He investigated and found that they could not afford to buy toothbrushes and toothpaste. So with due permission he started donating 200 toothbrushes and toothpastes every month to the school.\ni. Identify the channel of distribution Ajay would adopt for distribution of toothpaste and toothbrushes and justify it by giving one reason.\nAns.\ni. Ajay should use the zero-level distribution route. This is due to the fact that he may directly market things to schoolchildren and establish a direct relationship with them.\nii. State any two values which Ajay wants to communicate to the society.",
-      "a": "Ajay wants to instil the following values in society:\na. Instilling sanitary and healthful practises in schoolchildren\nb. Fulfillment of a company's social obligation.\n12.\"Though branding adds to the cost, it provides several advantages to the consumers\", In the light of the statement, state any three advantages of branding to customers.\nAns:\nAdvantages of branding to customers:\nAssists Customers in Product Identification:\nAssists customers in recognising products.\nAssures Product Quality:\nAssures product quality.\nStatus Symbol:\nbrands become status symbols because of their quality Eg: Benz cars"
+      "q": "11. Ajay was appointed as a marketing head of \"Alfa Enterprise' manufacturers of toothpaste and toothbrushes. His target sale was 2,000 units a month. Apart from thinking about various channels of distribution to achieve the target he himself started visiting schools in backward areas. He found that even after taking various steps and counselling, some school children had not started brushing their teeth. He investigated and found that they could not afford to buy toothbrushes and toothpaste. So with due permission he started donating 200 toothbrushes and toothpastes every month to the school.\ni. Identify the channel of distribution Ajay would adopt for distribution of toothpaste and toothbrushes and justify it by giving one reason.",
+      "a": "i. Ajay should use the zero-level distribution route. This is due to the fact that he may directly market things to schoolchildren and establish a direct relationship with them.\nii. State any two values which Ajay wants to communicate to the society.\nAns:\nAjay wants to instil the following values in society:\na. Instilling sanitary and healthful practises in schoolchildren\nb. Fulfillment of a company's social obligation.\n12.\"Though branding adds to the cost, it provides several advantages to the consumers\", In the light of the statement, state any three advantages of branding to customers.\nAns:\nAdvantages of branding to customers:\nAssists Customers in Product Identification:\nAssists customers in recognising products.\nAssures Product Quality:\nAssures product quality.\nStatus Symbol:\nbrands become status symbols because of their quality Eg: Benz cars"
     },
     {
       "q": "13. There are some characteristics that should be kept in mind while choosing a brand name. Explain any two such characteristics that a good brand name should have.",

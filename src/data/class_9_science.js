@@ -213,8 +213,8 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Which of the following is the boiling point of water at sea level?\n0 \u00b0C\n273 K\n373 K\n273 \u00b0C\nAnswers:\n1 (d), 2 (a) and 3 (c)\n5 Important Topics from Class 9 Science Chapter 1 Matter in Our Surroundings\nS.No.\nTopic\nKey Points\n1\nPhysical Nature of Matter\nMatter is made up of particles; particle properties like small size and spaces.\n2\nStates of Matter\nSolid, liquid, and gas with characteristics and examples.\n3\nChanges of State of Matter\nMelting, boiling, condensation, sublimation, and their applications.\n4\nEffect of Temperature and Pressure\nHow temperature and pressure influence the states of matter.\n5\nEvaporation\nProcess, factors affecting it, and its cooling effect in daily life.\nTips to Learn Class 9 Science Chapter 1 Matter in Our Surroundings\nTry to imagine how particles in solids, liquids, and gases behave. Watch videos or animations that show the movement of particles.\nRelate the topics to things you see daily. For example, think of melting ice (change of state) or boiling water (evaporation).\nFocus on the properties of solids, liquids, and gases. Understand how their particles are arranged and how they behave differently.\nObserve how temperature and pressure affect the state of matter, like how water changes from ice to liquid and then to steam when heated.\nPerform small experiments, like evaporating water in an open container, to see how changes in temperature affect matter. This will help you understand concepts better.\nBenefits of Class 9th Science Chapter 1 Matter in Our Surroundings Important Questions\nStudents who are facing problems in chapter 1 of class 9 are suggested to practice\nimportant questions of ch 1 science class 9\nso that they can take advantage of this and prepare well. Some of the benefits of this list of questions are:\nThe questions are taken keeping in mind the syllabus and the format imposed by the\nCBSE board for class 9\nstudents because any deviations from that can cost students a lot of marks.\nThe questions are selected under the guidance of some expert teachers who have years of experience in this field. They select questions according to the intellectual capability of the students.\nThe questions included in the list of\nchapter 1 science class 9 important questions\nare most likely to come in the exams, thus making students' preparation better and efficient.\nThe questions are given with solutions which are explained in a detailed manner.\nConclusion\nIn conclusion, the availability of important questions for CBSE Class 9 Science Matter in Our Surroundings is a valuable resource for students preparing for their examinations. These important questions cover key topics and concepts related to the chapter, helping students deepen their understanding of the properties of matter, changes of state, and the behaviour of particles. By practising some important questions, students can enhance their knowledge and improve their problem-solving skills. These questions encourage critical thinking and application of scientific principles, preparing students to answer exam questions effectively.\nEngaging with these important questions enables students to\u00a0 strengthen their understanding of the chapter, identify areas where they need further clarification, and strengthen their understanding of the subject.\nRelated Study Materials for CBSE Class 9 Science Chapter 1\nS.No.\nImportant Study Material Links for Class 9 Science Chapter 1",
-      "a": "Detailed solution available."
+      "q": "3. Which of the following is the boiling point of water at sea level?\n0 \u00b0C\n273 K\n373 K\n273 \u00b0C",
+      "a": "wers:\n1 (d), 2 (a) and 3 (c)\n5 Important Topics from Class 9 Science Chapter 1 Matter in Our Surroundings\nS.No.\nTopic\nKey Points\n1\nPhysical Nature of Matter\nMatter is made up of particles; particle properties like small size and spaces.\n2\nStates of Matter\nSolid, liquid, and gas with characteristics and examples.\n3\nChanges of State of Matter\nMelting, boiling, condensation, sublimation, and their applications.\n4\nEffect of Temperature and Pressure\nHow temperature and pressure influence the states of matter.\n5\nEvaporation\nProcess, factors affecting it, and its cooling effect in daily life.\nTips to Learn Class 9 Science Chapter 1 Matter in Our Surroundings\nTry to imagine how particles in solids, liquids, and gases behave. Watch videos or animations that show the movement of particles.\nRelate the topics to things you see daily. For example, think of melting ice (change of state) or boiling water (evaporation).\nFocus on the properties of solids, liquids, and gases. Understand how their particles are arranged and how they behave differently.\nObserve how temperature and pressure affect the state of matter, like how water changes from ice to liquid and then to steam when heated.\nPerform small experiments, like evaporating water in an open container, to see how changes in temperature affect matter. This will help you understand concepts better.\nBenefits of Class 9th Science Chapter 1 Matter in Our Surroundings Important Questions\nStudents who are facing problems in chapter 1 of class 9 are suggested to practice\nimportant questions of ch 1 science class 9\nso that they can take advantage of this and prepare well. Some of the benefits of this list of questions are:\nThe questions are taken keeping in mind the syllabus and the format imposed by the\nCBSE board for class 9\nstudents because any deviations from that can cost students a lot of marks.\nThe questions are selected under the guidance of some expert teachers who have years of experience in this field. They select questions according to the intellectual capability of the students.\nThe questions included in the list of\nchapter 1 science class 9 important questions\nare most likely to come in the exams, thus making students' preparation better and efficient.\nThe questions are given with solutions which are explained in a detailed manner.\nConclusion\nIn conclusion, the availability of important questions for CBSE Class 9 Science Matter in Our Surroundings is a valuable resource for students preparing for their examinations. These important questions cover key topics and concepts related to the chapter, helping students deepen their understanding of the properties of matter, changes of state, and the behaviour of particles. By practising some important questions, students can enhance their knowledge and improve their problem-solving skills. These questions encourage critical thinking and application of scientific principles, preparing students to answer exam questions effectively.\nEngaging with these important questions enables students to\u00a0 strengthen their understanding of the chapter, identify areas where they need further clarification, and strengthen their understanding of the subject.\nRelated Study Materials for CBSE Class 9 Science Chapter 1\nS.No.\nImportant Study Material Links for Class 9 Science Chapter 1"
     },
     {
       "q": "1.\nClass 9 Matter in Our Surroundings Notes",
@@ -379,12 +379,12 @@ export default {
       "a": "In the problem, it is given that, A solution contains $60$ g of $NaCl$ in 400g of water.\nMass of solute ($NaCl$) is $60$ g\nMass of solvent (water) is $400$ g\nMass of solution $=$ Mass of solute $+$ Mass of solvent\n$\\Rightarrow 60+400=460$ g\nMass percentage of the solution is the percentage of the ratio of the mass of solute to the mass of solution.\n$$\\Rightarrow \\dfrac{60}{460}\\times 100=\\dfrac{300}{23}~~$$\n$$=13.4\\%$$"
     },
     {
-      "q": "11. Differentiate between metals and non-metal based upon the various properties that they show.\nAns\n:\nThe difference between metals and non-metal based upon the various properties are enlisted below.\nMetals\nNon-metals\nMetals have luster\nNon-metals do not have luster.\nCommonly in silver grey or golden yellow color.\nThey can show variety of colors.\nGood conductors\nThey don\u2019t conduct heat and electricity.\nThey are malleable, ductile, and sonorous\nThey are non-malleable, nonductile, and no sonorous",
-      "a": "Detailed solution available."
+      "q": "11. Differentiate between metals and non-metal based upon the various properties that they show.",
+      "a": "The difference between metals and non-metal based upon the various properties are enlisted below.\nMetals\nNon-metals\nMetals have luster\nNon-metals do not have luster.\nCommonly in silver grey or golden yellow color.\nThey can show variety of colors.\nGood conductors\nThey don\u2019t conduct heat and electricity.\nThey are malleable, ductile, and sonorous\nThey are non-malleable, nonductile, and no sonorous"
     },
     {
-      "q": "12. Differentiate between mixtures and compounds by giving appropriate examples?\nAns\n: Differences between mixtures and compounds are enlisted below.\nMixture\nCompounds\nMixtures are formed by mixing elements or compounds or both\nCompounds can be obtained from the chemical reaction of elements.\nIt has variable composition\nIt has fixed compositions\nThe mixture shows the properties of the constituent substances.\nNew substances will have new properties.\nPhysical methods can be used to separate the constituents.\nChemical or electrochemical reactions are used to separate the constituents.\nEg: air, blood\nEg: $NaHC{{O}_{3}},CaS{{O}_{4}}$",
-      "a": "Detailed solution available."
+      "q": "12. Differentiate between mixtures and compounds by giving appropriate examples?",
+      "a": "Differences between mixtures and compounds are enlisted below.\nMixture\nCompounds\nMixtures are formed by mixing elements or compounds or both\nCompounds can be obtained from the chemical reaction of elements.\nIt has variable composition\nIt has fixed compositions\nThe mixture shows the properties of the constituent substances.\nNew substances will have new properties.\nPhysical methods can be used to separate the constituents.\nChemical or electrochemical reactions are used to separate the constituents.\nEg: air, blood\nEg: $NaHC{{O}_{3}},CaS{{O}_{4}}$"
     },
     {
       "q": "13. Write a method to separate a mixture of salt and ammonium chloride?",
@@ -487,16 +487,16 @@ export default {
       "a": "(b) 8"
     },
     {
-      "q": "7. Which one of the following is a correct electronic configuration of sodium?\n2,8\n8,2,1\n2,1,8\n2,8,1\nAns\n: (b) 2,8",
-      "a": "Detailed solution available."
+      "q": "7. Which one of the following is a correct electronic configuration of sodium?\n2,8\n8,2,1\n2,1,8\n2,8,1",
+      "a": "(b) 2,8"
     },
     {
       "q": "8. Atomic Number of an element is equal to:\nNumber of Protons\nNumber of electrons\nNumber of neutrons\nBoth (a) and (b)",
       "a": "(a) Number of Protons"
     },
     {
-      "q": "9. The charge of proton $({{p}^{+}})$ is:\n$+1.6\\times {{10}^{-19}}C$\n$-1.6\\times {{10}^{-19}}C$\n$+1.6\\times {{10}^{19}}C$\n$-1.6\\times {{10}^{19}}C$\nAns\n: (a) $+1.6\\times {{10}^{-19}}C$\n10. ${}_{10}^{20}Ne$ and ${}_{10}^{22}Ne$ are\nIsotopes\nIsobars\nIsotones\nBoth (a) and (b)",
-      "a": "(a) Isotopes"
+      "q": "9. The charge of proton $({{p}^{+}})$ is:\n$+1.6\\times {{10}^{-19}}C$\n$-1.6\\times {{10}^{-19}}C$\n$+1.6\\times {{10}^{19}}C$\n$-1.6\\times {{10}^{19}}C$",
+      "a": "(a) $+1.6\\times {{10}^{-19}}C$\n10. ${}_{10}^{20}Ne$ and ${}_{10}^{22}Ne$ are\nIsotopes\nIsobars\nIsotones\nBoth (a) and (b)\nAns:\n(a) Isotopes"
     },
     {
       "q": "11. Helium $\\left( {}_{2}^{4}He \\right)$ has:\n$2P+$ and $2n{}^\\circ $\n$2P+$ and $4n{}^\\circ $\n$4P+$ and $2n{}^\\circ $\n$2P+$ and $4n{}^\\circ $",
@@ -519,8 +519,8 @@ export default {
       "a": "(c) $AlC{{l}_{3}}$"
     },
     {
-      "q": "16. Atomicity of fluorine is:\n1\n2\n3\n4\nAns\n: (b) 2",
-      "a": "Detailed solution available."
+      "q": "16. Atomicity of fluorine is:\n1\n2\n3\n4",
+      "a": "(b) 2"
     },
     {
       "q": "17. Molecular formula for calcium fluoride is-\n$Ca{{F}_{2}}$\n$CaF$\n$C{{a}_{2}}F$\n$2CaF$",
@@ -547,8 +547,8 @@ export default {
       "a": "Bohr\u2019s model of an atom with three shells is as follows:"
     },
     {
-      "q": "4. What do you think would be the observation if the $\\alpha -$ particle scattering experiment is carried out using a foil of a metal other than gold?\nAns\n: If the $\\alpha -$ particle scattering experiment is carried out using a foil of a metal other than gold we will get a different observation.",
-      "a": "Detailed solution available."
+      "q": "4. What do you think would be the observation if the $\\alpha -$ particle scattering experiment is carried out using a foil of a metal other than gold?",
+      "a": "If the $\\alpha -$ particle scattering experiment is carried out using a foil of a metal other than gold we will get a different observation."
     },
     {
       "q": "5. Helium atom has an atomic mass of 4 u and two protons in its nucleus. How many neutrons does it have?",
@@ -567,24 +567,24 @@ export default {
       "a": "The atomic number of an atom is equal to the number of protons or electrons present in its nucleus. So the atomic number of an atom with 8 electrons and 8 protons is 8.\nWhat is the charge on the atom?\nAns:\nA single electron contains one negative charge and one single proton contains one positive charge. There are equal numbers of electrons and protons in an atom so they neutralize each other. The atom will be neutral."
     },
     {
-      "q": "9. With the help of Table 4.1, find out the mass number of oxygen and Sulphur atoms.\nAns\n: The mass number of an atom is equal to the sum of protons and neutrons present in its nucleus.\n$$Mass\\text{ }number\\text{ }of\\text{ }oxygen=8+8$$\n$$Mass\\text{ }number\\text{ }of\\text{ }oxygen=16$$\n$$Mass\\text{ }number\\text{ }of\\text{ Sulphur}=16+16$$\n$$Mass\\text{ }number\\text{ }of\\text{ Sulphur}=32$$",
-      "a": "Detailed solution available."
+      "q": "9. With the help of Table 4.1, find out the mass number of oxygen and Sulphur atoms.",
+      "a": "The mass number of an atom is equal to the sum of protons and neutrons present in its nucleus.\n$$Mass\\text{ }number\\text{ }of\\text{ }oxygen=8+8$$\n$$Mass\\text{ }number\\text{ }of\\text{ }oxygen=16$$\n$$Mass\\text{ }number\\text{ }of\\text{ Sulphur}=16+16$$\n$$Mass\\text{ }number\\text{ }of\\text{ Sulphur}=32$$"
     },
     {
       "q": "10. What are the limitations of J.J. Thomson\u2019s model of the atom?",
       "a": "The J.J. Thomson\u2019s atomic model failed to explain the organization of electrons in an atom.\n11. $N{{a}^{+}}$ has completely filled K and L shells. Explain.\nAns:\nSodium $(Na)$ has atomic number 11, so the electronic configuration of $Na$ is 2,8,1.\nIt has a single electron in the outermost shell, when it gives away that electron it becomes $N{{a}^{+}}$ and has electronic configuration 2,8. Also the K shell contains a total 2 electrons and the L shell contains a maximum of 8 electrons. So $N{{a}^{+}}$ has completely filled K and L shells."
     },
     {
-      "q": "12. If $z=3$, what would be the valency of the element? Also, name the element.\nAns\n: $z=3$ represents that element has 3 electrons in its shells. The electronic configuration is 2,1. It means the outermost shell electron has 1 electron, so its valency is 1. The element is Lithium.\nComposition of the nuclei of two atomic species X and Y are given as under\nX\nY\nProtons\n6\n6\nNeutrons\n6\n8",
-      "a": "Detailed solution available."
+      "q": "12. If $z=3$, what would be the valency of the element? Also, name the element.",
+      "a": "$z=3$ represents that element has 3 electrons in its shells. The electronic configuration is 2,1. It means the outermost shell electron has 1 electron, so its valency is 1. The element is Lithium.\nComposition of the nuclei of two atomic species X and Y are given as under\nX\nY\nProtons\n6\n6\nNeutrons\n6\n8"
     },
     {
       "q": "13. Give the mass number of X and Y. What is the relation between the two species?",
       "a": "The mass number of an atom is equal to the sum of protons and neutrons present in its nucleus.\nSo the mass number of X is $=6+6=12$\nMass number of Y is $=6+8=14$\nNumber of protons is the same in X and Y but the atomic numbers are different. X and Y are isotopes.\nFor the following statements, write T for True and F for False.\nJ.J. Thomson proposed that the nucleus of an atom contains only nucleons.\nAns:\nFalse\nA neutron is formed by an electron and a proton combining together. Therefore, it is neutral.\nAns:\nTrue\nThe mass of an electron is about 12000 times that of proton.\nAns\n: True\nAn isotope of iodine is used for making tincture iodine, which is used as a medicine.\nAns:\nFalse"
     },
     {
-      "q": "14. The nucleus of an atom of Bi \u2013 210 (atomic number = 83) emits $\\beta -$ particle and becomes a polonium nuclide. Write as equation for the nuclear change described.\nAns\n: Whenever a $\\beta -$particle emits from the nucleus of an atom, the atomic number of that atom is increased by 1 but the mass number remains the same.\nSo when a $\\beta -$particle emits from Bi \u2013 210 (atomic number = 83) it becomes polonium nuclide. The equation for the nuclear change is as follows:\n${}_{83}^{210}Bi\\to {}_{84}^{210}Po+{}_{-1}^{0}e$.",
-      "a": "Detailed solution available."
+      "q": "14. The nucleus of an atom of Bi \u2013 210 (atomic number = 83) emits $\\beta -$ particle and becomes a polonium nuclide. Write as equation for the nuclear change described.",
+      "a": "Whenever a $\\beta -$particle emits from the nucleus of an atom, the atomic number of that atom is increased by 1 but the mass number remains the same.\nSo when a $\\beta -$particle emits from Bi \u2013 210 (atomic number = 83) it becomes polonium nuclide. The equation for the nuclear change is as follows:\n${}_{83}^{210}Bi\\to {}_{84}^{210}Po+{}_{-1}^{0}e$."
     },
     {
       "q": "16. How can one conclude that electrons are fundamental particles?",
@@ -603,8 +603,8 @@ export default {
       "a": "Mendeleev\u2019s Periodic law states that the properties of elements are periodic functions of their atomic mass. Properties of elements depend on the atomic mass."
     },
     {
-      "q": "20. Define ionization energy and electron affinity?\nAns\n: Ionization energy of a component is that the amount of energy that has got to be supplied to at least one mole of the element within the gaseous state to get one mole of caters within the gaseous state.\nElectron affinity point is that the energy change that accompanies the formation of 1 mole of anions within the gaseous state from one mole of the atoms of the element within the gaseous state.",
-      "a": "Detailed solution available."
+      "q": "20. Define ionization energy and electron affinity?",
+      "a": "Ionization energy of a component is that the amount of energy that has got to be supplied to at least one mole of the element within the gaseous state to get one mole of caters within the gaseous state.\nElectron affinity point is that the energy change that accompanies the formation of 1 mole of anions within the gaseous state from one mole of the atoms of the element within the gaseous state."
     },
     {
       "q": "21. Why is atomic number is more important than atomic weight in predicting the chemical properties of elements?",
@@ -627,8 +627,8 @@ export default {
       "a": "Atomic number of oxygen is 8 and its electronic configuration is 2,6. In the outermost shell oxygen has 6 electrons. To complete its octet and become stable it needs 2 electrons. By gaining 2 electrons it becomes ${{O}^{2-}}$ ion.\nDiagrammatic representation of formation of ${{O}^{2-}}$ ion is as follows:"
     },
     {
-      "q": "26. Define isotopes and isobars?\nAns\n: Isotopes are atoms which have identical atomic numbers but different mass numbers. Examples of isotopes are ${}_{6}^{12}C,{}_{6}^{14}C$.\nIsobars are atoms that have different atomic numbers but the same mass number. Examples of isobars are ${}_{18}^{40}Ar,{}_{19}^{40}K$.\nShort Answer Questions (3 Marks)",
-      "a": "Detailed solution available."
+      "q": "26. Define isotopes and isobars?",
+      "a": "Isotopes are atoms which have identical atomic numbers but different mass numbers. Examples of isotopes are ${}_{6}^{12}C,{}_{6}^{14}C$.\nIsobars are atoms that have different atomic numbers but the same mass number. Examples of isobars are ${}_{18}^{40}Ar,{}_{19}^{40}K$.\nShort Answer Questions (3 Marks)"
     },
     {
       "q": "27. For the symbol H, D and T tabulate three subatomic particles found in each of them.",
@@ -647,8 +647,8 @@ export default {
       "a": "Rutherford\u2019s model of atom is failed to explain the stability of atom because as per his model electrons revolve around the nucleus and while moving through orbit should emit energy and this energy loss will shrink the orbit and finally the electron would hit the nucleus and thus atom is unstable but it is not true."
     },
     {
-      "q": "31. Define valency by taking examples of silicon and oxygen.\nAns\n: The valency of electrons is determined by electrons present in the outermost shell of an atom. Electrons present in the outermost shell of an atom are known as the valence electrons. Electrons gain or lose electrons to complete its octet. The valency of silicon is 14 and electronic configuration is 2,8,4. So silicon can gain or lose 4 electrons. So the valency of silicon is +4 or -4.\nAtomic number of oxygen is 8 and the electronic configuration is 2,6. To complete its octet oxygen gains 2 electrons hence the valency of oxygen is 2.",
-      "a": "Detailed solution available."
+      "q": "31. Define valency by taking examples of silicon and oxygen.",
+      "a": "The valency of electrons is determined by electrons present in the outermost shell of an atom. Electrons present in the outermost shell of an atom are known as the valence electrons. Electrons gain or lose electrons to complete its octet. The valency of silicon is 14 and electronic configuration is 2,8,4. So silicon can gain or lose 4 electrons. So the valency of silicon is +4 or -4.\nAtomic number of oxygen is 8 and the electronic configuration is 2,6. To complete its octet oxygen gains 2 electrons hence the valency of oxygen is 2."
     },
     {
       "q": "32. If bromine atom is available in the form of, say, two isotopes ${}_{35}^{79}Br(49.7%)$ and ${}_{35}^{81}Br(50.3%)$, Calculate the average atomic mass of bromine atom.",
@@ -667,16 +667,16 @@ export default {
       "a": "Experiment to show that cathode rays were deflected by magnetic fields is as follows:\nFirst take a discharge tube with fluorescent material inside it.\nPlace a horse \u2013 shoe magnet in the center of the discharge tube.\nWhen cathode rays are produced and travel through the discharge tube, then cathode rays get deflected by the magnetic field of the magnets in the direction of anode. Also they are negatively charged.\nThe diagram of experiment is as follows:"
     },
     {
-      "q": "36. Write the postulates of Bohr theory?\nAns\n: The postulate of Bohr\u2019s theory is as follows:\nAn electron revolves around the nucleus in the orbit of an atom in a definite path known as orbits or shells.\nEnergy of each orbit is fixed.\nEnergy increases from inner shell to the outer shells i.e. energy for orbit nearest the nucleus is lowest.\nIf energy is supplied then the electron moves from lower orbit to higher orbit.",
-      "a": "Detailed solution available."
+      "q": "36. Write the postulates of Bohr theory?",
+      "a": "The postulate of Bohr\u2019s theory is as follows:\nAn electron revolves around the nucleus in the orbit of an atom in a definite path known as orbits or shells.\nEnergy of each orbit is fixed.\nEnergy increases from inner shell to the outer shells i.e. energy for orbit nearest the nucleus is lowest.\nIf energy is supplied then the electron moves from lower orbit to higher orbit."
     },
     {
       "q": "37. Explain the variation of atomic radius along a period and down a group.",
       "a": "The atomic radius of an atom increases when we move down as an extra shell is added. The atomic radius decreases when we move from left to right as the nuclear charge of an element increases."
     },
     {
-      "q": "38. Why metals are electropositive and non-metals are electronegative in nature?\nAns\n: Metals are electropositive in nature because all metals give away electrons from their outermost shell in order to complete the octet and become stable. So metals become positively charged. Non-metals are electronegative in nature because all non-metals gain electrons in order to complete the octet and become stable. So non-metals become negatively charged.",
-      "a": "Detailed solution available."
+      "q": "38. Why metals are electropositive and non-metals are electronegative in nature?",
+      "a": "Metals are electropositive in nature because all metals give away electrons from their outermost shell in order to complete the octet and become stable. So metals become positively charged. Non-metals are electronegative in nature because all non-metals gain electrons in order to complete the octet and become stable. So non-metals become negatively charged."
     },
     {
       "q": "39. Explain the formation of $A{{l}^{3+}}$ ion and why is it formed?",
@@ -695,8 +695,8 @@ export default {
       "a": "The valency of electrons is determined by electrons present in the outermost shell of an atom. Electrons present in the outermost shell of an atom are known as the valence electrons. Those electrons determine the valency of that atom.\nThe atomic number of chlorine is 17 and the electronic configuration is 2,8,7.\nThus chlorine has 7 electrons in the outermost shell and to complete its octet it needs 1 more electron. So the valency of chlorine is one.\nThe atomic number of Sulphur is 16 and the electronic configuration is 2,8,6.\nThus Sulphur has 6 electrons in the outermost shell and to complete its octet it needs 2 more electrons. So the valency of Sulphur is two.\nThe atomic number of Magnesium is 12 and the electronic configuration is 2,8,2.\nThus Magnesium has 2 electrons in the outermost shell. It is easy to give away two valence electrons. So the valency of Magnesium is two."
     },
     {
-      "q": "43. Describe Bohr\u2019s model of the atom.\nAns\n: There are some drawbacks in Rutherford\u2019s atomic model. So to overcome this and to explain the structure of atoms in detail Neil Bohr in 1912 proposed a model of atoms. The postulates of Bohr\u2019s model are given below:\nAn electron revolves around the nucleus in the orbit of an atom with fixed energy.\nEnergy of orbits increases from inner shell to the outer shells i.e. energy for orbit nearest the nucleus is lowest.\nIf energy is supplied then the electron moves from lower orbit to the higher orbit and if an electron jumps from higher orbit (energy level) to the lower orbit (energy level) then energy is emitted as electromagnetic waves.\nEach orbit or shell represents an energy level by an integer number as n=1,2,3,\u2026.\u00a0 Such orbits are characterized as K,L,M,N\u2026\u2026\u2026.. and titled from nucleus side to outwards.",
-      "a": "Detailed solution available."
+      "q": "43. Describe Bohr\u2019s model of the atom.",
+      "a": "There are some drawbacks in Rutherford\u2019s atomic model. So to overcome this and to explain the structure of atoms in detail Neil Bohr in 1912 proposed a model of atoms. The postulates of Bohr\u2019s model are given below:\nAn electron revolves around the nucleus in the orbit of an atom with fixed energy.\nEnergy of orbits increases from inner shell to the outer shells i.e. energy for orbit nearest the nucleus is lowest.\nIf energy is supplied then the electron moves from lower orbit to the higher orbit and if an electron jumps from higher orbit (energy level) to the lower orbit (energy level) then energy is emitted as electromagnetic waves.\nEach orbit or shell represents an energy level by an integer number as n=1,2,3,\u2026.\u00a0 Such orbits are characterized as K,L,M,N\u2026\u2026\u2026.. and titled from nucleus side to outwards."
     },
     {
       "q": "44. Compare all the proposed models of an atom given in this chapter.",
@@ -1075,8 +1075,8 @@ export default {
       "a": "Cardiac muscles are the muscles of the heart that pumps blood to all parts of the body and it shows rhythmic contraction and relaxation throughout life without any fatigue. The cells of heart muscles are branched, cylindrical and uninucleate.\nCardiac Muscles are involuntary\nMore akin in structure and only found in heart.\nThey function throughout the\u00a0 life"
     },
     {
-      "q": "14. Write differences between blood and lymph.\nAns\n: Difference between blood and lymph is listed below:\nBlood\nLymph\nColored fluid\nColorless fluid\nBlood consists of RBC, WBC, Platelets and Plasma\nLymph mainly consists of plasma and WBC.\nPresent in heart, arteries and veins.\nLymph is a fluid that surrounds the body cells.",
-      "a": "Detailed solution available."
+      "q": "14. Write differences between blood and lymph.",
+      "a": "Difference between blood and lymph is listed below:\nBlood\nLymph\nColored fluid\nColorless fluid\nBlood consists of RBC, WBC, Platelets and Plasma\nLymph mainly consists of plasma and WBC.\nPresent in heart, arteries and veins.\nLymph is a fluid that surrounds the body cells."
     },
     {
       "q": "15. Give reasons for:\na) Intercellular spaces are absent in sclerenchyma tissues.",
@@ -1249,8 +1249,8 @@ export default {
       "a": "Acceleration=a=?\nFinal velocity = V =o (body comes to rest)\nDistance = s\n=?\n$$Time\\text{ }=t=\\text{ }6~sec$$\nFrom,\n$$V~=~u~+~at$$\n$O=5+a\\times 6$\n$-a\\times 6=5$\n$a=\\dfrac{-5}{6}m/{{s}^{2}}$\nNow,\n${{v}^{2}}-{{u}^{2}}=2as$\n${{O}^{2}}-25=2\\times \\dfrac{-5}{6}\\times s$\n$\\Rightarrow -25=\\dfrac{-5}{3}\\times s$\n$\\Rightarrow \\dfrac{25\\times 3}{5}=s$\n$\\therefore s=15m$"
     },
     {
-      "q": "22. A body is moving with a velocity of $12m/s$ and it comes to rest in 18m, what was the acceleration?\nAns\n:\nInitial velocity$$=u=12m/s$$\nFind velocity =V=0\n$$S=distance=18m$$\nA= acceleration =?\nFrom$$~{{3}^{rd}}$$equation of motion;\n${{v}^{2}}-{{u}^{2}}=2as$\n${{O}^{2}}-{{(12)}^{2}}=2\\times a\\times 18$\n$\\Rightarrow \\dfrac{-144}{36}=a$\n$a=\\dfrac{-144}{36}$\n$[a=-4m/{{s}^{2}}]$\n$\\Rightarrow 4m/{{s}^{2}}$",
-      "a": "Detailed solution available."
+      "q": "22. A body is moving with a velocity of $12m/s$ and it comes to rest in 18m, what was the acceleration?",
+      "a": "Initial velocity$$=u=12m/s$$\nFind velocity =V=0\n$$S=distance=18m$$\nA= acceleration =?\nFrom$$~{{3}^{rd}}$$equation of motion;\n${{v}^{2}}-{{u}^{2}}=2as$\n${{O}^{2}}-{{(12)}^{2}}=2\\times a\\times 18$\n$\\Rightarrow \\dfrac{-144}{36}=a$\n$a=\\dfrac{-144}{36}$\n$[a=-4m/{{s}^{2}}]$\n$\\Rightarrow 4m/{{s}^{2}}$"
     },
     {
       "q": "23. A body starts from rest and moves with a uniform acceleration of $4m/{{s}^{2}}$until it travels a distance of $800m$, find the find velocity?",
@@ -1293,8 +1293,8 @@ export default {
       "a": "Given:$u=5m{{s}^{-1}},a=-10m{{s}^{-2}}$\n$v=0~~~\\left( \\mathbf{sinceat}\\text{ }\\mathbf{maximum}\\text{ }\\mathbf{height}\\text{ }\\mathbf{its}\\text{ }\\mathbf{velocity}\\text{ }\\mathbf{will}\\text{ }\\mathbf{be}\\text{ }\\mathbf{zero} \\right)$\n$v=u+at=5+(-10)\\times t$\n$\\Rightarrow 0=5-10t$ $10t=5,or,t=\\dfrac{5}{10}=0.5\\sec $\n$S=ut+\\dfrac{1}{2}a{{t}^{2}}=5\\times 0.5+\\dfrac{1}{2}\\times (-10)\\times {{0.5}^{2}}$\n$\\Rightarrow 2.5-1.25=1.25m$\n$\\therefore S=1.25m$"
     },
     {
-      "q": "8. Derive the second equation of motion$S=ut+\\dfrac{1}{2}a{{t}^{2}}$\u00a0 graphically?\nAns\n: Let at time $$\\mathbf{T}=\\mathbf{0}$$ body moves with initial velocity u and at time \u2018t\u2019 body has final velocity \u2018v\u2019 and at time \u2018t\u2019 it covers a distance\u2019s.\n$$\\mathbf{AC}=\\mathbf{v},\\text{ }\\mathbf{AB}=\\mathbf{u},\\text{ }\\mathbf{OA}=\\mathbf{t},\\text{ }\\mathbf{DB}=\\mathbf{OA}=\\mathbf{t},\\text{ }\\mathbf{BC}=\\mathbf{AC}-\\mathbf{AB}=\\mathbf{V}-\\mathbf{u}$$\nArea under a $$v-t$$curve gives displacement so,\n$$\\mathbf{S}=\\mathbf{Area}\\text{ }\\mathbf{of}\\text{ }\\Delta \\mathbf{DBC}+\\mathbf{Area}~\\mathbf{of}\\text{ }\\mathbf{rectangle}\\text{ }\\mathbf{OABD}\\to \\left( \\mathbf{i} \\right)$$\n$$Area\\text{ }of~\\Delta DBC=\\dfrac{1}{2}\\times Base\\times Height\\Rightarrow \\dfrac{1}{2}\\times ~DB\\times BC$$\n$$\\Rightarrow \\dfrac{1}{2}\\times t\\times (v-u)\\to (ii)$$\n$$Area\\text{ }of\\text{ }rectangle\\text{ }OABD\\text{ }=\\text{ }length\\times Breadth$$\n$$\\Rightarrow OA\\times BA$$\n$$\\Rightarrow t\\times u\\to (iii)$$\n$$S=ut+\\dfrac{1}{2}\\times t\\times (v-u)$$\n$$S=ut+\\dfrac{1}{2}\\times t\\times at(\\therefore useV-u=at)$$\n$$\\therefore S=ut+\\dfrac{1}{2}a{{t}^{2}}$$",
-      "a": "Detailed solution available."
+      "q": "8. Derive the second equation of motion$S=ut+\\dfrac{1}{2}a{{t}^{2}}$\u00a0 graphically?",
+      "a": "Let at time $$\\mathbf{T}=\\mathbf{0}$$ body moves with initial velocity u and at time \u2018t\u2019 body has final velocity \u2018v\u2019 and at time \u2018t\u2019 it covers a distance\u2019s.\n$$\\mathbf{AC}=\\mathbf{v},\\text{ }\\mathbf{AB}=\\mathbf{u},\\text{ }\\mathbf{OA}=\\mathbf{t},\\text{ }\\mathbf{DB}=\\mathbf{OA}=\\mathbf{t},\\text{ }\\mathbf{BC}=\\mathbf{AC}-\\mathbf{AB}=\\mathbf{V}-\\mathbf{u}$$\nArea under a $$v-t$$curve gives displacement so,\n$$\\mathbf{S}=\\mathbf{Area}\\text{ }\\mathbf{of}\\text{ }\\Delta \\mathbf{DBC}+\\mathbf{Area}~\\mathbf{of}\\text{ }\\mathbf{rectangle}\\text{ }\\mathbf{OABD}\\to \\left( \\mathbf{i} \\right)$$\n$$Area\\text{ }of~\\Delta DBC=\\dfrac{1}{2}\\times Base\\times Height\\Rightarrow \\dfrac{1}{2}\\times ~DB\\times BC$$\n$$\\Rightarrow \\dfrac{1}{2}\\times t\\times (v-u)\\to (ii)$$\n$$Area\\text{ }of\\text{ }rectangle\\text{ }OABD\\text{ }=\\text{ }length\\times Breadth$$\n$$\\Rightarrow OA\\times BA$$\n$$\\Rightarrow t\\times u\\to (iii)$$\n$$S=ut+\\dfrac{1}{2}\\times t\\times (v-u)$$\n$$S=ut+\\dfrac{1}{2}\\times t\\times at(\\therefore useV-u=at)$$\n$$\\therefore S=ut+\\dfrac{1}{2}a{{t}^{2}}$$"
     },
     {
       "q": "9. A car moving with a certain velocity comes to a halt if the retardation was$5m/{{s}^{2}}$ find the initial velocity of the car?",
@@ -1357,8 +1357,8 @@ export default {
       "a": "$$Distance=300m$$\n$$time=2min30seconds=150\\text{ }seconds$$\nAverage speed from A to B = average velocity from A to B\n$$\\Rightarrow 300m/150s=2m/s$$\nFrom A to C?\nAns:\naverage speed from A to C $$=\\dfrac{\\left( 300+100 \\right)\\text{ }m}{\\left( 150+60 \\right)\\text{ }sec}$$\n$\\Rightarrow \\dfrac{400m}{210s}=1.90m/s$\nDisplacement from A to C $$=\\left( 300100 \\right)m=200m$$\n$$time=2min30sec+1min\\text{ }=210s$$\n$$velocity\\text{ }=\\dfrac{\\text{ }displacement}{time}=\\dfrac{200m}{210s}=0.95m/s$$"
     },
     {
-      "q": "3. Abdul, while driving to school, computes the average speed for his trip to be $20km{{h}^{-1}}$. On his return trip along the same route, there is less traffic and the average speed is $40km{{h}^{-1}}$. What is the average speed for Abdul\u2019s trip?\nAns.\nIf we suppose that distance from Abdul\u2019s home to school = x km s\nwhile driving to school:$speed=20km{{h}^{-1}}$ ,\n$$velocity\\text{ }=\\text{ }\\dfrac{displacement}{time}$$\n$$20\\text{ }=\\dfrac{x}{t},or,\\text{ }t=\\dfrac{x}{20}hr$$\non his return trip: $$speed=40km{{h}^{-1}},40=\\text{ }x/t$$\nor, $$t=\\dfrac{x}{40}hr$$\n$$total\\text{ }distance\\text{ }travelled=\\text{ }x+x=2x$$\n$$total\\text{ }time\\text{ }=\\text{ }t\\text{ }+\\text{ }t=\\dfrac{x}{20}+\\dfrac{x}{40}=\\dfrac{\\left( 2x\\text{ }+\\text{ }x \\right)}{40}=\\dfrac{3x}{40}hr$$\naverage speed for Abdul\u2019s trip $$=\\text{ }\\dfrac{2x}{\\left( \\dfrac{3x}{40} \\right)\\text{ }}=\\dfrac{80x}{3x}=26.67km/hr$$",
-      "a": "Detailed solution available."
+      "q": "3. Abdul, while driving to school, computes the average speed for his trip to be $20km{{h}^{-1}}$. On his return trip along the same route, there is less traffic and the average speed is $40km{{h}^{-1}}$. What is the average speed for Abdul\u2019s trip?",
+      "a": "If we suppose that distance from Abdul\u2019s home to school = x km s\nwhile driving to school:$speed=20km{{h}^{-1}}$ ,\n$$velocity\\text{ }=\\text{ }\\dfrac{displacement}{time}$$\n$$20\\text{ }=\\dfrac{x}{t},or,\\text{ }t=\\dfrac{x}{20}hr$$\non his return trip: $$speed=40km{{h}^{-1}},40=\\text{ }x/t$$\nor, $$t=\\dfrac{x}{40}hr$$\n$$total\\text{ }distance\\text{ }travelled=\\text{ }x+x=2x$$\n$$total\\text{ }time\\text{ }=\\text{ }t\\text{ }+\\text{ }t=\\dfrac{x}{20}+\\dfrac{x}{40}=\\dfrac{\\left( 2x\\text{ }+\\text{ }x \\right)}{40}=\\dfrac{3x}{40}hr$$\naverage speed for Abdul\u2019s trip $$=\\text{ }\\dfrac{2x}{\\left( \\dfrac{3x}{40} \\right)\\text{ }}=\\dfrac{80x}{3x}=26.67km/hr$$"
     },
     {
       "q": "4. A motorboat starting from rest on a lake accelerates in a straight line at a constant rate of $3.0m{{s}^{-2}}$ for $8.0s$. How far does the boat travel during this time?",
@@ -1385,8 +1385,8 @@ export default {
       "a": "An object with a constant acceleration can still have the zero velocity. For example, an object which is at rest on the surface of earth will have zero velocity but still being acted upon by the gravitational force of earth with an acceleration of $$9.81\\text{ }m{{s}^{-2}}$$towards the center of earth. Hence when an object starts falling freely can have constant acceleration but with zero velocity.\nb) An object moving in a certain direction with acceleration in the perpendicular direction.\nAns:\nWhen an athlete moves with a velocity of constant magnitude along the circular path, the only change in his velocity is due to the change in the direction of motion. Here, the motion of the athlete moving along a circular path is, therefore, an example of an accelerated motion where acceleration is always perpendicular to direction of motion of an object at a given instance. Hence it is possible when an object moves on a circular path."
     },
     {
-      "q": "10. An artificial satellite is moving in a circular orbit of radius $$42250km$$ . Calculate its speed if it takes $$24hrs$$to revolve around the earth.\nAns.\nLet us assume An artificial satellite, which is moving in a circular orbit of radius $$42250\\text{ }km$$ covers a distance 's' as it revolve around earth with speed 'v' in given time 't' of $$24\\text{ }hours$$ .\n$$\\Rightarrow 42250\\text{ }km$$\nRadius of circular orbit r\n$\\Rightarrow 4225\\times 1000m$ Time taken by artificial satellite $$t=\\text{ }24\\text{ }hours$$\n$\\Rightarrow 24\\times 60\\times 60s$ Distance covered by satellite s=circumference of circular orbit\n$$\\Rightarrow 2\\pi \\text{ }r$$\n\u2234 Speed of satellite$$v=\\dfrac{\\left( 2\\pi \\text{ }r \\right)}{t}$$\n$\\Rightarrow \\dfrac{\\left[ 2\\times \\left( \\dfrac{22}{7} \\right)\\times 42250\\times 1000 \\right]}{\\left( 24\\times 60\\times 60 \\right)}$\n$\\Rightarrow \\dfrac{\\left( 2\\times 22\\times 42250\\times 1000 \\right)}{\\left( 7\\times 24\\times 60\\times 60 \\right)m{{s}^{-1}}}$\n$\\Rightarrow 3073.74m{{s}^{-1}}$\n$\\therefore Speed=3.073km/s$",
-      "a": "Detailed solution available."
+      "q": "10. An artificial satellite is moving in a circular orbit of radius $$42250km$$ . Calculate its speed if it takes $$24hrs$$to revolve around the earth.",
+      "a": "Let us assume An artificial satellite, which is moving in a circular orbit of radius $$42250\\text{ }km$$ covers a distance 's' as it revolve around earth with speed 'v' in given time 't' of $$24\\text{ }hours$$ .\n$$\\Rightarrow 42250\\text{ }km$$\nRadius of circular orbit r\n$\\Rightarrow 4225\\times 1000m$ Time taken by artificial satellite $$t=\\text{ }24\\text{ }hours$$\n$\\Rightarrow 24\\times 60\\times 60s$ Distance covered by satellite s=circumference of circular orbit\n$$\\Rightarrow 2\\pi \\text{ }r$$\n\u2234 Speed of satellite$$v=\\dfrac{\\left( 2\\pi \\text{ }r \\right)}{t}$$\n$\\Rightarrow \\dfrac{\\left[ 2\\times \\left( \\dfrac{22}{7} \\right)\\times 42250\\times 1000 \\right]}{\\left( 24\\times 60\\times 60 \\right)}$\n$\\Rightarrow \\dfrac{\\left( 2\\times 22\\times 42250\\times 1000 \\right)}{\\left( 7\\times 24\\times 60\\times 60 \\right)m{{s}^{-1}}}$\n$\\Rightarrow 3073.74m{{s}^{-1}}$\n$\\therefore Speed=3.073km/s$"
     },
     {
       "q": "11. The position of a body at different times are recorded in the table given below:\nDraw the displacement time graph for the above data?",
@@ -2057,8 +2057,8 @@ export default {
       "a": "The S.I. the derived unit of frequency is Hertz (Hz).. One hertz means that an event repeats once per second. The SI unit for this period is the second."
     },
     {
-      "q": "26. Stethoscopes work on the principle of:\n(a) Multiple reflections of sound\n(b) Ultrasounds\n(c) Both a and b\n(d) None of the above\nAns\n: (a) multiple reflections of sound",
-      "a": "Detailed solution available."
+      "q": "26. Stethoscopes work on the principle of:\n(a) Multiple reflections of sound\n(b) Ultrasounds\n(c) Both a and b\n(d) None of the above",
+      "a": "(a) multiple reflections of sound"
     },
     {
       "q": "27. The Audible Range of the human ear is:\n(a) 20 HZ \u2013 20 KHZ\n(b) 20 HZ \u2013 20 MHZ\n(c) 20HZ \u2013 20,000 HZ\n(d) Both a) and b)",
@@ -2161,8 +2161,8 @@ export default {
       "a": "The movement of the particle is called vibration. A medium can be anything \u2013 a liquid (such as water), a solid (such as the seafloor), or a gas (such as air). A sound wave is called a compressional or longitudinal wave when it vibrates parallel to the direction in which the sound wave moves."
     },
     {
-      "q": "16. Flash and thunder are produced simultaneously. But thunder is heard a few seconds after the flash is seen. Why?\nAns\n:\nThere are many times we have observed that the thunder is heard a few seconds later after the flash\nThis happens because the speed of light in the atmosphere for air is\n$3 \\times 10^8 \\mathrm{~m/s^2}$ which are very high, to that of sound which is only 330 m/s.\nThis is the reason; the sound of thunder reaches us later than the flash.",
-      "a": "Detailed solution available."
+      "q": "16. Flash and thunder are produced simultaneously. But thunder is heard a few seconds after the flash is seen. Why?",
+      "a": "There are many times we have observed that the thunder is heard a few seconds later after the flash\nThis happens because the speed of light in the atmosphere for air is\n$3 \\times 10^8 \\mathrm{~m/s^2}$ which are very high, to that of sound which is only 330 m/s.\nThis is the reason; the sound of thunder reaches us later than the flash."
     },
     {
       "q": "17. Differentiate between longitudinal and transverse waves?",
@@ -2205,12 +2205,12 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "1. How does the sound produced by a vibrating object in a medium reach your ear?\nAns\n:\nSound waves enter the outer ear and travel through a narrow passageway called the ear canal, which leads to the eardrum. When the sound waves fall on the eardrum, the eardrum starts vibrating back and forth rapidly.\nThe sound produced by a vibrating object reaches our ear through sound waves which travel in the medium as a series of compressions and rarefactions. The process is repeated further and as result sound waves propagate in the form of compressions and rarefactions to the listener\u2019s ear.",
-      "a": "Detailed solution available."
+      "q": "1. How does the sound produced by a vibrating object in a medium reach your ear?",
+      "a": "Sound waves enter the outer ear and travel through a narrow passageway called the ear canal, which leads to the eardrum. When the sound waves fall on the eardrum, the eardrum starts vibrating back and forth rapidly.\nThe sound produced by a vibrating object reaches our ear through sound waves which travel in the medium as a series of compressions and rarefactions. The process is repeated further and as result sound waves propagate in the form of compressions and rarefactions to the listener\u2019s ear."
     },
     {
-      "q": "2. What are the wavelength, frequency, time period, and amplitude of a sound wave?\nAns\n:\nThe wavelength of a sound wave is defined as the distance between the identical parts of the wave also called crests and troughs.\nThe wavelength of the sound wave is calculated as:\nWavelength =velocity of sound/frequency\nFrequency is defined as the number of vibrations or oscillations per second i.e. it is the number of complete waves or cycles produced in one second. It refers to how rapidly or slowly the oscillations occur.\nThe time period is the time taken to complete one vibration/oscillation/complete wave is called the time period. It is measured in seconds.\nAmplitude is the utmost rearrangement of the particles of the medium from their actual static position.",
-      "a": "Detailed solution available."
+      "q": "2. What are the wavelength, frequency, time period, and amplitude of a sound wave?",
+      "a": "The wavelength of a sound wave is defined as the distance between the identical parts of the wave also called crests and troughs.\nThe wavelength of the sound wave is calculated as:\nWavelength =velocity of sound/frequency\nFrequency is defined as the number of vibrations or oscillations per second i.e. it is the number of complete waves or cycles produced in one second. It refers to how rapidly or slowly the oscillations occur.\nThe time period is the time taken to complete one vibration/oscillation/complete wave is called the time period. It is measured in seconds.\nAmplitude is the utmost rearrangement of the particles of the medium from their actual static position."
     },
     {
       "q": "3. Cite an experiment to show that sound needs a material medium for its propagation.",
@@ -2253,8 +2253,8 @@ export default {
       "a": "The repeated reflection of sound that results in the persistence of sound is called reverberation. Plastics, fiberboards, or curtains are some of the substances that are used to reduce the reverberation of sound. Reduction of reverberation is done by:-\nIf a sound is made in a big hall, the sound waves are reflected repeatedly from the walls, ceiling, and floor of the hall, and produces many echoes\nProviding open windows in the space."
     },
     {
-      "q": "13. Discuss briefly the structure and working of the human ear?\nAns\n:\nEar collects sound waves and channels them into the ear canal (external auditory meatus), where the sound is amplified. Sound waves cause the eardrum to vibrate.\nStructure of the Human Ear:\nThe outer ear is called pinna followed by an auditory canal in which ends in a tympanic membrane. The tympanic membrane is then connected to three bones, hammer, anvil, and stirrup. After that, there is a cochlea connected to an auditory nerve.\nWorking of the Human Ear:\nThe auricle or the pinna collects the sound and the collected sound passes through and reaches the auditory nerve. After which it forces the eardrum (tympanic membrane) to vibrate. The vibrations are then amplified by 3 bones and the pressure variations reach the inner ear after which the cochlea converts them to electrical signals. The auditory nerve carries the electrical signals to the brain and the brain interprets them as sound.",
-      "a": "Detailed solution available."
+      "q": "13. Discuss briefly the structure and working of the human ear?",
+      "a": "Ear collects sound waves and channels them into the ear canal (external auditory meatus), where the sound is amplified. Sound waves cause the eardrum to vibrate.\nStructure of the Human Ear:\nThe outer ear is called pinna followed by an auditory canal in which ends in a tympanic membrane. The tympanic membrane is then connected to three bones, hammer, anvil, and stirrup. After that, there is a cochlea connected to an auditory nerve.\nWorking of the Human Ear:\nThe auricle or the pinna collects the sound and the collected sound passes through and reaches the auditory nerve. After which it forces the eardrum (tympanic membrane) to vibrate. The vibrations are then amplified by 3 bones and the pressure variations reach the inner ear after which the cochlea converts them to electrical signals. The auditory nerve carries the electrical signals to the brain and the brain interprets them as sound."
     },
     {
       "q": "14. A man standing in a valley between two parallel mountains fires a gun and hears an echo at an interval of 2 s and 3.5 s. what is",
@@ -2291,8 +2291,8 @@ export default {
       "a": "Crop rotation is the technique of alternately cultivating various crops in the same land in a pre-planned succession."
     },
     {
-      "q": "5. What are drones?\nAns\n: Drones are airborne devices that are used in agriculture to improve crop output and to track crop growth.\nThey assist farmers in developing agricultural field systems for using water, fertilisers, herbicides, and seeds. These tools have revolutionised agriculture by allowing farmers to save significant amounts of money while also increasing efficiency and profitability.",
-      "a": "Detailed solution available."
+      "q": "5. What are drones?",
+      "a": "Drones are airborne devices that are used in agriculture to improve crop output and to track crop growth.\nThey assist farmers in developing agricultural field systems for using water, fertilisers, herbicides, and seeds. These tools have revolutionised agriculture by allowing farmers to save significant amounts of money while also increasing efficiency and profitability."
     },
     {
       "q": "6. What is pasturage and how is it important?",
@@ -2311,8 +2311,8 @@ export default {
       "a": "The advantages of chicken farming over cattle rearing include the following:\na) The amount of money required is little.\nb) The amount of space required is minimal.\nc) It is simple to maintain.\nd) Returns are processed quickly."
     },
     {
-      "q": "10. Define inter \u2013 cropping Mention its advantages.\nAns\n:Intercropping is the practise of cultivating two or more crops on the same field in rows at the same time.\nAdded benefits \u2013\n1) Productivity is higher.\n2) It saves space and time by farming two or more crops at the same time.\n3) It aids in the preservation of soil fertility.",
-      "a": "Detailed solution available."
+      "q": "10. Define inter \u2013 cropping Mention its advantages.",
+      "a": "Intercropping is the practise of cultivating two or more crops on the same field in rows at the same time.\nAdded benefits \u2013\n1) Productivity is higher.\n2) It saves space and time by farming two or more crops at the same time.\n3) It aids in the preservation of soil fertility."
     },
     {
       "q": "11. What are the advantages of organic farming?",
@@ -2403,8 +2403,8 @@ export default {
       "a": "The following are some of the benefits of composite fish culture:\nIn such systems, both indigenous and imported fish species can be utilised.\nFood accessible in all regions of the water reservoir is exploited due to the non-competitive nature of selected species.\nIncreases the amount of fish in the water reservoir (intensive fish farming)."
     },
     {
-      "q": "13. What are the desirable characters of bee varieties suitable for honey production?\nAns\n: Characteristics of bee types appropriate for honey production include:\nHoney harvesting capacity is high. They have to be less stingy.\nThey should stay in a beehive for a long time and breed prolifically.",
-      "a": "Detailed solution available."
+      "q": "13. What are the desirable characters of bee varieties suitable for honey production?",
+      "a": "Characteristics of bee types appropriate for honey production include:\nHoney harvesting capacity is high. They have to be less stingy.\nThey should stay in a beehive for a long time and breed prolifically."
     },
     {
       "q": "14. What is pasturage and how is it related to honey production?",
@@ -2419,8 +2419,8 @@ export default {
       "a": "Cattle farming provides two advantages:\n(i) Draught animals for farm labour (males), i.e. tilling, irrigation, and carting.\n(ii) Milch animals (dairy animals) are females who produce milk."
     },
     {
-      "q": "17. How do storage grain losses occur?\nAns\n: Storage grain losses are caused by a variety of biotic and abiotic factors: biotic factors include insects, rodents, bacteria, fungi, and other organisms that feed on grains. Unfavorable humidity and temperature conditions are abiotic variables.",
-      "a": "Detailed solution available."
+      "q": "17. How do storage grain losses occur?",
+      "a": "Storage grain losses are caused by a variety of biotic and abiotic factors: biotic factors include insects, rodents, bacteria, fungi, and other organisms that feed on grains. Unfavorable humidity and temperature conditions are abiotic variables."
     },
     {
       "q": "18. Why are manure and fertilizers used in fields?",
@@ -2503,8 +2503,8 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2. What are the advantages of intercropping and crop rotation?\nAns\n:\nAdvantages of inter -cropping and crop rotation:\nThis way,both crops can give better returns.Crop rotation, when done correctly, allows for the replenishment of soil nutrients without the need of fertilisers.\nFor example, growing leguminous plants following a non-leguminous crop in the same field ensures nitrogen enrichment.\nAs a result, any decline in soil fertility is avoided.\nIntercropping makes the most use of the nutrients available. It also prevents pests and illnesses from spreading to all plants of a single crop in a field.",
-      "a": "Detailed solution available."
+      "q": "2. What are the advantages of intercropping and crop rotation?",
+      "a": "Advantages of inter -cropping and crop rotation:\nThis way,both crops can give better returns.Crop rotation, when done correctly, allows for the replenishment of soil nutrients without the need of fertilisers.\nFor example, growing leguminous plants following a non-leguminous crop in the same field ensures nitrogen enrichment.\nAs a result, any decline in soil fertility is avoided.\nIntercropping makes the most use of the nutrients available. It also prevents pests and illnesses from spreading to all plants of a single crop in a field."
     },
     {
       "q": "3. What is genetic manipulation? How is it useful in agricultural practices?",
@@ -2515,8 +2515,8 @@ export default {
       "a": "Animal husbandry refers to the scientific management of livestock animals. It covers a wide range of topics.Feeding, breeding, and disease control are all factors to consider.\nThe demand for milk, eggs, and meat is increasing as the population grows and living standards rise. In addition, the increased awareness of the importance of adequate animal treatment has imposed new restrictions on livestock production .As a result, cattle output must be improved. Good animal husbandry practises, such as providing good food and controlling infections in cattle, can contribute to this progress, allowing farmers to receive higher quality and quantity goods."
     },
     {
-      "q": "5. How do you differentiate between capture fishing, mariculture and aquaculture?\nAns\n: The difference between capture fishing, mariculture and aquaculture are:\nCapture fishing\nMariculture\nAquaculture\nIt's a technique for catching fish from natural sources.\nMarine culture fisheries are culture fisheries that are maintained in marine water bodies only for the purpose of rearing and breeding marine creatures such as fish and prawns.\nThese cultural fisheries are kept in fresh or saltwater, and they allow for the raising and production of a higher number of aquatic creatures.",
-      "a": "Detailed solution available."
+      "q": "5. How do you differentiate between capture fishing, mariculture and aquaculture?",
+      "a": "The difference between capture fishing, mariculture and aquaculture are:\nCapture fishing\nMariculture\nAquaculture\nIt's a technique for catching fish from natural sources.\nMarine culture fisheries are culture fisheries that are maintained in marine water bodies only for the purpose of rearing and breeding marine creatures such as fish and prawns.\nThese cultural fisheries are kept in fresh or saltwater, and they allow for the raising and production of a higher number of aquatic creatures."
     },
     {
       "q": "6. What is genetic manipulation? How is it useful in agricultural practices?",

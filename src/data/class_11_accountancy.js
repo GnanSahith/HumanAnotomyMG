@@ -13,8 +13,8 @@ export default {
       "a": "Assets are the items owned by an individual or a company that can provide future economic benefit. Liabilities are what you owe to the other parties."
     },
     {
-      "q": "4. Define capital of the company.\nAns\n: Capital of the company is the mix of assets or resources a company can draw on in financing its business.",
-      "a": "Detailed solution available."
+      "q": "4. Define capital of the company.",
+      "a": "Capital of the company is the mix of assets or resources a company can draw on in financing its business."
     },
     {
       "q": "5. Define debtors and creditors of the company.",
@@ -33,12 +33,12 @@ export default {
       "a": "The difference between capital and working capital are:\nCapital\nWorking Capital\nThe capital is the assets and cash in a business.\nWorking Capital specifies the liquidity levels of companies for handling day-to-day expenses.\nCapital can be Assets, Equipment, Cash, Land and Buildings. etc.\nCash and cash equivalents consist of cash, such as amount in checking or savings accounts, as cash equivalents are highly-liquid assets, such as money-market money and Treasury bills."
     },
     {
-      "q": "4. Distinguish between Expenses and expenditure of the company?\nAns\n: The difference between expenses and expenditure are:\nExpenses\nExpenditure\nAn expense is the cost of a business function that a company spends to generate revenue.\nAn expenditure signifies a payment with either cash or credit to purchase goods or services.\nIn the accrual accounting system, an expense is recognized when it is actually spent.\nAn expenditure represents the disbursement of funds.\nExamples: Rent, wages, interest, salaries, Cost of sales, utilities expense, discount allowed, cleaning expense, depreciation expense etc.\nExamples: An example of an expenditure is the money spent on office equipment that you have purchased.",
-      "a": "Detailed solution available."
+      "q": "4. Distinguish between Expenses and expenditure of the company?",
+      "a": "The difference between expenses and expenditure are:\nExpenses\nExpenditure\nAn expense is the cost of a business function that a company spends to generate revenue.\nAn expenditure signifies a payment with either cash or credit to purchase goods or services.\nIn the accrual accounting system, an expense is recognized when it is actually spent.\nAn expenditure represents the disbursement of funds.\nExamples: Rent, wages, interest, salaries, Cost of sales, utilities expense, discount allowed, cleaning expense, depreciation expense etc.\nExamples: An example of an expenditure is the money spent on office equipment that you have purchased."
     },
     {
-      "q": "5. Differentiate between profit and gain?\nAns\n: The difference between Profit and gain are:\nProfit\nGain\nProfit, also referred to as bookkeeping profit or financial profit, is net income made after subtracting all dollar costs from total revenue.\nA gain is a general growth in the value of an asset or property.\nIt shows the amount of money a firm has available after subtracting the explicit costs of running the business.\nA gain ascends if the existing price of something is higher than the original purchase price.\nProfit is spread to shareholders.\nGain is applied in the company\u2019s working.\nC. Short Answer Questions \u2013 3 Marks",
-      "a": "Detailed solution available."
+      "q": "5. Differentiate between profit and gain?",
+      "a": "The difference between Profit and gain are:\nProfit\nGain\nProfit, also referred to as bookkeeping profit or financial profit, is net income made after subtracting all dollar costs from total revenue.\nA gain is a general growth in the value of an asset or property.\nIt shows the amount of money a firm has available after subtracting the explicit costs of running the business.\nA gain ascends if the existing price of something is higher than the original purchase price.\nProfit is spread to shareholders.\nGain is applied in the company\u2019s working.\nC. Short Answer Questions \u2013 3 Marks"
     },
     {
       "q": "1. Explain reasons why users need accounting information.",
@@ -57,8 +57,8 @@ export default {
       "a": "The different kind of roles of accounting are as follows;\nRegulator of financial policy and construction of planning.\nTo preserve full and organized\u00a0 records of business transactions.\nIt can be used for Evaluation of employees' performance.\nNowadays accounting is used to determine the income of the company."
     },
     {
-      "q": "5. Explain the types of information external users of accounting information are interested.\nAns\n: Following is the type of information external users need:\nInvestment created by external users including risk and reward.\nCreditors are interested in accounting data, because it enables them to fix the credit worthiness of the business.\nThe creditworthiness and ability of the company to pay.\nAll the information of allocations of assets of the company and compliance are regularly carried out.\nAmount on credit taken by the company is paid off in which aspects and time period it takes.\nD. Long Answer Questions - 5 Marks",
-      "a": "Detailed solution available."
+      "q": "5. Explain the types of information external users of accounting information are interested.",
+      "a": "Following is the type of information external users need:\nInvestment created by external users including risk and reward.\nCreditors are interested in accounting data, because it enables them to fix the credit worthiness of the business.\nThe creditworthiness and ability of the company to pay.\nAll the information of allocations of assets of the company and compliance are regularly carried out.\nAmount on credit taken by the company is paid off in which aspects and time period it takes.\nD. Long Answer Questions - 5 Marks"
     },
     {
       "q": "1. Role of accountant in today\u2019s environment and how they help management?",
@@ -191,8 +191,8 @@ export default {
       "a": "By using a single set of accounting rules, the International Financial Reporting Standards (IFRS) help to promote global standardisation. The International Accounting Standards Board (IASB) produced the International Financial Reporting Standards (IFRS) (IASB).\nThe International Financial Reporting Standards (IFRS) are used in the following ways: The International Financial Reporting Standards (IFRS) are beneficial in a variety of ways.\n\u2022 The International Financial Reporting Standards (IFRS) make comparing financial accounts from different companies a breeze.\n\u2022 Auditors and accountants can give better services to their clients by adopting IFRS, and a company's management can implement its business strategies on a worldwide scale by using IFRS."
     },
     {
-      "q": "3. State the differences between the accrual basis of accounting and the cash basis of accounting.\nAns\n:: The difference between the accrual and cash accounting System are as follow:\nBasis\nAccrual Basis of Accounting\nCash Basis of Accounting",
-      "a": "Detailed solution available."
+      "q": "3. State the differences between the accrual basis of accounting and the cash basis of accounting.",
+      "a": ": The difference between the accrual and cash accounting System are as follow:\nBasis\nAccrual Basis of Accounting\nCash Basis of Accounting"
     },
     {
       "q": "1. Acceptability\nIt is more accepted in business because it discloses accurate income and expenses, as well as assets and liabilities.\nIt is not acceptable in business because it conceals the true profit and loss, as well as assets and obligations.",
@@ -207,8 +207,8 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Why is it necessary for accountants to assume that the business entity will remain a going concern?\nAns\n: The corporate entity is considered a going concern by the accountants since it provides the basis for reflecting the value of the assets on the balance sheet. This assumption allows the company to charge only the portion of the asset that has been consumed or used to generate revenue within a certain period. The remainder of the asset will be carried forward over the next few years.",
-      "a": "Detailed solution available."
+      "q": "4. Why is it necessary for accountants to assume that the business entity will remain a going concern?",
+      "a": "The corporate entity is considered a going concern by the accountants since it provides the basis for reflecting the value of the assets on the balance sheet. This assumption allows the company to charge only the portion of the asset that has been consumed or used to generate revenue within a certain period. The remainder of the asset will be carried forward over the next few years."
     },
     {
       "q": "5. When should revenue be recognized? Are there exceptions to the general rule?",
@@ -403,8 +403,8 @@ export default {
       "a": "On both the debit and credit sides of a three-column cash book, there are three columns of amounts. One column is for cash, another is for discounts, and a third is for bank transactions. Because the corporation uses a bank instead of cash, it has an additional column for bank transactions.\nD. Long Answer Questions- 5 Marks"
     },
     {
-      "q": "1.\nEnter the following transactions into cash book for the month of Jan 2018\ni. Cash received from Ravi 4,000\nii. Rent Paid in cash 2,000\niii. Purchased goods from Mahesh for cash 6,000\niv. Sold goods for cash 9,000\nAns :\nCash book for the month of Jan 2018\nDate\nParticular\nAmount\nDate\nParticular\nAmount\ni.\nTo Ravi\n4,000\nii.\nBy Rent\n2,000\niv.\nTo sales\n9,000\niii.\nBy Purchase\n6,000\niii.\nBy Balance c/d\n5,000\n13,000\n13,000\nWorking Notes:\nJournal entries\nDate\nParticular\nDr\nCr\ni.\nCash A/c \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Dr.\n4,000\nTo Ravi\n4,000\n(being cash received from ravi)\nii.\nRent A/c \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Dr.\n2,000\nTo Cash A/c\n2,000\n(being rent paid on cash)\niii.\nPurchase A/c \u00a0 \u00a0 \u00a0 Dr.\n6,000\nTo Cash A/c\n6,000\n(being purchased goods on cash from mahesh)\niv.\nCash A/c \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Dr.\n9,000\nTo sale\n9,000\n(being goods sold in cash)",
-      "a": "Detailed solution available."
+      "q": "1.\nEnter the following transactions into cash book for the month of Jan 2018\ni. Cash received from Ravi 4,000\nii. Rent Paid in cash 2,000\niii. Purchased goods from Mahesh for cash 6,000\niv. Sold goods for cash 9,000",
+      "a": "Cash book for the month of Jan 2018\nDate\nParticular\nAmount\nDate\nParticular\nAmount\ni.\nTo Ravi\n4,000\nii.\nBy Rent\n2,000\niv.\nTo sales\n9,000\niii.\nBy Purchase\n6,000\niii.\nBy Balance c/d\n5,000\n13,000\n13,000\nWorking Notes:\nJournal entries\nDate\nParticular\nDr\nCr\ni.\nCash A/c \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Dr.\n4,000\nTo Ravi\n4,000\n(being cash received from ravi)\nii.\nRent A/c \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Dr.\n2,000\nTo Cash A/c\n2,000\n(being rent paid on cash)\niii.\nPurchase A/c \u00a0 \u00a0 \u00a0 Dr.\n6,000\nTo Cash A/c\n6,000\n(being purchased goods on cash from mahesh)\niv.\nCash A/c \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 Dr.\n9,000\nTo sale\n9,000\n(being goods sold in cash)"
     },
     {
       "q": "2.\nWhat\nare the advantages of maintaining a petty cash book?",
@@ -591,8 +591,8 @@ export default {
       "a": "Trial balances are typically created at the end of a fiscal year, but they can also be prepared quarterly, monthly, or half-yearly."
     },
     {
-      "q": "2. Name the four types of errors.\nAns\n: The following are four types of errors:",
-      "a": "Detailed solution available."
+      "q": "2. Name the four types of errors.",
+      "a": "The following are four types of errors:"
     },
     {
       "q": "1. Errors of Commission",
@@ -831,8 +831,8 @@ export default {
       "a": "It displays how much money a company has received in credit for services or commodities. This is the amount that the business must pay to the service provider or the supplier of the goods within the stipulated time."
     },
     {
-      "q": "3. What do you understand by account receivable?\nAns\n: It displays how much money a corporation has borrowed to supply services or commodities on credit. This is the amount that the business must receive from its debtors within the stipulated time.",
-      "a": "Detailed solution available."
+      "q": "3. What do you understand by account receivable?",
+      "a": "It displays how much money a corporation has borrowed to supply services or commodities on credit. This is the amount that the business must receive from its debtors within the stipulated time."
     },
     {
       "q": "4. Who are the sundry debtors to the company?",

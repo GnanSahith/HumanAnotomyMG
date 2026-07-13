@@ -1,64 +1,64 @@
 export default {
   "1": [
     {
-      "q": "1. How did the ant know that the other ants were not from this group?\nAns\n: Animals have different senses, like seeing, hearing, tasting, smelling, and feeling. Ants use these senses to recognise that other ants are not from their group.",
-      "a": "Detailed solution available."
+      "q": "1. How did the ant know that the other ants were not from this group?",
+      "a": "Animals have different senses, like seeing, hearing, tasting, smelling, and feeling. Ants use these senses to recognise that other ants are not from their group."
     },
     {
-      "q": "2. How did the guard ant recognise this ant?\nAns\n: The guard ant could recognise this ant apart by using its sense of smell.\nTRY THIS AND WRITE\nDrop some sugar, jaggery, or anything sweet on the ground. Wait until the ants come there.",
-      "a": "Detailed solution available."
+      "q": "2. How did the guard ant recognise this ant?",
+      "a": "The guard ant could recognise this ant apart by using its sense of smell.\nTRY THIS AND WRITE\nDrop some sugar, jaggery, or anything sweet on the ground. Wait until the ants come there."
     },
     {
-      "q": "1. How long did it take for the ants to come?\nAns\n: In just a few minutes, the ants gathered around the fallen sweets.",
-      "a": "Detailed solution available."
+      "q": "1. How long did it take for the ants to come?",
+      "a": "In just a few minutes, the ants gathered around the fallen sweets."
     },
     {
-      "q": "2. Did one ant come first or a group of ants came together?\nAns\n: One ant came first, and then a group of ants followed it.",
-      "a": "Detailed solution available."
+      "q": "2. Did one ant come first or a group of ants came together?",
+      "a": "One ant came first, and then a group of ants followed it."
     },
     {
-      "q": "3. What did the ants do with the food?\nAns\n: The ants took the food to their holes.",
-      "a": "Detailed solution available."
+      "q": "3. What did the ants do with the food?",
+      "a": "The ants took the food to their holes."
     },
     {
-      "q": "4. Where do they go from there?\nAns\n: The ants returned to their nest from there.",
-      "a": "Detailed solution available."
+      "q": "4. Where do they go from there?",
+      "a": "The ants returned to their nest from there."
     },
     {
-      "q": "5. Do they move in a line?\nAns\n: Yes, one ant follows another, so they move in a line.\nNow carefully, without harming the ants, block their path for a while with a pencil.",
-      "a": "Detailed solution available."
+      "q": "5. Do they move in a line?",
+      "a": "Yes, one ant follows another, so they move in a line.\nNow carefully, without harming the ants, block their path for a while with a pencil."
     },
     {
-      "q": "6. Now observe, how do the ants move?\nAns\n: Even when their path is blocked, the ants climb over the pencil and continue moving in a straight line.",
-      "a": "Detailed solution available."
+      "q": "6. Now observe, how do the ants move?",
+      "a": "Even when their path is blocked, the ants climb over the pencil and continue moving in a straight line."
     },
     {
-      "q": "7. Now can you guess why the ants behaved like that when you blocked their path?\nAns\n: As the ants move, they leave a smell on the ground. Other ants follow this smell to find their way. So, when their path was blocked, the ants tried to stay on track by following the smell.",
-      "a": "Detailed solution available."
+      "q": "7. Now can you guess why the ants behaved like that when you blocked their path?",
+      "a": "As the ants move, they leave a smell on the ground. Other ants follow this smell to find their way. So, when their path was blocked, the ants tried to stay on track by following the smell."
     },
     {
-      "q": "8. Have you ever been troubled by mosquitoes? Just think, how do they know where you are?\nAns\n: Mosquitoes can detect the smell of a human body. They also locate us by sensing the smell from the soles of our feet and the warmth of our bodies.",
-      "a": "Detailed solution available."
+      "q": "8. Have you ever been troubled by mosquitoes? Just think, how do they know where you are?",
+      "a": "Mosquitoes can detect the smell of a human body. They also locate us by sensing the smell from the soles of our feet and the warmth of our bodies."
     },
     {
-      "q": "9. Have you seen a dog sniffing here and there? What do you think it is trying to smell?\nAns\n: Yes, when we see a dog sniffing around, it's trying to determine if another dog is nearby using its sense of smell.\nWRITE",
-      "a": "Detailed solution available."
+      "q": "9. Have you seen a dog sniffing here and there? What do you think it is trying to smell?",
+      "a": "Yes, when we see a dog sniffing around, it's trying to determine if another dog is nearby using its sense of smell.\nWRITE"
     },
     {
-      "q": "1. In what ways do human beings make use of this special sense of smell of dogs?\nAns\n: Humans utilize dogs' special sense of smell to catch criminals, detect explosives, recover stolen goods, and more.",
-      "a": "Detailed solution available."
+      "q": "1. In what ways do human beings make use of this special sense of smell of dogs?",
+      "a": "Humans utilize dogs' special sense of smell to catch criminals, detect explosives, recover stolen goods, and more."
     },
     {
-      "q": "2. When do you find your sense of smell helpful to you? List some examples. Like \u2013 to know by its smell that food has gone bad or that something is burning.\nAns\n: In addition to detecting bad or burnt objects, we can also sense the fragrance of perfume, the scent of flowers, the smell of sweat, soaps, and detergents.",
-      "a": "Detailed solution available."
+      "q": "2. When do you find your sense of smell helpful to you? List some examples. Like \u2013 to know by its smell that food has gone bad or that something is burning.",
+      "a": "In addition to detecting bad or burnt objects, we can also sense the fragrance of perfume, the scent of flowers, the smell of sweat, soaps, and detergents."
     },
     {
-      "q": "3. Name the animals that you would be able to recognise only by their smell, without seeing them.\nAns\n: We can identify animals like sheep, goats, cows, dogs, cats, etc., by their smell.",
-      "a": "Detailed solution available."
+      "q": "3. Name the animals that you would be able to recognise only by their smell, without seeing them.",
+      "a": "We can identify animals like sheep, goats, cows, dogs, cats, etc., by their smell."
     },
     {
-      "q": "4. Write the names of five things whose smell you like and five things whose smell you do not like.\nAns\n:\nI like the smell of\nI do not like the smell of",
-      "a": "Detailed solution available."
+      "q": "4. Write the names of five things whose smell you like and five things whose smell you do not like.",
+      "a": "I like the smell of\nI do not like the smell of"
     },
     {
       "q": "1. Coffee",
@@ -101,136 +101,136 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Do you and your friends have similar answers?\nAns\n: Yes, our answers are similar to each other.\nDISCUSS.",
-      "a": "Detailed solution available."
+      "q": "5. Do you and your friends have similar answers?",
+      "a": "Yes, our answers are similar to each other.\nDISCUSS."
     },
     {
-      "q": "1. Do the clothes of any of your family members smell? Whose?\nAns\n: Yes, my father's clothes smell of sweat when he comes in from outside.",
-      "a": "Detailed solution available."
+      "q": "1. Do the clothes of any of your family members smell? Whose?",
+      "a": "Yes, my father's clothes smell of sweat when he comes in from outside."
     },
     {
-      "q": "2. Did you ever come across any smell in a crowded place such as a fair, bus, train, etc.\nAns\n: Yes, I could smell the smoke coming from the bus.\nTHINK AND DISCUSS.",
-      "a": "Detailed solution available."
+      "q": "2. Did you ever come across any smell in a crowded place such as a fair, bus, train, etc.",
+      "a": "Yes, I could smell the smoke coming from the bus.\nTHINK AND DISCUSS."
     },
     {
-      "q": "1. Sushila covered her nose when she cleaned Deepak\u2019s nappy, but not when she cleaned her daughter. Why do you think she did this?\nAns\n: Our nose can detect both bad and good smells. When Deepak's nappy might be dirty, Sushila covered her nose. However, when it came to her daughter's nappy, Sushila didn't smell anything dirty, so she didn't cover her nose.",
-      "a": "Detailed solution available."
+      "q": "1. Sushila covered her nose when she cleaned Deepak\u2019s nappy, but not when she cleaned her daughter. Why do you think she did this?",
+      "a": "Our nose can detect both bad and good smells. When Deepak's nappy might be dirty, Sushila covered her nose. However, when it came to her daughter's nappy, Sushila didn't smell anything dirty, so she didn't cover her nose."
     },
     {
-      "q": "2. How do you feel when you walk near a heap of garbage? Think of the children who spend the whole day picking things from such garbage.\nAns\n: When I walk past a heap of garbage, I feel like holding my nose. Children who spend the whole day picking things from such garbage might not feel the same way as me. They are used to the smell and are not bothered by it.",
-      "a": "Detailed solution available."
+      "q": "2. How do you feel when you walk near a heap of garbage? Think of the children who spend the whole day picking things from such garbage.",
+      "a": "When I walk past a heap of garbage, I feel like holding my nose. Children who spend the whole day picking things from such garbage might not feel the same way as me. They are used to the smell and are not bothered by it."
     },
     {
-      "q": "3. Is a smell \u2018good\u2019 or \u2018bad\u2019 for everyone in the same way? Or does it depend on how each one feels about it?\nAns\n: Yes, how a person reacts to a smell can vary. However, in some cases, a bad smell is generally unpleasant for most people.\nLET\u2019S SEE",
-      "a": "Detailed solution available."
+      "q": "3. Is a smell \u2018good\u2019 or \u2018bad\u2019 for everyone in the same way? Or does it depend on how each one feels about it?",
+      "a": "Yes, how a person reacts to a smell can vary. However, in some cases, a bad smell is generally unpleasant for most people.\nLET\u2019S SEE"
     },
     {
-      "q": "1. Write the name of a bird which has eyes in front of its head (like in humans).\nAns\n: An owl.",
-      "a": "Detailed solution available."
+      "q": "1. Write the name of a bird which has eyes in front of its head (like in humans).",
+      "a": "An owl."
     },
     {
-      "q": "2. Write the names of some birds which have eyes on either side of the head. What is the size of their eyes as compared to the size of their head?\nAns\n: Birds with eyes on either side of their head include crows, pigeons, eagles, parrots, and more. Their eyes are typically small compared to the size of their head.\nLOOKING WITH ONE OR BOTH EYES",
-      "a": "Detailed solution available."
+      "q": "2. Write the names of some birds which have eyes on either side of the head. What is the size of their eyes as compared to the size of their head?",
+      "a": "Birds with eyes on either side of their head include crows, pigeons, eagles, parrots, and more. Their eyes are typically small compared to the size of their head.\nLOOKING WITH ONE OR BOTH EYES"
     },
     {
-      "q": "1. Could you see your friend\u2019s action, without moving your neck?\nAns\n: No.",
-      "a": "Detailed solution available."
+      "q": "1. Could you see your friend\u2019s action, without moving your neck?",
+      "a": "No."
     },
     {
-      "q": "2. Now try to look at your friend\u2019s action with both your eyes open but without moving your neck.\nAns\n: Yes.",
-      "a": "Detailed solution available."
+      "q": "2. Now try to look at your friend\u2019s action with both your eyes open but without moving your neck.",
+      "a": "Yes."
     },
     {
-      "q": "3. What was the difference in looking with one or both eyes?\nAns\n: Looking at things with both eyes is better than looking with just one eye open.",
-      "a": "Detailed solution available."
+      "q": "3. What was the difference in looking with one or both eyes?",
+      "a": "Looking at things with both eyes is better than looking with just one eye open."
     },
     {
-      "q": "4. Now toss a small ball or a coin and try to catch it. Try this with both your eyes open. Then close one eye and try to catch it. When was it easier to catch?\nAns\n: With both eyes open, it is easier to catch the coin when it is tossed.",
-      "a": "Detailed solution available."
+      "q": "4. Now toss a small ball or a coin and try to catch it. Try this with both your eyes open. Then close one eye and try to catch it. When was it easier to catch?",
+      "a": "With both eyes open, it is easier to catch the coin when it is tossed."
     },
     {
-      "q": "5. Imagine how it would be to have your eyes in place of your ears? What would you be able to do then, which you cannot do now?\nAns\n: If our eyes were where our ears are, we would be able to see things to the left or right, but not directly ahead.",
-      "a": "Detailed solution available."
+      "q": "5. Imagine how it would be to have your eyes in place of your ears? What would you be able to do then, which you cannot do now?",
+      "a": "If our eyes were where our ears are, we would be able to see things to the left or right, but not directly ahead."
     },
     {
-      "q": "6. Now can you guess from what distance can an eagle in the sky can see a roti on the ground?\nAns\n: An eagle has incredibly strong vision. It can spot a piece of bread on the ground even from two kilometers away.\nWRITE",
-      "a": "Detailed solution available."
+      "q": "6. Now can you guess from what distance can an eagle in the sky can see a roti on the ground?",
+      "a": "An eagle has incredibly strong vision. It can spot a piece of bread on the ground even from two kilometers away.\nWRITE"
     },
     {
-      "q": "1. The names of ten animals whose ears can be seen.\nAns\n: Dog, Cat, Rabbit, Horse, Elephant, Cow, Fox, Lion, Deer and Mouse",
-      "a": "Detailed solution available."
+      "q": "1. The names of ten animals whose ears can be seen.",
+      "a": "Dog, Cat, Rabbit, Horse, Elephant, Cow, Fox, Lion, Deer and Mouse"
     },
     {
-      "q": "2. The names of some animals whose ears are bigger than our ears.\nAns\n: Giraffe, cow, zebra, elephant, buffalo, etc.\nTHINK",
-      "a": "Detailed solution available."
+      "q": "2. The names of some animals whose ears are bigger than our ears.",
+      "a": "Giraffe, cow, zebra, elephant, buffalo, etc.\nTHINK"
     },
     {
-      "q": "1. Is there some link between the size of animals\u2019 ears and their hearing?\nAns\n: Yes, animals with larger ears often have better hearing compared to animals with smaller ears. This is because larger ears can capture more sound waves and funnel them into the ear canal, allowing for enhanced detection of faint sounds and improved sensitivity to various frequencies.\nTRY THIS",
-      "a": "Detailed solution available."
+      "q": "1. Is there some link between the size of animals\u2019 ears and their hearing?",
+      "a": "Yes, animals with larger ears often have better hearing compared to animals with smaller ears. This is because larger ears can capture more sound waves and funnel them into the ear canal, allowing for enhanced detection of faint sounds and improved sensitivity to various frequencies.\nTRY THIS"
     },
     {
-      "q": "1. For this activity find a quiet place in your school. Tell one of your friends to stand at a short distance and ask him to say something softly. The rest of you should listen carefully. Then all of you put your hands behind your ears, as shown in the below picture. Let the same child say something again as softly as before. In which case was the sound sharper? Ask your friends too.\nAns\n: Placing your hands behind your ears can make sounds seem sharper or louder. This is because the hands act like a funnel, directing more sound waves into your ear canal.",
-      "a": "Detailed solution available."
+      "q": "1. For this activity find a quiet place in your school. Tell one of your friends to stand at a short distance and ask him to say something softly. The rest of you should listen carefully. Then all of you put your hands behind your ears, as shown in the below picture. Let the same child say something again as softly as before. In which case was the sound sharper? Ask your friends too.",
+      "a": "Placing your hands behind your ears can make sounds seem sharper or louder. This is because the hands act like a funnel, directing more sound waves into your ear canal."
     },
     {
-      "q": "2. Put your hands over your ears and say something. Can you hear your own voice?\nAns\n: Yes.",
-      "a": "Detailed solution available."
+      "q": "2. Put your hands over your ears and say something. Can you hear your own voice?",
+      "a": "Yes."
     },
     {
-      "q": "3. Sit near a desk. Tap the desk once with your hand. Listen carefully. Now put your ear on the desk as shown in the picture. Tap on the desk once again with your hand. Listen again. Was there any difference in the sound of the tap?\nAns\n: When you place your ear on a desk, the sound becomes clearer and sharper. This is because the hard surface of the desk conducts sound vibrations effectively.\nWRITE",
-      "a": "Detailed solution available."
+      "q": "3. Sit near a desk. Tap the desk once with your hand. Listen carefully. Now put your ear on the desk as shown in the picture. Tap on the desk once again with your hand. Listen again. Was there any difference in the sound of the tap?",
+      "a": "When you place your ear on a desk, the sound becomes clearer and sharper. This is because the hard surface of the desk conducts sound vibrations effectively.\nWRITE"
     },
     {
-      "q": "1. Can you understand the sounds of some animals? Which animals?\nAns\n: Yes, I can recognize the sounds that animals like dogs, cats, sheep, pigs, horses, and others make.",
-      "a": "Detailed solution available."
+      "q": "1. Can you understand the sounds of some animals? Which animals?",
+      "a": "Yes, I can recognize the sounds that animals like dogs, cats, sheep, pigs, horses, and others make."
     },
     {
-      "q": "2. Do some animals understand your language? Which ones?\nAns\n: Yes, some pets such as dogs, cats, parrots, and cows can understand the words we say.\nSAY IT WITH SOUNDS",
-      "a": "Detailed solution available."
+      "q": "2. Do some animals understand your language? Which ones?",
+      "a": "Yes, some pets such as dogs, cats, parrots, and cows can understand the words we say.\nSAY IT WITH SOUNDS"
     },
     {
-      "q": "1. Just like birds and dolphins you can also make your own language of sounds for giving messages. Remember you have to talk to your friends with only sounds and no words. How and when will you need to give an alarm call? For example, when the teacher is coming to the classroom!\nAns\n: To wake up our friends when the teacher is coming to the classroom, we can make sounds like ping-ping or tik-tik. Everyone can hear these sounds and know it's time to wake up.\nSLEEPING - WAKING",
-      "a": "Detailed solution available."
+      "q": "1. Just like birds and dolphins you can also make your own language of sounds for giving messages. Remember you have to talk to your friends with only sounds and no words. How and when will you need to give an alarm call? For example, when the teacher is coming to the classroom!",
+      "a": "To wake up our friends when the teacher is coming to the classroom, we can make sounds like ping-ping or tik-tik. Everyone can hear these sounds and know it's time to wake up.\nSLEEPING - WAKING"
     },
     {
-      "q": "1. Have you noticed that during the cold season you cannot see any lizard in the house? Where do you think they have gone?\nAns\n: Yes, I've seen that in winter, we don't see any lizards in the house because they probably moved to a warmer place to stay safe.",
-      "a": "Detailed solution available."
+      "q": "1. Have you noticed that during the cold season you cannot see any lizard in the house? Where do you think they have gone?",
+      "a": "Yes, I've seen that in winter, we don't see any lizards in the house because they probably moved to a warmer place to stay safe."
     },
     {
-      "q": "2. How will you show the clock for a house-lizard in winters?\nAns\n: The colored part indicates the sleeping time for lizards during winter.",
-      "a": "Detailed solution available."
+      "q": "2. How will you show the clock for a house-lizard in winters?",
+      "a": "The colored part indicates the sleeping time for lizards during winter."
     },
     {
-      "q": "3. Given here is the sleeping time of some animals. Write below each picture for how many hours a day that animal sleeps.\nAns\n: Cow sleeps for four hours a day.\nPython sleeps for eighteen hours a day.\nGiraffe sleeps for two hours a day.\nCat sleeps for twelve hours a day.",
-      "a": "Detailed solution available."
+      "q": "3. Given here is the sleeping time of some animals. Write below each picture for how many hours a day that animal sleeps.",
+      "a": "Cow sleeps for four hours a day.\nPython sleeps for eighteen hours a day.\nGiraffe sleeps for two hours a day.\nCat sleeps for twelve hours a day."
     },
     {
-      "q": "4. When you see different animals, do you have any questions about them? Make a list of ten such questions.\nAns\n: Yes. Some of the questions\nHow do they communicate with each other?\nWhat do they eat, and how do they find their food?\nWhere do they live, and how do they build their homes?\nHow do they protect themselves from predators?\nWhat is their lifespan, and how do they reproduce?\nHow do they adapt to changes in its environment?\nWhat are the daily habits or routines of (specific animal)?\nHow does it use its senses to navigate its surroundings?\nHow do they contribute to its ecosystem?\nAre there any unique behaviors or abilities that have evolved?",
-      "a": "Detailed solution available."
+      "q": "4. When you see different animals, do you have any questions about them? Make a list of ten such questions.",
+      "a": "Yes. Some of the questions\nHow do they communicate with each other?\nWhat do they eat, and how do they find their food?\nWhere do they live, and how do they build their homes?\nHow do they protect themselves from predators?\nWhat is their lifespan, and how do they reproduce?\nHow do they adapt to changes in its environment?\nWhat are the daily habits or routines of (specific animal)?\nHow does it use its senses to navigate its surroundings?\nHow do they contribute to its ecosystem?\nAre there any unique behaviors or abilities that have evolved?"
     },
     {
-      "q": "5. The tiger is one of the most alert animals. And yet, today tigers are in danger. What do you think are some of the dangers to tigers in the jungle?\nAns\n: Even today, tigers in the jungle face several dangers. The primary threat comes from hunters who kill them for their skin. Additionally, lions pose a threat to tigers because they are stronger. Tigers also face dangers such as forest fires, habitat destruction due to deforestation, and human activities.",
-      "a": "Detailed solution available."
+      "q": "5. The tiger is one of the most alert animals. And yet, today tigers are in danger. What do you think are some of the dangers to tigers in the jungle?",
+      "a": "Even today, tigers in the jungle face several dangers. The primary threat comes from hunters who kill them for their skin. Additionally, lions pose a threat to tigers because they are stronger. Tigers also face dangers such as forest fires, habitat destruction due to deforestation, and human activities."
     },
     {
-      "q": "6. Can human beings also be a threat to animals? How?\nAns\n: Yes, humans pose a significant threat to animals. The growing human population has resulted in widespread deforestation, which diminishes natural habitats for wildlife. Sadly, humans also hunt animals for their valuable parts; deer for their skin, elephants for their tusks, rhinos for their horns, and tigers for their skin are just a few examples. These activities endanger many species and disrupt ecosystems worldwide.\nFIND OUT",
-      "a": "Detailed solution available."
+      "q": "6. Can human beings also be a threat to animals? How?",
+      "a": "Yes, humans pose a significant threat to animals. The growing human population has resulted in widespread deforestation, which diminishes natural habitats for wildlife. Sadly, humans also hunt animals for their valuable parts; deer for their skin, elephants for their tusks, rhinos for their horns, and tigers for their skin are just a few examples. These activities endanger many species and disrupt ecosystems worldwide.\nFIND OUT"
     },
     {
-      "q": "1. Where are other such National Parks in India?\nAns\n: Some of the National Parks in India are:\nRanthambore National Park\nKaziranga National Park\nSundarbans National Park\nBandhavgarh National Park\nGir National Park\nKanha National Park\nPench National Park\nTadoba National Park\nPeriyar National Park",
-      "a": "Detailed solution available."
+      "q": "1. Where are other such National Parks in India?",
+      "a": "Some of the National Parks in India are:\nRanthambore National Park\nKaziranga National Park\nSundarbans National Park\nBandhavgarh National Park\nGir National Park\nKanha National Park\nPench National Park\nTadoba National Park\nPeriyar National Park"
     },
     {
-      "q": "2. Collect information on these and write a report.\nAns\n: A country rich in diversity supports a wide variety of wildlife. India is home to some of the most stunning animals, including the majestic Bengal tiger, the Asiatic lion, the Asian elephant, the Indian rhinoceros, and the sloth bear. India boasts over 200 national parks and 540 wildlife sanctuaries spread across nearly every state, each hosting diverse flora and fauna.\nWHAT WE HAVE LEARNT",
-      "a": "Detailed solution available."
+      "q": "2. Collect information on these and write a report.",
+      "a": "A country rich in diversity supports a wide variety of wildlife. India is home to some of the most stunning animals, including the majestic Bengal tiger, the Asiatic lion, the Asian elephant, the Indian rhinoceros, and the sloth bear. India boasts over 200 national parks and 540 wildlife sanctuaries spread across nearly every state, each hosting diverse flora and fauna.\nWHAT WE HAVE LEARNT"
     },
     {
-      "q": "1. Have you noticed that sometimes singers put their hand on their ear when they sing? Why do you think they may be doing this?\nAns\n: Yes, I've noticed that singers sometimes place their hands on their ears to block out external noise and hear their own voices more clearly.",
-      "a": "Detailed solution available."
+      "q": "1. Have you noticed that sometimes singers put their hand on their ear when they sing? Why do you think they may be doing this?",
+      "a": "Yes, I've noticed that singers sometimes place their hands on their ears to block out external noise and hear their own voices more clearly."
     },
     {
-      "q": "2. Give examples of animals that may have a very strong sense of sight, hearing or smell.\nAns\n:\nSight:\nEagle\n: Known for its exceptional vision, eagles can spot prey from very high altitudes.\nOwl\n: Owls have excellent night vision and can see in low-light conditions.\nHearing\n:\nBat\n: Bats rely heavily on echolocation, using sound waves to navigate and locate prey in the dark.\nElephant\n: Elephants can hear infrasound, very low-frequency sounds that travel long distances, helping them communicate over large areas.\nSmell\n:\nDog\n: Dogs have an incredible sense of smell, which they use for tracking, detecting explosives and drugs, and even identifying medical conditions in humans.\nBear\n: Bears have a strong sense of smell that helps them locate food sources like berries, fish, and carcasses from long distances.\nEVS Class 5 Chapter 1 PDF - Quick Overview of Detailed Structure of Topics\nS.No.\nTopics of Super Senses Class 5\n1\nHow did the ant recognise a friend?\n2\nDo animals see colours?\n3\nSharp ear\n4\nSounds send messages\nBenefits of Referring to Vedantu\u2019s Class 5 EVS Chapter 1 Questions and Answers\nVedantu\u2019s Class 5 EVS Chapter 1 Question Answer provides detailed explanations of fundamental concepts such as the five senses, how they work, and their importance in daily life.\nThese solutions ensure a thorough understanding of how our senses help us perceive and interact with our environment.\nStudents receive clear, step-by-step answers that clarify complex concepts related to sensory perception, making learning engaging and effective.\nSuper Senses Of Animals Class 5 includes diagrams and illustrations that make learning about senses more visual and easier to grasp.\nVedantu\u2019s Class 5 EVS Chapter 1 NCERT Solutions are aligned with the NCERT textbook, covering all topics in the syllabus and following the CBSE curriculum guidelines.\nThey include practice questions and answers that help students prepare thoroughly for exams and assessments.\nVedantu\u2019s EVS Class 5 Chapter 1 Question Answer is a valuable resource for students to deepen their understanding of sensory experiences and excel in their studies.\nS. No\nImportant Links for Chapter 1 Super Senses",
-      "a": "Detailed solution available."
+      "q": "2. Give examples of animals that may have a very strong sense of sight, hearing or smell.",
+      "a": "Sight:\nEagle\n: Known for its exceptional vision, eagles can spot prey from very high altitudes.\nOwl\n: Owls have excellent night vision and can see in low-light conditions.\nHearing\n:\nBat\n: Bats rely heavily on echolocation, using sound waves to navigate and locate prey in the dark.\nElephant\n: Elephants can hear infrasound, very low-frequency sounds that travel long distances, helping them communicate over large areas.\nSmell\n:\nDog\n: Dogs have an incredible sense of smell, which they use for tracking, detecting explosives and drugs, and even identifying medical conditions in humans.\nBear\n: Bears have a strong sense of smell that helps them locate food sources like berries, fish, and carcasses from long distances.\nEVS Class 5 Chapter 1 PDF - Quick Overview of Detailed Structure of Topics\nS.No.\nTopics of Super Senses Class 5\n1\nHow did the ant recognise a friend?\n2\nDo animals see colours?\n3\nSharp ear\n4\nSounds send messages\nBenefits of Referring to Vedantu\u2019s Class 5 EVS Chapter 1 Questions and Answers\nVedantu\u2019s Class 5 EVS Chapter 1 Question Answer provides detailed explanations of fundamental concepts such as the five senses, how they work, and their importance in daily life.\nThese solutions ensure a thorough understanding of how our senses help us perceive and interact with our environment.\nStudents receive clear, step-by-step answers that clarify complex concepts related to sensory perception, making learning engaging and effective.\nSuper Senses Of Animals Class 5 includes diagrams and illustrations that make learning about senses more visual and easier to grasp.\nVedantu\u2019s Class 5 EVS Chapter 1 NCERT Solutions are aligned with the NCERT textbook, covering all topics in the syllabus and following the CBSE curriculum guidelines.\nThey include practice questions and answers that help students prepare thoroughly for exams and assessments.\nVedantu\u2019s EVS Class 5 Chapter 1 Question Answer is a valuable resource for students to deepen their understanding of sensory experiences and excel in their studies.\nS. No\nImportant Links for Chapter 1 Super Senses"
     },
     {
       "q": "1.\nClass 5 Super Senses Revision Notes",
@@ -521,8 +521,8 @@ export default {
       "a": "Chittibabu and Chinnababu placed their mango jelly in the sun to evaporate the water in it."
     },
     {
-      "q": "3. At your house, what things are made by drying in the sun?\nAnswer:\nAt my home, we make papad, pickles, sabudana papad, and mango jelly by drying them in the sun.\nWhat we have Learnt",
-      "a": "Detailed solution available."
+      "q": "3. At your house, what things are made by drying in the sun?",
+      "a": "wer:\nAt my home, we make papad, pickles, sabudana papad, and mango jelly by drying them in the sun.\nWhat we have Learnt"
     },
     {
       "q": "1. You have washed your handkerchief and you want to dry it quickly. What all can you do?",

@@ -177,8 +177,8 @@ export default {
       "a": "In xenogamy pollens from another plant of the same species pollinate the stigma and thereby ensure the coming of genetically different types of pollen grains onto the stigma."
     },
     {
-      "q": "19. What relationship exists between a species of moth and Yucca plant?\nAns\n: There exists a relationship between the Yucca plant and the moth. The moth deposits its egg in the locule of the ovary and in return moth pollinates the flower of the yucca plant. As the seeds begin to mature, the larvae hatch from the eggs.",
-      "a": "Detailed solution available."
+      "q": "19. What relationship exists between a species of moth and Yucca plant?",
+      "a": "There exists a relationship between the Yucca plant and the moth. The moth deposits its egg in the locule of the ovary and in return moth pollinates the flower of the yucca plant. As the seeds begin to mature, the larvae hatch from the eggs."
     },
     {
       "q": "20. Differentiate between Geitonogamy & Allogamy.",
@@ -253,8 +253,8 @@ export default {
       "a": "The importance of seed formation:\nSeed formation is linked with fertilization and pollination that are independent of water and therefore it is surely a more dependable process.\nSeed formation provides nutrition and protection to the budding embryo.\nSeeds are used for the multiplication of plants. Seeds are capable of perennation; they can withstand different climates."
     },
     {
-      "q": "10. Give any three advantages of sexual incompatibility.\nAns\n: Advantages of sexual incompatibility:\nSexual incompatibility inhibits self-pollination.\nSexual incompatibility has made plants outbreeders and thereby maintains the vitality and vigor of the plant\u2019s rarace.\nIn sexual incompatibility, variations occur because outbreeding provides adaptability for the changes in the environment.",
-      "a": "Detailed solution available."
+      "q": "10. Give any three advantages of sexual incompatibility.",
+      "a": "Advantages of sexual incompatibility:\nSexual incompatibility inhibits self-pollination.\nSexual incompatibility has made plants outbreeders and thereby maintains the vitality and vigor of the plant\u2019s rarace.\nIn sexual incompatibility, variations occur because outbreeding provides adaptability for the changes in the environment."
     },
     {
       "q": "11. List any three differences between wind-pollinated flowers and insect-pollinated flowers.",
@@ -333,8 +333,8 @@ export default {
       "a": "The functional megaspore becomes bigger in size.\nThe mitotic division occurs in the nucleus to make 2 nuclei that go in direction of opposite poles.\nEvery nucleus at the poles undergoes two mitotic divisions to form 4 nuclei in each pole or a total of 8 nuclei.\nTwo nuclei from each pole move to the center to produce the polar nuclei.\nThe other nuclei, three at each pole, get surrounded by a bit of cytoplasm to form cells.\nThe female gametophyte or the embryo sac thus has 7 cells and eight nuclei."
     },
     {
-      "q": "3. Explain the development of an embryo in a dicotyledonous plant with neatly labeled diagrams.\nAns\n: The embryo develops at the micropylar end where the zygote is located. The zygote begins developing after the particular part of the endosperm is developed to ensure nutrition to the embryo. The zygote breaks mitotically to develop several stages including pro- embryo, globular, heart-shaped, and eventually the developed embryo.",
-      "a": "Detailed solution available."
+      "q": "3. Explain the development of an embryo in a dicotyledonous plant with neatly labeled diagrams.",
+      "a": "The embryo develops at the micropylar end where the zygote is located. The zygote begins developing after the particular part of the endosperm is developed to ensure nutrition to the embryo. The zygote breaks mitotically to develop several stages including pro- embryo, globular, heart-shaped, and eventually the developed embryo."
     },
     {
       "q": "4. Describe the post-fertilization changes taking place in a flowering plant?",
@@ -403,8 +403,8 @@ export default {
       "a": "Ampulla (fallopian tube)."
     },
     {
-      "q": "13. Name the substance present in the sperm acrosome & which help in sperms entry into egg.\nAns\n: Acrosome contains enzymes e.g. hyaluronidase that helps in dissolving the membrane of the ovum.",
-      "a": "Detailed solution available."
+      "q": "13. Name the substance present in the sperm acrosome & which help in sperms entry into egg.",
+      "a": "Acrosome contains enzymes e.g. hyaluronidase that helps in dissolving the membrane of the ovum."
     },
     {
       "q": "14. Name the layer of cells that forms the outer wall of blastocyst.",
@@ -561,100 +561,100 @@ export default {
   ],
   "3": [
     {
-      "q": "1. Give the Term for Prenatal Diagnostic Technique Aimed to Know the Sex of Developing Fetus and to Detect Congenital Disorders.\nAns.\nAmniocentesis is the prenatal diagnostic technique aimed to know the sex of a developing fetus and detecting congenital disorders.",
-      "a": "Detailed solution available."
+      "q": "1. Give the Term for Prenatal Diagnostic Technique Aimed to Know the Sex of Developing Fetus and to Detect Congenital Disorders.",
+      "a": "Amniocentesis is the prenatal diagnostic technique aimed to know the sex of a developing fetus and detecting congenital disorders."
     },
     {
-      "q": "2. After Successful in Vitro Fertilization, the Fertilized Egg Begins to Divide. Where is This Egg Transferred Before it Reaches the 8-Celled Stage and What is This Technique Called?\nAns.\nAfter a successful in vitro fertilization, the fertilized egg begins to divide and is transferred into the fallopian tube before it reaches the 8-celled stage. Zygote intrafallopian transfer (ZIFT) is the name of this technique.",
-      "a": "Detailed solution available."
+      "q": "2. After Successful in Vitro Fertilization, the Fertilized Egg Begins to Divide. Where is This Egg Transferred Before it Reaches the 8-Celled Stage and What is This Technique Called?",
+      "a": "After a successful in vitro fertilization, the fertilized egg begins to divide and is transferred into the fallopian tube before it reaches the 8-celled stage. Zygote intrafallopian transfer (ZIFT) is the name of this technique."
     },
     {
-      "q": "3. Give the Term for Rapid Population Growth.\nAns.\nThe term for rapid population growth is Population explosion.",
-      "a": "Detailed solution available."
+      "q": "3. Give the Term for Rapid Population Growth.",
+      "a": "The term for rapid population growth is Population explosion."
     },
     {
-      "q": "4. Name the Fluid from Which Fetal Cells are Extracted for Chromosomal Analysis.\nAns.\nFor the analysis of chromosomes, the fluid is extracted from the fetal cells called amniotic fluid.",
-      "a": "Detailed solution available."
+      "q": "4. Name the Fluid from Which Fetal Cells are Extracted for Chromosomal Analysis.",
+      "a": "For the analysis of chromosomes, the fluid is extracted from the fetal cells called amniotic fluid."
     },
     {
-      "q": "5. Give the Technical Name of the Female Used to Bring up in Vitro Fertilized Eggs to Maturity.\nAns.\nThe surrogate mother is the technical name that is used for the females that used to undergo in vitro fertilization to bring an egg to maturity.",
-      "a": "Detailed solution available."
+      "q": "5. Give the Technical Name of the Female Used to Bring up in Vitro Fertilized Eggs to Maturity.",
+      "a": "The surrogate mother is the technical name that is used for the females that used to undergo in vitro fertilization to bring an egg to maturity."
     },
     {
-      "q": "6. Name the Oral Contraceptive Developed by CDRI, Lucknow.\nAns.\nSaheli is the oral contraceptive developed by CDRI, Lucknow.",
-      "a": "Detailed solution available."
+      "q": "6. Name the Oral Contraceptive Developed by CDRI, Lucknow.",
+      "a": "Saheli is the oral contraceptive developed by CDRI, Lucknow."
     },
     {
-      "q": "7. What is the WHO\u2019s Interpretation of Reproductive Health?\nAns.\nThe WHO\u2019s interpretation of reproductive health is the total well-being of reproduction in all respects including physical, emotional, behavioral, and social factors.",
-      "a": "Detailed solution available."
+      "q": "7. What is the WHO\u2019s Interpretation of Reproductive Health?",
+      "a": "The WHO\u2019s interpretation of reproductive health is the total well-being of reproduction in all respects including physical, emotional, behavioral, and social factors."
     },
     {
-      "q": "8. Why has the Government Imposed a Statutory Ban on Amniocentesis?\nAns.\nThe Government has imposed a statutory ban on amniocentesis so as to keep in check the incidences of female foeticides.",
-      "a": "Detailed solution available."
+      "q": "8. Why has the Government Imposed a Statutory Ban on Amniocentesis?",
+      "a": "The Government has imposed a statutory ban on amniocentesis so as to keep in check the incidences of female foeticides."
     },
     {
-      "q": "9. Expand MTP and ICSI.\nAns.\nFull form of MTP: Medical Termination of Pregnancy.\nFull form of ICSI: Intra Cytoplasmic Sperm Injection.",
-      "a": "Detailed solution available."
+      "q": "9. Expand MTP and ICSI.",
+      "a": "Full form of MTP: Medical Termination of Pregnancy.\nFull form of ICSI: Intra Cytoplasmic Sperm Injection."
     },
     {
-      "q": "10. What is Lactational Amenorrhoea?\nAns.\nLactational amenorrhoea is a period of intense lactation where the absence of menstruation occurs.",
-      "a": "Detailed solution available."
+      "q": "10. What is Lactational Amenorrhoea?",
+      "a": "Lactational amenorrhoea is a period of intense lactation where the absence of menstruation occurs."
     },
     {
-      "q": "11. Write the Scientific Name of Causative Agents Of :\nSyphilis\nGonorrhoea.\nAns.\nThe scientific name of the causative agents of the following are:\n(i) The scientific name of the causative agent of Syphilis is Treponema Pallidum.\n(ii) The scientific name of causative agents of Gonorrhoea is Neisseria Gonorrhoea.",
-      "a": "Detailed solution available."
+      "q": "11. Write the Scientific Name of Causative Agents Of :\nSyphilis\nGonorrhoea.",
+      "a": "The scientific name of the causative agents of the following are:\n(i) The scientific name of the causative agent of Syphilis is Treponema Pallidum.\n(ii) The scientific name of causative agents of Gonorrhoea is Neisseria Gonorrhoea."
     },
     {
-      "q": "12. Name the Technique by Which One Can Disorder Any Possible Chromosomal or Metabolic Disorders in a Fetus.\nAns.\nAmniocentesis is the technique by which one can disorder any possible chromosomal or metabolic disorders in a fetus.",
-      "a": "Detailed solution available."
+      "q": "12. Name the Technique by Which One Can Disorder Any Possible Chromosomal or Metabolic Disorders in a Fetus.",
+      "a": "Amniocentesis is the technique by which one can disorder any possible chromosomal or metabolic disorders in a fetus."
     },
     {
-      "q": "13. Expand the Following:-\nGIFT\nICSI\nIUCD\nAns.\nThe expanded form of the following are:\nFull form of GIFT: Gamete Intrafallopian transfer.\nFull form of ICSI: IntraCytoplasmic Sperm Injection.\nFull form of IUCD: Intrauterine contraceptive devices.\nShort Questions and Answers (2 Marks Questions)",
-      "a": "Detailed solution available."
+      "q": "13. Expand the Following:-\nGIFT\nICSI\nIUCD",
+      "a": "The expanded form of the following are:\nFull form of GIFT: Gamete Intrafallopian transfer.\nFull form of ICSI: IntraCytoplasmic Sperm Injection.\nFull form of IUCD: Intrauterine contraceptive devices.\nShort Questions and Answers (2 Marks Questions)"
     },
     {
-      "q": "1. Lactational Amenorrhea is a Method of Contraception Justify. What is the Maximum Effectiveness of This Method in Terms of Period/Duration?\nAns.\n(a) Lactational Amenorrhea is the process\nduring the period of intense lactation following parturition in which the process of ovulation and menstrual cycle does not occur. Therefore, the chances of conception are nil as the mother breastfeeds.\n(b) The maximum effectiveness of this method in terms of period/duration is six months following parturition.",
-      "a": "Detailed solution available."
+      "q": "1. Lactational Amenorrhea is a Method of Contraception Justify. What is the Maximum Effectiveness of This Method in Terms of Period/Duration?",
+      "a": "(a) Lactational Amenorrhea is the process\nduring the period of intense lactation following parturition in which the process of ovulation and menstrual cycle does not occur. Therefore, the chances of conception are nil as the mother breastfeeds.\n(b) The maximum effectiveness of this method in terms of period/duration is six months following parturition."
     },
     {
-      "q": "2. How are Non-Medicated IUD\u200bS different from Hormone-releasing IUD\u200bS? Give Examples.\nAns.\nThe difference between non-medicated IUD\u200bS and hormone-releasing IUD\u200bS are:\nNon Medicated IUDS\nHormone Releasing IUD\u200bS\nThey increase the process of sperm phagocytosis within the uterus leading to the release of copper ions that will lower the motility of sperm and thus decrease the fertilizing capacity of sperm.\nThey result in making the uterus unsuitable for the process of implantation and makes the cervix too unsuitable and hostile for sperms.\nExample - Lippes loop, Copper releasing IUDs (CuT, Multiload 375).\nExample - Progestasert, LNG-20.",
-      "a": "Detailed solution available."
+      "q": "2. How are Non-Medicated IUD\u200bS different from Hormone-releasing IUD\u200bS? Give Examples.",
+      "a": "The difference between non-medicated IUD\u200bS and hormone-releasing IUD\u200bS are:\nNon Medicated IUDS\nHormone Releasing IUD\u200bS\nThey increase the process of sperm phagocytosis within the uterus leading to the release of copper ions that will lower the motility of sperm and thus decrease the fertilizing capacity of sperm.\nThey result in making the uterus unsuitable for the process of implantation and makes the cervix too unsuitable and hostile for sperms.\nExample - Lippes loop, Copper releasing IUDs (CuT, Multiload 375).\nExample - Progestasert, LNG-20."
     },
     {
-      "q": "3. What are Implants? How Do They Help in Preventing Fertilization?\nAns.\nImplants are devices that are placed under the skin and contain hormones like progesterone and estrogen. They help in preventing fertilization by preventing the release of eggs from the ovary.",
-      "a": "Detailed solution available."
+      "q": "3. What are Implants? How Do They Help in Preventing Fertilization?",
+      "a": "Implants are devices that are placed under the skin and contain hormones like progesterone and estrogen. They help in preventing fertilization by preventing the release of eggs from the ovary."
     },
     {
-      "q": "4. Briefly Explain Two Natural Barriers to Birth Control.\nAns.\nThe two natural barriers for birth control are:\n(i) Periodic abstinence: In this process from the 10th to 17th day of the menstrual cycle the couple should avoid coitus.\n(ii) Coitus interruptus: Here just before ejaculation of semen in the vagina the male partner withdraws his penis.",
-      "a": "Detailed solution available."
+      "q": "4. Briefly Explain Two Natural Barriers to Birth Control.",
+      "a": "The two natural barriers for birth control are:\n(i) Periodic abstinence: In this process from the 10th to 17th day of the menstrual cycle the couple should avoid coitus.\n(ii) Coitus interruptus: Here just before ejaculation of semen in the vagina the male partner withdraws his penis."
     },
     {
-      "q": "5. Enlist Any Four Possible Reasons for Infertility in Human Beings.\nAns.\nThe reasons for infertility in human beings are Physical, Drugs, congenital disease, even psychological and Immunological.",
-      "a": "Detailed solution available."
+      "q": "5. Enlist Any Four Possible Reasons for Infertility in Human Beings.",
+      "a": "The reasons for infertility in human beings are Physical, Drugs, congenital disease, even psychological and Immunological."
     },
     {
-      "q": "6. What does GIFT represent?\nAns.\nGIFT is the abbreviation for Gamete Intrafallopian transferrin which the two unfertilized oocytes and several sperms are introductions into the fallopian tube of a woman who wants to be a mother through the laparoscope. The eggs taken might be of hers or may be taken from a donor while the sperm may either be taken from the husband or programa donor. The process of fertilization takes place inside the lab called in-vivo while the complete development of the fetus occurs by the natural process.",
-      "a": "Detailed solution available."
+      "q": "6. What does GIFT represent?",
+      "a": "GIFT is the abbreviation for Gamete Intrafallopian transferrin which the two unfertilized oocytes and several sperms are introductions into the fallopian tube of a woman who wants to be a mother through the laparoscope. The eggs taken might be of hers or may be taken from a donor while the sperm may either be taken from the husband or programa donor. The process of fertilization takes place inside the lab called in-vivo while the complete development of the fetus occurs by the natural process."
     },
     {
-      "q": "7. How does Cu- T Act as a Contraceptive?\nAns.\nCu-T is an intrauterine device having ionized copper. When the copper diffuses into the uterus it will result in the release of toxic cytokines which prevent the motility of sperm and therefore leads to inhibition of ovum fertilization.",
-      "a": "Detailed solution available."
+      "q": "7. How does Cu- T Act as a Contraceptive?",
+      "a": "Cu-T is an intrauterine device having ionized copper. When the copper diffuses into the uterus it will result in the release of toxic cytokines which prevent the motility of sperm and therefore leads to inhibition of ovum fertilization."
     },
     {
-      "q": "8. Mention Any Four Probable Reasons for the Rapid Rise of Population in Our Country?\nAns.\nThe probable reasons for the rapid rise of population in our country are:\n(i) The decrease in the death rate due to the now advanced and improved health services.\n(ii) Due to the practice of early marriages in certain rural areas.\n(iii) Due to the lack of education among the poor which will result in them not knowing the ill effects of a large family.\n(iv) Longer life span.",
-      "a": "Detailed solution available."
+      "q": "8. Mention Any Four Probable Reasons for the Rapid Rise of Population in Our Country?",
+      "a": "The probable reasons for the rapid rise of population in our country are:\n(i) The decrease in the death rate due to the now advanced and improved health services.\n(ii) Due to the practice of early marriages in certain rural areas.\n(iii) Due to the lack of education among the poor which will result in them not knowing the ill effects of a large family.\n(iv) Longer life span."
     },
     {
-      "q": "9. Identify the Device Used for the Following Methods of Birth Control: Barrier, Iud, Surgical Technique, and Administering Hormone.\nAns.\nThe device used for the following methods of birth control are:\nBarrier:\nCondom,\nIUD:\nCopper \u2013T,\nSurgical Technique:\nVasectomy or Tubectomy,\nAdministering Hormone:\nOral Pill.",
-      "a": "Detailed solution available."
+      "q": "9. Identify the Device Used for the Following Methods of Birth Control: Barrier, Iud, Surgical Technique, and Administering Hormone.",
+      "a": "The device used for the following methods of birth control are:\nBarrier:\nCondom,\nIUD:\nCopper \u2013T,\nSurgical Technique:\nVasectomy or Tubectomy,\nAdministering Hormone:\nOral Pill."
     },
     {
-      "q": "10. What are STDs? Mention Any Two of Them.\nAns.\nSTDs are sexually Transmitting Disease that is transmitted through sexual intercourse.\nSexually Transmitted Diseases or STDs. Ex: Syphilis and Gonorrhoea.\n11. \u201cRemoval of Gonads cannot be a Contraceptive Option\u201d. Why?\nAns.\n\u201cRemoval of Gonads cannot be a contraceptive option\u201d because due to these methods, the gonads are removed surgically resulting in infertility & then both males & females in their remaining life will be dependent on hormones to regulate the functioning of the reproductive organs.",
-      "a": "Detailed solution available."
+      "q": "10. What are STDs? Mention Any Two of Them.",
+      "a": "STDs are sexually Transmitting Disease that is transmitted through sexual intercourse.\nSexually Transmitted Diseases or STDs. Ex: Syphilis and Gonorrhoea.\n11. \u201cRemoval of Gonads cannot be a Contraceptive Option\u201d. Why?\nAns.\n\u201cRemoval of Gonads cannot be a contraceptive option\u201d because due to these methods, the gonads are removed surgically resulting in infertility & then both males & females in their remaining life will be dependent on hormones to regulate the functioning of the reproductive organs."
     },
     {
-      "q": "12. What are MTPs? Under What Conditions MTPs are Legally Permitted?\nAns.\nMTP is the abbreviation of medical termination of pregnancy. They are legally permitted in our country only: -",
-      "a": "Detailed solution available."
+      "q": "12. What are MTPs? Under What Conditions MTPs are Legally Permitted?",
+      "a": "MTP is the abbreviation of medical termination of pregnancy. They are legally permitted in our country only: -"
     },
     {
       "q": "1. in case of rape.",
@@ -669,16 +669,16 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "13. Describe the Technique Which is Used for Sex Determination in Fetuses?\nAns.\nThe technique which is used for sex determination in fetuses is amniocentesis. In this process sample of amniotic fluid is taken from the womb of a pregnant woman during the early stages of fetal development whose cells are cultured & analyzed to determine the sex of the fetus. This process includes prenatal diagnosis.",
-      "a": "Detailed solution available."
+      "q": "13. Describe the Technique Which is Used for Sex Determination in Fetuses?",
+      "a": "The technique which is used for sex determination in fetuses is amniocentesis. In this process sample of amniotic fluid is taken from the womb of a pregnant woman during the early stages of fetal development whose cells are cultured & analyzed to determine the sex of the fetus. This process includes prenatal diagnosis."
     },
     {
-      "q": "14. What are Test-Tube Babies? Are They Different from Normal Babies?\nAns.\nThe test tube babies are those babies that are produced by conceiving eggs & sperm in a culture tube inside the lab (in-vitro fertilization) and then the later development will occur in the uterus of the female. No, they are not different from normal babies. Instead they are the same as normal babies, the only difference between them is the process of fertilization where the formation of zygote occurs in in-vitro conditions.",
-      "a": "Detailed solution available."
+      "q": "14. What are Test-Tube Babies? Are They Different from Normal Babies?",
+      "a": "The test tube babies are those babies that are produced by conceiving eggs & sperm in a culture tube inside the lab (in-vitro fertilization) and then the later development will occur in the uterus of the female. No, they are not different from normal babies. Instead they are the same as normal babies, the only difference between them is the process of fertilization where the formation of zygote occurs in in-vitro conditions."
     },
     {
-      "q": "15. Mention Any Four Objectives of RCHC.\nAns.\nRCHC is an abbreviation for \u201cReproductive & child health care (RCHC) program the major objectives of this program are: -",
-      "a": "Detailed solution available."
+      "q": "15. Mention Any Four Objectives of RCHC.",
+      "a": "RCHC is an abbreviation for \u201cReproductive & child health care (RCHC) program the major objectives of this program are: -"
     },
     {
       "q": "1. To create awareness related to various aspects of reproduction e.g., STDs, birth control methods.",
@@ -697,36 +697,36 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "1. Give Another Name for Sexually Transmitted Diseases. Name Two Sexually Transmitted Diseases That Are Curable and Two Diseases That are Not Curable.\nAns.\nVenereal disease (VD)/Reproductive tract infection (RTI) is another name for the sexually transmitted disease.\nThe two sexually transmitted diseases which are curable are Syphilis, Gonorrhoea.\nThe two sexually transmitted diseases which are non-Curable are Hepatitis B, AIDS, Genital herpes.",
-      "a": "Detailed solution available."
+      "q": "1. Give Another Name for Sexually Transmitted Diseases. Name Two Sexually Transmitted Diseases That Are Curable and Two Diseases That are Not Curable.",
+      "a": "Venereal disease (VD)/Reproductive tract infection (RTI) is another name for the sexually transmitted disease.\nThe two sexually transmitted diseases which are curable are Syphilis, Gonorrhoea.\nThe two sexually transmitted diseases which are non-Curable are Hepatitis B, AIDS, Genital herpes."
     },
     {
-      "q": "2. Differentiate between Vasectomy and Tubectomy.\nAns.\nThe difference between Vasectomy and Tubectomy are:\nVasectomy\nTubectomy\nMethod of sterilization in males.\nMethod of sterilization in females.\nVasa differentia of both sides is cut and tied.\nThe fallopian tube of both sides is cut and tied.\nPrevents the movement of sperms at the cut end.\nPrevent movement of the egg at the cut end.",
-      "a": "Detailed solution available."
+      "q": "2. Differentiate between Vasectomy and Tubectomy.",
+      "a": "The difference between Vasectomy and Tubectomy are:\nVasectomy\nTubectomy\nMethod of sterilization in males.\nMethod of sterilization in females.\nVasa differentia of both sides is cut and tied.\nThe fallopian tube of both sides is cut and tied.\nPrevents the movement of sperms at the cut end.\nPrevent movement of the egg at the cut end."
     },
     {
-      "q": "3. Name the Techniques Which are Employed in the Following Cases:\n(a) Transfer of an ovum collected from a donor into the fallopian tube of another female who cannot produce an ova but can provide a suitable environment for fertilization and development.\nAns.\n(a) The technique that involves the collection of the ovum from the donor and transfers it into the fallopian tube of another female is called the Gamete intrafallopian transfer. In this case, the second female is unable to produce ovum but has the ability to undergo fertilization and development.\n(b) Embryo is formed in the laboratory in which sperm is directly injected into the ovum.\nAns.\n(b) The technique in which the sperm is introduced into the egg of the female inside the laboratory and results in the formation of an embryo is called Intracytoplasmic sperm injection.\n(c) Semen collected either from husband or a healthy donor is artificially introduced either into the vagina or uterus.\nAns.\n(c) When the semen is taken from either husband or the male donor and is injected into the vagina or the uterus of the female inside the laboratory by an artificial method called Intrauterine insemination.",
-      "a": "Detailed solution available."
+      "q": "3. Name the Techniques Which are Employed in the Following Cases:\n(a) Transfer of an ovum collected from a donor into the fallopian tube of another female who cannot produce an ova but can provide a suitable environment for fertilization and development.",
+      "a": "(a) The technique that involves the collection of the ovum from the donor and transfers it into the fallopian tube of another female is called the Gamete intrafallopian transfer. In this case, the second female is unable to produce ovum but has the ability to undergo fertilization and development.\n(b) Embryo is formed in the laboratory in which sperm is directly injected into the ovum.\nAns.\n(b) The technique in which the sperm is introduced into the egg of the female inside the laboratory and results in the formation of an embryo is called Intracytoplasmic sperm injection.\n(c) Semen collected either from husband or a healthy donor is artificially introduced either into the vagina or uterus.\nAns.\n(c) When the semen is taken from either husband or the male donor and is injected into the vagina or the uterus of the female inside the laboratory by an artificial method called Intrauterine insemination."
     },
     {
-      "q": "4. Mention the Various Precautions One has to Take in Order to Protect Himself/herself From STDs.\nAns.\nTo protect oneself from STDs a person has to take various precautions that are:\n(i) Before transfusion the person should be checked whether he is infected or not and the blood of the infected person can cause disease in another person.\n(ii) Intercourse must be avoided with multiple partners or unknown strangers.\n(iii) During coitus, condoms must be used to have safe intercourse.\n(iv) The use of the same medical and surgical instruments and needles must be avoided.",
-      "a": "Detailed solution available."
+      "q": "4. Mention the Various Precautions One has to Take in Order to Protect Himself/herself From STDs.",
+      "a": "To protect oneself from STDs a person has to take various precautions that are:\n(i) Before transfusion the person should be checked whether he is infected or not and the blood of the infected person can cause disease in another person.\n(ii) Intercourse must be avoided with multiple partners or unknown strangers.\n(iii) During coitus, condoms must be used to have safe intercourse.\n(iv) The use of the same medical and surgical instruments and needles must be avoided."
     },
     {
-      "q": "5. What are the Disturbing Trends Observed Regarding MTP?\nAns.\nThe disturbing trend observed regarding MTP is that the majority of the MTP\u200bs are found to be performing to misuse the female foeticide illegally that too by the unqualified quacks.",
-      "a": "Detailed solution available."
+      "q": "5. What are the Disturbing Trends Observed Regarding MTP?",
+      "a": "The disturbing trend observed regarding MTP is that the majority of the MTP\u200bs are found to be performing to misuse the female foeticide illegally that too by the unqualified quacks."
     },
     {
-      "q": "6. Enlist Any Three Causes of Infertility in Men and Women.\nAns.\nThe three causes of infertility in men and women are:\n(i) Physical\n\u2013 due to defect in genital parts, undescended testicles, enlarged veins in testes, etc.\n(ii) Diseases\n\u2013 diseases like diabetes, gonorrhea, chlamydia, HIV, etc.\n(iii) Drugs\n\u2013 Due to the continuous consumption of drugs, lower sperm motility, and production rate, etc.",
-      "a": "Detailed solution available."
+      "q": "6. Enlist Any Three Causes of Infertility in Men and Women.",
+      "a": "The three causes of infertility in men and women are:\n(i) Physical\n\u2013 due to defect in genital parts, undescended testicles, enlarged veins in testes, etc.\n(ii) Diseases\n\u2013 diseases like diabetes, gonorrhea, chlamydia, HIV, etc.\n(iii) Drugs\n\u2013 Due to the continuous consumption of drugs, lower sperm motility, and production rate, etc."
     },
     {
-      "q": "7. State the Consequences of Overpopulation.\nAns\n. The consequences of overpopulation are :\n(i) An increasing demand and therefore pressure on the natural resources.\n(ii) An increase in the level of pollution.\n(iii) More unemployment, poor infrastructure, and pressure on the country\u2019s economy.",
-      "a": "Detailed solution available."
+      "q": "7. State the Consequences of Overpopulation.",
+      "a": "The consequences of overpopulation are :\n(i) An increasing demand and therefore pressure on the natural resources.\n(ii) An increase in the level of pollution.\n(iii) More unemployment, poor infrastructure, and pressure on the country\u2019s economy."
     },
     {
-      "q": "8. Differentiate Between Natality Rate and Mortality Rate.\nAns.\nThe difference between the natality rate and mortality rate are:\nNatality rate (Birth rate)\nMortality rate (Death rate)",
-      "a": "Detailed solution available."
+      "q": "8. Differentiate Between Natality Rate and Mortality Rate.",
+      "a": "The difference between the natality rate and mortality rate are:\nNatality rate (Birth rate)\nMortality rate (Death rate)"
     },
     {
       "q": "1. The rate of birth per year where the number of births per one thousand individuals is observed.",
@@ -753,12 +753,12 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "9. Explain Any One Natural Method of Birth Control.\nAns.\nOne of the natural methods of birth control is the Periodic abstinence or Rhythm method. In this process from the 10th to 17th day of the menstrual cycle, the couple should avoid coitus because during this period the process of ovulation occurs and therefore this period is highly fertile. This method is based on the fact that the sperm remains alive for about 3 days while the ovum remains alive for 1-2 days. This method is less effective since in most females the menstrual cycle is irregular.",
-      "a": "Detailed solution available."
+      "q": "9. Explain Any One Natural Method of Birth Control.",
+      "a": "One of the natural methods of birth control is the Periodic abstinence or Rhythm method. In this process from the 10th to 17th day of the menstrual cycle, the couple should avoid coitus because during this period the process of ovulation occurs and therefore this period is highly fertile. This method is based on the fact that the sperm remains alive for about 3 days while the ovum remains alive for 1-2 days. This method is less effective since in most females the menstrual cycle is irregular."
     },
     {
-      "q": "10. Give Three Differences Between Tubectomy and Vasectomy.\nAns.\nThe difference between tubectomy and vasectomy are:\nVasectomy\nTubectomy",
-      "a": "Detailed solution available."
+      "q": "10. Give Three Differences Between Tubectomy and Vasectomy.",
+      "a": "The difference between tubectomy and vasectomy are:\nVasectomy\nTubectomy"
     },
     {
       "q": "1. It is the technique of sterilization that involves men.",
@@ -785,16 +785,16 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "11. Describe the Three Manners in Which Fertilization of the Human Ovum by Sperm Can be Prevented?\nAns.\nThe three manners in which fertilization of the human ovum by sperm can be prevented are:\nI. Natural Methods\n: The process where the chances of meeting the gametes need to be avoided. The natural methods are:\nPeriodic Abstinence:\nIn this process from the 10th to 17th day of the menstrual cycle the couple should avoid coitus as during this period the ovulation is expected.\nLactational Amenorrhoea:\nDuring this period due to intense lactation, there is the absence of menstruation.\nII. Barrier Methods:\nIn this process with the help of barriers the ovum & sperms are prevented from coming closer. The barrier methods are:\nCondoms:\nThese are the barriers that are made up of thin rubber or latex sheath which cover the penis in males or the cervix in females.\nDiaphragms Cervical Caps:\nmade up of rubber & are reusable.\nSpermicidal creams along with these barriers.\nIII.\nSurgical Methods:\nIn this method, the transport of gametes is blocked & thus conception. The surgical methods are:\nVasectomy:\na small portion of vas deferens is removed or tied up through an incision in the scrotum.\nTubectomy:\na small portion of the fallopian tube is removed or tied up through the vagina.",
-      "a": "Detailed solution available."
+      "q": "11. Describe the Three Manners in Which Fertilization of the Human Ovum by Sperm Can be Prevented?",
+      "a": "The three manners in which fertilization of the human ovum by sperm can be prevented are:\nI. Natural Methods\n: The process where the chances of meeting the gametes need to be avoided. The natural methods are:\nPeriodic Abstinence:\nIn this process from the 10th to 17th day of the menstrual cycle the couple should avoid coitus as during this period the ovulation is expected.\nLactational Amenorrhoea:\nDuring this period due to intense lactation, there is the absence of menstruation.\nII. Barrier Methods:\nIn this process with the help of barriers the ovum & sperms are prevented from coming closer. The barrier methods are:\nCondoms:\nThese are the barriers that are made up of thin rubber or latex sheath which cover the penis in males or the cervix in females.\nDiaphragms Cervical Caps:\nmade up of rubber & are reusable.\nSpermicidal creams along with these barriers.\nIII.\nSurgical Methods:\nIn this method, the transport of gametes is blocked & thus conception. The surgical methods are:\nVasectomy:\na small portion of vas deferens is removed or tied up through an incision in the scrotum.\nTubectomy:\na small portion of the fallopian tube is removed or tied up through the vagina."
     },
     {
-      "q": "12. Suggest Some Methods to Assist Infertile Couples to have Children?\nAns.\nThere are special techniques called Assisted Reproductive Technologies (ART) to help in assisting the infertile couples to have children are: -\nTest tube Baby Programme:\nIt is In-vitro fertilization (IVF) where the ova from wife or donor female & Sperm from husband are fused under suitable laboratory conditions. This results in the formation of a zygote which is then transferred into the uterus or fallopian tube of the female and this process is called embryo transfer (ET).\nGamete Intrafallopian Transfer (GIFI):\nIn this method, the ova from the donor female is taken and is inserted into the other female who cannot produce ova but can provide suitable conditions for fertilization.\nArtificial Insemination:\nIn this method, the semen is taken either from the husband or a healthy male donor & is then introduced artificially into the vagina or uterus of the female.",
-      "a": "Detailed solution available."
+      "q": "12. Suggest Some Methods to Assist Infertile Couples to have Children?",
+      "a": "There are special techniques called Assisted Reproductive Technologies (ART) to help in assisting the infertile couples to have children are: -\nTest tube Baby Programme:\nIt is In-vitro fertilization (IVF) where the ova from wife or donor female & Sperm from husband are fused under suitable laboratory conditions. This results in the formation of a zygote which is then transferred into the uterus or fallopian tube of the female and this process is called embryo transfer (ET).\nGamete Intrafallopian Transfer (GIFI):\nIn this method, the ova from the donor female is taken and is inserted into the other female who cannot produce ova but can provide suitable conditions for fertilization.\nArtificial Insemination:\nIn this method, the semen is taken either from the husband or a healthy male donor & is then introduced artificially into the vagina or uterus of the female."
     },
     {
-      "q": "13. Briefly Explain the Various Reproductive Technologies to Assist an Infertile Couple to Have Children.\nAns.\nThe various reproductive technologies to assist an infertile couple to have children are:\n(i) Assisted Reproductive Technology (ART) includes in vitro fertilization-embryo transfer (IVF-ET)\n(ii) Gamete intrafallopian transfer (GIFT)\n(iii) Zygote intrafallopian transfer (ZIFT), and\n(iv) frozen embryo transfer (FET).\nThese techniques also include oocyte donation and gestational carriers. Approximately 99 percent of ART cycles performed are IVF-ET. IVF-ET has helped many couples conceive successfully. ART may be recommended when there is no other option such as intrauterine insemination is successful or when there is severe male factor infertility, severe endometriosis, or tubal obstruction.\nDownload Important Questions of Chapter 3 Biology Class 12 PDF\nSome of the important topics covered in Class 12 Biology Chapter 3 important questions are Reproductive Health \u2013 Problems and Strategies, Population Explosion and Birth Control, Medical Termination of Pregnancy, Sexually Transmitted Diseases, and infertility.\nChapter 3 - Reproductive Health\nReproductive health encompasses physical, emotional, behavioral, and social well-being related to reproduction.\nIndia has taken the lead in implementing national action plans to achieve a reproductively healthy society.\nAwareness campaigns are essential to educate people about reproductive organs, adolescence, safe sexual practices, STDs, and AIDS.\nReproductive and Child Health Care programs focus on providing medical facilities and care for issues such as menstrual irregularities, pregnancy, delivery, STDs, birth control, infertility, and postnatal care.\nMaternal and infant mortality rates have decreased in India, indicating an improvement in reproductive health.\nContraceptive methods, including natural, traditional, barrier, IUDs, pills, injectables, implants, and surgical methods, are available to control population growth.\nMedical termination of pregnancy is legalized in some countries, including India, and is performed in cases of unwanted pregnancies or when continuation poses risks to the mother or fetus.\nSexually Transmitted Diseases (STDs) and Pelvic Inflammatory Diseases (PIDs) are infections transmitted through sexual intercourse, leading to complications like stillbirth and infertility.\nEarly detection and prevention of STDs involve avoiding sexual intercourse with multiple partners and using condoms.\nInfertility, the inability to conceive after unprotected sexual cohabitation, can be addressed through assisted reproductive techniques like in-vitro fertilization (IVF) or test-tube baby programs.\nRelated Study Materials for Class 12 Biology Chapter 3\nS.No\nImportant Other Links for Class 12 Biology Chapter 3",
-      "a": "Detailed solution available."
+      "q": "13. Briefly Explain the Various Reproductive Technologies to Assist an Infertile Couple to Have Children.",
+      "a": "The various reproductive technologies to assist an infertile couple to have children are:\n(i) Assisted Reproductive Technology (ART) includes in vitro fertilization-embryo transfer (IVF-ET)\n(ii) Gamete intrafallopian transfer (GIFT)\n(iii) Zygote intrafallopian transfer (ZIFT), and\n(iv) frozen embryo transfer (FET).\nThese techniques also include oocyte donation and gestational carriers. Approximately 99 percent of ART cycles performed are IVF-ET. IVF-ET has helped many couples conceive successfully. ART may be recommended when there is no other option such as intrauterine insemination is successful or when there is severe male factor infertility, severe endometriosis, or tubal obstruction.\nDownload Important Questions of Chapter 3 Biology Class 12 PDF\nSome of the important topics covered in Class 12 Biology Chapter 3 important questions are Reproductive Health \u2013 Problems and Strategies, Population Explosion and Birth Control, Medical Termination of Pregnancy, Sexually Transmitted Diseases, and infertility.\nChapter 3 - Reproductive Health\nReproductive health encompasses physical, emotional, behavioral, and social well-being related to reproduction.\nIndia has taken the lead in implementing national action plans to achieve a reproductively healthy society.\nAwareness campaigns are essential to educate people about reproductive organs, adolescence, safe sexual practices, STDs, and AIDS.\nReproductive and Child Health Care programs focus on providing medical facilities and care for issues such as menstrual irregularities, pregnancy, delivery, STDs, birth control, infertility, and postnatal care.\nMaternal and infant mortality rates have decreased in India, indicating an improvement in reproductive health.\nContraceptive methods, including natural, traditional, barrier, IUDs, pills, injectables, implants, and surgical methods, are available to control population growth.\nMedical termination of pregnancy is legalized in some countries, including India, and is performed in cases of unwanted pregnancies or when continuation poses risks to the mother or fetus.\nSexually Transmitted Diseases (STDs) and Pelvic Inflammatory Diseases (PIDs) are infections transmitted through sexual intercourse, leading to complications like stillbirth and infertility.\nEarly detection and prevention of STDs involve avoiding sexual intercourse with multiple partners and using condoms.\nInfertility, the inability to conceive after unprotected sexual cohabitation, can be addressed through assisted reproductive techniques like in-vitro fertilization (IVF) or test-tube baby programs.\nRelated Study Materials for Class 12 Biology Chapter 3\nS.No\nImportant Other Links for Class 12 Biology Chapter 3"
     },
     {
       "q": "1.\nCBSE Class 12 Reproductive Health Notes",
@@ -943,8 +943,8 @@ export default {
       "a": "When a red-eyed male fruit fly is crossed with a white-eyed female fruit fly, the offspring will have both white-eyed male & red-eyed female in the ratio of 1:1\u00a0 in the\n${ F }_{ 1 }$ generation. In the\n${ F }_{ 2 }$ generation, ${ 50 }$% females will be red-eyed and ${ 50 }$% will be white-eyed, similarly, in males ${ 50 }$% will be red-eyed and ${ 50 }$% will be white-eyed. This result indicates that in fruitflies males transmit their sex-linked characters to their grandson through their daughter; such type of inheritance is called criss-cross inheritance."
     },
     {
-      "q": "6. A man with AB blood group marries a woman with O group blood.\n(i) Work out all the possible phenotypes and genotypes of the progeny.\nAns.\nWhen a man with AB blood group marries a woman with O group blood then,\nHalf the progeny will have blood group A with genotype ${ I }^{ A }\u00a0 { I }^{ O }$ & half the progeny will have blood group B with genotype\u00a0 ${ I }^{ B }\u00a0 { I }^{ O }$.\n(ii) Discuss the kind of domination in parents and progeny in this case.",
-      "a": "In this case\nboth the genes ${ I }^{ A }$ and\u00a0 ${ I }^{ B }$ are dominant over the\u00a0 ${ I }^{ O }$ gene therefore the progeny shows either blood group A or B. Since in parents both the dominant genes are present together this phenomenon is called codominance."
+      "q": "6. A man with AB blood group marries a woman with O group blood.\n(i) Work out all the possible phenotypes and genotypes of the progeny.",
+      "a": "When a man with AB blood group marries a woman with O group blood then,\nHalf the progeny will have blood group A with genotype ${ I }^{ A }\u00a0 { I }^{ O }$ & half the progeny will have blood group B with genotype\u00a0 ${ I }^{ B }\u00a0 { I }^{ O }$.\n(ii) Discuss the kind of domination in parents and progeny in this case.\nAns:\nIn this case\nboth the genes ${ I }^{ A }$ and\u00a0 ${ I }^{ B }$ are dominant over the\u00a0 ${ I }^{ O }$ gene therefore the progeny shows either blood group A or B. Since in parents both the dominant genes are present together this phenomenon is called codominance."
     },
     {
       "q": "7. In a cross made between a hybrid tall and red plant (TtRr) with dwarf & white flower (ttrr). What will be the genotype of plants in the ${ F }_{ 1 }$ generation?",
@@ -1105,8 +1105,8 @@ export default {
       "a": "UAG UAA & UGA are the three codons that are not recognized by tRNA; these are known as stop codons or nonsense codons. Since these three codons are not recognized by any tRNA they help in the termination of the protein chain during translation."
     },
     {
-      "q": "8. Give two reasons why both the strands of DNA are not copied during DNA transcription.\nAns\n: I)If both the strands code for RNA two different RNA molecules & two different proteins would be formed hence genetic machinery would become complicated\nII) Since the two RNA molecules would be complementary to each other, they would wind together to form dsRNA without carrying out translation which means the process of transcription would be futile.",
-      "a": "Detailed solution available."
+      "q": "8. Give two reasons why both the strands of DNA are not copied during DNA transcription.",
+      "a": "I)If both the strands code for RNA two different RNA molecules & two different proteins would be formed hence genetic machinery would become complicated\nII) Since the two RNA molecules would be complementary to each other, they would wind together to form dsRNA without carrying out translation which means the process of transcription would be futile."
     },
     {
       "q": "9. Why is it essential that tRNA binds to both amino acids & mRNA codons during protein synthesis?",
@@ -1149,8 +1149,8 @@ export default {
       "a": "Below given are the six points of difference between DNA and RNA in their structure/chemistry and function:\nDNA\nRNA\nDouble-stranded molecules\nSingle-stranded molecules\nThymine as pyrimidine base\nUracil is pyrimidine base\nPentose sugar is Deoxyribose\nSugar is ribosome.\nQuite stable and not very reactive\n2\u00b4-OH makes it reactive\nDictates the synthesis of Polypeptides\nPerform their functions in protein synthesis.\nFound in the nucleus.\nThey are transported into the cytoplasm"
     },
     {
-      "q": "2. Explain how the hnRNA becomes the mRNA. OR Explain the process of splicing, capping, and tailing which occur during transcription in Eukaryotes.\nAns\n: hnRNA is the precursor of mRNA. It undergoes:\nSplicing: Introns are removed and exons are joined together.\nCapping: an unusual nucleotide (methyl guanosine triphosphate is added to the 5\u00b4 end of hnRNA.\nAdenylate residues (200-300) are added at the 3\u00b4 end of hnRNA.",
-      "a": "Detailed solution available."
+      "q": "2. Explain how the hnRNA becomes the mRNA. OR Explain the process of splicing, capping, and tailing which occur during transcription in Eukaryotes.",
+      "a": "hnRNA is the precursor of mRNA. It undergoes:\nSplicing: Introns are removed and exons are joined together.\nCapping: an unusual nucleotide (methyl guanosine triphosphate is added to the 5\u00b4 end of hnRNA.\nAdenylate residues (200-300) are added at the 3\u00b4 end of hnRNA."
     },
     {
       "q": "3.\u00a0 Name the three major types of RNAs, specifying the function of each in the synthesis of the polypeptide.",
@@ -1555,12 +1555,12 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6. What is biogeny?\nAns.\nBiogeny or biological evolution is a stage that consists of\ni) Formation of nucleic acids by polymerisation of nucleotides.\nii) Giant molecules of nucleoproteins tend to be aggregated in various combinations to form large colloidal particles called coacervates.\niii) The development of the plasma membrane resulted in the accumulation of different substances inside coacervates and the occurrence of certain internal reactions leading to the development of the cell.",
-      "a": "Detailed solution available."
+      "q": "6. What is biogeny?",
+      "a": "Biogeny or biological evolution is a stage that consists of\ni) Formation of nucleic acids by polymerisation of nucleotides.\nii) Giant molecules of nucleoproteins tend to be aggregated in various combinations to form large colloidal particles called coacervates.\niii) The development of the plasma membrane resulted in the accumulation of different substances inside coacervates and the occurrence of certain internal reactions leading to the development of the cell."
     },
     {
-      "q": "7. What is Cognogeny?\nAns.\nCognogeny involves the differentiation and diversification of living beings from the simplest first living cell. The first organism that evolved was chemoautotrophic bacteria which later converted to tree autotrophic bacteria example- green algae.\nPoints to Remember from Class 12 Biology Chapter 6: Evolution\nLife originated 3.5 billion years ago through chemical evolution, supported by the Miller-Urey experiment.\nLamarckism emphasises acquired traits, while Darwin\u2019s natural selection highlights survival of the fittest. Neo-Darwinism integrates genetics with Darwin\u2019s ideas.\nFossils, homologous and analogous organs, embryology, and molecular similarities support evolutionary changes.\nHardy-Weinberg Principle: Describes genetic equilibrium, influenced by factors like mutation, migration, genetic drift, and natural selection.\nMutation, genetic drift, gene flow, and natural selection drive species diversity and adaptation.\nFossil evidence traces human evolution from Australopithecus to modern Homo sapiens.\nBenefits of Important Questions for Class 12 Biology Chapter 6 Evolution\nHelps in identifying and revising the most critical topics from the chapter, ensuring better preparation.\nFamiliarises students with the type of questions commonly asked in board exams and competitive tests like NEET.\nEncourages a deeper understanding of key concepts like natural selection, speciation, and human evolution through targeted practice.\nEnhances efficiency by providing a structured way to practice within a limited time frame.\nRegular practice of important questions builds confidence and reduces exam-related stress.\nPrepares students to tackle different question formats, including diagrams, application-based, and analytical questions.\nConclusion\nUnderstanding the concepts of Evolution is crucial for excelling in Class 12 Biology and competitive exams like NEET. Vedantu\u2019s FREE PDF of important questions for Chapter 6 provides a structured way to practice and strengthen your understanding of this vital topic. With expert-created questions covering all key areas, you can improve your conceptual clarity, improve your problem-solving skills, and build your confidence. Download the FREE PDF today and take a step closer to achieving academic excellence with Vedantu, your trusted learning partner.\nRelated Study Materials for Class 12 Biology Chapter 6 Evolution\nS.No.\nImportant Study Material Links for Class 12 Biology Chapter 6",
-      "a": "Detailed solution available."
+      "q": "7. What is Cognogeny?",
+      "a": "Cognogeny involves the differentiation and diversification of living beings from the simplest first living cell. The first organism that evolved was chemoautotrophic bacteria which later converted to tree autotrophic bacteria example- green algae.\nPoints to Remember from Class 12 Biology Chapter 6: Evolution\nLife originated 3.5 billion years ago through chemical evolution, supported by the Miller-Urey experiment.\nLamarckism emphasises acquired traits, while Darwin\u2019s natural selection highlights survival of the fittest. Neo-Darwinism integrates genetics with Darwin\u2019s ideas.\nFossils, homologous and analogous organs, embryology, and molecular similarities support evolutionary changes.\nHardy-Weinberg Principle: Describes genetic equilibrium, influenced by factors like mutation, migration, genetic drift, and natural selection.\nMutation, genetic drift, gene flow, and natural selection drive species diversity and adaptation.\nFossil evidence traces human evolution from Australopithecus to modern Homo sapiens.\nBenefits of Important Questions for Class 12 Biology Chapter 6 Evolution\nHelps in identifying and revising the most critical topics from the chapter, ensuring better preparation.\nFamiliarises students with the type of questions commonly asked in board exams and competitive tests like NEET.\nEncourages a deeper understanding of key concepts like natural selection, speciation, and human evolution through targeted practice.\nEnhances efficiency by providing a structured way to practice within a limited time frame.\nRegular practice of important questions builds confidence and reduces exam-related stress.\nPrepares students to tackle different question formats, including diagrams, application-based, and analytical questions.\nConclusion\nUnderstanding the concepts of Evolution is crucial for excelling in Class 12 Biology and competitive exams like NEET. Vedantu\u2019s FREE PDF of important questions for Chapter 6 provides a structured way to practice and strengthen your understanding of this vital topic. With expert-created questions covering all key areas, you can improve your conceptual clarity, improve your problem-solving skills, and build your confidence. Download the FREE PDF today and take a step closer to achieving academic excellence with Vedantu, your trusted learning partner.\nRelated Study Materials for Class 12 Biology Chapter 6 Evolution\nS.No.\nImportant Study Material Links for Class 12 Biology Chapter 6"
     },
     {
       "q": "1.\nClass 12 Evolution Notes",
@@ -1605,8 +1605,8 @@ export default {
       "a": "The diagnostic test which confirms typhoid is the Widal test."
     },
     {
-      "q": "2. Name the two major groups of cells required to attain specific immunity.\nAns\n: B-lymphocytes and T-lymphocytes are the two major groups of cells required to attain specific immunity.",
-      "a": "Detailed solution available."
+      "q": "2. Name the two major groups of cells required to attain specific immunity.",
+      "a": "B-lymphocytes and T-lymphocytes are the two major groups of cells required to attain specific immunity."
     },
     {
       "q": "3. You have heard of many incidences of Chikungunya in our country. Name the vector of the disease.",
@@ -1641,16 +1641,16 @@ export default {
       "a": "The two curable sexually transmitted diseases are Gonorrhoea & Syphilis."
     },
     {
-      "q": "11. Name the type of cells that produce antibodies.\nAns\n: B \u2013 lymphocytes are the type of cells that produce antibodies.",
-      "a": "Detailed solution available."
+      "q": "11. Name the type of cells that produce antibodies.",
+      "a": "B \u2013 lymphocytes are the type of cells that produce antibodies."
     },
     {
       "q": "12. Give the scientific name of the causative germ of elephantiasis.",
       "a": "The scientific name of the causative germ of elephantiasis is Wuchereria bancrofti."
     },
     {
-      "q": "13. Name the fish that help in the eradication of mosquito larvae.\nAns\n: Gambusia is the fish that helps in the eradication of mosquito larvae.\nShort Questions and Answers (2 Marks Question)",
-      "a": "Detailed solution available."
+      "q": "13. Name the fish that help in the eradication of mosquito larvae.",
+      "a": "Gambusia is the fish that helps in the eradication of mosquito larvae.\nShort Questions and Answers (2 Marks Question)"
     },
     {
       "q": "1. Where are B-cells and T-cells formed? How do they differ from each other?",
@@ -1665,8 +1665,8 @@ export default {
       "a": "The thymus gland is responsible for the production and maturation of T-lymphocytes. If the thymus gland is removed from the body of a person, then the immune system of the person will become weak."
     },
     {
-      "q": "4. Lymph nodes are secondary lymphoid organs. Describe the role of lymph nodes in our immune response.\nAns\n: The role of lymph nodes in our immune response is to act as the site where the lymphocytes and the antigen interact with each other. The immune system of the person got responsive when the microorganisms enter the lymph nodes resulting in the activation of the lymphocytes present there.",
-      "a": "Detailed solution available."
+      "q": "4. Lymph nodes are secondary lymphoid organs. Describe the role of lymph nodes in our immune response.",
+      "a": "The role of lymph nodes in our immune response is to act as the site where the lymphocytes and the antigen interact with each other. The immune system of the person got responsive when the microorganisms enter the lymph nodes resulting in the activation of the lymphocytes present there."
     },
     {
       "q": "5. What is the role of histamine in inflammatory response? Name few drugs which reduce the symptoms of allergy.",
@@ -1733,8 +1733,8 @@ export default {
       "a": "If the immune system of the patient has been suppressed then he is found to be suffering from the human immunodeficiency virus (HIV). The HIV enters into the helper T- cells & undergoes replication to produce progeny viruses. The replication of virus involves: -\n(i)First viral capsid enters the cell where the reverse transcriptase enzyme will copy single-stranded RNA and convert it into complementary DNA.\n(ii) The ribonuclease H degrades the RNA & the DNA strand becomes double-stranded DNA after its duplication.\n(iii) Integrase enzyme is responsible for a complex sequence of reactions in which the Proviral DNA is integrated into cells\u2019 DNA.\n(iv) Virus becomes active once it has infected the cell resulting in the liberation of a large number of virus particles that can infect other cells."
     },
     {
-      "q": "10. What are carcinogens? What are the different types of carcinogens? Also, mention the different methods of treatment of cancer.\nAns\n: Carcinogens are the substances that cause cancer. These substances may be chemical or physical things like: -",
-      "a": "Detailed solution available."
+      "q": "10. What are carcinogens? What are the different types of carcinogens? Also, mention the different methods of treatment of cancer.",
+      "a": "Carcinogens are the substances that cause cancer. These substances may be chemical or physical things like: -"
     },
     {
       "q": "1. Smoking",
@@ -1879,20 +1879,20 @@ export default {
   ],
   "8": [
     {
-      "q": "1. How does a small amount of curd added to fresh milk convert it into curd? Mention a nutritional quality that gets added to the curd.\nAns\n: In a small amount of curd, a huge number of lactic acid bacteria can be detected. By creating lactic acid, proliferate and turn the milk into curd. Increased Vitamin B12 enhances nutritional quality.",
-      "a": "Detailed solution available."
+      "q": "1. How does a small amount of curd added to fresh milk convert it into curd? Mention a nutritional quality that gets added to the curd.",
+      "a": "In a small amount of curd, a huge number of lactic acid bacteria can be detected. By creating lactic acid, proliferate and turn the milk into curd. Increased Vitamin B12 enhances nutritional quality."
     },
     {
-      "q": "2. Why is the secondary treatment of water in sewage treatment plants called biological treatment?\nAns\n: Organic wastes from sewage water are digested by particular bacteria in this treatment In the presence of water, microorganisms.",
-      "a": "Detailed solution available."
+      "q": "2. Why is the secondary treatment of water in sewage treatment plants called biological treatment?",
+      "a": "Organic wastes from sewage water are digested by particular bacteria in this treatment In the presence of water, microorganisms."
     },
     {
       "q": "3. An antibiotic called Wonder Drug was used to treat the wounded soldiers of America during World War II. Name the drug and the scientist who discovered it.",
       "a": "Alexander Fleming invented penicillin."
     },
     {
-      "q": "4. You have observed that fruit juice in bottles bought from the market is clearer as compared to those made at home. Give a reason.\nAns\n: Pectinase and proteases are used to clarify bottle juices.",
-      "a": "Detailed solution available."
+      "q": "4. You have observed that fruit juice in bottles bought from the market is clearer as compared to those made at home. Give a reason.",
+      "a": "Pectinase and proteases are used to clarify bottle juices."
     },
     {
       "q": "5. Alexander Fleming discovered Penicillin, but its full potential an effective antibiotic was established by other scientists. Name the two scientists.",
@@ -2189,8 +2189,8 @@ export default {
       "a": "A: Denaturation, B: Annealing, and C: Extension.\n(b) Give the purpose of each of these steps.\nAns:\nThe purpose of each step is:\n(i) Denaturation:\n\u200b Due to high temperature, the heat will break or denature the two complementary strands of DNA and results in their separation.\n(ii) Annealing:\nThe hybridization of the denatured DNA strands takes place with the help of the primers.\n(iii) Extension:\nThe target DNA sequence will synthesize its copies by the process of the extension of the primers.\n(c) State the contribution of the bacterium Thermus Aquaticus in this process.\nAns:\nThe\nTaq polymerase enzyme is found to be isolated from the bacterium Thermus Aquaticus which functions at a very high temperature and results in the denaturation of double-stranded DNA."
     },
     {
-      "q": "3. Study the figure of vector pBR322 given below in which foreign DNA is ligated at the Bam H1 site of the tetracycline resistance gene.\nAnswer the following questions:\n(a) Mention the function of rop.",
-      "a": "The \u200brop is responsible for the\u200b coding of the proteins that are involved in the replication of plasmids.\n(b) What will be the selectable marker for this recombinant plasmid and why?\nAns:\nThe selectable marker for this recombinant plasmid will be the ampicillin resistance gene. They after placing them on an ampicillin-containing medium will undergo the process of plating that will help in the differentiation between the trAns.formants from non-trAns.formants.\n(c) Explain transformation.\nAns:\nTransformation is the process of transferring DNA from one cell and then placing them into the other cell which will result in the formation of the recombinant cell consisting of the properties of both the cells."
+      "q": "3. Study the figure of vector pBR322 given below in which foreign DNA is ligated at the Bam H1 site of the tetracycline resistance gene.",
+      "a": "wer the following questions:\n(a) Mention the function of rop.\nAns:\nThe \u200brop is responsible for the\u200b coding of the proteins that are involved in the replication of plasmids.\n(b) What will be the selectable marker for this recombinant plasmid and why?\nAns:\nThe selectable marker for this recombinant plasmid will be the ampicillin resistance gene. They after placing them on an ampicillin-containing medium will undergo the process of plating that will help in the differentiation between the trAns.formants from non-trAns.formants.\n(c) Explain transformation.\nAns:\nTransformation is the process of transferring DNA from one cell and then placing them into the other cell which will result in the formation of the recombinant cell consisting of the properties of both the cells."
     },
     {
       "q": "4. Describe the various steps involved in Recombinant DNA technology with the help of a well labelled. Diagram?",
@@ -2299,40 +2299,40 @@ export default {
       "a": "The Genetic Engineering Approval Committee (GEAC) is a body that oversees the approval of genetic engineering projects.\nThe following are the goals of the GEAC:\nMake judgments about the legitimacy of GM research.\nThe introduction of GMOs for public use is safe.\n4. \u201cIndustrialised nations are exploiting the bioresources of under industrialized nations. Justify the statement with a suitable example.\nAns.\nThe genetic resources of developing countries, such as India, are being collected and patented by industrialized nations. Basmati rice was patented by an American company. Bioresource-derived valuable biomolecules are patented and exploited for commercial purposes."
     },
     {
-      "q": "5. What is Golden rice? What is its advantage?\nAns.\nGolden rice is a transgenic rice type that has a gene that codes for a precursor to Vitamin A. This type has green-yellow grains and is high in Vitamin A, making it nutritionally beneficial.",
-      "a": "Detailed solution available."
+      "q": "5. What is Golden rice? What is its advantage?",
+      "a": "Golden rice is a transgenic rice type that has a gene that codes for a precursor to Vitamin A. This type has green-yellow grains and is high in Vitamin A, making it nutritionally beneficial."
     },
     {
-      "q": "6. What are the three critical research areas in the field of Biotechnology?\nAns.\nThree critical research areas in the biotechnology field are given below:\nSupplying the best catalyst in the form of a better creature, usually a microbe or a pure enzyme.\nUsing engineering to create ideal circumstances for a catalyst to function.\nPurification of the protein or chemical molecule in the downstream stage.",
-      "a": "Detailed solution available."
+      "q": "6. What are the three critical research areas in the field of Biotechnology?",
+      "a": "Three critical research areas in the biotechnology field are given below:\nSupplying the best catalyst in the form of a better creature, usually a microbe or a pure enzyme.\nUsing engineering to create ideal circumstances for a catalyst to function.\nPurification of the protein or chemical molecule in the downstream stage."
     },
     {
-      "q": "7. What are the advantages of molecular diagnostics over conventional methods?\nAns.\nThe presence of a pathogen is generally suspected using traditional approaches only when the pathogen has caused a clinical sign. By this point, the pathogen's concentration in the body has risen to dangerous levels, although molecular diagnostics may identify a small amount of pathogen via PCR amplification.",
-      "a": "Detailed solution available."
+      "q": "7. What are the advantages of molecular diagnostics over conventional methods?",
+      "a": "The presence of a pathogen is generally suspected using traditional approaches only when the pathogen has caused a clinical sign. By this point, the pathogen's concentration in the body has risen to dangerous levels, although molecular diagnostics may identify a small amount of pathogen via PCR amplification."
     },
     {
-      "q": "8. What are genetically modified organisms? Name two factors on which their behaviour depends.\nAns.\nGenetically modified organisms, often known as transgenic organisms, are organisms whose genes have been manipulated. The following are the two factors that influence their behaviour: i) appropriate insertion of the gene of interest. ii) Proper harvesting of genetically modified organisms in order to obtain the intended outcome.",
-      "a": "Detailed solution available."
+      "q": "8. What are genetically modified organisms? Name two factors on which their behaviour depends.",
+      "a": "Genetically modified organisms, often known as transgenic organisms, are organisms whose genes have been manipulated. The following are the two factors that influence their behaviour: i) appropriate insertion of the gene of interest. ii) Proper harvesting of genetically modified organisms in order to obtain the intended outcome."
     },
     {
       "q": "9. What do you mean by \u201cBiopiracy\u201d Give an example.",
       "a": "Biopiracy is defined as the use of bio-resources by multinational corporations and other organizations without proper authorization from the countries and people concerned. For example, Basmati rice grown in India is known for its distinct flavour and aroma, but Basmati rice was patented by an American company under a US patent."
     },
     {
-      "q": "10. What are transgenic Bacteria? Illustrate using any one example.\nAns.\nTransgenic bacteria are bacteria that have had genes of interest (i.e. foreign DNA fragments) introduced into their plasmid. For example, when two DNA sequences A and B chains of insulin are introduced into the plasmid of this bacteria, it is called transgenic bacteria and begins to produce insulin chains.",
-      "a": "Detailed solution available."
+      "q": "10. What are transgenic Bacteria? Illustrate using any one example.",
+      "a": "Transgenic bacteria are bacteria that have had genes of interest (i.e. foreign DNA fragments) introduced into their plasmid. For example, when two DNA sequences A and B chains of insulin are introduced into the plasmid of this bacteria, it is called transgenic bacteria and begins to produce insulin chains."
     },
     {
-      "q": "11. Give any two examples of products, how transgenic animals can be used to produce biological compounds?\nAns.\nTransgenic animals can be used to produce many biological compounds. For example:\nAlpha-1-antitrypsin, which is a protein used to cure emphysema.\nAlpha-lactalbumin-rich, protein-rich milk for human babies that is more nutritionally balanced.",
-      "a": "Detailed solution available."
+      "q": "11. Give any two examples of products, how transgenic animals can be used to produce biological compounds?",
+      "a": "Transgenic animals can be used to produce many biological compounds. For example:\nAlpha-1-antitrypsin, which is a protein used to cure emphysema.\nAlpha-lactalbumin-rich, protein-rich milk for human babies that is more nutritionally balanced."
     },
     {
       "q": "12. How is autoradiography used to detect a mutated gene?",
       "a": "In a clone of cells, a single-stranded DNA or RNA tagged with a radioactive molecule is allowed to hybridise to with its complementary DNA before being detected by autoradiography. Because the probe will not be complementary with the mutant gene, therefore, the clone with the altered gene will not appear on photographic film."
     },
     {
-      "q": "13. Why did Bacterial toxins not kill the bacteria but only the insects?\nAns.\nBacillus thuringiensis is not killed by bacterial toxins. Because the poisonous protein exists as an inactive protoxin that, if consumed by an insect, is transformed into an active form of toxin due to the alkaline pH of the stomach, which dissolves the crystal. The activated toxin binds to the surface of midgut epithelial cells & creates pores that cause cell swelling and lysis.",
-      "a": "Detailed solution available."
+      "q": "13. Why did Bacterial toxins not kill the bacteria but only the insects?",
+      "a": "Bacillus thuringiensis is not killed by bacterial toxins. Because the poisonous protein exists as an inactive protoxin that, if consumed by an insect, is transformed into an active form of toxin due to the alkaline pH of the stomach, which dissolves the crystal. The activated toxin binds to the surface of midgut epithelial cells & creates pores that cause cell swelling and lysis."
     },
     {
       "q": "14. Mention any four applications of Biotechnology in the field of Agriculture.",
@@ -2343,8 +2343,8 @@ export default {
       "a": "Recombinant insulin produced by genetic engineering need to be processed because proinsulin contains an extra C-peptide separate from the chain of insulin, a peptidase enzyme is added to proinsulin to cleave the C-peptide and reconnect the -chain to form active Insulin.\nLong Questions and Answers (3 Marks Questions)"
     },
     {
-      "q": "1. Some multinational corporations and other organizations exploit bioresources for commercial gain without proper authentication or compensation to relevant authorities.\nName the term used for this unauthorized act.\nSuggest two ways to get rid of this unauthorized activity.\nAns.\nBiopiracy",
-      "a": "Detailed solution available."
+      "q": "1. Some multinational corporations and other organizations exploit bioresources for commercial gain without proper authentication or compensation to relevant authorities.\nName the term used for this unauthorized act.\nSuggest two ways to get rid of this unauthorized activity.",
+      "a": "Biopiracy"
     },
     {
       "q": "1. There should be equal sharing of the benefits of bioresources by developed and developing countries.",
@@ -2355,56 +2355,56 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2. The bacterium Bacillus thuringiensis produces a toxic protein called \"cry protein\". That protein is lethal to certain insects, but not to bacteria.\nWhy does not this toxin kill bacteria?\nAfter consuming this protein, what type of changes occur in the gut of insects?\nHow did humans use this protein for their benefit?\nAns.\nProtoxin is produced in an inactive form.\nThis protoxin, in the presence of alkaline pH in the intestine of insects. The toxin binds to the surface of the midgut of the insect that induces pore formation, swelling, and cytolysis, eventually leading to death.\nIsolation of specific Bt toxin genes from Bacillus thuringiensis and its integration into several crops such as cotton and corn that are pest-resistant to specific insects.",
-      "a": "Detailed solution available."
+      "q": "2. The bacterium Bacillus thuringiensis produces a toxic protein called \"cry protein\". That protein is lethal to certain insects, but not to bacteria.\nWhy does not this toxin kill bacteria?\nAfter consuming this protein, what type of changes occur in the gut of insects?\nHow did humans use this protein for their benefit?",
+      "a": "Protoxin is produced in an inactive form.\nThis protoxin, in the presence of alkaline pH in the intestine of insects. The toxin binds to the surface of the midgut of the insect that induces pore formation, swelling, and cytolysis, eventually leading to death.\nIsolation of specific Bt toxin genes from Bacillus thuringiensis and its integration into several crops such as cotton and corn that are pest-resistant to specific insects."
     },
     {
-      "q": "3. The following are incomplete steps representing the production process of nematode-resistant tobacco plants using the RNAi technique.\n(i) Name the deficient steps in proper order.\n(ii) RNAi silences the genes at which step?\nAns. (i)\n(b) Spliced mRNA is introduced into tobacco using Agrobacterium as a vector.\n(d) Formation of dsRNA (double-stranded RNA).\n(f) Silencing of specific mRNA of nematode\n(g) Survival of parasites becomes difficult.\n(ii)\nRNA interference can silence genes at the translation level.",
-      "a": "Detailed solution available."
+      "q": "3. The following are incomplete steps representing the production process of nematode-resistant tobacco plants using the RNAi technique.\n(i) Name the deficient steps in proper order.\n(ii) RNAi silences the genes at which step?",
+      "a": "(i)\n(b) Spliced mRNA is introduced into tobacco using Agrobacterium as a vector.\n(d) Formation of dsRNA (double-stranded RNA).\n(f) Silencing of specific mRNA of nematode\n(g) Survival of parasites becomes difficult.\n(ii)\nRNA interference can silence genes at the translation level."
     },
     {
-      "q": "4. Explain with an example why are transgenic or genetically modified animals created?\nAns.\nGenetically modified or transgenic animals are produced for the given purposes:\nTo be able to study how genes are regulated and how they affect the normal functioning and development of the body. For example, information  was gained about the biological role of growth factors like Insulin.\nUnderstand how genes contribute to the pathogenesis of the disease.\nA useful biological compound is produced by introducing a portion of the DNA encoding for that product in another organism. For example, Antitrypsin can be produced using transgenic organisms. This protein is used in the treatment of emphysema.\nTo test the vaccine safety. For example, the Polio vaccine was tested in the Genetically Modified mouse.\nToxicity level of the drug can also be tested using transgenic animals.",
-      "a": "Detailed solution available."
+      "q": "4. Explain with an example why are transgenic or genetically modified animals created?",
+      "a": "Genetically modified or transgenic animals are produced for the given purposes:\nTo be able to study how genes are regulated and how they affect the normal functioning and development of the body. For example, information  was gained about the biological role of growth factors like Insulin.\nUnderstand how genes contribute to the pathogenesis of the disease.\nA useful biological compound is produced by introducing a portion of the DNA encoding for that product in another organism. For example, Antitrypsin can be produced using transgenic organisms. This protein is used in the treatment of emphysema.\nTo test the vaccine safety. For example, the Polio vaccine was tested in the Genetically Modified mouse.\nToxicity level of the drug can also be tested using transgenic animals."
     },
     {
-      "q": "5. Explain how to produce a nematode-resistant transgenic plant.\nAns.\nThe nematode named Meloidogyne incognita infects tobacco plants and reduces the yields of that plant. The specific parasite genes are introduced into plants using the Agrobacterium vector. The genes are introduced to produce both sense and antisense RNA. Then the formation of double-stranded RNA (ds RNA) occurs since these two RNAs are complementary. It neutralizes certain nematode RNA by a process called RNA interference, resulting in the inability of the parasite to live in the transformed host. In this way, the plant is protected from pests.",
-      "a": "Detailed solution available."
+      "q": "5. Explain how to produce a nematode-resistant transgenic plant.",
+      "a": "The nematode named Meloidogyne incognita infects tobacco plants and reduces the yields of that plant. The specific parasite genes are introduced into plants using the Agrobacterium vector. The genes are introduced to produce both sense and antisense RNA. Then the formation of double-stranded RNA (ds RNA) occurs since these two RNAs are complementary. It neutralizes certain nematode RNA by a process called RNA interference, resulting in the inability of the parasite to live in the transformed host. In this way, the plant is protected from pests."
     },
     {
-      "q": "6. What is Cry Protein? Mention the name of the organism that produces the protein. How did the human use this protein for his benefit?\nAns.\nA crystalline protein is produced by the soil bacterium named Bacillus thuringiensis which is known as the 'Cry protein'. This protein is toxic to the larvae of insects such as tobacco buds, beetles, and mosquitoes. The cry protein is produced as an inactive protoxin and is converted to an active toxin when ingested by the insect. The intestinal alkaline pH of insects is capable of solubilizing the crystals of cry protein. The binding of the activated form of cry protein to the midgut of insects creates pores in the intestinal epithelial cells, causing cell lysis and then the death of the insect. The gene encoding this protein contains bacteria and is incorporated into the crops to make them insect-resistant.",
-      "a": "Detailed solution available."
+      "q": "6. What is Cry Protein? Mention the name of the organism that produces the protein. How did the human use this protein for his benefit?",
+      "a": "A crystalline protein is produced by the soil bacterium named Bacillus thuringiensis which is known as the 'Cry protein'. This protein is toxic to the larvae of insects such as tobacco buds, beetles, and mosquitoes. The cry protein is produced as an inactive protoxin and is converted to an active toxin when ingested by the insect. The intestinal alkaline pH of insects is capable of solubilizing the crystals of cry protein. The binding of the activated form of cry protein to the midgut of insects creates pores in the intestinal epithelial cells, causing cell lysis and then the death of the insect. The gene encoding this protein contains bacteria and is incorporated into the crops to make them insect-resistant."
     },
     {
-      "q": "7. Write a description of the production of human insulin in the genetically modified organism.\nAns.\nHuman insulin, a protein, is made up of two short polypeptide chains: chain A and B. These chains are linked by disulfide bonds. Insulin is secreted as a precursor hormone or prohormone that is made functional or matured by processing.\u00a0 The processing of precursor hormone is the removal of another polypeptide called C-peptide present in the precursor hormone to make it functional. The two DNA sequences encoding the chains A and B of human insulin were introduced into the plasmid in Escherichia coli, using genetic engineering that is then used for the formation of insulin protein. The resulting two chains are extracted and joined by creating a disulfide bridge.",
-      "a": "Detailed solution available."
+      "q": "7. Write a description of the production of human insulin in the genetically modified organism.",
+      "a": "Human insulin, a protein, is made up of two short polypeptide chains: chain A and B. These chains are linked by disulfide bonds. Insulin is secreted as a precursor hormone or prohormone that is made functional or matured by processing.\u00a0 The processing of precursor hormone is the removal of another polypeptide called C-peptide present in the precursor hormone to make it functional. The two DNA sequences encoding the chains A and B of human insulin were introduced into the plasmid in Escherichia coli, using genetic engineering that is then used for the formation of insulin protein. The resulting two chains are extracted and joined by creating a disulfide bridge."
     },
     {
-      "q": "8. Compare and distinguish the advantages and disadvantages of the production of genetically modified organisms.\nAns.\nAdvantages of Producing GMOs (Genetically Modified Organisms):\nDesirable phenotypic traits can be introduced in the crop plants by producing GM crops.\nA gene involved in the production of a specific protein can be introduced into a GM crop so that these crops produce that specific protein.\nNew end products of the specific biochemical pathway are synthesized by genetically modified crops.\nThe expression of existing unique genes can also be prevented using genetically modified crops.\nGMOs (Genetically Modified Organisms) Production Disadvantages:\nTransformed or genetically modified (GM) crops can endanger wild or native species.\nGM crops may supply allergens that can cause health problems.\nGM crops can damage the natural environment.",
-      "a": "Detailed solution available."
+      "q": "8. Compare and distinguish the advantages and disadvantages of the production of genetically modified organisms.",
+      "a": "Advantages of Producing GMOs (Genetically Modified Organisms):\nDesirable phenotypic traits can be introduced in the crop plants by producing GM crops.\nA gene involved in the production of a specific protein can be introduced into a GM crop so that these crops produce that specific protein.\nNew end products of the specific biochemical pathway are synthesized by genetically modified crops.\nThe expression of existing unique genes can also be prevented using genetically modified crops.\nGMOs (Genetically Modified Organisms) Production Disadvantages:\nTransformed or genetically modified (GM) crops can endanger wild or native species.\nGM crops may supply allergens that can cause health problems.\nGM crops can damage the natural environment."
     },
     {
-      "q": "9. What do you understand by RNA-silencing? How can this strategy be used to make plants that are resistant to pests?\nAns\n. RNA silencing is a method by which complementary ds RNA molecules bind to the specific mRNA and interfere with their translation, silencing, or inactivating those specific mRNAs. The infection of the roots of tobacco plants bearing the nematode Meloidogyne incognita can be prevented using this strategy. This strategy results in the formation of a dsRNA complementary to a specific mRNA. Viruses can be used as the source of this complementary RNA.\u00a0 These RNAs can be introduced by infection by a virus with the RNA genome. A nematode-specific gene was introduced into a host plant using an Agrobacterium vector. DNA introduction led to the production of both sense and anti-dense RNA in the host cells. The two RNAs were complementary to each other and formed double-stranded RNA to initiate RNAi & to silence a particular nematode mRNA. The result was that the organism was unable to survive in the transformed host.",
-      "a": "Detailed solution available."
+      "q": "9. What do you understand by RNA-silencing? How can this strategy be used to make plants that are resistant to pests?",
+      "a": "RNA silencing is a method by which complementary ds RNA molecules bind to the specific mRNA and interfere with their translation, silencing, or inactivating those specific mRNAs. The infection of the roots of tobacco plants bearing the nematode Meloidogyne incognita can be prevented using this strategy. This strategy results in the formation of a dsRNA complementary to a specific mRNA. Viruses can be used as the source of this complementary RNA.\u00a0 These RNAs can be introduced by infection by a virus with the RNA genome. A nematode-specific gene was introduced into a host plant using an Agrobacterium vector. DNA introduction led to the production of both sense and anti-dense RNA in the host cells. The two RNAs were complementary to each other and formed double-stranded RNA to initiate RNAi & to silence a particular nematode mRNA. The result was that the organism was unable to survive in the transformed host."
     },
     {
-      "q": "10. What steps are involved in the synthesis of genetically engineered insulin?\nAns.\nThe steps involved in the production of genetically engineered insulin are given below:\nRNA is extracted from the beta-cells of Islet of Langerhans in the pancreas to synthesize insulin.\nSingle-stranded DNA complementary to mRNA is synthesized with the help of the enzyme reverse transcriptase. Then the second chain of DNA complementary to the first DNA sequence is synthesized with the help of enzyme DNA polymerase.\nBoth the replicated DNA strands are joined with the plasmid using a terminal transferase enzyme.\nThe enzyme named ligase is used to anneal both ends of the DNA. In this way, the ends of the plasmid and inserted DNA are sealed to form a new circular plasmid. This is a recombinant DNA molecule.\nIn the next step, this recombinant DNA is inoculated into new E.coli bacterial cells, digested with restriction enzymes, and inserted into the bacterial gene.\nAfter adequate gene expression, the germ cells from both cultures are lysed with the appropriate chemical. The insulin portion is then separated from the enzyme using cyanogen bromide.\nVery Long Questions and Answers (5 Marks Questions)",
-      "a": "Detailed solution available."
+      "q": "10. What steps are involved in the synthesis of genetically engineered insulin?",
+      "a": "The steps involved in the production of genetically engineered insulin are given below:\nRNA is extracted from the beta-cells of Islet of Langerhans in the pancreas to synthesize insulin.\nSingle-stranded DNA complementary to mRNA is synthesized with the help of the enzyme reverse transcriptase. Then the second chain of DNA complementary to the first DNA sequence is synthesized with the help of enzyme DNA polymerase.\nBoth the replicated DNA strands are joined with the plasmid using a terminal transferase enzyme.\nThe enzyme named ligase is used to anneal both ends of the DNA. In this way, the ends of the plasmid and inserted DNA are sealed to form a new circular plasmid. This is a recombinant DNA molecule.\nIn the next step, this recombinant DNA is inoculated into new E.coli bacterial cells, digested with restriction enzymes, and inserted into the bacterial gene.\nAfter adequate gene expression, the germ cells from both cultures are lysed with the appropriate chemical. The insulin portion is then separated from the enzyme using cyanogen bromide.\nVery Long Questions and Answers (5 Marks Questions)"
     },
     {
-      "q": "1. To a 4-year-old patient, clinical gene therapy is given for an enzyme, which is important for the immune system to function.\nAfter observing the treatment flow chart, answer the following questions.\nComplete the missing steps (B) and (D) in the given flowchart.\nIdentify the disease to be treated.\nWhy doesn't the above method have a perfect solution to your problem?\nExplain how the scientists have developed a way to cure this disease forever.\nAns.\nStep (B): Lymphocytes proliferate in the culture medium.\nStep (D): Genetically engineered lymphocytes are injected into patients.\nDeficiency of Adenosine deaminase (ADA) enzyme.\nGenetically manipulated lymphocytes are not immortal, so the patients need to be infused with cells regularly.\nGenes isolated from bone marrow cells that produce ADA can be a permanent treatment when introduced into cells at the early embryonic stage.",
-      "a": "Detailed solution available."
+      "q": "1. To a 4-year-old patient, clinical gene therapy is given for an enzyme, which is important for the immune system to function.\nAfter observing the treatment flow chart, answer the following questions.\nComplete the missing steps (B) and (D) in the given flowchart.\nIdentify the disease to be treated.\nWhy doesn't the above method have a perfect solution to your problem?\nExplain how the scientists have developed a way to cure this disease forever.",
+      "a": "Step (B): Lymphocytes proliferate in the culture medium.\nStep (D): Genetically engineered lymphocytes are injected into patients.\nDeficiency of Adenosine deaminase (ADA) enzyme.\nGenetically manipulated lymphocytes are not immortal, so the patients need to be infused with cells regularly.\nGenes isolated from bone marrow cells that produce ADA can be a permanent treatment when introduced into cells at the early embryonic stage."
     },
     {
-      "q": "2. Explain the steps a, b, c, d, and e shown in the given figure. In the given figure, Agrobacterium is used for the production of transformed crops.\nAns.\nStep (a) Remove the plasmid and then cleave it using the restriction endonuclease enzyme.\nStep (b) Isolation of the gene of interest from other organisms and amplify it using PCR.\nStep (c) Insert the new gene into a plasmid.\nStep (d) Put back the plasmid into Agrobacterium.\nStep (e) Agrobacterium-based transformation.",
-      "a": "Detailed solution available."
+      "q": "2. Explain the steps a, b, c, d, and e shown in the given figure. In the given figure, Agrobacterium is used for the production of transformed crops.",
+      "a": "Step (a) Remove the plasmid and then cleave it using the restriction endonuclease enzyme.\nStep (b) Isolation of the gene of interest from other organisms and amplify it using PCR.\nStep (c) Insert the new gene into a plasmid.\nStep (d) Put back the plasmid into Agrobacterium.\nStep (e) Agrobacterium-based transformation."
     },
     {
-      "q": "3. In the picture shown below, shape (A) and shape (B) indicate other forms of the peptide hormone secreted by the mammalian pancreas.\nWhat type of bond is present between hormonal chains?\nWhat are the shape (A) and shape (B)? How are these shapes are different from each other?\nExplain how rDNA technology was used to produce this hormone by the US company Eli Lilly.\nAns.\nA disulfide bond is present between the two hormonal chains.\nShape (A) is the proinsulin form whereas Shape (B) is the mature or active form of insulin. Proinsulin contains an additional stretch called C-peptide, which is not found in mature insulin.\nTwo DNA sequences corresponding to the A and B peptide chains of human insulin were prepared by Eli Lilly company which were then introduced into the plasmid E. coli to generate insulin chains. Chains A and B were created and extracted separately and joined by making an insulin-forming disulfide bond to produce insulin protein.",
-      "a": "Detailed solution available."
+      "q": "3. In the picture shown below, shape (A) and shape (B) indicate other forms of the peptide hormone secreted by the mammalian pancreas.\nWhat type of bond is present between hormonal chains?\nWhat are the shape (A) and shape (B)? How are these shapes are different from each other?\nExplain how rDNA technology was used to produce this hormone by the US company Eli Lilly.",
+      "a": "A disulfide bond is present between the two hormonal chains.\nShape (A) is the proinsulin form whereas Shape (B) is the mature or active form of insulin. Proinsulin contains an additional stretch called C-peptide, which is not found in mature insulin.\nTwo DNA sequences corresponding to the A and B peptide chains of human insulin were prepared by Eli Lilly company which were then introduced into the plasmid E. coli to generate insulin chains. Chains A and B were created and extracted separately and joined by making an insulin-forming disulfide bond to produce insulin protein."
     },
     {
-      "q": "4. Define Gene Therapy. Can you explain it using an example of Adenosine deaminase (ADA) deficiency?\nAns.\nA collection of methods that helps the correction of gene deletions or gene defects is known as gene therapy.\nThis method involves inserting a gene into an individual's cells and tissues to address a specific genetic disorder. This involves transferring the normal gene to an individual or embryo, replacing the defective mutant allele of the gene. It is used as a viral vector to attack the host cell and introduce the genetic material into the host.\nFor example, adenosine deaminase (ADA) deficiency can be cured in some children through bone marrow transplantation, but gene therapy does not. Lymphocytes proliferate in culture and functional ADA, and cDNA is introduced into these lymphocytes. If so, these lymphocytes are transferred to the patient's body and the patient needs an injection of such genetically engineered lymphocytes.\nPoints to Remember From Class 12 Biology Chapter 10: Biotechnology and its Applications\nBiotechnology enables the production of biopharmaceuticals like insulin, vaccines, and monoclonal antibodies, along with gene therapy for treating genetic disorders.\nGenetically Modified (GM) crops like Bt cotton offer pest resistance, increased yield, and improved nutritional quality, such as Golden Rice enriched with Vitamin A.\nBioremediation uses genetically engineered microbes to clean pollutants, manage waste, and reduce environmental damage.\nLarge-scale production of enzymes, biofuels, and biodegradable materials demonstrates the industrial potential of biotechnology.\nEthical issues like patenting, biosafety of GMOs, and bioethics are important considerations in the use of biotechnology.\nBiotechnology plays a vital role in improving food security, combating diseases, and ensuring sustainable development.\nBenefits of Important Questions for Class 12 Biology Chapter 10\nThese questions emphasise key topics such as GMOs, biopharmaceuticals, and biosafety, ensuring students concentrate on the most important areas for exams.\nDetailed explanations for each question help students understand complex topics like recombinant DNA technology, gene therapy, and bioremediation.\nPractising these questions enables students to improve their problem-solving speed and efficiency, aiding better time management during exams.\nThe questions align with the CBSE syllabus and competitive exams like NEET, helping students prepare for both simultaneously.\nRegular practice builds confidence by familiarising students with commonly asked questions and exam patterns, reducing last-minute stress.\nRepeated practice ensures better retention of concepts and their applications, strengthening overall preparation.\nConclusion\nVedantu\u2019s Important Questions for Chapter 10: Biotechnology and its Applications is a comprehensive resource designed to help Class 12 students excel in their exams. These questions cover all key topics, including GMOs, biopharmaceuticals, gene therapy, and environmental biotechnology, providing a strong foundation for both CBSE board exams and competitive tests like NEET. With detailed explanations and expert-curated content, this FREE PDF ensures effective revision and builds confidence.\nRelated Study Materials for Class 12 Biology Chapter 10\nS.No\nImportant Other Links for Class 12 Biology Chapter 10",
-      "a": "Detailed solution available."
+      "q": "4. Define Gene Therapy. Can you explain it using an example of Adenosine deaminase (ADA) deficiency?",
+      "a": "A collection of methods that helps the correction of gene deletions or gene defects is known as gene therapy.\nThis method involves inserting a gene into an individual's cells and tissues to address a specific genetic disorder. This involves transferring the normal gene to an individual or embryo, replacing the defective mutant allele of the gene. It is used as a viral vector to attack the host cell and introduce the genetic material into the host.\nFor example, adenosine deaminase (ADA) deficiency can be cured in some children through bone marrow transplantation, but gene therapy does not. Lymphocytes proliferate in culture and functional ADA, and cDNA is introduced into these lymphocytes. If so, these lymphocytes are transferred to the patient's body and the patient needs an injection of such genetically engineered lymphocytes.\nPoints to Remember From Class 12 Biology Chapter 10: Biotechnology and its Applications\nBiotechnology enables the production of biopharmaceuticals like insulin, vaccines, and monoclonal antibodies, along with gene therapy for treating genetic disorders.\nGenetically Modified (GM) crops like Bt cotton offer pest resistance, increased yield, and improved nutritional quality, such as Golden Rice enriched with Vitamin A.\nBioremediation uses genetically engineered microbes to clean pollutants, manage waste, and reduce environmental damage.\nLarge-scale production of enzymes, biofuels, and biodegradable materials demonstrates the industrial potential of biotechnology.\nEthical issues like patenting, biosafety of GMOs, and bioethics are important considerations in the use of biotechnology.\nBiotechnology plays a vital role in improving food security, combating diseases, and ensuring sustainable development.\nBenefits of Important Questions for Class 12 Biology Chapter 10\nThese questions emphasise key topics such as GMOs, biopharmaceuticals, and biosafety, ensuring students concentrate on the most important areas for exams.\nDetailed explanations for each question help students understand complex topics like recombinant DNA technology, gene therapy, and bioremediation.\nPractising these questions enables students to improve their problem-solving speed and efficiency, aiding better time management during exams.\nThe questions align with the CBSE syllabus and competitive exams like NEET, helping students prepare for both simultaneously.\nRegular practice builds confidence by familiarising students with commonly asked questions and exam patterns, reducing last-minute stress.\nRepeated practice ensures better retention of concepts and their applications, strengthening overall preparation.\nConclusion\nVedantu\u2019s Important Questions for Chapter 10: Biotechnology and its Applications is a comprehensive resource designed to help Class 12 students excel in their exams. These questions cover all key topics, including GMOs, biopharmaceuticals, gene therapy, and environmental biotechnology, providing a strong foundation for both CBSE board exams and competitive tests like NEET. With detailed explanations and expert-curated content, this FREE PDF ensures effective revision and builds confidence.\nRelated Study Materials for Class 12 Biology Chapter 10\nS.No\nImportant Other Links for Class 12 Biology Chapter 10"
     },
     {
       "q": "1.\nCBSE Class 12 Biotechnology and its Applications Notes",
@@ -2417,36 +2417,36 @@ export default {
   ],
   "11": [
     {
-      "q": "1. Which are the factors responsible for the wide variety of habitats formed within each biome?\nAns\n: Regional and local variations",
-      "a": "Detailed solution available."
+      "q": "1. Which are the factors responsible for the wide variety of habitats formed within each biome?",
+      "a": "Regional and local variations"
     },
     {
-      "q": "2. Freshwater animals are unable to survive for long in seawater. Give a reason.\nAns\n: Due to osmotic problems.",
-      "a": "Detailed solution available."
+      "q": "2. Freshwater animals are unable to survive for long in seawater. Give a reason.",
+      "a": "Due to osmotic problems."
     },
     {
       "q": "3. With which population growth model is the Verhulst Pearl equation associated?",
       "a": "Logistic Growth."
     },
     {
-      "q": "4. Define diapause. Which organisms exhibit it?\nAns\n: A stage of suspended development, zooplanktons.",
-      "a": "Detailed solution available."
+      "q": "4. Define diapause. Which organisms exhibit it?",
+      "a": "A stage of suspended development, zooplanktons."
     },
     {
-      "q": "5. Calculate the death rate if 6 individuals in a laboratory population of 60 fruit flies died during a particular week.\nAns\n: 6/60 =0.1 individuals per fruitfly per week.",
-      "a": "Detailed solution available."
+      "q": "5. Calculate the death rate if 6 individuals in a laboratory population of 60 fruit flies died during a particular week.",
+      "a": "6/60 =0.1 individuals per fruitfly per week."
     },
     {
-      "q": "6. In the biological control method, one living organism is used against another to check its uncontrolled growth. Which kind of population interaction is involved in this?\nAns\n: Predation.",
-      "a": "Detailed solution available."
+      "q": "6. In the biological control method, one living organism is used against another to check its uncontrolled growth. Which kind of population interaction is involved in this?",
+      "a": "Predation."
     },
     {
-      "q": "7. An organism has to overcome stressful conditions for a limited period of time. Which strategies can it adopt to do so?\nAns\n:\n(i) Migration\n(ii) Suspension of active life by hibernation/aestivation/spore formation.",
-      "a": "Detailed solution available."
+      "q": "7. An organism has to overcome stressful conditions for a limited period of time. Which strategies can it adopt to do so?",
+      "a": "(i) Migration\n(ii) Suspension of active life by hibernation/aestivation/spore formation."
     },
     {
-      "q": "8. Write what do phytophagous insects feed on?\nAns\n: Plant sap and other parts of the plant.",
-      "a": "Detailed solution available."
+      "q": "8. Write what do phytophagous insects feed on?",
+      "a": "Plant sap and other parts of the plant."
     },
     {
       "q": "9. Why do leaves contain Sunken stomata?",
@@ -2457,44 +2457,44 @@ export default {
       "a": "Competition."
     },
     {
-      "q": "11. What type of interaction is shown by sparrows eating the seeds?\nAns\n: Predation.",
-      "a": "Detailed solution available."
+      "q": "11. What type of interaction is shown by sparrows eating the seeds?",
+      "a": "Predation."
     },
     {
-      "q": "12. Define homeostasis?\nAns\n: Homeostasis refers to the maintenance of a steady internal environment by organisms.",
-      "a": "Detailed solution available."
+      "q": "12. Define homeostasis?",
+      "a": "Homeostasis refers to the maintenance of a steady internal environment by organisms."
     },
     {
-      "q": "13. Give an example of suspension?\nAns\n: Hibernation is frogs, reptiles, or polar bears.",
-      "a": "Detailed solution available."
+      "q": "13. Give an example of suspension?",
+      "a": "Hibernation is frogs, reptiles, or polar bears."
     },
     {
-      "q": "14. What is Allen\u2019s rule?\nAns\n: Mammals living in colder regions have short ears & limbs to minimize heat loss.\n15. \u201cCuckoo bird lays eggs in the nest of crow\u201d which type of interaction is shown in this relation?",
-      "a": "Brood parasitism."
+      "q": "14. What is Allen\u2019s rule?",
+      "a": "Mammals living in colder regions have short ears & limbs to minimize heat loss.\n15. \u201cCuckoo bird lays eggs in the nest of crow\u201d which type of interaction is shown in this relation?\nAns:\nBrood parasitism."
     },
     {
-      "q": "16. Give one function of aerenchyma in aquatic plants?\nAns\n: Aerenchyma in aquatic plants provides buoyancy & helps them in floating.",
-      "a": "Detailed solution available."
+      "q": "16. Give one function of aerenchyma in aquatic plants?",
+      "a": "Aerenchyma in aquatic plants provides buoyancy & helps them in floating."
     },
     {
-      "q": "17. What does the J-shaped curve indicate?\nAns\n: The J-shaped curve indicates that the resources are unlimited in a habitat.",
-      "a": "Detailed solution available."
+      "q": "17. What does the J-shaped curve indicate?",
+      "a": "The J-shaped curve indicates that the resources are unlimited in a habitat."
     },
     {
       "q": "18. Name the type of interaction in which one species is harmed while the other is neither benefited or harmed?",
       "a": "Ammensalism."
     },
     {
-      "q": "19. Why are calotropis plants not browsed by herbivores?\nAns\n: Calotropis plants are not browsed by herbivores because calotropis plants produce a highly poisonous glycoside that is a cardiac poison & thus, directly kills the predator.",
-      "a": "Detailed solution available."
+      "q": "19. Why are calotropis plants not browsed by herbivores?",
+      "a": "Calotropis plants are not browsed by herbivores because calotropis plants produce a highly poisonous glycoside that is a cardiac poison & thus, directly kills the predator."
     },
     {
       "q": "20. What are the two primary requirements of a parasite from the host?",
       "a": "Food & shelter."
     },
     {
-      "q": "21. What is the ecological principle behind the biological control method of managing pest insects?\nAns\n: Predation, where predators prey upon pests & control their number.",
-      "a": "Detailed solution available."
+      "q": "21. What is the ecological principle behind the biological control method of managing pest insects?",
+      "a": "Predation, where predators prey upon pests & control their number."
     },
     {
       "q": "22. Write the equation for Verhulst \u2013 pearl logistic growth of population.",
@@ -2699,228 +2699,228 @@ export default {
   ],
   "12": [
     {
-      "q": "1. Decomposition is faster if detritus is rich in nitrogen and water-soluble substances like sugars. When is the decomposition process slower?\nAns.\nThe process of decomposition is slower when detritus is rich in lignin and chitin.",
-      "a": "Detailed solution available."
+      "q": "1. Decomposition is faster if detritus is rich in nitrogen and water-soluble substances like sugars. When is the decomposition process slower?",
+      "a": "The process of decomposition is slower when detritus is rich in lignin and chitin."
     },
     {
-      "q": "2. If we count the number of insects on a tree and the number of small birds depending on those insects as also the number of larger birds eating the smaller, what kind of pyramid of20 number would we get?\nAns.\nInverted Pyramid of Number.",
-      "a": "Detailed solution available."
+      "q": "2. If we count the number of insects on a tree and the number of small birds depending on those insects as also the number of larger birds eating the smaller, what kind of pyramid of20 number would we get?",
+      "a": "Inverted Pyramid of Number."
     },
     {
-      "q": "3. Differentiate between Sere and Seral communities.\nAns.\nThe differences between sere and seral communities are:\nSere Community\nSeral community (Individual transitional community)\nSere refers to an entire sequence of communities that change one after the other in a given area.\nIn the ecological succession of an ecosystem, the intermediate stage between pioneer and climax communities is known as seral communities.",
-      "a": "Detailed solution available."
+      "q": "3. Differentiate between Sere and Seral communities.",
+      "a": "The differences between sere and seral communities are:\nSere Community\nSeral community (Individual transitional community)\nSere refers to an entire sequence of communities that change one after the other in a given area.\nIn the ecological succession of an ecosystem, the intermediate stage between pioneer and climax communities is known as seral communities."
     },
     {
-      "q": "4. Who are generally the pioneer species in a Xerarch succession and a Hydrarch succession?\nAns.\nLichens are the pioneer species in Xerarch succession, while small phytoplanktons are the pioneer species in Hydrarch succession.",
-      "a": "Detailed solution available."
+      "q": "4. Who are generally the pioneer species in a Xerarch succession and a Hydrarch succession?",
+      "a": "Lichens are the pioneer species in Xerarch succession, while small phytoplanktons are the pioneer species in Hydrarch succession."
     },
     {
-      "q": "5. Which metabolic process causes a reduction in the Gross Primary Productivity?\nAns.\nRespiration is a metabolic process that causes a reduction in Gross Primary Productivity.",
-      "a": "Detailed solution available."
+      "q": "5. Which metabolic process causes a reduction in the Gross Primary Productivity?",
+      "a": "Respiration is a metabolic process that causes a reduction in Gross Primary Productivity."
     },
     {
-      "q": "6. What percentage of photosynthetically active radiation is captured by plants?\nAns.\nPlants capture\n$\\text{2-10\u00a0 }\\!\\!%\\!\\!\\text{ }$\nof the photosynthetically active radiation.",
-      "a": "Detailed solution available."
+      "q": "6. What percentage of photosynthetically active radiation is captured by plants?",
+      "a": "Plants capture\n$\\text{2-10\u00a0 }\\!\\!%\\!\\!\\text{ }$\nof the photosynthetically active radiation."
     },
     {
-      "q": "7. Name the pioneers of primary succession in water.\nAns.\nPhytoplankton is the pioneer of primary succession in water.",
-      "a": "Detailed solution available."
+      "q": "7. Name the pioneers of primary succession in water.",
+      "a": "Phytoplankton is the pioneer of primary succession in water."
     },
     {
-      "q": "8. Name any two man-made ecosystems?\nAns.\nAquarium and Garden are two man-made ecosystems.",
-      "a": "Detailed solution available."
+      "q": "8. Name any two man-made ecosystems?",
+      "a": "Aquarium and Garden are two man-made ecosystems."
     },
     {
-      "q": "9. Define stratification?\nAns.\nIn an ecosystem, stratification refers to the vertical distribution of distinct species at different levels.",
-      "a": "Detailed solution available."
+      "q": "9. Define stratification?",
+      "a": "In an ecosystem, stratification refers to the vertical distribution of distinct species at different levels."
     },
     {
-      "q": "10. Name the ecological pyramid that is always upright?\nAns.\nThe pyramid of energy is an ecological pyramid that is always upright.",
-      "a": "Detailed solution available."
+      "q": "10. Name the ecological pyramid that is always upright?",
+      "a": "The pyramid of energy is an ecological pyramid that is always upright."
     },
     {
-      "q": "11. Name the trophic level occupied by secondary consumers and tertiary consumers?\nAns.\nThe third trophic level is occupied by secondary consumers, while the fourth trophic level is occupied by tertiary consumers respectively.",
-      "a": "Detailed solution available."
+      "q": "11. Name the trophic level occupied by secondary consumers and tertiary consumers?",
+      "a": "The third trophic level is occupied by secondary consumers, while the fourth trophic level is occupied by tertiary consumers respectively."
     },
     {
-      "q": "12. Define standing crop?\nAns.\nStanding crop refers to the amount of living matter or biomass present at each trophic level.",
-      "a": "Detailed solution available."
+      "q": "12. Define standing crop?",
+      "a": "Standing crop refers to the amount of living matter or biomass present at each trophic level."
     },
     {
-      "q": "13. Name the ecological pyramid that is inverted in the tree ecosystem?\nAns.\nThe pyramid of number is an ecological pyramid that is inverted in a tree ecosystem.",
-      "a": "Detailed solution available."
+      "q": "13. Name the ecological pyramid that is inverted in the tree ecosystem?",
+      "a": "The pyramid of number is an ecological pyramid that is inverted in a tree ecosystem."
     },
     {
-      "q": "14. What are the products of decomposition?\nAns\n. The products of decomposition are\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\n,\n${{\\text{H}}_{\\text{2}}}\\text{O}$\nand nutrients.",
-      "a": "Detailed solution available."
+      "q": "14. What are the products of decomposition?",
+      "a": "The products of decomposition are\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\n,\n${{\\text{H}}_{\\text{2}}}\\text{O}$\nand nutrients."
     },
     {
-      "q": "15. What is $\\text{10\u00a0 }\\!\\!%\\!\\!\\text{ }$ law?\nAns.\nAt each trophic level,\n$\\text{90 }\\!\\!%\\!\\!\\text{ }$\nof energy is degraded into heat and only\n$\\text{10\u00a0 }\\!\\!%\\!\\!\\text{ }$\nis transferred to the next trophic level. This rule is known as the\n$\\text{10\u00a0 }\\!\\!%\\!\\!\\text{ }$\nlaw.",
-      "a": "Detailed solution available."
+      "q": "15. What is $\\text{10\u00a0 }\\!\\!%\\!\\!\\text{ }$ law?",
+      "a": "At each trophic level,\n$\\text{90 }\\!\\!%\\!\\!\\text{ }$\nof energy is degraded into heat and only\n$\\text{10\u00a0 }\\!\\!%\\!\\!\\text{ }$\nis transferred to the next trophic level. This rule is known as the\n$\\text{10\u00a0 }\\!\\!%\\!\\!\\text{ }$\nlaw."
     },
     {
-      "q": "16. Mention one similarity between Hydrarch and Xerarch succession.?\nAns.\nBoth hydrarch and xerarch result in the establishment of similar mesic conditions.",
-      "a": "Detailed solution available."
+      "q": "16. Mention one similarity between Hydrarch and Xerarch succession.?",
+      "a": "Both hydrarch and xerarch result in the establishment of similar mesic conditions."
     },
     {
-      "q": "17. What is the approximate value of the net primary productivity of the biosphere?\nAns.\nThe approximate value of the net primary productivity of the biosphere is 170 billion tons.",
-      "a": "Detailed solution available."
+      "q": "17. What is the approximate value of the net primary productivity of the biosphere?",
+      "a": "The approximate value of the net primary productivity of the biosphere is 170 billion tons."
     },
     {
-      "q": "18. Name two climatic factors that regulate decomposition?\nAns.\nThe two climatic factors that regulate\u00a0decomposition are temperature and soil moisture.",
-      "a": "Detailed solution available."
+      "q": "18. Name two climatic factors that regulate decomposition?",
+      "a": "The two climatic factors that regulate\u00a0decomposition are temperature and soil moisture."
     },
     {
-      "q": "19. What is sere?\nAns.\nSere refers to an entire sequence of communities that change one after the other in a given area.",
-      "a": "Detailed solution available."
+      "q": "19. What is sere?",
+      "a": "Sere refers to an entire sequence of communities that change one after the other in a given area."
     },
     {
-      "q": "20. Name the primary consumers in the aquatic ecosystem?\nAns.\nZooplanktons are the primary consumers in the aquatic ecosystem.",
-      "a": "Detailed solution available."
+      "q": "20. Name the primary consumers in the aquatic ecosystem?",
+      "a": "Zooplanktons are the primary consumers in the aquatic ecosystem."
     },
     {
-      "q": "21. Name the pioneer species in the primary succession on the rock?\nAns.\nLichens are the pioneer species in the primary succession on the rock.\nShort Answer Questions (2 Marks)",
-      "a": "Detailed solution available."
+      "q": "21. Name the pioneer species in the primary succession on the rock?",
+      "a": "Lichens are the pioneer species in the primary succession on the rock.\nShort Answer Questions (2 Marks)"
     },
     {
-      "q": "1. What is the shape of the pyramid of biomass in the sea? Why?\nAns.\nThe shape of the pyramid of biomass in the sea is inverted. This is because the amount of biomass is maximum at the apex of the pyramid and least at the bottom of the pyramid.",
-      "a": "Detailed solution available."
+      "q": "1. What is the shape of the pyramid of biomass in the sea? Why?",
+      "a": "The shape of the pyramid of biomass in the sea is inverted. This is because the amount of biomass is maximum at the apex of the pyramid and least at the bottom of the pyramid."
     },
     {
-      "q": "2. Give an example of an ecological pyramid that is always upright. Justify your answer.\nAns.\nThe pyramid of energy is always upright and can never be inverted because some energy is always lost as heat as energy flows from one trophic level to the next.",
-      "a": "Detailed solution available."
+      "q": "2. Give an example of an ecological pyramid that is always upright. Justify your answer.",
+      "a": "The pyramid of energy is always upright and can never be inverted because some energy is always lost as heat as energy flows from one trophic level to the next."
     },
     {
-      "q": "3. Differentiate between primary succession and secondary succession. Which one occurs faster?\nAns.\nThe difference between primary succession and secondary succession are:\nPrimary Succession\nSecondary succession\nA process that begins in the absence of any living organisms.\nA process that starts in areas that have lost all the living organisms that existed there.",
-      "a": "Detailed solution available."
+      "q": "3. Differentiate between primary succession and secondary succession. Which one occurs faster?",
+      "a": "The difference between primary succession and secondary succession are:\nPrimary Succession\nSecondary succession\nA process that begins in the absence of any living organisms.\nA process that starts in areas that have lost all the living organisms that existed there."
     },
     {
-      "q": "4. Gaseous nutrient cycles and sedimentary nutrient cycles have their reservoir. Name them. Why is a reservoir necessary?\nAns.\nThe atmosphere serves as a reservoir for the gaseous nutrient cycle, while the Earth's crust serves as a reservoir for the sedimentary nutrition cycle. The reservoir is required to meet the deficit caused by an imbalance in the influx and efflux.",
-      "a": "Detailed solution available."
+      "q": "4. Gaseous nutrient cycles and sedimentary nutrient cycles have their reservoir. Name them. Why is a reservoir necessary?",
+      "a": "The atmosphere serves as a reservoir for the gaseous nutrient cycle, while the Earth's crust serves as a reservoir for the sedimentary nutrition cycle. The reservoir is required to meet the deficit caused by an imbalance in the influx and efflux."
     },
     {
-      "q": "5. Fill up the missing links depicted as A, B, C, and D in the given model of primary succession.\nAns.\nA: - Plant stage\nB: - Reed Swamp Stage\nC: - Scrub stage\nD: - Forest stage",
-      "a": "Detailed solution available."
+      "q": "5. Fill up the missing links depicted as A, B, C, and D in the given model of primary succession.",
+      "a": "A: - Plant stage\nB: - Reed Swamp Stage\nC: - Scrub stage\nD: - Forest stage"
     },
     {
-      "q": "6. In the model of the phosphorus cycle given below, what does A, B, C and D refer to?\nAns.\nA: - Detritus\nB: - Decomposition\nC: - Weathering\nD: - Producers",
-      "a": "Detailed solution available."
+      "q": "6. In the model of the phosphorus cycle given below, what does A, B, C and D refer to?",
+      "a": "A: - Detritus\nB: - Decomposition\nC: - Weathering\nD: - Producers"
     },
     {
-      "q": "7. Differentiate between Hydrarch and Xerarch succession.\nAns.\nThe difference between Hydrarch and Xerarch succession are:\nHydrarch Succession\nXerarch Succession:\nThis succession occurs in wet areas.\nThis succession occurs in dry areas\nThis succession takes place from hydric (aquatic) to mesic (neither dry nor wet) conditions.\nThis succession takes place from xeric (bare rocks) to mesic (neither dry nor wet) conditions.\nThis succession begins with the phytoplankton stage.\nThis succession begins with bare rocks.",
-      "a": "Detailed solution available."
+      "q": "7. Differentiate between Hydrarch and Xerarch succession.",
+      "a": "The difference between Hydrarch and Xerarch succession are:\nHydrarch Succession\nXerarch Succession:\nThis succession occurs in wet areas.\nThis succession occurs in dry areas\nThis succession takes place from hydric (aquatic) to mesic (neither dry nor wet) conditions.\nThis succession takes place from xeric (bare rocks) to mesic (neither dry nor wet) conditions.\nThis succession begins with the phytoplankton stage.\nThis succession begins with bare rocks."
     },
     {
-      "q": "8. What is the effect on decomposition rate if: \u2013\na. Detritus is rich in lignin and chitin\nb. Detritus is rich in nitrogen and sugars?\nAns.\nThe effect on decomposition rate: -\na. If the detritus is rich in lignin and chitin, the decomposition rate is slower.\nb. If the detritus is rich in nitrogen and sugars, the decomposition rate is faster.",
-      "a": "Detailed solution available."
+      "q": "8. What is the effect on decomposition rate if: \u2013\na. Detritus is rich in lignin and chitin\nb. Detritus is rich in nitrogen and sugars?",
+      "a": "The effect on decomposition rate: -\na. If the detritus is rich in lignin and chitin, the decomposition rate is slower.\nb. If the detritus is rich in nitrogen and sugars, the decomposition rate is faster."
     },
     {
-      "q": "9. What are the limitations of ecological pyramids?\nAns.\nThe following are the limitations of ecological pyramids:\ni. Does not account for the equivalent species belonging to two or more trophic levels.\nii. Assumes a simple food chain and does not account for a food web.\niii. Saprophytes have been excluded from ecological pyramids",
-      "a": "Detailed solution available."
+      "q": "9. What are the limitations of ecological pyramids?",
+      "a": "The following are the limitations of ecological pyramids:\ni. Does not account for the equivalent species belonging to two or more trophic levels.\nii. Assumes a simple food chain and does not account for a food web.\niii. Saprophytes have been excluded from ecological pyramids"
     },
     {
-      "q": "10. Name any four ecosystem services. Who gave the price tags on nature\u2019s life support services? Which is the most important ecosystem service provider?\nAns.\nFour ecosystem services provided by the natural ecosystem are: -\ni. Drought and flood mitigation.\nii. Offer aesthetic, cultural, and spiritual values.\niii. Cycling nutrients and generating fertile soil.\niv. Providing habitat for wildlife, pollinating flowers, and maintaining Biodiversity.\nRobert Constanza gave price tags to nature's life support services. Soil formation is the most important ecosystem services provider.",
-      "a": "Detailed solution available."
+      "q": "10. Name any four ecosystem services. Who gave the price tags on nature\u2019s life support services? Which is the most important ecosystem service provider?",
+      "a": "Four ecosystem services provided by the natural ecosystem are: -\ni. Drought and flood mitigation.\nii. Offer aesthetic, cultural, and spiritual values.\niii. Cycling nutrients and generating fertile soil.\niv. Providing habitat for wildlife, pollinating flowers, and maintaining Biodiversity.\nRobert Constanza gave price tags to nature's life support services. Soil formation is the most important ecosystem services provider."
     },
     {
-      "q": "11. Study the table given below and fill the blanks from \u2018A\u2019 to \u2018F\u2019.\nS. No.\nComponent of the Ecosystem\nPosition of the trophic level\nOrganism present in the Food chain\nE\nFourth trophic level\nF\nSecondary consumer\nD\nBird, fish, wolf.\nB\nSecond trophic level\nC\nPrimary producer\nA\nPhytoplankton, grass, tree.\nAns.\nS. No.\nComponent of the Ecosystem\nPosition of the trophic level\nOrganism present in the Food chain\nE: - Tertiary consumer\nFourth trophic level\nF: - Man, Lion.\nSecondary consumer\nD: - Third trophic level\nBird, fish, wolf.\nB: - Primary consumer\nSecond trophic level\nC: - Zooplankton, Cow, Grasshopper.\nPrimary producer\nA: - First trophic level\nPhytoplankton, grass, tree.",
-      "a": "Detailed solution available."
+      "q": "11. Study the table given below and fill the blanks from \u2018A\u2019 to \u2018F\u2019.\nS. No.\nComponent of the Ecosystem\nPosition of the trophic level\nOrganism present in the Food chain\nE\nFourth trophic level\nF\nSecondary consumer\nD\nBird, fish, wolf.\nB\nSecond trophic level\nC\nPrimary producer\nA\nPhytoplankton, grass, tree.",
+      "a": "S. No.\nComponent of the Ecosystem\nPosition of the trophic level\nOrganism present in the Food chain\nE: - Tertiary consumer\nFourth trophic level\nF: - Man, Lion.\nSecondary consumer\nD: - Third trophic level\nBird, fish, wolf.\nB: - Primary consumer\nSecond trophic level\nC: - Zooplankton, Cow, Grasshopper.\nPrimary producer\nA: - First trophic level\nPhytoplankton, grass, tree."
     },
     {
-      "q": "12. In the pyramid of biomass drawn below, name the two crops (i) one which is supported (ii) one which supports. In which ecosystem are such types of pyramids found?\nAns.\ni. Supported trophic level is formed by zooplanktons (Primary consumers).\nii. Supporting trophic level is formed by phytoplankton (Secondary consumers). Such types of pyramids are found in aquatic ecosystems.",
-      "a": "Detailed solution available."
+      "q": "12. In the pyramid of biomass drawn below, name the two crops (i) one which is supported (ii) one which supports. In which ecosystem are such types of pyramids found?",
+      "a": "i. Supported trophic level is formed by zooplanktons (Primary consumers).\nii. Supporting trophic level is formed by phytoplankton (Secondary consumers). Such types of pyramids are found in aquatic ecosystems."
     },
     {
-      "q": "13. Why is secondary succession faster than primary succession?\nAns.\nSecondary succession is the development of a community on a site that was previously occupied by well-developed communities where the environment is both organic and inorganic. Secondary succession is faster than primary succession because these bare areas have suitable soil for proper growth.",
-      "a": "Detailed solution available."
+      "q": "13. Why is secondary succession faster than primary succession?",
+      "a": "Secondary succession is the development of a community on a site that was previously occupied by well-developed communities where the environment is both organic and inorganic. Secondary succession is faster than primary succession because these bare areas have suitable soil for proper growth."
     },
     {
-      "q": "14. Distinguish between upright and inverted pyramids?\nAns.\nThe difference between upright and inverted pyramids are:\nUpright pyramid\nInverted pyramid\nThe number and biomass of organisms in an ecosystem are greatest at the producer level and decrease with each trophic level in a food chain.\nThe number and biomass of organisms in an ecosystem are lowest at the producer level and increase with each trophic level in a food chain.\nThe energy in the lower trophic level is greater than the energy in the higher trophic level.\nThe energy in the lower trophic level is lesser than the energy in the higher trophic level.",
-      "a": "Detailed solution available."
+      "q": "14. Distinguish between upright and inverted pyramids?",
+      "a": "The difference between upright and inverted pyramids are:\nUpright pyramid\nInverted pyramid\nThe number and biomass of organisms in an ecosystem are greatest at the producer level and decrease with each trophic level in a food chain.\nThe number and biomass of organisms in an ecosystem are lowest at the producer level and increase with each trophic level in a food chain.\nThe energy in the lower trophic level is greater than the energy in the higher trophic level.\nThe energy in the lower trophic level is lesser than the energy in the higher trophic level."
     },
     {
-      "q": "15. Explain with an example, why is the length of a food chain in an ecosystem generally limited to $\\text{3-4}$trophic level.?\nAns.\nThe length of a food chain in an ecosystem is generally limited to\n$\\text{3-4}$\ntrophic levels because the energy transferred for\n$\\text{3-4}$\ntrophic levels is sufficient to do work and then the energy is insufficient to do work because only\n$\\text{10 }\\!\\!%\\!\\!\\text{ }$\nof energy is transferred to the next level. This is because according to the\n$\\text{10 }\\!\\!%\\!\\!\\text{ }$\nLaw of transfer of energy, in a food chain at each trophic level, about\n$\\text{90 }\\!\\!%\\!\\!\\text{ }$\nof energy is degraded into heat and only\n$\\text{10 }\\!\\!%\\!\\!\\text{ }$\nof energy is transferred to the next trophic level.",
-      "a": "Detailed solution available."
+      "q": "15. Explain with an example, why is the length of a food chain in an ecosystem generally limited to $\\text{3-4}$trophic level.?",
+      "a": "The length of a food chain in an ecosystem is generally limited to\n$\\text{3-4}$\ntrophic levels because the energy transferred for\n$\\text{3-4}$\ntrophic levels is sufficient to do work and then the energy is insufficient to do work because only\n$\\text{10 }\\!\\!%\\!\\!\\text{ }$\nof energy is transferred to the next level. This is because according to the\n$\\text{10 }\\!\\!%\\!\\!\\text{ }$\nLaw of transfer of energy, in a food chain at each trophic level, about\n$\\text{90 }\\!\\!%\\!\\!\\text{ }$\nof energy is degraded into heat and only\n$\\text{10 }\\!\\!%\\!\\!\\text{ }$\nof energy is transferred to the next trophic level."
     },
     {
-      "q": "16. What is meant by ecological succession? Describe the different stages in which succession occurs?\nAns.\nEcological succession is a community\u2013controlled phenomenon in which the structure and composition of the community change in a systematic and orderly manner, eventually leading to the establishment of a climax community.\nStages of Succession: -\nInvasion: - Invasion is the arrival of propagating organs such as seeds, spores, bulbils, etc. on a bare area of primary or secondary succession. Those for which conditions are favorable germinate in a new area and some of them grow into mature plants. These new arrivals from outside are called pioneers.\nEstablishment: - The process by which migrants adjust themselves to new areas after the migration is called ecesic. It consists of three essential processes i.e., germination, growth, and reproduction.\nAggregation: - The coming together of individuals of various species in an area are called aggregation.\nCompetition: - The species which have similar requirements of nutrition are known as competitive species e.g., those with the different requirements are complementary species.\nReaction: - It is the changes caused by colonisers within the habitat. The influence of vegetation on the site is referred to as a reaction until a stable community develops in that area.",
-      "a": "Detailed solution available."
+      "q": "16. What is meant by ecological succession? Describe the different stages in which succession occurs?",
+      "a": "Ecological succession is a community\u2013controlled phenomenon in which the structure and composition of the community change in a systematic and orderly manner, eventually leading to the establishment of a climax community.\nStages of Succession: -\nInvasion: - Invasion is the arrival of propagating organs such as seeds, spores, bulbils, etc. on a bare area of primary or secondary succession. Those for which conditions are favorable germinate in a new area and some of them grow into mature plants. These new arrivals from outside are called pioneers.\nEstablishment: - The process by which migrants adjust themselves to new areas after the migration is called ecesic. It consists of three essential processes i.e., germination, growth, and reproduction.\nAggregation: - The coming together of individuals of various species in an area are called aggregation.\nCompetition: - The species which have similar requirements of nutrition are known as competitive species e.g., those with the different requirements are complementary species.\nReaction: - It is the changes caused by colonisers within the habitat. The influence of vegetation on the site is referred to as a reaction until a stable community develops in that area."
     },
     {
-      "q": "17. What is meant by ecological pyramid? With the help of one example each, show that the pyramid of numbers can be both upright as well as inverted.\nAns.\nAn ecological pyramid is a graphical representation in the form of a pyramid that depicts the feeding relationship of groups of organisms. It is frequently depicted as follows: the producers are at the bottom, followed by the various trophic levels, with the highest at the top.\nA pyramid of numbers is a graphical representation of the number of organisms at each trophic level.\nIn an upright pyramid of numbers, the more abundant species form the first trophic level i.e., the base of the pyramid, and less abundant species remain near the top. Example: - Grassland ecosystem.\n$$\\text{Green plants }\\xrightarrow{{}}\\text{Rabbit}\\xrightarrow{{}}\\text{ Fox}\\xrightarrow{{}}\\text{ Lion}$$\nIn a grassland ecosystem, producers (Green plants) are more in number, and herbivores (Rabbit) are more than carnivores (Fox and Lion).\nIn an inverted pyramid of numbers, the most abundant species occurs at the top while the less abundant species form the base of the pyramid. Example: - Tree ecosystem.\n$$\\text{Tree }\\xrightarrow{{}}\\text{Birds}\\xrightarrow{{}}\\text{ Parasite}$$\nA big tree provides food to several herbivores (birds) which in turn provides food to few carnivores.",
-      "a": "Detailed solution available."
+      "q": "17. What is meant by ecological pyramid? With the help of one example each, show that the pyramid of numbers can be both upright as well as inverted.",
+      "a": "An ecological pyramid is a graphical representation in the form of a pyramid that depicts the feeding relationship of groups of organisms. It is frequently depicted as follows: the producers are at the bottom, followed by the various trophic levels, with the highest at the top.\nA pyramid of numbers is a graphical representation of the number of organisms at each trophic level.\nIn an upright pyramid of numbers, the more abundant species form the first trophic level i.e., the base of the pyramid, and less abundant species remain near the top. Example: - Grassland ecosystem.\n$$\\text{Green plants }\\xrightarrow{{}}\\text{Rabbit}\\xrightarrow{{}}\\text{ Fox}\\xrightarrow{{}}\\text{ Lion}$$\nIn a grassland ecosystem, producers (Green plants) are more in number, and herbivores (Rabbit) are more than carnivores (Fox and Lion).\nIn an inverted pyramid of numbers, the most abundant species occurs at the top while the less abundant species form the base of the pyramid. Example: - Tree ecosystem.\n$$\\text{Tree }\\xrightarrow{{}}\\text{Birds}\\xrightarrow{{}}\\text{ Parasite}$$\nA big tree provides food to several herbivores (birds) which in turn provides food to few carnivores."
     },
     {
-      "q": "18. Describe the components of an ecosystem?\nAns.\nAn ecosystem is a functional unit of nature consisting of biotic and abiotic factors where the living organisms interact among themselves and with the physical environment. The ecosystem consists of two components: -\nAbiotic Components: -\nInorganic substances e.g., phosphorus, Sulphur, carbon, nitrogen hydrogen, etc.\nOrganic substances e.g., carbohydrates, proteins, lipids.\nClimatic regime e.g., light, humidity, rainfall, temperature.\nBiotic Components: -\nProducers: - The organisms which produce food for themselves and all living organisms from inorganic raw material and solar radiation are called producers.\nConsumers: - These are living heterotrophic members of the ecosystem that consume the food synthesised lay producers. They are broadly classified as:\nPrimary Consumers:\n- They are directly dependent on producers called herbivores. Example: - Rat, deer, cow, goat.\nSecondary Consumers:\n- The organisms that use primary consumers as their food are called carnivores. Example: - Fox cats, lions.\nTertiary Consumers:\n- These are top carnivores that prey upon other carnivores and herbivores. Example: - Crow, man.\nDecomposers:\n- Organisms that break up the dead bodies of plants, animals, and related waste products are called decomposers. Example: - Bacteria, Fungi etc.\n19. \u201cEnergy flow in an ecosystem is always unidirectional\u201d. Justify the statement.\nAns.\nEnergy flow in an ecosystem is always unidirectional, which means that it is always transferred from one trophic level to the next and is never reverted. Example: - Energy from the sun is captured by producers, which is then consumed by the primary consumer, and energy is transferred to the next trophic level.",
-      "a": "Detailed solution available."
+      "q": "18. Describe the components of an ecosystem?",
+      "a": "An ecosystem is a functional unit of nature consisting of biotic and abiotic factors where the living organisms interact among themselves and with the physical environment. The ecosystem consists of two components: -\nAbiotic Components: -\nInorganic substances e.g., phosphorus, Sulphur, carbon, nitrogen hydrogen, etc.\nOrganic substances e.g., carbohydrates, proteins, lipids.\nClimatic regime e.g., light, humidity, rainfall, temperature.\nBiotic Components: -\nProducers: - The organisms which produce food for themselves and all living organisms from inorganic raw material and solar radiation are called producers.\nConsumers: - These are living heterotrophic members of the ecosystem that consume the food synthesised lay producers. They are broadly classified as:\nPrimary Consumers:\n- They are directly dependent on producers called herbivores. Example: - Rat, deer, cow, goat.\nSecondary Consumers:\n- The organisms that use primary consumers as their food are called carnivores. Example: - Fox cats, lions.\nTertiary Consumers:\n- These are top carnivores that prey upon other carnivores and herbivores. Example: - Crow, man.\nDecomposers:\n- Organisms that break up the dead bodies of plants, animals, and related waste products are called decomposers. Example: - Bacteria, Fungi etc.\n19. \u201cEnergy flow in an ecosystem is always unidirectional\u201d. Justify the statement.\nAns.\nEnergy flow in an ecosystem is always unidirectional, which means that it is always transferred from one trophic level to the next and is never reverted. Example: - Energy from the sun is captured by producers, which is then consumed by the primary consumer, and energy is transferred to the next trophic level."
     },
     {
-      "q": "20. Differentiate between Production and decomposition?\nAns.\nThe difference between production and decomposition are:\nProduction\nDecomposition\nThe process of synthesis of organic food materials from inorganic substances such as\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\n,\n${{\\text{H}}_{\\text{2}}}\\text{O}$\nin the presence of sunlight is referred to as production.\nDecomposition is the breakdown of complex substances into their constituents caused by bacteria, fungi, and other microorganisms.",
-      "a": "Detailed solution available."
+      "q": "20. Differentiate between Production and decomposition?",
+      "a": "The difference between production and decomposition are:\nProduction\nDecomposition\nThe process of synthesis of organic food materials from inorganic substances such as\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\n,\n${{\\text{H}}_{\\text{2}}}\\text{O}$\nin the presence of sunlight is referred to as production.\nDecomposition is the breakdown of complex substances into their constituents caused by bacteria, fungi, and other microorganisms."
     },
     {
-      "q": "21. Explain why the pyramid of energy of an ecosystem is always upright and never inverted?\nAns.\nThe pyramid of energy represents the total amount of energy utilized by the different trophic level organisms in a unit area. The pyramid of energy of the ecosystem is always upright and can never be inverted. This is because when energy flows from one trophic level to the next, some energy is always degraded as heat at each step.",
-      "a": "Detailed solution available."
+      "q": "21. Explain why the pyramid of energy of an ecosystem is always upright and never inverted?",
+      "a": "The pyramid of energy represents the total amount of energy utilized by the different trophic level organisms in a unit area. The pyramid of energy of the ecosystem is always upright and can never be inverted. This is because when energy flows from one trophic level to the next, some energy is always degraded as heat at each step."
     },
     {
-      "q": "22.\ni. Name the compound whose cycle is depicted.\nii. In what way do vehicles add this compound to the atmosphere?\niii. What adverse effect does its excess have on the environment?\niv. Cite an event that depicts this effect in modern times.\nv. Suggest two ways of depleting this effect.\nAns.\ni. Carbon cycle\nii. By burning fossil fuel. Example: - Diesel or petroleum. They introduce\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\nin the atmosphere.\niii. Environmental pollution\niv. Ozone layer depletion\nv. Two ways of depleting this effect are: -\na) By cutting down the use of fossil fuels.\nb) By planting more and more trees.",
-      "a": "Detailed solution available."
+      "q": "22.\ni. Name the compound whose cycle is depicted.\nii. In what way do vehicles add this compound to the atmosphere?\niii. What adverse effect does its excess have on the environment?\niv. Cite an event that depicts this effect in modern times.\nv. Suggest two ways of depleting this effect.",
+      "a": "i. Carbon cycle\nii. By burning fossil fuel. Example: - Diesel or petroleum. They introduce\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\nin the atmosphere.\niii. Environmental pollution\niv. Ozone layer depletion\nv. Two ways of depleting this effect are: -\na) By cutting down the use of fossil fuels.\nb) By planting more and more trees."
     },
     {
-      "q": "23. What do you mean by \u201cproductivity of an ecosystem? What types of productivity also mention the factors on which productivity of an ecosystem depends?\nAns.\nProductivity of an ecosystem is the rate at which solar radiation energy is fixed by the vegetation of an ecosystem per unit area & per unit time. It is generally expressed in terms of a unit of energy\n$\\text{(cal)}$\nproduced in a unit area\n$\\text{(}{{\\text{m}}^{\\text{2}}}\\text{)}$\nper unit time (year).\nProductivity can be of two types: -\nPrimary Productivity: -\nIt is defined as the amount of biomass or organic matter produced per unit area by plants during photosynthesis over a given period. Primary productivity is of following two types: -\nGross primary productivity (GPP): -\nIt refers to the total amount of food formed by the producers during photosynthesis.\nNet primary productivity (NPP): -\nIt refers to gross primary productivity minus loss by respiration (R).\n$\\text{NPP = GPP - R}$\nSecondary Productivity: -\nSecondary productivity is the rate of storage at the consumer level. It is defined as the rate at which organic matter is synthesized by consumers over a given period.\nPrimary productivity is determined by: -\nSeveral environmental factors.\nAvailability of nutrients.\nPhotosynthetic capacity of plants.",
-      "a": "Detailed solution available."
+      "q": "23. What do you mean by \u201cproductivity of an ecosystem? What types of productivity also mention the factors on which productivity of an ecosystem depends?",
+      "a": "Productivity of an ecosystem is the rate at which solar radiation energy is fixed by the vegetation of an ecosystem per unit area & per unit time. It is generally expressed in terms of a unit of energy\n$\\text{(cal)}$\nproduced in a unit area\n$\\text{(}{{\\text{m}}^{\\text{2}}}\\text{)}$\nper unit time (year).\nProductivity can be of two types: -\nPrimary Productivity: -\nIt is defined as the amount of biomass or organic matter produced per unit area by plants during photosynthesis over a given period. Primary productivity is of following two types: -\nGross primary productivity (GPP): -\nIt refers to the total amount of food formed by the producers during photosynthesis.\nNet primary productivity (NPP): -\nIt refers to gross primary productivity minus loss by respiration (R).\n$\\text{NPP = GPP - R}$\nSecondary Productivity: -\nSecondary productivity is the rate of storage at the consumer level. It is defined as the rate at which organic matter is synthesized by consumers over a given period.\nPrimary productivity is determined by: -\nSeveral environmental factors.\nAvailability of nutrients.\nPhotosynthetic capacity of plants."
     },
     {
-      "q": "24. What is decomposition? Describe the different processes involved in decomposition?\nAns.\nDecomposers (bacteria, fungi) helps in the breakdown of complex organic matter into simple inorganic substances like\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\n,\n${{\\text{H}}_{\\text{2}}}\\text{O}$\n, minerals. This process is called decomposition. Detritus is made up of dead plant remains such as leaves, bark, and flowers, as well as remains of dead animals along with fecal matter. The important processes involved in decomposition are: -\nFragmentation: - Detritivores are organisms that break down detritus into smaller particles.\nLeaching: - By leaching, water-soluble inorganic nutrients penetrate the soil horizon and precipitate as unavailable salts.\nCatabolism: - The enzymes of bacteria and fungi degrade detritus into simple inorganic substances.\nHumification: - Humification results in the accumulation of humus, a dark-coloured amorphous substance. This is highly resistant to microbial action and undergoes decomposition at an extremely slow rate.\nMineralisation: - Some microbes further degrade the humus, resulting in the release of inorganic nutrients via the mineralisation process.",
-      "a": "Detailed solution available."
+      "q": "24. What is decomposition? Describe the different processes involved in decomposition?",
+      "a": "Decomposers (bacteria, fungi) helps in the breakdown of complex organic matter into simple inorganic substances like\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\n,\n${{\\text{H}}_{\\text{2}}}\\text{O}$\n, minerals. This process is called decomposition. Detritus is made up of dead plant remains such as leaves, bark, and flowers, as well as remains of dead animals along with fecal matter. The important processes involved in decomposition are: -\nFragmentation: - Detritivores are organisms that break down detritus into smaller particles.\nLeaching: - By leaching, water-soluble inorganic nutrients penetrate the soil horizon and precipitate as unavailable salts.\nCatabolism: - The enzymes of bacteria and fungi degrade detritus into simple inorganic substances.\nHumification: - Humification results in the accumulation of humus, a dark-coloured amorphous substance. This is highly resistant to microbial action and undergoes decomposition at an extremely slow rate.\nMineralisation: - Some microbes further degrade the humus, resulting in the release of inorganic nutrients via the mineralisation process."
     },
     {
-      "q": "25. Why is the productivity of coral reefs maximum?\nAns.\nThe productivity of coral reefs is maximum because of the availability of good light, enough warmth, water, and abundant nutrients.",
-      "a": "Detailed solution available."
+      "q": "25. Why is the productivity of coral reefs maximum?",
+      "a": "The productivity of coral reefs is maximum because of the availability of good light, enough warmth, water, and abundant nutrients."
     },
     {
-      "q": "26. In the pyramid of biomass, drawn below, name the two crops: -\none which is supported and the one which supports\nIn which ecosystem is such a pyramid found.\nAns.\nSupported trophic level is formed by zooplanktons (Primary consumers) and the supporting trophic level is formed by phytoplankton (Secondary consumers).\nSuch types of pyramids are found in aquatic ecosystems (Pond).",
-      "a": "Detailed solution available."
+      "q": "26. In the pyramid of biomass, drawn below, name the two crops: -\none which is supported and the one which supports\nIn which ecosystem is such a pyramid found.",
+      "a": "Supported trophic level is formed by zooplanktons (Primary consumers) and the supporting trophic level is formed by phytoplankton (Secondary consumers).\nSuch types of pyramids are found in aquatic ecosystems (Pond)."
     },
     {
-      "q": "27. Differentiate between primary productivity and secondary productivity?\nAns.\nThe difference between primary productivity and secondary productivity are:\nPrimary Productivity\nSecondary Productivity\nIt is defined as the amount of biomass or organic matter produced per unit area by plants during photosynthesis over a given time period.\nIt is defined as the rate at which organic matter is synthesized by consumers over a given time period.\nThe process of production of organic matter is fast.\nThe process of production of organic matter is slow.\nIt is the result of the synthesis of fresh organic matter from inorganic matter.\nIt is the result of synthesis of organic matter from organic matter.",
-      "a": "Detailed solution available."
+      "q": "27. Differentiate between primary productivity and secondary productivity?",
+      "a": "The difference between primary productivity and secondary productivity are:\nPrimary Productivity\nSecondary Productivity\nIt is defined as the amount of biomass or organic matter produced per unit area by plants during photosynthesis over a given time period.\nIt is defined as the rate at which organic matter is synthesized by consumers over a given time period.\nThe process of production of organic matter is fast.\nThe process of production of organic matter is slow.\nIt is the result of the synthesis of fresh organic matter from inorganic matter.\nIt is the result of synthesis of organic matter from organic matter."
     },
     {
-      "q": "28. What ecological principles are derived from the study of food chains?\nAns.\nThe ecological principles are derived by studying food chains are: -\nEach food chain is complete and self\u2013sufficient.\nEvery food chain must start with photosynthesis and end with decay.\nShorter food chains are more efficient because the greater the number of steps, the more energy is wasted.\nThe members of food chains are large in size but fewer in number.",
-      "a": "Detailed solution available."
+      "q": "28. What ecological principles are derived from the study of food chains?",
+      "a": "The ecological principles are derived by studying food chains are: -\nEach food chain is complete and self\u2013sufficient.\nEvery food chain must start with photosynthesis and end with decay.\nShorter food chains are more efficient because the greater the number of steps, the more energy is wasted.\nThe members of food chains are large in size but fewer in number."
     },
     {
-      "q": "29. List the factors on which pioneer species depend during secondary succession?\nAns.\nIn secondary succession, the factors on which pioneer species depends are: -\nSoil conditions,\nWater availability,\nEnvironmental conditions, and\nThe presence of seeds or other propagules.",
-      "a": "Detailed solution available."
+      "q": "29. List the factors on which pioneer species depend during secondary succession?",
+      "a": "In secondary succession, the factors on which pioneer species depends are: -\nSoil conditions,\nWater availability,\nEnvironmental conditions, and\nThe presence of seeds or other propagules."
     },
     {
-      "q": "30. The productivity of the ecosystem increases from polar regions towards tropics. Why?\nAns.\nThe productivity of the ecosystem increases from the polar region towards the tropics because of the suitable temperature and increasing sunlight.",
-      "a": "Detailed solution available."
+      "q": "30. The productivity of the ecosystem increases from polar regions towards tropics. Why?",
+      "a": "The productivity of the ecosystem increases from the polar region towards the tropics because of the suitable temperature and increasing sunlight."
     },
     {
-      "q": "31. Mention some of the ecological services provided by forests?\nAns.\nSome of the ecological services provided by forests are: -\nDrought and flood mitigation.\nOffer aesthetic, cultural, and spiritual values.\nCycling nutrients and generating fertile soil.\nProviding habitat for wildlife, pollinating flowers, and maintaining Biodiversity.",
-      "a": "Detailed solution available."
+      "q": "31. Mention some of the ecological services provided by forests?",
+      "a": "Some of the ecological services provided by forests are: -\nDrought and flood mitigation.\nOffer aesthetic, cultural, and spiritual values.\nCycling nutrients and generating fertile soil.\nProviding habitat for wildlife, pollinating flowers, and maintaining Biodiversity."
     },
     {
-      "q": "32. Differentiate between food chain & food web?\nAns.\nThe difference between the food chain and the food web is:\nFood Chain\nFood Web\nThe unidirectional sequence of organisms in which energy flows in the form of food from one organism to another through the process of eating & being eaten is called the food chain.\nThe network of interlinked food chains is collectively known as the food web.\nIt consists of only four to five trophic levels.\nIt consists of numerous trophic levels.\nAn individual of a higher trophic level can only feed upon a single type of organism of a lower trophic level.\nAn individual of a higher trophic level can feed upon several types of organisms of lower trophic level.\nShort Answer Question (3 Marks)",
-      "a": "Detailed solution available."
+      "q": "32. Differentiate between food chain & food web?",
+      "a": "The difference between the food chain and the food web is:\nFood Chain\nFood Web\nThe unidirectional sequence of organisms in which energy flows in the form of food from one organism to another through the process of eating & being eaten is called the food chain.\nThe network of interlinked food chains is collectively known as the food web.\nIt consists of only four to five trophic levels.\nIt consists of numerous trophic levels.\nAn individual of a higher trophic level can only feed upon a single type of organism of a lower trophic level.\nAn individual of a higher trophic level can feed upon several types of organisms of lower trophic level.\nShort Answer Question (3 Marks)"
     },
     {
-      "q": "1. With the help of a diagram, represent the energy flow through the different trophic levels.\nAns.\nIn an ecosystem, energy flows through the different trophic levels by the food chain. It consists of two steps: -\nTrapping solar energy: - Primary source of energy is the sun. The only\n$$\\text{48\u00a0 }\\!\\!%\\!\\!\\text{ }$$\nof the sun\u2019s energy reaches the surface of the earth and only a part of it is used by plants for photosynthesis. The chemical energy produced by plants is stored in plant tissues. The photosynthetic organism uses a part of this chemical energy and transfers the rest to the organism at the next trophic level.\nPath and flow of energy: - The primary consumers, therefore, take chemical potential energy in the form of food. Most of it dissipates as heat during respiration and is lost out of the ecosystem. The same process is repeated at secondary consumers. At each trophic level,\n$$\\text{90\u00a0 }\\!\\!%\\!\\!\\text{ }$$\nof energy is degraded into heat and only\n$$\\text{10\u00a0 }\\!\\!%\\!\\!\\text{ }$$\nis then transferred to the next trophic level. This rule of energy flow is called the ten percent law.",
-      "a": "Detailed solution available."
+      "q": "1. With the help of a diagram, represent the energy flow through the different trophic levels.",
+      "a": "In an ecosystem, energy flows through the different trophic levels by the food chain. It consists of two steps: -\nTrapping solar energy: - Primary source of energy is the sun. The only\n$$\\text{48\u00a0 }\\!\\!%\\!\\!\\text{ }$$\nof the sun\u2019s energy reaches the surface of the earth and only a part of it is used by plants for photosynthesis. The chemical energy produced by plants is stored in plant tissues. The photosynthetic organism uses a part of this chemical energy and transfers the rest to the organism at the next trophic level.\nPath and flow of energy: - The primary consumers, therefore, take chemical potential energy in the form of food. Most of it dissipates as heat during respiration and is lost out of the ecosystem. The same process is repeated at secondary consumers. At each trophic level,\n$$\\text{90\u00a0 }\\!\\!%\\!\\!\\text{ }$$\nof energy is degraded into heat and only\n$$\\text{10\u00a0 }\\!\\!%\\!\\!\\text{ }$$\nis then transferred to the next trophic level. This rule of energy flow is called the ten percent law."
     },
     {
-      "q": "2. What is a pyramid of biomass? Represent the pyramid of biomass in\nGrassland ecosystem\nAquatic ecosystem.\nAns.\nThe total weight of dry matter is referred to as biomass. The pyramid of biomass represents the weight of dry matter at different trophic levels of the ecosystem at one time in a food chain or food web.\nGrassland ecosystem: - In a grassland ecosystem, the pyramid of biomass is upright i.e., the pyramid of biomass shows a gradual reduction in biomass at each trophic level from base to apex.\n$$\\text{Green plants }\\xrightarrow{{}}\\text{Rabbit}\\xrightarrow{{}}\\text{ Fox}\\xrightarrow{{}}\\text{ Lion}$$\nAquatic ecosystem: - In the pond or aquatic ecosystem, the biomass of consumers is always greater than the biomass of producers. As a result, it takes the form of an inverted pyramid.\n$\\text{Phytoplanktons }\\xrightarrow{{}}\\text{ Zooplanktons }\\xrightarrow{{}}\\text{ Small fishes }\\xrightarrow{{}}\\text{Large fishes}$\nLong Answer Questions (5 Marks)",
-      "a": "Detailed solution available."
+      "q": "2. What is a pyramid of biomass? Represent the pyramid of biomass in\nGrassland ecosystem\nAquatic ecosystem.",
+      "a": "The total weight of dry matter is referred to as biomass. The pyramid of biomass represents the weight of dry matter at different trophic levels of the ecosystem at one time in a food chain or food web.\nGrassland ecosystem: - In a grassland ecosystem, the pyramid of biomass is upright i.e., the pyramid of biomass shows a gradual reduction in biomass at each trophic level from base to apex.\n$$\\text{Green plants }\\xrightarrow{{}}\\text{Rabbit}\\xrightarrow{{}}\\text{ Fox}\\xrightarrow{{}}\\text{ Lion}$$\nAquatic ecosystem: - In the pond or aquatic ecosystem, the biomass of consumers is always greater than the biomass of producers. As a result, it takes the form of an inverted pyramid.\n$\\text{Phytoplanktons }\\xrightarrow{{}}\\text{ Zooplanktons }\\xrightarrow{{}}\\text{ Small fishes }\\xrightarrow{{}}\\text{Large fishes}$\nLong Answer Questions (5 Marks)"
     },
     {
-      "q": "1. Represent schematically and describe the phosphorus cycle in an ecosystem\n?\nAns.\nPhosphorus Cycle: -\nThe major reservoir of phosphorus is sedimentary rocks which are only available to basic cycle in small amounts as a result of weathering.\nThis phosphorus is weathered and later transported to the soil by wind and water, where they exist as inorganic dissolved phosphates.\nThe basic phosphorus cycle begins with dissolved phosphates which are absorbed by plants for making their issue.\nPlants are then eaten by animals. Decaying bacteria break the tissue of dead animals and these products return phosphates to the soil.\nThe water-soluble phosphates are lost to the deep rudiments of the ocean through run-off.\nThe major pathway of returning phosphorus to land is the uplifting of marine sediments. Some amount of phosphorus is returned to absorb inorganic phosphate, when they die, most of the absorbed phosphate is recycled back into ambient matter. This sort of cycling is called the biological cycle or metabolic cycle.",
-      "a": "Detailed solution available."
+      "q": "1. Represent schematically and describe the phosphorus cycle in an ecosystem\n?",
+      "a": "Phosphorus Cycle: -\nThe major reservoir of phosphorus is sedimentary rocks which are only available to basic cycle in small amounts as a result of weathering.\nThis phosphorus is weathered and later transported to the soil by wind and water, where they exist as inorganic dissolved phosphates.\nThe basic phosphorus cycle begins with dissolved phosphates which are absorbed by plants for making their issue.\nPlants are then eaten by animals. Decaying bacteria break the tissue of dead animals and these products return phosphates to the soil.\nThe water-soluble phosphates are lost to the deep rudiments of the ocean through run-off.\nThe major pathway of returning phosphorus to land is the uplifting of marine sediments. Some amount of phosphorus is returned to absorb inorganic phosphate, when they die, most of the absorbed phosphate is recycled back into ambient matter. This sort of cycling is called the biological cycle or metabolic cycle."
     },
     {
-      "q": "2. Represent schematically and describe the carbon cycle in the ecosystem?\nAns.\nCarbon is derived from the atmosphere and water. Carbon is present in the atmosphere predominantly in the form of carbon dioxide. It is essential for the production of carbohydrates via photosynthesis. It is incorporated into tissues of green plants e.g., carbohydrates, proteins, and lipids.\n$\\text{6 C}{{\\text{O}}_{\\text{2}}}\\text{+ 12 }{{\\text{H}}_{\\text{2}}}\\text{O }\\xrightarrow[\\text{Chlorophyll}]{\\text{hv}}\\text{ }{{\\text{C}}_{\\text{6}}}{{\\text{H}}_{\\text{12}}}{{\\text{O}}_{\\text{6}}}\\text{ + 6 }{{\\text{H}}_{\\text{2}}}\\text{O + 6 }{{\\text{O}}_{\\text{2}}}$\nThe\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\ndissolved in seawater is utilized by marine animals like protozoans, corals, molluscs etc. for their life. In these animals,\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\nis converted into calcium carbonate which is used for the construction of shells.\n$\\text{C}{{\\text{O}}_{\\text{2}}}\\text{ + }{{\\text{H}}_{\\text{2}}}\\text{O }\\xrightarrow{{}}\\text{ }{{\\text{H}}_{\\text{2}}}\\text{C}{{\\text{O}}_{\\text{3}}}\\xrightarrow{{}}\\text{ CaC}{{\\text{O}}_{\\text{3}}}\\text{ + }{{\\text{H}}^{\\text{+}}}$\nAfter the death of marine animals,\n$$\\text{CaC}{{\\text{O}}_{\\text{3}}}$$\nstore in shells is either deposited as sedimentary rock or dissolved in water to release\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\n. A certain amount of carbon is deposited in the form of coal carbon. Coal returns to the air in the form of\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\nthrough combustion and weathering. Thus, carbon from the atmospheric pool moves to green plants, then to animals, and finally to bacteria, fungi, etc. They return it to the atmosphere through decomposition.\nKey Points from Class 12 Biology Chapter 12: Ecosystem\nEcosystem Components\n: These include abiotic (air, water, soil) and biotic (producers, consumers, decomposers) factors that interact within an ecosystem.\nEnergy Flow\n: Energy flows unidirectionally through trophic levels, governed by the 10% Law, with significant losses at each step.\nPrimary Productivity\n: Biomass production by producers.\nNet Primary Productivity (NPP)\n: Energy available for consumers after respiration.\nNutrient Cycling\n: Essential elements like carbon, nitrogen, and phosphorus circulate through gaseous and sedimentary cycles.\nEcological Pyramids\n: Represent the number, biomass, or energy at each trophic level, with energy pyramids always upright.\nEcosystem Services\n: Ecosystems provide vital services such as air and water purification, nutrient recycling, and pollination.\nBenefits of Important Questions for Class 12 Biology Chapter 12 Ecosystem\nCovers key concepts like energy flow, nutrient cycling, and ecological pyramids, ensuring a comprehensive understanding of the chapter.\nDesigned based on NCERT and CBSE guidelines, helping students focus on questions likely to appear in board exams.\nActs as a summary of the chapter, enabling students to revise critical topics efficiently.\nEnhances the ability to answer application-based, diagram-based, and theoretical questions.\nPractising important questions helps students manage time effectively during exams.\nFamiliarity with frequently asked questions increases confidence in tackling the biology paper.\nAvailable as a FREE PDF Download, making it easy for students to access and learn anytime, anywhere.\nConclusion\nVedantu\u2019s Biology Important Questions for Chapter 12 - Ecosystem (Class 12) provide an invaluable resource for students aiming to excel in their board exams. With a focus on NCERT and CBSE guidelines, these carefully created questions simplify complex topics, enhance conceptual clarity, and strengthen problem-solving skills. The FREE PDF Download ensures accessibility and convenience, allowing students to study anytime, anywhere. Trust Vedantu to be your partner in academic success and make your learning journey efficient and enjoyable.\nRelated Study Materials for Class 12 Biology Chapter 12 Ecosystem\nS.No\nImportant Study Material Links for Class 12 Biology Chapter 12",
-      "a": "Detailed solution available."
+      "q": "2. Represent schematically and describe the carbon cycle in the ecosystem?",
+      "a": "Carbon is derived from the atmosphere and water. Carbon is present in the atmosphere predominantly in the form of carbon dioxide. It is essential for the production of carbohydrates via photosynthesis. It is incorporated into tissues of green plants e.g., carbohydrates, proteins, and lipids.\n$\\text{6 C}{{\\text{O}}_{\\text{2}}}\\text{+ 12 }{{\\text{H}}_{\\text{2}}}\\text{O }\\xrightarrow[\\text{Chlorophyll}]{\\text{hv}}\\text{ }{{\\text{C}}_{\\text{6}}}{{\\text{H}}_{\\text{12}}}{{\\text{O}}_{\\text{6}}}\\text{ + 6 }{{\\text{H}}_{\\text{2}}}\\text{O + 6 }{{\\text{O}}_{\\text{2}}}$\nThe\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\ndissolved in seawater is utilized by marine animals like protozoans, corals, molluscs etc. for their life. In these animals,\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\nis converted into calcium carbonate which is used for the construction of shells.\n$\\text{C}{{\\text{O}}_{\\text{2}}}\\text{ + }{{\\text{H}}_{\\text{2}}}\\text{O }\\xrightarrow{{}}\\text{ }{{\\text{H}}_{\\text{2}}}\\text{C}{{\\text{O}}_{\\text{3}}}\\xrightarrow{{}}\\text{ CaC}{{\\text{O}}_{\\text{3}}}\\text{ + }{{\\text{H}}^{\\text{+}}}$\nAfter the death of marine animals,\n$$\\text{CaC}{{\\text{O}}_{\\text{3}}}$$\nstore in shells is either deposited as sedimentary rock or dissolved in water to release\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\n. A certain amount of carbon is deposited in the form of coal carbon. Coal returns to the air in the form of\n$\\text{C}{{\\text{O}}_{\\text{2}}}$\nthrough combustion and weathering. Thus, carbon from the atmospheric pool moves to green plants, then to animals, and finally to bacteria, fungi, etc. They return it to the atmosphere through decomposition.\nKey Points from Class 12 Biology Chapter 12: Ecosystem\nEcosystem Components\n: These include abiotic (air, water, soil) and biotic (producers, consumers, decomposers) factors that interact within an ecosystem.\nEnergy Flow\n: Energy flows unidirectionally through trophic levels, governed by the 10% Law, with significant losses at each step.\nPrimary Productivity\n: Biomass production by producers.\nNet Primary Productivity (NPP)\n: Energy available for consumers after respiration.\nNutrient Cycling\n: Essential elements like carbon, nitrogen, and phosphorus circulate through gaseous and sedimentary cycles.\nEcological Pyramids\n: Represent the number, biomass, or energy at each trophic level, with energy pyramids always upright.\nEcosystem Services\n: Ecosystems provide vital services such as air and water purification, nutrient recycling, and pollination.\nBenefits of Important Questions for Class 12 Biology Chapter 12 Ecosystem\nCovers key concepts like energy flow, nutrient cycling, and ecological pyramids, ensuring a comprehensive understanding of the chapter.\nDesigned based on NCERT and CBSE guidelines, helping students focus on questions likely to appear in board exams.\nActs as a summary of the chapter, enabling students to revise critical topics efficiently.\nEnhances the ability to answer application-based, diagram-based, and theoretical questions.\nPractising important questions helps students manage time effectively during exams.\nFamiliarity with frequently asked questions increases confidence in tackling the biology paper.\nAvailable as a FREE PDF Download, making it easy for students to access and learn anytime, anywhere.\nConclusion\nVedantu\u2019s Biology Important Questions for Chapter 12 - Ecosystem (Class 12) provide an invaluable resource for students aiming to excel in their board exams. With a focus on NCERT and CBSE guidelines, these carefully created questions simplify complex topics, enhance conceptual clarity, and strengthen problem-solving skills. The FREE PDF Download ensures accessibility and convenience, allowing students to study anytime, anywhere. Trust Vedantu to be your partner in academic success and make your learning journey efficient and enjoyable.\nRelated Study Materials for Class 12 Biology Chapter 12 Ecosystem\nS.No\nImportant Study Material Links for Class 12 Biology Chapter 12"
     },
     {
       "q": "1.\nCBSE Class 12 Ecosystem Notes",
@@ -3191,8 +3191,8 @@ export default {
       "a": "(b) Soil"
     },
     {
-      "q": "20. Which of the following is an ecosystem service provided by natural ecosystem?\n(a) Cycling of nutrients\n(b) Prevention of soil erosion\n(c) Pollutant absorption and reduction of the threat of global warming\n(d) All of the above\nAns.\n(d) All\u00a0of the above\nVery Short Answer Type Questions",
-      "a": "Detailed solution available."
+      "q": "20. Which of the following is an ecosystem service provided by natural ecosystem?\n(a) Cycling of nutrients\n(b) Prevention of soil erosion\n(c) Pollutant absorption and reduction of the threat of global warming\n(d) All of the above",
+      "a": "(d) All\u00a0of the above\nVery Short Answer Type Questions"
     },
     {
       "q": "1. Name an organism found as a secondary carnivore in an aquatic ecosystem.",

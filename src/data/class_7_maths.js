@@ -183,84 +183,84 @@ export default {
   ],
   "2": [
     {
-      "q": "1. Convert the given fraction into mixed fraction $$\\dfrac{{22}}{7}$$.\nAns.\nA fraction can be written in the form of mixed fraction in the following way:\n$$Q\\dfrac{R}{D}$$ , where Q is the quotient, R is the remainder and D is the divisor of the fraction.\nSo, $$\\dfrac{{22}}{7}$$ in mixed fraction form will be $$3\\dfrac{1}{7}$$ .",
-      "a": "Detailed solution available."
+      "q": "1. Convert the given fraction into mixed fraction $$\\dfrac{{22}}{7}$$.",
+      "a": "A fraction can be written in the form of mixed fraction in the following way:\n$$Q\\dfrac{R}{D}$$ , where Q is the quotient, R is the remainder and D is the divisor of the fraction.\nSo, $$\\dfrac{{22}}{7}$$ in mixed fraction form will be $$3\\dfrac{1}{7}$$ ."
     },
     {
-      "q": "2. Write an equivalent fraction of $$\\dfrac{9}{{15}}$$.\nAns.\nTo find an equivalent fraction, we simply multiply the numerator and denominator of the given fraction with the same number.\nA fraction equivalent to $$\\dfrac{9}{{15}}$$ will be $$\\dfrac{9}{{15}} \\times \\dfrac{2}{2} = \\dfrac{{18}}{{30}}$$ .",
-      "a": "Detailed solution available."
+      "q": "2. Write an equivalent fraction of $$\\dfrac{9}{{15}}$$.",
+      "a": "To find an equivalent fraction, we simply multiply the numerator and denominator of the given fraction with the same number.\nA fraction equivalent to $$\\dfrac{9}{{15}}$$ will be $$\\dfrac{9}{{15}} \\times \\dfrac{2}{2} = \\dfrac{{18}}{{30}}$$ ."
     },
     {
-      "q": "3. Find the value of $$3\\dfrac{4}{7} \\div 7$$.\nAns.\nWe solve the expression $$3\\dfrac{4}{7} \\div 7$$ as follows:\n$$ \\Rightarrow \\dfrac{{25}}{7} \\div 7$$\n$$ \\Rightarrow \\dfrac{{25}}{7} \\times \\dfrac{1}{7}$$\n$$ \\Rightarrow \\dfrac{{25}}{{49}}$$",
-      "a": "Detailed solution available."
+      "q": "3. Find the value of $$3\\dfrac{4}{7} \\div 7$$.",
+      "a": "We solve the expression $$3\\dfrac{4}{7} \\div 7$$ as follows:\n$$ \\Rightarrow \\dfrac{{25}}{7} \\div 7$$\n$$ \\Rightarrow \\dfrac{{25}}{7} \\times \\dfrac{1}{7}$$\n$$ \\Rightarrow \\dfrac{{25}}{{49}}$$"
     },
     {
-      "q": "4. Express $$8$$ rupee $$5$$ paise in decimal.\nAns.\n$$8$$ rupees and $$5$$ paise in decimal form can be written as Rs. $$8.05$$.",
-      "a": "Detailed solution available."
+      "q": "4. Express $$8$$ rupee $$5$$ paise in decimal.",
+      "a": "$$8$$ rupees and $$5$$ paise in decimal form can be written as Rs. $$8.05$$."
     },
     {
-      "q": "5. Write the place value of $$5$$ in $$498.05$$.\nAns.\nThe place value of $$5$$ in $$498.05$$ is hundredths.\nRefer to page 2 - 6 for 2 Mark Questions",
-      "a": "Detailed solution available."
+      "q": "5. Write the place value of $$5$$ in $$498.05$$.",
+      "a": "The place value of $$5$$ in $$498.05$$ is hundredths.\nRefer to page 2 - 6 for 2 Mark Questions"
     },
     {
-      "q": "6. Find the value of $$\\dfrac{5}{6}$$ of:\n(i) $$30$$\nAns.\nThe value of $$\\dfrac{5}{6}$$ of $$30$$ is:\n$$\\dfrac{5}{6} \\times 30 = 25$$\n(ii) $$54$$\nAns.\nThe value of $$\\dfrac{5}{6}$$ of $$54$$ is:\n$$\\dfrac{5}{6} \\times 54 = 45$$",
-      "a": "Detailed solution available."
+      "q": "6. Find the value of $$\\dfrac{5}{6}$$ of:\n(i) $$30$$",
+      "a": "The value of $$\\dfrac{5}{6}$$ of $$30$$ is:\n$$\\dfrac{5}{6} \\times 30 = 25$$\n(ii) $$54$$\nAns.\nThe value of $$\\dfrac{5}{6}$$ of $$54$$ is:\n$$\\dfrac{5}{6} \\times 54 = 45$$"
     },
     {
-      "q": "7. Multiply and reduce to lowest form:\n(i) $$\\dfrac{3}{8} \\times \\dfrac{4}{9}$$\nAns.\nMultiplying and simplifying $$\\dfrac{3}{8} \\times \\dfrac{4}{9}$$ :\n$$ \\Rightarrow \\dfrac{{12}}{{72}}$$\n$$ \\Rightarrow \\dfrac{1}{6}$$\n(ii)\u00a0 $$\\dfrac{{11}}{{10}} \\times \\dfrac{2}{5}$$\nAns.\nMultiplying and simplifying $$\\dfrac{{11}}{{10}} \\times \\dfrac{2}{5}$$ :\n$$ \\Rightarrow \\dfrac{{22}}{{50}}$$\n$$ \\Rightarrow \\dfrac{{11}}{{25}}$$",
-      "a": "Detailed solution available."
+      "q": "7. Multiply and reduce to lowest form:\n(i) $$\\dfrac{3}{8} \\times \\dfrac{4}{9}$$",
+      "a": "Multiplying and simplifying $$\\dfrac{3}{8} \\times \\dfrac{4}{9}$$ :\n$$ \\Rightarrow \\dfrac{{12}}{{72}}$$\n$$ \\Rightarrow \\dfrac{1}{6}$$\n(ii)\u00a0 $$\\dfrac{{11}}{{10}} \\times \\dfrac{2}{5}$$\nAns.\nMultiplying and simplifying $$\\dfrac{{11}}{{10}} \\times \\dfrac{2}{5}$$ :\n$$ \\Rightarrow \\dfrac{{22}}{{50}}$$\n$$ \\Rightarrow \\dfrac{{11}}{{25}}$$"
     },
     {
-      "q": "8. Multiply and express as mixed fractions:\n(i) $$4 \\times 6\\dfrac{2}{3}$$\nAns.\nSolving the expression:\n$$4 \\times 6\\dfrac{2}{3}$$\n$$ \\Rightarrow 4 \\times \\dfrac{{20}}{3}$$\n$$ \\Rightarrow \\dfrac{{80}}{3}$$\n$$ \\Rightarrow 26\\dfrac{2}{3}$$\n(ii) $$3\\dfrac{2}{3} \\times 5$$\nAns.\nSolving the expression:\n$$3\\dfrac{2}{3} \\times 5$$\n$$ \\Rightarrow \\dfrac{{11}}{3} \\times 5$$\n$$ \\Rightarrow \\dfrac{{55}}{3}$$\n$$ \\Rightarrow 18\\dfrac{1}{3}$$",
-      "a": "Detailed solution available."
+      "q": "8. Multiply and express as mixed fractions:\n(i) $$4 \\times 6\\dfrac{2}{3}$$",
+      "a": "Solving the expression:\n$$4 \\times 6\\dfrac{2}{3}$$\n$$ \\Rightarrow 4 \\times \\dfrac{{20}}{3}$$\n$$ \\Rightarrow \\dfrac{{80}}{3}$$\n$$ \\Rightarrow 26\\dfrac{2}{3}$$\n(ii) $$3\\dfrac{2}{3} \\times 5$$\nAns.\nSolving the expression:\n$$3\\dfrac{2}{3} \\times 5$$\n$$ \\Rightarrow \\dfrac{{11}}{3} \\times 5$$\n$$ \\Rightarrow \\dfrac{{55}}{3}$$\n$$ \\Rightarrow 18\\dfrac{1}{3}$$"
     },
     {
-      "q": "9. Shade:\n(i) $$\\dfrac{1}{3}$$ of the ice creams in box:\nAns.\nThere are total $$9$$ ice creams in the box. We have to shade $$\\dfrac{1}{3}$$ , that is, $$\\dfrac{1}{3} \\times 9 = 3$$ ice creams.\n(ii) $$\\dfrac{3}{4}$$ of the apples in box:\nAns.\nThere are a total of $$16$$ apples in the box. We have to shade $$\\dfrac{3}{4}$$ , that is, $$\\dfrac{3}{4} \\times 16 = 12$$ apples.",
-      "a": "Detailed solution available."
+      "q": "9. Shade:\n(i) $$\\dfrac{1}{3}$$ of the ice creams in box:",
+      "a": "There are total $$9$$ ice creams in the box. We have to shade $$\\dfrac{1}{3}$$ , that is, $$\\dfrac{1}{3} \\times 9 = 3$$ ice creams.\n(ii) $$\\dfrac{3}{4}$$ of the apples in box:\nAns.\nThere are a total of $$16$$ apples in the box. We have to shade $$\\dfrac{3}{4}$$ , that is, $$\\dfrac{3}{4} \\times 16 = 12$$ apples."
     },
     {
-      "q": "10. Sarah and Darshan went for a picnic. Their mother gave them a juice bottle of $$3$$ litres.\nSarah consumed $${\\dfrac{1}{3}^{rd}}$$ of the juice. Darshan consumed the rest.\n(a) How much did Sarah drink?\nAns.\nTotal quantity of juice in the bottle is $$3$$ litres.\nSarah consumed $${\\dfrac{1}{3}^{rd}}$$ of the juice, that is, $$\\dfrac{1}{3} \\times 3 = 1$$ litre.\n(b) What fraction of the total quantity did Darshan drink?\nAns.\nDarshan consumed $$1 - \\dfrac{1}{3} = \\dfrac{2}{3}$$ of the total juice.",
-      "a": "Detailed solution available."
+      "q": "10. Sarah and Darshan went for a picnic. Their mother gave them a juice bottle of $$3$$ litres.\nSarah consumed $${\\dfrac{1}{3}^{rd}}$$ of the juice. Darshan consumed the rest.\n(a) How much did Sarah drink?",
+      "a": "Total quantity of juice in the bottle is $$3$$ litres.\nSarah consumed $${\\dfrac{1}{3}^{rd}}$$ of the juice, that is, $$\\dfrac{1}{3} \\times 3 = 1$$ litre.\n(b) What fraction of the total quantity did Darshan drink?\nAns.\nDarshan consumed $$1 - \\dfrac{1}{3} = \\dfrac{2}{3}$$ of the total juice."
     },
     {
-      "q": "11. Find:\n(i) $$\\dfrac{2}{9} \\div 4$$\nAns.\nSolving:\n$$\\dfrac{2}{9} \\div 4$$\n$$ \\Rightarrow \\dfrac{2}{9} \\times \\dfrac{1}{4}$$\n$$ \\Rightarrow \\dfrac{2}{{36}}$$\n$$ \\Rightarrow \\dfrac{1}{{18}}$$\n(ii) $$\\dfrac{{11}}{7} \\div 2$$\nAns.\nSolving:\n$$\\dfrac{{11}}{7} \\div 2$$\n$$ \\Rightarrow \\dfrac{{11}}{7} \\times \\dfrac{1}{2}$$\n$$ \\Rightarrow \\dfrac{{11}}{{14}}$$",
-      "a": "Detailed solution available."
+      "q": "11. Find:\n(i) $$\\dfrac{2}{9} \\div 4$$",
+      "a": "Solving:\n$$\\dfrac{2}{9} \\div 4$$\n$$ \\Rightarrow \\dfrac{2}{9} \\times \\dfrac{1}{4}$$\n$$ \\Rightarrow \\dfrac{2}{{36}}$$\n$$ \\Rightarrow \\dfrac{1}{{18}}$$\n(ii) $$\\dfrac{{11}}{7} \\div 2$$\nAns.\nSolving:\n$$\\dfrac{{11}}{7} \\div 2$$\n$$ \\Rightarrow \\dfrac{{11}}{7} \\times \\dfrac{1}{2}$$\n$$ \\Rightarrow \\dfrac{{11}}{{14}}$$"
     },
     {
-      "q": "12. Find:\n(i) $$\\dfrac{{12}}{7} \\div \\dfrac{3}{{14}}$$\nAns.\nSolving:\n$$\\dfrac{{12}}{7} \\div \\dfrac{3}{{14}}$$\n$$ \\Rightarrow \\dfrac{{12}}{7} \\times \\dfrac{{14}}{3}$$\n$$ \\Rightarrow \\dfrac{{168}}{{21}}$$\n$$ \\Rightarrow 8$$\n(ii) $$\\dfrac{2}{5} \\div \\dfrac{4}{5}$$\nAns.\nSolving:\n$$\\dfrac{2}{5} \\div \\dfrac{4}{5}$$\n$$ \\Rightarrow \\dfrac{2}{5} \\times \\dfrac{5}{4}$$\n$$ \\Rightarrow \\dfrac{2}{4}$$\n$$ \\Rightarrow \\dfrac{1}{2}$$",
-      "a": "Detailed solution available."
+      "q": "12. Find:\n(i) $$\\dfrac{{12}}{7} \\div \\dfrac{3}{{14}}$$",
+      "a": "Solving:\n$$\\dfrac{{12}}{7} \\div \\dfrac{3}{{14}}$$\n$$ \\Rightarrow \\dfrac{{12}}{7} \\times \\dfrac{{14}}{3}$$\n$$ \\Rightarrow \\dfrac{{168}}{{21}}$$\n$$ \\Rightarrow 8$$\n(ii) $$\\dfrac{2}{5} \\div \\dfrac{4}{5}$$\nAns.\nSolving:\n$$\\dfrac{2}{5} \\div \\dfrac{4}{5}$$\n$$ \\Rightarrow \\dfrac{2}{5} \\times \\dfrac{5}{4}$$\n$$ \\Rightarrow \\dfrac{2}{4}$$\n$$ \\Rightarrow \\dfrac{1}{2}$$"
     },
     {
-      "q": "13. Which is greater:\n(i) $${\\bf{0}}.{\\bf{02}}$$ or $${\\bf{0}}.{\\bf{2}}$$\nAns.\nWe convert the decimals into equivalent fractions:\n$$0.02 = \\dfrac{2}{{100}}$$ and $$0.2 = \\dfrac{{20}}{{100}}$$\nOn comparing, we conclude that $$\\dfrac{{20}}{{100}} > \\dfrac{2}{{100}}$$ .\nHence, $$0.2$$ is greater.\n(ii) $$1.98$$ or $$1.98$$\nAns.\nWe convert the decimals into equivalent fractions:\n$$1.98 = \\dfrac{{198}}{{100}}$$ and $$1.89 = \\dfrac{{189}}{{100}}$$\nOn comparing, we conclude that $$\\dfrac{{198}}{{100}} > \\dfrac{{189}}{{100}}$$ .\nHence, $$1.98$$ is greater.",
-      "a": "Detailed solution available."
+      "q": "13. Which is greater:\n(i) $${\\bf{0}}.{\\bf{02}}$$ or $${\\bf{0}}.{\\bf{2}}$$",
+      "a": "We convert the decimals into equivalent fractions:\n$$0.02 = \\dfrac{2}{{100}}$$ and $$0.2 = \\dfrac{{20}}{{100}}$$\nOn comparing, we conclude that $$\\dfrac{{20}}{{100}} > \\dfrac{2}{{100}}$$ .\nHence, $$0.2$$ is greater.\n(ii) $$1.98$$ or $$1.98$$\nAns.\nWe convert the decimals into equivalent fractions:\n$$1.98 = \\dfrac{{198}}{{100}}$$ and $$1.89 = \\dfrac{{189}}{{100}}$$\nOn comparing, we conclude that $$\\dfrac{{198}}{{100}} > \\dfrac{{189}}{{100}}$$ .\nHence, $$1.98$$ is greater."
     },
     {
-      "q": "14. How much $$5.6$$ kg is less than $$9.4$$ kg?\nAns.\nCalculating the difference:\n$$9.4 - 5.6 = 3.8$$ kg\nHence, $$5.6$$ kg is $$3.8$$ kg less than $$9.4$$ kg.",
-      "a": "Detailed solution available."
+      "q": "14. How much $$5.6$$ kg is less than $$9.4$$ kg?",
+      "a": "Calculating the difference:\n$$9.4 - 5.6 = 3.8$$ kg\nHence, $$5.6$$ kg is $$3.8$$ kg less than $$9.4$$ kg."
     },
     {
-      "q": "15. Find:\n(i) $$1.08 \\times 0.3$$\nAns.\nConverting into fractions and solving:\n$$1.08 \\times 0.3$$\n$$ \\Rightarrow \\dfrac{{108}}{{100}} \\times \\dfrac{3}{{10}}$$\n$$ \\Rightarrow \\dfrac{{324}}{{1000}}$$\n$$ \\Rightarrow 0.324$$\n(ii) $$158.3 \\times 2.9$$\nAns.\nConverting into fractions and solving:\n$$158.3 \\times 2.9$$\n$$ \\Rightarrow \\dfrac{{1583}}{{10}} \\times \\dfrac{{29}}{{10}}$$\n$$ \\Rightarrow \\dfrac{{45907}}{{100}}$$\n$$ \\Rightarrow 459.07$$\n3 Mark Questions",
-      "a": "Detailed solution available."
+      "q": "15. Find:\n(i) $$1.08 \\times 0.3$$",
+      "a": "Converting into fractions and solving:\n$$1.08 \\times 0.3$$\n$$ \\Rightarrow \\dfrac{{108}}{{100}} \\times \\dfrac{3}{{10}}$$\n$$ \\Rightarrow \\dfrac{{324}}{{1000}}$$\n$$ \\Rightarrow 0.324$$\n(ii) $$158.3 \\times 2.9$$\nAns.\nConverting into fractions and solving:\n$$158.3 \\times 2.9$$\n$$ \\Rightarrow \\dfrac{{1583}}{{10}} \\times \\dfrac{{29}}{{10}}$$\n$$ \\Rightarrow \\dfrac{{45907}}{{100}}$$\n$$ \\Rightarrow 459.07$$\n3 Mark Questions"
     },
     {
-      "q": "16. Arrange in ascending order $$\\dfrac{3}{5},\\dfrac{4}{7},\\dfrac{3}{{10}},\\dfrac{4}{5}$$ .\nAns.\nTo arrange given fractions in ascending order, we first make their denominators equivalent.\nL.C.M. of all the denominators $$5,7,10$$ is $$70$$ .\n$$\\dfrac{3}{5} \\times \\dfrac{{14}}{{14}} = \\dfrac{{42}}{{70}}$$\n$$\\dfrac{4}{7} \\times \\dfrac{{10}}{{10}} = \\dfrac{{40}}{{70}}$$\n$$\\dfrac{3}{{10}} \\times \\dfrac{7}{7} = \\dfrac{{21}}{{70}}$$\n$$\\dfrac{4}{5} \\times \\dfrac{{14}}{{14}} = \\dfrac{{56}}{{70}}$$\nNow, $$\\dfrac{{21}}{{70}} < \\dfrac{{40}}{{70}} < \\dfrac{{42}}{{70}} < \\dfrac{{56}}{{70}}$$ .\nHence, $$\\dfrac{3}{{10}} < \\dfrac{4}{7} < \\dfrac{3}{5} < \\dfrac{4}{5}$$ .",
-      "a": "Detailed solution available."
+      "q": "16. Arrange in ascending order $$\\dfrac{3}{5},\\dfrac{4}{7},\\dfrac{3}{{10}},\\dfrac{4}{5}$$ .",
+      "a": "To arrange given fractions in ascending order, we first make their denominators equivalent.\nL.C.M. of all the denominators $$5,7,10$$ is $$70$$ .\n$$\\dfrac{3}{5} \\times \\dfrac{{14}}{{14}} = \\dfrac{{42}}{{70}}$$\n$$\\dfrac{4}{7} \\times \\dfrac{{10}}{{10}} = \\dfrac{{40}}{{70}}$$\n$$\\dfrac{3}{{10}} \\times \\dfrac{7}{7} = \\dfrac{{21}}{{70}}$$\n$$\\dfrac{4}{5} \\times \\dfrac{{14}}{{14}} = \\dfrac{{56}}{{70}}$$\nNow, $$\\dfrac{{21}}{{70}} < \\dfrac{{40}}{{70}} < \\dfrac{{42}}{{70}} < \\dfrac{{56}}{{70}}$$ .\nHence, $$\\dfrac{3}{{10}} < \\dfrac{4}{7} < \\dfrac{3}{5} < \\dfrac{4}{5}$$ ."
     },
     {
-      "q": "17. Find the perimeter of the rectangle whose length is $$7\\dfrac{3}{{10}}$$ cm and breadth is $$\\dfrac{3}{5}$$ cm.\nAns.\nWe know that the perimeter of a rectangle is twice the sum of its length and breadth, that is, $$2(l + b)$$ .\n$$ \\Rightarrow 2(7\\dfrac{3}{{10}} + \\dfrac{3}{5})$$\n$$ \\Rightarrow 2(\\dfrac{{73}}{{10}} + \\dfrac{6}{{10}})$$\n$$ \\Rightarrow 2(\\dfrac{{79}}{{10}})$$\n$$ \\Rightarrow \\dfrac{{79}}{5}$$\n$$ \\Rightarrow 15\\dfrac{4}{5}$$ cm",
-      "a": "Detailed solution available."
+      "q": "17. Find the perimeter of the rectangle whose length is $$7\\dfrac{3}{{10}}$$ cm and breadth is $$\\dfrac{3}{5}$$ cm.",
+      "a": "We know that the perimeter of a rectangle is twice the sum of its length and breadth, that is, $$2(l + b)$$ .\n$$ \\Rightarrow 2(7\\dfrac{3}{{10}} + \\dfrac{3}{5})$$\n$$ \\Rightarrow 2(\\dfrac{{73}}{{10}} + \\dfrac{6}{{10}})$$\n$$ \\Rightarrow 2(\\dfrac{{79}}{{10}})$$\n$$ \\Rightarrow \\dfrac{{79}}{5}$$\n$$ \\Rightarrow 15\\dfrac{4}{5}$$ cm"
     },
     {
-      "q": "18. Find $$\\dfrac{3}{7}$$ of:\n(i) $$3\\dfrac{5}{8}$$\nAns.\nThe value of $$\\dfrac{3}{7}$$ of $$3\\dfrac{5}{8}$$ is:\n$$\\dfrac{3}{7} \\times 3\\dfrac{5}{8} = \\dfrac{3}{7} \\times \\dfrac{{29}}{8}$$\n$$ \\Rightarrow \\dfrac{{87}}{{56}}$$\n$$ \\Rightarrow 1\\dfrac{{31}}{{56}}$$\n(ii) $$4\\dfrac{3}{9}$$\nAns.\nThe value of $$\\dfrac{3}{7}$$ of $$4\\dfrac{3}{9}$$ is:\n$$\\dfrac{3}{7} \\times 4\\dfrac{3}{9} = \\dfrac{3}{7} \\times \\dfrac{{39}}{9}$$\n$$ \\Rightarrow \\dfrac{{13}}{7}$$\n$$ \\Rightarrow 1\\dfrac{6}{7}$$",
-      "a": "Detailed solution available."
+      "q": "18. Find $$\\dfrac{3}{7}$$ of:\n(i) $$3\\dfrac{5}{8}$$",
+      "a": "The value of $$\\dfrac{3}{7}$$ of $$3\\dfrac{5}{8}$$ is:\n$$\\dfrac{3}{7} \\times 3\\dfrac{5}{8} = \\dfrac{3}{7} \\times \\dfrac{{29}}{8}$$\n$$ \\Rightarrow \\dfrac{{87}}{{56}}$$\n$$ \\Rightarrow 1\\dfrac{{31}}{{56}}$$\n(ii) $$4\\dfrac{3}{9}$$\nAns.\nThe value of $$\\dfrac{3}{7}$$ of $$4\\dfrac{3}{9}$$ is:\n$$\\dfrac{3}{7} \\times 4\\dfrac{3}{9} = \\dfrac{3}{7} \\times \\dfrac{{39}}{9}$$\n$$ \\Rightarrow \\dfrac{{13}}{7}$$\n$$ \\Rightarrow 1\\dfrac{6}{7}$$"
     },
     {
-      "q": "19. Find:\n(i) $$3\\dfrac{1}{8} \\div 2\\dfrac{1}{4}$$\nAns.\nSolving:\n$$3\\dfrac{1}{8} \\div 2\\dfrac{1}{4}$$\n$$ \\Rightarrow \\dfrac{{25}}{8} \\times \\dfrac{4}{9}$$\n$$ \\Rightarrow \\dfrac{{25}}{{18}}$$\n$$ \\Rightarrow 1\\dfrac{7}{{18}}$$\n(ii) $$4\\dfrac{4}{3} \\div 6\\dfrac{1}{2}$$\nAns.\nSolving:\n$$4\\dfrac{4}{3} \\div 6\\dfrac{1}{2}$$\n$$ \\Rightarrow \\dfrac{{16}}{3} \\times \\dfrac{2}{{13}}$$\n$$ \\Rightarrow \\dfrac{{32}}{{39}}$$",
-      "a": "Detailed solution available."
+      "q": "19. Find:\n(i) $$3\\dfrac{1}{8} \\div 2\\dfrac{1}{4}$$",
+      "a": "Solving:\n$$3\\dfrac{1}{8} \\div 2\\dfrac{1}{4}$$\n$$ \\Rightarrow \\dfrac{{25}}{8} \\times \\dfrac{4}{9}$$\n$$ \\Rightarrow \\dfrac{{25}}{{18}}$$\n$$ \\Rightarrow 1\\dfrac{7}{{18}}$$\n(ii) $$4\\dfrac{4}{3} \\div 6\\dfrac{1}{2}$$\nAns.\nSolving:\n$$4\\dfrac{4}{3} \\div 6\\dfrac{1}{2}$$\n$$ \\Rightarrow \\dfrac{{16}}{3} \\times \\dfrac{2}{{13}}$$\n$$ \\Rightarrow \\dfrac{{32}}{{39}}$$"
     },
     {
-      "q": "20. Write the following decimal number in expanded form:\n(i) $$208.183$$\nAns.\nIn expanded form, the given decimal can be written as:\n$$(2 \\times 100) + (0 \\times 10) + (8 \\times 1) + (1 \\times \\dfrac{1}{{10}}) + (8 \\times \\dfrac{1}{{100}}) + (3 \\times \\dfrac{1}{{1000}})$$\n(ii) $$5.018$$\nAns.\nIn expanded form, the given decimal can be written as:\n$$(5 \\times 1) + (0 \\times \\dfrac{1}{{10}}) + (1 \\times \\dfrac{1}{{100}}) + (8 \\times \\dfrac{1}{{1000}})$$\n(iii) $$360.05$$\nAns.\nIn expanded form, the given decimal can be written as:\n$$(6 \\times 100) + (3 \\times 10) + (0 \\times 1) + (0 \\times \\dfrac{1}{{10}}) + (5 \\times \\dfrac{1}{{100}})$$\n5 Important Formulas of Class 7 Chapter 2 Fractions and Decimals You Shouldn\u2019t Miss!\nUnderstanding the key formulas in fractions and decimals is essential for mastering this chapter in Class 7. Here are five important formulas that will help you solve problems effectively:",
-      "a": "Detailed solution available."
+      "q": "20. Write the following decimal number in expanded form:\n(i) $$208.183$$",
+      "a": "In expanded form, the given decimal can be written as:\n$$(2 \\times 100) + (0 \\times 10) + (8 \\times 1) + (1 \\times \\dfrac{1}{{10}}) + (8 \\times \\dfrac{1}{{100}}) + (3 \\times \\dfrac{1}{{1000}})$$\n(ii) $$5.018$$\nAns.\nIn expanded form, the given decimal can be written as:\n$$(5 \\times 1) + (0 \\times \\dfrac{1}{{10}}) + (1 \\times \\dfrac{1}{{100}}) + (8 \\times \\dfrac{1}{{1000}})$$\n(iii) $$360.05$$\nAns.\nIn expanded form, the given decimal can be written as:\n$$(6 \\times 100) + (3 \\times 10) + (0 \\times 1) + (0 \\times \\dfrac{1}{{10}}) + (5 \\times \\dfrac{1}{{100}})$$\n5 Important Formulas of Class 7 Chapter 2 Fractions and Decimals You Shouldn\u2019t Miss!\nUnderstanding the key formulas in fractions and decimals is essential for mastering this chapter in Class 7. Here are five important formulas that will help you solve problems effectively:"
     },
     {
       "q": "1. Addition of Fractions:\nWhen the denominators are the same: $\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$\nWhen the denominators are different: $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$",
@@ -369,60 +369,60 @@ export default {
   ],
   "3": [
     {
-      "q": "1. Insert a number between $$\\dfrac{1}{4}{\\text{ and }}\\dfrac{1}{7}{\\text{ }}{\\text{. }}$$\nAns.\nTo insert a number between two numbers, first we add both numbers and divide the sum by two.\n$\\dfrac{{\\dfrac{1}{4} + \\dfrac{1}{7}}}{2} = \\dfrac{{\\dfrac{{7 + 4}}{{28}}}}{2}$\n$= \\dfrac{{11}}{{2 \\times 28}} = \\dfrac{{11}}{{56}}$",
-      "a": "Detailed solution available."
+      "q": "1. Insert a number between $$\\dfrac{1}{4}{\\text{ and }}\\dfrac{1}{7}{\\text{ }}{\\text{. }}$$",
+      "a": "To insert a number between two numbers, first we add both numbers and divide the sum by two.\n$\\dfrac{{\\dfrac{1}{4} + \\dfrac{1}{7}}}{2} = \\dfrac{{\\dfrac{{7 + 4}}{{28}}}}{2}$\n$= \\dfrac{{11}}{{2 \\times 28}} = \\dfrac{{11}}{{56}}$"
     },
     {
-      "q": "2. Give the formula to find mean.\nAns.\nFormula to find mean is given by,\n${\\text{ Mean }} = \\dfrac{{{\\text{ Sum of all observations }}}}{{{\\text{ Number of observations }}}}$\nExample: Mean of\n$$2,4,6,8,10\\;$$\n=\n$\\dfrac{{2 + 4 + 6 + 8 + 10}}{5}\\, = \\;\\dfrac{{30}}{5}\\; = \\,6$",
-      "a": "Detailed solution available."
+      "q": "2. Give the formula to find mean.",
+      "a": "Formula to find mean is given by,\n${\\text{ Mean }} = \\dfrac{{{\\text{ Sum of all observations }}}}{{{\\text{ Number of observations }}}}$\nExample: Mean of\n$$2,4,6,8,10\\;$$\n=\n$\\dfrac{{2 + 4 + 6 + 8 + 10}}{5}\\, = \\;\\dfrac{{30}}{5}\\; = \\,6$"
     },
     {
-      "q": "3. Define Mode.\nAns\n. The most frequently occurring value in a data set Is called Mode.\nFor example, in set\n$$2,3,4,5,5,5,7,7$$\n$5$\noccurs\n$3$\ntimes. Hence\n$5$\nwill be the mode of the given data.",
-      "a": "Detailed solution available."
+      "q": "3. Define Mode.",
+      "a": "The most frequently occurring value in a data set Is called Mode.\nFor example, in set\n$$2,3,4,5,5,5,7,7$$\n$5$\noccurs\n$3$\ntimes. Hence\n$5$\nwill be the mode of the given data."
     },
     {
-      "q": "4. Define Average.\nAns.\nIn mathematics, an average is referred to as a mean. It may be obtained by adding the numbers together and then dividing the result by the total number of numbers.\nExample average of\n$$8,10\\;$$\n=\n$\\dfrac{{8 + 10}}{2}\\, = \\;\\dfrac{{18}}{2}\\; = \\,9$",
-      "a": "Detailed solution available."
+      "q": "4. Define Average.",
+      "a": "In mathematics, an average is referred to as a mean. It may be obtained by adding the numbers together and then dividing the result by the total number of numbers.\nExample average of\n$$8,10\\;$$\n=\n$\\dfrac{{8 + 10}}{2}\\, = \\;\\dfrac{{18}}{2}\\; = \\,9$"
     },
     {
-      "q": "5. Insert a number between $$-3{\\text{ and}}-4{\\text{ }}.$$\nAns.\nTo insert a number between two numbers, first we add both numbers and divide the sum by two.\n$\\dfrac{{ - 3 - 4}}{2} = \\dfrac{{ - 7}}{2} =\u00a0 - 3.5$\n2 Mark Questions",
-      "a": "Detailed solution available."
+      "q": "5. Insert a number between $$-3{\\text{ and}}-4{\\text{ }}.$$",
+      "a": "To insert a number between two numbers, first we add both numbers and divide the sum by two.\n$\\dfrac{{ - 3 - 4}}{2} = \\dfrac{{ - 7}}{2} =\u00a0 - 3.5$\n2 Mark Questions"
     },
     {
-      "q": "6. Find the mode for the given set of data :\n$$1,{\\text{ }}2,{\\text{ }}3,{\\text{ }}5,{\\text{ }}6,{\\text{ }}7,{\\text{ }}2,{\\text{ }}1,{\\text{ }}4,{\\text{ }}1,{\\text{ }}6,{\\text{ }}1$$\nAns\n. Given data is\n$$1,{\\text{ }}2,{\\text{ }}3,{\\text{ }}5,{\\text{ }}6,{\\text{ }}7,{\\text{ }}2,{\\text{ }}1,{\\text{ }}4,{\\text{ }}1,{\\text{ }}6,{\\text{ }}1$$\nArranging this data in ascending order\n$${\\text{1,1,1,1,2,2,3,4,5,6,6,7,7,8}}$$\n$1$\nis repeating most frequently that is\n$4$\ntimes\nTherefore, mode of the given data is\n$1$",
-      "a": "Detailed solution available."
+      "q": "6. Find the mode for the given set of data :\n$$1,{\\text{ }}2,{\\text{ }}3,{\\text{ }}5,{\\text{ }}6,{\\text{ }}7,{\\text{ }}2,{\\text{ }}1,{\\text{ }}4,{\\text{ }}1,{\\text{ }}6,{\\text{ }}1$$",
+      "a": "Given data is\n$$1,{\\text{ }}2,{\\text{ }}3,{\\text{ }}5,{\\text{ }}6,{\\text{ }}7,{\\text{ }}2,{\\text{ }}1,{\\text{ }}4,{\\text{ }}1,{\\text{ }}6,{\\text{ }}1$$\nArranging this data in ascending order\n$${\\text{1,1,1,1,2,2,3,4,5,6,6,7,7,8}}$$\n$1$\nis repeating most frequently that is\n$4$\ntimes\nTherefore, mode of the given data is\n$1$"
     },
     {
-      "q": "7. Find the median of the data $$1,{\\text{ }}2,{\\text{ }}23,{\\text{ }}48,{\\text{ }}26,{\\text{ }}33,{\\text{ }}4$$\nAns.\nGiven data is\n$$1,{\\text{ }}2,{\\text{ }}23,{\\text{ }}48,{\\text{ }}26,{\\text{ }}33,{\\text{ }}4$$\nArranging this data in ascending order\n$${\\text{1,}}\\;{\\text{2,}}\\;{\\text{23,}}\\;{\\text{26,}}\\;{\\text{35,}}\\;{\\text{45,}}\\;{\\text{48}}$$\nWe know that, median of a data is middle term.\nHere, we have a total of\n$7$\nterms.\nAnd here the middle term is the 4\nth\nterm i.e.\u00a0 26.\nTherefore, the median of the data is 26.",
-      "a": "Detailed solution available."
+      "q": "7. Find the median of the data $$1,{\\text{ }}2,{\\text{ }}23,{\\text{ }}48,{\\text{ }}26,{\\text{ }}33,{\\text{ }}4$$",
+      "a": "Given data is\n$$1,{\\text{ }}2,{\\text{ }}23,{\\text{ }}48,{\\text{ }}26,{\\text{ }}33,{\\text{ }}4$$\nArranging this data in ascending order\n$${\\text{1,}}\\;{\\text{2,}}\\;{\\text{23,}}\\;{\\text{26,}}\\;{\\text{35,}}\\;{\\text{45,}}\\;{\\text{48}}$$\nWe know that, median of a data is middle term.\nHere, we have a total of\n$7$\nterms.\nAnd here the middle term is the 4\nth\nterm i.e.\u00a0 26.\nTherefore, the median of the data is 26."
     },
     {
-      "q": "8. Theja studies 8 hours, 6 hours and 2 hours on three consecutive days. How many hours did he study daily?\nAns.\nGiven, Theja studied\n$$8{\\text{ hours}},{\\text{ }}6{\\text{ hours and 2 hours}}$$\n.\nTheja studied daily = Average of\n$8,\\;6,\\;2$\n=\n$\\dfrac{{{\\text{sum}}\\;{\\text{of}}\\;{\\text{given}}\\;{\\text{data}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{days}}}}$\n$\\dfrac{{8 + 6 + 2}}{3}\\; = \\;\\dfrac{{16}}{3}\\; = \\;5.33\\;\\;{\\text{hours}}$\nTheja studied\n$5.33\\;\\;{\\text{hours}}$\n.",
-      "a": "Detailed solution available."
+      "q": "8. Theja studies 8 hours, 6 hours and 2 hours on three consecutive days. How many hours did he study daily?",
+      "a": "Given, Theja studied\n$$8{\\text{ hours}},{\\text{ }}6{\\text{ hours and 2 hours}}$$\n.\nTheja studied daily = Average of\n$8,\\;6,\\;2$\n=\n$\\dfrac{{{\\text{sum}}\\;{\\text{of}}\\;{\\text{given}}\\;{\\text{data}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{days}}}}$\n$\\dfrac{{8 + 6 + 2}}{3}\\; = \\;\\dfrac{{16}}{3}\\; = \\;5.33\\;\\;{\\text{hours}}$\nTheja studied\n$5.33\\;\\;{\\text{hours}}$\n."
     },
     {
-      "q": "9. Answer the following by observing the given data\nThe age\u2019s of cricket players of ICC is as follows:\n$$21,{\\text{ }}23,{\\text{ }}25,{\\text{ }}26,{\\text{ }}32,{\\text{ }}34$$\na) What is the age of the eldest players?\nb) What is the age of the youngest players in the team?\nAns.\nGiven data is\n$$21,{\\text{ }}23,{\\text{ }}25,{\\text{ }}26,{\\text{ }}32,{\\text{ }}34$$\na) Here the highest term is\n$34$\n.\nTherefore, the age of the eldest player is\n$34\\;{\\text{years}}$\nb) Here the lowest term is\n$21$\n.\nTherefore, the age of the youngest player is\n$21\\;{\\text{years}}$\n.",
-      "a": "Detailed solution available."
+      "q": "9. Answer the following by observing the given data\nThe age\u2019s of cricket players of ICC is as follows:\n$$21,{\\text{ }}23,{\\text{ }}25,{\\text{ }}26,{\\text{ }}32,{\\text{ }}34$$\na) What is the age of the eldest players?\nb) What is the age of the youngest players in the team?",
+      "a": "Given data is\n$$21,{\\text{ }}23,{\\text{ }}25,{\\text{ }}26,{\\text{ }}32,{\\text{ }}34$$\na) Here the highest term is\n$34$\n.\nTherefore, the age of the eldest player is\n$34\\;{\\text{years}}$\nb) Here the lowest term is\n$21$\n.\nTherefore, the age of the youngest player is\n$21\\;{\\text{years}}$\n."
     },
     {
-      "q": "10. The goals scored by Lakshya in five matches are 3, 1, 2, 3, 1. Find the mean goal scored by her.\nAns.\nGoals scored by Lakshya in five matches =\n3, 1, 2, 3, 1\n${\\text{Mean goal }} = \\dfrac{{{\\text{Sum of}}\\;{\\text{goal's}}\\;{\\text{scored}}\\;{\\text{in}}\\;{\\text{all}}\\;{\\text{matches}}}}{{{\\text{ Number of Matches}}}}$\n$= \\dfrac{{3 + 1 + 2 + 3 + 1}}{5}$\n$ = \\dfrac{{10}}{5}\\; = 2$\nMean goal is\n$2$\n.",
-      "a": "Detailed solution available."
+      "q": "10. The goals scored by Lakshya in five matches are 3, 1, 2, 3, 1. Find the mean goal scored by her.",
+      "a": "Goals scored by Lakshya in five matches =\n3, 1, 2, 3, 1\n${\\text{Mean goal }} = \\dfrac{{{\\text{Sum of}}\\;{\\text{goal's}}\\;{\\text{scored}}\\;{\\text{in}}\\;{\\text{all}}\\;{\\text{matches}}}}{{{\\text{ Number of Matches}}}}$\n$= \\dfrac{{3 + 1 + 2 + 3 + 1}}{5}$\n$ = \\dfrac{{10}}{5}\\; = 2$\nMean goal is\n$2$\n."
     },
     {
-      "q": "11. Find the range of heights of cricket players (in cm) the heights are follows\n$$158,{\\text{ }}150,{\\text{ }}156,{\\text{ }}162,{\\text{ }}155,{\\text{ }}152,{\\text{ }}154,{\\text{ }}164,{\\text{ }}153,{\\text{ }}165,{\\text{ }}160$$\nAns.\nRange = Highest value \u2013 Lowest Value\nHere, Highest Value =\n$165$\nLowest Value =\n$150$\nRange =\n$165 - 150$\n=\n$15\\;{\\text{cm}}$",
-      "a": "Detailed solution available."
+      "q": "11. Find the range of heights of cricket players (in cm) the heights are follows\n$$158,{\\text{ }}150,{\\text{ }}156,{\\text{ }}162,{\\text{ }}155,{\\text{ }}152,{\\text{ }}154,{\\text{ }}164,{\\text{ }}153,{\\text{ }}165,{\\text{ }}160$$",
+      "a": "Range = Highest value \u2013 Lowest Value\nHere, Highest Value =\n$165$\nLowest Value =\n$150$\nRange =\n$165 - 150$\n=\n$15\\;{\\text{cm}}$"
     },
     {
-      "q": "12. Runs scored by a cricket player is in few matches is as follows:\n$$28,{\\text{ }}25,{\\text{ }}38,{\\text{ }}46,{\\text{ }}58,{\\text{ }}32$$. Find the average runs.\nAns.\n${\\text{Average}}\\;{\\text{Runs}}\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{runs}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{Matches}}}}$\nHere Number of Matches =\n$6$\n${\\text{Average}}\\;{\\text{Runs}}\\;{\\text{ = }}\\dfrac{{28 + 25 + 38 + 46 + 58 + 32}}{6}$\n$\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\;\\dfrac{{277}}{6}\\;\\; = \\;37.38$\n${\\text{Average}}\\;{\\text{Runs}} = \\;37.38\\;{\\text{Runs}}$",
-      "a": "Detailed solution available."
+      "q": "12. Runs scored by a cricket player is in few matches is as follows:\n$$28,{\\text{ }}25,{\\text{ }}38,{\\text{ }}46,{\\text{ }}58,{\\text{ }}32$$. Find the average runs.",
+      "a": "${\\text{Average}}\\;{\\text{Runs}}\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{runs}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{Matches}}}}$\nHere Number of Matches =\n$6$\n${\\text{Average}}\\;{\\text{Runs}}\\;{\\text{ = }}\\dfrac{{28 + 25 + 38 + 46 + 58 + 32}}{6}$\n$\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\;\\dfrac{{277}}{6}\\;\\; = \\;37.38$\n${\\text{Average}}\\;{\\text{Runs}} = \\;37.38\\;{\\text{Runs}}$"
     },
     {
-      "q": "13. Kids borrow books from a library from Monday to Friday. A week value is recorded and is as follows. Find the average $$65,{\\text{ }}148,{\\text{ }}351,{\\text{ }}481,{\\text{ }}390.$$\nAns\n.\n${\\text{Average}}\\;\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{books}}\\;{\\text{issued}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{days}}}}\\;$\n${\\text{ = }}\\dfrac{{5 + 148\\; + 351{\\text{\u00a0 + }}\\;481\\; + {\\text{ }}390.}}{5}$\n$= \\;\\dfrac{{1435}}{5}\\;\\; = \\;287$",
-      "a": "Detailed solution available."
+      "q": "13. Kids borrow books from a library from Monday to Friday. A week value is recorded and is as follows. Find the average $$65,{\\text{ }}148,{\\text{ }}351,{\\text{ }}481,{\\text{ }}390.$$",
+      "a": "${\\text{Average}}\\;\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{books}}\\;{\\text{issued}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{days}}}}\\;$\n${\\text{ = }}\\dfrac{{5 + 148\\; + 351{\\text{\u00a0 + }}\\;481\\; + {\\text{ }}390.}}{5}$\n$= \\;\\dfrac{{1435}}{5}\\;\\; = \\;287$"
     },
     {
-      "q": "14. The score of 10 kids in mathematics shows below. Find mean\n$$33,{\\text{ }}48,{\\text{ }}27,{\\text{ }}49,{\\text{ }}30,{\\text{ }}32,{\\text{ }}19,{\\text{ }}25,{\\text{ }}37,{\\text{ }}35$$\nAns.\n${\\text{Mean}}\\;\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{scores}}}}{{{\\text{Number}}\\;{\\text{of students}}}}\\;$\n${\\text{ = }}\\dfrac{{33\\; + \\;\\;48\\; + 27\\; + \\;49\\; + \\;30\\; + {\\text{ }}32\\; + 19\\; + {\\text{ }}25\\; + {\\text{ }}37\\; + {\\text{ }}35}}{5}$\n$= \\;\\dfrac{{335}}{{10}}\\;\\; = \\;33.5$\nThus, the average score of kids In Mathematics is\n$33.5$\n.\nChapter 3 - Data Handling\nData handling refers to the process of collecting, recording and displaying information, for example in graphs or charts, in a way that is beneficial to others. Data handling is also known as statistics.\nSteps in Data Handling\nData collection using a scheduled technique.\nRecording data with accuracy and precision.\nData analysing to draw conclusions.\nSharing data in a way that is helpful to everyone.\nData Collection\nData collection is a term used to describe a process of planning and gathering data. The aim of the collection of data is to obtain the information to be registered, to make decisions on significant issues, to pass on information to others.\nEx: A teacher has assigned students to collect the average temperature data for the month of February. The only thing the teacher wants is Average data.\nSo, students have to decide at what time daily they have to measure the temperature data. So for these, they have to do proper planning and also they have to gather suitable temperature measuring devices.\nThis process of collecting temperature data for 28/29 days in the month of February is called Data collection.\nOrganisation of Data\nData organisation refers to the organised arrangement of raw data so that the data can be readily interpreted and further statistical treatment is more convenient.\nIn the data organisation, we will use tables and charts to show the collected data rather than just giving the raw numbers. This is because the person who is collecting data knows more about the raw data representation if we are showing it to someone they have to easily understand the data representation. So we use tables, graphs and charts to represent the data.\nThe representative value of a set of measurements is the one that we assume is nearest to the measurement's real value. If we carry out our series of calculations, their average will be the indicative value, except those values that we have shown to be far from the true value.\nArithmetic Mean\nThe arithmetic mean is the simplest and most commonly used measurement system used to calculate the mean or average of a data. It simply involves taking the sum of a number group, then dividing that sum by the number of numbers that are used in the sequence.\nEx:\nThe data of height(cm) of students in the class is given as follows. Calculate the arithmetic mean.\n150, 155, 152, 150, 158, 154, 152, 156, 154, 152.",
-      "a": "So to find Arithmetic mean, first we have to calculate the sum of the data.\nSum = 150 + 155 + 152 + 150 + 158 + 154 + 152 + 156 + 154 + 152 = 1533\nTotal number of students = 10\nThe arithmetic mean = Sum of heights / Total number of students\nArithmetic mean = 1533 / 10 = 153.3\nRange\nIn Statistics, the difference between the largest and the smallest values in the range of a set of data.\nEx: The data of height(cm) of students in the class is given as follows. Calculate the range.\n150, 155, 152, 150, 158, 154, 148, 156, 154, 152\nAns: L To calculate range first we have to find the height of taller students and shorter students in the class. So the taller student height is 158 cm and shorter student height is 148 cm.\nSo the range will be the difference between these two heights.\nRange = 158 - 148 = 10 cm\nMode\nThe mode is the value that appears in a data set most frequently. A data set can have one mode, more than one mode, or no mode at all.\nEx:\nThe data of height(cm) of students in the class is given as follows. Calculate the mode.\n150, 155, 152, 150, 158, 154, 152, 156, 154, 152.\nAns:\nHere 152 cm is the most frequent height of 3 students. Therefore the Mode of the following height data set will be 152 cm.\nMedian\nIn a sorted, ascending or descending, list of numbers, the median is the middle number and may be more representative of that data set than the average.\nIn comparison to the mean, the median is often used when there are outliers in the series that could distort the average of the values.\nIf there are odd numbers, the median value is the number in the centre, with numbers below and above the same sum.\nThe middle pair must be estimated, added together, and divided by two to find the median value if there is an even number in the set.\nEx:"
+      "q": "14. The score of 10 kids in mathematics shows below. Find mean\n$$33,{\\text{ }}48,{\\text{ }}27,{\\text{ }}49,{\\text{ }}30,{\\text{ }}32,{\\text{ }}19,{\\text{ }}25,{\\text{ }}37,{\\text{ }}35$$",
+      "a": "${\\text{Mean}}\\;\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{scores}}}}{{{\\text{Number}}\\;{\\text{of students}}}}\\;$\n${\\text{ = }}\\dfrac{{33\\; + \\;\\;48\\; + 27\\; + \\;49\\; + \\;30\\; + {\\text{ }}32\\; + 19\\; + {\\text{ }}25\\; + {\\text{ }}37\\; + {\\text{ }}35}}{5}$\n$= \\;\\dfrac{{335}}{{10}}\\;\\; = \\;33.5$\nThus, the average score of kids In Mathematics is\n$33.5$\n.\nChapter 3 - Data Handling\nData handling refers to the process of collecting, recording and displaying information, for example in graphs or charts, in a way that is beneficial to others. Data handling is also known as statistics.\nSteps in Data Handling\nData collection using a scheduled technique.\nRecording data with accuracy and precision.\nData analysing to draw conclusions.\nSharing data in a way that is helpful to everyone.\nData Collection\nData collection is a term used to describe a process of planning and gathering data. The aim of the collection of data is to obtain the information to be registered, to make decisions on significant issues, to pass on information to others.\nEx: A teacher has assigned students to collect the average temperature data for the month of February. The only thing the teacher wants is Average data.\nSo, students have to decide at what time daily they have to measure the temperature data. So for these, they have to do proper planning and also they have to gather suitable temperature measuring devices.\nThis process of collecting temperature data for 28/29 days in the month of February is called Data collection.\nOrganisation of Data\nData organisation refers to the organised arrangement of raw data so that the data can be readily interpreted and further statistical treatment is more convenient.\nIn the data organisation, we will use tables and charts to show the collected data rather than just giving the raw numbers. This is because the person who is collecting data knows more about the raw data representation if we are showing it to someone they have to easily understand the data representation. So we use tables, graphs and charts to represent the data.\nThe representative value of a set of measurements is the one that we assume is nearest to the measurement's real value. If we carry out our series of calculations, their average will be the indicative value, except those values that we have shown to be far from the true value.\nArithmetic Mean\nThe arithmetic mean is the simplest and most commonly used measurement system used to calculate the mean or average of a data. It simply involves taking the sum of a number group, then dividing that sum by the number of numbers that are used in the sequence.\nEx:\nThe data of height(cm) of students in the class is given as follows. Calculate the arithmetic mean.\n150, 155, 152, 150, 158, 154, 152, 156, 154, 152.\nAns:\nSo to find Arithmetic mean, first we have to calculate the sum of the data.\nSum = 150 + 155 + 152 + 150 + 158 + 154 + 152 + 156 + 154 + 152 = 1533\nTotal number of students = 10\nThe arithmetic mean = Sum of heights / Total number of students\nArithmetic mean = 1533 / 10 = 153.3\nRange\nIn Statistics, the difference between the largest and the smallest values in the range of a set of data.\nEx: The data of height(cm) of students in the class is given as follows. Calculate the range.\n150, 155, 152, 150, 158, 154, 148, 156, 154, 152\nAns: L To calculate range first we have to find the height of taller students and shorter students in the class. So the taller student height is 158 cm and shorter student height is 148 cm.\nSo the range will be the difference between these two heights.\nRange = 158 - 148 = 10 cm\nMode\nThe mode is the value that appears in a data set most frequently. A data set can have one mode, more than one mode, or no mode at all.\nEx:\nThe data of height(cm) of students in the class is given as follows. Calculate the mode.\n150, 155, 152, 150, 158, 154, 152, 156, 154, 152.\nAns:\nHere 152 cm is the most frequent height of 3 students. Therefore the Mode of the following height data set will be 152 cm.\nMedian\nIn a sorted, ascending or descending, list of numbers, the median is the middle number and may be more representative of that data set than the average.\nIn comparison to the mean, the median is often used when there are outliers in the series that could distort the average of the values.\nIf there are odd numbers, the median value is the number in the centre, with numbers below and above the same sum.\nThe middle pair must be estimated, added together, and divided by two to find the median value if there is an even number in the set.\nEx:"
     },
     {
       "q": "1. The Data of Height(cm) of Students in the Class is Given as Follows. Calculate the Median Height.\n150, 155, 152, 150, 158, 154, 152, 156, 154, 152.",
@@ -1009,12 +1009,12 @@ export default {
       "a": "To convert\n$0.25$\nto percent, we have to multiply it by\n$100\\% $\n`\n$$\n\n   = 0.25 \\times 100\\%  \\\\\n\n   = \\dfrac{{25}}{{100}} \\times 100\\%  \\\\\n\n   = 25\\%  \\\\ \n\n $$"
     },
     {
-      "q": "4. Find $100\\%\u00a0 - 55\\%\u00a0 = $____\nAns\n: we have\n$$\n\n  100\\%  = \\dfrac{{100}}{{100}} \\\\\n\n  55\\%  = \\dfrac{{50}}{{100}} \\\\\n\n  100\\%  - 55\\%  = \\dfrac{{100}}{{100}} - \\dfrac{{55}}{{100}} \\\\\n\n= \\dfrac{{100 - 55}}{{100}} \\\\\n\n= \\dfrac{{45}}{{100}} = 45\\%  \\\\ \n\n $$",
-      "a": "Detailed solution available."
+      "q": "4. Find $100\\%\u00a0 - 55\\%\u00a0 = $____",
+      "a": "we have\n$$\n\n  100\\%  = \\dfrac{{100}}{{100}} \\\\\n\n  55\\%  = \\dfrac{{50}}{{100}} \\\\\n\n  100\\%  - 55\\%  = \\dfrac{{100}}{{100}} - \\dfrac{{55}}{{100}} \\\\\n\n= \\dfrac{{100 - 55}}{{100}} \\\\\n\n= \\dfrac{{45}}{{100}} = 45\\%  \\\\ \n\n $$"
     },
     {
-      "q": "5. Find $25\\% $ of $150$.\nAns\n: By using formula, we have\n$\\dfrac{{25}}{{100}} \\times 150 = 37.5$\nShort Answer Questions (2 Marks)",
-      "a": "Detailed solution available."
+      "q": "5. Find $25\\% $ of $150$.",
+      "a": "By using formula, we have\n$\\dfrac{{25}}{{100}} \\times 150 = 37.5$\nShort Answer Questions (2 Marks)"
     },
     {
       "q": "6. In a class of $45$ students $40\\% $ are girls. Find the no. of boys.",
@@ -1037,8 +1037,8 @@ export default {
       "a": "To convert percent into decimal fraction we will divide the number by\n$100$\na. $10\\% \\; = \\;\\dfrac{{10}}{{100}}\\; = \\;\\dfrac{1}{{10}}\\; = \\;0.1$\nb. $40\\% \\; = \\;\\dfrac{{40}}{{100}}\\; = \\;\\dfrac{4}{{10}}\\; = \\;0.4$"
     },
     {
-      "q": "11. Mithali buys a TV at $12,000$ and sells it at a profit of $20\\% $. How much money does she get?\nAns\n: Mithali buys TV = Cost price of TV =\n$12,000$\nMithali sells TV at profit =\n$20\\% \\;{\\text{of}}\\;12000$\n$\n\n   = \\dfrac{{20}}{{100}} \\times 12,000\\; \\\\\n\n   = \\;20\\, \\times 120 \\\\\n\n   = {\\text{Rs}}{\\text{.}}\\;2400 \\\\ \n\n $\nNow, Selling price = cost price\n$ + $\nprofit\n$\n\n   = 12,000 + 2,400 \\\\\n\n   = {\\text{ Rs}}{\\text{. }}14,400 \\\\ \n\n $\nTherefore, Mithali get\n${\\text{Rs}}{\\text{. }}14,400$",
-      "a": "Detailed solution available."
+      "q": "11. Mithali buys a TV at $12,000$ and sells it at a profit of $20\\% $. How much money does she get?",
+      "a": "Mithali buys TV = Cost price of TV =\n$12,000$\nMithali sells TV at profit =\n$20\\% \\;{\\text{of}}\\;12000$\n$\n\n   = \\dfrac{{20}}{{100}} \\times 12,000\\; \\\\\n\n   = \\;20\\, \\times 120 \\\\\n\n   = {\\text{Rs}}{\\text{.}}\\;2400 \\\\ \n\n $\nNow, Selling price = cost price\n$ + $\nprofit\n$\n\n   = 12,000 + 2,400 \\\\\n\n   = {\\text{ Rs}}{\\text{. }}14,400 \\\\ \n\n $\nTherefore, Mithali get\n${\\text{Rs}}{\\text{. }}14,400$"
     },
     {
       "q": "12. Find\na. $12\\dfrac{1}{2}\\% {\\text{ of}}\\;75$\nb. $30\\% {\\text{ of }}150$",
@@ -1057,8 +1057,8 @@ export default {
       "a": "a. We\u2019ll multiply the numerator and denominator by\n$25$\nto make the denominator\n$100$\n.\n$\\dfrac{3}{4} \\times \\dfrac{{25}}{{25}}\\; = \\;\\dfrac{{75}}{{100}}\\; = \\;75\\;\\% $\nb. We\u2019ll multiply the numerator and denominator by\n$20$\nto make the denominator\n$100$\n.\n$\\dfrac{2}{5} \\times \\dfrac{{20}}{{20}}\\; = \\;\\dfrac{{40}}{{100}}\\; = \\;40\\;\\% $\nLong Answer Questions (3 Marks)"
     },
     {
-      "q": "16. Convert the following into percent\na. $\\dfrac{{34}}{{50}}$\nb. $\\dfrac{1}{4}$\nc. $0.03$\nAns\n: First, we will make denominator\n$100$\n, and then we will convert that number into percent\na. $\\dfrac{{34}}{{50}} \\times \\dfrac{2}{2} = \\dfrac{{68}}{{100}} = 68\\% $\nb. $\\dfrac{1}{4} \\times \\dfrac{{25}}{{25}} = \\dfrac{{25}}{{100}} = 25\\% $\nc. $0.03\\;\\; = \\;\\dfrac{3}{{100}} = 3\\% $",
-      "a": "Detailed solution available."
+      "q": "16. Convert the following into percent\na. $\\dfrac{{34}}{{50}}$\nb. $\\dfrac{1}{4}$\nc. $0.03$",
+      "a": "First, we will make denominator\n$100$\n, and then we will convert that number into percent\na. $\\dfrac{{34}}{{50}} \\times \\dfrac{2}{2} = \\dfrac{{68}}{{100}} = 68\\% $\nb. $\\dfrac{1}{4} \\times \\dfrac{{25}}{{25}} = \\dfrac{{25}}{{100}} = 25\\% $\nc. $0.03\\;\\; = \\;\\dfrac{3}{{100}} = 3\\% $"
     },
     {
       "q": "17. Out of $$24,000$$voters in a constituency $$48\\% $$ voted. Find the no. of voters who did not vote.",
@@ -1417,8 +1417,8 @@ export default {
       "a": "We know,\nArea of square= ${{s}^{2}}$ [s=side]\n=${{4}^{2}}$\n=$16$sq. cm\nPerimeter = $4s$\n=$4\\times 4$\n=$16$cm\nLong Answer Questions (16 \u2013 20)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 3 Marks"
     },
     {
-      "q": "16. The length and breadth of a rectangular piece of land are $350$m and $150$m respectively.\nFind\na. The area\nAns\n: We know,\nArea of garden = $l\\times b$\nl=length\nb= Breadth\n= $350\\times 150$\n=$52,500$sq. m\nb. The cost of the land, if $1{{m}^{2}}$ of the land costs Rs. $10,000$",
-      "a": "Given, Cost of $1{{m}^{2}}$of\u00a0 land = Rs. $10,000$\nCost of $52,500{{m}^{2}}$of land = Rs. $52,500\\times 10,000$\n=Rs. $52,50,00,000$"
+      "q": "16. The length and breadth of a rectangular piece of land are $350$m and $150$m respectively.\nFind\na. The area",
+      "a": "We know,\nArea of garden = $l\\times b$\nl=length\nb= Breadth\n= $350\\times 150$\n=$52,500$sq. m\nb. The cost of the land, if $1{{m}^{2}}$ of the land costs Rs. $10,000$\nAns:\nGiven, Cost of $1{{m}^{2}}$of\u00a0 land = Rs. $10,000$\nCost of $52,500{{m}^{2}}$of land = Rs. $52,500\\times 10,000$\n=Rs. $52,50,00,000$"
     },
     {
       "q": "17. A rectangular field of length $50$m and breadth $45$m need to be fenced. Find the cost of fencing if the changes are Rs. $4$ per metre.",
@@ -1999,24 +1999,24 @@ export default {
       "a": "(a)\n(b)\n(c)\nOr"
     },
     {
-      "q": "21. What is symmetry?\nAns.\nSymmetry is a balanced arrangement of parts on either side of an axis or a center. If one part mirrors the other, it is symmetrical.",
-      "a": "Detailed solution available."
+      "q": "21. What is symmetry?",
+      "a": "Symmetry is a balanced arrangement of parts on either side of an axis or a center. If one part mirrors the other, it is symmetrical."
     },
     {
-      "q": "22. How do you identify the axis of symmetry in a shape?\nAns.\nThe axis of symmetry is an imaginary line where a shape can be folded to create two identical halves. To find it, look for a line along which the shape's two halves match.",
-      "a": "Detailed solution available."
+      "q": "22. How do you identify the axis of symmetry in a shape?",
+      "a": "The axis of symmetry is an imaginary line where a shape can be folded to create two identical halves. To find it, look for a line along which the shape's two halves match."
     },
     {
-      "q": "23. Can all shapes have symmetry?\nAns.\nNo, not all shapes have symmetry. Only specific arrangements of lines, curves, or patterns result in symmetry. For example, a circle has infinite lines of symmetry, while irregular shapes may not have any.",
-      "a": "Detailed solution available."
+      "q": "23. Can all shapes have symmetry?",
+      "a": "No, not all shapes have symmetry. Only specific arrangements of lines, curves, or patterns result in symmetry. For example, a circle has infinite lines of symmetry, while irregular shapes may not have any."
     },
     {
-      "q": "24. Explain rotational symmetry?\nAns.\nRotational symmetry is when a shape looks the same after a certain degree of rotation around its center. For instance, a square has rotational symmetry of 90 degrees, as it looks the same after a quarter turn.",
-      "a": "Detailed solution available."
+      "q": "24. Explain rotational symmetry?",
+      "a": "Rotational symmetry is when a shape looks the same after a certain degree of rotation around its center. For instance, a square has rotational symmetry of 90 degrees, as it looks the same after a quarter turn."
     },
     {
-      "q": "25. How can symmetry be applied in real life?\nAns.\nSymmetry is seen in many everyday objects, from buildings to nature. Architects use symmetry in designing structures, and understanding symmetry helps artists create balanced and visually appealing artworks. Even in biology, living organisms often display symmetrical patterns.\nWhat are the Benefits of Important Questions from Vedantu for Class 7 Maths Chapter 12 - Symmetry?\nEmbark on a confidence-boosting journey with Vedantu's Important Questions for Class 7 Maths Chapter 12 - Symmetry. These tailored questions act as friendly guides, strategically designed to unravel the secrets of symmetry, making your learning experience efficient and enjoyable.",
-      "a": "Detailed solution available."
+      "q": "25. How can symmetry be applied in real life?",
+      "a": "Symmetry is seen in many everyday objects, from buildings to nature. Architects use symmetry in designing structures, and understanding symmetry helps artists create balanced and visually appealing artworks. Even in biology, living organisms often display symmetrical patterns.\nWhat are the Benefits of Important Questions from Vedantu for Class 7 Maths Chapter 12 - Symmetry?\nEmbark on a confidence-boosting journey with Vedantu's Important Questions for Class 7 Maths Chapter 12 - Symmetry. These tailored questions act as friendly guides, strategically designed to unravel the secrets of symmetry, making your learning experience efficient and enjoyable."
     },
     {
       "q": "1. Key Topic Focus:\nPinpoint essential symmetry concepts, ensuring your study time is focused on what truly matters for a deeper understanding.",

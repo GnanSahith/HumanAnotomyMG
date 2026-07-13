@@ -203,8 +203,8 @@ export default {
       "a": "Assist in the nitrogen fixation process."
     },
     {
-      "q": "2. Which group comprises single-celled eukaryotes only\n.\nAns\n: Kingdom Protista comprises single-celled eukaryotes.",
-      "a": "Detailed solution available."
+      "q": "2. Which group comprises single-celled eukaryotes only\n.",
+      "a": "Kingdom Protista comprises single-celled eukaryotes."
     },
     {
       "q": "3. Which organisms are the chief producers in oceans?",
@@ -215,8 +215,8 @@ export default {
       "a": "(i) Puccinia, (ii) Ustilago are the fungus that causes disease in wheat."
     },
     {
-      "q": "5. Which ascomycetes have been used extensively in biochemical and genetic work.\nAns\n: Neurospora used in biochemical and genetic work.",
-      "a": "Detailed solution available."
+      "q": "5. Which ascomycetes have been used extensively in biochemical and genetic work.",
+      "a": "Neurospora used in biochemical and genetic work."
     },
     {
       "q": "6. Who introduced the five-kingdom classification of organisms?",
@@ -275,8 +275,8 @@ export default {
       "a": "Mostly by fission; spore production in difficult conditions. By transferring DNA from one person to another, sexual reproduction is possible."
     },
     {
-      "q": "3. Why are red tides caused and why are they harmful?\nAns\n: Dinoflagellates such as Gonyaulax have a rapid multiplication rate. They are dangerous because they emit chemicals that destroy aquatic animals.",
-      "a": "Detailed solution available."
+      "q": "3. Why are red tides caused and why are they harmful?",
+      "a": "Dinoflagellates such as Gonyaulax have a rapid multiplication rate. They are dangerous because they emit chemicals that destroy aquatic animals."
     },
     {
       "q": "4. Viruses and viroids differ in structure and the diseases they cause. How?",
@@ -335,8 +335,8 @@ export default {
       "a": "Heterotrophic bacteria are mostly decomposers. Some are beneficial in the production of curd milk, nitrogen fixation, and other processes, whereas others are pathogens that cause sickness\n.\n(ii) Archaebacteria.\nAns:\nproduction.Archaebacteria, bacteria that make biogas from cow dung, for example."
     },
     {
-      "q": "18. Write the importance of the classification of organisms.\nAns.\n(i) With millions of plants known today, classification is essential for the systematic study of living beings.\n(ii) All organisms do not live in the same place.\n(iii) Studying all creatures at the same time is impossible.\n(iv) It aids in the understanding of evolutionary links between various groups.\n(v) It makes each creature easier to distinguish and identify.",
-      "a": "Detailed solution available."
+      "q": "18. Write the importance of the classification of organisms.",
+      "a": "(i) With millions of plants known today, classification is essential for the systematic study of living beings.\n(ii) All organisms do not live in the same place.\n(iii) Studying all creatures at the same time is impossible.\n(iv) It aids in the understanding of evolutionary links between various groups.\n(v) It makes each creature easier to distinguish and identify."
     },
     {
       "q": "19. What are insectivorous plants? Give an example.",
@@ -347,12 +347,12 @@ export default {
       "a": "Whittaker, R., and Whittaker, H. Classification criteria Phylogenetic relationships, cell structure, thallus arrangement, method of nourishment, reproduction."
     },
     {
-      "q": "2. What is the sexual cycle in kingdom fungi?\nAns\n: The steps are as follows:\n(i) Plasmogamy fusion of two motile or nonmotile gametes protoplasm.\n(ii) Karyogamy is the fusion of two nuclei.\n(iii) Zygotic Meiosis, which results in the formation of haploid spores.\n(iv) Dikaryophase in ascomycetes and basidiomycetes, where two nuclei per cc (dikaryon) are found before karyogamy.",
-      "a": "Detailed solution available."
+      "q": "2. What is the sexual cycle in kingdom fungi?",
+      "a": "The steps are as follows:\n(i) Plasmogamy fusion of two motile or nonmotile gametes protoplasm.\n(ii) Karyogamy is the fusion of two nuclei.\n(iii) Zygotic Meiosis, which results in the formation of haploid spores.\n(iv) Dikaryophase in ascomycetes and basidiomycetes, where two nuclei per cc (dikaryon) are found before karyogamy."
     },
     {
-      "q": "3. Some symbiotic organisms are very good pollution indicators and are composed of a chlorophyll-us and a non- chlorophyll-us member. Describe them.\nAns\n: Lichen is a symbiotic connection between algae and fungi that results in the formation of lichen. Algae chlorophyceae and fungi ascomycetes are the most common. Because they only grow in clean places, they operate as pollution indicators because they do not grow in polluted areas. For instance, consider the case of industrial melanism.",
-      "a": "Detailed solution available."
+      "q": "3. Some symbiotic organisms are very good pollution indicators and are composed of a chlorophyll-us and a non- chlorophyll-us member. Describe them.",
+      "a": "Lichen is a symbiotic connection between algae and fungi that results in the formation of lichen. Algae chlorophyceae and fungi ascomycetes are the most common. Because they only grow in clean places, they operate as pollution indicators because they do not grow in polluted areas. For instance, consider the case of industrial melanism."
     },
     {
       "q": "4. Explain sexual reproduction in bacteria?",
@@ -383,20 +383,20 @@ export default {
       "a": "There are several classification systems:\n(i) Artificial Classification:\nIt simply considers a few easily observable traits and ignores anatomical linkages.\n(ii) Natural Classification:\nIt is based on organisms' natural affinities. It makes use of both external and internal characteristics.\n(iii) Phylogenetic Classification:\nThis classification is based on evolutionary relationships between organisms, i.e., organisms belonging to the same group have a common ancestor.\n(iv) Phenotypic Classification:\nTo prevent problems establishing evolutionary relationships, various criteria and procedures are used to classify organisms.\nCBSE Class 11 Biology Chapter-2 Important Questions - Free PDF Download\nIntroduction - Biological Classification Class 11\nVedantu offers a step by step guidance on the solutions of each chapter. The guidelines are prepared by the latest syllabus, which leaves no doubt about the solutions provided. It provides reliable and accurate\nNCERT Solutions for class 11\nbiology chapter 2. These\nNCERT solutions\nare not only confined to specific books, rather it covers all such important topics and subject. Students can download the free pdf form in a hassle-free manner. All the important topics are easily covered in class 11 chapter 2 - Biological classification\nBiological Classification Chapter 2 - Benefits of Important Questions and Answers\nThe following are the benefits of studying these important questions and answers from the chapter Biological Classification:\nVedantu\u2019s important questions and answers for\nClass 11 Chapter 2\nare curated in a precise and easy-to-understand form for students.\nThese are extracted by subject matter experts. These are purely based on the latest NCERT pattern.\nEvery content created is in an easy-to-understand manner like headings highlighted, having subpoints of every important concept.\nThese are created in such a way as to get the bullseye on the PDF form.\nClass 11 Chapter 2 - Biological classification PDF not only provides important questions and topics, but it also gives a great insight into the whole chapter at the time of revision.\nBiological Classification - Chapter 2 Class 11 Biology: Topics Covered in This Chapter\nBiological classification Class 11 Chapter 2 explains the different classifications of kingdoms. Biologist Linnaeus classified organisms based on two kingdoms - Animalia for animals and Plantae for plants. Biologist H. Whittaker stated five kingdoms of classification. Each of the kingdoms is discussed precisely in the following content in a better and easy-to-understand format.\nBiological Classification - Chapter 2 Class 11 Biology: Summary of the Chapter\nBiological Classification Class 11 Chapter 2 important topics include the following heads. We will discuss these in brief to get a clear understanding of the concept. The important topics include the following:\nBiological classification\nTaxonomy\nImportance of taxonomy\nClassification and Evolution\nClassification of the Animal kingdom\nClassification of plants\nOrganisms are classified in accordance with their ranks. Here are eight ranks used to classify organisms. These ranks are named as follows:\nDomain\nKingdom\nPhylum\nClass\nOrder\nFamily\nGenus\nSpecies\nFor example, to classify humans, the following basis is used:\nDomain - Eukaryota\nKingdom - Animalia\nPhylum - Chordata\nClass - Mammalia\nOrder - Primates\nFamily - Hominidae\nGenus - Homo\nSpecies - Homo Sapiens\nTaxonomy deals with the naming, describing, and classification of living organisms including plants as well. Here classification is based on behavioural, biochemical, and genetic variations.\nThe taxonomy also helps in the classification of species which further makes the understanding more precise and clear. Here is an incident from 1996 which will clarify the importance of taxonomy.\nIn 1996, a deadly fungus named Tilletia Indica was widely spread in wheat crops and caused a disease named Karnal bunt. This fungus impacted enormously and resulted in declining economic conditions. All exports were restricted which resulted in a billion-dollar loss. From here on taxonomists played their role, they observed the wheat crop and concluded that the blackening of the wheat crop is due to different fungi. After this evaluation, the billion-dollar crisis changed to a stable economic condition.\nClassification and evolution: Biodiversity refers to the diversity of living things on Earth which is home to around 8 million known species. Some of the classifications are similar in body design but differ in other characteristics. Over time, different species evolved from one or more ancestors. From where have these species come? This is known as Evolution. Evolution took place and resulted in biodiversity. The Earth grounds more than 8 million species out of which some are known and some still unknown. Evolution says that life forms that exist today are far better than it they existed in early life forms. The organisms which existed years ago undergo certain changes for better survival and new life forms have arisen from them. Older organisms have simple body designs while young organisms have more complex body designs. Even though evolution took place, some sort of species still has their ancestral body designs and didn\u2019t change completely. Whereas another set of species completely took a new body design, different from their ancestors.\nStudents are suggested to go through all notes which include\nClass 11 Chapter 2 important questions\nand topics. The notes provided by Vedantu expert teachers are in an easy-to-understand form and cover most of the important topics of this chapter. Students are also suggested to keep visiting the Vedantu website for a timely revision of important questions and topics. Memorising all leads to mugging up the answers without even understanding what the chapter is trying to explain to us. One needs expert guidance and teachers to get a better understanding. Vedantu ensures credible teachers who teach in an interactive manner.\nBiological Classification - Chapter 2 Class 11 Biology:\u00a0 Extra Important Questions (For Practice)\nBelow are four solved questions and answers which are regarded as important in this chapter. One can practice with these questions and answers before their examination."
     },
     {
-      "q": "1. What is the advantage associated with Five-kingdom Classification over Two-kingdom Classification?\nAns.\nThe five-kingdom classification that we see today was not the initial classification of living organisms. Carolus Linnaeus came up with two kingdom classifications which included kingdom Plantae and kingdom Animalia. The two-kingdom classification did not last for very long as because of its size it ignored major parameters while classifying. Here, there was no differentiation between Eukaryotes and prokaryotes. Neither unicellular and multicellular nor photosynthetic and non-photosynthetic were bifurcated. Organising all organisms either in plants or animals\u2019 heads was not sufficient as there were organisms that cannot be either grouped as plants or animals.\nThese confusions led to the formation of a new mode of classification. It took into account cell structure, the presence of the cell wall, mode of reproduction, and nutrition. It led to the five-kingdom classification which included the following:\nKingdom Monera\nKingdom Protista\nKingdom Fungi\nKingdom Plantae\nKingdom Animalia",
-      "a": "Detailed solution available."
+      "q": "1. What is the advantage associated with Five-kingdom Classification over Two-kingdom Classification?",
+      "a": "The five-kingdom classification that we see today was not the initial classification of living organisms. Carolus Linnaeus came up with two kingdom classifications which included kingdom Plantae and kingdom Animalia. The two-kingdom classification did not last for very long as because of its size it ignored major parameters while classifying. Here, there was no differentiation between Eukaryotes and prokaryotes. Neither unicellular and multicellular nor photosynthetic and non-photosynthetic were bifurcated. Organising all organisms either in plants or animals\u2019 heads was not sufficient as there were organisms that cannot be either grouped as plants or animals.\nThese confusions led to the formation of a new mode of classification. It took into account cell structure, the presence of the cell wall, mode of reproduction, and nutrition. It led to the five-kingdom classification which included the following:\nKingdom Monera\nKingdom Protista\nKingdom Fungi\nKingdom Plantae\nKingdom Animalia"
     },
     {
-      "q": "2. What are the approaches to improve crop yield?\nAns.\nIn order to improve the crop yield, the following approaches are adopted:\nCrop Variety Improvement -\nPlant breeding helps the farmers to select desired properties of crops and cross them to produce new varieties. It results in more plant properties which further help in feeding the growing population. It also helps in the production of disease-resistant crops.\nCrop Production Management -\nFarming in India ranges from small farms to vast farms. Different farmers have different sizes of land depending upon the availability of resources, money, place, and access to information and technology. The crop results depending upon the inputs. It includes no cost, low cost, and even high-cost production practices.\nNutrient Management -\nAs humans, plants require nutrients for their growth and development. There are certain macronutrients and micronutrients required depending upon the quantity. The farmers should be very much aware and educated of the nutrients required. Both very little and very much nutrients are harmful for crop production.",
-      "a": "Detailed solution available."
+      "q": "2. What are the approaches to improve crop yield?",
+      "a": "In order to improve the crop yield, the following approaches are adopted:\nCrop Variety Improvement -\nPlant breeding helps the farmers to select desired properties of crops and cross them to produce new varieties. It results in more plant properties which further help in feeding the growing population. It also helps in the production of disease-resistant crops.\nCrop Production Management -\nFarming in India ranges from small farms to vast farms. Different farmers have different sizes of land depending upon the availability of resources, money, place, and access to information and technology. The crop results depending upon the inputs. It includes no cost, low cost, and even high-cost production practices.\nNutrient Management -\nAs humans, plants require nutrients for their growth and development. There are certain macronutrients and micronutrients required depending upon the quantity. The farmers should be very much aware and educated of the nutrients required. Both very little and very much nutrients are harmful for crop production."
     },
     {
-      "q": "3. What will be an example of an insectivorous plant?\nAns.\nThe Venus flytrap is an example of an insectivorous plant.",
-      "a": "Detailed solution available."
+      "q": "3. What will be an example of an insectivorous plant?",
+      "a": "The Venus flytrap is an example of an insectivorous plant."
     },
     {
-      "q": "4. Give an example of a parasitic plant.\nAns.\nThe Corpse Flower is an example of a parasitic plant.\nTips to Study Biology for Class 11 Biology Examination\nThe following are some tips that can be incorporated into your study routine if you want to excel in your Biology exam:\nStudy the concepts properly with total understanding.\nRead the theories, and make notes.\nFollow the class explanations.\nRevise regularly.\nMake diagrams to study better.\nMemorise the difficult names by writing them in a notepad and then re-writing it another copy.\nPractice with sample question papers.\nConclusion\nThe Class 11 Biology Biological Classification chapter is a crucial chapter that introduces students to the diversity of living organisms on Earth. It covers topics such as the classification of organisms based on their characteristics, the binomial nomenclature system, and the different kingdoms of life. Students should pay close attention to this chapter and practice solving questions to gain a thorough understanding of the concepts. Vedantu provides comprehensive study materials, including notes, sample papers, and solutions to previous year question papers, to help students prepare for their exams. By mastering the concepts covered in this chapter, students can develop a deeper appreciation for the diversity of life and understand the importance of classification in the study of Biology.\nRelated Study Materials for Class 11 Biology Chapter 2\nS. No\nImportant Study Material Links for Class 11 Biology Chapter 2",
-      "a": "Detailed solution available."
+      "q": "4. Give an example of a parasitic plant.",
+      "a": "The Corpse Flower is an example of a parasitic plant.\nTips to Study Biology for Class 11 Biology Examination\nThe following are some tips that can be incorporated into your study routine if you want to excel in your Biology exam:\nStudy the concepts properly with total understanding.\nRead the theories, and make notes.\nFollow the class explanations.\nRevise regularly.\nMake diagrams to study better.\nMemorise the difficult names by writing them in a notepad and then re-writing it another copy.\nPractice with sample question papers.\nConclusion\nThe Class 11 Biology Biological Classification chapter is a crucial chapter that introduces students to the diversity of living organisms on Earth. It covers topics such as the classification of organisms based on their characteristics, the binomial nomenclature system, and the different kingdoms of life. Students should pay close attention to this chapter and practice solving questions to gain a thorough understanding of the concepts. Vedantu provides comprehensive study materials, including notes, sample papers, and solutions to previous year question papers, to help students prepare for their exams. By mastering the concepts covered in this chapter, students can develop a deeper appreciation for the diversity of life and understand the importance of classification in the study of Biology.\nRelated Study Materials for Class 11 Biology Chapter 2\nS. No\nImportant Study Material Links for Class 11 Biology Chapter 2"
     },
     {
       "q": "1.\nClass 11 Biological Classification Notes",
@@ -485,8 +485,8 @@ export default {
       "a": "Conifers are cone-bearing plants."
     },
     {
-      "q": "16. Name any red algae which are used as vegetables?\nAns\n: Porphyra is the red algae that are used as vegetables.",
-      "a": "Detailed solution available."
+      "q": "16. Name any red algae which are used as vegetables?",
+      "a": "Porphyra is the red algae that are used as vegetables."
     },
     {
       "q": "17. What do you mean by thallus?",
@@ -649,20 +649,20 @@ export default {
       "a": "Stamens and pistils are the two reproductive parts of a flower. The stamen consists of a slender filament with anthers at the tip. Each pistil is made of three parts- ovary, style and stigma. The ovary contains one to many ovules. Each ovule contains a megaspore mother cell it produces four haploid megaspores after meiosis of them three degenerate and the remaining one is a functional megaspore. It divides by meiosis forming a megagametophyte. It consists of 8 haploid nuclei embedded in the cytoplasm of which 3 cells lie at the micropylar end and 3 antipodal lies at the chalazal end. The two remaining nuclei move to the centre to make a diploid nucleus.\nThe anthers have a pollen sac and contain many microspore mother cells. Each of them produces four haploid microspores after meiosis and each becomes a microgametophyte. It contains two nuclei generative nucleus and the tube nucleus. The pollen is carried away by air and other agencies and reaches the stigma of the pistil of the same or different plants. This process is called pollination. Pollen grains germinate and produce a pollen tube it grows within the style and reaches the ovule of the ovary. The generative nucleus divides pollen tubes producing two male gametes.\nOn reaching the ovule, the pollen tube burst to release male gametes. One of the two gametes fertilise the egg and forms a diploid zygote. The other male gamete fertilizes with polar nuclei to form triploid endosperm. This is known as double fertilization."
     },
     {
-      "q": "4. Classify plant kingdom?\nAns\n:\n(i) Thallophytic\n: The plant body is thallus i.e. not differentiated into root, stem and leaves. Example: Chlorella, Ulothrix, Spirogyra.\n(ii) Bryophyta:\nAmphibious inhabit, water is necessary for fertilization, Vascular tissues are absent. Example: Riccia, Marchantia, Funaria.\n(iii) Pteridophyta:\nThe plant body is differentiated into distinct underground stem-like rhizome bearing roots and aerial shoots with leaves. Example: Equisetum, Adiantum, Pteris\n(iv) Gymnosperm:\nSeeds are naked. Example: Cycas, Pinus, Cedars\n(v) Angiosperm:\nSeeds are protected inside the fruits. Example Monocotyledones- grass, maize, rice and; dicotyledons- gram, pea, sunflower\nCBSE Class 11 Biology Chapter- 3 Important Questions - Benefits to the CBSE Class 11 Students\nWith the help of studying from this material resource, the students will be benefitted abundantly. How?\nThe important questions are taken up after a thorough scanning process.\nOnly those questions which are very vital from the examination point of view are drafted in this PDF.\nThe important questions and answers are to be studied conveniently and thus they are put in a free PDF which can be used free of cost and also saved for future study.\nStudying the important questions and answers will help you to understand the important topics from this chapter.\nStudying important questions and answers will give you insight into how to approach the topics.\nImportant Questions Class 11 Biology Chapter 3 - Topics Covered\nTopics covered in the Class 11 Biology Chapter 3 plant kingdom are:\nAlgae\nBryophytes\nPteridophytes\nGymnosperms\nPlant life cycles\nAlternation of generations.\nChapter 3 Plant Kingdom Summary\nThe plant kingdom mainly includes algae, bryophytes, pteridophytes, gymnosperms, and angiosperms. Now let us know some of the basic details about them: algae are chlorophyll-bearing simple, thalloid, autotrophic, and largely aquatic organisms. Algae are mainly classified into three classes, namely Chlorophyceae, Phaeophyceae, and Rhodophyceae. depending on the type of pigment possessed and the type of stored food. They reproduce vegetatively by fragmentation, asexually by the formation of different types of spores, and sexually by the formation of gametes which may show isogamy, anisogamy, or oogamy.\nBryophytes:\nBryophytes can live on soil but are dependent on water for sexual reproduction. The bryophytes plant body is more differentiated when compared with algae. Bryophytes are thallus-like and prostate attached to the substratum by rhizoids and they also possess root-like, leaf-like, and stem-like structures. The bryophytes are divided into two types:\u00a0 liverworts and mosses. The plant body of liverworts is thalloid and dorsiventral in structure, but mosses have upright slender axes bearing spirally arranged leaves.\nIn Bryophytes, the plant's main part is a gamete-producing cell known as a gametophyte. It bears two types of sex antheridia and archegonia, antheridia is the male sex organ and archegonia is the female sex organ. Both the gametes produced fuses to form a zygote. It produces a multicellular body called a sporophyte. It produces haploid spores and that spore germinates to form gametophytes.\nPteridophytes:\nIn pteridophytes, the main plant is a sporophyte and\u00a0 It is differentiated into true roots, stem, and leaves. The organs of the sporophyte possess well-differentiated vascular tissues. And it bears sporangia which produce spores and these spores germinate to form gametophytes. The conditions required to grow gametophytes are cool and damp places. The gametophytes bear the male sex organs - antheridia and the female sex organs called archegonia. Water is an essential component required for the transfer of male gametes to archegonium, where the formation of the zygote takes place after fertilisation.\nIn the life cycle of sexually reproducing plants, different plant groups, as well as individuals, may show different patterns of life cycles are haplontic, diplontic, or intermediate. There is an alternation of generations between gamete-producing haploid gametophyte and spore-producing diploid sporophyte.\nImportant Questions for CBSE Class 11 Biology Chapter 3 - Plant Kingdom - Extra Questions and Answers (Solved)",
-      "a": "Detailed solution available."
+      "q": "4. Classify plant kingdom?",
+      "a": "(i) Thallophytic\n: The plant body is thallus i.e. not differentiated into root, stem and leaves. Example: Chlorella, Ulothrix, Spirogyra.\n(ii) Bryophyta:\nAmphibious inhabit, water is necessary for fertilization, Vascular tissues are absent. Example: Riccia, Marchantia, Funaria.\n(iii) Pteridophyta:\nThe plant body is differentiated into distinct underground stem-like rhizome bearing roots and aerial shoots with leaves. Example: Equisetum, Adiantum, Pteris\n(iv) Gymnosperm:\nSeeds are naked. Example: Cycas, Pinus, Cedars\n(v) Angiosperm:\nSeeds are protected inside the fruits. Example Monocotyledones- grass, maize, rice and; dicotyledons- gram, pea, sunflower\nCBSE Class 11 Biology Chapter- 3 Important Questions - Benefits to the CBSE Class 11 Students\nWith the help of studying from this material resource, the students will be benefitted abundantly. How?\nThe important questions are taken up after a thorough scanning process.\nOnly those questions which are very vital from the examination point of view are drafted in this PDF.\nThe important questions and answers are to be studied conveniently and thus they are put in a free PDF which can be used free of cost and also saved for future study.\nStudying the important questions and answers will help you to understand the important topics from this chapter.\nStudying important questions and answers will give you insight into how to approach the topics.\nImportant Questions Class 11 Biology Chapter 3 - Topics Covered\nTopics covered in the Class 11 Biology Chapter 3 plant kingdom are:\nAlgae\nBryophytes\nPteridophytes\nGymnosperms\nPlant life cycles\nAlternation of generations.\nChapter 3 Plant Kingdom Summary\nThe plant kingdom mainly includes algae, bryophytes, pteridophytes, gymnosperms, and angiosperms. Now let us know some of the basic details about them: algae are chlorophyll-bearing simple, thalloid, autotrophic, and largely aquatic organisms. Algae are mainly classified into three classes, namely Chlorophyceae, Phaeophyceae, and Rhodophyceae. depending on the type of pigment possessed and the type of stored food. They reproduce vegetatively by fragmentation, asexually by the formation of different types of spores, and sexually by the formation of gametes which may show isogamy, anisogamy, or oogamy.\nBryophytes:\nBryophytes can live on soil but are dependent on water for sexual reproduction. The bryophytes plant body is more differentiated when compared with algae. Bryophytes are thallus-like and prostate attached to the substratum by rhizoids and they also possess root-like, leaf-like, and stem-like structures. The bryophytes are divided into two types:\u00a0 liverworts and mosses. The plant body of liverworts is thalloid and dorsiventral in structure, but mosses have upright slender axes bearing spirally arranged leaves.\nIn Bryophytes, the plant's main part is a gamete-producing cell known as a gametophyte. It bears two types of sex antheridia and archegonia, antheridia is the male sex organ and archegonia is the female sex organ. Both the gametes produced fuses to form a zygote. It produces a multicellular body called a sporophyte. It produces haploid spores and that spore germinates to form gametophytes.\nPteridophytes:\nIn pteridophytes, the main plant is a sporophyte and\u00a0 It is differentiated into true roots, stem, and leaves. The organs of the sporophyte possess well-differentiated vascular tissues. And it bears sporangia which produce spores and these spores germinate to form gametophytes. The conditions required to grow gametophytes are cool and damp places. The gametophytes bear the male sex organs - antheridia and the female sex organs called archegonia. Water is an essential component required for the transfer of male gametes to archegonium, where the formation of the zygote takes place after fertilisation.\nIn the life cycle of sexually reproducing plants, different plant groups, as well as individuals, may show different patterns of life cycles are haplontic, diplontic, or intermediate. There is an alternation of generations between gamete-producing haploid gametophyte and spore-producing diploid sporophyte.\nImportant Questions for CBSE Class 11 Biology Chapter 3 - Plant Kingdom - Extra Questions and Answers (Solved)"
     },
     {
-      "q": "1. Which group of algae have mannitol as reserve food material?\nAns.\nThe Phaeophyceae group, also known as the brown algae, stores food material in the form of mannitol.",
-      "a": "Detailed solution available."
+      "q": "1. Which group of algae have mannitol as reserve food material?",
+      "a": "The Phaeophyceae group, also known as the brown algae, stores food material in the form of mannitol."
     },
     {
-      "q": "2. What is the botanical name for the sea palm?\nAns.\nPostelsia palmaeformis is the botanical name for the sea palm.",
-      "a": "Detailed solution available."
+      "q": "2. What is the botanical name for the sea palm?",
+      "a": "Postelsia palmaeformis is the botanical name for the sea palm."
     },
     {
-      "q": "3. How many cells make up an embryo sac?\nAns.\nAn embryo sac is made up of - two synergids, one egg cell, three antipodal cells, and one secondary nucleus.\nPreparation Tips for CBSE Class 11 Biology Exam\nStudents are suggested to study the chapter conceptually.\nThese theories are based on one\u2019s understanding and thus they are required to understand the concepts first before proceeding to memorise them.\nStudents should draw labelled diagrams and study the concepts which demand such diagrams.\nGive regular tests like mock tests and class tests which will help you to stay updated about your own performance.\nStudy the difficult biological terms by jotting them down on paper.\nConclusion\nClass 11 Biology Chapter 3 extra questions\nand important questions provide self-confidence to the students in their exam preparations and it is one of the best study materials available for free in the form of PDFs.\nClass 11 Biology Chapter 3 Important Questions\nincrease the thinking capability of the students and the important questions consist of questions, solutions, diagrams, fill-in-the-blanks, short questions, and long questions. So, click on the PDF Download option to access the file and save it for offline study.\nRelated Study Materials for Class 11 Biology Chapter 3\nS.No\nImportant Other Links for Class 11 Biology Chapter 3",
-      "a": "Detailed solution available."
+      "q": "3. How many cells make up an embryo sac?",
+      "a": "An embryo sac is made up of - two synergids, one egg cell, three antipodal cells, and one secondary nucleus.\nPreparation Tips for CBSE Class 11 Biology Exam\nStudents are suggested to study the chapter conceptually.\nThese theories are based on one\u2019s understanding and thus they are required to understand the concepts first before proceeding to memorise them.\nStudents should draw labelled diagrams and study the concepts which demand such diagrams.\nGive regular tests like mock tests and class tests which will help you to stay updated about your own performance.\nStudy the difficult biological terms by jotting them down on paper.\nConclusion\nClass 11 Biology Chapter 3 extra questions\nand important questions provide self-confidence to the students in their exam preparations and it is one of the best study materials available for free in the form of PDFs.\nClass 11 Biology Chapter 3 Important Questions\nincrease the thinking capability of the students and the important questions consist of questions, solutions, diagrams, fill-in-the-blanks, short questions, and long questions. So, click on the PDF Download option to access the file and save it for offline study.\nRelated Study Materials for Class 11 Biology Chapter 3\nS.No\nImportant Other Links for Class 11 Biology Chapter 3"
     },
     {
       "q": "1.\nCBSE Class 11 Plant Kingdom Notes",
@@ -969,8 +969,8 @@ export default {
       "a": "In mangroves, Pneumatophores are helpful in respiration."
     },
     {
-      "q": "4. Which part of mango fruit is edible?\nAns\n: Mesocarp of the mango fruit is edible.",
-      "a": "Detailed solution available."
+      "q": "4. Which part of mango fruit is edible?",
+      "a": "Mesocarp of the mango fruit is edible."
     },
     {
       "q": "5. Why do the various plants have different types of phyllotaxy?",
@@ -1121,8 +1121,8 @@ export default {
       "a": "The below-given table shows the difference between true fruit and false fruit:-\nTrue Fruit\nFalse Fruit\nIt arises from the ovary.\nIt arises from floral parts other than the ovary.\nNo other part is involved in the formation of fruit.\nThalamus and perianth are involved in fruit formation.\nFor example, pea.\nFor example, apples."
     },
     {
-      "q": "17. Write the floral formula & draw the floral diagram of the family Liliaceae.\nAns.\n(i). The floral formula of family Liliaceae: -\nFloral formula of family- Liliaceae\n(ii).Floral diagram of family Liliaceae: -\nFloral diagram of Family- Liliaceae\n18. \u201cUnderground parts of a plant are not always roots\u201d justify the statement.",
-      "a": "Normally, roots grow beneath the ground. But, in the potato, the stem is modified into a tuber-like structure for the storage of reserve food material. These stem tubers develop and grow under the ground. Potato is a stem because it has scale leaves, nodes, buds etc."
+      "q": "17. Write the floral formula & draw the floral diagram of the family Liliaceae.",
+      "a": "(i). The floral formula of family Liliaceae: -\nFloral formula of family- Liliaceae\n(ii).Floral diagram of family Liliaceae: -\nFloral diagram of Family- Liliaceae\n18. \u201cUnderground parts of a plant are not always roots\u201d justify the statement.\nAns:\nNormally, roots grow beneath the ground. But, in the potato, the stem is modified into a tuber-like structure for the storage of reserve food material. These stem tubers develop and grow under the ground. Potato is a stem because it has scale leaves, nodes, buds etc."
     },
     {
       "q": "19. How would you differentiate leaflets of a compound leaf from simple leaves on a branch?",
@@ -1185,8 +1185,8 @@ export default {
       "a": "The difference between Tuber and Bulb are:\nTuber (Potato)\nBulb (Onion)\nThe stem is well developed in the tuber.\nThe stem is reduced to a disc-like structure in the bulb.\nAdventitious roots are absent in tuber.\nAdventitious roots are present in the bulb.\nPotato plants can bear numerous tubers.\nIn a single onion plant, just one bulb grows.\nIn the tuber, food is stored in the stem.\nIn the bulb, food is stored in fleshy scale leaves.\nBuds are external.\nBuds are internal.\nDistinct nodes and internodes are present.\nNodes and internodes are not distinct.\nIn the nodal region, scale leaves are quite tiny.\nScale leaves are fleshy.\nThe tuber (potato) is a total stem.\nThe bulb (onion) is a shoot."
     },
     {
-      "q": "13. Give four types of underground stem and give examples for each.\nAns\n: Four types of underground stems are: -\ni. Rhizome: -\nThe stem is thickened, prostate, and grows horizontally beneath the soil. The stem is branched & each branch ends in the terminal bud. Adventitious roots arise in profusion. Example: - Fern, water lily, turmeric etc.\nii. Bulb: -\nHighly condensed & discoidal stem. Terminal bud in the centre produces an aerial root that produces flowers. From the base of the stem adventitious roots develop. Leaves store food material. Terminal buds and scale leaves are present. Example: - Onion and garlic.\niii. Corm: -\nA condensed form of rhizome with auxiliary buds & scale leaves. It is known to be the swollen base of the underground stem axis. Nodes and internodes are present. Example: - Jimikand, Saffron, Colocasia.\niv. Tuber: -\nIt grows horizontally and swells at the apex. Adventitious roots arise during sprouting. It has numerous buds that develop into new plants. Example: - Potato, Helianthus.",
-      "a": "Detailed solution available."
+      "q": "13. Give four types of underground stem and give examples for each.",
+      "a": "Four types of underground stems are: -\ni. Rhizome: -\nThe stem is thickened, prostate, and grows horizontally beneath the soil. The stem is branched & each branch ends in the terminal bud. Adventitious roots arise in profusion. Example: - Fern, water lily, turmeric etc.\nii. Bulb: -\nHighly condensed & discoidal stem. Terminal bud in the centre produces an aerial root that produces flowers. From the base of the stem adventitious roots develop. Leaves store food material. Terminal buds and scale leaves are present. Example: - Onion and garlic.\niii. Corm: -\nA condensed form of rhizome with auxiliary buds & scale leaves. It is known to be the swollen base of the underground stem axis. Nodes and internodes are present. Example: - Jimikand, Saffron, Colocasia.\niv. Tuber: -\nIt grows horizontally and swells at the apex. Adventitious roots arise during sprouting. It has numerous buds that develop into new plants. Example: - Potato, Helianthus."
     },
     {
       "q": "14. Compare Trailer, runner and sucker.",
@@ -1251,8 +1251,8 @@ export default {
       "a": "It is the hard and central region of the tree trunk which is made up of xylem vessels."
     },
     {
-      "q": "4. State the role of pitch in the stem.\nAns\n: The role of Pith is to store food material.",
-      "a": "Detailed solution available."
+      "q": "4. State the role of pitch in the stem.",
+      "a": "The role of Pith is to store food material."
     },
     {
       "q": "5. Where are bulliform cells found in Leaves?",
@@ -1379,8 +1379,8 @@ export default {
       "a": "Stomata is present on the surface of leaves. It helps to regulate transpiration in plants and also in the exchange for Gases. The guard cells also regulate the opening and closing of stomata. The stomatal apparatus consists of stomatal aperture, guard cells, and surrounding subsidiary cells."
     },
     {
-      "q": "13. How can you identify a monocot stem and a dicot stem? Give reasons.\nAns\n: The vascular bundles are scattered Also there is no distinction between pitch & cortex. Cambium is absent.\u00a0 Dicot stem shows epidermis, cortex & stele while vascular bundles are closed. Epidermis bears appendages-trichomes. The vascular bundles are arranged in rings and also they are open.",
-      "a": "Detailed solution available."
+      "q": "13. How can you identify a monocot stem and a dicot stem? Give reasons.",
+      "a": "The vascular bundles are scattered Also there is no distinction between pitch & cortex. Cambium is absent.\u00a0 Dicot stem shows epidermis, cortex & stele while vascular bundles are closed. Epidermis bears appendages-trichomes. The vascular bundles are arranged in rings and also they are open."
     },
     {
       "q": "14. Differentiate between xylem & phloem.",
@@ -1465,8 +1465,8 @@ export default {
       "a": "Haversian canals are also known as haver and these are part of Mammalian bone."
     },
     {
-      "q": "2. Mention two special properties of nervous tissues.\nAns.\nNervous tissues are the part of the brain, spinal cord, and nerves. The notable properties of nervous tissues are conductivity and irritability.",
-      "a": "Detailed solution available."
+      "q": "2. Mention two special properties of nervous tissues.",
+      "a": "Nervous tissues are the part of the brain, spinal cord, and nerves. The notable properties of nervous tissues are conductivity and irritability."
     },
     {
       "q": "3. Name the large cells present in adipose tissue.",
@@ -1509,52 +1509,52 @@ export default {
       "a": "Adipose tissue has fat globules. Adipose tissue is a specialized connective tissue consisting of lipid-rich cells called adipocytes."
     },
     {
-      "q": "13.\nName two anticoagulants of the blood of man?\nAns\n: Anticoagulants are medicines that help prevent blood clots. Heparin and antiprothrombin are the anticoagulants of the blood of man",
-      "a": "Detailed solution available."
+      "q": "13.\nName two anticoagulants of the blood of man?",
+      "a": "Anticoagulants are medicines that help prevent blood clots. Heparin and antiprothrombin are the anticoagulants of the blood of man"
     },
     {
-      "q": "14.\nName the type of epithelium that lines the inner surface of the stomach?\nAns\n: The gastric epithelium is the simple columnar, non-ciliated epithelial tissue that lines the inner surface of the stomach. These are the cells found in the digestive tract of the human body.",
-      "a": "Detailed solution available."
+      "q": "14.\nName the type of epithelium that lines the inner surface of the stomach?",
+      "a": "The gastric epithelium is the simple columnar, non-ciliated epithelial tissue that lines the inner surface of the stomach. These are the cells found in the digestive tract of the human body."
     },
     {
       "q": "15.\nWhat causes fatigue of the muscle fibers?",
       "a": "There are two main causes of muscle fatigue:\nFirstly the limitations of a nerve's ability to generate a sustained signal\nSecondly, the reduced ability of the muscle fiber to contract (metabolic fatigue)."
     },
     {
-      "q": "16.\nName the type of epithelium lining the buccal cavity?\nAns\n: Stratified squamous epithelium. It consists of a single basal layer containing stem cells, 2\u20133 layers of proliferative basaloid cells in the suprabasal region, and larger keratinized cells toward the surface.",
-      "a": "Detailed solution available."
+      "q": "16.\nName the type of epithelium lining the buccal cavity?",
+      "a": "Stratified squamous epithelium. It consists of a single basal layer containing stem cells, 2\u20133 layers of proliferative basaloid cells in the suprabasal region, and larger keratinized cells toward the surface."
     },
     {
-      "q": "17.\nWhy are muscle cells usually called muscle fibers?\nAns\n: Muscle cells are usually called muscle fibers because muscle cells are thin & elongated into thread-like structures. Also, the muscle cells are long and tubular.",
-      "a": "Detailed solution available."
+      "q": "17.\nWhy are muscle cells usually called muscle fibers?",
+      "a": "Muscle cells are usually called muscle fibers because muscle cells are thin & elongated into thread-like structures. Also, the muscle cells are long and tubular."
     },
     {
-      "q": "18. Define glands.\nAns\n: Glands are secretory structures formed of epithelial tissues. A gland is an organ that produces and releases substances that perform a specific function in the body",
-      "a": "Detailed solution available."
+      "q": "18. Define glands.",
+      "a": "Glands are secretory structures formed of epithelial tissues. A gland is an organ that produces and releases substances that perform a specific function in the body"
     },
     {
-      "q": "19. How many spermathecae are present in earthworms.\nAns\n: Four pairs of spermathecae are found in each of 6 to 9 segments of an earthworm. They help in receiving and storing the spermatozoa during copulation.",
-      "a": "Detailed solution available."
+      "q": "19. How many spermathecae are present in earthworms.",
+      "a": "Four pairs of spermathecae are found in each of 6 to 9 segments of an earthworm. They help in receiving and storing the spermatozoa during copulation."
     },
     {
-      "q": "20. Name the proteins which constitute muscle fibers.\nAns\n: The muscle proteins can be divided into contractile, regulatory, sarcoplasmic, and extracellular forms. The most important are the contractile proteins namely Actin & myosin.",
-      "a": "Detailed solution available."
+      "q": "20. Name the proteins which constitute muscle fibers.",
+      "a": "The muscle proteins can be divided into contractile, regulatory, sarcoplasmic, and extracellular forms. The most important are the contractile proteins namely Actin & myosin."
     },
     {
-      "q": "21. Which type of epithelium is found in the urinary bladder.\nAns\n: Transitional epithelium. Transitional epithelium is a type of tissue that consists of multiple layers of epithelial cells that can contract and expand. This tissue structure type is found in the urinary bladder and gland ducts of the prostate.",
-      "a": "Detailed solution available."
+      "q": "21. Which type of epithelium is found in the urinary bladder.",
+      "a": "Transitional epithelium. Transitional epithelium is a type of tissue that consists of multiple layers of epithelial cells that can contract and expand. This tissue structure type is found in the urinary bladder and gland ducts of the prostate."
     },
     {
       "q": "22. From which germ layers do the following organs originate.",
       "a": "(a) Mesoderm: The mesoderm is the middle layer. In the embryo, it differentiates to give rise to a number of tissues and structures including bone, muscle, connective tissue, and the middle layer of the skin.\n(b) Endoderm is the innermost of the three primary germ layers in the very early embryo. The endoderm consists at first of flattened cells, which subsequently become columnar.\nShort Answer Questions (2 Marks)\n1.What are the two types of fibers of connective (issues? Distinguish between the two.\nAns:\nThe two types of fibers of connective tissues are: White and yellow fibers.\nWhite Fibers\nYellow Fibers\nWhite fibers are thin, wavy, unbranched, inelastic, occur in bundles, and are formed of the protein collagen\nYellow fibers are thick, straight, elastic, branched, occurring singly, formed of protein elastin."
     },
     {
-      "q": "2. To which tissue do the following belongs to\n(a) Osteocytes\u00a0 (b) Chondrocytes\n(c) Neuroglia \u00a0 \u00a0 (d) Intercalated discs Ans.\nAns\n:\n(a) Bone tissue\n(b) Cartilage\n(c) Neural tissue\n(d) Cardiac muscle",
-      "a": "Detailed solution available."
+      "q": "2. To which tissue do the following belongs to\n(a) Osteocytes\u00a0 (b) Chondrocytes\n(c) Neuroglia \u00a0 \u00a0 (d) Intercalated discs Ans.",
+      "a": "(a) Bone tissue\n(b) Cartilage\n(c) Neural tissue\n(d) Cardiac muscle"
     },
     {
-      "q": "3. Name the locomotory appendages of cockroaches on the basis of external morphology.\nAns\n: Three pairs of legs and 2 pairs of wings. The body of a cockroach is segmented and divided into three distinct segments- head, thorax, and abdomen. The three pairs of legs in a cockroach help them in locomotion. These are attached to the thorax part of the body.",
-      "a": "Detailed solution available."
+      "q": "3. Name the locomotory appendages of cockroaches on the basis of external morphology.",
+      "a": "Three pairs of legs and 2 pairs of wings. The body of a cockroach is segmented and divided into three distinct segments- head, thorax, and abdomen. The three pairs of legs in a cockroach help them in locomotion. These are attached to the thorax part of the body."
     },
     {
       "q": "4. Give the characteristic of epithelial tissues?",
@@ -1577,24 +1577,24 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\u00a0 How many types of nephridia are found in earthworms based on their location?\nAns\n: On the\u00a0 basis of location, there are three types of nephridia;\nSeptal\nIntegumentary\nPharyngeal\n(i) Septal Nephridia:\nThose present on both the sides of intersegmental septa & open into the intestine\n(ii) Integumental Nephridia:\nThose found attached to the lining of the body wall & open on the body surface.\n(iii) Pharyngeal Nephridia:\nThose found on the 4th, 5th, & 6th segment in the form of three paired tufts are pharyngeal nephridia.",
-      "a": "Detailed solution available."
+      "q": "5.\u00a0 How many types of nephridia are found in earthworms based on their location?",
+      "a": "On the\u00a0 basis of location, there are three types of nephridia;\nSeptal\nIntegumentary\nPharyngeal\n(i) Septal Nephridia:\nThose present on both the sides of intersegmental septa & open into the intestine\n(ii) Integumental Nephridia:\nThose found attached to the lining of the body wall & open on the body surface.\n(iii) Pharyngeal Nephridia:\nThose found on the 4th, 5th, & 6th segment in the form of three paired tufts are pharyngeal nephridia."
     },
     {
-      "q": "6. What do you mean by hemopoiesis?\nAns\n: Hemopoiesis is the formation of new erythrocytes from the Hematopoietic tissue. The hematopoietic tissue is the young fetus in the liver and spleen whereas, in adults, it is the bone marrow of the long bone. The hematopoietic tissue synthesizes millions of RBCs every minute and its excess lot is stored in the spleen.",
-      "a": "Detailed solution available."
+      "q": "6. What do you mean by hemopoiesis?",
+      "a": "Hemopoiesis is the formation of new erythrocytes from the Hematopoietic tissue. The hematopoietic tissue is the young fetus in the liver and spleen whereas, in adults, it is the bone marrow of the long bone. The hematopoietic tissue synthesizes millions of RBCs every minute and its excess lot is stored in the spleen."
     },
     {
       "q": "7. Differentiate between blood & lymph?",
       "a": "The difference between blood and lymph are as following:\nBlood\nLymph\nIt is vascular tissue\nIt is white (straw-colored) vascular tissue\nIt is found in blood vessels.\nIt is found in lymph vessels.\nIt is made of plasma, erythrocytes, leucocytes & platelets. Neutrophils are most abundant.\nIt is made of plasma, leukocytes, erythrocytes & platelets are absent. Lymphocytes are most abundant.\nIt has hemoglobin\nHaemoglobin is absent\nIt helps in the transport of materials inside the body.\nIt functions as a middle man between blood & body cells."
     },
     {
-      "q": "8. What are nissl\u2019s granules? Where are they found?\nAns\n:\nNissl granules occur in the neurons and are the site for protein synthesis.\nNissl's granules are present in the cytoplasm of the cell body of the neurons along with other cell organelles like Golgi apparatus, endoplasmic reticulum, mitochondria, nucleus, etc.\nThese granules give a slight colored appearance to the cytoplasm of the cell body. They help in protein synthesis in the neurons.",
-      "a": "Detailed solution available."
+      "q": "8. What are nissl\u2019s granules? Where are they found?",
+      "a": "Nissl granules occur in the neurons and are the site for protein synthesis.\nNissl's granules are present in the cytoplasm of the cell body of the neurons along with other cell organelles like Golgi apparatus, endoplasmic reticulum, mitochondria, nucleus, etc.\nThese granules give a slight colored appearance to the cytoplasm of the cell body. They help in protein synthesis in the neurons."
     },
     {
-      "q": "9.\nDiscuss the structure of the Haversian system in the histology of bone?\nAns\n: Bone consists of connective tissue having matrix surrounded by periosteum. In mammalian bone, the Haversian canal which carries blood vessels and nerves of the bone is surrounded by a number of concentric lamellae of intercellular matrix and bone.",
-      "a": "Detailed solution available."
+      "q": "9.\nDiscuss the structure of the Haversian system in the histology of bone?",
+      "a": "Bone consists of connective tissue having matrix surrounded by periosteum. In mammalian bone, the Haversian canal which carries blood vessels and nerves of the bone is surrounded by a number of concentric lamellae of intercellular matrix and bone."
     },
     {
       "q": "10. Distinguish between myosin & actin filament?",
@@ -1609,40 +1609,40 @@ export default {
       "a": "Three major classes of plasma proteins are:-\n(a) Serum (b) Serum globulin (c) Fibrinogen\nThe following are the main functions of Plasma Proteins:-\n(i) It provides body immunity\n(ii) It helps in the prevention of blood loss.\n(iii) It helps in the retention of fluids in the blood.\n(iv) It helps in the transport of material\n(v) It helps in maintaining the PH of blood.\n(vi) It helps in conducting heat to skin for dissipation"
     },
     {
-      "q": "13. What is the function of nephridia?\nAns\n: The nephridium or nephridia) is an invertebrate organ that is found in pairs and performs a function similar to the vertebrate kidney. Nephridia help in removing metabolic wastes from an animal's body.",
-      "a": "Detailed solution available."
+      "q": "13. What is the function of nephridia?",
+      "a": "The nephridium or nephridia) is an invertebrate organ that is found in pairs and performs a function similar to the vertebrate kidney. Nephridia help in removing metabolic wastes from an animal's body."
     },
     {
       "q": "14. Distinguish between smooth & striated muscles.",
       "a": "The difference between smooth and striated muscles are given below:\nSmooth Muscles\nStriated Muscles\nThey are called involuntary muscles.\nThey are called voluntary muscles\nThey are found in hollow organs\nThey are mostly attached to bones by\ntendons\nThey are uninucleate.\nThey are multinucleate.\nThey do not show any striation\nThey show striated appearance i.e.\nalternate light & dark bands."
     },
     {
-      "q": "15. What are the functions of mast cells?\nAns\n: Mast cells are long-lived tissue-resident cells with an important role in many inflammatory settings including host defense to parasitic infection and in allergic reactions.\n(i)\u00a0 They store inflammation-producing substance histamine.\n(ii)\u00a0 They also release heparin which prevents activation of prothrombin.",
-      "a": "Detailed solution available."
+      "q": "15. What are the functions of mast cells?",
+      "a": "Mast cells are long-lived tissue-resident cells with an important role in many inflammatory settings including host defense to parasitic infection and in allergic reactions.\n(i)\u00a0 They store inflammation-producing substance histamine.\n(ii)\u00a0 They also release heparin which prevents activation of prothrombin."
     },
     {
-      "q": "16. How can a male frog be distinguished from a female frog?\nAns\n: The male frogs may be distinguished by the presence of sound-producing vocal sacs. They also have a copulatory pad on the first digit of the forelimbs. Vocal sacs and copulatory pads are absent in female frogs.\nAlso, a small round disc called the tympanum covers the ears of both male and female frogs. On males of most frog species, the circumference of this small disc is larger than the eye of the frog. On females of most frog species, the disc's circumference is equal to the size of the frog's eye.",
-      "a": "Detailed solution available."
+      "q": "16. How can a male frog be distinguished from a female frog?",
+      "a": "The male frogs may be distinguished by the presence of sound-producing vocal sacs. They also have a copulatory pad on the first digit of the forelimbs. Vocal sacs and copulatory pads are absent in female frogs.\nAlso, a small round disc called the tympanum covers the ears of both male and female frogs. On males of most frog species, the circumference of this small disc is larger than the eye of the frog. On females of most frog species, the disc's circumference is equal to the size of the frog's eye."
     },
     {
-      "q": "17. Give a reason why earthworms are known as friends of farmers.\nAns\n: Earthworms are known as \u201cfriends of farmers\u201d as they make burrows in the soil which makes that porous.\nIt facilitates respiration as well as penetration for the developing roots of the plants. The earthworms eat decaying vegetation and in the burrows, it enriches the soil.",
-      "a": "Detailed solution available."
+      "q": "17. Give a reason why earthworms are known as friends of farmers.",
+      "a": "Earthworms are known as \u201cfriends of farmers\u201d as they make burrows in the soil which makes that porous.\nIt facilitates respiration as well as penetration for the developing roots of the plants. The earthworms eat decaying vegetation and in the burrows, it enriches the soil."
     },
     {
-      "q": "18. Write a short note on adipose tissues.\nAns\n: Adipose tissue is a specialized connective tissue consisting of lipid-rich cells known as adipocytes. It comprises about 20-25% of total body weight in healthy individuals. Its main function is to store energy in the form of lipids.",
-      "a": "Detailed solution available."
+      "q": "18. Write a short note on adipose tissues.",
+      "a": "Adipose tissue is a specialized connective tissue consisting of lipid-rich cells known as adipocytes. It comprises about 20-25% of total body weight in healthy individuals. Its main function is to store energy in the form of lipids."
     },
     {
-      "q": "19. What are neuroglial cells?\nAns\n: Neuroglial cells are cells that hold the neurons together. Neuroglia is non-neuronal cells in the central nervous system (brain and spinal cord) and the peripheral nervous system that do not produce electrical impulses.\nThey maintain homeostasis, form myelin in the peripheral nervous system, and provide support and protection for neurons.",
-      "a": "Detailed solution available."
+      "q": "19. What are neuroglial cells?",
+      "a": "Neuroglial cells are cells that hold the neurons together. Neuroglia is non-neuronal cells in the central nervous system (brain and spinal cord) and the peripheral nervous system that do not produce electrical impulses.\nThey maintain homeostasis, form myelin in the peripheral nervous system, and provide support and protection for neurons."
     },
     {
-      "q": "20. How does saltatory conduction take place along a nerve fiber?\nAns\n. Saltatory conduction describes the way an electrical impulse skips from node to node down the full length of an axon, speeding the arrival of the impulse at the nerve terminal in comparison with the slower continuous progression of depolarization spreading down an unmyelinated axon. Along with a myelinated nerve fiber, the conduction of impulse is called saltatory conduction. This is so because the ionic changes and consequent depolarization are taking place only.",
-      "a": "Detailed solution available."
+      "q": "20. How does saltatory conduction take place along a nerve fiber?",
+      "a": "Saltatory conduction describes the way an electrical impulse skips from node to node down the full length of an axon, speeding the arrival of the impulse at the nerve terminal in comparison with the slower continuous progression of depolarization spreading down an unmyelinated axon. Along with a myelinated nerve fiber, the conduction of impulse is called saltatory conduction. This is so because the ionic changes and consequent depolarization are taking place only."
     },
     {
-      "q": "21. Write a short note on gaseous exchange in cockroaches.\nAns\n: Cockroaches are insects that have a system of the trachea. Tracheal respiration occurs in such animals. It is a complicated system of air tubes. They divide and form tracheoles.\nTracheoles are connected to the spiracles located in the segments of the thorax and abdomen. The body cells or fluid come in direct communication with air.",
-      "a": "Detailed solution available."
+      "q": "21. Write a short note on gaseous exchange in cockroaches.",
+      "a": "Cockroaches are insects that have a system of the trachea. Tracheal respiration occurs in such animals. It is a complicated system of air tubes. They divide and form tracheoles.\nTracheoles are connected to the spiracles located in the segments of the thorax and abdomen. The body cells or fluid come in direct communication with air."
     },
     {
       "q": "22. Draw a well-labeled diagram of a nerve cell.",
@@ -1653,8 +1653,8 @@ export default {
       "a": "The difference between tendon and ligament is given below:\nTendon\nLigament\nIt is formed of white fibrous connective tissue\nIt is formed of yellow fibrous tissues\nFibroblasts are arranged in rows between the bundles of white fibers\nFibroblasts are scattered in matrix\nIt is tough & non-flexible\nIt is elastic & flexible.\nIt joins muscles to bones\nIt joins bones together."
     },
     {
-      "q": "24. What is mucosa?\nAns\n: Mucosa is a moist tissue that lines certain parts of the inside of the body. The mucosa is the mucous secreting epithelial tissue along with the supporting connective tissue beneath it. It lines some hollow organs or cavities of the body e.g. alimentary canal, nose, trachea, and lungs, etc.\nShort Answer Question (3 Marks)\n1.\n(a) Give the common name of Periplaneta Americana.\n(b) How many spermathecae are found in cockroaches?\n(c)\u00a0 What is the position of ovaries in cockroaches?\n(d) How many segments are present in the abdomen of the cockroach?\n(e) Where do you find malpighian tubules?\n(f) What is the mosaic vision?",
-      "a": "(a) It is a large reddish-brown free-flying cockroach and the common name for Periplaneta\nAmericana is\nAmerican Cockroach.\n(b) There are four pairs of spermatheca is a cockroach.\n(c) The female cockroach consists of two large ovaries. The ovaries are present in the 12th and 13th segments in anatomy. The exact position of the ovaries is the 2nd and 6th abdominal terga.\n(d) The anatomy of cockroaches comprises three segments: head, thorax, and abdomen. The abdomen part has 10 segments.\n(e) Malpighian tubules are found in phylum Arthropoda and these are the excretory part of the insect and positioned in the abdominal cavity.\n(f) It is the type of vision found in insects that can see the small part of the object seen and not the entire object.\n2.\n(i) Give three differences between frogs & toads?\n(ii) What do you understand about the open type of circulatory system?\nAns:\n(i) The difference between frogs and toads are given below:\nFrogs\nToads\nThe Scientific name of the frog is Rana tigrina.\nThe scientific name of the toad is Bufo melanostictus\nFrogs are diurnal (active during the day)\nToads are nocturnal (awake and active during the night.)\nFrogs are non-venomous\nAll toads are poisonous.\n(ii) Insects, spiders, prawns, and most mollusks have an open type of circulatory system which defines these systems to transmit blood into a hemocoel with the blood diffusing back to the circulatory system between cells."
+      "q": "24. What is mucosa?",
+      "a": "Mucosa is a moist tissue that lines certain parts of the inside of the body. The mucosa is the mucous secreting epithelial tissue along with the supporting connective tissue beneath it. It lines some hollow organs or cavities of the body e.g. alimentary canal, nose, trachea, and lungs, etc.\nShort Answer Question (3 Marks)\n1.\n(a) Give the common name of Periplaneta Americana.\n(b) How many spermathecae are found in cockroaches?\n(c)\u00a0 What is the position of ovaries in cockroaches?\n(d) How many segments are present in the abdomen of the cockroach?\n(e) Where do you find malpighian tubules?\n(f) What is the mosaic vision?\nAns:\n(a) It is a large reddish-brown free-flying cockroach and the common name for Periplaneta\nAmericana is\nAmerican Cockroach.\n(b) There are four pairs of spermatheca is a cockroach.\n(c) The female cockroach consists of two large ovaries. The ovaries are present in the 12th and 13th segments in anatomy. The exact position of the ovaries is the 2nd and 6th abdominal terga.\n(d) The anatomy of cockroaches comprises three segments: head, thorax, and abdomen. The abdomen part has 10 segments.\n(e) Malpighian tubules are found in phylum Arthropoda and these are the excretory part of the insect and positioned in the abdominal cavity.\n(f) It is the type of vision found in insects that can see the small part of the object seen and not the entire object.\n2.\n(i) Give three differences between frogs & toads?\n(ii) What do you understand about the open type of circulatory system?\nAns:\n(i) The difference between frogs and toads are given below:\nFrogs\nToads\nThe Scientific name of the frog is Rana tigrina.\nThe scientific name of the toad is Bufo melanostictus\nFrogs are diurnal (active during the day)\nToads are nocturnal (awake and active during the night.)\nFrogs are non-venomous\nAll toads are poisonous.\n(ii) Insects, spiders, prawns, and most mollusks have an open type of circulatory system which defines these systems to transmit blood into a hemocoel with the blood diffusing back to the circulatory system between cells."
     },
     {
       "q": "3. What are the cellular components of blood?",
@@ -1685,8 +1685,8 @@ export default {
       "a": "(i) A voluntary muscle is a bundle of numerous striated muscle fibers.\n(ii) Each fiber is long, unbranched, and enclosed in a membrane called sarcolemma and its cytoplasm called sarcoplasm. Just beneath the sarcolemma in each fiber, many nuclei occur, thus these fibers are multinucleated.\n(iii) The sarcoplasm contains many myofibrils that are long, thin, and unbranched.\n(iv) Each myofibril consist of alternating thick 'A' and thin \u2018I' band.\n(v) The thick filaments lie parallel to each other while thin filaments extend between them.\n(vi) At the center of the I-band is a fine, dense dark band called Z-line. It forms a contractile unit called a sarcomere.\n(Image will be uploaded soon)"
     },
     {
-      "q": "7. How does blood gets coagulated on coming out from an injured vessel. How coagulation normally prevented uninjured vessels.\nAns.\nWhen a blood vessel is injured, the blood starts coming out of it. At that time, the thrombocytes clump together, break and release the coagulation-promoting substances called thromboplastin.\nThromboplastin helps in the formation of the enzyme thrombokinase. This enzyme thrombokinase hydrolyses prothrombin in the plasma into thrombin.\nThrombin catalyzes the hydrolysis of soluble fibrinogen in the plasma into insoluble fibrin. The fibrin precipitates as a network of fibers and traps many blood cells to form a red solid mass called a blood clot. The clot seals the wound in the blood vessel to stop bleeding.\nHowever, in uninjured tissues and blood vessels, thromboplastin does not get released. That is why coagulation is prevented in an uninjured vessel.",
-      "a": "Detailed solution available."
+      "q": "7. How does blood gets coagulated on coming out from an injured vessel. How coagulation normally prevented uninjured vessels.",
+      "a": "When a blood vessel is injured, the blood starts coming out of it. At that time, the thrombocytes clump together, break and release the coagulation-promoting substances called thromboplastin.\nThromboplastin helps in the formation of the enzyme thrombokinase. This enzyme thrombokinase hydrolyses prothrombin in the plasma into thrombin.\nThrombin catalyzes the hydrolysis of soluble fibrinogen in the plasma into insoluble fibrin. The fibrin precipitates as a network of fibers and traps many blood cells to form a red solid mass called a blood clot. The clot seals the wound in the blood vessel to stop bleeding.\nHowever, in uninjured tissues and blood vessels, thromboplastin does not get released. That is why coagulation is prevented in an uninjured vessel."
     },
     {
       "q": "8. Give an account of the alimentary canal of frogs.",
@@ -2065,16 +2065,16 @@ export default {
       "a": "The four levels of protein structures are explained below:\nPrimary Structure:\nA\u00a0protein occurs as a long chain of amino acids organized in a certain sequence. For example, the polypeptide is non-functional.\nSecondary Structure:\nThe first amino acid is known as N-terminal amino acid, while the last is known as C-terminal amino acid. Every fourth amino acid interacts with another by forming a hydrogen bond, and the polypeptide is folded in a helical shape, as in keratin. When two or more polypeptide chains are joined together by intermolecular hydrogen bonds, a pleated sheet structure is formed.\nTertiary Structure:\nThe polypeptide is stabilized by folding and coating, which results in the creation of ionic bonds, hydrophobic bonds, or disulfide bridges. It is referred to as a tertiary structure. It displays proteins in three dimensions. The biological activity of a protein is determined by its tertiary structure.\nQuaternary Structure:\nThese proteins are made up of several polypeptides or subunits, each with its primary, secondary, and tertiary structure. This is referred to as a quaternary structure. Each polypeptide chain serves as a protein component.\nImportant Questions for CBSE Class 11 Biology Chapter 9 - Benefits for the Students of Class 11 CBSE\nThe following are the benefits which are enjoyed by the\nCBSE Class 11\nstudents\u00a0 by using the study material provided here:\nThis important question and answer study material will be very much helpful for the students as they can now study these various important topics in the form of questions and answers from this study material.\nThe students will understand how to approach the questions and appropriately answer them.\nThe students will be benefitted as they will know which are the important topics, and they can start their preparation keeping those topics in mind.\nStudents will also get access to these important questions and answers free of cost and can retain this free PDF as long as they want to.\nImportant Questions for CBSE Class 11 Biology Chapter 9 - Extra Solved Questions and Answers"
     },
     {
-      "q": "1. Name one sugar and amino acid.\nAns.\nOne sugar and amino acid are as follows:\nSugar - Lactose\nAmino Acid - Leucine",
-      "a": "Detailed solution available."
+      "q": "1. Name one sugar and amino acid.",
+      "a": "One sugar and amino acid are as follows:\nSugar - Lactose\nAmino Acid - Leucine"
     },
     {
-      "q": "2. How many types of biomolecules are there?\nAns.\nThere are four major types of biomolecules and these are carbohydrates, proteins, nucleic acids and lipids.",
-      "a": "Detailed solution available."
+      "q": "2. How many types of biomolecules are there?",
+      "a": "There are four major types of biomolecules and these are carbohydrates, proteins, nucleic acids and lipids."
     },
     {
-      "q": "3. Which element is found largely in one organism?\nAns.\nWater is found largely in one organism.\nPreparation Tips for the CBSE Class 11 Students to Study Biology\nThe tips for the CBSE Class 11 students to study Biology are as follows:\nThe students are required to attain complete conceptual knowledge on the subject matter of Biology.\nThe students should know which are the more important topics and which are less important; they must prioritise their study accordingly.\nStudents should practise diagrams and write theoretical answers.\nThey must practice with the sample and mock test papers.\nConclusion\nChapter 9, \"Biomolecules,\" delves into the essential chemical compounds that sustain life, including carbohydrates, proteins, lipids, nucleic acids, and enzymes. It explains their structures, functions, and roles in vital biological processes like metabolism and energy production.\nUnderstanding biomolecules provides a strong foundation for exploring molecular biology and biochemistry. To excel in this topic, students should refer to the CBSE Class 11 Biology syllabus and practice Class 11 Biology important questions, which reinforce key concepts and aid exam preparation. This chapter is crucial for understanding life\u2019s molecular intricacies and forms the basis for advanced biological studies.\nImportant Study Materials for Class 11 Biology Chapter 9\nS.No\nImportant Study Materials Links for Class 11 Biology Chapter 9",
-      "a": "Detailed solution available."
+      "q": "3. Which element is found largely in one organism?",
+      "a": "Water is found largely in one organism.\nPreparation Tips for the CBSE Class 11 Students to Study Biology\nThe tips for the CBSE Class 11 students to study Biology are as follows:\nThe students are required to attain complete conceptual knowledge on the subject matter of Biology.\nThe students should know which are the more important topics and which are less important; they must prioritise their study accordingly.\nStudents should practise diagrams and write theoretical answers.\nThey must practice with the sample and mock test papers.\nConclusion\nChapter 9, \"Biomolecules,\" delves into the essential chemical compounds that sustain life, including carbohydrates, proteins, lipids, nucleic acids, and enzymes. It explains their structures, functions, and roles in vital biological processes like metabolism and energy production.\nUnderstanding biomolecules provides a strong foundation for exploring molecular biology and biochemistry. To excel in this topic, students should refer to the CBSE Class 11 Biology syllabus and practice Class 11 Biology important questions, which reinforce key concepts and aid exam preparation. This chapter is crucial for understanding life\u2019s molecular intricacies and forms the basis for advanced biological studies.\nImportant Study Materials for Class 11 Biology Chapter 9\nS.No\nImportant Study Materials Links for Class 11 Biology Chapter 9"
     },
     {
       "q": "1.\nCBSE Class 11 Biomolecules Notes",
@@ -2147,8 +2147,8 @@ export default {
       "a": "Duration depends on the type of cell and other external factors such as temperature, food, and oxygen. The time period for G, S, G, and M-phase in different species under specific environmental conditions is like 20 min for bacterial cells, 10 hours for intestinal epithelial cells, 20 hours for onion root tip cells, etc. This shows that the time required for each step has been pre-set within cells of each organism."
     },
     {
-      "q": "4. Why is meiosis called reductional division and mitosis called equational division?\nAns\n: In meiosis, the number of chromosomes gets reduced to half hence, it is known as reductional division. Gametes are formed in sexually reproducing organisms in the germ cell. In mitosis, the number of chromosomes remains constant after division therefore, it is called equational division.",
-      "a": "Detailed solution available."
+      "q": "4. Why is meiosis called reductional division and mitosis called equational division?",
+      "a": "In meiosis, the number of chromosomes gets reduced to half hence, it is known as reductional division. Gametes are formed in sexually reproducing organisms in the germ cell. In mitosis, the number of chromosomes remains constant after division therefore, it is called equational division."
     },
     {
       "q": "5. Write three processes that take place in interphase?",
@@ -2233,8 +2233,8 @@ export default {
       "a": "In a reaction center of the photosystem, chlorophyll\u2013b and other pigments absorb sun energy and transfer it to chlorophyll\u2013a. In the end, it is chlorophyll-a that initiates the photosynthetic process."
     },
     {
-      "q": "8. What is the end product of the light reaction?\nAnswer:\nATP, NADPH2, and O\n2\n.",
-      "a": "Detailed solution available."
+      "q": "8. What is the end product of the light reaction?",
+      "a": "wer:\nATP, NADPH2, and O\n2\n."
     },
     {
       "q": "9. Give examples of photosynthetic microorganisms which also fix atmospheric nitrogen?",
@@ -2305,12 +2305,12 @@ export default {
       "a": "According to this law, \u201cif a chemical process is influenced by more than one component that is closest to its minimal value; then the rate will be defined by the factor that is closest to its minimal value; it is the factor that directly influences the process if its quantity is changed.\u201d"
     },
     {
-      "q": "7. Compare chlorophyll \u2018a\u2019 and chlorophyll \u2018b\u2019?\nAns\n: Chlorophyll a has a methyl group at the third carbon position of the porphyrin head's II pyrrole ring. Whereas chlorophyll b has an aldehyde group at the third carbon position of the II pyrrole ring or porphyrin head.\nChlorophyll a has the greatest absorption at 429 nm (blue) and 660 nm (red) whereas chlorophyll b has the greatest absorption at 453 nm (blue) and 642 nm (red) wavelengths.\nChlorophyll a is very soluble in petroleum and ether whereas chlorophyll b is soluble in methyl alcohol.\nChlorophyll a is blue-green in color whereas chlorophyll b is yellow-green in color.",
-      "a": "Detailed solution available."
+      "q": "7. Compare chlorophyll \u2018a\u2019 and chlorophyll \u2018b\u2019?",
+      "a": "Chlorophyll a has a methyl group at the third carbon position of the porphyrin head's II pyrrole ring. Whereas chlorophyll b has an aldehyde group at the third carbon position of the II pyrrole ring or porphyrin head.\nChlorophyll a has the greatest absorption at 429 nm (blue) and 660 nm (red) whereas chlorophyll b has the greatest absorption at 453 nm (blue) and 642 nm (red) wavelengths.\nChlorophyll a is very soluble in petroleum and ether whereas chlorophyll b is soluble in methyl alcohol.\nChlorophyll a is blue-green in color whereas chlorophyll b is yellow-green in color."
     },
     {
-      "q": "8. What is kranz anatomy?\nAnswer:\nKranz anatomy is defined as the anatomy in which the vein of the leaf is wrapped by a bundle sheath holding a number of chloroplasts and having bull shape cells in the upper epidermis.",
-      "a": "Detailed solution available."
+      "q": "8. What is kranz anatomy?",
+      "a": "wer:\nKranz anatomy is defined as the anatomy in which the vein of the leaf is wrapped by a bundle sheath holding a number of chloroplasts and having bull shape cells in the upper epidermis."
     },
     {
       "q": "9. Give advantages of C\n4\ncycle over C\n3\nCycle.",
@@ -2507,8 +2507,8 @@ export default {
       "a": "The process of release of energy through intake of molecular oxygen and release of CO\n2\nis known as aerobic respiration."
     },
     {
-      "q": "9. What is the compensation point?\nAns.\nAt low concentrations of CO\n2\nand non-limiting light intensity, the photosynthetic rate of a given plant will be equal to the total amount of respiration. The atmospheric concentration of CO\n2\nat which photosynthesis just compensates for respiration is referred to as the CO\n2\ncompensation point.",
-      "a": "Detailed solution available."
+      "q": "9. What is the compensation point?",
+      "a": "At low concentrations of CO\n2\nand non-limiting light intensity, the photosynthetic rate of a given plant will be equal to the total amount of respiration. The atmospheric concentration of CO\n2\nat which photosynthesis just compensates for respiration is referred to as the CO\n2\ncompensation point."
     },
     {
       "q": "10. Mention two steps of glycolysis in which ATP is utilized.",
@@ -2561,40 +2561,40 @@ export default {
   ],
   "13": [
     {
-      "q": "1. Define growth, differentiation, development, dedifferentiation, redifferentiation, determinate growth, meristem, and growth rate.\nAns.\nGrowth is a permanent and irreversible rise in the size of an organ, its parts, or even a single cell.\nDifferentiation is the process by which cells from the root apical and shoot apical meristems, as well as the cambium, develop and execute specialized tasks.\nThe term \"development\" refers to all the changes that an organism goes through during its life cycle, from seed germination to senescence.\nUnder some conditions, permanent plant cells regain the ability to divide, a process known as dedifferentiation.\nRedifferentiation refers to the process through which dedifferentiated cells mature and lose their ability to divide.\nDeterminate growth refers to growth that comes to a halt after a given stage\nIn plants, meristems are specialized areas where active cell division occurs.\nGrowth rate refers to the amount of growth per unit of time.\n2 Why is not any one parameter good enough to demonstrate growth throughout the life of a flowering plant?",
-      "a": "At the cellular level, growth is mostly due to a rise in the amount of protoplasm. The weight of the fresh tissue sample, the weight of the dry tissue sample, the variations in length, area, volume, and cell number determined over the growth phase are all used to measure protoplasm growth. As a result, no one metric can adequately represent growth across the life of a blooming plant."
+      "q": "1. Define growth, differentiation, development, dedifferentiation, redifferentiation, determinate growth, meristem, and growth rate.",
+      "a": "Growth is a permanent and irreversible rise in the size of an organ, its parts, or even a single cell.\nDifferentiation is the process by which cells from the root apical and shoot apical meristems, as well as the cambium, develop and execute specialized tasks.\nThe term \"development\" refers to all the changes that an organism goes through during its life cycle, from seed germination to senescence.\nUnder some conditions, permanent plant cells regain the ability to divide, a process known as dedifferentiation.\nRedifferentiation refers to the process through which dedifferentiated cells mature and lose their ability to divide.\nDeterminate growth refers to growth that comes to a halt after a given stage\nIn plants, meristems are specialized areas where active cell division occurs.\nGrowth rate refers to the amount of growth per unit of time.\n2 Why is not any one parameter good enough to demonstrate growth throughout the life of a flowering plant?\nAns:\nAt the cellular level, growth is mostly due to a rise in the amount of protoplasm. The weight of the fresh tissue sample, the weight of the dry tissue sample, the variations in length, area, volume, and cell number determined over the growth phase are all used to measure protoplasm growth. As a result, no one metric can adequately represent growth across the life of a blooming plant."
     },
     {
-      "q": "3. Describe briefly:\nArithmetic growth\nGeometric growth\nSigmoid growth curve\nAbsolute and relative growth rates\nAns.\nIn arithmetic growth, only one daughter cell divides after mitotic cell division, while the other differentiates and develops. Arithmetic growth is defined as the elongation of roots at a constant pace. A linear curve is generated by charting the organ's length versus time. It can be stated mathematically as:\n$\\mathrm{L}_{\\mathrm{t}}=\\mathrm{L}_{0}+\\mathrm{r}$\nAs a result, $L_{\\text {t }}$ denotes length at time ' $\\mathrm{t}$, ' $\\mathrm{L}_{0}$ denotes length at time 0 , and $\\mathrm{r}$ denotes the rate per unit of time.\nIn most systems, the first growth is modest and is referred to as the lag phase, after which it accelerates at an exponential rate and is referred to as the log or exponential phase. Following mitotic cell division, both child cells retain the ability to divide and continue to do so. However, when nutrition availability is limited, growth slows and eventually stops, resulting in a stationary phase. A sigmoid curve emerges from the graph of geometric growth.\nIn a natural setting, a sigmoid curve is a feature of living organisms. The lag phase, the log phase or exponential phase of rapid expansion, and the stationary phase are the three phases of this curve.\nGraph of Exponential Growth\nThe following is an example of exponential growth:\n$\\mathrm{W}_{1}=\\mathrm{W}_{0} \\mathrm{e}^{\\pi}$\n$\\mathrm{W}_{1}=$ final dimensions (weight, height, number etc.)\n$\\mathrm{W}_{0}=$ the starting size at the start of the period\n$\\mathrm{r}=$ the rate of growth\n$\\mathrm{t}=$ growth period\ne $=$ natural logarithms' base\nThe absolute growth rate is the measurement and comparison of total growth per unit time.\nThe relative growth rate is the growth of a system per unit time represented on a common foundation, such as per unit beginning parameter.",
-      "a": "Detailed solution available."
+      "q": "3. Describe briefly:\nArithmetic growth\nGeometric growth\nSigmoid growth curve\nAbsolute and relative growth rates",
+      "a": "In arithmetic growth, only one daughter cell divides after mitotic cell division, while the other differentiates and develops. Arithmetic growth is defined as the elongation of roots at a constant pace. A linear curve is generated by charting the organ's length versus time. It can be stated mathematically as:\n$\\mathrm{L}_{\\mathrm{t}}=\\mathrm{L}_{0}+\\mathrm{r}$\nAs a result, $L_{\\text {t }}$ denotes length at time ' $\\mathrm{t}$, ' $\\mathrm{L}_{0}$ denotes length at time 0 , and $\\mathrm{r}$ denotes the rate per unit of time.\nIn most systems, the first growth is modest and is referred to as the lag phase, after which it accelerates at an exponential rate and is referred to as the log or exponential phase. Following mitotic cell division, both child cells retain the ability to divide and continue to do so. However, when nutrition availability is limited, growth slows and eventually stops, resulting in a stationary phase. A sigmoid curve emerges from the graph of geometric growth.\nIn a natural setting, a sigmoid curve is a feature of living organisms. The lag phase, the log phase or exponential phase of rapid expansion, and the stationary phase are the three phases of this curve.\nGraph of Exponential Growth\nThe following is an example of exponential growth:\n$\\mathrm{W}_{1}=\\mathrm{W}_{0} \\mathrm{e}^{\\pi}$\n$\\mathrm{W}_{1}=$ final dimensions (weight, height, number etc.)\n$\\mathrm{W}_{0}=$ the starting size at the start of the period\n$\\mathrm{r}=$ the rate of growth\n$\\mathrm{t}=$ growth period\ne $=$ natural logarithms' base\nThe absolute growth rate is the measurement and comparison of total growth per unit time.\nThe relative growth rate is the growth of a system per unit time represented on a common foundation, such as per unit beginning parameter."
     },
     {
-      "q": "4. List five main groups of natural plant growth regulators. Write a note on the discovery, physiological functions, and agricultural/horticultural applications of any one of them.\nAns.\nNatural plant growth regulators are divided into five categories:\n(i) Auxins\n(ii) Gibberellic acid\n(iii) Cytokinins\n(iv) Ethylene\n(v) Abscisic acid\nAuxins have been discovered, have physiological activities, and are used in agriculture and horticulture.\nDiscovery: Charles Darwin and Francis Darwin made the first observations about auxin effects when they noticed that the coleoptiles of canary grass responded to unilateral illumination by growing towards the light source (phototropism). Following a series of trials, it was determined that the coleoptile's tip was the source of the transmittable effect that caused the entire coleoptile to bend. F.W. Went isolated auxin from the tips of coleoptiles of oat seedlings.\nPhysiological Functions:\nThey regulate the proliferation of plant cells.\nThey are responsible for the apical dominance phenomena.\nThey regulate vascular cambium division and xylem differentiation.\nThey cause parthenocarpy and prevent leaf and fruit abscission.\nHorticulture Application:\nThey aid in the establishment of roots in stem cuttings, a popular method of plant multiplication.\nWeedicide 2-4 D is used to kill broadleaf, dicotyledonous weeds.\nThey cause tomatoes to go into parthenogenesis.\nIt promotes flowering in plants, such as pineapples.",
-      "a": "Detailed solution available."
+      "q": "4. List five main groups of natural plant growth regulators. Write a note on the discovery, physiological functions, and agricultural/horticultural applications of any one of them.",
+      "a": "Natural plant growth regulators are divided into five categories:\n(i) Auxins\n(ii) Gibberellic acid\n(iii) Cytokinins\n(iv) Ethylene\n(v) Abscisic acid\nAuxins have been discovered, have physiological activities, and are used in agriculture and horticulture.\nDiscovery: Charles Darwin and Francis Darwin made the first observations about auxin effects when they noticed that the coleoptiles of canary grass responded to unilateral illumination by growing towards the light source (phototropism). Following a series of trials, it was determined that the coleoptile's tip was the source of the transmittable effect that caused the entire coleoptile to bend. F.W. Went isolated auxin from the tips of coleoptiles of oat seedlings.\nPhysiological Functions:\nThey regulate the proliferation of plant cells.\nThey are responsible for the apical dominance phenomena.\nThey regulate vascular cambium division and xylem differentiation.\nThey cause parthenocarpy and prevent leaf and fruit abscission.\nHorticulture Application:\nThey aid in the establishment of roots in stem cuttings, a popular method of plant multiplication.\nWeedicide 2-4 D is used to kill broadleaf, dicotyledonous weeds.\nThey cause tomatoes to go into parthenogenesis.\nIt promotes flowering in plants, such as pineapples."
     },
     {
-      "q": "5. What do you understand about photoperiodism and vernalization? Describe their significance.\nAns.\nPhotoperiodism refers to a plant's response to day/night cycles. The hormonal substance responsible for flowering is thought to be produced in the leaves before traveling to the shoot apices and transforming them into flowering apices. Photoperiodism aids in the study of flowering in diverse crop plants in relation to the time of light exposure.\nThere are certain plants whose flowering is quantitatively or qualitatively influenced by low temperatures. Vernalization is the word for this phenomenon. It specifically refers to a time of low temperature that promotes blossoming. It delays precocious reproductive development in the late stages of the growing season, giving the plant enough time to mature.",
-      "a": "Detailed solution available."
+      "q": "5. What do you understand about photoperiodism and vernalization? Describe their significance.",
+      "a": "Photoperiodism refers to a plant's response to day/night cycles. The hormonal substance responsible for flowering is thought to be produced in the leaves before traveling to the shoot apices and transforming them into flowering apices. Photoperiodism aids in the study of flowering in diverse crop plants in relation to the time of light exposure.\nThere are certain plants whose flowering is quantitatively or qualitatively influenced by low temperatures. Vernalization is the word for this phenomenon. It specifically refers to a time of low temperature that promotes blossoming. It delays precocious reproductive development in the late stages of the growing season, giving the plant enough time to mature."
     },
     {
-      "q": "6. Why is Abscisic acid also known as a stress hormone?\nAns.\nAbscisic acid promotes plant tolerance to diverse stressors by stimulating the closing of stomata in the epidermis. As a result, it's also known as the stress hormone. It encourages seed dormancy and assures seed germination when conditions are favorable. It aids desiccation resistance in seeds. It also aids in the induction of dormancy in plants at the conclusion of the growing season and promotes leaf, fruit, and flower abscission.",
-      "a": "Detailed solution available."
+      "q": "6. Why is Abscisic acid also known as a stress hormone?",
+      "a": "Abscisic acid promotes plant tolerance to diverse stressors by stimulating the closing of stomata in the epidermis. As a result, it's also known as the stress hormone. It encourages seed dormancy and assures seed germination when conditions are favorable. It aids desiccation resistance in seeds. It also aids in the induction of dormancy in plants at the conclusion of the growing season and promotes leaf, fruit, and flower abscission."
     },
     {
-      "q": "7. Both growth and differentiation in higher plants are open. Comment\nAns.\nThe higher plants can develop indefinitely throughout their lives. The presence of meristems at specific sites throughout the plant's body gives it this power. These meristems' cells can divide and self-perpetuate. As a result, increased plant growth is possible. In addition, after a few rounds of cell division, some of these cells inevitably undergo differentiation. As a result, the distinction is also open.\n8. \u2018Both a short day plant and a long day plant can flower simultaneously in a given place\u2019. Explain\nAns.\nSome plants' flowering is influenced by the lengths of light and dark phases. If both the short-day and long-day plants are given an adequate photoperiod, they can flower at the same time.",
-      "a": "Detailed solution available."
+      "q": "7. Both growth and differentiation in higher plants are open. Comment",
+      "a": "The higher plants can develop indefinitely throughout their lives. The presence of meristems at specific sites throughout the plant's body gives it this power. These meristems' cells can divide and self-perpetuate. As a result, increased plant growth is possible. In addition, after a few rounds of cell division, some of these cells inevitably undergo differentiation. As a result, the distinction is also open.\n8. \u2018Both a short day plant and a long day plant can flower simultaneously in a given place\u2019. Explain\nAns.\nSome plants' flowering is influenced by the lengths of light and dark phases. If both the short-day and long-day plants are given an adequate photoperiod, they can flower at the same time."
     },
     {
-      "q": "9. Which one of the plant growth regulators would you use if you are asked to:\nInduce rooting in a twig\nQuickly ripen a fruit\nDelay leaf senescence\nInduce growth in axillary buds\n\u2018Bolt\u2019 a rosette plant 4\nInduce immediate stomatal closure in leaves.\nAns\n.\nAuxins\nEthylene\nCytokinins\nCytokinins\nGibberellins\nAbscisic acid",
-      "a": "Detailed solution available."
+      "q": "9. Which one of the plant growth regulators would you use if you are asked to:\nInduce rooting in a twig\nQuickly ripen a fruit\nDelay leaf senescence\nInduce growth in axillary buds\n\u2018Bolt\u2019 a rosette plant 4\nInduce immediate stomatal closure in leaves.",
+      "a": "Auxins\nEthylene\nCytokinins\nCytokinins\nGibberellins\nAbscisic acid"
     },
     {
-      "q": "10. Would a defoliated plant respond to a photoperiodic cycle? Why?\nAns.\nNo, because the leaves are the locations of sensing of light/dark duration, a defoliated plant will not respond to the photoperiodic cycle. As a result, the plant would not respond to light if it lacked leaves.",
-      "a": "Detailed solution available."
+      "q": "10. Would a defoliated plant respond to a photoperiodic cycle? Why?",
+      "a": "No, because the leaves are the locations of sensing of light/dark duration, a defoliated plant will not respond to the photoperiodic cycle. As a result, the plant would not respond to light if it lacked leaves."
     },
     {
-      "q": "11. What would be expected to happen if:\n$GA_{3}$ is applied to rice seedlings\nDividing cells stop differentiating\nA rotten fruit gets mixed with unripe fruits\nYou forget to add cytokinin to the culture medium.\nAns.\nWhen $GA_{3}$ is administered to rice seedlings, the internode lengthens, and the height of the rice seedlings increases.\nPlant organs such as leaves, and stems will not form if dividing cells stop differentiating.\nIf decaying fruits are mixed with unripe fruits, the ethylene released by the rotten fruits will speed the unripe fruits' ripening.\nCell division, growth, and differentiation will be slowed if cytokinin is not added to the culture media.\nBenefits of Solving CBSE Class 11 Biology Chapter 13 Plant Growth and Development Important Questions\nSolving Class 11 Biology Chapter 13 questions can be useful for students. Find some of the benefits of practising these questions below.\nStudents will get an idea of different questions that can be asked during the exam and their difficulty levels.\nThese will help develop time management skills as students learn how much time it takes to solve a question.\nThey cover all the important concepts of the chapter in a short time.\nThe questions will be of great help during revision.\nStudents will easily understand the difficulty level of the questions during the exam.\nExtra Questions for Practice\nVery Short Answer Type Questions\nWhy is plant growth unique?\nDefine growth.\nWhat are the different parameters used to measure growth?\nDefine growth rate.\nName the three phases of Growth.\nShort Answer Type Questions\nWhere did the term \u201cAuxin\u201d apply?\nExplain Gibberellins.\nExplain the term\u00a0 \u201cLong Day Plants, Short Day Plants, and Day-Neutral Plants.\nWhat is vernalisation?\nExplain the term \u201cPlasticity\u201d.\nLong Answer Type Questions\nWhat are the different characteristics of plants' growth regulators?\nWhat are the necessary conditions for the growth of the plant?\nExplain the different phases of growth in detail.\nConclusion\nWe hope students have found this information on\nCBSE Important Questions for Class 11 Biology Chapter 13\nuseful for their studies. Along with important questions, students can also access CBSE Class 11 Biology revision notes,\nNCERT Solutions\n, useful tips, and more on the official website of Vedantu.\nKeep learning and stay tuned with us for further updates on CBSE and other competitive exams.",
-      "a": "Detailed solution available."
+      "q": "11. What would be expected to happen if:\n$GA_{3}$ is applied to rice seedlings\nDividing cells stop differentiating\nA rotten fruit gets mixed with unripe fruits\nYou forget to add cytokinin to the culture medium.",
+      "a": "When $GA_{3}$ is administered to rice seedlings, the internode lengthens, and the height of the rice seedlings increases.\nPlant organs such as leaves, and stems will not form if dividing cells stop differentiating.\nIf decaying fruits are mixed with unripe fruits, the ethylene released by the rotten fruits will speed the unripe fruits' ripening.\nCell division, growth, and differentiation will be slowed if cytokinin is not added to the culture media.\nBenefits of Solving CBSE Class 11 Biology Chapter 13 Plant Growth and Development Important Questions\nSolving Class 11 Biology Chapter 13 questions can be useful for students. Find some of the benefits of practising these questions below.\nStudents will get an idea of different questions that can be asked during the exam and their difficulty levels.\nThese will help develop time management skills as students learn how much time it takes to solve a question.\nThey cover all the important concepts of the chapter in a short time.\nThe questions will be of great help during revision.\nStudents will easily understand the difficulty level of the questions during the exam.\nExtra Questions for Practice\nVery Short Answer Type Questions\nWhy is plant growth unique?\nDefine growth.\nWhat are the different parameters used to measure growth?\nDefine growth rate.\nName the three phases of Growth.\nShort Answer Type Questions\nWhere did the term \u201cAuxin\u201d apply?\nExplain Gibberellins.\nExplain the term\u00a0 \u201cLong Day Plants, Short Day Plants, and Day-Neutral Plants.\nWhat is vernalisation?\nExplain the term \u201cPlasticity\u201d.\nLong Answer Type Questions\nWhat are the different characteristics of plants' growth regulators?\nWhat are the necessary conditions for the growth of the plant?\nExplain the different phases of growth in detail.\nConclusion\nWe hope students have found this information on\nCBSE Important Questions for Class 11 Biology Chapter 13\nuseful for their studies. Along with important questions, students can also access CBSE Class 11 Biology revision notes,\nNCERT Solutions\n, useful tips, and more on the official website of Vedantu.\nKeep learning and stay tuned with us for further updates on CBSE and other competitive exams."
     }
   ],
   "14": [
@@ -2849,8 +2849,8 @@ export default {
       "a": "The stages involved in converting deoxygenated blood to oxygenated blood in the lungs and pumping it to the body through the aorta are referred to as the cardiac cycle.\nDuring the conclusion of one heartbeat, a regular sequence of three events occurs: (i) auricular systole, (ii) ventricular systole, and (iii) combined diastole."
     },
     {
-      "q": "23. Name the protein found in RBCs.\nAns\n: Haemoglobin is found in RCB\u2019s.",
-      "a": "Detailed solution available."
+      "q": "23. Name the protein found in RBCs.",
+      "a": "Haemoglobin is found in RCB\u2019s."
     },
     {
       "q": "24. What happens to a person suffering from hemophilia?",
@@ -3225,8 +3225,8 @@ export default {
       "a": "Synovial Joints: - In the synovial joints, a space called the synovial cavity is present between articulating bones. This cavity is filled with lubricating synovial fluid, which reduces the friction on the articulating surface of bones and helps to provide extra cushioning against impact. Hence, the synovial joints are freely movable.\nSynovial joints are of the following types:\n(i) Ball and Socket Joint:\n- Ball and socket joint is present in between the head of the femur and acetabulum.\n(ii) Hinge Joint:\nHinge joint is present in between phalanges.\n(iii) Pivot Joint:\nPivot joint is present in between the Atlas and Axis.\n(iv) Saddle Joint:\nThe saddle joint is located between the carpal and metacarpal of the thumb.\n3 Mark Questions:"
     },
     {
-      "q": "1. Explain the initiation of muscle contraction. What is the role of the sarcoplasmic reticulum, myosin head and F-actin during contraction in striated muscles?\nAns\n: Initiation of muscle contraction: - Muscle contraction is initiated by a signal that is sent by a CNS (Central nervous system) through a motor neuron. A neuromuscular junction or motor-end plate is a junction between a motor neuron and the sarcolemma of the muscle fibre. When a signal reaches the neuromuscular junctions, Acetylcholine (a neurotransmitter) is released which results in the generation of an action potential in the sarcolemma. This spreads through the muscle fibres, resulting in the release of calcium ions from the sarcoplasmic reticulum into the sarcoplasm. Calcium ions bind with the subunit of troponin on actin filaments and thus remove the masking of active sites for myosin. Hence, active sites on actin are exposed and this allows myosin heads to attach to this site.\nInitiation of Muscle Contraction\nSarcoplasmic Reticulum:\nIt releases calcium ions into the sarcoplasm that bind with a subunit of troponin on actin and brings about conformational changes. So, they remove the masking of the active binding sites for myosin on the actin filaments.\nMyosin Head:\nIt is an active ATPase enzyme. It provides specific binding sites for ATP and active sites for F-actin to form cross-bridges.\nF-Actin:\nThe active binding sites on F-actin are specific to the myosin head and are required for cross-bridge formation.",
-      "a": "Detailed solution available."
+      "q": "1. Explain the initiation of muscle contraction. What is the role of the sarcoplasmic reticulum, myosin head and F-actin during contraction in striated muscles?",
+      "a": "Initiation of muscle contraction: - Muscle contraction is initiated by a signal that is sent by a CNS (Central nervous system) through a motor neuron. A neuromuscular junction or motor-end plate is a junction between a motor neuron and the sarcolemma of the muscle fibre. When a signal reaches the neuromuscular junctions, Acetylcholine (a neurotransmitter) is released which results in the generation of an action potential in the sarcolemma. This spreads through the muscle fibres, resulting in the release of calcium ions from the sarcoplasmic reticulum into the sarcoplasm. Calcium ions bind with the subunit of troponin on actin filaments and thus remove the masking of active sites for myosin. Hence, active sites on actin are exposed and this allows myosin heads to attach to this site.\nInitiation of Muscle Contraction\nSarcoplasmic Reticulum:\nIt releases calcium ions into the sarcoplasm that bind with a subunit of troponin on actin and brings about conformational changes. So, they remove the masking of the active binding sites for myosin on the actin filaments.\nMyosin Head:\nIt is an active ATPase enzyme. It provides specific binding sites for ATP and active sites for F-actin to form cross-bridges.\nF-Actin:\nThe active binding sites on F-actin are specific to the myosin head and are required for cross-bridge formation."
     },
     {
       "q": "2. What are the three types of muscle tissue? Write two characteristic points about the structure of each of them?",
@@ -3257,8 +3257,8 @@ export default {
       "a": "A joint is the part of the body at which two or more bones articulate to allow movement. The surfaces of the two bones are opposite to each other at the joints. These joints assist in the movement of bones in a number of different ways. Three types of joints are found in the body of vertebrates. These are:\nA. Perfect Joints: The perfect joints have synovial joints and can perform movements in more than one plane. They are of the following 6 types:\n(i) Ball and Socket Joints:\nAs the name implies, one bone forms a cup-like depression of socket in which a ball-like structure fits. The head or ball of the joint can freely move in any direction. Example: Shoulder and hip joints.\n(ii) Hinge Joint:\nIn this type of joint, movement can only be performed in one direction. Example: Elbow joint, knee joint, joints of phalanges of fingers and toes.\n(iii) Gliding Joints:\nIt enables bones to glide past one another in any direction along the plane of a joint, i.e., from left and right, up and down, and diagonally. Such joints are found in the vertebral column and the bones of the wrist and ankles.\n(iv) Pivot Joint:\nOne bone of this joint is always fixed, while the other can freely move over the former. Example: Neck Joint.\n(v) Saddle Joints\n: It is a biaxial joint that allows movement on two planes i.e., flexion/extension and abduction/adduction. Example: Thumb.\n(v) Condyloid Joints:\nThese are joints with two-axis that allow side to side and up to down motions. Example: Base of the index finger and carpals of the wrist.\nB. Imperfect Joint:\nImperfect joints are the joints that do not possess synovial capsules or connecting ligaments. Example:\u00a0 The joints between the ilium of the pelvic girdle and the transverse process by sacral vertebra.\nC. Immovable Joints:\nJoints that are permanently fixed and cannot perform any movement are termed immovable joints. These also do not possess synovial capsules of ligaments and do not allow any kind of movement. Example: Bones of the skull and pelvic girdle."
     },
     {
-      "q": "3. Explain the sliding filament theory of muscle contraction.\nAns\n. The sliding filament theory describes the process of muscle contraction in which the thick filaments (myosin) of muscle fibres slide past the thin filaments (actin), resulting in the shortening of the myofibril. Each muscle fibre consists of alternate light and dark bands. They contain a unique contractile protein called actin and myosin respectively. Myosin is a thick contractile protein found in the dark band and is known as the A-band or Anisotropic band. Actin is a thin contractile protein found in the light band and is known as the I-band or Isotropic band.\u00a0 Each I-band is bisected by an elastic fibre known as the Z line. The thin filament (actin) is firmly attached to the Z line. The H-zone is the central portion of the thick filament (myosin) that is not overlapped by the thin filament. Sarcomere, the functional unit of contraction, is the portion of the myofibril between two successive Z lines.\nDuring muscle contraction, the myosin heads come into close contact with the thin filaments. As a result, the thin filaments are pulled towards the centre of the sarcomere as well as the Z line attached to the actin filaments is also pulled, causing shortening of the sarcomere. The A-band, or anisotropic band, stays the same length as before, whereas the I-band, or isotropic band, shortens and the H-zone vanishes.\nSliding Filament Theory\nRelated Study Materials for Class 11 Biology Chapter 17\nS.No\nImportant Other Links for Class 11 Biology Chapter 17",
-      "a": "Detailed solution available."
+      "q": "3. Explain the sliding filament theory of muscle contraction.",
+      "a": "The sliding filament theory describes the process of muscle contraction in which the thick filaments (myosin) of muscle fibres slide past the thin filaments (actin), resulting in the shortening of the myofibril. Each muscle fibre consists of alternate light and dark bands. They contain a unique contractile protein called actin and myosin respectively. Myosin is a thick contractile protein found in the dark band and is known as the A-band or Anisotropic band. Actin is a thin contractile protein found in the light band and is known as the I-band or Isotropic band.\u00a0 Each I-band is bisected by an elastic fibre known as the Z line. The thin filament (actin) is firmly attached to the Z line. The H-zone is the central portion of the thick filament (myosin) that is not overlapped by the thin filament. Sarcomere, the functional unit of contraction, is the portion of the myofibril between two successive Z lines.\nDuring muscle contraction, the myosin heads come into close contact with the thin filaments. As a result, the thin filaments are pulled towards the centre of the sarcomere as well as the Z line attached to the actin filaments is also pulled, causing shortening of the sarcomere. The A-band, or anisotropic band, stays the same length as before, whereas the I-band, or isotropic band, shortens and the H-zone vanishes.\nSliding Filament Theory\nRelated Study Materials for Class 11 Biology Chapter 17\nS.No\nImportant Other Links for Class 11 Biology Chapter 17"
     },
     {
       "q": "1.\nCBSE Class 11 Locomotion and Movement Notes",
@@ -3271,152 +3271,152 @@ export default {
   ],
   "18": [
     {
-      "q": "1. How does an impulse travel across a synapse?\nAns.\nThe impulse travels across a synapse from axons to the cell body and dendrites to the next neuron.",
-      "a": "Detailed solution available."
+      "q": "1. How does an impulse travel across a synapse?",
+      "a": "The impulse travels across a synapse from axons to the cell body and dendrites to the next neuron."
     },
     {
-      "q": "2. How many pairs of cranial nerves are present in a man?\nAns.\n12 pairs of cranial nerves are present in man.",
-      "a": "Detailed solution available."
+      "q": "2. How many pairs of cranial nerves are present in a man?",
+      "a": "12 pairs of cranial nerves are present in man."
     },
     {
-      "q": "3. What is saltatory conduction?\nAns.\nSaltatory conduction refers to a type of conduction of nerve impulse by myelinated nerve fiber, wherein action potential jumps from one node of Ranvier to the other one.",
-      "a": "Detailed solution available."
+      "q": "3. What is saltatory conduction?",
+      "a": "Saltatory conduction refers to a type of conduction of nerve impulse by myelinated nerve fiber, wherein action potential jumps from one node of Ranvier to the other one."
     },
     {
-      "q": "4. Name the band of nerve fibers that joins the two cerebral hemispheres in mammals.\nAns.\nCorpus callosum is the band of nerve fibers that joins the two cerebral hemispheres in mammals\n.",
-      "a": "Detailed solution available."
+      "q": "4. Name the band of nerve fibers that joins the two cerebral hemispheres in mammals.",
+      "a": "Corpus callosum is the band of nerve fibers that joins the two cerebral hemispheres in mammals\n."
     },
     {
-      "q": "5. What is the threshold stimulus for nerve cells?\nAns.\nThe minimum strength of a stimulus required to start the depolarization of neurons is called threshold stimulus.",
-      "a": "Detailed solution available."
+      "q": "5. What is the threshold stimulus for nerve cells?",
+      "a": "The minimum strength of a stimulus required to start the depolarization of neurons is called threshold stimulus."
     },
     {
-      "q": "6. What is a compound eye?\nAns.\nIn insects, the eye is composed of independent visual elements called ommatidia. These types of eyes are referred to as compound eyes.",
-      "a": "Detailed solution available."
+      "q": "6. What is a compound eye?",
+      "a": "In insects, the eye is composed of independent visual elements called ommatidia. These types of eyes are referred to as compound eyes."
     },
     {
-      "q": "7. What types of neurons are found in the dorsal root of the spinal nerve?\nAns.\nSensory neurons are found in the dorsal root of the spinal nerve.",
-      "a": "Detailed solution available."
+      "q": "7. What types of neurons are found in the dorsal root of the spinal nerve?",
+      "a": "Sensory neurons are found in the dorsal root of the spinal nerve."
     },
     {
-      "q": "8. What is the basic unit of the neural system?\nAns.\nNeurons are the basic unit of the neural system.",
-      "a": "Detailed solution available."
+      "q": "8. What is the basic unit of the neural system?",
+      "a": "Neurons are the basic unit of the neural system."
     },
     {
-      "q": "9. Why is blind spot devoid of the ability for vision?\nAns.\nBlindspot has no photoreceptor cells \u2013 rods or cones hence it is devoid of the ability for vision.",
-      "a": "Detailed solution available."
+      "q": "9. Why is blind spot devoid of the ability for vision?",
+      "a": "Blindspot has no photoreceptor cells \u2013 rods or cones hence it is devoid of the ability for vision."
     },
     {
-      "q": "10. Name the fluid present in the membranous labyrinth.\nAns.\nEndolymph is the fluid present in the membranous labyrinth.",
-      "a": "Detailed solution available."
+      "q": "10. Name the fluid present in the membranous labyrinth.",
+      "a": "Endolymph is the fluid present in the membranous labyrinth."
     },
     {
-      "q": "11. Name the area of the retina where only cones are densely packed.\nAns.\nThe fovea is the area of the retina where only cones are densely packed.",
-      "a": "Detailed solution available."
+      "q": "11. Name the area of the retina where only cones are densely packed.",
+      "a": "The fovea is the area of the retina where only cones are densely packed."
     },
     {
-      "q": "12. Name the innermost menning of the brain.\nAns.\nPiamater is the innermost menning of the brain.",
-      "a": "Detailed solution available."
+      "q": "12. Name the innermost menning of the brain.",
+      "a": "Piamater is the innermost menning of the brain."
     },
     {
       "q": "13. To which part of the brain communication and memory are associated?",
       "a": "Cerebrum is the part of the brain where communication and memory are associated."
     },
     {
-      "q": "14. Name the bundle of fibers that connect two cerebral hemispheres in human beings.\nAns.\nThe\nCorpus callosum is the bundle of fibers that connect two cerebral hemispheres in human beings.",
-      "a": "Detailed solution available."
+      "q": "14. Name the bundle of fibers that connect two cerebral hemispheres in human beings.",
+      "a": "The\nCorpus callosum is the bundle of fibers that connect two cerebral hemispheres in human beings."
     },
     {
-      "q": "15. Name the photopigment present in the rod cells.\nAns.\nRhodopsin is the photopigment present in rod cells.",
-      "a": "Detailed solution available."
+      "q": "15. Name the photopigment present in the rod cells.",
+      "a": "Rhodopsin is the photopigment present in rod cells."
     },
     {
-      "q": "16. Why can impulses flow only in one direction?\nAns.\nImpulses flow only in one direction because each synapse allows the impulse to cross it in a single direction.",
-      "a": "Detailed solution available."
+      "q": "16. Why can impulses flow only in one direction?",
+      "a": "Impulses flow only in one direction because each synapse allows the impulse to cross it in a single direction."
     },
     {
-      "q": "17. Where is the hypothalamus located in the brain?\nAns.\nHypothalamus is located at the base of the thalamus in the brain.\nShort Answer Questions (2 Marks)",
-      "a": "Detailed solution available."
+      "q": "17. Where is the hypothalamus located in the brain?",
+      "a": "Hypothalamus is located at the base of the thalamus in the brain.\nShort Answer Questions (2 Marks)"
     },
     {
-      "q": "1. What is a reflex?\nAns.\nReflex is defined as an involuntary action that is performed by muscle under the direction of the spinal cord as a response to the stimulus. Since it is an automatic response to a stimulus hence it is not under any conscious control.\nExample: Respiration, peristalsis, secretion of saliva in the mouth, etc.",
-      "a": "Detailed solution available."
+      "q": "1. What is a reflex?",
+      "a": "Reflex is defined as an involuntary action that is performed by muscle under the direction of the spinal cord as a response to the stimulus. Since it is an automatic response to a stimulus hence it is not under any conscious control.\nExample: Respiration, peristalsis, secretion of saliva in the mouth, etc."
     },
     {
-      "q": "2. What happens when the membrane of a nerve cell carries out a sodium pump?\nAns.\nWhen a membrane carries a sodium pump, it carries three sodium ions from\naxoplasm to the cell exterior:\nIt transfers two potassium ions exchanged from the ECF to the cell interior.\nThe exterior is positively charged.",
-      "a": "Detailed solution available."
+      "q": "2. What happens when the membrane of a nerve cell carries out a sodium pump?",
+      "a": "When a membrane carries a sodium pump, it carries three sodium ions from\naxoplasm to the cell exterior:\nIt transfers two potassium ions exchanged from the ECF to the cell interior.\nThe exterior is positively charged."
     },
     {
-      "q": "3. What are the events that take place at the point of stimulation of the axon?\nAns.\nThe events that take place at the point of stimulation of axon are-\nMembrane permeability changes; it becomes freely permeable to Na+ ions.\nThe rapid inflow of Na\n+\nions occurs and the axoplasm becomes positively charged while the exterior becomes negatively charged. This is known as the depolarized state and the potential difference across the membrane is the action potential.\nThe current flows through axoplasm from the depolarized region, to the next polarised region and through ECF from the polarised region to the depolarised region.",
-      "a": "Detailed solution available."
+      "q": "3. What are the events that take place at the point of stimulation of the axon?",
+      "a": "The events that take place at the point of stimulation of axon are-\nMembrane permeability changes; it becomes freely permeable to Na+ ions.\nThe rapid inflow of Na\n+\nions occurs and the axoplasm becomes positively charged while the exterior becomes negatively charged. This is known as the depolarized state and the potential difference across the membrane is the action potential.\nThe current flows through axoplasm from the depolarized region, to the next polarised region and through ECF from the polarised region to the depolarised region."
     },
     {
-      "q": "4. Give parts of the neuron.\nAns.\nThe neuron is a microscopic structure made up of three parts:\nCell body \u2013 It contains cytoplasm with cell organelles and some granular bodies called Nissl\u2019s granules.\nDendrites \u2013 These are the short fibers that branch repeatedly and project out of the cell body. They transmit impulses towards the cell body (cyton).\nAxon \u2013 It is a long fiber with branched distal ends. Each branch terminates into a bulb-like structure known as a synaptic knob.\nStructure of Neuron",
-      "a": "Detailed solution available."
+      "q": "4. Give parts of the neuron.",
+      "a": "The neuron is a microscopic structure made up of three parts:\nCell body \u2013 It contains cytoplasm with cell organelles and some granular bodies called Nissl\u2019s granules.\nDendrites \u2013 These are the short fibers that branch repeatedly and project out of the cell body. They transmit impulses towards the cell body (cyton).\nAxon \u2013 It is a long fiber with branched distal ends. Each branch terminates into a bulb-like structure known as a synaptic knob.\nStructure of Neuron"
     },
     {
-      "q": "5. Describe the role and location of the ciliary body in the human eye.\nAns.\nThe choroid becomes thick where the cornea and the sclera meet and it is called the ciliary body.\nThe function of the ciliary body is that it continues in front of the lens to form an opaque structure called the iris.",
-      "a": "Detailed solution available."
+      "q": "5. Describe the role and location of the ciliary body in the human eye.",
+      "a": "The choroid becomes thick where the cornea and the sclera meet and it is called the ciliary body.\nThe function of the ciliary body is that it continues in front of the lens to form an opaque structure called the iris."
     },
     {
-      "q": "6. What is the mosaic vision?\nAns.\nA type of vision that is found in insects due to the compound eye. In such a type of vision, a complete image of the object as seen by the compound eye is formed by a number of small lineages each of which is contributed by an ommatidium. Such an image formed by many bits of images is called a mosaic image and the vision is the mosaic image vision.",
-      "a": "Detailed solution available."
+      "q": "6. What is the mosaic vision?",
+      "a": "A type of vision that is found in insects due to the compound eye. In such a type of vision, a complete image of the object as seen by the compound eye is formed by a number of small lineages each of which is contributed by an ommatidium. Such an image formed by many bits of images is called a mosaic image and the vision is the mosaic image vision."
     },
     {
-      "q": "7. Where does cerebrospinal fluid occur in our body? Mention two if its function.\nAns.\nCerebrospinal fluid is found in the subarachnoid space between arachnids and\nThe parameter of the meninges around the brain and spinal cord and also in the cavities of the brain.\nIts functions are:\n1) It protects the brain and spinal cord by acting as a cushion to absorb shocks.\n2) It helps in removing harmful metabolites, drugs, etc. away from the brain.",
-      "a": "Detailed solution available."
+      "q": "7. Where does cerebrospinal fluid occur in our body? Mention two if its function.",
+      "a": "Cerebrospinal fluid is found in the subarachnoid space between arachnids and\nThe parameter of the meninges around the brain and spinal cord and also in the cavities of the brain.\nIts functions are:\n1) It protects the brain and spinal cord by acting as a cushion to absorb shocks.\n2) It helps in removing harmful metabolites, drugs, etc. away from the brain."
     },
     {
-      "q": "8. What is the chemical and difference between rods and cones?\nAns.\nThe difference between rods and cones are listed below:\nRods\nCones\nThese are more secretive to light and are meant for vision in dim light.\nThese are meant for vision in bright light\nThey lack the ability to produce colored images.\nThey have the ability to produce colored images.\nThey contain rhodopsin which is a visual pigment.\nThese contain iodopsin as the visual pigment.",
-      "a": "Detailed solution available."
+      "q": "8. What is the chemical and difference between rods and cones?",
+      "a": "The difference between rods and cones are listed below:\nRods\nCones\nThese are more secretive to light and are meant for vision in dim light.\nThese are meant for vision in bright light\nThey lack the ability to produce colored images.\nThey have the ability to produce colored images.\nThey contain rhodopsin which is a visual pigment.\nThese contain iodopsin as the visual pigment."
     },
     {
-      "q": "9. Why are gray matter and white matter contained in the human nervous system named so?\nAns.\nGray matter contains spindle, pyramidal, cell bodies with grayish brown appearance and hence named as gray matter.\nThe white matter contains innumerable myelinated axons, a large amount of myelin gives it tissue an opaque white appearance, therefore, called white matter.",
-      "a": "Detailed solution available."
+      "q": "9. Why are gray matter and white matter contained in the human nervous system named so?",
+      "a": "Gray matter contains spindle, pyramidal, cell bodies with grayish brown appearance and hence named as gray matter.\nThe white matter contains innumerable myelinated axons, a large amount of myelin gives it tissue an opaque white appearance, therefore, called white matter."
     },
     {
-      "q": "10. Fill in the blanks in the different columns A to D:\nPinna\n(a)\n(b)\nEqualize the pressure on either side of the eardrum.\nCone cells\n(c)\n(d)\nRegulate amount of light to pass into the eye.\nAns.\nThe blanks are:\n(a) To collect sound waves\n(b) Eustachian tube\n(c) Colour vision\n(d) Iris\nShort Answer Question (3 Marks)",
-      "a": "Detailed solution available."
+      "q": "10. Fill in the blanks in the different columns A to D:\nPinna\n(a)\n(b)\nEqualize the pressure on either side of the eardrum.\nCone cells\n(c)\n(d)\nRegulate amount of light to pass into the eye.",
+      "a": "The blanks are:\n(a) To collect sound waves\n(b) Eustachian tube\n(c) Colour vision\n(d) Iris\nShort Answer Question (3 Marks)"
     },
     {
-      "q": "1. Differentiate between dorsal spinal roots and ventral spinal roots.\nAns.\nThe difference between dorsal spinal roots and ventral spinal roots are listed below:\nDorsal spinal roots\nVentral spinal roots\nThey are made of sensory nerves (afferent).\nThey are made of motor nerves (efferent).\nThey have dorsal root ganglia.\nThey lack ganglia.\nTheir cell bodies are located in dorsal root ganglia.\nThe cell bodies of the ventral spinal nerve root are located in the ventrolateral horn of grey matter.",
-      "a": "Detailed solution available."
+      "q": "1. Differentiate between dorsal spinal roots and ventral spinal roots.",
+      "a": "The difference between dorsal spinal roots and ventral spinal roots are listed below:\nDorsal spinal roots\nVentral spinal roots\nThey are made of sensory nerves (afferent).\nThey are made of motor nerves (efferent).\nThey have dorsal root ganglia.\nThey lack ganglia.\nTheir cell bodies are located in dorsal root ganglia.\nThe cell bodies of the ventral spinal nerve root are located in the ventrolateral horn of grey matter."
     },
     {
-      "q": "2. Describe the human neural system.\nAns.\nThe human neural system is divided into two parts:\n1) Central Neural system (CNS) \u2013 It includes the brain and spinal cord and is the site of information processing and control.\n2) Peripheral neural system (PNS) \u2013 PNS consists of all nerves of the body associated with the CNS. The nerve fibers of PNS are of two types i.e. afferent and efferent fibers.\n(a) Afferent nerve fibers are responsible for transmitting impulses from tissues or organs to the CNS.\n(b) Efferent nerve fibers are responsible for transmitting impulses from CNS to concerned peripheral tissues or organs.\nPNS is further divided into \u2013\n(1) Somatic neural system which relays impulse from CNS to the skeletal muscles.\n(2) Autonomic neural system transmits impulses from CNS to the involuntary organs as well as the smooth muscles of the body. It is divided into two parts -\na) Sympathetic neural system\nb) Parasympathetic neural system",
-      "a": "Detailed solution available."
+      "q": "2. Describe the human neural system.",
+      "a": "The human neural system is divided into two parts:\n1) Central Neural system (CNS) \u2013 It includes the brain and spinal cord and is the site of information processing and control.\n2) Peripheral neural system (PNS) \u2013 PNS consists of all nerves of the body associated with the CNS. The nerve fibers of PNS are of two types i.e. afferent and efferent fibers.\n(a) Afferent nerve fibers are responsible for transmitting impulses from tissues or organs to the CNS.\n(b) Efferent nerve fibers are responsible for transmitting impulses from CNS to concerned peripheral tissues or organs.\nPNS is further divided into \u2013\n(1) Somatic neural system which relays impulse from CNS to the skeletal muscles.\n(2) Autonomic neural system transmits impulses from CNS to the involuntary organs as well as the smooth muscles of the body. It is divided into two parts -\na) Sympathetic neural system\nb) Parasympathetic neural system"
     },
     {
-      "q": "3. Why do giant squids have very thick nerve fiber?\nAns.\nThe velocity of a nerve impulse in a nerve fiber depends on its myelinated and also on the thickness of the fibers. The impulses travel faster in thicker nerve fibers and as the giant squids are large-sized aquatic animals, they have thick nerve fibers.",
-      "a": "Detailed solution available."
+      "q": "3. Why do giant squids have very thick nerve fiber?",
+      "a": "The velocity of a nerve impulse in a nerve fiber depends on its myelinated and also on the thickness of the fibers. The impulses travel faster in thicker nerve fibers and as the giant squids are large-sized aquatic animals, they have thick nerve fibers."
     },
     {
-      "q": "4. Where are synaptic vesicles found? Name their chemical contents? What is the function of these contents?\nAns. Synaptic vesicles are found in the bulbous expansion called synaptic knob, at the nerve terminal. Each of the synaptic vesicles contains as many as 10,000 molecules of a neurotransmitter substance which is responsible for the transmission of nerve impulses across the synapse.\nWhen a wave of depolarization reaches the presynaptic membrane, the voltage-gated calcium channels concentrated at the synapse open, and the Ca\n++\nions diffuse into a terminal from the surrounding fluid.\nThe Ca\n++\nions stimulate synaptic vesicles to move to the terminal membrane, fuse with it and then rupture by exocytosis into the cleft.\nThis neurotransmitter diffuses across the synapse and stimulates the membrane of the next neuron.",
-      "a": "Detailed solution available."
+      "q": "4. Where are synaptic vesicles found? Name their chemical contents? What is the function of these contents?",
+      "a": "Synaptic vesicles are found in the bulbous expansion called synaptic knob, at the nerve terminal. Each of the synaptic vesicles contains as many as 10,000 molecules of a neurotransmitter substance which is responsible for the transmission of nerve impulses across the synapse.\nWhen a wave of depolarization reaches the presynaptic membrane, the voltage-gated calcium channels concentrated at the synapse open, and the Ca\n++\nions diffuse into a terminal from the surrounding fluid.\nThe Ca\n++\nions stimulate synaptic vesicles to move to the terminal membrane, fuse with it and then rupture by exocytosis into the cleft.\nThis neurotransmitter diffuses across the synapse and stimulates the membrane of the next neuron."
     },
     {
-      "q": "5. Give the location and function in the human eye, of the following \u2013\n(i) Cornea (ii) Iris (iii) Vitreous humor\nAns.\n1) Cornea is the dome-shaped part of the sclera which is transparent and curved. It refracts light towards the retina.\n2) Iris is the colored (pigmented) at the front and formed by choroid. It encloses the pupil and the iris contains ciliary muscles which regulate the size of the pupil and controls the amount of light.\n3) Vitreous humor is present in the posterior chamber of the eye. It helps in shaping the eye and also supports the retina and the lens. It also refracts light rays.",
-      "a": "Detailed solution available."
+      "q": "5. Give the location and function in the human eye, of the following \u2013\n(i) Cornea (ii) Iris (iii) Vitreous humor",
+      "a": "1) Cornea is the dome-shaped part of the sclera which is transparent and curved. It refracts light towards the retina.\n2) Iris is the colored (pigmented) at the front and formed by choroid. It encloses the pupil and the iris contains ciliary muscles which regulate the size of the pupil and controls the amount of light.\n3) Vitreous humor is present in the posterior chamber of the eye. It helps in shaping the eye and also supports the retina and the lens. It also refracts light rays."
     },
     {
-      "q": "6. Why are nerve impulses conducted more rapidly in myelinated nerve fiber than in a non \u2013 myelinated one? Explain.\nAns.\nIn a myelinated nerve fiber, lipid-rich myelin acts as an insulator, and depolarization occurs in nodes of Ranvier wherein the myelin sheath is absent.\u00a0 Since the action potential jumps from one node to another, conduction becomes faster and such a type of conduction is called saltatory conduction.\nIn a non\u2013myelinated fiber, this depolarization occurs all along its length thus slowing down the conduction.",
-      "a": "Detailed solution available."
+      "q": "6. Why are nerve impulses conducted more rapidly in myelinated nerve fiber than in a non \u2013 myelinated one? Explain.",
+      "a": "In a myelinated nerve fiber, lipid-rich myelin acts as an insulator, and depolarization occurs in nodes of Ranvier wherein the myelin sheath is absent.\u00a0 Since the action potential jumps from one node to another, conduction becomes faster and such a type of conduction is called saltatory conduction.\nIn a non\u2013myelinated fiber, this depolarization occurs all along its length thus slowing down the conduction."
     },
     {
-      "q": "7. Observe the diagram given right and answer the following questions:\n(i) Label the parts A and B\n(ii) Give the function of C and D.\n(iii) Name the layers which wrap this organ.\nParts of Brain\nAns.\nThe\ndifferent parts of the given figure are:\n(i) A: Cerebrum; B: Corpus callosum\n(ii) C: Balancing of body and maintain posture; D: Vomiting, coughing, breathing, salivation, or any other correct answer (any one).\n(iii) Piameter, arachnoid and duramater.\nLong Answer Questions (5 Marks)",
-      "a": "Detailed solution available."
+      "q": "7. Observe the diagram given right and answer the following questions:\n(i) Label the parts A and B\n(ii) Give the function of C and D.\n(iii) Name the layers which wrap this organ.\nParts of Brain",
+      "a": "The\ndifferent parts of the given figure are:\n(i) A: Cerebrum; B: Corpus callosum\n(ii) C: Balancing of body and maintain posture; D: Vomiting, coughing, breathing, salivation, or any other correct answer (any one).\n(iii) Piameter, arachnoid and duramater.\nLong Answer Questions (5 Marks)"
     },
     {
-      "q": "1. Draw a labeled diagram to show the structural view of the human ear in the sectional view.\nAns.\nThe diagram to show the structural view of the human ear in the sectional view is below:\nAnatomy of Ear",
-      "a": "Detailed solution available."
+      "q": "1. Draw a labeled diagram to show the structural view of the human ear in the sectional view.",
+      "a": "The diagram to show the structural view of the human ear in the sectional view is below:\nAnatomy of Ear"
     },
     {
-      "q": "2. What is meant by the resting membrane potential of a neuron? How do ion channels and sodium-potassium pumps contribute to the resting potential?\nAns.\nThe resting membrane potential is the electrical potential difference across the membranes of a resting neuron is called resting membrane potential.\nThe membrane is polarized with a negative interior and a positively charged exterior.\nThe permeability of the membrane to K\n+\nions is greater than its permeability to the Na\n+\nions.\nNegatively charged protein molecules can cross the membrane.\nThe sodium pump transports three Na\n+\nions to the exterior, while in exchange only 2K\n+\nions come inside.\nHence, the surface carries a positive charge, which the interior negatively charged.\nTransmission of Electrical Impluse Thorugh Neuron",
-      "a": "Detailed solution available."
+      "q": "2. What is meant by the resting membrane potential of a neuron? How do ion channels and sodium-potassium pumps contribute to the resting potential?",
+      "a": "The resting membrane potential is the electrical potential difference across the membranes of a resting neuron is called resting membrane potential.\nThe membrane is polarized with a negative interior and a positively charged exterior.\nThe permeability of the membrane to K\n+\nions is greater than its permeability to the Na\n+\nions.\nNegatively charged protein molecules can cross the membrane.\nThe sodium pump transports three Na\n+\nions to the exterior, while in exchange only 2K\n+\nions come inside.\nHence, the surface carries a positive charge, which the interior negatively charged.\nTransmission of Electrical Impluse Thorugh Neuron"
     },
     {
-      "q": "3. Reflex arc. Taking one example, describe the functioning of the various components of a spinal.\nAns.\nA reflex arc is the specific neural pathway from stimulus to reflex.\nThe components of reflex arc are-\n(1) Receptors\u2013 These are the organs/tissues which receive stimulus and send it as an impulse.\n(2) Sensory or afferent nerves \u2013 These are neurons that conduct the impulse from the receptor to the central Nervous system (spinal cord)\n(3) Relay or intermediate neurons \u2013 These are neurons that conduct impulses from the afferent neurons to the efferent neurons.\n(4) Effectors/motor neurons \u2013 These neurons conduct impulses from the spinal cord/relay neurons to the effectors\u2019 organ concerned.\n(5) Effectors \u2013 It is the organ/tissue or gland that functions accordingly.\nRelated Study Materials for Class 11 Biology Chapter 18\nS.No\nImportant Other Links for Class 11 Biology Chapter 18",
-      "a": "Detailed solution available."
+      "q": "3. Reflex arc. Taking one example, describe the functioning of the various components of a spinal.",
+      "a": "A reflex arc is the specific neural pathway from stimulus to reflex.\nThe components of reflex arc are-\n(1) Receptors\u2013 These are the organs/tissues which receive stimulus and send it as an impulse.\n(2) Sensory or afferent nerves \u2013 These are neurons that conduct the impulse from the receptor to the central Nervous system (spinal cord)\n(3) Relay or intermediate neurons \u2013 These are neurons that conduct impulses from the afferent neurons to the efferent neurons.\n(4) Effectors/motor neurons \u2013 These neurons conduct impulses from the spinal cord/relay neurons to the effectors\u2019 organ concerned.\n(5) Effectors \u2013 It is the organ/tissue or gland that functions accordingly.\nRelated Study Materials for Class 11 Biology Chapter 18\nS.No\nImportant Other Links for Class 11 Biology Chapter 18"
     },
     {
       "q": "1.\nCBSE Class 11 Neural Control and Coordination Notes",
@@ -3429,144 +3429,144 @@ export default {
   ],
   "19": [
     {
-      "q": "1. What are hormones?\nAns.\nHormones (endocrines) are the secretions of endocrine glands.",
-      "a": "Detailed solution available."
+      "q": "1. What are hormones?",
+      "a": "Hormones (endocrines) are the secretions of endocrine glands."
     },
     {
-      "q": "2. Name the gland of emergency.\nAns.\nThe adrenal gland is the gland of emergency.",
-      "a": "Detailed solution available."
+      "q": "2. Name the gland of emergency.",
+      "a": "The adrenal gland is the gland of emergency."
     },
     {
-      "q": "3. Which gland secretes glucagon?\nAns.\nGlucagon is secreted from the alpha cells of the pancreas (endocrine gland).",
-      "a": "Detailed solution available."
+      "q": "3. Which gland secretes glucagon?",
+      "a": "Glucagon is secreted from the alpha cells of the pancreas (endocrine gland)."
     },
     {
-      "q": "4. Distinguish between diabetes mellitus and diabetes insipidus.\nAns.\nThe difference between diabetes mellitus and diabetes insipidus are:\nDiabetes Mellitus\nDiabetes Insipidus\nDiabetes mellitus is caused due to a lesser amount of secretion of insulin by \u03b2 cells of the Islet of Langerhans in the pancreas.\nDiabetes insipidus is caused due to a lesser amount of secretion of ADH (vasopressin) by the posterior pituitary gland.",
-      "a": "Detailed solution available."
+      "q": "4. Distinguish between diabetes mellitus and diabetes insipidus.",
+      "a": "The difference between diabetes mellitus and diabetes insipidus are:\nDiabetes Mellitus\nDiabetes Insipidus\nDiabetes mellitus is caused due to a lesser amount of secretion of insulin by \u03b2 cells of the Islet of Langerhans in the pancreas.\nDiabetes insipidus is caused due to a lesser amount of secretion of ADH (vasopressin) by the posterior pituitary gland."
     },
     {
-      "q": "5. Name the hormones of fight or flight.\nAns.\nAdrenaline and noradrenaline (Catecholamine hormones) are the hormones of flight or fight.",
-      "a": "Detailed solution available."
+      "q": "5. Name the hormones of fight or flight.",
+      "a": "Adrenaline and noradrenaline (Catecholamine hormones) are the hormones of flight or fight."
     },
     {
-      "q": "6. Name the hormone secreted from the outermost cellular layer of the adrenal cortex?\nAns.\nAldosterone, a mineralocorticoid, is secreted from the outermost cellular layer (Zona glomerulosa) of the adrenal cortex.",
-      "a": "Detailed solution available."
+      "q": "6. Name the hormone secreted from the outermost cellular layer of the adrenal cortex?",
+      "a": "Aldosterone, a mineralocorticoid, is secreted from the outermost cellular layer (Zona glomerulosa) of the adrenal cortex."
     },
     {
-      "q": "7. What is the function of Leydig cells?\nAns.\nLeydig cells (interstitial cells) of the testes secrete testosterone hormone. It stimulates the development of external male sex characters such as beards, mustaches, and low-pitched voices in men and stimulates the formation of sperm in the testis.",
-      "a": "Detailed solution available."
+      "q": "7. What is the function of Leydig cells?",
+      "a": "Leydig cells (interstitial cells) of the testes secrete testosterone hormone. It stimulates the development of external male sex characters such as beards, mustaches, and low-pitched voices in men and stimulates the formation of sperm in the testis."
     },
     {
-      "q": "8. Name the gland which secretes vasopressin.\nAns.\nVasopressin (Antidiuretic hormone or ADH) is secreted by the posterior part of the pituitary gland.",
-      "a": "Detailed solution available."
+      "q": "8. Name the gland which secretes vasopressin.",
+      "a": "Vasopressin (Antidiuretic hormone or ADH) is secreted by the posterior part of the pituitary gland."
     },
     {
-      "q": "9. Name one mineralocorticoid.\nAns.\nAldosterone, a mineralocorticoid, is secreted from the Zona glomerulosa of the adrenal cortex.",
-      "a": "Detailed solution available."
+      "q": "9. Name one mineralocorticoid.",
+      "a": "Aldosterone, a mineralocorticoid, is secreted from the Zona glomerulosa of the adrenal cortex."
     },
     {
-      "q": "10. Which two systems coordinate and regulate the physiological functions of our body?\nAns.\nThe two systems that coordinate and regulate the physiological functions of our body\nare the neural system and the endocrine system.",
-      "a": "Detailed solution available."
+      "q": "10. Which two systems coordinate and regulate the physiological functions of our body?",
+      "a": "The two systems that coordinate and regulate the physiological functions of our body\nare the neural system and the endocrine system."
     },
     {
-      "q": "11. What is the role of melanocyte-stimulating hormone?\nAns.\nMelanocyte stimulating hormone acts (MSH) on melanocytes and regulates pigmentation of the skin. It is important for protecting the skin from UV rays and controlling appetite.",
-      "a": "Detailed solution available."
+      "q": "11. What is the role of melanocyte-stimulating hormone?",
+      "a": "Melanocyte stimulating hormone acts (MSH) on melanocytes and regulates pigmentation of the skin. It is important for protecting the skin from UV rays and controlling appetite."
     },
     {
-      "q": "12. Name the hormones which act antagonistically in order to regulate calcium levels in the blood.\nAns.\nThe hormones that act antagonistically to regulate calcium levels in the blood are: - Thyrocalcitonin (TCT) and Parathyroid hormone (PTH).",
-      "a": "Detailed solution available."
+      "q": "12. Name the hormones which act antagonistically in order to regulate calcium levels in the blood.",
+      "a": "The hormones that act antagonistically to regulate calcium levels in the blood are: - Thyrocalcitonin (TCT) and Parathyroid hormone (PTH)."
     },
     {
-      "q": "13. Give the names of anyone glucocorticoid and one mineralocorticoid.\nAns.\nCortisol and aldosterone are glucocorticoid and mineralocorticoid respectively.",
-      "a": "Detailed solution available."
+      "q": "13. Give the names of anyone glucocorticoid and one mineralocorticoid.",
+      "a": "Cortisol and aldosterone are glucocorticoid and mineralocorticoid respectively."
     },
     {
-      "q": "14. How does atrial natriuretic factor decrease blood pressure?\nAns.\nAtrial natriuretic factor (ANF) decreases blood pressure by triggering blood vessel dilation and excretion of sodium in the urine.",
-      "a": "Detailed solution available."
+      "q": "14. How does atrial natriuretic factor decrease blood pressure?",
+      "a": "Atrial natriuretic factor (ANF) decreases blood pressure by triggering blood vessel dilation and excretion of sodium in the urine."
     },
     {
-      "q": "15. Which structure is formed from the ruptured follicles in females? What is its role?\nAns.\nThe corpus luteum is a yellowish body formed after ovulation by a ruptured Graafian follicle in females secreting progesterone.",
-      "a": "Detailed solution available."
+      "q": "15. Which structure is formed from the ruptured follicles in females? What is its role?",
+      "a": "The corpus luteum is a yellowish body formed after ovulation by a ruptured Graafian follicle in females secreting progesterone."
     },
     {
-      "q": "16. Immunity of old persons becomes very weak. Give a reason.\nAns\n. The immunity of old persons becomes very weak because the thymus gland degenerates with age.",
-      "a": "Detailed solution available."
+      "q": "16. Immunity of old persons becomes very weak. Give a reason.",
+      "a": "The immunity of old persons becomes very weak because the thymus gland degenerates with age."
     },
     {
-      "q": "17. What happens if a person suffers from prolonged hyperglycemia?\nAns.\nIf a person suffers from prolonged hyperglycemia, they are affected by diabetes mellitus, which causes loss of glucose through urine and the formation of harmful ketone bodies.\n18.What are the two modes through which the hypothalamus causes the release of hormones by the pituitary gland?\nAns.\nThe two modes through which the hypothalamus causes the release of hormones by the pituitary gland are: -\nThrough hypothalamic neurons, they control the anterior pituitary gland.\nThrough neural regulation, they control the posterior pituitary gland.\nShort Answer Questions (2 Marks)",
-      "a": "Detailed solution available."
+      "q": "17. What happens if a person suffers from prolonged hyperglycemia?",
+      "a": "If a person suffers from prolonged hyperglycemia, they are affected by diabetes mellitus, which causes loss of glucose through urine and the formation of harmful ketone bodies.\n18.What are the two modes through which the hypothalamus causes the release of hormones by the pituitary gland?\nAns.\nThe two modes through which the hypothalamus causes the release of hormones by the pituitary gland are: -\nThrough hypothalamic neurons, they control the anterior pituitary gland.\nThrough neural regulation, they control the posterior pituitary gland.\nShort Answer Questions (2 Marks)"
     },
     {
-      "q": "1. Differentiate between hormone and neurohormone?\nAns.\nThe difference between hormones and neurohormones are:\nHormone\nNeurohormone\nSecreted by endocrine glands.\nSecreted by neurosecretory cells.\nIt stimulates the growth and metabolism of endocrine glands and body cells.\nIt stimulates the secretion of hormones by the pituitary.",
-      "a": "Detailed solution available."
+      "q": "1. Differentiate between hormone and neurohormone?",
+      "a": "The difference between hormones and neurohormones are:\nHormone\nNeurohormone\nSecreted by endocrine glands.\nSecreted by neurosecretory cells.\nIt stimulates the growth and metabolism of endocrine glands and body cells.\nIt stimulates the secretion of hormones by the pituitary."
     },
     {
-      "q": "2. What are gonadotropins?\nAns.\nThe gonadotropins are the gonad stimulating hormones secreted by the anterior lobe of the pituitary. They regulate ovarian and testicular function and are necessary for normal growth, sexual development, and reproduction. The human gonadotropins are follicle-stimulating hormone (FSH) and luteinizing hormone (LH).",
-      "a": "Detailed solution available."
+      "q": "2. What are gonadotropins?",
+      "a": "The gonadotropins are the gonad stimulating hormones secreted by the anterior lobe of the pituitary. They regulate ovarian and testicular function and are necessary for normal growth, sexual development, and reproduction. The human gonadotropins are follicle-stimulating hormone (FSH) and luteinizing hormone (LH)."
     },
     {
-      "q": "3. Why is oxytocin called a \u2018birth hormone\u2019?\nAns.\nThe Oxytocin hormone is known as the \"birth hormone\" because it stimulates vigorous contraction of the smooth muscles of the uterus during childbirth. When the newly born baby is hungry, it also causes the mother to produce milk via the mammary glands and stimulates vigorous contractions during milk ejection from the mammary gland.",
-      "a": "Detailed solution available."
+      "q": "3. Why is oxytocin called a \u2018birth hormone\u2019?",
+      "a": "The Oxytocin hormone is known as the \"birth hormone\" because it stimulates vigorous contraction of the smooth muscles of the uterus during childbirth. When the newly born baby is hungry, it also causes the mother to produce milk via the mammary glands and stimulates vigorous contractions during milk ejection from the mammary gland."
     },
     {
-      "q": "4. What usually can cause over secretion of parathormone in the human body? List any two effects on the body because of this hormone.\nAns\n. A tumor (noncancerous growth or adenoma) on the parathyroid glands causes the over-secretion/hypersecretion of parathormone. Two effects on the body because of excess secretion of parathormone in humans are: -\nDue to demineralization, the bones become deformed and are easily fractured (osteoporosis).\nIf left untreated, it can lead to osteitis fibrosa cystica in humans (OFC).",
-      "a": "Detailed solution available."
+      "q": "4. What usually can cause over secretion of parathormone in the human body? List any two effects on the body because of this hormone.",
+      "a": "A tumor (noncancerous growth or adenoma) on the parathyroid glands causes the over-secretion/hypersecretion of parathormone. Two effects on the body because of excess secretion of parathormone in humans are: -\nDue to demineralization, the bones become deformed and are easily fractured (osteoporosis).\nIf left untreated, it can lead to osteitis fibrosa cystica in humans (OFC)."
     },
     {
-      "q": "5. What is the function of the pineal gland?\nAns.\nThe functions of the pineal gland are: -\nIt secretes a hormone called melatonin.\nIt reduces reproductive activity and may also delay sexual development in an individual.\nIt regulates the circadian rhythms (sleep patterns) of the body.",
-      "a": "Detailed solution available."
+      "q": "5. What is the function of the pineal gland?",
+      "a": "The functions of the pineal gland are: -\nIt secretes a hormone called melatonin.\nIt reduces reproductive activity and may also delay sexual development in an individual.\nIt regulates the circadian rhythms (sleep patterns) of the body."
     },
     {
-      "q": "6. Explain the hormones of the kidney and GI tract.\nAns.\nKidney: - Juxtaglomerular cells of the kidney secrete a peptide hormone called erythropoietin. It stimulates erythropoiesis or the formation of RBCs in the blood.\nGI tract (Gastrointestinal tract): -The endocrine cells found in various parts of the gastro-intestine tract secrete 4 peptide hormones. These are Gastrin, secretin, cholecystokinin (CCK), and gastric inhibitory peptide or GIP.",
-      "a": "Detailed solution available."
+      "q": "6. Explain the hormones of the kidney and GI tract.",
+      "a": "Kidney: - Juxtaglomerular cells of the kidney secrete a peptide hormone called erythropoietin. It stimulates erythropoiesis or the formation of RBCs in the blood.\nGI tract (Gastrointestinal tract): -The endocrine cells found in various parts of the gastro-intestine tract secrete 4 peptide hormones. These are Gastrin, secretin, cholecystokinin (CCK), and gastric inhibitory peptide or GIP."
     },
     {
-      "q": "7. In general, how steroid hormones affect changes in their target cells.\nAns.\nSteroid hormones are lipid-soluble. These quickly pass through the plasma membrane of a target cell and enter the cytoplasm. They bind to intracellular receptor proteins, leading to the formation of a complex. This complex enters the nucleus and binds to specific regulatory sites on the chromosomes. This binding modifies gene expression and continues to increase transcription of the same genes. It may suppress some other genes. Finally, RNA is involved in protein synthesis. Lipid soluble hormones are longer-lasting but slow in action.",
-      "a": "Detailed solution available."
+      "q": "7. In general, how steroid hormones affect changes in their target cells.",
+      "a": "Steroid hormones are lipid-soluble. These quickly pass through the plasma membrane of a target cell and enter the cytoplasm. They bind to intracellular receptor proteins, leading to the formation of a complex. This complex enters the nucleus and binds to specific regulatory sites on the chromosomes. This binding modifies gene expression and continues to increase transcription of the same genes. It may suppress some other genes. Finally, RNA is involved in protein synthesis. Lipid soluble hormones are longer-lasting but slow in action."
     },
     {
-      "q": "8. What is the corpus luteum? How does it function as an endocrine gland?\nAns.\nThe corpus luteum is a yellowish body formed after ovulation by a ruptured Graafian follicle in females. It is a temporary endocrine gland within the ovary. It secretes the hormone progesterone. It plays an integral role in the regulation of the menstrual cycle and early pregnancy.",
-      "a": "Detailed solution available."
+      "q": "8. What is the corpus luteum? How does it function as an endocrine gland?",
+      "a": "The corpus luteum is a yellowish body formed after ovulation by a ruptured Graafian follicle in females. It is a temporary endocrine gland within the ovary. It secretes the hormone progesterone. It plays an integral role in the regulation of the menstrual cycle and early pregnancy."
     },
     {
-      "q": "9. Name the gland that functions as a biological clock in our body where it is located? Name its one secretion.\nAns.\nThe pineal gland functions as a biological clock because it regulates the circadian rhythms (sleep patterns) of the body. It is situated on the dorsal side of the forebrain. It secretes a hormone called melatonin.\nShort Answer Question (3 Marks)",
-      "a": "Detailed solution available."
+      "q": "9. Name the gland that functions as a biological clock in our body where it is located? Name its one secretion.",
+      "a": "The pineal gland functions as a biological clock because it regulates the circadian rhythms (sleep patterns) of the body. It is situated on the dorsal side of the forebrain. It secretes a hormone called melatonin.\nShort Answer Question (3 Marks)"
     },
     {
-      "q": "1. Describe the physiological functions and disorders of the thyroid gland.\nAns.\nThe thyroid gland is a ductless endocrine gland that is situated in the front part of the neck. It has a butterfly-like shape. The main function of the thyroid gland is to produce two hormones-(i) Tri-iodothyronine (T\n3\n) hormone and (ii) Tetra-iodothyronine or Thyroxine hormone (T\n4\n). Both hormones play a very important role in the body stimulating all metabolic activities.\nPhysiological functions of the thyroid gland: -\nThe thyroid gland is essential for growth and development.\nThyroid hormones control the oxidation of food substances (mainly carbohydrates and proteins).\nThyroid hormones are also responsible for controlling the basal metabolic rate (BMR).\nThe thyroid gland also secretes thyrocalcitonin (TCT), a protein hormone, which regulates the Ca++ level in the blood.\nIt promotes the differentiation of tissues.\nIt enhances protein synthesis in almost all tissues of the body.\nIt promotes the metamorphosis of tadpoles into adult frogs.\nDisorders of the thyroid gland: -\nGoiter:-\nThe under secretion (hyposecretion) of the thyroid leads to the enlargement of thyroid tissues. The neck protrudes in front as a collar known as endemic goiter.\nHyperthyroidism:-\nIt is a condition in which the thyroid gland produces excess thyroid hormones.\nCretinism:-\nIt is caused by extreme hypothyroidism in childhood and infancy. The symptoms include delayed growth (mental, bodily, and sexual), thickening of the skin and subcutaneous tissues, a potbelly, and a protruding tongue.\nMyxoedema (mucous swelling):-\nA condition caused by under secretion of the thyroid at the adult stage. The symptoms include dry, coarse skin, loss of hair, swelling of the face, slowed heart rate, and lack of alertness.",
-      "a": "Detailed solution available."
+      "q": "1. Describe the physiological functions and disorders of the thyroid gland.",
+      "a": "The thyroid gland is a ductless endocrine gland that is situated in the front part of the neck. It has a butterfly-like shape. The main function of the thyroid gland is to produce two hormones-(i) Tri-iodothyronine (T\n3\n) hormone and (ii) Tetra-iodothyronine or Thyroxine hormone (T\n4\n). Both hormones play a very important role in the body stimulating all metabolic activities.\nPhysiological functions of the thyroid gland: -\nThe thyroid gland is essential for growth and development.\nThyroid hormones control the oxidation of food substances (mainly carbohydrates and proteins).\nThyroid hormones are also responsible for controlling the basal metabolic rate (BMR).\nThe thyroid gland also secretes thyrocalcitonin (TCT), a protein hormone, which regulates the Ca++ level in the blood.\nIt promotes the differentiation of tissues.\nIt enhances protein synthesis in almost all tissues of the body.\nIt promotes the metamorphosis of tadpoles into adult frogs.\nDisorders of the thyroid gland: -\nGoiter:-\nThe under secretion (hyposecretion) of the thyroid leads to the enlargement of thyroid tissues. The neck protrudes in front as a collar known as endemic goiter.\nHyperthyroidism:-\nIt is a condition in which the thyroid gland produces excess thyroid hormones.\nCretinism:-\nIt is caused by extreme hypothyroidism in childhood and infancy. The symptoms include delayed growth (mental, bodily, and sexual), thickening of the skin and subcutaneous tissues, a potbelly, and a protruding tongue.\nMyxoedema (mucous swelling):-\nA condition caused by under secretion of the thyroid at the adult stage. The symptoms include dry, coarse skin, loss of hair, swelling of the face, slowed heart rate, and lack of alertness."
     },
     {
-      "q": "2. Write the full form of ADH and describe how it affects the functioning of kidney tubules.\nAns.\nThe full form of ADH is an Antidiuretic Hormone (vasopressin).\nIt affects kidney tubules in the following ways: -\nIt regulates the volume and osmolarity of the urine.\nIt controls how much water the kidneys excrete.\nIt acts in the distal convoluted tubule (DCT), collecting tubule and collecting ducts (CD).\nIt also regulates arterial blood pressure.",
-      "a": "Detailed solution available."
+      "q": "2. Write the full form of ADH and describe how it affects the functioning of kidney tubules.",
+      "a": "The full form of ADH is an Antidiuretic Hormone (vasopressin).\nIt affects kidney tubules in the following ways: -\nIt regulates the volume and osmolarity of the urine.\nIt controls how much water the kidneys excrete.\nIt acts in the distal convoluted tubule (DCT), collecting tubule and collecting ducts (CD).\nIt also regulates arterial blood pressure."
     },
     {
-      "q": "3. Differentiate between exocrine, endocrine, and heterocrine glands.\nAns.\nThe between exocrine, endocrine, and heterocrine glands are: -\nExocrine Gland\nEndocrine Gland\nHeterocrine Gland\nIt has a duct.\nIt is a ductless gland.\nIt is partly endocrine and partly exocrine.\nThe ducts transport their secretions to the internal organs or the surface of the body.\nTheir secretions are transported to the target organs by the blood\nThe endocrine part releases hormones into the bloodstream while the exocrine part into ducts associated with it.\nExample: Salivary gland in mouth, lacrimal glands, digestive glands, mammary glands.\nExample: Parathyroid, thyroid, pituitary, and adrenal glands.\nExample: Pancreas, ovary, and testis.",
-      "a": "Detailed solution available."
+      "q": "3. Differentiate between exocrine, endocrine, and heterocrine glands.",
+      "a": "The between exocrine, endocrine, and heterocrine glands are: -\nExocrine Gland\nEndocrine Gland\nHeterocrine Gland\nIt has a duct.\nIt is a ductless gland.\nIt is partly endocrine and partly exocrine.\nThe ducts transport their secretions to the internal organs or the surface of the body.\nTheir secretions are transported to the target organs by the blood\nThe endocrine part releases hormones into the bloodstream while the exocrine part into ducts associated with it.\nExample: Salivary gland in mouth, lacrimal glands, digestive glands, mammary glands.\nExample: Parathyroid, thyroid, pituitary, and adrenal glands.\nExample: Pancreas, ovary, and testis."
     },
     {
-      "q": "4. Name the\n$${{\\text{T}}_{\\text{3}}}$$\nand\n$${{\\text{T}}_{\\text{4}}}$$\ncomponents of thyroid hormone. Explain their specific function.\nAns.\nThyroxin or tetra-iodothyronine is the\u00a0 $${{\\text{T}}_{\\text{4}}}$$ component of thyroid hormone and has 4 atoms of iodine. Tri-iodothyronine is the $${{\\text{T}}_{\\text{3}}}$$\u00a0 component of thyroid hormone and has 3 atoms of iodine. $${{\\text{T}}_{\\text{4}}}$$\u00a0 and $${{\\text{T}}_{\\text{3}}}$$\u00a0 have identical effects on target cells. They are called together TH (Thyroid hormone)\nSpecific functions of tetra-iodothyronine and triiodothyronine are:\nThey regulate basal metabolic rate (BMR).\nThey play a major role in the metabolism of carbohydrates, proteins, and ats.\nThey are essential for growth and development.\nThey help in the metamorphosis of frogs.",
-      "a": "Detailed solution available."
+      "q": "4. Name the\n$${{\\text{T}}_{\\text{3}}}$$\nand\n$${{\\text{T}}_{\\text{4}}}$$\ncomponents of thyroid hormone. Explain their specific function.",
+      "a": "Thyroxin or tetra-iodothyronine is the\u00a0 $${{\\text{T}}_{\\text{4}}}$$ component of thyroid hormone and has 4 atoms of iodine. Tri-iodothyronine is the $${{\\text{T}}_{\\text{3}}}$$\u00a0 component of thyroid hormone and has 3 atoms of iodine. $${{\\text{T}}_{\\text{4}}}$$\u00a0 and $${{\\text{T}}_{\\text{3}}}$$\u00a0 have identical effects on target cells. They are called together TH (Thyroid hormone)\nSpecific functions of tetra-iodothyronine and triiodothyronine are:\nThey regulate basal metabolic rate (BMR).\nThey play a major role in the metabolism of carbohydrates, proteins, and ats.\nThey are essential for growth and development.\nThey help in the metamorphosis of frogs."
     },
     {
-      "q": "5. Differentiate between vitamins, hormones, and enzymes.\nAns.\nThe difference between vitamins, hormones, and enzymes are:\nVitamin\nHormone\nEnzymes\nIt is carried in the food.\nIt is carried by the blood.\nIt is not carried by the blood.\nIt is used up during the process.\nIt is used up during the metabolic reaction.\nIt remained unchanged after the reaction.\nIt is obtained from food.\nIt is secreted by an endocrine gland.\nIt is formed by the exocrine gland.\nIt may be an organic acid, amide, amine, ester, alcohol, or steroid.\nIt may be a glycoprotein, steroid, or polypeptide.\nIt is always proteinaceous.\nIt acts as a coenzyme.\nIt acts as a stimulating substance.\nIt acts as a biocatalyst.\nIts deficiency causes deficiency diseases.\nIts excess, as well as deficiency, causes many hormonal disorders and diseases.\nIt is required in a small amount.",
-      "a": "Detailed solution available."
+      "q": "5. Differentiate between vitamins, hormones, and enzymes.",
+      "a": "The difference between vitamins, hormones, and enzymes are:\nVitamin\nHormone\nEnzymes\nIt is carried in the food.\nIt is carried by the blood.\nIt is not carried by the blood.\nIt is used up during the process.\nIt is used up during the metabolic reaction.\nIt remained unchanged after the reaction.\nIt is obtained from food.\nIt is secreted by an endocrine gland.\nIt is formed by the exocrine gland.\nIt may be an organic acid, amide, amine, ester, alcohol, or steroid.\nIt may be a glycoprotein, steroid, or polypeptide.\nIt is always proteinaceous.\nIt acts as a coenzyme.\nIt acts as a stimulating substance.\nIt acts as a biocatalyst.\nIts deficiency causes deficiency diseases.\nIts excess, as well as deficiency, causes many hormonal disorders and diseases.\nIt is required in a small amount."
     },
     {
-      "q": "6. A patient was complaining of frequent urination, excessive thirst, hunger, and tiredness. His fasting glucose level was found higher than 130 mg/dL on two occasions:\nName the disease.\nGive the root cause of this disease.\nExplain why the blood glucose level is higher than 130 mg/dL.\nAns.\nThe person is suffering from the disease diabetes mellitus.\nThe root cause of this disease: - The failure of the $$\\text{ }\\!\\!\\beta\\!\\!\\text{ }$$ -cells of the islets of Langerhans of the pancreas to produce adequate amounts of insulin.\nDue to the lack of secretion of insulin the blood glucose level is higher than 130 mg/dL.\nLong Answer Questions (5 Marks)",
-      "a": "Detailed solution available."
+      "q": "6. A patient was complaining of frequent urination, excessive thirst, hunger, and tiredness. His fasting glucose level was found higher than 130 mg/dL on two occasions:\nName the disease.\nGive the root cause of this disease.\nExplain why the blood glucose level is higher than 130 mg/dL.",
+      "a": "The person is suffering from the disease diabetes mellitus.\nThe root cause of this disease: - The failure of the $$\\text{ }\\!\\!\\beta\\!\\!\\text{ }$$ -cells of the islets of Langerhans of the pancreas to produce adequate amounts of insulin.\nDue to the lack of secretion of insulin the blood glucose level is higher than 130 mg/dL.\nLong Answer Questions (5 Marks)"
     },
     {
-      "q": "1. Name the hormone that regulates each of the following and mention the source of it.\nUrinary elimination of water.\nStorage of glucose as glycogen.\nNa+ and K+ metabolism.\nBasal metabolic rate.\nDescent of testes into scrotum.\nAns.\nActivity\nHormone\nSource\nUrinary elimination of water\nAnti Diuretic Hormone (ADH)\nPosterior pituitary\nStorage of glucose as glycogen\nInsulin\nGlucagon\nIslets of Langerhans\nNa\n+\nand K\n+\nmetabolism\nAldosterone\nAdrenal cortex\nBasal Metabolic Rate\nThyroxine or tetra-iodothyronine ( $${{\\text{T}}_{\\text{4}}}$$ ) and Triiodothyronine ($${{\\text{T}}_{\\text{3}}}$$)\nThyroid Gland\nDescends of the testis into the scrotum\nFollicle Stimulating Hormone (FSH)\nAnterior pituitary",
-      "a": "Detailed solution available."
+      "q": "1. Name the hormone that regulates each of the following and mention the source of it.\nUrinary elimination of water.\nStorage of glucose as glycogen.\nNa+ and K+ metabolism.\nBasal metabolic rate.\nDescent of testes into scrotum.",
+      "a": "Activity\nHormone\nSource\nUrinary elimination of water\nAnti Diuretic Hormone (ADH)\nPosterior pituitary\nStorage of glucose as glycogen\nInsulin\nGlucagon\nIslets of Langerhans\nNa\n+\nand K\n+\nmetabolism\nAldosterone\nAdrenal cortex\nBasal Metabolic Rate\nThyroxine or tetra-iodothyronine ( $${{\\text{T}}_{\\text{4}}}$$ ) and Triiodothyronine ($${{\\text{T}}_{\\text{3}}}$$)\nThyroid Gland\nDescends of the testis into the scrotum\nFollicle Stimulating Hormone (FSH)\nAnterior pituitary"
     },
     {
-      "q": "2. Explain the hormones of the adrenal gland and their action on target tissue in a tabular form.\nAns.\nThe hormones of the adrenal gland and their action on target tissue in a tabular form are:\nHormones of the Adrenal Gland\nPrincipal Action\nTarget Tissue\nMineralocorticoids (Aldosterone)\nThey regulate electrolytes, osmotic pressure, blood pressure, and body fluid volume.\nIt stimulates the reabsorption of Na\n+\nand water.\nIt eliminates the K\n+\nand phosphate ions.\nKidney tubules\nGlucocorticoids (cortisol, corticosterone & cortisone)\nThey raise blood glucose levels.\nThey promote gluconeogenesis (formation of glucose), lipolysis (breakdown of lipids), and proteolysis (the breakdown of plasma proteins).\nThey increase the availability of amino acids for enzyme synthesis by the liver and general resistance in the long term.\nStimulates anti-inflammatory and allergic responses\nSuppresses immune responses (antibody production).\nLiver\nGonadocorticoids (Androgens and estrogens)\nThey are secreted by adults in low concentrations.\nTheir effects are usually insignificant.\nThey stimulate the development of secondary sexual characteristics, such as the growth of facial hair, pubic hair, and axial hair, especially in males.\nGonads\nAdrenaline\nRise in blood pressure.\nIncreases the rate of heartbeat, constriction of skin and visceral/smooth muscle, dilation of arterioles of heart and skeleton.\nStimulates the breakdown of lipids and proteins.\nIncreases in oxygen consumption.\nErection of hairs (piloerection) and dilation of pupils.\nThey initiate stress responses.\nSkeletal muscles, fat cells, cardiac muscles, smooth muscles, blood vessels.\nNoradrenaline hormones\nIt stimulates reactions similar to those produced by adrenaline.\nSame as adrenaline",
-      "a": "Detailed solution available."
+      "q": "2. Explain the hormones of the adrenal gland and their action on target tissue in a tabular form.",
+      "a": "The hormones of the adrenal gland and their action on target tissue in a tabular form are:\nHormones of the Adrenal Gland\nPrincipal Action\nTarget Tissue\nMineralocorticoids (Aldosterone)\nThey regulate electrolytes, osmotic pressure, blood pressure, and body fluid volume.\nIt stimulates the reabsorption of Na\n+\nand water.\nIt eliminates the K\n+\nand phosphate ions.\nKidney tubules\nGlucocorticoids (cortisol, corticosterone & cortisone)\nThey raise blood glucose levels.\nThey promote gluconeogenesis (formation of glucose), lipolysis (breakdown of lipids), and proteolysis (the breakdown of plasma proteins).\nThey increase the availability of amino acids for enzyme synthesis by the liver and general resistance in the long term.\nStimulates anti-inflammatory and allergic responses\nSuppresses immune responses (antibody production).\nLiver\nGonadocorticoids (Androgens and estrogens)\nThey are secreted by adults in low concentrations.\nTheir effects are usually insignificant.\nThey stimulate the development of secondary sexual characteristics, such as the growth of facial hair, pubic hair, and axial hair, especially in males.\nGonads\nAdrenaline\nRise in blood pressure.\nIncreases the rate of heartbeat, constriction of skin and visceral/smooth muscle, dilation of arterioles of heart and skeleton.\nStimulates the breakdown of lipids and proteins.\nIncreases in oxygen consumption.\nErection of hairs (piloerection) and dilation of pupils.\nThey initiate stress responses.\nSkeletal muscles, fat cells, cardiac muscles, smooth muscles, blood vessels.\nNoradrenaline hormones\nIt stimulates reactions similar to those produced by adrenaline.\nSame as adrenaline"
     },
     {
-      "q": "3. Explain the mechanism of hormone action.\nAns.\nMechanism of Hormone Action: - The mechanism of hormone action in the human body is grouped into two categories:\nFixed membrane receptor mechanism\nMobile receptor mechanism\nFixed membrane receptor mechanism:\nThis type of mechanism is exhibited by the water-soluble hormones such as the growth hormone, oxytocin, ADH, etc., made up of amines or proteins.\nThese hormones are unable to penetrate through the lipid membrane. These hormones bind to their target receptor present on the cell membrane.\nThe enzyme adenyl cyclase in the cell membrane is activated when the hormone binds to the specific target receptor. This aids in the synthesis of cyclic AMP (cAMP).\nCyclic AMP (cAMP) acts as a secondary messenger. It diffuses through the cell membrane and causes biochemical changes by activating various enzyme activities.\nMobile Receptor Mechanism:\nLipid soluble hormones, such as fatty acids and steroids, exhibit this type of mechanism because they can easily pass through the plasma membrane.\nThey have intracellular receptors. Hormones bind to the target receptor, which activates the enzymatic activity of cells\u00a0and causes biochemical changes.\nThe hormone-receptor complex initiates DNA transcription.\nThe mRNA is converted into protein. This protein alters the biochemistry of the cell.\nRelated Study Materials for Class 11 Biology Chapter 19\nS.No\nImportant Other Links for Class 11 Biology Chapter 19",
-      "a": "Detailed solution available."
+      "q": "3. Explain the mechanism of hormone action.",
+      "a": "Mechanism of Hormone Action: - The mechanism of hormone action in the human body is grouped into two categories:\nFixed membrane receptor mechanism\nMobile receptor mechanism\nFixed membrane receptor mechanism:\nThis type of mechanism is exhibited by the water-soluble hormones such as the growth hormone, oxytocin, ADH, etc., made up of amines or proteins.\nThese hormones are unable to penetrate through the lipid membrane. These hormones bind to their target receptor present on the cell membrane.\nThe enzyme adenyl cyclase in the cell membrane is activated when the hormone binds to the specific target receptor. This aids in the synthesis of cyclic AMP (cAMP).\nCyclic AMP (cAMP) acts as a secondary messenger. It diffuses through the cell membrane and causes biochemical changes by activating various enzyme activities.\nMobile Receptor Mechanism:\nLipid soluble hormones, such as fatty acids and steroids, exhibit this type of mechanism because they can easily pass through the plasma membrane.\nThey have intracellular receptors. Hormones bind to the target receptor, which activates the enzymatic activity of cells\u00a0and causes biochemical changes.\nThe hormone-receptor complex initiates DNA transcription.\nThe mRNA is converted into protein. This protein alters the biochemistry of the cell.\nRelated Study Materials for Class 11 Biology Chapter 19\nS.No\nImportant Other Links for Class 11 Biology Chapter 19"
     },
     {
       "q": "1.\nCBSE Class 11 Chemical Coordination and Integration Notes",
@@ -3727,8 +3727,8 @@ export default {
       "a": "Muscle contraction occurs when actin and myosin filaments slide towards one other, according to the sliding filament theory. Muscle relaxation occurs when actin and myosin filaments glide away from each other. The striations of striated muscles are caused by alternate bands of actin and myosin. The I band of actin is a light-colored band of actin. The A band, which is darker in color, is the myosin band. An elastic band termed Z line holds the actin filaments together in the center. An elastic band termed M line holds the myosin filaments together in the middle. The position of the Z line in reference to the M line changes during contraction, and the muscle fiber becomes shorter. The actin filaments return to their original position after relaxation, making the muscle fiber appear longer."
     },
     {
-      "q": "5. Discuss the role of Ca\n2\n+\nions in muscle contraction. Draw neat sketches to illustrate your answer.\nAns\n: Calcium ions are essential for muscular contraction. Calcium ions enter muscle cells through a network of tiny channels. Calcium channels are what they're called. An action potential is triggered when a neurotransmitter enters a muscle cell. Calcium channels open as a result, allowing calcium ions to enter. The troponin on the action filament binds to calcium ions.\nAs a result, the masking on myosin's active site is removed. The energy from ATP is then used by myosin to go towards actin and form a cross-bridge. Actin slides towards each other as a result, and the muscle contracts as a result. The calcium ions are then expelled from the muscle cells, and actin is formed.",
-      "a": "Detailed solution available."
+      "q": "5. Discuss the role of Ca\n2\n+\nions in muscle contraction. Draw neat sketches to illustrate your answer.",
+      "a": "Calcium ions are essential for muscular contraction. Calcium ions enter muscle cells through a network of tiny channels. Calcium channels are what they're called. An action potential is triggered when a neurotransmitter enters a muscle cell. Calcium channels open as a result, allowing calcium ions to enter. The troponin on the action filament binds to calcium ions.\nAs a result, the masking on myosin's active site is removed. The energy from ATP is then used by myosin to go towards actin and form a cross-bridge. Actin slides towards each other as a result, and the muscle contracts as a result. The calcium ions are then expelled from the muscle cells, and actin is formed."
     },
     {
       "q": "6. Differentiate between Pectoral and Pelvic girdle.",
