@@ -386,7 +386,7 @@
         "title": "Models of the Hydrogen Atom MG",
         "description": "Interactive Models of the Hydrogen Atom simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/models-of-the-hydrogen-atom/latest/models-of-the-hydrogen-atom_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/models-of-the-hydrogen-atom/latest/models-of-the-hydrogen-atom-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_models-of-the-hydrogen-atom-mg_gen.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -403,7 +403,7 @@
         "title": "Molarity MG",
         "description": "Interactive Molarity simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molarity/latest/molarity_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/molarity/latest/molarity-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_molarity-mg_gen.jpg",
         "category": "Solutions, Acids & Bases",
         "isNative": true
     },
@@ -420,7 +420,7 @@
         "title": "Molecule Polarity MG",
         "description": "Interactive Molecule Polarity simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molecule-polarity/latest/molecule-polarity_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/molecule-polarity/latest/molecule-polarity-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_molecule-polarity-mg_gen.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -437,7 +437,7 @@
         "title": "Molecule Shapes MG",
         "description": "Interactive Molecule Shapes simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_molecule-shapes-mg_gen.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -454,7 +454,7 @@
         "title": "Molecule Shapes: Basics MG",
         "description": "Interactive Molecule Shapes: Basics simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molecule-shapes-basics/latest/molecule-shapes-basics_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/molecule-shapes-basics/latest/molecule-shapes-basics-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_molecule-shapes-basics-mg_gen.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
