@@ -48,16 +48,7 @@ const SubjectContentView = ({ subject, onBack }) => {
                  <ArrowLeft size={16} /> Back to Chapters
               </button>
               
-              {/* Render dynamic data only for the fully scraped subjects */}
-              {(className === 'Class 12' && ['Physics', 'Chemistry', 'Maths', 'Biology', 'English', 'Economics', 'Business Studies'].includes(subjectName)) ? (
-                 <GenericChapterData chapter={activeChapter} subjectName={subjectName} />
-              ) : (
-                 <div className="no-chapters-box">
-                    <FileText size={40} style={{ opacity: 0.5, marginBottom: '15px' }} />
-                    <h3>Content Being Digitized</h3>
-                    <p>The solution PDF for this chapter is currently being converted into our premium interactive format.</p>
-                 </div>
-              )}
+              <GenericChapterData chapter={activeChapter} subjectName={subjectName} className={className} />
            </div>
         ) : (
           chapterList.length > 0 ? (

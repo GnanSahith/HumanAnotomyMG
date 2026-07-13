@@ -1,20 +1,42 @@
-import React from 'react';
-import { ListChecks } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { ListChecks, Loader } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
-import { vedantuScrapedData } from '../vedantuScrapedData';
-import { vedantuChemistryData } from '../vedantuChemistryData';
-import { vedantuMathsData } from '../vedantuMathsData';
-import { vedantuBiologyData } from '../vedantuBiologyData';
-import { vedantuEnglishData } from '../vedantuEnglishData';
-import { vedantuEconomicsData } from '../vedantuEconomicsData';
-import { vedantuBusinessstudiesData } from '../vedantuBusinessstudiesData';
 
-export const GenericChapterData = ({ chapter, subjectName = 'Physics' }) => {
+export const GenericChapterData = ({ chapter, subjectName = 'Physics', className = 'Class 12' }) => {
+  const [chapterQuestions, setChapterQuestions] = useState([]);
+  const [loading, setLoading] = useState(true);
+
   const chapterNumStr = chapter?.id ? chapter.id.replace('c', '') : '1';
   const chapterNum = parseInt(chapterNumStr, 10);
+  useEffect(() => {
+    const container = document.querySelector('.subject-content-container');
+    if (!container) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-reading');
+        } else {
+          entry.target.classList.remove('is-reading');
+        }
+      });
+    }, {
+      root: container,
+      rootMargin: '-30% 0px -30% 0px',
+      threshold: 0
+    });
+
+    const blocks = document.querySelectorAll('.qna-block');
+    blocks.forEach(b => observer.observe(b));
+
+    const content = document.querySelector('.rich-chapter-content');
+    if (content) content.classList.add('reader-active');
+
+    return () => observer.disconnect();
+  }, [chapterNum, subjectName]);
   
   const scrollToQ = (id) => {
     const el = document.getElementById(id);
@@ -34,18 +56,27 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics' }) => {
     }
   };
 
-  const dataMap = {
-    'physics': vedantuScrapedData,
-    'chemistry': vedantuChemistryData,
-    'maths': vedantuMathsData,
-    'biology': vedantuBiologyData,
-    'english': vedantuEnglishData,
-    'economics': vedantuEconomicsData,
-    'business studies': vedantuBusinessstudiesData,
-  };
-  let dataSource = dataMap[subjectName.toLowerCase()] || vedantuScrapedData;
-  
-  const chapterQuestions = dataSource[chapterNum] || [];
+  useEffect(() => {
+    let isMounted = true;
+    const loadData = async () => {
+      setLoading(true);
+      try {
+        const clsSlug = className.toLowerCase().replace(/ /g, '_');
+        const subSlug = subjectName.toLowerCase().replace(/ /g, '_');
+        // We catch the import so it doesn't crash if the file is missing
+        const module = await import(`../data/${clsSlug}_${subSlug}.js`).catch(() => ({ default: {} }));
+        if (isMounted) {
+            setChapterQuestions(module.default[chapterNum] || []);
+        }
+      } catch (err) {
+        if (isMounted) setChapterQuestions([]);
+      } finally {
+        if (isMounted) setLoading(false);
+      }
+    };
+    loadData();
+    return () => { isMounted = false; };
+  }, [className, subjectName, chapterNum]);
 
   const healText = (text) => {
     if (!text) return text;
@@ -258,11 +289,25 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics' }) => {
     return out.join('\n\n');
   };
 
-  if (chapterQuestions.length === 0) {
+  if (loading) {
     return (
-      <div className="no-chapters-box">
-        <h3>Processing Data</h3>
-        <p>The highly complex MathJax equations for this chapter are currently being parsed into the database.</p>
+      <div className="rich-chapter-content">
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', height: '300px', color: 'rgba(255,255,255,0.7)' }}>
+           <Loader className="spin" size={40} style={{ marginBottom: '15px' }} />
+           <h3>Loading Solutions...</h3>
+           <p>Extracting data for {className} {subjectName}...</p>
+        </div>
+      </div>
+    );
+  }
+
+  if (!chapterQuestions || chapterQuestions.length === 0) {
+    return (
+      <div className="rich-chapter-content">
+        <div className="no-chapters-box" style={{ marginTop: '20px' }}>
+           <h3>Content Being Digitized</h3>
+           <p>The solution PDF for this chapter is currently being compiled into our premium interactive format.</p>
+        </div>
       </div>
     );
   }
