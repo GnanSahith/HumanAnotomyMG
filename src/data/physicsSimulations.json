@@ -145,7 +145,7 @@
         "title": "Center and Variability MG",
         "description": "Interactive Center and Variability simulation (Native Custom Build)",
         "url": "/simulations/center-and-variability_en.html",
-        "thumbnail": "/thumbnails/phys_10_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_10_mg_gen.jpg",
         "category": "Motion & Mechanics",
         "isNative": true
     },
@@ -175,7 +175,7 @@
         "title": "Hooke's Law MG",
         "description": "Interactive Hooke's Law simulation (Native Custom Build)",
         "url": "/simulations/hookes-law_en.html",
-        "thumbnail": "/thumbnails/phys_12_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_12_mg_gen.jpg",
         "category": "Work, Energy & Power",
         "isNative": true
     },
@@ -190,7 +190,7 @@
         "title": "Masses and Springs: Basics MG",
         "description": "Interactive Masses and Springs: Basics simulation (Native Custom Build)",
         "url": "/simulations/masses-and-springs-basics_en.html",
-        "thumbnail": "/thumbnails/phys_13_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_13_mg_gen.jpg",
         "category": "Work, Energy & Power",
         "isNative": true
     },
@@ -205,7 +205,7 @@
         "title": "States of Matter MG",
         "description": "Interactive States of Matter simulation (Native Custom Build)",
         "url": "/simulations/states-of-matter_en.html",
-        "thumbnail": "/thumbnails/phys_14_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_14_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
@@ -220,7 +220,7 @@
         "title": "States of Matter: Basics MG",
         "description": "Interactive States of Matter: Basics simulation (Native Custom Build)",
         "url": "/simulations/states-of-matter-basics_en.html",
-        "thumbnail": "/thumbnails/phys_15_mg_gen.jpg",
+        "thumbnail": "/thumbnails/phys_thumb_phys_15_mg_gen.jpg",
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
