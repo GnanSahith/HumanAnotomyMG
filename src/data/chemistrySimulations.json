@@ -284,7 +284,7 @@
         "title": "Energy Forms and Changes MG",
         "description": "Interactive Energy Forms and Changes simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_energy-forms-and-changes-mg_gen.jpg",
         "category": "Thermodynamics & Gases",
         "isNative": true
     },
@@ -301,7 +301,7 @@
         "title": "Fourier: Making Waves MG",
         "description": "Interactive Fourier: Making Waves simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_fourier-making-waves-mg_gen.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
@@ -318,7 +318,7 @@
         "title": "Gas Properties MG",
         "description": "Interactive Gas Properties simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/gas-properties/latest/gas-properties-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_gas-properties-mg_gen.jpg",
         "category": "Thermodynamics & Gases",
         "isNative": true
     },
@@ -352,7 +352,7 @@
         "title": "Isotopes and Atomic Mass MG",
         "description": "Interactive Isotopes and Atomic Mass simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_isotopes-and-atomic-mass-mg_gen.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -369,7 +369,7 @@
         "title": "Membrane Transport MG",
         "description": "Interactive Membrane Transport simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/membrane-transport/latest/membrane-transport_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/membrane-transport/latest/membrane-transport-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_membrane-transport-mg_gen.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
