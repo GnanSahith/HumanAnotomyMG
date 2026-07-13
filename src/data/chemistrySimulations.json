@@ -556,7 +556,7 @@
         "title": "Reactants, Products and Leftovers MG",
         "description": "Interactive Reactants, Products and Leftovers simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_reactants-products-and-leftovers-mg_gen.jpg",
         "category": "Reactions & Stoichiometry",
         "isNative": true
     },
@@ -573,7 +573,7 @@
         "title": "Rutherford Scattering MG",
         "description": "Interactive Rutherford Scattering simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/rutherford-scattering/latest/rutherford-scattering-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_rutherford-scattering-mg_gen.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -590,7 +590,7 @@
         "title": "States of Matter MG",
         "description": "Interactive States of Matter simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/states-of-matter/latest/states-of-matter-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_states-of-matter-mg_gen.jpg",
         "category": "Thermodynamics & Gases",
         "isNative": true
     },
@@ -607,7 +607,7 @@
         "title": "States of Matter: Basics MG",
         "description": "Interactive States of Matter: Basics simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/states-of-matter-basics/latest/states-of-matter-basics-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_states-of-matter-basics-mg_gen.jpg",
         "category": "Thermodynamics & Gases",
         "isNative": true
     },
@@ -624,7 +624,7 @@
         "title": "Wave on a String MG",
         "description": "Interactive Wave on a String simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string_en.html",
-        "thumbnail": "https://phet.colorado.edu/sims/html/wave-on-a-string/latest/wave-on-a-string-600.png",
+        "thumbnail": "/thumbnails/chem_thumb_wave-on-a-string-mg_gen.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     }
