@@ -1,2235 +1,809 @@
 export default {
   "1": [
     {
-      "q": "1. Define Integers.",
-      "a": "The numbers range from negative infinity to positive infinity including zero. They are denoted by I i.e.\u00a0 $ \\text{I=}\\left\\{ \\left. .....\\text{-3,-2,-1,0,1,2,3}..... \\right\\} \\right. $ ."
-    },
-    {
-      "q": "2. We move to the left in the number line when we__________ or __________.",
-      "a": "We move to the left in the number line when we\nadd a negative integer\nor\nsubtract a positive integer\n."
-    },
-    {
-      "q": "3. Additive inverse of\u00a0 $ \\text{-25} $\u00a0 is ____.",
-      "a": "$ 25 $\n."
-    },
-    {
-      "q": "4. Fill the blanks for\u00a0 $ \\text{-228+96+125} $\u00a0 ___\u00a0 $ \\text{-451+197+76}\\left( \\text{use <,>,=} \\right) $",
-      "a": "$\u00a0 >\u00a0 $"
-    },
-    {
-      "q": "5. What would come in place of ? in\u00a0 $ \\text{-11+0=?} $",
-      "a": "$ \\text{-11} $"
-    },
-    {
-      "q": "6. Fill the blanks for\n$ \\text{-22 }\\!\\!\\times\\!\\!\\text{ -13 }\\!\\!\\times\\!\\!\\text{ 5=} $\u00a0 _____",
-      "a": "$ \\text{1430} $\n7.Fill the blanks for\n$ \\text{-3 }\\!\\!\\times\\!\\!\\text{ 125=} $\u00a0 ___\nAns: $ \\text{-375} $\nB. Short Answer Questions \u2013 2 marks"
-    },
-    {
-      "q": "8. Verify\u00a0 $ \\text{a-}\\left( \\text{-b} \\right)\\text{=a+b} $\u00a0 for the following values of\u00a0 $ \\text{a} $\u00a0 and\u00a0 $ \\text{b} $\na.\u00a0 $ \\text{a=25,b=12} $",
-      "a": "Substituting value of\u00a0 $ \\text{a} $\u00a0 and\u00a0 $ \\text{b} $\u00a0 in given equation\n$ \\text{a-}\\left( \\text{-b} \\right)\\text{=a+b} $\n$ \\text{25-}\\left( \\text{-12} \\right)\\text{=25+12} $\n$ \\,\\text{25+12=25+12} $\n$ \\text{37=37} $\nHence, verified.\nb. $ \\text{a=113,b=16} $\nAns:\nSubstituting value of\u00a0 $ \\text{a} $\u00a0 and\u00a0 $ \\text{b} $\u00a0 in given equation\n$ \\text{a-}\\left( \\text{-b} \\right)\\text{=a+b} $\n$ \\text{113-}\\left( \\text{-16} \\right)\\text{=113+16} $\n$ \\text{113+16=113+16} $\n$ \\text{129=129} $"
-    },
-    {
-      "q": "9. Use\u00a0 $ \\text{,} $ \u00a0 or\u00a0 $ \\text{=} $\u00a0 sign for the below statements to make it true\na.\n$ \\left( \\text{-9} \\right)\\text{+}\\left( \\text{-28} \\right) $ ____\u00a0 $ \\left( \\text{-9} \\right)\\text{-}\\left( \\text{-28} \\right) $",
-      "a": "Solving both sides-\n$ \\left( \\text{-9} \\right)\\text{+}\\left( \\text{-28} \\right)=-37 $\n$ \\left( \\text{-9} \\right)\\text{-}\\left( \\text{-28} \\right)=19 $\nThus,\u00a0 $ \\left( \\text{-9} \\right)\\text{+}\\left( \\text{-28} \\right) < \\left( \\text{-9} \\right)\\text{-}\\left( \\text{-28} \\right) $\nb.\n$ \\text{25+}\\left( \\text{-14} \\right)\\text{-18} $\u00a0 ____ \u00a0 $ \\text{25+}\\left( \\text{-14} \\right)\\text{-}\\left( \\text{-18} \\right) $\nAns:\nSolving both sides-\n$\u00a0 \\text{2}5+\\left( -14 \\right)-18=11-18\u00a0 $\n$\u00a0 =\\text{-7} $\n$\u00a0 \\text{25+}\\left( \\text{-14} \\right)\\text{-}\\left( \\text{-18} \\right)=11+18\u00a0 $\n$\u00a0 =29 $\nThus,\u00a0 $ \\text{2}5+\\left( -14 \\right)-18 < \\text{25+}\\left( \\text{-14} \\right)\\text{-}\\left( \\text{-18} \\right) $."
-    },
-    {
-      "q": "10. Write down a pair of integers for the following\na. Sum gives\n$ \\text{-9} $",
-      "a": "A pair of integers that gives sum\u00a0 $ \\text{-9} $\u00a0 is\u00a0 $ \\left( -6,-3 \\right) $.\nb. Difference gives\u00a0 $ \\text{-11} $\nAns:\nA pair of integers that gives sum\u00a0 $ \\text{-11} $\u00a0 is\u00a0 $ \\left( -14,3 \\right) $."
-    },
-    {
-      "q": "11.\u00a0 a. Write a positive and negative integer whose sum is\u00a0 $ \\text{-4} $ .",
-      "a": "$ \\left( 4,-8 \\right) $\nis a positive and negative integer whose sum is\u00a0 $ \\text{-4} $\u00a0 .\nb.Write a negative integer and a positive integer whose difference is\u00a0 $ \\text{-2} $ .\nAns:\u00a0 $ \\left( -1,1 \\right) $\nis a positive and negative integer whose sum is\u00a0 $ \\text{-2} $\u00a0 ."
-    },
-    {
-      "q": "12. Fill in the blanks\na.\u00a0 $ \\left( \\text{-4} \\right)\\text{+}\\left( \\text{-11} \\right)\\text{=}\\left( \\text{-11} \\right)\\text{+ }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ } $",
-      "a": "$ \\left( \\text{-4} \\right)\\text{+}\\left( \\text{-11} \\right)\\text{=}\\left( \\text{-11} \\right)\\text{+ }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ } $\n$$\\Rightarrow \\left( \\text{-4} \\right)\\text{+}\\left( \\text{-11} \\right)\\text{+11}$$\n$$\\Rightarrow -4$$\nThus,\u00a0 $ \\left( \\text{-4} \\right)\\text{+}\\left( \\text{-11} \\right)\\text{=}\\left( \\text{-11} \\right)\\text{+-4} $\nb.\u00a0 $ \\left[ \\text{22+}\\left( \\text{-9} \\right) \\right]\\text{+}\\left( \\text{-2} \\right)\\text{=22+}\\left[ \\text{ }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ +}\\left( \\text{-2} \\right) \\right] $\nAns: $$\\left[ \\text{22+}\\left( \\text{-9} \\right) \\right]\\text{+}\\left( \\text{-2} \\right)\\text{=22+}\\left[ \\text{ }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ +}\\left( \\text{-2} \\right) \\right]$$\n$$\\Rightarrow \\text{13-2=22+}\\left[ \\text{ }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ +}\\left( \\text{-2} \\right) \\right]$$\n$$\\Rightarrow \\text{11-22=}\\left[ \\text{ }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ +}\\left( \\text{-2} \\right) \\right]$$\n$$\\Rightarrow \\text{-11= }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ +}\\left( \\text{-2} \\right)$$\n$$\\Rightarrow \\text{-11+2}$$\n$$\\Rightarrow \\text{-9}$$\nThus, $$\\left[ \\text{22+}\\left( \\text{-9} \\right) \\right]\\text{+}\\left( \\text{-2} \\right)\\text{=22+}\\left[ \\text{-9+}\\left( \\text{-2} \\right) \\right]$$"
-    },
-    {
-      "q": "13.\u00a0 Verify\u00a0 $ \\text{7 }\\!\\!\\times\\!\\!\\text{ }\\left[ \\left( \\text{22} \\right)\\text{+}\\left( \\text{-9} \\right) \\right]\\text{=}\\left[ \\left( \\text{7} \\right)\\text{ }\\!\\!\\times\\!\\!\\text{ 22} \\right]\\text{+}\\left[ \\text{7 }\\!\\!\\times\\!\\!\\text{ -9} \\right] $",
-      "a": "On solving both sides\n$ \\text{7 }\\!\\!\\times\\!\\!\\text{ }\\left[ \\left( \\text{22} \\right)\\text{+}\\left( \\text{-9} \\right) \\right]\\text{=}\\left[ \\left( \\text{7} \\right)\\text{ }\\!\\!\\times\\!\\!\\text{ 22} \\right]\\text{+}\\left[ \\text{7 }\\!\\!\\times\\!\\!\\text{ -9} \\right] $\n$ 7\\times \\left[ 13 \\right]=154-63 $\n$ 91=91 $\nHence, verified.\n14.Find the product of\na.\u00a0 $ \\text{63 }\\!\\!\\times\\!\\!\\text{ 0 }\\!\\!\\times\\!\\!\\text{ -7} $\nAns:\nThe product of\u00a0 $ \\text{63 }\\!\\!\\times\\!\\!\\text{ 0 }\\!\\!\\times\\!\\!\\text{ -7} $\u00a0 is\u00a0 $ 0 $\u00a0 .\nb.\n$ \\text{5 }\\!\\!\\times\\!\\!\\text{ }\\left( \\text{-3} \\right)\\text{ }\\!\\!\\times\\!\\!\\text{ -2} $\nAns:\nSo, $ 5\\times \\left( -3 \\right)\\times -2=5\\times 6 $\n$ =30 $\nThe product of\n$ 5\\times \\left( -3 \\right)\\times -2 $\nis\u00a0 $ 30 $\u00a0 ."
-    },
-    {
-      "q": "15.\na.\u00a0 $ \\text{-2 }\\!\\!\\times\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ =14} $",
-      "a": "So,\n$ \\text{-2 }\\!\\!\\times\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ =14} $\n$ \\Rightarrow \\dfrac{\\text{14}}{\\text{-2}} $\n$ \\Rightarrow \\text{-7} $\nHence,\u00a0 $ \\text{-2 }\\!\\!\\times\\!\\!\\text{ 7 =14} $\u00a0 .\nb.\n$$\\text{ }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\times\\!\\!\\text{ -8=-32}$$\nAns:\nSo, $$\\text{ }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{\u00a0 }\\!\\!\\_\\!\\!\\text{ \u00a0 }\\!\\!\\times\\!\\!\\text{ -8=-32}$$\n$$\\Rightarrow \\dfrac{-32}{-8}$$\n$$\\Rightarrow 4$$\nHence, $$\\text{4 }\\!\\!\\times\\!\\!\\text{ -8=-32}$$"
-    },
-    {
-      "q": "16. Evaluate\na. $ \\text{-39 }\\!\\!\\div\\!\\!\\text{ 13} $",
-      "a": "$ -39\\div 13 $\n$ \\Rightarrow \\dfrac{-39}{13} $\n$ \\Rightarrow -3 $\nHence,\u00a0 $ -39\\div 13=-3 $\nb.\n$ \\text{-64 }\\!\\!\\div\\!\\!\\text{ }\\left[ \\text{-8 }\\!\\!\\times\\!\\!\\text{ -8} \\right] $\nAns:\n$ -64\\div \\left[ -8\\times -8 \\right] $\n$ \\Rightarrow \\dfrac{-64}{\\left[ -8\\times -8 \\right]} $\n$ \\Rightarrow \\dfrac{-64}{64} $\n$ \\Rightarrow -1 $\nHence,\u00a0 $ -64\\div \\left[ -8\\times -8 \\right]=-1 $"
-    },
-    {
-      "q": "17. Write two pairs of integers such that\u00a0 $ \\text{a }\\!\\!\\div\\!\\!\\text{ b=-5} $",
-      "a": "The two pairs of integers such that\u00a0 $ \\text{a }\\!\\!\\div\\!\\!\\text{ b=-5} $\u00a0 are:\n> $ \\left( 10,-2 \\right) $\n> $ \\left( -70,14 \\right) $\nC. Short answer questions \u2013 3 marks"
-    },
-    {
-      "q": "18.\u00a0 Manvita deposits Rs.\u00a0 $ \\text{5000} $ \u00a0 in her bank account after two days. She withdraws Rs.\u00a0 $ \\text{3748} $ \u00a0 from it. If the amount deposited is a positive integer. How will you represent the amount withdrawn and also find the balance amount in the account?",
-      "a": "The amount withdrawn should always be represented as a negative integer.\nThus, it would be\u00a0 $ -3748 $.\nSince, Total balance\u00a0 $ = $ \u00a0 Amount deposited\u00a0 $ - $\u00a0 Amount withdrawn\nTherefore,\nTotal balance\u00a0 $ =5000-3748 $\n$ \\text{=Rs}\\text{. 1252} $ .\nHence, the amount withdrawn would be negative integer i.e.,\u00a0 $ -3748 $\u00a0 and the balance amount in the account is\u00a0 $ \\text{Rs}\\text{. 1252} $ ."
-    },
-    {
-      "q": "19. In a game Mishala scored\u00a0 $ \\text{20,}\\,\\text{-40,}\\,\\text{10} $\u00a0 and Meera scored\u00a0 $ \\text{-40,10,}\\,\\text{20} $ . Who scored more and can we add scores (integers) in any order?",
-      "a": "Since, Mishala scored\u00a0 $ \\text{20,}\\,\\text{-40,}\\,\\text{10} $ .\nTherefore, total score of Mishala is\n$ \\text{=20-40+}\\,\\text{10} $\n$ \\text{=-20+10} $\n$ \\text{=-10} $\nAnd since, Meera scored\u00a0 $ \\text{-40,}\\,1\\text{0,}\\,2\\text{0} $ .\nTherefore, total score of Meera is\n$ \\text{=-40+}\\,\\text{10+20} $\n$ \\text{=-20+10} $\n$ \\text{=-10} $\nHence, both scored the same points in a game but in a different order.\nYes, we can add integers in any order."
-    },
-    {
-      "q": "20. Find the product with suitable properties for the following-\na. $ \\text{16 }\\!\\!\\times\\!\\!\\text{ }\\left( \\text{-34} \\right)\\text{+}\\left( \\text{-34} \\right)\\text{ }\\!\\!\\times\\!\\!\\text{ }\\left( \\text{-18} \\right) $",
-      "a": "Given\n$ \\text{16 }\\!\\!\\times\\!\\!\\text{ }\\left( \\text{-34} \\right)\\text{+}\\left( \\text{-34} \\right)\\text{ }\\!\\!\\times\\!\\!\\text{ }\\left( \\text{-18} \\right) $\nBy distributive property-\n$ \\text{a }\\!\\!\\times\\!\\!\\text{ b+a }\\!\\!\\times\\!\\!\\text{ c=a}\\left[ \\text{b+c} \\right] $\nThus,\n$ \\text{=-34}\\left[ \\text{16-18} \\right] $\n$ \\text{=-34 }\\!\\!\\times\\!\\!\\text{ -2} $\n$ \\text{=68} $\nHence,\u00a0 $ \\text{16 }\\!\\!\\times\\!\\!\\text{ }\\left( \\text{-34} \\right)\\text{+}\\left( \\text{-34} \\right)\\text{ }\\!\\!\\times\\!\\!\\text{ }\\left( \\text{-18} \\right)=68 $ .\nb.\n$ \\text{23 }\\!\\!\\times\\!\\!\\text{ -36 }\\!\\!\\times\\!\\!\\text{ 10} $\nAns:\nGiven\n$ 23\\times -36\\times 10 $\nBy commutative property-\n$ \\left( \\text{a }\\!\\!\\times\\!\\!\\text{ b} \\right)\\text{ }\\!\\!\\times\\!\\!\\text{ c=a }\\!\\!\\times\\!\\!\\text{ }\\left( \\text{b }\\!\\!\\times\\!\\!\\text{ c} \\right) $\nThus,\n$ =23\\times \\left[ -36\\times 10 \\right] $\n$ =23\\times -360 $\n$ =-8280 $"
-    },
-    {
-      "q": "21.\u00a0 A fruit merchant earns a profit of Rs. $ \\text{6} $\u00a0 per bag of orange sold and a loss of Rs. $ \\text{4} $\u00a0 per bag of grapes sold.\na. Merchant sells\u00a0 $ \\text{1800} $\u00a0 bags of orange and\u00a0 $ \\text{2500} $\u00a0 bags of grapes. What is the profit or loss?",
-      "a": "Since, profit is denoted by a positive integer and a loss is denoted by a positive integer.\nTherefore, profit earned by selling\u00a0 $ \\text{1} $\u00a0 bag of orange is Rs.\u00a0 $ 6 $\nProfit earned by selling\u00a0 $ \\text{1800} $\u00a0 bags or orange is\n$ \\text{6 }\\!\\!\\times\\!\\!\\text{ 1800} $\n$ \\text{=Rs}\\text{. 10,800} $\nLoss incurred by selling\u00a0 $ 1 $\u00a0 bag of grapes is Rs.\u00a0 $ -4 $\nLoss incurred by selling\u00a0 $ 2500 $\u00a0 bags of grapes is\n$ =-4\\times 2500 $\n$ =10,000 $\nTotal profit or loss earned\u00a0 $ = $\u00a0 Profit\u00a0 $ + $ Loss\n$\u00a0 =10,800+10,000\u00a0 $\n$\u00a0 =800 $\nHence, a profit of Rs. $ 800 $ \u00a0 will be earned by a merchant.\nb. What is the number of bags of oranges to be sold to have neither profit nor loss if the number of grapes bags are sold is\u00a0 $ \\text{900} $\u00a0 bags?\nAns:\nSince profit is denoted by a positive integer and a loss is denoted by a positive integer.\nTherefore, Loss incurred while selling\u00a0 $ 1 $ \u00a0 bag of grapes\u00a0 $ \\text{=-Rs}\\text{.4} $\nLoss incurred while selling 900 bags of grapes be\n$ =-4\\times 900 $\n$ =-3600 $\nLet the number of bags of oranges to be sold\u00a0 $ \\text{=x} $\nProfit earned when\u00a0 $ 1 $\u00a0 bag of orange is sold\u00a0 $ \\text{=Rs}\\text{.6} $\nProfit earned while selling x bags of orange\u00a0 $ \\text{=6x} $\nCondition for no profit, no loss\nProfit earned\u00a0 $ + $ \u00a0 Loss incurred\u00a0 $ =0 $\n$ \\text{6x-3600=0} $\n$ \\text{6x=3600} $\n$ \\text{x=}\\dfrac{\\text{3600}}{\\text{6}} $\n$$\\text{x=600}$$\nHence, to have neither profit nor loss $$\\text{600}$$ number of bags of oranges to be sold."
-    },
-    {
-      "q": "22.\u00a0 Verify that $$\\text{a }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{b+c} \\right)\\ne \\left( \\text{a }\\!\\!\\div\\!\\!\\text{ b} \\right)\\text{+}\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ c} \\right)$$ for each of the following values of\u00a0 $ \\text{a,b} $\u00a0 and\u00a0 $ \\text{c} $ .\na. $ \\text{a=8,}\\,\\text{b=4,}\\,\\text{c=2} $",
-      "a": "For equation\n$$\\text{a }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{b+c} \\right)\\ne \\left( \\text{a }\\!\\!\\div\\!\\!\\text{ b} \\right)\\text{+}\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ c} \\right)$$.\nL.H.S\u00a0 $$\\text{=a }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{b+c} \\right)$$\n$$\\text{=8 }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{-4+2} \\right)$$\n$$\\text{=8 }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{-2} \\right)$$\n$$\\text{=-4}$$\nR.H.S\n$$=\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ b} \\right)\\text{+}\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ c} \\right)$$\n$ \\text{=}\\left( \\text{8 }\\!\\!\\div\\!\\!\\text{ -4} \\right)\\text{+}\\left( \\text{8 }\\!\\!\\div\\!\\!\\text{ 2} \\right) $\n$ \\text{=-2+4} $\n$ \\text{=2} $\nHence,\u00a0 $ \\text{L}\\text{.H}\\text{.S}\\ne \\text{R}\\text{.H}\\text{.S} $\u00a0 .\nThus, $$\\text{a }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{b+c} \\right)\\ne \\left( \\text{a }\\!\\!\\div\\!\\!\\text{ b} \\right)\\text{+}\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ c} \\right)$$\nfor\u00a0 $ \\text{a=8,}\\,\\text{b=4,}\\,\\text{c=2} $ .\nb. $ \\text{a=-15,}\\,\\text{b=2,}\\,\\text{c=1} $\nAns:\nFor equation\n$$\\text{a }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{b+c} \\right)\\ne \\left( \\text{a }\\!\\!\\div\\!\\!\\text{ b} \\right)\\text{+}\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ c} \\right)$$.\nL.H.S\u00a0 $$\\text{=a }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{b+c} \\right)$$\n$ \\text{=-15 }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{2+1} \\right) $\n$ \\text{=-15 }\\!\\!\\div\\!\\!\\text{ 3} $\n$ \\text{=-5} $\nR.H.S\n$$=\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ b} \\right)\\text{+}\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ c} \\right)$$\n$ \\text{=}\\left( \\text{-15 }\\!\\!\\div\\!\\!\\text{ 2} \\right)\\text{+}\\left( \\text{-15 }\\!\\!\\div\\!\\!\\text{ 1} \\right) $\n$ \\text{=-7}\\text{.5+}\\left( \\text{-15} \\right) $\n$ \\text{=-22}\\text{.5} $\nHence,\u00a0 $ \\text{L}\\text{.H}\\text{.S}\\ne \\text{R}\\text{.H}\\text{.S} $\nThus, $$\\text{a }\\!\\!\\div\\!\\!\\text{ }\\left( \\text{b+c} \\right)\\ne \\left( \\text{a }\\!\\!\\div\\!\\!\\text{ b} \\right)\\text{+}\\left( \\text{a }\\!\\!\\div\\!\\!\\text{ c} \\right)$$\nfor\u00a0 $ \\text{a=-15,}\\,\\text{b=2,}\\,\\text{c=1} $\u00a0 ."
-    },
-    {
-      "q": "23.\nIn a CET Examination\u00a0 $ \\left( \\text{+2} \\right) $\u00a0 marks are given for every current answer and\u00a0 $ \\left( \\text{-0}\\text{.5} \\right) $ \u00a0 marks are given for every wrong answer and\u00a0 $ 0 $\u00a0 for non-attempting any question.\na. Likitha scores\u00a0 $ \\text{30} $\u00a0 marks. If she got\u00a0 $ \\text{20} $ correct answers, how many questions she has attempted incorrectly?",
-      "a": "Marks obtained for\u00a0 $ 1 $\u00a0 correct answer\u00a0 $ \\text{=+2} $\nMarks obtained for\u00a0 $ 1 $\u00a0 wrong answer\u00a0 $ \\text{=-0}\\text{.5} $\nSo, Marks scored by Likitha =\u00a0 $ 30 $\nMarks obtained by\u00a0 $ 20 $\u00a0 correct answers $ =20\\times 2=40 $\nMarks obtained for incorrect answer\u00a0 $ = $\u00a0 Total score\u00a0 $ - $\u00a0 Marks obtained by\u00a0 $ 20 $\u00a0 correct answer\n$ =30-40 $\n$ =-10 $\nMarks obtained for\u00a0 $ 1 $\u00a0 wrong answer $ =-0.5 $\n$ \\therefore\u00a0 $ The number of incorrect answers $ =\\dfrac{-10}{-0.5} $\n$ =20 $\nHence, she attempted\u00a0 $ 20 $\u00a0 questions wrongly.\nb. Saara scores\u00a0 $ \\text{-4} $\u00a0 marks if she got\u00a0 $ \\text{3} $\u00a0 correct answers. How many were incorrect?\nAns:\nMarks obtained for\u00a0 $ 1 $\u00a0 correct answer\u00a0 $ \\text{=+2} $\nMarks obtained for\u00a0 $ 1 $\u00a0 wrong answer\u00a0 $ \\text{=-0}\\text{.5} $\nSo, Marks scored by Saara\u00a0 $ =-4 $\nMarks obtained for 3 correct answers $ =3\\times 2=6 $\nMarks obtained for incorrect answers\u00a0 $ = $\u00a0 Total score\u00a0 $ - $\u00a0 Marks obtained for\u00a0 $ 3 $\u00a0 correct answer\n$ =-4-6=-10 $\nMarks obtained for 1 wrong answer $ =-0.5 $\n$ \\therefore\u00a0 $ The number of incorrect questions\u00a0 $ =\\dfrac{-10}{-0.5} $\n$ =20 $\nHence,\u00a0 $ 20 $\u00a0 questions were incorrect.\nInteger\nAn integer is one of the fundamental parts of Mathematics. It can be quoted as a number that can be depicted without any fractional components. For instance, 3, 61, 70, 5 all are integers, while 6.54, 5.89 are non-integer numbers.\nWe can easily blend out an integer from a series of counting numbers. Let's make it clear with an example, suppose if a counting number is subtracted from itself, the result will be zero. If a larger counting number is removed from a smaller whole number, the output becomes a negative integer. When we subtract the smaller number from the larger whole number, it results in a positive integer. Applying this methodology, we can derive many integers ranging from negative to positive. A set of integers are depicted by 'Z.'\nZ = {\u2026.., -4,-3,-2,-1,0,1,2,3,4,\u2026..n}.\nProperties of Integers\nSome of the properties of an integer are as follows:\nCommutative Property\nThe commutative properties of an integer depict that if we perform any operation like multiplication or some numbers, the numbers\u2019 position can be swapped without differing in the output.\nLet's make the property clear with an example:\nSuppose X and Y are two non-zero integers,\nTherefore, the commutative property of addition is X + Y = Y + X.\nAnd, the commutative property of multiplication is X x Y = Y x X.\nAssociative Property\nThe associative property of integers depicts that if we perform an addition or multiplication operation on any set of numbers, the result will be identical, irrespective of the grouping of the multiplicands or addends. Some of the traits of associative properties are mentioned below:\nThe associative property of integers involves a minimum of 3 numbers.\nGenerally, the integers are grouped using parenthesis.\nThe numbers defined within the parenthesis are depicted by one unit.\nThe associative property can only be implemented for addition and multiplication operations and not for division or subtraction.\nLet's take an example to make the associative property clear. According to the property, 7 + (8 + 2) = 2 + (7 + 8).\nDistributive Property\nThe distributive property depicts that if two or more numbers are added and multiplied with another number, it will be identical to the current output if each addend is individually multiplied and then added together.\nHere's an example to clear the distributive property of integers:\n(7 + 1 + 2) x 5\nThis equation can be simplified to 10 x 5 = 50,\nWhile if we dismantle the equation as 7 x 5 + 1 x 5 + 2 x 5, the result will be equal, i.e., 50.\nArithmetical Operations Using Integers\nAddition of Integers\nThere are a set of rules to add integer with same and different signs:\nDuring the addition of two integer numbers with the same sign, the output generated also depicts the same sign. Example: 7 + 8 = 15.\nFor the addition of two integers, one with positive and one with negative signs, the result must retain the largest integer sign. The operation must be performed by subtracting the two integers. Example: 8 + (-14) = -6.\nSubtraction of Integers\nThe rules to perform subtraction of integers are as follows:\nIf the subtraction is to be performed between two integers with different signs, i.e., one negative and one positive, the output will retain the largest integer's sign. Example: 9 - 5 = 4.\nIf the subtraction is performed between two negative integers, the result can be obtained by adding the same number with the opposite sign. Example: -7 - (-9) = -7 + 9 = 2.\nMultiplication of Integers\nMultiplication of a positive and a negative integer - The result of the multiplication of a positive and a negative integer can be generated simply by multiplying both the numbers and denoting the output with a minus(-) sign. For example: -7 x 6 = -42.\nMultiplication of Two Negative Integers - The product of two negative integers is always a positive integer. For example: -2 x -7 = 14.\nMultiplication of Three or More Negative Integers - If the total integers to be multiplied is even, then the output will carry plus (+) sign. The total number of integers to be multiplied is odd. The result will carry the minus(+) sign.\nDivision of Integers\nDivision of a Negative Integer by a Positive Integer\n- When a negative number is divided by a positive number, the quotient comes with a negative sign.\nDivision of a Negative Integer by Another Negative Integer -\nwhen a negative number is divided by another negative number, the quotient comes with a positive sign.\nTo get in-depth details about the topics, students can practise the important questions in class 7 Maths chapter 1.\n5 Important Formulas of Class 7 Chapter 1 Integers You Shouldn\u2019t Miss!\nHere are 5 important formulas from Class 7 Maths Chapter 1 (Integers) that students should not miss:"
-    },
-    {
-      "q": "1. Additive Identity of Integers:\n$ a + 0 = a $\n(Adding zero to any integer gives the same integer.)",
+      "q": "1.\nAccording to the 2011 Census, the population of the town of Chintamani was about 75,000. How much less than one lakh is 75,000?\nSolution:\nOne lakh equals 1,00,000.\nNow, 1,00,000 \u2013 75,000 = 25,000.\nTherefore, in 2011, the population of Chintamani was 25,000 less than one lakh.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Multiplicative Identity of Integers:\n$ a \\times 1 = a $\n(Multiplying any integer by 1 gives the same integer.)",
+      "q": "2.\nThe estimated population of Chintamani in the year 2024 is 1,06,000. How much more than one lakh is 1,06,000?\nSolution:\n1,06,000 \u2013 1,00,000 = 6,000\nSo, the population in 2024 is 6,000 more than one lakh.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Additive Inverse of an Integer:\n$ a + (-a) = 0 $\n(The sum of an integer and its negative gives zero.)",
+      "q": "3.\nBy how much did the population of Chintamani increase from 2011 to 2024?\nSolution:\nThe rise in population from 2011 to 2024 is:\n1,06,000 \u2013 75,000 = 31,000\nSo, the population increased by 31,000 people during this period.\nGetting a Feel of Large Numbers\nYou may have come across interesting facts like these:\n\u2022 The world\u2019s tallest statue is the \u2018Statue of Unity\u2019 in Gujarat depicting Sardar Vallabhbhai Patel. Its height is about 180 metres.\n\u2022 Kunchikal waterfall in Karnataka is said to drop from a height of about 450 metres.\nIt is not always easy to get a sense of how big these measurements are. But, we can get a better sense of their size when we compare them with something familiar. Let us see an example.\nNCERT In-Text Questions (Page 3)\nLook at the picture on the right. Somu is 1 metre tall. If each floor is about four times his height, what is the approximate height of the building?\nSolution:\nSomu\u2019s height = 1 m\nHeight of a floor = 4 \u00d7 Somu\u2019s height\n= 4 \u00d7 1 m\n= 4 m\nApproximate height of the building = Height of 11 floors\n= 11 \u00d7 4 m\n= 44 m\nWhich is taller \u2014 The Statue of Unity or this building? How much taller?\n__________ m\nSolution:\nThe Statue of Unity is 180 m tall, and the building is 44 m tall.\nDifference in heights = 180 \u2013 44 = 136 m.\nThe Statue of Unity is taller than the building.\nHow much taller is the Kunchikal waterfall than Somu\u2019s building?\n__________ m\nSolution:\nKunchikal waterfall is 450 m tall, and the building is 40 m tall.\nDifference in heights = 450 \u2013 44 = 406 m\nThus, the Kunchikal waterfall is 406 m taller than the building.\nHow many floors should Somu\u2019s building have to be as high as the waterfall?\n__________\nSolution:\nEach floor is 4 m tall. To match the height of the waterfall (450 m), floors needed = 450 \u00f7 4 = 112.5.\nThus, building would need approximately 113 floors to be as high as the waterfall.\nIs One Lakh a Very Large Number?\nNCERT In-Text Questions (Page 4)\nHow do you view a lakh \u2014 is a lakh big or small?\nSolution:\nOne lakh is considered a large number when we talk about counting.\nReading and Writing Numbers\nNCERT In-Text Questions (Pages 4-5)\nWrite each of the numbers given below in words:\n(a) 3,00,600\n(b) 5,04,085\n(c) 27,30,000\n(d) 70,53,138\nSolution:\n(a) 3,00,600 \u2192 Three lakh six hundred\n(b) 5,04,085 \u2192 Five lakh four thousand eighty-five\n(c) 27,30,000 \u2192 Twenty-seven lakh thirty thousand\n(d) 70,53,138 \u2192 Seventy lakh fifty-three thousand one hundred thirty-eight\nWrite the corresponding number in the Indian place value system for each of the following:\n(a) One lakh twenty-three thousand four hundred fifty-six\n(b) Four lakh seven thousand seven hundred four\n(c) Fifty lakh five thousand fifty\n(d) Ten lakh two hundred thirty-five\nSolution:\n(a) 1,23,456\n(b) 4,07,704\n(c) 50,05,050\n(d) 10,00,235\n1.2 Land of Tens\nNCERT In-Text Questions (Pages 5-6)",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Multiplication of Integers:\n$ (+a) \\times (+b) = ab $\n$ (-a) \\times (-b) = ab $\n$ (+a) \\times (-b) = -ab $\n(Product of integers depends on their signs.)",
+      "q": "1.\nThe Thoughtful Thousands only has a + 1000 button. How many times should it be pressed to show:\n(a) Three thousand? 3 times\n(b) 10,000? ___________\n(c) Fifty-three thousand? ___________\n(d) 90,000? ___________\n(e) One Lakh? ___________\n(f) ___________? 153 times\n(g) How many thousands are required to make one lakh?\nSolution:\n(b) 10 times\n(c) 53 times\n(d) 90 times\n(e) 100 times\n(f) 1,53,000\n(g) 100 thousands",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Division of Integers:\n$ (+a) \\div (+b) = a \\div b $\n$ (-a) \\div (-b) = a \\div b $\n$ (+a) \\div (-b) = -(a \\div b) $\n(Division of integers follows similar rules as multiplication.)\nBenefits of Important Questions for Class 7 Maths Chapter 1\nPractising these Important Questions for Class 7 Maths Chapter 1 helps students secure good marks by building a strong understanding of concepts.\nThese practise questions are crafted according to strict CBSE guidelines and reviewed by experienced professionals.\nThorough practice enables students to understand each concept and theory in the chapter.\nIf students encounter any difficulties, they can refer to detailed solutions provided by Vedantu.\nVedantu\u2019s master educators have prepared these questions after thorough analysis of past exams to cover key points effectively.\nConclusion\nStudents who find it challenging to study Mathematics can build their logic to score well in the examination. To kick start the class 7 academic journey, the students must efficiently practise the Important Questions of Class 7 Maths Chapter 1 Integers, which they can access for free on Vedantu\u2019s website. Students just have to download the PDF and then they can solve the extra questions from the comfort of their homes anytime.\nFor more study materials related to different chapters of Class 7 Mathematics, students can visit Vedantu\u2019s website and explore the huge collection of free resources available with us.\nRelated Study Materials for Class 7 Maths Chapter 1 Integers\nS.No.\nStudy Materials for Maths Chapter 1 Class 7",
+      "q": "2.\nThe Tedious Tens only has a +10 button. How many times should it be pressed to show:\n(a) Five hundred?\n(b) 780?\n(c) 1000?\n(d) 3700?\n(e) 10,000?\n(f) One lakh?\n(g) __________? 435 times\nSolution:\n(a) 50 times\n(b) 78 times\n(c) 100 times\n(d) 370 times\n(e) 1000 times\n(f) 10,000 times\n(g) 4350",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nClass 7 Maths -\u00a0 Integers NCERT Solutions",
+      "q": "3.\nThe Handy Hundreds only has a +100 button. How many times should it be pressed to show:\n(a) Four hundred? __________ times\n(b) 3,700? __________\n(c) 10,000? __________\n(d) Fifty-three thousand? __________\n(e) 90,000? __________\n(f) 97,600? __________\n(g) 1,00,000? __________\n(h) __________? 582 times\n(i) How many hundreds are required to make ten thousand?\n(j) How many hundreds are required to make one lakh?\n(k) Handy Hundreds says, \u201cThere are some numbers which Tedious Tens and Thoughtful Thousands can\u2019t show but I can.\u201d Is this statement true? Think and explore.\nSolution:\n(a) 4 times\n(b) 37 times\n(c) 100 times\n(d) 530 times\n(e) 900 times\n(f) 976 times\n(g) 1000 times\n(h) 58200\n(i) 100 hundreds\n(j) 1,000 hundreds\n(k) Do it yourself.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 7 Maths - Integers Revision Notes\nChapter-wise Revision Notes Links for Class 7 Maths\nS.No.\nImportant Questions Links for Class 7 Maths",
+      "q": "4.\nCreative Chitti is a different kind of calculator. It has the following buttons:\n+1, +10, +100, +1000, +10000, +100000, and +1000000.\nIt always has multiple ways of doing things. \u201cHow so?\u201d, you might ask. To get the number 321, press +10 thirty-two times and +1 once. Will it get 321? Alternatively, it can press +100 two times and +10 twelve times, and +1 once.\nSolution:\nYes.",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nChapter 2 - Fractions and Decimals Questions",
+      "q": "5.\nTwo of the many different ways to get 5072 are shown below:\nThese two ways can be expressed as:\n(a) (50 \u00d7 100) + (7 \u00d7 10) + (2 \u00d7 1) = 5072\n(b) (3 \u00d7 1000) + (20 \u00d7 100) + (72 \u00d7 1) = 5072\nFind a different way to get 5072 and write an expression for the same.\nSolution:\n5 \u00d7 1000 + 7 \u00d7 10 + 2 \u00d7 1\nFigure it Out (Pages 6-7)\nFor each number given below, write expressions for at least two different ways to obtain the number through button clicks. Think like Chitti and be creative.\n(\u0430) 8300\n(b) 40629\n(c) 56354\n(d) 66666\n(e) 367813\nSolution:\n(a) (i) (8 \u00d7 1000) + (3 \u00d7 100) = 8300\n(ii) (83 \u00d7 100) = 8300\n(b) (i) (4 \u00d7 10000) + (6 \u00d7 100) + (2 \u00d7 10) + (9 \u00d7 1) = 40629\n(ii) (40 \u00d7 1000) + (6 \u00d7 100) + (29 \u00d7 1) = 40629\n(c) (i) (5 \u00d7 10000) + (6 \u00d7 1000) + (3 \u00d7 100) + (54 \u00d7 1) = 56354\n(ii) (56 \u00d7 1000) + (35 \u00d7 10) + (4 \u00d7 1) = 56354\n(d) (i) (6 \u00d7 10000) + (6 \u00d7 1000) + (6 \u00d7 100) + (66 \u00d7 1) = 66666\n(ii) (66 \u00d7 1000) + (66 \u00d7 10) + (6 \u00d7 1) = 66666\n(e) (i) (3 \u00d7 100000) + (6 \u00d7 10000) + (7 \u00d7 1000) + (8 \u00d7 100)+ (13 \u00d7 1) = 367813\n(ii) (36 \u00d7 10000) + (7813 \u00d7 1) = 367813\nNCERT In-Text Questions (Page 7)\nCreative Chitti has some questions for you-\n(a) You have to make exactly 30 button presses. What is the largest 3-digit number you can make? What is the smallest 3-digit number you can make?\n(b) 997 can be made using 25 clicks. Can you make 997 with a different number of clicks?\nSolution:\n(a) Largest and Smallest 3-Digit Numbers Using Limited Clicks\nLargest 3-digit number:\nTo make the largest possible 3-digit number using a total of 30 clicks:\nPress +100 button 9 times \u2192 9 \u00d7 100 = 900\nPress +10 button 8 times \u2192 8 \u00d7 10 = 80\nPress +1 button 13 times \u2192 13 \u00d7 1 = 13\nTotal: 900 + 80 + 13 = 993\nSo, the largest 3-digit number possible is 993.\nSmallest 3-digit number:\nTo make the smallest possible 3-digit number using a total of 30 clicks:\nPress +10 button 8 times \u2192 80\nPress +1 button 22 times \u2192 22\nTotal: 80 + 22 = 102\nSo, the smallest 3-digit number possible is 102.\n(b) Forming 997 Using 34 Clicks\n9 \u00d7 (+100) = 900\n8 \u00d7 (+10) = 80\n17 \u00d7 (+1) = 17\nTotal: 900 + 80 + 17 = 997\nCreate similar questions and challenge your classmates.\nSolution:\nDo it yourself.\nSystematic Sippy is a different kind of calculator. It has the following buttons:\n+1, +10, +100, +1000, +10000, +100000.\nIt wants to be used as minimally as possible.\nHow can we get the numbers (a) 5072, (b) 8300 using as few button clicks as possible?\nFind out which buttons should be clicked and how many times to get the desired numbers given in the table. The aim is to click as few buttons as possible.\nHere is one way to get the number 5072. This method uses 23 button clicks in total.\nIs there another way to get 5072 using fewer than 23 button clicks?\nWrite the expression for the same.\nSolution:\n(a) 5 \u00d7 (+1000) = 5000 (5 clicks)\n7 \u00d7 (+10) = 70 (7 clicks)\n2 \u00d7 (+1) = 2 (2 clicks)\nTotal clicks: 5 + 7 + 2 = 14 clicks\nExpression: 5 \u00d7 1000 + 7 \u00d7 10 + 2 \u00d7 1 = 5072\n(b)\nFor 8300: 8 \u00d7 (+1000) = 8000\nFor: 3 \u00d7 (+100) = 300\nTotal = 8000 + 300 = 8300\nFigure it Out (Page 7)",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nChapter 3 - Data Handling Questions",
+      "q": "1.\nFor the numbers in the previous exercise, find out how to get each number by making the smallest number of button clicks, and write the expression.\nSolution:\n(a) 8300\n8 \u00d7 (+1000) = 8000 (8 clicks)\n3 \u00d7 (+100) = 300 (3 clicks)\nTotal clicks: 8 + 3 = 11\nExpression: (8 \u00d7 1000) + (3 \u00d7 100) = 8300\n(b) 40629\n4 \u00d7 (+10000) = 40000 (4 clicks)\n6 \u00d7 (+100) = 600 (6 clicks)\n2 \u00d7 (+10) = 20 (2 clicks)\n9 \u00d7 (+1) = 9 (9 clicks)\nTotal clicks: 4 + 6 + 2 + 9 = 21\nExpression: (4 \u00d7 10000) + (6 \u00d7 100) + (2 \u00d7 10) + (9 \u00d7 1) = 40629\n(c) 56354\n5 \u00d7 (+10000) = 50000 (5 clicks)\n6 \u00d7 (+1000) = 6000 (6 clicks)\n3 \u00d7 (+100) = 300 (3 clicks)\n5 \u00d7 (+10) = 50 (5 clicks)\n4 \u00d7 (+1) = 4 (4 clicks)\nTotal clicks: 5 + 6 + 3 + 5 + 4 = 23\nExpression: (5 \u00d7 10000) + (6 \u00d7 1000) + (3 \u00d7 100) + (5 \u00d7 10) + (4 \u00d7 1) = 56354\n(d) 66666\n6 \u00d7 (+10000) = 60000 (6 clicks)\n6 \u00d7 (+1000) = 6000 (6 clicks)\n6 \u00d7 (+100) = 600 (6 clicks)\n6 \u00d7 (+10) = 60 (6 clicks)\n6 \u00d7 (+1) = 6 (6 clicks)\nTotal clicks: 6 + 6 + 6 + 6 + 6 = 30\nExpression: (6 \u00d7 10000) + (6 \u00d7 1000) + (6 \u00d7 100) + (6 \u00d7 10) + (6 \u00d7 1) = 66666\n(e) 367813\n3 \u00d7 (+100000) = 300000 (3 clicks)\n6 \u00d7 (+10000) = 60000 (6 clicks)\n7 \u00d7 (+1000) = 7000 (7 clicks)\n8 \u00d7 (+100) = 800 (8 clicks)\n1 \u00d7 (+10)= 10(1 click)\n3 \u00d7 (+1) = 3 (3 dicks)\nTotal clicks: 3 + 6 + 7 + 8 + 1 + 3 = 28\nExpression: (3 \u00d7 100000) + (6 \u00d7 10000) + (7 \u00d7 1000) + (8 \u00d7 100) + (1 \u00d7 10) + (3 \u00d7 1) = 367813",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nChapter 4 - Simple Equations Questions",
+      "q": "2.\nDo you see any connection between each number and the corresponding smallest number of button clicks?\nSolution:\nThe minimum number of button clicks depends on the place value of each digit in the number. A smaller digit requires fewer clicks, while a larger digit requires more clicks to reach the desired value.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nChapter 5 - Lines and Angles Questions",
+      "q": "3.\nIf you notice, the expressions for the least button clicks also give the Indian place value notation of the numbers. Think about why this is so.\nSolution:\nDo it yourself.\n1.3 Of Crores and Crores!\nNCERT In-Text Questions (Pages 8-9)\nHow many zeros does a thousand lakh have?\nSolution:\n1,000 lakh = 10,00,00,000 (8 zeros)\nHow many zeros does a hundred thousand have?\nSolution:\n100 thousand = 1,00,000 (5 zeros)\nFigure it Out (Page 9)",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nChapter 6 - The Triangle and Its Properties Questions",
+      "q": "1.\nRead the following numbers in Indian place value notation and write their number names in both the Indian and American systems:\n(a) 4050678\n(b) 48121620\n(c) 20022002\n(d) 246813579\n(e) 345000543\n(f) 1020304050\nSolution:\n(a) Indian System\n40.50.678 \u2192 40 lakh 50 thousand and 678\nForty lakh fifty thousand six hundred seventy-eight\nAmerican System\n4.050.678 \u2192 4 million 50 thousand and 678\nFour million fifty thousand six hundred seventy-eight\n(b) Indian System\n4.81.21.620 \u2192 4 crore 81 lakh 21 thousand and 620\nFour crore eighty-one lakh twenty-one thousand six hundred twenty\nAmerican System\n48,121,620 \u2192 48 million 121 thousand and 620\nForty-eight million one hundred twenty-one thousand six hundred twenty\n(c) Indian System\n2,0, 22,002 \u2192 2 crore 22 thousand 2\nTwo crore twenty-two thousand two\nAmerican System:\n20,022,002 \u2192 20 million 22 thousand 2\nTwenty million twenty-two thousand two\n(d) Indian System\n24,68,13,579 \u2192 24 crore 68 lakh 13 thousand 579\nTwenty-four crore sixty-eight lakh thirteen thousand five hundred seventy-nine\nAmerican System\n246.813.579 \u2192 246 million 813 thousand 579\nTwo hundred forty-six million eight hundred thirteen thousand five hundred seventy-nine\n(e) Indian System:\n34,50,00,543 \u2192 34 crore 50 lakh 543\nThirty-four crore fifty lakh five hundred forty-three\nAmerican System:\n345,000,543 \u2192 345 million 543\nThree hundred forty-five million five hundred forty-three\n(f) Indian System:\n1,020,304,050 \u2192 1 arab 2 crore 3 lakh 4 thousand 50\nOne arab two crore three lakh four thousand fifty\nAmerican System:\n1,020,304,050 \u2192 1 billion 20 million 304 thousand 50\nOne billion twenty million three hundred four thousand fifty",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 - Comparing Quantities Questions",
+      "q": "2.\nWrite the following numbers in Indian place value notation:\n(a) One crore one lakh one thousand ten\n(b) One billion one million one thousand one\n(c) Ten crore twenty lakh thirty thousand forty\n(d) Nine billion eighty million seven hundred thousand six hundred\nSolution:\n(a) 1,01,01,010\n(b) 1,001,001,001\n(c) 10,20,30,040\n(d) 9,080,700,600",
       "a": "Detailed solution available."
     },
     {
-      "q": "8.\nChapter 8 - Rational Numbers Questions",
+      "q": "3.\nCompare and write \u2018>\u2019, \u2018<\u2019 or \u2018=\u2019:\n(a) 30 thousand __________ 3 lakh\n(b) 500 lakh __________ 5 million\n(c) 800 thousand __________ 8 million\n(d) 640 crore __________ 60 billion\nSolution:\n(a) 30 thousand < 3 lakh\n(b) 500 lakh > 5 million\n(c) 800 thousand < 8 million\n(d) 640 crore < 60 billion\n1.4 Exact and Approximate Values\nNearest Neighbours\nNCERT In-Text Questions (Pages 11-12)\nWrite the five nearest neighbours for these numbers:\n(a) 3,87,69,957\n(b) 29,05,32,481\nSolution:\nI have a number for which all five nearest neighbours are 5,00,00,000. What could the number be? How many such numbers are there?\nSolution:\n4,99,99,999; Do it yourself.\nRoxie and Estu are estimating the values of simple expressions.\n1.\n4,63,128 + 4,19,682\nRoxie: \u201cThe sum is nearly 8,00,000 and is more than 8,00,000.\u201d\nEstu: \u201cThe sum is nearly 9,00,000 and is less than 9,00,000.\u201d\n(a) Are these estimates correct? Whose estimate is closer to the sum?\n(b) Will the sum be greater than 8,50,000 or less than 8,50,000? Why do you think so?\n(c) Will the sum be greater than 8,83,128 or less than 8,83,128? Why do you think so?\n(d) Exact value of 4,63,128 + 4,19,682 = __________\nSolution:\n(a) By adding 4,63,128 and 4,19,682, we get 8,82,810 and the estimated sum is 5,00,000 + 4,00,000 = 9,00,000\nThe exact sum is 8,82,810, which is closer to 9,00,000.\nThus, Estu\u2019s estimate is correct and closer to the actual sum.\n(b) The exact sum is 8,82,810, which is clearly greater than 8,50,000.\nIf we estimate the two numbers (4,63,128 and 4,19,682) to the nearest ten thousands, we get 4,60,000 and 4,20,000.\nBy adding them, the results will be closer to 8,80,000, which is well above 8,50,000.\n(c) The exact sum is 8,82,810, which is less than 8,83,128.\nThe sum falls short of 8,83,128 by only 318, making it closer to the actual sum.\n(d) Exact value of 4,63,128 + 4,19,682 = 8,82,810\n2.\n14,63,128 \u2013 4,90,020\nRoxie: \u201cThe difference is nearly 10,00,000 and is less than 10,00,000.\u201d\nEstu: \u201cThe difference is nearly 9,00,000 and is more than 9,00,000\u201d.\n(a) Are these estimates correct? Whose estimate is closer to the difference?\n(b) Will the difference be greater than 9,50,000 or less than 9,50,000? Why do you think so?\n(c) Will the difference be greater than 9,63,128 or less than 9,63,128? Why do you think so?\n(d) Exact value of 14,63,128 \u2013 4,90,020 = ___________\nSolution:\n(a) The difference is: 14,63,128 \u2013 4,90,020 = 9,73,108\nThe estimated difference = 15,00,000 \u2013 5,00,000 = 10,00,000\nBut the numbers are rounded off to the highest value.\nSo, the difference should be less than 10,00,000.\nThus, Roxie\u2019s estimate is closer to the actual difference.\n(b) The exact difference is 9,73,108, which is clearly greater than 9,50,000.\nIf we estimate the numbers 14,63,128 and 4,90,020 to the nearest ten thousands place, we get 14,60,000 and 4,90,000 respectively.\nBy finding the difference, we get 9,70,000, which is more than 9,50,000.\n(c) The exact difference is 9,73,108, which is greater than 9,63,128.\nThe difference exceeds 9,63,128 by 9,980, indicating it is far from the actual difference.\n(d) Exact value of 14,63,128 \u2013 4,90,020 = 9,73,108\nPopulations of the Cities\nNCERT In-Text Questions (Page 13)\nFrom the information given in the table, answer the following questions by approximation:",
       "a": "Detailed solution available."
     },
     {
-      "q": "9.\nChapter 9 - Perimeter and Area Questions",
+      "q": "1.\nWhat is your general observation about this data? Share with the class.\nSolution:\nThe data presents the population of various Indian cities for the years 2001 and 2011.",
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 10 - Algebraic Expressions Questions",
+      "q": "2.\nWhat is an appropriate title for the above table?\nSolution:\nPopulation of 20 major Indian cities in the years 2001 and 2011.",
       "a": "Detailed solution available."
     },
     {
-      "q": "11.\nChapter 11 - Exponents and Powers Questions",
+      "q": "3.\nHow much was the population of Pune in 2011? Approximately, by how much has it increased compared to 2001?\nSolution:\nThe population of Pune in 2011 was 31,15,431, and in 2001 it was 25,38,473.\nThe approximate increase in population is:\n31,00,000 \u2013 25,00,000 = 6,00,000\nSo, Pune\u2019s population grew by about 6 lakh people.",
       "a": "Detailed solution available."
     },
     {
-      "q": "12.\nChapter 12 - Symmetry Questions",
+      "q": "4.\nWhich city\u2019s population increased the most between 2001 and 2011?\nSolution:\nBengaluru showed the highest rise in population, increasing by 41,24,644 people.",
       "a": "Detailed solution available."
     },
     {
-      "q": "13.\nChapter 13 - Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 5 Maths",
+      "q": "5.\nAre there cities whose population has almost doubled? Which are they?\nSolution:\nBengaluru, Hyderabad, Surat, Vadodara, and Pimpri-Chinchwad almost doubled their population between 2001 and 2011.",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
+      "q": "6.\nBy what number should we multiply Patna\u2019s population to get a number/population close to that of Mumbai?\nSolution:\nMumbai\u2019s population divided by Patna\u2019s population in 2011 is:\n1,24,42,373 \u00f7 16,84,222 \u2248 7\nThis means Patna\u2019s population would need to be multiplied by about 7 to reach a number close to Mumbai\u2019s population.\n1.5 Patterns in Products\nA Multiplication Shortcut\nNCERT In-Text Questions (Page 14)\nUsing the meaning of multiplication and division, can you explain why multiplying by 5 is the same as dividing by 2 and multiplying by 10?\nSolution:\nWe know that the multiplication fact 5 \u00d7 2 = 10 gives us two related division facts:\n10 \u00f7 2 = 5 and 10 \u00f7 5 = 2.\nSo, based on the question, we can use 102 in place of 5.\nWhether we divide 10 by 5 or by 102 (as required in the problem), we will get the corresponding division fact.\nFigure it Out (Page 14)",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 7 Maths Important Questions",
+      "q": "1.\nFind quick ways to calculate these products:\n(a) 2 \u00d7 1768 \u00d7 50\n(b) 72 \u00d7 125 [Hint: 125 = 1000/8\n(c) 125 \u00d7 40 \u00d7 8 \u00d7 25\nSolution:\n(a) 2 \u00d7 1768 \u00d7 50 = 2\u00d71768\u00d7100/2\n= 1768 \u00d7 100\n(b) 72 \u00d7 125 = 72\u00d71000/8\n= 9 \u00d7 1000 = 9000\n(c) 125 \u00d7 40 \u00d7 8 \u00d7 25 = 1000/8 \u00d740\u00d78\u00d7 100/4\n= 10,00,000",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nCBSE Class 7 Maths Sample Papers",
+      "q": "2.\nCalculate these products quickly.\n(a) 25 \u00d7 12 = __________\n(b) 25 \u00d7 240 = __________\n(c) 250 \u00d7 120 = __________\n(d) 2500 \u00d7 12 = __________\n(e) __________ \u00d7 __________ = 120000000\nSolution:\n(a) 25 \u00d7 12 = 25 \u00d7 4 \u00d7 3 = 100 \u00d7 3 = 300\n(b) 25 \u00d7 240 = 25 \u00d7 4 \u00d7 60 = 100 \u00d7 60 = 6000\n(c) 250 \u00d7 120 = 250 \u00d7 4 \u00d7 30 = 1000 \u00d7 30 = 30000\n(d) 2500 \u00d7 12 = 2500 \u00d7 4 \u00d7 3 = 10000 \u00d7 3 = 30000\n(e) 25000 \u00d7 4800 = 120000000\nHow Long is the Product?\nNCERT In-Text Questions (Pages 14-15)\nIn each of the following boxes, the multiplications produce interesting patterns. Evaluate them to find the pattern. Extend the multiplications based on the observed pattern.\nSolution:\nObserve the number of digits in the two numbers being multiplied and their product in each case. Is there any connection between the numbers being multiplied and the number of digits in their product?\nSolution:\nYes, when we multiply:\n1-digit number with a 1-digit number, we get a 1-digit or 2-digit product\n2-digit number with a 2-digit number, we get a 3-digit or 4-digit product\n3-digit number with a 3-digit number, we get a 5-digit or 6-digit product\n4-digit number with a 4-digit number, we get a 7-digit or 8-digit product\nRoxie says that the product of two 2-digit numbers can only be a 3- or a 4-digit number. Is she correct?\nSolution:\nYes, Roxie is right because, based on the observed pattern, a 2-digit number multiplied by another 2-digit number results in either a 3-digit or a 4-digit product.\nShould we try all possible multiplications with 2-digit numbers to tell whether Roxie\u2019s claim is true? Or is there a better way to find out?\nSolution:\nThere is no need to try all possible multiplications to verify Roxie\u2019s claim.\nA better way is given in the examples below.\n10 \u00d7 10 = 100 (3-digit), 10 being the smallest 2-digit number\n99 \u00d7 99 = 9801 (4-digit), 99 being the largest 2-digit number\nCan multiplying a 3-digit number by another 3-digit number give a 4-digit number?\nSolution:\nNo, because multiplying a 3-digit number by another 3-digit number produces either a 5-digit or a 6-digit product.\nCan multiplying a 4-digit number by a 2-digit number give a 5-digit number?\nSolution:\nYes, as a 4-digit number \u00d7 2-digit number will give a 5-digit or 6-digit product.\n1000 \u00d7 10 = 10000 (5-digit), 1000 and 10 being the smallest 4- and 2-digit numbers, respectively.\n9999 \u00d7 99 = 989901 (6-digit), 9999 and 99 being the largest 4- and 2-digit numbers.\nObserve the multiplication statements below. Do you notice any patterns? See if this pattern extends to other numbers as well.\nSolution:\nDo it yourself.\n1.6 Did You Ever Wonder\u2026?\nNCERT In-Text Questions (Page 19)\nThe RMS Titanic carried about 2500 passengers. Can the population of Mumbai fit into 5000 such ships?\nSolution:\nTotal population of Mumbai = 1,24,00,000\nCapacity of 5000 ships = 5000 \u00d7 2500 = 1,25,00,000\nYes, Mumbai\u2019s population can easily fit into 5000 ships because their total capacity is greater than the city\u2019s population.\nInspired by this unusual question, Roxie began to think:\n\u201cIf I travel 100 kilometres every day, can I reach the Moon in 10 years?\u201d\n(The distance from the Earth to the Moon is 3,84,400 km.)\nHow far would she have travelled in a year?\nSolution:\nRoxie travels in one year:\n100 km per day \u00d7 365 days = 36,500 km\nHow far would she have travelled in 10 years?\nSolution:\nDistance travelled by Roxie in 10 years = 100 km/day \u00d7 365 days \u00d7 10\n= 36500 km \u00d7 10\n= 365000 km\nIs it not easier to perform these calculations in stages? You can use this method for all large calculations.\nSolution:\nYes, breaking the calculations into smaller steps makes the process easier and more manageable.\nFind out if you can reach the Sun in a lifetime, if you travel 1000 kilometres every day.\n(You had written down the distance between the Earth and the Sun in a previous exercise)\nSolution:\nDistance between the Earth and the Sun = 2100 \u00d7 70,000 = 147000000 km\nDistance travelled by you = 1000 km/day\nTime required = 147000000 km \u00f7 1000 km/day\n= 147000 days\n= 147000 days \u00f7 365 days/year\n~ 403 years\nNot possible, as an average human being has a life expectancy of less than 100 years.\nMake necessary reasonable assumptions and answer the questions below:\n(a) If a single sheet of paper weighs 5 grams, could you lift one lakh sheets of paper together at the same time?\n(b) If 250 babies are bom every minute across the world, will a million babies be bom in a day?\n(c) Can you count 1 million coins in a day? Assume you can count 1 coin every second.\nSolution:\n(a) Weight of a single sheet = 5 grams.\nWeight of 1 lakh sheets = 1,00,000 \u00d7 5 = 5,00,000 g = 500 kg, which is too heavy for any person to lift at once, as it exceeds normal human lifting capacity.\nThus, we couldn\u2019t lift 1 lakh sheets together.\n(b) Number of babies born every minute = 250\nTotal babies born in a day = 250 \u00d7 1440 = 3,60,000 babies\n[Number of minutes in a day = 1440 minutes]\nThus, a million babies (1,000,000) will not be bom in a single day, as the daily count is 3,60,000 babies.\n(c) Time taken to count 1 coin = 1 second.\nIn a single day, we can count 86,400 coins.\n[Total seconds in a day = 24 \u00d7 60 \u00d7 60 = 86,400 seconds]\nThus, we cannot count 1 million coins in a day at the rate of 1 coin per second, since it would take approximately 1,000,000 \u00f7 86,400 ~ 12 days to complete the task.\nFigure it Out (Pages 19-21)",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
+      "q": "1.\nUsing all digits from 0-9 exactly once (the first cannot be 0) to create a 10-digit number, write the\n(a) Largest multiple of 5\n(b) Smallest even number\nSolution:\n(a) To create the largest multiple of 5, the number must end in 0 or 5.\nBy arranging the digits in descending order and ending with 0 (the larger option for forming the maximum number), the largest possible multiple of 5 is:\n9876543210 (a 10-digit number).\n(b) To form the smallest even number, the last digit must be an even digit (0, 2, 4, 6, or 8).\nWe arrange the remaining digits in ascending order, making sure the number starts with the smallest non-zero digit.\nThus, the smallest 10-digit even number formed from all digits 0\u20139 is:\n1023456789\n(Here, 0 cannot be placed at the beginning, so it is moved to the second position.)",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nCBSE Class 7 Maths Revision Notes",
+      "q": "2.\nThe number 10,30,285 in words is Ten lakhs thirty thousand two hundred eight five, which has 43 letters. Give a 7-digit number that has the maximum number of letters.\nSolution:\n77,77,777 (Seventy-seven lakh seventy-seven thousand seven hundred seventy-seven)\nThis number contains 61 letters, making it one of the longest 7-digit numbers when written in words.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nWrite a 9-digit number where exchanging any two digits results in a bigger number. How many such numbers exist?\nSolution:\nFor the number to increase in value no matter which two digits are swapped, its digits must already be in strictly increasing order from left to right. Therefore, the only arrangement that satisfies this rule is:\n123456789\nThus, there is only one such number.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nStrike out 10 digits from the number 12345123451234512345 so that the remaining number is as large as possible.\nSolution:\nThe number given is 12345123451234512345.\nAfter removing the first 10 smallest digits from the left, the remaining number is:\n5534512345",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nThe words \u2018zero\u2019 and \u2018one\u2019 share letters \u2018e\u2019 and \u2018o\u2019. The words \u2018one\u2019 and \u2018two\u2019 share a letter \u2018o\u2019, and the words \u2018two\u2019 and \u2018three\u2019 also share a letter 7\u2019. How far do you have to count to find two consecutive numbers that do not share an English letter in common?\nSolution:\nThe question asks for two consecutive numbers whose English names have no letters in common.\nHowever:\nzero and one share \u201ce\u201d and \u201co\u201d\none and two share \u201co\u201d\ntwo and three share \u201ct\u201d\n\u2026\nnineteen and twenty share \u201ct\u201d, \u201ce\u201d, and \u201cn\u201d\nContinuing this pattern, every pair of consecutive numbers shares at least one letter. Therefore, no consecutive numbers exist whose English names have completely unique letters.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6.\nSuppose you write down all the numbers 1, 2, 3, 4,\u2026\u2026., 9, 10, 11,\u2026.. The tenth digit you write is \u20181\u2019 and the eleventh digit is \u20180\u2019, as part of the number 10.\n(a) What would the 1000th digit be? At which number would it occur?\n(b) What number would contain the millionth digit?\n(c) When would you have written the digit \u20185\u2019 for the 5000th time?\nSolution:\nNumbers 1-9 contribute 9 digits (1 digit each).\nNumbers 10-99 contribute 90 \u00d7 2 = 180 digits (2 digits each).\nNumbers 100-999 contribute 900 \u00d7 3 = 2700 digits (3 digits each).\n(a) To find the 1000th digit:\nDigits so far: 9 + 180 = 189.\nSo, the 1000th digit will lie in the 3-digit numbers range.\nRemaining digits: 1000 \u2013 189 = 811.\nNumber of 3-digit numbers to reach 811 digits:\n811 \u00f7 3 = 270, with 1 remaining number.\nThus, first we need to write the first 270 3-digit numbers starting from 100.\nSo, the 270th 3-digit number = 100 + 270 \u2013 1 = 369.\nThe next number is 370.\nThus, the 1000th digit is the 1st digit of 370, which is 3.\n(b) Using the same logic:\nNumbers 1-9: 9 digits\nNumbers 10-99: 180 digits\nNumbers 100-999: 2700 digits\nNumbers 1000-9999: 9000 \u00d7 4 = 36,000 digits\nNumbers 10,000-99,999: 90,000 \u00d7 5 = 4,50,000 digits\nNumbers 1,00,000-9,99,999: 9,00,000 \u00d7 6 = 54,00,000 digits\nTo reach the millionth digit:\nUpto 5-digit numbers: 9 + 180 + 2700 + 36,000 + 4,50,000 = 4,88,889\nRemaining digits in the 6-digit range: 1,000,000 (or (10,00,000) \u2013 4,88,889 = 5,11,111\nThe number of 6-digit numbers required: 5,11,111 \u00f7 6 = 85,185, with 1 remaining number.\nSo, the 85,185th 6-digit number is 85,185 + 1,00,000 \u2013 1 = 1,85,184.\nThe millionth digit occurs in the number 185184 + 1 = 1,85,185.\n(c) Single-digit numbers (1-9): 1 (only 5)\nTwo-digit numbers (10-99)\n(15, 25, 35,\u2026, 95), totaling 9 occurrences.\n50, 51, 52, \u2026, 59, totaling 10 occurrences.\nThus, 19 occurrences of the digit 5 in the range 10-99.\nTotal occurrences so far: 1 + 19 = 20\nThree-digit numbers (100-999)\n(i) Units position: Numbers like 105, 115, \u2026.., 995 contribute 10 occurrences per 100 numbers. Across 900 numbers, there are 90 occurrences.\n(ii) Tens position: Numbers like 150-159, 250-259, \u2026\u2026, 950-959 also contribute 10 occurrences per 100 numbers, and 90 occurrences in all.\n(iii) Hundreds position: Numbers like 500-599 contribute 100 occurrences in this range.\nThus, 90 (units) + 90 (tens) + 100 (hundreds) = 280 occurrences\nTotal occurrences so far: 20 + 280 = 300\nFour-digit numbers (1000-9999)\nNow it gets more intense! Here, 5 appears in four positions (units, tens, hundreds, thousands):\n(i) Units position: Every 10 numbers, e.g., 1005, 1015, \u2026, 9995 = 900 occurrences total.\n(ii) Tens position: 1050-1059, 1150-1159, \u2026, 9950-9959. That\u2019s 900 occurrences total.\n(iii) Hundreds position: 1500-1599,2500-2599,\u2026, 9500-9599 = 900 occurrences total.\n(iv) Thousands position: 5000-5999 = 1000 occurrences\nAdding these up: 900 (units) + 900 (tens) + 900 (hundreds) + 1000 (thousands) = 3700 occurrences\nTotal occurrences so far: 300 + 3700 = 4000\nNumbers starting from 10000 onward\nFor the 5000th number, we require 5000 \u2013 4000 = 1000 more numbers that lie in 10001-10999.\n(v) Among 10000-10999, one digit 5 appears in 100 numbers (e.g., 10005, 10015,\u2026.., 10995).\nThe digit 5 appears in 100 numbers (e.g., 10050-10059, \u2026, 10950-10959).\nThe digit 5 appears in 100 numbers (e.g., 10500-10599).\nTotal 4000 + 300 = 4300\nIn 11000-11999\n5 at unit place = 100\n5 at tens place = 100\n5 at a hundred place = 100\nTotal 4300 + 300 = 4600\nIn 12000-12999\n4600 + 300 = 4900\nIn 13000- 13999\nUnit = 100\nTotal = 5000\nFinal number = 13995",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7.\nA calculator has only \u2018+10,000\u2019 and \u2018+100\u2019 buttons. Write an expression describing the number of button clicks to be made for the following numbers:\n(a) 20,800\n(b) 92,100\n(c) 1,20,500\n(d) 65,30,000\n(e) 70,25,700\nSolution:\n(a) 20,800 = 2 \u00d7 10,000 + 8 \u00d7 100\nNumber of clicks = 2 + 8 = 10 clicks\n(b) 92,100 = 9 \u00d7 10,000 + 21 \u00d7 100\nNumber of clicks = 9 + 21 = 30 clicks\n(c) 1,20,500 = 12 \u00d7 10,000 + 5 \u00d7 100\nNumber of clicks = 12 + 5 = 17 clicks\n(d) 65,30,000 = 653 \u00d7 10,000 + 0 \u00d7 100\nNumber of clicks = 653 + 0 = 653 clicks\n(e) 70,25,700 = 702 \u00d7 10,000 + 57 \u00d7 100\nNumber of clicks = 702 + 57 = 759 clicks",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "8.\nHow many lakhs make a billion?\nSolution:\n1 lakh = 1,00,000\n1 billion = 1,000,000,000\nSo, 1,000,000,000 \u00f7 1,00,000 = 10,000.\nThus, 10,000 lakhs make a billion.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "9.\nYou are given two sets of number cards numbered from 1-9. Place a number card in each box below to get the (a) largest possible sum, (b) smallest possible difference of the two resulting numbers.\nSolution:\n(a) Largest possible sum = 9988776 + 65544 = 10054320\n(b) Smallest possible difference = 1122334 \u2013 99887 = 1022447",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "10.\nYou are given some number cards: 4000, 13000, 300, 70000, 150000, 20, and 5. Using the cards, get as close as you can to the numbers below using any operation you want. Each card can be used only once to make a particular number.\n(a) 1,10,000: Closest I could make is 4000 \u00d7 (20 + 5) + 13000 = 1,13,000\n(b) 2,00,000:\n(c) 5,80,000:\n(d) 12,45,000:\n(e) 20,90,800:\nSolution:\n(a) 4000 \u00d7 (20 + 5) + 13000\n= 4000 \u00d7 25 + 13000\n= 100000+ 13000\n= 113000\nThis gives us 1,13,000, which is very close to 1,10,000.\n(b) 1,50,000 + 70,000 \u2013 4000 \u00d7 5 = 2,00,000\n(c) 70,000 \u00d7 5 + 1,50,000 + 4,000 \u00d7 20 = 5,80,000\n(d) 70,000 \u00d7 20 \u2013 1,50,000 \u2013 4,000 \u2013 300 \u00d7 5 = 12,44,500\nThis gives us 12,44,500, which is very close to 12,45,000.\n(e) 13,000 \u00d7 300 \u2013 70,000(20 + 5) \u2013 1,50,000 + 4,000 = 20,04,000",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "11.\nFind out how many coins should be stacked to match the height of the Statue of Unity. Assume each coin is 1 mm thick.\nSolution:\nThe approximate height of the Statue of Unity is 180 metres, which is equal to 1,80,000 millimetres.\nGiven that the thickness of one coin is 1 mm,\nTo reach the same height, we would need:\n1,80,000 coins",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "12.\nGrey-headed albatrosses have a roughly 7-foot wingspan. They are known to migrate across several oceans. Albatrosses can cover about 900-1000 km in a day. One of the longest single trips recorded is about 12,000 km. How many days would such a trip take to cross the Pacific Ocean approximately?\nSolution:\nIf the journey is done at 900 km per day:\n12,000 \u00f7 900 \u2248 13 days\nSo, it would take around 13 days.\nIf the journey is done at 1,000 km per day:\n12,000 \u00f7 1,000 = 12 days\nSo, it would take around 12 days.\nTherefore, the 12,000 km trip would take approximately 12\u201313 days.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "13.\nA bar-tailed godwit holds the record for the longest recorded non-stop flight. It travelled 13,560 km from Alaska to Australia without stopping. Its journey started on 13 October 2022 and continued for about 11 days. Find out the approximate distance it covered every day. Find out the approximate distance it covered every hour.\nSolution:\nThe total distance travelled is 13,560 km, and the journey takes 11 days.\nSo, the distance covered each day is:\n13,560 \u00f7 11 \u2248 1,233 km per day\nThus, the godwit flies about 1,233 km every day.\nSince one day has 24 hours, the distance covered per hour is:\n1,233 \u00f7 24 \u2248 51 km per hour\nTherefore, the godwit travels approximately 51 km per hour.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "14.\nBald eagles are known to fly as high as 4500 \u2013 6000 m above the ground level. Mount Everest is about 8850 m high. Aeroplanes can fly as high as 10,000 \u2013 12,800 m. How many times bigger are these heights compared to Somu\u2019s building?\nSolution:\nBald eagle: 4,500\u20136,000 m\nRatios:\n4,500 \u00f7 44 \u2248 100\n6,000 \u00f7 44 \u2248 150\nA bald eagle flies 100 to 150 times higher than Somu\u2019s building.\nMount Everest: 8,850 m\nRatio:\n8,850 \u00f7 44 = 201\nMount Everest is 201 times taller than Somu\u2019s building.\nAeroplanes: 10,000\u201312,800 m\nRatios:\n10,000 \u00f7 44 \u2248 230\n12,800 \u00f7 44 \u2248 290\nAn airplane flies 230 to 290 times higher than Somu\u2019s building.\nLearning About Large Numbers Around Us\nThe chapter on\nLarge Numbers Around Us\nis essential for building a strong foundation in maths. By understanding lakhs, crores, and their place values, students can confidently solve numerical problems common in board exams.\nPractising\nNCERT Solutions for Class 7 Maths Chapter 1\nregularly helps students grasp place value, estimation, and the difference between the Indian and International systems. Pay attention to reading and writing numbers using commas for clarity.\nTo excel in exams, revise key concepts about\nlarge numbers and their patterns\n. Use visual aids and regular practice to boost your accuracy and speed, ensuring a high score in Maths in the NCERT 2026-27 syllabus.",
       "a": "Detailed solution available."
     }
   ],
   "2": [
     {
-      "q": "1. Convert the given fraction into mixed fraction $$\\dfrac{{22}}{7}$$.",
-      "a": "A fraction can be written in the form of mixed fraction in the following way:\n$$Q\\dfrac{R}{D}$$ , where Q is the quotient, R is the remainder and D is the divisor of the fraction.\nSo, $$\\dfrac{{22}}{7}$$ in mixed fraction form will be $$3\\dfrac{1}{7}$$ ."
-    },
-    {
-      "q": "2. Write an equivalent fraction of $$\\dfrac{9}{{15}}$$.",
-      "a": "To find an equivalent fraction, we simply multiply the numerator and denominator of the given fraction with the same number.\nA fraction equivalent to $$\\dfrac{9}{{15}}$$ will be $$\\dfrac{9}{{15}} \\times \\dfrac{2}{2} = \\dfrac{{18}}{{30}}$$ ."
-    },
-    {
-      "q": "3. Find the value of $$3\\dfrac{4}{7} \\div 7$$.",
-      "a": "We solve the expression $$3\\dfrac{4}{7} \\div 7$$ as follows:\n$$ \\Rightarrow \\dfrac{{25}}{7} \\div 7$$\n$$ \\Rightarrow \\dfrac{{25}}{7} \\times \\dfrac{1}{7}$$\n$$ \\Rightarrow \\dfrac{{25}}{{49}}$$"
-    },
-    {
-      "q": "4. Express $$8$$ rupee $$5$$ paise in decimal.",
-      "a": "$$8$$ rupees and $$5$$ paise in decimal form can be written as Rs. $$8.05$$."
-    },
-    {
-      "q": "5. Write the place value of $$5$$ in $$498.05$$.",
-      "a": "The place value of $$5$$ in $$498.05$$ is hundredths.\nRefer to page 2 - 6 for 2 Mark Questions"
-    },
-    {
-      "q": "6. Find the value of $$\\dfrac{5}{6}$$ of:\n(i) $$30$$",
-      "a": "The value of $$\\dfrac{5}{6}$$ of $$30$$ is:\n$$\\dfrac{5}{6} \\times 30 = 25$$\n(ii) $$54$$\nAns.\nThe value of $$\\dfrac{5}{6}$$ of $$54$$ is:\n$$\\dfrac{5}{6} \\times 54 = 45$$"
-    },
-    {
-      "q": "7. Multiply and reduce to lowest form:\n(i) $$\\dfrac{3}{8} \\times \\dfrac{4}{9}$$",
-      "a": "Multiplying and simplifying $$\\dfrac{3}{8} \\times \\dfrac{4}{9}$$ :\n$$ \\Rightarrow \\dfrac{{12}}{{72}}$$\n$$ \\Rightarrow \\dfrac{1}{6}$$\n(ii)\u00a0 $$\\dfrac{{11}}{{10}} \\times \\dfrac{2}{5}$$\nAns.\nMultiplying and simplifying $$\\dfrac{{11}}{{10}} \\times \\dfrac{2}{5}$$ :\n$$ \\Rightarrow \\dfrac{{22}}{{50}}$$\n$$ \\Rightarrow \\dfrac{{11}}{{25}}$$"
-    },
-    {
-      "q": "8. Multiply and express as mixed fractions:\n(i) $$4 \\times 6\\dfrac{2}{3}$$",
-      "a": "Solving the expression:\n$$4 \\times 6\\dfrac{2}{3}$$\n$$ \\Rightarrow 4 \\times \\dfrac{{20}}{3}$$\n$$ \\Rightarrow \\dfrac{{80}}{3}$$\n$$ \\Rightarrow 26\\dfrac{2}{3}$$\n(ii) $$3\\dfrac{2}{3} \\times 5$$\nAns.\nSolving the expression:\n$$3\\dfrac{2}{3} \\times 5$$\n$$ \\Rightarrow \\dfrac{{11}}{3} \\times 5$$\n$$ \\Rightarrow \\dfrac{{55}}{3}$$\n$$ \\Rightarrow 18\\dfrac{1}{3}$$"
-    },
-    {
-      "q": "9. Shade:\n(i) $$\\dfrac{1}{3}$$ of the ice creams in box:",
-      "a": "There are total $$9$$ ice creams in the box. We have to shade $$\\dfrac{1}{3}$$ , that is, $$\\dfrac{1}{3} \\times 9 = 3$$ ice creams.\n(ii) $$\\dfrac{3}{4}$$ of the apples in box:\nAns.\nThere are a total of $$16$$ apples in the box. We have to shade $$\\dfrac{3}{4}$$ , that is, $$\\dfrac{3}{4} \\times 16 = 12$$ apples."
-    },
-    {
-      "q": "10. Sarah and Darshan went for a picnic. Their mother gave them a juice bottle of $$3$$ litres.\nSarah consumed $${\\dfrac{1}{3}^{rd}}$$ of the juice. Darshan consumed the rest.\n(a) How much did Sarah drink?",
-      "a": "Total quantity of juice in the bottle is $$3$$ litres.\nSarah consumed $${\\dfrac{1}{3}^{rd}}$$ of the juice, that is, $$\\dfrac{1}{3} \\times 3 = 1$$ litre.\n(b) What fraction of the total quantity did Darshan drink?\nAns.\nDarshan consumed $$1 - \\dfrac{1}{3} = \\dfrac{2}{3}$$ of the total juice."
-    },
-    {
-      "q": "11. Find:\n(i) $$\\dfrac{2}{9} \\div 4$$",
-      "a": "Solving:\n$$\\dfrac{2}{9} \\div 4$$\n$$ \\Rightarrow \\dfrac{2}{9} \\times \\dfrac{1}{4}$$\n$$ \\Rightarrow \\dfrac{2}{{36}}$$\n$$ \\Rightarrow \\dfrac{1}{{18}}$$\n(ii) $$\\dfrac{{11}}{7} \\div 2$$\nAns.\nSolving:\n$$\\dfrac{{11}}{7} \\div 2$$\n$$ \\Rightarrow \\dfrac{{11}}{7} \\times \\dfrac{1}{2}$$\n$$ \\Rightarrow \\dfrac{{11}}{{14}}$$"
-    },
-    {
-      "q": "12. Find:\n(i) $$\\dfrac{{12}}{7} \\div \\dfrac{3}{{14}}$$",
-      "a": "Solving:\n$$\\dfrac{{12}}{7} \\div \\dfrac{3}{{14}}$$\n$$ \\Rightarrow \\dfrac{{12}}{7} \\times \\dfrac{{14}}{3}$$\n$$ \\Rightarrow \\dfrac{{168}}{{21}}$$\n$$ \\Rightarrow 8$$\n(ii) $$\\dfrac{2}{5} \\div \\dfrac{4}{5}$$\nAns.\nSolving:\n$$\\dfrac{2}{5} \\div \\dfrac{4}{5}$$\n$$ \\Rightarrow \\dfrac{2}{5} \\times \\dfrac{5}{4}$$\n$$ \\Rightarrow \\dfrac{2}{4}$$\n$$ \\Rightarrow \\dfrac{1}{2}$$"
-    },
-    {
-      "q": "13. Which is greater:\n(i) $${\\bf{0}}.{\\bf{02}}$$ or $${\\bf{0}}.{\\bf{2}}$$",
-      "a": "We convert the decimals into equivalent fractions:\n$$0.02 = \\dfrac{2}{{100}}$$ and $$0.2 = \\dfrac{{20}}{{100}}$$\nOn comparing, we conclude that $$\\dfrac{{20}}{{100}} > \\dfrac{2}{{100}}$$ .\nHence, $$0.2$$ is greater.\n(ii) $$1.98$$ or $$1.98$$\nAns.\nWe convert the decimals into equivalent fractions:\n$$1.98 = \\dfrac{{198}}{{100}}$$ and $$1.89 = \\dfrac{{189}}{{100}}$$\nOn comparing, we conclude that $$\\dfrac{{198}}{{100}} > \\dfrac{{189}}{{100}}$$ .\nHence, $$1.98$$ is greater."
-    },
-    {
-      "q": "14. How much $$5.6$$ kg is less than $$9.4$$ kg?",
-      "a": "Calculating the difference:\n$$9.4 - 5.6 = 3.8$$ kg\nHence, $$5.6$$ kg is $$3.8$$ kg less than $$9.4$$ kg."
-    },
-    {
-      "q": "15. Find:\n(i) $$1.08 \\times 0.3$$",
-      "a": "Converting into fractions and solving:\n$$1.08 \\times 0.3$$\n$$ \\Rightarrow \\dfrac{{108}}{{100}} \\times \\dfrac{3}{{10}}$$\n$$ \\Rightarrow \\dfrac{{324}}{{1000}}$$\n$$ \\Rightarrow 0.324$$\n(ii) $$158.3 \\times 2.9$$\nAns.\nConverting into fractions and solving:\n$$158.3 \\times 2.9$$\n$$ \\Rightarrow \\dfrac{{1583}}{{10}} \\times \\dfrac{{29}}{{10}}$$\n$$ \\Rightarrow \\dfrac{{45907}}{{100}}$$\n$$ \\Rightarrow 459.07$$\n3 Mark Questions"
-    },
-    {
-      "q": "16. Arrange in ascending order $$\\dfrac{3}{5},\\dfrac{4}{7},\\dfrac{3}{{10}},\\dfrac{4}{5}$$ .",
-      "a": "To arrange given fractions in ascending order, we first make their denominators equivalent.\nL.C.M. of all the denominators $$5,7,10$$ is $$70$$ .\n$$\\dfrac{3}{5} \\times \\dfrac{{14}}{{14}} = \\dfrac{{42}}{{70}}$$\n$$\\dfrac{4}{7} \\times \\dfrac{{10}}{{10}} = \\dfrac{{40}}{{70}}$$\n$$\\dfrac{3}{{10}} \\times \\dfrac{7}{7} = \\dfrac{{21}}{{70}}$$\n$$\\dfrac{4}{5} \\times \\dfrac{{14}}{{14}} = \\dfrac{{56}}{{70}}$$\nNow, $$\\dfrac{{21}}{{70}} < \\dfrac{{40}}{{70}} < \\dfrac{{42}}{{70}} < \\dfrac{{56}}{{70}}$$ .\nHence, $$\\dfrac{3}{{10}} < \\dfrac{4}{7} < \\dfrac{3}{5} < \\dfrac{4}{5}$$ ."
-    },
-    {
-      "q": "17. Find the perimeter of the rectangle whose length is $$7\\dfrac{3}{{10}}$$ cm and breadth is $$\\dfrac{3}{5}$$ cm.",
-      "a": "We know that the perimeter of a rectangle is twice the sum of its length and breadth, that is, $$2(l + b)$$ .\n$$ \\Rightarrow 2(7\\dfrac{3}{{10}} + \\dfrac{3}{5})$$\n$$ \\Rightarrow 2(\\dfrac{{73}}{{10}} + \\dfrac{6}{{10}})$$\n$$ \\Rightarrow 2(\\dfrac{{79}}{{10}})$$\n$$ \\Rightarrow \\dfrac{{79}}{5}$$\n$$ \\Rightarrow 15\\dfrac{4}{5}$$ cm"
-    },
-    {
-      "q": "18. Find $$\\dfrac{3}{7}$$ of:\n(i) $$3\\dfrac{5}{8}$$",
-      "a": "The value of $$\\dfrac{3}{7}$$ of $$3\\dfrac{5}{8}$$ is:\n$$\\dfrac{3}{7} \\times 3\\dfrac{5}{8} = \\dfrac{3}{7} \\times \\dfrac{{29}}{8}$$\n$$ \\Rightarrow \\dfrac{{87}}{{56}}$$\n$$ \\Rightarrow 1\\dfrac{{31}}{{56}}$$\n(ii) $$4\\dfrac{3}{9}$$\nAns.\nThe value of $$\\dfrac{3}{7}$$ of $$4\\dfrac{3}{9}$$ is:\n$$\\dfrac{3}{7} \\times 4\\dfrac{3}{9} = \\dfrac{3}{7} \\times \\dfrac{{39}}{9}$$\n$$ \\Rightarrow \\dfrac{{13}}{7}$$\n$$ \\Rightarrow 1\\dfrac{6}{7}$$"
-    },
-    {
-      "q": "19. Find:\n(i) $$3\\dfrac{1}{8} \\div 2\\dfrac{1}{4}$$",
-      "a": "Solving:\n$$3\\dfrac{1}{8} \\div 2\\dfrac{1}{4}$$\n$$ \\Rightarrow \\dfrac{{25}}{8} \\times \\dfrac{4}{9}$$\n$$ \\Rightarrow \\dfrac{{25}}{{18}}$$\n$$ \\Rightarrow 1\\dfrac{7}{{18}}$$\n(ii) $$4\\dfrac{4}{3} \\div 6\\dfrac{1}{2}$$\nAns.\nSolving:\n$$4\\dfrac{4}{3} \\div 6\\dfrac{1}{2}$$\n$$ \\Rightarrow \\dfrac{{16}}{3} \\times \\dfrac{2}{{13}}$$\n$$ \\Rightarrow \\dfrac{{32}}{{39}}$$"
-    },
-    {
-      "q": "20. Write the following decimal number in expanded form:\n(i) $$208.183$$",
-      "a": "In expanded form, the given decimal can be written as:\n$$(2 \\times 100) + (0 \\times 10) + (8 \\times 1) + (1 \\times \\dfrac{1}{{10}}) + (8 \\times \\dfrac{1}{{100}}) + (3 \\times \\dfrac{1}{{1000}})$$\n(ii) $$5.018$$\nAns.\nIn expanded form, the given decimal can be written as:\n$$(5 \\times 1) + (0 \\times \\dfrac{1}{{10}}) + (1 \\times \\dfrac{1}{{100}}) + (8 \\times \\dfrac{1}{{1000}})$$\n(iii) $$360.05$$\nAns.\nIn expanded form, the given decimal can be written as:\n$$(6 \\times 100) + (3 \\times 10) + (0 \\times 1) + (0 \\times \\dfrac{1}{{10}}) + (5 \\times \\dfrac{1}{{100}})$$\n5 Important Formulas of Class 7 Chapter 2 Fractions and Decimals You Shouldn\u2019t Miss!\nUnderstanding the key formulas in fractions and decimals is essential for mastering this chapter in Class 7. Here are five important formulas that will help you solve problems effectively:"
-    },
-    {
-      "q": "1. Addition of Fractions:\nWhen the denominators are the same: $\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$\nWhen the denominators are different: $\\frac{a}{b} + \\frac{c}{d} = \\frac{ad + bc}{bd}$",
+      "q": "1. Read the situations given below. Write appropriate expressions for each of them and find their values.\n(a) The district market in Begur operates on all seven days of the week. Rahim supplies 9 kg of mangoes each day from his orchard, and Shyam supplies 11 kg of mangoes each day from his orchard to this market. Find the number of mangoes supplied by them in a week to the local district market.\n(b) Binu earns \u20b9 20,000 per month. She spends \u20b9 5,000 on rent, \u20b9 5,000 on food, and \u20b9 2,000 on other expenses every month. What is the amount Binu will save by the end of the year?\n(c) During the daytime, a snail climbs 3 cm up a post, and during the night, while asleep, accidentally slips down by 2 cm. The post is 10 cm high, and a delicious treat is on top. In how many days will the snail get the treat?\nSolution:\n(a)\nRahim supplies 9 kg of mangoes to the market each day, and Shyam supplies 11 kg each day.\nSo, the total quantity supplied per day is:\n(9 + 11) kg\nTherefore, the total quantity supplied in 7 days is:\n7 \u00d7 (9 + 11) = 7 \u00d7 20 = 140 kg\n(b)\nBinu earns \u20b920,000 per month.\nHis monthly expenses are:\nRent: \u20b95,000\nFood: \u20b95,000\nOther expenses: \u20b92,000\nTotal monthly expenses = 5,000 + 5,000 + 2,000 = \u20b912,000\nSo, Binu\u2019s monthly savings =\n\u20b920,000 \u2013 \u20b912,000 = \u20b98,000\nHis yearly savings =\n12 \u00d7 8,000 = \u20b996,000\nThus, Binu saves \u20b996,000 by the end of the year.\n(c)\nThe snail climbs 3 cm up the post during the day but slips 2 cm down at night.\nSo, its net climb per day is:\n3 \u2013 2 = 1 cm\nIn 7 days, it climbs 7 cm.\nThe height of the post is 10 cm.\nOn the 8th day, the snail climbs 3 cm and reaches the top:\n7 + 3 = 10 cm\nTherefore, the snail needs 8 days to reach the top of the post and enjoy the treat.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Subtraction of Fractions:\nWhen the denominators are the same: $\\frac{a}{c} - \\frac{b}{c} = \\frac{a - b}{c}$\nWhen the denominators are different: $\\frac{a}{b} - \\frac{c}{d} = \\frac{ad - bc}{bd}$",
+      "q": "2. Melvin reads a two-page story every day except on Tuesdays and Saturdays. How many stories would he complete reading in 8 weeks? Which of the expressions below describes this scenario?\n(a) 5 \u00d7 2 \u00d7 8\n(b) (7 \u2013 2) \u00d7 8\n(c) 8 \u00d7 7\n(d) 7 \u00d7 2 \u00d7 8\n(e) 7 \u00d7 5 \u2013 2\n(f) (7 + 2) \u00d7 8\n(g) 7 \u00d7 8 \u2013 2 \u00d7 8\n(h) (7 \u2013 5) \u00d7 8\nSolution:\nMelvin reads a two-page story every day except Tuesday and Saturday.\nSo, the number of days he reads in a week is:\n7 \u2013 2\nSince he reads one story per day,\nthe number of stories he reads in one week is:\n1 \u00d7 (7 \u2013 2)\nTherefore, in 8 weeks, the number of stories he reads is:\n8 \u00d7 1 \u00d7 (7 \u2013 2)\n= 8 \u00d7 (7 \u2013 2)\nor\n= (7 \u2013 2) \u00d7 8 \u2192 (Expression (b))\nUsing distributive property:\n7 \u00d7 8 \u2013 2 \u00d7 8 \u2192 (Expression (g))\nThus, only expressions (b) and (g) correctly represent this situation.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Multiplication of Fractions:\nTo multiply two fractions:$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$",
+      "q": "3. Find different ways of evaluating the following expressions:\n(\u0430) 1 \u2013 2 + 3 \u2013 4 + 5 \u2013 6 + 7 \u2013 8 + 9 \u2013 10\n(b) 1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1\nSolution:\n(a) 1 \u2013 2 + 3 \u2013 4 + 5 \u2013 6 + 7 \u2013 8 + 9 \u2013 10\n= (1 + 3 + 5 + 7 + 9) + (-2 \u2013 4 \u2013 6 \u2013 8 \u2013 10)\n= 25 + (-30)\n= -5\nor\n1 \u2013 2 + 3 \u2013 4 + 5 \u2013 6 + 7 \u2013 8 + 9 \u2013 10\n= (1 \u2013 2) + (3 \u2013 4) + (5 \u2013 6) + (7 \u2013 8) +(9 \u2013 10)\n= (-1) + (-1) + (-1) + (-1) + (-1)\n= -5\n(b) 1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1\n= (1 \u2013 1) + (1 \u2013 1) + (1 \u2013 1) + (1 \u2013 1) + (1 \u2013 1)\n= 0 + 0 + 0 + 0 + 0\n= 0\nor\n1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1 + 1 \u2013 1\n= (1 + 1 + 1 + 1 + 1) + (-1 \u2013 1 \u2013 1 \u2013 1 \u2013 1)\n= 5 + (-5)\n= 0",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Division of Fractions:\nTo divide one fraction by another: $\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c} = \\frac{a \\times d}{b \\times c}$",
+      "q": "4. Compare the following pairs of expressions using \u2018<\u2019, \u2018>\u2019, or \u2018=,\u2019 or by reasoning.\n(a) 49 \u2013 7 + 8\n\u2610\n49 \u2013 7 + 8\n(b) 83 \u00d7 42 \u2013 18\n\u2610\n83 \u00d7 40 \u2013 18\n(c) 145 \u2013 17 \u00d7 8\n\u2610\n145 \u2013 17 \u00d7 6\n(d) 23 \u00d7 48 \u2013 35\n\u2610\n23 \u00d7 (48 \u2013 35)\n(e) (16 \u2013 11) \u00d7 12\n\u2610\n-11 \u00d7 12 + 16 \u00d7 12\n(f) (76 \u2013 53) \u00d7 88\n\u2610\n88 \u00d7 (53 \u2013 76)\n(g) 25 \u00d7 (42 + 16)\n\u2610\n25 \u00d7 (43 + 15)\n(h) 36 \u00d7 (28 \u2013 16)\n\u2610\n35 \u00d7 (27 \u2013 15)\nSolution:\n(a) 49 \u2013 7 + 8 = 49 \u2013 7 + 8\n(\u2235 All the terms on both sides are the same)\n(b) 83 \u00d7 42 > 83 \u00d7 40\n\u2234 83 \u00d7 42 \u2013 18 > 83 \u00d7 40 \u2013 18\n(c) 17 \u00d7 8 > 17 \u00d7 6\n\u21d2 -17 \u00d7 8 < -17 \u00d7 6\n\u2234 145 \u2013 17 \u00d7 8 < 145 \u2013 17 \u00d7 6\n(d) 23 \u00d7 (48 \u2013 35) = 23 \u00d7 48 \u2013 23 \u00d7 35\nand 35 < 23 \u00d7 35 23 \u00d7 48 \u2013 35 > 23 \u00d7 (48 \u2013 35)\n(e) (16 \u2013 11) \u00d7 12 = 16 \u00d7 12 \u2013 11 \u00d7 12 = -11 \u00d7 12 + 16 \u00d7 12\n\u2234 (16 \u2013 11) \u00d7 12 = -11 \u00d7 12 + 16 \u00d7 12\n(f) (76 \u2013 53) \u00d7 88 = 76 \u00d7 88 \u2013 53 \u00d7 88 = -(53 \u2013 76) \u00d7 88\n\u2234 (76 \u2013 53) \u00d7 88 > 88 \u00d7 (53 \u2013 76)\n(g) 43 + 15 = 42 + 1 + 15 = 42 + 16\n\u21d2 25 \u00d7 (43 + 15) = 25 \u00d7 (42 + 16)\n\u2234 25 \u00d7 (42 + 16) = 25 \u00d7 (43 + 15)\n(h) 35 \u00d7 (27 \u2013 15) = 35 \u00d7 (28 \u2013 16)\n\u2234 36 \u00d7 (28 \u2013 16) > 35 \u00d7 (27 \u2013 15)",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Conversion Between Fractions and Decimals:\nTo convert a fraction to a decimal, divide the numerator by the denominator:$\\frac{a}{b} = a \\div b$\nTo convert a decimal to a fraction, write the decimal as a fraction with a power of 10 in the denominator, then simplify. For example, $ \\left (0.75 = \\frac{75}{100} = \\frac{3}{4}\\right )$.\nBenefits of CBSE Class 7 Maths Chapter 2 Important Questions\nThere are several benefits of solving CBSE Class 7 Maths Important Questions. They are:\nThese important questions are made by our experts referring to the CBSE syllabus, therefore, solving the CBSE Class 7 Maths Important Questions will help you to be more clear with the Math topics, formulas, and concepts.\nThese questions will help you prepare for the examination and you will be able to self-analyse your mistakes and work on them.\nSolving these important questions will boost your confidence and you will be able to solve any sum easily.\nCBSE Class 7 Maths Important Questions available at Vedantu are solved by our experts with 100% accuracy, therefore, you can completely rely on them for your preparation.\nThese important questions are available in PDF format which can be downloaded for free and students can access them anytime.\nConclusion\nVedantu's Important Questions for CBSE Class 7 Maths Chapter 2 - Fractions and Decimals are a great help for students who want to understand this important topic better. The carefully selected questions focus on key concepts, helping students develop their critical thinking and problem-solving skills. By exploring fractions and decimals, students gain the confidence to tackle more difficult maths problems. The engaging and interactive materials make learning enjoyable, encouraging students to do well in their studies and build a solid foundation for future maths. Vedantu truly shows its dedication to quality education through this helpful resource.\nImportant Study Materials for Class 7 Maths Chapter 2\nS.No\nStudy Materials Links for Chapter 2 Fractions and Decimals\n1\nClass 7 Fractions and Decimals NCERT Solutions\n2\nClass 7 Fractions and Decimals Revision Notes\n3\nClass 7 Fractions and Decimals NCERT Exemplar Solutions\n4\nClass 7 Fractions and Decimals RD Sharma Solutions\n5\nClass 7 Fractions and Decimals RS Aggarwal Solutions",
+      "q": "5. Identify which of the following expressions are equal to the given expression without computation. You may rewrite the expressions using terms or removing brackets. There can be more than one expression that is equal to the given expression.\n(a) 83 \u2013 37 \u2013 12\n(i) 84 \u2013 38 \u2013 12\n(ii) 84 \u2013 (37 + 12)\n(iii) 83 \u2013 38 \u2013 13\n(iv) -37 + 83 \u2013 12\n(b) 93 + 37 \u00d7 44 + 76\n(i) 37 + 93 \u00d7 44 + 76\n(ii) 93 + 37 \u00d7 76 + 44\n(iii) (93 + 37) \u00d7 (44 + 76)\n(iv) 37 \u00d7 44 + 93 + 76\nSolution:\n(a) 83 \u2013 37 \u2013 12 = 83 \u2013 37 \u2013 12 + (1 \u2013 1)\n= (83 + 1) \u2013 37 \u2013 1 \u2013 12\n= 84 \u2013 38 \u2013 12 (option (i))\n= 34\nOr\n83 \u2013 37 \u2013 12 = -37 + 83 \u2013 12\n= 46 \u2013 12\n= 34 (option (iv))\nHence, (i) and (iv) are equal to the given expression 83 \u2013 37 \u2013 12.\n(b) (iv) 37 \u00d7 44 + 93 + 76\nRearrange the terms, and we get 93 + 37 \u00d7 44 + 76, which is equal to the given expression.\nHence, (iv) is equal to the given expression 93 + 37 \u00d7 44 + 76.",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nClass 7 Fractions and Decimals Important Formulas\nCBSE Class 7 Maths Important Questions for All Chapters\nClass 7 Maths Important Questions and Answers cover key topics, aiding in thorough preparation and making revision simpler.\nS.No\nChapter-wise Important Questions for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nChapter 1: Integers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nChapter 3: Data Handling Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nChapter 4: Simple Equations Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nChapter 5: Lines and Angles Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nChapter 6: The Triangle and its Properties Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 7: Comparing Quantities Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 8: Rational Numbers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 9: Perimeter and Area Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 10: Algebraic Expressions Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10.\nChapter 11: Exponents and Powers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 12: Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13: Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 7 Maths Revision Notes",
+      "q": "6. Choose a number and create ten different expressions having that value.\nSolution:\nStudents should do it by themselves.\nNCERT Solutions for Class 7 Maths Chapter 2 Arithmetic Expressions (2026-27)\nMastering\nArithmetic Expressions Class 7\nis critical for building a solid mathematical base. These NCERT solutions (2026-27) guide you through\nsimple and complex calculations\n, using stepwise logic to improve speed and accuracy in exams.\nLearn how to confidently use signs, brackets, and mental strategies for calculation. Practicing with\nNCERT Class 7 Maths Chapter 2 solutions\nstrengthens your ability to analyze, compare, and\nsimplify arithmetic expressions\nwith ease.\nTake advantage of\nexercise-based solutions\nfrom the textbook to reinforce concepts and boost calculation confidence. Focusing on reasoning and order of operations ensures you score well in school and future competitive exams.",
       "a": "Detailed solution available."
     }
   ],
-  "3": [
-    {
-      "q": "1. Insert a number between $$\\dfrac{1}{4}{\\text{ and }}\\dfrac{1}{7}{\\text{ }}{\\text{. }}$$",
-      "a": "To insert a number between two numbers, first we add both numbers and divide the sum by two.\n$\\dfrac{{\\dfrac{1}{4} + \\dfrac{1}{7}}}{2} = \\dfrac{{\\dfrac{{7 + 4}}{{28}}}}{2}$\n$= \\dfrac{{11}}{{2 \\times 28}} = \\dfrac{{11}}{{56}}$"
-    },
-    {
-      "q": "2. Give the formula to find mean.",
-      "a": "Formula to find mean is given by,\n${\\text{ Mean }} = \\dfrac{{{\\text{ Sum of all observations }}}}{{{\\text{ Number of observations }}}}$\nExample: Mean of\n$$2,4,6,8,10\\;$$\n=\n$\\dfrac{{2 + 4 + 6 + 8 + 10}}{5}\\, = \\;\\dfrac{{30}}{5}\\; = \\,6$"
-    },
-    {
-      "q": "3. Define Mode.",
-      "a": "The most frequently occurring value in a data set Is called Mode.\nFor example, in set\n$$2,3,4,5,5,5,7,7$$\n$5$\noccurs\n$3$\ntimes. Hence\n$5$\nwill be the mode of the given data."
-    },
-    {
-      "q": "4. Define Average.",
-      "a": "In mathematics, an average is referred to as a mean. It may be obtained by adding the numbers together and then dividing the result by the total number of numbers.\nExample average of\n$$8,10\\;$$\n=\n$\\dfrac{{8 + 10}}{2}\\, = \\;\\dfrac{{18}}{2}\\; = \\,9$"
-    },
-    {
-      "q": "5. Insert a number between $$-3{\\text{ and}}-4{\\text{ }}.$$",
-      "a": "To insert a number between two numbers, first we add both numbers and divide the sum by two.\n$\\dfrac{{ - 3 - 4}}{2} = \\dfrac{{ - 7}}{2} =\u00a0 - 3.5$\n2 Mark Questions"
-    },
-    {
-      "q": "6. Find the mode for the given set of data :\n$$1,{\\text{ }}2,{\\text{ }}3,{\\text{ }}5,{\\text{ }}6,{\\text{ }}7,{\\text{ }}2,{\\text{ }}1,{\\text{ }}4,{\\text{ }}1,{\\text{ }}6,{\\text{ }}1$$",
-      "a": "Given data is\n$$1,{\\text{ }}2,{\\text{ }}3,{\\text{ }}5,{\\text{ }}6,{\\text{ }}7,{\\text{ }}2,{\\text{ }}1,{\\text{ }}4,{\\text{ }}1,{\\text{ }}6,{\\text{ }}1$$\nArranging this data in ascending order\n$${\\text{1,1,1,1,2,2,3,4,5,6,6,7,7,8}}$$\n$1$\nis repeating most frequently that is\n$4$\ntimes\nTherefore, mode of the given data is\n$1$"
-    },
-    {
-      "q": "7. Find the median of the data $$1,{\\text{ }}2,{\\text{ }}23,{\\text{ }}48,{\\text{ }}26,{\\text{ }}33,{\\text{ }}4$$",
-      "a": "Given data is\n$$1,{\\text{ }}2,{\\text{ }}23,{\\text{ }}48,{\\text{ }}26,{\\text{ }}33,{\\text{ }}4$$\nArranging this data in ascending order\n$${\\text{1,}}\\;{\\text{2,}}\\;{\\text{23,}}\\;{\\text{26,}}\\;{\\text{35,}}\\;{\\text{45,}}\\;{\\text{48}}$$\nWe know that, median of a data is middle term.\nHere, we have a total of\n$7$\nterms.\nAnd here the middle term is the 4\nth\nterm i.e.\u00a0 26.\nTherefore, the median of the data is 26."
-    },
-    {
-      "q": "8. Theja studies 8 hours, 6 hours and 2 hours on three consecutive days. How many hours did he study daily?",
-      "a": "Given, Theja studied\n$$8{\\text{ hours}},{\\text{ }}6{\\text{ hours and 2 hours}}$$\n.\nTheja studied daily = Average of\n$8,\\;6,\\;2$\n=\n$\\dfrac{{{\\text{sum}}\\;{\\text{of}}\\;{\\text{given}}\\;{\\text{data}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{days}}}}$\n$\\dfrac{{8 + 6 + 2}}{3}\\; = \\;\\dfrac{{16}}{3}\\; = \\;5.33\\;\\;{\\text{hours}}$\nTheja studied\n$5.33\\;\\;{\\text{hours}}$\n."
-    },
-    {
-      "q": "9. Answer the following by observing the given data\nThe age\u2019s of cricket players of ICC is as follows:\n$$21,{\\text{ }}23,{\\text{ }}25,{\\text{ }}26,{\\text{ }}32,{\\text{ }}34$$\na) What is the age of the eldest players?\nb) What is the age of the youngest players in the team?",
-      "a": "Given data is\n$$21,{\\text{ }}23,{\\text{ }}25,{\\text{ }}26,{\\text{ }}32,{\\text{ }}34$$\na) Here the highest term is\n$34$\n.\nTherefore, the age of the eldest player is\n$34\\;{\\text{years}}$\nb) Here the lowest term is\n$21$\n.\nTherefore, the age of the youngest player is\n$21\\;{\\text{years}}$\n."
-    },
-    {
-      "q": "10. The goals scored by Lakshya in five matches are 3, 1, 2, 3, 1. Find the mean goal scored by her.",
-      "a": "Goals scored by Lakshya in five matches =\n3, 1, 2, 3, 1\n${\\text{Mean goal }} = \\dfrac{{{\\text{Sum of}}\\;{\\text{goal's}}\\;{\\text{scored}}\\;{\\text{in}}\\;{\\text{all}}\\;{\\text{matches}}}}{{{\\text{ Number of Matches}}}}$\n$= \\dfrac{{3 + 1 + 2 + 3 + 1}}{5}$\n$ = \\dfrac{{10}}{5}\\; = 2$\nMean goal is\n$2$\n."
-    },
-    {
-      "q": "11. Find the range of heights of cricket players (in cm) the heights are follows\n$$158,{\\text{ }}150,{\\text{ }}156,{\\text{ }}162,{\\text{ }}155,{\\text{ }}152,{\\text{ }}154,{\\text{ }}164,{\\text{ }}153,{\\text{ }}165,{\\text{ }}160$$",
-      "a": "Range = Highest value \u2013 Lowest Value\nHere, Highest Value =\n$165$\nLowest Value =\n$150$\nRange =\n$165 - 150$\n=\n$15\\;{\\text{cm}}$"
-    },
-    {
-      "q": "12. Runs scored by a cricket player is in few matches is as follows:\n$$28,{\\text{ }}25,{\\text{ }}38,{\\text{ }}46,{\\text{ }}58,{\\text{ }}32$$. Find the average runs.",
-      "a": "${\\text{Average}}\\;{\\text{Runs}}\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{runs}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{Matches}}}}$\nHere Number of Matches =\n$6$\n${\\text{Average}}\\;{\\text{Runs}}\\;{\\text{ = }}\\dfrac{{28 + 25 + 38 + 46 + 58 + 32}}{6}$\n$\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\;\\dfrac{{277}}{6}\\;\\; = \\;37.38$\n${\\text{Average}}\\;{\\text{Runs}} = \\;37.38\\;{\\text{Runs}}$"
-    },
-    {
-      "q": "13. Kids borrow books from a library from Monday to Friday. A week value is recorded and is as follows. Find the average $$65,{\\text{ }}148,{\\text{ }}351,{\\text{ }}481,{\\text{ }}390.$$",
-      "a": "${\\text{Average}}\\;\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{books}}\\;{\\text{issued}}}}{{{\\text{Number}}\\;{\\text{of}}\\;{\\text{days}}}}\\;$\n${\\text{ = }}\\dfrac{{5 + 148\\; + 351{\\text{\u00a0 + }}\\;481\\; + {\\text{ }}390.}}{5}$\n$= \\;\\dfrac{{1435}}{5}\\;\\; = \\;287$"
-    },
-    {
-      "q": "14. The score of 10 kids in mathematics shows below. Find mean\n$$33,{\\text{ }}48,{\\text{ }}27,{\\text{ }}49,{\\text{ }}30,{\\text{ }}32,{\\text{ }}19,{\\text{ }}25,{\\text{ }}37,{\\text{ }}35$$",
-      "a": "${\\text{Mean}}\\;\\;{\\text{ = }}\\dfrac{{{\\text{Sum}}\\;{\\text{of}}\\;{\\text{all}}\\;{\\text{scores}}}}{{{\\text{Number}}\\;{\\text{of students}}}}\\;$\n${\\text{ = }}\\dfrac{{33\\; + \\;\\;48\\; + 27\\; + \\;49\\; + \\;30\\; + {\\text{ }}32\\; + 19\\; + {\\text{ }}25\\; + {\\text{ }}37\\; + {\\text{ }}35}}{5}$\n$= \\;\\dfrac{{335}}{{10}}\\;\\; = \\;33.5$\nThus, the average score of kids In Mathematics is\n$33.5$\n.\nChapter 3 - Data Handling\nData handling refers to the process of collecting, recording and displaying information, for example in graphs or charts, in a way that is beneficial to others. Data handling is also known as statistics.\nSteps in Data Handling\nData collection using a scheduled technique.\nRecording data with accuracy and precision.\nData analysing to draw conclusions.\nSharing data in a way that is helpful to everyone.\nData Collection\nData collection is a term used to describe a process of planning and gathering data. The aim of the collection of data is to obtain the information to be registered, to make decisions on significant issues, to pass on information to others.\nEx: A teacher has assigned students to collect the average temperature data for the month of February. The only thing the teacher wants is Average data.\nSo, students have to decide at what time daily they have to measure the temperature data. So for these, they have to do proper planning and also they have to gather suitable temperature measuring devices.\nThis process of collecting temperature data for 28/29 days in the month of February is called Data collection.\nOrganisation of Data\nData organisation refers to the organised arrangement of raw data so that the data can be readily interpreted and further statistical treatment is more convenient.\nIn the data organisation, we will use tables and charts to show the collected data rather than just giving the raw numbers. This is because the person who is collecting data knows more about the raw data representation if we are showing it to someone they have to easily understand the data representation. So we use tables, graphs and charts to represent the data.\nThe representative value of a set of measurements is the one that we assume is nearest to the measurement's real value. If we carry out our series of calculations, their average will be the indicative value, except those values that we have shown to be far from the true value.\nArithmetic Mean\nThe arithmetic mean is the simplest and most commonly used measurement system used to calculate the mean or average of a data. It simply involves taking the sum of a number group, then dividing that sum by the number of numbers that are used in the sequence.\nEx:\nThe data of height(cm) of students in the class is given as follows. Calculate the arithmetic mean.\n150, 155, 152, 150, 158, 154, 152, 156, 154, 152.\nAns:\nSo to find Arithmetic mean, first we have to calculate the sum of the data.\nSum = 150 + 155 + 152 + 150 + 158 + 154 + 152 + 156 + 154 + 152 = 1533\nTotal number of students = 10\nThe arithmetic mean = Sum of heights / Total number of students\nArithmetic mean = 1533 / 10 = 153.3\nRange\nIn Statistics, the difference between the largest and the smallest values in the range of a set of data.\nEx: The data of height(cm) of students in the class is given as follows. Calculate the range.\n150, 155, 152, 150, 158, 154, 148, 156, 154, 152\nAns: L To calculate range first we have to find the height of taller students and shorter students in the class. So the taller student height is 158 cm and shorter student height is 148 cm.\nSo the range will be the difference between these two heights.\nRange = 158 - 148 = 10 cm\nMode\nThe mode is the value that appears in a data set most frequently. A data set can have one mode, more than one mode, or no mode at all.\nEx:\nThe data of height(cm) of students in the class is given as follows. Calculate the mode.\n150, 155, 152, 150, 158, 154, 152, 156, 154, 152.\nAns:\nHere 152 cm is the most frequent height of 3 students. Therefore the Mode of the following height data set will be 152 cm.\nMedian\nIn a sorted, ascending or descending, list of numbers, the median is the middle number and may be more representative of that data set than the average.\nIn comparison to the mean, the median is often used when there are outliers in the series that could distort the average of the values.\nIf there are odd numbers, the median value is the number in the centre, with numbers below and above the same sum.\nThe middle pair must be estimated, added together, and divided by two to find the median value if there is an even number in the set.\nEx:"
-    },
-    {
-      "q": "1. The Data of Height(cm) of Students in the Class is Given as Follows. Calculate the Median Height.\n150, 155, 152, 150, 158, 154, 152, 156, 154, 152.",
-      "a": "The total number of students in the class is 10 which is even, so we have added the middle terms i.e 5th and 6th term and divide them by 2 to find the median.\nMedian = (158 + 154) / 2 = 156 cm.\nTherefore the median height of the class is 156 cm."
-    },
-    {
-      "q": "2. The Weight(Kg) of the Students of the Class is Given as Follows. Calculate the Median Weight.\n45, 48, 52, 47, 46, 50, 44",
-      "a": "The total number of students in the class is 7. So the middle term of this weight data set will be our Median weight.\nMedian = 47 Kg.\nRepresentation of Data Using Bar Graphs\nA bar chart or bar graph is a chart or graph that provides rectangular bars with categorical data with heights or lengths proportional to the values they represent. It is possible to plot the bars vertically or horizontally. Sometimes, a vertical bar map is called a column chart.\n5 Important Formulas of Class 7 Chapter 3 Data Handling You Shouldn\u2019t Miss!\nData handling is an important aspect of mathematics in Class 7. Understanding key formulas helps students analyse and interpret data effectively. Here are five important formulas to remember in Chapter 3:"
-    },
-    {
-      "q": "1. Mean (Average):\nThe mean is calculated by adding all the values together and then dividing by the number of values.\n$\\text{Mean} = \\frac{\\text{Sum of all values}}{\\text{Number of values}}$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2. Median:\nThe median is the middle value when the data is arranged in ascending order. If there is an even number of observations, the median is the average of the two middle values.\n- For odd numbers:\n$\\text{Median} = \\text{Middle value of sorted data}$\n- For even numbers:\n$\\text{Median} = \\frac{\\text{Value at position } \\frac{n}{2} + \\text{Value at position } \\left(\\frac{n}{2} + 1\\right)}{2}$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3. Mode:\nThe mode is the value that appears most frequently in a data set. A data set can have:\n- One mode (unimodal)\n- More than one mode (bimodal or multimodal)",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4. Range:\nThe range gives an idea of how spread out the values are in a data set. It is calculated by subtracting the smallest value from the largest value.\n$\\text{Range} = \\text{Maximum value} - \\text{Minimum value}$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5. Frequency Distribution:\nA frequency distribution table shows how often each value occurs in a data set. The formula to calculate the frequency of a specific value is:\n$\\text{Frequency} = \\text{Number of times a value appears}$\nThese formulas are essential for analysing data and are fundamental for understanding statistics. Be sure to practise them to gain confidence in handling data effectively!\nBenefits of Referring to the Important Questions of Class 7 Chapter 3 Data Handling\nStudents must go through the important questions of each chapter of Mathematics for the following benefits:\nThese questions help you to evaluate your knowledge and understanding of any particular chapter.\nIf you refer to other questions that are not given in your NCERT book, then you will prepare yourself for the examination, where you might be asked some tricky questions.\nIt also helps you to understand the topic in depth.\nThese important questions and answers are given in easy-to-understand language and a step-by-step process.\nIt helps students\u2019 thinking ability and problem-solving abilities, which enable students to secure good marks not only in the current class but in all academic sessions.\nConclusion\nVedantu's Important Questions for CBSE Class 7 Maths Chapter 3 - Data Handling offers a comprehensive and valuable resource for students to master this fundamental topic. With a vast array of meticulously curated questions, the platform ensures a thorough understanding of data handling concepts. The well-structured and engaging material enables students to strengthen their analytical and problem-solving skills. By focusing on real-life scenarios and practical applications, Vedantu empowers learners to grasp the relevance of data handling in daily life. With this resource, students can build a strong foundation, instilling confidence to tackle more complex challenges in mathematics. Vedantu's dedication to enhancing learning experiences proves instrumental in nurturing confident and capable mathematicians.\nImportant Study Materials for Class 7 Maths Chapter 3\nS. No\nStudy Materials Links for Chapter 3 Data Handling\n1\nClass 7 Data Handling NCERT Solutions\n2\nClass 7 Data Handling Revision Notes\n3\nClass 7 Data Handling NCERT Exemplar Solutions\n4\nClass 7 Data Handling RD Sharma Solutions\n5\nClass 7 Data Handling RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Data Handling Important Formulas\nRelated Study Materials for Class 7 Maths Chapter 4 Simple Equations\nS.No.\nStudy Materials for Maths Chapter 3 Class 7",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 7 Maths - Simple Equations NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 7 Maths - Simple Equations Revision Notes\nChapter-wise Important Questions Links for Class 7 Maths\nS.No.\nImportant Questions Links for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nChapter 1 - Integers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nChapter 2 - Fractions and Decimals Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nChapter 3 - Data Handling Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nChapter 5 - Lines and Angles Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nChapter 6 - The Triangle and Its Properties Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 7 - Comparing Quantities Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 8 - Rational Numbers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 9 - Perimeter and Area Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10.\nChapter 10 - Algebraic Expressions Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 11 - Exponents and Powers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 12 - Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "13.\nChapter 13 - Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 5 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Class 7 Maths Revision Notes",
-      "a": "Detailed solution available."
-    }
-  ],
+  "3": [],
   "4": [
     {
-      "q": "1. Sum of the numbers $$\\mathrm{P}$$\nand $$\\mathrm{5}$$\nis $$\\mathrm{11}$$.",
-      "a": "$$\\text{P+5=11}$$"
-    },
-    {
-      "q": "2. Two third of a number $$\\mathrm{Z}$$ subtracted with $$\\mathrm{3}$$ gives $$\\mathrm{5}$$.",
-      "a": "$$\\frac{2}{3}\\text{Z}-3=5$$"
-    },
-    {
-      "q": "3. Write statements for the following:\n$$\\mathrm{3q+8=15}$$",
-      "a": "Eight is added to three times the number $$\\text{q}$$ gives $$\\text{15}$$.\n4. $$\\frac{\\mathrm{3}}{\\mathrm{4}}\\mathrm{m=15}$$\nAns:\nThree fourth of a number $$\\text{m}$$gives $$\\text{15}$$.\n5. $$\\mathrm{n-17=18}$$\nAns:\n$$\\text{17}$$ is subtracted from a number $$\\text{n}$$ gives $$\\text{18}$$."
-    },
-    {
-      "q": "6. Check whether the value given in brackets is Solution to the given equation or not\na. $$\\mathrm{n-9=19}$$$$\\left( \\mathrm{n=10} \\right)$$",
-      "a": "Putting $$\\text{n}=10$$ in LHS\n$$\\begin{align} & \\text{n}-9=10-9=1 \\\\ & 1\\ne 9 \\\\ \\end{align}$$\n$$\\text{n}=10$$ is not a solution for the given equation $$\\text{n}-9=19$$.\nb. $$\\mathrm{17n+5=25}$$$$\\left( \\mathrm{n=2} \\right)$$\nAns:\nPutting $$\\text{n}=2$$ in LHS\n$$\\begin{align} & \\text{17n}+5=34+5=39 \\\\ & 39\\ne 25 \\\\ \\end{align}$$\n$$\\text{n}=2$$ is not a solution for the given equation $$\\text{17n}+5=25$$."
-    },
-    {
-      "q": "7. Give the first step to solve the following equations and then solve the equation.\na. $$\\mathrm{P+9=3}$$",
-      "a": "Subtracting $$9$$ from both sides, we obtain\n$$\\begin{align} & \\text{P}+9=3 \\\\ & \\text{P}+9-9=3-9 \\\\ & \\text{P}=-6 \\\\ \\end{align}$$\nb. $$\\mathrm{a-12=15}$$\nAns:\nAdding $$12$$ both sides, we obtain\n$$\\begin{align} & \\text{a}-12+12=15+12 \\\\ & \\text{a}=27 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "8. Solve the equation $$\\mathrm{3z+}\\frac{\\mathrm{1}}{\\mathrm{3}}\\mathrm{=}\\frac{\\mathrm{17}}{\\mathrm{27}}$$ .",
-      "a": "$$\\begin{align} & \\text{3z}+\\frac{1}{3}=\\frac{17}{27} \\\\ & \\text{3z}=\\frac{17}{27}-\\frac{1}{3} \\\\ & 3\\text{z}=\\frac{17-9}{27} \\\\ & \\text{z}=\\frac{\\frac{8}{27}}{3} \\\\ & \\text{z}=\\frac{8}{27}\\times \\frac{1}{3} \\\\ & \\text{z}=\\frac{8}{81} \\\\ \\end{align}$$"
-    },
-    {
-      "q": "9. Solve $$\\mathrm{2}\\left( \\mathrm{P+9} \\right)\\mathrm{=-4}$$",
-      "a": "$$\\begin{align} & \\text{2p}+18=-4 \\\\ & \\text{2p}=-4-18 \\\\ & \\text{2p}=-22 \\\\ & \\text{p}=-\\frac{22}{2} \\\\ & \\text{p}=-11 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "10. Write an equation and solve the digit $$\\mathrm{5}$$ is added to $$\\mathrm{9}$$ times a number: gives you $$\\mathrm{77}$$.",
-      "a": "Let the number $$\\text{x}$$\n$$\\text{9}$$ times the number $$=9\\text{x}$$\n$$\\begin{align} & \\text{9x}+5=77 \\\\ & \\text{9x}=77-5 \\\\ & \\text{9x}=72 \\\\ & \\text{x}=\\frac{72}{9} \\\\ & \\text{x}=8 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "11. In an isosceles triangle base angles are equal if the vertex angle is $$\\mathrm{5}{{\\mathrm{0}}^{\\mathrm{0}}}$$\n.\nWhat are base angles?",
-      "a": "Let us assume the base angles of the isosceles\u00a0 triangle as $$\\text{x}$$.\nWe know that\n$$\\begin{align} & \\text{x}+\\text{x}+{{50}^{0}}={{180}^{0}} \\\\ & 2\\text{x}+{{50}^{0}}={{180}^{0}} \\\\ & 2\\text{x}={{130}^{0}} \\\\ & \\text{x}=\\frac{{{130}^{0}}}{2} \\\\ & \\text{x}={{65}^{0}} \\\\ \\end{align}$$"
-    },
-    {
-      "q": "12. If Manvita\u2019s age is year less than the thirteen times of her father\u2019s age. Find her age if her father\u2019s age is $$\\mathrm{32}$$years.",
-      "a": "Let\u2019s Manvita\u2019s age $$\\mathrm{=}\\text{x}$$years.\n$$\\begin{align} & 13\\text{x}-\\frac{1}{2}=32 \\\\ & 13\\text{x}=32+\\frac{1}{2} \\\\ & 13\\text{x}=\\frac{64+1}{2} \\\\ & \\text{x}=\\frac{65}{2}\\times \\frac{1}{13} \\\\ & \\text{x}=\\frac{5}{2} \\\\ & \\text{x}=2.5\\text{ years} \\\\ \\end{align}$$"
-    },
-    {
-      "q": "13. Solve $$\\frac{\\mathrm{a}}{\\mathrm{6}}\\mathrm{=}\\frac{\\mathrm{8}}{\\mathrm{18}}$$.",
-      "a": "$$\\begin{align} & \\frac{\\text{a}}{6}=\\frac{8}{18} \\\\ & \\text{a}=\\frac{8}{18}\\times 6 \\\\ & \\text{a}=\\frac{48}{18} \\\\ & \\text{a}=\\frac{8}{3} \\\\ & \\text{a=2}\\frac{2}{3} \\\\ \\end{align}$$"
-    },
-    {
-      "q": "14. Solve $$\\mathrm{0=18+3}\\left( \\mathrm{m+12} \\right)$$.",
-      "a": "$$\\begin{align} & 0=18+3\\left( \\text{m}+12 \\right) \\\\ & 3\\text{m}=-54 \\\\ & \\text{m}=-\\frac{54}{3} \\\\ & \\text{m}=-18 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "15. Solve $$\\mathrm{5+6}\\left( \\mathrm{q-1} \\right)\\mathrm{=36}$$.",
-      "a": "$$\\begin{align} & 5+6\\left( \\text{q}-1 \\right)=36 \\\\ & 5+6\\text{q}-6=36 \\\\ & 6\\text{q}=36+1 \\\\ & 6\\text{q}=37 \\\\ & \\text{q}=\\frac{37}{6} \\\\ & \\text{q}=6\\frac{1}{6} \\\\ \\end{align}$$"
-    },
-    {
-      "q": "16. Construct $$\\mathrm{3}$$\nequations starting with $$\\mathrm{x=5}$$\n.",
-      "a": "$$\\text{X=5}$$\nMultiplying both sides by $$\\text{5}$$.\n$$\\text{5x}=25..........\\left( i \\right)$$\nSubtract $$5$$ on both sides\n$$5\\text{x}-5=25-5$$\n$$5\\text{x}-5=20.................\\left( ii \\right)$$\nDivide both sides by $$2$$\n$$\\frac{5\\text{x}-2}{2}=10$$\n$$\\frac{5\\text{x}}{2}-\\frac{5}{2}=10..............\\left( iii \\right)$$\nHere $$\\left( i \\right),\\left( ii \\right)$$ and $$\\left( iii \\right)$$ are three equations."
-    },
-    {
-      "q": "17. Solve $$\\mathrm{3m-18=6}$$\nby trial and error method.",
-      "a": "Put $$\\text{m}=1$$\n$$\\begin{align} & 3\\left( 1 \\right)-18=6 \\\\ & 3-18=6 \\\\ & -15\\ne 6 \\\\ \\end{align}$$\nPut $$\\text{m}=2$$\n$$\\begin{align} & 3\\left( 2 \\right)-18=6 \\\\ & 6-18=6 \\\\ & -12\\ne 6 \\\\ \\end{align}$$\nPut $$\\text{m}=6$$\n$$\\begin{align} & 3\\left( 6 \\right)-18=6 \\\\ & 18-18=6 \\\\ & 0\\ne 6 \\\\ \\end{align}$$\nPut $$\\text{m}=8$$\n$$\\begin{align} & 3\\left( 8 \\right)-18=6 \\\\ & 24-18=6 \\\\ & 6=6 \\\\ \\end{align}$$ $$\\text{m}=8$$ is the solution of the given equation."
-    },
-    {
-      "q": "18. Write equation and solve\na. Add $$\\mathrm{4}$$ to one fourth of a number gives $$\\mathrm{20}$$.",
-      "a": "Let the number be $$\\text{x}$$.\n$$\\frac{1}{4}\\text{x}+4=20$$\nTransferring $$\\text{4}$$ from LHS to RHS.\n$$\\frac{1}{4}\\text{x}=\\text{20}-4$$\n$$\\frac{1}{4}\\text{x}=16$$\nCross multiplying with $$\\text{4}$$ on both sides, we get\n$$\\text{x}=64$$\nb. If you take away $$\\mathrm{5}$$\nfrom $$\\mathrm{5}$$ times a number you get $$\\mathrm{50}$$.\nAns:\nLet the number be $$\\text{y}$$.\n$$\\text{5y}-5=50$$\nTransferring $$\\text{5}$$ from LHS to RHS.\n$$5\\text{y}=50+5$$\n$$5\\text{y}=55$$\nDividing by $$\\text{5}$$ on both sides.\n$$\\text{y}=\\frac{55}{5}$$\n$$\\text{y}=11$$"
-    },
-    {
-      "q": "19. Solve\na. $$\\frac{\\mathrm{5p}}{\\mathrm{6}}\\mathrm{=5}$$",
-      "a": "$$\\frac{\\text{5p}}{6}=30$$\nMultiplying with\u00a0 $$\\text{6}$$ on both sides.\n$$\\text{5p}=30$$\nDividing by $$\\text{5}$$on both sides\n$$\\text{p}=\\frac{30}{5}$$\n$$\\text{p}=6$$\nb. $$\\mathrm{2x+12=28}$$\nAns:\n$$2\\text{x}+12=28$$\nTransferring $$12$$ from LHS to RHS.\n$$2\\text{x}=28-12$$\n$$\\text{2x=16}$$\nDividing by $$2$$on both sides\n$$\\text{x=8}$$"
-    },
-    {
-      "q": "20. Sum of $$\\mathrm{5}$$ times a number and $$\\mathrm{12}$$ is $$\\mathrm{47}$$. Find the number.",
-      "a": "Let the number be $$\\text{x}$$.\n$$\\text{5x}+12=47$$\nTransferring $$12$$ from LHS to RHS.\n$$5\\text{x}=47-12$$\n$$\\text{5x}=35$$\nDividing by $$\\text{5}$$ on both sides\n$$\\text{x}=\\frac{35}{5}$$\n$$\\text{x}=7$$\nCBSE Class 7 Maths Chapter - 4 Important Questions - Free PDF Download\nWhen it comes to downloading the class 7 maths chapter 4 important questions, students need to ensure that they have the PDF format on their phones. This way they will be able to practice the questions anytime and anywhere without any difficulty for sure. There is no doubt that with some regular practice, students can make sure they don\u2019t have trouble understanding the important concepts that are a part of the syllabus. Another one of the most helpful things about Ch 4 maths class 7 important questions is that these help the students in getting an insight into the different topics and formulas that are used in the chapter. Students can use this knowledge so that they are able to score some good marks in their examination for sure.\nImportant Questions For Class 7 Maths Chapter 4"
-    },
-    {
-      "q": "1. Which of the Following is Not Allowed in a Given Equation?\n(a) Adding the same number to both sides of the equation.\n(b) Subtracting the same number from both sides of the equation.\n(c) Multiplying both sides of the equation by the same non-zero number.\n(d) Dividing both sides of the equation by the same number.",
+      "q": "1. Observe each of them and identify if there is a mistake.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. The Solution of Which of the Following Equations is Neither a Fraction Nor an Integer?\n(a) 2x + 6 = 0\n(b) 3x \u2013 5 = 0\n(c) 5x \u2013 8 = x + 4\n(d) 4x + 7 = x + 2",
+      "q": "2. If you think there is a mistake, try to explain what might have gone wrong.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. If 7x + 4 = 25, then x is Equal to\n(a) 29/7 (b) 100/7 (c) 2 (d) 3",
+      "q": "3. Then, correct it and give the value of the expression.\nSolution:",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. If k + 7 = 16, then the Value of 8k \u2013 72 is\n(a) 0 (b) 1 (c) 112 (d) 56",
+      "q": "1. When a = \u20134, the statement 10 \u2013 a = 6 is incorrect.\nSince 10 \u2013 a = 10 \u2013 (\u20134) = 10 + 4 = 14,\nthe correct result is 10 \u2013 a = 14.",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. The Equation Having 5 as a Solution is:\n(a) 4x + 1 = 2 (b) 3 \u2013 x = 8 (c) x \u2013 5 = 3 (d) 3 + x = 8\n5 Important Points for Class 7 Chapter 4 Simple Equations You Shouldn\u2019t Miss!\nUnderstanding simple equations is essential for solving various mathematical problems. Here are five important points from Chapter 4 that every Class 7 student should know:",
+      "q": "2. When d = 6, the statement 3d = 36 is wrong.\nBecause 3d = 3 \u00d7 6 = 18,\nthe correct expression is 3d = 18.",
       "a": "Detailed solution available."
     },
     {
-      "q": "1. General Form of a Linear Equation:\nA simple equation can be expressed in the form:\n$ax + b = c$\nwhere $a$, $b$, and $c$ are constants, and $x$ is the variable to be solved.",
+      "q": "3. When s = 7, the statement 3s \u2013 2 = 15 is incorrect.\nAs 3s \u2013 2 = 3 \u00d7 7 \u2013 2 = 21 \u2013 2 = 19,\nthe correct expression is 3s \u2013 2 = 19.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Isolating the Variable:\nTo solve for $x$, rearrange the equation to isolate the variable on one side:\n$x = \\dfrac{c - b}{a}$",
+      "q": "4. When r = 8, the statement 2r + 1 = 29 is wrong.\nSince 2r + 1 = 2 \u00d7 8 + 1 = 16 + 1 = 17,\nthe correct value is 2r + 1 = 17.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Substitution Method:\nIf you have two equations, you can substitute one equation into the other to find the value of the variable:\nGiven $y = mx + b$ and $ax + by = c$, substitute $y$ into the second equation to find $x$.",
+      "q": "5. When j = 5, the expression 2j = 10 is correct\nbecause 2j = 2 \u00d7 5 = 10.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Balancing Method:\nTo maintain equality, whatever you do to one side of the equation, do the same to the other side. For example, if you add a number to one side:\n$ax + b + d = c + d$",
+      "q": "6. When m = \u20136, the statement 3(m + 1) = 19 is incorrect.\nSince 3(m + 1) = 3(\u20136 + 1) = 3 \u00d7 (\u20135) = \u201315,\nthe correct expression is 3(m + 1) = \u201315.",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Verification of Solutions:\nAlways check your solution by substituting the value back into the original equation to ensure both sides are equal. If $ax + b = c$ holds true, then $x$ is the correct solution.\nBenefits of Class 7 Maths Chapter 4 Important Questions\nThe important questions for Chapter 4 Simple Equations are great for students aiming to score well in their final exams.\nThese questions allow students to practise extensively until they fully understand the concepts.\nAt Vedantu, we are committed to providing the necessary support to students. Extra questions for Chapter 4 can be very beneficial.\nWe have compiled a list of crucial questions for students.\nBy practising these extra questions, students can stay ahead of their classmates without difficulty.\nWith the right practice, Chapter 4 in Class 7 Maths will become much easier.\nThe questions are selected by experienced teachers and professors who specialise in mathematics, ensuring they are reliable and authentic.\nEach question comes with answers to help students practise effectively.\nConclusion\nWith Class 7 Maths Chapter 4 Important Questions, students can rest assured that they will be able to get good marks in their examinations. It also helps in the preparation for the exams and lends a helping hand when they need some guidance regarding their study routine and their homework for sure. There are PDF formats available for the questions so that students can download them easily and can practise them without any difficulty whatsoever.\nRelated Study Materials for Class 7 Maths Chapter 4 Simple Equations\nS.No.\nStudy Materials for Maths Chapter 4 Class 7",
+      "q": "7. When f = 3 and g = 1, the statement 2f \u2013 2g = 2 is wrong.\nBecause 2f \u2013 2g = 2 \u00d7 3 \u2013 2 \u00d7 1 = 6 \u2013 2 = 4,\nthe correct value is 2f \u2013 2g = 4.",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nClass 7 Maths - Simple Equations NCERT Solutions",
+      "q": "8. When t = 4 and b = 3, the statement 2t + b = 24 is incorrect.\nSince 2t + b = 2 \u00d7 4 + 3 = 8 + 3 = 11,\nthe correct expression is 2t + b = 11.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 7 Maths - Simple Equations Revision Notes\nCBSE Class 7 Maths Important Questions for All Chapters\nClass 7 Maths Important Questions and Answers cover key topics, aiding in thorough preparation and making revision simpler.\nS.No\nChapter-wise Important Questions for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nChapter 1: Integers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nChapter 2: Fractions and Decimals Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nChapter 3: Data Handling Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nChapter 5: Lines and Angles Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nChapter 6: The Triangle and its Properties Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 7: Comparing Quantities Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 8: Rational Numbers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 9: Perimeter and Area Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 10: Algebraic Expressions Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10.\nChapter 11: Exponents and Powers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 12: Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13: Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 7 Maths Revision Notes",
+      "q": "9. When h = 5 and n = 6, the statement h \u2013 (3 \u2013 n) = 4 is wrong.\nBecause h \u2013 (3 \u2013 n) = 5 \u2013 (3 \u2013 6) = 5 \u2013 (\u20133) = 5 + 3 = 8,\nthe correct expression is h \u2013 (3 \u2013 n) = 8.\n4.4 Simplification of Algebraic Expressions\nNCERT In-Text Questions (Pages 88-89)\nExample 5.\nHere is a table showing the number of pencils and erasers sold in a shop. The price per pencil is c, and the price per eraser is d. Find the total money earned by the shopkeeper during these three days.\nIf c = \u20b9 50, find the total amount earned by the sale of pencils.\nSolution:\nTotal amount earned by the sale of pencils = (5 + 3 + 10) \u00d7 c\n= (5 + 3 + 10) \u00d7 \u20b9 50\n= 18 \u00d7 \u20b9 50\n= \u20b9 900\nWrite the expression for the total money earned by selling erasers. Then, simplify the expression.\nSolution:\nIf the cost of one eraser is d, then the total money earned from selling them is:\n4d + 6d + d\n= (4 + 6 + 1)d\n= 11d\nSo, the total earning from erasers is 11d.\nCheck that both expressions take the same value when c is replaced by different numbers.\nSolution:\nIf we take c = 5, then:\n5c + 3c + 10c\n= 5 \u00d7 5 + 3 \u00d7 5 + 10 \u00d7 5\n= 25 + 15 + 50\n= 40 + 50\n= 90\nAlso,\n18c = 18 \u00d7 5 = 90\nSo, when c = 5, both expressions give the same value.\nThe same can be checked for other values of c as well.\nNCERT In-Text Questions (Pages 91-93)\nCould we have written the initial expression as (40x + 75y) + (-6x \u2013 10y)?\nSolution:\nYes, as (40x + 75y) + (-6x \u2013 10y)\n= (40x + 75y) + -(6x + 10y)\n= (40x + 75y) \u2013 (6x + 10y)\nExample 8.\nCharu has been through three rounds of a quiz. Her scores in the three rounds are 7p \u2013 3q, 8p \u2013 4q, and 6p \u2013 2q. Here, p represents the score for a correct answer and q represents the penalty for an incorrect answer.\nWhat are her scores in the second and third rounds?\nSolution:\nHer score in the second round = 8p \u2013 4q\n= 8 \u00d7 4 \u2013 4 \u00d7 1 [As p = 4 and q = 1]\n= 32 \u2013 4\n= 28\nHer score in the third round = 6p \u2013 2q\n= 6 \u00d7 4 \u2013 2 \u00d7 1 [As p = 4, q = 1]\n= 24 \u2013 2\n= 22\nWhat if there is no penalty? What will be the value of q in that situation?\nSolution:\nIf no penalty is charged, then the value of q becomes 0 in that case.\nGive some possible scores for Krishita in the three rounds so that they add up to give 23p \u2013 7q.\nSolution: Krishita\u2019s possible scores in three rounds could be:\n8p \u2013 4q, 9p \u2013 2q, and 6p \u2013 q, or\n7p \u2013 3q, 10p \u2013 3q, and 6p \u2013 q\nNow, adding the first set of scores:\n8p \u2013 4q + 9p \u2013 2q + 6p \u2013 q\n= (8 + 9 + 6)p \u2013 (4 + 2 + 1)q\n= 23p \u2013 7q\nAdding the second set of scores:\n7p \u2013 3q + 10p \u2013 3q + 6p \u2013 q\n= (7 + 10 + 6)p \u2013 (3 + 3 + 1)q\n= 23p \u2013 7q\nSo, in both cases, the total score comes out to be 23p \u2013 7q.\nCan we say who scored more? Can you explain why?\nHow much more has Krishita scored than Charu? This can be found by finding the difference between the two scores.\n23p \u2013 7q \u2013 (21p \u2013 9q)\nSimplify this expression further.\nSolution:\n23p \u2013 7q \u2013 (21p \u2013 9q)\n= 23p \u2013 7q \u2013 + 21p \u2013 9q\n= 23p \u2013 21p \u2013 7q + 9q\n= 23p \u2013 21p + 9q \u2013 7q\n= (23 \u2013 21)p + (9 \u2013 7)q\n= 2p + 2q\n= 2 \u00d7 (p + q)\n= 2(p + q)\nThe value of 2p + 2q is always positive as long as both p > 0 and q > 0 (since marks and penalties are positive). So, Krishita scored 2(p + q) marks more than Charu.\nFill in the blanks below by replacing the letter-numbers with numbers; an example is shown. Then compare the values that 5u and 5 + u take.\nSolution:\nWe observe that 5u and 5 + u give different results for different values of u.\nTherefore, the two expressions 5u and 5 + u are not equal.\nQuestion: Are the expressions 10y \u2013 3 and 10(y \u2013 3) equal?\n10y \u2013 3, short for 10 \u00d7 y \u2013 3, means 3 less than 10 times y,\n10(y \u2013 3), short for 10 \u00d7 (y \u2013 3), means 10 times (3 less than y).\nLet us compare the values that these expressions take for different values of y.\nSolution:\nAfter filling in the two diagrams, do you think the two expressions are equal?\nSolution:\nWe notice that 10y \u2013 3 and 10(y \u2013 3) give different results for various values of y.\nThus, the expressions 10y \u2013 3 and 10(y \u2013 3) are not equal.\nFigure it Out (Pages 93-94)\nQuestion 1.\nAdd the numbers in each picture below. Write their corresponding expressions and simplify them. Try adding the numbers in each picture in a couple of different ways and see that you get the same thing.\nSolution:\nThus, we observe that even if we group the expressions differently while adding, the final sum always remains the same.\nQuestion 2.\nSimplify each of the following expressions:\n(a) p + p + p + p, p + p + p + q, p + q + p \u2013 q\n(b) p \u2013 q + p \u2013 q, p + q \u2013 p + q\n(c) p + q \u2013 (p + q), p \u2013 q \u2013 p \u2013 q\n(d) 2d \u2013 d \u2013 d \u2013 d, 2d \u2013 d \u2013 d \u2013 c\n(e) 2d \u2013 d \u2013 (d \u2013 c), 2d \u2013 (d \u2013 d) \u2013 c\n(f) 2d \u2013 d \u2013 c \u2013 c\nSolution:\n(a) p + p + p + p = 4p\np + p + p + q = 3p + q\np + q + p \u2013 q = 2p\n(b) p \u2013 q + p \u2013 q = 2p \u2013 2q\np + q \u2013 p + q = 2q\n(c) p + q \u2013 (p + q) = 0\np \u2013 q \u2013 p \u2013 q = -2q\n(d) 2d \u2013 d \u2013 d \u2013 d = -d\n2d \u2013 d \u2013 d \u2013 c = -c\n(e) 2d \u2013 d \u2013 (d \u2013 c) = c\n2d \u2013 (d \u2013 d) \u2013 c = 2d \u2013 c\n(f) 2d \u2013 d \u2013 c \u2013 c = d \u2013 2c\nMind the Mistake, Mend the Mistake\nNCERT In-Text Questions (Pages 94-95)\nSome simplifications of algebraic expressions are done below. The expression on the right-hand side should be in its simplest form.\nObserve each of them and see if there is a mistake.\nIf you think there is a mistake, try to explain what might have gone wrong.\nThen, simplify it correctly.\nSolution:\nTake a look at all the corrected simplest forms (i.e., brackets are removed, like terms are added, and terms with only numbers are also added). Is there any relation between the number of terms and the number of letter-numbers these expressions have?\nSolution:\nYes.\nIf an expression includes a term that is only a number,\nthen:\nNumber of terms = Number of letter-terms + 1\nIf the expression has no term that contains only a number,\nthen:\nNumber of terms = Number of letter-terms\n4.5 Pick Patterns and Reveal Relationships\nFormula Detective\nNCERT In-Text Questions (Pages 95-96)\nFind out the formula of this number machine.\nThe formula for the number machine above is \u201ctwo times the first number minus the second number\u201d. When written as an algebraic expression, the formula is 2a-b. The expression for the first set of inputs is 2 \u00d7 5 \u2013 2 = 8. Check that the formula holds for each set of inputs.\nSolution:\nYes, the formula is valid for each set of inputs.\nFor example:\n2 \u00d7 8 \u2013 1 = 15\n2 \u00d7 9 \u2013 11 = 7\n2 \u00d7 10 \u2013 10 = 10\n2 \u00d7 6 \u2013 4 = 8\nQuestion: Find the formulas of the number machines below and write the expression for each set of inputs.\nSolution:\nThe formula for the number machines in the first row is \u201csum of first number and second number minus two,\u201d and the expression is a + b \u2013 2.\nThe expression for each set of inputs is:\n5 + 2 \u2013 2 = 5, 8 + 1 \u2013 2 = 7, 9 + 11 \u2013 2 = 18, 10 + 10 \u2013 2 = 18, and a + b \u2013 2\nThe formula for the number machines in the second row is \u201cproduct of first number and second number plus one,\u201d and the expression is a \u00d7 b + 1.\nThe expression for each set of inputs is:\n4 \u00d7 1 + 1 = 5, 6 \u00d7 0 + 1 = 1, 3 \u00d7 2 + 1 = 7, 10 \u00d7 3 + 1 = 31, and a \u00d7 b + 1 = ab + 1.\nNow, make a formula on your own. Write a few number machines as examples using that formula. Challenge your classmates to figure it out!\nSolution:\nStudents should do it by themselves.\nAlgebraic Expressions to Describe Patterns\nNCERT In-Text Questions (Pages 96-97)\nExample 12.\nSomjit noticed a repeating pattern along the border of a saree.\nUse this to find what design appears at positions 99, 122, and 148.\nSolution:\nFor 99, the remainder when divided by 3 is 0, which means 99 is a multiple of 3.\nTherefore, design C will appear at position 99.\nFor 122, the remainder on dividing by 3 is 2, which means it is of the form 3n \u2013 1.\nSo, design B will appear at position 122.\nFor 148, the remainder when divided by 3 is 1, meaning it is of the form 3n \u2013 2.\nThus, design A will appear at position 148.\nPatterns in a Calendar\nNCERT In-Text Questions (Page 99)\nVerify this expression for diagonal sums by considering any 2 \u00d7 2 square and taking its top left number to be \u2018a\u2019.\nSolution:\nLet a = 2, then\nIn this case, the diagonal sums are:\n2 + 10 = 12 and 9 + 3 = 12.\nAlso,\n2a + 8 = 2 \u00d7 2 + 8 = 12.\nTherefore, the diagonal sum is equal to 2a + 8.\nFind the sum of all the numbers. Compare it with the number in the centre: 15. Repeat this for another set of numbers that form this shape. What do you observe?\nSolution:\nThe total of all the numbers is:\n8 + 14 + 15 + 16 + 22 = 75\nThis total is 5 times the number placed at the centre.\nIf the number at the centre is 20, then the figure becomes:\nThe total of all the numbers is:\n13 + 19 + 20 + 21 + 27 = 100, and 100 = 20 \u00d7 5.\nIf the number at the centre is taken as 12, then the completed shape will look like this:\nThe sum of all the numbers is:\n5 + 11 + 12 + 13 + 19 = 60, and 60 = 12 \u00d7 5.\nTherefore, we observe that the total sum of the numbers is always 5 times the value placed at the centre.\nWill this always happen? How do you show this?\nSolution:\nThe general formula for a 3 \u00d7 3 magic-type square with the centre number a can be represented as follows:\nThe total of all the numbers is:\n(a \u2013 7) + (a \u2013 1) + a + (a + 1) + (a + 7)\n= a + a + a + a + a \u2013 7 \u2013 1 + 1 + 7\n= 5a\nThus, the sum of all the numbers in the square is always 5a, which is 5 times the centre number.\nFind other shapes for which the sum of the numbers within the figure is always a multiple of one of the numbers.\nSolution:\nStudents should do it by themselves.\nMatchstick Patterns\nLook at the picture below. It is a pattern using matchsticks. Can you identify what the pattern is?\nWe observe that Step 1 contains 1 triangle, Step 2 contains 2 triangles, Step 3 contains 3 triangles, and the pattern continues in the same way.\nNCERT In-Text Questions (Page 101)\nWhat are these numbers in Step 3 and Step 4?\nSolution:\nIn Step 3, there are 3 horizontal matchsticks and 4 diagonal matchsticks.\nIn Step 4, there are 4 horizontal matchsticks and 5 diagonal matchsticks.\nHow does the number of matchsticks change in each orientation as the steps increase? Write an expression for the number of matchsticks at Step \u2018y in each orientation. Do the two expressions add up to 2y + 1?\nSolution:\nThe horizontal matchsticks follow the pattern 1, 2, 3, 4, \u2026,\nso, in general, the number of horizontal matchsticks in the nth step is n.\nThe diagonal matchsticks follow the pattern 2, 3, 4, 5, \u2026,\nso, in general, the number of diagonal matchsticks in the nth step is n + 1.\nTherefore, at step y:\nHorizontal matchsticks = y\nDiagonal matchsticks = y + 1\nAdding them gives:\ny + (y + 1) = 2y + 1.\nFigure it Out (Pages 102-105)\nFor the problems asking you to find suitable expression(s), first try to understand the relationship between the different quantities in the situation described. If required, assume some values for the unknowns and try to find the relationship.\nQuestion 1.\nOne plate of Jowar roti costs \u20b9 30, and one plate of Pulao costs \u20b9 20. If x plates of Jowar roti and y plates of pulao were ordered in a day, which expression(s) describe the total amount in rupees earned that day?\n(a) 30x + 20y\n(b) (30 + 20) \u00d7 (x + y)\n(c) 20x + 30y\n(d) (30 + 20) \u00d7 x + y\n(e) 30x \u2013 20y\nSolution:\n(a) The cost of one plate of Jowar roti is \u20b930,\nso the cost of x plates is 30x.\nThe cost of one plate of Pulao is \u20b920,\nso the cost of y plates is 20y.\nTherefore, the expression for the total amount earned that day is:\n30x + 20y.\nQuestion 2.\nPushpita sells two types of flowers on Independence Day: champak and marigold. \u2018p\u2019 customers only bought champak, \u2018q\u2019 customers only bought marigold, and \u2018r\u2019 customers bought both. On the same day, she gave away a tiny national flag to every customer. How many flags did she give away that day?\n(a) p + q + r\n(b) p + q + 2r\n(c) 2 \u00d7 (p + q + r)\n(d) p + q + r + 2\n(e) p + q + r + 1\n(f) 2 \u00d7 (p + q)\nSolution:\n(a) Let the number of customers who bought only Champak be p,\nthose who bought only Marigold be q,\nand those who bought both flowers be r.\nSince Pushpita gave one tiny national flag to every customer,\nthe total number of flags she distributed that day is:\np + q + r.\nQuestion 3.\nA snail is trying to climb up the wall of a deep well. During the day it climbs up \u2018u\u2019 cm and during the night it slowly slips down \u2018d\u2019 cm. This happens for 10 days and 10 nights.\n(a) Write an expression describing how far away the snail is from its starting position.\n(b) What can we say about the snail\u2019s movement if d > u?\nSolution:\na) During the daytime, the snail climbs u cm,\nand during the night it slips down d cm.\nSo, the net distance covered in one full day is u \u2013 d.\nIn 10 days and 10 nights, the snail will cover a net distance of:\n10(u \u2013 d) cm.\nThus, the expression that shows how far the snail is from its starting point after this duration is 10(u \u2013 d) cm.\n(b) If d > u, the snail slips down more than it climbs up.\nIn this situation, the snail will never be able to reach the top.\nQuestion 4.\nRadha is preparing for a cycling race and practices daily. The first week, she cycles 5 km every day. Every week, she increases the daily distance cycled by \u2018z\u2019 km. How many kilometers would Radha have cycled after 3 weeks?\nSolution:\nIn the first week, Radha cycled 5 km each day.\nSo, in 7 days she cycled:\n5 \u00d7 7 = 35 km\nIn the second week, she cycled (5 + z) km per day.\nThus, the total for the week is:\n(5 + z) \u00d7 7 = 35 + 7z km\nIn the third week, her daily distance becomes 5 + z + z = 5 + 2z km.\nSo, in that week she cycles:\n(5 + 2z) \u00d7 7 = 35 + 14z km\nTherefore, the total distance Radha cycles in three weeks is:\n35 + (35 + 7z) + (35 + 14z)\n= (35 + 35 + 35) + (7z + 14z)\n= 105 + 21z km\nQuestion 5.\nIn the following figure, observe how the expression w + 2 becomes 4w + 20 along one path. Fill in the missing blanks on the remaining paths. The ovals contain expressions, and the boxes contain operations.\nSolution:\nQuestion 6.\nA local train from Yahapur to Vahapur stops at three stations at equal distances along the way. The time taken in minutes to travel from one station to the next station is the same and is denoted by t. The train stops for 2 minutes at each of the three stations.\n(a) If t = 4, what is the time taken to travel from Yahapur to Vahapur?\n(b) What is the algebraic expression for the time taken to travel from Yahapur to Vahapur?\n[Hint: Draw a rough diagram to visualise the situation]\nSolution:\nThe train travelling from Yahapur to Vahapur stops at 3 stations, and at each station it stops for 2 minutes.\nTime taken for travelling between the stations = 4t.\nFor t = 4, the travelling time becomes:\n4 \u00d7 4 = 16 minutes\nTime spent during the stoppages = 3 \u00d7 2 = 6 minutes\nTherefore, the total time taken to travel from Yahapur to Vahapur is:\n16 + 6 = 22 minutes\n(b)\nLet the time taken to travel between two consecutive stations be t.\nThen the total travelling time from Yahanpur to Vahapur is 4t.\nSince the train stops 3 times, and each stop lasts 2 minutes,\nthe total stoppage time is:\n3 \u00d7 2 = 6 minutes\nThus, the algebraic expression for the total travel time is:\n4t + 6.\nQuestion 7.\nSimplify the following expressions:\n(a) 3a + 9b \u2013 6 + 8a \u2013 4b \u2013 7a + 16\n(b) 3(3a \u2013 3b) \u2013 8a \u2013 4b \u2013 16\n(c) 2(2x \u2013 3) + 8x + 12\n(d) 8x \u2013 (2x \u2013 3) + 12\n(e) 8h \u2013 (5 + 7h) + 9\n(f) 23 + 4(6m \u2013 3n) \u2013 8n \u2013 3m \u2013 18\nSolution:\n(a) 3a + 9b \u2013 6 + 8a \u2013 4b \u2013 7a + 16\n= (3a + 8a \u2013 7a) + (9b \u2013 4b) + (-6 + 16)\n= 4a + 5b + 10\n(b) 3(3a \u2013 3b) \u2013 8a \u2013 4b \u2013 16\n= 9a \u2013 9b \u2013 8a \u2013 4b \u2013 16\n= (9a \u2013 8a) + (-9b \u2013 4b) \u2013 16\n= a \u2013 13b \u2013 16\n(c) 2(2x \u2013 3) + 8x + 12\n= 4x \u2013 6 + 8x + 12\n= (4x + 8x) + (-6 + 12)\n= 12x + 6\n(d) 8x \u2013 (2x \u2013 3) + 12\n= 8x \u2013 2x + 3 + 12\n= 6x + 15\n(e) 8h \u2013 (5 + 7h) + 9\n= 8b \u2013 5 \u2013 7b + 9\n= (8b \u2013 7b) + (-5 + 9)\n= b + 4\n(f) 23 + 4(6m \u2013 3n) \u2013 8n \u2013 3m \u2013 18\n= 23 + 24m \u2013 12n \u2013 8n \u2013 3m \u2013 18\n= (23 \u2013 18) + (24m \u2013 3m) + (-12n \u2013 8n)\n= 5 + 21m \u2013 20n\nQuestion 8.\nAdd the expressions given below:\n(a) 4d \u2013 7c + 9 and 8c \u2013 11 + 9d\n(b) -6f + 19 \u2013 8s and -23 + 13f + 12s\n(c) 8d \u2013 14c + 9 and 16c \u2013 (11 + 9d)\n(d) 6f \u2013 20 + 8s and 23 \u2013 13f \u2013 12s\n(e) 13m \u2013 12n and 12n \u2013 13m\n(f) -26m + 24n and 26m \u2013 24n\nSolution:\n(a) 4d \u2013 7c + 9 and 8c \u2013 11 + 9d\n= 4d \u2013 7c + 9 + 8c \u2013 11 + 9d\n= (4d + 9d) + (-7c + 8c) + (9 \u2013 11)\n= 13d + c \u2013 2\n(b) -6f + 19 \u2013 8s and -23 + 13f + 12s\n= -6f + 19 \u2013 8s + -23 + 13f + 12s\n= (-6f + 13f) + (-8s + 12s) + (19 \u2013 23)\n= 7f + 4s \u2013 4\n(c) 8d \u2013 14c + 9 and 16c \u2013 (11 + 9d)\n= 8d \u2013 14c + 9 + 16c \u2013 11 \u2013 9d\n= 8d \u2013 9d \u2013 14c + 16c + 9 \u2013 11\n= -d + 2c \u2013 2\n= 2c \u2013 d \u2013 2\n(d) 6f \u2013 20 + 8s and 23 \u2013 13f \u2013 12s\n= 6f \u2013 20 + 85 + 23 \u2013 13f \u2013 125\n= (6f \u2013 13f) + (8s \u2013 12s) + (-20 + 23)\n= -7f \u2013 4s + 3\n(e) 13m \u2013 12n and 12n \u2013 13m\n= 13m \u2013 12n + 12n \u2013 13m\n= (13m \u2013 13m) + (-12n + 12n)\n= 0\n(f) -26m + 24n and 26m \u2013 24n\n= -26m + 24n + 26m \u2013 24n\n= (-26m + 26m) + (24n \u2013 24n)\n= 0\nQuestion 9.\nSubtract the expressions given below:\n(a) 9a \u2013 6b + 14 from 6a + 9b \u2013 18\n(b) -15x + 13 \u2013 9y from 7y \u2013 10 + 3x\n(c) 17g + 9 \u2013 7h from 11 \u2013 10g + 3h\n(d) 9a \u2013 6b + 14 from 6a \u2013 (9b + 18)\n(e) 10x + 2 + 10y from -3y + 8 \u2013 3x\n(f) 8g + 4h \u2013 10 from 7h \u2013 8g + 20\nSolution:\n(a) (6a + 9b \u2013 18) \u2013 (9a \u2013 6b + 14)\n= 6a + 9b \u2013 18 \u2013 9a + 6b \u2013 14\n= (6a \u2013 9a) + (9b + 6b) + (-18 \u2013 14)\n= -3a + 15b \u2013 32\n(b) (7y \u2013 10 + 3x) \u2013 (-15x + 13 \u2013 9y)\n= 7y \u2013 10 + 3x + 15x \u2013 13 + 9y\n= (7y + 9y) + (3x + 15x) + (-10 \u2013 13)\n= 16y + 18x \u2013 23\n(c) (11 \u2013 10g + 3h) \u2013 (17g + 9 \u2013 7h)\n= 11 \u2013 10g + 3h \u2013 17g \u2013 9 + 7h\n= (11 \u2013 9) + (-10g \u2013 17g) + (3h + 7h)\n= 2 \u2013 27g + 10h\n= 10h \u2013 27g + 2\n(d) 6a \u2013 (9b + 18) \u2013 (9a \u2013 6b + 14)\n= 6a \u2013 9b \u2013 18 \u2013 9a + 6b \u2013 14\n= (6a \u2013 9a) + (-9b + 6b) + (-18 \u2013 14)\n= -3a \u2013 3b \u2013 32\n= -(3a + 3b + 32)\n(e) (-3y + 8 \u2013 3x) \u2013 (10x + 2 + 10y)\n= -3y + 8 \u2013 3x \u2013 10x \u2013 2 \u2013 10y\n= (-3y \u2013 10y) + (-3x \u2013 10x) + (8 \u2013 2)\n= -13y \u2013 13x + 6\n(f) (7h \u2013 8g + 20) \u2013 (8g + 4h \u2013 10)\n= 7h \u2013 8g + 20 \u2013 8g \u2013 4h + 10\n= (7h \u2013 4h) + (-8g \u2013 8g) + (20 + 10)\n= 3h \u2013 16g + 30\nQuestion 10.\nDescribe situations corresponding to the following algebraic expressions:\n(\u0430) 8x + 3y\n(b) 15x \u2013 2x\nSolution: (a)\nThe cost of one notebook is \u20b98, and the cost of one pen is \u20b93.\nIf you purchase x notebooks and y pens, then the total amount you spend is:\n\u20b9(8x + 3y).\n(b)\nA fruit seller has 15 boxes of apples, with x apples in each box.\nBefore selling, he discovers that 2 boxes are rotten.\nSo, the number of fresh apples remaining is:\n15x \u2013 2x\n= 13x.\nQuestion 11.\nImagine a straight rope. If it is cut once as shown in the picture, we get 2 pieces. If the rope is folded once and then cut as shown, we get 3 pieces. Observe the pattern and find the number of pieces if the rope is folded 10 times and cut. What is the expression for the number of pieces when the rope is folded r times and cut?\nSolution:\nStep 1 (0 fold): We get 0 + 2 = 2 pieces\nStep 2 (1 fold): We get 1 + 2 = 3 pieces\nStep 3 (2 folds): We get 2 + 2 = 4 pieces\nIn the same way, if the rope is folded 10 times and cut, we get 10 + 2 = 12 pieces.\nIn the same way, when the rope is folded r times and cut, we get r + 2 pieces.\nQuestion 12.\nLook at the matchstick pattern below. Observe and identify the pattern. How many matchsticks are required to make 10 such squares? How many are required to make w squares?\nSolution:\nStep 1: To make 1 square, we need 4 matchsticks.\nStep 2: To make 2 squares, we need 4 + 3 = 7 matchsticks\nStep 3: To make 3 squares, we need 4 + 3 + 3 = 10 matchsticks.\nAnd to make w squares we need = 4 + (w \u2013 1) \u00d7 3\n= 4 + 3(w \u2013 1)\n= (4 + 3w \u2013 3)\n= 3w + 1 matchsticks.\nTo make 10 squares, substitute 10 for w:\n3(10) + 1 = 30 + 1 = 31 matchsticks\nQuestion 13.\nHave you noticed how the colours change in a traffic signal? The sequence of colour changes is shown below. Find the colour at positions 90, 190, and 343. Write expressions to describe the positions for each colour.\nSolution:\nThe sequence for the red light appears at positions:\n1, 5, 9, \u2026\nIn general, these positions are of the form 4n \u2013 3.\nThe sequence for the green light appears at positions:\n3, 7, 11, \u2026\nIn general, these positions are of the form 4n \u2013 1.\nThe sequence for the yellow light appears at positions:\n2, 4, 6, \u2026\nIn general, these follow 2n positions (all even numbers).\nSince 90 and 190 are even, they fall under 2n, so both are yellow.\nFor 343:\n343 \u00f7 4 = 85 remainder 3.\nA remainder of 3 corresponds to a 4n \u2013 1 pattern,\nso position 343 is green.\nTherefore, the colours at positions 90, 190, and 343 are:\nyellow, yellow, and green, respectively.\nQuestion 14.\nObserve the pattern below. How many squares will be there in Step 4, Step 10, Step 50? Write a general formula. How would the formula change if we want to count the number of vertices of all the squares?\nSolution:\nIn step 1, the number of squares is 5.\nIn step 2, it becomes: 5 + 4 = 9\nIn step 3, it becomes: 5 + 4 + 4 = 5 + 2\u00d74 = 13\nIn step 4, it becomes: 5 + 3\u00d74 = 17\nFollowing this pattern:\nNumber of squares in step 10 = 5 + 9\u00d74 = 41\nNumber of squares in step 50 = 5 + 49\u00d74 = 201\nThus, the general formula for the number of squares in step n is:\n5 + (n \u2013 1)\u00d74\n= 5 + 4(n \u2013 1)\n= 5 + 4n \u2013 4\n= 4n + 1\nSince 1 square has 4 vertices,\nthe number of vertices in (4n + 1) squares is:\n4 \u00d7 (4n + 1) = 16n + 4.\nQuestion 15.\nNumbers are written in a particular sequence in this endless 4-column grid.\n(a) Give expressions to generate all the numbers in a given column (1, 2, 3, 4).\n(b) In which row and column will the following numbers appear:\n(i) 124\n(ii) 147\n(iii) 201\n(c) What number appears in row r and column c?\n(d) Observe the positions of multiples of 3.\nDo you see any pattern in it? List other patterns that you see.\nSolution:\n(a) Expression to generate all numbers in a given column (1, 2, 3, 4)\nLet r be the row number.\nColumn 1 has the numbers: 1, 5, 9, 13, \u2026\nThis sequence starts at 1 and increases by 4 each time.\nSo, the number in the r-th row is:\n4(r \u2013 1) + 1\nColumn 2: 4(r \u2013 1) + 2\nColumn 3: 4(r \u2013 1) + 3\nColumn 4: 4(r \u2013 1) + 4\nThus, if c is the column number, the general formula for any number is:\n4(r \u2013 1) + c\n(b) Locating the row and column of given numbers\n(i) For 124\n124 \u00f7 4 = 31 remainder 0\nSo,\n124 = 4 \u00d7 30 + 4\nComparing with 4(r \u2013 1) + c:\nr \u2013 1 = 30 \u2192 r = 31\nc = 4\nSo, 124 appears in row 31, column 4.\n(ii) For 147\n147 \u00f7 4 = 36 remainder 3\nSo,\n147 = 4 \u00d7 36 + 3\nComparing with 4(r \u2013 1) + c:\nr \u2013 1 = 36 \u2192 r = 37\nc = 3\nSo, 147 appears in row 37, column 3.\n(iii) For 201\n201 \u00f7 4 = 50 remainder 1\nSo,\n201 = 4 \u00d7 50 + 1\nComparing with 4(r \u2013 1) + c:\nr \u2013 1 = 50 \u2192 r = 51\nc = 1\nSo, 201 appears in row 51, column 1.\n(c) General formula\nThe number that appears in row r and column c is:\n4(r \u2013 1) + c\n(d) Observations\nEvery third number in the entire grid is a multiple of 3.\nAll even numbers appear in column 2 and column 4.\nAll odd numbers appear in column 1 and column 3.\nEach row contains 2 odd numbers and 2 even numbers.\nThe sum of each row increases by 16.\nExample:\nRow 1: 1 + 2 + 3 + 4 = 10\nRow 2: 5 + 6 + 7 + 8 = 26\nRow 3: 9 + 10 + 11 + 12 = 42\nKey Concepts of Expressions using Letter-Numbers\nMastering\nExpressions using Letter-Numbers\nin Class 7 Maths is vital for building strong algebraic thinking. This chapter introduces concise ways of expressing relationships and patterns, which is a foundation for higher-level problem-solving in mathematics.\nPracticing NCERT Solutions for Class 7 Maths Chapter 4 (2026-27) ensures you understand\nalgebraic expressions\n, formulas, and pattern-based questions. Use clear step-by-step approaches for all exercise types\u2014this strengthens both your understanding and exam confidence.\nRegular revision of\nexercise-based answers\nwill help you tackle MCQs and reasoning questions more efficiently. Focus on applying the core concepts to different scenarios to improve your performance and boost your maths score.",
       "a": "Detailed solution available."
     }
   ],
   "5": [
     {
-      "q": "1. Define the following:\n(a) Adjacent Angles",
-      "a": "The angles are said to be adjacent only if they have a common arm/side and a common vertex and they do not overlap.\n(b) Supplementary Angles\nAns:\nWhen the sum of two angles is ${180^\\circ }$, then they are said to be supplementary angles.\n(c) Complementary Angles\nAns:\nWhen the sum of two angles is ${90^\\circ }$, then they are said to be complementary angles.\n(d) Linear Pair of Angles\nAns:\nWhen a straight line is divided into two parts, i.e., two different angles. Then those angels are said to be linear pairs.\nThe measure of a straight angle is ${180^\\circ }.$ So a linear pair of angles must add up to ${180^\\circ }$.\n(e) Vertically Opposite Angle\nAns:\nWhen two lines cross then they share the same vertex, vertically opposite angles are the angles opposite to one another having a common vertex.\nShort Answer Type Questions\n2- Marks"
-    },
-    {
-      "q": "2. Write the complementary angle of ${57^\\circ }$.",
-      "a": "The sum of complementary angles is ${180^\\circ }$.\nLet the other angle be x, then\n$x + {57^\\circ } = {90^\\circ }$\n$x = {90^\\circ } - {57^\\circ }$\n$x = {33^\\circ }$"
-    },
-    {
-      "q": "3. Write the supplementary angle of ${103^\\circ }$.",
-      "a": "The sum of complementary angles is ${180^\\circ }$.\nLet the other angle be x, then\n$x + {103^\\circ } = {180^\\circ }$\n$x = {180^\\circ } - {103^\\circ }$\n$x = {77^\\circ }$"
-    },
-    {
-      "q": "4. Find the value of x in the given figure.",
-      "a": "$ACB{\\text{ is a straight line}}{\\text{.}}$\n$\\therefore \\,\\,\\angle ACD + \\angle BCD = {180^{\\circ \\,}}\\,\\,\\,\\,\\left( {{\\text{Linear}}\\,{\\text{pair}}} \\right)$\n$x + {130^\\circ } = {180^\\circ }$\n$x = {180^\\circ } - {130^\\circ }$\n$x = {50^\\circ }$"
-    },
-    {
-      "q": "5. Identify the supplementary and complementary angles.\n${60^\\circ },\\,\\,{120^\\circ }$\n${30^\\circ },\\,\\,{60^\\circ }$\n${35^\\circ },\\,\\,{145^\\circ }$\n${12^\\circ },\\,\\,{78^\\circ }$",
-      "a": "Pair of angles whose sum is ${180^\\circ }$ are called supplementary angles.\nHere,\n${60^\\circ },\\,\\,{120^\\circ }$ and ${35^\\circ },\\,\\,{145^\\circ }$ are supplementary angles.\nPair of angles whose sum is ${90^\\circ }$ are called complementary angles.\nHere,\n${30^\\circ },\\,\\,{60^\\circ }$ and ${12^\\circ },\\,\\,{78^\\circ }$ are complementary angles."
-    },
-    {
-      "q": "6. In the following figures is $\\angle 1{\\text{ and }}\\angle 2$ are adjacent? Give reason.",
-      "a": "Adjacent angles are those that arise from the same vertex and have one arm/side in common.\nHere,\n$\\angle 1{\\text{ and }}\\angle 2$ has a common arm/side but since they do not have a common vertex. Therefore, the angles are not adjacent."
-    },
-    {
-      "q": "7. Find the value of $$x,\\,y\\,{\\text{ and }}z$$.",
-      "a": "From the figure it is clear that $\\angle x$ and ${50^\\circ }$ are vertically opposite angles\n$\\therefore \\angle x = {50^\\circ }$\n$\\angle x + \\angle y = {180^\\circ }\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\left( {{\\text{Linear pair}}} \\right)$\n${50^\\circ } + \\angle y = {180^\\circ }$\n$\\angle y = {180^\\circ } - {50^\\circ }$\n$\\angle y = {130^\\circ }$\nSimilarly, $\\angle y$ and $\\angle z$ are vertically opposite angles.\n$\\therefore \\angle y = \\angle z = {130^\\circ }$"
-    },
-    {
-      "q": "8. If $\\angle ABC = {55^\\circ }$, then find\n$\\mathbf{\\angle DGC}$",
-      "a": "From the figure we can conclude that\u00a0 and a transversal line ${\\text{BC}}$ is intersecting them.\n$\\angle DGC = \\angle ABC\\,\\,\\,\\,\\,\\,\\,\\left( {{\\text{corresponding angles}}} \\right)$\n$\\therefore \\angle DGC = {55^\\circ }$\n$\\mathbf{\\angle DEF}$\nAns:\nFrom the figure we can conclude that a traversal line DE is intersecting them.\n$\\angle DEF = \\angle DGC\\,\\,\\,\\,\\,\\,\\,\\,\\left( {{\\text{corresponding angles}}} \\right)$\n$\\therefore \\angle DEF = {55^\\circ }$"
-    },
-    {
-      "q": "9. Find the angle which is equal to its complement.",
-      "a": "Let the angle equal to its complement be ${\\text{x}}$.\nSince the complement of this angle is also ${\\text{x}}$. Therefore,\nThe sum of the measures of a complementary angle pair is ${90^\\circ }$.\n$x + x = {90^\\circ }\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\left( {{\\text{complementary angles}}} \\right)$\n$\\,\\,\\,\\,\\,2x = {90^\\circ }$\n$\\,\\,\\,\\,\\,\\,\\,x = {45^\\circ }$"
-    },
-    {
-      "q": "10. Find the angle which is equal to its supplement.",
-      "a": "Let the angle equal to its supplement be ${\\text{x}}$.\nSince the supplement of this angle is also ${\\text{x}}$. Therefore,\nThe sum of the measures of a supplementary angle pair is ${180^\\circ }$.\n$x + x = {180^\\circ }$\n$\\,\\,\\,\\,\\,2x = {180^\\circ }$\n$\\,\\,\\,\\,\\,\\,\\,\\,x = {90^\\circ }$\nShort Answer Type Questions\n3 - Marks"
-    },
-    {
-      "q": "11. Find the value of $$x,\\,y\\,{\\text{ and }}z$$ in each of the following:",
-      "a": "$\\angle z = {30^\\circ }$ (vertically opposite angles)\n$\\angle y + \\angle z = {180^\\circ }$ (linear pair)\n$\\angle y + {30^\\circ } = {180^\\circ }$\n$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\angle y = {150^\\circ }$\n${30^\\circ } + \\angle x + {30^\\circ } = {180^\\circ }$ (angles on a straight line)\n${60^\\circ } + \\angle x = {180^\\circ }$\n$\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\,\\angle x = {120^\\circ }$"
-    },
-    {
-      "q": "12. In the adjoining figure, identify:\n(a) The Pairs of Corresponding Angles",
-      "a": "When two parallel lines are intersected by any other line and the angle formed in the corresponding corner are called corresponding angles.\nHere,\n$\\angle 1$ and $\\angle 5,\\,\\,\\,\\angle 2$ and $\\angle 6,\\,\\,\\,\\angle 3$ and $\\angle 7,\\,\\,\\,\\angle 4$ and $\\angle 8$\n(b) The Pairs of Alternate Angles\nAns:\nthey are the angles that lie on the inner side of the parallel lines but on the opposite sides of the transversal.\n$\\angle 3$ and $\\angle 5,\\,\\,\\,\\angle 4$ and $\\angle 6$\n(c) The Pairs of Interior Angles on the Same Side of Traversal\nAns:\nwhen a pair of the parallel lines is intersected by a transversal, the pair of interior angles on the same side of the transversal are\u00a0supplementary\u00a0(sum to 180\u00b0).\n$\\angle 4$ and $\\angle 5,\\,\\,\\,\\angle 3$ and $\\angle 6$\n(d) Vertically Opposite Angles\nAns:\nWhen two lines cross then they share the same vertex, vertically opposite angles are the angles opposite to one another having a common vertex.\n$\\angle 1$ and $\\angle 3,\\,\\,\\,\\angle 2$ and $\\angle 4,\\,\\,\\,\\angle 5$ and $\\angle 7,\\,\\,\\,\\angle 6$ and $\\angle 8$"
-    },
-    {
-      "q": "13. Find the value of $x$ in the following figure.",
-      "a": "From the figure, line $l$ is parallel to $m$ and a transversal passes through them. Hence,\n$\\angle y = {105^\\circ }$ (corresponding angles)\n$\\angle x + \\angle y = {180^\\circ }$\n$\\angle y = {180^\\circ } - {105^\\circ }$\n$\\angle y = {75^\\circ }$"
-    },
-    {
-      "q": "14. Find the value of ${\\text{x}}$ in each of the following figures is a parallelogram.",
-      "a": "From the figure, line $l$ is parallel to $m$ and a transversal passes through them. Hence,\n$\\angle x = {120^\\circ }$ (corresponding angles)"
-    },
-    {
-      "q": "15. In the given figure check whether parallelogram.",
-      "a": "Consider a pair of parallel lines l and m and a traversal line n which intersects them. Sum of the interior angles on the same side of traversal,\n$ = {116^\\circ } + {54^\\circ } = {170^\\circ }$\nAs the sum of interior angles on the same side of traversal is not ${180^\\circ }$.\nTherefore, l is not parallel to m.\n5 Important Topics of Class 7 Chapter 5 Maths Lines and Angles You Shouldn\u2019t Miss!\nNearly every aspect of our everyday lives includes lines and angles. To excel in the exams, students must be competent in calculating angles, measuring angles, and drawing angles. However, a proper understanding of lines and angles is essential for understanding the universal problems on lines and angles.\nLet us have a look at important topics from the Lines and Angles Chapter.\nS.No\nImportant Topics of Class 7 Maths Chapter 5 Lines and Angles\n1\nBasic Terms and Definitions\n2\nIntersecting Lines and Non-intersecting Lines\n3\nPairs of Angles\n4\nParallel Lines and a Transversal\n5\nLines Parallel to the Same Line\n6\nAngle Sum Property of a Triangle\nImportant Definitions of Class 7 Maths Chapter 5 - Lines and Angles\nLine\nA line is a one-dimensional figure that is parallel, has no thickness, and stretches in both directions indefinitely. It's commonly referred to as the shortest distance between two points.\nThere are 2 Types of Lines:\nIntersecting Lines:\nIntersecting lines are created when two or more lines in a plane cross each other. The point of intersection is where the intersecting lines share a common point that occurs on all intersecting lines.\nNon-Intersecting Lines:\nNon-intersecting lines are made up of two or more lines that do not intersect. These lines that do not intersect will never cross. The parallel lines are another name for them. They remain at the same distance from one another at all times.\nAngles\nIn geometry, an angle is known as the figure created by two rays meeting at a common endpoint.\nPairs of Angles\nComplementary Angles:\nIf the degree measurements of two angles add up to 90 degrees, they are complementary angles. That is, if we link both angles and position them next to each other, they will form a right angle.\nSupplementary Angles:\nIf the sum of the degree measurements is 180\u00b0 and one angle is said to be the supplement of the other then these angles are called supplementary angles. If we put the angles side by side, we get a straight line in supplementary angles.\nVertical Angles:\nAt the intersection of two sides, vertical angles are the angles that are opposite each other. Since they have a common vertex, they are called vertical angles.\nAlternate Interior Angles:\nWhen a transversal occurs, alternate interior angles are created. They are the angles on opposite sides of the transversal, but the transversal intersects inside the two lines. If the two lines intersected by the transversal are parallel, alternate interior angles are congruent.\nAlternate Exterior Angles:\nAlternate exterior angles are congruent to each other in the same way as alternate interior angles are if the two lines intersected by the transversal are parallel. These angles are on opposite sides of the transversal, but the transversal intersects outside of the two lines.\nCorresponding Angles:\nThe pairs of angles on the same side of the transversal and on the corresponding sides of the two other lines are known as corresponding angles. When the two lines intersected by the transversal are parallel, these angles are equal in degree measure.\nBenefit of Important Questions for CBSE Class 7 Chapter 5- Lines and Angles\nImportant Questions for CBSE Class 7 Chapter 5- Lines and Angles are crafted to help students understand and strengthen their basics in lines and angles.\nThese practice problems assist students in revising key topics, ensuring they grasp essential points in the chapter.\nBy solving various questions, students improve their problem-solving and analytical thinking abilities.\nCovering a broad range of topics, the Important Questions for Class 7 Maths equip students well for exams.\nThe questions encourage students to apply geometric principles in real-life scenarios, making learning more relevant.\nThey support academic growth and enhance critical thinking skills that are useful beyond mathematics.\nConclusion\nLines and Angles is one of the most scoring topics for Class 7 students. Students can download the free PDF for Lines and Angles Class 7 Important Questions from Vedantu to prepare for their exams. We provide step-by-step solutions to help students understand the concepts easily. All solutions are according to the CBSE guidelines. So download the Class 7 Maths Chapter 5 Extra Questions and prepare well for your exams.\nRelated Study Materials for Class 7 Maths Chapter 5 Lines and Angles\nS.No.\nStudy Materials for Maths Chapter 5 Class 7"
-    },
-    {
-      "q": "1.\nClass 7 Maths - Lines and Angles NCERT Solutions",
+      "q": "1. Can two straight lines intersect at more than one point?\nSolution:\nNo, two straight lines can meet at only one point.\nIf they are parallel, they will never meet.\nAnd if two lines seem to intersect at more than one point, then they are actually the same line.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 7 Maths - Lines and Angles Revision Notes\nCBSE Class 7 Maths Important Questions for All Chapters\nClass 7 Maths Important Questions and Answers cover key topics, aiding in thorough preparation and making revision simpler.\nS.No\nChapter-wise Important Questions for Class 7 Maths",
+      "q": "2. Is this always true for any pair of intersecting lines?\nSolution:\nYes. When two lines cross each other, they form four angles at the point where they intersect.\nThe angles that lie directly opposite each other are called vertically opposite angles, and these angles are always equal in measure.\nFigure it Out (Page 108)",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nChapter 1: Integers Questions",
+      "q": "1. List all the linear pairs and vertically opposite angles you observe from\nFigure:\nSolution:\n5.3 Between Lines\nNCERT In-Text Questions (Pages 109-110)\nObserve Figure and describe the way the line segments meet or cross each other in each case, with appropriate mathematical words (a point, an endpoint, the midpoint, meet, intersect) and the degree measure of each angle.\nFor example, line segments FG and FH meet at the endpoint F at an angle of 115.3\u00b0.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nChapter 2: Fractions and Decimals Questions",
+      "q": "1. Are line segments ST and UV likely to meet if they are extended?\nSolution:\nIf two lines are not parallel, they will eventually intersect at some point when extended.\nTherefore, the line segments ST and UV are likely to meet upon extension, since they are not parallel.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nChapter 3: Data Handling Questions",
+      "q": "2. Which pairs of lines appear to be parallel in the Figure below?\nSolution:\nTwo lines are considered parallel if they never intersect at any point.\nFrom the given figure:\nLines a, i, and h are parallel to one another.\nLine c is parallel to line g.\nLine d is parallel to line f.\nLine e is parallel to line b.\nFigure it Out (Pages 113-114)",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nChapter 4: Simple Equations Questions",
+      "q": "1. Draw some lines perpendicular to the lines given on the dot paper in the Figure.\nSolution:\nStudents should do it themselves.",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nChapter 6: The Triangle and its Properties Questions",
+      "q": "2. In the given figure, mark the parallel lines using the notation given above (single arrow, double arrow, etc). Mark the angle between perpendicular lines with a square symbol.\n(a) How did you spot the perpendicular lines?\n(b) How did you spot the parallel lines?\nSolution:\n(a) To identify perpendicular lines in a figure, look for lines that meet and form a right angle (90\u00b0).\n(b) To identify parallel lines, look for lines that never intersect, no matter how far they are extended.",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7: Comparing Quantities Questions",
+      "q": "3. In the dot paper following, draw different sets of parallel lines. The line segments can be of different lengths but should have dots as endpoints.\nSolution:\nStudents should do it by themselves.",
       "a": "Detailed solution available."
     },
     {
-      "q": "7.\nChapter 8: Rational Numbers Questions",
+      "q": "4. Using your sense of how parallel lines look, try to draw lines parallel to the line segments on this dot paper.\n(a) Did you find it challenging to draw some of them?\n(b) Which ones?\n(c) How did you do it?\nSolution:\n(a) \u2013 (c) Students should do it by themselves",
       "a": "Detailed solution available."
     },
     {
-      "q": "8.\nChapter 9: Perimeter and Area Questions",
+      "q": "5. In the figure, which line is parallel to line a\u2014line b or line c? How do you decide this?\nSolution:\nIn the given figure, line a is parallel to line c because they remain the same distance apart at all points and will never meet, even if extended indefinitely.\nFigure it Out (Page 119)",
       "a": "Detailed solution available."
     },
     {
-      "q": "9.\nChapter 10: Algebraic Expressions Questions",
+      "q": "1. Can you draw a line parallel to l that goes through point A? How will you do it with the tools from your geometry box? Describe your method.\nSolution:\nRequired tools: A ruler, set-squares (right-angled triangles), and a pencil.\nSteps:\nPlace the set square so that one of its edges aligns with line l.\nHold the ruler firmly against the other edge of the set square to keep it steady.\nSlide the set square along the ruler without changing its angle, until its edge reaches point A.\nDraw a line through point A along the edge of the set square.\nThis newly drawn line is parallel to line l and passes through point A.\nMaking Parallel Lines through Paper Folding\nNCERT In-Text Questions (Page 120)\nLet us try to do the same with paper folding.\nFor a line l (given as a crease), how do we make a line parallel to l such that it passes through point A?\nWe know how to fold a piece of paper to get a line perpendicular to l.\nNow, try to fold a perpendicular to l such that it passes through point A.\nLet us call this new crease t.\nNow, fold a line perpendicular to t passing through A again.\nLet us call this line m.\nThe lines l and m are parallel to each other.\nWhy are lines l and m parallel to each other?\nSolution:\nLine t is perpendicular to line l, and line m is also perpendicular to line t.\nWhen two lines are perpendicular to the same line, they become parallel to each other.\nTherefore, lines l and m are parallel because both are perpendicular to line t.\nFigure it Out (Pages 123-125)",
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11: Exponents and Powers Questions",
+      "q": "1. Find the angles marked below.\nSolution:\nAlternate interior angles formed when a transversal cuts parallel lines are always equal.\nSo, a = 48\u00b0.\nSimilarly, alternate angles are equal for the next pair as well.\nTherefore, b = 52\u00b0.\nInterior angles on the same side of a transversal always sum to 180\u00b0.\nSo, 180\u00b0 \u2013 99\u00b0 = 81\u00b0, which means c = 81\u00b0.\nThe sum of the interior angles on the same side of the transversal always adds up to 180\u00b0.\nSo, 180\u00b0 \u2013 81\u00b0 = 99\u00b0. Therefore, d = 99\u00b0.\nAlternate interior angles formed when a transversal cuts parallel lines are always equal.\nSo, e = 69\u00b0.\nInterior angles on the same side of a transversal sum to 180\u00b0.\nThus, 180\u00b0 \u2013 132\u00b0 = 48\u00b0, so f = 48\u00b0.\nCorresponding angles formed by a transversal intersecting parallel lines are equal.\nTherefore, g = 122\u00b0.\nAlternate interior angles are equal, so:\nh = 15\u00b0\ni = 54\u00b0\nj = 97\u00b0\nAll these values follow directly from angle relationships in parallel-line geometry.",
       "a": "Detailed solution available."
     },
     {
-      "q": "11.\nChapter 12: Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13: Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 7 Maths Revision Notes",
+      "q": "2. Find the angle represented by a.\nSolution:\n\u22201 is given as 42\u00b0.\nSince \u22201 and \u22202 form a linear pair, their measures add up to 180\u00b0.\nSo, \u22202 = 180\u00b0 \u2013 42\u00b0 = 138\u00b0.\nLines l and m are parallel, and t is a transversal.\nTherefore, \u22202 and angle a are alternate interior angles, which are always equal.\nThus, a = 138\u00b0.\nAngle \u22201 is 62\u00b0, and since \u22201 and \u22202 form a linear pair, their sum must be 180\u00b0.\nSo, \u22202 = 180\u00b0 \u2013 62\u00b0 = 118\u00b0.\nNext, \u22202 and \u22203 are corresponding angles, and because lines l and m are parallel and t is a transversal, corresponding angles are equal.\nThus, \u22203 = 118\u00b0.\nFinally, \u22203 and angle a are also corresponding angles, as lines s and t are parallel with m acting as the transversal.\nTherefore, a = 118\u00b0.\nLines s and l intersect, so \u22201 is a vertically opposite angle to the given 110\u00b0.\nThus, \u22201 = 110\u00b0.\nSince lines l and m are parallel and s is a transversal,\n\u22201 and \u22202 are corresponding angles, so:\n\u22202 = 110\u00b0\nNow,\n\u22203 = \u22202 \u2013 35\u00b0 = 110\u00b0 \u2013 35\u00b0 = 75\u00b0\nNext, lines are arranged such that \u22203 and \u22204 are corresponding angles, so:\n\u22204 = 75\u00b0\nFinally, angle a forms a linear pair with \u22204, so their sum is 180\u00b0.\nThus,\na = 180\u00b0 \u2013 75\u00b0 = 105\u00b0.\nUsing the fact that angles on a straight line add up to 180\u00b0, we get:\n\u22201 + \u22202 + 67\u00b0 = 180\u00b0\nSince \u22201 = 90\u00b0,\n\u22202 = 180\u00b0 \u2013 67\u00b0 \u2013 90\u00b0 = 23\u00b0\nBecause lines l and t are parallel, \u22202 and angle a are alternate interior angles, which are equal.\nTherefore, a = 23\u00b0.\nQuestion 3.\nIn the figures below, what angles do x and y stand for?\nSolution:\nSince lines l and m are perpendicular,\n\u22202 = 90\u00b0.\nUsing the linear-pair relationship on the straight line:\n\u22202 + 65\u00b0 + x\u00b0 = 180\u00b0\nSo,\nx = 180\u00b0 \u2013 90\u00b0 \u2013 65\u00b0 = 25\u00b0\nLines t and m intersect, so \u22201 and x\u00b0 are vertically opposite angles.\nThus,\n\u22201 = x = 25\u00b0\nNow, lines l and m are parallel and t acts as a transversal.\nSo, angle y corresponds to the angle formed by \u22202 + 65\u00b0, giving:\ny = 90\u00b0 + 65\u00b0 = 155\u00b0\nTherefore,\nx = 25\u00b0 and y = 155\u00b0.\nSince lines l and m are parallel and s is a transversal,\n\u22203 is an alternate interior angle, so:\n\u22203 = 78\u00b0\nAlso, with t as a transversal to the same parallel lines,\n\u22201 is another alternate angle, so:\n\u22201 = 53\u00b0\nNow,\n\u22202 = \u22203 \u2013 \u22201 = 78\u00b0 \u2013 53\u00b0 = 25\u00b0\nLines s and t intersect, so \u22202 and angle x are vertically opposite angles, which are equal.\nThus,\nx = 25\u00b0.\nQuestion 4.\nIn Figure, \u2220ABC = 45\u00b0 and \u2220IKJ = 78\u00b0. Find angles \u2220GEH, \u2220HEF, \u2220FED.\nSolution:\nLine segments IA and HC intersect at point B.\nSo, \u2220ABC and \u2220KBE are vertically opposite angles, giving:\n\u2220ABC = \u2220KBE = 45\u00b0\nSimilarly, line segments JF and IA intersect at point K.\nThus, \u2220IKJ and \u2220BKE are vertically opposite angles:\n\u2220IKJ = \u2220BKE = 78\u00b0\nSince \u2220KBE corresponds to \u2220GEH,\n\u2220GEH = 45\u00b0 (corresponding angles).\nLikewise, \u2220BKE corresponds to \u2220FED,\nso \u2220FED = 78\u00b0.\nNow, angles \u2220GEH, \u2220HEF, and \u2220FED lie on a straight line.\nTherefore,\n\u2220GEH + \u2220HEF + \u2220FED = 180\u00b0\nSo,\n\u2220HEF = 180\u00b0 \u2013 45\u00b0 \u2013 78\u00b0 = 57\u00b0.\nQuestion 5.\nIn the Figure, AB is parallel to CD, and CD is parallel to EF. Also, EA is perpendicular to AB. If \u2220BEF = 55\u00b0, find the values of x and y.\nSolution:\nSince AB \u2225 CD and CD \u2225 EF, it follows that AB \u2225 EF.\nNow, with EF \u2225 CD and DE acting as a transversal,\nthe interior angles on the same side must add up to 180\u00b0:\ny + 55\u00b0 = 180\u00b0\nSo,\ny = 125\u00b0\nNext, since AB \u2225 CD and BD is a transversal,\nangles x\u00b0 and y\u00b0 are corresponding angles, and therefore equal:\nx = y = 125\u00b0\nQuestion 6.\nWhat is the measure of angle \u2220NOP in the given figure?\n[Hint: Draw lines parallel to LM and PQ through points N and O]\nSolution:\nDraw a line RS through N, which is parallel to line LM, and line TU through O, which is parallel to line PQ.\n\u2220LMN = \u2220MNS because they are alternate interior angles.\nSo,\nw = 56\u00b0\nGiven: \u2220MNO = 96\u00b0\nAngles w\u00b0 and x\u00b0 lie on a straight line with \u2220MNO, so:\nw + x = 96\u00b0\n56\u00b0 + x = 96\u00b0\nx = 96\u00b0 \u2013 56\u00b0 = 40\u00b0\nNow, RS \u2225 TU, and NO is a transversal.\nSo, \u2220SNO and \u2220NOT are alternate interior angles, hence:\ny = x = 40\u00b0\nNext, TU \u2225 PQ, and OP is a transversal.\nSo, \u2220TOP and \u2220OPQ are alternate angles:\nGiven \u2220OPQ = 52\u00b0,\nSo,\nz = 52\u00b0\nFinally,\na = y + z\n= 40\u00b0 + 52\u00b0\n= 92\u00b0\nParallel Illusions\nNCERT In-Text Questions (Page 125)\nThere do not seem to be any parallel lines here. Or, are there?\nWhat causes these illusions?\nSolution:\n(a) At first glance, the image may look like a confusing arrangement of lines pointing in many directions, making it seem as if none of the lines are straight or parallel. But a closer observation reveals that the vertical lines are actually perfectly straight, evenly spaced, and parallel to one another.\nThe other lines in the picture spread out like spokes of a wheel, slanting outward and meeting at a central point. These slanted lines are not parallel. Because of how they tilt and intersect with the vertical lines, our eyes get tricked into thinking that the vertical lines are bending or slanting.\nThis effect is called an optical illusion. The angled lines create a false sense of distortion, and the strong focal point at the centre pulls our attention toward it, making it harder to focus on the perfectly parallel vertical lines.\n(b)\nAt first glance, this pattern seems to be full of slanted or zigzag lines, and the bold black shapes create a distracting background. Because of this, the horizontal white lines appear tilted or uneven. But if we focus only on the white spaces, we notice that the horizontal white lines are actually parallel to one another.\nThe reason they do not look parallel is because the strong, slanted black shapes break the continuity of the white lines. These shapes interfere with our visual perception and trick our brain into thinking that the lines are shifting or sloping. This is an example of an optical illusion, where the surrounding shapes distort how we interpret the actual straight and parallel lines.\n(c)\nWhen we first look at this image, it may seem like no lines are parallel. The shape looks curved, the lines appear bent, and everything seems to be pulled toward the centre. However, the two horizontal lines at the top and bottom are actually perfectly straight and parallel.\nThis is another classic optical illusion. The many diagonal lines radiating from the centre\u2014similar to the spokes of a wheel\u2014create a false sense of depth. These radiating lines distort the background, making our brains perceive the horizontal lines as curving inward. The illusion is so strong that the ends of the lines appear tilted, even though they are not.\nIf we place a ruler along the horizontal lines, we can confirm that they are indeed straight and parallel\u2014the illusion simply tricks our eyes into seeing a curve where none exists.\nUnderstanding Parallel and Intersecting Lines\nMastering the concepts of\nparallel lines and intersecting lines\nis key to scoring well in Maths exams. With a clear understanding and regular practice, you can easily solve all related questions.\nThis chapter helps students identify\ncorresponding, alternate, and vertically opposite angles\nin various diagrams. Paying attention to these angle relationships will make geometry problems much simpler for you.\nPractice using\nNCERT solutions for Class 7 Maths Chapter 5\nto enhance your problem-solving skills. Focus on important theorems and drawing neat diagrams to boost your confidence and exam scores.",
       "a": "Detailed solution available."
     }
   ],
   "6": [
     {
-      "q": "1. Angle Sum Property of a Triangle\nThe sum of all interior angles of a triangle is always 180\u00b0.\n$\\angle A + \\angle B + \\angle C = 180\u00b0 $",
+      "q": "1. Row 1 must sum to odd\nFor a row to be odd, it must contain one odd and two evens.\nSo choose:\nA = o\nB = e\nC = e\n(Any permutation works, but this is one valid choice.)",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Exterior Angle Property\nThe measure of an exterior angle of a triangle is equal to the sum of the two opposite interior angles.\n$\\angle Exterior = \\angle Opposite + \\angle Opposite2$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3. Pythagorean Theorem (for Right-Angled Triangles)\nIn a right-angled triangle, the square of the hypotenuse is equal to the sum of the squares of the other two sides.\n$c^2 = a^2 + b^2$\nwhere $c$ is the hypotenuse, and $a$ and $b$ are the other two sides.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4. Perimeter of a Triangle\nThe perimeter of a triangle is the sum of the lengths of all its sides.\n$\\text{Perimeter} = a + b + c $\nwhere $a$, $b$, and $c$ are the lengths of the three sides.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5. Area of a Right-Angled Triangle\nThe area of a right-angled triangle can be calculated using the base and height.\n$\\text{Area} = \\frac{1}{2} \\times \\text{Base} \\times \\text{Height}$\nBenefits of Important Questions for Class 7 Maths Chapter 6 The Triangle and Its Properties\nImportant questions for Class 7 Maths Chapter 6 help reinforce core concepts related to triangles, including types of triangles, properties, and angle sum properties.\nBy practising varied questions provided in the FREE PDF, students become better at applying different properties of triangles in problem-solving.\nGoing through key questions prepares students for exams by giving them an idea of question patterns and helping them practise thoroughly.\nImportant questions highlight the main topics to focus on, making revision efficient and targeted.\nRegular practice enables students to solve questions faster, helping them manage their time well during exams.\nConclusion\nImportant questions for Class 7 Maths Chapter 6, \"The Triangle and Its Properties,\" provide a valuable resource for students to strengthen their understanding, practise essential concepts, and prepare effectively for exams. By focusing on key topics and improving problem-solving skills, these questions help students approach their exams with confidence and a clear grasp of triangle properties. Regular practice with these questions enables efficient revision, ensuring a strong foundation in this chapter.\nRelated Study Materials for Class 7 Maths Chapter 5 Lines and Angles\nS.No.\nStudy Materials for Maths Chapter 5 Class 7",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 7 Maths - Lines and Angles NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 7 Maths - Lines and Angles Revision Notes\nCBSE Class 7 Maths Important Questions for All Chapters\nClass 7 Maths Important Questions and Answers cover key topics, aiding in thorough preparation and making revision simpler.\nS.No\nChapter-wise Important Questions for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nChapter 1: Integers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nChapter 2: Fractions and Decimals Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nChapter 3: Data Handling Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nChapter 4: Simple Equations Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nChapter 5: Lines and Angles Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 7: Comparing Quantities Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 8: Rational Numbers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 9: Perimeter and Area Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 10: Algebraic Expressions Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10.\nChapter 11: Exponents and Powers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 12: Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13: Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 7 Maths Revision Notes",
+      "q": "2. Column constraints\nColumn 1: A + D = even\nSince A = o, to make the sum even, D must also be odd.\nD = o\nColumn 2: B + E = even\nSince B = e, E must also be even.\nE = e\nColumn 3: C + F = odd\nSince C = e, F must be odd.\nF = o\nFinal Parity Grid\nCol 1\nCol 2\nCol 3\nRow 1\nA = o\nB = e\nC = e\nRow 2\nD = o\nE = e\nF = o\nCount\nOdd numbers: A, D, F \u2192 3 odds\nEven numbers: B, C, E \u2192 3 evens\nThus, the 6 positions must contain exactly three odd and three even numbers, arranged as shown above.\nQuestion 4. Make a 3 \u00d7 3 magic square with 0 as the magic sum. All numbers can not be zero. Use negative numbers, as needed.\nSolution:\nWe are given that:\nThe magic square is of order 3 \u00d7 3.\nThe magic sum (sum of each row, column, and diagonal) must be 0.\nAll entries in the magic square cannot be zero.\nWe are allowed to use negative numbers.\nTo satisfy these conditions, we choose the integers from \u20134 to 4 (i.e., \u20134, \u20133, \u20132, \u20131, 0, 1, 2, 3, 4) and arrange them in a 3 \u00d7 3 grid so that the sum of every row, every column, and both diagonals is 0.\n-3\n2\n1\n4\n0\n-4\n-1\n-2\n3\nQuestion 5. Fill in the following blanks with \u2018odd\u2019 or \u2018even\u2019:\n(a) Sum of an odd number of even numbers is ______\n(b) Sum of an even number of odd numbers is ______\n(c) Sum of an even number of even numbers is ______\n(d) Sum of an odd number of odd numbers is ______\nSolution:\n(a) Sum of odd number of even numbers is even.\n(b) Sum of even number of odd numbers is even.\n(c) Sum of even number of even numbers is even.\n(d) Sum of odd number of odd numbers is odd.\nQuestion 6. What is the parity of the sum of numbers from 1 to 100?\nSolution:\nThe sum of numbers from 1 to 100 is as follows:\nSince 5050 is an even number, the parity is even.\nQuestion 7. Two consecutive numbers in the Virahanka sequence are 987 and 1597. What are the next 2 numbers in the sequence? What are the previous 2 numbers in the sequence?\nSolution:\nThe given numbers are 987 and 1597.\nIn the Virahanka sequence (similar to the Fibonacci sequence), each term is the sum of the two preceding terms.\nFinding the next two numbers:\nNext term = 987 + 1597 = 2584\nNext term after that = 1597 + 2584 = 4181\nFinding the previous two numbers:\nTo go backwards in such a sequence, we subtract instead of adding.\nPrevious term = 1597 \u2013 987 = 610\nTerm before that = 987 \u2013 610 = 377\nSo, the sequence around the given numbers is:\n\u2026, 377, 610, 987, 1597, 2584, 4181, \u2026\nQuestion 8. Angaan wants to climb an 8-step staircase. His playful rule is that he can take either 1 step or 2 steps at a time. For example, one of his paths is 1, 2, 2, 1, 2. In how many different ways can he reach the top?\nSolution:\nWays in which Angaan can climb 8 steps with 1 or 2 steps are as follows:\nFor n = 8\nDifferent Ways\nNumber of Ways\n1 + 1 + 1 + 1 + 1 + 1 + 1 + 1\n1\n1 + 1 + 1 + 1 + 1 + 1 + 2\n1 + 1 + 1 + 1 + 1 + 2 + 1\n1 + 1 + 1 + 1 + 2 + 1 + 1\n1 + 1 + 1 + 2 + 1 + 1 + 1\n1 + 1 + 2 + 1 + 1 + 1 + 1\n1 + 2 + 1 + 1 + 1 + 1 + 1\n2 + 1 + 1 + 1 + 1 + 1 + 1\n7\n1 + 1 + 1 + 1 + 2 + 2\n1 + 1 + 1 + 2 + 1 + 2\n1 + 1 + 2 + 1 + 1 + 2\n1 + 2 + 1 + 1 + 1 + 2\n2 + 1 + 1 + 1 + 1 + 2\n1 + 1 + 1 + 2 + 2 + 1\n1 + 1 + 2 + 1 + 2 + 1\n1 + 2 + 1 + 1 + 2 + 1\n2 + 1 + 1 + 1 + 2 + 1\n1 + 1 + 2 + 2 + 1 + 1\n1 + 2 + 1 + 2 + 1 + 1\n1 + 2 + 2 + 1 + 1 + 1\n2 + 1 + 2 + 1 + 1 + 1\n2 + 2 + 1 + 1 + 1 + 1\n15\n1 + 1 + 2 + 2 + 2\n1 + 2 + 2 + 2 + 1\n2 + 2 + 2 + 1 + 1\n1 + 2 + 1 + 2 + 2\n2 + 1 + 1 + 2 + 2\n2 + 1 + 2 + 2 + 1\n1 + 2 + 2 + 1 + 2\n1 + 1 + 2 + 1 + 2 + 2\n2 + 2 + 1 + 1 + 2\n2 + 1 + 1 + 2 + 2\n10\n2 + 2 + 2 + 2\n1\nTherefore, the total number of ways in which Angaan can reach the top is:\n1 + 7 + 15 + 10 + 1 = 34 ways.\nQuestion 9.What is the parity of the 20th term of the Virahanka sequence?\nSolution:\nConsider the Virahanka sequence:\n1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, \u2026\nNow observe the pattern of odd and even terms:\n1 \u2192 odd\n2 \u2192 even\n3 \u2192 odd\n5 \u2192 odd\n8 \u2192 even\n13 \u2192 odd\n21 \u2192 odd\n34 \u2192 even\nWe can see that the parity (odd/even) follows a repeating cycle of three terms:\nodd, even, odd \u2192 repeats every 3 positions\nSince the pattern repeats every 3 terms, we check the parity of the 20th term:\n20 mod 3 = 2 \u2192 which corresponds to the second position in the cycle \u2192 even\nTherefore, the 20th term of the Virahanka sequence is even.\nQuestion 10. Identify the true statements.\n(a) The expression 4m \u2013 1 always gives odd numbers.\n(b) All even numbers can be expressed as 6j \u2013 4.\n(c) Both expressions 2p + 1 and 2q \u2013 1 describe all odd numbers.\n(d) The expression 2f + 3 gives both even and odd numbers.\nSolution:\n(a) Substitute values of mmm into the expression 4m\u221214m - 14m\u22121:\nFor m=1m = 1m=1: 4(1)\u22121=34(1) - 1 = 34(1)\u22121=3 \u2192 odd\nFor m=2m = 2m=2: 4(2)\u22121=74(2) - 1 = 74(2)\u22121=7 \u2192 odd\nSince 4m4m4m is always even, subtracting 1 always gives an odd number.\nSo this statement is true.\n(b) Substitute values of jjj into 6j\u221246j - 46j\u22124:\nFor j=1j = 1j=1: 6(1)\u22124=26(1) - 4 = 26(1)\u22124=2 \u2192 even\nFor j=2j = 2j=2: 6(2)\u22124=86(2) - 4 = 86(2)\u22124=8 \u2192 even\nThe expression always produces even numbers.\nHowever, it does not generate all even numbers\u2014for example, it skips 4 and 6.\nSo this statement is false.\n(c) For p=1,2,3,\u2026p = 1, 2, 3,.....p=1,2,3,\u2026:\n2p+1=3,5,7,\u20262p + 1 = 3, 5, 7,......2p+1=3,5,7,\u2026\nFor q=1,2,3,\u2026q = 1, 2, 3\u2026.q=1,2,3,\u2026:\n2q\u22121=1,3,5,7,\u20262q - 1 = 1, 3, 5, 7,.....2q\u22121=1,3,5,7,\u2026\nHere, 2q\u221212q - 12q\u22121 generates all odd numbers, including 1.\nBut 2p+12p + 12p+1 does not generate 1.\nTherefore, the claim that they represent the same set is incorrect.\nThis statement is false.\n(d) Substitute values of fff into the expression 2f+32f + 32f+3:\nFor f=1f = 1f=1: 2(1)+3=52(1) + 3 = 52(1)+3=5 \u2192 odd\nFor f=2f = 2f=2: 2(2)+3=72(2) + 3 = 72(2)+3=7 \u2192 odd\nSince 2f2f2f is always even and adding 3 makes it odd, the expression always gives odd numbers.\nThe statement claiming otherwise is incorrect.\nThis statement is false.\nQuestion 11. Solve this cryptarithm:\nSolution:\nHere, T is at hundreds place, so T = 1\n\u21d2 A = 0 and U = 9.\nSo, we have U = 9, T = 1, and A = 0.\nMastering Number Play for Class 7\nUnderstanding\nNCERT Solutions for Class 7 Maths Chapter 6 Number Play\nis key to acing your exams. Dive deep into concepts like parity, magic squares, and the\nFibonacci sequence\nto develop strong problem-solving skills.\nPractice regularly using\nchapter-wise solutions\nto boost your confidence. This chapter connects mathematics to logic and creativity, making maths both fun and meaningful. Strengthening these topics will help in\ncompetitive exams\nahead.\nFocus on understanding how patterns and logical rules work for better\nconcept clarity\n. Complete the NCERT exercises, review important formulas, and test your knowledge with similar questions for effective exam preparation.",
       "a": "Detailed solution available."
     }
   ],
-  "7": [
-    {
-      "q": "1. Find the ratio of $$600\\;{\\text{g}}$$ to $5\\;{\\text{kg}}$.",
-      "a": "First we will convert masses into the same units.\n$5\\;{\\text{kg}}\\; = \\;5\\; \\times \\;1000\\;{\\text{g}}\\; = \\;5000\\;{\\text{g}}$\nNow we will find ratio of\n$$600\\;{\\text{g}}$$\nand\n$5000\\;{\\text{g}}$\n$\n\n  600\\;{\\text{g}}\\;:\\;5000\\;{\\text{g}}\\;{\\text{ = }}\\;\\dfrac{{600}}{{5000}}\\; \\\\\n\n  \\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\;\\dfrac{6}{{50}}\\; = \\;\\dfrac{3}{{25}}  \\\\ \n\n $\nRequired ratio is\n$3:25$"
-    },
-    {
-      "q": "2. Write $\\dfrac{2}{5}$ as percent.",
-      "a": "We\u2019ll multiply numerator and denominator by\n$20$\nto make denominator\n$100$\n$\\dfrac{2}{5} \\times \\dfrac{{20}}{{20}} = \\dfrac{{40}}{{100}} = 40\\% $"
-    },
-    {
-      "q": "3. Convert $0.25$ to percent.",
-      "a": "To convert\n$0.25$\nto percent, we have to multiply it by\n$100\\% $\n`\n$$\n\n   = 0.25 \\times 100\\%  \\\\\n\n   = \\dfrac{{25}}{{100}} \\times 100\\%  \\\\\n\n   = 25\\%  \\\\ \n\n $$"
-    },
-    {
-      "q": "4. Find $100\\%\u00a0 - 55\\%\u00a0 = $____",
-      "a": "we have\n$$\n\n  100\\%  = \\dfrac{{100}}{{100}} \\\\\n\n  55\\%  = \\dfrac{{50}}{{100}} \\\\\n\n  100\\%  - 55\\%  = \\dfrac{{100}}{{100}} - \\dfrac{{55}}{{100}} \\\\\n\n= \\dfrac{{100 - 55}}{{100}} \\\\\n\n= \\dfrac{{45}}{{100}} = 45\\%  \\\\ \n\n $$"
-    },
-    {
-      "q": "5. Find $25\\% $ of $150$.",
-      "a": "By using formula, we have\n$\\dfrac{{25}}{{100}} \\times 150 = 37.5$\nShort Answer Questions (2 Marks)"
-    },
-    {
-      "q": "6. In a class of $45$ students $40\\% $ are girls. Find the no. of boys.",
-      "a": "Given: Girls percentage in class=\n$40\\% $\nTotal no. of students =\n$45$\nNo. of girls\n$ = 45 \\times \\dfrac{{40}}{{100}}\n\n = 45 \\times \\dfrac{2}{5} \n\n= 18$\nNo. of boys = Total no. of students \u2013 No. of girls\n$\n\n   = 45 - 18 \\\\\n\n   = 27 \\\\ \n\n $"
-    },
-    {
-      "q": "7. Find the ratio of\na. $18\\,{\\text{m }}$ to $45\\;{\\text{cm}}$",
-      "a": "Let\u2019s convert both lengths into the same unit.\n$1\\;m$ = $100\\;cm$\n$\\therefore 18\\;m$ = $18\\times 100\\; cm$\n$18\\;m\\:\\text{to}\\: 45\\;cm$ = $\\dfrac{1800}{45}$ = $\\dfrac{40}{1}$ = $40:1$\nb. $20$ days to $48$ hours\nAns:\nFirst convert both time into same units\n$$\\begin{align}\n\n  & \\text{1 day = 24 hours} \\\\\n\n & \\text{20 days = 20  }\\!\\!\\times\\!\\!\\text{  24 = 480 hours }\\!\\!~\\!\\!\\text{ } \\\\\n\n & \\text{20 days : 48 hours = 480 : 48} \\\\\n\n & \\text{                             =}\\frac{480}{48}\\,=\\ 10 \\\\\n\n\\end{align}$$\nRequired Ratio is $$\\text{10 : 1}$$"
-    },
-    {
-      "q": "8. In a city, $35\\% $ of population are males and $25\\% $ are females and the remaining are children. What is the percentage of children in the city?",
-      "a": "The total percentage =\n$100$\n$\\% $\nof males\u00a0 \u00a0 =\n$35\\% $\n$\\% $\nof females =\n$25\\% $\nAlso, Total\n$\\% $\n=\n$\\% $\nof (Females\n$ + $\nmales\n$ + $\nchildren)\n$\\therefore $\n$\\% $\nof children = Total\n$\\% $\n$ - $\n$\\% $\nof females\n$ - $\n$\\% $\nof males\n$\n\n   = (100\\; - \\;35\\; - \\;25)\\;\\%  \\\\\n\n   = \\;\\left( {100 - \\;60} \\right)\\;\\%  \\\\\n\n   = \\;40\\;\\%  \\\\ \n\n $"
-    },
-    {
-      "q": "9. Find:\na. $80\\% \\;{\\text{of}}\\;2\\;{\\text{kg's}}$\nb. $25\\% \\;{\\text{of}}\\;3000$",
-      "a": "a. $80\\% \\;{\\text{of}}\\;2\\;{\\text{kg's}}$\nWe know,\n$2\\;{\\text{kg}}\\; = \\;2000\\;{\\text{g}}$\n$\n\n80\\% \\;{\\text{of}}\\;2000\\;{\\text{g}}\\;{\\text{ = }}\\;80\\% \\; \\times \\;2000\\;{\\text{g}} \\\\\n\n\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\dfrac{{80}}{{100}} \\times \\;2000\\;{\\text{g}} \\\\\n\n\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\;80\\; \\times \\;20\\;{\\text{g}} \\\\\n\n\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\;1600\\;{\\text{g}}\\;{\\text{ = }}\\;{\\text{1}}{\\text{.6}}\\;{\\text{kg}} \\\\ \n\n $\nb. $25\\% \\;{\\text{of}}\\;3000$\n$\n\n\\dfrac{{25}}{{100}} \\times 3000 \\\\\n\n= 25 \\times \\;30 \\\\\n\n= 750 \\\\ \n\n$"
-    },
-    {
-      "q": "10. Convert given percent to decimal fractions and also to fractions in simplest form\na. $10\\% $\nb. $40\\% $",
-      "a": "To convert percent into decimal fraction we will divide the number by\n$100$\na. $10\\% \\; = \\;\\dfrac{{10}}{{100}}\\; = \\;\\dfrac{1}{{10}}\\; = \\;0.1$\nb. $40\\% \\; = \\;\\dfrac{{40}}{{100}}\\; = \\;\\dfrac{4}{{10}}\\; = \\;0.4$"
-    },
-    {
-      "q": "11. Mithali buys a TV at $12,000$ and sells it at a profit of $20\\% $. How much money does she get?",
-      "a": "Mithali buys TV = Cost price of TV =\n$12,000$\nMithali sells TV at profit =\n$20\\% \\;{\\text{of}}\\;12000$\n$\n\n   = \\dfrac{{20}}{{100}} \\times 12,000\\; \\\\\n\n   = \\;20\\, \\times 120 \\\\\n\n   = {\\text{Rs}}{\\text{.}}\\;2400 \\\\ \n\n $\nNow, Selling price = cost price\n$ + $\nprofit\n$\n\n   = 12,000 + 2,400 \\\\\n\n   = {\\text{ Rs}}{\\text{. }}14,400 \\\\ \n\n $\nTherefore, Mithali get\n${\\text{Rs}}{\\text{. }}14,400$"
-    },
-    {
-      "q": "12. Find\na. $12\\dfrac{1}{2}\\% {\\text{ of}}\\;75$\nb. $30\\% {\\text{ of }}150$",
-      "a": "a. $12\\dfrac{1}{2}\\% {\\text{ of}}\\;75$\nWe know,\n$12\\dfrac{1}{2}\\; = \\;\\dfrac{{25}}{2}$\n$$\n\n  \\therefore \\dfrac{{25}}{2}\\% {\\text{ of}}\\;75 = \\dfrac{{25}}{{2 \\times 100}} \\times 75 \\\\\n\n  \\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\dfrac{1}{{2 \\times 4}} \\times 75 \\\\\n\n  \\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = \\dfrac{{75}}{8} \\\\\n\n  \\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\; = 9\\dfrac{3}{8} \\\\ \n\n $$\nb. $30\\% {\\text{ of }}150$\n$\n\n= \\dfrac{{30}}{{100}} \\times 150\\\\\n\n= \\;3\\; \\times 15 \\\\\n\n= \\;45 \\\\ \n\n$"
-    },
-    {
-      "q": "13. Find the whole quantity if\na. $10\\,\\% $ of it is $800$\nb. $15\\% $ of it is $1050$",
-      "a": "a. $10\\,\\% $\nof it is\n$800$\nLet quantity is\n$x$\n$\n\n\\therefore \\;10\\;\\% \\;{\\text{of}}\\;x\\; = \\;800 \\\\\n\n\\Rightarrow \\;10\\;\\% \\; \\times \\;x\\; = \\;800 \\\\\n\n\\Rightarrow \\;\\;\\dfrac{{10}}{{100}}\\; \\times \\;x\\; = \\;800 \\\\\n\n\\Rightarrow \\;\\;\\dfrac{1}{{10}}\\; \\times \\;x\\; = \\;800 \\\\\n\n\\Rightarrow \\;\\;\\;\\;\\;\\;\\;\\;\\;x\\; = \\;800\\; \\times \\;10 \\\\\n\n\\;\\;\\;\\;\\;\\therefore \\;\\;\\;\\;\\;x = \\;8000 \\\\ \n\n$\nSo, whole quantity =\n$8000$\nb. $15\\% $\nof it is\n$1050$\nLet the quantity is\n$x$\n$\n\n\\therefore \\;15\\;\\% \\;{\\text{of}}\\;x\\; = \\;1050 \\\\\n\n\\Rightarrow \\;15\\;\\% \\; \\times \\;x\\; = \\;1050 \\\\\n\n\\Rightarrow \\;\\;\\dfrac{{15}}{{100}}\\; \\times \\;x\\; = \\;1050 \\\\\n\n\\Rightarrow \\;\\;\\;\\;\\dfrac{3}{{20}}\\; \\times \\;x\\; = \\;1050 \\\\\n\n\\Rightarrow \\;\\;\\;\\;\\;\\;\\;\\;\\;\\;x\\; = \\;1050\\; \\times \\;\\dfrac{{20}}{3}\\\\\n\n\\;\\;\\;\\;\\;\\therefore \\;\\;\\;\\;\\;\\;x = \\;350\\; \\times \\;20 \\\\\n\n\\;\\;\\;\\;\\;\\;\\; \\Rightarrow \\;\\;x\\; = \\;7000 \\\\ \n\n$"
-    },
-    {
-      "q": "14. Manvita saves $${\\mathbf{Rs}}.{\\text{ }}{\\mathbf{9000}}$$ from her salary every month. If it is $${\\mathbf{5}}\\% $$ of her salary. Find her salary.",
-      "a": "Let Manvita\u2019s salary =\n$x\\;{\\text{Rs}}{\\text{.}}$\n$${\\mathbf{5}}\\% $$\nof Manvita\u2019s Salary \u00a0=\n$${\\mathbf{Rs}}.{\\text{ \n}}{\\mathbf{9000}}$$\n$\n\n\\therefore 5\\% {\\text{ of x}} = 9000 \\\\\n\n\\Rightarrow \\dfrac{5}{{100}} \\times x = 9000 \\\\\n\n\\;\\;\\;\\;\\;\\; \\Rightarrow x = \\dfrac{{9000 \\times 100}}{5}\\\\\n\n\\;\\;\\;\\;\\; \\Rightarrow \\;x\\; = \\;1800\\; \\times 100 \\\\\n\n\\;\\;\\;\\;\\;\\therefore \\;\\;x = 1,80,000\\\\ \n\n$\nTherefore, Manvita\u2019s salary is\n$1,80,000$"
-    },
-    {
-      "q": "15. convert the following fractions to percent.\na. $\\dfrac{3}{4}$\nb. $\\dfrac{2}{5}$",
-      "a": "a. We\u2019ll multiply the numerator and denominator by\n$25$\nto make the denominator\n$100$\n.\n$\\dfrac{3}{4} \\times \\dfrac{{25}}{{25}}\\; = \\;\\dfrac{{75}}{{100}}\\; = \\;75\\;\\% $\nb. We\u2019ll multiply the numerator and denominator by\n$20$\nto make the denominator\n$100$\n.\n$\\dfrac{2}{5} \\times \\dfrac{{20}}{{20}}\\; = \\;\\dfrac{{40}}{{100}}\\; = \\;40\\;\\% $\nLong Answer Questions (3 Marks)"
-    },
-    {
-      "q": "16. Convert the following into percent\na. $\\dfrac{{34}}{{50}}$\nb. $\\dfrac{1}{4}$\nc. $0.03$",
-      "a": "First, we will make denominator\n$100$\n, and then we will convert that number into percent\na. $\\dfrac{{34}}{{50}} \\times \\dfrac{2}{2} = \\dfrac{{68}}{{100}} = 68\\% $\nb. $\\dfrac{1}{4} \\times \\dfrac{{25}}{{25}} = \\dfrac{{25}}{{100}} = 25\\% $\nc. $0.03\\;\\; = \\;\\dfrac{3}{{100}} = 3\\% $"
-    },
-    {
-      "q": "17. Out of $$24,000$$voters in a constituency $$48\\% $$ voted. Find the no. of voters who did not vote.",
-      "a": "Total voters =\n$$24,000$$\nVote percentage =\n$$48\\% $$\nNo. of Voters voted =\n$48\\,\\% \\;{\\text{of}}\\;12,000$\n$$\n\n   = \\dfrac{{48}}{{100}} \\times 24,000 \\\\\n\n   = \\;48 \\times 240 \\\\\n\n   = 11,520 \\\\ \n\n $$\nNo. of voters did not vote = Total voters \u2013 No. of voters voted\n$\n\n   = 24,000 - 11,520 \\\\\n\n   = 12,480 \\\\ \n\n $\nTherefore,\n$12,480$\npeople did not vote."
-    },
-    {
-      "q": "18. If $${\\text{Rs}}{\\text{. }}500$$has to be divided among Mishala, Manvita and Meera in the ratio $$1{\\text{ }}:{\\text{ }}3{\\text{ }}:{\\text{ }}6$$. Then how much money will each get and what will be the percentages.",
-      "a": "Total Amount =\n$${\\text{Rs}}{\\text{. }}500$$\nGiven,\n$${\\text{Rs}}{\\text{. }}500$$\nhas to be divided among Mishala, Manvita and Meera in the ratio\n$$1{\\text{ }}:{\\text{ }}3{\\text{ }}:{\\text{ }}6$$\n.\nLet common ratio be\n$x$\nMishala\u2019s share =\n$x$\nManvita\u2019s share =\n$3x$\nMeera\u2019s share =\n$6x$\nAccording to question\n$\n\n  x + 3x + 6x\\; = \\;500 \\\\\n\n  \\;\\;\\;\\; \\Rightarrow \\;10\\;x\\; = \\;500 \\\\\n\n  \\;\\;\\;\\;\\;\\;\\;\\;\\;\\;\\therefore x = \\dfrac{{500}}{{10}}\\; = \\;50 \\\\ \n\n $\nMishala\u2019s share =\n$50\\;{\\text{Rs}}.$\n$\\%\u00a0 = \\dfrac{1}{{10}} \\times 100 = 10\\% $\nManvita\u2019s share =\n$3x\\; = \\;3 \\times \\;50\\; = \\;150\\;{\\text{Rs}}.$\n$\\%\u00a0 = \\dfrac{3}{{10}} \\times 100 = 30\\% $\nMeera\u2019s share =\n$6x\\, = \\;6\\; \\times \\;\\;50\\; = \\;300\\;{\\text{Rs}}.$\n$\\%\u00a0 = \\dfrac{6}{{10}} \\times 100 = 60\\% $\n19.Find the amount to be paid at the end of $4$ years at each case\na. Principal = $${\\text{Rs}}{\\text{. }}1500{\\text{ at }}8\\% $$ PA\nb. Principal = $${\\text{Rs}}{\\text{. }}7500{\\text{ at }}5\\% $$ PA\nAns:\na. Given,\n$${\\text{P}} = 1500,\\;{\\text{R}} = 8\\% \\;\\,{\\text{PA}}\\;,\\;{\\text{T}} = 4{\\text{ years }}$$\nWe know,\n${\\text{Amount}}\\;{\\text{ = }}\\;{\\text{principal}}\\;{\\text{ + }}\\;{\\text{interest}}$\nAnd,\n$\\text{Interest}\\;$ = $\\dfrac{\\text{Principal}\\; \\times \\text{Rate}\\;\\times\\;\\text{Time}}{{100}}$\n$${\\text{I}} = \\dfrac{{1500 \\times 8 \\times 4}}{{100}} = 15 \\times 8 \\times 4\\; = 480\\;{\\text{Rs}}.$$\nAmount =\n$${\\text{P}}\\;{\\text{ + }}\\;{\\text{I}}\\;{\\text{ = }}\\;{\\text{1500}}\\;{\\text{ + }}\\;{\\text{480}}\\;{\\text{ = }}\\;{\\text{1980}}\\;{\\text{Rs}}{\\text{.}}$$\nb. ${\\text{P}} = 7500,\\;{\\text{R}} = 5\\% \\;{\\text{PA}},\\;\\;{\\text{T}} = 4{\\text{ years }}$\nNow, interest\n${\\text{I = }}\\dfrac{{{\\text{PRT}}}}{{{\\text{100}}}} = \\dfrac{7500 \\times 5 \\times 4}{100} = \\;75 \\times 5 \\times 4\\; = \\;1500\\;{\\text{Rs}}.$\nTherefore, Amount =\n${\\text{P}}\\;{\\text{ + }}\\;{\\text{I}}\\; = \\,{\\text{7500}}\\;{\\text{ + }}\\;{\\text{1500}}\\;{\\text{ = }}\\;{\\text{9000}}\\;{\\text{Rs}}{\\text{.}}$"
-    },
-    {
-      "q": "20. What rate gives an interest of $${\\text{Rs}}{\\text{. }}540$$on a sum of $${\\text{Rs}}{\\text{. }}18000$$in $$3{\\text{ years}}$$?",
-      "a": "Given, Interest,\n$${\\text{I}}\\;{\\text{ = }}\\;{\\text{Rs}}{\\text{. }}540$$\nPrincipal,\n$${\\text{P}}\\;{\\text{ = }}\\;{\\text{Rs}}{\\text{. }}18000$$\nTime,\n$${\\text{T}}\\; = \\;3{\\text{ years}}$$\nWe know,\n$\\text{Interest}\\;$ = $\\dfrac{\\text{Principal}\\; \\times \\text{Rate}\\;\\times\\;\\text{Time}}{{100}}$\n$$\\therefore {\\text{Rate}}\\;{\\text{ = }}\\;\\dfrac{\\text{Interest}\\;\\times\\;\\text{100}}{\\text{Principal}\\,\\times\\;\\text{Time}}$$\n$ = \\dfrac{{540 \\times 100}}{{18000 \\times 3}} = \\dfrac{{180}}{{180}}\\;\\; = \\;1\\% $\nCBSE Important Questions Class 7 Maths Chapter 7\nImportance of Comparing Quantities\nUnderstanding how to compare quantities is super important! In the Class 7 CBSE NCERT Maths book, there's a chapter all about it. This chapter talks about different kinds of maths, like ratio, percentage, decimals, profit and loss, and interests. There are many ideas in this chapter, so it's good to learn them well. If you ever come across tricky problems, Vedantu's website has solutions for them. They're like answers to the uncommon problems you might find in this chapter.\nYou can also find examples of important questions for Class 7 Maths, especially in the chapter about comparing quantities. These examples come with solved papers, which means the answers are already there. It's a good idea to look at these examples, get some guidance, and then try solving similar problems by yourself. This way, you can learn even better!\nMain Subtypes of Comparing Quantities and its Relevance\nLet's talk about why these maths concepts are super useful in real life!\nRatio\n: When you practise problems involving ratio, you're basically getting really good at estimating things. This skill helps not only in planning your day-to-day activities but also in understanding other cool subjects like Chemistry and Physics.\nDecimals\n: In the important questions of Chapter 7 in Class 7 Maths, you'll find lots of sums about decimals. Pay attention because these problems could show up in your final exam, and they're worth a big part of your marks. Beyond exams, knowing decimals helps you handle money transactions correctly and make sure you're getting the right amount of stuff for the money you spend.\nPercentage\n: Learning about percentages is another smart way to compare quantities. If you nail the percentage problems, comparing numbers becomes a breeze. It's like having a special knowledge about how percentages, fractions, and decimals are all connected. Once you've got these down, you might encounter problems that involve converting between them, and these could earn you lots of marks.\nProblems of Interest\n: There are generally two types of interests and comparing quantities Class 7 important questions have a high chance of being based on one of these concepts. A clear concept of interest can enhance your knowledge about money matters. You can gradually learn various banking procedures and manage your own pocket money.\nApart from interests, you can also do sums on the concepts of gain or loss. This also has relevance in terms of reality as you can brush-up your business skills right from a very young age. Moreover, by doing the sums on comparing qualities, you can develop an interest in solving mathematical problems that can help you face more complex problems of different subclasses of Mathematics in the higher standards.\nRemember, there's no better way to get good at maths than by practising it a lot. The more you practise, the better you become! Keep at it, and you'll see yourself getting better and better at solving those tricky maths problems. Practice makes perfect!\n5 Important Formulas of Class 7 Chapter 7 Comparing Quantities You Shouldn\u2019t Miss!\nUnderstanding these key formulas in Chapter 7, \"Comparing Quantities,\" is essential for solving problems accurately. Here are five formulas that you should focus on:"
-    },
-    {
-      "q": "1. Ratio Formula\nA ratio compares two quantities of the same kind by division.\n$\\text{Ratio of } a \\text{ to } b = \\dfrac{a}{b} \\text{ or } a:b$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2. Percentage Formula\nPercentage represents a number as a fraction of 100.\n$\\text{Percentage} = \\dfrac{\\text{Part}}{\\text{Whole}} \\times 100$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3. Simple Interest Formula\nSimple interest is calculated based on the initial principal amount, rate, and time.\n$\\text{Simple Interest (SI)} = \\dfrac{P \\times R \\times T}{100}$\nwhere $P$ is the principal amount, $R$ is the rate, and $T$ is the time.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4. Amount Formula (in Simple Interest)\nThe total amount after adding simple interest to the principal.\n$\\text{Amount (A)} = P + SI$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5. Profit and Loss Percentage Formula\nThese formulas help in calculating profit or loss percentages based on cost and selling prices.\n$\\text{Profit Percentage} = \\dfrac{\\text{Profit}}{\\text{Cost Price}} \\times 100$\n$\\text{Loss Percentage} = \\dfrac{\\text{Loss}}{\\text{Cost Price}} \\times 100$\nBenefits of Important Questions for Class 7 Maths Chapter 7 Comparing Quantities\nImportant Questions for Class 7 Maths Chapter 7 Comparing Quantities help break down complex ideas like ratios, percentages, and simple interests, making them easier to understand and apply.\nRegular practice with these practice questions improves students' ability to handle calculations, which is essential for solving problems accurately and quickly.\nThese questions give students insight into the types of questions commonly asked in exams, building familiarity with the pattern and difficulty level.\nPractising a variety of questions enhances students' approach to different types of problems, boosting their problem-solving skills.\nThese important questions cover the main topics, making it easier for students to revise the chapter effectively before exams.\nConclusion\nEngaging with\nImportant Questions for CBSE Class 7 Maths Chapter 7\n- Comparing Quantities serves as a pivotal step toward mastering the fundamental concepts of quantitative comparison. These questions offer students a comprehensive review of various scenarios, honing their skills in analysing and contrasting quantities. By tackling these exercises, students develop a solid foundation in mathematical comparisons, fostering their ability to apply these skills in practical scenarios. This practice ensures a thorough understanding of the chapter, empowering students to confidently tackle quantitative challenges and excel in their mathematical journey.\nRelated Study Materials for Class 7 Maths Chapter 7 Comparing Quantities\nS.No.\nStudy Materials for Maths Chapter 7 Class 7",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 7 Maths - Comparing Quantities NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 7 Maths - Comparing Quantities Revision Notes\nCBSE Class 7 Maths Important Questions for All Chapters\nClass 7 Maths Important Questions and Answers cover key topics, aiding in thorough preparation and making revision simpler.\nS.No\nChapter-wise Important Questions for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nChapter 1: Integers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nChapter 2: Fractions and Decimals Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nChapter 3: Data Handling Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nChapter 4: Simple Equations Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nChapter 5: Lines and Angles Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 6: The Triangle and Its Properties Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 8: Rational Numbers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 9: Perimeter and Area Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 10: Algebraic Expressions Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10.\nChapter 11: Exponents and Powers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 12: Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13: Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 7 Maths Revision Notes",
-      "a": "Detailed solution available."
-    }
-  ],
-  "8": [
-    {
-      "q": "1. Reduce $$\\dfrac{55}{66}$$ into the standard form.",
-      "a": "We know that both $55$ and $66$ are divisible by $11$,\n$\\dfrac{55\\div 11} {66\\div 11} $\n$ =\\dfrac{5}{6} $"
-    },
-    {
-      "q": "2. Fill in the blanks.\n(a)$\\dfrac{5}{6}.....\\dfrac{9}{5}$\n(b)$\\dfrac{3}{4}......\\dfrac{1}{2}$\n(c)$\\dfrac{2}{5}.......\\dfrac{3}{4}$",
-      "a": "(a)$\\dfrac{5}{6}\u00a0 < \\dfrac{9}{5}$\n(b)$\\dfrac{3}{4} > \\dfrac{1}{2}$\n(c)$\\dfrac{2}{5} < \\dfrac{3}{4}$"
-    },
-    {
-      "q": "3. Find the additive inverse of $-\\dfrac{3}{8}$.",
-      "a": "$\\dfrac{3}{8}$"
-    },
-    {
-      "q": "4. Reduce the following to the simplest form.\n(a)$\\dfrac{36}{54}$\n(b)$$\\dfrac{8}{72}$$",
-      "a": "(a) HCF of $36$ and $54$ is $18$.\nDividing both numerator and denominator by $18$,\n$\\dfrac{36\\div 18} {54\\div 18} $\n$ =\\dfrac{2}{3} $\n(b) HCF of $8$ and $72$ is $8$.\nDividing both numerator and denominator by $8$,\n$\\dfrac{8\\div 8} {72\\div 8} $\n$ =\\dfrac{1}{9} $"
-    },
-    {
-      "q": "5. Write four more numbers in the following pattern $-\\dfrac{1}{2}$, $-\\dfrac{1}{3}$, $-\\dfrac{2}{4}$, $-\\dfrac{2}{6}$,\u2026.",
-      "a": "$ -\\dfrac{1}{2}\\times \\dfrac{3}{3}=-\\dfrac{3}{6} $\n$ -\\dfrac{1}{2}\\times \\dfrac{4}{4}=-\\dfrac{4}{8} $\n$ -\\dfrac{1}{3}\\times \\dfrac{3}{3}=-\\dfrac{3}{9}\u00a0 $\n$ -\\dfrac{1}{3}\\times \\dfrac{4}{4}=-\\dfrac{4}{12}\u00a0 $\nTherefore, $-\\dfrac{1}{2}$, $-\\dfrac{1}{3}$, $-\\dfrac{2}{4}$, $-\\dfrac{2}{6}$, $-\\dfrac{3}{6}$, $-\\dfrac{4}{8}$, $-\\dfrac{3}{9}$, $-\\dfrac{4}{12}$"
-    },
-    {
-      "q": "6. Do $-\\dfrac{4}{9}$ and $-\\dfrac{16}{36}$ represent the same number?",
-      "a": "$-\\dfrac{4}{9}$\nand\n$-\\dfrac{16}{36}$\n$-\\dfrac{4}{9}=-\\dfrac{4\\times 4}{9\\times 4}=-\\dfrac{16}{36}$\nOr $-\\dfrac{16}{36}=-\\dfrac{16\\div 4}{36\\div 4}=-\\dfrac{4}{9}$\nHence, both represent the same number."
-    },
-    {
-      "q": "7. List five rational numbers between $-4$ and $-3$.",
-      "a": "$-4\\times \\dfrac{6}{6}=\\dfrac{-24}{6}$\n$-3\\times \\dfrac{6}{6}=\\dfrac{-18}{6}$\nThe rational numbers are\n$-\\dfrac{23}{6},-\\dfrac{22}{6},-\\dfrac{21}{6},-\\dfrac{20}{6},-\\dfrac{19}{6}$"
-    },
-    {
-      "q": "8. Give four equivalent numbers for $$\\dfrac{3}{8}$$.",
-      "a": "$ \\dfrac{3}{8}\\times \\dfrac{2}{2}=\\dfrac{6}{16}\u00a0 $\n$ \\dfrac{3}{8}\\times \\dfrac{3}{3}=\\dfrac{9}{24}\u00a0 $\n$ \\dfrac{3}{8}\\times \\dfrac{4}{4}=\\dfrac{12}{32}\u00a0 $\n$ \\dfrac{3}{8}\\times \\dfrac{5}{5}=\\dfrac{15}{40}\u00a0 $\n$ \\dfrac{3}{8}\\times \\dfrac{2}{2}=\\dfrac{6}{16}\u00a0 $"
-    },
-    {
-      "q": "9. Draw the number line and represent $-\\dfrac{7}{3}$ on it.",
-      "a": "This fraction represents two full parts and one part out of 3 equal parts. The negative sign indicates that it is on the negative side of the number line.\nTherefore, each space between two integers on the number line must be divided into 3 equal parts."
-    },
-    {
-      "q": "10. Rewrite the following rational numbers in the simplest form.\n(a)$\\dfrac{12}{36}$\n(b)$\\dfrac{39}{104}$",
-      "a": "(a) HCF of $12$ and $36$ is $12$.\nDividing both numerator and denominator by $12$,\n$\\dfrac{12\\div 12}{ 36\\div 12}\u00a0 $\n$ =\\dfrac{1}{3}\u00a0 $\n(b) HCF of $39$ and $104$ is $13$.\nDividing both numerator and denominator by $13$,\n$\\dfrac{39\\div 13}{ 104\\div 13} $\n$ =\\dfrac{3}{8}\u00a0 $"
-    },
-    {
-      "q": "11. Find the value of $\\dfrac{4}{14}\\div \\dfrac{28}{80}$.",
-      "a": "$\\dfrac{4}{14}\\div \\dfrac{28}{80}$\n$ =\\dfrac{4}{14}\\times \\dfrac{80}{28}\u00a0 $\n$ =\\dfrac{40}{49}\u00a0 $"
-    },
-    {
-      "q": "12. Find the product of $\\dfrac{15}{22}\\times \\dfrac{11}{5}$.",
-      "a": "$\\dfrac{15}{22}\\times \\dfrac{11}{5}$\n$ =\\dfrac{3}{2}\u00a0 $\n$ =1\\dfrac{1}{2}\u00a0 $"
-    },
-    {
-      "q": "13. Find the value of $\\dfrac{5}{8}+\\dfrac{1}{3}$.",
-      "a": "LCM of $8$ and $3$ is $24$\n$\\dfrac{5}{8}\\times \\dfrac{3}{3}=\\dfrac{15}{24}\u00a0 $\n$ \\dfrac{1}{3}\\times \\dfrac{8}{8}=\\dfrac{8}{24}\u00a0 $\nTherefore,\n$ \\dfrac{15}{24}+\\dfrac{8}{24}\u00a0 $\n$ =\\dfrac{5+8}{24}\u00a0 $\n$ =\\dfrac{23}{24}\u00a0 $\n3 Marks Questions"
-    },
-    {
-      "q": "14. Find the value of\n(a)$\\dfrac{3}{4}+\\dfrac{1}{2}$\n(b)$\\dfrac{5}{8}+\\dfrac{3}{4}$",
-      "a": "(a) LCM of $4$ and $2$ is $4$\n$ \\dfrac{3}{4}\\times \\dfrac{1}{1}=\\dfrac{3}{4}\u00a0 $\n$ \\dfrac{1}{2}\\times \\dfrac{2}{2}=\\dfrac{2}{4}\u00a0 $\nTherefore,\n$ \\dfrac{3}{4}+\\dfrac{2}{4}\u00a0 $\n$ =\\dfrac{3+2}{4}\u00a0 $\n$ =\\dfrac{5}{4}\u00a0 $\n(b) LCM of $4$ and $8$ is $8$\n$ \\dfrac{5}{8}\\times \\dfrac{1}{1}=\\dfrac{5}{8}\u00a0 $\n$ \\dfrac{3}{4}\\times \\dfrac{2}{2}=\\dfrac{6}{8}\u00a0 $\nTherefore,\n$ \\dfrac{5}{8}+\\dfrac{6}{8}\u00a0 $\n$ =\\dfrac{5+6}{8}\u00a0 $\n$ =\\dfrac{11}{8}\u00a0 $\n$ =1\\dfrac{3}{8}\u00a0 $"
-    },
-    {
-      "q": "15. Simplify\n(a)$\\dfrac{2}{5}-\\dfrac{1}{2}$\n(b)$\\dfrac{1}{5}-\\dfrac{3}{4}$",
-      "a": "(a) LCM of $5$ and $2$ is $10$\n$ \\dfrac{2}{5}\\times \\dfrac{2}{2}=\\dfrac{4}{10}\u00a0 $\n$ \\dfrac{1}{2}\\times \\dfrac{5}{5}=\\dfrac{5}{10}\u00a0 $\nTherefore,\n$ \\dfrac{4}{10}-\\dfrac{5}{10}\u00a0 $\n$ =\\dfrac{4-5}{10}\u00a0 $\n$ =-\\dfrac{1}{10}\u00a0 $\n(b) LCM of $5$ and $4$ is $20$\n$ \\dfrac{1}{5}\\times \\dfrac{4}{4}=\\dfrac{4}{20}\u00a0 $\n$ \\dfrac{3}{4}\\times \\dfrac{5}{5}=\\dfrac{15}{20}\u00a0 $\nTherefore,\n$ \\dfrac{4}{15}-\\dfrac{15}{20}\u00a0 $\n$ =\\dfrac{4-15}{20}\u00a0 $\n$ =-\\dfrac{11}{20}\u00a0 $"
-    },
-    {
-      "q": "16. Find the product of\n(a) $\\dfrac{14}{3}\\times \\dfrac{21}{63}$\n(b) $\\dfrac{2}{5}\\times \\dfrac{8}{9}$",
-      "a": "(a) $\\dfrac{14}{3}\\times \\dfrac{21}{63}$\n$ =\\dfrac{2\\times 7}{1\\times 9}\u00a0 $\n$ =\\dfrac{14}{9}\u00a0 $\n$ =1\\dfrac{5}{9}\u00a0 $\n(b) $\\dfrac{2}{5}\\times \\dfrac{8}{9}$\n$ =\\dfrac{2\\times 8}{5\\times 9}\u00a0 $\n$ =\\dfrac{16}{45}\u00a0 $"
-    },
-    {
-      "q": "17. Find the value of\n(a) $-\\dfrac{2}{3}\\div \\dfrac{3}{4}$\n(b) $\\dfrac{1}{4}\\div \\dfrac{5}{8}$",
-      "a": "(a) $-\\dfrac{2}{3}\\div \\dfrac{3}{4}$\n$ =-\\dfrac{2}{3}\\times \\dfrac{3}{4}\u00a0 $\n$ =-\\dfrac{8}{9}\u00a0 $\n(b) $\\dfrac{1}{4}\\div \\dfrac{5}{8}$\n$ =\\dfrac{1}{4}\\times \\dfrac{8}{5}\u00a0 $\n$ =\\dfrac{2}{5}\u00a0 $"
-    },
-    {
-      "q": "18. Insert six rational numbers between\u00a0 $\\dfrac{3}{8}$ and $\\dfrac{3}{5}$.",
-      "a": "Convert both the denominators into the same denominator.\n$\\dfrac{3}{8}\\times \\dfrac{5}{5}=\\dfrac{15}{40}$\n$\\dfrac{3}{5}\\times \\dfrac{8}{8}=\\dfrac{24}{40}$\nTherefore,\n$\\dfrac{16}{24}$ $\\dfrac{17}{24}$ $\\dfrac{18}{24}$ $\\dfrac{19}{24}$ $\\dfrac{20}{24}$ $\\dfrac{21}{24}$\n5 Important Formulas of Class 7 Chapter 8 Rational Numbers You Shouldn\u2019t Miss!\nChapter 8, \"Rational Numbers,\"\nintroduces key concepts and formulas that are fundamental in understanding and working with rational numbers. Here are five important formulas from this chapter:"
-    },
-    {
-      "q": "1. Addition of Rational Numbers\nTo add two rational numbers with the same denominator:\n$\\frac{a}{c} + \\frac{b}{c} = \\frac{a + b}{c}$\nIf the denominators are different, first find a common denominator and then add.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2. Subtraction of Rational Numbers\nTo subtract one rational number from another with the same denominator:\n$\\frac{a}{c} - \\frac{b}{c} = \\frac{a - b}{c}$\nFor different denominators, find a common denominator before subtracting.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3. Multiplication of Rational Numbers\nTo multiply two rational numbers, multiply the numerators and denominators:\n$\\frac{a}{b} \\times \\frac{c}{d} = \\frac{a \\times c}{b \\times d}$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4. Division of Rational Numbers\nTo divide one rational number by another, multiply by the reciprocal of the divisor:\n$\\frac{a}{b} \\div \\frac{c}{d} = \\frac{a}{b} \\times \\frac{d}{c} = \\frac{a \\times d}{b \\times c}$",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5. Reciprocal of a Rational Number\nThe reciprocal (or multiplicative inverse) of a rational number $\\frac{a}{b}$ is:\n$\\frac{b}{a}$\nwhere $a$ and $b$ are non-zero.\nBenefits of Important Questions for Class 7 Maths Chapter 8 Rational Numbers\nHere are some of the benefits of solving questions on Rational numbers for Class 7.\nStudents will be familiarised with the different types of questions, complexity level of questions, and important topics of the chapter to focus on.\nStudents will be able to develop time management skills and problem-solving skills.\nStudents can analyse the level of their preparation based on the marks obtained. They can also analyse their strengths and weaknesses and accordingly improve them.\nSolving these questions repeatedly will help students to revise the complete chapter thoroughly.\nSolving the questions will also help students to attempt the questions asked in the exam more confidently, as they will be habitual to solve different types of questions.\nCandidates are suggested to solve the questions and then cross their answers from the solutions provided. The attempt helps them to gain real-time exam experience.\nPractising the questions enables students to assess their preparedness and understand the techniques to decode problems asked in the exam.\nTo explore all the benefits mentioned above, it is recommended to download Questions on Rational for Class 7 free PDF now.\nConclusion\nWhen studying CBSE Class 7 Maths Chapter 8 on Rational Numbers, it's crucial to grasp key concepts. Understanding how to represent fractions, compare them, and perform operations like addition, subtraction, multiplication, and division with rational numbers is fundamental. Additionally, learning to convert fractions into decimals and vice versa is essential. Practise solving word problems and equations involving rational numbers to strengthen your problem-solving skills. Remember to simplify fractions and find the lowest common multiple when needed. By mastering these concepts, you'll be well-prepared to handle rational numbers and their applications in various mathematical problems. Consistent practice and a solid understanding will help you excel in this chapter.\nImportant Study Materials for Class 7 Maths Chapter 8\nS.No\nStudy Materials Links for Chapter 8 Rational Numbers\n1\nClass 7 Rational Numbers NCERT Solutions\n2\nClass 7 Rational Numbers Revision Notes\n3\nClass 7 Rational Numbers NCERT Exemplar Solutions\n4\nClass 7 Rational Numbers RD Sharma Solutions\n5\nClass 7 Rational Numbers RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Rational Numbers Important Formulas\nCBSE Class 7 Maths Important Questions for All Chapters\nClass 7 Maths Important Questions and Answers cover key topics, aiding in thorough preparation and making revision simpler.\nS.No\nChapter-wise Important Questions for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nChapter 1: Integers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nChapter 2: Fractions and Decimals Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nChapter 3: Data Handling Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nChapter 4: Simple Equations Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nChapter 5: Lines and Angles Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 6: The Triangle and Its Properties Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 7: Comparing Quantities Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 9: Perimeter and Area Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 10: Algebraic Expressions Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10.\nChapter 11: Exponents and Powers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 12: Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13: Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 7 Maths Revision Notes",
-      "a": "Detailed solution available."
-    }
-  ],
+  "7": [],
+  "8": [],
   "9": [
     {
-      "q": "1. Write the formula to find the area of the triangle.",
-      "a": "The formula to find the area of triangle is\nA=$\\frac{1}{2}bh$\nwhere, b= Base of triangle\nh= Height of triangle"
+      "q": "1. Find the area of each of the following parallelograms:\n(a)",
+      "a": "Height of parallelogram is $$4cm$$ .\nBase of the parallelogram is $$7cm$$ .\nTherefore,\nArea of the parallelogram is $$base \\times height$$ .\nThe area of parallelogram is $$7cm \\times 4\\;cm$$.\nSo, the area of parallelogram is $$28c{m^2}$$ .\n(b)\nAns:\nHeight of parallelogram is $$3cm$$ .\nBase of the parallelogram is $$5cm$$ .\nTherefore,\nArea of the parallelogram is$$base \\times height$$ .\nArea of parallelogram is $$5cm \\times 3cm$$\nArea of the parallelogram is $$15c{m^2}$$ .\n(c)\nAns:\nHeight of parallelogram is $$3.5cm$$ .\nBase of parallelogram is $$2.5cm$$ .\nTherefore,\nArea of parallelogram is $$base \\times height$$\nArea of parallelogram is $$2.5cm \\times 3.5cm$$\nArea of parallelogram is $$8.75c{m^2}$$\n(d)\nAns:\nHeight of parallelogram is $$4.8cm$$.\nBase of the parallelogram is $$5cm$$.\nTherefore,\nArea of the parallelogram is $$base \\times height$$ .\nArea of the parallelogram is $$4.8cm \\times 5cm$$ .\nArea of the parallelogram is $$24c{m^2}$$ .\n(e)\nAns:\nHeight of parallelogram is $$4.4cm$$ .\nBase of the parallelogram is $$2cm$$ .\nTherefore,\nArea of the parallelogram is $$base \\times height$$ .\nArea of the parallelogram is $$4.4cm \\times 2cm$$ .\nArea of the parallelogram is $$8.8c{m^2}$$ ."
     },
     {
-      "q": "2. Write the formula to find the circumference of a circle.",
-      "a": "The formula to find the circumference of a circle is\nC=$2\\pi r$\nWhere, C= Circumference of circle\nr= Radius of circle"
+      "q": "2. Find the area of each of the following triangles:\n(a)",
+      "a": "Base of the triangle is $$4cm$$ .\nHeight of height is $$3cm$$ .\nTherefore,\nArea of the triangle is $$\\dfrac{1}{2} \\times base \\times height$$\n.\n.\nArea of the triangle is\u00a0 $$\\dfrac{1}{2} \\times 4cm \\times 3cm$$ .\nArea of the triangle is\u00a0 $$6c{m^2}$$.\n(b)\nAns:\nBase of triangle is $$5cm$$ .\nHeight of height is $$3.2cm$$ .\nTherefore,\nArea of the triangle is\u00a0 $$\\dfrac{1}{2} \\times base \\times height$$\n.\nArea of the triangle is\u00a0 $$\\dfrac{1}{2} \\times 5cm \\times 3.2cm$$ .\nArea of the triangle is\u00a0 $$8c{m^2}$$ .\n(c)\nAns:\nBase of triangle is $$4cm$$ .\nHeight of height is $$3cm$$ .\nTherefore,\nArea of the triangle is\u00a0 $$\\dfrac{1}{2} \\times base \\times height$$\n.\nArea of the triangle is\u00a0 $$\\dfrac{1}{2} \\times 4cm \\times 3cm$$ .\nArea of the triangle is\u00a0 $$6c{m^2}$$ .\n(d)\nAns:\nBase of triangle is $$3cm$$ .\nHeight of height is $$2cm$$ .\nTherefore,\nArea of the triangle is\u00a0 $$\\dfrac{1}{2} \\times base \\times height$$\n.\nArea of the triangle is\u00a0 $$\\dfrac{1}{2} \\times 3cm \\times 2cm$$ .\nArea of the triangle is\u00a0 $$3c{m^2}$$ ."
     },
     {
-      "q": "3. Write the formula to find the area of the circle.",
-      "a": "The formula to find the area of circle is\nA=$\\pi {{r}^{2}}$\nwhere, A= Area of circle\nr= Radius of circle"
+      "q": "3. Find the missing values:\nS.No.\nBase\nHeight\nArea of the Parallelogram\na.\n$$20cm$$\n$$246c{m^2}$$\nb.\n$$15cm$$\n$$154.5c{m^2}$$\nc.\n$$8.4cm$$\n$$48.72c{m^2}$$\nd.\n$$15.6cm$$\n$$16.38c{m^2}$$",
+      "a": "(a) :\nBase of parallelogram is $$20cm$$ .\nHeight of the parallelogram is to be known.\nArea of the parallelogram is $$246c{m^2}$$ .\nTherefore,\n$$Area = base \\times height$$\n$$246c{m^2} = 20cm \\times height$$\n$$\\dfrac{{246c{m^2}}}{{20cm}} = height$$\n$$12.3cm = height$$\nTherefore, the height of the parallelogram is $$12.3cm$$ .\nAns (b) :\nBase of parallelogram is to be known .\nHeight of the parallelogram is $$15cm$$ .\nArea of the parallelogram is $$154.5c{m^2}$$ .\nTherefore,\n$$Area = base \\times height$$\n$$154.5c{m^2} = base \\times 15cm$$\n$$\\dfrac{{154.5c{m^2}}}{{15cm}} = base$$\n$$10.3cm = base$$\nTherefore, the base of the parallelogram is $$10.3cm$$ .\nAns (c) :\nBase of parallelogram is to be known .\nHeight of the parallelogram is $$8.4cm$$ .\nArea of the parallelogram is $$48.72c{m^2}$$ .\nTherefore,\n$$Area = base \\times height$$\n$$48.4c{m^2} = base \\times 8.4cm$$\n$$\\dfrac{{48.4c{m^2}}}{{8.4cm}} = base$$\n$$5.8cm = base$$\nTherefore, the base of the parallelogram is $$5.8cm$$ .\nAns (d) :\nBase of parallelogram is $$15.6cm$$ .\nHeight of the parallelogram is to be known.\nArea of the parallelogram is $$16.38c{m^2}$$ .\nTherefore,\n$$Area = base \\times height$$\n$$16.38c{m^2} = 15.6cm \\times height$$\n$$\\dfrac{{16.38c{m^2}}}{{15.6cm}} = height$$\n$$1.05cm = height$$\nTherefore, the height of the parallelogram is $$1.05cm$$ .\nSo, the final table is\nS.No.\nBase\nHeight\nArea of the Parallelogram\na.\n$$20cm$$\n$$12.3cm$$\n$$246c{m^2}$$\nb.\n$$10.3cm$$\n$$15cm$$\n$$154.5c{m^2}$$\nc.\n$$5.8cm$$\n$$8.4cm$$\n$$48.72c{m^2}$$\nd.\n$$15.6cm$$\n$$1.05cm$$\n$$16.38c{m^2}$$"
     },
     {
-      "q": "4. Write the formula to find the area and perimeter of a rectangle.",
-      "a": "The formula to find the area and perimeter of a rectangle are\nArea of rectangle=$l\\times b$\nPerimeter of rectangle=$2(l+b)$\nwhere, l= Length of rectangle\nb= Breadth of rectangle"
+      "q": "4. Find the missing values:\nS.No.\nBase\nHeight\nArea of Triangle\na.\n$$15cm$$\n$$87c{m^2}$$\nb.\n$$31.4mm$$\n$$1256m{m^2}$$\nc.\n$$22cm$$\n$$170.5c{m^2}$$",
+      "a": "(a) :\nBase of triangle is $$15cm$$ .\nHeight of the triangle is to be known.\nArea of the triangle is $$87c{m^2}$$ .\nTherefore,\n$$Area = \\dfrac{1}{2} \\times base \\times height$$\n$$87c{m^2} = \\dfrac{1}{2} \\times 15cm \\times height$$\n$$\\dfrac{{87c{m^2} \\times 2}}{{15cm}} = height$$\n$$11.6cm = height$$\nTherefore, the height of the triangle is $$11.6cm$$ .\nAns (b) :\nBase of triangle is to be known.\nHeight of the triangle is $$31.4mm$$.\nArea of the triangle is $$1256m{m^2}$$ .\nTherefore,\n$$Area = \\dfrac{1}{2} \\times base \\times height$$\n$$1256m{m^2} = \\dfrac{1}{2} \\times base \\times 31.4mm$$\n$$\\dfrac{{1256m{m^2} \\times 2}}{{31.4m}} = base$$\n$$80mm = base$$\nTherefore, the base of the triangle is $$80mm$$ .\nAns (c) :\nBase of triangle is $$22cm$$ .\nHeight of the triangle is to be known.\nArea of the triangle is $$170.5c{m^2}$$ .\nTherefore,\n$$Area = \\dfrac{1}{2} \\times base \\times height$$\n$$170.5c{m^2} = \\dfrac{1}{2} \\times 22cm \\times height$$\n$$\\dfrac{{170.5c{m^2} \\times 2}}{{22cm}} = height$$\n$$15.5cm = height$$\nTherefore, the height of the triangle is $$15.5cm$$ ."
     },
     {
-      "q": "5. The distance around a circular region is known as its_______.",
-      "a": "Circumference\nShort Answer Questions (6 \u2013 15)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 2 Marks"
+      "q": "5. PQRS is a parallelogram (Fig 11.23). QM is the height from Q to SR and QN is the height from Q to PS. If SR = 12 cm and QM = 7.6 cm.\nFig\n$$11.3$$\nFind:\n(a) The area of the parallelogram PQRS",
+      "a": "Base of parallelogram is $$12cm$$ .\nHeight of the parallelogram is $$7.6cm$$ .\nTherefore,\nArea of parallelogram is $$base \\times height$$\nArea of the parallelogram is $$SR \\times QM$$ .\nThe area of parallelogram $$12cm \\times 7.6cm\\;$$\nSo, the area of parallelogram is $$91.2c{m^2}$$.\n(b) QN, if PS = 8 cm\nAns:\nThe area of parallelogram is $$91.2c{m^2}$$ .\nBase of the parallelogram is $$8cm$$ .\nHeight of the parallelogram is to be known.\nArea of the parallelogram is $$base \\times height$$ .\n$$Area = base \\times height$$\n$$Area = PS \\times QN$$\n$$91.2c{m^2} = 8cm \\times QN$$\n$$QN = \\dfrac{{91.2c{m^2}}}{{8cm}}$$\n$$QN = 11.4cm$$."
     },
     {
-      "q": "6. Find the area of a square park whose perimeter is $480$m.",
-      "a": "Given, Perimeter(P)= $480$m\ns=Side of square\nP= $4\\times s$\n$480$= $4\\times s$\ns=$\\frac{480}{4}$\ns=$120$m\nArea of Square=s\n2\n=${{(120)}^{2}}$\n=$14,400$sq.m"
+      "q": "6. DL and BM are the heights on sides AB and AD respectively of parallelogram ABCD (Fig 11.24). If the area of the parallelogram is\n$$1470c{m^2}$$\n,\n$$AB = 35cm$$\ncm and\n$$AD = 49cm$$\n, find the length of BM and DL.",
+      "a": "Case 1 : Finding the value of DL.\nArea of parallelogram is ABCD $$1470c{m^2}$$ .\nBase of parallelogram is ,\n$$AB = 35cm$$\nHeight of parallelogram is,\n$$DL = ?$$\n$$Area = base \\times height$$\n$$Area = AB \\times DL$$\n$$1470c{m^2} = 35cm \\times DL$$\n$$DL = \\dfrac{{1470c{m^2}}}{{35cm}}$$\n$$DL = 42cm$$\nTherefore, the value of DL is $$42cm$$ .\nCase 2: Finding the value BM.\nCase 1 : Finding the value of DL.\nArea of parallelogram is ABCD $$1470c{m^2}$$ .\nBase of parallelogram is ,\n$$AD = 49cm$$\nHeight of parallelogram is,\n$$BM = ?$$\n$$Area = base \\times height$$\n$$Area = AD \\times BM$$\n$$1470c{m^2} = 49cm \\times BM$$\n$$BM = \\dfrac{{1470c{m^2}}}{{49cm}}$$\n$$BM = 30cm$$\nTherefore, the value of DL is $$30cm$$ .\n7.\n$$\\Delta ABC$$\nis right angled at A (Fig 11.25). AD is perpendicular to BC. If\n$$AB = 5cm$$\n,\n$$BC = 13cm$$\ncm and\n$$AC = 12cm$$\n, Find the area of\n$$\\Delta ABC$$\n. Also find the length of AD.\nAns:\nFinding the area of $$\\Delta ABC$$ .\nBase of $$\\Delta ABC$$ is $$5cm$$ .\nHeight of $$\\Delta ABC$$ is $$12cm$$ .\nTherefore,\n$$Area = \\dfrac{1}{2} \\times base \\times height$$\n$$Area = \\dfrac{1}{2} \\times AB \\times AC$$\n$$Area = \\dfrac{1}{2} \\times 5cm \\times 12cm$$\n$$Area = 30c{m^2}$$\nTherefore, the area of $$\\Delta ABC$$ is $$30c{m^2}$$ .\nFinding the value of AD.\nArea of $$\\Delta ABC$$ is $$30c{m^2}$$\nBase of $$\\Delta ABC$$ is $$13cm$$ .\nHeight of $$\\Delta ABC$$ is to be known.\nTherefore,\n$$Area = \\dfrac{1}{2} \\times base \\times height$$\n$$Area = \\dfrac{1}{2} \\times BC \\times AD$$\n$$30c{m^2} = \\dfrac{1}{2} \\times 13 \\times AD$$\n$$\\dfrac{{30c{m^2} \\times 2}}{{13cm}} = AD$$\n$$AD = 4.6cm$$\nTherefore, the value of AD is $$4.6cm$$ .\n8.\n$$\\Delta ABC$$\nis isosceles with AB = AC = 7.5 cm and BC = 9 cm (Fig 11.26). The height AD from A to BC, is 6 cm. Find the area of \u0394ABC. What will be the height from C to AB i.e., CE?\nAns:\nFinding the area of $$\\Delta ABC$$ .\nBase of $$\\Delta ABC$$ is $$9cm$$ .\nHeight of $$\\Delta ABC$$ is $$6cm$$ .\nTherefore,\n$$Area = \\dfrac{1}{2} \\times base \\times height$$\n$$Area = \\dfrac{1}{2} \\times AD \\times BC$$\n$$Area = \\dfrac{1}{2} \\times 9cm \\times 6cm$$\n$$Area = 27c{m^2}$$\nTherefore, the area of $$\\Delta ABC$$ is $$27c{m^2}$$ .\nFind the value of CE.\nArea of $$\\Delta ABC$$ is $$27c{m^2}$$\nBase of $$\\Delta ABC$$ is $$7.5cm$$ .\nHeight of $$\\Delta ABC$$ is to be known.\nTherefore,\n$$Area = \\dfrac{1}{2} \\times base \\times height$$\n$$Area = \\dfrac{1}{2} \\times BA \\times CE$$\n$$27c{m^2} = \\dfrac{1}{2} \\times 7.5cm \\times CE$$\n$$\\dfrac{{27c{m^2} \\times 2}}{{7.5cm}} = CE$$\n$$CE = 7.2cm$$\nTherefore, the value of CE is $$7.2cm$$\n.\nConclusion\nNCERT Solutions for Class 7 Maths Exercise 9.1 Solutions specifically target strengthening your understanding of perimeters and areas of various shapes, with a focus on rectangles and squares. You will revisit familiar concepts like length, breadth, and area, but with an emphasis on solving real-world problems. Sharpen your skills in calculating these properties using the formulas (perimeter = 2(l + b) for rectangles and perimeter = 4a for squares). The real challenge lies in applying these concepts practically. Imagine determining the length of the fence required for a rectangular garden, or the amount of material needed to cover a square floor.\nClass 7 Maths Chapter 9: Exercises Breakdown\nExercises\nNumber of Questions\nExercise 9.2\n17 Questions & Solutions\nCBSE Class 7 Maths Chapter 9 Other Study Materials\nS. No\nImportant Links for Chapter 9 Perimeter and Area\n1\nClass 7 Perimeter and Area Important Questions\n2\nClass 7 Perimeter and Area Revision Notes\n3\nClass 7 Perimeter and Area NCERT Exemplar Solution\nChapter-Specific NCERT Solutions for Class 7 Maths\nGiven below are the chapter-wise NCERT Solutions for Class 7 Maths. Go through these chapter-wise solutions to be thoroughly familiar with the concepts.\nS.No.\nNCERT Solutions Class 7 Chapter-wise Maths PDF"
     },
     {
-      "q": "7. If the perimeter of a rectangle is $390$cm and the length is $30$cm. Find its breadth in the area.",
-      "a": "Given, Perimeter= $390$cm , length=$30$cm\nB= Breadth\nA= Area\nP=$2(l+b)$\n$390=2(30+b)$\n$\\frac{390}{2}=(30+b)$\n$195=(30+b)$\n$b=195-30$\n$b=165$cm\nA=$l\\times b$\nA=$30\\times 165$\nA=$4,950$sq.cm"
-    },
-    {
-      "q": "8. A wire bent in the shape of a rectangle. Its length is $30$cm and breadth is $15$cm and if the same wire is rebent in the shape of a square. What will be the measure of slides and which encloses more area.",
-      "a": "We know, perimeter of rectangle\nP=$2(l+b)$\nWhere, l=length and b = breadth\n=$2(30+15)$\n=$2(45)$\n=$90$cm\nPerimeter of Square= Perimeter of rectangle\n$90=4s$\u00a0 \u00a0 [s=side]\n$s=\\frac{90}{4}$\n$s=22.5$cm\nArea of rectangle = $l\\times b$\n= $30\\times 15$\n=$450$sq. cm\nArea of Square=s\n2\n=${{(22.5)}^{2}}$\n=$506.25$sq.cm\nHence, Square\u00a0 encloses a large area."
-    },
-    {
-      "q": "9. Find the area of",
-      "a": "Given\nheight=$3$cm\nbreadth=$6$cm\nArea of parallelogram = $b\\times h$\n= $6\\times 3$\n= $18$cm\n2"
-    },
-    {
-      "q": "10. Find the area of",
-      "a": "Given base=$5.5$cm , height=$2.2$cm\nArea of triangle = $\\frac{1}{2}\\times b\\times h$\n= $\\frac{1}{2}\\times 5.5\\times 2.2$\n= $6.05$sq. cm\n11. $\\Delta ABC$ is isosceles with AB = AC = $5.5$cm and BC = $8$cm. What will be the height from C to AB i.e., CE? If the height AD from A to BC is $4.5$cm. Find the area of $\\Delta ABC$?\nAns:\nGiven BC=base=$8$cm , AD=heigth=$4.5$cm\nArea of $\\Delta ABC$ = $\\frac{1}{2}\\times b\\times h$\n= $\\frac{1}{2}\\times 8\\times 4.5$\n= $18$sq.cm\nArea of $\\Delta ABC$ = $\\frac{1}{2}\\times b\\times h$\n= $\\frac{1}{2}\\times AB\\times CE$\n$18$=$\\frac{1}{2}\\times 5.5\\times CE$\nCE=$\\frac{36}{5.5}$\nCE=$6.55$cm"
-    },
-    {
-      "q": "12. If the circumference of a circular sheet is $132$cm. Find its radius and area.",
-      "a": "Given, Circumference=$132$cm\n$C=2\\pi r$\u00a0 [r=radius]\n$132=2\\times \\frac{22}{7}\\times r$\n$r=\\frac{132\\times 7}{2\\times 22}$\n$r=21$cm\nArea=$\\pi {{r}^{2}}$\nArea=$\\frac{22}{7}\\times {{(21)}^{2}}$\nArea=$66\\times 21$\nArea=$1386$sq. cm"
-    },
-    {
-      "q": "13. Find the circumference and area of the circle if radius is $7$cm.",
-      "a": "Given, radius=$7$cm\n$C=2\\pi r$\u00a0 [C=Circumference]\n$C=2\\times \\frac{22}{7}\\times 7$\n$C=44$cm\nArea=$\\pi {{r}^{2}}$\nArea=$$\\frac{22}{7}\\times {{(7)}^{2}}$$\nArea=$22\\times 7$\nArea=$154$sq. cm"
-    },
-    {
-      "q": "14. A garden is $50$m long and $42$m broad. A path of $2$m wide is built outside and around it. Find the area of the path in hectares?",
-      "a": "Given,\nLength of garden=$50$m\nBreadth of garden =$42$m\nArea of garden = $l\\times b$\n= $50\\times 42$\n=$2100$sq. m\nArea of garden where path is included\nArea of garden = $l\\times b$\n= $54\\times 46$\n=$2484$sq. m\nArea of path = Area of garden including path \u2013 Area of garden\n=$2484-2100$\n= $384$sq.m\n$1$hectare = $10000$m\n2\nArea of garden= $\\frac{384}{10000}$\n= $0.0384$hectare"
-    },
-    {
-      "q": "15. Find the area and perimeter of the square whose side is $4$cm.",
-      "a": "We know,\nArea of square= ${{s}^{2}}$ [s=side]\n=${{4}^{2}}$\n=$16$sq. cm\nPerimeter = $4s$\n=$4\\times 4$\n=$16$cm\nLong Answer Questions (16 \u2013 20)\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 3 Marks"
-    },
-    {
-      "q": "16. The length and breadth of a rectangular piece of land are $350$m and $150$m respectively.\nFind\na. The area",
-      "a": "We know,\nArea of garden = $l\\times b$\nl=length\nb= Breadth\n= $350\\times 150$\n=$52,500$sq. m\nb. The cost of the land, if $1{{m}^{2}}$ of the land costs Rs. $10,000$\nAns:\nGiven, Cost of $1{{m}^{2}}$of\u00a0 land = Rs. $10,000$\nCost of $52,500{{m}^{2}}$of land = Rs. $52,500\\times 10,000$\n=Rs. $52,50,00,000$"
-    },
-    {
-      "q": "17. A rectangular field of length $50$m and breadth $45$m need to be fenced. Find the cost of fencing if the changes are Rs. $4$ per metre.",
-      "a": "We know, perimeter of rectangle\nP=$2(l+b)$\nl=length\nb= Breadth\n=$2(50+45)$\n=$2(95)$\n=$190$m\nCost of fencing= $190\\times 4$\n= Rs. $760$\n18. $\\Delta ABC$ is right angles at A, AD BC \u22a5 .If AB = $8$cm, BC = $17$cm and AC = $15$cm. Find the area of ABC and also length of AD.\nAns\n: Here,\nArea of $\\Delta ABC$ = $\\frac{1}{2}\\times b\\times h$\nb= base\nh=height\n=$\\frac{1}{2}\\times AC\\times AB$\n= $\\frac{1}{2}\\times 8\\times 15$\n= $60$sq.cm\nArea of $\\Delta ABC$ = $\\frac{1}{2}\\times b\\times h$\n= $\\frac{1}{2}\\times BC\\times AD$\n$60$=$\\frac{1}{2}\\times 17\\times AD$\nAD=$7.03$cm"
-    },
-    {
-      "q": "19. Find the area and circumference of the circle whose radius is\na. $2$cm",
-      "a": "Given, radius=$2$cm\n$C=2\\pi r$ [C=Circumference]\n$C=2\\times \\frac{22}{7}\\times 2$\n$C=\\frac{88}{7}$cm\nArea=$\\pi {{r}^{2}}$\nArea=$$\\frac{22}{7}\\times {{(2)}^{2}}$$\nArea=$12\\frac{4}{7}$sq.cm\nb. $21$cm\nAns:\nGiven, radius=$21$cm\n$C=2\\pi r$\n$C=2\\times \\frac{22}{7}\\times 21$\n$C=132$cm\nArea=$\\pi {{r}^{2}}$\nArea=$$\\frac{22}{7}\\times {{(21)}^{2}}$$\nArea=$66\\times 21$\nArea=$1386$sq. cm"
-    },
-    {
-      "q": "20. Find the area of quadrilateral ABCD here AC = $20$cm, BM = $4$cm, DN = $4$cm and BM $\\bot $AC and DN $\\bot $AC .",
-      "a": "Using formula\nArea of $\\Delta ABC$ = $\\frac{1}{2}\\times b\\times h$\nB= Base\nH=Height\n= $\\frac{1}{2}\\times 4\\times 20$\n= $40$sq.cm\nArea of $\\Delta ADC$ = $\\frac{1}{2}\\times b\\times h$\n=$\\frac{1}{2}\\times 20\\times 4$\n= $40$sq.cm\nArea of quadrilateral ABCD = Area of $\\Delta ABC$+ Area of $\\Delta ADC$\n=$40+40$\n=$80$sq. cm\n5 Important Formulas of Class 7 Chapter 9 Perimeter and Area You Shouldn\u2019t Miss!\nChapter 9, \"Perimeter and Area,\"\nintroduces important formulas that help calculate the boundary (perimeter) and the space inside (area) of various shapes. Here are five key formulas you should know:"
-    },
-    {
-      "q": "1. Perimeter of a Rectangle\nTo find the total boundary length of a rectangle:\n$ \\text{Perimeter} = 2 \\times (\\text{Length} + \\text{Breadth}) $",
+      "q": "1.\nChapter 1 - Integers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Area of a Rectangle\nTo calculate the space inside a rectangle:\n$\\text{Area} = \\text{Length} \\times \\text{Breadth}$",
+      "q": "2.\nChapter 2 - Fractions and Decimals Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Perimeter of a Square\nSince all sides of a square are equal, the perimeter is:\n$\\text{Perimeter} = 4 \\times \\text{Side}$",
+      "q": "3.\nChapter 3 - Data Handling Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Area of a Square\nThe area of a square, or the space inside it, is:\n$\\text{Area} = \\text{Side} \\times \\text{Side} = \\text{Side}^2$",
+      "q": "4.\nChapter 4 - Simple Equations Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Area of a Triangle\nTo find the area of a triangle when the base and height are known:\n$\\text{Area} = \\dfrac{1}{2} \\times \\text{Base} \\times \\text{Height}$\nBenefits of Important Questions for Chapter 9 Perimeter and Area Class 7 Maths\nImportant Questions for Chapter 9, \"Perimeter and Area,\" helps students learn how to calculate the perimeter (boundary length) and area (space inside) of various shapes like rectangles, squares, triangles, and circles. These are foundational concepts used in geometry.\nThis FREE PDF offers a range of important practice problems. By working through these problems, students can better understand and apply the formulas for calculating the perimeter and area, making it easier to solve related questions in exams and daily life.\nThe problems in this PDF are designed according to the latest CBSE syllabus. This ensures that students cover the topics they need to know and practice questions that are likely to appear in their exams.\nStudents can download the PDF for FREE from Vedantu\u2019s Landing Page and access it anytime. This makes it easy to study at their own pace and revisit important questions whenever they need a quick revision.\nRegular practice with these questions prepares students thoroughly for exams by reinforcing key concepts and improving their calculation skills for perimeter and area problems.\nConclusion\nPerimeter and Area is an integral part of Class 7 Maths and plays a crucial role from an examination perspective. The important questions for Class 7 Maths, cover a wide range of topics within the subject. They also provide a concise guide to critical points and details related to the topic.\nA solid understanding of each section of Class 7 Maths is fundamental as it forms the basis for higher-level studies. However, this section primarily focuses on important questions within the context of Class 7 Maths.\nRelated Study Materials for Class 7 Maths Chapter 9 Perimeter and Area\nS.No.\nStudy Materials for Maths Chapter 9 Class 7",
+      "q": "5.\nChapter 5 - Lines and Angles Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nClass 7 Maths - Perimeter and Area NCERT Solutions",
+      "q": "6.\nChapter 6 - The Triangle and Its Properties Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 7 Maths - Perimeter and Area Revision Notes\nChapter-wise Important Questions Links for Class 7 Maths\nS.No.\nImportant Questions Links for Class 7 Maths",
+      "q": "7.\nChapter 7 - Comparing Quantities Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nChapter 1 - Integers Questions",
+      "q": "8.\nChapter 8 - Rational Numbers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nChapter 2 - Fractions and Decimals Questions",
+      "q": "9.\nChapter 9 - Perimeter and Area Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nChapter 3 - Data Handling Questions",
+      "q": "10.\nChapter 10 - Algebraic Expressions Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nChapter 5 - Lines and Angles Questions",
+      "q": "11.\nChapter 11 - Exponents and Powers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nChapter 6 - The Triangle and Its Properties Questions",
+      "q": "12.\nChapter 12 - Symmetry Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 - Comparing Quantities Questions",
+      "q": "13.\nChapter 13 - Visualising Solid Shapes Solutions\nImportant Related Links for NCERT Class 7 Maths\nAccess these essential links for NCERT Class 7 Maths, offering comprehensive solutions, study guides, and additional resources to help students master language concepts and excel in their exams.\nS.No\nOther CBSE Study Materials for Class 7 Maths\n1\nCBSE Class 7 Maths Revision Notes\n2\nCBSE Syllabus for Class 7 Maths\n3\nCBSE Class 7 Maths Important Questions\n4\nCBSE Class 7 Maths Sample Papers\n5\nNCERT Books for Class 7 Maths",
       "a": "Detailed solution available."
     },
     {
-      "q": "8.\nChapter 8 - Rational Numbers Questions",
+      "q": "6.\nRS Aggarwal Class 7 Solutions for Math book",
       "a": "Detailed solution available."
     },
     {
-      "q": "9.\nChapter 10 - Algebraic Expressions Questions",
+      "q": "7.\nRD Sharma Class 7 Maths Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 - Exponents and Powers Questions",
+      "q": "8.\nNCERT Class 7 Maths Exemplar Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "11.\nChapter 12 - Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13 - Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS. No\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
+      "q": "9.\nNCERT Class 7 Maths Formulas",
       "a": "Detailed solution available."
     }
   ],
   "10": [
     {
-      "q": "1. Write an expression for a number $$\\mathbf{7}$$ is subtracted from sum of x and $$\\mathbf{4}$$.",
-      "a": "According to the given statement the expression that is developed is given as $\\left( x+4 \\right)-7$"
+      "q": "1. Get the algebraic expressions in the following cases using variables, constants and arithmetic operations:\n(i) Subtraction of $$z$$ from $$y$$.",
+      "a": "It is given that the first term is $$y$$ and the second term is $$z$$. The operation performed on them is \u2018subtraction, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$y$$\n$$z$$\n-\n$$y - z$$\nThus the expression is $$y - z$$.\n(ii) One-half of the sum of numbers $$x$$\nand $$y$$.\nAns:\nIt is given that the first term is $$x$$ and the second term is $$y$$. Operation performed on them is \u2018addition\u2019 and then \u2018one-half of the sum\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$x$$\n$$y$$\n+\n$$x{\\text{\u00a0 + }}y$$\nTerm\nOperation\nExpression\n$$x + y$$\nOne-half, i.e., $$\\dfrac{1}{2}$$\n$$\\dfrac{1}{2}\\left( {a + b} \\right)$$\nThus the expression is $$\\dfrac{1}{2}\\left( {x + y} \\right)$$.\n(iii) The number $$z$$ multiplied by itself.\nAns:\nIt is given that the first term is $$z$$ and the second term is $$z$$. Operation performed on them is \u2018multiplication\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$z$$\n$$z$$\n$$*$$\n$$z * z = {z^2}$$\nThus the expression is $$z * z = {z^2}$$.\n(iv) One-fourth of the product of numbers $$p$$ and $$q$$.\nAns:\nIt is given that the first term is $$p$$\nand the second term is $$q$$. Operation performed on them is \u2018multiplication\u2019 and then \u2018one-fourth of the product\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$p$$\n$$q$$\n$$*$$\n$$p * q = pq$$\nTerm\nOperation\nExpression\n$$pq$$\nOne-fourth, i.e., $$\\dfrac{1}{4}$$\n$$\\dfrac{1}{4}\\left( {pq} \\right)$$\nThus the expression is$$\\dfrac{1}{4}\\left( {pq} \\right)$$.\n(v) Numbers $$x$$ and $$y$$ both squared and added.\nAns:\n(a) The first term is $$x$$ and the second term is $$x$$. Operation performed on them is \u2018multiplication\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$x$$\n$$x$$\n$$*$$\n$$x * x = {x^2}$$\n(b)\u00a0 The First term is $$y$$ and the second term is$$y$$. Operation performed on them is \u2018multiplication\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$y$$\n$$y$$\n$$*$$\n$$y * y = {y^2}$$\n(c)\u00a0 Now, the first term is $${x^2}$$ and the second term is $${y^2}$$. Operation performed on them is \u2018addition\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$${x^2}$$\n$${y^2}$$\n$$ + $$\n$${x^2} + {y^2}$$\nThus the expression is $${x^2} + {y^2}$$.\n(vi) Number $$5$$ added to three times the product of $$m$$ and $$n$$.\nAns:\n(a) The first term is $$m$$ and the second term is $$n$$. Operation performed on them is \u2018addition\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$m$$\n$$n$$\n$$ + $$\n$$m + n$$\n(b)\u00a0 The first term is $$m + n$$ and the second term is $$3$$. Operation performed on them is \u2018multiplication\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$m + n$$\n$$3$$\n$$*$$\n$$3\\left( {m + n} \\right)$$\n(c)\u00a0 Now the first term is $$3\\left( {m + n} \\right)$$ and the second term is $$5$$. Operation performed on them is \u2018addition\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$3\\left( {m + n} \\right)$$\n$$5$$\n$$ + $$\n$$3\\left( {m + n} \\right) + 5$$\nThus the expression is $$3\\left( {m + n} \\right) + 5$$.\n(vii) Product of numbers $$y$$ and $$z$$ subtracted from $$10$$.\nAns:\n(a) The first term is $$y$$ and the second term is $$z$$ . Operation performed on them is \u2018multiplication\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$y$$\n$$z$$\n$$*$$\n$$y * z = yz$$\n(ii)\u00a0 The first term is $$y + z$$ and the second term is $$10$$. Operation performed on them is \u2018multiplication\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$10$$\n$$y*z = yz$$\n$$ - {\\text{ }}$$\n$$ 10 - yz$$\nThus the expression is $$ 10 - yz$$.\n(viii) Sum of numbers $$a$$ and $$b$$ subtracted from their product.\nAns:\n(i) The first term is $$a$$ and the second term is $$b$$ . Operation performed on them is \u2018addition\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$a$$\n$$b$$\n$$ + $$\n$$a + b$$\n(ii)\u00a0 The first term is $$a$$ and the second term is $$b$$. Operation performed on them is \u2018multiplication\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$a$$\n$$b$$\n$$*$$\n$$a*b = ab$$\n(iii)\u00a0 Now, the first term is $$a*b = ab$$ and the second term is $$a + b$$. Operation performed on them is \u2018subtraction\u2019, therefore\n1\nst\nterm\n2\nnd\nterm\nOperation\nExpression\n$$ab$$\n$$a + b$$\n$$ - $$\n$$ab - \\left( {a + b} \\right)$$\nThus the expression is $$ab - \\left( {a + b} \\right)$$.\n2. (i) Identify the terms and their factors in the following expressions, show the terms and factors by tree diagram:\n(a) $$x - 3$$\nAns:\nTree diagram of\u00a0 $$x - 3$$ will be:\n(b)\n$$1 + x + {x^2}$$\nAns:\nTree diagram of\u00a0 $$1 + x + {x^2}$$\nwill be:\n(c)\n$$y - {y^3}$$\nAns:\nTree diagram of\u00a0 $$y - {y^3}$$\nwill be:\n(d)\n$$5x{y^2} + 7{x^2}y$$\nAns:\nTree diagram of\u00a0 $$5x{y^2} + 7{x^2}y$$ will be:\n(e)\n$$ - ab + 2{b^2} - 3{a^2}$$\nAns:\nTree diagram of\u00a0 $$ - ab + 2{b^2} - 3{a^2}$$ will be:\n(ii) Identify the terms and factors in the expressions given below:\n(a) $$ - 4x + 5$$\nAns:\nThe given expression $$ - 4x + 5$$is achieved when $$ - 4x$$ and $$5$$ are added, therefore terms of the expression $$ { - 4x + 5} $$are $$ - 4x$$ and $$5$$.\n$$ - 4x$$ is achieved by multiplication $$ - 4$$ and $$x$$. Therefore, factors of\u00a0 $$ - 4x$$\nare $$ - 4$$ and $$x$$.\n(b) $$ { - 4x + 5y} $$\nAns:\nThe given expression$$ - 4x + 5y$$\nis achieved when $$ - 4x$$ and $$5y$$ are added, therefore terms of the expression $$ - 4x + 5y$$\nare $$ - 4x$$ and $$5y$$.\n$$ - 4x$$ is achieved by multiplication $$ - 4$$\u00a0 and $$x$$. Similarly, $$5y$$\u00a0 is achieved by multiplication $$5$$ and $$y$$. Therefore, factors of\u00a0 $$ - 4x$$\nare $$ - 4$$ and $$x$$\nand of $$5y$$ are $$5$$ and $$y$$.\n(c) $$5y + 3{y^2}$$\nAns:\nGiven expression $$5y + 3{y^2}$$\nis achieved when $$5y$$ and $$3{y^2}$$ are added, therefore terms of the expression $$5y + 3{y^2}$$\nare $$5y$$ and $$3{y^2}$$.\n$$5y$$ is achieved by multiplication $$5$$ and $$y$$. Similarly, $$3{y^2}$$ is achieved by multiplication of $$3$$, $$y$$\nand $$y$$. Therefore, factors of $$5y$$ are $$5$$ and $$y$$\nand of $$3{y^2}$$ are $$3$$, $$y$$\nand $$y$$.\n(d) $$xy + 2{x^2}{y^2}$$\nAns:\nGiven expression $$xy + 2{x^2}{y^2}$$\nis achieved when $$xy$$ and $$2{x^2}{y^2}$$ are added , therefore terms of the expression $$xy + 2{x^2}{y^2}$$\nare $$xy$$ and $$2{x^2}{y^2}$$.\n$$xy$$ is achieved by multiplication $$x$$ and $$y$$. Similarly, $$2{x^2}{y^2}$$ is achieved by multiplication of $$2$$, $$x$$, $$x$$, $$y$$\nand $$y$$. Therefore, factors of $$xy$$ are $$x$$ and $$y$$ and of $$2{x^2}{y^2}$$ are\u00a0 $$2$$, $$x$$, $$x$$, $$y$$\nand $$y$$.\n(e) $$pq + q$$\nAns\n: The given expression $$pq + q$$\nis achieved when $$pq$$ and $$q$$ are added , therefore terms of the expression $$pq + q$$ are $$pq$$ and $$q$$.\n$$pq$$ is achieved by multiplication$$p$$ and $$q$$. Therefore, factors of $$pq$$ are $$p$$ and $$q$$.\n(f) $$1.2ab - 2.4b + 3.6a$$\nAns\n: The given expression $$1.2ab - 2.4b + 3.6a$$\nis achieved when $$1.2ab$$, $$ - 2.4b$$ and $$3.6a$$ are added , therefore terms of the expression $$1.2ab - 2.4b + 3.6a$$\nare $$1.2ab$$, $$ - 2.4b$$ and $$3.6a$$.\n$$1.2ab$$ is achieved by multiplication of $$1.2$$, $$a$$ and $$b$$, similarly $$ - 2.4b$$ is achieved by multiplication of $$ - 2.4$$\nand $$b$$ and similarly $$3.6a$$\nis achieved by multiplication of $$3.6$$ and $$a$$. Therefore, factors of $$1.2ab$$ are $$1.2$$, $$a$$ and $$b$$,\u00a0 factors of $$ - 2.4b$$ are $$ - 2.4$$ and $$b$$\nand of $$3.6a$$ are $$3.6$$ and $$a$$.\n(g) $$\\dfrac{3}{4}x + \\dfrac{1}{4}$$\nAns\n: The given expression $$\\dfrac{3}{4}x + \\dfrac{1}{4}$$\nis achieved when $$\\dfrac{3}{4}x$$ and $$\\dfrac{1}{4}$$ are added, therefore terms of the expression $$\\dfrac{3}{4}x + \\dfrac{1}{4}$$ are $$\\dfrac{3}{4}x$$ and $$\\dfrac{1}{4}$$.\n$$\\dfrac{3}{4}x$$ is achieved by multiplication of $$\\dfrac{3}{4}$$ and $$x$$. Therefore, factors of $$\\dfrac{3}{4}x$$ are $$\\dfrac{3}{4}$$ and $$x$$.\n(g) $$0.1{p^2} + 0.2{q^2}$$\nAns\n: The given expression $$0.1{p^2} + 0.2{q^2}$$\nis achieved when $$0.1{p^2}$$ and $$0.2{q^2}$$ are added, therefore terms of the expression $$0.1{p^2} + 0.2{q^2}$$\nare $$0.1{p^2}$$ and $$0.2{q^2}$$.\n$$0.1{p^2}$$ is achieved by multiplication of $$0.1$$, $$p$$ and $$p$$. $$0.2{q^2}$$\nis achieved by multiplication of $$0.2$$, $$q$$ and $$q$$. Therefore, factors of $$0.1{p^2}$$ are $$0.1$$, $$p$$ and $$p$$ and of $$0.2{q^2}$$\nare $$0.2$$, $$q$$ and $$q$$."
     },
     {
-      "q": "2. The difference of numbers p and q is subtracted from its product. Give equation.",
-      "a": "According to the given statement the expression that is developed is given as$$pq-\\left( p-q \\right)$$\n3. $$-12x$$, $\\frac{3}{4}x$ is an example for ___\nAns: As we can see that by dividing the first term by 16 we get the second term. So, we can say that the given two terms are like Term"
+      "q": "3. Identify the numerical coefficients of terms (other than constants) in the following expressions:\n(i) $$5 - 3{t^2}$$",
+      "a": "In the expression $$5 - 3{t^2}$$, $$5$$ is the constant term and $$ - 3{t^2}$$\nis the term other than the constant. Coefficient of $$ - 3{t^2}$$\nis $$ - 3$$.\n(ii) $$1 + t + {t^2} + {t^3}$$\nAns:\nIn the expression $$1 + t + {t^2} + {t^3}$$, $$1$$ is the constant term and $$t$$, $${t^2}$$ and $${t^3}$$\nare the terms other than the constant. Coefficient of $$t$$\nis $$1$$, of $${t^2}$$\u00a0 is $$1$$ and of $${t^3}$$ is $$1$$.\n(iii) $$x + 2xy + 3y$$\nAns:\nIn the expression $$x + 2xy + 3y$$, there is no constant term and $$x$$, $$2xy$$ and $$3y$$\nare the terms other than the constant. Coefficient of $$x$$\nis $$1$$, of $$2xy$$\u00a0 is$$2$$ and of $$3y$$ is $$3$$.\n(iv) $$100m + 1000n$$\nAns:\nIn the expression $$100m + 1000n$$, there is no constant term and $$100m$$ and $$1000n$$ are the terms other than the constant. Coefficient of $$100m$$\nis $$100$$ and of $$1000n$$ is $$1000$$.\n(v) $$ - {p^2}{q^2} + 7pq$$\nAns:\nIn the expression $$ - {p^2}{q^2} + 7pq$$, there is no constant term and $$ - {p^2}{q^2}$$ and $$7pq$$ are the terms other than the constant. Coefficient of $$ - {p^2}{q^2}$$\nis $$ - 1$$ and of $$7pq$$ is $$7$$.\n(vi) $$1.2a + 0.8b$$\nAns:\nIn the expression $$1.2a + 0.8b$$, there is no constant term and $$1.2a$$ and $$0.8b$$\nare the terms other than the constant. Coefficient of $$1.2a$$\nis $$1.2$$ and of $$0.8b$$ is $$0.8$$.\n(vii) $$3.14{r^2}$$\nAns:\nIn the expression $$3.14{r^2}$$, there is no constant term and $$3.14{r^2}$$ is the term other than the constant. Coefficient of $$3.14{r^2}$$\nis $$3.14$$.\n(viii) $$2\\left( {l + b} \\right) = 2l + 2b$$\nAns:\nIn the expression $$2\\left( {l + b} \\right) = 2l + 2b$$, there is no constant term and $$2l$$\nand $$2b$$\nare the terms other than the constant. Coefficient of $$2l$$\nis $$2$$ and of $$2b$$\nis $$2$$.\n(ix) $$0.1y + 0.01{y^2}$$\nAns:\nIn the expression $$0.1y + 0.01{y^2}$$, there is no constant term and $$0.1y$$\nand $$0.01{y^2}$$ are the terms other than the constant. Coefficient of $$0.1y$$\nis $$0.1$$\nand of $$0.01{y^2}$$\nis $$0.01$$.\n4. (a) Identify terms which contain\n$$x$$\nand give the coefficient of\n$$x$$\n.\n(i) $${y^2}x + y$$.\nAns:\nIn the expression $${y^2}x + y$$, the term which contains $$x$$\nis $${y^2}x$$. The coefficient of $$x$$\nin $${y^2}x$$\nis $${y^2}$$.\n(ii) $$13{y^2} - 8yx$$.\nAns:\nIn the expression $$13{y^2} - 8yx$$, the term which contains $$x$$\nis $$ - 8yx$$. The coefficient of $$x$$in $$ - 8yx$$ is $$ - 8y$$.\n(iii) $$x + y + 2$$.\nAns:\nIn the expression $$x + y + 2$$, the term which contains $$x$$\nis $$x$$. The coefficient of $$x$$\nin $$x$$ is $$1$$.\n(iv) $$5 + z + zx$$.\nAns:\nIn the expression $$5 + z + zx$$, the term which contains $$x$$\nis $$zx$$. The coefficient of $$x$$\nin $$zx$$ is $$z$$.\n(v) $$1 + x + xy$$.\nAns:\nIn the expression $$1 + x + xy$$, terms which contain $$x$$\nare $$x$$ and $$xy$$. The coefficient of $$x$$\nin $$x$$\nis $$1$$ and in $$xy$$ is$$y$$.\n(vi) $$12x{y^2} + 25$$.\nAns:\nIn the expression $$12x{y^2} + 25$$, the term which contains $$x$$ is $$12x{y^2}$$. The coefficient of $$x$$\nin\u00a0 $$12x{y^2}$$ is $$12{y^2}$$.\n(vii) $$7x + x{y^2}$$.\nAns:\nIn the expression $$7x + x{y^2}$$, terms which contain $$x$$\nare $$x{y^2}$$ and $$7x$$. The coefficient of $$x$$\nin\u00a0 $$x{y^2}$$ is $${y^2}$$ and in $$7x$$\nis $$7$$.\n(b) Identify terms which contain $${y^2}$$ and give the coefficient of $${y^2}$$.\n(i) $$8 - x{y^2}$$\nAns:\nIn the expression $$8 - x{y^2}$$, the term which contains $${y^2}$$\nis $$ - x{y^2}$$. The coefficient of $${y^2}$$\nin $$ - x{y^2}$$ is $$ - x$$.\n(ii) $$5{y^2} + 7x$$\nAns:\nIn the expression $$5{y^2} + 7x$$, the term which contains $${y^2}$$\nis $$5{y^2}$$. The coefficient of $${y^2}$$in $$5{y^2}$$ is $$5$$.\n(iii) $$2{x^2}y - 15x{y^2} + 7{y^2}$$\nAns:\nIn the expression $$2{x^2}y - 15x{y^2} + 7{y^2}$$, terms which contain $${y^2}$$\nare $$ - 15x{y^2}$$ and $$7{y^2}$$. The coefficient of $${y^2}$$\nin $$ - 15x{y^2}$$\nis $$ - 15x$$\nand in $$7{y^2}$$ is $$7$$."
     },
     {
-      "q": "4. Add 5pq and -12pq.",
-      "a": "Adding the coefficients of the given terms will give the sum of two terms that is,\n$$\\begin{align} & -12pq \\\\ & \\underline{+\\text{ }5pq} \\\\ & -\\text{ }7pq \\\\ \\end{align}$$"
+      "q": "5. Classify into monomials, binomials and trinomials:\n(i) $$4y - 7x$$",
+      "a": "The expression $$4y - 7x$$ consists of two terms, i.e., $$4y$$ and $$ - 7x$$ . Because $$4y - 7x $$ consists of two terms. Therefore, $$4y - 7x$$ is a binomial.\n(ii) $${y^2}$$\nAns:\nThe expression $${y^2}$$ consists of one term, i.e., $${y^2}$$. Because $${y^2}$$ consists of one term. Therefore, $${y^2}$$\nis a monomial.\n(iii) $$x + y - xy$$\nAns:\nThe expression $$x + y + xy$$\n,\nconsists of three terms, i.e., $$x$$, $$y$$ and $$ - xy$$. Because $$x + y + xy$$ consists of three terms. Therefore, $$x + y + xy$$\nis a trinomial.\n(iv) $$100$$\nAns:\nThe expression $$100$$ consists of one term, i.e., $$100$$. Because $$100$$ consists of one term. Therefore, $$100$$\nis a monomial.\n(v) $$ab - a - b$$\nAns:\nThe expression $$ab - a - b$$ consists of three terms, i.e., $$ab$$, $$ - a$$ and $$ - b$$. Because\u00a0 $$ab - a - b$$ consists of three terms. Therefore, $$ab - a - b$$\nis a trinomial.\n(vi) $$5 - 3t$$\nAns:\nThe expression $$5 - 3t$$ consists of two terms, i.e., $$5$$ and $$ - 3t$$. Because $$5 - 3t$$ consists of two terms. Therefore, $$5 - 3t$$\nis a binomial.\n(vii) $$4{p^2}q - 4p{q^2}$$\nAns:\nThe expression $$4{p^2}q - 4p{q^2}$$ consists of two terms, i.e., $$4{p^2}q$$ and $$ - 4p{q^2}$$. Because $$4{p^2}q - 4p{q^2}$$ consists of two terms. Therefore, $$4{p^2}q - 4p{q^2}$$\nis a binomial.\n(viii) $$7mn$$\nAns:\nThe expression $$7mn$$ consists of one term, i.e., $$7mn$$. Because $$7mn$$ consists of one term. Therefore, $$7mn$$\nis a monomial.\n(ix) $${z^2} - 3z + 8$$\nAns:\nThe expression $${z^2} - 3z + 8$$ consists of three terms, i.e., $${z^2}$$, $$ - 3z$$ and $$8$$. Because $${z^2} - 3z + 8$$ consists of three terms. Therefore,$${z^2} - 3z + 8$$\nis a trinomial.\n(x) $${a^2} + {b^2}$$\nAns:\nThe expression $${a^2} + {b^2}$$ consists of two terms, i.e., $${a^2}$$ and $${b^2}$$. Because $${a^2} + {b^2}$$ consists of two terms. Therefore, $${a^2} + {b^2}$$\nis a binomial.\n(xi) $${z^2} + z$$\nAns:\nThe expression $${z^2} + z$$ consists of two terms, i.e., $${z^2}$$ and $$z$$ . Because $${z^2} + z$$ consists of two terms. Therefore, $${z^2} + z$$\nis a binomial.\n(xii) $$1 + x + {x^2}$$\nAns:\nThe expression $$1 + x + {x^2}$$ consists of three terms, i.e., $$1$$, $$x$$ and $${x^2}$$. Because $$1 + x + {x^2}$$\nconsists of three terms. Therefore, $$1 + x + {x^2}$$\nis a trinomial."
     },
     {
-      "q": "5. Subtract 12xy from -5xy.",
-      "a": "Subtracting the coefficients of the given terms will give the difference of two terms that is,\n$$\\begin{align} & -\\text{ }5xy \\\\ & \\underline{-12xy} \\\\ & -17xy \\\\ \\end{align}$$"
+      "q": "6. State whether a given pair of terms is of like or unlike terms:\n(i) $$1,{\\text{ }}100$$",
+      "a": "Factor of $$1$$ is $$1$$.\nFactor of $$100$$ is $$100$$.\nAlgebraic factor $$1$$ and $$100$$ is none, i.e., and have the same algebraic factor. Therefore, $$1$$ and $$100$$ are like terms.\n(ii) $$ - 7x,{\\text{ }}\\dfrac{5}{2}x$$\nAns:\nFactors of $$ - 7x$$ are $$ - 7$$ and $$x$$.\nFactors of $$\\dfrac{5}{2}x$$\nare $$\\dfrac{5}{2}$$ and $$x$$ .\nAlgebraic factor of $$ - 7x$$ is $$x$$ and of $$\\dfrac{5}{2}x$$ is $$x$$. Because $$ - 7x$$ and $$\\dfrac{5}{2}x$$ have the same algebraic factor. Therefore, $$ - 7x$$ and $$\\dfrac{5}{2}x$$ are like terms.\n(iii) $$ - 29x,{\\text{ }} - 29y$$\nAns:\nFactors of $$ - 29x$$ are $$ - 29$$ and $$x$$.\nFactors of $$ - 29y$$\nare $$ - 29$$ and $$y$$.\nAlgebraic factor of $$ - 29x$$ is $$x$$ and of $$ - 29y$$ is $$y$$. Because $$ - 29x$$ and $$ - 29y$$ do not have the same algebraic factor. Therefore, $$ - 29x$$ and $$ - 29y$$ are unlike terms.\n(iv) $$14xy,{\\text{ }}42yx$$\nAns:\nFactors of $$14xy$$\nare $$14$$, $$x$$\nand $$y$$.\nFactors of $$42yx$$ are $$42$$, $$y$$ and $$x$$.\nAlgebraic factors of $$14xy$$ are $$x$$\nand $$y$$ and of $$42yx$$ are $$y$$ and $$x$$. Because $$14xy$$ and $$42yx$$ have the same algebraic factor, i.e., $$x$$\nand $$y$$\n.\nTherefore, $$14xy$$ and $$42yx$$ are like terms.\n(v) $$4{m^2}p,{\\text{ }}4m{p^2}$$\nAns:\nFactors of $$4{m^2}p$$ are $$4$$, $$m$$, $$m$$\nand $$p$$.\nFactors of $$4m{p^2}$$\nare $$4$$, $$m$$, $$p$$\nand $$p$$.\nAlgebraic factors of $$4{m^2}p$$ are $$m$$, $$m$$\nand $$p$$ and of $$4m{p^2}$$ are $$m$$, $$p$$\nand $$p$$. Because $$4{m^2}p$$ and $$4m{p^2}$$ have different algebraic factors. Therefore, $$4{m^2}p$$ and $$4m{p^2}$$ are unlike terms.\n(vi) $$12xz,{\\text{ }}12{x^2}{z^2}$$\nAns:\nFactors of $$12xz$$ are $$12$$, $$x$$\nand $$z$$.\nFactors of $$12{x^2}{z^2}$$\nare $$12$$, $$x$$, $$x$$, $$z$$ and\n$$z$$.\nAlgebraic factors of $$12xz$$ are $$x$$\nand $$z$$ and of $$12{x^2}{z^2}$$ are $$x$$, $$x$$, $$z$$ and $$z$$. Because $$12xz$$ and $$12{x^2}{z^2}$$ have different algebraic factors. Therefore, $$12xz$$ and $$12{x^2}{z^2}$$ are unlike terms."
     },
     {
-      "q": "6. Add $$x+y-5$$, $y-x+5$, $x-y+5$",
-      "a": "Adding the coefficients of the similar terms will give the sum of three terms that is,\n$$\\begin{align} & +x+y-5 \\\\ & -x+y+5 \\\\ & \\underline{+x-y+5} \\\\ & x+y+5 \\\\ \\end{align}$$"
+      "q": "7. Identify like terms in the following:\n(a) $$ - x{y^2}, - 4y{x^2},8{x^2},2x{y^2},7y, - 11{x^2}, - 100x, - 11yx,20{x^2}y, - 6{x^2},y,2xy,3x$$",
+      "a": "Factors of $$ - x{y^2}$$\nare$$ - 1$$, $$x$$, $$y$$\nand $$y$$. Algebraic factors of $$ - x{y^2}$$ are $$x$$, $$y$$\nand $$y$$.\nFactors of $$ - 4y{x^2}$$ are $$ - 4$$, $$y$$, $$x$$ and $$x$$. Algebraic factors of $$ - 4y{x^2}$$ are\n$$y$$, $$x$$ and $$x$$.\nFactors of $$8{x^2}$$\nare $$8$$, $$x$$,\u00a0 and $$x$$. Algebraic factors of $$8{x^2}$$ are $$x$$ and $$x$$.\nFactors of $$2xy$$ are $$2$$, $$x$$\nand $$y$$. Algebraic factors of $$2xy$$ are $$x$$\nand $$y$$.\nFactors of $$7y$$ are $$7$$\nand $$y$$. Algebraic factor of $$7y$$ is $$y$$.\nFactors of $$ - 11{x^2}$$ are $$ - 11$$, $$x$$\nand $$x$$. Algebraic factors of $$ - 11{x^2}$$ are $$ - 11$$, $$x$$ and $$x$$.\nFactors of $$ - 100x$$ are\u00a0 $$ - 100$$\nand $$x$$. Algebraic factor of $$ - 100x$$ is $$x$$.\nFactors of $$ - 11yx$$ are $$ - 11$$, $$x$$ and $$y$$. Algebraic factors of $$ - 11yx$$ are $$x$$\nand $$y$$.\nFactors of $$20{x^2}y$$ are $$20$$, $$x$$, $$x$$ and $$y$$. Algebraic factors of $$20{x^2}y$$ are $$x$$, $$x$$ and $$y$$.\nFactors of $$ - 6{x^2}$$ are $$ - 6$$, $$x$$ and $$x$$. Algebraic factors of $$ - 6{x^2}$$ are $$x$$\nand $$x$$.\nFactor of $$y$$ is $$y$$. Algebraic factor of $$y$$ is $$y$$.\nFactors of $$2xy$$ are $$2$$, $$x$$ and $$y$$. Algebraic factors of $$2xy$$ are $$x$$\nand $$y$$.\nFactors of $$3x$$ are $$3$$ and $$x$$. Algebraic factor of $$3x$$ is $$x$$.\nOne can observe that the following pairs have same algebraic variable, i.e., they are like terms:\n$$ - x{y^2} $$ and $$ 2x{y^2} $$\n$$ - 4y{x^2}$$\nand $$20{x^2}y$$\n$$y$$ and $$7y$$\n$$ - 100x$$\nand $$3x$$\n$$ - 11yx$$\nand $$2xy$$\n$$8{x^2}$$, $$ - 6{x^2}$$\nand $$ - 11{x^2}$$\n(b) $$10pq,7p,8q, - {p^2}{q^2}, - 7pq, - 100q, - 23,12{q^2}{p^2}, - 5{p^2},41,2405p,78pq,13{p^2}q,q{p^2},701{p^2}$$\nAns:\nFactors of $$10pq$$ are $$p$$, $$10$$ and $$q$$. Algebraic factors of $$10pq$$\nare $$p$$\nand $$q$$.\nFactors of $$7p$$ are $$7$$ and $$p$$. Algebraic factor of $$7p$$ is $$p$$.\nFactors of $$8q$$ are $$8$$\nand $$q$$. Algebraic factor of $$8q$$\nis $$q$$.\nFactors of $$ - {p^2}{q^2}$$ are $$ - 1$$, $$p$$,$$p$$ , $$q$$ and $$q$$. Algebraic factors of $$ - {p^2}{q^2}$$ are $$p$$, $$p$$, $$q$$ and $$q$$.\nFactors of $$ - 7pq$$ are $$ - 7$$ , $$q$$ and $$p$$. Algebraic factors of $$ - 7pq$$are $$q$$ and $$p$$.\nFactors of $$ - 100q$$ are $$ - 100$$ and $$q$$. Algebraic factor of $$ - 100q$$ is $$q$$.\nFactor of $$ - 23$$ is $$ - 23$$. Algebraic factor of $$ - 23$$ is none.\nFactors of $$12{p^2}{q^2}$$ are $$12$$ , $$q$$, $$q$$, $$p$$\nand $$p$$. Algebraic factors of $$12{p^2}{q^2}$$ are\u00a0 $$q$$, $$q$$, $$p$$and $$p$$.\nFactors of $$ - 5{p^2}$$ are $$ - 5$$, $$p$$\nand $$p$$. Algebraic factors of $$ - 5{p^2}$$ are $$p$$\nand $$p$$.\nFactor of $$41$$ is $$41$$. Algebraic factor of $$41$$ is$$41$$.\nFactors of $$2405p$$ are $$2405$$ and $$p$$. Algebraic factor of $$2405p$$ is $$p$$.\nFactors of $$78pq $$ are $$78$$ , $$p$$ and\u00a0 $$q$$. Algebraic factors of $$78pq$$are $$p$$ and $$q$$.\nFactors of $$13{p^2}q$$ are $$13$$,$$p$$,$$p$$ and $$q$$. Algebraic factors of $$13{p^2}q$$ is\u00a0 $$p$$,$$p$$ and $$q$$.\nFactors of $$q{p^2}$$ are $$p$$, $$p$$ and $$q$$. Algebraic factors of $$q{p^2}$$ are $$p$$, $$p$$ and $$q$$.\nFactors of $$701{p^2}$$ are $$701$$, $$p$$\nand $$p$$. Algebraic factors of $$701{p^2}$$ are $$p$$\nand $$p$$.\nOne can observe that the following pairs have same algebraic variable, i.e., they are like terms:\n$$ - 7pq$$, $$78pq$$\nand $$10pq$$\n$$2405p$$ and $$7p$$\n$$ - 100q$$\nand $$8q$$\n$$41$$ and $$ - 23 $$\n$$701{p^2}$$\nand $$ - 5{p^2}$$\n$$q{p^2}$$\nand $$13{p^2}q$$\n$$ - {p^2}{q^2}$$\nand $$12{p^2}{q^2}$$\nConclusion\nClass 7 Maths Chapter 10 Exercise 10.1 Solutions Algebraic Expressions has laid a strong foundation for understanding the basics of algebra. Through\u00a0 Class 7 Chapter 10 Maths Exercise 10.1, students have learned to identify and construct algebraic expressions, recognize terms, coefficients, and constants, and differentiate between like and unlike terms. Understanding these fundamental concepts is essential for progressing in algebra and developing problem-solving skills. By practising these problems, students are well-prepared to tackle more complex algebraic operations in future exercises.\nClass 7 Maths Chapter 10: Exercises Breakdown\nExercises\nNumber of Questions\nExercise 10.2\n10 Questions & Solutions\nCBSE Class 7 Maths Chapter 10 Other Study Materials\nS. No\nImportant Links for Chapter 10 Algebraic Expressions\n1\nClass 7 Algebraic Expressions Important Questions\n2\nClass 7 Algebraic Expressions Revision Notes\n3\nClass 7 Algebraic Expressions Important Formulas\n4\nClass 7 Algebraic Expressions NCERT Exemplar Solution\n5\nClass 7 Algebraic Expressions RD Sharma Solutions\nChapter-Specific NCERT Solutions for Class 7 Maths\nGiven below are the chapter-wise NCERT Solutions for Class 7 Maths. Go through these chapter-wise solutions to be thoroughly familiar with the concepts.\nS.No.\nNCERT Solutions Class 7 Chapter-wise Maths PDF"
     },
     {
-      "q": "7. Add $$3{{a}^{2}}{{b}^{2}}-4ab+5,8{{a}^{2}}{{b}^{2}}+12ab-9,15-6ab-5{{a}^{2}}{{b}^{2}}$$.",
-      "a": "Adding the coefficients of the similar terms will give the sum of three terms that is,\n$$\\begin{align} & \\text{\u00a0 3}{{a}^{2}}{{b}^{2}}-4ab+5 \\\\ & +8{{a}^{2}}{{b}^{2}}+12ab-9 \\\\ & \\underline{-5{{a}^{2}}{{b}^{2}}-6ab+15} \\\\ & \\text{\u00a0 }6{{a}^{2}}{{b}^{2}}+2ab+11 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "8. Subtract $$\\text{-}{{\\text{x}}^{\\text{2}}}\\text{+6xy}$$ from $$\\text{8}{{\\text{x}}^{\\text{2}}}\\text{-4xy+12}$$.",
-      "a": "Subtracting the coefficients of the similar terms will give the difference of two terms that is,\n$$\\begin{align} & +8{{x}^{2}}-4xy+12 \\\\ & \\text{ }-{{x}^{2}}+6xy \\\\ & \\underline{\\text{\u00a0 + - }} \\\\ & \\text{\u00a0 9}{{x}^{2}}+10xy+12 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "9. Subtract $${{a}^{2}}-4{{b}^{2}}+3ab-20$$ from $$2{{a}^{2}}+6{{b}^{2}}+7ab+12$$.",
-      "a": "Subtracting the coefficients of the similar terms will give the difference of two terms that is,\n$$\\begin{align} & 2{{a}^{2}}+6{{b}^{2}}+7ab+12 \\\\ & \\text{\u00a0 }{{a}^{2}}-4{{b}^{2}}+3ab-20 \\\\ & \\underline{-\\text{\u00a0 \u00a0 + \u00a0 \u00a0 \u00a0 }-\\text{\u00a0 \u00a0 \u00a0 +\u00a0 \u00a0 \u00a0 }} \\\\ & {{a}^{2}}+10{{b}^{2}}+4ab+32 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "10. Find the value of the given equation $4{{x}^{2}}-3x+12$, if $x=-3$",
-      "a": "We are given the quadratic equation of $\\text{x}$ as,\n$4{{x}^{2}}-3x+12$\nSubstituting the value $x=-3$,\n$$\\begin{align} & =4{{\\left( -3 \\right)}^{2}}-3\\left( -3 \\right)+12 \\\\ & =4\\times 9+9+12 \\\\ & =36+9+12 \\\\ & =57 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "11. Simplify $3\\left( 2x+1 \\right)+4x+15$ when $x=-1$.",
-      "a": "We are given the quadratic equation of $\\text{x}$ as,\n$3\\left( 2x+1 \\right)+4x+15$\nSubstituting $x=-1$,\n$$\\begin{align} & =3\\left[ 2\\left( -1 \\right)+1 \\right]+4\\left( -1 \\right)+15 \\\\ & =3\\left( -2+1 \\right)-4+15 \\\\ & =-3-4+15 \\\\ & =-7+15 \\\\ & =8 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "12. Find the value of ${{a}^{2}}-{{b}^{2}}$ for $a=-2$ and $b=3$.",
-      "a": "We are given the quadratic equation of $\\text{a,b}$ as,\n${{a}^{2}}-{{b}^{2}}$\nSubstituting $a=-2$ and $b=3$,\n$\\begin{align} & ={{\\left( -2 \\right)}^{2}}-{{\\left( 3 \\right)}^{2}} \\\\ & =4-9 \\\\ & =-5 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "13. Identify monomials and binomials in the following:\n$\\text{4xy,-a+8,}{{\\text{p}}^{\\text{2}}}\\text{,xy+4x}$.",
-      "a": "Monomials: the expressions that have only one variable. From the given set of expressions the monomials are $\\text{-a+8,}{{\\text{p}}^{\\text{2}}}$\nBinomials: the expressions that have two variables. From the given set of expressions the binomials are\u00a0 $\\text{4xy,xy+4x}$\n."
-    },
-    {
-      "q": "14. Define\n(a) Like Terms\n(b) Unlike Terms",
-      "a": "(a) Terms having the same algebraic factors are called like terms.\nExample: $$3pq$$ and $$7pq$$\n(b) Terms having different algebraic factors are called unlike terms.\nExample: $2xy$ and $-3x$"
-    },
-    {
-      "q": "15. Find the value of equation $3{{x}^{2}}-4x+8$, when $x=8$.",
-      "a": "We are given the quadratic equation of $\\text{x}$ as,\n$3{{x}^{2}}-4x+8$\nSubstituting $x=8$,\n$$\\begin{align} & =3{{\\left( 8 \\right)}^{2}}-4\\left( 8 \\right)+8 \\\\ & =3\\left( 64 \\right)-32+8 \\\\ & =192-32+8 \\\\ & =168 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "16. What should be taken away from $3{{x}^{2}}+2{{y}^{2}}-5xy-25$ to get $-{{x}^{2}}-{{y}^{2}}+2xy+10$.",
-      "a": "Let the term required be $p$.\n$$\\begin{align} & \\left( 3{{x}^{2}}+2{{y}^{2}}-5xy-25 \\right)-p=-{{x}^{2}}-{{y}^{2}}+2xy+10 \\\\ & \\Rightarrow p=\\left( 3{{x}^{2}}+2{{y}^{2}}-5xy-25 \\right)-\\left( -{{x}^{2}}-{{y}^{2}}+2xy+10 \\right) \\\\ & \\Rightarrow p=3{{x}^{2}}+2{{y}^{2}}-5xy-25+{{x}^{2}}+{{y}^{2}}-2xy-10 \\\\ & \\Rightarrow p=4{{x}^{2}}+3{{y}^{2}}-7xy-35 \\\\ \\end{align}$$\nHence, the required number is $$4{{x}^{2}}+3{{y}^{2}}-7xy-35$$."
-    },
-    {
-      "q": "17. From the sum of $7p+3q+11$ and $4p-2q-5$, subtract $3p-q+11$.",
-      "a": "By adding coefficients of similar terms of the first two expressions we get,\n$$\\begin{align} & 7p+3q+11 \\\\ & \\underline{4p-2q-\\text{ }5} \\\\ & 11p+q+6 \\\\ \\end{align}$$\nBy subtracting coefficients of similar terms of the above expression and third expression we get,\n$$\\begin{align} & 11p+q+6 \\\\ & 3p-q+11 \\\\ & \\underline{-\\text{ \u00a0 +\u00a0 \u00a0 }-\\text{ \u00a0 }} \\\\ & 8p+2q-5 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "18. From the sum of $8a-5b+3$ and $6a+3b+5$, subtract the difference of $2a-3b+8$ and $a+2b+6$.",
-      "a": "By adding coefficients of similar terms of the first two expressions we get\n$$\\begin{align} & 8a-5b+3 \\\\ & \\underline{6a+3b+5} \\\\ & 14a-2b+8 \\\\ \\end{align}$$\nBy subtracting coefficients of similar terms of the above expression and third expression we get,\n$$\\begin{align} & 2a-3b+8 \\\\ & \\text{\u00a0 }a+2b+6 \\\\ & \\underline{-\\text{ \u00a0 }-\\text{\u00a0 \u00a0 }-\\text{\u00a0 }} \\\\ & \\text{\u00a0 }a-5b+2 \\\\ \\end{align}$$\nBy subtracting,\n$$\\begin{align} & 14a-2b+8 \\\\ & \\text{\u00a0 \u00a0 }a-5b+2 \\\\ & \\underline{-\\text{ \u00a0 \u00a0 + \u00a0 \u00a0 }-\\text{\u00a0 \u00a0 }} \\\\ & \\text{ }13a+3b+6 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "19. Find the value of\n(a) $3{{p}^{2}}+4{{q}^{2}}-5$, when $p=3$ and $q=-2$\n(b) ${{x}^{3}}-3{{x}^{2}}y+2x{{y}^{2}}+8xy+9$, when $x=-3$ and $y=1$",
-      "a": "(a) $3{{p}^{2}}+4{{q}^{2}}-5$\nSubstituting $p=3,q=-2$,\n$$\\begin{align} & =3{{\\left( 3 \\right)}^{2}}+4{{\\left( -2 \\right)}^{2}}-5 \\\\ & =27+16-5 \\\\ & =38 \\\\ \\end{align}$$\n(b) ${{x}^{3}}-3{{x}^{2}}y+2x{{y}^{2}}+8xy+9$\nSubstituting $x=-3,y=1$,\n$$\\begin{align} & ={{\\left( -3 \\right)}^{3}}-3{{\\left( -3 \\right)}^{2}}\\left( 1 \\right)+2\\left( -3 \\right){{\\left( 1 \\right)}^{2}}+8\\left( -3 \\right)\\left( 1 \\right)+9 \\\\ & =-27-27-6-34+9 \\\\ & =-54-30+9 \\\\ & =-75 \\\\ \\end{align}$$"
-    },
-    {
-      "q": "20. What should be the value of \u2018p\u2019, $3{{m}^{2}}+m+p=12$ when $m=0$.",
-      "a": "We are given the quadratic equation of $\\text{m}$ as,\n$3{{m}^{2}}+m+p=12$\nSubstituting $m=0$,\n$$\\begin{align} & 3{{\\left( 0 \\right)}^{2}}+\\left( 0 \\right)+p=12 \\\\ & p=12 \\\\ \\end{align}$$\nA Quick Recap of All the Basic Terminologies\nVariable-\nAn unknown entity is called a variable when it changes with a change in the situation.\nConstant-\nConstant is the value that never changes, it stays fixed.\nTerms-\nThe quantities that are added or subtracted are called terms.\nCoefficient-\nThe number with which a variable is multiplied.\nLike Terms-\nTerms having the same variables.\nFor example 3y, 7y, 45y\nUnlike Terms-\nTerms that have different variables.\nFor example 3xy, 6x, 7y\nAddition and Subtraction in Algebra\nLike Terms\nThe coefficients of all the terms are added or subtracted.\n3x + 8x - 4x - 2x =?\n3x + 8x - 4x - 2x = 5x\nUnlike Terms\nAll the terms having similar variables when taken together the coefficients can be added or subtracted.\n7xy - 2x + 8x + 6y - 4xy=?\n(7xy - 4xy) + (-2x + 8x) + 6y = 3xy + 6x + 6y\nNumber Patterns\nThe successor of a natural number, n = (n+1).\nExample: If n = 12, then the successor = (n+1)= 13\n2n is an even number (if n is a natural number)\n(2n+1) is an odd number\nSome Important Definitions\nAlgebraic Expression: An algebraic expression is formed with the help of operators i.e. addition, subtraction, multiplications, and divisions.\nEquation:\nWhen an equality sign \u201c=\u201d is used between two expressions, then it is called an equation.\nExample:\n3+4x=15.\nProblem:\nForm an algebraic expression: x is first multiplied by 6 and then 7 subtracted from the product.\nSolution:\n(6*x)-7= 6x-7\nProblem:\nLet an algebraic expression be 3m\u00b2-4m+2 with variable m. Find the value of the expression if m=2.\nSolution:\n3(2)\u00b2-4(2)+2 = 3*4 \u2013 8+2 = 12-8+2 = 6\nPractical Use of Expression\n2 boys go to a shop and both of them buy a notebook and a pen. The cost of the notebook and pen is $5 and $1 respectively. What is the total cost?\nAnswer:\nx= cost of a notebook\nY= cost of a pen\nTotal cost = 2(x + y)= 2(5 + 1) = 2*6 = 12\nHence, the total cost of a pen and notebook for 2 girls is $12.\nTypes of Algebraic Expression\nBased on the number of terms;\nMonomial Expression -\nExpression that has only one term. Example: 9xy, 3x\u00b2, 22y\nBinomial Expression -\nExpression with only two terms. Example: xyz + 8y\u00b2, x\u00b2y\u00b2 + 9xy\nTrinomial Expression -\nExpression with more than two terms. Example: 65xyz + 10x\u00b2y + 31y\u00b2z + 42z\u00b2"
-    },
-    {
-      "q": "6. x\u00b3 + y\u00b3 = (x + y) (x\u00b2 \u2013 xy + y\u00b2)",
+      "q": "1.\nChapter 1 - Integers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "7. x\u00b3 \u2013 y\u00b3 = (x \u2013 y) (x\u00b2 + xy + y\u00b2)\nAlgebraic expressions can be used to find out the perimeter of various figures.\nIf l is considered to be the length of each side, then the perimeter of\nSquare= 4l\nEquilateral Triangle= 3l\nRegular Pentagon= 5l\nRegular Hexagon= 6l, and so on\nAlgebraic expressions can also be used to find out the area of various figures.\nSquare:\narea= l\u00b2 (l= length of each side)\nRectangle:\narea= l*b (l is the length and b is the breadth)\nTriangle:\narea= (b*h)/2 (b and h are the base and height of the triangle respectively)\nDiagonal:\nNumber of diagonals drawn\u00a0 by choosing one vertex of a polygon = n-3 (n = number of sides of the polygon)\nSome Important Questions from Algebraic Expression",
+      "q": "2.\nChapter 2 - Fractions and Decimals Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "1. Subtract 12xy from -5xy. ( 1 mark )\nSolution:\n-5xy\n-12xy\n-17xy",
+      "q": "3.\nChapter 3 - Data Handling Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Subtract - x\u00b2 + 6xy from 8x\u00b2 - 4xy + 12 (2 marks)\nSolution:\n8x\u00b2 - 4xy + 12\n- x\u00b2 + 6xy\n+ \u00a0 \u00a0 \u00a0 -\n9x\u00b2 - 10xy + 12",
+      "q": "4.\nChapter 4 - Simple Equations Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Simplify 3(2x+1) + 4x + 15 When x=1 (2 marks)\nSolution:\n3(2x+1) + 4x + 15\n= 3[2(-1) +1] + 4(-1) + 15\n= -3-4+15\n= -7+15\n= 8",
+      "q": "5.\nChapter 5 - Lines and Angles Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Find the Value of\na) 3p\u00b2 + 4q\u00b2 - 5 when p=3 and q= -2\nb) x\u00b3 - 3x\u00b2y + 2xy\u00b2 + 8xy + 9 when x= -3 and y= 1. (3 marks)\nSolution:\na) 3p\u00b2 + 4q\u00b2 - 5\n= 3(3)\u00b2 + 4(-2)\u00b2 - 5\n= 3*9 + 16 \u2013 5\n= 38\nb) x\u00b3 - 3x\u00b2y + 2xy\u00b2 + 8xy + 9\n= (-3)\u00b3 \u2013 3(-3)\u00b2(1)+ 2(-3)(1)\u00b2+ 8(-3)(1)+ 9\n= -27 \u2013 27 \u2013 6 \u2013 24 + 9\n= - 75",
+      "q": "6.\nChapter 6 - The Triangle and Its Properties Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. What should be the Value of \u2018p\u2019, 3m\u00b2 + m + p= 12 When m= 0. (3 marks)\nSolution:\n3m\u00b2 + m + p= 12\n=\u02c3 3(0) + 0 + p = 12 [m=0]\n=\u02c3 p= 12\nBenefits of Important Questions for Class 7 Maths Chapter 10 Algebraic Expressions\nImportant Questions for Class 7 Maths Chapter 10 Algebraic Expressions focus on key concepts in algebraic expressions, helping students better understand terms, factors, coefficients, and how to simplify expressions.\nPractising these questions encourages students to apply algebraic rules and techniques, which strengthens their ability to solve complex problems effectively.\nBy working on important questions, students become familiar with the types of questions likely to appear in exams, helping them feel prepared and confident.\nRegular practice with algebraic expressions improves calculation speed and accuracy, essential for handling questions within time limits in exams.\nImportant questions highlight the main topics, making it easier for students to revise the chapter efficiently before exams.\nConclusion\nAlgebraic Expressions is an integral part of Class 7 Maths and plays a crucial role from an examination perspective. The important questions for Class 7 Maths, cover a wide range of topics within the subject. They also provide a concise guide to critical points and details related to the topic.\nA solid understanding of each section of Class 7 Maths is fundamental as it forms the basis for higher-level studies. However, this section primarily focuses on important questions within the context of Class 7 Maths.\nImportant Study Materials for Class 7 Maths Chapter 10\nS. No\nStudy Materials Links for Chapter 10 Algebraic Expressions\n1\nClass 7 Algebraic Expressions NCERT Solutions\n2\nClass 7 Algebraic Expressions Revision Notes\n3\nClass 7 Algebraic Expressions NCERT Exemplar Solutions\n4\nClass 7 Algebraic Expressions RD Sharma Solutions\n5\nClass 7 Algebraic Expressions RS Aggarwal Solutions",
+      "q": "7.\nChapter 7 - Comparing Quantities Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nClass 7 Algebraic Expressions Important Formulas\nChapter-wise Important Questions Links for Class 7 Maths\nS.No.\nImportant Questions Links for Class 7 Maths",
+      "q": "8.\nChapter 8 - Rational Numbers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nChapter 1 - Integers Questions",
+      "q": "9.\nChapter 9 - Perimeter and Area Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nChapter 2 - Fractions and Decimals Questions",
+      "q": "10.\nChapter 10 - Algebraic Expressions Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nChapter 3 - Data Handling Questions",
+      "q": "11.\nChapter 11 - Exponents and Powers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nChapter 5 - Lines and Angles Questions",
+      "q": "12.\nChapter 12 - Symmetry Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nChapter 6 - The Triangle and Its Properties Questions",
+      "q": "13.\nChapter 13 - Visualising Solid Shapes Solutions\nImportant Related Links for NCERT Class 7 Maths\nAccess these essential links for NCERT Class 7 Maths, offering comprehensive solutions, study guides, and additional resources to help students master language concepts and excel in their exams.\nS.No\nOther CBSE Study Materials for Class 7 Maths\n1\nCBSE Class 7 Maths Revision Notes\n2\nCBSE Syllabus for Class 7 Maths\n3\nCBSE Class 7 Maths Important Questions\n4\nCBSE Class 7 Maths Sample Papers\n5\nNCERT Books for Class 7 Maths",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 - Comparing Quantities Questions",
+      "q": "6.\nRS Aggarwal Class 7 Solutions for Math book",
       "a": "Detailed solution available."
     },
     {
-      "q": "8.\nChapter 8 - Rational Numbers Questions",
+      "q": "7.\nRD Sharma Class 7 Maths Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "9.\nChapter 9 - Perimeter and Area Questions",
+      "q": "8.\nNCERT Class 7 Maths Exemplar Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 - Exponents and Powers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 12 - Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13 - Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS. No\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
+      "q": "9.\nNCERT Class 7 Maths Formulas",
       "a": "Detailed solution available."
     }
   ],
   "11": [
     {
-      "q": "1. Find $\\mathbf{{2^8}}$.",
-      "a": "Given: ${2^8}$\nWe need to find the value of the given exponent.\nWe can rewrite ${2^8}$ to find its value as\n${2^8} = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\n${2^8} = 256$"
+      "q": "1. Find the value of:\ni) $${2^6}$$",
+      "a": "The given expression is : $${2^6}$$\nBy expanding the term $${2^6}$$ we get,\n${2^6} = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\nBy multiplying,\n${2^6} = 64$\nHence, the required value of $${2^6}$$ is $64$.\nii) ${9^3}$\nAns:\nThe given expression is : ${9^3}$\nBy expanding the term ${9^3}$ we get,\n${9^3} = 9 \\times 9 \\times 9$\nBy multiplying,\n${9^3} = 729$\nHence, the required value of ${9^3}$ is $729$.\niii) ${11^2}$\nAns:\nThe given expression is : ${11^2}$\nBy expanding the term ${11^2}$ we get,\n${11^2} = 11 \\times 11$\nBy multiplying,\n${11^2} = 121$\nHence, the required value of ${11^2}$ is $121$.\niv) ${5^4}$\nAns:\nThe given expression is : ${5^4}$\nBy expanding the term ${5^4}$ we get,\n${5^4} = 5 \\times 5 \\times 5 \\times 5$\nBy multiplying,\n${5^4} = 625$\nHence, the required value of ${5^4}$ is $625$."
     },
     {
-      "q": "2. Express the following in exponential form $\\mathbf{2 \\times 2 \\times a \\times a}$.",
-      "a": "Given: $2 \\times 2 \\times a \\times a$\nWe need to write the given expression as an exponential form.\nA number can be written in its exponential form if we raise the power of the number by the exponent.\nTherefore, exponential form of $2 \\times 2 \\times a \\times a$ is\n$2 \\times 2 \\times a \\times a $\n$ = {2^2} \\times {a^2} $\n$ = 4{a^2} $"
+      "q": "2. Express the following in exponential form:\ni) $6 \\times 6 \\times 6 \\times 6$",
+      "a": "The given expression is : $6 \\times 6 \\times 6 \\times 6$\nThe number of $6$\u2019s in the given expression is $4$ .\nSo, the exponent of $6$ is $4$.\nHence, $6 \\times 6 \\times 6 \\times 6 = {6^4}$.\nii) $t \\times t$\nAns:\nThe given expression is : $t \\times t$\nThe number of $t$ \u2019s in the given expression is $2$.\nSo, the exponent of $t$ is $2$.\nHence, $t \\times t = {t^2}$.\niii) $b \\times b \\times b \\times b$\nAns:\nThe given expression is : $b \\times b \\times b \\times b$\nThe number of $b$ \u2019s in the given expression is $4$.\nSo, the exponent of $t$ is $4$.\nHence, $b \\times b \\times b \\times b = {b^4}$.\niv) $5 \\times 5 \\times 7 \\times 7 \\times 7$\nAns:\nThe given expression is : $5 \\times 5 \\times 7 \\times 7 \\times 7$\nThe number of $5$ \u2019s in the given expression is $2$ .\nThe number of $7$ \u2019s in the given expression is $3$.\nSo, the exponent of $5$ is $2$ and the exponent of $7$ is $3$.\nHence, $5 \\times 5 \\times 7 \\times 7 \\times 7 = {5^2} \\times {7^3}$.\nv) $2 \\times 2 \\times a \\times a$\nAns:\nThe given expression is : $2 \\times 2 \\times a \\times a$\nThe number of $2$ \u2019s in the given expression is $2$ .\nThe number of $a$ \u2019s in the given expression is $2$.\nSo, the exponent of $2$ is $2$ and the exponent of $a$ is $2$.\nHence, $2 \\times 2 \\times a \\times a = {2^2} \\times {a^2}$.\nvi) $a \\times a \\times a \\times c \\times c \\times c \\times c \\times d$\nAns:\nThe given expression is : $a \\times a \\times a \\times c \\times c \\times c \\times c \\times d$\nThe number of $a$ \u2019s in the given expression is $3$.\nThe number of $c$ \u2019s in the given expression is $4$.\nThe number of $d$ \u2019s in the given expression is $1$.\nSo, the exponent of $a$ is $3$ , the exponent of $c$ is $4$ and the exponent of $d$ is $1$ .\nHence, $a \\times a \\times a \\times c \\times c \\times c \\times c \\times d = {a^3} \\times {c^4} \\times {d^1}$."
     },
     {
-      "q": "3. Find $\\mathbf{{( - 4)^3}}$.",
-      "a": "Given: ${( - 4)^3}$\nWe need to find the value of a given exponent.\nWe can rewrite ${( - 4)^3}$ to find its value as\n${( - 4)^3} =\u00a0 - 4 \\times\u00a0 - 4 \\times\u00a0 - 4 $\n${( - 4)^3} =\u00a0 - 64 $\n4. $\\mathbf{{a^m} \\times {a^n}}$=_______?\nAns:\nGiven: ${a^m} \\times {a^n}$\nWe need to fill in the blanks.\nTherefore, ${a^m} \\times {a^n}$$ = \\underline {{a^{m + n}}} $\n5. $\\mathbf{{a^0} = \\_\\_\\_\\_\\_?}$\nAns:\nGiven: ${a^0}$\nWe need to find the value of a given expression.\nWe know that if $0$ is the power of any number then the value of the number is always $1.$\nTherefore, ${a^0} = \\underline {1.} $\nShort Answer Questions\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 2 Mark"
+      "q": "3. Express each of the following numbers using the exponential notation:\ni) $512$",
+      "a": "By factorization method, we can find,\nIn the above expanding form of $512$, numbers of $2$\u2019s as a factor is $9$.\nSo, we can express $512$ as term of $2$ .\n$512 = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\nThe exponent of $2$ will be $9$ .\nHence, $512 = {2^9}$.\nii) $343$\nAns:\nBy factorization method we can find,\n7\n343\n7\n49\n7\n7\n1\nIn the above expanding form of $343$ , numbers of $7$\u2019s as factor is $3$.\nSo, we can express $343$ as term of $7$ .\n$343 = 7 \\times 7 \\times 7$\nThe exponent of $7$ will be $3$ .\nHence, $343 = {7^3}$.\niii) $729$\nAns:\nBy factorization method we can find,\nIn the above expanding form of $729$, numbers of $3$\u2019s as the factor is $6$.\nSo, we can express $729$ as term of $3$ .\n$729 = 3 \\times 3 \\times 3 \\times 3 \\times 3 \\times 3$\nThe exponent of $3$ will be $6$ .\nHence, $729 = {3^6}$.\niv) $3125$\nAns:\nBy factorization method, we can find,\nIn the above expanding form of $3125$, numbers of $5$\u2019s as a factor is $5$.\nSo, we can express $3125$ as term of $5$ .\n$3125 = 5 \\times 5 \\times 5 \\times 5 \\times 5$\nThe exponent of $5$ will be $5$ .\nHence, $3125 = {5^5}$."
     },
     {
-      "q": "6. Express 16807 in exponential form.",
-      "a": "Given: $16807$\nWe need to express the given number in exponential form.\nExponential form is a way to represent a number in repeated multiplications of the same number.\nSo, we can write $16807$ as\n$16807 = 7 \\times 7 \\times 7 \\times 7 \\times 7 $\n$16807 = {7^5} $"
+      "q": "4. Identify the greater number, wherever possible, in each of the following:\ni) ${4^3}$ and ${3^4}$",
+      "a": "${4^3}$ can be written as,\n${4^3} = 4 \\times 4 \\times 4$\n${4^3} = 64$\n${3^4}$can be written as,\n${3^4} = 3 \\times 3 \\times 3 \\times 3$\n${3^4} = 81$\nSince, $81 > 64$\nThus, ${3^4} > {4^3}$.\nHence, ${3^4}$ is greater than ${4^3}$.\nii) ${5^3}$ and ${3^5}$\nAns:\n${5^3}$ can be written as,\n${5^3} = 5 \\times 5 \\times 5$\n${5^3} = 125$\n${3^5}$ can be written as,\n${3^5} = 3 \\times 3 \\times 3 \\times 3 \\times 3$\n${3^5} = 243$\nSince, $243 > 125$\nThus, ${3^5} > {5^3}$.\nHence, ${3^5}$ is greater than ${5^3}$.\niii) ${2^8}$ and ${8^2}$\nAns:\n${2^8}$ can be written as,\n${2^8} = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\n${2^8} = 256$\n${8^2}$ can be written as,\n${8^2} = 8 \\times 8$\n${8^2} = 64$\nSince, $256 > 64$\nThus, ${2^8} > {8^2}$.\nHence, ${2^8}$ is greater than ${8^2}$.\niv) ${100^2}$ and ${2^{100}}$\nAns:\n${100^2}$ can be written as,\n${100^2} = 100 \\times 100$\n${100^2} = 10000$\n${2^{100}}$can be written as,\n${2^{100}} = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times ....14{\\text{ times}} \\times .... \\times 2$\n${2^{100}} = 16384 \\times ... \\times 2$\nSince, $16384 \\times ... \\times 2 > 10000$\nThus, ${2^{100}} > {100^2}$.\nHence, ${2^{100}}$ is greater than ${100^2}$.\nv) ${2^{10}}$ and ${10^2}$\nAns:\n${2^{10}}$can be written as,\n${2^{10}} = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\n${2^{10}} = 1024$\n${10^2}$ can be written as,\n${10^2} = 10 \\times 10$\n${10^2} = 100$\nSince, $1024 > 100$\nThus, ${2^{10}} > {10^2}$.\nHence, ${2^{10}}$ is greater than ${10^2}$."
     },
     {
-      "q": "7. Identify which is greater $\\mathbf{{2^7}{\\text{ or }}{7^2}}$.",
-      "a": "Given: exponents ${2^7},{7^2}$\nWe need to find which exponent is greater.\nWe will find the value of each exponent and then compare it.\nWe can write the exponents as\n${2^7} = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 $\n${2^7} = 128 $\n${7^2} = 7 \\times 7 $\n${7^2} = 49 $\nClearly, we can see that\n${2^7} > {7^2}$"
+      "q": "5. Express each of the following as product of powers of their prime factors:\ni) $648$",
+      "a": "The given expression is $648$.\nBy factorization method we can find the prime factors,\nSo, $648$ can be written as\n$648 = 2 \\times 2 \\times 2 \\times 3 \\times 3 \\times 3 \\times 3$\nIt can be express as exponent of $2$ and $3$ .\n$648 = {2^3} \\times {3^4}$\nHence, the required expression is $648 = {2^3} \\times {3^4}$.\nii) $405$\nAns:\nThe given expression is $405$.\nBy factorization method we can find the prime factors,\nSo, $405$ can be written as\n$405 = 5 \\times 3 \\times 3 \\times 3 \\times 3$\nNow, it can be express as\n$405 = 5 \\times {3^4}$\nHence, the required expression is $405 = 5 \\times {3^4}$.\niii) $540$\nAns:\nThe given expression is $540$.\nBy factorization method we can find the prime factors,\nSo, $540$ can be written as\n$540 = 2 \\times 2 \\times 3 \\times 3 \\times 3 \\times 5$\nNow, it can be express as\n$540 = {2^2} \\times {3^3} \\times 5$\nHence, the required expression is $540 = {2^2} \\times {3^3} \\times 5$.\niv) $3600$\nAns:\nThe given expression is $3600$.\nBy factorization method we can find the prime factors,\n2\n3600\n2\n1800\n2\n900\n2\n450\n3\n225\n3\n75\n5\n25\n5\n5\n1\nSo, $3600$ can be written as\n$3600 = 2 \\times 2 \\times 2 \\times 2 \\times 3 \\times 3 \\times 5 \\times 5$\nNow, it can be express as\n$3600 = {2^4} \\times {3^2} \\times {5^2}$\nHence, the required expression is $3600 = {2^4} \\times {3^2} \\times {5^2}$."
     },
     {
-      "q": "8. Simplify $\\mathbf{{7^3} \\times {2^5}}$.",
-      "a": "Given: ${7^3} \\times {2^5}$\nWe need to simplify the given exponential expression.\nWe can simplify the given expression as\n${7^3} \\times {2^5} = 7 \\times 7 \\times 7 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\n${7^3} = 343 \\times 32 $\n${7^3} = 10976 $"
+      "q": "6. Simplify:\ni) $2 \\times {10^3}$",
+      "a": "The given expression is: $2 \\times {10^3}$\nBy expanding the given expression,\n$2 \\times {10^3} = 2 \\times 10 \\times 10 \\times 10$\n$2 \\times {10^3} = 2000$\nHence, the required solution is $2 \\times {10^3} = 2000$.\nii) ${7^2} \\times {2^2}$\nAns:\nThe given expression is: ${7^2} \\times {2^2}$\nBy expanding the given expression,\n${7^2} \\times {2^2} = 7 \\times 7 \\times 2 \\times 2$\n${7^2} \\times {2^2} = 196$\nHence, the required solution is ${7^2} \\times {2^2} = 196$.\niii) ${2^3} \\times 5$\nAns:\nThe given expression is: ${2^3} \\times 5$\nBy expanding the given expression,\n${2^3} \\times 5 = 2 \\times 2 \\times 2 \\times 5$\n${2^3} \\times 5 = 40$\nHence, the required solution is ${2^3} \\times 5 = 40$.\niv) $3 \\times {4^4}$\nAns:\nThe given expression is: $3 \\times {4^4}$\nBy expanding the given expression,\n$3 \\times {4^4} = 3 \\times 4 \\times 4 \\times 4 \\times 4$\n$3 \\times {4^4} = 768$\nHence, the required solution is $3 \\times {4^4} = 768$.\nv) $0 \\times {10^2}$\nAns:\nThe given expression is: $0 \\times {10^2}$\nBy expanding the given expression,\n$0 \\times {10^2} = 0 \\times 10 \\times 10$\n$0 \\times {10^2} = 0$\nHence, the required solution is $0 \\times {10^2} = 0$.\nvi) ${5^3} \\times {3^3}$\nAns:\nThe given expression is: ${5^3} \\times {3^3}$\nBy expanding the given expression,\n${5^3} \\times {3^3} = 5 \\times 5 \\times 5 \\times 3 \\times 3 \\times 3$\n${5^3} \\times {3^3} = 675$\nHence, the required solution is ${5^3} \\times {3^3} = 675$.\nvii) ${2^4} \\times {3^2}$\nAns:\nThe given expression is: ${2^4} \\times {3^2}$\nBy expanding the given expression,\n${2^4} \\times {3^2} = 2 \\times 2 \\times 2 \\times 2 \\times 3 \\times 3$\n${2^4} \\times {3^2} = 144$\nHence, the required solution is ${2^4} \\times {3^2} = 144$.\nviii) ${3^2} \\times {10^4}$\nAns:\nThe given expression is: ${3^2} \\times {10^4}$\nBy expanding the given expression,\n${3^2} \\times {10^4} = 3 \\times 3 \\times 10 \\times 10 \\times 10 \\times 10$\n${3^2} \\times {10^4} = 90,000$\nHence, the required solution is ${3^2} \\times {10^4} = 90,000$."
     },
     {
-      "q": "9. Write 1024 as a power of 2.",
-      "a": "Given: $1024$\nWe need to write the given expression as power of $2$\nBreak $1024$ in factors of 2 and write as exponents.\nTherefore, $1024$ as power of $2$ will be written as\n$1024 = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 $\n$\\Rightarrow 1024 = {2^{10}} $"
+      "q": "7. Simplify:\ni) ${\\left( { - 4} \\right)^3}$",
+      "a": "The given expression is: ${\\left( { - 4} \\right)^3}$\nBy expanding the given expression,\n${\\left( { - 4} \\right)^3} = \\left( { - 4} \\right) \\times \\left( { - 4} \\right) \\times \\left( { - 4} \\right)$\n${\\left( { - 4} \\right)^3} =\u00a0 - 64$\nHence, the required solution is${\\left( { - 4} \\right)^3} =\u00a0 - 64$.\nii) $\\left( { - 3} \\right) \\times {\\left( { - 2} \\right)^3}$\nAns:\nThe given expression is: $\\left( { - 3} \\right) \\times {\\left( { - 2} \\right)^3}$\nBy expanding the given expression,\n$\\left( { - 3} \\right) \\times {\\left( { - 2} \\right)^3} = \\left( { - 3} \\right) \\times \\left( { - 2} \\right) \\times \\left( { - 2} \\right) \\times \\left( { - 2} \\right)$\n$\\left( { - 3} \\right) \\times {\\left( { - 2} \\right)^3} = 24$\nHence, the required solution is$\\left( { - 3} \\right) \\times {\\left( { - 2} \\right)^3} = 24$.\niii) ${\\left( { - 3} \\right)^2} \\times {\\left( { - 5} \\right)^2}$\nAns:\nThe given expression is: ${\\left( { - 3} \\right)^2} \\times {\\left( { - 5} \\right)^2}$\nBy expanding the given expression,\n${\\left( { - 3} \\right)^2} \\times {\\left( { - 5} \\right)^2} = \\left( { - 3} \\right) \\times \\left( { - 3} \\right) \\times \\left( { - 5} \\right) \\times \\left( { - 5} \\right)$\n${\\left( { - 3} \\right)^2} \\times {\\left( { - 5} \\right)^2} = 225$\nHence, the required solution is${\\left( { - 3} \\right)^2} \\times {\\left( { - 5} \\right)^2} = 225$.\niv) ${\\left( { - 2} \\right)^3} \\times {\\left( { - 10} \\right)^3}$\nAns:\nThe given expression is: ${\\left( { - 2} \\right)^3} \\times {\\left( { - 10} \\right)^3}$\nBy expanding the given expression,\n${\\left( { - 2} \\right)^3} \\times {\\left( { - 10} \\right)^3} = 2 \\times 2 \\times 2 \\times 10 \\times 10 \\times 10$\n${\\left( { - 2} \\right)^3} \\times {\\left( { - 10} \\right)^3} = 8000$\nHence, the required solution is${\\left( { - 2} \\right)^3} \\times {\\left( { - 10} \\right)^3} = 8000$."
     },
     {
-      "q": "10. Using laws, find the value of $\\mathbf{\\left( {{3^{15}} \\div {3^{10}}} \\right) \\times {3^2}}$.",
-      "a": "Given: $\\left( {{3^{15}} \\div {3^{10}}} \\right) \\times {3^2}$\nWe need to find the value of a given expression using laws.\nWe know that\n$\\dfrac{{{a^m}}}{{{a^n}}} = {a^{m - n}} $\n${a^m} \\times {a^n} = {a^{m + n}} $\nUsing these laws, the value of $\\left( {{3^{15}} \\div {3^{10}}} \\right) \\times {3^2}$ will be\n$= \\left( {{3^{15}} \\div {3^{10}}} \\right) \\times {3^2} $\n$= \\dfrac{{{3^{15}}}}{{{3^{10}}}} \\times {3^2} $\n$= {3^{15 - 10}} \\times {3^2} $\n$= {3^5} \\times {3^2} $\n$= {3^{5 + 2}} $\n$= {3^7} $\n$= 2187 $"
+      "q": "8. Compare the following numbers:\ni) $2.7 \\times {10^{12}};1.5 \\times {10^8}$",
+      "a": "The given expressions are :$2.7 \\times {10^{12}}$and $1.5 \\times {10^8}$.\nSince, ${10^{12}} > {10^8}$\nOn comparing the exponents of base 10,\n$2.7 \\times {10^{12}} > 1.5 \\times {10^8}$\nHence, $2.7 \\times {10^{12}}$ is greater than $1.5 \\times {10^8}$.\nii) $4 \\times {10^{14}};3 \\times {10^{17}}$\nAns:\nThe given expressions are :$4 \\times {10^{14}}$and $3 \\times {10^{17}}$.\nSince, ${10^{17}} > {10^{14}}$\nOn comparing the exponents of base 10,\n$3 \\times {10^{17}} > 4 \\times {10^{14}}$\nHence, $3 \\times {10^{17}}$ is greater than $4 \\times {10^{14}}$.\nNCERT Solutions for Class 7 Maths Chapter 11 Exponents and Powers Exercise 11.1\nOpting for the NCERT solutions for Ex 11.1 Class 7 Maths is considered as the best option for the CBSE students when it comes to exam preparation. This chapter consists of many exercises. Out of which we have provided the Exercise 11.1 Class 7 Maths NCERT solutions on this page in PDF format. You can download this solution as per your convenience or you can study it directly from our website/ app online.\nVedantu in-house subject matter experts have solved the problems/ questions from the exercise with the utmost care and by following all the guidelines by CBSE. Class 7 students who are thorough with all the concepts from the Maths textbook and quite well-versed with all the problems from the exercises given in it, then any student can easily score the highest possible marks in the final exam. With the help of this Class 7 Maths Chapter 11 Exercise 11.1 solutions, students can easily understand the pattern of questions that can be asked in the exam from this chapter and also learn the marks weightage of the chapter. So that they can prepare themselves accordingly for the final exam.\nBesides these NCERT solutions for Class 7 Maths Chapter 11 Exercise 11.1, there are plenty of exercises in this chapter which contain innumerable questions as well. All these questions are solved/answered by our in-house subject experts as mentioned earlier. Hence all of these are bound to be of superior quality and anyone can refer to these during the time of exam preparation. In order to score the best possible marks in the class, it is really important to understand all the concepts of the textbooks and solve the problems from the exercises given next to it.\nDo not delay any more. Download the NCERT solutions for Class 7 Maths Chapter 11 Exercise 11.1 from Vedantu website now for better exam preparation. If you have the Vedantu app in your phone, you can download the same through the app as well. The best part of these solutions is these can be accessed both online and offline as well.\nClass 7 Maths Chapter 11: Exercises Breakdown\nExercises\nNumber of Questions\nExercise 11.2\n5 Questions & Solutions\nExercise 11.3\n4 Questions & Solutions\nCBSE Class 7 Maths Chapter 11 Other Study Materials\nS. No\nImportant Links for Chapter 11 Exponents and Powers\n1\nClass 7 Exponents and Powers Important Questions\n2\nClass 7 Exponents and Powers Revision Notes\n3\nClass 7 Exponents and Powers Important Formulas\n4\nClass 7 Exponents and Powers NCERT Exemplar Solution\nChapter-Specific NCERT Solutions for Class 7 Maths\nGiven below are the chapter-wise NCERT Solutions for Class 7 Maths. Go through these chapter-wise solutions to be thoroughly familiar with the concepts.\nS.No.\nNCERT Solutions Class 7 Chapter-wise Maths PDF"
     },
     {
-      "q": "11. Find $\\mathbf{8 \\times {10^5} + 0 \\times {10^4} + 3 \\times {10^3} + 2 \\times {10^2} + 0 \\times {10^1} + 5 \\times {10^0}}$.",
-      "a": "Given: $8 \\times {10^5} + 0 \\times {10^4} + 3 \\times {10^3} + 2 \\times {10^2} + 0 \\times {10^1} + 5 \\times {10^0}$\nWe need to find the value of the given expression.\nWe will solve the given exponents and then add them.\nTherefore, the value of $8 \\times {10^5} + 0 \\times {10^4} + 3 \\times {10^3} + 2 \\times {10^2} + 0 \\times {10^1} + 5 \\times {10^0}$ will be\n$= 8 \\times 100000 + 0000 + 3 \\times 1000 + 2 \\times 100 + 00 + 5 \\times 1 $\n$= 800000 + 0 + 3000 + 200 + 0 + 5 $\n$= 803205 $"
-    },
-    {
-      "q": "12. Say True or False and Justify.\n$\\mathbf{{5^2} > {4^3}}$",
-      "a": "Given: ${5^2} > {4^3}$\nWe need to find if the given expression is true or false.\nWe will solve the exponents and then compare them.\n${5^2} = 25 $\n${4^3} = 64 $\n$25 < 64 $\n$\\Rightarrow {5^2} < {4^3} $\nTherefore, the expression is False.\n$\\mathbf{{5^0} = {343^0}}$\nAns:\nGiven: ${5^0} = {343^0}$\nWe need to find if the given expression is true or false.\nWe will solve the exponents and then compare them.\n${5^0} = 1 $\n${343^0} = 1 $\n$\\therefore {5^0} = {343^0} $\nTherefore, the expression is true."
-    },
-    {
-      "q": "13. Find the value of $\\mathbf{\\left( {{3^0} + {2^0}} \\right) \\times {5^1}}$.",
-      "a": "Given: $\\left( {{3^0} + {2^0}} \\right) \\times {5^1}$\nWe need to find the value of a given expression.\nWe know that ${a^0} = 1$\nTherefore, the value of $\\left( {{3^0} + {2^0}} \\right) \\times {5^1}$ will be\n$= \\left( {{3^0} + {2^0}} \\right) \\times {5^1} $\n$= (1 + 1) \\times 5 $\n$= 2 \\times 5 $\n$= 10 $"
-    },
-    {
-      "q": "14. Find $\\mathbf{\\left( {\\dfrac{{{a^6}}}{{{a^4}}}} \\right) \\times {a^{ - 2}} \\times {a^0}}$.",
-      "a": "Given: $\\left( {\\dfrac{{{a^6}}}{{{a^4}}}} \\right) \\times {a^{ - 2}} \\times {a^0}$\nWe need to find the value of the given expression.\nWe know that\n$\\dfrac{{{a^m}}}{{{a^n}}} = {a^{m - n}} $\n${a^m} \\times {a^n} = {a^{m + n}} $\n${a^0} = 1 $\nTherefore, $\\left( {\\dfrac{{{a^6}}}{{{a^4}}}} \\right) \\times {a^{ - 2}} \\times {a^0}$ will be\n$= \\left( {{a^{6 - 4}}} \\right) \\times {a^{ - 2}} \\times {a^0} $\n$= {a^2} \\times {a^{ - 2}} \\times 1 $\n$= {a^{2 + ( - 2)}} $\n$= {a^0} $\n$= 1 $"
-    },
-    {
-      "q": "15. Find $\\mathbf{{27^p} \\div {27^2}}$.",
-      "a": "Given: ${27^p} \\div {27^2}$\nWe need to find the given expression.\nWe know that\n$\\frac{{{a}^{m}}}{{{a}^{n}}}={{a}^{m-n}}$\nTherefore, ${27^p} \\div {27^2}$ will be\n$= {\\left( {{3^3}} \\right)^p} \\div {\\left( {{3^3}} \\right)^2} $\n$= \\dfrac{{{3^{3p}}}}{{{3^6}}} $\n$= {3^{3p - 6}} $\n$= {3^{3(p - 2)}} $\nShort Answer Questions\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 2 Mark"
-    },
-    {
-      "q": "16. Express each of the following as product of prime factor\n$\\mathbf{702}$",
-      "a": "We need to express the given expression as product of prime factor\nExponential form is a way to represent a number in repeated multiplications of the same number.\nTherefore, $702$ can be written as a product of prime factors as\n$702 = 2 \\times 3 \\times 3 \\times 3 \\times 13 $\n$= {2^1} \\times {3^3} \\times {13^1} $\n$\\mathbf{33275}$\nAns:\nGiven: $33275$\nWe need to express the given expression as a product of prime factors.\nExponential form is a way to represent a number in repeated multiplications of the same number.\nTherefore, $33275$ can be written as a product of prime factors as\n$33275 = 5 \\times 5 \\times 11 \\times 11 \\times 11 $\n$= {5^2} \\times {11^3} $"
-    },
-    {
-      "q": "17. Using the laws find\n$\\mathbf{\\left( {{{\\left( {{3^3}} \\right)}^2} \\times {3^2}} \\right) \\div {3^7}}$",
-      "a": "Given:\u00a0 $\\left( {{{\\left( {{3^3}} \\right)}^2} \\times {3^2}} \\right) \\div {3^7}$\nWe need to find the value of a given expression using laws.\nWe know that\n$\\dfrac{{{a^m}}}{{{a^n}}} = {a^{m - n}} $\n${a^m} \\times {a^n} = {a^{m + n}} $\nTherefore, the value of $\\left( {{{\\left( {{3^3}} \\right)}^2} \\times {3^2}} \\right) \\div {3^7}$ will be\n$= \\left( {{3^6} \\times {3^2}} \\right) \\div {3^7} $\n$= \\left( {{3^{6 + 2}}} \\right) \\div {3^7} $\n$= {3^8} \\div {3^7} $\n$= {3^{8 - 7}} $\n$= {3^1} $\n$= 3 $\n$\\mathbf{\\dfrac{{{3^6}{a^8}{b^4}}}{{{3^2}{a^2}{b^3}}}}$\nAns:\nGiven:\u00a0 $\\dfrac{{{3^6}{a^8}{b^4}}}{{{3^2}{a^2}{b^3}}}$\nWe need to find the value of a given expression using laws.\nWe know that\n$\\dfrac{{{a^m}}}{{{a^n}}} = {a^{m - n}} $\n${a^m} \\times {a^n} = {a^{m + n}} $\nTherefore, the value of $\\dfrac{{{3^6}{a^8}{b^4}}}{{{3^2}{a^2}{b^3}}}$ will be\n$= \\dfrac{{{3^6}{a^8}{b^4}}}{{{3^2}{a^2}{b^3}}} $\n$= {3^{6 - 2}} \\times {a^{8 - 2}} \\times {b^{4 - 3}} $\n$= {3^4} \\times {a^6} \\times {b^1} $\n$= 81{a^6}{b^1} $"
-    },
-    {
-      "q": "18. Express each of the following as product of prime factors\n$\\mathbf{729 \\times 625}$",
-      "a": "We need to express the given expression as product of prime factor\nExponential form is a way to represent a number in repeated multiplications of the same number.\nTherefore, $729 \\times 625$ can be written as a product of prime factors as\n$729 = 3 \\times 3 \\times 3 \\times 3 \\times 3 \\times 3 $\n$= {3^6} $\n$625 = 5 \\times 5 \\times 5 \\times 5 $\n$= {5^4} $\n$\\therefore 729 \\times 625 = {3^6} \\times {5^4} $\n$\\mathbf{1024 \\times 216}$\nAns:\nGiven: $1024 \\times 216$\nWe need to express the given expression as a product of prime factors.\nExponential form is a way to represent a number in repeated multiplications of the same number.\nTherefore, $1024 \\times 216$ can be written as a product of prime factors as\n$$\\begin{align} & 1024=2\\times 2\\times 2\\times 2\\times 2\\times 2\\times 2\\times 2\\times 2\\times 2={{2}^{10}} \\\\ & 216=2\\times 2\\times 2\\times 3\\times 3\\times 3={{2}^{3}}\\times {{3}^{3}} \\\\\u00a0 & \\therefore 1024\\times 216={{2}^{10}}\\times \\ {{2}^{3}}\\times {{3}^{3}} \\\\\u00a0 & \\,\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ ={{2}^{10+3}}\\times {{3}^{3}} \\\\\u00a0 & \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ ={{2}^{13}}\\times {{3}^{3}} \\\\ \\end{align}$$"
-    },
-    {
-      "q": "19. Express the following as standard form\n$\\mathbf{3,68,878}$",
-      "a": "Given: $3,68,878$\nWe need to express the given number as a standard form.\nWe will write the given numbers as a multiple of power of $10.$\nTherefore, the standard form of $3,68,878$ will be\n$= 3.68878 \\times 100000 $\n$= 3.68878 \\times {10^5} $\n$\\mathbf{4,78,25,00,000}$\nAns:\nGiven: $4,78,25,00,000$\nWe need to express the given number as a standard form.\nWe will write the given numbers as a multiple of power of $10.$\nTherefore, the standard form of $4,78,25,00,000$ will be\n$= 4.7825 \\times 1000000000 $\n$= 4.7825 \\times {10^9} $\n$\\mathbf{5706.983}$\nAns:\nGiven: $5706.983$\nWe need to express the given number as a standard form.\nWe will write the given numbers as a multiple of power of $10.$\nTherefore, the standard form of $5706.983$ will be\n$= 5.706983 \\times 1000 $\n$= 5.706983 \\times {10^3} $"
-    },
-    {
-      "q": "20. Find the numbers\n$\\mathbf{8 \\times {10^5} + 2 \\times {10^2} + 4 \\times {10^1}}$",
-      "a": "Given: $8 \\times {10^5} + 2 \\times {10^2} + 4 \\times {10^1}$\nWe need to solve the given expression.\nWe will solve the exponents and then add them.\nTherefore, $8 \\times {10^5} + 2 \\times {10^2} + 4 \\times {10^1}$ will be\n$= 8 \\times 100000 + 0 \\times 0 + 2 \\times 100 + 4 \\times 10 $\n$= 800000 + 0 + 0 + 200 + 40 $\n$= 8,00,240 $\n$\\mathbf{4 \\times {10^4} + 6 \\times {10^3} + 2 \\times {10^2} + 1 \\times {10^0}}$\nAns:\nGiven: $4 \\times {10^4} + 6 \\times {10^3} + 2 \\times {10^2} + 1 \\times {10^0}$\nWe need to solve the given expression.\nWe will solve the exponents and then add them.\nTherefore, $4 \\times {10^4} + 6 \\times {10^3} + 2 \\times {10^2} + 1 \\times {10^0}$ will be\n$= 4 \\times 10000 + 6 \\times 1000 + 2 \\times 100 + 1 \\times 1 $\n$= 40000 + 6000 + 200 + 1 $\n$= 46,201 $\n$\\mathbf{5 \\times {10^4} + 7 \\times {10^2} + 5 \\times {10^0}}$\nAns:\nGiven: $5 \\times {10^4} + 7 \\times {10^2} + 5 \\times {10^0}$\nWe need to solve the given expression.\nWe will solve the exponents and then add them.\nTherefore, $5 \\times {10^4} + 7 \\times {10^2} + 5 \\times {10^0}$ will be\n$= 5 \\times 10000 + 7 \\times 100 + 5 \\times 1 $\n$= 50000 + 700 + 5 $\n$= 50,705 $\nDefinition of Exponent\nThe exponent tells us how many times a number should be multiplied by itself to get the desired result. Thus any number (suppose a) raised to power \u2018n\u2019 can be expressed as:\na$$^{n}$$ = a x a x a x a x a x a\u2026. x a(n times)\nHere a can be any number and n is the natural number.\na$$^{n}$$ is also called the n$$^{th}$$ power of a.\nIn this \u2018a\u2019 is the base and \u2018n\u2019 is the exponent or index or power.\n\u2018a\u2019 is multiplied \u2018n\u2019 times, It is a method of repeated multiplication.\na$$^{m}$$ . a$$^{n}$$ = a$$^{(m+n)}$$\n(a$$^{m}$$)$$^{n}$$ = a$$^{mn}$$\n(ab)$$^{n}$$ = a$$^{n}$$b$$^{n}$$\n($$\\frac{a}{b}$$)$$^{n}$$ = $$\\frac{a^{n}}{b^{n}}$$\n$$\\frac{a^{m}}{a^{n}}$$ = a$$^{m-n}$$\n$$\\frac{a^{m}}{a^{n}}$$ = $$\\frac{1}{a^{n-m}}$$\na$$^{0}$$ = 1\nMultiplying Powers With the Same Base\nWhen the bases are the same then we add the exponents.\na$$^{m}$$ x a$$^{n}$$ = a$$^{(m+n)}$$\nIn a similar way, if \u2018a\u2019 is a non-zero integer or a non-zero rational number and m and n are positive integers, then\na$$^{m}$$ x a$$^{n}$$ = a$$^{(m+n)}$$\nSimilarly ($$\\frac{a}{b}$$)$$^{m}$$ x ($$\\frac{a}{b}$$)$$^{n}$$ = ($$\\frac{a}{b}$$)$$^{m+n}$$\nNote:\nExponents can be added only when the bases are the same.\nExponents cannot be added if the bases are not the same.\nDividing Powers with the Same Base\nIn division, if the bases are the same then we need to subtract the exponents.\na$$^{m}$$\u00a0 \u00f7\u00a0 a$$^{n}$$ =\u00a0 $$\\frac{a^{m}}{a^{n}}$$ = a$$^{m-n}$$\nWhere m and n are whole number and m<n;\nWe can generalize that if a is a non-zero integer or q non-zero rational number and m and n are positive integers, such that m<n;\na$$^{m}$$\u00a0 \u00f7\u00a0 a$$^{n}$$ = a$$^{m-n}$$ if m<n, then a$$^{m}$$\u00a0 \u00f7\u00a0 a$$^{n}$$ = $$\\frac{1}{a^{(n-m)}}$$\nSimilarly, ($$\\frac{a}{b}$$)$$^{m}$$ \u00f7 ($$\\frac{a}{b}$$)$$^{n}$$ = ($$\\frac{a}{b}$$)$$^{m-n}$$\nPower of a Power\nIn the power of a power you need multiply the powers\nIn general, for any non-integer a (a$$^{m}$$)$$^{n}$$ = a$$^{m \\times n}$$ = a$$^{mn}$$\nMultiplying Power with the Same Exponent\nIn general, for any non-zero integer a,b\na$$^{m}$$ x b$$^{m}$$ = (a x b)$$^{m}$$ = (ab)$$^{m}$$\nNegative Exponents\nIf the exponent is negative we need to change it into a positive exponent by writing the same in the denominator and 1 in the numerator.\nIf \u2018a\u2019 is a non-zero integer or a non-zero rational number and m is a positive integer, then a$$^{-m}$$ is the reciprocal of, i.e.,\na$$^{-m}$$ = $$\\frac{1}{a^{m}}$$, if we take a as p/q then\n($$\\frac{p}{q}$$)$$^{-m}$$ = $$\\frac{1}{(\\frac{p}{q})^{m}}$$ = ($$\\frac{q}{p}$$)$$^{m}$$\nAlso, $$\\frac{1}{a^{-m}}$$ = a$$^{m}$$\nSimilarly, ($$\\frac{a}{b}$$)$$^{-m}$$ = ($$\\frac{b}{a}$$)$$^{m}$$, where n is a positive integer\nPower with Exponent Zero\nIf the exponent is 0 then you get the result 1 whatever the base is.\nIf \u2018a\u2019 is a non-zero integer or a non-zero rational number then,\na$$^{0}$$ = 1\nSimilarly, ($$\\frac{a}{b}$$)$$^{0}$$ = 1\nFractional Exponent\nIn fractional exponent, we observe that the exponent is in fraction form.\na$$^{\\frac{1}{n}}$$, where a is called the base and 1/n is called an exponent or power. It is denoted as $$\\sqrt[n]{a}$$ is called as the nth root of a.\nSome Rules to Remember While Calculating the Power of a Number\nRule 1:\nAny number to the zero power is equal to 1.\nRule 2:\nAny number to the first power is equal to the number itself.\nRule 3:\nIf the base to which we are calculating power is negative, then odd power results in negative values and even power results in positive values.\nFor example:\n(-4)$$^{3}$$= -64\n4$$^{2}$$ = 16\nRule 4: The exponent comes before the multiplication in the order of operations. We can add in the parentheses if it helps us to solve the question.\nFor example:\n(2 x 3)$$^{2}$$ = 6$$^{2}$$ = 36\n2 x 3$$^{2}$$ = 2 x 9 = 18\nThe sequence formed by powers of a number (exponent starting from 0 and having integral values) is a geometric progression with a first-term equal to 1 and common ratio being equal to the base.\nLook at the pattern below:\n2$$^{0}$$ = 1\n2$$^{1}$$ = 2\n2$$^{2}$$ = 2 x 2 = 4\n2$$^{3}$$ = 2 x 2 x 2 = 8\n2$$^{4}$$ = 2 x 2 x 2 x 2 = 16\n2$$^{5}$$ = 2 x 2 x 2 x 2 x 2 = 32\nA common mistake is to multiply the base and exponent together, which is not the correct way to calculate the power of a number.\nFor example:\n4$$^{3}$$ = 4 x 3 = 12 (Wrong)\n4$$^{3}$$ = 4 x 4 x 4 = 64 (Right)"
-    },
-    {
-      "q": "1. Multiplying Powers with the Same Base\nWhen multiplying powers with the same base, add the exponents:\n$a^m \\times a^n = a^{m+n}$",
+      "q": "1.\nChapter 1 - Integers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Dividing Powers with the Same Base\nWhen dividing powers with the same base, subtract the exponents:\n$\\frac{a^m}{a^n} = a^{m-n} \\quad \\text{(where \\(m > n\\))}$",
+      "q": "2.\nChapter 2 - Fractions and Decimals Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Power of a Power\nWhen raising a power to another power, multiply the exponents:\n$(a^m)^n = a^{m \\times n}$",
+      "q": "3.\nChapter 3 - Data Handling Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Power of a Product\nWhen two numbers are multiplied and raised to a power, distribute the exponent to both numbers:\n$(a \\times b)^n = a^n \\times b^n$",
+      "q": "4.\nChapter 4 - Simple Equations Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Negative Exponent Rule\nA negative exponent represents the reciprocal of the positive exponent:\n$a^{-n} = \\frac{1}{a^n}$\nBenefits of Important Questions for Class 7 Maths Chapter 11 Exponents and Powers",
+      "q": "5.\nChapter 5 - Lines and Angles Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "1. Focused Topics:\nTackle important concepts like \"Power Patterns\" and \"Squaring Shortcuts\" efficiently, making studying a breeze.",
+      "q": "6.\nChapter 6 - The Triangle and Its Properties Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Exam Readiness:\nFeel confident and reduce exam worries by practising questions aligned with what you'll face in your upcoming test.",
+      "q": "7.\nChapter 7 - Comparing Quantities Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Concept Reinforcement:\nSolidify your understanding of fundamental ideas like \"Powers of 10\" through targeted questions that reinforce what you've learned.",
+      "q": "8.\nChapter 8 - Rational Numbers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Time Mastery:\nLearn to manage your time wisely by practising with questions that mirror the ones you'll find in your exam.",
+      "q": "9.\nChapter 9 - Perimeter and Area Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Self-Assessment:\nTrack your progress and discover your strengths with questions designed for self-evaluation, helping you become a maths master.",
+      "q": "10.\nChapter 10 - Algebraic Expressions Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "6. Strategic Scoring:\nFollow a smart approach for higher scores by focusing on crucial topics such as \"Negative Ninja Rule\" and \"Cubing Clue.\"",
+      "q": "11.\nChapter 11 - Exponents and Powers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "7. Comprehensive Coverage:\nExplore a wide array of topics, from \"Zero Power Zen\" to \"Product Power,\" ensuring you understand every aspect of Exponents and Powers.\nConclusion\nExponents play a crucial role in algebra, simplifying repeated multiplication. The exponent indicates how many times a number multiplies itself. It's important to note that any number to the power of 0 equals 1. When expressing with exponents, attention to negative signs and parentheses is vital. Exponents come in four types: positive, negative, zero, and rational/fraction. To delve deeper into this chapter, access the Class 7 Maths Chapter 11 extra questions PDF on Vedantu\u2019s website. This resource enhances understanding and consolidates knowledge about exponents in a user-friendly format.\nImportant Study Materials for Class 7 Maths Chapter 11\nS.No\nStudy Materials Links for Chapter 11 Exponents and Powers\n1\nClass 7 Exponents and Powers NCERT Solutions\n2\nClass 7 Exponents and Powers Revision Notes\n3\nClass 7 Exponents and Powers NCERT Exemplar Solutions\n4\nClass 7 Exponents and Powers Important Formulas\nCBSE Class 7 Maths Important Questions for All Chapters\nClass 7 Maths Important Questions and Answers cover key topics, aiding in thorough preparation and making revision simpler.\nS.No\nChapter-wise Important Questions for Class 7 Maths",
+      "q": "12.\nChapter 12 - Symmetry Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nChapter 1: Integers Questions",
+      "q": "13.\nChapter 13 - Visualising Solid Shapes Solutions\nImportant Related Links for NCERT Class 7 Maths\nAccess these essential links for NCERT Class 7 Maths, offering comprehensive solutions, study guides, and additional resources to help students master language concepts and excel in their exams.\nS.No\nOther CBSE Study Materials for Class 7 Maths\n1\nCBSE Class 7 Maths Revision Notes\n2\nCBSE Syllabus for Class 7 Maths\n3\nCBSE Class 7 Maths Important Questions\n4\nCBSE Class 7 Maths Sample Papers\n5\nNCERT Books for Class 7 Maths",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nChapter 2: Fractions and Decimals Questions",
+      "q": "6.\nRS Aggarwal Class 7 Solutions for Math book",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nChapter 3: Data Handling Questions",
+      "q": "7.\nRD Sharma Class 7 Maths Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nChapter 4: Simple Equations Questions",
+      "q": "8.\nNCERT Class 7 Maths Exemplar Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nChapter 5: Lines and Angles Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 6: The Triangle and Its Properties Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 7: Comparing Quantities Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 8: Rational Numbers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 9: Perimeter and Area Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10.\nChapter 10: Algebraic Expressions Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 12: Symmetry Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13: Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 7 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Formulas",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 7 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 7 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 7 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 7 Maths Revision Notes",
+      "q": "9.\nNCERT Class 7 Maths Formulas",
       "a": "Detailed solution available."
     }
   ],
   "12": [
     {
-      "q": "1. Tell whether the dotted line is a line of symmetry?",
-      "a": "Yes"
+      "q": "1. Copy the figures with punched holes and find the axes of symmetry for the following:\na)",
+      "a": "In the above question ABCD is a symmetrical square and E and F are two holes.\nThe line that divides symmetrically the two holes is given by GH as shown\nb)\nAns:\nIn the above question ABCD is a symmetrical square and E and F are two holes.\nThe line that divides symmetrically the two holes is given by BD as shown\nc)\nAns:\nIn the above question ABCD is a symmetrical square and E and F are two holes.\nThe line that divides symmetrically the two holes is given by GH as shown\nd)\nAns:\nIn the above question ABCD is a symmetrical square and E, F, G and H\u00a0 are holes.\nThe line that divides symmetrically the holes is given by IJ as shown\ne)\nAns:\nIn the above question ABCD is a symmetrical square and E, F, G and H\u00a0 are holes.\nThere are four lines that divides symmetrically the two holes, given by AC,BD,IJ,KL as shown\nf)\nAns:\nIn the above question ABCD is symmetrical square and E, F and H are three holes. F and H being overlapped with D and C respectively.\nThere is only one line that divides symmetrically the three holes, given by IJ as shown\ng)\nAns:\nIn the above question ABD is a symmetrical triangle and E and D are two holes.\nThere is only one line that divides symmetrically the two holes, given by AF as shown\nh)\nAns:\nIn the above question ABC is a symmetrical triangle and E and D are two holes.\nThere is only one line that divides symmetrically the two holes, given by AF as shown\ni)\nAns:\nIn the above question ABC is a symmetrical triangle and E and D are two holes.\nThere is only one line that divides symmetrically the two holes and the triangle, given by AF as shown\nj)\nAns:\nGiven we have a circle centred at E where D and C are two holes and hence the lines of symmetry EF,IJ,KL,GH are given by as shown\nk)\nAns:\nGiven we have a circle where D,E and F,G are four holes and hence the lines of symmetry IJ, HG, KL, MN are given by as shown\nl)\nAns:\nGiven we have a circle where D, E and C are three holes and hence the lines of symmetry GF is given as shown"
     },
     {
-      "q": "2. Draw the line of symmetry for the diagram below.",
-      "a": ""
+      "q": "2. Given the line(s) of symmetry, find the other hole(s):\na)",
+      "a": "Given AC is a line of symmetry and E is a hole\nHence the other hole ${{E}_{1}}$ such that AC divides E and${{E}_{1}}$symmetrically as given by\nb)\nAns:\nGiven FG is a line of symmetry and E is a hole\nHence the other hole ${{E}_{1}}$ such that AC divides E and${{E}_{1}}$symmetrically as given by\nc)\nAns:\nGiven AD is a line of symmetry and E is a hole\nHence the other hole ${{E}_{1}}$ such that AC divides E and${{E}_{1}}$symmetrically as given by\nd)\nAns:\nGiven we have DC is the line of symmetry and E is the one of the holes which is divided symmetrically by the line DC.\nHence the second hole ${{E}_{1}}$ is given as shown\ne)\nAns:\nGiven we have DC is the line of symmetry and ${{E}_{1}}$ and E are holes which are divided symmetrically by the line DC.\nHence the other holes ${{E}_{2}}$ and ${{E}_{3}}$ are given as shown"
     },
     {
-      "q": "3. Draw a line of symmetry for the figure given below.",
-      "a": ""
+      "q": "3. In the following figures, the mirror line DC(i.e., the line of symmetry) is given. Complete each figure performing reflection in (mirror) line. (You might perhaps place a mirror along the line DC and look into the mirror for the image). Are you able to recall the name of the figure you completed?\na)",
+      "a": "Given we have line of symmetry is DC and hence after seeing the image on the mirror we get the complete figure of square as shown\nb)\nAns:\nGiven we have a line of symmetry is CD and hence after seeing the image on the mirror we get the complete figure of triangle as shown\nc)\nAns:\nGiven we have a line of symmetry is DC and hence after seeing the image on the mirror we get the complete figure of rhombus as shown\nd)\nAns:\nGiven we have a line of symmetry is CD and hence after seeing the image on the mirror we get the complete figure of circle as shown\ne)\nAns:\nGiven we have a line of symmetry is DC and hence after seeing the image on the mirror we get the complete figure of pentagon as shown\nf)\nAns:\nGiven we have a line of symmetry is DC and hence after seeing the image on the mirror we get the complete figure of octagon as shown"
     },
     {
-      "q": "4. Does a triangle have a line of symmetry as well as rotational symmetry?",
-      "a": "Yes"
+      "q": "4. The following figures have more than one line of symmetry. Such figures are said to have multiple lines of symmetry:\nIdentify multiple lines of symmetry, if any, in each of the following figures:\na)",
+      "a": "Given we have a rectangle and the figure with multiple lines of symmetry is given as shown\nb)\nAns:\nGiven we have a square and the figure with multiple lines of symmetry is given as shown"
     },
     {
-      "q": "5. Does the letter below have a line of symmetry?",
-      "a": "Ans:\nYes"
+      "q": "5. Copy the figure given here: Take any one diagonal as a line of symmetry and shade a few more squares to make the figure symmetric about a diagonal. Is there more than one way to do that? Will the figure be symmetric about both the diagonals?",
+      "a": "From the give figure we have AB,CD,EF,GH as lines of symmetry hence it has more than one line of symmetry\nAlso the more shaded part about any one diagonal is as shown"
     },
     {
-      "q": "6. State the number of lines of symmetry for the following figures.\n(a)\nA Rhombus\n(b)\nAn Equilateral triangle",
-      "a": "(a)\n2\n(b)\n3"
+      "q": "6. Copy the diagram and complete each shape to be symmetric about the mirror line(s):\na)",
+      "a": "Given the figure in which CE is the line of symmetry\nThe complete figure is as shown\nb)\nAns:\nGiven the figure in which BF, GH is the lines of symmetry\nThe complete figure is as shown\nc)\nAns:\nGiven the figure in which BF, GH is the lines of symmetry\nThe complete figure is as shown\nd)\nAns:\nGiven the figure in which BF, GH is the lines of symmetry\nThe complete figure is as shown"
     },
     {
-      "q": "7. Name two examples with no line of symmetry.",
-      "a": "Trapezius and scalene triangle."
+      "q": "7. State the number of lines of symmetry for the following figures:\n(a) An equilateral triangle",
+      "a": "An equilateral triangle has $3$lines of symmetry AD, BE, CF as shown\n(b) An isosceles triangle\nAns:\nAn isosceles triangle has $1$line of symmetry as shown\n(c) A scalene triangle\nAns:\nA scalene triangle has no lines of symmetry as shown\n(d) A square\nAns:\nA square has $4$lines of symmetry CD, DF, HI, JK as shown\n(e) A rectangle\nAns:\nA rectangle has four lines of symmetry CE, DF, HI, JK as shown\n(f) A rhombus\nAns:\nA rhombus has $2$lines of symmetry AC, BD as shown\n(g) A parallelogram\nAns:\nA parallelogram has no lines of symmetry\n(h) A quadrilateral\nAns:\nA quadrilateral has no lines of symmetry\n(i) A regular hexagon\nAns:\nA regular hexagon has $6$lines of symmetry AD, KL, FC, HG, BE, IJ, as shown\n(j) A circle\nAns:\nA circle has infinite lines of symmetry, IJ, KL, GH, MN and many more."
     },
     {
-      "q": "8.\nGive two examples for figures having line symmetry and also rotational symmetry.",
-      "a": "Regular hexagon and equilateral triangle."
+      "q": "8. at letters of the English alphabet have reflectional symmetry (i.e., symmetry related to mirror reflection) about:\n(a) a vertical mirror",
+      "a": "It can easily be observed that A, H, I, M, O, T, U, X, V, W, Y are the letters which show symmetry about the vertical line\n(b) a horizontal mirror\nAns:\nIt can easily be observed that B, C, D, E, H, I, O, X are the letters which show symmetry about the horizontal line\n(c) both horizontal and vertical mirrors\nAns:\nIt can easily be observed that H, I, O, X are the letters which show symmetry both about the vertical line and the horizontal line."
     },
     {
-      "q": "9. Name the quadrilateral which have both line and rotational symmetry of order more than 1.",
-      "a": "Square, rectangle, rhombus."
+      "q": "9. Give three examples of shapes with no line of symmetry.",
+      "a": "The three shapes are written as\nAn scalene triangle\nAny general quadrilateral\nAny general parallelogram"
     },
     {
-      "q": "10.\nWrite the order of symmetry.",
-      "a": "Rotational symmetry\nTwo"
+      "q": "10. What other name can you give to the line of symmetry of:\n(a) an isosceles triangle?",
+      "a": "An isosceles triangle\u00a0 has altitude and median as line of symmetry\n(b) a circle?\nAns:\nA circle has any diameter as line of symmetry\nExercise 14.2"
     },
     {
-      "q": "11. Does the given figure have a line of symmetry?\n(a)\n(b)",
-      "a": "(a)\nYes\n(b)\nYes"
+      "q": "1. Which of the following figures have rotational symmetry of order more than 1:\n(a)",
+      "a": "The above figure has rotational symmetry of order more than one\n(b)\nAns:\nThe above figure has rotational symmetry of order more than one\n(c)\nAns:\nThe above figure has rotational symmetry of order not more than one\n(d)\nAns:\nThe above figure has rotational symmetry of order more than one\n(e)\nAns:\nThe above figure has rotational symmetry of order more than one\n(f)"
     },
     {
-      "q": "12. Draw the second half of each symmetrical shape.\n(a)\n(b)",
-      "a": "(a)\n(b)"
+      "q": "2. Give the order the rotational symmetry for each figure:\n(a)",
+      "a": "The above figure has rotational symmetry of order is $2$, when turn of ${{180}^{\\circ }}$takes place\n(b)\nAns:\nThe above figure has rotational symmetry of order is $2$, when turn of ${{180}^{\\circ }}$takes place\n(c)\nAns:\nThe above figure has rotational symmetry of order is $3$, when turn of ${{120}^{\\circ }}$takes place\n(d)\nAns:\nThe above figure has rotational symmetry of order is $4$, when turn of ${{90}^{\\circ }}$takes place\n(e)\nAns:\nThe above figure has rotational symmetry of order is $4$, when turn of ${{90}^{\\circ }}$takes place\n(f)\nAns:\nThe above figure has rotational symmetry of order is $5$, when turn of ${{72}^{\\circ }}$takes place\n(g)\nAns:\nThe above figure has rotational symmetry of order is $6$, when turn of ${{60}^{\\circ }}$takes place\n(h)\nAns:\nThe above figure has rotational symmetry of order is $3$, when turn of ${{120}^{\\circ }}$takes place\nExercise 14.3"
     },
     {
-      "q": "13. Draw the line of symmetry for the following alphabets.\n(a)\n(b)",
-      "a": "(a)\n(b)"
+      "q": "1. Name any two figures that have both line symmetry and rotational symmetry.",
+      "a": "A circle and an equilateral triangle have both line and rotational symmetry"
     },
     {
-      "q": "14. Draw the second half of the letters (symmetrical shapes).\n(a)\n(b)",
-      "a": "(a)\n(b)"
+      "q": "2. Draw, wherever possible, a rough sketch of:\n(i). a triangle with both line and rotational symmetries of order more than 1.",
+      "a": "An equilateral triangle is the triangle that contains line symmetry as shown\nAnd rotational symmetry of ${{120}^{\\circ }}$as shown\n(ii). a triangle with only line symmetry and no rotational symmetry of order more than 1.\nAns:\nAn isosceles triangle is the triangle that contains only one line symmetry and no rotational symmetry of order more than one as shown\n(iii). a quadrilateral with a rotational symmetry of order more than 1 but not a line symmetry.\nAns:\nWe can\u2019t think of such quadrilaterals such that it has order of rotational symmetry more than one but no line symmetry\n(iv). a quadrilateral with line symmetry but not a rotational symmetry of order more than 1.\nAns:\nIn this case we can think of a trapezium with equal non parallel sides have a line symmetry but not any rotational symmetry of order more than one as shown"
     },
     {
-      "q": "15. Give the order of rotational symmetry.",
-      "a": "Number of symmetry\u2019s = Four\n3-Marks"
+      "q": "3. In a figure has two or more lines of symmetry, should it have rotational symmetry of order more than 1?",
+      "a": "If those lines of symmetry passes through the centre of the figure then surely it should have rotational symmetry of order more than one."
     },
     {
-      "q": "16. Can we have a rotational symmetry of order more than one whose angle of rotation is\n$$90^0$$\n$$22^0$$",
-      "a": "(a)\nIf angle of symmetry of a figure is a factor of $$360^0$$ then it will have rotational symmetry of order more than 1.\n(b)\n$$90^0$$ is factor of $$360^0$$ but $$22^0$$ is not.\nThe figure having angle of rotation $$90^0$$ will have rotational symmetry more than 1."
+      "q": "4. Fill in the blanks:\nShape\nCentre of rotation\nOrder of rotation\nAngle of rotation\nSquare\nRectangle\nRhombus\nEquilateral triangle\nRegular hexagon\nCircle\nSem-icircle",
+      "a": "The above shown table can be filled as shown\nshape\nCentre of rotation\nOrder of rotation\nAngle of rotation\nSquare\nIntersecting point of diagonals\n$4$\n${{90}^{\\circ }}$\nRectangle\nIntersecting point of diagonals\n$2$\n${{180}^{\\circ }}$\nRhombus\nIntersecting point of diagonals\n$2$\n${{180}^{\\circ }}$\nEquilateral triangle\nIntersecting point of medians\n$3$\n${{120}^{\\circ }}$\nRegular hexagon\nIntersecting point of diagonals\n$6$\n${{60}^{\\circ }}$\ncircle\nCentre\ninfinite\nAt every point\nSemi-circle\nMid-point of diameter\n$1$\n${{360}^{\\circ }}$"
     },
     {
-      "q": "17. List the alphabets which are having a reflection about vertical symmetry.",
-      "a": "A, H, I, M, O, T, U, V, W, X, Y."
+      "q": "5. Name the quadrilateral which has both line and rotational symmetry of order more than 1.",
+      "a": "A square has both line and rotational symmetry of order more than one"
     },
     {
-      "q": "18. List the alphabets which are having a reflection about horizontal symmetry.",
-      "a": "B, C, D, E, H, I, K, O, X."
+      "q": "6. After rotating by${{60}^{\\circ }}$about a centre, a figure looks exactly the same as its original position. At what other angles will this happen for the figure?",
+      "a": "Other angles will be ${{120}^{\\circ }}$, ${{180}^{\\circ }}$,${{360}^{\\circ }}$\nFor ${{120}^{\\circ }}$there will be three rotations as shown\nFor ${{180}^{\\circ }}$there will be two rotations as shown\nFor ${{360}^{\\circ }}$there will be one rotations as shown\nCan we have a rotational symmetry of order more than one whose angle of rotation is:\n(i). ${{45}^{\\circ }}$\nAns:\nIf the angle is $${{45}^{\\circ }}$$then symmetry is possible because ${{360}^{\\circ }}$ is divisible by $${{45}^{\\circ }}$$and hence we will get $$8$$rotations\n(ii). ${{17}^{\\circ }}$\nAns:\nIf the angle is $${{17}^{\\circ }}$$then symmetry is not possible because ${{360}^{\\circ }}$ is not divisible by $${{45}^{\\circ }}$$\nNCERT Solutions for Class 7 Maths Chapter 14 Free PDF Download\nWhat is Symmetry?\nSymmetry is an important geometrical concept in mathematics. The idea of symmetry is used in almost all activities of our day-to-day life. When any object is divided into two identical halves then they form a mirror image of each other. The two identical halves are called symmetrical to each other.\nFacts\nRegular polygons have equal sides and equal angles. They have more than one or multiple lines of symmetry.\nA square has four lines of symmetry.\nA regular pentagon has five lines of symmetry.\nA regular hexagon has six lines of symmetry.\nRotation turns an object about a fixed point that is called the center of rotation.\nThe angle by which an object rotates is called the angle of rotation.\nA half-turn means a rotation by 180\n0\n.\nAfter a rotation, if an object looks exactly the same, it is said to exhibit rotational symmetry.\nLine of Symmetry\nIn this section of chapter 14 for class 7, you will learn the meaning of the line of symmetry for a figure. When a line divides a shape or a figure into two identical halves, we say that the shape exhibits symmetry. The line that divides the shape is called the line of symmetry. A figure has a line of symmetry, if there is a line about which the figure can be folded into two coinciding parts. The line of symmetry is also called the axis of symmetry.\nThe concept of symmetry is exhibited in nature in beehives, tree leaves, flowers, etc. Symmetrical designs are used by artists, manufacturers, designers, architects, etc.\nLine of Symmetry for Regular Polygons\nWe know that a polygon is a closed figure made of only line segments. The polygon that is made up of the least number of line segments is a triangle. A polygon is said to be regular if all the sides are of equal length and all its angles are of equal measure. An equilateral triangle is a regular polygon. A square is also a regular polygon.\nAn equilateral triangle is a regular polygon because each of its sides has the same length and each of its angles measures 60\n0\n. An equilateral triangle has three lines of symmetry as shown in the figure below.\n(Image will be uploaded soon)\nA square is also a regular polygon because all its sides are equal and each of its angles is a right angle.\nA square has four lines of symmetry.\nEach side of a regular polygon is of equal length and each of its angles measures 108\n0\n. A pentagon has five lines of symmetry.\nA regular hexagon has all its sides equal and each of its angles measures 120\n0\n. A regular hexagon has six lines of symmetry, each line through each of its vertices.\nNote: A shape is said to have a line of symmetry when one-half of it is the mirror image of the other. So, the concept of line symmetry is closely related to mirror reflection.\nRotational Symmetry\nIn this part of chapter 14 for class 7, you will learn about Rotational Symmetry. This will provide you with an explanation of the NCERT solutions.\nThe shape and size of an object do not change when it rotates. The rotation takes place about a fixed point. This fixed point where the rotation occurs is called the center of rotation. The angle through which the body makes turns is called the angle of rotation.\nA full-turn means a rotation by 360\n0\n.\nA half-turn means a rotation by 180\n0\n.\nA quarter-turn means a rotation by 90\n0\n.\nIf a figure can be rotated less than 360\n0\naround a point such that it coincides with itself, it has rotational symmetry.\nLine of Symmetry and Rotational Symmetry\nThere are some shapes, which have both line symmetry and rotational symmetry.\nExample:\n(i) A square has line symmetry as well as rotational symmetry.\n(ii) An equilateral triangle has line symmetry as well as rotational symmetry.\n(iii) A regular polygon has a line symmetry as well as rotational symmetry.\nWhat are the Benefits of Referring to Vedantu\u2019s NCERT Solutions for Class 7 Maths Chapter 14 - Symmetry?\nDelve into the world of symmetry with Vedantu's NCERT Solutions for Class 7 Maths Chapter 14. Designed to enhance conceptual understanding, these solutions offer comprehensive insights into symmetry-related topics. Explore the benefits of referring to Vedantu's NCERT Solutions for a holistic grasp of Class 7 Maths concepts. Some of the features of Vedantu\u2019s NCERT Solutions for Class 7 Maths Chapter 14 - Symmetry include:\nComprehensive explanations for each exercise and questions, promoting a deeper understanding of the subject.\nClear and structured presentation for easy comprehension.\nAccurate answers aligned with the curriculum, boosting students' confidence in their knowledge.\nVisual aids like diagrams and illustrations to simplify complex concepts.\nAdditional tips and insights to enhance students' performance.\nChapter summaries for quick revision.\nConclusion\nSymmetry is an important topic from the examination point of view. If you have a good understanding of the concepts of chapter 14, Symmetry then you can easily score good marks in it. You will also acquire a good knowledge of symmetry and can use it in your daily activities. The concepts and the key features for the NCERT Solutions to chapter 14 for class 7 are designed by subject matter experts. You can download the free PDF from Vedantu and you can also get in touch with the experts for further clarification anytime.\nCBSE Class 7 Maths Chapter 12 Other Study Materials\nS. No\nImportant Links for Chapter 12 Symmetry\n1\nClass 7 Symmetry Important Questions\n2\nClass 7 Symmetry Revision Notes\n3\nClass 7 Symmetry Important Formulas\n4\nClass 7 Symmetry NCERT Exemplar Solution"
     },
     {
-      "q": "19. List the alphabets having both vertical and horizontal rotational symmetry.",
-      "a": "H, I, O, X."
-    },
-    {
-      "q": "20. Draw the line of symmetry\n(a)\n(b)\n(c)",
-      "a": "(a)\n(b)\n(c)\nOr"
-    },
-    {
-      "q": "21. What is symmetry?",
-      "a": "Symmetry is a balanced arrangement of parts on either side of an axis or a center. If one part mirrors the other, it is symmetrical."
-    },
-    {
-      "q": "22. How do you identify the axis of symmetry in a shape?",
-      "a": "The axis of symmetry is an imaginary line where a shape can be folded to create two identical halves. To find it, look for a line along which the shape's two halves match."
-    },
-    {
-      "q": "23. Can all shapes have symmetry?",
-      "a": "No, not all shapes have symmetry. Only specific arrangements of lines, curves, or patterns result in symmetry. For example, a circle has infinite lines of symmetry, while irregular shapes may not have any."
-    },
-    {
-      "q": "24. Explain rotational symmetry?",
-      "a": "Rotational symmetry is when a shape looks the same after a certain degree of rotation around its center. For instance, a square has rotational symmetry of 90 degrees, as it looks the same after a quarter turn."
-    },
-    {
-      "q": "25. How can symmetry be applied in real life?",
-      "a": "Symmetry is seen in many everyday objects, from buildings to nature. Architects use symmetry in designing structures, and understanding symmetry helps artists create balanced and visually appealing artworks. Even in biology, living organisms often display symmetrical patterns.\nWhat are the Benefits of Important Questions from Vedantu for Class 7 Maths Chapter 12 - Symmetry?\nEmbark on a confidence-boosting journey with Vedantu's Important Questions for Class 7 Maths Chapter 12 - Symmetry. These tailored questions act as friendly guides, strategically designed to unravel the secrets of symmetry, making your learning experience efficient and enjoyable."
-    },
-    {
-      "q": "1. Key Topic Focus:\nPinpoint essential symmetry concepts, ensuring your study time is focused on what truly matters for a deeper understanding.",
+      "q": "5.\nClass 7 Symmetry RD Sharma Solutions\nChapter-Specific NCERT Solutions for Class 7 Maths\nGiven below are the chapter-wise NCERT Solutions for Class 7 Maths. Go through these chapter-wise solutions to be thoroughly familiar with the concepts.\nS.No.\nNCERT Solutions Class 7 Chapter-wise Maths PDF",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Exam Readiness:\nPropel yourself towards exam success with questions crafted to align with the chapter's core principles, reducing stress and boosting confidence.",
+      "q": "1.\nChapter 1 - Integers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Concept Reinforcement:\nSolidify your grasp on fundamental symmetry ideas, reinforcing them through targeted questions for a stronger foundation.",
+      "q": "2.\nChapter 2 - Fractions and Decimals Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Time Mastery:\nLearn effective time management by practicing questions that mirror exam scenarios, preparing you to tackle symmetry challenges efficiently.",
+      "q": "3.\nChapter 3 - Data Handling Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Self-Assessment:\nEvaluate your progress with questions designed for self-assessment, empowering you to track your growth and become a symmetry master.",
+      "q": "4.\nChapter 4 - Simple Equations Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "6. Strategic Scoring:\nAdopt a smart approach to scoring higher by focusing on crucial symmetry topics, turning each question into a stepping stone towards excellence.",
+      "q": "5.\nChapter 5 - Lines and Angles Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "7. Comprehensive Understanding:\nExplore a diverse range of symmetry topics, ensuring you comprehend the intricacies and beauty of symmetrical patterns thoroughly.",
+      "q": "6.\nChapter 6 - The Triangle and Its Properties Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "8. Confidence-Boosting Preparation:\nEquip yourself for exam success as these questions act as reliable companions, supporting your journey to mastering symmetry with confidence.\nConclusion\nReviewing all the crucial questions for Class 7 Maths Chapter 12 - Symmetry provides students with a solid grasp of the chapter's topics. The extra and important questions for Class 7 Maths Chapter 12 - Symmetry engage in a concept-focused discussion, encompassing all chapter themes. This question-and-answer method proves time-saving during exam prep, offering an efficient way to revise the chapter and enhance understanding. Practicing these important questions streamlines preparation and boosts confidence for the upcoming exams.\nRelated Study Materials for Class 7 Maths Chapter 12 Symmetry\nS.No.\nStudy Materials for Maths Chapter 12 Class 7",
+      "q": "7.\nChapter 7 - Comparing Quantities Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nClass 7 Maths - Symmetry NCERT Solutions",
+      "q": "8.\nChapter 8 - Rational Numbers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 7 Maths - Symmetry Notes\nChapter-wise Important Questions Links for Class 7 Maths\nS.No.\nImportant Questions Links for Class 7 Maths",
+      "q": "9.\nChapter 9 - Perimeter and Area Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nChapter 1 - Integers Questions",
+      "q": "10.\nChapter 10 - Algebraic Expressions Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nChapter 2 - Fractions and Decimals Questions",
+      "q": "11.\nChapter 11 - Exponents and Powers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nChapter 3 - Data Handling Questions",
+      "q": "12.\nChapter 13 - Visualising Solid Shapes Solutions\nImportant Related Links for NCERT Class 7 Maths\nAccess these essential links for NCERT Class 7 Maths, offering comprehensive solutions, study guides, and additional resources to help students master language concepts and excel in their exams.\nS.No\nOther CBSE Study Materials for Class 7 Maths\n1\nCBSE Class 7 Maths Revision Notes\n2\nCBSE Syllabus for Class 7 Maths\n3\nCBSE Class 7 Maths Important Questions\n4\nCBSE Class 7 Maths Sample Papers\n5\nNCERT Books for Class 7 Maths",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nChapter 5 - Lines and Angles Questions",
+      "q": "6.\nRS Aggarwal Class 7 Solutions for Math book",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nChapter 6 - The Triangle and Its Properties Questions",
+      "q": "7.\nRD Sharma Class 7 Maths Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 - Comparing Quantities Questions",
+      "q": "8.\nNCERT Class 7 Maths Exemplar Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "8.\nChapter 8 - Rational Numbers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 9 - Perimeter and Area Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10.\nChapter 10 - Algebraic Expressions Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 11 - Exponents and Powers Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13 - Visualising Solid Shapes Questions\nImportant Study Materials for Class 7 Maths\nS.No.\nStudy Material for Class 5 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 7 Maths NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 7 Maths Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 7 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 7 Maths NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Class 7 Maths Revision Notes",
+      "q": "9.\nNCERT Class 7 Maths Formulas",
       "a": "Detailed solution available."
     }
   ],
   "13": [
     {
-      "q": "1. Find $\\mathbf{{2^8}}$.",
-      "a": "Given: ${2^8}$\nWe need to find the value of the given exponent.\nWe can rewrite ${2^8}$ to find its value as\n${2^8} = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\n${2^8} = 256$"
+      "q": "1. Identify the nets which can be used to make cubes (cut out copies of the nets and try it):",
+      "a": "To make a perfect cube we needed six planes and 8 corners. Although in this given image there are six plane presents. But when it is joined to make a cube one plane will overlap with another one plane. Thus, it can not be a perfect cube.\nTo make a perfect cube we needed six planes and 8 corners. Although in this given image there are six plane presents. Through these six planes one can easily make a perfect cube. No plane will overlap upon one another.\nTo make a perfect cube we needed six planes and 8 corners. Although in this given image there are six plane presents. Through these six planes one can easily make a perfect cube. No plane will overlap upon one another.\nTo make a perfect cube we needed six planes and 8 corners. Although in this given image there are six plane presents. Through these six planes one can easily make a perfect cube. No plane will overlap upon one another.\nTo make a perfect cube we needed six planes and 8 corners. Although in this given image there are six plane presents. But when it is joined to make a cube one plane will overlap with another one plane. Thus, it cannot be a perfect cube.\nTo make a perfect cube we needed six planes and 8 corners. Although in this given image there are six plane presents. Through these six planes one can easily make a perfect cube. No plane will overlap upon one another.\nThus, the correct option will be option (ii), (iii), (iv) and (vi)."
     },
     {
-      "q": "2. Express the following in exponential form $\\mathbf{2 \\times 2 \\times a \\times a}$.",
-      "a": "Given: $2 \\times 2 \\times a \\times a$\nWe need to write the given expression as an exponential form.\nA number can be written in its exponential form if we raise the power of the number by the exponent.\nTherefore, exponential form of $2 \\times 2 \\times a \\times a$ is\n$2 \\times 2 \\times a \\times a $\n$ = {2^2} \\times {a^2} $\n$ = 4{a^2} $"
+      "q": "2. Dice are cubes with dots on each face. Opposite faces of a die always have a total\nof seven dots on them. Here are two nets to make dice (cubes); the numbers inserted in each square indicate the number of dots in that box.\nInsert suitable numbers in the blanks, remembering that the number on the opposite faces should total to 7.",
+      "a": "To make them a perfect cube we should the numbers like,\nFor the second diagram the boxes should be named as,"
     },
     {
-      "q": "3. Find $\\mathbf{{( - 4)^3}}$.",
-      "a": "Given: ${( - 4)^3}$\nWe need to find the value of a given exponent.\nWe can rewrite ${( - 4)^3}$ to find its value as\n${( - 4)^3} =\u00a0 - 4 \\times\u00a0 - 4 \\times\u00a0 - 4 $\n${( - 4)^3} =\u00a0 - 64 $\n4. $\\mathbf{{a^m} \\times {a^n}}$=_______?\nAns:\nGiven: ${a^m} \\times {a^n}$\nWe need to fill in the blanks.\nTherefore, ${a^m} \\times {a^n}$$ = \\underline {{a^{m + n}}} $\n5. $\\mathbf{{a^0} = \\_\\_\\_\\_\\_?}$\nAns:\nGiven: ${a^0}$\nWe need to find the value of a given expression.\nWe know that if $0$ is the power of any number then the value of the number is always $1.$\nTherefore, ${a^0} = \\underline {1.} $\nShort Answer Questions\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 2 Mark"
+      "q": "3. Can this be a net for a die? Explain your answer",
+      "a": "No. Because one pair of opposite faces will have\n$1$\nand\n$4$\non them and another pair of opposite faces will have\n$6$\nand\n$3$\non them whose total is not equal to\n$7$\n."
     },
     {
-      "q": "6. Express 16807 in exponential form.",
-      "a": "Given: $16807$\nWe need to express the given number in exponential form.\nExponential form is a way to represent a number in repeated multiplications of the same number.\nSo, we can write $16807$ as\n$16807 = 7 \\times 7 \\times 7 \\times 7 \\times 7 $\n$16807 = {7^5} $"
+      "q": "4. Here is an incomplete net for making a cube. Complete it in at least two different ways. Remember that a cube has six faces. How many faces are there on the net here? (Give two separate diagrams. If you like, you may use a squared sheet for easy manipulation.)",
+      "a": "There three faces are given:\nAnother way is"
     },
     {
-      "q": "7. Identify which is greater $\\mathbf{{2^7}{\\text{ or }}{7^2}}$.",
-      "a": "Given: exponents ${2^7},{7^2}$\nWe need to find which exponent is greater.\nWe will find the value of each exponent and then compare it.\nWe can write the exponents as\n${2^7} = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 $\n${2^7} = 128 $\n${7^2} = 7 \\times 7 $\n${7^2} = 49 $\nClearly, we can see that\n${2^7} > {7^2}$"
+      "q": "5. Match the nets with appropriate solids:",
+      "a": "To match the shapes with their nets one should have to check the shape of the solid and the number of planes. As the cube has six planes thus its net will be\n$$\\left( {ii} \\right)$$\nAgain,the cylinder shape has one rectangle plane with two circles thus its net will be\n$$\\left( {iii} \\right)$$\n. For the tent shape one should have one triangular plane with a circle plane. Thus, its net will be\n$$\\left( {iv} \\right)$$\n. And we know the pyramid has four triangular planes with a square. Thus, its net will be, option\n$$\\left( i \\right)$$\n.\nThus, the overall answer will be,\nNCERT Solutions for Class 7 Maths Chapter 13 Visualising Solid Shapes Exercise 13.1\nOpting for the NCERT solutions for Ex 13.1 Class 7 Maths is considered as the best option for the CBSE students when it comes to exam preparation. This chapter consists of many exercises. Out of which we have provided the Exercise 13.1 Class 7 Maths NCERT solutions on this page in PDF format. You can download this solution as per your convenience or you can study it directly from our website/ app online.\nVedantu in-house subject matter experts have solved the problems/ questions from the exercise with the utmost care and by following all the guidelines by CBSE. Class 7 students who are thorough with all the concepts from the Subject Visualising Solid Shapes textbook and quite well-versed with all the problems from the exercises given in it, then any student can easily score the highest possible marks in the final exam. With the help of this Class 7 Maths Chapter 13 Exercise 13.1 solutions, students can easily understand the pattern of questions that can be asked in the exam from this chapter and also learn the marks weightage of the chapter. So that they can prepare themselves accordingly for the final exam.\nBesides these NCERT solutions for Class 7 Maths Chapter 13 Exercise 13.1, there are plenty of exercises in this chapter which contain innumerable questions as well. All these questions are solved/answered by our in-house subject experts as mentioned earlier. Hence all of these are bound to be of superior quality and anyone can refer to these during the time of exam preparation. In order to score the best possible marks in the class, it is really important to understand all the concepts of the textbooks and solve the problems from the exercises given next to it.\nDo not delay any more. Download the NCERT solutions for Class 7 Maths Chapter 13 Exercise 13.1 from Vedantu website now for better exam preparation. If you have the Vedantu app in your phone, you can download the same through the app as well. The best part of these solutions is these can be accessed both online and offline as well.\nClass 7 Maths Chapter 13: Exercises Breakdown\nExercises\nNumber of Questions\nExercise 13.2\n5 Questions & Solutions\nExercise 13.3\n1 Questions & Solutions\nExercise 13.4\n3 Questions & Solutions\nCBSE Class 7 Maths Chapter 13 Other Study Materials\nS. No\nImportant Links for Chapter 13 Visualising Solid Shapes\n1\nClass 7 Visualising Solid Shapes Important Questions\n2\nClass 7 Visualising Solid Shapes Revision Notes\n3\nClass 7 Visualising Solid Shapes RD Sharma Solutions\nChapter-Specific NCERT Solutions for Class 7 Maths\nGiven below are the chapter-wise NCERT Solutions for Class 7 Maths. Go through these chapter-wise solutions to be thoroughly familiar with the concepts.\nS.No.\nNCERT Solutions Class 7 Chapter-wise Maths PDF"
     },
     {
-      "q": "8. Simplify $\\mathbf{{7^3} \\times {2^5}}$.",
-      "a": "Given: ${7^3} \\times {2^5}$\nWe need to simplify the given exponential expression.\nWe can simplify the given expression as\n${7^3} \\times {2^5} = 7 \\times 7 \\times 7 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2$\n${7^3} = 343 \\times 32 $\n${7^3} = 10976 $"
-    },
-    {
-      "q": "9. Write 1024 as a power of 2.",
-      "a": "Given: $1024$\nWe need to write the given expression as power of $2$\nBreak $1024$ in factors of 2 and write as exponents.\nTherefore, $1024$ as power of $2$ will be written as\n$1024 = 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 \\times 2 $\n$\\Rightarrow 1024 = {2^{10}} $"
-    },
-    {
-      "q": "10. Using laws, find the value of $\\mathbf{\\left( {{3^{15}} \\div {3^{10}}} \\right) \\times {3^2}}$.",
-      "a": "Given: $\\left( {{3^{15}} \\div {3^{10}}} \\right) \\times {3^2}$\nWe need to find the value of a given expression using laws.\nWe know that\n$\\dfrac{{{a^m}}}{{{a^n}}} = {a^{m - n}} $\n${a^m} \\times {a^n} = {a^{m + n}} $\nUsing these laws, the value of $\\left( {{3^{15}} \\div {3^{10}}} \\right) \\times {3^2}$ will be\n$= \\left( {{3^{15}} \\div {3^{10}}} \\right) \\times {3^2} $\n$= \\dfrac{{{3^{15}}}}{{{3^{10}}}} \\times {3^2} $\n$= {3^{15 - 10}} \\times {3^2} $\n$= {3^5} \\times {3^2} $\n$= {3^{5 + 2}} $\n$= {3^7} $\n$= 2187 $"
-    },
-    {
-      "q": "11. Find $\\mathbf{8 \\times {10^5} + 0 \\times {10^4} + 3 \\times {10^3} + 2 \\times {10^2} + 0 \\times {10^1} + 5 \\times {10^0}}$.",
-      "a": "Given: $8 \\times {10^5} + 0 \\times {10^4} + 3 \\times {10^3} + 2 \\times {10^2} + 0 \\times {10^1} + 5 \\times {10^0}$\nWe need to find the value of the given expression.\nWe will solve the given exponents and then add them.\nTherefore, the value of $8 \\times {10^5} + 0 \\times {10^4} + 3 \\times {10^3} + 2 \\times {10^2} + 0 \\times {10^1} + 5 \\times {10^0}$ will be\n$= 8 \\times 100000 + 0000 + 3 \\times 1000 + 2 \\times 100 + 00 + 5 \\times 1 $\n$= 800000 + 0 + 3000 + 200 + 0 + 5 $\n$= 803205 $"
-    },
-    {
-      "q": "12. Say True or False and Justify.\n$\\mathbf{{5^2} > {4^3}}$",
-      "a": "Given: ${5^2} > {4^3}$\nWe need to find if the given expression is true or false.\nWe will solve the exponents and then compare them.\n${5^2} = 25 $\n${4^3} = 64 $\n$25 < 64 $\n$\\Rightarrow {5^2} < {4^3} $\nTherefore, the expression is False.\n$\\mathbf{{5^0} = {343^0}}$\nAns:\nGiven: ${5^0} = {343^0}$\nWe need to find if the given expression is true or false.\nWe will solve the exponents and then compare them.\n${5^0} = 1 $\n${343^0} = 1 $\n$\\therefore {5^0} = {343^0} $\nTherefore, the expression is true."
-    },
-    {
-      "q": "13. Find the value of $\\mathbf{\\left( {{3^0} + {2^0}} \\right) \\times {5^1}}$.",
-      "a": "Given: $\\left( {{3^0} + {2^0}} \\right) \\times {5^1}$\nWe need to find the value of a given expression.\nWe know that ${a^0} = 1$\nTherefore, the value of $\\left( {{3^0} + {2^0}} \\right) \\times {5^1}$ will be\n$= \\left( {{3^0} + {2^0}} \\right) \\times {5^1} $\n$= (1 + 1) \\times 5 $\n$= 2 \\times 5 $\n$= 10 $"
-    },
-    {
-      "q": "14. Find $\\mathbf{\\left( {\\dfrac{{{a^6}}}{{{a^4}}}} \\right) \\times {a^{ - 2}} \\times {a^0}}$.",
-      "a": "Given: $\\left( {\\dfrac{{{a^6}}}{{{a^4}}}} \\right) \\times {a^{ - 2}} \\times {a^0}$\nWe need to find the value of the given expression.\nWe know that\n$\\dfrac{{{a^m}}}{{{a^n}}} = {a^{m - n}} $\n${a^m} \\times {a^n} = {a^{m + n}} $\n${a^0} = 1 $\nTherefore, $\\left( {\\dfrac{{{a^6}}}{{{a^4}}}} \\right) \\times {a^{ - 2}} \\times {a^0}$ will be\n$= \\left( {{a^{6 - 4}}} \\right) \\times {a^{ - 2}} \\times {a^0} $\n$= {a^2} \\times {a^{ - 2}} \\times 1 $\n$= {a^{2 + ( - 2)}} $\n$= {a^0} $\n$= 1 $"
-    },
-    {
-      "q": "15. Find $\\mathbf{{27^p} \\div {27^2}}$.",
-      "a": "Given: ${27^p} \\div {27^2}$\nWe need to find the given expression.\nWe know that\n$\\frac{{{a}^{m}}}{{{a}^{n}}}={{a}^{m-n}}$\nTherefore, ${27^p} \\div {27^2}$ will be\n$= {\\left( {{3^3}} \\right)^p} \\div {\\left( {{3^3}} \\right)^2} $\n$= \\dfrac{{{3^{3p}}}}{{{3^6}}} $\n$= {3^{3p - 6}} $\n$= {3^{3(p - 2)}} $\nShort Answer Questions\u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 2 Mark"
-    },
-    {
-      "q": "16. Express each of the following as product of prime factor\n$\\mathbf{702}$",
-      "a": "We need to express the given expression as product of prime factor\nExponential form is a way to represent a number in repeated multiplications of the same number.\nTherefore, $702$ can be written as a product of prime factors as\n$702 = 2 \\times 3 \\times 3 \\times 3 \\times 13 $\n$= {2^1} \\times {3^3} \\times {13^1} $\n$\\mathbf{33275}$\nAns:\nGiven: $33275$\nWe need to express the given expression as a product of prime factors.\nExponential form is a way to represent a number in repeated multiplications of the same number.\nTherefore, $33275$ can be written as a product of prime factors as\n$33275 = 5 \\times 5 \\times 11 \\times 11 \\times 11 $\n$= {5^2} \\times {11^3} $"
-    },
-    {
-      "q": "17. Using the laws find\n$\\mathbf{\\left( {{{\\left( {{3^3}} \\right)}^2} \\times {3^2}} \\right) \\div {3^7}}$",
-      "a": "Given:\u00a0 $\\left( {{{\\left( {{3^3}} \\right)}^2} \\times {3^2}} \\right) \\div {3^7}$\nWe need to find the value of a given expression using laws.\nWe know that\n$\\dfrac{{{a^m}}}{{{a^n}}} = {a^{m - n}} $\n${a^m} \\times {a^n} = {a^{m + n}} $\nTherefore, the value of $\\left( {{{\\left( {{3^3}} \\right)}^2} \\times {3^2}} \\right) \\div {3^7}$ will be\n$= \\left( {{3^6} \\times {3^2}} \\right) \\div {3^7} $\n$= \\left( {{3^{6 + 2}}} \\right) \\div {3^7} $\n$= {3^8} \\div {3^7} $\n$= {3^{8 - 7}} $\n$= {3^1} $\n$= 3 $\n$\\mathbf{\\dfrac{{{3^6}{a^8}{b^4}}}{{{3^2}{a^2}{b^3}}}}$\nAns:\nGiven:\u00a0 $\\dfrac{{{3^6}{a^8}{b^4}}}{{{3^2}{a^2}{b^3}}}$\nWe need to find the value of a given expression using laws.\nWe know that\n$\\dfrac{{{a^m}}}{{{a^n}}} = {a^{m - n}} $\n${a^m} \\times {a^n} = {a^{m + n}} $\nTherefore, the value of $\\dfrac{{{3^6}{a^8}{b^4}}}{{{3^2}{a^2}{b^3}}}$ will be\n$= \\dfrac{{{3^6}{a^8}{b^4}}}{{{3^2}{a^2}{b^3}}} $\n$= {3^{6 - 2}} \\times {a^{8 - 2}} \\times {b^{4 - 3}} $\n$= {3^4} \\times {a^6} \\times {b^1} $\n$= 81{a^6}{b^1} $"
-    },
-    {
-      "q": "18. Express each of the following as product of prime factors\n$\\mathbf{729 \\times 625}$",
-      "a": "We need to express the given expression as product of prime factor\nExponential form is a way to represent a number in repeated multiplications of the same number.\nTherefore, $729 \\times 625$ can be written as a product of prime factors as\n$729 = 3 \\times 3 \\times 3 \\times 3 \\times 3 \\times 3 $\n$= {3^6} $\n$625 = 5 \\times 5 \\times 5 \\times 5 $\n$= {5^4} $\n$\\therefore 729 \\times 625 = {3^6} \\times {5^4} $\n$\\mathbf{1024 \\times 216}$\nAns:\nGiven: $1024 \\times 216$\nWe need to express the given expression as a product of prime factors.\nExponential form is a way to represent a number in repeated multiplications of the same number.\nTherefore, $1024 \\times 216$ can be written as a product of prime factors as\n$$\\begin{align} & 1024=2\\times 2\\times 2\\times 2\\times 2\\times 2\\times 2\\times 2\\times 2\\times 2={{2}^{10}} \\\\ & 216=2\\times 2\\times 2\\times 3\\times 3\\times 3={{2}^{3}}\\times {{3}^{3}} \\\\\u00a0 & \\therefore 1024\\times 216={{2}^{10}}\\times \\ {{2}^{3}}\\times {{3}^{3}} \\\\\u00a0 & \\,\\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ ={{2}^{10+3}}\\times {{3}^{3}} \\\\\u00a0 & \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ \\ ={{2}^{13}}\\times {{3}^{3}} \\\\ \\end{align}$$"
-    },
-    {
-      "q": "19. Express the following as standard form\n$\\mathbf{3,68,878}$",
-      "a": "Given: $3,68,878$\nWe need to express the given number as a standard form.\nWe will write the given numbers as a multiple of power of $10.$\nTherefore, the standard form of $3,68,878$ will be\n$= 3.68878 \\times 100000 $\n$= 3.68878 \\times {10^5} $\n$\\mathbf{4,78,25,00,000}$\nAns:\nGiven: $4,78,25,00,000$\nWe need to express the given number as a standard form.\nWe will write the given numbers as a multiple of power of $10.$\nTherefore, the standard form of $4,78,25,00,000$ will be\n$= 4.7825 \\times 1000000000 $\n$= 4.7825 \\times {10^9} $\n$\\mathbf{5706.983}$\nAns:\nGiven: $5706.983$\nWe need to express the given number as a standard form.\nWe will write the given numbers as a multiple of power of $10.$\nTherefore, the standard form of $5706.983$ will be\n$= 5.706983 \\times 1000 $\n$= 5.706983 \\times {10^3} $"
-    },
-    {
-      "q": "20. Find the numbers\n$\\mathbf{8 \\times {10^5} + 2 \\times {10^2} + 4 \\times {10^1}}$",
-      "a": "Given: $8 \\times {10^5} + 2 \\times {10^2} + 4 \\times {10^1}$\nWe need to solve the given expression.\nWe will solve the exponents and then add them.\nTherefore, $8 \\times {10^5} + 2 \\times {10^2} + 4 \\times {10^1}$ will be\n$= 8 \\times 100000 + 0 \\times 0 + 2 \\times 100 + 4 \\times 10 $\n$= 800000 + 0 + 0 + 200 + 40 $\n$= 8,00,240 $\n$\\mathbf{4 \\times {10^4} + 6 \\times {10^3} + 2 \\times {10^2} + 1 \\times {10^0}}$\nAns:\nGiven: $4 \\times {10^4} + 6 \\times {10^3} + 2 \\times {10^2} + 1 \\times {10^0}$\nWe need to solve the given expression.\nWe will solve the exponents and then add them.\nTherefore, $4 \\times {10^4} + 6 \\times {10^3} + 2 \\times {10^2} + 1 \\times {10^0}$ will be\n$= 4 \\times 10000 + 6 \\times 1000 + 2 \\times 100 + 1 \\times 1 $\n$= 40000 + 6000 + 200 + 1 $\n$= 46,201 $\n$\\mathbf{5 \\times {10^4} + 7 \\times {10^2} + 5 \\times {10^0}}$\nAns:\nGiven: $5 \\times {10^4} + 7 \\times {10^2} + 5 \\times {10^0}$\nWe need to solve the given expression.\nWe will solve the exponents and then add them.\nTherefore, $5 \\times {10^4} + 7 \\times {10^2} + 5 \\times {10^0}$ will be\n$= 5 \\times 10000 + 7 \\times 100 + 5 \\times 1 $\n$= 50000 + 700 + 5 $\n$= 50,705 $\nDefinition of Exponent\nThe exponent tells us how many times a number should be multiplied by itself to get the desired result. Thus any number (suppose a) raised to power \u2018n\u2019 can be expressed as:\na$$^{n}$$ = a x a x a x a x a x a\u2026. x a(n times)\nHere a can be any number and n is the natural number.\na$$^{n}$$ is also called the n$$^{th}$$ power of a.\nIn this \u2018a\u2019 is the base and \u2018n\u2019 is the exponent or index or power.\n\u2018a\u2019 is multiplied \u2018n\u2019 times, It is a method of repeated multiplication.\na$$^{m}$$ . a$$^{n}$$ = a$$^{(m+n)}$$\n(a$$^{m}$$)$$^{n}$$ = a$$^{mn}$$\n(ab)$$^{n}$$ = a$$^{n}$$b$$^{n}$$\n($$\\frac{a}{b}$$)$$^{n}$$ = $$\\frac{a^{n}}{b^{n}}$$\n$$\\frac{a^{m}}{a^{n}}$$ = a$$^{m-n}$$\n$$\\frac{a^{m}}{a^{n}}$$ = $$\\frac{1}{a^{n-m}}$$\na$$^{0}$$ = 1\nMultiplying Powers With the Same Base\nWhen the bases are the same then we add the exponents.\na$$^{m}$$ x a$$^{n}$$ = a$$^{(m+n)}$$\nIn a similar way, if \u2018a\u2019 is a non-zero integer or a non-zero rational number and m and n are positive integers, then\na$$^{m}$$ x a$$^{n}$$ = a$$^{(m+n)}$$\nSimilarly ($$\\frac{a}{b}$$)$$^{m}$$ x ($$\\frac{a}{b}$$)$$^{n}$$ = ($$\\frac{a}{b}$$)$$^{m+n}$$\nNote:\nExponents can be added only when the bases are the same.\nExponents cannot be added if the bases are not the same.\nDividing Powers with the Same Base\nIn division, if the bases are the same then we need to subtract the exponents.\na$$^{m}$$\u00a0 \u00f7\u00a0 a$$^{n}$$ =\u00a0 $$\\frac{a^{m}}{a^{n}}$$ = a$$^{m-n}$$\nWhere m and n are whole number and m<n;\nWe can generalize that if a is a non-zero integer or q non-zero rational number and m and n are positive integers, such that m<n;\na$$^{m}$$\u00a0 \u00f7\u00a0 a$$^{n}$$ = a$$^{m-n}$$ if m<n, then a$$^{m}$$\u00a0 \u00f7\u00a0 a$$^{n}$$ = $$\\frac{1}{a^{(n-m)}}$$\nSimilarly, ($$\\frac{a}{b}$$)$$^{m}$$ \u00f7 ($$\\frac{a}{b}$$)$$^{n}$$ = ($$\\frac{a}{b}$$)$$^{m-n}$$\nPower of a Power\nIn the power of a power you need multiply the powers\nIn general, for any non-integer a (a$$^{m}$$)$$^{n}$$ = a$$^{m \\times n}$$ = a$$^{mn}$$\nMultiplying Power with the Same Exponent\nIn general, for any non-zero integer a,b\na$$^{m}$$ x b$$^{m}$$ = (a x b)$$^{m}$$ = (ab)$$^{m}$$\nNegative Exponents\nIf the exponent is negative we need to change it into a positive exponent by writing the same in the denominator and 1 in the numerator.\nIf \u2018a\u2019 is a non-zero integer or a non-zero rational number and m is a positive integer, then a$$^{-m}$$ is the reciprocal of, i.e.,\na$$^{-m}$$ = $$\\frac{1}{a^{m}}$$, if we take a as p/q then\n($$\\frac{p}{q}$$)$$^{-m}$$ = $$\\frac{1}{(\\frac{p}{q})^{m}}$$ = ($$\\frac{q}{p}$$)$$^{m}$$\nAlso, $$\\frac{1}{a^{-m}}$$ = a$$^{m}$$\nSimilarly, ($$\\frac{a}{b}$$)$$^{-m}$$ = ($$\\frac{b}{a}$$)$$^{m}$$, where n is a positive integer\nPower with Exponent Zero\nIf the exponent is 0 then you get the result 1 whatever the base is.\nIf \u2018a\u2019 is a non-zero integer or a non-zero rational number then,\na$$^{0}$$ = 1\nSimilarly, ($$\\frac{a}{b}$$)$$^{0}$$ = 1\nFractional Exponent\nIn fractional exponent, we observe that the exponent is in fraction form.\na$$^{\\frac{1}{n}}$$, where a is called the base and 1/n is called an exponent or power. It is denoted as $$\\sqrt[n]{a}$$ is called as the nth root of a.\nSome Rules to Remember While Calculating the Power of a Number\nRule 1:\nAny number to the zero power is equal to 1.\nRule 2:\nAny number to the first power is equal to the number itself.\nRule 3:\nIf the base to which we are calculating power is negative, then odd power results in negative values and even power results in positive values.\nFor example:\n(-4)$$^{3}$$= -64\n4$$^{2}$$ = 16\nRule 4: The exponent comes before the multiplication in the order of operations. We can add in the parentheses if it helps us to solve the question.\nFor example:\n(2 x 3)$$^{2}$$ = 6$$^{2}$$ = 36\n2 x 3$$^{2}$$ = 2 x 9 = 18\nThe sequence formed by powers of a number (exponent starting from 0 and having integral values) is a geometric progression with a first-term equal to 1 and common ratio being equal to the base.\nLook at the pattern below:\n2$$^{0}$$ = 1\n2$$^{1}$$ = 2\n2$$^{2}$$ = 2 x 2 = 4\n2$$^{3}$$ = 2 x 2 x 2 = 8\n2$$^{4}$$ = 2 x 2 x 2 x 2 = 16\n2$$^{5}$$ = 2 x 2 x 2 x 2 x 2 = 32\nA common mistake is to multiply the base and exponent together, which is not the correct way to calculate the power of a number.\nFor example:\n4$$^{3}$$ = 4 x 3 = 12 (Wrong)\n4$$^{3}$$ = 4 x 4 x 4 = 64 (Right)\nWhy are the Important Questions from Vedantu Useful for Class 7 Maths Chapter 13 - Exponents and Powers?\nEmbark on a learning journey with Vedantu's Essential Questions for Class 7 Maths Chapter 13 - Exponents and Powers. These unique questions serve as friendly guides, empowering you to approach mathematics with confidence!"
-    },
-    {
-      "q": "1. Focused Topics:\nTackle important concepts like \"Power Patterns\" and \"Squaring Shortcuts\" efficiently, making studying a breeze.",
+      "q": "1.\nChapter 1 - Integers Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Exam Readiness:\nFeel confident and reduce exam worries by practicing questions aligned with what you'll face in your upcoming test.",
+      "q": "2.\nChapter 2 - Fractions and Decimals Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Concept Reinforcement:\nSolidify your understanding of fundamental ideas like \"Powers of 10\" through targeted questions that reinforce what you've learned.",
+      "q": "3.\nChapter 3 - Data Handling Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Time Mastery:\nLearn to manage your time wisely by practicing with questions that mirror the ones you'll find in your exam.",
+      "q": "4.\nChapter 4 - Simple Equations Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Self-Assessment:\nTrack your progress and discover your strengths with questions designed for self-evaluation, helping you become a maths master.",
+      "q": "5.\nChapter 5 - Lines and Angles Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "6. Strategic Scoring:\nFollow a smart approach for higher scores by focusing on crucial topics such as \"Negative Ninja Rule\" and \"Cubing Clue.\"",
+      "q": "6.\nChapter 6 - The Triangle and Its Properties Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "7. Comprehensive Coverage:\nExplore a wide array of topics, from \"Zero Power Zen\" to \"Product Power,\" ensuring you understand every aspect of Exponents and Powers.",
+      "q": "7.\nChapter 7 - Comparing Quantities Solutions",
       "a": "Detailed solution available."
     },
     {
-      "q": "8. Confidence Booster:\nGain confidence for your exam, as these questions are like a secret weapon, preparing you for success in your maths journey.\nConclusion\nExponents play a crucial role in algebra, simplifying repeated multiplication. The exponent indicates how many times a number multiplies itself. It's important to note that any number to the power of 0 equals 1. When expressing with exponents, attention to negative signs and parentheses is vital. Exponents come in four types: positive, negative, zero, and rational/fraction. To delve deeper into this chapter, access the Class 7 Maths Chapter 13 extra questions PDF on Vedantu\u2019s website or app. This resource enhances understanding and consolidates knowledge about exponents in a user-friendly format.",
+      "q": "8.\nChapter 8 - Rational Numbers Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "9.\nChapter 9 - Perimeter and Area Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "10.\nChapter 10 - Algebraic Expressions Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "11.\nChapter 11 - Exponents and Powers Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "12.\nChapter 12 - Symmetry Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "13.\nChapter 13 - Visualising Solid Shapes Solutions\nImportant Related Links for NCERT Class 7 Maths\nAccess these essential links for NCERT Class 7 Maths, offering comprehensive solutions, study guides, and additional resources to help students master language concepts and excel in their exams.\nS.No\nOther CBSE Study Materials for Class 7 Maths\n1\nCBSE Class 7 Maths Revision Notes\n2\nCBSE Syllabus for Class 7 Maths\n3\nCBSE Class 7 Maths Important Questions\n4\nCBSE Class 7 Maths Sample Papers\n5\nNCERT Books for Class 7 Maths",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6.\nRS Aggarwal Class 7 Solutions for Math book",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7.\nRD Sharma Class 7 Maths Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "8.\nNCERT Class 7 Maths Exemplar Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "9.\nNCERT Class 7 Maths Formulas",
       "a": "Detailed solution available."
     }
-  ],
-  "14": [],
-  "18": [],
-  "19": []
+  ]
 };

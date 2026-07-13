@@ -1,139 +1,179 @@
 export default {
   "1": [
     {
-      "q": "1. When was the first census data collected during British India?\na) 1882\nb) 1881\nc) 1981\nd) 1985",
-      "a": "(c) 1881"
+      "q": "1. What was the focus of the economic policies pursued by the colonial government in India? What were the impacts of these policies?",
+      "a": "The main aim of the economic policies adopted by the colonial government was to make India just a supplier to Britain\u2019s flourishing industries. The policies were made to benefit and strengthen their own country. They completely ignored the interests of the Indian economy. These discriminatory policies made the Indian economy a supplier to British economy and consumer of finished goods of British economy. The effects of these policies are given below:"
     },
     {
-      "q": "2. What is Muslin?",
-      "a": "Muslin is a high-quality cotton fabric that is widely available nowadays. Malmal is the finest form of muslin and is claimed to be the purest fabric in the world. The name 'Muslin' is claimed to have originated in the British Indian port town of 'Maisolos\u2019. People in Dhaka (now in Bangladesh) used to hand-weave it from fine hand-spun yarn."
-    },
-    {
-      "q": "3. What is commercialisation of agriculture and when did it begin?",
-      "a": "Commercialisation of agriculture is an occurrence in which agriculture is governed by commercial reflection. In general, certain essential crops began to be grown for sale in national and international markets rather than for consumption in the village. Commercialization of agriculture in India began under British rule."
-    },
-    {
-      "q": "4. What was the life expectancy during British India and what is it today?",
-      "a": "According to government statistics, the average life expectancy in British India was 32 years. It has now been 69.27 years."
-    },
-    {
-      "q": "5. What was the importance of the Suez Canal during British India?",
-      "a": "The Suez Canal, which opened in 1869, drastically reduced the cost of goods transportation between Britain and India."
-    },
-    {
-      "q": "6. What is GDP in economics?",
-      "a": "The Gross Domestic Product deals with the value of economic activity of a country. It is equal to the total expenditures for all final goods and services produced within the country in a stipulated period of time. In 2017, India's Gross Domestic Product (GDP) was valued at 2597.49 billion US dollars. India's GDP accounts for 4.19 percent of the global economy."
-    },
-    {
-      "q": "7. When were Railways introduced in India?\na) 1830\nb) 1860\nc) 1900\nd) 1853",
-      "a": "(d) The year 1853 marked the beginning of railways in British India."
-    },
-    {
-      "q": "8. Iron and steel industries began coming up in which year?\na) 19th Century\nb) 17th Century\nc) 14th Century\nd) 20th Century",
-      "a": "(d) The 20th Century has seen the beginning of the Iron and steel industries in India."
-    },
-    {
-      "q": "9. What was the infant mortality rate of British India?",
-      "a": "In British India, the infant mortality rate was 218 per thousand, which was fairly high."
-    },
-    {
-      "q": "10. Which are the industries that were adversely affected due to partition of India?",
-      "a": "After partition, the Jute and Textile Industries were the badly affected ones."
-    },
-    {
-      "q": "11. Name some individuals who tried to estimate colonial India\u2019s per capita income.",
-      "a": "Findlay Shirras, Dadabhai Naoroji, William Digby, V.K.R.V. Rao, and R.C. Desai were among those who attempted to estimate such figures. Despite the inconsistencies in the results, V.K.R.V. Rao's estimates are considered accurate."
-    },
-    {
-      "q": "12. What were the motives behind deindustrialization by Britishers in India?",
-      "a": "The two primary motives behind deindustrialization where to obtain superior quality raw materials at an extremely modest rate from India and to sell machine-made imported western goods at an exceptionally high rate in the Indian market."
-    },
-    {
-      "q": "13. What is export surplus?",
-      "a": "The amount of goods and services that a country exports that are in excess quantity as compared to that of the amount of goods and services with it imports from outside its geographical boundaries is called an export surplus."
-    },
-    {
-      "q": "14. How did export surplus lead to economic drain of wealth during colonial rule?",
-      "a": "In a sense, whatever surplus India procured through excess exports, was redirected to colonial Britain under different expenses, for example, military payment, \"home charges\", interest payments or remittances of British residents and officials in India to Britain."
-    },
-    {
-      "q": "15. What percentage of labour were employed in the manufacturing and service sector in pre independent India?",
-      "a": "In pre-independence India, manufacturing employed 10% of the workforce, while the service sector employed 18%.\nShort Answer Questions \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 (3 or 4 Marks)"
-    },
-    {
-      "q": "16. What was the motive behind the deindustrialization by the colonial Govt. in India?\nor\nWhat was the two-fold motive behind the systematic deindustrialization affected by the British in pre-independent India?",
-      "a": "The two-fold motive behind the British systematic deindustrialization is as follows.\n(i) Making India a Raw Materials Supplier:\nThe fundamental rationale was to convert India to a simple exporter of significant raw materials in order to feed Britain's quickly growing industrial base.\n(ii) Developing India as a Finished Goods Market:\nOne more significant goal of the British Government was to transform India into a rambling market for those industries' final products ensuring that they could be guaranteed for the British industries."
-    },
-    {
-      "q": "17. How did the introduction of the railway system change the Indian Economy?\nor\nDiscuss the changes railways brought to India?",
-      "a": "The notion of bringing railways to India was first proposed in the 1830s. They proposed building a railway to connect the three ports of Bombay, Calcutta, and Madras. People were able to travel large distances, which helped India break down geographical and cultural barriers. It helped to commercialise Indian agriculture, which had a negative impact on our villages' self-sufficiency. The volume of our\u00a0trade\u00a0grew, yet our people did not benefit from the earnings."
-    },
-    {
-      "q": "18. What do you mean by economic drain during British India?\nor\nWho has contested the theory of drain of wealth from India?\nor\nWhat do you understand about the drain of Indian wealth during the colonial period?",
-      "a": "In the nineteenth century, Dadabhai Naoroji proposed the 'Drain of Wealth' idea. The exploitation of Indian resources was a hallmark of the colonial period. Britain's principal motivation for conquering India was to gain control of a reliable source of low-cost raw materials to support its own industrial base in the country. Indian money, on the other hand, was spent on expensive finished products imported from Britain, making Britain richer at India's expense. In addition, the British government employed India's manpower to expand its colonial base outside of the country. Indians were paid less in the British army than their British equivalents. The money collected from Indiana and the export surplus generated through India's overseas trade were also used to cover the costs of war and administrative expenses incurred by the British government to manage the colonial administration in India. As a result, British rule plundered Indian resources to serve their own interests."
-    },
-    {
-      "q": "19. How were traditional handicraft industries ruined under British rule in India?\nor\nThe traditional handicrafts industries were ruined under British rule. Do you agree with this view? Give reasons in support of your answer.\nor\nHow British rule ruined the life of artisans and craftsmen in India?",
-      "a": "British economic policies devastated India's handicrafts and cottage industries, which were formerly the principal sources of trade and income. The British damaged the cotton weaving and spinning industries, as well as the silk and woollen industries, as well as the pottery, paper, metal, and tanner businesses. The British followed the policy of de-industrialization to demolish Indian craftsmanship industries for their own advantage. They changed India to a simple exporter of crude materials for the forthcoming present-day businesses in Britain. The East India Company's free-trade stance aided them in dictating trade conditions. They also forced Indian artisans to sell their wares at below-market prices, and they hired their services at pay well below the going rate. Indian commodities were subjected to hefty tariffs in the English market, whereas British goods were granted duty-free access to Indian markets. They exploited India in this way, resulting in the demise of world-renowned Indian handicrafts."
-    },
-    {
-      "q": "20. How was the foreign trade in the colonial period?\nor\nDiscuss the state of foreign trade during the British period\nor\nWrite a short note on the colonization effect on foreign trade of India.",
-      "a": "India's part of the global economy was roughly 20% at the beginning of the nineteenth century, and it was constantly increasing. The British had diminished India's contribution to roughly 4% by the time they left. As a result, colonial rule crippled foreign trade to a considerable extent. India's produced goods had a global market prior to colonisation. Some examples include Kashmir and Amritsar shawls and carpets, Banarasi silk sarees, and Nagpur silk textiles. The British intended to divert this vast volume of trade to their own advantage. With the support of restrictive commodities production, trade, and tariff policies during the British era, India's external trade with the rest of the world was effectively cut off. Half of all international trade was confined to the United Kingdom. With the inauguration of the Suez Canal, British control over Indian international trade became much tighter. As a result of the oversupply, there was no flow of gold or silver. Such atrocities finally led to the emergence of India's developing foreign trade sector.\nLong Answer Questions \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 \u00a0 (5 or 6 Marks)"
-    },
-    {
-      "q": "21. Why is the impact of British rule highly debated among historians?\nor\nWas British colonialism good or bad for India?\nor\nWhat were the benefits of British rule in India?",
-      "a": "The British Empire's dominance in India is conceivably the most questionable and the most fervently discussed part of the historical backdrop of the British Empire.\u00a0 Most critics of British rule point out that all of these gains went to a small British ruling class, while the rest of the Indians benefited little. Most Indians were poor and oppressed by their own leaders before the British arrived, and British control was less harsh on ordinary Indians than rule by Indian kings, according to supporters of British rule.\nFollowing are some of the benefits of the British rule in India:"
-    },
-    {
-      "q": "1. Education System:\nPeople in India are divided because of the various languages spoken in different parts of the country. The British, on the other hand, made English compulsory in the educational system throughout the country in order to recruit clerical personnel among Indians. They were able to lower their administrative costs as a result of this. They also felt that Indians who were taught through their system would eventually adopt their beliefs. This, on the other hand, benefited the Indians in a completely different way. Communication in India was facilitated by the use of a common language. Indians gained a greater understanding of the world, society, and systems. Overall, it has aided in the modernization of the Indian people.",
+      "q": "1. Low Economic Development\nDuring British rule, there was a very little economic development. This was because the British government was more focused on the promotion of their own economic interest. Consequently, the colonial rule converted India's agriculture sector into a supplier of raw materials for the British industrial base. This affected the production of the agricultural sector of India. It also destroyed the small manufacturing industries such as handicrafts and cotton industries. These manufacturing units suffered a cut throat competition from the British machine made textiles and handlooms.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Transportation:\nPrior to the arrival of the British, the only mode of transportation in India was bullock carts and other animals. The British built a vast network of highways and railways to facilitate the movement of raw resources from their source to the ports. The Red Hill Railroad Line in Madras was the first railway line. It was built in 1837 and was used to transport granite stone. In 1853, the first passenger railway line was established between Mumbai and Thane. In the same year, the postal service was also\u00a0established.\n3\n.\nModernisation of the society:\nThe British instilled in India the concepts of liberty, equality, human rights, science, and technology.\u00a0 This, together with a well-structured educational system, opened the path for the country's modernisation that was completely oblivious to the world's modern developments. In 1829, Sati, a ritual in which a widow threw\u00a0herself in her husband's funeral pyre, was outlawed. In 1929, the Sharda Act was passed to prevent child marriage.",
+      "q": "2. Backwardness of Indian Agriculture\nIndia was basically an agricultural economy employing almost of its population in the colonial rule. There was a meagre growth in agriculture sector. It was caused by the presence of various land settlement systems, particularly the Zamindari system. In this system, the zamindars (landowners) had to pay very high revenue (lagaan) to the British government, which they collected from the peasants (landless labourers). The zamindars were focused on extracting high revenues from the peasants but never took any interest in the improvement of the productivity of the land using cheap raw materials. As a result, Indian peasants grew cash crops (e.g., indigo and cotton) in order to feed British industries at the expense of food crops instead of food crops (such as, rice and wheat). This commercialisation of agriculture increased the burden of high revenues on the poor peasants. It also led Indians face shortage of food grains. Hence, Indian agriculture remained backward and primitive.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Architecture:\nThe Britishers left behind an enormous number of public structures glad for their architectural wonders such as The Rashtrapati Bhavan, The Parliament House, Gateway of India and many others. They likewise presented current techniques and methods for development to the country.",
+      "q": "3. Deindustrialisation of Indian Economy\nIndia, during colonial era, was not able to develop a sound and strong industries. The term 'systematic` deindustrialisation' can be used to define the status of industrial sector during the colonial rule. The downfall of India's handicraft industry led to deindustrialisation and the cause of meager growth of modern industry was the lack of investment. Indian handicraft products were taxed heavily by the British government, which permitted free exports to Britain of raw materials and free imports of British products from India. Because of these, the Indian exports became dearer and its demand in the international market fell miserably that led to the decline of Indian handicrafts industries. Simultaneously, the demand for the Indian products fell in the domestic markets as machine made textiles were cheaper than Indian handicrafts. Hence, the domestic industries lacked investment and growth initiatives.",
       "a": "Detailed solution available."
     },
     {
-      "q": "22. Who were Zamindars? What was the Zamindari system in British India?\nor\nWrite a short note on Zamindari system.\nor\nHow was the Zamindari system of land settlement?\nor\nWhat were the various forms of revenue settlement adopted by the British in India? What was the impact of such systems in today\u2019s scenario?",
-      "a": "Lord Cornwallis instituted the Zamindari System in India with the Permanent Settlement Act in 1793. It was first introduced in the Bengal, Bihar, Orissa, and Varanasi provinces of colonial\u00a0India. The zamindars were recognised as landowners as long as they paid the East India Company's revenue on time. The zamindars, who were seen as India's answer to the British nobility, had existed since the post-Mauryan period and grew in prominence throughout the British period. They were found\u00a0practically in\u00a0every state, including Kashmir, Himachal Pradesh, Haryana,\u00a0Punjab, Uttar Pradesh, Rajasthan\u00a0and Gujarat, as well as Madhya Pradesh, Chhattisgarh,\u00a0Karnataka, Hyderabad\u00a0and Kerala. However, over the ages, the land ownership structure had changed. The land was separated into Jagirs and allotted to Jagirdars during the reign of the king. These Jagirdars divided the land they had received and distributed it to subordinate Zamindars. Zamindars forced peasants to cultivate the land in exchange for a portion of their earnings as a levy. The British established their first settlement in Bengal.\nThe three types of land tenure system adopted by the British are as follows:\na. Permanent Settlement/Zamindari System:\nBengal, Bihar, Banaras, and the NWFP divisions accounted for roughly 19% of the total area during British rule.\nb. Mahalwari System:\nDuring British rule, the Mahalwari System covered 30% of the country, including important areas of the NWFP, central provinces, and Punjab.\nc. Ryotwari System:\nAssam, Bombay, and Madras Presidencies covered around 51% of the region under British rule.\nThe following are some of the impacts of the Land Revenue System:"
-    },
-    {
-      "q": "1.\nThese land settlements established a commercial economy and abolished traditional rights. There was an upsurge in money-lending activities as a result of the cash payments of revenue.",
+      "q": "4. Regression in Foreign Trade\nIn the colonial era, the British government had the monopoly over India's foreign trade. According to the British government, the trade policies were based on the government's interests. Until the end of the 19th century, exports and imports were restricted to India and Britain. India's exports provided cheap raw materials for the British industries, and Britain's imports from India provided a untouched market for British goods. In every way, British industries were benefitted. The surplus money generated from the foreign trade was not even invested in the Indian economy. It was used for administrative and war activities by Britain.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nThe land tenure system accentuated socioeconomic divisions. The wealthy had recourse to the courts to defend their assets, whilst the impoverished did not.",
+      "q": "2. Name some notable economists who estimated India's per capita income during the colonial period.",
+      "a": "The British government was never interested in upliftment of people of our country. They didn\u2019t take any initiative to measure India's national and per capita income. There were some attempts by economists of that time to estimate India's per capita income and national income during the colonial rule, but the figures were contradictory. The following are the names of some of the notable economists who were engaged in estimation of national income and per capita income:\na. Dadabhai Naroji\nb. William Digbay\nc. Findlay Shirras\nd. V.K.R.V Rao\ne. R.C. Desai\nAs part of the development process, an essential measurement during the colonial period was made by V.K.R.V Rao. According to these studies, the Indian economy had an average annual growth rate of half a percent in the period 1900-50."
+    },
+    {
+      "q": "3. What were the main causes of India's agricultural stagnation during the colonial period?",
+      "a": "Indian economy during the colonial era remained basically agrarian. About 85 percent of the population who were living mostly in villages derived their livelihood directly or indirectly from agriculture. A very low growth rate was recorded in the agriculture sector. The reasons that explain why there was stagnancy in Indian agriculture sector during the colonial rule are:"
+    },
+    {
+      "q": "1. Introduction of Land Revenue System\nIndia was basically an agricultural economy employing almost of its population in the colonial rule. There was a meagre growth in agriculture sector. This was due to the presence of various systems of Land Settlement, particularly Zamindari system. The zamindars (owners of land) needed to pay very high revenue (lagaan) to the British government, which they collected from the peasants (landless labourers). The zamindars focused on receiving high revenues from the poor landless labourers but never took any interest in the improvement of the productivity of the land with cheap raw materials. This resulted in low agricultural productivity and also degraded the peasants economically.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nThe British land revenue system in India rattled the stability of Indian communities where agriculture and allied activities provided the majority of income. If a crop failed in any given year, they got miserable.",
+      "q": "2. Forceful Commercialisation\nBefore the colonial era, the farmers used to practise conventional subsistence method of farming. They used to grow food crops like rice and wheat for own consumption. Then, in order to provide British industries with cheap raw materials, the Indian farmers were forced to growcommercial crops (like indigo required by British industries to dye textiles) instead of food crops .The result was the commercialization of Indian agriculture. As a result of this commercialization of Indian agriculture, the poor farmers were not only burdened by high investment costs, but they also faced a shortage of food grains, resources, and technology. Therefore, Indian agriculture remained backward and primitive.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nPeasants were forced to produce commercial crops, causing them to pay higher rates for food grains and lower prices for cash crops.",
+      "q": "3. Facilities and resources were lacking for irrigation\nThe Indian agricultural market also encountered shortages of irrigation facilities, inadequate fertilizer use, little investment, and occasional famines and natural disasters, etc. that further exaggerated the agricultural performance and made it more vulnerable.",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nAs a result, a substantial number of estates were put up for auction to settle revenue arrears. Many blamed it on the tenant farmers' \"stupidity and rascality\" in not paying their rents.\nRents were at an all-time high, and it was no surprise. This may be seen in the fact that revenue in 1793 was set at 90% of the rental; by the end of the nineteenth century, rents had climbed to the point that income was just 28% of the rental. This is a measure of the Zamindars' wealth as well as the unfairness meted out to other portions of India where assessments were significantly higher.",
+      "q": "4. Name some modern industries which were in operation in our country at the time of independence.",
+      "a": "In the mid-19th century, modern industries began emerging. At theinitial stage, development was confined to setting up of cotton and jute textile mills. Cotton textile mills were located in Maharashtra and Gujarat in the western part of the country, mainly controlled by Indians, while jute industries were majority British controlled and concentrated in Bengal. Iron and steel industries began to emerge gradually at the beginning of the 20\nth\ncentury. In 1907, India's Tata Iron and Steel Company (TISCO) was formed. In the British era, small businesses also operated in the sugar, cement, and paper industries."
+    },
+    {
+      "q": "5. What was the two-fold motive behind the systematic deindustrialisation affected by the British in pre - independent India?",
+      "a": "There are two major factors contributing to systematic deindustrialisation affected by theBritish:"
+    },
+    {
+      "q": "1. Making India a source of raw materials: The main purpose of the British government was to make India a source of inexpensive raw materials so that its own industrial base could flourish.",
       "a": "Detailed solution available."
     },
     {
-      "q": "23. Enumerate the reasons for the poor growth and productivity of the agricultural sector in the colonial period.\nor\nHow were the conditions of peasants during British rule?\nor\nWhat was the impact of British rule on the agriculture of India?",
-      "a": "The plight of Indian peasants deteriorated steadily under British rule. The Englishmen implemented several land revenue schemes after obtaining the diwani of Bihar, Bengal, and Orissa. The agriculture sector dominated the Indian economy both pre-colonial and during the colonial period. The agriculture industry flourished as well after the British invasion. Previously, India used to export completed commodities and import raw materials. India became a net importer of completed goods and a net exporter of raw materials, primarily to Britain, following changes in agricultural laws that urged farmers to plant specific crops. There was a global agricultural catastrophe following World War I. The British Era is also recognised as a period of agricultural commercial transformation. Cash transactions largely superseded the barter system as the medium of exchange. The main motivation for agricultural commercialization was that India had been relegated to a provider of raw materials and food grains to the United Kingdom, as well as an importer of British manufactured goods. Many cash crops were introduced and spread during this time period, including indigo, cotton, jute, tea, and tobacco.\nThe impact of British rule on Indian agriculture:\nThe British introduced a new class of landowners known as Zamindars, who viewed land as their personal property and sought to maximise monetary gains from it.\nAgriculture production was no longer just for the benefit of the hamlet, and much of it was sold at the market.\nThe cultivators, who were the actual land tillers, were merely tenants with no rights who might be expelled by landlords.\nThe fanner was frequently severely in debt, putting him in the hands of moneylenders who eventually gained control of the land and its harvest.\nIn England, farmers were forced to grow cash crops in order to feed the industries.\u00a0It undermined the village's self-sufficiency.\nThe new revenue arrangements resulted in peasant indebtedness and agricultural commercialization.\nAs a result, there was widespread poverty and an issue of landlessness.\nThe money-lender cum merchant was aided in exploiting the grower by the expanding commercialization. The peasants were required to sell their produce soon after harvest, at whatever price they could get, in order to satisfy the demands of the government, money-lenders and the landlords. The growth in population pressure on agriculture, which disproportionately affected peasants, was added to the previous issues. The goal of agricultural activities switched from self-sufficiency to commercialization, with the goal of increasing colonial revenues. As a result, cash crop yields increased, but this did not benefit farmers in any manner."
-    },
-    {
-      "q": "24. How was the Indian economy before the advent of British colonial rule in India?\nor\nWhat was the condition of India before the Britishers?\nor\nWhat were the real conditions of India before the British arrived?",
-      "a": "India was ruled by the British for more than a century. The British acquired the Empire section by section in the light of the conditions\u00a0prevailing in India prior to the arrival of the British. Weak central political power, competition with European rivals, military forces, and Mughal negligence were the significant reasons that prompted the colonization.\u00a0 In spite of the fact that the British had no political power in India prior to their entry, it took more than two hundred years for British political power to emerge in India. The conditions that existed before to the entrance of the British caused the colonisation of India.\nLet us now consider the following points in relation to pre-colonial India:\n1) Political:\nAt the time, caste was the most important factor, and political power was concentrated in the hands of the upper castes. Village political leaders were Thakurs and Patels.\n2) Economic:\nThe majority of the time, they were exchanging products or services with one another. Gold was also significant at the time. Agriculture and related businesses were the mainstays of the economy.\n3) Social:\nThe social situation was the worst it had ever been, with \u2018untouchability' and caste discrimination at an all-time high. Women were not allowed to participate in social, political, or economic decisions. Only Brahmin men were permitted to attend school, and even Brahmin women were not permitted to attend.\n4) Administration:\nIt was well-managed from an administrative standpoint. There were three administrative levels. The village was the smallest autonomous administrative unit. The judiciary was not good; it was frequently skewed by caste, relative, and gender.\n5)\nMilitary:\nThe majority of it was modelled after the Mughal army. Cavalry played a crucial role in the military. It was methodical and effective.\nIndian Economics Class 11 Chapter 1 Important Questions - Free PDF Download\nImportant questions for a subject are just as important as any other study material for the same. Why do we need important questions? It is because after we\u2019ve finished studying from our textbook material and notes, we need to know how to put this knowledge to use. Indian Economic Development (class 11) important questions are incredibly helpful for students of 11th grade because of a few reasons.\nChapter 1 of the Economics textbook of class 11 is a chapter which is different from what students have learnt previously. The method of teaching class 11 changes drastically from the method of class 10, because class 11 is the precursor to the mighty final class 12. Thus, the important questions of Economics class 11 chapter 1 hold utmost importance, as understanding how questions from the first chapter are to be answered paves the way for clearly understanding the rest of the chapters in the textbook.\nVedantu has drafted PDFs for all the important questions of class 11 Economics, chapter wise for all students that have selected Economics in class 11. Below, there are some of the important questions of Economics class 11 chapter 1 in specific, along with the answers.\nUnderstanding the Important Questions for Class 11 Economics Chapter 1\nVedantu\u2019s important questions for class 11 Economics chapter 1 are comprehensive and useful, as they inculcate all kinds of questions that can come for the exams. There is a mix of the various kinds of questions that come during the exam, which are:\nVery Short Answer Questions\nMultiple choice questions (MCQs) pertaining to which year an incident or event took place, and the answers consist of one to three lines for definitions and simple concepts.\nShort Answer Questions\nThese questions require descriptive answers of about 5-6 lines. They test your understanding of concepts by asking whether you agree with a statement and to justify the same.\nLong Answer Questions\nLong answer questions test your critical thinking skills and require you to write answers of multiple paragraphs, which can even be facilitated with diagrams. You may have to critically analyse, heavily describe and state your opinions for these answers.\nClass 11 Economics Chapter 1 is part of a unit of the Indian Economic Development textbook, this unit is \u201cDevelopment Experience (1947-1990) and Economic Reforms Since 1991\u201d and is the first unit of the textbook.\nEconomics in class 11 is for a total of 100 marks divided into three parts, and these three parts are as follows.\nClass 11 Economics Chapter 1 (Important Questions) Weightage - Table will be updated soon.\nAs you can see by this table, Indian Economic Development counts for 40 marks out of the total Economics paper for class 11. Out of these 40 marks, a total of 12 marks have been put aside specifically for Unit 1 of Indian Economic Development, the unit of which class 11 Economics chapter 1 is the first part.\nBenefits of Class 11 Economics Chapter 1 Important Questions\nThere are several benefits of having the important question of Economics class 11 chapter 1 with you. The following are a few of these benefits:\nImportant questions show a student how to study for an exam appropriate to the kind of questions that can come in an exam.\nThe Vedantu compilation of important questions for class 11 economics chapter 1 are also equipped with the answers for the same.\nThese questions come in a PDF document which can be downloaded.\nThe important questions for class 11 Economics chapter wise are there completely free to use and download.\nThe important questions have been taken from previous years\u2019 question papers for Economics, thus they are accurate.\nImportant questions give you an idea about how you are supposed to study.\nRelated Study Materials for Class 11 Economics (Indian Economic Development) Chapter 1\nS.No\nImportant Other Links for Class 11 Economics (Indian Economic Development) Chapter 1"
-    },
-    {
-      "q": "1.\nCBSE Class 11 Indian Economy on the Eve of Independence Notes",
+      "q": "2. Use of India as a market to export finished goods: Another objective of the British government was to export British manufactured goods to Indian markets.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Indian Economy on the Eve of Independence Solutions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions and Answers cover topics from other chapters, helping students prepare thoroughly by focusing on key topics for easier revision.\nS.No\nChapter-wise Important Questions for Class 11 Economics (Indian Economic Development)\n1\nChapter 2 - Indian Economy 1950-1990 Important Questions\n2\nChapter 3 - Liberalisation, Privatisation and Globalisation: An Appraisal Important Questions\n3\nChapter 4 - Human Capital Formation in India Important Questions\n4\nChapter 5 - Rural Development Important Questions\n5\nChapter 6 - Employment: Growth, Informatisation and Other Issues Important Questions\n6\nChapter 7 - Environment and Sustainable Development Important Questions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Important Questions\nAdditional Study Materials for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics",
+      "q": "6. The traditional handicrafts industries were ruined under the British rule. Do you agree with this view? Give reasons in support of your answer.",
+      "a": "Yes, we agree that the traditional handicrafts industries under British rule were destroyed. The above sentence can be proved by the following points."
+    },
+    {
+      "q": "1. Discrimination in Tariffs:\nIndia's industrialization correlated with the British rule. The British used India as both a source of cheap raw materials as well as an easy market to sell their finished products. Consequently, they imposed high tariffs (export duties) on India's handicraft exports, while allowing free exports of India's raw materials to Britain and free imports of British goods into India. As a result, Indian exports became more expensive. Handicrafts industries collapsed when the international demand for handicrafts collapsed drastically.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Competition from British manufactured products:\nHandicrafts products also suffered a downward trend on the domestic market. This was due to tough competition from the machine made textiles that were manufactured by Britain. It was due to the fact that Britain's mechanically produced goods were comparatively less expensive and of better quality than Indian handicrafts. Indian industries were thus confined to a smaller market.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. An emerging class in India:\nThe British rulers popularized western lifestyles in the country. There was an emergence of a new class of zamindars (majority of who liked British goods) in India. Spending extravagantly on British products provided an impetus for the development of British industries at the cost of destruction of Indian industries. Eventually, Indian industries were extinguished.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Abolition of the princely state:\nPrior to the arrival of the British, India was ruled by princely states. As a result, Indian handicrafts gained reputation on the international market due to their patronage of handicraft industries. As a result, their handicrafts industries were destroyed under the British rule. Hence, Indian handicrafts started to lose its reputation and its importance also got deteriorated.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7. What objectives did the British intend to achieve through their policies of infrastructure development in India?",
+      "a": "Under the British rule, infrastructure development in the country was significant. The British, however, had no other motive than colonial interests in mind when they were developing the infrastructure. Transportation and communication infrastructures were developed. In addition to roads, ports were also constructed for the ease and fast transportation of goods to and from Britain, as well as to facilitate transport of raw materials. Similarly, railways were introduced and developed to transport finished goods from British industries to India's interior. Railways facilitated the expansion of the market for British industries. British administration was made more efficient and effective by post and telegraph. Therefore, infrastructural development was not aimed at the growth and development of the Indian economy, but at serving its own interests. British rulers developed infrastructure in India to have effective control and administration of Indian Territory, to make money through foreign trade, to take advantage of profitable investment and to mobilise the Indian army."
+    },
+    {
+      "q": "8. Critically appraise some of the shortfalls of the industrial policy pursued by the British colonial administration.",
+      "a": "The goal of Britain's industrial policies in India was to make our country a mere supplier of Britain's own thriving industry. The policies were primarily concerned with strengthening and developing their own country. Under British colonial rule, the industrial policy had the following shortcomings:"
+    },
+    {
+      "q": "1. Neglect of Indian Handicraft Sector:\nThe British adopted a discriminatory tariff policy in which they imposed hefty taxes (export duties) on Indian handicraft goods while permitted free export of Indian raw materials to Britain and free import of British finished products from India. This made Indian exports dearer and its international demand fell dramatically that led to the collapse of handicrafts industries. In addition, Indian handicrafts faced a very harsh competition from machine made textiles manufactured in Britain. The emergence of a new section of people who liked the British goods more rather than domestic goods boosted British industries at the cost of destruction of Indian industries. This led to the decline in demand for Indian products and encouraged foreign products.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. A lack of foreign direct investment in Indian industries\n: Indian investors lacked the capital necessary to modernize their industries. On the other hand, British government was not interested and never bothered in investing in Indian industries. British government mainly focused on establishing cotton, jute and coal industries that would benefit their interest. Consequently, due to insufficient investments in the other sectors, Indianindustries was acutely constrained.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Limited operation of the public sector:\nPublic industries were restricted to railways, power generation, post, ports and some other departmental undertakings.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "9. What do you understand by the drain of Indian wealth during the colonial period?",
+      "a": "The nineteenth century was the century of Dadabhai Naroji's 'Drain of Wealth'. Resources from the native peoples were exploited during the colonial era. As a means of sustaining its industrial base in Britain, Britain needed a source of cheap raw materials to conquer India. Moreover, the British government used Indian manpower to spread its colonial influence outside of India. As a result, the British drained Indian wealth to further their own interests."
+    },
+    {
+      "q": "10. Which is regarded as the defining year to mark the demographic transition from its first to the second decisive stage?",
+      "a": "It is considered the defining year or the 'Year of Great Divide' because prior to 1921, India's population growth was erratic.\u00a0India was in the first phase of demographic transition till 1921 that was characterised by high birth rate and high death rate.The period before 1921 was characterized by low survival rates (or low life expectancy), which were nearly 8 per thousand annually. Therefore, the rate of population growth was stagnant. After 1921, population of Indian growth never declined and showed a consistent increment."
+    },
+    {
+      "q": "11. Give a quantitative appraisal of India's demographic profile during the colonial period.",
+      "a": "During the British rule, India's demographic conditions depict our economy as stagnant and backward. There was a high birth rate of 48 per thousand and a high death rate of 40 per thousand. Population growth was stagnant due to high birth and death rates. A very high infant mortality rate of 218 per thousand was also recorded. Approximately 32 years ago, the life expectancy rate was 32, and since then it has increased to 63.5 years. Literacy rates were below 16 percent, which indicates social backwardness and gender discrimination in the economy. According to the above figures, we can infer that India had a low standard of living, a low standard of living and a low rate of survival. India's demographic situation was primarily caused by a lack of health care facilities and a lack of health awareness. The Indian\u2019s standard of living was so lowthat people were not getting basic amenities like food, clothes and shelter. Moreover, some parts of India came under severe famine conditions. The famines were so severe that millions died."
+    },
+    {
+      "q": "12. Highlight the salient features of India's pre-independence occupational structure.",
+      "a": "During the British rule, there was no variation in the distribution of working population between different occupations. The following are the salientfeatures of India's pre-independence occupational structure:"
+    },
+    {
+      "q": "1. Agri business- The India's major industry:\nDuring colonial rule, almost 85% of India's workforce was employed in agriculture. Indians were immersed in extreme poverty during the colonial era, so a lot of them worked in agriculture as a means of subsistence. In contrast, the agriculture sector lacked investment and, thereby, its growth was highly constrained. Thus, in other words, despiteemploying a significant proportion of the population, the growth of agriculture sector wasmeager.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Industry- The Dark Side:\nThe manufacturing sector employed a very small share of the population when compared with agriculture. Manufacturing and industry accounted for almost ten percent of all employment. Indian industries suffered from stiff competition from machine-made cheap goods imported from Britain. Moreover, a lack of investment, initiatives, and an unfavourable tariff structure restricted the industrial sector. Therefore, the industrial sector of India did not make a significant contribution to its GDP.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. An unbalanced growth pattern:\nThe three sectors of the Indian economy, namely agriculture, industry, and tertiary education, were unequally developed. While the agricultural sector was relativelydeveloped, whereas, the other two sectors were at their infant stage. In addition, there wasregional variation in the occupational structure of India. While on the one hand, states likeTamil Nadu, Andhra Pradesh and Bombay experienced a fall in the agricultural work force onthe other hand states like Orissa, Rajasthan and Punjab experienced a rise in the agricultural work force.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "13. Underscore some of the India's most crucial economic challenges at the time of independence.",
+      "a": "Indian economy suffered badly from British colonial rule's exploitative policy. India's economy faced severe challenges when it gained independence as a result.\nIndian economy has faced some tough economic challenges including:"
+    },
+    {
+      "q": "1. A Low Level of Agriculture Productivity:\nThe British used the agricultural sector of India during colonial rule to serve their own interests. Due to these factors, the Indian agricultural sector experienced stagnation, low productivity, a lack of investment, and poor conditions for landless farmers and peasants. India's immediate concern was to improve the country's agricultural sector and\nIndian farmers are concerned about improving their agricultural productivity. Prior to independence, land reforms were needed, rural peasants had to be empowered, and land ownership disparities had to be reduced.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. India's infant industrial sector\n: During colonial rule, India failed to develop a sound industrial base. In order for India to develop its industrial sector, the country required huge investment, infrastructure, human skill, know-how, and modern technology to develop its industrial sector. Additionally, India's domestic industries were unable to compete with the British industry because of stiff competition. To develop India's industrial sector, the main concern was to develop small and large-scale industries simultaneously. The challenge of boosting India's industrial sector to India's GDP is another important economic challenge.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Lack in Infrastructure:\nHowever, despite the significant improvements in infrastructure, the agricultural and industrial sectors did not improve sufficiently. In addition, it was necessary to enhance the efficiency and effectiveness of the existing infrastructure.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Inequality and Poverty:\nIndia was stuck in an imbalance between poverty and inequality. Britain drained a substantial amount of India's wealth during colonial rule. As a result, India's majority population was in poverty. The result was a further escalation of economic inequality in the country.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "14. When was India's first official census operation undertaken?",
+      "a": "In 1881, India conducted its first official census. From then on, every 10 years a census has been conducted. A complete demographic profile of the country is provided alongside the detailed estimation of population size."
+    },
+    {
+      "q": "15. Indicate the volume and direction of trade at the time of independence.",
+      "a": "India's export of handicraft products was issued heavy tariffs (export duties) during the British colonial rule, while raw materials and British products were freely exported from the country to Britain. India's international demand plunged as a result, which made exports more expensive. During the colonial rule of India, India's export basket mainly consisted of primary products such as sugar, jute, and silk, while its imported basket included finished consumer goods such as cotton. Over half of India's trade was restricted to Britain due to the monopoly that India held over its exports and imports. The remainder of India's imports were directed towards China, Persia, and Sri Lanka. After the Suez Canal was opened, British monopoly over India's foreign trade was further enhanced. This resulted in the rapid movement of goods from India to Britain and vice versa. Foreign trade surpluses generated by India were not invested in the Indian economy, but were used for administration and war. India's wealth was drained to Britain as a result."
+    },
+    {
+      "q": "16. Were there any positive contributions made by the British in India? Discuss.",
+      "a": "Yes, the Britishers though exploited India very much but made various positive contributions. The contributions were not intentional but were purely the byproducts of colonial exploitation of the British. The British have made the following positive contributions:"
+    },
+    {
+      "q": "1. Introducing the railways:\nIt was British railways that provided a breakthrough in the economic development of India It opened up the cultural and geographicalbarriers and facilitated commercialisation of Indian agriculture.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. A brief introduction to commercial agriculture:\nCommercial agriculture introduced in India is an important step forward in its history. Subsistence agriculture was the norm in India prior to the British era. However, with the commercialisation of agriculture, the agricultural production was carried out as per the market requirements. The development of this factor has allowed India to attain self-sufficiency in grain production today.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Introduction of Free Trade to India:\nDuring the colonial period, the British forced India to comply with free trade. Globalisation today revolves around this concept. Domestic industry was given a competitive platform to compete with British industries through the free trade agreement. India's export volume increased rapidly after free trade was introduced.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Developing Infrastructure:\nThe British developed infrastructure in India which proved beneficial in preventing famines. The telegram and postal services provided services to Indians.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5. The western culture was promoted:\nIntroducing English as the language of education gave birth to a westernized form of education. The English language provided a window to the rest of the world. As a result, India is now integrated into the global economy.\nTopics Covered in Economics Class 11 Chapter 1 Indian Economy on the Eve of Independence\nS.No.\nTopics of\u00a0Indian Economy on the Eve of Independence\n1\nIntroduction\n2\nLow Level of Economic Development Under The Colonial Rule\n3\nAgricultural Sector\n4\nIndustrial Sector\n5\nForeign Trade\n6\nDemographic Condition\n7\nOccupational Structure\n8\nInfrastructure\n9\nConclusion\nBenefits of\u00a0Referring to Class 11th Economics Chapter 1 Question Answer\nClass 11 Commerce Economics Chapter 1 Answers explains about the historical economic conditions of India, that makes students understand the roots of current economic policies and challenges.\nBy learning the underdeveloped industrial sector of pre-independent India in Chapter 1 Economics Class 11 helps students recognize the significance of industrial growth in nation-building.\nWith demographic issues such as high population growth and low life expectancy, students can better appreciate current health and population policies.\nRealising the challenges faced at independence helps students understand why economic planning was necessary and the importance of strategic planning in economic development.\nLinking historical economic conditions with current scenarios helps students make informed comparisons and understand the continuity and changes in economic policies and practices.\nBy\u00a0studying 11th Commerce Economics Chapter 1 Exercise on British economic policies and their impact on India, students critically evaluate economic policies and their long-term effects on society.\nImportant Study Material Links for Class 11 Economics Chapter 1\nS. No\nImportant Study Materials Links for Class 11 Economics Chapter 1\n1\nClass 11 Indian Economy on The Eve of Independence Revision Notes\n2\nClass 11 Indian Economy on The Eve of Independence Important Questions\nConclusion\nNCERT Solutions for Class 11 Economics Chapter 1\u00a0 Indian Economy on the Eve of Independence provides a detailed look into the economic conditions of India just before independence. It is important for students to focus on understanding the challenges faced by the agricultural and industrial sectors, the impact of British economic policies, and the overall socio-economic conditions. By understanding the Economics Class 11 Chapter 1 Questions and Answers PDF, students can appreciate the historical context of India's economic development and the reasons behind the need for planned economic growth post-independence. In previous years' question papers, around 4\u20135 questions have been asked from this chapter, including the conditions of agriculture, the impact of colonial policies, and the significance of the economic drain.\nNCERT Solutions for Class 11 Economics Other Chapter-Wise Links - Download the FREE PDF\nS. No\nNCERT Solutions Class 11 Economics Chapter-wise Links\n1\nChapter 2 - Indian Economy 1950-1990 Solutions\n2\nChapter 3 - Liberalisation, Privatisation and Globalisation Solutions\n3\nChapter 4 - Human Capital Formation in India Solutions\n4\nChapter 5 - Rural Development Solutions\n5\nChapter 6 - Employment: Growth, Informalisation and Other Issues Solutions\n6\nChapter 7 - Environment and Sustainable Development Solutions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Solutions\nRelated Important Links for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics",
       "a": "Detailed solution available."
     },
     {
@@ -158,841 +198,961 @@ export default {
     },
     {
       "q": "6.\nCBSE Class 11 Economics Notes",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7.\nCBSE Class 11 Economics Syllabus",
       "a": "Detailed solution available."
     }
   ],
   "2": [
     {
-      "q": "1. What is the type of economy adopted by India?\na) Communist\nb) Capitalist\nc) Mixed\nd) Socialist",
-      "a": "(c) Mixed economy is adopted by India."
+      "q": "1. Define a plan.",
+      "a": "A plan is a proposed list of objectives for an economy to fulfil over a set period of time. It provides the best strategies to use the limited resources available to achieve the enumerated objectives. In India, planning is done for a five-year period, referred to as a five-year plan. Plans have both specific and broad objectives. Economic progress, modernization, self-reliance, and equity are some of the unifying aims. Plans establish the basic framework within which policies are developed."
     },
     {
-      "q": "2. What do you mean by the Planning Commission and who is the chairman of this commission?",
-      "a": "The Planning Commission is an agency of the Indian government that was established in 1950 to oversee the country's economic and social development. Their primary responsibility is to create five-year plans. The chairman of the committee is the country's Prime Minister. This commission was abolished in 2014."
+      "q": "2. Why did India opt for planning?",
+      "a": "India had to choose between capitalism and socialism soon after independence. Finally, India chose socialism after being impressed by the Soviet Union's tremendous success with planning. Despite the fact that Indian political and economic conditions were not as favourable as they were for Soviet Unions to accept socialism, India did so, but with a twist. India was founded on the socialist concept, with a strong emphasis on the public sector and active private sector participation within a democratic framework."
     },
     {
-      "q": "3. Term HYVP stands for?\na) High Yielding Varieties Product\nb) High Yielding Various Programme\nc) High Yielding Varieties Programme\nd) High Yielding Various Product",
-      "a": "(c) High Yielding Varieties Programme"
+      "q": "3. Why should plans have goals?",
+      "a": "Every strategy should have a set of objectives. A plan without a goal is akin to living a life without a soul. While a plan should help to describe the means and methods for allocating the scarce resources in order to meet stated aims, goals are the ultimate targets, and achieving them guarantees that plans succeed. As a result, goals must be included in plans. It would be impractical to expect all of the plan's goals to be given equal weight in all of the plans. In fact, goals may contradict, therefore planners must find a way to reconcile them. In India, several aims are stressed in various five-year plans."
     },
     {
-      "q": "4. Who is the father of a high yielding variety seed?",
-      "a": "Norman Borlaug, an American agricultural scientist who was awarded the Nobel Peace Prize in 1970 for breeding higher-yielding varieties, is regarded as the father of HYV. He has also been dubbed the \"Father of the Green Revolution.\""
+      "q": "4. What are High Yielding Variety (HYV) seeds?",
+      "a": "Dr Narman Barlauf, a Nobel Laureate, produced the High Yielding Variety of seeds in Mexico. These seeds are more productive and require more fertilisers and insecticides, as well as regular and proper irrigation. In 1966, the Indian agricultural sector saw a Green Revolution as a result of the introduction of HYV seeds, particularly in rice and wheat harvests. Because HYV seeds grow quicker than regular seeds, crops can be harvested in a much shorter amount of time."
     },
     {
-      "q": "5.\nDefine Economy.",
-      "a": "A large set of interconnected production and consumption activities that aid in determining how scarce resources are allocated is referred to as an economy. The economy is what allows us to survive and thrive."
+      "q": "5. What is a marketable surplus?",
+      "a": "The difference between a farmer's entire output and his on-farm consumption is referred to as marketable surplus. To put it in simple words, it's the percentage of total amount of produce that the farmer sells in the market. Total farm output produced by farmers minus own use of farm output = marketable surplus."
     },
     {
-      "q": "6.\nPlanning commission was set up in which year in India?\na) 5th March, 1951\nb) 25th April, 1951\nc) 20th March, 1951\nd) 15th March, 1950",
-      "a": "(d) Planning commission was set up on 15th March, 1950."
+      "q": "6. Explain the need and type of land reforms implemented in the agriculture sector.",
+      "a": "Land reforms in India were urgently required for the following reasons:"
     },
     {
-      "q": "7.\nWhat were the priorities in the 11th five-year plan?",
-      "a": "Agriculture, infrastructure development, health, and education were the primary focus areas of the 11th five-year plan."
-    },
-    {
-      "q": "8.\nWhat is meant by import substitution in Indian economy?",
-      "a": "Import substitution industrialization (ISI) is a trade and economic policy that advocates substituting domestic production for foreign imports. ISI is based on the idea that a country should try to reduce its reliance on foreign goods by producing industrialized goods in its own country. Many mechanical, software, instruments, and machines are now being manufactured in our country in order to save crores of rupees in imports."
-    },
-    {
-      "q": "9.\nWhat do you mean by land ceiling?",
-      "a": "The size of land that an individual or family can own is defined by the land ceiling. This act was passed in India in 1961-62 and was governed by all state governments. However, the ceiling limits differed from state to state."
-    },
-    {
-      "q": "10.\nWhat is the year of India\u2019s twelfth five year plan?\na) 1997 to 2002\nb) 2002 to 2007\nc) 2012 to 2017\nd) 2007 to 2012",
-      "a": "(c) The twelfth five-year plan ran from 2012 to 2017."
-    },
-    {
-      "q": "11.\nHow much percent of India\u2019s population was dependent on agriculture during independence?\na) 75%\nb) 50%\nc) 85%\nd) 65%",
-      "a": "(a) 75% of India\u2019s population was dependent on agriculture during independence."
-    },
-    {
-      "q": "12.\nDefine small scale industries.",
-      "a": "Small scale industries are those with a fixed investment in plant and machinery, whether owned outright, leased, or hired out, that does not exceed Rs. 1 crore. Paper napkins, facial tissues, candle making kits, wooden toothpicks, and other items are examples."
-    },
-    {
-      "q": "13.\nThe portion of agricultural produce which is sold in the market by the farmers is called _________.\na) Trade deficit\nb) Marketed surplus\nc) Subsidy\nd) Import substitution",
-      "a": "(b) It's referred to as marketed surplus. It occurred for the first time in India following the successful implementation of the green revolution in the country."
-    },
-    {
-      "q": "14.\nWho presented the 1st five year plan of the country?",
-      "a": "Pandit Jawaharlal Nehru, our country's first Prime Minister, presented the first five-year plan in parliament. It was first introduced in 1951."
-    },
-    {
-      "q": "15.\nWhat were the focus points of the first and second five year plan?",
-      "a": "Agriculture was the primary focus of the first five-year plan, but in the second five-year plan, the emphasis shifted to industries.\nShort Answer Questions: (3 or 4 Marks)"
-    },
-    {
-      "q": "16. What was the aim of five year plans? Or Why did India need five year plans? Or What were the goals of five year plans in our country and how much has been achieved?",
-      "a": "After gaining independence in 1947, India had to essentially rebuild its economy from the ground up. The leaders of the time will have to decide on the type of economy India would have as well as the economic planning. This is how the five-year plan came to be. These plans are known as five year plans in India because they are made for a period of five years. Each five-year plan is created with a specific goal in mind. A five-year plan has five generalized goals, of which one or two are given the most importance in a specific plan. So, the five types of goals that we cover in our five-year plans are shown below.\nMain aims of five year plans:\nGrowth\nModernisation\nSelf-reliance\nEquity\nSome of the major accomplishments seen through five-year plans are listed below:\ni. Significant rise in national and per capita income.\nii. Good agricultural development\niii. Industrial development\niv. Transportation and communication development\nv. Job creation\nvi. Power and price stability\nvii. Scientific and technological advancements\nviii Increased capital formation"
-    },
-    {
-      "q": "17.\nWhy did India take up a mixed economy?\nOr\nAmidst different types of economies in the world, why does India focus on a mixed economy model?\nOr\nThrow Light On the Mixed Economy Model of India.",
-      "a": "The country's leaders faced some difficult decisions in the post-independence era. Most countries in the world followed one of two models at the time: capitalist economy or socialist economy. Jawaharlal Nehru, our first Prime Minister, preferred the socialist model. A pure socialist economy, on the other hand, cannot thrive in a democracy like India. Capitalism was also unsuitable because the government needed to build an economy while also caring for the common man and his needs. As a result, our economy incorporated elements of both socialism and capitalism. It was then decided that India would build a strong socialist society in which the government would care for its citizens. The government, on the other hand, would promote and encourage a strong private sector in the future. With our democracy in mind, there would be no prohibition on private property or wealth. That is why the Indian economy is referred to as a mixed economy because it is neither completely socialist nor completely capitalist. In India, both the private and public sectors operate in the market. Despite the fact that privatization in most sectors did not begin until after 1991, it has provided a significant and much-needed boost to the economy."
-    },
-    {
-      "q": "18.\nWhat are the advantages and disadvantages of the green revolution?\nOr\nWhat are the drawbacks of the green revolution?\nOr\nIs there any negative side of the green revolution?",
-      "a": "The green revolution refers to the significant increase in food grain production (such as rice and wheat) as a result of the introduction of high-yielding varieties, the use of pesticides, and improved management techniques. We will now look at the benefits and drawbacks of the green revolution.\nLet us Begin With the Benefits of the Green Revolution\n:\ni. It enables large-scale agricultural operations.\nii. It eliminates the need to leave land fallow.\niii. It has the potential to grow any crop in any location.\niv. Job opportunities in the agricultural and industrial sectors are created.\nThe Following are Some of the Disadvantages of the Green Revolution:\ni. Constant crop replanting without restoring soil health necessitates the use of more fertilizer to keep nutrients in the soil and replenish them.\nii. It has a negative impact on crop production due to soil degradation, which results in decreased production of fruits, vegetables, and pulses.\niii. Small farmers were unable to keep up with the falling price of grains and production because they were unable to afford fertilizers, pesticides, machinery, HYV seeds, and other agricultural inputs, causing them to become poorer.\niv. Excessive use of chemical fertilizer, as reported in some areas, resulted in the destruction of beneficial microorganisms, insects, and worms in soil."
-    },
-    {
-      "q": "19.\nWhat is meant by socialist economy? Elaborate with examples.",
-      "a": "Socialism is primarily concerned with production in order to meet human needs. Unlike capitalism, where the emphasis is on sale and profit. Socialism entails workers exercising direct control and management of industries and social services through a democratic government based on their national economic organization. Karl Marx and Fredric Engles first introduced the concept of socialism in their book, 'The Communist Manifesto.' A socialist system is exemplified by the former Soviet Union. Denmark, Finland, Norway, and Ireland are all examples of socialist countries. Cuba is an excellent example. Its economy is run by the government, and there is no stock exchange. Healthcare and education are completely managed and administered by the government."
-    },
-    {
-      "q": "20.\nWhat is the policy of \u2018land to the tiller\u2019?\nOr\nHave you heard about land tiller policy? What is it?",
-      "a": "The adage \"land to the tillers\" means that the person who works for something should reap the benefits and rewards. The Act, which has been previously restricted to owning property only for government projects, has been amended several times to broaden the definition of public purpose, so that land can now be acquired for any project and by anyone. The concept of \u201cland to the tiller\u201d is beneficial because it, above all, provides an incentive to the person who ploughs the land. It inspires the hardworking individual to work even harder.\nLong Answer Questions: (6 Marks)"
-    },
-    {
-      "q": "21. Explain the Green Revolution in brief.\nOr\nWhy is the term Green Revolution so famous?\nOr\nWrite a Short Note on the Green Revolution.",
-      "a": "Food is the most basic requirement for all living creatures on this planet to survive. It is the source of energy used by living organisms for their growth, development, and work.\nThe Green Revolution was a scientific breakthrough in grain cultivation. It put genetic engineering, chemical fertilizers, and pesticides into use. It introduced fantastic farming technology. The Green Revolution in India refers to the period when agriculture in India transitioned to an industrial system as a result of the adoption of modern methods and technology such as high yielding variety (HYV) seeds, tractors, irrigation facilities, pesticides, fertilizers, and so on. Norman Borlaug pioneered the green revolution. India is self-sufficient in food production solely due to modern agricultural practices. The Green Revolution of the 1960s was a watershed moment in Indian history. The need for a new agricultural strategy arose as a result of the need to increase agricultural production in the face of production stagnation and rapidly rising demand. It was initially implemented over a total area of 1.89 million hectares. The coverage had grown to 9.2 million hectares on the eve of the Fourth Plan. In 1989-1990, the total area was 63.8 million hectares, accounting for nearly 35% of gross cropped area.\nThe Main Components of Green Revolution are as Follows\n:\n(i) Better pesticides\n(ii) High yielding\n(iii) Better ignition\n(iv) Land reforms\n(v) Command Area Development (CAD)\n(vi) Rural electrification\n(vii) Farm mechanization\n(viii) Rural roads and marketing\nAgriculture production is slow, and investment is also insufficient. Even after the so-called success of the Green Revolution, India's production is far below that of the international structure. The actual yield of groundnut is 9.1 quintal per hectare, which is one-third of the world's highest yield rate. Thus, even after the Green Revolution, India's acre-wise productivity remains significantly lower than the international standard. However, India has surpassed the United States to become the fourth-largest wheat producer. The reality is that after the rural works programs and the course of actions, the middle and lower strata of rural society can benefit, if not the upper strata. The middle strata benefited greatly due to the size of their holdings. They became viable as a result of their entrepreneurial spirit. This emerging middle-income group gained more motivation to engage in additional economic activities. They imbibed zeal and confidence and could be a source of inspiration for others, emerging as a new leader in a society dominated by previously affluent classes. If the development process is democratic, this new leadership can take the necessary steps to usher in new developmental activities in rural society for the grass roots level. The new initiatives have the potential to spark a new wave of economic development in rural areas."
-    },
-    {
-      "q": "22.\nWhat are the general problems of an economy?\nOr\nThrow some light on the central problems of the economy.\nOr\n\u201cWhenever the problems of choice and scarcity arise, economics is said to emerge\u201d. Discuss some of the problems of the economy. Drones are airborne devices that are used in agriculture to improve crop output and to track crop growth.\nThey assist farmers in developing agricultural field systems for using water, fertilisers, herbicides, and seeds. These tools have revolutionised agriculture by allowing farmers to save significant amounts of money while also increasing efficiency and profitability.",
-      "a": "The below-designed module can help us understand the economy's problems. Green Revolution Components Reforms to the Land Marketing and rural roads Agricultural mechanization Command Area Development (CAD) for Rural Electrification.\nNow We Will Concentrate on Better Understanding the Problems:\nThe basic economic problem is one of scarcity of resources, which causes a problem of choice. It is also referred to as the resource economisation problem, which refers to the issue of making better and more efficient use of limited resources in order to satisfy the greatest number of wants.\nThe main causes of central problems are unending human desires, limited economic resources, and alternative resource uses.\nOne of the most important issues that every economy faces is resource allocation.: -\n(I) What should be produced and how much should be produced?\n(ii) How do you produce?\n(iii) For whom should the product be produced?\nWhat to produce:\nAn economy has unlimited wants but limited means that can be used in other ways. The economy cannot produce all types of goods such as consumer goods, producer goods, and so on. As a result, the economy must decide what types of goods and services to produce and in what quantities.\nHow to Produce:\nThis is a problem of selecting a manufacturing technique. There are two production methods.\n(a) Labour-Intensive Technique:\nThis is a production technique in which labor is used more than capital.\n(b) Capital-Intensive Technique:\nCapital is used more than labor in this technique.\nFor whom to produce:\nThis is a problem related to the distribution of produced goods among various groups in society. It has two components: -\n(i) Individual distribution\n(ii) Distribution of functionalities Personal distribution: When national income is distributed based on who owns the factors of production.\nWhen the national income/production is distributed among different factors of production such as land, labor, capital, and entrepreneurship for providing their services in terms of rent, wages, interest, and profit, this is referred to as functional distribution.\nA problem Related to the Efficient Use and Full Utilization of Resources:\nProduction efficiency means producing the greatest amount of goods and services possible with the available resources. Because resources are already scarce in comparison to the demand for them, an economy must ensure that its resources are not underutilized; underemployment is nothing more than resource waste.\nResource Growth Problem:\nIt is related to an increase in the economy's production capacity, which causes the quantity of production to increase."
-    },
-    {
-      "q": "23.\nThough the public sector is very essential for industries, many public sector undertakings incur huge losses and are a drain on the economy\u2019s resources. Discuss the usefulness of public sector undertakings in this light of the fact.\nOr\nExplain the rationale of public sector enterprises.\nOr\nWhat is the role of public sector enterprises in India?",
-      "a": "In India, a public sector company is one in which the Union Government, a State Government, or a Territorial Government owns 51 percent or more of the stock. Currently, only three sectors remain exclusively reserved for the government, namely railways, atomic energy, and explosive materials. Private companies are not permitted to operate in these sectors. Until the 1990s, major sectors of the economy were reserved solely for the government, resulting in a significant loss of our precious natural resources and trapping the entire country in a major economic problem. From the first five-year plan to the 1980s, our country grew at a rate of 3.5 percent per year on average.\nProfitable public-sector enterprises are the government's primary source of revenue for special welfare programs. This enables the public to promote income and wealth distribution equality. PSUs with a social mission, such as railways, water supply, and postal services, should be kept in the public sector. Profitable industries should be kept in the public sector only because their resources can be used for development. The government should retain strategic industries in order to avoid the formation of monopolies in the private sector.\nRole of Public Sector Enterprises in India\nMaximizing the rate of economic growth\nBalanced regional development\nAgricultural development\nIncreased employment opportunities\nImport substitution\nGovernance of Public Sector Undertakings:\nThe following are the important roles and responsibilities of the Public Sector Department:\nGeneral public policy.\nIssues pertaining to the issuance of Presidential Directives and guidelines to Public Sector Enterprises.\nPolicy guidelines for Public Sector Companies in areas like performance improvement and evaluation, financial management, personnel management, board structures, wage settlement, training, industrial relations, vigilance, and performance appraisal, among others.\nIssues concerning the reservation of positions in public-sector enterprises for specific groups of citizens.\nAll issues pertaining to the Memorandum of Understanding between Public Sector Enterprises and administrative Ministries/Departments.\nIssues pertaining to the delegation of powers to the Board of Directors.\nTo conduct in-depth studies on key areas of Central PSE operation. \u2022 Concerns about the International Centre for Public Enterprises (ICPE) - External website that opens in a new window.\nSCOPE (Standing Conference of Public Enterprises) - External website that opens in a new window\nMonitoring and evaluating the performance of PSEs, serving as a data repository, and producing an annual survey for the Parliament.\nPermanent Arbitration Mechanism for resolving disputes between public sector enterprises and Government Departments, excluding tax disputes; \u2022 Appraisal of proposals from various administrative Ministries pertaining to restructuring, revival, joint venture, and so on. Increasing the rate of economic growth as much as possible Regional development that is balanced Agriculture advancement expanded employment opportunities Substitution of imports\nDPE Guidelines - This is an external website that will open in a new window.\nEconomic Affairs Department - External website that opens in a new window\nExpenditure Department - External website that opens in a new window\nStanding Conference Of Public Enterprises (SCOPE) - External website, which will open in a new window."
-    },
-    {
-      "q": "24.\nConstruct a pie chart on the occasional structure of the Indian economy available in the following table:\nSector\n1950-51\n1990-91\n2017-18\nAgriculture\n75.2\n65.3\n45\nIndustry\n11.8\n14.5\n25\nServices\n13\n20.2\n30",
-      "a": "For this, we will create different pie charts based on the year.\nPie-chart for 1950-51\nPie-chart for 1990-91\nPie-chart for 2017-18\nChapter 2 Indian Economy Class 11 Important Questions - Free PDF Download\nWe should never underestimate the need for important questions when we are studying because we need them for better understanding the topics after we have finished studying. Important questions provide an outline about how we should study so that we can answer our paper in a certain way - the way that will fetch us the highest amount of marks. The class 12 Indian Economy Chapter 2 important questions will help you by showing you how to frame your answers such that full marks are guaranteed for you.\nWe know the significance that class 12 holds in a student\u2019s life - it is the ultimate make or break year, as every student is told the second class 12 begins. For this, every student must make use of every single preparation tool that comes his or her way. Below, we have provided for you from chapter 2 of Indian Economy class 12, some important questions along with their answers which will show you the correct way to write answers for your exams.\nUnderstanding The Class 11 Indian Economy Chapter 2 Important Questions\nThere are different types of questions that come in class 12 exams, and let\u2019s divide them into 2 kinds - by length and by the type of thinking required to answer these questions.\nBy length, there are the following kinds of questions:\nVery Short Answer Questions of 1-2 Marks:\nThese can be one-liner definitions or multiple choice questions.\nShort Answer Questions of 4-4 Marks:\nAbout 5-6 lines or a paragraph.\nLong Answer Questions of 5-6 Marks:\nThese consist of writing longer paragraphs, often accompanied by a diagram.\nBy the type of thinking required, the following are the kinds of questions:\nRemembering:\nThese are knowledge-based simple facts and definitions.\nUnderstanding:\nWith a conceptual understanding of the topic.\nApplication:\nUsing what you have learnt and applying it elsewhere, such as by using examples to explain your point.\nHigher Order Thinking Skills (HOTS):\nQuestions which require drawing inferences from different sources to create one answer.\nEvaluation:\nComparisons, justifications, critical analyses and other questions requiring you to think deeper.\nIndian Economic Development is one of the two papers that come under Economics in class 12, and it accounts for 40 marks out of the total 100. The remaining 60 marks are distributed between project work for 20 marks and 40 marks to the Introductory Macroeconomics paper.\nThe following is the weightage breakdown of class 12 chapter 2 of Indian Economic Development. Keep in mind that chapter 2 is part of unit 1, i.e. Development Experience (1947-90) and Economic Reforms since 1991. Thus,\nClass 11 Indian Economy Chapter 2 Important Questions - Weightage\nPaper Name\nWeightage Marks\nIndian Economic Development\n40 marks\nIntroductory Macroeconomics\n40 marks\nProject Work\n20 marks\nTotal\n100 marks\nOut of the 40 marks for Indian Economic Development, Unit 1 consists of 12 marks, which are divided between the different chapters under it, including chapter 2.\nRelated Study Materials for Class 11 Economics (Indian Economic Development) Chapter 2\nS.No\nImportant Other Links for Class 11 Economics (Indian Economic Development) Chapter 2"
-    },
-    {
-      "q": "1.\nCBSE Class 11 Indian Economy 1950-1990 Notes",
+      "q": "1. Land Tenure System:\nAt the time of independence, the Indian agricultural sector had three types of land tenure systems: the Zamindari System, the Mahalwari System, and the Ryotwari System. The land was largely cultivated by the tenants, and the land income was paid to their landlords, which was a common aspect of these three systems.\nExorbitant rents resulted as a result of this abuse of tenants.\n2\n.\nLack of initiative:\nBecause the majority of the land was controlled by the landlords, the farmers lacked initiative and lacked the financial wherewithal to use mechanised farming methods.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Indian Economy 1950-1990 Solutions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions and Answers cover topics from other chapters, helping students prepare thoroughly by focusing on key topics for easier revision.\nS.No\nChapter-wise Important Questions for Class 11 Economics (Indian Economic Development)\n1\nChapter 1 - Indian Economy on the Eve of Independence Important Questions\n2\nChapter 3 - Liberalisation, Privatisation and Globalisation: An Appraisal Important Questions\n3\nChapter 4 - Human Capital Formation in India Important Questions\n4\nChapter 5 - Rural Development Important Questions\n5\nChapter 6 - Employment: Growth, Informatisation and Other Issues Important Questions\n6\nChapter 7 - Environment and Sustainable Development Important Questions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Important Questions\nAdditional Study Materials for Class 11 Economics\nS.No\nStudy Materials for Class 11 Economics\n1\nCBSE Class 11 Economics NCERT Solutions\n2\nCBSE Class 11 Economics Revision Notes\n3\nCBSE Class 11 Economics NCERT Book\n4\nCBSE Class 11 Economics Sample Papers\n5\nCBSE Class 11 Economics NCERT Exemplar\n6\nCBSE Class 11 Economics Sandeep Garg Solutions\nBenefits of Chapter 2 Indian Economy Class 11 Important Questions\nWe all know that the rigour of class 12 can be extremely frustrating for a lot of students, what with it being the final board year before we finish school and leave that net of safety for the world ahead of us. The following are some of the benefits of class 12 Indian Economy Chapter 2 important questions:\nImportant questions help students understand how to study for an exam appropriate to how questions may come in an exam.\nVedantu\u2019s compilation of important questions for class 12 economics chapter 2 are also equipped with the answers for the same.\nSince these questions come in PDF form, they can be downloaded.\nThe chapter 2 Indian Economy class 12 important questions are completely free to use and download.\nSince the important questions have been taken from old question papers, they are highly accurate.",
+      "q": "3. Traditional Approach and Low Production:\nTraditionally, Indian farmers relied on conventional and traditional inputs and methods, as well as meteorological conditions, which limited agricultural productivity.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nSize of Land Holdings:\nThe farmers' landholdings were quite tiny. Furthermore, the landholdings were dispersed. This made it difficult to employ current procedures.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nLack of a well-developed marketing system:\nFarmers used to rely on middlemen to sell their products in the market due to a lack of a well-developed marketing system. These middlemen used to buy farm items for a low price and then sell them at a higher price at the market. As a result, the farmer did not receive the correct profit share, resulting in a shortage of financing and investment on the farm.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6.\nNature of Farming:\nSubsistence farming was the primary motivation for farmers. That is, farming was done primarily to earn a living, rather than to sell for profit.\nLand reforms were essential to address the aforementioned issues in Indian agriculture. The following are the steps involved in land reform: -",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "1. Eliminating Intermediaries:\nOne of the main goals of land reform was to eliminate intermediaries such as Zamindars and Jagirdars. There were numerous initiatives taken to make the tillers the landowners.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Rent Control:\nThe growers were exploited by paying high rents. Except in Punjab and Haryana, where it was third, the maximum rent imposed in the first five-year plan was one-fourth or one-fifth of total farm produce. Rent restrictions not only relieved tenants of their financial burdens, but also provided them with more funds to invest in their farms.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Consolidation of Holdings:\nBecause the land holdings were tiny and dispersed, it was critical to consolidate them so that contemporary and advanced technologies could be used. Farmers were awarded consolidated holdings that were equal to the total amount of land in their different scatter plots. They were able to reap the benefits of large-scale production as a result of this.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Cooperative Farming:\nThis action was taken to address issues caused by holdings being subdivided. Because small-scale farming by a single landowner is neither profitable nor productive, these measures encouraged farmers to pool their lands and farm together. Individual farmers shared more revenues as a result of increased output.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7. What is the Green Revolution? Why was it implemented and how did it benefit the farmers? Explain in brief.",
+      "a": "In the latter half of the second five-year plan, a team was formed to suggest alternative approaches to address low productivity, recurrent famines, and low levels of agricultural products. According to the team's suggestions, the government began using HYV seeds, contemporary techniques, and inputs such as fertilisers, irrigation, and subsidised financing. The Intensive Area Development Programme is the name given to all of these stages taken together (IADP). As a result, food grain production grew by about 25% in the years 1967-68. The result is known as the 'Green Revolution' because of the significant increase in food grain output.\nThe term Green Revolution is made up of two words: 'Green,' which refers to crops, and 'Revolution,' which refers to a significant growth.\nFollowing are the needs for the Green Revolution:"
+    },
+    {
+      "q": "1. Limited Irrigation:\nI\nn 1951, just 17% of the land was well-irrigated or permanently irrigated. The majority of the area was reliant on rainfall, and as a result, agriculture suffered from the low output.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Conventional and Traditional Approach:\nAgricultural productivity was further impeded by the use of traditional inputs and the lack of contemporary procedures.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Famines Are Frequently Occurring:\nFamines were highly common in India from the 1940s through the 1970s. Furthermore, due to the faster rate of population expansion, agriculture has lagged behind.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Self-sufficiency:\nFoodgrains were frequently imported due to conventional agricultural practices, low yield, and the need to feed a burgeoning population, draining scarce foreign reserves.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5. Lack of Finance (Credit):\nSmall and marginal farmers found it difficult to obtain low-cost financing and credit from the government and banks, and hence became easy prey for money lenders.\nGreen Revolution Benefits:",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "1. Increased Income:\nThe adoption of HYV seeds resulted in an increase in wheat and rice production during the Green Revolution. Wheat and rice-growing states such as Punjab, Andhra Pradesh, and Tamil Nadu benefited from it. The income of these states' farmers increased, alleviating rural poverty.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Increased Employment:\nAs a result of the Green Revolution, seasonal unemployment in agriculture has greatly decreased.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Social Revolution:\nTraditional farming practises were replaced with modern farming methods that included the use of high yielding seeds, better irrigation facilities, fertilisers, and pesticides. People were willing to embrace improvements in technology since old societal ideas and conventions had been abolished.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "8. Explain 'growth with equity' as a planning objective.",
+      "a": "The two most significant features of India's five-year plans are growth and equity. While growth refers to a rise in GDP over time, equity refers to an equitable distribution of GDP so that the benefits of increased economic growth are shared equally by all segments of the population. Social justice involves equity. Growth is desirable in and of itself, but it does not guarantee people's well-being. The market value of goods and services (GDP) is used to measure growth, and it is likely that the commodities and services created will not benefit the majority of the population. In other words, only a select few with a high standard of life and financial resources may be eligible for a share of GDP.\nAs a result, growth with equity is a sensible and desirable planning goal. This goal ensures that everyone benefits equally from strong development, which not only reduces economic disparity, promotes poverty reduction, and promotes an equitable society, but also allows everyone to be self-sufficient. To sum up, the most important goal of economic planning is to achieve growth while maintaining equity."
+    },
+    {
+      "q": "9. Does modernisation as a planning objective create a contradiction in the light of employment generation? Explain.",
+      "a": "No, modernisation as a planning goal does not conflict with employment creation. Both modernisation and the creation of jobs are, in reality, positively associated. Modernisation, on the other hand, refers to the application of new and modern technologies in the manufacturing process, which may result in the loss of some employment in the early phases. But, over time, the use of modern technologies and inputs will increase productivity and, as a result, people's income, increasing demand for goods and services. More job possibilities will be created to meet this growing demand, resulting in more individuals being hired and, as a result, more employment opportunities. As a result, modernisation and job creation are not mutually exclusive, but rather complementary."
+    },
+    {
+      "q": "10. Why was it necessary for a developing country like India to follow self-reliance as a planning objective?",
+      "a": "Imports of commodities that could be produced domestically are discouraged as part of self-reliance. Self-sufficiency is critical for a developing country like India, since it would otherwise increase the country's dependency on imported goods. India's economic growth could be aided by reliance on foreign goods and services, but this would not contribute to the development of native productive resources. Dependence on foreign goods and services boosts the industries of foreign countries at the expense of indigenous startups."
+    },
+    {
+      "q": "11. What is sectoral composition of an economy? Is it necessary that the service sector should contribute maximum to GDP of an economy? Comment.",
+      "a": "The contribution of different sectors to an economy's overall GDP over the course of a year is known as its sectoral composition. That is the GDP proportion of the agriculture, industrial, and service sectors. Yes, it is vital for the service sector to contribute the most to overall GDP in later phases of development. Structural Transformation is the name given to this phenomenon. This means that the country's reliance on agriculture will progressively decline from its peak to its lowest point, while the share of the industrial and service sectors in total GDP would rise. Economic development refers to the combination of structural change and economic growth."
+    },
+    {
+      "q": "12.\nWhy was public sector given a leading role in industrial development during the planning period?",
+      "a": "Indian economic conditions were extremely low and weak at the time of independence. India lacked sufficient foreign reserves and lacked international investment credibility. Only the public sector could take the initiative in the face of such dire economic conditions.\nThe following are some of the reasons for the public sector's pivotal role in industrial development:"
+    },
+    {
+      "q": "1. Low Demand:\nThe bulk of the population was impoverished and had a low level of income at the time of independence. As a result, demand was minimal, and there was no incentive for the private sector to develop in order to meet these desires. As a result, India was caught in a vicious cycle of low demand. The only option to stimulate demand was for the government to invest.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nInfrastructure development, such as roads, trains, and communication systems.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nTo make use of savings and earn foreign currency.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nTo prevent economic power consolidation.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nRural villages and other backward places are being developed.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6. Heavy Investment:\nHeavy investment was required for industrial development.\nThe private sector found it extremely difficult to invest such a large sum. Furthermore, the risks associated with these initiatives were extremely high, and they had a protracted gestation time. As a result, the government took the lead in establishing the basic framework for heavy industry.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "13. Explain the statement that the green revolution enabled the government to procure sufficient food grains to build its stocks that could be used during times of shortage.",
+      "a": "The Green Revolution resulted in a rise in food grain output. There was a huge rise in agricultural production and product per farmland due to the adoption of contemporary technologies, extensive use of fertilisers, herbicides, and HYV seeds. Furthermore, the widespread use of marketing systems, the elimination of intermediaries, and the widespread availability of finance have provided farmers with a larger share of the marketable surplus. All of these considerations allowed the government to obtain enough food grains to develop a buffer stock and give protection against famines and shortages."
+    },
+    {
+      "q": "14. While subsidies encourage farmers to use new technology, they are a huge burden on government finances. Discuss the usefulness of subsidies in light of this fact.",
+      "a": "Subsidy refers to providing farmers with critical inputs at a discounted rate that is significantly lower than the market pricing. Farmers were given subsidised HYV seeds, modern fertilisers, pesticides, and other inputs in the 1960s to encourage them to adopt new technology. As a result, the role of the public sector was required to invest extensively in order to increase people's income, which in turn would increase demand, and so on.\nThe following are some arguments in favour of subsidies:"
+    },
+    {
+      "q": "1. Subsidies in the 1960s were primarily intended to encourage farmers to embrace new farming techniques and essential inputs such as fertilisers and HYV seeds. The subsidy was mostly of persuasion and financial character, so farmers would not hesitate to utilise these sophisticated techniques.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Subsidies are critical for marginal landowners and poor farmers who cannot afford agriculture supplies at current market prices.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. It is suggested that adopting new technology and procedures is risky and that only courageous farmers are ready to do so.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Subsidies are often given to poor farmers in order to reduce income disparities between rich and poor farmers and to promote an equitable distribution of income.\nThe following are some counter-arguments to subsidies:",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "1. Subsidies are also available to potential farmers who do not require them. This frequently results in resource misallocation and squandering.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. It is widely assumed that fertiliser industries profit from subsidies more than farmers. Subsidies act as a buffer against market conditions, allowing these industries to focus on their core competencies rather than market share and competition.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. There is widespread agreement that subsidies should be offered to test the benefit and viability of a certain technique, but that once the performance has been determined, subsidies should be discontinued.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Subsidies that are supplied at a considerably lower rate than the market rate may result in resource waste. Subsidized electricity, for example, results in energy waste.\nAs a result, based on the above benefits and drawbacks, we may infer that, while subsidies are beneficial and necessary for impoverished farmers to overcome the risks of farming, they place an undue load on the government's limited resources. As a result, good planning, appropriate reforms, and the allocation of subsidies to only the most vulnerable farmers are required.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "15. Why, despite the implementation of the green revolution, 65 percent of our population continued to be engaged in the agriculture sector till 1990?",
+      "a": "Although India's agricultural production increased significantly, allowing the country to achieve food grain self-sufficiency, this rise is significant only when compared to previous food grain production. Furthermore, India failed to achieve the structural changes associated with agricultural development and revolution. To put it another way, the industrial and service sectors failed to create enough job opportunities to attract and absorb extra agricultural labour.\nAgriculture's contribution to GDP fell from 51% in 1960-61 to 44% in 1970-71, while the percentage of industry and service sector in India's GDP climbed only from 19% to 23% and from 30% to 33% during the same period. Meanwhile, the proportion of the population depending on agriculture fell from 67.50 per cent in 1950 to 64.9 per cent now (in 1990). As a result, the industrial and service sectors grew slowly, failing to hire and attract surplus labour from the agricultural sector. This could be due to inadequacies in economic policies that have stifled the expansion of the secondary and tertiary sectors."
+    },
+    {
+      "q": "16. Though public sector is very essential for industries, many public sector undertakings incur huge losses and are a drain on the economy's resources. Discuss the usefulness of public sector undertakings in the light of this fact.",
+      "a": "Despite the fact that mismanagement and poor planning in PSUs can lead to resource misallocation and, as a result, waste of scarce resources and funds, PSUs can have certain positive and helpful aspects."
+    },
+    {
+      "q": "1. Improving Nation\u2019s Welfare:\nThe PSU's primary goal was to provide commodities and services that improved the country's overall welfare. For instance, schools, hospitals, and power, to name a few. These services not only improve the well-being of the country's citizens, but they also improve the country's economic growth and development prospects.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Basic Framework:\nAn important philosophy inherited from the early five-year plans was that the public sector should establish the basic framework for industrialization, which would then encourage the private sector to participate in the latter stages of industrialization.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Socialist Track:\nIndian planners and philosophers were more oriented toward a socialist pattern in the early years after independence. It was justified on the rationale that if the government controls productive resources and production, the country's economic progress will be skewed. This was the primary motivation for installing PSUs. These PSUs manufacture goods not in response to price signals, but in response to the country's social requirements and economic growth.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Projects with Long Gestation:\nIt was neither practicable or economically viable for the private sector to invest in large-scale projects such as fundamental industries and energy, railways, highways, and so on. This is due to the fact that major initiatives require a large initial expenditure and a long gestation time. As a result, PSU is the best option for investing in these projects.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "17. Explain how import substitution can protect domestic industry.",
+      "a": "India chose an import substitution policy in its first seven five-year plans, which means it discouraged imports of commodities that could be produced domestically. Import substitution strategy not only minimises an economy's reliance on foreign commodities, but also gives home businesses a boost. The government offers domestic producers numerous financial incentives, incentives, and licences to produce imported replaced items domestically. Domestic producers would not only be able to survive, but also thrive as they benefit from the protected environment. They have no need to be concerned about competition or market share because their licence grants them monopoly status in the home market. They generate higher profits as monopolists, invest consistently in R&D, and are always on the lookout for new and innovative tactics. As a result, their competitiveness improves over time, and when they are exposed to worldwide marketplaces, they are able to survive and compete with their foreign competitors."
+    },
+    {
+      "q": "18. Why and how was private sector regulated under the IPR 1956?",
+      "a": "The Industrial Policy Resolution (IPR) of 1956 was passed with the goal of creating a socialist state with the government controlling the economy's most strategic industries.\nThe industries were divided into three categories as a result of this decision.\nCategory 1:\nIndustries that were created and are solely held by the government.\nCategory 2:\nIndustries where the public sector will play the key role and the private sector will play a secondary role. In these industries, the private sector supplements the public sector.\nCategory 3:\nThe private sector is responsible for all industries that are not included in Categories 1 and 2.\nThrough its programme of industrial licencing, the government maintained an indirect influence on private-sector industries. Private entrepreneurs were required to get a government licence in order to start a new industry or expand existing capacity. Apart from licencing and taxation, the government employed tax exemptions and subsidies to regulate private companies and reduce regional imbalances in economic development, as well as to keep a lid on the production of socially unacceptable items. As a result of the IPR 1956, the government had complete control over the private sector, either directly or indirectly."
+    },
+    {
+      "q": "19. Match the following",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "1.\nPrime Minister\nA.\nSeeds that give a large proportion of output",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nGross Domestic Product\nB.\nQuantity of goods that can be imported",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nQuota\nC.\nChairperson of the planning commission",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nLand Reforms\nD.\nThe money value of all the final goods and services produced within the economy in one year",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nHYV Seeds\nE.\nImprovements in the field of agriculture to increase its productivity",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6.\nSubsidy\nF.\nThe monetary assistance given by government for production activities.",
+      "a": ""
+    },
+    {
+      "q": "1.\nPrime Minister\nC.\nChairperson of the planning commission",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nGross Domestic Product\nD.\nThe money value of all the final goods and services produced within the economy in one year",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nQuota\nB.\nQuantity of goods that can be imported",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nLand Reforms\nE.\nImprovements in the field of agriculture to increase its productivity",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nHYV Seeds\nA.\nSeeds that give a large proportion of output",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6.\nSubsidy\nF.\nThe monetary assistance given by government for production activities.\nChapter 2 Indian Economy Class 12 Indian Economy 1950 \u2013 1990 \u2013 An Overview\nThe Economic Status of India During the Colonial Rule\nAgrarian Economy\nClass 11 Economics Chapter 2 NCERT Solutions states that the Indian economy was a largely based agrarian economy i.e. 85% of the population of India was involved in the agriculture sector.\nHowever, the agriculture sector started facing stagnation, unusual deterioration after the colonial rule began. The productivity level all over the country specifically in this sector started declining at a fast pace.\nChapter 2 Indian Economy Class 11 solutions should be downloaded by students. The chapter also mentions the land settlement techniques which were used by the colonial government, particularly the zamindari system.\nThe Colonial government also adopted many revenue settlement systems which were responsible for many zamindars losing the right over their land. At the same time, there has been much evidence of an increase in revenue in some regions of India due to the commercialisation of agriculture in these regions.\nIndustrial Sector\nChapter 2 Indian Economy Class 11 goes into detail regarding the poor condition of the capital goods industry in India during colonial rule. Capital goods industry is the industry which manufacturers and produces the machine tools which are needed in the economy.\nIndian Economic Development Class 11 NCERT Solutions Chapter 2 states that during this time of colonial rule, the Gross Domestic Product (GDP) and the Gross Value Added (GVA) remained extremely small.\nForeign Trade\nEconomics Chapter 2 Class 11 states that India was a primary exporter of various goods such as silk, wool, cotton, sugar, indigo, jute etc.\nThe British maintained monopoly over the production of various exported goods from India.\nNCERT Solutions for Class 11 Economics Chapter 2 mentions that India\u2019s foreign trade was restricted to only British colonial countries and a few other countries such as China, Sri Lanka, and Persia in Iran.\nDemographic Conditions\nThe first stage of the demographic transition of India was before the starting of 1921. After 1921, the second age of demographic transition began according to Ch2 Eco Class 11.\nHowever, note that the rate of population growth of India was not high during this period. The literacy level of India remained very low, less than 16%.\nThe public healthcare system was even worse and the facilities were unavailable to the majority of the Indian population.\nIndian Economy Class 11 NCERT Solutions also mention that the mortality rate was extremely high during this period, particularly the infant mortality rate in India.\nThe life expectancy was only 44 years which is extremely low compared to the 70 years currently.\nAre There Any Positive Contributions Made by the Britishers?\nMany positive contributions were made by the Britishers but that was also for their benefits. The major one among them was the commercialisation of the agriculture sector. Some of the other good contributions include:\nIntroduction of railways\nInfrastructure development by the colonial government\nThe legal system of India\nSelf-sufficiency in the food grain production\nBetter transportation system made the Britishers\nFamine control was also maintained by the Britishers\nMonetary economy\nConclusion\nDuring the colonial period, Indian development slowed down by a major factor in every industrial sector of the country. NCERT Solutions for Class 11 Economics Chapter 2 go in-depth into the repercussions of the British rule in every sector of India.\nFun Fact\nThe Indian economy has grown a lot in the past years. It has sextupled in size in 20 years only\nIt is expected that the Indian economy will surpass France and UK next year\nEven after such rapid growth, India\u2019s economy lacks behind the state of California by 8.1%\nThe Indian economy has shown the fastest growth in the economy in the last year\n9% of India\u2019s GDP goes to violence, external threats, etc.\nIndia ranks 70th in the Average annual income of every country\nEven after the end of colonial rule, India is still based on agriculture. The agriculture sector accounts for about 50% of jobs in the country\nSolved Example",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "1. What Was the Focus of the British Rule in the Economic Policies of India?",
+      "a": "NCERT Solution Class 11 Economics Chapter 2 states that the colonial government was very much concerned with the protection and promotion of the economy of Britain and not India. The colonial government never made any sincere attempt to calculate the GDP of the country. Most of India\u2019s wealth went to Britain.\nImportant Study Material Links for Class 11 Economics Chapter 2\nS. No\nImportant Study Materials Links for Class 11 Economics Chapter 2\n1\nClass 11 Indian Economy 1950 - 1990 Revision Notes\n2\nClass 11 Indian Economy 1950 - 1990 Important Questions\nNCERT Solutions for Class 11 Economics Other Chapter-Wise Links - Download the FREE PDF\nS. No\nNCERT Solutions Class 11 Economics Chapter-wise Links\n1\nChapter 1 - Indian Economy on the Eve of Independence Solutions\n2\nChapter 3 - Liberalisation, Privatisation and Globalisation Solutions\n3\nChapter 4 - Human Capital Formation in India Solutions\n4\nChapter 5 - Rural Development Solutions\n5\nChapter 6 - Employment: Growth, Informalisation and Other Issues Solutions\n6\nChapter 7 - Environment and Sustainable Development Solutions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Solutions\nRelated Important Links for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics"
+    },
+    {
+      "q": "1.\nCBSE Class 11 Economics NCERT Books",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nCBSE Class 11 Economics Important Questions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nCBSE Class 11 Economics Sample Papers",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nCBSE Class 11 Economics Sandeep Garg Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6.\nCBSE Class 11 Economics Notes",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7.\nCBSE Class 11 Economics Syllabus",
       "a": "Detailed solution available."
     }
   ],
   "3": [
     {
-      "q": "1. What is the other name of the World Bank?\na) Federal Bank\nb) ICICI\nc) IBRD\nd) Bank of America",
-      "a": "(c) The International Bank for Reconstruction and Development is another name for the World Bank. The International Bank for Reconstruction and Development is its new name."
+      "q": "1. Why were reforms introduced in India?",
+      "a": "India implemented economic reforms in 1991 to counteract the economic crisis. The 1991 economic crisis was the culmination of previous years' policy failures. The Indian government was dealing with massive fiscal deficits, enormous balance of payment deficits, high inflation, and a sharp drop in foreign exchange reserves throughout that year. Economic changes became unavoidable as a result of the cumulative effect of all of these issues, and they were the only way to get the Indian economy out of this crisis.\nThe issues that triggered the necessity for economic reforms are as follows:"
     },
     {
-      "q": "2.\nWhat is meant by disinvestment?",
-      "a": "Disinvestment is the sale or liquidation of an asset or subsidiary by an organization or government. During disinvestment, the government company typically retains 26 percent or 51 percent of the stock, while the rest of the share is transferred to the concerned strategic partner."
-    },
-    {
-      "q": "3. What are the things included in foreign investment?",
-      "a": "Foreign investment includes both FDI (foreign direct investment) and FII (foreign institutional investment) (foreign institutional investment)."
-    },
-    {
-      "q": "4.\nWhat are the sources of direct taxes?",
-      "a": "Direct taxes are those in which the burden cannot be transferred to others. Income tax, corporate tax, gift tax, and so on."
-    },
-    {
-      "q": "5.\nWhat is meant by WTO?",
-      "a": "The World Trade Organization (WTO) was established in 1995 as the successor organization to the General Agreement on Tariffs and Trade (GATT). The World Trade Organization (WTO) is expected to establish a rule-based trading regime in which nations cannot impose arbitrary trade restrictions."
-    },
-    {
-      "q": "6. Industrial growth in India has recorded a slowdown in the period of economic reforms. What are the reasons for this?\na) Decreasing demand of domestic industrial products\nb) Globalisation\nc) India does not have access to different markets because of high non-tariff barriers.\nd) All the above",
-      "a": "(d) All of the above."
-    },
-    {
-      "q": "7.\nWhich of the following are correct regarding growth during the reform period?\na) The growth of agriculture declined.\nb) The service sector reported fluctuation.\nc) The growth of industrial sectors has gone up.\nd) The growth during this phase was mainly driven by the growth in the service sector.",
-      "a": "Both (a) and (d) are correct."
-    },
-    {
-      "q": "8.\nGive the meaning of Privatisation.",
-      "a": "Privatization refers to the process of transferring a business or industry from the public to the private sector. This is known as denationalization and destatization."
-    },
-    {
-      "q": "9.\nWhat is meant by Globalisation?",
-      "a": "Globalisation entails the transformation of local and nationalistic perspectives into a broader perspective of an interconnected and interdependent world with free capital, goods, and services transfer across national borders."
-    },
-    {
-      "q": "10.\nFor which contribution is PC Mahalanobis regarded highly by statisticians and economists all over the world?",
-      "a": "Prasanta Chandra Mahalanobis is widely regarded as the \"Father of Indian Statistics\u201d because of his guidance to the evolution of statistical studies which acts as a vital tool for policy planning or we can say as an architect of developmental planning."
-    },
-    {
-      "q": "11.\nWhat benefit goes to domestic Industries of reduction in tariff?",
-      "a": "The main advantages are that imports have become less expensive and that profit margins on exports have increased for domestic industries."
-    },
-    {
-      "q": "12.\nWhat are the indirect taxes? Give two examples.",
-      "a": "These are taxes that are levied indirectly on the individual's expenses rather than directly on his or her income. Service tax, excise and customs duty, VAT, entertainment tax, and so on. The majority of taxes are now merged and referred to as GST (goods and service tax)."
-    },
-    {
-      "q": "13. Why in India, Industrial sector growth has lowered down?\na) Due to availability of cheaper imports and lower investment\nb) Income of public has increased\nc) Exports are giving good response\nd) Manpower has decreased in industries",
-      "a": "(a) Due to availability of cheaper imports and lower investment, industrial growth has interrupted."
-    },
-    {
-      "q": "14.\nWhat is fiscal policy?",
-      "a": "Fiscal policy is the process by which a government adjusts its spending levels as well as taxes\u00a0 in order to monitor & influence the economy of the nation. It is a monetary policy strategy in which a central bank influences a country's money supply. Tax cuts and increased government spending are two major examples of expansionary fiscal policy."
-    },
-    {
-      "q": "15.\nState the meaning of economic reforms.",
-      "a": "It refers to the policies that are implemented to ensure competitive markets, increased production efficiency, and rapid economic growth.\nShort Answer Questions: (3 or 4 Marks)"
-    },
-    {
-      "q": "16.\nWhat are the impact of economic reforms on agriculture?\nOr\nConsider the impact of economic reforms on agriculture.\nOr\nExamine the impact of economic reforms on agriculture in India.",
-      "a": "Economic reform has had a mixed impact on agriculture. In terms of food grains, India has achieved near self-sufficiency. Both the green revolution and agricultural liberalization in India have had a positive impact on both overall and agricultural GDP. Agriculture was expected to remain the most important sector of the economy in terms of GDP proportion for the rest of the decade in the mid-1990s. Even if agriculture is not the largest contributor to GDP, its importance is unlikely to diminish due to its critical role in providing food, wage goods, employment, and raw materials to industries. Despite their preoccupation with industrial development, India's planners and policymakers were forced to recognize agriculture's critical role in the early 1990s by changing basic policy. Gains in agricultural production should not be mistaken for complacency."
-    },
-    {
-      "q": "17. Throw some light on Sircilla Tragedy.\nOr\nWhat is the Siricilla Tragedy?",
-      "a": "Andhra Pradesh's Siricilla is a well-known handloom industry center in India. The Siricilla Tragedy refers to the suicide of 50 handloom workers, which shocked the country. The power loom weavers of Siricilla textile town in Karimnagar district, who have yet to recover from the impact of FSA (Fuel Surcharge Adjustments), are now facing a crisis of unemployment and power loom closures, with traders cutting off raw material supplies due to the rise in the price of polyester yarn. Suicides among weavers and owners of power looms are not uncommon. In terms of price, quantity, or quality, the Siricilla power looms could not compete with these modern looms. Sales fell and stocks rose, as did the amount of interest owed on bank loans. According to Siricilla, there are two types of looms: power looms and handlooms. Materials worth over Rs.2 crores are said to have been lying in godowns for the last two years."
-    },
-    {
-      "q": "18. Is India able to show its global footprint?\nOr\nHow much do you know about India\u2019s global footprint?",
-      "a": "After several years of turbulence and volatility in the global economy, signs of growth and stability can be seen. The International Monetary Fund expects global growth to accelerate to around 3.5 percent over the next two years, led by emerging economies. At the same time, political conditions appear to be shifting, and there is a distinct anti-globalization sentiment. Many Indian companies expanded their wings to other countries after globalisation began in India. Many Indian private and public companies, such as ONGC Videsh, Tata Steel, Birla Group, Adani Group, Reliance, and others, now have a global presence. Global growth conditions have become a critical factor in India's progress. The recent subdued environment has had a direct impact on our growth story. This is a difficult time for Indian industry, which is looking to international markets for both trade and investment opportunities. Despite all of the obstacles on the domestic front caused by infrastructure gaps and financing issues, Indian industry is eager to integrate itself into the dynamic global value chain. The government is actively promoting India's international relations. Prime Minister Narendra Modi has visited over 50 countries and signed a number of agreements aimed at increasing trade and investment. Defence has emerged as a key sector of cooperation, as India has liberalized its defense manufacturing sector and is encouraging global majors to participate in order to help it develop into a manufacturing hub for defense equipment equipped with relevant technologies. Such interactions expand Indian industry's global footprint. As the world adjusts to new realities, India has the opportunity to expand its presence in a variety of manufacturing and service sectors."
-    },
-    {
-      "q": "19.\nWhat are the Navratnas Companies of India?",
-      "a": "In 1997, the government conferred the Navratna status on nine Public Sector Enterprises (PSEs). Thus, they\u2019ll have more freedom to compete in the global market because they will be supported in their quest to become global giants. There are currently 17 companies with the Navratna status. To name a few, Bharat Heavy Electricals (BHEL), HAL, NTPC, Oil India Ltd, MTNL, and others. In 1997, the government launched the Navratna scheme to identify CPSEs with comparative advantages and support them in their quest to become. The following are the requirements for obtaining the Navratna status:\n(a)\nThe company must achieve a minimum score of 60 out of 100 on various parameters such as net profit and net worth, total manpower cost as well as total cost of production, cost of services, PBDIT (Profit Before Depreciation, Interest, and Taxes), capital employed, and so on.\n(b)\nIt must have Miniratna status.\n(c)\nIts board should include at least four independent directors.\n(d)\nThe company must spend up to Rs. 1,000 crore, or 15% of its net worth, on a single project or 30% of its net worth for the entire year (not exceeding Rs. 1,000 crores)."
-    },
-    {
-      "q": "20.\nWhat is India\u2019s export - import policy?",
-      "a": "The Central Government develops and announces foreign trade policy (Ministry of Commerce). Foreign Trade Policy, also known as EXIM Policy, is a set of guidelines as well as instructions established by the DGFT i.e Directorate General of Foreign Trade in matters pertaining to goods import and export in India. In 2015, foreign trade accounted for 48.8 percent of India's GDP. Indian EXIM Policy encompasses various policy decisions made by the government in the field of Foreign Trade, specifically with regard to imports and exports from the country, as well as export promotion measures, policies, and procedures. Export is known as the sale of goods & services to other countries, whereas import refers to the purchase of goods and services from other countries. In this day and age of globalization, no economy can afford to be isolated from the rest of the world. All developed and developing economies rely heavily on exports and imports for economic development. With the expansion of international organizations such as the World Trade Organization, UNCTAD, ASEAN, and others, global trade is expanding at a rapid pace. The current policy is known as the India New Foreign Trade Procedure 2015-2020 or the India New Foreign Trade Policy (Exim Policy) 2015-2020.\nLong Answer Questions: (6 Marks)"
-    },
-    {
-      "q": "21.\nExplain briefly the merits and demerits of the economic reforms introduced in 1991. Or What are the pros and cons of economic reforms of India?",
-      "a": "The year 1991 is significant in the economic history of post-independence India. The country experienced a severe economic crisis as a result of a serious Balance of Payments situation. The crisis was used to introduce some fundamental changes in the content and approach to economic policy. As a response to the crisis, the policies aimed at stabilisation and structural reform were implemented. Former Prime Minister Manmohan Singh is widely regarded as the father of India's New Economic Policy. The thrust of the NEP i.e New Economic Policy has been to create a more competitive environment in the economy in order to improve the system's productivity and efficiency. This was to be accomplished by removing entry barriers and restrictions on firm growth.\nNew Economic Policy is of three types:"
-    },
-    {
-      "q": "1. Liberalisation",
+      "q": "1. Huge Fiscal Deficit:\nThroughout the 1980s, the fiscal deficit grew as a result of large nondevelopment spending. As a result, borrowings were used to cover a large portion of the deficit both from external and domestic sources.\nAs a result of the increasing borrowings, the national debt has grown, as have the interest payments. Between 1980-81 and 1990-91, the government's domestic borrowings climbed from 35% to 49.8% of GDP. In addition, interest payments amounted to 39.1% of the entire budget deficit. As a result, India's financial soundness in the world market deteriorated, and the country became engulfed in debt. As a result, urgent economic reforms were required.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Privatisation",
+      "q": "2. Weak Balance of Payment (BOP) Situation:\nThe difference between total exports and total imports is referred to as the Balance of Payment. India was unable to earn enough foreign cash through exports to cover its purchases due to the lack of competitiveness of Indian products. Between 1980-81 and 1990-91, the current account deficit grew from 1.35 %of GDP to 3.69%. The Indian government borrowed a large sum of money from the international market to cover its massive current account deficit.\nAs a result, the external debt climbed from 12% to 23% of GDP over the same time period. Indian exports, on the other hand, were insufficient to generate enough foreign cash to meet these external debt obligations. The need for economic reforms was driven by the BOP problem.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Globalisation\nStrengths of New Industrial Policy, 1991:\nThe economy is said to enter into a new phase which is described as \"reform by storm,\" replacing the approaches of \"reform by stealth\" in the latter half of the 1970s and \"reform with reluctance\" in the second half of the 1980s.\nThe New Industrial Policy, through various provisions, set fire to the industrial licensing system. A shift away from extensive physical controls has occurred, with a greater emphasis on the role of financial incentives in channeling investments in the desired direction.\nSignificant internal deregulation is taking place in order to strengthen more efficient domestic firms and encourage them to invest and expand.\nEfforts have also been made to strengthen the legal framework. The SARFAESI Act, 2002 i.e Securitisation, Reconstruction of Financial Assets, and Enforcement of Security Interest Act of 2002, empowers the banks as well as financial institutions in order to enforce their claims on collateral for delinquent secured credit without going through a lengthy as well as time-consuming legal process.\nOne distinguishing feature of India's policy reform process is that it is gradualist, as opposed to the \"big bang\" approach used in some other countries. The system is facing much greater pressures for efficiency and modernization, but at a slower pace.\nMajor Weaknesses of New Industrial Policy, 1991:\nWith limited export incentives and regulated labor markets, there appears to be little reason to believe that today's infants will provide a growth engine consistent with current targets.\nThere is concern about the slow pace of investment in many fundamental and strategic industries such as engineering, power, machine tools, and so on. This is primarily due to the low rate of return in these sectors, which is lower than the rate of return in new or \"sunrise\" industries (e.g. IT sectors).\nRestructuring and modernization of industries as a result of the new industrial policy frequently results in labor displacement. This would necessitate the redeployment of labor through rehabilitation programs.\nA focus on internal liberalisation without a sufficient emphasis on trade policy reforms resulted in \u2018consumption-led growth' rather than \u2018investment-led growth' or \u2018export-led growth.' As a result, the resulting growth process was not long-term sustainable.\nThe liberalisation policy appears to have failed to achieve one of its main goals, namely the creation of more innovative firms.",
+      "q": "3.\u00a0 Sick Public Sector Undertakings\n: Public Sector Undertakings were assigned the primary responsibility of industrialization and the elimination of income disparity and poverty. However, in the years thereafter, PSUs have failed to accomplish these functions efficiently and effectively. The government's budget was burdened even more by the ill PSUs.",
       "a": "Detailed solution available."
     },
     {
-      "q": "22.\nDefine the term outsourcing. How much has India benefited?\nOr\nOutsourcing has created a lot of employment opportunities in India. Give arguments in favour of this statement.",
-      "a": "Because of its ability to adapt to changing needs, India remains the leading outsourcing destination. According to NASSCOM, (National Association of Software and Service Companies), the apex body of India's premier IT software and service (IT & BPO) companies, India's share of the global outsourcing market increased from 51% in 2009 to 55% in 2010. India continues to stand out for its customer service and efficiency, so its future looks promising.\nFollowing Points Focus Why India is First Choice in Outsourcing World:\nCustomers today seek not only cost-effective solutions for their outsourced business, but also skilled personnel, increased productivity, service quality, and business process excellence. With its large population and multi-skilled workforce, India will continue to be favored for both backend and front-end outsourcing.\nOutsourcing is known as the business practice of hiring a third party to perform the services as well as create goods that were used to perform in-house\nIndia continues to be unrivaled with respect to its skilled as well as talented human resources. It has a population of over 1.2 billion people, and each year, approximately 3.1 million graduates enter the labor force. India is also the world's largest English-speaking country, larger than the United States and the United Kingdom combined.\nThe significant cost savings in the country that companies can achieve is one of the reasons why India remains a top outsourcing provider. This is primarily due to the large disparity in personnel costs between India and developed countries. In the United States, for example, a good developer can charge between $50 and $80 per hour (for a full-time staffer depending on skills and experience). In comparison, the hourly rate of the developer\u00a0 in India can be negotiated down to as low as $15/hour.\nWhile cost is an important factor in outsourcing, the consistently high quality provided by Indian outsourcing firms has also allowed India to maintain its position as the top outsourcing destination. In its Annual Offshore Outsourcing Conference, the National Outsourcing Association (NOA) reflected on a common trend among international companies that choose India as their preferred outsourcing destination.\nThe Indian outsourcing industry is considered to be supported by a stable pro-IT government whose economic, GDP growth, taxation, power, telecom, industrial parks, and special zones policies have aided in the improvement of infrastructure and communications systems.\nThe Indian government has aided the IT industry by providing various tax-related and other benefits, as well as enacting the Information Technology Act, which recognizes electronic contracts, prohibits cybercrime, and encourages document e-filing."
-    },
-    {
-      "q": "23.\nWhat do you mean by disinvestment? How is it done in public sector enterprises in India?\nOr\nWhat is the difference between disinvestment and privatisation?\nOr\nDo you think loss making enterprises should be privatised? Why?",
-      "a": "Disinvestment refers to the dilution of the government's stake in a public enterprise. This can be accomplished in two ways. When the government sells less than 50% of its equity in a public enterprise, it is referred to as disinvestment, and control and management of the business enterprise remain in the hands of the government. Privatisation occurs when the government's disinvestment or sale of its equity capital exceeds 50%, transferring majority ownership and thus control and management of the enterprise to private enterprise. As a result, in many disinvestment programs, the government retains 51% or more of the total equity capital of public enterprises, retaining control and management. The public sector is underinvesting because the government's resources are limited. The government requires resources in order to reduce its budget deficit. Second, the government urgently needs resources to invest in infrastructure, social sectors such as education and public health, and poverty-relief programs. Several economists have proposed using the proceeds of disinvestment to retire a portion of the public debt. Disinvestment, particularly privatization of public-sector enterprises, will ensure that their operations are governed by professional managers guided by market mechanisms rather than being administered by bureaucrats.\nDisinvestment of Public Enterprises Can be Made in a Number of Ways:-\nThe entire public enterprise can be sold to the highest bidder or another private sector firm. In this case, the private firm gains ownership as well as control or management.\nThe second method of disinvestment in a public enterprise is to sell a portion of the government stake to a strategic private company. A strategic company is one that has a strategic interest in the public sector and the ability to run it efficiently.\nFinally, a limited number of government shares in a public enterprise can be sold through an auction of shares among a limited number of private firms. Merchant bankers can help determine the reserve price of a company's shares for auction."
-    },
-    {
-      "q": "24.\nWhat are the major factors responsible for the high growth of the service sector?\nOr\nEnumerate the Reasons Responsible for the Shining Service Sector of India.",
-      "a": "The services sector in India encompasses a wide range of activities, including trade, hotel and restaurant operations, transportation, storage and communication, financing, insurance, real estate, business services, community, social, and personal services, and construction-related services. It is not without reason that India's dominant services sector is referred to as the economic engine. Globalization and increased manufacturing automation have reduced the relative demand for manufacturing jobs in advanced economies. Because of the increased supply, this frees up labor for the service industry and puts downward pressure on wages in the less skilled parts of that sector. More students are opting for degrees in finance and business for higher skilled parts of the service sector, but they are discovering that deregulation of the banking industry has created more high paying opportunities in things like the investment banking segment, rather than being a CFO at a small manufacturing concern.\nMajor Factors Responsible for the High Growth of the Service Sector in India:\nEconomic Reforms in 1991:\nMNCs were able to enter the Indian market after economic reforms were implemented in 1991. It removed restrictions on foreign investment and allowed for the inflow of foreign capital. Foreign direct investment has increased dramatically as a result of the government's liberalized policy. It brought about a number of changes in the Indian market.\nLow Labour Cost:\nIndia's labor costs were lower than those of developed countries. This enticed multinational corporations to outsource their business services to India. As a result, the service industry grew rapidly with companies that recognized the value of business outsourcing processes such as training, teaching, and marketing in improving business performance.\nGrowth of Information Technology (IT):\nThe expansion of information technology (IT) in India has greatly aided the growth of the service sector. IT aided the country's vital service businesses. The country also has a large number of highly skilled software resources. Many state governments, including those in Andhra Pradesh, Madhya Pradesh, Karnataka, Maharashtra, and Delhi, have highlighted the importance of the IT sector.\nStructural Changes:\nThe Indian economy was undergoing structural changes, such as a shift from the primary to tertiary sectors. The service sector saw an increase in demand as a result of this transformation.\nMarket Orientation:\nThe manufacturing sector experienced numerous changes in the market's competitive environment and demand-supply forces. This shifted their focus from production to market orientation. Furthermore, it required manufacturing companies to conduct marketing research, accounting, auditing, human resource management, and research and development organizations to analyze market conditions. These were solely service-oriented functions.\nRelated Study Materials for Class 11 Economics (Indian Economic Development) Chapter 3\nS.No\nImportant Other Links for Class 11 Economics (Indian Economic Development) Chapter 3"
-    },
-    {
-      "q": "1.\nCBSE Class 11 Liberalisation, Privatisation and Globalisation: An Appraisal Notes",
+      "q": "4. High Inflation Level:\nThe central government was forced to monetize the fiscal deficits by borrowing from the RBI due to the huge fiscal deficits. The Reserve Bank of India (RBI) issued fresh money, raising inflation and making domestic commodities more expensive. Inflation climbed from 6.7 % per year in the 1980s to 10.3 % per year in 1990-91. In order to reduce inflation, the government in 1991 had no choice but to implement economic changes.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Liberalisation, Privatisation and Globalisation: An Appraisal Solutions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions and Answers cover topics from other chapters, helping students prepare thoroughly by focusing on key topics for easier revision.\nS.No\nChapter-wise Important Questions for Class 11 Economics (Indian Economic Development)\n1\nChapter 1 - Indian Economy on the Eve of Independence Important Questions\n2\nChapter 2 - Indian Economy 1950-1990 Important Questions\n3\nChapter 4 - Human Capital Formation in India Important Questions\n4\nChapter 5 - Rural Development Important Questions\n5\nChapter 6 - Employment: Growth, Informatisation and Other Issues Important Questions\n6\nChapter 7 - Environment and Sustainable Development Important Questions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Important Questions\nAdditional Study Materials for Class 11 Economics\nS.No\nStudy Materials for Class 11 Economics\n1\nCBSE Class 11 Economics NCERT Solutions\n2\nCBSE Class 11 Economics Revision Notes\n3\nCBSE Class 11 Economics NCERT Book\n4\nCBSE Class 11 Economics Sample Papers\n5\nCBSE Class 11 Economics Sandeep Garg Solutions",
+      "q": "2. Why is it necessary to become a member of WTO?",
+      "a": "The World Trade Organisation (WTO) was established in 1995 to replace the General Agreement on Tariffs and Trade (GATT). It is critical for every country to join the World Trade Organization (WTO) for the following reasons:"
+    },
+    {
+      "q": "1. The World Trade Organization (WTO) ensures that all of its members have equitable access to the global market.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. It argues for the elimination of tariff and non-tariff barriers, resulting in healthier and more equitable competition among diverse producers from various countries.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. It gives its member countries more freedom to produce in huge quantities in order to meet the demands of people across international borders.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. This opens up a lot of possibilities for making the best use of global resources while also increasing market access.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Why did RBI have to change its role from controller to facilitator of the financial sector in India?",
+      "a": "Prior to liberalisation, the Reserve Bank of India (RBI) regulated and controlled the financial industry, which included commercial banks, investment banks, stock exchange activities, and the foreign currency market. RBI has to change its function from controller to facilitator of the financial industry as a result of economic liberalisation and financial sector reforms. This means that financial institutions were free to make choices on a variety of issues without consulting the RBI. Private players were able to enter the banking sector as a result of this. The financial reforms were designed to foster private sector participation, enhance competition, and allow market forces to function in the banking sector. As a result, it can be claimed that prior to liberalisation, the RBI controlled financial sector operations, whereas after liberalisation, financial sector activities were mostly determined by market forces."
+    },
+    {
+      "q": "4. How is RBI controlling the commercial banks?",
+      "a": "RBI regulates commercial banks through a variety of instruments, including the Statutory Liquidity Ratio (SLR), Cash Reserve Ratio (CRR), Bank Rate, Prime Lending Rate (PLR), Repo Rate, and Reverse Repo Rate, as well as setting interest rates and determining the nature of lending to different sectors.\nThese are the ratios and rates that the RBI has set, and which all commercial banks are required to follow or maintain. All of these policies regulate the operations of commercial banks as well as the money supply in the Indian economy."
+    },
+    {
+      "q": "5. What do you understand by devaluation of rupee?",
+      "a": "A deliberate downward adjustment in the official exchange rate of the rupee relative to other currencies is known as devaluation. Devaluation is not the same as depreciation, which is a drop in the value of a currency in a floating exchange rate caused by supply and demand forces rather than government action. The Reserve Bank of India (RBI) controls the exchange rate of the rupee by buying and selling foreign currency, generally the US dollar, under the floating exchange rate system now in use in India.\nThe depreciation of the rupee had two major consequences. The first revaluation reduced the cost of Indian exports to foreigners and boosted their competitiveness. Second, it increased the cost of imported goods for domestic customers, discouraging imports. As is clear, this was done in order to minimise India's current account deficit.\n6 : Distinguish between the following\n(i) Strategic and Minority sale\nAns:\n(i)\nStrategic Sale\nMinority Sale"
+    },
+    {
+      "q": "1.\nThe selling of 51 percent or more of a PSU's stock to the private sector with the highest bid is referred to as a strategic sale.\nThe selling of less than 49 percent of a PSU's stock to the private sector is known as a minority sale.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nPSU ownership is transferred to the private sector.\nPSU's ownership remains with the government, which owns 51 percent of the company.\n(ii) Bilateral and Multilateral trade",
+      "a": "(ii)\nBilateral Trade\nMultilateral Trade"
+    },
+    {
+      "q": "1.\nIt is a bilateral commercial agreement between two nations.\nIt is a multilateral trade deal that involves more than two countries.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nThis is an agreement that gives both countries equal possibilities.\nThis is an agreement that ensures that all member countries have equitable access to the world market.\niii) Tariff and Non-tariff barriers.",
+      "a": "(iii)\nTariff Barriers\nNon-tariff Barriers"
+    },
+    {
+      "q": "1.\nIt refers to a levy levied by a country on imported goods in order to safeguard its native businesses.\nIt refers to the country's limits on imports that are not taxes.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nIt is levied on the physical units or the value of imported products.\nIt is levied on the quantity and quality of imported commodities.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nCustoms charges and export-import duties are included.\nQuotes and licences are included.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7. Why are tariffs imposed?",
+      "a": "Tariffs are used to make imported goods from other countries more expensive than indigenous items, hence discouraging imports. These are in place to provide a safe and protective environment for domestic enterprises who are just getting started in comparison to their more technologically adept overseas rivals. Tariffs make it easier for domestic businesses to thrive and survive. Tariffs are also placed on commodities that the government considers to be socially undesirable and whose importation would place an undue strain on the country's limited foreign exchange reserves."
+    },
+    {
+      "q": "8. What is the meaning of quantitative restrictions?",
+      "a": "Quantitative Restrictions (QRs) are limitations on the amount of commodities that can be imported or exported in the form of limits or quotas. Quantitative restrictions on imports are usually applied to discourage the import of foreign goods and reduce BOP deficits. QRs give domestic businesses a boost to survive, thrive, and expand in a more protective and less competitive market. It could take the shape of a monopoly, quota, or other quantitative means."
+    },
+    {
+      "q": "9. Those public sector undertakings which are making profits should be privatised. Do you agree with this view? Why?",
+      "a": "A government revenue generator is a PSU that is efficient and profitable. However, if a PSU is inefficient and loses money, it places an undue load on the government's limited resources and may result in a budget deficit. Privatization of loss-making PSUs is appropriate, while privatisation of profit-making PSUs is not. Privatizing a public utility could result in the consolidation of monopoly power in private hands. Furthermore, some PSUs, such as water and railways, contribute to the nation's welfare and are designed to serve the public at a low cost."
+    },
+    {
+      "q": "10. Do you think outsourcing is good for India? Why are developed countries opposing it?",
+      "a": "Outsourcing is beneficial to India. Outsourcing appears to be beneficial to India, as evidenced by the following points."
+    },
+    {
+      "q": "1. Employment:\nFor a growing country like India, job creation is a critical goal, and outsourcing has shown to be a godsend in this regard. It results in the creation of new, higher-paying jobs.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Technical know-how transfer:\nOutsourcing allows for the transfer of complex and advanced technology ideas and technical know-how from developed to developing countries.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nInternational credibility:\nOutsourcing to India improves India's international credibility. This raises the amount of money coming into India.\n4\n.\nEncourages other sectors:\nOutsourcing benefits not just the service industry, but also other associated sectors such as the industrial and agricultural sectors, due to different backward and forward connections.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nAssists in the growth and formation of human capital:\nOutsourcing aids in the development and formation of human capital by training and imparting advanced skills to employees, hence enhancing their future scope and appropriateness for high-ranking positions.\n6\n.\nEradication of poverty:\nOutsourcing enhances the level of living and the eradication of poverty in developing countries by producing more and better-paying jobs. It also aids in the reduction of poverty.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7.\nIncreased infrastructure investment:\nOutsourcing to India necessitates the development of higher-quality infrastructure. This leads to the economy's modernisation and the government's increased investment in developing high-quality infrastructure and human resources.\nHowever, while outsourcing to India is beneficial, developed countries oppose it since outsourcing causes a movement of income and investments from rich countries to developing countries. MNCs also contribute more to the host country's development than they do to their own. Outsourcing also reduces the number of jobs created in wealthy countries because the same jobs can be done for less money in developing countries. Furthermore, this results in job insecurity in rich countries, as jobs might be outsourced to poor countries at any time.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "11. India has certain advantages which make it a favourite outsourcing destination. What are these advantages?",
+      "a": "The following factors identify India as a preferred outsourcing destination for multinational corporations."
+    },
+    {
+      "q": "1.\nEasy Access to Low-Cost Labor:\nBecause labour rates in India are lower than in industrialised countries, MNCs find it economically feasible to outsource their operations to India.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nReasonable Degree of Skills:\nIndians have a reasonable level of skills and procedures that require little training time and, as a result, are inexpensive to learn.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nInternational worthiness and credibility:\nIndia has a reasonable level of international worthiness and credibility. This boosts international investors' confidence in India.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nUntapped Market:\nIndia offers an untapped market for manufactured goods and services. This not only allows MNCs to tap into India's vast local market, but also to conquer the worldwide market, as the cost of production in India is lower.\n5\n.\nStable Political Climate:\nIndia's democratic political environment allows multinational corporations to flourish and grow in a stable and secure environment.\n6\n.\nLack of Competitive Competitors:\nThe lack of fierce competition from Indian domestic businesses is the most critical factor for MNCs in India. This allows them to nearly have a monopoly in the Indian market.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7.\nFavorable Government Policies:\nThe most essential factor that contributes to India's popularity as an outsourcing destination is the country's favourable government and tax policies. The Indian government provides MNCs with a variety of attractive incentives, including tax vacations, reduced tax rates, and simplified tax laws, among others. All of these laws allow multinational corporations to keep a significant amount of their earnings in the form of savings, which they may use to grow and expand their businesses.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "12. Do you think the navaratna policy of the government helps in improving the performance of public sector undertakings in India? How?",
+      "a": "The government granted the designation of 'navaratnas' to the following nine PSUs to increase efficiency, instil professionalism, and enable them to compete effectively in the market:"
+    },
+    {
+      "q": "1. Indian Oil Corporation (Indian Oil Corporation) (IOCL)",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Bharat Petroleum Corporation Limited (BPCL)",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. Hindustan Petroleum Corporation Limited (HPCL)",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. Oil and Natural Gas Corporation (ONGC)",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5. Steel Authority of India Limited (SAIL)",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6. India Petrochemical Corporations Ltd (IPCL)",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7. Bharat Heavy Electricals Ltd (BHEL)",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "8. National Thermal Power Corporation (NTPC)",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "9. Videsh Sanchar Nigam Ltd (VSNL)\nThese businesses were given more financial, managerial, and operational independence. This increased their productivity and efficiency. They've also become fiercely competitive, with some of them on their way to becoming global powerhouses. These businesses are financially self-sufficient and self-sufficient. As a result, the navaratna strategy has boosted the performance of these PSUs significantly.\n13 : What are the major factors responsible for the high growth of the service sector?",
+      "a": "The following are the important elements that contributed to India's rise in the service sector:"
+    },
+    {
+      "q": "1.\nHigh demand for services as a final product:\nIndia was a relatively untapped market for the service industry. As a result, when the service industry began to expand as a result of business outsourcing from industrialised countries to India, there was a huge need for these services, particularly banking, computer services, advertising, and communication. As a result of the increasing demand, the service industry grew at a rapid pace.\n2\n.\nStructural transformation:\nThe Indian economy is undergoing structural transformation, which entails a shift in economic dependency from the primary to the tertiary sectors. Other sectors expanded their need for services as a result of this shift, boosting the service sector.\n3\n.\nLiberalisation and economic reforms:\nThe liberalisation and various economic changes that began in 1991 are also responsible for the expansion of the Indian service sector. Various constraints on the movement of international finance were reduced as a result of these reforms. As a result, India has seen a massive influx of foreign cash, foreign direct investments, and outsourcing. This aided the expansion of the service industry.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nIncreased trade volume:\nIndia's low tariff and non-tariff barriers to imports are partially to blame for the service sector's rapid expansion. Domestic products were able to engage and compete in international markets thanks to foreign trade reforms.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nLow-cost labour and a reasonable level of skill in India:\nDeveloped countries considered outsourcing to India possible and profitable due to the availability of low-cost labour and a reasonable level of skilled manpower in India. Business outsourcing, in and of itself, is a significant boost to the service sector's growth.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "14. Agriculture sector appears to be adversely affected by the reform process. Why?",
+      "a": "The agricultural sector did not gain greatly from the 1991 economic reforms. The causes for the negative consequences of economic reforms on India's agriculture industry are as follows:\n1\n.\nPublic Investment Reduction:\nThe Indian government has made significant cuts in providing enough irrigation, electricity, information systems, market linkages, and highways. Furthermore, agricultural research and development was not as well funded as it had been during the green revolution.\n2\n.\nLiberalization and Import Duty Reduction on Agricultural Items:\nThe Indian government cut import taxes on agricultural products in accordance with WTO agreements, forcing poor and marginal farmers to compete in international markets with their foreign counterparts. Poor farmers were harmed by stiff competition in the foreign market, as well as traditional farming techniques."
+    },
+    {
+      "q": "3.\nShift to Cash Crops and Lack of Food Grains:\nExport-oriented production techniques shifted agricultural production away from food grains and toward currency crops such as cotton, jute, and other cash crops. This resulted in a decrease in the availability of food grains and, as a result, inferior nutritional values, lowering their productivity even further.\n4\n.\nSubsidy Removal:\nSubsidies were removed from fertilisers, which increased the cost of farm production. This increased the cost of farming, putting poor and marginal farmers at a disadvantage.\n5\n.\nInflationary Pressures on Food Grains:\nThe change to cash crop production, combined with the elimination of subsidies, put inflationary pressures on food grain prices. As a result, the agricultural sector's performance was harmed as the cost of producing food grains increased.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "15. Why has the industrial sector performed poorly in the reform period?",
+      "a": "The industrial sector, like the agricultural sector, had a terrible result. The following factors may contribute to the industrial sector's poor performance:\n1\n.\nLack of Investment:\nDomestic enterprises could not compete with their developed overseas counterparts in terms of cost of production and quality of goods due to a lack of investment in infrastructure facilities particularly electricity supply."
+    },
+    {
+      "q": "2.\nLower Import Prices:\nLower import prices reduced demand for industrial production. Because of the reduction of import duties, imports from industrialised countries were cheaper. The demand for native goods fell as a result of these lower-cost, higher-quality overseas imports.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nVulnerable and Infant Domestic Industries:\nDomestic industries were given a safe haven to grow and expand during the pre-liberalisation period. However, at the time of liberalisation, domestic industries had not yet expanded to the amount that was expected, and as a result, they were unable to compete with multinational corporations. Domestic industries' reliance on traditional technologies that were neither cost-effective nor high-quality was a major factor in their slow growth. As a result, liberalisation had a negative impact on domestic industries.\n4\n.\nHigh Non-tariff Barriers by Developed Countries:\nDue to the high non-tariff barriers erected by developed countries, it was extremely difficult to get entry to their markets. For example, the United States did not lift quota limits on textile imports from India and China.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "16. Discuss economic reforms in India in the light of social justice and welfare.",
+      "a": "Reforms have resulted in an increase in the income of the already wealthy. Only high-income groups saw an increase in the quality of their consumption; economic progress did not reach the poorer portions of society.\nIndia was able to enter and compete in foreign markets thanks to economic changes. This made it easier to move products and services across international borders. Furthermore, greater inflows of foreign money and investment into India have decreased the need for foreign exchange to finance the purchase of complex and advanced technology into the country. Furthermore, India's economic growth and GDP increased by many folds as a result of the outsourcing and service industry boom. On the other hand, agriculture, which employed a large section of the population, was unaffected by the economic reforms. The reforms also favoured the high-income population at the expense of their low-income counterparts. As a result, economic and social disparities between different segments of the population have grown and continue to grow.\nMoreover, economic reforms focused on places that were well connected to major cities, leaving isolated and rural areas undeveloped. As a result, there were significant geographical differences. The rise in the service sector, particularly in the form of high-quality education, superior health-care facilities, information technology, tourism, multiplex theatres, and other amenities, was out of reach for the poor. The populace working in agriculture and related industries has yet to reap the benefits of improved technology and modern practises. As a result, economic reforms have failed to promote social justice and improve the wellbeing of India's general populace.\nClass 11 Economics Chapter 3 Topics\nWhy Is it Mandatory for Every Country to Become a Member of the WTO?\nWTO stands for World Trade Organisation which is a global trade organisation that was set up to give equal trade opportunities for all countries across the globe. WTO\u00a0 has its headquarters in Geneva, Switzerland. At present, WTO has about 164 member countries. India officially became a member of the WTO on January 1, 1995. WTO works to abolish tax barriers between countries and encourage healthy competition in trade. It also plays a role in helping needy countries across the boundaries. Members of WTO will have an important role in framing trade policies, regulations, safeguarding boundaries and advocating reforms in developing nations. In this, WTO provides scope to share resources optimally across the globe.\n(Image to be added soon)\nWhat is RBI and Explain Its Role in Other Commercial Banks?\nRBI stands for Reserve Bank of India and it was established on April 1, 1934.\u00a0 RBI is the central bank of India which deals with the issue and supply of Indian Rupees. All the other banks and financial organisations in India are controlled by norms and conditions introduced by RBI. Approval from RBI is needed by the banks for starting new branches. RBI holds a fixed amount of money in liquid form which is not in supply. RBI is also given the duty of fixing the interest rates of loans and deposits in the banks. In the case of demonetisation, the new notes are printed and supplied by RBI. Credit Rates for different purposes for each customer is fixed by them.\nWhy Were Reforms Introduced in India?\nEconomic reforms were introduced in India in 1991 under the name New Industrial Policy. The policy was a mitigation plan to save India from an economic crisis.\u00a0 India had rising debts with foreign countries which led to an exponential increase in the price of essential goods. The economic reform abolished license to all projects except for 18 industries. The focus was shifted from cultivating staple crops to cultivating cash crops. The public sector was narrowed down since they were a liability and the private sector which the revenue generator was given opportunities in the core industries. The government took special care to ensure that foreign investment was encouraged in India. New initiatives were taken to ensure increased export of goods and regulations were reduced for Foreign trade.\nHope you got some basic information about Economic Development in India. For detailed solutions, download NCERT Solutions for Class 11 Economics Chapter 3 free PDF.\nHow will the Mentors at Vedantu Help you Improve yourself?\nMentors at Vedantu have drafted Class 11 Economics Chapter 3 Solutions PDF which has clear explanations provided which enables students to improve themselves. Students can also clear doubts from the mentors who have years of teaching experience. Mentors are also available on video conferences which will help students learn on a one-to-one basis to further make the students understand the topics.\nSolved Example\nQ1) Why Were the Economic Reforms Introduced in 1991?"
+    },
+    {
+      "q": "1. To develop agriculture in India",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. To increase jobs in India",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. To mitigate the economic crisis in India",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4. To increase transportation in India",
+      "a": "3) To mitigate the economic crisis in India\nImportant Study Material Links for Class 11 Economics Chapter 3\nS. No\nImportant Study Materials Links for Class 11 Economics Chapter 3"
+    },
+    {
+      "q": "1.\nClass 11 Liberalisation, Privatisation and Globalisation: An Appraisal Revision Notes",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nClass 11 Liberalisation, Privatisation and Globalisation: An Appraisal Important Questions\nFun Fact\nIndia was the leading exporter of Pepper in Ancient times. There are references to pepper trade in Greek and Roman literature. Pepper was a spice native only to Indian Subcontinent. Colonisers first sought to find India only to harvest pepper from here, which later led to them plundering India for 200 years.\nNCERT Solutions for Class 11 Economics Other Chapter-Wise Links - Download the FREE PDF\nS. No\nNCERT Solutions Class 11 Economics Chapter-wise Links\n1\nChapter 1 - Indian Economy on the Eve of Independence Solutions\n2\nChapter 2 - Indian Economy 1950-1990 Solutions\n3\nChapter 4 - Human Capital Formation in India Solutions\n4\nChapter 5 - Rural Development Solutions\n5\nChapter 6 - Employment: Growth, Informalisation and Other Issues Solutions\n6\nChapter 7 - Environment and Sustainable Development Solutions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Solutions\nRelated Important Links for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "1.\nCBSE Class 11 Economics NCERT Books",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2.\nCBSE Class 11 Economics Important Questions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3.\nCBSE Class 11 Economics Sample Papers",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "5.\nCBSE Class 11 Economics Sandeep Garg Solutions",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6.\nCBSE Class 11 Economics Notes",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "7.\nCBSE Class 11 Economics Syllabus",
       "a": "Detailed solution available."
     }
   ],
   "4": [
     {
-      "q": "1. By which year governments were aiming to meet the Millennium Development Goals including halving the rate of global poverty?\n2009\n2013\n2015\n2017",
-      "a": "(c) 2015."
+      "q": "1. What are the two major sources of human capital in a country?",
+      "a": "The two main sources of human capital are education and health. Education builds skills, while health keeps people fit to use those skills. Both are important for a country\u2019s overall development."
     },
     {
-      "q": "2. The norm AICTE stands for:\nAll India Council for Technology Education\nAll India Council for Technical Education\nAll India Commission for Technology Education\nAll India Commission for Technical Education",
-      "a": "(b) All India Council for Technical Education"
+      "q": "2. What are the indicators of educational achievement in a country?",
+      "a": "Summary: Educational achievement can be measured by income earning capacity and other important indicators.\n\n- Main indicator: Earning ability of individuals.\n- Other important indicators include:\n  - Adult literacy rate (percentage of adults who can read and write)\n  - Youth literacy rate (percentage of 15-24 year-olds who are literate)\n  - Primary education completion rate (proportion of children finishing primary school)"
     },
     {
-      "q": "3. What do you mean by human capital formation?",
-      "a": "Human capital formation refers to the process of changing a country's people into workers who are capable of creating commodities and services. Relatively unskilled individuals are given the tools they need to contribute to the economy during this process."
+      "q": "3. Why do we observe regional differences in educational attainment in India?",
+      "a": "Summary: Regional differences in education in India arise due to diverse culture, economic conditions, and access to facilities.\n\n- India\u2019s regions differ in language, culture, needs, climate, and traditions.\n- Some states lack educational facilities, while others focus more on education.\n- States like Kerala and Tamil Nadu have high literacy; Bihar and Uttar Pradesh have lower rates.\n- In areas with fewer job opportunities and poverty, education gets less priority.\n- Access to schooling is often less for girls than boys.\n- Other factors: customs, traditions, and climate also play a role in regional differences."
     },
     {
-      "q": "4. What is meant by OJT?",
-      "a": "On-the-job training refers to the instruction given to employees by their employers at the workplace which will enable them to master their particular abilities. It increases their efficiency and productivity."
+      "q": "4. Bring out the differences between human capital and human development.",
+      "a": "Summary: Human capital focuses on skills for productivity, while human development is about people's overall well-being.\n\n- Human capital means the stock of skills and expertise that increase productivity.\n- Human development focuses on improving the standard of living and quality of life.\n- Human capital sees education and health as tools to make people more productive.\n- Human development treats humans as an end in themselves, not just a means to economic growth.\n- If an investment does not increase productivity, it is not valued as human capital, but is still valued for human development.\n- Human development supports everyone\u2019s right to education and health even if it doesn\u2019t directly lead to higher output."
     },
     {
-      "q": "5. Human capital is called investment that brings:\nQuantitative improvement in labour\nQualitative improvement in labour\nBoth\nNone",
-      "a": "(b) Qualitative improvement in labour"
+      "q": "5. How is human development a broader term as compared to human capital?",
+      "a": "Human development means the complete progress of people, not just their skills for work. To achieve this, good health and education are essential. When most people in the country are educated and healthy, real human development happens. So, human development is a bigger idea than human capital."
     },
     {
-      "q": "6. Stocks/shares of the companies are known as:\nHuman Capital\nPhysical Capital\nFinancial Capital\nNone",
-      "a": "(c) Financial Capital.\n7. _______ & ______ are the twin pillars on which rests the edifice of social sector reforms.\nEducation and Poverty\nEducation and Employment\nEducation and Health\nEducation and Infrastructure\nAns:\n(c) Education and Health."
+      "q": "6. What factors contribute to human capital formation?",
+      "a": "Summary: Human capital grows through investment in various sectors.\n\n- Education and health\n- Transportation and communication\n- Technical skills (know-how)\n- On-the-job training\n- Migration for better jobs"
     },
     {
-      "q": "8. Literate refers to\nThe ability to read and write\nAll educated people\nAll urban people\nNone of these",
-      "a": "(a) The ability to read and write."
+      "q": "7. How government organizations facilitate the functioning of schools and hospitals in India.",
+      "a": "Summary: Different government bodies manage and support schools and hospitals in India.\n\n- NCERT: Makes textbooks for classes up to 12th.\n- UGC: Provides funding and sets standards for universities.\n- AICTE: Oversees technical (engineering) education.\n- ICMR: Sets rules for medical research and health education.\n- National Institute of Health and Family Welfare: Runs health and family welfare programs."
     },
     {
-      "q": "8. People of which age group are treated as productive labour force\n0-6\n15-30\n20-35\n60-80",
-      "a": "(b) 15 to 30."
+      "q": "8. Education is considered to be an important input for the development of a nation. How?",
+      "a": "Summary: Education helps a country grow by making its people more skilled and productive.\n\n- More educated people help a nation progress.\n- Education raises income opportunities and living standards.\n- It supports the use of new technology and reduces poverty and inequality.\n- Education helps solve economic problems by creating skilled workers."
     },
     {
-      "q": "9. Person becomes a human resource when he or she\nIs able to work\nIs willing to work\nBelongs to particular age group\nAll of the above",
-      "a": "(d) All of the above"
+      "q": "9. Discuss the following as a source of human capital formation (i) Health infrastructure (ii) Expenditure on migration.",
+      "a": "Summary: Health infrastructure and migration expenses both add to human capital.\n\n- (i) Health infrastructure: Good hospitals, clinics, and clean water keep people healthy, making them more productive.\n- (ii) Expenditure on migration: Costs like travel and living in a new place help people move where they can find better jobs. When it leads to better earnings, this helps human capital grow."
     },
     {
-      "q": "10. Name the movement started by the national literacy mission.",
-      "a": "\u2018Education for all' is a movement begun by the National Literacy Mission."
+      "q": "10. Establish the need for acquiring information relating to health and education expenditure for the effective utilization of human resources.",
+      "a": "Summary: Having information about health and education spending helps people use their abilities wisely.\n\n- Details on jobs, admissions, and salary help students choose careers that fit them.\n- Access to information about health improves people\u2019s well-being and helps them make informed choices.\n- Awareness campaigns, like polio vaccination ads, show how information can improve society.\n- Investment in spreading information helps make the most of people\u2019s skills and knowledge."
     },
     {
-      "q": "11. What is the literacy rate of India?",
-      "a": "India's literacy rate is 77.7% as of 2020."
+      "q": "11. How does investment in human capital contribute to growth?",
+      "a": "Summary: Investing in people\u2019s skills and health leads to faster economic growth.\n\n- Human capital and economic growth help each other grow.\n- Skilled, healthy people are more productive.\n- More productivity leads to higher income for everyone.\n- As the economy grows, more investments are made in human capital, further boosting growth."
     },
     {
-      "q": "12. Following states have high literacy rate except:\nKerala\nMizoram\nBihar\nNone of these",
-      "a": "(c) Bihar"
+      "q": "12. There is a downward trend in inequality world-wide with a rise in the average education levels. Comment.",
+      "a": "Summary: As education becomes widespread, the gap between rich and poor decreases.\n\n- Education raises skills and job quality.\n- Higher skill leads to better pay and quality of life.\n- As more people get educated, incomes are shared more fairly.\n- Governments spend more on education, further reducing poverty and inequality."
     },
     {
-      "q": "13. The movement started by national literacy mission is\nEducation for all\nEducation for life\nEducation of children\nEducation literacy",
-      "a": "(a) Education for All"
+      "q": "13. Examine the role of education in the economic development of a nation.",
+      "a": "Summary: Education improves a country\u2019s growth and quality of life.\n\n- It increases production of goods and services.\n- Improves people\u2019s skills, making them more efficient.\n- Helps people use new technology.\n- Creates jobs and increases earning power.\n- Supports solutions to poverty and other problems."
     },
     {
-      "q": "14. Which institution guides higher education?\nUGC\nNCERT\nIGNOU\nNone of these",
-      "a": "(a) UGC"
+      "q": "14. Explain how investment in education stimulates economic growth.",
+      "a": "Summary: Spending on education helps the economy grow in different ways.\n\n- More educated people join the workforce.\n- People use new tools and methods better.\n- Higher productivity raises the nation\u2019s income.\n- Education leads to more innovation.\n- Trained workers help businesses to expand."
     },
     {
-      "q": "15. To provide the educational facilities to the children of transferable central government employees\u2019 _____ were established.\nNavodaya Vidayalas\nKendriya Vidyalayas\nBoth\nNone",
-      "a": "(b) Kendriya Vidyalayas\nShort answer Questions (3 or 4 Marks)"
+      "q": "15. Bring out the need for on-the-job-training for a person.",
+      "a": "Summary: On-the-job training teaches practical skills needed for a specific job.\n\n- Trainees learn job skills while doing the work.\n- Experienced workers help and support them.\n- Training improves efficiency, productivity, and income.\n- It is cost-effective since the benefits outweigh the costs."
     },
     {
-      "q": "16. Write three differences between physical capital and human capital?",
-      "a": "Three differences between physical capital and human capital are:\nBasis of Comparison\nPhysical Capital\nHuman Capital\nMeaning\nThe assets other than the non-human assets, which are tangible in nature, and act as an aid in the\u00a0 manufacturing and production process are referred to as physical capital. For example, plant and machinery, tools and equipment, office supplies, and so on.\nHuman capital is the stock of knowledge, talent, skills, and competencies brought into the organization by the employee.\nFormation\nEconomic and technical processes lead to the formation of physical capital.\nSocial process and a conscious decision made by the possessor leads to the formation of human capital.\nFinancial statement\nIt is reflected in the financial statements.\nIt is not reflected in the financial statements."
+      "q": "16. Trace the relationship between human capital and economic growth.",
+      "a": "Summary: Human capital and economic growth are closely linked.\n\n- Investment in people leads to a faster growing economy.\n- As the economy grows, more resources are put into education and health.\n- Both support and strengthen each other over time."
     },
     {
-      "q": "17. What is meant by financial capital? Explain with examples.",
-      "a": "Financial capital is any monetary economic resource utilised largely by entrepreneurs and firms to purchase the resources required to make their goods or deliver services to the economy. Retail, corporate, and investment banking are a few examples. The most common categories include equity, debt, sweat equity etc."
+      "q": "17. Discuss the need for promoting women's education in India.",
+      "a": "Summary: Women\u2019s education is crucial for India\u2019s growth and equality.\n\n- Educated women can earn a living and be independent.\n- Improves women\u2019s social and health status.\n- Helps keep family sizes healthy.\n- Educated mothers give better care and values to their children."
     },
     {
-      "q": "18. How does human capital formation improve quality of life?",
-      "a": "Human capital formation is influenced by factors such as investment in education, healthcare, on-the-job training, migration, and so on. People who are literate, healthy, skilled, and trained are valuable assets to an economy. As a result, higher population quality indicates higher economic growth. Human capital formation is linked to investment in man and his growth as a creative and productive resource. Also human capital formation will make people capable of performing skilled work, thus increasing their employability, which will further raise their standard of living and quality of life through improved income."
+      "q": "18. Argue in favor of the need for different forms of government intervention in education and health sectors.",
+      "a": "Summary: Government help is needed in education and health for fairness and access.\n\n- Not everyone can afford private schools or hospitals.\n- Public schools and hospitals reach poor and remote areas.\n- The government protects weaker groups (like SC, ST, OBC).\n- People often don\u2019t know enough about price or quality, so government rules prevent exploitation."
     },
     {
-      "q": "19. What is the difference between literacy and education?",
-      "a": "The difference between literacy and education is given below:\nBasis\nLiteracy\nEducation\nMeaning\nLiteracy is primarily concerned with learning to read and write.\nEducation is concerned with the holistic development of a person, resulting in a whole human who can not only read and write but also think in broader terms and analyze things rationally.\nEffect\nLiteracy cannot make people wise.\nEducation can by teaching people to distinguish between right and evil and to do the right thing at the right moment.\nScope\nLiteracy is a narrow concept.\nEducation is a broader concept."
+      "q": "19. What are the main problems of human capital formation in India?",
+      "a": "Summary: Many problems slow down human capital growth in India.\n\n- Rapid population growth strains resources.\n- Brain drain: Skilled workers leave for better jobs abroad.\n- Poor planning wastes talented workers.\n- Low standards in some schools reduce skill quality.\n- Uneven access to facilities across regions.\n- High poverty makes health and education hard to afford.\n- Gender inequality keeps many women from getting educated.\n- Lack of training for special jobs."
     },
     {
-      "q": "20. What do you mean by investment in education?",
-      "a": "The investment in education is an investment in the acquisition of skills and knowledge of an individual that will boost income or bring long-term advantages such as literary appreciation. It is critical to remember that when a person performs in his chosen sector and increases his income, he also contributes to the nation's economic progress. Hence, investment in education encourages economic growth.\nLong Answer Questions (6 Marks)\n21. \u2018School dropouts are giving way to child labour.\u2019 Discuss how this is a loss to human capital?\nAns:\nSchool dropout and child labor are related to the low socioeconomic position since parents want to send their children to work in order to raise household income.\nReasons for School Dropout:\nPoverty.\nMigration.\nChild marriage.\nChild labour.\nOut of all the above reasons, child labour and poverty are the major ones.\nDue to the gruesome situation of poverty, children are forced to leave their education, and work as labourers.\nChild labor deprives children of their childhood and is harmful to the emotional, physical and mental health of these children.\nSchool dropouts prevent children from acquiring literacy skills and pave the way for child labor.\nThese children are typically employed in dhabas, houses, construction sites, and other menial jobs.\nBeing illiterate accelerates the poverty cycle and, as a result, the process of human capital formation is incomplete.\nHad these children remained in school, they would have gotten education, thus paving their way for a better earning job\u00a0 where they could employ their skills and knowledge. But working in menial jobs, neither adds to the skills, nor their income, thus leading to a loss of human capital.\nThe Following Economic Impact of Child Labor are Examined:\nChild labor's effects at the microfamily level, particularly on family poverty in the short and long term.\nChild labor's impact on long-run growth and social development via various transmission mechanisms.\nThe international economic implications of child labor, particularly the effects on foreign direct investment.\nChild labor's impact on the adult labor market.\nFindings at the Micro Family Level:\nChild labor, in the long run, reinforces household poverty by lowering human capital.\nChild labor and education are not always mutually exclusive.\nChild labor in most wage-employment non-agricultural industries does not result in skill development.\nChild labor, in the long run, exacerbates poverty through increasing fertility.\nFindings at the Macro Family Level:\nChild labor can impair long-run growth and social development by reducing human capital accumulation.\nChild labor can be commonly seen in the unorganized and tiny sectors of the economy.\nThe influence on adult pay determines whether lowering child labor would accelerate capital investment and technological advancement.\nChild labor may harm more girls than boys, contributing to gender disparities in education.\nChild labor does not attract foreign direct investment.\nBoth children and adults can work as substitutes for one another.\nIt is unclear whether children truly substitute for adult employees, hence increasing adult unemployment and/or lowering adult wage rates.\nHence, the above explanation clarifies that school dropouts adds to the child labour in the economy, and creates a loss to human capital."
-    },
-    {
-      "q": "22. Discuss the educational achievements of India and what are the future prospects in education?",
-      "a": "After the ideas were put into action, efforts were undertaken to promote education. In order to streamline education, the government implemented the Kothari Commission's recommendations under the \"National Policy on Education\" in 1968. The key recommendations were universal primary education and universal secondary education. Introduction of a new educational pattern, three-language formula, inclusion of regional languages in higher education, advancement of agricultural and industrial education, and adult education. The following points describe the evolution of education in India post-independence:\nExpansion of General Education:\nDuring the planning period, general education was expanded. Primary education has always been free and mandatory. Since 1995, schools have served a midday meal to reduce dropout rates.\nTechnical Education Development:\nTechnical education, in addition to general education, plays a significant role in the building of human capital. The government has built several Industrial Training Institutes, Polytechnics, Engineering colleges, Medical and Dental colleges, Management institutes, and so on. Examples include IITs, IIMs, and NITs.\nWomen's Literacy:\nIn India, women's literacy was extremely poor, and was 52% as per 2011 Census. Men had a literacy rate of 75.8 percent. Women's education was prioritized in the National Policy on Education.\nVocational Education:\nThe National Education Policy of 1986 strives for vocational secondary education. Since 1988, the federal government has provided subsidies to state governments to help them carry out the program.\nAdult Education:\nSimply put, adult education refers to education for illiterate adults between the ages of 15 and 35. The First Five Year Plan established the National Board of Adult Education.\nEducation for All:\nThe 93rd Amendment makes obligatory education for all. Elementary education is a fundamental entitlement of all children aged 6 to 14 years. It's also completely free, and for the fulfilment of this purpose, Sarva Shiksha Abhiyan has been launched."
-    },
-    {
-      "q": "23. What do you think about India\u2019s current situation on gender equality?",
-      "a": "Gender equality indicates that men and women's different behaviors, desires, and needs are evaluated, respected, and favored equally. It does not imply that men and women must become the same, but that their rights, duties, and opportunities will not be determined by whether they are born male or female.\nFor ages, gender inequality has been a major societal concern in India. In India, the child sex ratio among children aged 0 to 6 years is 918 girls for every 1000 boys, according to Census 2011. This figure speaks for itself, indicating the need for immediate and effective measures to address the root causes of gender disparity.\nThe inequality between a girl and boy begins even before they are born. In many cases, she is not allowed to be born. The girl kid is regarded as a liability. She is frequently denied fundamental rights and equitable chances to have a healthy childhood and adult life.\nGirls account for 48 percent of India's overall child population, according to Census 2011, and many of them are involved in child labour, child trafficking, and child marriage. As evidenced by the following figures, the future of many females appears to be bleak:\nIn India, 12.15 million children are married, with 8.9 million of them being females; married girls outnumber boys three to one. (According to the 2011 Census)\nChildren made up 51% of all victims of human trafficking, with more than 80% of them being females. (National Cancer Research Board, 2018).\nIn India, there are 223 million child brides, 102 million of whom were married before the age of 15. (UNICEF)\nEfforts to Modify the Situation Include the Following:\nEducation to assist people change their minds on gender prejudice, as well as initiatives to raise awareness.\nContinual efforts to dispel gender preconceptions and misconceptions.\nAssuring the state's accountability for different plans, policies, laws, constitutional guarantees, and international obligations.\nGender-sensitive procedures are becoming institutionalised in different institutions, such as law and programmes.\nPromoting community responsibility in the prevention of gender discrimination breaches.\nAll girls deserve equal chances and an empowering environment to grow, whether it's in terms of education, health, protection, or involvement."
-    },
-    {
-      "q": "24. What is the role of human capital formation in an economy?\nOR\nState the importance of human capital formation in a country.",
-      "a": "Human capital is the primary driver of economic progress. It is a source of both increasing output and technological advancement. The main distinction between industrialized and developing countries is the rate of human capital advancement.\nHuman capital is required in developing countries to staff new and expanding government services, to implement new land-use systems and agricultural practices, develop new modes of communication, advance industry, and strengthen the education system.\nTo be more specific, a country's citizens are said to have greater human capital if they are well educated, well-nourished, skilled, and healthy.\nUnderdeveloped countries around the world are investing in people in order to improve their programming skills, social abilities, ideas, and health.\nThese investments are intended to boost productivity. Their economies' success is dependent on growing human capacities.\nHuman capital, on the other hand, does not exist in a vacuum.\nTo have a better understanding of this complex subject, we must evaluate the physical/passive variables that relate to a country's ability to make these investments.\nHuman capital formation is the act of enhancing the productive qualities of the labor force by giving more education and boosting the working population's skills, health, and notarization level.\nIt is the process of changing a country's inhabitants into employees capable of generating goods and services.\nRelatively unskilled individuals are given the tools they need to contribute to the economy during this process.\nIt is vital to a country's long-term economic progress and offers the same advantages as new technology or more efficient industrial equipment.\nWhile this process takes time, it frequently results in a higher quality of life for the population of a country within a few generations, if not sooner.\nThis procedure can be accomplished through the use of public health policy, education, or training opportunities.\nMethods for Creating Human Capital:\nThe provision of health-care services that affect people's life expectancy, strength, energy, and vitality.\nProvision of on-the-job training to improve labor force skills.\nOrganizing education at the elementary, intermediate, and tertiary levels.\nAdult education and training programs.\nAdequate migration facilities for families to adapt to changing job possibilities.\nHuman capital is inextricably linked to economic growth. The amount of money put into people's education might be used to gauge the relationship. Many nations, for example, provide free higher education to citizens. These governments recognize that the information gained through education contributes to the development of an economy and leads to economic progress.\nRelated Study Materials for Class 11 Economics (Indian Economic Development) Chapter 4\nS.No\nImportant Other Links for Class 11 Economics (Indian Economic Development) Chapter 4"
-    },
-    {
-      "q": "1.\nCBSE Class 11 Human Capital Formation in India Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 11 Human Capital Formation in India Solutions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions and Answers cover topics from other chapters, helping students prepare thoroughly by focusing on key topics for easier revision.\nS.No\nChapter-wise Important Questions for Class 11 Economics (Indian Economic Development)\n1\nChapter 1 - Indian Economy on the Eve of Independence Important Questions\n2\nChapter 2 - Indian Economy 1950-1990 Important Questions\n3\nChapter 3 - Liberalisation, Privatisation and Globalisation: An Appraisal Important Questions\n4\nChapter 5 - Rural Development Important Questions\n5\nChapter 6 - Employment: Growth, Informatisation and Other Issues Important Questions\n6\nChapter 7 - Environment and Sustainable Development Important Questions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Important Questions\nAdditional Study Materials for Class 11 Economics\nS.No\nStudy Materials for Class 11 Economics\n1\nCBSE Class 11 Economics NCERT Solutions\n2\nCBSE Class 11 Economics Revision Notes\n3\nCBSE Class 11 Economics NCERT Book\n4\nCBSE Class 11 Economics Sample Papers\n5\nCBSE Class 11 Economics Sandeep Garg Solutions",
-      "a": "Detailed solution available."
+      "q": "20. In your view, is it essential for the government to regulate the fee structure in education and health care institutions? If so, why?",
+      "a": "Summary: Yes, it is important for the government to control the costs of schools and health facilities.\n\n- Private schools and hospitals can be too expensive for many families.\n- The constitution says education and health are fundamental rights.\n- The government must make sure everyone has access, especially the poor and those in remote areas.\n- Regulating fees stops people from being exploited.\n- Government action is needed to make human capital development fair for all.\nCore Ideas from Human Capital Formation in India\nEducation and health are the main ways to improve human capital in India.\nInvestment in schooling and hospitals helps economic growth and reduces poverty.\nWomen\u2019s education is important for equal and sustainable development.\nGovernment support is needed for fair access to quality education and healthcare.\nRising education levels can decrease income inequality across regions."
     }
   ],
   "5": [
     {
-      "q": "1. Micro credit programme mean?\na) Credit provision made by small farmers\nb) Credit provisions made by self-help group to its members\nc) Credit provision made by large farmers\nd) None",
-      "a": "(b) Credit provisions made by self-help groups to its members."
-    },
-    {
-      "q": "2. What do you mean by rural development?",
-      "a": "Rural development is a strategy for improving the economic and social well-being of rural communities."
-    },
-    {
-      "q": "3. Non Institutional sources of agricultural credit are\na) Commercial banks\nb) NABARD\nc) Regional banks\nd) Traders",
-      "a": "(d) Traders"
-    },
-    {
-      "q": "4. Full form of NABARD is\na) National Bank for Agriculture and Rural Development\nb) Native Bank for Agriculture and Rural Development\nc) Native Bank for Agriculture and Real Development\nd) National Bank for Agriculture and Real Development",
-      "a": "(a) National Bank for Agriculture and Rural Development"
-    },
-    {
-      "q": "5. Which of the following is false regarding SHGs?\na) Small and informal association of poor persons\nb) Provide rural credit by mobilising their own resources\nc) Introduced in 1982\nd) Improve rural poor access to formal credit system",
-      "a": "(c) Introduced in 1982."
-    },
-    {
-      "q": "6. Why rural population need short term loans\na) For buying cattle\nb) For buying tractors\nc) For meeting consumption expenditure\nd) For paying old debt",
-      "a": "(c) For meeting consumption expenditure"
-    },
-    {
-      "q": "7. Write two instruments to safeguard the interests of farmers by the government.",
-      "a": "The two instruments are minimum support price (MSP) fixing and buffer stock."
-    },
-    {
-      "q": "8. Following are the major producers of marine products except\na) Gujarat\nb) Punjab\nc) Maharashtra\nd) Kerala",
-      "a": "(b) Punjab"
-    },
-    {
-      "q": "9. Long term loans required for rural population because\na) For buying fertilizers\nb) For buying agricultural machinery\nc) To buy seeds\nd) For making minor improvements on land",
-      "a": "(b) For buying agricultural machinery"
-    },
-    {
-      "q": "10. Fish production from inland sources contributes about ____ percent to the total fish production and the balance ___ percent from the main sector.\na) 49,51\nb) 75,25\nc) 25,75\nd) 51,49",
-      "a": "(a) 49,51."
-    },
-    {
-      "q": "11. What do you mean by micro credit programmer?",
-      "a": "The distribution of credit by self-help groups (SHG) to their various members is known as a micro credit programme, and the individual who is skilled in it is known as a micro credit programmer."
-    },
-    {
-      "q": "12. What do you mean by agricultural marketing?",
-      "a": "Agricultural marketing is a type of marketing in which farm products are distributed through wholesalers and stockists to end users.\nShort Answer Questions (3 or 4 Marks)"
-    },
-    {
-      "q": "13. What is TANWA? Or Define the term TANWA. Where is it used?",
-      "a": "TANWA is an acronym for Tamil Nadu Women in Agriculture. It is a Tamil Nadu-based project that aims to train women in cutting-edge farming techniques. It encourages women to take an active role in increasing agricultural output and household income. They support small-scale family activities like mushroom cultivation, soap manufacturing, doll making, and other income-generating activities using the collected funds."
-    },
-    {
-      "q": "14. What is horticulture? How does it work?",
-      "a": "Horticulture is a subset of crop agriculture, along with agronomy and forestry. Horticulture traditionally involves the cultivation of garden crops such as nuts, fruits, culinary herbs, vegetables, spices, beverage crops and ornamental plants.\u00a0 Horticulture is bifurcated into the production of:\nFood plants, it mainly includes olericulture and pomology\nOrnamental plants, it mainly includes landscape horticulture and floriculture.\nThere are two types of crops, permanent and temporary. The permanent crops are only planted once, they are not replanted again and again. While the temporary crops can be sown as well as harvested more than one time in the same year. These crops can be sown in some module trays or plant mats."
-    },
-    {
-      "q": "15. What is the adoption of a village by Parliamentarians?",
-      "a": "Sansad Adarsh Gram Yojana (SAGY) is another name for it. It is a rural development program that focuses on village development, including social and cultural development. The program was started by India's Prime Minister, Narendra Modi in 2014. Under this initiative, each Member of Parliament must select one village from the constituency that they represent, excluding their own or their in-laws' villages, and set requirements for it to become a model village by 2019."
-    },
-    {
-      "q": "16. What is sustainable development?",
-      "a": "Sustainable development is the concept for achieving human development goals while preserving natural systems' ability to supply the natural resources and ecosystem services on which the economy and society rely. Sustainable development is defined as the development that meets the requirements of the present without jeopardizing future generations' ability.\nA simple graphic of three overlapping circles symbolizing social, economic, and environmental progress, emphasizing the necessity for balancing and regulating the trade-offs between them, is frequently used to depict sustainable development.\nSustainable development has an impact that crosses political boundaries, necessitating collaboration. One of the best instances of sustainable development is the use of wind energy at power houses, workplaces, and other buildings or to pump water. Wind, after all, is a free resource."
-    },
-    {
-      "q": "17. Which state has an efficient implementation of milk cooperatives? Explain with examples.",
-      "a": "Gujarat is the Indian state with the most effective milk cooperative implementation. Amul, the Gujarat Cooperative Milk Marketing Federation's brand, is Asia's largest dairy brand. 170 Milk Producers' Co-operative Unions and 15 State Cooperative Milk Marketing Federations process and market milk. Cooperative-created brands have been synonymous with quality and value throughout the years. Vijaya (AP), Verka (Punjab), Saras (Rajasthan), and Nandini (Karnataka) are some of the other brands ."
-    },
-    {
-      "q": "18. What do you mean by organic food?",
-      "a": "Organic food is grown by farmers who prioritize the use of renewable resources as well as soil and water conservation in order to improve environmental quality for future generations. Organic meat, eggs, poultry and dairy products come from animals that were not given antibiotics or growth hormones.\nOrganic food is grown without the use of most common pesticides, synthetic fertilizers or sewage sludge, biotechnology, or ionizing radiation. Farmers who raise organic products do not utilize traditional techniques of fertilization or weed and bug control.\nPyrethrin, which is naturally contained in the Chrysanthemum flower, is an example of a natural pesticide. Crop rotation, green manures and compost, biological pest management, and mechanical cultivation are the main methods of organic farming.\nIts goal is to generate food while maintaining an ecological balance in order to avoid soil fertility or pest problems. Organic agriculture adopts a preventative strategy rather than reacting to problems as they arise.\nLong Answer Questions (6 Marks)"
-    },
-    {
-      "q": "19. Explain green revolution and golden revolution with suitable examples.",
-      "a": "The explanations are given below:\nGreen Revolution:\nGreen revolution refers to the use of HYV (High Yielding Variety) seeds, and various other measures such as increased and better use of fertilizers, irrigation facilities, pesticides etc in order to enhance productivity.\nThe Green Revolution is associated with increased wheat and rice output.\nIt was initiated by Norman Borlaug in the 1960s\nIt is generally known that the Green Revolution in Punjab in the mid 1960s contributed significantly to India's food self-sufficiency by bringing about a quantum leap in food grain wheat and rice output and productivity. Chemical fertilizers enabled crops to receive additional nutrients, resulting in increased yield.\nSynthetic herbicides and pesticides, which were newly developed, controlled weeds, discouraged or killed insects, and avoided diseases, resulting in increased output. As a result, India became self-sufficient in wheat and rice production.\nAs a result of the Green Revolution and the introduction of chemical fertilizers, synthetic herbicides and insecticides, high-yield crops, and the process of multiple cropping, the agricultural industry\u2019s produce was significantly higher.\nProductivity growth made it possible to feed the world's rising population.\nThere have been numerous achievements in India as a result of the green revolution, such as an increase in per hectare productivity, industrial development, farmer prosperity, a positive effect on consumers, an increase in food production, capitalistic farming, ploughing back profits, a very positive effect on rural employment, and so on.\nGolden Revolution\nThe Golden Revolution is associated with the increased use of horticulture crops, which is the production of fruits, vegetables, tuber crops, flowers, and so on, so as to increase their production.\nIt was from the period ranging between 1991 to 2003.\nAs a result of the Golden Revolution, India became the world leader in the production of fruits such as bananas, mangoes, spices, and coconut.\nThe reason for the Indian farmer's increased preference for horticultural crops is because vegetables are short-season crops that are typically farmed on small patches of ground by marginal farmers, generally on less than an acre of land.\nAs land holdings become more fragmented, vegetable cultivation provides farmers with immediate returns, as opposed to some pulse kinds, which can take up to six months to harvest.\nImproved salaries, urbanization, and increased consumption of fruits and vegetables appear to be fuelling demand.\nFarmers continue to plant perishables despite frequent price swings, indicating that the returns are higher for these crops than for traditional food grains. This represents a significant shift in Indian agriculture.\nFarmers appear to be taking additional risks by growing perishables, where annual losses might reach Rs 32, 000 crore."
-    },
-    {
-      "q": "20. Is rural banking successful in India? What are the difficulties?",
-      "a": "Rural residents require the same banking services as those in larger towns and cities. A rural community bank may provide typical retail banking services, such as loans and mortgages, to help personal and business customers handle their financial needs close to home. Some rural banks acquire specific commercial expertise in sectors such as agribusiness, depending on their location and local business focus.\nRural Banking Successful or not?\nWith the bulk of the Indian population still residing in rural or semi-urban areas, rural banking has become an essential component of the Indian financial markets.\nThe Government of India and the Reserve Bank of India have been working tirelessly to achieve total financial inclusion, i.e. timely and adequate access to financial services and credit at an affordable cost, across our huge country.\nPradhan Mantri Jan Dhan Yojana is one of the new government's latest initiatives that has undoubtedly contributed to bringing banking to every home.\nThis scheme will, over time, significantly reduce the financial inclusion gap between rural and urban areas, but the fact that approximately 70% of India's population is still rural and banking facility penetration is as low as 24%, i.e. only this percentage of people in these areas have formal bank accounts, cannot be overlooked.\nThese banks' activities have strengthened the banking culture by making formal credit available to rural households.\nThese facilities have aided in the modernization of the agriculture-dominated economy.\nBanks must consider the nuances of rural culture and recognize that the norms of rural economy differ from those of metropolitan dynamics. Everything, however, has its limitations, hence we can say that rural banking still has a long way to go for being fully successful in a country like India.\nConstraints of Rural Banking:\nLosses:\nThis could be due to high overhead costs, a fall in lending rates, smaller profit margins, a significant increase in employee pay and allowances, and so on.\nPoor progress:\nRRBs' progress falls short of expectations and is slow when compared to other types of banks due to numerous constraints on their operations.\nLimited investment scope\n: The primary goal of RRBs was to provide credit to the poor and vulnerable segments of society, such as small and marginal farmers and other vulnerable groups.\nLack of training facilities:\nRRB employees are often urban-oriented, and they may be unfamiliar with the challenges and conditions that exist in rural areas. The growth of RRBs is further hampered by a lack of training facilities in these locations\nCapital deficiency:\nCapital adequacy is the fundamental foundation of financial stability. RRBs have capital inadequacy because most of them have significant losses on their balance sheets that are eating away at all of their capital."
-    },
-    {
-      "q": "21. What are the problems faced by farmers in the initial years of organic farming?",
-      "a": "Farmers encountered the following issues during their first years of organic farming:\nInability to procure\n: Organic farming necessitates the use of organic manure, biofertilizers, and pesticides. Although these inputs are less expensive to purchase, poor farmers are still unable to obtain them.\nInfrastructure:\nThere is inadequacy of infrastructure required for organic farming.\nIncome Generation:\nBecause the income generated by organic farming is lower than that of modern agricultural farming, small and marginal farmers do not use it.\nExpensive:\nBecause organic foods are expensive, it is difficult for them to find a market for their product.\nInsufficient Yield:\nThe yields from organic farming are not as much as modern farming.\nAwareness:\nLack of awareness regarding organic farming, its financing and market aspects is there.\nShorter Shelf Life:\nThese products have a shorter shelf life.\nChoice:\nThe production choice of organic crops during off season is very limited.\nHowever, because this method of farming requires more labor, farmers gain a comparative advantage in organic farming."
-    },
-    {
-      "q": "22. What are the steps taken by the Indian government in developing rural markets?\nOr\nExplain the steps necessary to develop rural markets.",
-      "a": "Rural shoppers, in particular, aspire to acquire branded, high-quality products. As a result, Indian firms are very optimistic about the country's rural consumer markets, which are predicted to grow faster than urban consumer markets. Since 2000, India's per capita GDP in rural areas has grown at a compound annual growth rate (CAGR) of 6.2%. In rural and semi-urban India, the FMCG sector is expected to exceed \uff0420 billion by 2018 and reach \uff04100 billion by 2025.\nThe following are some of the most significant investments and advancements in India's rural economy.\nThe Ministry of Rural Development needs to complete 48,812 kilometers of rural roads by March 31, 2017 as part of the Pradhan Mantri Gram Sadak Yojana (PMGSY), which has a completion rate of 67.53 percent (32,963 kilometers) as of January 27, 2017.\nThe National Bank for Agriculture and Rural Development (NABARD) plans to install over 200,000 point-of-sale (PoS) devices in 100,000 villages and distribute RuPay cards to over 34 million farmers across India to enable farmers to conduct cashless transactions.\nMagma Fincorp, a non-banking financing company (NBFC) located in Kolkata, intends to extend its activities in South India, with a particular emphasis on rural and semi-urban markets, in order to assist the company grow swiftly.\nIn order to capitalize on considerable revenue opportunities from the Reserve Bank of India's financial inclusion effort, Bharti Airtel has applied for a payments bank license and has enlisted Kotak Mahindra Bank as a potential investor.\nPayments banks are intended to spread throughout the country's rural and remote areas, providing limited but important services such as money transfers and loans. Banks have the expertise, while telecom companies have the network, making it an excellent fit.\nThe government is doing everything it can to correct the situation. For example, in order to ensure a fair price for farm produce, the government releases MSP (Minimum Support Price) for certain farm products such as wheat, rice, and sugarcane."
-    },
-    {
-      "q": "23. How can IT help achieve the target of sustainable development and food security?",
-      "a": "Many contemporary thinkers feel that information technology can play an important role in attaining sustainable development and food security. IT cannot bring about change on its own, but good use of IT as a tool can assist in changing the situation.\nThe government can employ information technology to distribute timely information about areas prone to food insecurity, allowing for quick response.\nFarmers can access real-time weather, seed pricing, and farm produce price information. If they have access to the internet, they can also obtain pertinent information about optimal farming methods.\nToday, mobile phones have reached the majority of Indian villages, and they can be used as a tool to bring the benefits of information technology to farmers.\nAs the global population grows, much more work and ingenuity will be required to sustainably expand agricultural production, strengthen the global supply chain, reduce food losses and waste, and ensure that all people suffering from hunger and malnutrition have access to nutritious food.\nMany people around the world feel that eradicating hunger within the next generation is doable, and they are working together to achieve this goal.\nThe Sustainable Development Goal to \u201cEnd Hunger, Achieve Food Security, Improve Nutrition, and Promote Sustainable Agriculture\u201d (SDG2) acknowledges the interdependence of supporting sustainable agriculture, empowering small farmers, promoting gender equality, ending rural poverty, ensuring healthy lifestyles, addressing climate change, and other issues addressed within the set of 17 sustainable development goals.\nThe Sustainable Development Goals encompass a wide range of themes, including urban living and education, as well as oceans, inequality, and gender. These are 17 in total, all of which were launched in 2015 with a long list of targets that must be reached by 2030.\nE-agriculture services can provide farming advice, weather forecasts, and market pricing to farmers in their local area via short messaging service (SMS). Farmers can use the internet to learn about new practices, trade, and form new alliances.\nIn India, e-Choupal provides services that assist farmers in increasing yields and securing higher prices. TradeNet, based in Accra, Ghana, has developed a platform that allows farmers and dealers from all over the world to share market information via mobile networks and the Internet. In Kenya, similar platforms are being built.\nA comprehensive monitoring of global food supplies is an essential step in addressing food security. This includes mapping agricultural production and food shortages, as well as developing extensive databases.\nMonitoring may be considerably aided by ICT, which allows for remote sensing of agricultural and water resources, as well as the use of computers and software to gather, analyze, and distribute information essential to food security.\nGeographic information systems also offer excellent tools for statistical analysis.\nRural radio connects individuals in outlying locations and assists them in improving their farming methods and productivity.\nFarmers in rural areas can also have access to information through community telecentres, or digital villages, which provide rural residents with Internet, telephone, and fax services.\nRelated Study Materials for Class 11 Economics (Indian Economic Development) Chapter 5\nS.No\nImportant Other Links for Class 11 Economics (Indian Economic Development) Chapter 5"
-    },
-    {
-      "q": "1.\nCBSE Class 11 Rural Development Notes",
+      "q": "1. What do you mean by rural development? Bring out the key issues in rural development.\nSummary:\nRural development is about improving the social and economic life of people living in the countryside of India. The most important issues include education, health, jobs, infrastructure, land reforms, and removing poverty.\nHuman Capital Formation:\nRural areas often lack skilled and healthy people. So, there\u2019s a need to invest in schools, job skills, and healthcare.\nCreation of Productive Resources:\nMost jobs are in farming, but there is hidden unemployment and poor infrastructure. Providing new work opportunities outside agriculture can boost rural incomes.\nInfrastructure Development in Rural Areas:\nGood roads, banks, electricity, transport, irrigation, markets, and research centers are needed in villages for growth.\nLand Reforms:\nFair land distribution and using modern techniques can increase farm output and make land use better.\nPoverty:\nPoverty creates other problems like joblessness and backwardness. Helping villagers earn more and own income-generating assets is very important to fight poverty.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Rural Development Solutions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions and Answers cover topics from other chapters, helping students prepare thoroughly by focusing on key topics for easier revision.\nS.No\nChapter-wise Important Questions for Class 11 Economics (Indian Economic Development)\n1\nChapter 1 - Indian Economy on the Eve of Independence Important Questions\n2\nChapter 2 - Indian Economy 1950-1990 Important Questions\n3\nChapter 3 - Liberalisation, Privatisation and Globalisation: An Appraisal Important Questions\n4\nChapter 4 - Human Capital Formation in India Important Questions\n5\nChapter 6 - Employment: Growth, Informatisation and Other Issues Important Questions\n6\nChapter 7 - Environment and Sustainable Development Important Questions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Important Questions\nAdditional Study Materials for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics",
+      "q": "2. Discuss the importance of credit in rural development.\nCredit is necessary in villages because it helps farmers invest in their fields and improves their livelihoods, especially for those who don\u2019t have enough money saved.\nMany farmers have low incomes and can\u2019t save much, so they need loans to improve their farms.\nMost small farmers don\u2019t get bank loans easily and may have to borrow from moneylenders who charge high interest.\nCredit helps farmers buy seeds, fertilizers, and equipment for commercial farming.\nLoans are vital since crops take time to grow, and farmers need money up front for inputs.\nWith proper credit, farmers can escape poverty and improve their living standards.",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nCBSE Class 11 Economics NCERT Books",
+      "q": "3. Explain the role of micro-credit in meeting the credit requirements of the poor.\nMicro-credit is small loans given to the poor, mainly through Self Help Groups (SHGs) and NGOs, to help them with their financial needs.\nSHGs help villagers save money together and give loans to needy members from their pooled funds.\nSHGs work closely with banks, making it easier for poor people to access funds at low interest rates without much paperwork.\nSince SHGs work informally and don\u2019t need legal documents, many small farmers prefer this route.\nMicro-credit has become popular, especially with help from NABARD, and over seven lakh SHGs are active in rural areas.\nMicro-credit lowers costs and makes lending/borrowing easier for everyone, helping the poor become self-reliant.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Economics Important Questions",
+      "q": "4. Explain the steps taken by the government in developing rural markets.\nThe government has taken several steps to make rural markets fair and helpful for farmers.\nRegulated Markets:\nSpecial committees make sure sales are transparent and farmers get fair prices.\nInfrastructure Development:\nThe government built cold storage, warehouses, and provided cheap transport so farmers can store produce and sell at better places.\nCooperative Agricultural Marketing Societies:\nThese help farmers join together to bargain for better prices.\nMinimum Support Price Policy:\nThe government fixes a minimum price for crops, protecting farmers from price falls.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nCBSE Class 11 Economics Sample Papers",
+      "q": "5. Why is agricultural diversification essential for sustainable livelihoods?\nAgricultural diversification means doing different types of farming and related work (like dairy, poultry, or fishery). This helps villagers earn money even if crops fail or work is uneven.\nIf farming fails because of poor rainfall, farmers can earn by other means like fisheries or animal husbandry.\nOnly the Kharif season gives plenty of farm jobs, so new types of work help fill job gaps in other seasons.\nMoving some labour away from farming relieves pressure on land and increases incomes.\nNon-farm sectors like dairy or handicrafts also help the rural economy grow steadily.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
+      "q": "6. Critically evaluate the role of the rural banking system in the process of rural development in India.\nRural banking, especially after nationalization, has made loans more available to farmers but still faces problems like high defaults and lack of support for the poorest.\nThe nationalization of banks in 1969 started \u201csocial banking,\u201d making loans cheaper and more accessible for farmers. NABARD and other banks helped reduce farmers' dependence on moneylenders.\nBut, many banks ask for security or collateral, so small and poor farmers miss out.\nBanks haven\u2019t encouraged savings much among villagers.\nLoan recovery is weak because the government is lenient with defaulters, making banks lose money.",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nCBSE Class 11 Economics Sandeep Garg Solutions",
+      "q": "7. What do you mean by agricultural marketing?\nAgricultural marketing means all the steps between harvesting crops and selling the final products to buyers. This includes collecting the crop, processing, sorting/grading, packaging, storing, and finally selling so farmers get good prices, not just bringing goods to market.",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nCBSE Class 11 Economics Notes",
+      "q": "8. Mention some obstacles that hinder the mechanism of agricultural marketing.\nSome of the main obstacles are:\nFarmers are forced to sell products at low prices due to lack of information and storage facilities.\nThey face cheating in weighing and money calculations.\nFarmers often don\u2019t know current market prices, leading to selling at low rates.\nThey rarely have good storage options to hold crops for better prices later.\nMany cannot get agriculture loans, so they have to borrow from moneylenders at high interest.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "9. What are the alternative channels available for agricultural marketing? Give some examples.\nAlternative marketing channels allow farmers to sell directly to buyers instead of through middlemen, leading to better prices.\nSell directly in local markets like Apni Mandi (Punjab, Haryana, Rajasthan), Hadapsar Mandi (Pune), Rythu Bazars (Andhra Pradesh), Uzhavar Sandies (Tamil Nadu).\nFarmers can also do contracts with companies for set prices and get advance payments.\nThese options increase income and lower risk for small and marginal farmers.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "10. Distinguish between 'Green Revolution' and 'Golden Revolution.\nGreen Revolution\nGolden Revolution\nRice and wheat production increased as a result of the usage of HYV seeds, greater fertilizer use, and improved irrigation systems. This revolution led to the growth in food grain production.\nIt refers to the rapid increase in the output of horticulture crops such as fruits, vegetables, flowers, and other plants.\nIt resulted in a rise in production, particularly of rice and wheat.\nIt resulted in a surge in the production of fruits, vegetables, flowers, aromatic plants, spices, and other products.\nIndia became self-sufficient in wheat and rice production because of this revolution.\nIndia became a world leader because of this revolution in mangoes, bananas, coconut, and spices as a result of this revolution.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "11. Do you think the various measures taken by the government to improve agricultural marketing are sufficient? Discuss.\nThe government has done a lot to improve farm marketing, but many private players still control the market and some problems remain.\nSteps like regulated markets, more storage, better transport, and MSP policy help, but not all farmers benefit equally.\nMoneylenders, middlemen, and rich farmers still have too much control, often limiting real benefits for small farmers.\nInfrastructure and marketing challenges, especially for perishable crops and organic products, still need solving.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "12. Explain the role of non-farm employment in promoting rural diversification.\nNon-farm work such as animal husbandry, shops, or small factories gives villagers more job choices and income outside farming.\nNon-farm jobs help when farming fails due to poor weather or off-seasons.\nThey reduce hidden unemployment in rural areas.\nThey offer work opportunities all year, not just during farming seasons.\nJobs in non-farm areas also help fight poverty and bring steady incomes.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "13. Bring out the importance of animal husbandry, fisheries, and horticulture as a source of diversification.\nAnimal husbandry, fisheries, and horticulture offer various ways for rural families to earn extra money and get jobs apart from regular crop farming.\nAnimal husbandry:\nIncludes raising cattle, poultry, sheep, and goat. It provides jobs to millions, especially women and to people in dry regions, requires less money than crop farming, and increases production of milk, eggs, meat, and wool.\nFisheries:\nImportant for states with rivers/oceans like Kerala and Tamil Nadu. Both inland and marine fishing creates jobs and income, though its share in national GDP is small.\nHorticulture:\nGrowing fruits, vegetables, flowers, and medicinal plants. India is a leader in horticulture, and more farmers are now earning by growing these high-value crops, making them less at risk from crop failure.\n14. 'Information technology plays a very significant role in achieving sustainable development and food security - comment.\nInformation technology (IT) helps farmers make better decisions, protects against crop failure, and creates jobs in villages.\nIT provides information about weather and new technologies, helping farmers protect their crops.\nFarmers can access advice quickly through call centers and websites.\nThe IT sector also creates rural jobs, like operating info kiosks.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "15. What is organic farming and how does it promote sustainable development?\nOrganic farming means growing crops using natural methods, without chemical fertilizers or pesticides. It helps produce food that is safe to eat and good for the environment because it maintains soil health and reduces pollution. This makes economic growth long-lasting and less harmful to nature.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "16. Identify the benefits and limitations of organic farming.\nOrganic farming has many benefits, especially for health and the environment, but there are also important drawbacks.\nBenefits:\nNo chemical use, so it's better for health and nature.\nKeeps the soil fertile because only natural fertilizers are used.\nOrganic food is healthier and high in nutrition.\nGood for small farmers since it costs less to set up.\nOrganic products are in high demand abroad, so exports earn more.\nLimitations:\nYields (amount grown) are lower than traditional farming at first.\nMany farmers are not aware or interested in changing to organic because of low output.\nPoor infrastructure and marketing make it hard to sell organic products.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "17. Enlist some problems faced by farmers during the initial years of organic farming.\nFarmers face lower yields, quick spoilage, marketing troubles, and low profits at first when switching to organic farming.\nInitial crop yields are low, making large-scale production difficult.\nSmall farmers find it hard to earn enough with less produce per hectare.\nOrganic produce spoils quickly and has a short shelf life.\nChoosing what to grow is harder during off-seasons.\nMany farmers aren\u2019t aware of correct market prices, so may sell cheap.\nImportant Points to Remember from Rural Development Class 11 NCERT Solutions\nRural Development includes improving education, health care, and infrastructure in villages.\nCredit and micro-credit systems help farmers invest in farms and small businesses.\nAgricultural diversification like animal husbandry and fisheries helps reduce rural poverty.\nGovernment steps like regulated markets and MSP support fair agricultural marketing.\nOrganic farming encourages sustainable growth and protects soil health in rural areas.",
       "a": "Detailed solution available."
     }
   ],
   "6": [
     {
-      "q": "1. Female worker participation rate in rural areas is \u2013\nLower in rural areas\nHigher in rural areas\nLower in both the areas\nHigher in urban areas",
-      "a": "(b) Higher in rural areas"
+      "q": "1. Who is a worker?",
+      "a": "A worker is someone who is hired to do work as per a service contract."
     },
     {
-      "q": "2. Who is a worker?",
-      "a": "A worker is someone who works for a living by doing something productive."
+      "q": "2. Define worker population ratio.",
+      "a": "The worker population ratio is the number of people employed per thousand people. It helps show the employment situation of a country.\nThis ratio is found by dividing the total workforce by the total population, then multiplying by 100.\nWorker population ratio = (total workforce / total population) x 100"
     },
     {
-      "q": "3. Workers enjoy job security in\nUnorganised Sector\nAgriculture Sector\nOrganised Sector\nPrivate Sector",
-      "a": "(c) organized sector"
+      "q": "3. Are the following people - a beggar, a thief, a smuggler, a gambler - workers? Why?",
+      "a": "No, these people are not considered workers. A worker is involved in activities that legally contribute to the country\u2019s GDP. A beggar, thief, smuggler, and gambler do not engage in legal economic activities that help earn the country money, so they are not seen as workers."
     },
     {
-      "q": "4. Which of the following economic activities is not in the tertiary sector?\nBee-keeping\nTeaching\nBanking\nWorking in a call centre",
-      "a": "(a) Bee-keeping"
+      "q": "4. Find the odd one out: proprietor of a saloon, a cobbler, a cashier in Mother Dairy, a tuition master, transport operator, production worker.",
+      "a": "The tuition master and proprietor of a saloon are the odd ones out. Both are self-employed, running their own businesses, while the others are employed and work for someone else for wages or salaries."
     },
     {
-      "q": "5. What is meant by participation ratio?",
-      "a": "The participation ratio is defined as the percentage of the whole population that engages in productive activity. It is also known as the worker population ratio."
+      "q": "5. The newly emerging jobs are found mostly in the _____ Sector (service/manufacturing).",
+      "a": "The newly emerging jobs are mostly found in the service sector. This sector includes trade, banking, insurance, health, and other services, and has grown much faster than manufacturing due to globalization."
     },
     {
-      "q": "6. Give three sources that collect data on unemployment in India.",
-      "a": "The three sources are:\nCensus reports from India.\nNational sample survey organization reports on employment and unemployment conditions.\nEmployment and training directorate general date of registration with employment exchange."
+      "q": "6. An establishment with four hired workers is called a (formal/informal) sector establishment.",
+      "a": "An establishment with four hired workers is called an informal sector establishment. The informal sector includes enterprises that hire less than 10 workers (except for farming and self-employment)."
     },
     {
-      "q": "7. Unemployment in rural areas is:\nDisguised unemployment\nIndustrial unemployment\nSeasonal unemployment\n(a) & (c)\n(a) & (b)",
-      "a": "Option (d)"
+      "q": "7. Raj goes to school. When he is not in school, he works on his farm. Can he be considered a worker? Why?",
+      "a": "Yes, Raj is considered a worker because his work on the farm adds to the farm\u2019s productivity. Anyone who helps in economic activity that adds to the country\u2019s GDP is seen as a worker."
     },
     {
-      "q": "8. Inflation means\nRise in prices of only selected goods\nContinuous rise in general price level\nRise in general price level\nContinuous rise in general price level over a long period",
-      "a": "(b) Rise in general price level"
-    },
-    {
-      "q": "9. Long run solution of inflation lies in\nControlling demand\nEnhancing supply\nBoth\nNone",
-      "a": "(b) Enhancing\u00a0supply."
-    },
-    {
-      "q": "10. Underemployment occurs when people\nDo not want to work\nAre not skilled\nAre not paid for their work\nAre working less than they are capable of",
-      "a": "(d) are working less than they are capable of"
-    },
-    {
-      "q": "11. Urban areas of most suffer most from\nOpen unemployment\nDisguised unemployment\nSeasonal unemployment\nNone of the above",
-      "a": "(a) Open unemployment"
-    },
-    {
-      "q": "12. Which one of the following sectors is the largest employer in India?\nSecondary\nIT sector\nTertiary\nPrimary",
-      "a": "(d) Primary"
-    },
-    {
-      "q": "13. Potential labour force of India consists of\nThose who are fit to work\nThose who are willing to work\nPeople in particular age group\nAll of these",
-      "a": "(d) all of the these"
-    },
-    {
-      "q": "14. Which of the following is false regarding disguised unemployment\nMounting pressure of population in rural areas with no alternative employment\nMarginal productivity of worker is high\nFeature of agrarian economy\nMore people are engaged than required",
-      "a": "(b) Marginal productivity of worker is high"
-    },
-    {
-      "q": "15. An establishment with four hired workers is known as ____ sector establishment\nInformal\nFormal\nBoth\nNone",
-      "a": "(a) Informal sector.\nShort answer Questions (3 or 4 Marks)"
-    },
-    {
-      "q": "16. What is the current percentage of regular salaried employees, self-employed and casual wage labourers in India?",
-      "a": "Since April 2016, the Labour Bureau has been conducting the Quarterly Employment Survey (New Series) with the goal of measuring relative change in employment situation over successive quarters in a sizable segment of the Non-farm Industrial economy covering 8 major sector namely,\nManufacturing,\nConstruction,\nTrade,\nTransport,\nEducation,\nHealth,\nAccommodation & Restaurants, and\nIT/BPO.\nPercentage:\nThis poll applies to businesses with ten or more employees.\nIn the Sixth Economic Census, these eight sectors account for around 81 percent of total employment of units with 10 or more workers (Organized sector) (6th EC).\nAccording to a recent official poll, approximately 52 percent of Indian employees are self-employed, while 25 percent are casual laborers and only 23 percent have salaried employment.\nHowever, self -employed employees in rural areas account for 58% as against 38% in urban areas, casual labourers 29% in rural areas, as against 15% in urban areas, whereas the ratio of salaried employees is only 13% in rural areas as against 47% in urban areas."
-    },
-    {
-      "q": "17. What is formal sector employment?",
-      "a": "The formal sector of employment includes all jobs with regular hours and earnings that are recognized as income sources for which income taxes must be paid. In India, the term \"organized sector\" or \"formal sector\" refers to licensed organizations, that is, those that are registered and pay GST.\nPublic sector organizations, as well as private sector organizations, where the hiring is for 10 or more than 10 hired workers are referred to as formal sector employment. Those who work in such establishments are referred to as formal sector workers.\nA job offer is provided to people working under the formal sector, which is a formal written document delivered by a company to a job candidate who has been chosen for the position. When a company makes a verbal job offer, the recruiting manager usually calls the chosen candidate to inform them that they have been offered the position."
-    },
-    {
-      "q": "18. Why are less women found in regular salaried employment?",
-      "a": "As we all know, men outnumber women in conventional salaried jobs. They account for roughly 23% of the population, whereas women account for about 21%. The difference has been reduced overtime, but it still exists.\nRegular compensated employment necessitates specialized knowledge and a high level of literacy, and Indian women have a long way to go to attain this.\nFemale education is not prioritized in India, and as a result, the majority of women in India lack the educational qualifications and professional skills essential for a regular compensated job.\nFamily Discouragement is another reason. In India, families still do not want female members to leave the house for work, especially if the hours are long, as in conventional waged jobs.\nThe major belief that a child\u2019s responsibility is of a woman primarily, also leads to high female turnover as and when a child is born.\nThe rise in crime against women has also resulted in women withdrawing from regular employment due to security concerns such as late working hours in private sector enterprises and MNCs are not considered desirable by the majority of women."
-    },
-    {
-      "q": "19. Explain casual wage labourers.",
-      "a": "Casual labor, often known as irregular employment or part-time labor, refers to workers whose regular employment consists of a series of short-term occupations. The dock worker was a common casual laborer in the late nineteenth and early twentieth century.\nCasual labor is typically employed by the hour, day, or for specific activities, generally to fulfill a fluctuating need for work. They are typically unskilled employees. Workers on a building site are an example. Their pay can range from Rs 200/- to Rs. 2000/- depending on their work capacity and hours."
-    },
-    {
-      "q": "20. Why are regular salaried employees more in urban areas than in rural areas?",
-      "a": "This disparity can be attributed to a variety of factors, such as.\nOpportunities to learn and improve such talents are more prevalent in metropolitan locations. And these abilities are obtained through a process of training and education that is not available in rural areas due to a lack of investment, infrastructure, and rural people's poor literacy level.\nThe majority of occupations for regular salaried employees are centered in metropolitan regions, resulting in a growth in the number of regular salaried employees.\nLarge enterprises, particularly multinational corporations (MNCs), are concentrated in metropolitan regions due to the presence of economic infrastructure and the availability of contemporary amenities such as banks, transportation, and communication, among other things.\nThe rural population is mostly involved in agriculture and is unwilling to risk leaving their farms for regular compensated employment.\nLong Answer Questions (6 Marks)"
-    },
-    {
-      "q": "21. Economists point out that casual wage labourers are the most vulnerable among the three categories. Could you locate who these workers are and where they are found and why?",
-      "a": "The nature of work is changing. Over the last several decades, the traditional employment relationship based on full-time, stable work with decent compensation and benefits has ceased to be the dominant employment arrangement.\nPart-time, temporary, and casual employment have risen in popularity in its place. Economic causes, technology, global competition, and changes in corporate structure have all contributed to these shifts.\nWorkers at the lower end of the pay and skill continuum struggle to make ends meet, with few or no benefits, no job security, and little control over their working conditions. They have low earnings and at least two of the following characteristics, no pension, no union, and/or a small corporate size.\nIt comprises temporary foreign labor, service industry positions, food service and lodging occupations, temporary agency work, and self-employment on one's own account.\nWomen, colored people, immigrants, people with disabilities, older people, and youth are disproportionately represented in society.\nPart-time, temporary work is more likely for single parents (typically women), racialized employees, and recent immigrants. Women are more likely than men to be low-paid part-time workers.\nThe dock worker was a common casual laborer in the late nineteenth and early twentieth century. Construction, logging, sawmilling, agriculture, and the service trades are other important industries that have relied largely on casual labor.\nBecause of job uncertainty, the strain of holding many jobs, irregular or lengthy hours, unstable visa status, and a lack of legal protections, casual labor can create severe stress."
-    },
-    {
-      "q": "22. Can we say that the self-employed earn more than the casual wage labourers or regular salaried employees? Identify a few other indicators of quality of employment.",
-      "a": "Meaning: Self Employment and Salaried Employees:\nThe term \"self-employed\" refers to a situation in which an individual works for himself rather than for an employer who pays a salary or wage. A self-employed person earns money by conducting profitable operations from a trade or business that he owns and operates. Private research firms, independent contractors, sole proprietors of businesses, and those with partnerships are other examples.\nThe primary distinction between wage employment and self-employment is that in wage employment, one works for someone else and receives a salary for doing so, whereas in self-employment, an individual earns his or her money by carrying out profitable operations in a trade or business that they directly control.\nWho earns more?\nHowever, it does not always mean that any one of the two, self-employed or salaried employment will always earn more than the other. It depends on various factors, such as size of business, the market situations, type of jobs (skilled/unskilled), the extent of skills and competencies a person possesses, the efficiency with which a person works, brand value of the person etc.\nA freelance-makeup artist might earn much more than that of a person working in a salon. While in the other case, a manager in a firm earns higher than that of a businessman.\nIndicators of Quality of employment\nThe culture of the company.\nWork-Life balance.\nJob security.\nWork Environment.\nRole of labour and trade unions.\nChances of career growth progress.\nOpportunities for skill development.\nExtent of employee participation and initiative in the decision making process, etc."
-    },
-    {
-      "q": "23. What will happen if there is no additional employment generated in the economy even though we are able to produce goods and services in the economy? How could jobless growth happen?",
-      "a": "In many scenarios, Growth and the production of goods and services without additional employment is not possible. As people need to be engaged in the primary sector, and tertiary sector for the production of goods and services, as all the three sectors,and their demand are interdependent on one another. Even if an economy grows, without employment, such a situation is not likely to persist for a long period of time.\nJobless growth refers to the situation when the economy is growing even when the situation of high unemployment persists.\nEconomists are still unsure of what is causing this, but some of the scenarios in which jobless growth is possible include:\nLarge Firms Eclipsing Small Firms:\nWhile small businesses create the majority of jobs in most economies, large corporations are more productive and can take advantage of economies of scale. When these large corporations consume the market share of small businesses, any additional employment may be taken away, thus leading to growth of the economy without adding to the employment levels.\nShift to the Service Sector:\nWhen the economy shifts towards the service sector, with the service sector taking up the shares of the industrial sector, in such situations the economy may grow, even when no new employment is generated, as service sector highly involves automation.\nTechnological Developments:\nProductivity can rise dramatically as a result of technological change such as the onset of ecommerce had caused thousands of people to lose their jobs. Hence, in such cases, the economy boosts, but with a high rate of unemployment persisting in the economy.\nLabour Productivity:\nFor jobless growth to occur, labor productivity must increase at a rate greater than or equal to the GDP. This will ensure that no new jobs are created, and the economy experiencing growth.\nMechanisation:\nTraditionally labor-intensive industries are beginning to mechanize their operations. While it increases their productivity and profitability, it also reduces job opportunities. Thus job less growth occurs when unemployment persists"
-    },
-    {
-      "q": "24. What is informalisation of Indian workforce?",
-      "a": "The term \"informalisation of workforce\" refers to a situation in which the percentage of labor in the formal sector is steadily declining while the percentage of workforce in the informal sector is increasing.\nMillions of farmers, farm labour, small business owners, and others work in the informal sector.It also encompasses all non-farm casual wage workers who work under more than one employer.\nIn the case of India, progress and development often result in an increase in the number of people working in the formal sector and a decrease in the number of people employed in the informal sector, hence informalisation denotes the decreased progress and growth of a country like India.\nIssues faced by Informal Sector:\nNo regular income.\nNo or less protection from the government.\nDismissal of workers without giving them their deserved compensation\nThe use of outdated, obsolete technology in the informal sector..\nThe residence of the informal sector workers are mainly in slums or very low maintenance areas.\nReasons for the informalization of the workforce:\nUncertainties in the labor market\nIlliteracy and low skill levels\nIncreasing import competition\nReduced formal employment prospects\nIncreased job flexibility\nUnbundling of manufacturing employment \u2013 outsourcing\nOther outsourcings\nContractual services\nIncreased demand for telecommunications and information technology services\nIndirect economic reforms that have opened up the market\nCurrent state of informalization in the Indian labor force:\nCurrently, just 10% of the 470 million workforce is employed in the formal sector. In other words, 90 percent of India's workers do not have the same privileges as their nominally employed counterparts, such as social security and employment perks.\nInformal laborers also face harsher working circumstances, with no job security, no benefits or safeguards, and low earnings. The safeguards given to workers under various laws are not followed by the informal sector, and they are also outside the jurisdiction of the government.\nInformal sector also has an impact on the government in terms of income foregone because units operating in the informal sector are not included in the government's fiscal revenue net.\nAccording to the NSSO, 84.7 percent of jobs in the Indian economy are in the informal or unorganized sector. Manufacturing, construction, and trade are the largest contributors of informal employment, excluding agriculture.\nHowever, the International Labour Organisation(ILO) has initiated the efforts for the development and betterment of the informal sector of the country by providing social security measures.\nRelated Study Materials for Class 11 Economics (Indian Economic Development) Chapter 6\nS.No\nImportant Other Links for Class 11 Economics (Indian Economic Development) Chapter 6"
-    },
-    {
-      "q": "1.\nCBSE Class 11 Employment: Growth, Informatisation and Other Issues Notes",
+      "q": "8. Compared to urban women, more rural women are found working. Why?\nMore rural women work compared to urban women due to family needs, less education, and higher poverty.\nOver 30% of rural workers are women; in cities only 14% are women.\nRural women often work on farms because such jobs don't require high skills or specialization.\nRural poverty is more common than urban poverty, so more rural women work to support their families.\nUrban families typically earn more, so there is less need for women to work.\nFamily traditions and lower female literacy also reduce urban women\u2019s workforce share.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Employment: Growth, Informatisation and Other Issues Solutions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions and Answers cover topics from other chapters, helping students prepare thoroughly by focusing on key topics for easier revision.\nS.No\nChapter-wise Important Questions for Class 11 Economics (Indian Economic Development)\n1\nChapter 1 - Indian Economy on the Eve of Independence Important Questions\n2\nChapter 2 - Indian Economy 1950-1990 Important Questions\n3\nChapter 3 - Liberalisation, Privatisation and Globalisation: An Appraisal Important Questions\n4\nChapter 4 - Human Capital Formation in India Important Questions\n5\nChapter 5 - Rural Development Important Questions\n6\nChapter 7 - Environment and Sustainable Development Important Questions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Important Questions\nAdditional Study Materials for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics",
+      "q": "9. Meena is a housewife. Besides doing family chores, she works in her husband\u2019s cloth shop. Can she be considered a worker? Why?",
+      "a": "Yes, Meena is considered a worker. She helps in the shop and her work adds to the GDP, which makes her a worker."
+    },
+    {
+      "q": "10. Find the odd one out: (i) rickshaw puller who works under a rickshaw owner, (ii) mason, (iii) mechanic shop worker, (iv) shoeshine boy.",
+      "a": "The shoeshine boy is the odd one out. The other workers are employed by someone else and get paid wages, but the shoeshine boy is self-employed and works for himself."
+    },
+    {
+      "q": "11. The following table shows the distribution of workforce in India for the year 1972-73. Analyse it and explain the nature of workforce distribution. This data is about the situation 30 years ago!\nIn 1972-73, most workers in India were in rural areas and engaged in agriculture.\nIndia\u2019s workforce in 1972-73 was 234 million\u2014195 million rural, 39 million urban.\n83% of workers were rural, mainly due to agriculture and related sectors.\nRural workforce: 64% male, 36% female; urban: 82% male, 18% female.\nMen worked more than women because women had less education and fewer chances.\nPoverty, low productivity, disguised unemployment, and low female participation were major issues then.",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nCBSE Class 11 Economics NCERT Books",
+      "q": "12. The following table shows the population and worker population ratio for India in 1999-2000. Can you estimate the workforce (urban and total) for India?",
+      "a": "Estimated no of workers in urban areas = 28.52 x 33.7/100 = 9.61124\nTotal workforce in India = 100.40 x 39.5/100 = 39.658"
+    },
+    {
+      "q": "13. Why are regular salaried employees more in urban areas than in rural areas?\nRegular salaried jobs are more common in cities because cities have more skilled jobs and facilities.\nRegular salaried workers usually need special skills and training, found more in cities.\nCities have more schools, colleges, banks, and companies that offer such jobs.\nRural areas lack infrastructure, investment, and high literacy needed for regular jobs.\nBig companies and modern jobs are mostly in urban areas.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Economics Important Questions",
+      "q": "14. Why are less women found in regular salaried employment?\nFewer women have regular salaried jobs because they work more in unorganized, less secure jobs.\nMany women are in jobs without contracts or steady income.\nRegular salaried work needs contracts and reliable pay, which women get less often.\nWomen have less bargaining power and often get paid less than men.\nMost women take temporary or self-employment jobs instead of regular salaried ones.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nCBSE Class 11 Economics Sample Papers",
+      "q": "15. Analyse the recent trends in sectoral distribution of workforce in India.\nSummary: Most Indian workers are still in agriculture, but service and industry jobs are increasing.\nThe primary sector (mainly agriculture) employs the majority, especially in rural areas.\nSecondary sector (industry) employs around 24% of workers, more in cities.\nJobs in the service (tertiary) sector are increasing fast, especially in urban areas.\nMost rural women work in agriculture; men have more chances in manufacturing and services.\nWomen are focused in agriculture, while men are more evenly spread across all sectors.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
+      "q": "16. Compared to the 1970s, there has hardly been any change in the distribution of workforce across different industries. Comment.\nThere has been some change, but most workers still depend on agriculture.\nIn 1972-73, about 74% of workers were in agriculture; it dropped to 50% by 2011-12.\nIndustry and services have grown, but not enough workers have moved from farming.\nMore people work as informal wage earners now, showing rising casual jobs.\nStill, industry and services need to create more jobs to reduce pressure on agriculture.",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nCBSE Class 11 Economics Sandeep Garg Solutions",
+      "q": "17. Do you believe that within 50 years, employment generated within India is as much as the growth of GDP? How?\nEmployment has not grown as fast as GDP in the past 50 years.\nGDP grew more than 8% in some years, but job growth was very low (like 0.39% in the 1950s).\nModern technology replaced workers with machines, so fewer new jobs were created.\nIndustry and services did not take in enough workers from agriculture.\nPoverty, low farm productivity, and hidden unemployment in agriculture continued.\nMost new jobs went to the highly educated, while many people were left unemployed or underemployed.",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nCBSE Class 11 Economics Notes",
+      "q": "18. Is it important to generate employment in the formal sector rather than the informal sector? Why?",
+      "a": "Yes, it is important. Jobs in the formal sector come with benefits like pension, provident fund, and gratuity. Formal sector workers get regular salaries, better technology, and better working conditions, which help reduce poverty and inequality."
+    },
+    {
+      "q": "19. Victor is able to get work only for 2 hours a day. For the rest of the day, he is looking for work. Is he unemployed? Why? What kind of jobs could he do?",
+      "a": "Yes, Victor is unemployed. He works less than he wants to, so he is underemployed. People like Victor could take part-time jobs like delivering newspapers, working in a restaurant, delivering couriers, or as a bank teller."
+    },
+    {
+      "q": "20. You live in a village. If you are asked to suggest to the village panchayat, what kinds of sports would you recommend for the improvement of your village which would also generate employment?",
+      "a": "Sports and games can help skill and career development. Villagers can train in athletics, kabaddi, kho-kho, cricket, boxing, and wrestling, which can lead to jobs and even coaching in the future."
+    },
+    {
+      "q": "21. Who is an informal wage labourer?",
+      "a": "Casual (informal) wage labourers are people who do not work the whole year. They work only for a few months, do not get social benefits like pension, and usually earn low wages. Examples include people who work at construction sites."
+    },
+    {
+      "q": "22. How will you recognize whether or not a worker is working in the informal sector?\nInformal sector workers have insecure jobs, no social benefits, and often work in small businesses.\nThey work to earn income by producing goods/services for the economy.\nThey work for small organizations with 10 or fewer employees (except farming/self-employment).\nThis includes farmers, small business owners, and the self-employed\u2014not regular employees.\nNo benefits like provident fund, gratuity, or pension.\nNot covered by most labour laws except for minimum wage.\nThey have little job security and weak bargaining power.\nImportant Points from Employment Growth, Informalisation And Other Issues Class 11 NCERT Solutions\nLearn the definitions of worker, worker population ratio, and informal sector with examples.\nUnderstand why jobs in the service sector are rising and more rural women work than urban women.\nFind out why regular salaried jobs are less common for women and in rural areas.\nCompare changes in job sectors like agriculture, industry, and services since the 1970s.\nExplore the need for more formal sector jobs to provide security and reduce poverty.",
       "a": "Detailed solution available."
     }
   ],
   "7": [
     {
-      "q": "1. Factor that contributes to global warming\na) Deforestation\nb) Decrease in cattle production\nc) Burning of coal and petroleum products\nd) Hydrogen gas released in animal waste",
-      "a": "(b) Burning of coal and petroleum products"
-    },
-    {
-      "q": "2. Ozone depletion refers to the phenomenon of reductions in the amount of ozone in the:\na) Exosphere\nb) Stratosphere\nc) Troposphere\nd) Mesosphere",
-      "a": "(b) Stratosphere"
-    },
-    {
-      "q": "3. What is the environment?",
-      "a": "The term \"environment\" refers to the complete planetary inheritance as well as the sum of all resources. It refers to an ecological awareness that is concerned with repairing and sustaining the earth in the face of its current challenges."
-    },
-    {
-      "q": "4. What is meant by renewable resources?",
-      "a": "Renewable resources are those that can be used without the risk of depletion, such as hydro, wind, solar energy etc."
-    },
-    {
-      "q": "5. What do you mean non-renewable resources?",
-      "a": "Non-renewable resources are those that are depleted via extraction and use, such as fossil fuels and coal."
-    },
-    {
-      "q": "6. The problem of ozone depletion is caused in the stratosphere by high levels of compounds\na) Chlorine and Bromine\nb) Chlorine and Carbon\nc) Silicon and Bromine\nd) Silicon and hydrogen",
-      "a": "(a) Chlorine and Bromine"
-    },
-    {
-      "q": "7. CFC stands for\n(a) Chlorofluorocarbons\n(b) Hydrofluorocarbons\n(c) Ultra fluorocarbons\n(d) Photo fluorocarbons",
-      "a": "(a) Chlorofluorocarbons"
-    },
-    {
-      "q": "8. Why have some resources become extinct?",
-      "a": "Some resources have become extinct because their extraction rate has outpaced their regeneration rate."
-    },
-    {
-      "q": "9. Define global warming.",
-      "a": "Global warming is defined as a progressive rise in the average temperature of the Earth's lower atmosphere due to increased levels of CO\n2\n, CFCS, and other greenhouse emitters."
-    },
-    {
-      "q": "10. Example of overuse of environmental resources are\n(a) Deforestation and Land degradation\n(b) Reforestation and Land up gradation\n(c) None\n(d) Both",
-      "a": "(a) Deforestation and Land degradation"
-    },
-    {
-      "q": "11. The black soil of the Deccan Plateau is particularly suitable for cultivation of\n(a) Jute\n(b) Maize\n(c) Textile\n(d) Cotton",
-      "a": "(d) Cotton"
-    },
-    {
-      "q": "12. The Chipko Movement, which aimed at protecting forest in the\n(a) Kerala\n(b)Himalayas\n(c) Karnataka\n(d)Maharashtra",
-      "a": "(b) Himalayas"
-    },
-    {
-      "q": "13. Which of the following factor not responsible for land degradation\n(a) Shifting cultivation\n(b) Gain of vegetation occurring due to deforestation\n(c) Improper crop rotation\n(d) Unsustainable fuel wood and fodder extraction",
-      "a": "(b) Gain of vegetation occurring due to deforestation"
-    },
-    {
-      "q": "14. Give two examples of resources overuse.",
-      "a": "Excessive falling of trees and Excessive use of fossil fuels"
-    },
-    {
-      "q": "15. Give two examples of misuse of resources.",
-      "a": "The two examples are:\nUtilization of rivers to absorb industrial effluents and waste.\nUtilization of wood as a domestic fuel.\nShort answer Questions (3 or 4 Marks)"
-    },
-    {
-      "q": "16. What do you mean by global warming?",
-      "a": "The gradual rise in the earth's temperature caused by high quantities of carbon dioxide and other chemicals emitted in the atmosphere is known as global warming. It is an increase in global average temperature that is thought to be produced by the greenhouse effect.\nThe natural greenhouse effect keeps the Earth's temperature stable, allowing humans and many other lifeforms to exist. However, human activities have considerably increased the greenhouse effect since the Industrial Revolution, causing the Earth's average temperature to rise by nearly 1\u00b0C. This is causing global warming. However there are various natural and man-made reasons behind the cause of global warming, such as deforestation, industrialisation, forest fires, increasing population, chlorofluorocarbons, etc."
-    },
-    {
-      "q": "17. Write some lines on ozone depletion.",
-      "a": "Depletion of the ozone layer is simply the wearing down (decrease) of the amount of ozone in the stratosphere. Unlike pollution, which has many different types and causes, Ozone depletion can be traced back to a single main human activity.\nChlorofluorocarbons (CFCs) are used to make insulating foams, soaps, solvents and cooling products like air conditioners, refrigerators, and take-out containers. When CFCs reach the stratosphere, depletion begins. The sun's ultraviolet light degrades these CFCs. Chlorine atoms are released as a result of the breaking up event.\nWhen chlorine atoms react with Ozone, a chemical cycle begins that destroys the beneficial ozone in that area. More than 100,000 ozone molecules can be broken apart by a single chlorine atom. The amount of UVB (Type-B ultra violet)that reaches the Earth's surface increases as the ozone layer depletes.\nUVB induces non-melanoma skin cancer and plays a significant influence in the development of malignant melanoma, according to laboratory and epidemiological research."
-    },
-    {
-      "q": "18. What is Chipko Movement? How has India benefited from it?",
-      "a": "The Chipko movement was a nonviolent movement that started in 1973 with the purpose of conservation and protection of trees. However, it is mainly remembered for the mass mobilisation of women for the cause of forest preservation, which also resulted in a shift in attitudes and opinions about women's status in the society. Hence, In Uttar Pradesh's Chamoli district (now Uttarakhand), an uprising against tree felling and the preservation of ecological balance began in 1973 .\nThe name \u2018chipko' originated from the phrase \u2018embrace,' since the locals clasped and encircled the trees to keep them from being chopped.\nAlso the first Chipko andolan was founded in the 18th century by Rajasthan's Bishnoi people. Sunderlal Bahuguna, a well-known environmentalist, founded it. Bahuguna is also credited with coining the Chipko proverb \"ecology is perpetual economy.\"\nIn 1980, one of the Chipko movement's key achievements was a 15-year moratorium on tree cutting in Uttar Pradesh's forests. The restriction was later extended to Himachal Pradesh, Karnataka, Rajasthan, Bihar, the Western Ghats, and the Vindhyas. All of this was done on the orders of the Indian Prime Minister, following widespread demonstrations by activists across the country."
-    },
-    {
-      "q": "19. What is a pollution control board?",
-      "a": "The Water (Prevention and Control of Pollution) Act of 1974 established the Central Pollution Control Board (CPCB). It was also given powers and functions under the Air (Prevention and Control of Pollution) Act of 1981.\nIts functions include:\nPromoting the purity of streams and wells in various parts of the states through water pollution prevention, control, and abatement.\nThey must monitor the improvement of air quality and work to avoid, control, or reduce air pollution in the country.\nThey are expected to coordinate the work of the State Pollution Control Boards and handle disputes among them,\nTo establish, alter, or repeal the requirements for stream or well in conjunction with the state governments concerned,\nTo establish criteria for the quality of air.\nThey coordinate the actions of the State Pollution Control Boards by providing technical help and guidance.\nAs a technical wing of the MoEF (Ministry of Environment, Forest and Climate Change), it is the country's highest organization in the subject of pollution control. Meteorological data such as wind speed and direction, relative humidity (RH), and temperature were also monitored in conjunction with air quality. This information about ITO's air quality is updated once a week.\nThe CPCB, in partnership with the relevant SPCBs/PCCs, built a statewide network of water quality monitoring stations, with 1019 stations operating in 27 states and 6 union territories. The inland water quality monitoring network is organized into three levels:\nGlobal Environment Monitoring System (GEMS),\nMonitoring of Indian National Aquatic Resources System (MINARS), and\nYamuna Action Plan (YAP)."
-    },
-    {
-      "q": "20. Define Biocomposting.",
-      "a": "Bio-composting is a method of waste disposal in which organic waste decomposes organically in an oxygen-rich environment. Although all waste eventually decomposes, only certain waste materials are biodegradable and should be placed in compost bins.\nCompostable food waste includes banana peels, coffee grinds, and eggshells. Yard trash, such as grass clippings and leaves, can be added to compost bins in addition to food waste. As materials decompose, these items will aid in decomposition, and lessen odor.\nPerennial weeds, or plants that return year after year, should not be composted since they will regrow and spread. Composting these products helps to limit the amount of waste that is transferred to landfills and mass-burn incinerators.\nComposting not only reduces trash, but it also produces a valuable product. Instead of utilizing artificial fertilizers, the final compost, humus, is nutrient-rich and may be used to improve weak soils and nourish gardens. Compost also improves soil retention power, which can boost growing conditions.\nLong Answer Questions (6 Marks)"
-    },
-    {
-      "q": "21. What is air pollution? Write some measures to control it.\nOr\nIndia has an increasing rate of air pollution. What shall be done to check the same?",
-      "a": "Air pollution is the polluting of natural air by the presence of various pollutants such as toxic gases and chemicals. This form of contamination can be created by burning materials, gases emitted by cars, or hazardous fumes emitted as a byproduct of industry.\nAccording to experts, one of the most serious side effects of air pollution is global warming. Because of the high degree of industrialization, air pollution is a major concern throughout the world, particularly in large cities. The release of such air pollutants in high quantities, such as smog, particles, solid materials, and so on, is settling over the city, generating air pollution and posing health risks to the population. People generate a lot of unclean garbage on a daily basis, especially in big cities, which pollutes the entire atmospheric air to a large extent.\nThe following are some methods for reducing air pollution:\nIndustrial estates should be located away from residential areas.\nPoisonous gases should be removed by running the vapors through a water tower scrubber or spray collector.\nAttempts should be undertaken to produce pollution-free automotive fuels, such as alcohol, hydrogen, and battery power. Automobiles should have exhaust emission controls.\nGrowing plants that can metabolize nitrogen oxides and other gaseous pollutants, such as Vitis, Pimis, Juniperus, Quercus, Pyrus, Robinia pseudoacacia, Viburnum, Crataegus, Ribes, and Rhamnus.\nPriority afforestation of the mining area.\nResearch and development of non-combustible energy sources, such as nuclear power, geothermal power, solar power, tidal power, wind power, and so on.\nIn nations such as India, traditional fuel sources such as wood, coal, and so on should be reconsidered in favor of newly developed smoke-free furnaces. Filtering, settling, dissolving, absorption, and other methods of mitigating air pollution are examples.\nLow-cost gadgets should be developed for these strategies.\nBurning of leaves, plastic, trash etc, and burning of crackers should be avoided as much as possible.\nPracticing recycling and reuse."
-    },
-    {
-      "q": "22. State some major environmental issues which the world is facing today?\nOr\nWhat are the biggest challenges the world is facing today in terms of the environment?",
-      "a": "Our surroundings are continuously changing, and there is no doubt about that. However, as our environment evolves, so does our need to become more aware of the issues that surround it.\nWith a tremendous flood of natural disasters, warming and cooling phases, various forms of weather patterns, and much more, people must be aware of the environmental difficulties that our world is experiencing. Increasing food, water, energy, and infrastructural needs are pushing nature to its breaking point. And the effects of climate change can be seen everywhere we look.\nThe following are today's most serious environmental issues:\nPollution:\nPollution of the air, water, and soil takes millions of years to recover from. The most significant pollutants are those emitted by industry and motor vehicles. While oil spills, acid rain, and urban runoff create water pollution, different gases and pollutants generated by industry and factories, as well as the combustion of fossil fuels, cause air pollution.\nGlobal Warming:\nClimate change, such as global warming, is caused by human activities such as greenhouse gas emissions. Global warming causes rising ocean and earth surface temperatures, resulting in the melting of polar ice caps, rising sea levels, and unusual precipitation patterns such as flash floods, heavy snow, and deserts.\nOverpopulation:\nThe planet's population has reached unsustainable levels due to a lack of resources such as water, fuel, and food. Population growth in less developed and emerging countries is putting a burden on already scarce resources.\nUrban Sprawl:\nThe term \"urban sprawl\" refers to population migration from densely populated urban areas to low-density rural areas, resulting in the city invading more and more rural land. Land degradation, increased traffic, environmental challenges, and health concerns all come from urban sprawl.\nPublic Health Concerns:\nThe existing environmental challenges endanger both human and animal health. Dirty water is the world's greatest health danger, threatening both quality of life and public health. Toxins, pollutants, and disease-carrying organisms are carried by run-off into rivers.\nGenetic Engineering:\nGenetic engineering refers to the use of biotechnology to modify food genetically. Food genetic manipulation causes an increase in poisons and diseases because genes from an allergic plant can transfer to the target plant. Because an altered gene may be hazardous to wildlife, genetically modified crops can cause major environmental problems.\nThe desire for change in our daily lives and our government's movements is growing. Although it is true that we cannot physically stop the weakening of our ozone layer. There are still a plethora of things we can do to make a dent in what we already know. We can contribute to a more ecologically conscious and compassionate community by raising awareness about these concerns in our local community and within our families."
-    },
-    {
-      "q": "23. Write a short note on sustainable development.\nOr\nHow can nations today achieve sustainable development?",
-      "a": "Sustainable development is a method for people to utilise resources without running out of them. The Brundtland Commission described it as development with sustainability that \"meets the requirements of the present without jeopardizing future generations' ability to satisfy their own needs.\"\nIt is the idea of needs and the restrictions placed by technology and society on the ability of the environment to meet current and future requirements. Thus, the notion of sustainable development provides a framework for the integration of environmental policies and development plans with global, national, regional, and local ramifications.\nNatural systems that support life on Earth should not be jeopardized by development. As a result, the concept of sustainable development leads to new resource consumption techniques, which are as follows:\nExcessive resource use must be conserved or reduced.\nMaterial recycling and reuse.\nIncreasing the use of renewable resources such as solar energy over nonrenewable resources such as oil and coal.\nSustainable development also entails addressing the basic requirements of all impoverished individuals on the planet and providing opportunity for all to realize their dreams for a better life. Otherwise, the globe would always be prone to ecological and other crises since poverty and unfairness are endemic.\nIndividual ownership and governmental domains are not respected in ecological interactions. For example, the irrigation procedures, herbicides, and fertilizers employed on a farm have an impact on the productivity of neighboring farms, particularly small farms. Today's progress must not jeopardize the development and environmental demands of future generations.\nTo achieve sustainable development and meet the needs of the majority of people, poverty must be eradicated and inequities in living standards must be reduced all over the world. To protect the environment, nations must take preventative measures. When there are significant or irreversible environmental threats, scientific uncertainty should not be put to you in order to postpone cost-effective steps to prevent environmental damage or depletion.\nEnvironmental challenges are best addressed with the involvement of all concerned persons. Nations must make environmental information publicly available in order to facilitate and encourage public knowledge and engagement.\nToday, all aspects of sustainability are at stake, including physical, economic, and social sustainability. Integration of many realms of knowledge such as disciplines, sectors, and institutions shows to be a necessary task in order to get sustainable results and well-supported development processes."
-    },
-    {
-      "q": "24. India has plenty of natural resources. How much do you agree with this statement?\nOr\nComment on India\u2019s natural resource availability. How much is India lucky?",
-      "a": "Yes, I agree with this assertion. Natural resources are broadly defined as all of the things provided by nature on, above, and beneath the earth's surface. Land, water, forests, fisheries and animals, mineral ores, and energy sources such as coal, petroleum, gas, and uranium are all examples of natural resources.\nIndia in terms of natural resources:\nLand Resources\n: India has over 10% of the world's agricultural land. Despite being only the seventh largest country, India boasts the world's most alluvial plains, the world's largest deltas, and the world's largest area of agricultural land by a wide margin.\nForest Resources:\nIndia has a considerably smaller per capita forest (0.5 hectares) than the rest of the globe (1.9 hectares). According to the National Policy on Woods (1988), forests should encompass one-third (33%) of the country's land area in order to maintain ecological equilibrium.\nMineral Resources:\nMassive quantities of iron ore and a booming economy. India was a forerunner in the use of iron and several smelting technologies. It created the Crucible steel and Wootz steel, which became quite popular around the world. Iron and steel strength produced both formidable weapons and huge implements that aided the establishment of several empires in India.\nTextile production leadership:\nSince the Indus Valley Civilization 5000 years ago, India has possessed vast supplies of cotton and has been a pioneer in textile manufacture. India was the world's greatest textile industry by the 18th century. This is one of the primary factors that drew Europeans in. Later, the English took control, automated, and ushered in the industrial revolution.\nThe availability of a large workforce:\nIndia has always had a vast workforce. This was beneficial to anyone establishing a large army or an army of employees. Europeans employed Indian labor to fight their battles and to develop their other colonies.\nExtensive shoreline:\nIndia's long coastline in the center was unrivaled by other civilizations, allowing India to connect to innovations coming from both the east and the west. It was via trade that they were able to export their beliefs and rituals to the rest of the world.\nWater Resources:\nRainwater, seawater, ground and surface water are the primary sources of water. Water quality standards must be enforced in order to specify the acceptability of water for drinking, agriculture, industry, public health, and environmental safety.\nRelated Study Materials for Class 11 Economics (Indian Economic Development) Chapter 7\nS.No\nImportant Other Links for Class 11 Economics (Indian Economic Development) Chapter 7"
-    },
-    {
-      "q": "1.\nCBSE Class 11 Environment and Sustainable Development Notes",
+      "q": "1. What is meant by environment?\nThe environment includes everything around us, such as air, water, land, plants, animals, and humans, along with their relationships.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Environment and Sustainable Development Solutions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions and Answers cover topics from other chapters, helping students prepare thoroughly by focusing on key topics for easier revision.\nS.No\nChapter-wise Important Questions for Class 11 Economics (Indian Economic Development)\n1\nChapter 1 - Indian Economy on the Eve of Independence Important Questions\n2\nChapter 2 - Indian Economy 1950-1990 Important Questions\n3\nChapter 3 - Liberalisation, Privatisation and Globalisation: An Appraisal Important Questions\n4\nChapter 4 - Human Capital Formation in India Important Questions\n5\nChapter 5 - Rural Development Important Questions\n6\nChapter 6 - Employment: Growth, Informatisation and Other Issues Important Questions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Important Questions\nAdditional Study Materials for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics",
+      "q": "2. What happens when the rate of resource extraction exceeds renews it?\nIf resources are used up faster than they can be renewed, those resources will run out and not be available for future use.",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nCBSE Class 11 Economics NCERT Books",
+      "q": "3. Next edit for renewable and non-renewable resources\n(i) Wood (ii) Fish (iii) Fuel (iv) Coal (v) Metal (vi) Water\n(i) Wood \u2013 Renewable\n(ii) Fish \u2013 Renewable\n(iii) Fuel \u2013 Non-renewable\n(iv) Coal \u2013 Non-renewable\n(v) Metal \u2013 Non-renewable\n(vi) Water \u2013 Renewable",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nCBSE Class 11 Economics Important Questions",
+      "q": "4. Two major environmental problems facing the world today and then.\nTwo major environmental issues today are global warming and ozone layer depletion. Both are caused by pollution and overuse of natural resources.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nCBSE Class 11 Economics Sample Papers",
+      "q": "5. The following factors contribute to an environmental crisis in India and how? What problems do they pose for the government?\n(i) Increasing number of people\n(ii) air pollution\n(iii) water pollution\n(iv) Level of consumption of the rich\n(v) Illiteracy\n(vi) Industrial Establishments\n(vii) urban migration\n(viii) Reduction in forest area\n(ix) Poaching\n(x) Global warming.\nMany problems like population growth, pollution, and deforestation lead to environmental issues in India, making it hard for the government to manage natural resources and protect public health.\n(i) Population growth:\nMore people means more pressure on natural resources, leading to their fast use and degradation. The government must control population size to ease this burden.\n(ii) Air Pollution:\nFactories and vehicles release harmful gases, polluting the air. This causes health issues and makes the government spend more on health and cleaner technology.\n(iii) Water Pollution:\nWaste from factories and farms pollutes rivers and lakes, leading to diseases. The government must invest in water treatment and stopping pollution at its source.\n(iv) Rich people's consumption:\nHigher consumption by wealthy people means more resources used up and more waste generated. The government has to look for eco-friendly options and manage waste collection.\n(v) Illiteracy:\nPeople with less knowledge might misuse resources or overuse them. Government needs to spread awareness and education to encourage wise use of resources.\n(vi) Industrial Establishment:\nIndustries use a lot of natural resources and can cause damage through pollution. The government needs to set rules and promote cleaner production.\n(vii) Urban migration:\nMore people moving to cities puts stress on city services and reduces natural spaces. Government needs to support jobs and life in villages to reduce this migration.\n(viii) Reduction in forest area:\nCutting trees for land or wood reduces forests, which harms wildlife and causes soil erosion and climate changes. The government should plant more trees and protect forests.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
+      "q": "6. What are natural functions?\nNature does four main things for us:\nGives us resources for production (like water, minerals, and soil).\nKeeps us alive by giving air, water, sun, and soil\u2014basic needs for life and biodiversity.\nCleans up waste from production and everyday life by absorbing it.",
       "a": "Detailed solution available."
     },
     {
-      "q": "5.\nCBSE Class 11 Economics Sandeep Garg Solutions",
+      "q": "7. Discuss the contribution of these six factors in land degradation in India.\nLand degradation in India is caused by erosion, salt and alkalinity in the soil, deforestation, certain farming practices, and overuse of chemical fertilizers.\nErosion:\nWind and floods strip away the topsoil, taking away nutrients and reducing soil quality.\nAlkalinity and Soil Salt:\nWaterlogging makes the soil salty or alkaline, reducing its fertility.\nDeforestation:\nCutting trees removes forest cover, causing more soil erosion and affecting climate.\nTransitional farming:\nSometimes, farming practices don't allow the soil to rest or regain nutrients, leading to loss of fertility.\nExcessive use of fertilizers:\nUsing too many chemicals harms soil health and makes it less productive.",
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nCBSE Class 11 Economics Notes",
+      "q": "8. Explain how a negative environmental impact has an opportunity cost high.\nWhen harming the environment, there is an opportunity cost because resources spent fixing the damage could have been used elsewhere. This makes environmental harm expensive for society.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "9. Describe the steps involved in achieving sustainable development in India.\nIndia works towards sustainable development by controlling population growth, using cleaner fuels, increasing renewable energy use, recycling, and enforcing pollution-related penalties.\nPopulation control: Promoting family planning and spreading birth control awareness to manage population size.\nCleaner fuels: Supporting the use of CNG and LPG to reduce air pollution caused by traditional fuels like petrol and diesel.\nSolar and wind energy: Encouraging use of renewable resources (sun and wind) for long-term energy needs.\nRecycling and bans: Promoting recycling and banning single-use plastic bags to reduce waste and pollution.\nPollution taxes and penalties: Imposing fines on polluting factories and vehicles to discourage pollution and protect public health.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "10. India has many natural resources \u2013 confirms this statement.\nIndia is rich in many natural resources like coal, iron, water, forests, and sunlight, which help in meeting the needs of its people.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "11. Why is the environmental crisis a phenomenon? If yes, Discuss why?\nYes, the environmental crisis is a global issue because pollution, resource exhaustion, and loss of biodiversity are affecting countries worldwide, not just one place.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "12. Give two examples of\n(A) Excessive use of environmental resources\n(B) Misuse of environmental resources.\n(A) Overuse:\nRivers drying up due to too much irrigation and dam building.\nMassive deforestation caused by population growth and higher demand for land and wood.\n(B) Misuse:\nDumping sewage and industrial waste into rivers, polluting water.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "13. Mention any four major environmental concerns of India. Corrections for environmental damage involve an opportunity cost. Explain.\nMajor concerns in India are air pollution, water pollution, land degradation, and deforestation. Fixing these problems costs the government resources that could be used for other needs, showing the opportunity cost of environmental harm.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "14. Discuss the supply-demand reversal of environmental resources in brief.\nIndia\u2019s demand for natural resources has grown so much that it now exceeds nature\u2019s ability to supply them, causing shortages and environmental damage.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "15. Account for the present environmental crisis.\nThe current crisis is caused by rapid population growth, overuse of resources, pollution, and poor management of waste, all putting strain on nature.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "16. Throw light on any two serious adverse environmental consequences of development in India. India's environmental problems present a dichotomy\u2014they are driven by poverty and at the same time, because of the affluence in the standard of living. Is it true?\nLand degradation and loss of biodiversity are two serious effects of development. Both poverty and wealth can cause environmental problems in India.\nLand degradation:\nThe fertility of soil decreases due to overuse, soil erosion, and pollution from chemicals.\nBiodiversity loss:\nDestroying forests and natural habitats to make way for cities or growing more food reduces the number of plant and animal species.\nPoverty:\nThe poor may overuse resources to survive, causing harm.\nAffluence:\nWealthier lifestyles increase demand and waste, also harming the environment.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "17. What is sustainable development?\nSustainable development means using resources carefully so that today\u2019s needs are met without reducing resources for future generations.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "18. Describe any one of the four sustainable development strategies to save your region.\nSustainable development means using resources smartly, growing the economy, and ensuring fairness between generations.\nUse cleaner fuels like CNG and LPG to limit air pollution.\nRely on solar and wind energy, as these are renewable and don\u2019t harm the environment.\nRecycle and reuse household and industrial waste, using organic waste as manure and recycling plastics.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "19. Explain the importance of generation equality in the definition of sustainable development.\nGeneration equality in sustainable development means ensuring that resources are fairly shared so both current and future generations can meet their needs.",
       "a": "Detailed solution available."
     }
   ],
   "8": [
     {
-      "q": "1. Which of the following is false regarding China\na) Sex ratio is biased and low\nb) Density of population is lowest\nc) Population is very small\nd) Fertility rate is low",
-      "a": "(b) Population is very small"
+      "q": "1. Why are regional and economic groupings formed?",
+      "a": "Regional and global groups like SAARC, EU, and ASEAN are made so countries can learn from each other and work together. They help members share development ideas, improve social and cultural growth, keep peace, and unite for common interests."
     },
     {
-      "q": "2. Infant mortality rate is as low as ___ per thousand in China compared with ___ per thousand in India\n(a) 30, 60\n(b)30, 63\n(c) 35, 65\n(d)20,45",
-      "a": "(b) 30, 63"
+      "q": "2. What are the various means by which countries are trying to strengthen their own domestic economies?",
+      "a": "Countries join economic groups like SAARC and the EU to protect mutual interests.\nThey study other countries' development methods to learn and adapt new strategies.\nMany governments are opening up their economies and reducing control, letting market forces play a bigger role.\nThey also use globalisation to boost domestic businesses and increase worldwide trade."
     },
     {
-      "q": "3. All production unit engaged in transforming one good into another is called\n(a) Primary sector\n(b) Secondary sector\n(c) Tertiary sector\n(d) None",
-      "a": "(b) Secondary sector"
+      "q": "3. What similar developmental strategies have India and Pakistan followed for their respective developmental paths?",
+      "a": "India and Pakistan both started development plans soon after independence, relied on the public sector, and followed a mixed economy using both government and private participation."
     },
     {
-      "q": "4. Fertility rate is highest in\n(a) India\n(b) Pakistan\n(c) China\n(d) None",
-      "a": "(b) Pakistan"
+      "q": "4. Explain the Great Leap Forward campaign of China as initiated in 1958.",
+      "a": "The Great Leap Forward (GLF) was a campaign in China started in 1958 aiming at speeding up industrial and agricultural production through collective farming and large-scale rural projects."
     },
     {
-      "q": "5. In China how much percentage of workforce is engaged in agriculture\n(a) 55\n(b) 54\n(c) 60\n(d) 53",
-      "a": "(b) 54"
+      "q": "5. China's rapid industrial growth can be traced back to its reforms in 1978. Do you agree? Elucidate.",
+      "a": "China's fast industrial growth happened because of the economic reforms that started in 1978.\nAt first, reforms were made in farming, foreign trade, and investment. The government introduced the Commune Method, dividing land among households.\nHouseholds could keep leftover profits after taxes. Later, industry reforms and dual pricing let some goods sell at both set prices and market rates.\nSpecial Economic Zones were set up to invite foreign companies.\nAll these changes together led to China's quick industrial progress."
     },
     {
-      "q": "6. What is the type of economic system followed by China?",
-      "a": "China's economy is a socialist market economy."
+      "q": "6. Describe the path of developmental initiatives taken by Pakistan for its economic development.",
+      "a": "Pakistan used a mix of private and government efforts to develop its economy.\nIn the 1950s-60s, Pakistan used policies to replace imports with local products, protected its industries, and mechanised farming (Green Revolution).\nIndustries were nationalised in the 1970s. During late 1970s-early 80s, some sectors were opened back to private businesses.\nAll these steps made it easier to introduce economic reforms in 1988."
     },
     {
-      "q": "7. Per Capital Income is higher in\n(a) Pakistan\n(b) China\n(c) India\n(d) None of the above",
-      "a": "(c) India"
+      "q": "7. What is the important implication of the one child norm in China?",
+      "a": "The one-child rule slowed down China's population growth. It also made the number of girls fewer compared to boys and led to more older people in the population, which may require stronger social security."
     },
     {
-      "q": "8.\nGini Index is related to\n(a) Income Inequality\n(b)Infant mortality rate\n(c) Health\n(d) Education",
-      "a": "(a) Income inequality"
+      "q": "8. Mention the salient demographic indicators China, Pakistan and India.",
+      "a": "China has the largest population, then India. Pakistan's is much smaller.\nChina's population density is lowest, India's is the highest.\nChina's one-child rule slowed its population growth.\nAll three countries have more males than females.\nPakistan\u2019s fertility rate is the highest, China\u2019s is the lowest.\nChina is more urbanised than India and Pakistan."
     },
     {
-      "q": "9. For meaningful comparison common price level base is used because\n(a) Domestic price is differ in different countries\n(b) 100 GDP of one country is not same as 100 GDP of other country\n(c) Both\n(d) None of the above",
-      "a": "(c) Both"
+      "q": "9. Compare and contrast India and China's sectoral contribution towards GDP in 2003. What does it indicate?",
+      "a": "Agriculture made up 15% of China\u2019s GDP and 23% of India\u2019s in 2003.\nChina\u2019s GDP is led by manufacturing (53%) while India\u2019s is led by services (about 51%).\nBoth countries have moved away from farming towards services and industry, showing improvement in their economies.\nIndia skipped straight from agriculture to services, but China followed the pattern of developed countries where industry grows first."
     },
     {
-      "q": "10. UNDP stands for\n(a) United Nations Development Policy\n(b) United Nations Development Programme\n(c) Union Nations Development Programme\n(d) None of these",
-      "a": "(b) United Nations Development Programme"
+      "q": "10. Mention the various indicators of human development.",
+      "a": "Human development indicators are: life expectancy, adult literacy rate, infant mortality rate, percentage of people living in poverty, GDP per capita, access to improved sanitation, and access to improved water sources."
     },
     {
-      "q": "11.\nWhat is the meaning of infant mortality rate?",
-      "a": "The infant mortality rate is the number of deaths among children under the age of one in a specific geographical area during a given year."
+      "q": "11. Define liberty indicator. Give some examples of liberty indicators.",
+      "a": "Liberty indicators show how much people take part in making social and political decisions. Examples include protection of rights, an independent judiciary, and how well the law is followed."
     },
     {
-      "q": "12. Which sector is known as the service sector?\n(a) Tertiary sector\n(b) Primary sector\n(c) Secondary sector\n(d) None of the above",
-      "a": "(a) Tertiary sector."
+      "q": "12. Evaluate the various factors that led to the rapid growth in economic development in China.",
+      "a": "China's economic growth increased quickly because it started reforms in 1978.\nFirst, farming and trade reforms gave households more control and income.\nLater, private businesses were encouraged in industry to compete with state businesses.\nDual pricing allowed selling some goods at set prices and the rest at market rates.\nSpecial Economic Zones were made to attract global businesses.\nAll these changes helped China\u2019s industry and economy grow fast."
     },
     {
-      "q": "13. Which country has the highest life expectancy at birth among the ones, India, Pakistan and China?",
-      "a": "China has the highest birth-age life expectancy."
+      "q": "13. Group the following features pertaining to the economies of India, China and Pakistan under three heads",
+      "a": "One-child norm: China\nLow fertility rate: China\nHigh degree of urbanization: Pakistan and China\nMixed economy: India and Pakistan\nVery high fertility rate: Pakistan\nLarge population: India and China\nHigh density of population: India\nGrowth due to manufacturing sector: China\nGrowth due to service sector: India"
     },
     {
-      "q": "14. Quality life index is prepared by UNDP for how many countries\n(a) 186\n(b) 187\n(c) 188\n(d) 185",
-      "a": "(b) 187\nShort answer Questions (3 or 4 Marks)"
+      "q": "14. Give reasons for the slow growth and re-emergence of poverty in Pakistan.",
+      "a": "Pakistan\u2019s growth has been slow and poverty increased for several reasons:\nHeavy dependence on public sector companies led to inefficiency and wasted resources.\nTraditional farming methods and climate problems kept agricultural productivity low.\nRemittances and volatile farm exports limited the need to develop manufacturing for exports.\nPakistan borrowed a lot from abroad; paying back loans became hard, especially when farming failed.\nPolitical instability led to higher government spending to maintain order, draining resources.\nPoor investment from foreign countries due to instability and lack of good infrastructure."
     },
     {
-      "q": "15. Write some lines on the comparative development experiences of India and its neighbouring countries.",
-      "a": "India and its neighbors have nearly identical growth policies, which are as follows:\nFollowing their independence in 1947, India, Pakistan, and China all embarked on their respective developmental paths at the same time. The People's Republic of China, on the other hand, was founded in 1949.\nAll three countries had begun to outline their development strategies in a similar manner. India introduced its Five Year Plan in 1951-56, whereas Pakistan presented its first Five Year Plan, known as the Medium Term Plan, in 1956. In 1953, China unveiled its first Five-Year Plan.\nIndia and Pakistan pursued similar methods, such as establishing a large public sector and increasing government spending on social development.\nUntil 1980, the three countries had comparable growth rates and per capita incomes.\nEconomic reforms were implemented in all three countries. The reforms began in India in 1991 while in 1978, and 1988 in China and Pakistan respectively."
+      "q": "15. Compare and contrast the development of India, China and Pakistan with respect to some salient human development indicators.",
+      "a": "The Human Development Index (HDI) uses several key indicators:\nLife Expectancy\nAdult Literacy Rate\nInfant Mortality Rate\nPercentage of the population below the poverty line\nGDP per capita\nAccess to sanitation and safe water\nChina ranked highest among the three (81st), then India (128th), and Pakistan (136th). China\u2019s higher rank is mainly due to higher GDP per capita and its one-child policy, which helped its economy grow steadily."
     },
     {
-      "q": "16.\nWrite a short note on the history of revolution of PRC.",
-      "a": "The People's Republic of China (PRC) is a country with a long history and culture. Unlike many other countries, practically the entire country of China was ruled by a single authority for many centuries. Several dynasties ruled China, including the Xia, Shang, Han, and Tang. The Qing Dynasty was China's last ruling dynasty (also known as Manchu Dynasty). China, like many other countries around the world, has a long history of fighting tyrants and dictatorships for equality and prosperity.\nThe founding of the People's Republic of China in 1949 appeared to be the conclusion of the quest for a better living. At the time, China's Communist Party (CPP), a leading political union, was established. Workers, peasants, the tiny bourgeoisie, and national capitalists were defined as an alliance of four socioeconomic classes.\nThe CPP, as the working-class leader, was to lead the four classes. The Chinese Communist Revolution, also known as the 1949 Revolution, was the climax of the Chinese Communist Party's ascension to power since its formation in 1921, as well as the second half of the Chinese Civil War (1946\u20131949). This time is referred to as the War of Liberation in the official media. The Great Proletarian Cultural Revolution, also known as the Cultural Revolution, was a social-political movement that occurred in the People's Republic of China from 1966 to 1976."
-    },
-    {
-      "q": "17. What are the reasons for the low population growth in China?",
-      "a": "The reasons for the low population growth in China are:\nOne Child Policy:\nFor many years, China has rigidly enforced the \"one child\" restriction. This rigidly enforced rule meant that many Chinese couples could only have one child for more than three decades. If they possessed more than one, they risked hefty penalties and varied degrees of harassment from local authorities.\nChina's Communist Party authorities implemented the strategy in 1980 in order to slow the country's out-of-control population growth. This approach also resulted in a decrease in China's sex ratio, or the proportion of females per thousand males.\nHowever, in 2015, one child policy was ruled out in China, thus allowing families to have two children owing to massive decline in population growth.\nCosts of Raising Children:\nIn China, raising a child is expensive, especially in cities, thus it acts as a hindrance for the couples to think of another child.\nBetter Socio-Economic Position of Women:\nThe average improvement in female socioeconomic position over the last 20 years has contributed to a decline in population rate.\nHigh Cost of Real Estate:\nAnother lethal factor is the high cost of real estate in China."
-    },
-    {
-      "q": "18. What were the economic reforms introduced in all the three countries (India, China and Pakistan)?",
-      "a": "Following their independence in 1947, India and Pakistan implemented planned development programs that relied on the public sector to drive the process of growth and development.\nIn 1949, China adopted a more strict growth strategy and decided to place government control over all essential areas of manufacturing activity. In 1958, the Great Leap Forward (GLF) initiative was initiated, with the goal of extensive industrialization of the economy.\nChina adopted the Commune system of agricultural production, which was a collective agriculture method. China's export-driven manufacturing is a critical component of its economic success story.\nUntil roughly 1980, the economies of India, China, and Pakistan did not show much variance in GDP growth rate, which was around 4% per year. The breakthrough in GDP growth rate was recorded in the early 1980s in China, the mid-1980s in Pakistan, and the 1990s in India. In 2005, India and Pakistan both saw GDP growth of 6 to 8%, while China experienced GDP growth of around 10% each year."
-    },
-    {
-      "q": "19. Is it possible for India to introduce \u2018One Child Norm\u2019 like China to reduce population? Write your views.",
-      "a": "Rising population has been a major source of concern for our country in recent decades. To combat the dramatic increase, we have so far resorted to measures such as giving free Family Health Planning services to married couples etc.\nOne of the conceivable options is to implement a one-child policy, similar to what the Chinese have done, but true to say is not easy to implement such a policy in a country like ours.\nImplementing this would be a difficult task, given the likelihood of protests from political parties, ethnic communities, religious bodies, and other idle social organizations.\nAssume that if India implements it, there will be a great deal of confusion. For example, it should be in both rural and urban areas, or in either. In India, around 70% of the population lives in rural areas, with the remainder living in metropolitan or semi-urban areas.\nChina, too, has a rural majority, but its program has only been applied for families residing in cities. Given that India is a labor-intensive nation recognized for its inexpensive labor, such a restriction may result in a labor shortage in the long run, affecting the nation's economic growth.\nTo summarize, the One Child Norm appears to be a need, but its implementation in India necessitates careful juxtaposition of facts and data."
-    },
-    {
-      "q": "20. What is demography and demographic indicators?",
-      "a": "Demography is the study of population science. Demographers study population dynamics by focusing on three major demographic processes:\nBirth,\nMigration, and\nAgeing (including death).\nThe quantitative and qualitative features of the human population are studied in this. The quantitative elements of the population include its composition, density, distribution, growth, migration, size, and structure.\nSociological elements such as school quality, crime, development, diet and nutrition, race, social class, wealth, and well-being are examples of qualitative features.\nDemography's significance stems from its contribution to better preparing the government and society to deal with the difficulties and demands of population expansion, aging, and migration. Demographic dynamics and distributions have an impact on a wide range of social outcomes.\nDemography employs a wide range of demographic indicators. For example:\nLife expectancy at birth is the number of years that newborn infants would survive if they were subject to the mortality risks that existed at the time of their birth for a cross-section of the population.\nThe annual number of deaths per 1,000 people is known as the crude death rate.\nThe annual number of births per 1,000 people is referred to as the crude birth rate.\nThe total fertility rate is the number of children born per woman if she lived to the end of her child-bearing years and had children at each age based on current age-specific fertility rates.\nThe percentage of the population residing in urban areas, as determined by the most recent population census, is referred to as the urban population.\nLong Answer Questions (6 Marks)"
-    },
-    {
-      "q": "21. Explain the following:-\n(a) Special Economic Zones (SEZ)",
-      "a": "A Special Economic Zone (SEZ) is a clearly defined duty-free enclave that is treated as foreign territory for the purposes of trade operations, duties, and tariffs. In other words, a special economic zone (SEZ) is a geographical area with economic rules that differ from those of the rest of the country. It is a region where business and trade laws differ from those found elsewhere in the country.\nSEZs are placed within a country's borders and have the following goals\nImproved commerce,\nIncreased investment,\nJob development, and\nefficient administration.\nThere are currently eight operational SEZs in India, which are located in Santa Cruz (Maharashtra), Cochin (Kerala), Kandla and Surat (Gujarat), Chennai (Tamil Nadu), Visakhapatnam (Andhra Pradesh), Falta (West Bengal), and Noida (Uttar Pradesh). In addition, a SEZ in Indore (Madhya Pradesh) is now operational.\n(b) Great Leap Forward (GLF)\nChina's Second Five Year Plan was named the Great Leap Forward (1958-62). The Great Leap Forward was a 1950s economic and social movement that intended to transform China from an agrarian economy to modern society. It was a short-term endeavor by the Communist Party of China (CPC) led by Mao Zedong, also known as Mao Tse-tung, to turn China into a society capable of competing with other Western industrialized nations.\nThe Great Leap Forward, China's second five-year plan, was inaugurated in January 1958, and millions of Chinese citizens were relocated to communes to work on farms or in industry. Private farming was forbidden. It was the result of Mao Zedong's impatience for industrial and manufacturing development.\n(c) GPCR (Great Proletarian Cultural Revolution)\nIn the 1960s, Chinese Communist Party leader Mao Zedong became concerned that the current party leadership in China was increasingly heading towards a revisionist direction, with a major focus on expertise rather than ideological purity. The Cultural Revolution was a political, social, and cultural movement inspired by Mao Zedong's cult and directed by a group of political figures known as the 'Gang of Four.'\nThe Cultural Revolution rallied and encouraged Chinese youth to criticize and attack anyone perceived to be an enemy of the Chinese Communist Revolution's objectives. Although the origins of the Cultural Revolution were diverse, at least two variables had a role in it. Mao Zedong's efforts to reclaim his dominant position as China's policymaker were one cause. The second was the 'Mao Cult.'"
-    },
-    {
-      "q": "22. What are the reasons for the slow growth and re-emergence of poverty in our neighbouring country, Pakistan?",
-      "a": "Experts feel that Pakistan's progress has been driven primarily by years of a good harvest. Furthermore, growth was driven by finance from external borrowings and Middle Eastern remittances. The economy suffered when the crops failed. These issues contributed to Pakistan's slow growth and the re-emergence of poverty.\nIndia has always had an advantage over Pakistan in some areas, such as having more trained labor, making good investments in education, and improving basic health care facilities.\nAgriculture and food production was not founded on an institutional framework of technology. Rather, it was founded on favorable circumstances. When conditions were favorable, economic growth exhibited positive trends and vice versa. They are becoming more reliant on foreign borrowings, and repaying the loans is becoming increasingly challenging. Inadequate infrastructure in the manufacturing sector, which also impedes expansion.\nThere are numerous causes for this, some of which are highlighted below:\nTerrorism:\nIt is a major impediment to Pakistan's economic development. It has been a war-torn country since 2002. This has long been a contributing factor to Pakistan's unfavorable worldwide image, limiting foreign investment in the country.\nCorruption:\nSince 1947, corruption has firmly established its roots. It has now become a very political subject, with even the country's prime leaders being accused of it.\nA Lack of High-Quality Education:\nEducation is a critical component of economic success. Unfortunately, our present literacy rate is 60%, with the lowest rate in South Asian countries. Around 25 million children are not attending school.\nInadequate Health-Care Facilities:\nPublic hospitals paint grim visions of a lack of proper drugs, beds, and equipment, among other things. Because of a lack of basic health care, approximately 170 women die from pregnancy for every 100,000 births.\nTax Evasion:\nA regressive tax system takes roughly 90% of taxable income from ordinary males. Large firms, landlords, business owners, and politicians fail to pay their fair amount of taxes. They earn a lot but pay less tax; on the other side, the poor earn less yet pay more tax. Pakistan should improve its export competitiveness by lowering the cost of doing business.\nHence, Pakistan should take a strategic approach to increase its exports to neighboring markets, and work upon enhancing its general economic condition as because of the country's general economic challenges, ordinary men and women has to face economic inadequacy and deprivation.\nRelated Study Materials for Class 11 Economics (Indian Economic Development) Chapter 8\nS.No\nImportant Other Links for Class 11 Economics (Indian Economic Development) Chapter 8"
-    },
-    {
-      "q": "1.\nCBSE Class 11 Comparative Development Experiences of India and Its Neighbours Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 11 Comparative Development Experiences of India and Its Neighbours Solutions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions\nCBSE Class 11 Economics (Indian Economic Development) Chapter-wise Important Questions and Answers cover topics from other chapters, helping students prepare thoroughly by focusing on key topics for easier revision.\nS.No\nChapter-wise Important Questions for Class 11 Economics (Indian Economic Development)\n1\nChapter 1 - Indian Economy on the Eve of Independence Important Questions\n2\nChapter 2 - Indian Economy 1950-1990 Important Questions\n3\nChapter 3 - Liberalisation, Privatisation and Globalisation: An Appraisal Important Questions\n4\nChapter 4 - Human Capital Formation in India Important Questions\n5\nChapter 5 - Rural Development Important Questions\n6\nChapter 6 - Employment: Growth, Informatisation and Other Issues Important Questions\n7\nChapter 7 - Environment and Sustainable Development Important Questions\nAdditional Study Materials for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 11 Economics NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 11 Economics Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 11 Economics Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Class 11 Economics Sandeep Garg Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nCBSE Class 11 Economics Notes",
-      "a": "Detailed solution available."
+      "q": "16. Comment on the growth rate trends witnessed in China and India in the last two decades.",
+      "a": "India\u2019s economy grew steadily as it kept democratic policies, but agriculture is still a main income source and infrastructure is lacking in some regions.\nChina used both government planning and market systems, especially in rural areas, for quick growth.\nChina\u2019s investment in social infrastructure before reforms improved its human development outcomes.\n17. (a) First Five Year Plan commenced in 1956. (Pakistan/China)\n(b) Maternal mortality rate is high in. (China/Pakistan)\n(c) Proportion of people below the poverty line is more in. (India/Pakistan)\n(d) Reforms were introduced in 1978. (China/Pakistan)\nAns:\n(a) Pakistan\n(b) Pakistan\n(c) India\n(d) China\nOne-child norm: China\nLow fertility rate: China\nHigh degree of urbanisation: Pakistan and China\nMixed economy: India and Pakistan\nVery high fertility rate: Pakistan\nLarge population: India and China\nHigh density of population: India\nGrowth due to manufacturing sector: China\nGrowth due to service sector: India\nCountry\nEstimated population (in million)\nAnnual growth of population (2001-2010)\nDensity (per sq.km)\nSex (ratio)\nFertility Rate\nUrbanisation\nIndia\n1252\n1.24\n421\n934\n2.6\n32\nChina\n1357\n0.49\n145\n929\n1.6\n53\nPakistan\n182\n1.65\n236\n947\n3.3\n38\nSectors\nContribution to GDP in % (2003) India\nContribution to GDP in % (2003) China\nPrimary (agriculture)\n23\n15\nSecondary (industry)\n56\n53\nTertiary (Service)\n51\n32\nImportant Points from Comparative Development Experiences Of India And Its Neighbours Class 11 NCERT Solutions\nIndia, China, and Pakistan took different approaches to economic growth after independence.\nMajor reforms in China began in 1978, while India and Pakistan started earlier using planning.\nIn the Class 11 Economics Chapter 8 question answer, sectoral shifts in GDP are clearly compared.\nKey human development indicators include life expectancy, literacy rate, and GDP per capita.\nNCERT solution Class 11 Economics Chapter 8 highlights why groupings and open policies matter for growth."
     }
   ]
 };

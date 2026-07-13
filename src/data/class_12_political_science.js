@@ -1,127 +1,116 @@
 export default {
   "1": [
     {
-      "q": "1. Multiple choice questions.",
+      "q": "1. Which among the following statements that describe the nature of Soviet economy is\nwrong\n?\na. Socialism was the dominant ideology\nb. State ownership/control existed over the factors of production\nc. People enjoyed economic freedom\nd. Every aspect of the economy was planned and controlled by the State",
+      "a": "wer:\nc. People enjoyed economic freedom."
+    },
+    {
+      "q": "2. Arrange the following in chronological order:\na. Soviet invasion of Afghanistan\nb. Fall of the Berlin Wall\nc. Disintegration of the Soviet Union\nd. Russian Revolution",
+      "a": "wer:\nd. Russian Revolution (1917), a. Soviet invasion of Afghanistan (1979), b. Fall of the Berlin Wall (1989), c. Disintegration of the Soviet Union (1991)."
+    },
+    {
+      "q": "3. Which among the following is\nNOT\nan outcome of the disintegration of the USSR?\na. End of the ideological war between US and USSR\nb. Birth of CIS\nc. Change in balance of power\nd. Crises in the Middle East",
+      "a": "wer:\nd. Crises in the Middle East."
+    },
+    {
+      "q": "4. Match the following.\nColumn I\nColumn II\ni. Mikhail Gorbachev\na. Successor of USSR\nii. Shock Therapy\nb. Military pact\niii. Russia\nc. Introduced reforms\niv. Boris Yeltsin\nd. Economic model\nv. Warsaw\ne. President of Russia",
+      "a": "wer:\nQuestions\nAnswer\ni. Mikhail Gorbachev\nc. Introduced reforms\nii. Shock Therapy\nd. Economic model\niii. Russia\na. Successor of USSR\niv. Boris Yeltsin\ne. President of Russia\nv. Warsaw\nb. Military pact"
+    },
+    {
+      "q": "5. Fill in the blanks:\na. The Soviet political system was based on _______________ ideology.\nb. _______________ was the military alliance started by the USSR.\nc. _______________ party dominated the Soviet Union\u2019s political system.\nd. _______________ initiated the reforms in the USSR in 1985.\ne. The fall of the _______________ symbolised the end of the Cold War.",
+      "a": "wer:\na. The Soviet political system was based on\nsocialist\nideology.\nb.\nWarsaw Pact\nwas the military alliance started by the USSR.\nc.\nCommunist\nParty dominated the USSR\u2019s political system.\nd.\nMikhail Gorbachev\ninitiated the reforms in the USSR in 1985.\ne. The fall of the\nBerlin Wall\nsymbolised the end of the Cold War."
+    },
+    {
+      "q": "6. Mention any three features that distinguish the Soviet economy from that of a capitalist country like the US.",
       "a": "Detailed solution available."
     },
     {
-      "q": "1. The fall of the Berlin Wall in 1989 primarily symbolised which of the following?\n(a) Beginning of the Second World War\n(b) End of colonialism in Asia\n(c) End of the division between capitalist and communist blocs\n(d) Formation of the European Union",
-      "a": "wer:\n(c) End of the division between capitalist and communist blocs."
-    },
-    {
-      "q": "2. Which of the following leaders introduced reforms like perestroika and glasnost in the USSR?\n(a) Joseph Stalin\n(b) Nikita Khrushchev\n(c) Mikhail Gorbachev\n(d) Boris Yeltsin",
-      "a": "wer:\n(c) Mikhail Gorbachev."
-    },
-    {
-      "q": "3. Which of the following was a direct consequence of the disintegration of the Soviet Union?\n(a) Strengthening of the Warsaw Pact\n(b) Emergence of a unipolar world led by the US\n(c) End of independence movements in Eastern Europe\n(d) Immediate economic prosperity in all ex-Soviet states",
-      "a": "wer:\n(b) Emergence of a unipolar world led by the US."
-    },
-    {
-      "q": "4. The economic transition from communism to capitalism in post-Soviet states is known as:\n(a) New Deal\n(b) Shock Therapy\n(c) Glasnost\n(d) Containment",
-      "a": "wer:\n(b) Shock Therapy."
-    },
-    {
-      "q": "5. After 9/11, the US sought military bases mainly in which region that Russia calls its \u2018Near Abroad\u2019?\n(a) Western Europe\n(b) Central Asia\n(c) South-East Asia\n(d) Latin America",
-      "a": "wer:\n(b) Central Asia."
-    },
-    {
-      "q": "2. Very Short Answer (VSA).",
+      "q": "1. State ownership of property, unlike private property in the US.",
       "a": "Detailed solution available."
     },
     {
-      "q": "6. What did the Berlin Wall symbolise during the Cold War?",
-      "a": "wer:\nThe Berlin Wall symbolised the sharp division between the capitalist world led by the US and the communist world led by the USSR, separating East Berlin from West Berlin."
-    },
-    {
-      "q": "7. When did the USSR finally disband?",
-      "a": "wer:\nThe USSR finally disbanded in 1991, formally bringing an end to the Soviet Union and the Cold War\u2013era bipolar structure."
-    },
-    {
-      "q": "8. Who became the first elected President of Russia after the disintegration of the USSR?",
-      "a": "wer:\nBoris Yeltsin became the first elected President of Russia and played a key role in the final dissolution of the USSR."
-    },
-    {
-      "q": "9. What was the main ideological basis of the Soviet political system?",
-      "a": "wer:\nThe Soviet political system was based on socialist ideology, emphasising state ownership of resources and a dominant Communist Party."
-    },
-    {
-      "q": "10. What is meant by \u2018shock therapy\u2019 in the context of post-communist regimes?",
-      "a": "wer:\nShock therapy refers to the rapid transition from a state-controlled communist economy to a capitalist, market-based economy in post-communist states."
-    },
-    {
-      "q": "3.  Short Answer Questions.",
+      "q": "2. Centralised economic planning versus market-driven economy in the US.",
       "a": "Detailed solution available."
     },
     {
-      "q": "11. Explain any two key features of the Soviet system before its disintegration.",
-      "a": "wer:\nThe Soviet system had, first, a socialist economy with state ownership and tight control over all major means of production. Second, it was a highly centralised political system dominated by the Communist Party, which controlled decision-making and limited political freedoms."
-    },
-    {
-      "q": "12. Briefly describe how Gorbachev\u2019s reforms contributed to the disintegration of the USSR.",
-      "a": "wer:\nGorbachev introduced political openness and economic restructuring to reform the stagnant Soviet system. These reforms weakened the Communist Party\u2019s control, encouraged demands for autonomy in republics like Lithuania, and unintentionally accelerated nationalist movements, ultimately leading to the collapse of the USSR."
-    },
-    {
-      "q": "13. Mention any two consequences of the disintegration of the Soviet Union for the international system.",
-      "a": "wer:\nFirst, it ended Cold War\u2013style confrontations and the bipolar balance of power. Second, it led to the emergence of a unipolar world dominated by the US and the creation of several independent states out of the former Soviet republics."
-    },
-    {
-      "q": "14. How did \u2018shock therapy\u2019 affect the economies of post-Soviet states?",
-      "a": "wer:\nShock therapy caused deep economic and social turmoil. Rapid privatisation and withdrawal of state support led to unemployment, inflation and decline in social security. Instead of gradual adjustment, societies faced sudden disruption, widening inequalities and uncertainty in the transition period."
-    },
-    {
-      "q": "15. Describe one economic and one cultural aspect of India\u2019s relations with the USSR/post-communist countries.",
-      "a": "wer:\nEconomically, the USSR aided India by helping build steel plants and accepting trade in Indian rupees. Culturally, Indian cinema became very popular in Soviet and Central Asian republics, with Bollywood films and artists receiving warm appreciation."
-    },
-    {
-      "q": "4. True or False Questions.",
+      "q": "3. Absence of economic freedom/personal choice, which is present in capitalism.",
       "a": "Detailed solution available."
     },
     {
-      "q": "16. The Warsaw Pact was a political and economic organisation created by the USSR for trade cooperation.",
-      "a": "wer:\nFalse."
-    },
-    {
-      "q": "17. The disintegration of the Soviet Union led to the birth of several new independent countries in its former territory.",
-      "a": "wer:\nTrue."
-    },
-    {
-      "q": "18. After the end of the Cold War, the US emerged as the only superpower in the international system.",
-      "a": "wer:\nTrue."
-    },
-    {
-      "q": "19. India weakened its relations with Russia after the disintegration of the USSR and completely ended defence cooperation.",
-      "a": "wer:\nFalse."
-    },
-    {
-      "q": "20. Many post-Soviet republics experienced tensions, civil wars and secessionist movements in the years after disintegration.",
-      "a": "wer:\nTrue."
-    },
-    {
-      "q": "3.  Fill in the Blanks Questions.",
+      "q": "7. What were the factors that forced Gorbachev to initiate the reforms in the USSR?",
       "a": "Detailed solution available."
     },
     {
-      "q": "21. The fall of the __________ in 1989 became a powerful symbol of the end of the Cold War.",
-      "a": "wer:\nBerlin Wall."
+      "q": "1. Stagnation in the economy with shortage of essential goods.",
+      "a": "Detailed solution available."
     },
     {
-      "q": "22. The Union of Soviet Socialist Republics (USSR) was created after the socialist revolution in Russia in __________.",
-      "a": "wer:\n1917."
+      "q": "2. Bureaucratic and unresponsive administration.",
+      "a": "Detailed solution available."
     },
     {
-      "q": "23. The Soviet political system was dominated by the __________ Party.",
-      "a": "wer:\nCommunist."
+      "q": "3. Widespread corruption and lack of transparency.",
+      "a": "Detailed solution available."
     },
     {
-      "q": "24. The rapid transition from communism to capitalism in post-communist states is called __________.",
-      "a": "wer:\nShock Therapy."
+      "q": "4. Discontent among various USSR republics.",
+      "a": "Detailed solution available."
     },
     {
-      "q": "25. Russia is widely seen as the main __________ state of the former USSR.",
-      "a": "wer:\nsuccessor.\nWhy this chapter matters for Class 12 Political Science students\nThis chapter helps you read today\u2019s world politics better. With our\npolitical science class 12 chapter 1 question answers the end of bipolarity\n, you can revise quickly and understand how the\nCold War ended\nand a new world order started.\nPractice-oriented notes and\nthe end of bipolarity class 12 important question answers\nmake concepts easy. You can also turn this into your own\nclass 12 political science chapter 1 the end of bipolarity notes\n, useful for school tests and board preparation.\nUse these\nthe end of bipolarity class 12 short question answers\nlike a quick guide while solving sample papers or revising NCERT. They work just like a light version of\npolitical science class 12 chapter 1 question answers pdf\n, handy for last-minute study."
+      "q": "5. Increasing pressure to reduce military spending and catch up technologically.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "8. What were the major consequences of the disintegration of the Soviet Union for countries like India?",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "1. End of support from a traditional ally in strategic and military areas.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "2. Shift towards unipolar world order and domination of the US.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "3. India had to reorient its foreign policy and strengthen ties with many post-Soviet states and the West.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "9. What was Shock Therapy? Was this the best way to make a transition from communism to capitalism?",
+      "a": "wer:\nShock Therapy was the rapid process of shifting from a state-controlled, communist economy to a capitalist, market-based one, involving large-scale privatisation, foreign investment, and the end of price controls. It was not the best way as it led to economic collapse, increased poverty, and rise of inequality in many post-communist countries."
+    },
+    {
+      "q": "10. Essay: \u201cWith the disintegration of the second world, India should change its foreign policy and focus more on friendship with the US rather than with traditional friends like Russia.\u201d (For or against)",
+      "a": "wer:\n(Sample points, students to elaborate as per need)\nFor: The US became the sole superpower; strategic, economic, and technological advantages could help India\u2019s growth. Against: Maintaining strong ties with Russia ensures multipolarity, balance, and leverages support for Indian interests. Both relations are crucial; non-alignment remains relevant.\nUnderstanding the End of Bipolarity \u2013 Key Concepts and Exam Readiness\nGrasping the causes and consequences of the\nEnd of Bipolarity\nis essential for Political Science. With updated\nNCERT solutions for Class 12 Political Science Chapter 1 (2026-27)\n, you can understand how the Cold War ended and why the Soviet Union disintegrated.\nPractice answering questions about\nSoviet reforms, Shock Therapy\n, and India's foreign policy. These topics boost your understanding and scoring potential. Focus on\ntimeline events, key leaders\n, and the impact on India's international relations for the best exam results.\nConsistent revision of\nexercise questions\nsharpens your preparation. Use NCERT Class 12 Political Science resources to develop conceptual clarity and ensure high performance in CBSE board exams. Stay positive and thorough for success!\nCBSE Class 12 Political Science (Contemporary World Politics) Chapter-wise NCERT Solutions\nS.No\nChapter-wise NCERT Solutions for Political Science (Contemporary World Politics) Class 12\n1\nChapter 2 Contemporary Centres of Power Solutions\n2\nChapter 3 Contemporary South Asia Solutions\n3\nChapter 4 International Organisations Solutions\n4\nChapter 5 Security in The Contemporary World Solutions\n5\nChapter 6 Environment and Natural Resources Solutions\n6\nChapter 7 Globalisation Solutions\nCBSE Class 12 Political Science Study Materials\nS.No\nStudy Materials for Class 12 Political Science\n1\nCBSE Class 12 Political Science NCERT Solutions\n2\nCBSE Class 12 Political Science (Contemporary World Politics) NCERT Book\n3\nCBSE Class 12 Political Science PYQP\n4\nCBSE Class 12 Political Science Syllabus"
     }
   ],
-  "2": [],
+  "2": [
+    {
+      "q": "1. Choose the correct option to fill in the blanks.\n(a) The First General Elections in 1952 involved simultaneous\nelections to the Lok Sabha and ......................(The President of\nIndia/ State Assemblies/ Rajya Sabha/ The Prime Minister)\n(b) The party that won the second largest number of Lok Sabha seats\nin the first elections was the......................(Praja Socialist Party/\nBharatiya Jana Sangh/ Communist Party of India/Bharatiya Janata\nParty)\n(c) One of the guiding principles of the ideology of the Swatantra\nParty was......................(Working class interests/ protection of\nPrincely States / economy free from State control / Autonomy of\nStates within the Union)",
+      "a": "wer:\n(a) The First General Elections in 1952 involved simultaneous elections to the Lok Sabha and\nState Assemblies\n.\n(b) The party that won the second largest number of Lok Sabha seats in the first elections was the\nCommunist Party of India\n.\n(c) One of the guiding principles of the ideology of the Swatantra Party was\neconomy free from State control\n."
+    },
+    {
+      "q": "2. Match the following leaders with their parties:\nList A\nList B\n(a) S. A. Dange\n(iv) Communist Party of India\n(b) Shyama Prasad Mukherjee\n(i) Bharatiya Jana Sangh\n(c) Minoo Masani\n(ii) Swatantra Party\n(d) Asoka Mehta\n(iii) Praja Socialist Party",
+      "a": "wer:\nLeader\nParty\nS. A. Dange\nBharatiya Jana Sangh\nShyama Prasad Mukherjee\nSwatantra Party\nMinoo Masani\nPraja Socialist Party\nAsoka Mehta\nCommunist Party of India"
+    },
+    {
+      "q": "3. Mark the following statements about one-party dominance as true or false:\n(a) One-party dominance is rooted in the absence of strong alternative political parties.\n(b) One-party dominance occurs because of weak public opinion.\n(c) One-party dominance is linked to the nation\u2019s colonial past.\n(d) One-party dominance reflects the absence of democratic ideals in a country.",
+      "a": "wer:\n(A) One-party dominance is rooted in the absence of strong alternative political parties.\nTrue\n(b) One-party dominance occurs because of weak public opinion.\nFalse\n(c ) One-party dominance is linked to the nation\u2019s colonial past.\nTrue\n(d) One-party dominance reflects the absence of democratic ideals in a country.\nFalse"
+    },
+    {
+      "q": "4. Take a political map of India and mark:\n(a) two states where Congress was not in power at some point\nduring 1952-67.\n(b) two states where the Congress remained in power through\nthis period.",
+      "a": "wer:\n(a) Two states where Congress was not in power at some point during 1952-67: Kerala, Madras (now Tamil Nadu).\n(b) Two states where the Congress remained in power through this period: Uttar Pradesh, Maharashtra."
+    },
+    {
+      "q": "5. Read the following passage and answer the questions below:\n\u201cPatel, the organisational man of the Congress, wanted to purge the Congress of other political groups and sought to make of it a cohesive and disciplined political party. He .... sought to take the Congress away from its all-embracing character and turn it into a close-knit party of disciplined cadres. ... Patel\u2019s idea of transforming the Congress into strictly political party with a single ideology and tight discipline showed an equal lack of understanding of the eclectic role that the Congress, as a government, was to be called upon to perform in the decades to follow.\u201d \u2014 Rajni Kothari\n(a) Why does the author think that Congress should not have been a cohesive and disciplined party?\nThe author believes Congress should not have been a cohesive and disciplined party because its broad, all-embracing nature allowed it to function as a platform for diverse groups and interests, making it effective in representing the complexities of Indian society.\n(b) Give some examples of the eclectic role of the Congress party in the early years.\nIn the early years, the Congress party included people from different ideologies\u2014right, left, centre; represented varied groups like industrialists, peasants, workers, and accommodated multiple interests through internal negotiation and inclusion.\n(c) Why does the author say that Gandhi\u2019s view about Congress\u2019 future was romantic?\nThe author calls Gandhi\u2019s view romantic because Gandhi wanted Congress to disband after independence and become a social service organization, not considering the political needs and evolving roles Congress had to play as the governing party of a diverse nation.",
+      "a": "Detailed solution available."
+    },
+    {
+      "q": "6. LET US DO IT TOGETHER:\nMake a chart of elections and governments in your State since 1952: Columns: year of election, name of winning party, name of ruling party/parties, name of Chief Minister(s).\nUnderstanding the Era of One-party Dominance in Indian Politics\nThe\nEra of One-party Dominance\nmarks a significant phase in Indian democracy, where the Congress party played a pivotal role after independence. Grasping this chapter helps students appreciate the evolution of the country's party system and the relevance of\nfree and fair elections\n.\nWith the\nNCERT Solutions Class 12 Political Science Chapter 2 Era Of One Party Dominance\n(2026-27), learners can build a strong conceptual foundation. Focus on topics like\nCongress system\n, formation of opposition parties, and factors that shaped early political dynamics to excel in exams.\nFor top performance, revise key points regularly and practice answer-writing. Understanding the\nnature of one-party dominance and electoral challenges\nwill help you connect theoretical knowledge with real-world political scenarios\u2014crucial for Board success and deeper insights.\nCBSE Class 12 Political Science (Politics in India Since Independence) Chapter-wise NCERT Solutions\nS.No\nChapter-wise NCERT Solutions for Political Science (Politics in India Since Independence) Class 12\n1\nChapter 1 Challenges of Nation Building Solutions\n2\nChapter 3 Politics of Planned Development Solutions\n3\nChapter 4 Indias External Relations Solutions\n4\nChapter 5 Challenges to and Restoration of The Congress System Solutions\n5\nChapter 6 The Crisis of Democratic Order Solutions\n6\nChapter 7 Regional Aspirations Solutions\n7\nChapter 8 Recent Developments in Indian Politics Solutions\nCBSE Class 12 Political Science Study Materials\nS.No\nStudy Materials for Class 12 Political Science\n1\nCBSE Class 12 Political Science NCERT Solutions\n2\nCBSE Class 12 Political Science (Contemporary World Politics) NCERT Book\n3\nCBSE Class 12 Political Science PYQP\n4\nCBSE Class 12 Political Science Syllabus",
+      "a": "Detailed solution available."
+    }
+  ],
   "3": [
     {
       "q": "1. Identify the country:\na. The struggle among pro-monarchy, pro-democracy groups and extremists created an atmosphere of political instability\nb. A landlocked country with multi-party competition\nc. The first country to liberalise its economy in the South Asian region\nd. In the conflict between the military and pro-democracy groups, the military has prevailed over democracy\ne. Centrally located and shares borders with most of the South Asian countries\nf. Earlier the island had the Sultan as the head of state. Now, it\u2019s a republic\ng. Small savings and credit cooperatives in the rural areas have helped in reducing poverty\nh. A landlocked country with a monarchy",
