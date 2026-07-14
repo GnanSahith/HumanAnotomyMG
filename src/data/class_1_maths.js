@@ -399,24 +399,48 @@ export default {
   ],
   "10": [
     {
-      "q": "1.\nClass 1 Maths NCERT Book",
-      "a": "Detailed solution available."
+      "q": "22, 21, 20, ___, ___, 17, 16",
+      "a": "19, 18"
     },
     {
-      "q": "2.\nClass 1 Maths Worksheet",
-      "a": "Detailed solution available."
+      "q": "10, 20, 30, ___, 50, ____",
+      "a": "40, 60\nIt is also the foundational for advanced math. Patterns are fundamental to many advanced areas of mathematics. Algebra, for example, is largely about recognizing and manipulating patterns. Introducing patterns at an early age can set the foundation for these advanced topics.\nIt improve the logical thinking skills. Recognizing and predicting patterns involves a form of logical reasoning. When children engage with patterns, they are practicing their ability to think logically. Understanding patterns helps children predict what might come next based on a set order or sequence. This ability to generalize from known data is a critical thinking skill that\u2019s applicable in many areas beyond math.\nClass 1 Maths chapter 10 pattern has connection to the real world. Patterns are everywhere \u2013 in nature, art, music, and everyday occurrences. By understanding patterns, children can better relate to and understand their surroundings.\nIdentifying pattern enhances memory skills. Repeated exposure to patterns can help improve memory. Children often remember sequences and patterns better than random assortments of information. When given a sequence, children often need to figure out what should come next or identify a missing piece. This involves problem-solving skills, which are enhanced through pattern exercises."
     },
     {
-      "q": "3.\nClass 1 Maths Sample Paper",
-      "a": "Detailed solution available."
+      "q": "11, 22, 33, ___, ____, 66, ____",
+      "a": "44, 55, 77"
     },
     {
-      "q": "4.\nClass 1 Maths Revision Notes",
-      "a": "Detailed solution available."
+      "q": "5, 10, ___, 20, 25, ___",
+      "a": "15, 30"
     },
     {
-      "q": "5.\nClass 1 Maths Important Questions",
-      "a": "Detailed solution available."
+      "q": "2, 5, 8, 11, ___, 17, ___",
+      "a": "14, 20\nComplete the Pattern:"
+    },
+    {
+      "q": "2, 4, 6, 8, ___, ___, ___",
+      "a": "10, 12, 14"
+    },
+    {
+      "q": "27, 28, 29, ____, ____, ____",
+      "a": "30, 31, 32"
+    },
+    {
+      "q": "25, 30, _____, 40, ___, ____, ____",
+      "a": "35, 45, 50, 55\nAfter understanding basic patterns, children can also be encouraged to create their own, which can boost their creativity and help them think outside the box. Just like in mathematics, patterns are foundational in reading (e.g., rhyming, sentence structures) and music (e.g., rhythms, melodies). Understanding patterns in math can aid in understanding these other disciplines."
+    },
+    {
+      "q": "1, 4, 7, ___, ____, ____, ____",
+      "a": "10, 13, 16, 19"
+    },
+    {
+      "q": "15, 13, 11, ____, ____, ____, ____",
+      "a": "9, 7, 5, 3"
+    },
+    {
+      "q": "10, ____, 30, ___, 50, ____",
+      "a": "20, 40, 60\nFor many children, recognizing and creating patterns can be a fun and rewarding experience. This early success in math can boost their confidence and encourage a love for the subject. In conclusion, Class 1 Maths Chapter 10 on Patterns is not just about repeating sequences; it\u2019s about laying the groundwork for a multitude of skills that will benefit children in their academic pursuits and everyday life.\nHow does teaching about the patterns in unit 10 of 1st class math can help students?\nPatterns are another form of developing the knowledge of shapes that is part of math. Where children can count and learn collecting data that is going to be useful for upcoming classes and the chapters too.\nDo find any way that patterns given in chapter 10 of 1st math can be more challenging for children?\nOnce complete the chapter 10 patterns or when the children understood the patterns I think to make them draw out of the patterns by their imagination could be challenging to their understanding of patterns.\nDo you think chapter 10 of maths class 1 can be covered in a short timespan?\nThe chapter doesn\u2019t contain much of the numbers and making children draw while learning could be a more easy way to develop their minds. So yes it can be covered in a short time.\nLast Edited: February 27, 2024\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 1 Maths Joyful Chapter 1 Finding the Furry Cat\nNCERT Solutions for Class 1 Maths Joyful Chapter 2 What is Long? What is Round?\nNCERT Solutions for Class 1 Maths Joyful Chapter 3 Mango Treat\nNCERT Solutions for Class 1 Maths Joyful Chapter 4 Making 10\nNCERT Solutions for Class 1 Maths Joyful Chapter 5 How Many?\nNCERT Solutions for Class 1 Maths Joyful Chapter 6 Vegetable Farm\nNCERT Solutions for Class 1 Maths Joyful Chapter 7 Lina\u2019s Family\nNCERT Solutions for Class 1 Maths Joyful Chapter 8 Fun with Numbers\nNCERT Solutions for Class 1 Maths Joyful Chapter 9 Utsav\nNCERT Solutions for Class 1 Maths Joyful Chapter 10 How do I Spend my Day?\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
     }
   ],
   "11": [
@@ -481,32 +505,20 @@ export default {
   ],
   "13": [
     {
-      "q": "1.\nClass 1 So Many Toys Important Questions",
-      "a": "Detailed solution available."
+      "q": "Cost of one banana is 1 rupee, find the cost of 3 bananas.",
+      "a": "Cost of 1 banana = 1 rupee then,\nCost of 3 bananas = 1 rupee + 1 rupee + 1 rupee\n= 3 rupees"
     },
     {
-      "q": "2.\nClass 1 So Many Toys Revision Notes\nConclusion\nIn Class 1 Maths Chapter 13 - \"So Many Toys,\" kids learn essential skills like counting, grouping, comparing, and sorting objects. Vedantu\u2019s NCERT Solutions makes these concepts easy to understand through fun and interactive activities. These solutions help children build a strong foundation in maths by developing their ability to observe and compare different items. With Vedantu\u2019s guidance, young learners can confidently understand these important maths concepts that help for future success in the subject.\nChapter-wise NCERT Solutions Class 1 Maths - Joyful-Mathematics\nAfter familiarising yourself with the Class 1 Maths Chapter 13 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 1 Joyful-Mathematics textbook chapters.\nS.No\nClass 1 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1 Finding the Furry Cat! Solutions\n2\nChapter 2 What is Long? What is Round? (Shapes) Solutions\n3\nChapter 3 Mango Treat (Numbers 1 to 9) Solutions\n4\nChapter 4 Making 10 (Numbers 10 to 20) Solutions\n5\nChapter 5 How Many? Solutions\n6\nChapter 6 Vegetable Farm Solutions\n7\nChapter 7 Lina\u2019s Family (Measurement) Solutions\n8\nChapter 8 Fun with Numbers (Numbers 21 to 99) Solutions\n9\nChapter 9 Utsav (Patterns) Solutions\n10\nChapter 10 How do I Spend my Day? (Time) Solutions\n11\nChapter 11 How Many Times? (Multiplication) Solutions\n12\nChapter 12 How Much Can We Spend? Solutions\nRelated Important Links for Maths Class 1\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 1 \u2013\nS. No\nImportant Links for Class 1 Maths",
-      "a": "Detailed solution available."
+      "q": "Cost of one apple is 5 rupees find the cost of 4 apples.",
+      "a": "Cost of one apple = 5 rupees\nCost of 4 apples = 5 rupees + 5 rupees + 5 rupees + 5 rupees\n= 20 rupees\nTo simplify the process of counting larger numbers of objects, students might be introduced to the idea of grouping. For instance, objects could be grouped in tens, making it easier to count large quantities. This method lays the foundation for place value and base-ten counting in higher grades.\nTo reinforce the concepts learned, students engage in various exercises and activities, ranging from counting objects in a picture, matching groups of objects to the correct number, to solving simple word problems related to quantities."
     },
     {
-      "q": "1.\nClass 1 Maths NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Find the bigger number 13 and 26.",
+      "a": "26 is bigger than 13."
     },
     {
-      "q": "2.\nClass 1 Maths Worksheet",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 1 Maths Sample Paper",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 1 Maths Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 1 Maths Important Questions",
-      "a": "Detailed solution available."
+      "q": "Find the bigger number 52 and 68.",
+      "a": "68 is bigger than 52.\nWhat does chapter 13 of class 1st math teach children?\nUnit 13 is not teaching something new in the chapter, Instead, it is trying to make the children practice what they have learned in previous chapters. Through various types of tests and activities.\nIs unit 13 math practice is enough for the exam preparation for class 1st students?\nChapter 13 of class 1st is only to practice previous chapters. However, It is not enough to cover the entire book lessons for exams. So I suggest making the child practice with other methods to check their understanding.\nDo you think unit 13 of class 1st is successful in making practice easy for the kids?\nThe chapter and full of multiple drawings and other things and it is made in such a way that can engage the children for a long time rather than just going through the chapter learning not much. This chapter indeed succeeds in keeping the children attention and making them learn numbers.\nLast Edited: February 27, 2024\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 1 Maths Joyful Chapter 1 Finding the Furry Cat\nNCERT Solutions for Class 1 Maths Joyful Chapter 2 What is Long? What is Round?\nNCERT Solutions for Class 1 Maths Joyful Chapter 3 Mango Treat\nNCERT Solutions for Class 1 Maths Joyful Chapter 4 Making 10\nNCERT Solutions for Class 1 Maths Joyful Chapter 5 How Many?\nNCERT Solutions for Class 1 Maths Joyful Chapter 6 Vegetable Farm\nNCERT Solutions for Class 1 Maths Joyful Chapter 7 Lina\u2019s Family\nNCERT Solutions for Class 1 Maths Joyful Chapter 8 Fun with Numbers\nNCERT Solutions for Class 1 Maths Joyful Chapter 9 Utsav\nNCERT Solutions for Class 1 Maths Joyful Chapter 10 How do I Spend my Day?\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
     }
   ]
 };
