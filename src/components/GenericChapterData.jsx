@@ -344,7 +344,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
                   </ReactMarkdown>
                   
                   {(() => {
-                    const sims = findSimulationsForText(qaObj.q);
+                    const sims = findSimulationsForText(qaObj.q, chapter?.title);
                     if (sims.length > 0) {
                       return (
                         <div style={{ marginTop: '12px' }}>
