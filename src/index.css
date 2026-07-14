@@ -475,7 +475,7 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px; /* Reduced redundant padding */
+  padding-top: 120px;
   overflow-y: auto;
   gap: 40px;
 }

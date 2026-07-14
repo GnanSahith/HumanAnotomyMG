@@ -92,6 +92,13 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
     t = t.replace(/\n\s*([.,;!?])/g, '$1');
     // 3. Merge line ending in a letter with a line starting with an open parenthesis
     t = t.replace(/([a-zA-Z])\n\s*\(/g, '$1 (');
+    
+    // 4. Break "Ans:" or "Answer:" into a new line and bold it if mashed with previous text
+    t = t.replace(/(\S)\s+(Ans\s*:|Answer\s*:)/gi, '$1\n\n**$2**');
+    
+    // 5. Break options (a)-(e) and Roman numerals (i)-(vi) onto new lines
+    t = t.replace(/(\S)\s+(\([a-e]\)|\([ivx]{1,4}\))\s/g, '$1\n\n$2 ');
+    
     return t;
   };
 
