@@ -376,39 +376,40 @@ function App() {
                 </>
               )}
             </SystemView>
-            {appMode === 'simulations' && cameFromQuestion && (
-              <button
-                onClick={handleBackToQuestion}
-                style={{
-                  position: 'fixed',
-                  bottom: '40px',
-                  left: '50%',
-                  transform: 'translateX(-50%)',
-                  zIndex: 9999,
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '8px',
-                  padding: '12px 24px',
-                  background: 'linear-gradient(135deg, rgba(191,90,242,0.9), rgba(10,132,255,0.9))',
-                  color: '#ffffff',
-                  border: '1px solid rgba(255,255,255,0.2)',
-                  borderRadius: '30px',
-                  fontSize: '15px',
-                  fontWeight: 600,
-                  boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
-                  cursor: 'pointer',
-                  backdropFilter: 'blur(10px)'
-                }}
-                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateX(-50%) translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(191,90,242,0.4)'; }}
-                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateX(-50%) translateY(0)'; e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3)'; }}
-              >
-                <ArrowLeft size={18} />
-                Back to Question
-              </button>
-            )}
           </div>
         ) : null
       ) : null}
+
+      {appMode === 'simulations' && cameFromQuestion && (
+        <button
+          onClick={handleBackToQuestion}
+          style={{
+            position: 'fixed',
+            bottom: '40px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            padding: '12px 24px',
+            background: 'linear-gradient(135deg, rgba(191,90,242,0.9), rgba(10,132,255,0.9))',
+            color: '#ffffff',
+            border: '1px solid rgba(255,255,255,0.2)',
+            borderRadius: '30px',
+            fontSize: '15px',
+            fontWeight: 600,
+            boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+            cursor: 'pointer',
+            backdropFilter: 'blur(10px)'
+          }}
+          onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateX(-50%) translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(191,90,242,0.4)'; }}
+          onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateX(-50%) translateY(0)'; e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3)'; }}
+        >
+          <ArrowLeft size={18} />
+          Back to Question
+        </button>
+      )}
 
       <LoginModal 
         isOpen={showLoginModal} 
