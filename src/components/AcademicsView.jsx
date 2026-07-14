@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { ChevronDown, BookOpen } from 'lucide-react';
+import { ChevronDown, BookOpen, ArrowLeft } from 'lucide-react';
 import '../Academics.css';
 
-const AcademicsView = ({ onSelectSubject }) => {
+const AcademicsView = ({ onSelectSubject, onBack }) => {
   const [expandedClass, setExpandedClass] = useState('class_12');
 
   const ncertClasses = [
@@ -24,7 +24,17 @@ const AcademicsView = ({ onSelectSubject }) => {
 
   return (
     <div className="academics-glass-container fade-in-scale">
-      <div className="academics-header">
+      <div className="academics-header" style={{ position: 'relative' }}>
+        {onBack && (
+          <button 
+            className="icon-btn" 
+            onClick={onBack} 
+            style={{ position: 'absolute', left: '0', top: '50%', transform: 'translateY(-50%)', background: 'rgba(255, 255, 255, 0.1)', border: '1px solid rgba(255, 255, 255, 0.2)' }}
+            title="Back"
+          >
+            <ArrowLeft size={20} />
+          </button>
+        )}
         <h1 className="academics-title">NCERT Solutions</h1>
         <p className="academics-subtitle">Select your grade and subject to explore premium study materials.</p>
       </div>

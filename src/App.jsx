@@ -296,10 +296,13 @@ function App() {
       ) : appMode === 'pricing' ? (
         <PricingView onBack={() => setAppMode('simulations')} />
       ) : appMode === 'academics' ? (
-        <AcademicsView onSelectSubject={(subject) => {
-          setActiveSubject(subject);
-          setAppMode('subject_content');
-        }} />
+        <AcademicsView 
+          onBack={() => setAppMode('root')}
+          onSelectSubject={(subject) => {
+            setActiveSubject(subject);
+            setAppMode('subject_content');
+          }} 
+        />
       ) : appMode === 'subject_content' ? (
         <SubjectContentView 
           subject={activeSubject} 
