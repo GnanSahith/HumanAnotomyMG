@@ -12,6 +12,7 @@ export default function SimulationLibraryLayout({
     icon, 
     simulations, 
     filters, // e.g., [{ id: 'subject', label: 'SUBJECT', options: [{ id: 'motion', label: 'Motion' }] }]
+    initialFilters = {},
     onSimulationClick, 
     onBack,
     handleLockedItemClick,
