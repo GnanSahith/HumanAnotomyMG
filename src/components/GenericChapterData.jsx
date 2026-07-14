@@ -201,8 +201,10 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
             if (i < out.length - 1) {
                 if (out[i].startsWith('$$') || out[i+1].startsWith('$$') || 
                     out[i].startsWith('* ') || out[i+1].startsWith('* ') || 
-                    out[i].startsWith('#') || out[i+1].startsWith('#')) {
-                    result += '\n\n'; // Preserve block separation for tables/math
+                    out[i].startsWith('#') || out[i+1].startsWith('#') ||
+                    /^\d+\./.test(out[i+1]) || /^[a-zA-Z]\)/.test(out[i+1]) ||
+                    /^\d+\./.test(out[i]) || /^[a-zA-Z]\)/.test(out[i])) {
+                    result += '\n\n'; // Preserve block separation for tables/math/lists
                     currentParaLength = 0;
                 } else if (out[i].startsWith('**') && out[i].endsWith('**')) {
                     result += ' '; // Inline definitions
@@ -330,7 +332,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
                 <span className="q-badge" style={{ textTransform: 'uppercase', flexShrink: 0, marginTop: '2px' }}>Q {chapterNum}.{num}</span> 
                 <div style={{ marginLeft: '12px', width: '100%' }}>
                   <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
-                    {healText(qaObj.q).replace(/^\d+\.\s*/, '').replace(/\n/g, ' ')}
+                    {healText(qaObj.q).replace(/^\d+\.\s*/, '').replace(/\n/g, '\n\n')}
                   </ReactMarkdown>
                 </div>
               </div>
