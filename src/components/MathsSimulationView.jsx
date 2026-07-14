@@ -276,9 +276,14 @@ const getBadgeInfo = (title) => {
 
 import SimulationLibraryLayout from './SimulationLibraryLayout';
 
-export default function MathsSimulationView({ onBack }) {
+export default function MathsSimulationView({ onBack, handleLockedItemClick, isSignedIn, initialSimulationId }) {
     const { t } = useLanguage();
-    const [activeSimulation, setActiveSimulation] = useState(null);
+    const [activeSimulation, setActiveSimulation] = useState(() => {
+        if (initialSimulationId && mathSimulations[initialSimulationId]) {
+            return { id: initialSimulationId, ...mathSimulations[initialSimulationId] };
+        }
+        return null;
+    });
     const [isLoadingSim, setIsLoadingSim] = useState(false);
 
     const [quizState, setQuizState] = useState('idle'); 

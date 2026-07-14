@@ -52,9 +52,14 @@ import CustomSimplifiedMRI from './simulations/CustomSimplifiedMRI';
 
 import SimulationLibraryLayout from './SimulationLibraryLayout';
 
-export default function PhysicsSimulationView({ onBack, handleLockedItemClick }) {
+export default function PhysicsSimulationView({ onBack, handleLockedItemClick, initialSimulationId }) {
     const { t } = useLanguage();
-    const [activeSimulation, setActiveSimulation] = useState(null);
+    const [activeSimulation, setActiveSimulation] = useState(() => {
+        if (initialSimulationId && physicsSimulations[initialSimulationId]) {
+            return { id: initialSimulationId, ...physicsSimulations[initialSimulationId] };
+        }
+        return null;
+    });
     const [isLoadingSim, setIsLoadingSim] = useState(false);
     const [simKey, setSimKey] = useState(0);
     const [isPlaying, setIsPlaying] = useState(false);

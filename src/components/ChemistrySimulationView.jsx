@@ -46,9 +46,14 @@ import CustomStatesOfMatter from './simulations/CustomStatesOfMatter';
 import CustomStatesOfMatterBasics from './simulations/CustomStatesOfMatterBasics';
 import CustomWaveonaString from './simulations/CustomWaveonaString';
 
-export default function ChemistrySimulationView({ onBack, handleLockedItemClick }) {
+export default function ChemistrySimulationView({ onBack, handleLockedItemClick, initialSimulationId }) {
     const { t } = useLanguage();
-    const [activeSimulation, setActiveSimulation] = useState(null);
+    const [activeSimulation, setActiveSimulation] = useState(() => {
+        if (initialSimulationId) {
+            return chemistrySimulations.find(sim => sim.id === initialSimulationId) || null;
+        }
+        return null;
+    });
     const [isLoadingSim, setIsLoadingSim] = useState(false);
     const [simKey, setSimKey] = useState(0);
     const [isPlaying, setIsPlaying] = useState(true);

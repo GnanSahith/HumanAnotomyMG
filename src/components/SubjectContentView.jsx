@@ -4,7 +4,7 @@ import { chaptersData } from '../chaptersData';
 import { GenericChapterData } from './GenericChapterData';
 import '../SubjectContent.css';
 
-const SubjectContentView = ({ subject, onBack }) => {
+const SubjectContentView = ({ subject, onBack, onNavigateToSimulation }) => {
   const [activeChapter, setActiveChapter] = useState(null);
 
   const className = subject?.class || "Class 12";
@@ -48,7 +48,7 @@ const SubjectContentView = ({ subject, onBack }) => {
                  <ArrowLeft size={16} /> Back to Chapters
               </button>
               
-              <GenericChapterData chapter={activeChapter} subjectName={subjectName} className={className} />
+              <GenericChapterData chapter={activeChapter} subjectName={subjectName} className={className} onNavigateToSimulation={onNavigateToSimulation} />
            </div>
         ) : (
           chapterList.length > 0 ? (

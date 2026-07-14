@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { ListChecks, Loader } from 'lucide-react';
+import { ListChecks, Loader, PlayCircle } from 'lucide-react';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import 'katex/dist/katex.min.css';
+import { findSimulationsForText } from '../data/simulationMapping';
 
-export const GenericChapterData = ({ chapter, subjectName = 'Physics', className = 'Class 12' }) => {
+export const GenericChapterData = ({ chapter, subjectName = 'Physics', className = 'Class 12', onNavigateToSimulation }) => {
   const [chapterQuestions, setChapterQuestions] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -341,6 +342,42 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
                   <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
                     {healText(qaObj.q).replace(/^\d+\.\s*/, '').replace(/\n/g, '\n\n')}
                   </ReactMarkdown>
+                  
+                  {(() => {
+                    const sims = findSimulationsForText(qaObj.q);
+                    if (sims.length > 0) {
+                      return (
+                        <div style={{ marginTop: '12px' }}>
+                          {sims.map(sim => (
+                            <button 
+                              key={sim.simId || sim.systemId}
+                              onClick={() => onNavigateToSimulation?.(sim.module, sim.simId || sim.systemId)}
+                              style={{
+                                display: 'inline-flex',
+                                alignItems: 'center',
+                                gap: '6px',
+                                background: 'linear-gradient(135deg, rgba(191,90,242,0.15), rgba(10,132,255,0.15))',
+                                border: '1px solid rgba(191,90,242,0.3)',
+                                borderRadius: '20px',
+                                padding: '6px 14px',
+                                color: 'var(--text-primary)',
+                                fontSize: '0.85rem',
+                                fontWeight: 600,
+                                cursor: 'pointer',
+                                transition: 'all 0.2s ease',
+                              }}
+                              onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.background = 'linear-gradient(135deg, rgba(191,90,242,0.25), rgba(10,132,255,0.25))'; }}
+                              onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.background = 'linear-gradient(135deg, rgba(191,90,242,0.15), rgba(10,132,255,0.15))'; }}
+                            >
+                              <PlayCircle size={14} color="#bf5af2" />
+                              Explore {sim.title} Simulation
+                            </button>
+                          ))}
+                        </div>
+                      );
+                    }
+                    return null;
+                  })()}
                 </div>
               </div>
               <div className="answer-block">
