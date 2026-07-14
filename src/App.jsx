@@ -16,7 +16,7 @@ import MainLandingView from './components/MainLandingView';
 import AcademicsView from './components/AcademicsView';
 import SubjectContentView from './components/SubjectContentView';
 import PricingView from './components/PricingView';
-import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut } from 'lucide-react';
+import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut, ArrowLeft } from 'lucide-react';
 import { useUser, UserButton } from '@clerk/clerk-react';
 import LoginModal from './components/LoginModal';
 import { useLanguage } from './LanguageContext';
@@ -35,6 +35,7 @@ function App() {
   const [activeOrganId, setActiveOrganId] = useState(null);
   const [initialSimulationId, setInitialSimulationId] = useState(null);
   const [initialSimulationCategory, setInitialSimulationCategory] = useState(null);
+  const [cameFromQuestion, setCameFromQuestion] = useState(false);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [theme, setTheme] = useState('dark');
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -142,7 +143,13 @@ function App() {
         return;
       }
     }
+    setCameFromQuestion(false); // Reset when navigating normally
     setAppMode(route);
+  };
+
+  const handleBackToQuestion = () => {
+    setAppMode('chapters');
+    setCameFromQuestion(false);
   };
 
   const handleNavigateToSimulation = (module, simId, categoryId) => {
@@ -152,6 +159,7 @@ function App() {
       setInitialSimulationId(simId);
       setInitialSimulationCategory(categoryId);
     }
+    setCameFromQuestion(true);
     handleAuthRequiredNavigation(module);
     setAppMode('simulations');
   };
@@ -368,6 +376,36 @@ function App() {
                 </>
               )}
             </SystemView>
+            {appMode === 'simulations' && cameFromQuestion && (
+              <button
+                onClick={handleBackToQuestion}
+                style={{
+                  position: 'fixed',
+                  bottom: '40px',
+                  left: '50%',
+                  transform: 'translateX(-50%)',
+                  zIndex: 9999,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '8px',
+                  padding: '12px 24px',
+                  background: 'linear-gradient(135deg, rgba(191,90,242,0.9), rgba(10,132,255,0.9))',
+                  color: '#ffffff',
+                  border: '1px solid rgba(255,255,255,0.2)',
+                  borderRadius: '30px',
+                  fontSize: '15px',
+                  fontWeight: 600,
+                  boxShadow: '0 8px 32px rgba(0,0,0,0.3)',
+                  cursor: 'pointer',
+                  backdropFilter: 'blur(10px)'
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'translateX(-50%) translateY(-2px)'; e.currentTarget.style.boxShadow = '0 12px 40px rgba(191,90,242,0.4)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateX(-50%) translateY(0)'; e.currentTarget.style.boxShadow = '0 8px 32px rgba(0,0,0,0.3)'; }}
+              >
+                <ArrowLeft size={18} />
+                Back to Question
+              </button>
+            )}
           </div>
         ) : null
       ) : null}
