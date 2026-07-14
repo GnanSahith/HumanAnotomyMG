@@ -97,7 +97,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
     t = t.replace(/(\S)\s+(Ans\s*:|Answer\s*:)/gi, '$1\n\n**$2**');
     
     // 5. Break options (a)-(e) and Roman numerals (i)-(vi) onto new lines
-    t = t.replace(/(\S)\s+(\([a-e]\)|\([ivx]{1,4}\))\s/g, '$1\n\n$2 ');
+    t = t.replace(/([^\s(])\s*(\([a-e]\)|\([ivx]{1,4}\))\s/g, '$1\n\n$2 ');
     
     return t;
   };
@@ -206,11 +206,11 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
             currentParaLength += out[i].length;
             
             if (i < out.length - 1) {
+                const isListItem = (str) => /^\d+\./.test(str) || /^[a-zA-Z]\)/.test(str) || /^\([a-zA-Z]\)/.test(str) || /^\([ivxIVX]{1,4}\)/.test(str) || str.startsWith('**Ans');
                 if (out[i].startsWith('$$') || out[i+1].startsWith('$$') || 
                     out[i].startsWith('* ') || out[i+1].startsWith('* ') || 
                     out[i].startsWith('#') || out[i+1].startsWith('#') ||
-                    /^\d+\./.test(out[i+1]) || /^[a-zA-Z]\)/.test(out[i+1]) ||
-                    /^\d+\./.test(out[i]) || /^[a-zA-Z]\)/.test(out[i])) {
+                    isListItem(out[i]) || isListItem(out[i+1])) {
                     result += '\n\n'; // Preserve block separation for tables/math/lists
                     currentParaLength = 0;
                 } else if (out[i].startsWith('**') && out[i].endsWith('**')) {
