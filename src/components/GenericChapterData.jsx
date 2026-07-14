@@ -350,8 +350,8 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
                         <div style={{ marginTop: '12px' }}>
                           {sims.map(sim => (
                             <button 
-                              key={sim.simId || sim.systemId}
-                              onClick={() => onNavigateToSimulation?.(sim.module, sim.simId || sim.systemId)}
+                              key={sim.simId || sim.categoryId || sim.systemId}
+                              onClick={() => onNavigateToSimulation?.(sim.module, sim.simId || sim.systemId, sim.categoryId)}
                               style={{
                                 display: 'inline-flex',
                                 alignItems: 'center',
@@ -370,7 +370,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
                               onMouseLeave={(e) => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.background = 'linear-gradient(135deg, rgba(191,90,242,0.15), rgba(10,132,255,0.15))'; }}
                             >
                               <PlayCircle size={14} color="#bf5af2" />
-                              Explore {sim.title} Simulation
+                              Explore {sim.title}
                             </button>
                           ))}
                         </div>

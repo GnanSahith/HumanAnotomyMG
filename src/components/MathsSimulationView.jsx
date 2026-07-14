@@ -276,7 +276,7 @@ const getBadgeInfo = (title) => {
 
 import SimulationLibraryLayout from './SimulationLibraryLayout';
 
-export default function MathsSimulationView({ onBack, handleLockedItemClick, isSignedIn, initialSimulationId }) {
+export default function MathsSimulationView({ onBack, handleLockedItemClick, isSignedIn, initialSimulationId, initialCategory }) {
     const { t } = useLanguage();
     const [activeSimulation, setActiveSimulation] = useState(() => {
         if (initialSimulationId && mathSimulations[initialSimulationId]) {
@@ -462,13 +462,15 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
     if (!activeSimulation) {
         return (
             <SimulationLibraryLayout
-                title="Mathematics Interactive Library"
-                icon={<Sigma size={36} color="#ffd60a" />}
+                title={t('nav.mathsSimulations', "Maths Simulations")}
+                subtitle={t('maths.subtitle', "Interactive math concepts and visualizations")}
                 simulations={simArray}
                 filters={filters}
+                initialFilters={initialCategory ? { subject: [initialCategory] } : {}}
                 onSimulationClick={handleSimClick}
                 onBack={onBack}
                 matchFilter={matchFilter}
+                icon={<Sigma size={36} color="#ffd60a" />}
             />
         );
     }

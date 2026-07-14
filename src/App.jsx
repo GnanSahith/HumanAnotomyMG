@@ -34,6 +34,7 @@ function App() {
   const [activeSystemId, setActiveSystemId] = useState(null);
   const [activeOrganId, setActiveOrganId] = useState(null);
   const [initialSimulationId, setInitialSimulationId] = useState(null);
+  const [initialSimulationCategory, setInitialSimulationCategory] = useState(null);
   const [isLangDropdownOpen, setIsLangDropdownOpen] = useState(false);
   const [theme, setTheme] = useState('dark');
   const [isAuthenticated, setIsAuthenticated] = useState(() => {
@@ -144,11 +145,12 @@ function App() {
     setAppMode(route);
   };
 
-  const handleNavigateToSimulation = (module, simId) => {
+  const handleNavigateToSimulation = (module, simId, categoryId) => {
     if (module === 'biology') {
-      handleSelectSystem(simId);
+      if (simId) handleSelectSystem(simId);
     } else {
       setInitialSimulationId(simId);
+      setInitialSimulationCategory(categoryId);
     }
     handleAuthRequiredNavigation(module);
     setAppMode('simulations');
@@ -335,11 +337,11 @@ function App() {
         ) : isLanding ? (
           <LandingView onEnter={handleAuthRequiredNavigation} loggedInUsername={loggedInUsername} />
         ) : activeModule === 'maths' ? (
-          <MathsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} initialSimulationId={initialSimulationId} />
+          <MathsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} initialSimulationId={initialSimulationId} initialCategory={initialSimulationCategory} />
         ) : activeModule === 'chemistry' ? (
-          <ChemistrySimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} initialSimulationId={initialSimulationId} />
+          <ChemistrySimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} initialSimulationId={initialSimulationId} initialCategory={initialSimulationCategory} />
         ) : activeModule === 'physics' ? (
-          <PhysicsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} initialSimulationId={initialSimulationId} />
+          <PhysicsSimulationView onBack={handleBackToSimulations} handleLockedItemClick={handleLockedItemClick} isSignedIn={isSignedIn} initialSimulationId={initialSimulationId} initialCategory={initialSimulationCategory} />
         ) : activeModule === 'biology' && isAccountView ? (
           <AccountView />
         ) : activeModule === 'biology' && !activeSystemId ? (

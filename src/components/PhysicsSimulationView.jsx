@@ -52,7 +52,7 @@ import CustomSimplifiedMRI from './simulations/CustomSimplifiedMRI';
 
 import SimulationLibraryLayout from './SimulationLibraryLayout';
 
-export default function PhysicsSimulationView({ onBack, handleLockedItemClick, initialSimulationId }) {
+export default function PhysicsSimulationView({ onBack, handleLockedItemClick, isSignedIn, initialSimulationId, initialCategory }) {
     const { t } = useLanguage();
     const [activeSimulation, setActiveSimulation] = useState(() => {
         if (initialSimulationId && physicsSimulations[initialSimulationId]) {
@@ -178,11 +178,12 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
     if (!activeSimulation) {
         return (
             <SimulationLibraryLayout
-                title="Physics Interactive Library"
-                icon={<Atom size={36} color="#bf5af2" />}
+                title={t('nav.physicsSimulations', "Physics Simulations")}
+                subtitle={t('physics.subtitle', "Interactive physics experiments and demonstrations")}
                 simulations={simArray}
-                filters={filters}
                 onSimulationClick={handleSimClick}
+                filters={filters}
+                initialFilters={initialCategory ? { subject: [initialCategory] } : {}}
                 onBack={onBack}
                 handleLockedItemClick={handleLockedItemClick}
                 matchFilter={matchFilter}

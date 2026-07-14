@@ -46,7 +46,7 @@ import CustomStatesOfMatter from './simulations/CustomStatesOfMatter';
 import CustomStatesOfMatterBasics from './simulations/CustomStatesOfMatterBasics';
 import CustomWaveonaString from './simulations/CustomWaveonaString';
 
-export default function ChemistrySimulationView({ onBack, handleLockedItemClick, initialSimulationId }) {
+export default function ChemistrySimulationView({ onBack, handleLockedItemClick, initialSimulationId, initialCategory }) {
     const { t } = useLanguage();
     const [activeSimulation, setActiveSimulation] = useState(() => {
         if (initialSimulationId) {
@@ -168,13 +168,14 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
     if (!activeSimulation) {
         return (
             <SimulationLibraryLayout
-                title="Chemistry Interactive Library"
-                icon={<FlaskConical size={36} color="#ff375f" />}
+                title={t('nav.chemistrySimulations', "Chemistry Simulations")}
+                subtitle={t('chemistry.subtitle', "Interactive chemistry experiments and demonstrations")}
                 simulations={simArray}
-                filters={filters}
                 onSimulationClick={handleSimClick}
                 onBack={onBack}
                 handleLockedItemClick={handleLockedItemClick}
+                filters={filters}
+                initialFilters={initialCategory ? { subject: [initialCategory] } : {}}
                 matchFilter={matchFilter}
             />
         );

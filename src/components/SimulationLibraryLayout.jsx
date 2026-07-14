@@ -20,7 +20,7 @@ export default function SimulationLibraryLayout({
 }) {
     const { t } = useLanguage();
     const [searchQuery, setSearchQuery] = useState('');
-    const [selectedFilters, setSelectedFilters] = useState({}); // { filterId: [optionId1, optionId2] }
+    const [selectedFilters, setSelectedFilters] = useState(initialFilters); // { filterId: [optionId1, optionId2] }
     const [viewMode, setViewMode] = useState('grid');
     const [sortBy, setSortBy] = useState('newest');
 
