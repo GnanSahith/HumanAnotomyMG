@@ -845,16 +845,16 @@ export default {
   ],
   "7": [
     {
-      "q": "1.\nAlcohols, Phenols and Ethers Important Questions",
-      "a": "Detailed solution available."
+      "q": "What is acetone used for?",
+      "a": "Acetone is a chemical used to make products like nail polish remover and paint remover. Your body also makes this chemical when it breaks down fat."
     },
     {
-      "q": "2.\nAlcohols, Phenols, and Ethers Revision Notes",
-      "a": "Detailed solution available."
+      "q": "An alkoxide is a stronger base than a hydroxide ion. Justify.",
+      "a": "Due to the presence of electron-donating alkyl group, there is high electron density in alkoxide ion as compared to hydroxide ion. Therefore, the alkoxide ion is more basic than the hydroxide ion."
     },
     {
-      "q": "3.\nAlcohols, Phenols and Ethers NCERT Exemplar Solutions\nConclusion\nNCERT Solutions for Class 12 Chemistry Chapter 11 - Alcohols, Phenols, and Ethers provide invaluable support for students navigating the complexities of organic chemistry. These solutions offer comprehensive explanations, elucidating the principles, reactions, and applications of alcohols, Phenols, and Ethers. They are an indispensable aid for understanding the theoretical aspects and solving practical problems within the chapter. Moreover, these solutions are meticulously designed to align with the curriculum and cater to the examination requirements, ensuring that students are well-prepared to excel academically. By offering clarity, insight, and step-by-step guidance, NCERT Solutions empowers students to master the subject and develop a strong foundation in organic chemistry.\nNCERT Solutions Class 12 Chemistry | Chapter-wise Links\nS.No.\nNCERT Solutions Class 12 Chemistry Chapter-wise List\n1\nChapter 1 - Solutions Solutions\n2\nChapter 2 - Electrochemistry Solutions\n3\nChapter 3 - Chemical Kinetics Solutions\n4\nChapter 4- The d and f Block Elements Solutions\n5\nChapter 5 - Coordination Compounds Solutions\n6\nChapter 6 - Haloalkanes and Haloarenes Solutions\n7\nChapter 8 - Aldehydes, Ketones and Carboxylic Acids Solutions\n8\nChapter 9 - Amines Solutions\n9\nChapter 10 - Biomolecules Solutions\nNCERT Solutions Class 12 Chemistry - Related Links\nS.No\nImportant Resources Links for Class 12 Chemistry\n1\nClass 12 Chemistry Revision Notes\n2\nCBSE Class 12 Chemistry Previous Year Question Papers\n3\nCBSE Sample Papers for Class 12 Chemistry with Solutions\n4\nImportant Questions for CBSE Class 12 Chemistry\n5\nNCERT Exemplar for Class 12 Chemistry",
-      "a": "Detailed solution available."
+      "q": "What is the difference between methanol and ethanol?",
+      "a": "Methanol and ethanol are alcohol variants. Methanol contains only one carbon and ethanol contains two carbons in each molecule. Both substances can be used as energy sources, but methanol primarily serves as a research subject, and its use as a motor fuel."
     }
   ],
   "8": [
@@ -1217,6 +1217,62 @@ export default {
     {
       "q": "33. What are the different types of RNA found in the cell?",
       "a": "The types of RNA in cells are: messenger RNA (mRNA), ribosomal RNA (rRNA), and transfer RNA (tRNA).\nImportant Points from Biomolecules (Class 12 Chemistry) \u2014\nBiomolecules include carbohydrates, proteins, lipids, and nucleic acids found in living cells.\nMonosaccharides and disaccharides differ in their structure and chemical tests.\nUnderstanding enzymes and their behaviour helps in solving exam questions accurately.\nKnowledge of protein structure and denaturation is useful for practical and theory-based questions.\nClassification of vitamins and their sources are often covered in Human Capital Formation In India Class 11 NCERT Solutions."
+    }
+  ],
+  "11": [
+    {
+      "q": "What is acetone used for?",
+      "a": "Acetone is a chemical used to make products like nail polish remover and paint remover. Your body also makes this chemical when it breaks down fat."
+    },
+    {
+      "q": "An alkoxide is a stronger base than a hydroxide ion. Justify.",
+      "a": "Due to the presence of electron-donating alkyl group, there is high electron density in alkoxide ion as compared to hydroxide ion. Therefore, the alkoxide ion is more basic than the hydroxide ion."
+    },
+    {
+      "q": "What is the difference between methanol and ethanol?",
+      "a": "Methanol and ethanol are alcohol variants. Methanol contains only one carbon and ethanol contains two carbons in each molecule. Both substances can be used as energy sources, but methanol primarily serves as a research subject, and its use as a motor fuel."
+    }
+  ],
+  "12": [
+    {
+      "q": "How will you distinguish between aldehyde and ketone give one test?",
+      "a": "1.\nTollen\u2019s Test\n: Aldehydes give positive Tollen\u2019s test (silver mirror) while ketones do not give any reaction.\n2.\nFehling\u2019s test\n: Aliphatic aldehydes on treatment with Fehling\u2019s solution give a reddish brown precipitate (positive result) while aromatic aldehydes and ketones do not."
+    },
+    {
+      "q": "Why are aldehydes and ketones called carbonyl compounds?",
+      "a": "Aldehyde and ketone consist of the divalent unit of carbon and oxygen showing the presence of the carbonyl group. The Carbonyl group is attached to the alkyl or aryl group of the compound. The reactive group in aldehyde and ketone compounds is the carbonyl group."
+    },
+    {
+      "q": "What is the identification test for aldehyde ketone and carboxylic acid?",
+      "a": "Tollens\u2019 test is a qualitative laboratory test used to distinguish between an aldehyde and a ketone, also known as a silver-mirror test."
+    }
+  ],
+  "13": [
+    {
+      "q": "How are amines produced?",
+      "a": "Large quantities of aliphatic amines are made synthetically. The most widely used industrial method is the reaction of alcohols with ammonia at a high temperature, catalyzed by metals or metal oxide catalysts (e.g., nickel or copper). Mixtures of primary, secondary, and tertiary amines are thereby produced."
+    },
+    {
+      "q": "What is the importance of amines?",
+      "a": "Amines play an important role in the survival of life. They are involved in the creation of amino acids, the building blocks of proteins in living beings. Many vitamins are also built from amino acids. Serotonin is an important amine that functions as one of the primary neurotransmitters for the brain."
+    },
+    {
+      "q": "What are amines in food?",
+      "a": "Amines in food are chemicals that occur naturally, caused by bacteria that breaks down amino acids. They are related to the inorganic compound ammonia. Higher levels of amines are found in fermented, charred, grilled, over ripe, over cooked or decomposing foods."
+    }
+  ],
+  "14": [
+    {
+      "q": "What do you mean by biomolecules?",
+      "a": "Definition: A biomolecule is a chemical compound found in living organisms. These include chemicals that are composed of mainly carbon, hydrogen, oxygen, nitrogen, sulfur and phosphorus. Biomolecules are the building blocks of life and perform important functions in living organisms."
+    },
+    {
+      "q": "What are biomolecules proteins?",
+      "a": "Proteins are biomolecules comprised of amino acid residues joined together by peptide bonds. Biomolecules are molecules produced by living organisms. As such, most of them are organic molecules. Proteins are one of the major biomolecules."
+    },
+    {
+      "q": "What are carbohydrates in biomolecules?",
+      "a": "Carbohydrates are the most abundant among the major classes of biomolecules. Carbohydrate (biology definition): any of the group of organic compounds consisting of carbon, hydrogen, and oxygen, usually in the ratio of 1:2:1, hence the general formula: C\u2099(H\u2082O)\u2099. Synonyms: saccharide, carb."
     }
   ]
 };

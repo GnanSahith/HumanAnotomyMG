@@ -1,0 +1,271 @@
+{
+  "props": {
+    "pageProps": {
+      "initialState": {
+        "serverTimeDiff": "",
+        "device": {
+          "isMobile": true,
+          "isTablet": null,
+          "deviceType": null
+        },
+        "userData": null,
+        "loadingUserData": null,
+        "fetchWalletStatus": {},
+        "config": {
+          "countryCode": "IN"
+        },
+        "quiz": {
+          "quizSchema": [],
+          "currentQuiz": 0,
+          "feedbackOptions": null,
+          "popupFlag": false,
+          "timer": null,
+          "timeLeft": null,
+          "currentQuizResults": null,
+          "results": null,
+          "topics": null,
+          "sharePopupFlag": false,
+          "isMobile": false,
+          "isResultBookmark": false,
+          "isTopicBookmark": false,
+          "recommendationsData": null,
+          "quizDetails": {},
+          "userFeedback": {},
+          "userSelectedFeedback": {},
+          "solutions": {},
+          "currentTopic": null,
+          "quizStartTime": null,
+          "isShowSubmit": false,
+          "isPreviewMode": false
+        },
+        "blog": {
+          "type1": {},
+          "type2": {
+            "blogs": {}
+          },
+          "categoryPage": {},
+          "sidebarModulesData": {}
+        },
+        "ipInfo": null,
+        "newLoginFlow": {},
+        "seo": {
+          "categoryPage": [],
+          "relatedQuestions": {},
+          "automatedSidebar": {},
+          "info": {},
+          "infoTest": {},
+          "currentBookmark": {
+            "type": null,
+            "section": null,
+            "id": null
+          },
+          "meteredContentFlag": false,
+          "zoomRenderCount": 0,
+          "videoMetaData": {},
+          "qnaFilteredList": {},
+          "qnaSelectedList": {
+            "subjects": [],
+            "grades": [],
+            "targets": [],
+            "topics": []
+          },
+          "qnaFilterOptions": {
+            "targets": [],
+            "subjects": [],
+            "grades": [],
+            "targetFilterOptions": {},
+            "subjectList": [],
+            "topicList": []
+          },
+          "showType3Pdf": false,
+          "comments": {
+            "mainComments": [],
+            "subComments": {},
+            "currentCommentId": null
+          },
+          "signUpEvent": null,
+          "testPrep": {},
+          "courseDetails": {
+            "showPopup": false,
+            "currentCourseKey": null,
+            "allCourses": {},
+            "selection": {},
+            "gradeBoard": {},
+            "targets": {}
+          },
+          "trendingPage": {},
+          "freeStudyMaterial": {
+            "chapterLinks": [],
+            "relatedChapterLinks": []
+          },
+          "navigationBar": [],
+          "seoPdfRedirection": {},
+          "enrolments": [],
+          "showStickyBanner": true,
+          "relatedArticles": [],
+          "recentlyUpdatedPages": [],
+          "coursesInfoDetails": [],
+          "pyqp": [],
+          "pyqpAll": {},
+          "eventTrackersVisibility": false,
+          "toast": null,
+          "youtubeVideos": [],
+          "headerType": "NEW_HEADER",
+          "pageStats": {
+            "updatedOn": 1783958058030,
+            "visitsToday": 10
+          },
+          "loadDelayedComponents": false,
+          "whatsappPdfExperiment": false,
+          "otherPages": [],
+          "offlineCentres": {}
+        },
+        "news": {
+          "type1Data": {},
+          "type2": {
+            "blogs": {}
+          },
+          "newsCategoryPage": {},
+          "sidebarModulesData": {}
+        },
+        "notes": {
+          "myNotes": {
+            "suggestions": [
+              {
+                "categoryPageId": "5c08e739e4b0019629f40fa3",
+                "title": "Free Study Material",
+                "url": "https://www.vedantu.com/study-material/",
+                "active": true
+              },
+              {
+                "categoryPageId": "5cee310a8f08b0fdf3a85be9",
+                "title": "NCERT Solutions",
+                "url": "https://www.vedantu.com/ncert-solutions/",
+                "active": true
+              },
+              {
+                "categoryPageId": "5cecdac68f08a0d364ad6c4b",
+                "title": "NCERT Books",
+                "url": "https://www.vedantu.com/ncert-books/",
+                "active": true
+              },
+              {
+                "categoryPageId": "5964d31de4b0c3b3e86e7a6b",
+                "title": "Revision Notes",
+                "url": "https://www.vedantu.com/revision-notes/",
+                "active": true
+              },
+              {
+                "categoryPageId": "5b3b919be4b0f37362593d3c",
+                "title": "Practice Problems",
+                "url": "https://www.vedantu.com/qna/",
+                "active": true
+              }
+            ],
+            "bookmarks": []
+          }
+        },
+        "courseMenuReducer": {
+          "categories": [],
+          "selectedOption": null
+        },
+        "aiCourseReducer": {
+          "aiCourseData": {
+            "productType": "AILive",
+            "grade": "",
+            "board": "",
+            "target": "",
+            "startYear": null,
+            "endYear": null,
+            "term": 1,
+            "number": 1,
+            "defaultCourse": true,
+            "isActive": true,
+            "title": "",
+            "subject": [],
+            "courseDetail": {},
+            "courseInclusion": [],
+            "courseInclusionOfferings": {},
+            "results": [
+              {
+                "dwebImgUrl": "https://seo-fe.vedantu.com/cdn/images/neet-kv1-dweb.png",
+                "mwebImgUrl": "https://seo-fe.vedantu.com/cdn/images/neet-kv1-mweb.png"
+              }
+            ],
+            "teachingLanguageAICourses": [],
+            "aioDetailMap": {}
+          },
+          "selectionData": {},
+          "csbtPopupData": {
+            "displayPopup": false,
+            "type": "auto"
+          },
+          "couponPopupData": {
+            "displayPopup": false,
+            "type": "auto"
+          },
+          "couponData": {},
+          "couponCategoryData": [],
+          "paymentOffersData": [],
+          "showLoginPopup": false,
+          "showAppliedCouponPopup": false,
+          "variantCouponDetails": {},
+          "emiPriceMap": {},
+          "inDetailAllBatches": {},
+          "teachers": {},
+          "syllabus": {},
+          "selectedVariant": {},
+          "availableVariants": [],
+          "masterTeachersData": [],
+          "isLoading": false
+        },
+        "HomePage": {
+          "sectionsData": {},
+          "coursesData": {},
+          "materialsData": {},
+          "liveClassesData": {},
+          "webinarData": null,
+          "selectedGrade": null,
+          "webinarRegisterStatus": null,
+          "isMobile": false,
+          "webinarLoader": true
+        },
+        "collegePredictor": {
+          "metadata": null,
+          "data": null,
+          "registeredFilterData": null,
+          "predictorData": null,
+          "isCollegePredictor": null
+        },
+        "authors": {
+          "authors": [],
+          "authorProfile": {}
+        }
+      },
+      "type": false,
+      "errorStatus": true
+    },
+    "__N_SSP": true
+  },
+  "page": "/Seo/[[...index]]",
+  "query": {
+    "index": [
+      "ncert-solutions-class-10-maths-chapter-1"
+    ]
+  },
+  "buildId": "_seo-fe_XNvzmBxJgqxnayGrSHjiE",
+  "assetPrefix": "https://seo-fe.vedantu.com",
+  "isFallback": false,
+  "dynamicIds": [
+    81033
+  ],
+  "gssp": true,
+  "customServer": true,
+  "locale": "en",
+  "locales": [
+    "en",
+    "ta"
+  ],
+  "defaultLocale": "en",
+  "scriptLoader": []
+}

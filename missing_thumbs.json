@@ -1,0 +1,206 @@
+{
+  "chem": [
+    {
+      "id": "balancing-act_mg",
+      "title": "Balancing Act"
+    },
+    {
+      "id": "balloons-and-static-electricity_mg",
+      "title": "Balloons and Static Electricity"
+    },
+    {
+      "id": "blackbody-spectrum_mg",
+      "title": "Blackbody Spectrum"
+    },
+    {
+      "id": "coulombs-law_mg",
+      "title": "Coulomb's Law"
+    },
+    {
+      "id": "diffusion_mg",
+      "title": "Diffusion"
+    },
+    {
+      "id": "energy-forms-and-changes_mg",
+      "title": "Energy Forms and Changes"
+    },
+    {
+      "id": "fourier-making-waves_mg",
+      "title": "Fourier: Making Waves"
+    },
+    {
+      "id": "gas-properties_mg",
+      "title": "Gas Properties"
+    },
+    {
+      "id": "isotopes-and-atomic-mass_mg",
+      "title": "Isotopes and Atomic Mass"
+    },
+    {
+      "id": "membrane-transport_mg",
+      "title": "Membrane Transport"
+    },
+    {
+      "id": "models-of-the-hydrogen-atom_mg",
+      "title": "Models of the Hydrogen Atom"
+    },
+    {
+      "id": "molarity_mg",
+      "title": "Molarity"
+    },
+    {
+      "id": "molecule-polarity_mg",
+      "title": "Molecule Polarity"
+    },
+    {
+      "id": "molecule-shapes_mg",
+      "title": "Molecule Shapes"
+    },
+    {
+      "id": "molecule-shapes-basics_mg",
+      "title": "Molecule Shapes: Basics"
+    },
+    {
+      "id": "molecules-and-light_mg",
+      "title": "Molecules and Light"
+    },
+    {
+      "id": "ph-scale_mg",
+      "title": "pH Scale"
+    },
+    {
+      "id": "ph-scale-basics_mg",
+      "title": "pH Scale: Basics"
+    },
+    {
+      "id": "quantum-coin-toss_mg",
+      "title": "Quantum Coin Toss"
+    },
+    {
+      "id": "quantum-measurement_mg",
+      "title": "Quantum Measurement"
+    },
+    {
+      "id": "reactants-products-and-leftovers_mg",
+      "title": "Reactants, Products and Leftovers"
+    },
+    {
+      "id": "rutherford-scattering_mg",
+      "title": "Rutherford Scattering"
+    },
+    {
+      "id": "states-of-matter_mg",
+      "title": "States of Matter"
+    },
+    {
+      "id": "states-of-matter-basics_mg",
+      "title": "States of Matter: Basics"
+    },
+    {
+      "id": "wave-on-a-string_mg",
+      "title": "Wave on a String"
+    }
+  ],
+  "phys": [
+    {
+      "id": "phys_10_mg",
+      "title": "Center and Variability"
+    },
+    {
+      "id": "phys_12_mg",
+      "title": "Hooke's Law"
+    },
+    {
+      "id": "phys_13_mg",
+      "title": "Masses and Springs: Basics"
+    },
+    {
+      "id": "phys_14_mg",
+      "title": "States of Matter"
+    },
+    {
+      "id": "phys_15_mg",
+      "title": "States of Matter: Basics"
+    },
+    {
+      "id": "phys_16_mg",
+      "title": "Gas Properties"
+    },
+    {
+      "id": "phys_18_mg",
+      "title": "Energy Forms and Changes"
+    },
+    {
+      "id": "phys_19_mg",
+      "title": "Blackbody Spectrum"
+    },
+    {
+      "id": "phys_20_mg",
+      "title": "Wave on a String"
+    },
+    {
+      "id": "phys_21_mg",
+      "title": "Wave Interference"
+    },
+    {
+      "id": "phys_22_mg",
+      "title": "Sound Waves"
+    },
+    {
+      "id": "phys_23_mg",
+      "title": "Normal Modes"
+    },
+    {
+      "id": "phys_24_mg",
+      "title": "Fourier: Making Waves"
+    },
+    {
+      "id": "phys_30_mg",
+      "title": "Ohm's Law"
+    },
+    {
+      "id": "phys_32_mg",
+      "title": "John Travoltage"
+    },
+    {
+      "id": "phys_33_mg",
+      "title": "Capacitor Lab: Basics"
+    },
+    {
+      "id": "phys_34_mg",
+      "title": "Resistance in a Wire"
+    },
+    {
+      "id": "phys_38_mg",
+      "title": "Molecules and Light"
+    },
+    {
+      "id": "phys_39_mg",
+      "title": "Rutherford Scattering"
+    },
+    {
+      "id": "phys_40_mg",
+      "title": "Models of the Hydrogen Atom"
+    },
+    {
+      "id": "phys_41_mg",
+      "title": "Photoelectric Effect"
+    },
+    {
+      "id": "phys_42_mg",
+      "title": "Lasers"
+    },
+    {
+      "id": "phys_43_mg",
+      "title": "Neon Lights"
+    },
+    {
+      "id": "phys_44_mg",
+      "title": "Microwaves"
+    },
+    {
+      "id": "phys_45_mg",
+      "title": "Simplified MRI"
+    }
+  ]
+}

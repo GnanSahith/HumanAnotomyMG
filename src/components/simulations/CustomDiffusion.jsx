@@ -334,24 +334,7 @@ export default function CustomDiffusion({
       [key]: value
     }));
   };
-  const containerRef = useRef(null);
-  const [canvasSize, setCanvasSize] = useState({
-    width: canvasWidth,
-    height: canvasHeight
-  });
-  useEffect(() => {
-    if (!containerRef.current) return;
-    const observer = new ResizeObserver(entries => {
-      for (let entry of entries) {
-        setCanvasSize({
-          width: entry.contentRect.width,
-          height: entry.contentRect.height
-        });
-      }
-    });
-    observer.observe(containerRef.current);
-    return () => observer.disconnect();
-  }, []);
+  // Removed ResizeObserver since we will use CSS scaling and centering
   return <div style={{
     width: '100%',
     height: '100%',
@@ -367,16 +350,25 @@ export default function CustomDiffusion({
         <div style={{
       flex: 1,
       position: 'relative',
-      overflow: 'hidden'
-    }} ref={containerRef}>
+      overflow: 'hidden',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '24px',
+      paddingRight: '400px' // Make room for the right sidebar
+    }}>
             
             {/* THE CANVAS */}
-            {/* We still pass canvasWidth/canvasHeight logic down if needed, but we let canvasSize dictate the physical resolution to avoid cropping. For this physics sim, scaling might be needed, but for now we follow the blueprint strictly. */}
-            <canvas ref={canvasRef} width={canvasSize.width} height={canvasSize.height} style={{
-        width: '100%',
-        height: '100%',
+            {/* We let CSS scale the canvas to fit the container while maintaining aspect ratio and centering it. */}
+            <canvas ref={canvasRef} width={canvasWidth} height={canvasHeight} style={{
+        maxWidth: '100%',
+        maxHeight: '100%',
+        width: 'auto',
+        height: 'auto',
         display: 'block',
-        objectFit: "contain"
+        aspectRatio: `${canvasWidth} / ${canvasHeight}`,
+        boxShadow: '0 0 40px rgba(0,0,0,0.5)',
+        borderRadius: '8px'
       }} />
             
             {/* HUD / Data */}

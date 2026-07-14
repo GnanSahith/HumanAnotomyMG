@@ -1,0 +1,36 @@
+import CustomIsotopesAndAtomicMass from './simulations/CustomIsotopesAndAtomicMass';
+import CustomMembraneTransport from './simulations/CustomMembraneTransport';
+import CustomModelsOfTheHydrogenAtom from './simulations/CustomModelsOfTheHydrogenAtom';
+import CustomMolarity from './simulations/CustomMolarity';
+import CustomMoleculePolarity from './simulations/CustomMoleculePolarity';
+import CustomMoleculeShapes from './simulations/CustomMoleculeShapes';
+import CustomMoleculeShapesBasics from './simulations/CustomMoleculeShapesBasics';
+import CustomMoleculesAndLight from './simulations/CustomMoleculesAndLight';
+import CustomPhScale from './simulations/CustomPhScale';
+import CustomPhScaleBasics from './simulations/CustomPhScaleBasics';
+import CustomQuantumCoinToss from './simulations/CustomQuantumCoinToss';
+import CustomQuantumMeasurement from './simulations/CustomQuantumMeasurement';
+import CustomReactantsProductsAndLeftovers from './simulations/CustomReactantsProductsAndLeftovers';
+import CustomRutherfordScattering from './simulations/CustomRutherfordScattering';
+import CustomStatesOfMatter from './simulations/CustomStatesOfMatter';
+import CustomStatesOfMatterBasics from './simulations/CustomStatesOfMatterBasics';
+import CustomWaveOnAString from './simulations/CustomWaveOnAString';
+
+
+                            activeSimulation.id === 'isotopes-and-atomic-mass_mg' ? <CustomIsotopesAndAtomicMass key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'membrane-transport_mg' ? <CustomMembraneTransport key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'models-of-the-hydrogen-atom_mg' ? <CustomModelsOfTheHydrogenAtom key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'molarity_mg' ? <CustomMolarity key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'molecule-polarity_mg' ? <CustomMoleculePolarity key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'molecule-shapes_mg' ? <CustomMoleculeShapes key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'molecule-shapes-basics_mg' ? <CustomMoleculeShapesBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'molecules-and-light_mg' ? <CustomMoleculesAndLight key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'ph-scale_mg' ? <CustomPhScale key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'ph-scale-basics_mg' ? <CustomPhScaleBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'quantum-coin-toss_mg' ? <CustomQuantumCoinToss key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'quantum-measurement_mg' ? <CustomQuantumMeasurement key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'reactants-products-and-leftovers_mg' ? <CustomReactantsProductsAndLeftovers key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'rutherford-scattering_mg' ? <CustomRutherfordScattering key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'states-of-matter_mg' ? <CustomStatesOfMatter key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'states-of-matter-basics_mg' ? <CustomStatesOfMatterBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'wave-on-a-string_mg' ? <CustomWaveOnAString key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 

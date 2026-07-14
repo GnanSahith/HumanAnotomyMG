@@ -1,274 +1,170 @@
 export default {
   "1": [
     {
-      "q": "1.\nClass 6 The Wonderful World of Science Important Questions",
-      "a": "Detailed solution available."
+      "q": "Name the following: The nutrients which mainly give energy to our body.",
+      "a": "The nutrients which mainly give energy to our body \u2013 Carbohydrates and Fats"
     },
     {
-      "q": "2.\nClass 6 The Wonderful World of Science Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Name the following: The nutrients that are needed for the growth and maintenance of our body.",
+      "a": "The nutrients that are needed for the growth and maintenance of our body \u2013 Proteins"
     },
     {
-      "q": "3.\nClass 6 The Wonderful World of Science Worksheet\nConclusion\nChapter 1 of Class 6 Science sets the stage for a lifelong journey of exploration and discovery. By enhancing curiosity and employing the scientific method, students can uncover the secrets of the universe, from the smallest particles to the vast expanse of space. Embrace the adventure of science as it continues to reveal the wonders of our world.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 1 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Science textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 2: Diversity In The Living World Solutions\n2\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n3\nChapter 4: Exploring Magnets Solutions\n4\nChapter 5: Measurement of Length and Motion Notes\n5\nChapter 6: Materials Around Us Solutions\n6\nChapter 7: Temperature and its Measurement Solutions\n7\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS.No.\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "Name two foods each rich in: (a) Fats (b) Starch (c) Dietary fibre (d) Protein",
+      "a": "(a) Fats : Ghee, Butter, Milk, Egg etc. (b) Starch : Potatoes, Sugar, Rice etc. (c) Dietary fibre : Vegetables, Fresh fruits etc. (d) Protein : Milk, Beans, Egg, Cheese etc."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Fill in the blank: ________ is caused by deficiency of Vitamin D.",
+      "a": "Rickets is caused by deficiency of Vitamin D."
     },
     {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science NCERT Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "Fill in the blank: Deficiency of _________ causes a disease known as beriberi.",
+      "a": "Deficiency of vitamin B1 causes a disease known as beriberi."
     }
   ],
   "2": [
     {
-      "q": "1.\nClass 6 Diversity in the Living World Important Questions",
-      "a": "Detailed solution available."
+      "q": "Select those objects from the following which shine: Glass bowl, plastic toy, steel spoon, cotton shirt.",
+      "a": "Glass bowl and steel spoon."
     },
     {
-      "q": "2.\nClass 6 Diversity in the Living World Revision Notes",
-      "a": "Detailed solution available."
+      "q": "List all items known to you that float on water. Check and see if they will float on an oil or kerosene.",
+      "a": "Wooden block, Paper, Balloon, Hair, plastic bottle, wooden logs, Boat etc. will float on water. A few of these like hair, balloon can float on kerosene or oil. Generally, substances have less density than oil and water can float. For example, few types of wood have densities higher than oil but less than water, so it floats on water but not on kerosene."
     },
     {
-      "q": "3.\nClass 6 Diversity in the Living World Worksheet\nConclusion\nThe chapter \"Diversity in the Living World\" for Class 6 Science teaches students about the wide variety of living organisms on Earth. It explains how living beings are classified based on their characteristics and how each group plays a vital role in the environment. Through this chapter, students learn about the differences in plants, animals, and microorganisms, highlighting the importance of biodiversity. Vedantu\u2019s notes provide a clear understanding of these concepts, making it easier to prepare for exams. Students are encouraged to use these notes for effective revision and better retention.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 2 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Science textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n3\nChapter 4: Exploring Magnets Solutions\n4\nChapter 5: Measurement of Length and Motion Notes\n5\nChapter 6: Materials Around Us Solutions\n6\nChapter 7: Temperature and its Measurement Solutions\n7\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "Find the odd one out from the following: Chair, Bed, Table, Baby, Cupboard",
+      "a": "Baby: Rest others are made up of wood and are non \u2013 living things."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "Find the odd one out from the following: Rose, Jasmine, Boat, Marigold, Lotus",
+      "a": "Boat: Rest others are flowers."
     }
   ],
   "3": [
     {
-      "q": "1.\nClass 6 Mindful Eating: A Path to a Healthy Body Important Questions",
-      "a": "Detailed solution available."
+      "q": "Why do we need to separate different components of a mixture?",
+      "a": "Before using a substance, we need to separate harmful or non-useful substances that may be mixed with it. Sometimes, we separate even useful components if we need to use them separately. For example: We used to separate slightly larger sized impurities like the pieces of dirt, stone, and husk from wheat, rice or pulses by handpicking method. Rice or pulses are usually washed before cooking. When we add water to these, the impurities like dust and soil particles get separated."
     },
     {
-      "q": "2.\nClass 6 Mindful Eating: A Path to a Healthy Body Revision Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How will you separate husk or dirt particles from a given sample of pulses before Cooking?",
+      "a": "Husk or bigger pieces of dirt particles can be removed from a sample of pulses by handpicking."
     },
     {
-      "q": "3.\nClass 6 Mindful Eating: A Path to a Healthy Body Worksheet\nConclusion\nChapter 3: Mindful Eating: A Path to a Healthy Body highlights the significance of paying attention to our eating habits to foster better health. By practising mindful eating, individuals can make more informed food choices, enjoy their meals fully, and contribute to their overall well-being. The chapter encourages adopting a balanced diet and nurturing healthy eating habits as essential steps toward a healthier and more fulfilling life.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 3 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Science textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 4: Exploring Magnets Solutions\n4\nChapter 5: Measurement of Length and Motion Notes\n5\nChapter 6: Materials Around Us Solutions\n6\nChapter 7: Temperature and its Measurement Solutions\n7\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "What is sieving? Where is it used?",
+      "a": "Sieving is the process of filtering components of a mixture of different sizes. Sieving allows fine particles to pass through the holes of the sieve, while the bigger impurities remain on the sieve. Sieving is used in flour mills to separate broken particles of grains from flour. It is also used at construction sites to separate lumps, smaller stones from the mixture of sand and cement."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Fill up the blank: The method of separating seeds of paddy from its stalks is called ___________.",
+      "a": "The method of separating seeds of paddy from its stalks is called threshing."
     },
     {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "Fill up the blank: Salt is obtained from seawater by the process of ___________.",
+      "a": "Salt is obtained from seawater by the process of evaporation."
     }
   ],
   "4": [
     {
-      "q": "1.\nClass 6 Exploring Magnets Important Questions",
-      "a": "Detailed solution available."
+      "q": "What is the function of a stem in a plant?",
+      "a": "Functions of stem in a plant: It holds the branches, leaves, flowers and fruits. The stem transports water and minerals from roots to the upper parts. It also transports the prepared food from leaves to other parts."
     },
     {
-      "q": "2.\nClass 6 Exploring Magnets Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Which of the following leaves have reticulate venation? Wheat, tulsi, maize, grass, coriander (dhania), China rose.",
+      "a": "Tulsi, Coriander (Dhania) and China rose."
     },
     {
-      "q": "3.\nClass 6 Exploring Magnets Worksheet\nConclusion\nChapter 4: Exploring Magnets provides a detailed understanding of how magnets work and their various properties. Students learn about the concepts of magnetic poles, how magnets attract and repel each other, and the utility of magnets in daily life. Additionally, through various activities, students explore magnetic materials, compasses, and fun experiments that involve magnets. By the end of this chapter 4, students will have gained practical knowledge of magnets and their applications.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 4 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Science textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 5: Measurement of Length and Motion Notes\n5\nChapter 6: Materials Around Us Solutions\n6\nChapter 7: Temperature and its Measurement Solutions\n7\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "Name the part of the plant which produces its food. Name this process.",
+      "a": "Leaves produce food for plant with the process of photosynthesis."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
+      "q": "In which part of a flower, you are likely to find the ovary?",
+      "a": "Ovary is located in the lowermost and swollen part of the pistil of flower."
     },
     {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "Name two flowers, each with joined and separated sepals.",
+      "a": "Plants with joined sepals : Datura and Tomato flower. Plants with separated sepals : Lotus and Rose."
     }
   ],
   "5": [
     {
-      "q": "1.\nClass 6 Measurement of Length and Motion Important Questions",
-      "a": "Detailed solution available."
+      "q": "Fill in the blank: Joints of the bones help in the _________ of the body.",
+      "a": "Joints of the bones help in the movement of the body."
     },
     {
-      "q": "2.\nClass 6 Measurement of Length and Motion Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Fill in the blank: A combination of bones and cartilages forms the _______ of the body.",
+      "a": "A combination of bones and cartilages forms the skeleton of the body."
     },
     {
-      "q": "3.\nClass 6 Measurement of Length and Motion Worksheet\nConclusion\nChapter 5 Measurement of Length and Motion provides essential insights into how length is measured and the types of motion that objects can exhibit. By understanding SI units and different forms of motion, students can apply these concepts to various real-life situations. Whether measuring cloth or observing motion, these fundamental principles form the basis for more advanced studies in science and everyday applications.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 5 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Science textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 4: Exploring Magnets Solutions\n5\nChapter 6: Materials Around Us Solutions\n6\nChapter 7: Temperature and its Measurement Solutions\n7\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "Which of the skull bones are movable?",
+      "a": "Only the lower jaw in skull bones is movable."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "Why can our elbow not move backwards?",
+      "a": "Elbow joint is an example of hinge joint which allows only back and forth movements. Therefore, we cannot move our elbow backwards."
     }
   ],
   "6": [
     {
-      "q": "1.\nClass 6 Materials Around Us Important Questions",
-      "a": "Detailed solution available."
+      "q": "How are cactus adapted to survive in a desert?",
+      "a": "Cactus lose very little water through transpiration. The leaves in cactus plants are present in the shape of spines. This helps in reducing loss of water from the leaves through transpiration. Its stem is converted into a leaf-like structure. Photosynthesis in these plants is usually carried out by the stems. The stem is also covered with a thick waxy layer, which helps to retain water. Cactus plants have roots that go very deep into the soil for absorbing water."
     },
     {
-      "q": "2.\nClass 6 Materials Around Us Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Fill up the blank: The presence of specific features, which enable a plant or an animal to live in a particular habitat, is called __________.",
+      "a": "The presence of specific features, which enable a plant or an animal to live in a particular habitat, is called adaptation."
     },
     {
-      "q": "3.\nClass 6 Materials Around Us Worksheet\nConclusion\nClass 6 Science Chapter 6 Materials Around Us provides a comprehensive look at how various materials are used in everyday life, from ancient pottery to modern objects. By understanding the properties of materials, students can better appreciate how objects are made and used. This knowledge not only enhances scientific thinking but also builds awareness about the environment and the sustainable use of resources.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 6 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Science textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 4: Exploring Magnets Solutions\n5\nChapter 5: Measurement of Length and Motion Solutions\n6\nChapter 7: Temperature and its Measurement Solutions\n7\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "Fill up the blank: The habitats of the plants and animals that live on land are called __________ habitat.",
+      "a": "The habitats of the plants and animals that live on land are called terrestrial habitat."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Which of the things in the following list are non-living? Plough, Mushroom,",
+      "a": "Sewing machine, Radio, Boat, Water hyacinth, Earthworm.\nNon-living things: Plough, Sewing machine, Radio, Boat."
     },
     {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Give an example of a non-living thing, which shows any two characteristics of living things.",
+      "a": "Bus and Machine both shows movement and consume energy."
     },
     {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "Explain, why speed is important for survival in the grasslands for animals that live there.",
+      "a": "In the grassland there are less number of trees and places to hide. The animals are vulnerable to predators (e.g. lions, tigers, wolves etc.). They can only survive and escape if they can run faster. Therefore speed is important for survival in the grasslands for animals (e.g. deer) that live there."
     }
   ],
   "7": [
     {
-      "q": "1.\nClass 6 Temperature and its Measurement Important Questions",
-      "a": "Detailed solution available."
+      "q": "Give two examples each, of modes of transport used on land, water and air.",
+      "a": "Land transport : Bus, train, motorbike. Water transport : Boat, ship, steamer. Air Transport : Aeroplane, Helicopter."
     },
     {
-      "q": "2.\nClass 6 Temperature and its Measurement Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Fill in the blank: One metre is ______________ cm.",
+      "a": "One metre is 100 cm."
     },
     {
-      "q": "3.\nClass 6 Temperature and its Measurement Worksheet\nConclusion\nClass 6 Science Chapter 7 Temperature and its Measurement,is essential for students to understand how temperature affects our daily lives, from monitoring body temperature to understanding weather patterns. Chapter 7 equips students with the skills to measure temperature accurately and the knowledge of using different types of thermometers. Through practical activities and real-life applications, students gain valuable insights into the significance of temperature in both health and science.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 7 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Science textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 4: Exploring Magnets Solutions\n5\nChapter 5: Measurement of Length and Motion Solutions\n6\nChapter 6: Materials Around Us Solutions\n7\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "Fill in the blank: Five kilometre is ____________ m.",
+      "a": "Five kilometre is 5000 m."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
+      "q": "While measuring the length of a knitting needle, the reading of the scale at one end is 3.0 cm and at the other end is 33.1 cm. What is the length of the needle?",
+      "a": "The length of the needle = 33.1 cm \u2013 3.0 cm = 30.1 cm"
     },
     {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "Write the similarities and differences between the motion of a bicycle and a ceiling fan that has been switched on.",
+      "a": "Similarity : Both show a circular motion. Difference : Bicycle shows a rectilinear motion whereas a ceiling fan does not."
     }
   ],
   "8": [
     {
-      "q": "1.\nClass 6 A Journey through States of Water Important Questions",
-      "a": "Detailed solution available."
+      "q": "What are luminous objects?",
+      "a": "Objects like the sun that give out or emit light of their own are called luminous objects."
     },
     {
-      "q": "2.\nClass 6 A Journey through States of Water Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What do you understand by a translucent object?",
+      "a": "There are some objects through which we can see, but not very clearly. Such objects are known as translucent."
     },
     {
-      "q": "3.\nClass 6 A Journey through States of Matter Worksheet\nConclusion\nA Journey through the States of Water provides a comprehensive exploration of how water changes between its solid, liquid, and gaseous states. Through simple, everyday observations, students learn the core concepts of evaporation, condensation, and the water cycle. Chapter 8 not only builds a solid foundation in science but also encourages curiosity and critical thinking by engaging students in practical activities that illustrate the changing states of water.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 8 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Science textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 4: Exploring Magnets Solutions\n5\nChapter 5: Measurement of Length and Motion Solutions\n6\nChapter 6: Materials Around Us Solutions\n7\nChapter 7: Temperature and its Measurement Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "When are shadows formed?",
+      "a": "Shadows are formed when an opaque object comes in the path of light."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "How does Light travel?",
+      "a": "Light travels in straight line."
     }
   ],
   "9": [
@@ -347,36 +243,20 @@ export default {
   ],
   "10": [
     {
-      "q": "1.\nClass 6 Living Creatures: Exploring their Characteristics Questions",
-      "a": "Detailed solution available."
+      "q": "Write any two properties of a magnet.",
+      "a": "Opposite poles of two magnet attract each other while like poles of two magnet repel each other. A freely suspended magnet always aligns in N-S direction."
     },
     {
-      "q": "2.\nClass 6 Living Creatures: Exploring their Characteristics Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What are magnetic materials?",
+      "a": "Magnet attracts materials like iron, nickel, cobalt. These are called magnetic materials."
     },
     {
-      "q": "3.\nClass 6 Living Creatures: Exploring their Characteristics Worksheet\nConclusion\nChapter 10 Living Creatures: Exploring their Characteristics enables students to understand the essential traits of living organisms and how they adapt to their surroundings. With Vedantu's NCERT Solutions, students can enhance their understanding of the chapter, master its key concepts, and improve exam performance.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 10 Question Answers, you can access comprehensive NCERT Solutions from all Science Class 6 textbook chapters.\nS. No\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 4: Exploring Magnets Solutions\n5\nChapter 5: Measurement of Length and Motion Solutions\n6\nChapter 6: Materials Around Us Solutions\n7\nChapter 7: Temperature and its Measurement Solutions\n8\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
-      "a": "Detailed solution available."
+      "q": "What are non-magnetic materials?",
+      "a": "Materials that are not attracted towards magnet are called non-magnetic."
     },
     {
-      "q": "1.\nClass 6 Science NCERT Book",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 6 Science Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nClass 6 Science Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nClass 6 Science Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 6 Science Sample Papers",
-      "a": "Detailed solution available."
+      "q": "How many poles a magnet has?",
+      "a": "Each magnet has two magnetic poles\u2014North and South."
     }
   ],
   "11": [

@@ -1788,5 +1788,33 @@ export default {
       "q": "8.\nCBSE Class 11 Chemistry Formulas",
       "a": "Detailed solution available."
     }
+  ],
+  "12": [
+    {
+      "q": "Explain, how is the electronegativity of carbon atoms related to their state of hybridisation in an organic compound?",
+      "a": "Electronegativity increases with increasing s character. sp\u00b3 < sp\u00b2 < sp."
+    },
+    {
+      "q": "In DNA and RNA, nitrogen atom is present in the ring system. Can Kjeldahl method be used for the estimation of nitrogen present in these? Give reasons.",
+      "a": "DNA and RNA have nitrogen in the heterocyclic rings. Nitrogen present in rings, azo groups and nitro groups cannot be removed as ammonia."
+    },
+    {
+      "q": "What is the hybridisation of each carbon in H\u2082C = C = CH\u2082?",
+      "a": "Central atom forms two \u03c3 and two \u03c0 bonds. It consists of sp\u2212sp overlap between two carbon atoms forming two \u03c3 bonds. Two additional pi bonds also formed between two carbons atoms (two neighbour carbons). Hence, central carbon atom has sp hybridization."
+    }
+  ],
+  "13": [
+    {
+      "q": "Why do alkenes prefer to undergo electrophilic addition reaction while arenes prefer electrophilic substitution reactions? Explain.",
+      "a": "Both alkenes and arenes are electron-rich. Therefore, undergo electrophilic reactions. Olefins undergo addition reactions because addition of a reagent to an olefin gives a more stable product as sp\u00b2 hybridisation changes to sp\u00b3 hybridisation. Addition to the double bond of an arene would give a product with less or no resonance stability hence addition is difficult arenes. On the other hand, in substitution reaction resonance stabilization is retained therefore, arenes undergo substitution reaction."
+    },
+    {
+      "q": "Rotation around carbon-carbon single bond of ethane is not completely free. Justify the statement.",
+      "a": "The rotation about C\u2014C bond is restricted because of repulsion between electron cloud of C\u2014H bonds on either carbon atom."
+    },
+    {
+      "q": "Despite their \u2013 I effect, halogens are o- and p-directing in haloarenes. Explain.",
+      "a": "Halogens attached to benzene rings exert \u2013I and +R effect. +R effect dominates \u2013I effect and increases the electron density at ortho and para positions of the benzene ring with respect to halogens."
+    }
   ]
 };

@@ -1,0 +1,1784 @@
+[
+  {
+    "cls": "12",
+    "subject": "physics",
+    "chapter": "11",
+    "fileName": "src/data/class_12_physics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "physics",
+    "chapter": "15",
+    "fileName": "src/data/class_12_physics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "maths",
+    "chapter": "1",
+    "fileName": "src/data/class_12_maths.js"
+  },
+  {
+    "cls": "12",
+    "subject": "maths",
+    "chapter": "2",
+    "fileName": "src/data/class_12_maths.js"
+  },
+  {
+    "cls": "12",
+    "subject": "maths",
+    "chapter": "3",
+    "fileName": "src/data/class_12_maths.js"
+  },
+  {
+    "cls": "12",
+    "subject": "maths",
+    "chapter": "4",
+    "fileName": "src/data/class_12_maths.js"
+  },
+  {
+    "cls": "12",
+    "subject": "chemistry",
+    "chapter": "7",
+    "fileName": "src/data/class_12_chemistry.js"
+  },
+  {
+    "cls": "12",
+    "subject": "chemistry",
+    "chapter": "11",
+    "fileName": "src/data/class_12_chemistry.js"
+  },
+  {
+    "cls": "12",
+    "subject": "chemistry",
+    "chapter": "12",
+    "fileName": "src/data/class_12_chemistry.js"
+  },
+  {
+    "cls": "12",
+    "subject": "chemistry",
+    "chapter": "13",
+    "fileName": "src/data/class_12_chemistry.js"
+  },
+  {
+    "cls": "12",
+    "subject": "chemistry",
+    "chapter": "14",
+    "fileName": "src/data/class_12_chemistry.js"
+  },
+  {
+    "cls": "12",
+    "subject": "chemistry",
+    "chapter": "15",
+    "fileName": "src/data/class_12_chemistry.js"
+  },
+  {
+    "cls": "12",
+    "subject": "chemistry",
+    "chapter": "16",
+    "fileName": "src/data/class_12_chemistry.js"
+  },
+  {
+    "cls": "12",
+    "subject": "biology",
+    "chapter": "5",
+    "fileName": "src/data/class_12_biology.js"
+  },
+  {
+    "cls": "12",
+    "subject": "biology",
+    "chapter": "9",
+    "fileName": "src/data/class_12_biology.js"
+  },
+  {
+    "cls": "12",
+    "subject": "biology",
+    "chapter": "13",
+    "fileName": "src/data/class_12_biology.js"
+  },
+  {
+    "cls": "12",
+    "subject": "biology",
+    "chapter": "14",
+    "fileName": "src/data/class_12_biology.js"
+  },
+  {
+    "cls": "12",
+    "subject": "biology",
+    "chapter": "15",
+    "fileName": "src/data/class_12_biology.js"
+  },
+  {
+    "cls": "12",
+    "subject": "biology",
+    "chapter": "16",
+    "fileName": "src/data/class_12_biology.js"
+  },
+  {
+    "cls": "12",
+    "subject": "english",
+    "chapter": "8",
+    "fileName": "src/data/class_12_english.js"
+  },
+  {
+    "cls": "12",
+    "subject": "english",
+    "chapter": "9",
+    "fileName": "src/data/class_12_english.js"
+  },
+  {
+    "cls": "12",
+    "subject": "english",
+    "chapter": "10",
+    "fileName": "src/data/class_12_english.js"
+  },
+  {
+    "cls": "12",
+    "subject": "english",
+    "chapter": "11",
+    "fileName": "src/data/class_12_english.js"
+  },
+  {
+    "cls": "12",
+    "subject": "english",
+    "chapter": "12",
+    "fileName": "src/data/class_12_english.js"
+  },
+  {
+    "cls": "12",
+    "subject": "business_studies",
+    "chapter": "5",
+    "fileName": "src/data/class_12_business_studies.js"
+  },
+  {
+    "cls": "12",
+    "subject": "business_studies",
+    "chapter": "8",
+    "fileName": "src/data/class_12_business_studies.js"
+  },
+  {
+    "cls": "12",
+    "subject": "business_studies",
+    "chapter": "12",
+    "fileName": "src/data/class_12_business_studies.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "1",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "2",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "3",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "4",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "5",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "6",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "7",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "8",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "9",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "10",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "11",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "economics",
+    "chapter": "12",
+    "fileName": "src/data/class_12_economics.js"
+  },
+  {
+    "cls": "12",
+    "subject": "accountancy",
+    "chapter": "3",
+    "fileName": "src/data/class_12_accountancy.js"
+  },
+  {
+    "cls": "12",
+    "subject": "accountancy",
+    "chapter": "4",
+    "fileName": "src/data/class_12_accountancy.js"
+  },
+  {
+    "cls": "12",
+    "subject": "accountancy",
+    "chapter": "5",
+    "fileName": "src/data/class_12_accountancy.js"
+  },
+  {
+    "cls": "12",
+    "subject": "accountancy",
+    "chapter": "7",
+    "fileName": "src/data/class_12_accountancy.js"
+  },
+  {
+    "cls": "12",
+    "subject": "accountancy",
+    "chapter": "8",
+    "fileName": "src/data/class_12_accountancy.js"
+  },
+  {
+    "cls": "12",
+    "subject": "accountancy",
+    "chapter": "9",
+    "fileName": "src/data/class_12_accountancy.js"
+  },
+  {
+    "cls": "12",
+    "subject": "accountancy",
+    "chapter": "10",
+    "fileName": "src/data/class_12_accountancy.js"
+  },
+  {
+    "cls": "12",
+    "subject": "history",
+    "chapter": "13",
+    "fileName": "src/data/class_12_history.js"
+  },
+  {
+    "cls": "12",
+    "subject": "history",
+    "chapter": "14",
+    "fileName": "src/data/class_12_history.js"
+  },
+  {
+    "cls": "12",
+    "subject": "history",
+    "chapter": "15",
+    "fileName": "src/data/class_12_history.js"
+  },
+  {
+    "cls": "12",
+    "subject": "geography",
+    "chapter": "10",
+    "fileName": "src/data/class_12_geography.js"
+  },
+  {
+    "cls": "12",
+    "subject": "political_science",
+    "chapter": "8",
+    "fileName": "src/data/class_12_political_science.js"
+  },
+  {
+    "cls": "12",
+    "subject": "political_science",
+    "chapter": "9",
+    "fileName": "src/data/class_12_political_science.js"
+  },
+  {
+    "cls": "11",
+    "subject": "physics",
+    "chapter": "15",
+    "fileName": "src/data/class_11_physics.js"
+  },
+  {
+    "cls": "11",
+    "subject": "maths",
+    "chapter": "15",
+    "fileName": "src/data/class_11_maths.js"
+  },
+  {
+    "cls": "11",
+    "subject": "maths",
+    "chapter": "16",
+    "fileName": "src/data/class_11_maths.js"
+  },
+  {
+    "cls": "11",
+    "subject": "chemistry",
+    "chapter": "10",
+    "fileName": "src/data/class_11_chemistry.js"
+  },
+  {
+    "cls": "11",
+    "subject": "chemistry",
+    "chapter": "11",
+    "fileName": "src/data/class_11_chemistry.js"
+  },
+  {
+    "cls": "11",
+    "subject": "chemistry",
+    "chapter": "12",
+    "fileName": "src/data/class_11_chemistry.js"
+  },
+  {
+    "cls": "11",
+    "subject": "chemistry",
+    "chapter": "13",
+    "fileName": "src/data/class_11_chemistry.js"
+  },
+  {
+    "cls": "11",
+    "subject": "chemistry",
+    "chapter": "14",
+    "fileName": "src/data/class_11_chemistry.js"
+  },
+  {
+    "cls": "11",
+    "subject": "biology",
+    "chapter": "11",
+    "fileName": "src/data/class_11_biology.js"
+  },
+  {
+    "cls": "11",
+    "subject": "biology",
+    "chapter": "12",
+    "fileName": "src/data/class_11_biology.js"
+  },
+  {
+    "cls": "11",
+    "subject": "english",
+    "chapter": "7",
+    "fileName": "src/data/class_11_english.js"
+  },
+  {
+    "cls": "11",
+    "subject": "english",
+    "chapter": "8",
+    "fileName": "src/data/class_11_english.js"
+  },
+  {
+    "cls": "11",
+    "subject": "english",
+    "chapter": "9",
+    "fileName": "src/data/class_11_english.js"
+  },
+  {
+    "cls": "11",
+    "subject": "english",
+    "chapter": "10",
+    "fileName": "src/data/class_11_english.js"
+  },
+  {
+    "cls": "11",
+    "subject": "english",
+    "chapter": "11",
+    "fileName": "src/data/class_11_english.js"
+  },
+  {
+    "cls": "11",
+    "subject": "english",
+    "chapter": "12",
+    "fileName": "src/data/class_11_english.js"
+  },
+  {
+    "cls": "11",
+    "subject": "economics",
+    "chapter": "5",
+    "fileName": "src/data/class_11_economics.js"
+  },
+  {
+    "cls": "11",
+    "subject": "economics",
+    "chapter": "7",
+    "fileName": "src/data/class_11_economics.js"
+  },
+  {
+    "cls": "11",
+    "subject": "economics",
+    "chapter": "9",
+    "fileName": "src/data/class_11_economics.js"
+  },
+  {
+    "cls": "11",
+    "subject": "economics",
+    "chapter": "10",
+    "fileName": "src/data/class_11_economics.js"
+  },
+  {
+    "cls": "11",
+    "subject": "accountancy",
+    "chapter": "5",
+    "fileName": "src/data/class_11_accountancy.js"
+  },
+  {
+    "cls": "11",
+    "subject": "accountancy",
+    "chapter": "8",
+    "fileName": "src/data/class_11_accountancy.js"
+  },
+  {
+    "cls": "11",
+    "subject": "accountancy",
+    "chapter": "9",
+    "fileName": "src/data/class_11_accountancy.js"
+  },
+  {
+    "cls": "11",
+    "subject": "accountancy",
+    "chapter": "10",
+    "fileName": "src/data/class_11_accountancy.js"
+  },
+  {
+    "cls": "11",
+    "subject": "history",
+    "chapter": "8",
+    "fileName": "src/data/class_11_history.js"
+  },
+  {
+    "cls": "11",
+    "subject": "history",
+    "chapter": "9",
+    "fileName": "src/data/class_11_history.js"
+  },
+  {
+    "cls": "11",
+    "subject": "history",
+    "chapter": "10",
+    "fileName": "src/data/class_11_history.js"
+  },
+  {
+    "cls": "11",
+    "subject": "history",
+    "chapter": "11",
+    "fileName": "src/data/class_11_history.js"
+  },
+  {
+    "cls": "10",
+    "subject": "maths",
+    "chapter": "15",
+    "fileName": "src/data/class_10_maths.js"
+  },
+  {
+    "cls": "10",
+    "subject": "science",
+    "chapter": "14",
+    "fileName": "src/data/class_10_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "science",
+    "chapter": "15",
+    "fileName": "src/data/class_10_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "science",
+    "chapter": "16",
+    "fileName": "src/data/class_10_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "english",
+    "chapter": "10",
+    "fileName": "src/data/class_10_english.js"
+  },
+  {
+    "cls": "10",
+    "subject": "english",
+    "chapter": "11",
+    "fileName": "src/data/class_10_english.js"
+  },
+  {
+    "cls": "10",
+    "subject": "english",
+    "chapter": "12",
+    "fileName": "src/data/class_10_english.js"
+  },
+  {
+    "cls": "10",
+    "subject": "english",
+    "chapter": "13",
+    "fileName": "src/data/class_10_english.js"
+  },
+  {
+    "cls": "10",
+    "subject": "english",
+    "chapter": "14",
+    "fileName": "src/data/class_10_english.js"
+  },
+  {
+    "cls": "10",
+    "subject": "english",
+    "chapter": "15",
+    "fileName": "src/data/class_10_english.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "6",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "7",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "8",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "9",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "10",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "11",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "12",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "13",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "14",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "10",
+    "subject": "social_science",
+    "chapter": "15",
+    "fileName": "src/data/class_10_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "maths",
+    "chapter": "2",
+    "fileName": "src/data/class_9_maths.js"
+  },
+  {
+    "cls": "9",
+    "subject": "maths",
+    "chapter": "13",
+    "fileName": "src/data/class_9_maths.js"
+  },
+  {
+    "cls": "9",
+    "subject": "maths",
+    "chapter": "14",
+    "fileName": "src/data/class_9_maths.js"
+  },
+  {
+    "cls": "9",
+    "subject": "maths",
+    "chapter": "15",
+    "fileName": "src/data/class_9_maths.js"
+  },
+  {
+    "cls": "9",
+    "subject": "science",
+    "chapter": "13",
+    "fileName": "src/data/class_9_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "science",
+    "chapter": "14",
+    "fileName": "src/data/class_9_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "science",
+    "chapter": "15",
+    "fileName": "src/data/class_9_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "english",
+    "chapter": "7",
+    "fileName": "src/data/class_9_english.js"
+  },
+  {
+    "cls": "9",
+    "subject": "english",
+    "chapter": "10",
+    "fileName": "src/data/class_9_english.js"
+  },
+  {
+    "cls": "9",
+    "subject": "english",
+    "chapter": "11",
+    "fileName": "src/data/class_9_english.js"
+  },
+  {
+    "cls": "9",
+    "subject": "english",
+    "chapter": "12",
+    "fileName": "src/data/class_9_english.js"
+  },
+  {
+    "cls": "9",
+    "subject": "english",
+    "chapter": "13",
+    "fileName": "src/data/class_9_english.js"
+  },
+  {
+    "cls": "9",
+    "subject": "english",
+    "chapter": "14",
+    "fileName": "src/data/class_9_english.js"
+  },
+  {
+    "cls": "9",
+    "subject": "english",
+    "chapter": "15",
+    "fileName": "src/data/class_9_english.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "7",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "8",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "9",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "10",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "11",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "12",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "13",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "14",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "9",
+    "subject": "social_science",
+    "chapter": "15",
+    "fileName": "src/data/class_9_social_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "maths",
+    "chapter": "9",
+    "fileName": "src/data/class_8_maths.js"
+  },
+  {
+    "cls": "8",
+    "subject": "maths",
+    "chapter": "14",
+    "fileName": "src/data/class_8_maths.js"
+  },
+  {
+    "cls": "8",
+    "subject": "maths",
+    "chapter": "15",
+    "fileName": "src/data/class_8_maths.js"
+  },
+  {
+    "cls": "8",
+    "subject": "maths",
+    "chapter": "16",
+    "fileName": "src/data/class_8_maths.js"
+  },
+  {
+    "cls": "8",
+    "subject": "science",
+    "chapter": "14",
+    "fileName": "src/data/class_8_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "science",
+    "chapter": "15",
+    "fileName": "src/data/class_8_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "science",
+    "chapter": "16",
+    "fileName": "src/data/class_8_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "science",
+    "chapter": "17",
+    "fileName": "src/data/class_8_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "science",
+    "chapter": "18",
+    "fileName": "src/data/class_8_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "social_science",
+    "chapter": "5",
+    "fileName": "src/data/class_8_social_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "social_science",
+    "chapter": "9",
+    "fileName": "src/data/class_8_social_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "social_science",
+    "chapter": "10",
+    "fileName": "src/data/class_8_social_science.js"
+  },
+  {
+    "cls": "8",
+    "subject": "social_science",
+    "chapter": "11",
+    "fileName": "src/data/class_8_social_science.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "1",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "2",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "3",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "4",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "5",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "6",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "7",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "8",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "14",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "maths",
+    "chapter": "15",
+    "fileName": "src/data/class_7_maths.js"
+  },
+  {
+    "cls": "7",
+    "subject": "science",
+    "chapter": "14",
+    "fileName": "src/data/class_7_science.js"
+  },
+  {
+    "cls": "7",
+    "subject": "science",
+    "chapter": "15",
+    "fileName": "src/data/class_7_science.js"
+  },
+  {
+    "cls": "7",
+    "subject": "science",
+    "chapter": "16",
+    "fileName": "src/data/class_7_science.js"
+  },
+  {
+    "cls": "7",
+    "subject": "science",
+    "chapter": "17",
+    "fileName": "src/data/class_7_science.js"
+  },
+  {
+    "cls": "7",
+    "subject": "science",
+    "chapter": "18",
+    "fileName": "src/data/class_7_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "maths",
+    "chapter": "2",
+    "fileName": "src/data/class_6_maths.js"
+  },
+  {
+    "cls": "6",
+    "subject": "maths",
+    "chapter": "4",
+    "fileName": "src/data/class_6_maths.js"
+  },
+  {
+    "cls": "6",
+    "subject": "maths",
+    "chapter": "5",
+    "fileName": "src/data/class_6_maths.js"
+  },
+  {
+    "cls": "6",
+    "subject": "maths",
+    "chapter": "11",
+    "fileName": "src/data/class_6_maths.js"
+  },
+  {
+    "cls": "6",
+    "subject": "maths",
+    "chapter": "13",
+    "fileName": "src/data/class_6_maths.js"
+  },
+  {
+    "cls": "6",
+    "subject": "maths",
+    "chapter": "14",
+    "fileName": "src/data/class_6_maths.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "1",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "2",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "3",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "4",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "5",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "6",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "7",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "8",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "10",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "13",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "14",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "15",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "6",
+    "subject": "science",
+    "chapter": "16",
+    "fileName": "src/data/class_6_science.js"
+  },
+  {
+    "cls": "5",
+    "subject": "maths",
+    "chapter": "5",
+    "fileName": "src/data/class_5_maths.js"
+  },
+  {
+    "cls": "5",
+    "subject": "maths",
+    "chapter": "7",
+    "fileName": "src/data/class_5_maths.js"
+  },
+  {
+    "cls": "5",
+    "subject": "maths",
+    "chapter": "8",
+    "fileName": "src/data/class_5_maths.js"
+  },
+  {
+    "cls": "5",
+    "subject": "maths",
+    "chapter": "9",
+    "fileName": "src/data/class_5_maths.js"
+  },
+  {
+    "cls": "5",
+    "subject": "maths",
+    "chapter": "10",
+    "fileName": "src/data/class_5_maths.js"
+  },
+  {
+    "cls": "5",
+    "subject": "maths",
+    "chapter": "11",
+    "fileName": "src/data/class_5_maths.js"
+  },
+  {
+    "cls": "5",
+    "subject": "maths",
+    "chapter": "12",
+    "fileName": "src/data/class_5_maths.js"
+  },
+  {
+    "cls": "5",
+    "subject": "maths",
+    "chapter": "14",
+    "fileName": "src/data/class_5_maths.js"
+  },
+  {
+    "cls": "5",
+    "subject": "english",
+    "chapter": "2",
+    "fileName": "src/data/class_5_english.js"
+  },
+  {
+    "cls": "5",
+    "subject": "english",
+    "chapter": "9",
+    "fileName": "src/data/class_5_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "1",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "2",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "3",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "4",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "5",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "6",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "7",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "8",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "10",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "12",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "13",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "maths",
+    "chapter": "14",
+    "fileName": "src/data/class_4_maths.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "2",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "3",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "4",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "5",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "6",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "7",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "8",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "9",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "4",
+    "subject": "english",
+    "chapter": "10",
+    "fileName": "src/data/class_4_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "maths",
+    "chapter": "2",
+    "fileName": "src/data/class_3_maths.js"
+  },
+  {
+    "cls": "3",
+    "subject": "maths",
+    "chapter": "13",
+    "fileName": "src/data/class_3_maths.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "5",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "6",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "8",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "9",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "11",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "14",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "15",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "16",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "17",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "18",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "19",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "21",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "22",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "23",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "evs",
+    "chapter": "24",
+    "fileName": "src/data/class_3_evs.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "2",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "3",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "4",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "5",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "6",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "7",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "8",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "9",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "3",
+    "subject": "english",
+    "chapter": "10",
+    "fileName": "src/data/class_3_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "1",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "2",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "3",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "4",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "5",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "6",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "7",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "8",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "9",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "10",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "11",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "12",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "13",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "14",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "maths",
+    "chapter": "15",
+    "fileName": "src/data/class_2_maths.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "7",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "8",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "10",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "11",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "14",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "15",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "16",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "17",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "18",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "19",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "2",
+    "subject": "english",
+    "chapter": "20",
+    "fileName": "src/data/class_2_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "maths",
+    "chapter": "4",
+    "fileName": "src/data/class_1_maths.js"
+  },
+  {
+    "cls": "1",
+    "subject": "maths",
+    "chapter": "6",
+    "fileName": "src/data/class_1_maths.js"
+  },
+  {
+    "cls": "1",
+    "subject": "maths",
+    "chapter": "7",
+    "fileName": "src/data/class_1_maths.js"
+  },
+  {
+    "cls": "1",
+    "subject": "maths",
+    "chapter": "8",
+    "fileName": "src/data/class_1_maths.js"
+  },
+  {
+    "cls": "1",
+    "subject": "maths",
+    "chapter": "9",
+    "fileName": "src/data/class_1_maths.js"
+  },
+  {
+    "cls": "1",
+    "subject": "maths",
+    "chapter": "11",
+    "fileName": "src/data/class_1_maths.js"
+  },
+  {
+    "cls": "1",
+    "subject": "maths",
+    "chapter": "12",
+    "fileName": "src/data/class_1_maths.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "3",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "4",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "5",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "6",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "9",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "10",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "11",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "12",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "13",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "14",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "15",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "16",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "17",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "18",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "19",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "1",
+    "subject": "english",
+    "chapter": "20",
+    "fileName": "src/data/class_1_english.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "1",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "2",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "3",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "4",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "5",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "6",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "7",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "8",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "9",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "10",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "11",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Books",
+    "subject": "all_books_pdf",
+    "chapter": "12",
+    "fileName": "src/data/class_NCERT Books_all_books_pdf.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "maths_exemplar",
+    "chapter": "1",
+    "fileName": "src/data/class_NCERT Exempler_maths_exemplar.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "maths_exemplar",
+    "chapter": "2",
+    "fileName": "src/data/class_NCERT Exempler_maths_exemplar.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "maths_exemplar",
+    "chapter": "3",
+    "fileName": "src/data/class_NCERT Exempler_maths_exemplar.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "maths_exemplar",
+    "chapter": "4",
+    "fileName": "src/data/class_NCERT Exempler_maths_exemplar.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "science_exemplar",
+    "chapter": "1",
+    "fileName": "src/data/class_NCERT Exempler_science_exemplar.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "science_exemplar",
+    "chapter": "2",
+    "fileName": "src/data/class_NCERT Exempler_science_exemplar.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "science_exemplar",
+    "chapter": "3",
+    "fileName": "src/data/class_NCERT Exempler_science_exemplar.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "science_exemplar",
+    "chapter": "4",
+    "fileName": "src/data/class_NCERT Exempler_science_exemplar.js"
+  },
+  {
+    "cls": "NCERT Exempler",
+    "subject": "science_exemplar",
+    "chapter": "5",
+    "fileName": "src/data/class_NCERT Exempler_science_exemplar.js"
+  }
+]

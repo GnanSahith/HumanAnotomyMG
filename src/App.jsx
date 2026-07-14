@@ -20,6 +20,8 @@ import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut } from 'lucide-reac
 import { useUser, UserButton } from '@clerk/clerk-react';
 import LoginModal from './components/LoginModal';
 import { useLanguage } from './LanguageContext';
+import SelectionTooltip from './components/SelectionTooltip';
+import Chatbot from './components/Chatbot';
 
 function App() {
   const { currentLanguage, toggleLanguage, t } = useLanguage();
@@ -40,6 +42,13 @@ function App() {
     return localStorage.getItem('logged_in_username') || '';
   });
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+  const profileDropdownRef = useRef(null);
+  
+  // Chatbot states
+  const [isChatbotOpen, setIsChatbotOpen] = useState(false);
+  const [chatbotQuery, setChatbotQuery] = useState('');
+  
   const dropdownRef = useRef(null);
 
   useEffect(() => {
@@ -51,6 +60,9 @@ function App() {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsLangDropdownOpen(false);
+      }
+      if (profileDropdownRef.current && !profileDropdownRef.current.contains(event.target)) {
+        setIsProfileDropdownOpen(false);
       }
     };
     document.addEventListener('mousedown', handleClickOutside);
@@ -105,6 +117,12 @@ function App() {
     } else {
       setShowLoginModal(true);
     }
+  };
+
+  const handleFastSwitch = (newUsername) => {
+    setLoggedInUsername(newUsername);
+    localStorage.setItem('logged_in_username', newUsername);
+    setIsProfileDropdownOpen(false);
   };
 
   const handleLogout = () => {
@@ -182,9 +200,26 @@ function App() {
 
             {isAuthenticated ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px' }}>
-                  {loggedInUsername.replace('@MG', '')}
-                </span>
+                {loggedInUsername === 'GnanSahith@MG' ? (
+                  <div className="custom-dropdown-container" ref={profileDropdownRef} onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}>
+                    <span style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      {loggedInUsername.replace('@MG', '')} <ChevronDown size={12} />
+                    </span>
+                    {isProfileDropdownOpen && (
+                      <div className="custom-dropdown-menu" style={{ width: '150px' }}>
+                        <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('CharanKumar@MG'); }}>CharanKumar</div>
+                        <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('SandhyaRekha@MG'); }}>SandhyaRekha</div>
+                        <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('VishnuKranthi@MG'); }}>VishnuKranthi</div>
+                        <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('MyGnanAD'); }}>MyGnanAD</div>
+                        <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('MGRoot01'); }}>MGRoot01</div>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <span style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px' }}>
+                    {loggedInUsername.replace('@MG', '')}
+                  </span>
+                )}
                 <button
                   onClick={handleLogout}
                   style={{
@@ -333,6 +368,20 @@ function App() {
           }
           setShowLoginModal(false);
         }}
+      />
+
+      <SelectionTooltip 
+        onAskChatbot={(text) => {
+          setChatbotQuery(text);
+          setIsChatbotOpen(true);
+        }} 
+      />
+      
+      <Chatbot 
+        isOpen={isChatbotOpen} 
+        setIsOpen={setIsChatbotOpen} 
+        onClose={() => setIsChatbotOpen(false)}
+        initialQuery={chatbotQuery}
       />
     </div>
   );

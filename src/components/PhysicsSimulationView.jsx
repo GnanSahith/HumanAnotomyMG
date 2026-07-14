@@ -57,17 +57,17 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
     const [activeSimulation, setActiveSimulation] = useState(null);
     const [isLoadingSim, setIsLoadingSim] = useState(false);
     const [simKey, setSimKey] = useState(0);
-    const [isPlaying, setIsPlaying] = useState(true);
+    const [isPlaying, setIsPlaying] = useState(false);
 
     const handleReset = () => {
         setSimKey(k => k + 1);
-        setIsPlaying(true);
+        setIsPlaying(false);
     };
     const handleTogglePlay = () => setIsPlaying(p => !p);
     const handleBackToLibrary = () => {
         setActiveSimulation(null);
         setSimKey(0);
-        setIsPlaying(true);
+        setIsPlaying(false);
     };
 
 
@@ -76,12 +76,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
     const [approvedSims, setApprovedSims] = useState(() => {
         try {
             const stored = localStorage.getItem('showcase_approved_physics_sims');
-            const defaultApproved = [
-                'phys_1_mg', 'phys_2_mg', 'phys_3_mg', 'phys_4_mg', 'phys_7_mg',
-                'phys_35_mg', 'phys_36_mg', 'phys_28_mg', 'phys_27_mg', 'phys_25_mg', 
-                'phys_26_mg', 'phys_37_mg', 'phys_31_mg', 'phys_17_mg', 'phys_11_mg', 'phys_29_mg',
-                'phys_5_mg', 'phys_6_mg', 'phys_8_mg', 'phys_9_mg'
-            ];
+            const defaultApproved = Array.from({ length: 45 }, (_, i) => `phys_${i + 1}_mg`);
             
             // If there's stored data, we merge in the defaults to ensure the newly approved ones show up
             if (stored) {
@@ -244,6 +239,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick })
                             activeSimulation.id === 'phys_4_mg' ? <CustomFriction key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_5_mg' ? <CustomEnergySkatePark key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_6_mg' ? <CustomMassesAndSprings key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
+                            activeSimulation.id === 'phys_7_mg' ? <CustomPendulumLab key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_14_mg' ? <CustomStatesOfMatter key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_15_mg' ? <CustomStatesOfMatterBasics key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_16_mg' ? <CustomGasProperties key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 

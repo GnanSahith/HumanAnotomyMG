@@ -621,122 +621,86 @@ export default {
   ],
   "5": [
     {
-      "q": "1.\nChapter 1 - Poonam\u2019s Day out",
-      "a": "Detailed solution available."
+      "q": "What did Chhotu think when he looked at the pipe?",
+      "a": "When Chhotu looked at the pipe, he thought that pipe would be the safest place to live in. Pipe could save him from strong winds, rain and cold weather conditions."
     },
     {
-      "q": "2.\nChapter 2 - The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "How did Chhotu use the pipe?",
+      "a": "Chhotu used the pipe as a home."
     },
     {
-      "q": "3.\nChapter 3 - Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "Into which parts did Chhotu divide the pipe and its surrounding area?",
+      "a": "Chhotu divided the pipe and its surrounding area into following parts:\n\u2022A part for sleeping\n\u2022A part for cooking\n\u2022A part for drying clothes\n\u2022A part for storing water\n\u2022A part where guests can sit or guest room."
     },
     {
-      "q": "4.\nChapter 4 - Our First School",
-      "a": "Detailed solution available."
+      "q": "In which part of this house will Chhotu like to spend most of his time?",
+      "a": "Chhotu would like to spend most of his time in the part which was meant for guests."
     },
     {
-      "q": "5.\nChapter 6 - Foods We Eat",
-      "a": "Detailed solution available."
+      "q": "What would happen if we do not dispose of garbage properly?",
+      "a": "If we do not dispose of the garbage properly and throw it in an open area, it spreads diseases as flies and mosquitoes tend to sit on it which contaminate our food. Also, they cause malaria, jaundice etc. that severely affect human health. So, proper waste disposal is important for the environment. If garbage is not removed regularly from our homes and surroundings, then they will become dirty. Some of the garbage will rot giving off foul smell. The rotting garbage will become a breeding ground for disease causing organisms such as cockroaches, flies and mosquitoes. Removal of wastes from public areas reduces the risks to overall health, reduces the growth of pests, and decreases various health hazards."
     },
     {
-      "q": "6.\nChapter 7 - Saying Without Speaking",
-      "a": "Detailed solution available."
+      "q": "Why should our houses have proper drainage system?",
+      "a": "Our houses must have a good drainage system to carry away the dirty water. Dirty water is the breeding house for mosquitoes and germs. A good drainage system allows the free flow of water and in most cases prevents gathering of water that can lead to flooding. Drainage systems also prevent the building up of stagnant water, which can encourage mosquitoes to breed."
     },
     {
-      "q": "7.\nChapter 8 - Flying High",
-      "a": "Detailed solution available."
+      "q": "Why should we throw garbage in separate dustbins?",
+      "a": "We should throw garbage in separate dustbins as it is important for the environment and it is processed in the right way if put in separate bins. The separation of waste ensures that recyclable materials are reused when making new products. This is also called recycling. Harmful waste requires special handling as it can cause serious problems. By putting them in separate bins we can reuse and recycle the non-harmful waste."
     },
     {
-      "q": "8.\nChapter 9 - It\u2019s Raining",
-      "a": "Detailed solution available."
+      "q": "What are waste produced at home?",
+      "a": "Most of the waste generated at home consists of food leftovers like fruit peels, vegetables, spoiled products, newspapers and magazines, bottles, packaging in general, toilet paper, disposable diapers and a wide variety of other items, including products which may be toxic. Milk pouches, polythene bags, empty cartons, Waste paper (newspaper, bags, envelopes), packing paper, empty bottles, tom cloth pieces, etc. Dust and other sweepings are also waste produced at home."
     },
     {
-      "q": "9.\nChapter 10 - What Is Cooking",
-      "a": "Detailed solution available."
+      "q": "What is a house? How is it different from a home?",
+      "a": "Houses are made of wood, bricks, cement, steel and glass. Roof and walls are made of steel, bricks and cement. Our house protects us from the Sun, rain, wind, snow, animals and enemies. Different types of houses are bungalows, flats, cottage, hut, igloo, houseboat, mansion, etc.\nA house becomes a home when the loving members of a family live together in it, care for each other, support and help each other and share their joys and sorrows together."
     },
     {
-      "q": "10.\nChapter 11 - From Here To There",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "11.\nChapter 12 - Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "12.\nChapter 13 - Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "13.\nChapter 14 - The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "14.\nChapter 15 - Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "15.\nChapter 16 - Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "16.\nChapter 17 - Here Comes A Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "17.\nChapter 18 - A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "18.\nChapter 19 - Our Friends - Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "19.\nChapter 20 - Drop By Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "20.\nChapter 21 - Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "21.\nChapter 22 - Left - Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "22.\nChapter 23 - A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "23.\nChapter 24 - Web Of Life\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nS.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "What are the features of a good house?",
+      "a": "The features of a good house are as follows:\n\u2022 Our houses must have a good drainage system to carry away the dirty water. Dirty water is the breeding house for mosquitoes and germs.\n\u2022 Our houses must have open spaces in front or back of our house and balconies also to get enough sunlight and clean air.\n\u2022 They should have sufficient doors and windows\n\u2022 Should have different or separate places for different purposes like cooking, eating sleeping, bathing, resting, studying and storage.\n\u2022 The sanitary system in the house should be good.\n\u2022 There should be proper water supply and storage system for continuous availability of good water"
     }
   ],
   "6": [
     {
-      "q": "1.\nClass 3 EVS Living in Harmony Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Did all the children in the class eat the same food items yesterday? Why?",
+      "a": "No, because different children come from different families. They can be even from different regions of India."
     },
     {
-      "q": "2.\nClass 3 EVS Living in Harmony Worksheets\nChapter-wise NCERT Solutions Class 3 EVS\nSl. No\nClass 3 EVS Chapter-wise NCERT Solutions\n1\nChapter 1: Family and Friends Solutions\n2\nChapter 2: Going to the Mela Solutions\n3\nChapter 3: Celebrating Festivals Solutions\n4\nChapter 4: Getting to Know Plants Solutions\n5\nChapter 5: Plants and Animals Live Together Solutions\n6\nChapter 7: Water\u2014 A Precious Gift Solutions\n7\nChapter 8: Food We Eat Solutions\n8\nChapter 9: Staying Healthy and Happy Solutions\n9\nChapter 10: This World of Things Solutions\n10\nChapter 11: Making Things Solutions\n11\nChapter 12: Taking Charge of Waste Solutions\nRelated Important Links for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for EVS Class 3-\nSr.No\nImportant Links for Class 3 EVS\n1\nClass 3 EVS NCERT Book\n2\nClass 3 EVS Revision Notes\n3\nClass 3 EVS Sample Papers\n4\nClass 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "You must have noticed that in the picture (NCERT Textbook page 36) there is one child in whose house no food was cooked. What could be the reason?",
+      "a": "There could be many reasons like:\nThe child\u2019s family is too poor to afford two square meals in a day.\nChild\u2019s mother could be sick and hence could not cook meal."
+    },
+    {
+      "q": "Has it ever happened to you that on some day you were very hungry but there was nothing to eat? If yes, why?",
+      "a": "Yes, this happened twice once when we ran out of the gas cylinder. And the other day when the water supply was disturbed and so my mother was unable to cook anything. After that, we ordered food from a restaurant."
+    },
+    {
+      "q": "Put a circle on the things that you eat often. (Rice, wheat, barley, oats, maize, millet, kappa (tapioca), ragi)",
+      "a": "Rice, wheat, oats"
+    },
+    {
+      "q": "Find out where each of these things is eaten more. Rice, Wheat, Maize, Millets",
+      "a": "Rice is eaten more in Bihar, West Bengal, Orissa, Assam, Tamil Nadu, Kerala, Andhra Pradesh, etc.\n\u2022Wheat is eaten more in Punjab, Haryana, Madhya Pradesh\n\u2022Maize is eaten more in Uttar Pradesh, Punjab, Rajasthan\n\u2022Millet is eaten more in Rajasthan."
+    },
+    {
+      "q": "Find out and write what all can be prepared from rice and wheat.",
+      "a": "Things which can be prepared from wheat: Chapatti, halwa, cake, slice bread, poori, pua, etc. Things which can be prepared from rice: Pulao, dosa, idli, uttapam, kheer, biryani etc"
+    },
+    {
+      "q": "Why do we cook food?",
+      "a": "We cook food because some food items are hard to digest and cooking\ni. Adds flavour and aroma to the food\nii. Makes them soft, tasty and easy to digest.\niii. Kills germs and protects us from diseases."
+    },
+    {
+      "q": "What would happen if we overcook our food?",
+      "a": "Overcooking the food is harmful as the nutrients are destroyed and we do not get proper nutrition. The longer a food is cooked, the greater the loss of nutrients. Some nutrients, particularly water-soluble vitamins, are lost during the cooking process. Raw fruits and vegetables may contain more nutrients like vitamin C and B vitamins."
+    },
+    {
+      "q": "Write a short note on proteins",
+      "a": "Proteins are they are a group of body-building nutrients. They help us grow and repair the injured parts of our body. Examples: milk and milk products, fish, eggs, beans, pulses, meat etc. We need to eat protein foods every day. Protein is essential for building, maintaining, and repairing the tissues in our body. As well as providing us with protein, these foods contain other essential nutrients."
+    },
+    {
+      "q": "What is the use of Vitamins and minerals?",
+      "a": "Vitamins and minerals are a group of protective nutrients. They protect us from various diseases and infections. Vitamins and minerals are required in small quantities for our good health and growth.  Examples: fruits, vegetables, milk and milk products, nuts, etc. Eating protective food items prevent us from falling sick."
     }
   ],
   "7": [
@@ -747,38 +711,118 @@ export default {
   ],
   "8": [
     {
-      "q": "1.\nClass 3 EVS Food We Eat Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Which of the birds mentioned in the lesson have you seen? Write their names.",
+      "a": "I have seen the following birds- sparrow, eagle, parrot, pigeon and crow."
     },
     {
-      "q": "2.\nClass 3 EVS Food We Eat Worksheets\nChapter-wise NCERT Solutions Class 3 EVS\nSl. No\nClass 3 EVS Chapter-wise NCERT Solutions\n1\nChapter 1: Family and Friends Solutions\n2\nChapter 2: Going to the Mela Solutions\n3\nChapter 3: Celebrating Festivals Solutions\n4\nChapter 4: Getting to Know Plants Solutions\n5\nChapter 5: Plants and Animals Live Together Solutions\n6\nChapter 6: Water\u2014 Living in Harmony\n7\nChapter 7: Water a Previous Gift Solutions\n8\nChapter 9: Staying Healthy and Happy Solutions\n9\nChapter 10: This World of Things Solutions\n10\nChapter 11: Making Things Solutions\n11\nChapter 12: Taking Charge of Waste Solutions\nRelated Important Links for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for EVS Class 3-\nSr.No\nImportant Links for Class 3 EVS\n1\nClass 3 EVS NCERT Book\n2\nClass 3 EVS Revision Notes\n3\nClass 3 EVS Sample Papers\n4\nClass 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "Now go outside and look for birds on trees, in water, on the ground, in and around bushes. How many birds could you see?",
+      "a": "I can see around 10 to 15 birds."
+    },
+    {
+      "q": "Given below are pictures of beaks of birds. Look at them carefully. Identify the birds and write their names.",
+      "a": "Parrot, Crow, Peacock, Eagle, Crane."
+    },
+    {
+      "q": "For what other tasks are feathers useful for birds besides flying?",
+      "a": "The other tasks which feathers of a bird help in are that:\n\u2022 They help in protection and maintaining the body temperature.\n\u2022 They are water resistant, which helps to keep birds dry in the rain or in the water.\n\u2022 They help the body to be lighter and aids during flight.\n\u2022 Dark-coloured feathers even protect them against the sun."
+    },
+    {
+      "q": "Where do sparrows and pigeons usually make their nests and why?",
+      "a": "Sparrows and pigeons like to live close to humans. They make their nests in any corner of a house or building. Pigeons may nest in stairwells, in rooms of abandoned buildings, or rain gutters. The main requirement for a sparrow and pigeon nesting site is that it is dry and protected on a flat surface. They usually like to nest in attics, on roofs, ledges, eaves, and under bridges."
+    },
+    {
+      "q": "Define \u2013 Incubation, Hatching",
+      "a": "1. Incubation- After laying eggs, the birds sit on them to keep them warm (to keep them at the proper temperature and to ensure normal development), this is called the INCUBATION period\n2.Hatching-  When the right time comes, the egg shell cracks and the baby bird(chick) comes out. This process is called HATCHING."
+    },
+    {
+      "q": "What material do the birds use to make their nests?",
+      "a": "Birds use grass, straws, twigs, and leaves or from human-made materials like paper, plastic, and yarn to build their nest. They use their beaks to build nests. Nests can be found almost anywhere \u2013 on the ground, in trees, in burrows, on the sides of cliffs, in and on human-made structures, etc. Females typically build nests, but sometimes both parents or just the male will build it."
+    },
+    {
+      "q": "Why do birds protect their baby birds?",
+      "a": "Most of the baby birds are helpless, blind and without feathers, so the parent birds protect them and feed them until they grow their feathers and fly away."
+    },
+    {
+      "q": "Write a short note on the claws of the birds.",
+      "a": "Different birds have different types of claws.\n\u2022 Birds like crows, sparrows and maynas have long, slender claws which help them to perch on the branches of the trees.\n\u2022 Birds like hen use their claws to scratch the ground for seeds.\n\u2022 Parrots use their claws for holding the food while eating and to climb up the trees."
+    },
+    {
+      "q": "Write the names of two body parts which help birds to find their food and eat it.",
+      "a": "The three body parts which birds use to find their food and eat it are-\n\u2022 their beak with which they catch food and make nests. Birds use beaks for just about everything: building nests, feeding their young, cleaning their feathers, defending themselves and eating.\n\u2022 Claws with which they catch and hold their food so that they can eat it. Claws on the feet are used for grasping the prey, for perching, for scratching the ground or for fighting"
     }
   ],
   "9": [
     {
-      "q": "1.\nClass 3 EVS Staying Healthy and Happy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How did Appu know that the banana trees needed water?",
+      "a": "As the banana trees were dropping and it\u2019s leaves were looking dry, Appu came to know that the trees needed water. When they were watered, the trees became alive. This is how Appu understood that the banana trees needed water."
     },
     {
-      "q": "2.\nClass 3 EVS Staying Healthy and Happy Worksheets\nConclusion\nChapter 9, \"Staying Healthy and Happy,\"\nhighlights the essential aspects of health and well-being, teaching students the importance of a balanced diet, regular exercise, and good hygiene. The chapter not only emphasises physical health but also addresses mental well-being, encouraging young learners to engage in activities that bring joy and relaxation. The NCERT Solutions for this chapter enhance understanding by providing clear explanations, fun activities, and practical tips for maintaining a healthy lifestyle. By promoting awareness and responsibility towards their health, students are empowered to make informed choices that contribute to their happiness and quality of life. Overall, this chapter serves as a valuable guide for fostering a healthy mindset in children as they grow and develop.\nChapter-wise NCERT Solutions Class 3 EVS\nS.No\nClass 3 EVS Chapter-wise NCERT Solutions\n1\nChapter 1: Family and Friends Solutions\n2\nChapter 2: Going to the Mela Solutions\n3\nChapter 3: Celebrating Festivals Solutions\n4\nChapter 4: Getting to Know Plants Solutions\n5\nChapter 5: Plants and Animals Live Together Solutions\n6\nChapter 6: Living in Harmony Solutions\n7\nChapter 7: Water - A Precious Gift Solutions\n8\nChapter 8: Food We Eat Solutions\n9\nChapter 10: This World of Things Solutions\n10\nChapter 11: Making Things Solutions\n11\nChapter 12: Taking Charge of Waste Solutions\nRelated Important Links for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS\u2013\nS.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
+      "q": "From where do the plants growing around your house get water?",
+      "a": "Most of the plants get water from rain. We also water them regularly."
     },
     {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Appu drank water from the river till he was happy. Have you seen animals drinking water? Where?",
+      "a": "Yes, I have seen cats, dogs, and cows drinking water around my house. I also have a pet dog which also drinks water after eating its food or after coming back from a walk."
     },
     {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
+      "q": "Have you ever given water to any animal? If yes, which animal?",
+      "a": "Yes, I have given water to a cow and even to my pet dog."
     },
     {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
+      "q": "Some animals are not given water by anyone. From where do they drink water?",
+      "a": "Such animals drink water from ponds, lakes, and rivers."
     },
     {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "The poet saw many things in the clouds. Have you ever seen anything in the clouds?",
+      "a": "Yes, I have seen a dragon, horse, and bird shapes in the clouds."
+    },
+    {
+      "q": "What all do the clouds do?",
+      "a": "Clouds are formed when the water from the rivers, oceans, and seas gets evaporated. It rises and reaches the atmosphere in the form of vapour. Then it condenses there in the form of clouds. When the clouds become too heavy and are unable to hold any more water, they release water and cause rains."
+    },
+    {
+      "q": "Have you ever seen a rainbow? When can you see a rainbow?",
+      "a": "Yes, I have seen rainbows twice. Rainbows can be seen when sun rays from behind fall on rain drops."
+    },
+    {
+      "q": "How do you feel when it rains?",
+      "a": "I feel extremely happy when it rains. I enjoy drinking something hot with pakoras when it rains. I also make a paper boat and sail it in water during rain."
+    },
+    {
+      "q": "Apart from clouds, what do you see when it rains?",
+      "a": "When it rains, it usually is accompanied with thunder, lightning and strong winds."
+    },
+    {
+      "q": "What happens when it rains?",
+      "a": "When it rains, the weather becomes very cold. The sky gets dark. Earth releases a soothing fragrance."
+    },
+    {
+      "q": "When it rains, making paper boats and floating them on water is really fun. Isn\u2019t it?",
+      "a": "Yes, it is so much fun!"
+    },
+    {
+      "q": "What would happen if plants do not get water?",
+      "a": "Plants need nutrients from the soil, water, and light from the sun to grow and stay alive. If plants do not get water, they would die. When plants are not watered properly they droop. Water enters a plant through its stem and travels up to its leaves. When a plant is properly hydrated, there is enough water pressure to make the leaves strong and sturdy and when a plant doesn\u2019t get enough water, the pressure inside the stems and leaves drops and they droop."
+    },
+    {
+      "q": "What is a rainbow?",
+      "a": "Rainbow is an arch of colours which is visible in the sky and caused by the falling and splitting of the sun\u2019s light by rain or other water droplets in the atmosphere. The colours of the rainbow are generally said to be red, orange, yellow, green, blue, indigo, and violet."
+    },
+    {
+      "q": "Why do farmers depend upon rain water?",
+      "a": "Farmers depend on rain water to harvest their cultivation. Monsoon or rainwater is one of the most important season for farmers for a country so dependent on its agro-industry. Most of the Indian agricultural land is irrigated by the monsoon. Crops such as wheat, rice, pulses, which are a staple in Indian diets, need heavy rainfall to grow."
+    },
+    {
+      "q": "How is rain is the main source of water?",
+      "a": "As the rainwater falls on the ground; the earth absorbs it. And by this, ground water level increases which helps us in a variety of ways like for irrigation process and when we have scarcity of water. So the rain water is considered the main source of water in the earth. Rain is thus the liquid water in the form of droplets that condenses from atmospheric water vapor and then become heavy enough to fall. Rain is a major component of the water cycle and is responsible for depositing most of the fresh water on the Earth."
+    },
+    {
+      "q": "Why do Appu need water?",
+      "a": "Appu needed water for watering the banana tree as the leaves of the banana tree were drooping without water. So Appu decided to water it so that the banana tree would become fine and leaves would not droop."
+    },
+    {
+      "q": "Why do plants get a new look after rainfall?",
+      "a": "After it rains, there is more water available in the soil for plants. When plants take in that water, they are also taking in nitrogen from the organic matter that\u2019s in the soil. When this occurs, a part of the nitrogen is released back into the soil. Ultimately, nitrogen causes growth and helps make things green."
     }
   ],
   "10": [
@@ -829,28 +873,40 @@ export default {
   ],
   "11": [
     {
-      "q": "1.\nClass 3 EVS Making Things Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How did you like the poem?",
+      "a": "I loved the poem a lot and thoroughly enjoyed it."
     },
     {
-      "q": "2.\nClass 3 EVS Making Things Worksheets\nConclusion\nNCERT Solutions for Class 3 EVS Chapter 11, \"Making Things,\" help students understand how various objects around them are created, from toys to simple tools. These solutions provide easy explanations, detailed steps, and engaging questions that make learning fun and practical. With free access to the PDF, students can conveniently revise the chapter anytime, ensuring they understand the concepts clearly and develop an interest in how things are made. These solutions are a great way to support their learning journey and boost creativity.\nChapter-wise NCERT Solutions Class 3 EVS\nS.No\nClass 3 EVS Chapter-wise NCERT Solutions\n1\nChapter 1: Family and Friends Solutions\n2\nChapter 2: Going to the Mela Solutions\n3\nChapter 3: Celebrating Festivals Solutions\n4\nChapter 4: Getting to Know Plants Solutions\n5\nChapter 5: Plants and Animals Live Together Solutions\n6\nChapter 6: Living in Harmony Solutions\n7\nChapter 7: Water - A Precious Gift Solutions\n8\nChapter 8: Food We Eat Solutions\n9\nChapter 9: Staying Healthy and Happy Solutions\n10\nChapter 10: This World of Things Solutions\n11\nChapter 12: Taking Charge of Waste Solutions\nRelated Important Links for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS\u2013\nS.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
+      "q": "Have you ever travelled in a train? When?",
+      "a": "Yes, I have traveled in a train every time when I have gone to my grandma\u2019s place in summer holidays."
     },
     {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Can a train move anywhere? Why?",
+      "a": "No, a train cannot move anywhere. It can move only on the tracks made for it."
     },
     {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
+      "q": "List any two situations where we need to call emergency vehicles.",
+      "a": "Two situations where we need to call emergency vehicle are-\ni. In case of an accident, we need to call an ambulance\nii. In case of a fire, we need to call fire engines or fire brigades."
     },
     {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
+      "q": "How can we control noise pollution in our city?",
+      "a": "We can control noise pollution by doing the following-\ni. Avoid playing loud music\nii. Avoid the honking of cars\niii. Not using mikes with speakers during parties or weddings\niv. Keeping airplanes away from the cities"
     },
     {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "Rajat has to travel in a desert area. Which means of transport would he prefer and why?",
+      "a": "Rajat would prefer a desert jeep or a camel. He can travel by a desert jeep as the wheels of a jeep is designed in a such a way that it can move smoothly on sand. Even, camels are the most preferred means of transport in a desert as they can move easily on the hot sand with the help of her long legs and padded feet."
+    },
+    {
+      "q": "Classify the different means of transport.",
+      "a": "The different means of transport are-\ni. Land transport- The vehicles which run on land are called land transport. There are two types of land transport-\na. Road transport like bus, scooter, car, cycle etc.\nb. Railways- trains, metro\nii. Water transport- Water transport is a kind of transportation by using water. It means the process of moving people or goods by boat, ship over a sea, ocean or river.\niii. Air transport- Air transport is the fastest means of movement from one place to the other. It is the movement of passengers and cargo by aircraft such as airplanes and helicopters."
+    },
+    {
+      "q": "How did the people travel in the earlier times?",
+      "a": "In the earlier times, so many options were not available for travelling that is why people travelled by foot only and they carried their goods on animals like horses, donkeys etc. Some travelers also used livestock like horses to travel long distances. People travelled by horseback or on the rivers also. In earlier days there were predefined routes to travel like silk routes etc. But nowadays people build their way as per their need and facilities."
+    },
+    {
+      "q": "How has transportation changed in comparison to the earlier times?",
+      "a": "Transport of both goods and people has now become much faster, easier and cheaper. Modern transport is engine driven whereas the old transport was animal driven or human had to do everything themselves. Modern transportation system is easier and faster than before. As new inventions and discoveries have been made and applied to transport, travel time has decreased and the ability to move more and larger loads increased."
     }
   ],
   "12": [
@@ -867,1022 +923,294 @@ export default {
   ],
   "14": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What kind of work are people doing in both the families?",
+      "a": "Venu\u2019s Family: Mother is preparing foods; father is cleaning the floor. All the people of the family are eating food together. Mother and father are reading newspapers and Venu is cycling.\nRani\u2019s Family: Mother is cooking food. Males of the family are having food and Rani is serving the food. Rani and her mother are fetching water, and Rani\u2019s father is reading newspaper."
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "Is your family like any one of these families? If yes, like which one? How is your family like theirs?",
+      "a": "My family is like Venu\u2019s family. Everyone in my family shares work. All of us eat together."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Do all the people in your family eat together? If not, why?",
+      "a": "All people in my family eat together during dinner time."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "Who eats last in the family?",
+      "a": "Nobody, as we try to eat together most of the time."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Who does not help in cooking food in the family and why?",
+      "a": "I do not help in cooking because I do not know how to cook."
     },
     {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
+      "q": "What do we get from our food?",
+      "a": "Food is something that provides nutrients. Nutrients are substances that provide: energy for activity, growth, and all functions of the body such as breathing, digesting food, and keeping warm; materials for the growth and repair of the body, and for keeping the immune system healthy."
     },
     {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Give reasons why should we eat vegetables and fruits?",
+      "a": "Fruit and vegetables are a good source of vitamins and minerals, including vitamin C and potassium. They\u2019re an excellent source of dietary fibre, which can help to prevent constipation and other digestion problems. A diet high in fibre can also reduce your risk of bowel cancer. They are also called protective food items which prevent us from falling sick often."
     },
     {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
+      "q": "Who are vegetarians? How are they different from non-vegetarians?",
+      "a": "A vegetarian is someone who doesn\u2019t eat meat, and mostly eats foods that come from plants, like grains, fruits, vegetables, and nuts. Some stricter vegetarians avoid more than just meat. They also avoid animal products, which are non- meat foods that come from animals.\nNon-vegetarian refers to those who eat food items containing meat (red meat, poultry, seafood, or the flesh of any other animal), and sometimes, eggs."
     },
     {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
+      "q": "We should eat the dinner early and it should not be heavy?",
+      "a": "Eating an early dinner will help you with lower blood pressure, better sleep, improve digestion, better metabolism to reduce obesity and many chronic diseases risk. Moreover, when you eat late, the calories your intake don\u2019t get digested properly. As a result, they are stored as fat in your body. Eating late regularly conditions your body to store the calories as fat, which leads to weight gain. This can also give you problems like indigestion and heartburn."
     },
     {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
+      "q": "Overeating is harmful for us. How?",
+      "a": "When you eat, your body uses some of the calories you consume for energy. The rest gets stored as fat. Consuming more calories than you burn may cause you to become overweight or obese. This increases your risk for cancer and other chronic health problems."
     },
     {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What do most people overeat?",
+      "a": "Many people eat for reasons other than hunger, such as being stressed, tired, or sad. A lot of people also overeat because of certain habits, such as eating while distracted or eating too quickly."
     },
     {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "Why is food important for us?",
+      "a": "Food gives us energy and nutrients, which help our growth and development. The body needs a lot of nutrients like protein, carbohydrate, fat, vitamins and minerals to stay healthy. Food is something that provides nutrients, energy for activity, growth, and all functions of the body such as breathing, digesting food, and keeping warm. It is the material needed for the growth and repair of the body, and for keeping the immune system healthy."
     }
   ],
   "15": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why did the crow need a pot?",
+      "a": "The crow needed a pot to fill water. He wanted to wash his beaks with water."
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "Who all helped the crow to make the pot?",
+      "a": "Following things and people helped the crow to make the pot: Blacksmith, trowel, clay pit and potter."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What things did the potter need?",
+      "a": "Potter needed clay from the clay pit."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "Are there utensils made of clay in your house? Which are these?",
+      "a": "Yes, there is a flower vase made of clay in my house."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
+      "q": "If someone gives you clay, will you be able to make some utensils from it?",
+      "a": "No, I will not be able to make utensils from it."
     },
     {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
+      "q": "If we had pots made only of clay and all of them had broken or got spoilt, what would we have done?",
+      "a": "We would have to make another pot again."
     },
     {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Long, long ago, when people did not have any pots, what did those people do?",
+      "a": "When people did not have pots, they used leaves and shells of pumpkin to hold something."
     },
     {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
+      "q": "Why would people have made pots?",
+      "a": "They needed something to store water and milk. So they made pots."
     },
     {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
+      "q": "During earlier days, when people did not have any pots, what did those people do?",
+      "a": "When people did not have pots, they used leaves and shells of pumpkin to hold something"
     },
     {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
+      "q": "How can we prepare a bowl from a ball of clay?",
+      "a": "We can prepare a bowl from a ball of clay by:\n\u2022 Kneading the clay and making a big ball.\n\u2022 Using the thumb make a small pit in the centre by pressing.\n\u2022 Leaving it to dry and then decorating it."
     },
     {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why are the clay pots baked in fire?",
+      "a": "The clay pots could be made stronger by baking them in fire. So the clay pots are baked in fire."
     },
     {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
+      "q": "What are the different methods involved in pottery?",
+      "a": "The two different techniques of pottery are:\n\u2022 Hand built pottery and\n\u2022 Wheel thrown pottery"
     },
     {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "Write about the different methods involved in hand built pottery.",
+      "a": "Different methods involved in hand built pottery are:\n\u2022 Pinch pot,\n\u2022 Coil pot and\n\u2022 Slab pot.\ni) Pinch pot: made by kneading the clay and pressing it into the shape of dish, bowl, cup or pot.\nii) Coil pot: the clay is made into long, round clips coiled and stacked to form other shapes.\niii) Slab pot: Slabs of clay are used to form clay boxes or other geometric shapes."
     }
   ],
   "16": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How many games do you know which we play with a ball? Write their names in the ball.",
+      "a": "The games which are played with a ball are:\nBasketball Football, Cricket, Table Tennis, Hockey"
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "Have you heard of Sania Mirza? She also plays a ball-game. Find out which one and write its name.",
+      "a": "Yes, I have heard of Sania Mirza. She is a famous tennis player."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Which game do you like the most?",
+      "a": "I like badminton the most."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "Find out from the elders in your family or in the neighbourhood \u2013 Which games did they play when they were children?",
+      "a": "They used to play cricket, marbles, gilli-danda, hide and seek, etc."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What are outdoor games?",
+      "a": "Outdoor games are those games which are played in the open, and not in a closed environment. They usually require high physical activity and all players are spread across on the ground. Some examples of outdoor games are- badminton, cricket, kabaddi, volleyball and hockey. Outdoor games keep the kids active and can boost their physical stamina and fitness. Playing outdoor games can also strengthen their muscles and bones, build immunity, and lower the risk of many diseases like diabetes, heart problems, and obesity and improve their eyesight."
     },
     {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
+      "q": "What are the disadvantages of outdoor games?",
+      "a": "The disadvantages of outdoor games are:\n\u2022 Children who like outdoor activities give less time to study.\n\u2022 Many times children keep on playing for a long time, due to which they have a lot of physical strain. Due to which they become physically tired. And they are not able to participate in any other activities\n\u2022 There is more exposure to dust, germs and infections and thus children are prone to illness"
     },
     {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How many players can play the hopscotch?",
+      "a": "Hopscotch can be played with one or more people. Players take turns, standing in a line at the start/finish line. Each player will go through the following steps: Toss a stone in square one."
     },
     {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
+      "q": "How is chess played?",
+      "a": "Chess is a board game for two players. It is played in a square board, made of 64 smaller squares, with eight squares on each side. Each player starts with sixteen pieces: eight pawns, two knights, two bishops, two rooks, one queen and one king. Chess is one of the oldest and most popular board games. It is played by two opponents on a checked board with specially designed pieces of contrasting colours, commonly white and black. The objective of the game is to capture the opponent\u2019s king."
     },
     {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "What is snakes and ladders?",
+      "a": "Snakes and ladders is a board game for two or more players. The object of the game is to find the way to one\u2019s game piece as per the die rolls starting from the bottom square to the top square by climbing ladders but slowed down by falling down snakes. The game is a simple race."
     }
   ],
   "17": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why do people collect stamps?",
+      "a": "Some people collect stamps as a hobby. Stamp collecting is called philately. Stamp collectors get stamps by soaking them off letters. They also buy stamps from the post office or shops. Collectors keep their stamps clean by using a tool called stamp tongs to handle them. They carefully place their stamps in books called albums."
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "What do you understand by the term communication?",
+      "a": "Communication is the act of giving, receiving and sharing information. In other words, talking or writing and listening or reading are the parts of communication. It is the process of exchanging words, signs, or information with others. It can be done either verbally or non -verbally. Communication enables us to pass information. Effective communication brings people closer and together"
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why do we need to communicate?",
+      "a": "We need to communicate to-\ni. Send and receive messages\nii. Express their views and opinions\niii. Share our thoughts\niv. Gather and share information\nv. To comment and ask questions,\nvi. express wants and needs,\nvii. develop social relationships, social etiquette, etc."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "What is a telephone?",
+      "a": "Telephone is a two- way means of communication where two people can give and receive messages instantly. It is also the fastest means of communication. Telephones make it easier for businesses to communicate with each other. It cuts down on the amount of time it took to send messages to each other."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How did people communicate in the olden days?",
+      "a": "The older methods of communication were cave paintings, smoke signals, symbols, carrier pigeons, and telegraph. Cave Paintings are the oldest methods of communicating. Major events were also recorded through these paintings. They are usually found on the walls and ceilings of caves. Different signs and symbols were also used to deliver messages. Pigeons are known well for their directions. They were known to find their home, even after travelling long distances. People used to attach small letters to their necks, hoping they would fly to the receiver."
     },
     {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
+      "q": "Why are stamps put on letters?",
+      "a": "Stamps are a pre-paid receipt. You buy the stamp. You put the stamp on the envelope. The post office will deliver the letter because they can see they have received money from you for that letter. Thus by putting a stamp on the letter, we are actually paying the postage charges to the post office so that they deliver our letter from one point to another."
     },
     {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What type of means of communication should be used by-",
+      "a": "a. Government \u2013 It can use mass means of communication like radio, T.V., public address systems in the local villages\nb. School-  A school can announce through the PA system, Public Address system or through the school website."
     },
     {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
+      "q": "What can we send through e-mail?",
+      "a": "We can send audios, video clips, photos, messages etc. through e-mail."
     },
     {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What are cellular or mobile phones?",
+      "a": "Cellular or mobile phones are basically small computers. Besides calling, they can be used for sending an email, browsing the internet, playing music and games, and many other functions that computers can perform. They also allow us to store pictures, text and audio etc."
     },
     {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "What are the harmful effects of mobile phones especially for children?",
+      "a": "With children glued to the mobile phone during their free time, they don\u2019t take part in physical activities outside the confines of home and as a result they don\u2019t get fresh air.\nThis puts them at risk for obesity and other illnesses like headache, depression, Sleep disorders which can later develop into harmful diseases such as diabetes and hypertension. Long usage of mobile phone also causes eye strains."
     }
   ],
   "18": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What is the similarity in the roofs of Chameli\u2019s and Bhupen\u2019s houses?",
+      "a": "The between in the roofs of Chameli\u2019s and Bhupen\u2019s houses is in the roofs which are slant."
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "How do roofs help in their areas?",
+      "a": "The slanting roofs do not let the water/snow get accumulated on them."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How do people go up in multistoried buildings?",
+      "a": "People go up in multistoried buildings through stairs or lifts."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "How is a houseboat different from other houses?",
+      "a": "Houseboats are different from other houses because houseboats don\u2019t stay at one place, they keep moving unlike other houses."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Would you like to live in such a house? Why?",
+      "a": "Yes, I would like to live in such a house. Then I can take my house to different beautiful places."
     },
     {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
+      "q": "Why do the people in Rajasthan plaster the walls of their homes with mud?",
+      "a": "The people in Rajasthan plaster the walls of their homes with mud because plastering of the walls with mud helps in keeping the inner side of the house cool. The weather in Rajasthan is hot and dry hence the walls are plastered with mud to keep the house cool."
     },
     {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What are tents?",
+      "a": "Tents are temporary structures which are used by nomads, army officers and sometimes tourists. Tents are portable shelters that consist of a firm structure and are covered by some stretchy substance. Tents are used for a wide variety of purposes, including recreation, exploration, military camps, and public gatherings such as circuses, religious services etc."
     },
     {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
+      "q": "What are slums?",
+      "a": "Slums are those areas which have temporary shelters for poor, needy people. It is a highly populated urban residential area that consists of tightly packed houses which are of weak built quality. The infrastructure in slums is often damaged or incomplete, and they are mainly inhabited by poor people. These areas do not have proper drainage and are prone to diseases."
     },
     {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why do we find multi-storeyed buildings in big cities?",
+      "a": "In cities, the space is less and the population is more. So, the cities need such buildings which do not occupy much space and that is why there are buildings which are build one above the other and are multi storeyed to accommodate maximum population."
     },
     {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
+      "q": "How is a houseboat different from other houses?",
+      "a": "A houseboat is different from other houses because it is a movable house which floats on water whereas the other houses like Huts, Flats, Bungalows are immovable and stay at one place."
     },
     {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What are Kutcha house and pucca house?",
+      "a": "A house made of mud, dry leaves, straw and bamboo and is found in most of our villages is a kutcha hose. It is not very strong whereas the house which is made of bricks, steel and cement is called puccaa house. It is so strong. Most towns and cities have pucca houses. Big cities also have double-storeyed or multi-storeyed houses."
     },
     {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
+      "q": "How is climate responsible for different lifestyles and housing?",
+      "a": "Climate plays a very important role in the lifestyle and housing of people as any change in the climate increase the frequency and strength of extreme events (such as floods, droughts, and storms) that threaten human health and safety. Our lifestyle and housing depends largely on the climate of the place we are living in. For example- If we are staying in a hot and dry area like Rajasthan, our houses will be built in such a way that we can bear the heat of the area and the houses are cool from inside. Similarly, if we are staying in a hilly area, the houses will be such that we are not affected by heavy rain and snow. If we are staying in a flood prone area, the house should be such that it does not get affected by flooding."
     },
     {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Name a few houses made for animals.",
+      "a": "Few houses made for animals are:\n1. Stable- where horses live\n2. Den \u2013 where lion lives\n3. Shed \u2013 where cows and buffaloes live\n4. Coop- where hens live\n5. Kennel \u2013where dogs live"
     },
     {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "Why is finding shelter in big cities a problem?",
+      "a": "New Delhi is the capital of India. People from villages and towns come to big cities like Delhi in search of work. These people often settle in the city. There are a large number of people living here and the space is less. Many people do not have houses at all.  People sleep wherever they find place \u2013 on the road, on the footpath, at the station. So, shelter is a major problem in big cities."
     }
   ],
   "19": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why do you feed these animals?",
+      "a": "We feed animals because they too feel hungry and need food."
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "Which animal did most children feed?",
+      "a": "Most of the children feed dogs."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What did they feed?",
+      "a": "They feed eggs, meat and biscuits."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "If there had been birds then they would have eaten the insects. Justify the statement.",
+      "a": "Birds actively hunt insects especially during the breeding season, when they need protein-rich prey to feed to their nestlings. They get this energy by capturing billions of potentially harmful herbivorous insects and thus by eating them they also protect the fruits and vegetables growing on the trees."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why do we build shelters for our pets?",
+      "a": "Pets and domestic animals need a shelter to protect themselves from strong winds, enemies and rain and to raise their young ones."
     },
     {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
+      "q": "What are pests?",
+      "a": "Pests are unwanted visitors in our house. They bother us and spread many diseases. Rats, lizards, ants and cockroaches are some common house pests. We share our homes with some of these unwanted visitors who are not our pets but are called pests. Pests are those insects or small animals that are harmful. Cockroaches, lizards, mosquitoes, and rats are some common house pests. They hide themselves during the day. We see them mostly at night. They come out of their hiding places in search of food. They carry germs of many diseases as they hide in dirty places. Pests are harmful for us because they hide in dirty places and come out at night in search of food and water. They spread many diseases and cause infection."
     },
     {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What can we do to keep our houses free from pests?",
+      "a": "To keep the pests away from the house in the following ways-\n\u2022 We must keep all the rooms, especially the kitchen clean.\n\u2022 We must also spray pesticides from time to time to keep away these pests."
     },
     {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
+      "q": "Why do animals move from one place to another?",
+      "a": "Animals move from one place to another in search of-\n\u2022 food and water.\n\u2022 shelter\n\u2022 protect themselves from enemies"
     },
     {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why is duck rearing profitable?",
+      "a": "Duck rearing is profitable and simple because ducks are \u2013\n(1) less unsafe bird and are disease resistance,\n(2) have longer egg-production life,\n(3) eggs are heavier and fetch a better price,\n(4) meat is slender and is relished by the people,\n(5) they do not need elaborate housing"
     },
     {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
+      "q": "Name any two animals who are responsible for keeping our surroundings clean.",
+      "a": "Vultures and Hyenas are scavengers and feed on dead matter found around on earth, they eat and thereby help in cleaning up the waste and keeping the surroundings clean."
     },
     {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Who are mammals?",
+      "a": "Mammals are animals such as humans, dogs, lions, and whales. Most female mammals give birth to babies rather than laying eggs, and all female mammals feed their young with milk. Mammals have hair on their body."
     },
     {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "How do animals reproduce?",
+      "a": "Animals reproduce mainly in two ways:\ni. by laying eggs\nii. by giving birth to the young ones\nSome animals do not produce young ones but lay eggs which have immature babies in them like, birds, frog, fish, snake etc whereas some animals give birth directly to their young ones like dogs, cats, monkeys, lion etc."
     }
   ],
   "20": [
@@ -1893,682 +1221,110 @@ export default {
   ],
   "21": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "With whom do you like to be more?",
+      "a": "I like to spend time with my sister and friends."
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "How would you feel if you always had to be alone?",
+      "a": "I would feel lonely and sad if I always need to be alone."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How are these people related to each other?",
+      "a": "Gurleen and Nagarajan are parents of Tanya and Samar. Tanya and Samar are siblings."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "What are hereditary features?",
+      "a": "Some features in the family members are passed down from one generation to another. These are called hereditary features. The traits or features which we acquire from our parents or grandparents which may include some habit, talent, medical condition or tone of voice etc. are called hereditary traits of a family. For example- If your father/mother/any one of the grandparent is a good dancer or a singer and you also are good at dancing or singing, that means you have inherited that trait from that person."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Who are foster parents and adopted children?",
+      "a": "Some children unfortunately lose their parents because of some reasons like death of the both the parents or one of the parent. So, they are adopted by other people who take care of them and look after them as their own children. Those people are called the foster parents of the children and the children are called adopted children."
     },
     {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "Who are Twins?",
+      "a": "Twins are basically two children born at the same time to the same mother. There are two types of twins \u2013 Identical Twins and Fraternal Twins. Identical twins look alike in physical appearance while Fraternal twins don\u2019t look like each other."
     }
   ],
   "22": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Who is sitting on your right?",
+      "a": "Ankita is sitting on my right."
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "What is in front of you?",
+      "a": "Blackboard is in front of me."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "On whose right are you sitting?",
+      "a": "I am sitting right side of Tanay."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "Which places and things will Ruchira find on her way from home to school? Write their names.",
+      "a": "Ruchira\u2019s house: House \u2192 Handpump \u2192 Tree \u2192 Well \u2192 Bus stop \u2192 Post Office \u2192 Hospital \u2192 Shop \u2192 Park \u2192 Tree \u2192 School."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What is a plan?",
+      "a": "A plan is a detailed drawing of a small area. It may be of a house, a building, a market or a residential area. The map of a room or a building is called a plan and it is made as per the scale."
     },
     {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
+      "q": "How are the maps useful to us?",
+      "a": "Maps are useful to us as they-\n\u2022 Show position of the things and places to others\n\u2022 Guide a person to reach any unknown place\n\u2022 Save a person from getting lost if he/ she do not know a place"
     },
     {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What are cardinal directions?",
+      "a": "Cardinal directions are the four directions, or cardinal points, are the four main compass directions: north, east, south, and west, commonly denoted by their initials N, E, S, and W respectively. There also some directions called sub directions. They are the directions which are between the four main directions, which are\n\u2022 North \u2013East\n\u2022 North-West\n\u2022 South-East\n\u2022 South-West"
     },
     {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
+      "q": "What are symbols? How are they useful to us?",
+      "a": "Symbol is a sign or a mark which is used to represent different things or land marks like temple, school, village etc. Symbols are useful as-\n\u2022 They make the reading of the map easy and simple\n\u2022 They help us to locate places easily on the map."
     },
     {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How does a compass help us to locate places?",
+      "a": "A compass is an instrument that is used by the people who travel a lot. It helps us to locate the four directions. The needle of the compass always points towards the North. Once you knoew where is north, it is easy to locate the other directions."
     },
     {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "What is the scale on a map?",
+      "a": "Map Scales are used to represent the virtual size of objects and virtual distances on the map as compared to the actual size of objects and actual distances on the ground. For example, a map scale of 1 inch to 1 mile states that 1 mile on the ground is represented as 1 inch on the map."
     }
   ],
   "23": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How is silk made?",
+      "a": "Silk is a natural fiber produced by the silkworm. Silkworms are the offspring of moths. They emit out thread from tiny holes in their jaws, which they use to spin into their egg-bearing cocoons. This entire production takes a mere 72 hours, during which time they produce between 500-1200 silken threads."
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "Why is washing of clothes important?",
+      "a": "Clothes need to be taken care of to ensure their long life and rich look. So, we need to wash them properly and take proper care of them\n\u2022 We must wash our clothes regularly in clean water, using soap or detergent powder.\n\u2022 We must take care that all the soap or detergent is washed away completely; otherwise the clothes may become discoloured and cause skin infections too.\n\u2022 White clothes need to be soaked in indigo powder (neel) and dried in the sun. They may also need to be bleached sometimes."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What is the oldest method of making a textile?",
+      "a": "Weaving is the oldest method of making yarn into fabric. The process of intertwining threads together is called weaving. Long threads are woven together to make cloth. A device called \u2018loom\u2019 helps in weaving the clothes."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
+      "q": "What does printing on cloth mean?",
+      "a": "Textile printing is the process of applying colour to fabric in definite patterns or designs. In printing, wooden blocks, stencils, engraved plates, rollers, or silk screens can be used to place colours on the fabric. It is a process of decorating textile fabrics by application of pigments, dyes, or other related materials in the form of patterns."
     },
     {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "Why do we need clothes?",
+      "a": "We all need clothes to cover our body and to protect ourselves from different weather conditions. We wear clothes to protect our body from heat, cold, dust, rain and germs. They make us look good and presentable."
     }
   ],
   "24": [
     {
-      "q": "1.\nClass 3 Poonam\u2019s Day Out Revision Notes",
-      "a": "Detailed solution available."
+      "q": "How are living things dependent on each other?",
+      "a": "Living things depend on each other directly or indirectly for fulfilling their basic requirements. Like plants give us oxygen to breathe and animals and humans give out carbon dioxide which is required by the plants to survive. Human beings and animals depend upon the plants for their foods. The food chain begins from the plants only. Human beings also depend upon animals for their food. So all the living things are dependent on each other for survival. We also get so many things from plants and animals"
     },
     {
-      "q": "2.\nClass 3\u00a0Poonam\u2019s Day Out Worksheets\nChapter 2: The Plant Fairy\nClass 3 EVS Chapter 2: The Plant Fairy enriches students' knowledge about plants and fosters curiosity and appreciation for nature. This chapter offers:\nDiscover the diverse types of plants around us and learn to identify various leaves, flowers, and trees.\nGrasp the fundamental concepts of different plant parts and their functions, including roots, stems, leaves, and flowers.\nLearn to observe and describe the unique features of plants, such as the texture, shape, and colour of leaves.\nEngage with the story of \"The Plant Fairy\" to understand how plants are integral to our environment and everyday life.\nImportant Study Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 2: The Plant Fairy",
-      "a": "Detailed solution available."
+      "q": "How do living things depend upon non- living things?",
+      "a": "We depend on each other and need the non-living things in our homes, like food, water, air, and furniture. Living things need nonliving things to survive. Without food, water, and air, living things die. Plants use water from the soil, carbon dioxide from the air, and energy from sunlight to make their own food. Their environment consists of physical factors\u2014such as soil, air, and temperature\u2014and also of other organisms. All living things depend on their environment to supply them with what they need, including food, water, and shelter."
     },
     {
-      "q": "1.\nClass 3 The Plant Fairy Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why is soil important?",
+      "a": "Soil is very important as:\n\u2022 It provides plants with grip for their roots and holds the necessary nutrients for plants to grow\n\u2022 it filters the rainwater and regulates the discharge of excess rainwater\n\u2022 It prevents flooding\n\u2022 it acts as a water filter and a growing medium that provides habitat for organisms,\n\u2022 it provides plants with essential minerals and nutrients.\n\u2022 It provides air for gaseous exchange between roots and atmosphere."
     },
     {
-      "q": "2.\nClass 3 The Plant Fairy Worksheets\nChapter 3: Water O\u2019 Water!\nNCERT Class 3 EVS Chapter 3: Water O\u2019 Water! teaches fundamental water concepts and encourages students to appreciate and responsibly manage this vital resource. This chapter offers:\nLearn about the essential role of water in our daily lives and how it supports all living organisms.\nDiscover the different water sources, including rivers, lakes, ponds, and rain, and understand how we access and use these sources.\nUnderstand the various uses of water in households, agriculture, and industries, highlighting its importance in everyday activities.\nImportant Study Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 3: Water O\u2019 Water!",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Water O\u2019 Water! Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Water O\u2019 Water! Worksheets\nChapter 4: Our First School\nEVS Class 3 Chapter 4: Our First School helps students appreciate the role of family as their first school, where they learn essential life skills and values. This chapter offers:\nUnderstanding the fundamental concepts of family structure and each family member's roles.\nLearning about the different types of families, including nuclear, joint, and extended families.\nGaining insights into the importance of family in providing love, care, and support.\nRecognising the values and traditions passed down through generations within a family.\nImportant Study Materials for NCERT Class 3 EVS Chapter 4: Our First School\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 4: Our First School",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Our First School Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our First School Worksheets\nChapter 5: Chhotu\u2019s House\nEVS Class 3 Chapter 5: Chhotu\u2019s House offers:\nDiscover how Chhotu finds and creates his new home, learning about different types of shelters.\nGrasp the fundamental concepts of what makes a house a home, focusing on the essential needs for comfort and safety.\nUnderstand the importance of living in a community and how Chhotu interacts with his neighbours.\nGain insights into the diverse ways people live and adapt to their environments, appreciating the uniqueness of each home.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Chhotu\u2019s House Revision Notes\n.\nChapter 6: Foods We Eat\nExplore the delightful food world with Chapter 6 of NCERT Solutions for Class 3 EVS. This chapter offers:\nUnderstanding the variety of foods we eat daily and where they come from.\nLearning about the different food sources, including plants and animals, and their importance in our diet.\nRecognising the importance of a balanced diet and the different nutrients our body needs to stay healthy.\nExploring traditional foods and recipes from different cultures, and understanding how food habits vary across regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Foods We Eat Revision Notes\n.\nChapter 7: Saying without Speaking\nNCERT Solutions for Class 3 EVS Chapter 7 provides comprehensive insights and practical knowledge, ensuring a deeper understanding of communication and its role. This Chapter offers:\nUnderstanding the ways people communicate and interact with their environment.\nExploring the sign languages and how it helps differently-abled people.\nImportant Study Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 7: Saying without Speaking",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Saying without Speaking Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Saying without Speaking Worksheets\nChapter 8: Flying High\nEVS Class 3 Chapter 8: Flying High offers:\nA journey into the world of birds and their habitats, understanding how they live and adapt.\nThey are discovering different bird species' fascinating characteristics and unique behaviours.\nThey are exploring the importance of birds in maintaining ecological balance and their role in the ecosystem.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 Flying High Revision Notes.\nChapter 9:\u00a0 It\u2019s Raining\nThis chapter offers:\nUnderstanding the water cycle and how rain contributes to it is essential for life on Earth.\nExploring different forms of precipitation, including rain, snow, and hail, and their environmental impact.\nDiscovering how plants and animals depend on rainwater for their survival and growth.\nExamining human activities that affect rainfall patterns and the environment.\nImportant Study Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 9:\u00a0 It\u2019s Raining",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 It\u2019s Raining Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 It\u2019s Raining Worksheets\nChapter 10: What is Cooking\nThis chapter offers:\nGrasping the basics of cooking and understanding how different ingredients combine to create delicious meals.\nExploring various cooking methods and their significance in preparing food.\nLearning about the importance of hygiene and safety while cooking.\nDiscovering the cultural aspects of cooking and how food connects people across different regions.\nAlong with Class 3 EVS NCERT Solutions, you can also refer to\nClass 3 What is Cooking Revision Notes\n.\nChapter 11: From Here to There\nNCERT Class 3 EVS Chapter 11 provides a comprehensive understanding of transportation, enhancing students' knowledge and appreciation of how we move from place to place. This chapter offers:\nDelve into the diverse ways humans and animals move from one place to another, exploring vehicles, animals, and more.\nFrom cars and buses to bicycles and animals, learn about the various modes of transportation people and animals use.\nDiscover why transportation is vital for connecting people and places, facilitating trade, and enabling travel.\nEngage in activities that highlight the significance of transportation and its impact on our daily lives.\nChapter 12: Work We Do\nNCERT Solutions for Class 3 EVS Chapter 12: Work We Do provides a holistic approach to understanding the significance of work and its impact on individuals and society. This chapter offers:\nUnderstanding the meaning and importance of work in our daily lives.\nExploring different types of work people do, from farming to various professions.\nRecognising the roles and responsibilities of workers in our society.\nDiscovering how different types of work contribute to our community and the world around us.\nImportant Study Materials for NCERT Class 3 EVS Chapter 12: Work We Do\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 12: Work We Do",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Work We Do Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Work We Do Worksheets\nChapter 13: Sharing Our Feelings\nNCERT Solutions for Class 3 EVS Chapter 13 provides a nurturing environment for children to understand and appreciate the diversity of human emotions. This chapter offers:\nUnderstanding the importance of emotions and how they shape our interactions with others.\nExploring feelings like happiness, sadness, anger, and empathy, and learning how to express and manage them.\nRecognising the role of communication in sharing our feelings effectively.\nEngaging in activities and exercises that help children express their emotions healthily and constructively.\nImportant Study Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 13: Sharing Our Feelings",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Sharing Our Feelings Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Sharing Our Feelings Worksheets\nChapter 14: The Story of Food\nNCERT Solutions for Class 3 EVS Chapter 14 provides a clear understanding of these concepts, helping young learners appreciate the importance of plant life and its vital role in sustaining our environment. This chapter delves into:\nGrasping fundamental concepts of how plants derive nourishment and draw nutrients from their environment.\nUnderstanding various modes of plant nourishment, from autotrophic (self-feeding) to heterotrophic (dependent on others), and their roles in the ecosystem.\nRecognising the importance of minerals and nutrients in supporting plant growth and development.\nImportant Study Materials for NCERT Class 3 EVS Chapter 14: The Story of Food\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 14: The Story of Food",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 The Story of Food Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3\u00a0The Story of Food Worksheets\nChapter 15: Making Pots\nNCERT Solutions for Class 3 EVS Chapter 15 provides a hands-on approach to learning about pottery, making it an enjoyable and educational experience for young learners. This chapter offers:\nDelving into making pots and understanding the techniques for shaping clay into useful objects.\nExploring the traditional methods and tools used in pottery across different cultures and regions.\nLearning about the significance of pottery in daily life, from storage to decoration.\nEngaging in activities and exercises to enhance understanding and practical skills in pottery making.\nImportant Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots\nS.No.\nLinks for Related Study Materials for NCERT Class 3 EVS Chapter 15: Making Pots",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Making Pots Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Making Pots Worksheets\nChapter 16: Games We Play\nNCERT Solutions for Class 3 EVS Chapter 16: Games We Play enriches learning through enjoyable activities and fosters holistic development among young learners. This chapter offers:\nDiscover various games children play worldwide, understanding their rules and how they contribute to fun and learning.\nGrasp the importance of games in developing skills like teamwork, strategy, and physical fitness.\nGain insights into how different cultures have their unique games, reflecting traditions and values.\nEngage in activities that enhance motor skills, coordination, and cognitive abilities through play.\nRecognise how games promote social interaction, creativity, and emotional well-being among children.\nImportant Study Materials for NCERT Class 3 EVS Chapter 16: Games We Play\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 16: Games We Play",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Games We Play Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Games We Play Worksheets\nChapter 17: Here Comes a Letter\nNCERT Class 3 EVS Chapter 17 enriches students' understanding through engaging activities and clear explanations, making learning about communication and letters enjoyable and insightful. This chapter delves into:\nUnderstanding the joy and importance of receiving and reading letters, exploring their role in communication and connection.\nDiscovering the various ways letters are delivered and how they reach us sparks curiosity about postal services.\nLearning about the emotions letters can convey and the excitement they bring when received.\nExploring the journey of letters from sender to recipient, appreciating the efforts of postal workers.\nImportant Study Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter\nS.No.\nStudy Materials for NCERT Class 3 EVS\u00a0 Chapter 17: Here Comes a Letter",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Here Comes a Letter Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Here Comes a Letter Worksheets\nChapter 18: A House Like This\nNCERT Solutions for Class 3 EVS Chapter 18 delves into the fascinating world of houses, enriching young minds with knowledge about the places we call home. This chapter offers:\nDiscovering the concept of homes and dwellings, exploring different types of houses and their unique features.\nUnderstanding how homes provide shelter and protection to people and animals alike.\nExploring the diversity of homes across various regions and cultures, highlighting their significance in daily life.\nLearning about the materials used in building houses and their sustainability.\nAppreciating the importance of homes in creating a sense of belonging and community.\nImportant Study Materials for NCERT Class 3 EVS Chapter 18: A House Like This\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 18: A House Like This",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A House Like This Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A House Like This Worksheets\nChapter 19: Our Friends \u2014 Animals\nNCERT Solutions for Class 3 EVS Chapter 19: Our Friends \u2014 Animals provides comprehensive explanations and activities to enhance the understanding and appreciation of our animal friends. This chapter offers:\nLearn the fascinating world of animals and understand their roles and relationships within ecosystems.\nGain insights into how animals interact with each other and their environment, emphasising empathy and respect for all living beings.\nExplore different habitats where animals live and thrive, fostering an appreciation for biodiversity.\nImportant Study Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 19: Our Friends \u2014 Animals",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3\u00a0Our Friends - Animals Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Our Friends - Animals Worksheets\nChapter 20: Drop by Drop\nNCERT Solutions for Class 3 EVS Chapter 20: Drop by Drop provides comprehensive insights and practical knowledge to foster a sense of responsibility towards conserving our precious water resources. This chapter offers:\nUnderstanding the importance of conserving water and its role in sustaining life on Earth.\nExploring various methods and practices for conserving water in daily life.\nDiscovering the impact of water scarcity on ecosystems and human life.\nEngaging activities and exercises to reinforce learning and promote water conservation awareness among students.\nImportant Study Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 20: Drop by Drop",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Drop by Drop Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Drop by Drop Worksheets\nChapter 21: Families Can Be Different\nNCERT Solutions for Class 3 EVS Chapter 21 provides a platform for children to explore and appreciate families, promoting values of empathy, respect, and inclusivity. This chapter offers:\nExamine how families can be different, exploring various family structures and dynamics.\nRecognise and appreciate the uniqueness of each family, celebrating diversity in traditions, customs, and roles.\nEngage with stories and examples illustrating the beauty of different family compositions and relationships.\nUnderstand the importance of inclusivity and respect for all types of families, fostering a sense of acceptance and empathy.\nEncourage reflection on personal experiences within family diversity, promoting self-awareness and understanding.\nImportant Study Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 21: Families Can Be Different",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Families Can Be Different Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Families Can Be Different Worksheets\nChapter 22: Left\u2013Right\nNCERT Solutions for Class 3 EVS Chapter 22: Left\u2013Right provides a fun and educational journey into spatial awareness and directionality, enhancing students' cognitive and practical skills. This chapter offers:\nUnderstanding the concept of left and right, exploring how we perceive and navigate directions in our daily lives.\nLearning about the significance of left and right in different contexts, such as understanding directions on maps or following instructions.\nExploring the importance of spatial awareness and orientation skills in practical scenarios.\nEngaging in activities and exercises that help reinforce understanding and application of left and right concepts.\nImportant Study Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 22: Left\u2013Right",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Left-Right Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Left-Right Worksheets\nChapter 23: A Beautiful Cloth\nThis chapter offers:\nDiscovering how cloth is made from fibres sourced from plants and animals.\nUnderstanding the importance of different types of fibres and their properties in making various fabrics.\nExploring traditional methods of weaving and modern techniques used in cloth production.\nLearning about the significance of textiles in our daily lives and cultural heritage.\nImportant Study Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 23: A Beautiful Cloth",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 A Beautiful Cloth Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 A Beautiful Cloth Worksheets\nChapter 24: Web of Life\nThis chapter offers:\nCheck how plants depend on each other and other organisms in their environment.\nLearn about ecosystem energy flow and how organisms are interconnected through food chains.\nUnderstand the vital role of decomposers in breaking down organic matter and recycling nutrients.\nImportant Study Materials for NCERT Class 3 EVS Chapter 24: Web of Life\nS.No.\nStudy Materials for NCERT Class 3 EVS Chapter 24: Web of Life",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 3 Web of Life Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nClass 3 Web of Life Worksheets\nBenefits of NCERT Class 3 EVS Question Answer\nVedantu\u2019s NCERT Solutions for Class 3 EVS are straightforward and easy to understand, ensuring that students comprehend fundamental concepts without confusion.\nThe solutions are presented in a phased manner, breaking down complex topics into simple, manageable steps.\nAll questions from each chapter are thoroughly answered, providing students with complete solutions for their studies.\nEVS Class 3 Question Answer details all processes and concepts, helping students prepare effectively for exams and understand the subject thoroughly.\nThe solutions highlight important topics, key concepts, and essential information, facilitating systematic coverage of the syllabus.\nBy using these solutions, students can identify their weaknesses, enhance problem-solving abilities, and achieve a deeper understanding of environmental concepts.\nVedantu\u2019s NCERT Solutions for Class 3 EVS are essential for young learners to grasp environmental studies effectively. These solutions emphasise understanding nature, animals, and basic environmental concepts in simple language. Using these solutions, students can build a strong foundation in environmental studies, fostering curiosity and a love for learning about the world around them.\nImportant Study Materials for Class 3 EVS\nAlong with this, students can also download additional study materials provided by Vedantu for CBSE Class 3 EVS \u2013\nSr.No\nImportant Study Materials Links for Class 3 EVS",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 3 EVS Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 3 EVS Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 3 EVS NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 3 EVS Worksheets",
-      "a": "Detailed solution available."
+      "q": "How do we depend on the sun?",
+      "a": "Sun is important for us-\n\u2022 Humans need sunlight for our bodies to produce some vitamins\n\u2022 It drives weather, ocean currents, seasons, and climate\n\u2022 It makes plant life possible through photosynthesis.\n\u2022 Without the sun\u2019s heat and light, life on Earth would not exist."
     }
   ]
 };

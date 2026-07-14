@@ -393,7 +393,128 @@ export default {
       "a": "wer:\n3 \u2192 4 \u2192 1 \u2192 5 \u2192 2\nLet us Speak (Pages 98-99)\nLook at the pictures below:\nWhat do you think will happen next? Sit In small groups and discuss. One student from each group will narrate the ending to the whole class.\nAnswer:\nThe coconut drops into the boy\u2019s house. He quickly picks it up and takes it to his mother. However, the neighbour claims the coconut because it fell from his own tree. He plans to speak to the boy\u2019s mother, hoping she will return it to him.\nLet us Write (Page 100)\nA. Imagine you are the farmer. Write a letter to your friend about the incident and the decision of the Panchayat.\nYou may begin as follows:\nMy dear friend,\nSomething happened last week, which I want to tell you. I wanted to buy a well \u2026\nAnswer:\nMy dear friend,\nI want to share an incident that took place last week. I had been planning to buy a well because my farm is doing quite well. There was a well close to my land, so I decided to purchase it. But the very next day, the person who sold it to me refused to let me use the water. He claimed that he had sold only the well, not the water inside it. I had no choice but to take the issue to the Panchayat for a fair solution.\nWhen the Panchayat gathered to look into the matter, my neighbour stubbornly stuck to his claim. After hearing both sides, the Panchayat asked him to remove all the water from the well since he said it belonged to him. As that was impossible, the decision was given in my favour. I am truly grateful to the village chief for settling the dispute wisely.\nI hope all is well with you and your family.\nWith warm regards,\nYour friend\n\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nB. Read the following sentence.\nWater is priceless.\nIt means that water is valuable. It is so valuable that you cannot put a price on it.\nThe \u2018less\u2019 at the end of the word is a suffix.\nComplete the following by adding the suffix \u2018less\u2019 to the given words.\nWords + suffix = New word\nUse + less = \u2026\u2026\u2026\u2026..\nCare + less = \u2026\u2026\u2026\u2026..\nHope + less = \u2026\u2026\u2026\u2026..\nFear + less = \u2026\u2026\u2026\u2026..\nColour + less = \u2026\u2026\u2026\u2026..\nMake sentences using the new words in your notebook.\nAnswer:\nUseless\nCareless\nHopeless\nFearless\nColourless\nUseless \u2013 This broken pencil is useless because it cannot write anymore.\nCareless \u2013 Riya was careless and forgot to lock the door before leaving.\nHopeless \u2013 He felt hopeless when he couldn\u2019t solve the difficult puzzle.\nFearless \u2013 The little girl was fearless and climbed the tall tree with confidence.\nColourless \u2013 The water in the glass is clean and colourless.\nNote to the Teacher\nHelp learners understand the concept of \u2018suffix.\nLet us Listen (Pages 101-102)\nListen to your teacher read out this passage and answer the questions by choosing the correct option.\nSri Ramakrishna Paramahamsa\nA long time ago, in a small village of West Bengal, there lived a kind and wise man named Sri Ramakrishna Paramahamsa. He loved to talk to people about God and taught that all religions are like rivers\u2014they may take different paths, but they all lead to the same ocean. He lived a simple life, wearing plain clothes and eating very little, but his smile and loving words made everyone feel special.\nOne day, a curious young boy named Naren came to meet him. Ramakrishna saw something special in Naren and became his teacher. He taught Naren about courage, kindness, and how to find peace within.\nNaren later grew up to become the famous Swami Vivekananda, spreading his teacher\u2019s wisdom to the\nworld. Even today, Ramakrishna\u2019s teachings inspire many people everywhere.\nQuestion 1. Where was Sri Ramakrishna Paramahamsa born?\na. A colony in Kolkata.\nb. A small village in West Bengal.\nc. A mountain in the Himalayas.\nd. A forest in Kerala.\nAnswer:\nb. A small village in West Bengal.\nQuestion 2. Who was the curious boy that became Sri Ramakrishna\u2019s student?\na. Mahatma Gandhi\nb. Swami Vivekananda (Naren)\nc. Rabindranath Tagore\nd. Sri Aurobindo\nAnswer:\nb. Swami Vivekananda (Naren)\nQuestion 3. What kind of life did Sri Ramakrishna live?\na. A life full of luxury,\nb. A simple and loving life.\nc. A life of traveling.\nd. A secretive life.\nAnswer:\nb. A simple and loving life.\nQuestion 4. What did Sri Ramakrishna compare religions to?\na. Trees in a forest\nb. Stars in the sky\nc. Rivers flowing to the ocean\nd. Books in a library\nAnswer:\nc. Rivers flowing into the ocean\nQuestion 5. What did Sri Ramakrishna teach Naren?\na. To find a teacher\nb. To become wealthy\nc. To travel the world\nd. To find peace\nAnswer:\nd. To find peace\nDid You Know?\nThe Banyan tree is the national tree of India. It can live for over 200 years and grow to cover several acres of land. Its roots grow down from the branches and become new trunks, making it look like a forest all by itself!\nLet us Do (Page 103-104)\nA. Read the passage carefully and answer the following questions.\nThe Neem Tree\nYou must have seen a neem tree near your house, or near the school, or beside the road. Almost everyone can recognise a neem tree.\nThe neem is a magic medicine tree because almost every part of the tree is used for medicine.\nSometimes, sick people are given neem juice to drink. People use the twigs of the neem tree as a toothbrush to clean their teeth. Burn some dry neem leaves inside the house and see the mosquitoes disappear! When you store winter clothing or blankets, keep dry neem leaves between them. This helps keep away insects. When you store rice, keep dry neem leaves at the bottom of the rice bin. This keeps pests away.\nAnswer the following questions.\nQuestion 1. Where can you find neem trees?\nAnswer:\nNeem trees grow in many places such as near homes, beside roads, and within school campuses.\nQuestion 2. Why do you think \u2018neem\u2019 is called a magic tree?\nAnswer:\nNeem is known as a miracle tree because nearly all of its parts are used for medicinal purposes.\nQuestion 3. What happens when dry neem leaves are burnt?\nAnswer:\nBurning dry neem leaves helps drive away mosquitoes.\nQuestion 4. Why do people put neem leaves in clothes and rice containers?\nAnswer:\nPlacing neem leaves inside clothes or rice containers prevents insects from coming.\nQuestion 5. How are neem twigs used?\nAnswer:\nNeem twigs are used as natural toothbrushes for cleaning teeth.\nQuestion 6. Find the meaning of the word \u2018disappear\u2019 from the following options:\na. Appear\nb. Vanish\nc. Grow\nd. Fly\nAnswer:\nb. Vanish\nQuestion 7. Find the word in the passage which means \u2018a short stick\u2019:\na. Tree\nb. Part\nc. Twig\nd. Leaf\nAnswer:\nc. Twig\nB. Point out 11 differences in the two pictures given below. Work in pairs and write down the differences in your notebook.\nAnswer:\nThe 11 differences are as follows:\nThe sunlight rays are not the same.\nThe Tulsi plant has extra branches in one picture.\nThe Tulsi flowers differ between the two images.\nThe pattern of branching on the Tulsi plant is different.\nOne Tulsi plant has more leaves than the other.\nThe footwear is not identical in both pictures.\nThe fan shows a different colour pattern.\nOne image has one step fewer than the other.\nThe saree design varies in the two pictures.\nThe woman\u2019s hair bun looks different.\nThe style of hair at the front of the woman\u2019s head also differs.\nNCERT Solutions for Class 5 English Chapter 8: The Decision of the Panchayat 2026-27\nChapter 8\nThe Decision of the Panchayat\nteaches lessons of honesty and fairness. These NCERT Solutions for Class 5 English Chapter 8 (2026-27) help students understand wise decision-making and the consequences of being\ncunning\nor truthful.\nRegular reading and practicing of\nNCERT exercise questions and answers\nimprove comprehension and answer-writing skills. By exploring key terms like \u2018Panchayat\u2019 and \u2018judgment\u2019, students build a strong vocabulary for exams and life situations.\nTo excel in\nClass 5 English Chapter 8\n, review story events, practice new words, and always reflect on the chapter\u2019s morals. Consistent practice ensures top marks and a clear understanding of every lesson."
     }
   ],
-  "9": [],
+  "9": [
+    {
+      "q": "Which modes of transport do the people use to move around in the city?",
+      "a": "In the city people use cars, taxis, buses, trains, trams, rickshaws, etc. to move around."
+    },
+    {
+      "q": "What are the things that the people carry with them, while moving around?",
+      "a": "People carry their hats and umbrellas with them while moving around."
+    },
+    {
+      "q": "Where all do you find these very busy people?",
+      "a": "I find these very busy people on roads, on sidewalks, on subways, in lifts, in stores, at bus stops etc."
+    },
+    {
+      "q": "Where have you seen crowds of people?",
+      "a": "I have seen crowds of people at railway stations, bus stands, shopping malls, stadium, cinema halls, fairs etc."
+    },
+    {
+      "q": "Why do you think all these people are in a hurry?",
+      "a": "All these people are in a hurry because they have to do a lot of work in limited time."
+    },
+    {
+      "q": "Did you observe that in the poem, the last words in every second and fourth line rhyme with each other? Can you write a four-line poem?",
+      "a": "Together we go, whenever we are low Always keep in mind Wherever you are sad I will always know."
+    },
+    {
+      "q": "Find out how many people are there in our country. Do we have enough land for all people on this earth? Is there enough food and water for all people?",
+      "a": "The population of India is 1.35 billion. I don\u2019t think we have enough land for all people on this earth. No, there is not enough food and water for all people."
+    },
+    {
+      "q": "Find out the following from ten families living in your neighbourhood.",
+      "a": "(i) Amongst the ten families, nine families are educated.\n(ii) There are total 85 members in ten families. Out of 85 members, there are 11 children below 5 years of age. There are 15 children from 5-14 years. There are 14 grown up children from the age group of 15-20.  There are 28 elders from 21-50 years. 18 of them are old people who are above 50 years."
+    },
+    {
+      "q": "Why did you become a teacher?",
+      "a": "I became a teacher because I like teaching."
+    },
+    {
+      "q": "How do you come to school every day?",
+      "a": "I come to school in an Auto."
+    },
+    {
+      "q": "Do you have a pet?",
+      "a": "Yes, I have a pet."
+    },
+    {
+      "q": "What kinds of books do you like to read?",
+      "a": "I like to read current events."
+    },
+    {
+      "q": "What are your hobbies?",
+      "a": "My hobbies are reading books and newspaper travelling and surfing internet"
+    },
+    {
+      "q": "Which tribe of Red Indians attacked the travellers?",
+      "a": "The Sioux tribe of Red Indiana attacked the travellers."
+    },
+    {
+      "q": "Which was the highest point of their journey?",
+      "a": "They passed the highest point of their journey when they were 7524 feet above sea level."
+    },
+    {
+      "q": "Why did the train stop the first time?",
+      "a": "The train stopped the first time when a herd of buffaloes began to cross the railway track."
+    },
+    {
+      "q": "How many days would it take for the train to reach New York?",
+      "a": "The train would take seven days to reach New York."
+    },
+    {
+      "q": "The first time the train stopped was because  (a) some robbers stopped the train.  (b) a herd of buffaloes was passing.  (c) the tracks were broken.",
+      "a": "(b) a herd of buffaloes was passing."
+    },
+    {
+      "q": "The bridge fell with a crash into the river  (a) after the train had passed through.  (b) the train was still on the bridge.  (c) before the train passed over the bridge.",
+      "a": "(a) after the train had passed through."
+    },
+    {
+      "q": "There are______trees between the classroom and the playground.",
+      "a": "There are two neem trees between the classroom and the playground."
+    },
+    {
+      "q": "The______trees line the passage from the entrance.",
+      "a": "The mango trees line the passage from the entrance."
+    },
+    {
+      "q": "Many______trees are along the side of the playground.",
+      "a": "Many gulmohar trees are along the side of the playground."
+    },
+    {
+      "q": "Where did you go for an excursion/holiday?",
+      "a": "I went to Darjeeling for a holiday."
+    },
+    {
+      "q": "With whom did you go? iii) What did you take with you?",
+      "a": "I went with my Parents and siblings."
+    },
+    {
+      "q": "What did you take with you?",
+      "a": "Warm clothes, some eatables, camera, medicines, etc."
+    },
+    {
+      "q": "What was the first thing you saw when you reached your destination?",
+      "a": "Tall mountains."
+    },
+    {
+      "q": "What did you like best about the place?",
+      "a": "Climate, natural scenery etc."
+    },
+    {
+      "q": "How long did you stay there?",
+      "a": "Three days."
+    },
+    {
+      "q": "What did you miss about home?",
+      "a": "Home-made foods."
+    },
+    {
+      "q": "The girl looked up at the _________ of stars.",
+      "a": "cluster"
+    }
+  ],
   "10": [
     {
       "q": "1. had dispersed\nreached the market",
@@ -454,84 +575,36 @@ export default {
   ],
   "2": [
     {
-      "q": "1. Wonderful Waste:\nIn NCERT Class 5 English Marigold Chapter 1, \"Wonderful Waste,\" students are introduced to the concept of waste and its various forms, emphasising the importance of responsible waste management to protect the environment and conserve resources. The chapter categorises waste into solid, liquid, and gaseous forms, as well as organic, inorganic, recyclable, and non-recyclable forms. It promotes the three R's\u2014reduce, reuse, and recycle\u2014as key strategies to minimise waste and preserve resources. Students learn about composting, recycling, and waste treatment plants, understanding how these practices help maintain a clean environment. The chapter fosters environmental awareness, advocating for sustainable practices and highlighting the positive impact of effective waste management through case studies, thereby enhancing critical thinking, problem-solving, and responsible citizenship.",
-      "a": "Detailed solution available."
+      "q": "In a relay race, if no one passes the baton, then \u2026\u2026\u2026\u2026\u2026..",
+      "a": "The race can\u2019t go on"
     },
     {
-      "q": "2. Flying Together:\n\"Flying Together\" from Marigold Class 5 Chapter 2, adapted from Panchatantra stories and presented by Shiv Kumar, highlights the consequences of ignoring elders' advice and the importance of their wisdom in times of trouble. It tells the tale of a flock of geese and a wise old goose who warns them about a growing creeper on their tree that could become a threat. The younger geese ignore this warning until a hunter uses the creeper to trap them. Ultimately, the old goose's quick thinking and intelligence save them, demonstrating the values of teamwork, effort, and respect for elders.",
-      "a": "Detailed solution available."
+      "q": "To play cricket we need \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026",
+      "a": "batsmen, bowlers, fielders, coaches"
     },
     {
-      "q": "3. Robinson Crusoe:\nChapter 3 of Marigold Class 5, \"Robinson Crusoe Discovers a Footprint,\" adapted from Daniel Defoe\u2019s novel, explores the complex emotions of a man isolated on an island. The story delves into human behavior, highlighting the tension between the need for companionship and the instinct for self-preservation. Robinson Crusoe, who has been alone since his shipwreck, initially feels excitement upon discovering a footprint, hoping for human company. However, this excitement quickly turns to fear as he considers the potential dangers posed by savages or wild animals, leading him to seek safety in a cave. The story teaches students about the fundamental human desire for social interaction balanced against the need for personal safety.",
-      "a": "Detailed solution available."
+      "q": "To make a film we need \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.",
+      "a": "actors, director, cameraman, producer."
     },
     {
-      "q": "4. Rip Van Winkle:\nIn the tale of Rip Van Winkle, a Dutch-American villager seeking respite from his wife's nagging ventures into the hills with his dog, encountering mysterious men who lead him to a game of nine-pins. After drinking their liquor, Rip falls into a deep sleep, waking to find himself in a changed world with his musket rusted, a long beard, and no recognition in his village. He discovers he has slept through the American Revolution and his wife's passing, realising he's been gone for twenty years. Reuniting with his now-grown son and accepting the passage of time, Rip returns to his life, reflecting on the bizarre experience of losing two decades in slumber.",
-      "a": "Detailed solution available."
+      "q": "To run a good school we need \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026",
+      "a": "students, teachers and school building."
     },
     {
-      "q": "5. My Elder Brother:\nThis comical story focuses on the relationship between a younger and older brother, highlighting the differences in their academic and personal lives. The elder brother, five years senior in age and class, is perceived by the younger brother as studious and knowledgeable, deserving of respect and obedience. Despite the younger brother's playful nature and disinterest in studying, he passes exams with ease, while the elder brother, who studies diligently, struggles to succeed. This discrepancy illustrates that intelligence and academic performance are not solely determined by rote memorisation. The elder brother feels burdened by his role, unable to enjoy typical childhood activities like flying kites, as he strives to set an example. The story concludes with the elder brother confessing his desire to partake in these simple joys, symbolising a breaking of roles and the reclaiming of lost childhood moments. The primary takeaways include the critique of an education system biased towards memorisation, the recognition of individual differences in learning, and the importance of allowing children to enjoy their childhood.",
-      "a": "Detailed solution available."
+      "q": "To run a restaurant we need \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026",
+      "a": "restaurant premises, finance manager, waiters, chef."
     },
     {
-      "q": "6. The Talkative Barber:\nChapter 6 of Marigold Class 5, \"The Talkative Barber,\" adapted from Arabian Nights, narrates a humorous story about a chatterbox barber in Kashgar and an exasperated Sultan. The barber, incessantly talking about irrelevant topics, irritates the Sultan, who is in a hurry for a haircut. Despite the Sultan's repeated warnings, the barber continues to ramble, performing his job at an agonisingly slow pace. To expedite the process, the Sultan mentions he has invited friends for a feast, prompting the barber to recall his own need to prepare food for guests. The Sultan offers him food and gold to quiet the barber and hasten the haircut. Satisfied, the barber finally completes his task swiftly. The story highlights the comedic clash between the barber's endless chatter and the Sultan's frustration, offering a light-hearted lesson on patience and resourcefulness.",
-      "a": "Detailed solution available."
+      "q": "How can We share with Teamwork?",
+      "a": "We can share joy with teamwork."
     },
     {
-      "q": "7. Gulliver\u2019s Travels:\nIn this excerpt from \"Gulliver's Travels,\" the land appears desolate, prompting the sailors to search unsuccessfully for water. Gulliver then encounters a gigantic creature so large that the sea only reaches its feet. Terrified, he climbs a steep slope but is eventually captured by another enormous being with a loud, trumpet-like voice. Surrounded by these giants, Gulliver's attempts to communicate in multiple languages fail. The giant brings Gulliver home, where he meets the giant\u2019s family. The wife protects Gulliver from their curious infant who tries to treat him like a toy. After being fed breadcrumbs, Gulliver is placed under a handkerchief and falls asleep, wistfully thinking of his distant home \\and family. The story highlights Gulliver's vulnerability and the awe-inspiring size of the giants, emphasising themes of scale and human frailty.",
-      "a": "Detailed solution available."
+      "q": "what can teamwork do?",
+      "a": "Teamwork can make our dream true."
     },
     {
-      "q": "8. The Little Bully:\nIn Class 5 English Chapter 8, \"The Little Bully,\" written by Enid Blyton, we meet Hari, a strong but troublesome boy who bullies his schoolmates by pinching and pricking them with pins, leading to his isolation. The children try to retaliate but to no avail, and they don't report him to the teacher. On a school picnic at the seaside, Hari finds himself alone and angry as no one wants to be near him. While eating lunch alone, he encounters a monster crab that pinches him, followed by other sea creatures who do the same. Hari experiences the pain he inflicts on others and realises his wrongdoing. He resolves never to bully again, understanding the hurt he has caused his peers. This story underscores the consequences of bullying and the importance of empathy.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9. Around the World:\nIn Chapter 9 of Marigold Class 5, \"Around The World,\" the narrative follows the adventurous journey of Mr Phileas Fogg and his servant, Jean Passepartout, as they embark on a challenge to circumnavigate the globe in 80 days. As they traverse various landscapes and encounter diverse cultures, they face unexpected obstacles, including suspicion from Scotland Yard due to a bank robbery that mirrors Mr. Fogg's departure. Pursued by detective Mr. Fix, the duo navigates through treacherous terrain, experiencing delays caused by buffaloes on the track and an attack by Native Americans. Despite these challenges, the story captivates readers with the thrilling adventures and colourful characters encountered on their epic journey.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10. Who will be Ningthou:\nIn \"Who Will Be Ningthou\" by Indira Mukherjee, the story unfolds in Manipur, portraying the qualities essential for effective rulership. The king and queen of Manipur are beloved leaders, caring for their subjects and the kingdom's creatures. Concerned about their children's suitability to succeed them, they hold a competition to assess their qualities. Despite tradition favouring the eldest son, the king seeks a ruler who embodies empathy and kindness. After various tests, none of the sons prove worthy, but the king realises his daughter's compassionate nature makes her the ideal successor. Her empathy towards the kingdom's creatures demonstrates her suitability to lead with care and consideration, highlighting the importance of benevolent leadership.\nMarigold (Poetry)",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1. Ice Cream Man:\nIn Rachel Field's poem \"Ice Cream Man,\" featured in Class 5 English Chapter 1, the poet celebrates the joy and delight brought by the beloved ice cream man during the scorching summer months. Through vivid imagery, the poem portrays the ice cream man as a beacon of relief from the sweltering heat, bringing smiles to children's faces with his cart adorned with a round umbrella. Laden with colourful mounds of ice cream in various flavours and chilled frosty juices, the ice cream man's cart is likened to a flower bed, attracting children like bees to roses. The poem evokes the sensory experience of a hot summer day, where children eagerly gather around the ice cream cart to savour these refreshing treats, capturing the essence of summertime bliss.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2. Teamwork:\nIn Jan Nigro's poem \"Teamwork,\" featured in Class 5 English Poetry Chapter 2, the poet underscores the significance of collaboration and unity in achieving shared goals. Through examples of team games like basketball and relay races, the poem illustrates the essential role of teamwork in success. Emphasising the transformation from \"you\" and \"me\" to \"us,\" the poem highlights the collective strength and improvement that arises when individuals work together. It instils in readers the value of cooperation, underscoring that nothing can hinder the attainment of goals when people unite as a team. The poem imparts a timeless lesson on the power of collective effort, preparing students for the importance of teamwork in various aspects of life.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3. My Shadow:\nRobert Louis Stevenson's poem \"My Shadow\" delves into a child's fascination with the phenomenon of their own shadow. The child observes the shadow's close resemblance and mimicry of their movements, noticing its presence even when indoors. The poem captures the innocence and curiosity of childhood as the child playfully speculates about the shadow's behaviour, attributing human characteristics to it. The child's belief that the shadow seeks protection by staying close adds a touch of endearing naivety. However, when the child discovers their shadow missing one morning due to insufficient light, they interpret it as laziness rather than understanding the scientific explanation. Stevenson's poem beautifully illustrates the charm of childhood wonder and imagination, inviting readers to reminisce about their own innocent perceptions of the world.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4. Crying:\nGalway Kinnell's poem \"Crying,\" featured in English Class 5 Solutions, advocates for the therapeutic act of crying as a means to attain happiness. The poet encourages readers to fully embrace their tears, emphasising that crying only a little is futile. Instead, one should cry until their pillow is soaked, releasing all pent-up emotions. Kinnell suggests that through crying, one ultimately finds happiness. After shedding tears, the poet advises readers to take a shower and laugh wholeheartedly, disregarding any concerns about others' perceptions. The poem underscores the importance of allowing oneself to experience and express emotions fully to achieve true happiness.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5. The Lazy Frog:\nThe poem introduces us to Fred, a lazy frog who spends his days lolling upon a log, avoiding any form of responsibility or work. Despite his ageing mother's pleas for assistance, Fred remains unmoved and unresponsive, feigning deafness to evade his duties. He sleeps conveniently, ignoring his mother's calls and demonstrating his laziness. Even the presence of a lady frog fails to stir him from his lethargy, highlighting his utter indifference to any form of activity or interaction. Fred's refusal to engage or help further emphasises his extreme laziness, painting a vivid portrait of a frog content to do nothing at all.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6. Class Discussion:\nIn Gervase Phinn's poem, the classroom setting becomes a backdrop for a valuable lesson on acceptance and understanding. As the teacher directs attention to Jane, a quiet observer amidst the lively discussions, she encourages Jane to explain her silence. Jane responds with a clear and thoughtful explanation, articulating her preference for quietness and subtly advocating for acceptance of diverse personalities. Through Jane's perspective, the poem gently reminds readers of the varied natures of individuals and emphasises the importance of embracing these differences without judgment or expectation. Ultimately, the poem underscores the need for inclusivity and respect for all, regardless of their inclination towards silence or verbosity, offering a profound lesson in empathy and tolerance.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7. Topsy Turvy World:\nIn the whimsical poem \"Topsy-turvy Land\" by H.E. Wilkinson, featured in the Marigold chapter, readers are transported to a fantastical world where everything defies logic and common sense. Through humorous verses, the poet describes the peculiarities of Topsy-turvy Land, where people walk on their hands, the sea is made of sand, and school is held at night. The poem continues to delight with absurdities such as front-door steps at the back of houses, hats are worn on feet, and buses travelling on the sea while pleasure boats navigate the streets. In this topsy-turvy world, even the concept of payment is reversed, as people pay for things they never receive. Through this playful exploration of opposites, the poem invites readers to embrace imagination and revel in the absurdities of a world turned upside down.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8. Nobody\u2019s Friend:\nEnid Blyton's poem, featured as a valuable lesson for children, beautifully emphasises the importance of sharing. The poem begins by portraying a little girl and a boy who are unwilling to share their possessions, highlighting their selfishness and isolation from others. In contrast, the poet presents herself as a generous and sharing individual, willing to share sweets, books, toys, and even half of her apple or cake with others. Through these examples, the poem teaches the virtue of sharing and its role in fostering friendships. By concluding that she is indeed a friend to others because of her willingness to share, the poet underscores the connection between sharing and building meaningful relationships. Overall, the poem serves as a gentle reminder of the positive impact of sharing on personal connections and social harmony.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9. Sing a Song of People:\nIn the poem \"Sing a Song of People\" from NCERT Class 5 English Chapter 9, the hustle and bustle of modern life take centre stage. It vividly portrays individuals constantly on the move, bustling through elevators, subway stations, and rainy streets with umbrellas. Despite their journeys, the poem highlights the interconnectedness within the bustling crowd. Furthermore, it subtly comments on the diversity of human behaviour, noting the contrast between those who prefer quietude and those who are more vocal. This poem offers a poignant reflection on contemporary society's frenetic pace and often impersonal nature.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "10. Malu Bhalu:\n\"Malu Bhalu\" from Marigold is a touching poem that delves into the bond between a mother bear and her cub. Malu, the little polar bear, yearns to explore the world beyond her icy lair, eager to see new places and play. However, her mother advises patience, promising to fulfil her desires when summer arrives. Impatient and restless, Malu's adventurous spirit is tested as she eagerly awaits the promised adventures. Sensing her cub's longing, Malu's mother decides it's time to teach her to swim, a crucial skill for her future explorations. Despite her initial fear, Malu bravely follows her mother's guidance, diving into the water with determination. Through this experience, Malu discovers her courage and special qualities, proving that one can overcome their fears and achieve great things with guidance and perseverance.\nBenefits of NCERT Solutions for Class 5 English\nThe Marigold Class 5 English Book Question Answer PDF is a handy and easy-to-access study resource for all students looking to ace their examinations with a clear understanding of the syllabus, chapters and the overall textbook.\nBuild a Good Conceptual Foundation:\nThe chapters and topics explained in 5th Class English Marigold chapters will help students build their fundamental concepts better. These solutions have been designed to improve the students' reading, writing, comprehension, and language skills.\nTopics are well-explained:\nOne of the best things about\nNCERT solutions\nis that the experts explain all the topics in detail. So, students can definitely gain a lot of insights about the chapters from these solutions.\nEasily Revise the Topics:\nStudents can use the Chapter Wise List of NCERT Solutions Class 5th English to complete their revision early during exam time. They don\u2019t have to read the whole textbook and can only refer to the solutions to gain proper details about the chapters.\nFind out the Exam Pattern:\nThe experts in Vedantu have designed the solutions per the CBSE guidelines. Hence, students will not only be able to find out the questioning patterns in the CBSE exam, but they can also devise a proper answering strategy to score the best marks.\nClarify your Doubts:\n5th Class English NCERT Solutions are very helpful materials for students who might have some doubts about certain chapters. They can refer to the solutions in order to strengthen their knowledge and rectify any mistakes that they might have made while answering the questions.\nDownload Chapter wise List of NCERT Solutions Class 5 English Today for Better Results\nMaster the English language and perform well in your exams with\nNCERT Solutions for Class 5 English PDF FREE Download\n. For those who want to score high marks in their English Class 5\u00a0 5th Class English exams and need an extra push, these solutions are simply the best help. The chapters are explained in detail along with their respective summaries to assist the students in understanding the chapter. Download NCERT Solutions for Class 5th English right now from Vedantu and experience the best results in your studies.\nImportant Study Materials for NCERT Class 5 English\nNow that you have a thorough understanding of the NCERT Syllabus for Class 5 English Question Answer, you can take a look at some of the material that will take your preparation to the next level. These can be used as supplementary material to your main study routine:\nLinks for Study Materials for NCERT Class 5 English: Marigold\nNCERT Class 5 English Revision Notes\nCBSE Class 5 English Sample Papers (Part 1)\nCBSE Class 5 English Sample Papers (Part 2)\nCBSE Class 5 English Syllabus",
-      "a": "Detailed solution available."
+      "q": "where should we put our eyes on?",
+      "a": "We should put our eyes on a common goal."
     }
   ]
 };

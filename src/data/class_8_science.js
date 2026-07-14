@@ -1028,5 +1028,59 @@ export default {
       "q": "17. Solve the below referring to the given diagram.\na. Find out the position of the image of an object situated at $$A$$ in the plane mirror.",
       "a": "The image of $$A$$ is formed behind the mirror at the same distance as that of $$A$$ from the mirror.\nb. Can Paheli at $$B$$ see this image?\nAns:\nYes, Paheli at $$B$$ can see the image.\nc. Can Boojho at $$C$$ see this image?\nAns:\nYes, Boojho at $$C$$ can see the image.\nd. When Paheli moves from $$B$$ to $$C$$, where does the image of $$A$$ move?\nAns:\nThe image of $$A$$ is unaffected by the movement of $$B$$ and $$C$$. Therefore, Paheli will be able to see the image of $$A$$ while moving from $$B$$ to $$C$$.\nClass 8 Chapter 13 Science Quick Overview Topics Covered\nS.No.\nTopics of Light Class 8\n1\nWhat makes Things Visible\n2\nLaws of Reflection\n3\nRegular and Diffused Reflection\n4\nReflected Light Can be Reflected Again\n5\nMultiple Images\n6\nSunlight \u2014 White or Coloured\n7\nWhat is inside Our Eyes?\n8\nCare of the Eyes\n9\nVisually Impaired Persons Can Read and Write\n10\nWhat is the Braille System?\nNCERT Chapter 13 Science Class 8 Light- Important Points\nLaws of Reflection\n: The angle of incidence is equal to the angle of reflection, and the incident ray, reflected ray, and the normal to the surface all lie in the same plane.\nTypes of Reflection\n: Regular reflection (smooth surfaces) and diffuse reflection (rough surfaces).\nSunlight appears white to the human eye because it combines all visible colours.\nWhen passed through a prism, sunlight splits into a spectrum of colours, demonstrating that it contains all the visible spectrum colours.\nDispersion is the process by which white light separates into its component colours.\nStructure of the Human Eye\nCornea\n: The eye's transparent, curved front surface that helps to focus incoming light.\nIris\n: The coloured part of the eye that controls the size of the pupil and, thus, the amount of light entering the eye.\nPupil\n: The black circular opening in the iris regulates the amount of light reaching the retina.\nLens\n: A transparent, flexible structure that focuses light onto the retina. It changes shape to adjust the focus (accommodation).\nRetina\n: The light-sensitive layer at the back of the eye containing photoreceptor cells (rods and cones) that convert light into electrical signals.\nOptic Nerve\n: Transmits visual information from the retina to the brain.\nThe Braille system is a tactile writing system used by visually impaired people. It enables them to read and write through touch.\nBenefits of Vedantu\u2019s Science Chapter 13 Class 8 Question Answer\nReferring to NCERT solutions for Class 8 Science Chapter Light offers several benefits:\nNCERT Class 8 Science Chapter Light Question Answer provides clear explanations of concepts covered in the chapter, helping students understand the topic of light thoroughly.\nLight Chapter Of Class 8 PDF Questions And Answers cover important concepts such as the properties of light, reflection, refraction, and the functioning of the human eye.\nLight Chapter Of Class 8 Questions And Answers assists students in completing their last-minute revision efficiently and effectively.\nClass 8 Light Question Answer includes clear diagrams and illustrations, helping students visualise phenomena like the formation of shadows, images by plane mirrors, and the functioning of optical instruments.\nClass 8 Science Light Solutions includes practice questions and exercises that allow students to test their understanding of the concepts discussed in the chapter.\nBy referring to the Light Chapter Of Class 8 Questions And Answers, students can prepare effectively for exams as the solutions cover all the topics and questions likely to be asked in the assessments.\nConclusion\nVedantu\u2019s Light Chapter Of Class 8 Questions And Answers is essential for students aiming to understand this topic thoroughly. The solutions focus on key concepts like reflection, refraction, and the properties of light, which are crucial for exams. Students should pay special attention to these areas to grasp the fundamental principles of light. In previous years, around 8 questions from this chapter have appeared in exams, highlighting its importance. Using Vedantu\u2019s solutions, students can clear their doubts, practice effectively, and improve their understanding, ensuring they are well-prepared for their exams.\nImportant Study Materials for Class 8 Chapter 13 Science: Light\nS. No\nImportant Links for Chapter 13 Light\n1\nClass 8 Light Important Questions\n2\nClass 8 Light Revision Notes\n3\nClass 8 Light NCERT Exemplar Solutions\nNCERT Solutions for Class 8 Science - Chapter-wise List\nS. No\nNCERT Solutions Class 8 Science Chapter-wise List\n1\nChapter 1 - Crop Production and Management Solutions\n2\nChapter 2 - Microorganisms: Friend and Foe Solutions\n3\nChapter 3 - Coal and Petroleum Solutions\n4\nChapter 4 - Combustion and Flame Solutions\n5\nChapter 5 - Conservation of Plants and Animals Solutions\n6\nChapter 6 - Reproduction in Animals Solutions\n7\nChapter 7 - Reaching the Age of Adolescence Solutions\n8\nChapter 8 - Force and Pressure Solutions\n9\nChapter 9 - Friction Solutions\n10\nChapter 10 - Sound Solutions\n11\nChapter 11 - Chemical Effects of Electric Current Solutions\n12\nChapter 12 - Some Natural Phenomena Solutions\nOther NCERT Study Resources for Science Class 8\nFor complete preparation of Science for CBSE Class 8 exams, check out the following links for different study materials available at Vedantu.\nS. No\nOther Important Resources for Class 8 Science\n1\nClass 8 Science Revision Notes\n2\nClass 8 Science NCERT Solutions\n3\nClass 8 Science Important Questions\n4\nClass 8 Science Sample Paper"
     }
+  ],
+  "14": [
+    {
+      "q": "Does pure water conduct electricity? If not, what can we do to make it conducting?",
+      "a": "Pure or distilled water does not contain salts. Therefore it is a poor conductor of electricity. We can add impurities like salt, lemon juice, vinegar etc. to make it conducting."
+    },
+    {
+      "q": "In case of a fire, before the firemen use the water hoses, they shut off the main electrical supply for the area. Explain why they do this.",
+      "a": "The water usually contain salts and is a good conductor of electricity. To save themselves and others from electric shock and to avoid any short circuit, firemen shut off the main electrical supply for the area."
+    },
+    {
+      "q": "When the free ends of a tester are dipped into a solution, the magnetic needle shows deflection. Can you explain the reason?",
+      "a": "The deflection of magnetic needle indicates electric current is flowing through the wire. It means the liquid or the solution is a good conductor of electricity. When the free ends of a tester are dipped into a solution, electric circuit is completed and an electric current passes through the solution."
+    },
+    {
+      "q": "Is it safe for the electrician to carry out electrical repairs outdoors during heavy downpour? Explain.",
+      "a": "No it is very risky and unsafe to carry out electric repairs outdoors during heavy downpour. Water (when impure) is a good conductor of electricity and there are chances of getting electric shock."
+    }
+  ],
+  "15": [
+    {
+      "q": "List three states in India where earthquakes are more likely to strike.",
+      "a": "Three states in India are Gujrat, Rajasthan and Himachal Pradesh.\nIn India, the areas most threatened are Kashmir, Western and Central Himalayas, the whole of North-East, Rann of Kutch, Rajasthan and the Indo \u2013 Gangetic Plane. Some areas of South India also fall in the danger zone."
+    },
+    {
+      "q": "Suggest three measures to protect ourselves from lightning.",
+      "a": "Safety Measures during Lightning:\nOpen space is dangerous. Take cover under a building.\nThunder storm is an indication to rush for safer place.\nOnce thundering stops, move out to an open place."
+    },
+    {
+      "q": "Explain why a charged body loses its charge if we touch it with our hand.",
+      "a": "Human body is a good conductor of electricity. A charged body loses its charge when we touch it with hand because the charges get transferred through our body to earth. This process of transferring of charges from charged body to earth is known as earthing."
+    },
+    {
+      "q": "Sometime, a crackling sound is heard while taking off sweater during winters. Explain.",
+      "a": "Normally, Sweater is made of wool and the other inner clothes like shirts are made up of cotton and synthetic fibres. Due to friction among these, static charge gets accumulated on the sweater. While taking off sweater, an electric discharge occurs between sweater and the body which results in forming of sparks and crackling sound."
+    }
+  ],
+  "16": [
+    {
+      "q": "Describe the construction of a kaleidoscope.",
+      "a": "A kaleidoscope is made up of three rectangular mirror strips joined together to form a prism. These are fix in a circular cardboard like tube or tube of a thick chart paper. The tube is slightly longer than the mirror strips. One end of the tube remains closed by a cardboard disc having a hole in the centre, through which one can see. To make the disc durable, a piece of transparent plastic sheet is pasted under the cardboard disc. At the other end, touching the mirrors, a circular plane glass plate is fixed. On this glass plate several small pieces of coloured glass is placed to form multiple images."
+    },
+    {
+      "q": "Explain how you can take care of your eyes.",
+      "a": "It is necessary that we take proper care of our eyes. If there is any problem we should go to an eye specialist. Have a regular check-up.\nIf advised, we should use suitable spectacles.\nToo little or too much light is bad for eyes. Insufficient light causes eyestrain and headaches. Too much light, like that of the sun, a powerful lamp or a laser torch can injure the retina.\nWe should not look at the sun or a powerful light directly.\nNever rub our eyes. If particles of dust go into our eyes, wash our eyes with clean water. If there is no improvement go to a doctor.\nWash our eyes frequently with clean water.\nAlways read at the normal distance for vision. Do not read by bringing your book too close to our eyes or keeping it too far."
+    },
+    {
+      "q": "State the laws of reflection.",
+      "a": "Laws of reflection:\nThe angle of incidence is always equal to the angle of reflection.\nThe incident ray, the reflected ray and the normal to the surface at the point of incidence lie in the same plane."
+    },
+    {
+      "q": "Gurmit wanted to perform Activity 16.8 using a laser torch. Her teacher advised her not to do so. Can you explain the basis of the teacher\u2019s advice?",
+      "a": "Intensity of laser beam is very high, as it carries large amount of energy. It is harmful for eyes and can cause permanent damage. One should not look at laser beam directly or indirectly for a longer period."
+    }
   ]
 };

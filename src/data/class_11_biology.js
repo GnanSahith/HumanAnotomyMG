@@ -1149,82 +1149,58 @@ export default {
   ],
   "11": [
     {
-      "q": "1.\nPhotosynthesis in Higher Plants Important Questions",
-      "a": "Detailed solution available."
+      "q": "By looking at a plant externally can you tell whether a plant is C3 or C4? Why and how?",
+      "a": "One cannot distinguish whether a plant is C3 or C4 by observing its leaves and other morphological features externally. Unlike C3 plants, the leaves of C4 plants have a special anatomy called Kranz anatomy and this difference can only be observed at the cellular level. For example, although wheat and maize are grasses, wheat is a C3 plant, while maize is a C4 plant."
     },
     {
-      "q": "2.\nPhotosynthesis in Higher Plants Revision Notes",
-      "a": "Detailed solution available."
+      "q": "By looking at which internal structure of a plant can you tell whether a plant is C3 or C4? Explain.",
+      "a": "The leaves of C4 plants have a special anatomy called Kranz anatomy. This makes them different from C3 plants. Special cells, known as bundle-sheath cells, surround the vascular bundles. These cells have a large number of chloroplasts. They are thick-walled and have no intercellular spaces. They are also impervious to gaseous exchange. All these anatomical features help prevent photorespiration in C4 plants, thereby increasing their ability to photosynthesise."
     },
     {
-      "q": "3.\nPhotosynthesis in Higher Plants NCERT Exemplar Solutions\nBenefits of NCERT Solution for Class 11 Biology Chapter 11 Photosynthesis in Higher Plants\nNCERT Solution for Chapter 11 Photosynthesis in Higher Plants could be beneficial for students to excel in their examinations. All the Biology experts have put all of their efforts according to students\u2019 level of understanding. NCERT Solution for Class 11 Biology chapter Photosynthesis in Higher Plants is a compiled version of the whole chapter in easy language. Moreover, NCERT Solution provides the following benefits:\nThe PDF of NCERT Solution is readily available to students at any point in time.\nThe solutions come with detailed explanations of complex concepts and use diagrammatic representations for better understanding.\nAlong with textbook questions, sample questions are also provided for students for them to prepare for advanced entrance examinations.\nStudents will have no difficulty to ace their Biology paper after preparing from NCERT Solution for Class 11 Biology chapter Photosynthesis in Higher Plants.\nSummary of the chapter is also provided to students for last-minute revision.\nNCERT Solutions for Class 11 Biology FREE PDF | Other Chapter-wise Links\nBelow are the other chapter-wise Links for the Solutions for Biology NCERT Class 11. You can download FREE PDFs of these chapter-wise solutions to familiarise yourself with the concepts.\nS. No\nChapter-wise Links for Class 11 Biology NCERT Solutions\n1\nChapter 1 - The Living World Solutions\n2\nChapter 2 - Biological Classification Solutions\n3\nChapter 3 - Plant Kingdom Solutions\n4\nChapter 4 - Animal Kingdom Solutions\n5\nChapter 5 - Morphology of Flowering Plants Solutions\n6\nChapter 6 - Anatomy of Flowering Plants Solutions\n7\nChapter 7 - Structural Organisation in Animals Solutions\n8\nChapter 8 - Cell The Unit of Life Solutions\n9\nChapter 9 - Biomolecules Solutions\n10\nChapter 10 - Cell Cycle and Cell Division Solutions\n11\nChapter 12 - Respiration in Plants Solutions\n12\nChapter 13 - Plant Growth and Development Solutions\n13\nChapter 14 - Breathing and Exchange of Gases Solutions\n14\nChapter 15 - Body Fluids and Circulation Solutions\n15\nChapter 16 - Excretory Products and Their Elimination Solutions\n16\nChapter 17 - Locomotion and Movement Solutions\n17\nChapter 18 - Neural Control and Coordination Solutions\n18\nChapter 19 - Chemical Coordination and integration Solutions\nRelated Important Links for CBSE Class 11 Biology NCERT Solutions\nS. No\nRelated Links for Class 11 Biology",
-      "a": "Detailed solution available."
+      "q": "Even though a very few cells in a C4 plant carry out the biosynthetic \u2013 Calvin pathway, yet they are highly productive. Can you discuss why?",
+      "a": "The productivity of a plant is measured by the rate at which it photosynthesises. The amount of carbon dioxide present in a plant is directly proportional to the rate of photosynthesis. C4 plants have a mechanism for increasing the concentration of carbon dioxide. In C4 plants, the Calvin cycle occurs in the bundle-sheath cells. The C4 compound (malic acid) from the mesophyll cells is broken down in the bundlesheath cells. As a result, CO2 is released. The increase in CO2 ensures that the enzyme RuBisCo does not act as an oxygenase, but as a carboxylase. This prevents photorespiration and increases the rate of photosynthesis. Thus, C4 plants are highly productive."
     },
     {
-      "q": "1.\nCBSE Class 11 Biology NCERT Important Questions",
-      "a": "Detailed solution available."
+      "q": "RuBisCo is an enzyme that acts both as a carboxylase and oxygenase. Why do you think RuBisCo carries out more carboxylation in C4 plants?",
+      "a": "The enzyme RuBisCo is absent from the mesophyll cells of C4 plants. It is present in the bundle-sheath cells surrounding the vascular bundles. In C4 plants, the Calvin cycle occurs in the bundle-sheath cells. The primary CO2 acceptor in the mesophyll cells is phosphoenol pyruvate \u2013 a three-carbon compound. It is converted into the four-carbon compound oxaloacetic acid (OAA). OAA is further converted into malic acid. Malic acid is transported to the bundle-sheath cells, where it undergoes decarboxylation and CO2 fixation occurs by the Calvin cycle. This prevents the enzyme RuBisCo from acting as an oxygenase."
     },
     {
-      "q": "2.\nCBSE Class 11 Biology NCERT Exemplar",
-      "a": "Detailed solution available."
+      "q": "Suppose there were plants that had a high concentration of Chlorophyll-b, but lacked chlorophyll-a, would it carry out photosynthesis? Then why do plants have chlorophyll-b and other accessory pigments?",
+      "a": "Chlorophyll-a molecules act as antenna molecules. They get excited by absorbing light and emit electrons during cyclic and non-cyclic photophosphorylations. They form the reaction centres for both photosystems I and II. Chlorophyll-b and other photosynthetic pigments such as carotenoids and xanthophylls act as accessory pigments. Their role is to absorb energy and transfer it to chlorophyll-a. Carotenoids and xanthophylls also protect the chlorophyll molecule from photo-oxidation. Therefore, chlorophyll-a is essential for photosynthesis. If any plant were to lack chlorophyll-a and contain a high concentration of chlorophyll-b, then this plant would not undergo photosynthesis."
     },
     {
-      "q": "3.\nCBSE Class 11 Biology NCERT Books",
-      "a": "Detailed solution available."
+      "q": "Why is the colour of a leaf kept in the dark frequently yellow, or pale green? Which pigment do you think is more stable?",
+      "a": "Since leaves require light to perform photosynthesis, the colour of a leaf kept in the dark changes from a darker to a lighter shade of green. Sometimes, it also turns yellow. The production of the chlorophyll pigment essential for photosynthesis is directly proportional to the amount of light available. In the absence of light, the production of chlorophyll-a molecules stops and they get broken slowly. This changes the colour of the leaf gradually to light green. During this process, the xanthophyll and carotenoid pigments become predominant, causing the leaf to become yellow. These pigments are more stable as light is not essential for their production. They are always present in plants."
     },
     {
-      "q": "4.\nCBSE Class 11 Biology Syllabus",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Class 11 Biology NCERT Solutions in Hindi",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nCBSE Class 11 Biology Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nCBSE Class 11 Biology Sample Paper",
-      "a": "Detailed solution available."
+      "q": "Look at leaves of the same plant on the shady side and compare it with the leaves on the sunny side. Or, compare the potted plants kept in the sunlight with those in the shade. Which of them has leaves that are darker green? Why?",
+      "a": "Light is a limiting factor for photosynthesis. Leaves get lesser light for photosynthesis when they are in shade. Therefore, the leaves or plants in shade perform lesser photosynthesis as compared to the leaves or plants kept in sunlight. In order to increase the rate of photosynthesis, the leaves present in shade have more chlorophyll pigments. This increase in chlorophyll content increases the amount of light absorbed by the leaves, which in turn increases the rate of photosynthesis. Therefore, the leaves or plants in shade are greener than the leaves or plants kept in the sun."
     }
   ],
   "12": [
     {
-      "q": "1.\nRespiration in Plants Important Questions",
-      "a": "Detailed solution available."
+      "q": "What are respiratory substrates? Name the most common respiratory substrate.",
+      "a": "The compounds oxidised during the process of respiration are called respiratory substrates. Carbohydrates, especially glucose, act as respiratory substrates. Fats, proteins, and organic acids also act as respiratory substrates."
     },
     {
-      "q": "2.\nRespiration in Plants Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What are the assumptions made during the calculation of net gain of ATP?",
+      "a": "For theoretical calculation of ATP molecules, various assumptions are made, which are as follows. It is assumed that various parts of aerobic respiration such as glycolysis, TCA cycle, and ETS occur in a sequential and orderly pathway. NADH produced during the process of glycolysis enters into mitochondria to undergo oxidative phosphorylation. Glucose molecule is assumed to be the only substrate while it is assumed that no other molecule enters the pathway at intermediate stages. The intermediates produced during respiration are not utilized in any other process."
     },
     {
-      "q": "3.\nRespiration in Plants NCERT Exemplar Solutions\nNCERT Solutions for Class 11 Biology FREE PDF | Other Chapter-wise Links\nBelow are the other chapter-wise Links for the Solutions for Biology NCERT Class 11. You can download FREE PDFs of these chapter-wise solutions to familiarise yourself with the concepts.\nS. No\nChapter-wise Links for Class 11 Biology NCERT Solutions\n1\nChapter 1 - The Living World Solutions\n2\nChapter 2 - Biological Classification Solutions\n3\nChapter 3 - Plant Kingdom Solutions\n4\nChapter 4 - Animal Kingdom Solutions\n5\nChapter 5 - Morphology of Flowering Plants Solutions\n6\nChapter 6 - Anatomy of Flowering Plants Solutions\n7\nChapter 7 - Structural Organisation in Animals Solutions\n8\nChapter 8 - Cell The Unit of Life Solutions\n9\nChapter 9 - Biomolecules Solutions\n10\nChapter 10 - Cell Cycle and Cell Division Solutions\n11\nChapter 11 - Photosynthesis In Higher Plants Solutions\n12\nChapter 13 - Plant Growth and Development Solutions\n13\nChapter 14 - Breathing and Exchange of Gases Solutions\n14\nChapter 15 - Body Fluids and Circulation Solutions\n15\nChapter 16 - Excretory Products and Their Elimination Solutions\n16\nChapter 17 - Locomotion and Movement Solutions\n17\nChapter 18 - Neural Control and Coordination Solutions\n18\nChapter 19 - Chemical Coordination and integration Solutions\nRelated Important Links for CBSE Class 11 Biology NCERT Solutions\nS. No\nRelated Links for Class 11 Biology",
-      "a": "Detailed solution available."
+      "q": "Discuss \u201cThe respiratory pathway is an amphibolic pathway.\u201d",
+      "a": "Respiration is generally assumed to be a catabolic process because during respiration, various substrates are broken down for deriving energy. Carbohydrates are broken down to glucose before entering respiratory pathways. Fats get converted into fatty acids and glycerol whereas fatty acids get converted into acetyl CoA before entering the respiration. In a similar manner, proteins are converted into amino acids, which enter respiration after deamination. During synthesis of fatty acids, acetyl CoA is withdrawn from respiratory pathway. Also, in the synthesis of proteins, respiratory substrates get withdrawn. Thus, respiration is also involved in anabolism. Therefore, respiration can be termed as amphibolic pathway as it involves both anabolism and catabolism."
     },
     {
-      "q": "1.\nCBSE Class 11 Biology NCERT Important Questions",
-      "a": "Detailed solution available."
+      "q": "Define RQ. What is its value for fats?",
+      "a": "Respiratory quotient (RQ) or respiratory ratio can be defined as the ratio of the volume of CO2 evolved to the volume of O2 consumed during respiration. The value of respiratory quotient depends on the type of respiratory substrate. Its value is one for carbohydrates. However, it is always less than one for fats as fats consume more oxygen for respiration than carbohydrates. It can be illustrated through the example of tripalmitin fatty acid, which consumes 145 molecules of O2 for respiration while 102 molecules of CO2 are evolved. The RQ value for tripalmitin is 0.7."
     },
     {
-      "q": "2.\nCBSE Class 11 Biology NCERT Exemplar",
-      "a": "Detailed solution available."
+      "q": "What is oxidative phosphorylation?",
+      "a": "Oxidative phosphorylation is a process in which electrons are transferred from electron donors to oxygen, which acts as electron acceptor. The oxidation-reduction reactions are involved in the formation of proton gradient. The main role in oxidative phosphorylation is played by the enzyme ATP synthase (complex V). This enzyme complex consists of F0 and F1 components. The F1 headpiece is a peripheral membrane protein complex and contains the site for ATP synthesis from ADP and inorganic phosphate. F0 component is a part of membrane protein complex, which acts as a channel for crossing of the protons from inner mitochondrial membrane to the mitochondrial matrix. For every two protons passing through F0\u2013F1 complex, synthesis of one ATP molecule takes place."
     },
     {
-      "q": "3.\nCBSE Class 11 Biology NCERT Books",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 11 Biology Syllabus",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Class 11 Biology NCERT Solutions in Hindi",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nCBSE Class 11 Biology Sample Paper",
-      "a": "Detailed solution available."
+      "q": "What is the significance of step-wise release of energy in respiration?",
+      "a": "The process of aerobic respiration is divided into four phases \u2013 glycolysis, TCA cycle, ETS, and oxidative phosphorylation. It is generally assumed that the process of respiration and production of ATP in each phase takes place in a step-wise manner. The product of one pathway forms the substrate of the other pathway. Various molecules produced during respiration are involved in other biochemical processes. The respiratory substrates enter and withdraw from pathway on necessity. ATP gets utilized wherever required and enzymatic rates are generally controlled. Thus, the step-wise release of energy makes the system more efficient in extracting and storing energy."
     }
   ],
   "13": [

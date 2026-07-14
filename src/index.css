@@ -9,7 +9,7 @@
   --glass-border: rgba(255, 255, 255, 0.15);
   --glass-highlight: rgba(255, 255, 255, 0.25);
   --glass-blur: blur(24px);
-  --glass-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  --glass-shadow: 0 16px 40px rgba(0, 0, 0, 0.4), inset 0 0 0 1px var(--glass-border);
 
   --accent: #0a84ff;
   /* iOS Blue */
@@ -30,7 +30,7 @@
   --glass-bg: rgba(255, 255, 255, 0.65);
   --glass-border: rgba(255, 255, 255, 0.8);
   --glass-highlight: rgba(255, 255, 255, 1);
-  --glass-shadow: 0 16px 40px rgba(0, 0, 0, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  --glass-shadow: 0 16px 40px rgba(0, 0, 0, 0.1), inset 0 0 0 1px var(--glass-border);
 
   --text-main: #000000;
   --text-secondary: rgba(0, 0, 0, 0.85);
@@ -142,7 +142,7 @@ body {
   background: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
-  border: 1px solid var(--glass-border);
+  border: none;
   border-radius: var(--border-radius-lg);
   box-shadow: var(--glass-shadow);
   position: relative;
@@ -160,7 +160,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 50;
-  padding: 0px 20px 40px 20px;
+  padding: 135px 20px 40px 20px;
   overflow-y: auto;
 }
 
@@ -430,17 +430,7 @@ body {
   gap: 16px;
 }
 
-/* Add a subtle top highlight common in Apple glass */
-.glass-panel::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, var(--glass-highlight), transparent);
-  opacity: 0.5;
-}
+
 
 .app-container {
   display: flex;
@@ -448,7 +438,7 @@ body {
   height: 100vh;
   height: 100dvh;
   width: 100vw;
-  padding: 135px 24px 24px 24px; /* Balanced padding to clear fixed header and breadcrumbs */
+  padding: 0; /* Remove padding so children span the full screen and manage their own padding */
   overflow: hidden;
 }
 
@@ -625,7 +615,7 @@ p {
   flex-direction: column;
   width: 100%;
   height: 100%;
-  padding-top: 10px; /* Slight breathing room below fixed elements */
+  padding-top: 135px; /* Clear the global fixed header */
 }
 
 /* iOS Navigation Header */
@@ -1198,12 +1188,12 @@ model-viewer {
   justify-content: space-between;
   align-items: center;
   padding: 12px 30px;
-  background: rgba(20, 20, 20, 0.4);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(12, 14, 22, 0.9);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border: none;
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 255, 255, 0.1);
   transition: all 0.3s ease;
 }
 
@@ -1213,7 +1203,7 @@ model-viewer {
   gap: 16px;
   flex: 1;
   min-height: 0;
-  padding: 12px 24px;
+  padding: 135px 24px 12px 24px;
 }
 
 .digestive-grid .system-sidebar,
@@ -1239,7 +1229,7 @@ model-viewer {
   display: flex;
   flex-direction: row;
   background-color: transparent;
-  padding-top: 20px; /* Reduced redundant padding */
+  padding-top: 135px;
   padding-bottom: 20px;
   color: #fff;
 }
@@ -1313,7 +1303,7 @@ model-viewer {
 
   /* App Container Padding */
   .app-container {
-    padding: 100px 16px 16px 16px !important; /* Mobile padding to clear header */
+    padding: 0 !important; /* Remove padding so children span the full screen and manage their own padding */
     height: 100vh !important;
     height: 100dvh !important;
     overflow: hidden !important;

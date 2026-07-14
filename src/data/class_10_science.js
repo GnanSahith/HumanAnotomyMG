@@ -2348,5 +2348,71 @@ export default {
       "q": "5.\nCBSE Class 10 Science Sample Paper",
       "a": "Detailed solution available."
     }
+  ],
+  "15": [
+    {
+      "q": "Mention one negative effect of our affluent life style on the environment.",
+      "a": "Excessive use of fossil fuel, even when we have to go nearby we use car, motor cycle, etc. instead going on foot or by cycle. Fossil fuels, on burning produce oxides of carbon, nitrogen and sulphur which cause air pollution."
+    },
+    {
+      "q": "Why is energy flow in the biosphere unidirectional?",
+      "a": "The sun is the only source of energy which plants trap during photosynthesis and store as food. The transfer of energy from one trophic level to the other obeys 10% law, i.e., 90% of energy is lost as heat. The energy in the form of heat goes unutilised because plants cannot use this heat energy in the synthesis of food. Thus, there is always flow of energy from the non-living component (then sun) and is released as heat. So, the energy flow in the biosphere is unidirectional."
+    },
+    {
+      "q": "What is an Eco-system?",
+      "a": "Eco-system is the whole biotic community (living organisms) in a given area plus its abiotic environment (physical factors like temperature, rainfall, wind, soil and minerals) both interacting with each other and maintain a balance in nature. Eco-system can be as large as a forest, or small as a pond or lake. This functional system may be natural as forest or may be artificial (man-made), e.g., a crop field or an aquarium. Thus the Eco-system has biotic and abiotic components."
+    },
+    {
+      "q": "What is ozone and how it affect any Eco-system?",
+      "a": "Ozone(O3) a molecule formed by three atoms of oxygen. It is a deadly poisonous gas. However, at the higher level of atmosphere, it performs an essential function. It shields surface of earth from ultraviolet radiation (UV) of solar radiations. This radiation is highly damaging to organisms, it is known to cause skin cancer, cataract in human beings."
+    },
+    {
+      "q": "What will happen if we kill all the organisms in one trophic level?",
+      "a": "If we kill all the organisms in one trophic level, the transfer of food energy to the next trophic level will stop. This will cause a break in the food chain resulting in ecosystem imbalance. As a result, the organisms of the higher trophic level will also die, while the individuals of the lower trophic level will exhibit enormous growth in their population. Both the conditions will result in ecological upset."
+    },
+    {
+      "q": "Will the impact of removing all the organisms in a trophic level be different for different trophic levels? Can the organisms of any trophic level be removed without causing any damage to the ecosystem?",
+      "a": "Yes, the impact of removing all organisms in a trophic level will be different for different trophic levels. If all the producers are killed, it will cause death or migration of the primary consumers in the ecosystem. In the absence of producers, subsequent level of consumers will also be affected. But if primary consumers are removed, organisms of higher trophic level will die, while those of lower level (producers) show exponential growth much beyond the carrying capacity of the environment. Removal of the organisms in a trophic level will upset the whole ecosystem as all categories of organisms are linked through food chain. The survival of organisms of one trophic level depends on the existence of the members of other trophic level."
+    },
+    {
+      "q": "What is biological magnification? Will the levels of this magnification be different at different levels of the ecosystem?",
+      "a": "Progressive increase in the concentration of non-biodegradable substances in a food chain is called biological magnification. The level of these harmful substances will go on increasing from one trophic level to the next. When certain harmful substances enter the food chain at the level of primary producers,-they get concentrated many times at each subsequent trophic level."
+    },
+    {
+      "q": "What are the problems caused by the non-biodegradable wastes that we generate?",
+      "a": "Non-biodegradable wastes cannot be broken-down into simpler substances. Their volume keeps on increasing creating the problem of their safe disposal. Some of the non-biodegradable wastes like heavy metals and pesticides enter into the food chain and increases in the upper trophic levels. Non-biodegradable wastes reduce the soil fertility by changing the natural pH balance."
+    },
+    {
+      "q": "If all the waste we generate is biodegradable, will this have no impact on the environment?",
+      "a": "Biodegradable wastes are decomposed by microorganisms into simpler substances themselves and provide raw materials for producers, but they also have adverse effects on the environment: Slow decomposition of biodegradable waste will result in the release of foul smell and harmful gases. When inhaled by human beings, they may cause irritation, nausea, giddiness, etc. Decomposing waste provides breeding ground for some harmful organisms. Abundance of harmful microorganisms may cause diseases in animals, plants and human beings. Increase in the number of microorganisms in aquatic medium will- cause oxygen deficiency in waterbodies."
+    },
+    {
+      "q": "Why is damage to the ozone layer a cause for concern? What steps are being taken to limit this damage?",
+      "a": "Ozone layer is a protective shield around the earth. It prevents harmful ultraviolet radiation of the sun from reaching the earth. Air pollutants, like chlorofluorocarbons (CFCs), are causing depletion of ozone layer. This is allowing greater amount of UV radiation to reach the earth. UV radiation can upset the ecosystem by affecting photosynthesis in plants, destroying planktons and decomposers. In human beings, UV radiation may cause skin cancer, cataract of eyes and damage to immune system. Several developed as well as developing nations of the world have agreed to sign and obey the directions of TINEP (United Nations Environment Programme) to freeze the production of CFCs or to 1imit their production to some extent."
+    },
+    {
+      "q": "Why are some substances biodegradable and some non-biodegradable?",
+      "a": "Some substances which are degraded and broken down into simpler substances by the microorganisms, are called biodegradable substances. For example: Cotton, wood, paper, wool, etc. Substance (mainly man-made) that do not degraded or broken down into simpler substances by the action of enzymes secreted by microorganisms are called non-biodegradable substances. For example: Plastic, polythene, DDT, etc."
+    },
+    {
+      "q": "Give any two ways in which biodegradable substances would affect the environment.",
+      "a": "During decomposition process of biodegradable substances foul smell and some harmful gases are released which make problem for the nearby living person. During decomposition it provide a breeding ground for mosquitoes, insects and microbes responsible for diseases like cholera, diarrhoea, etc."
+    },
+    {
+      "q": "Give any two ways in which non-biodegradable substances would affect the environment.",
+      "a": "Chemicals like BHC and DDT induce carcinoma (muscle cancer) and growth of tumours. Handling of waste materials may cause skin, respiratory and intestinal infections. Non-biodegradable substances do not decompose easily so it produces land and water pollution."
+    },
+    {
+      "q": "What is the role of decomposers in the ecosystem?",
+      "a": "Decomposers are microorganisms that act on dead and decaying bodies of producers and consumers and break them into simple inorganic compounds. They absorb some of the substances and release the rest into the environment to be recycled and to be used in future by producers. Thus, decomposers have a key role in the cycling of material in the biosphere and provide the raw materials to the producers. So in this way they make the soil fertile."
+    },
+    {
+      "q": "How can you help in reducing the problem of waste disposal? Give any two methods.",
+      "a": "By minimising the use of disposal items and promoting the use of recycled articles. Separating biodegradable and non-biodegradable waste before dumping them. Recycling the non-biodegradable waste material."
+    },
+    {
+      "q": "What is ozone and how does it affect any ecosystem?",
+      "a": "Ozone (O3) is a molecule formed by three atoms of oxygen. Ozone, is a deadly poison. However, at the higher levels of the atmosphere, ozone performs an essential function. It shields the surface of the earth from ultraviolet (UV) radiation from the Sun. This radiation is highly damaging to organisms, for example, it is known to cause skin cancer, cataract and damage the immune system in human beings. It also destroys plants and reduces photosynthesis process."
+    }
   ]
 };

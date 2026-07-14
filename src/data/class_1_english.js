@@ -133,190 +133,250 @@ export default {
   ],
   "3": [
     {
-      "q": "1.\nClass 1 Picture Time Important Questions",
-      "a": "Detailed solution available."
+      "q": "How many kinds of creatures are there in the poem \u201cOne little kitten\u201d?",
+      "a": "14 kinds of creatures are there in the poem."
     },
     {
-      "q": "2.\nClass 1 Picture Time Revision Notes\nConclusion\nNCERT Solutions for English Class 1 Chapter 3 Picture Time is a comprehensive resource for understanding the poem\u2019s concepts. With step-by-step explanations and examples, students can learn the concepts effectively. The solutions aid exam preparation with exercises and practice questions. Accessible in PDF format, students can review the material conveniently. These solutions for English Mridang Chapter 3 Class 1 enhance understanding, and exam performance, making it easier for students studying in Class 1. You can easily access and download the FREE Class 1 English Chapter 3 PDF from Vedantu updated for the 2026-27 syllabus. Students can refer to these solutions to perform better in their examinations.\nChapter-wise NCERT Solutions Class 1 English - Mridang\nAfter familiarising yourself with the Class 1 English Chapter 3 Question Answers, you can access comprehensive NCERT Solutions from all English Class 1 Mridang textbook chapters.\nChapter-wise NCERT Solutions for Class 1 English (Mridang)\nS. No\nUnit Name\nChapters",
-      "a": "Detailed solution available."
+      "q": "In the poem \u201cOne little kitten\u201d, Are the seals happy?",
+      "a": "No, the seals are not happy."
     },
     {
-      "q": "1.\nUnit 1 My Family and Me\nChapter 1 - Two Little Hands\nChapter 2 - Greetings",
-      "a": "Detailed solution available."
+      "q": "Where do the fish live?",
+      "a": "The fish lives in the water."
     },
     {
-      "q": "2.\nUnit 2 Life Around Us\nChapter 4 - The Cap-seller and the Monkeys\nChapter 5 - A Farm",
-      "a": "Detailed solution available."
+      "q": "What are the other things found in water?",
+      "a": "The other things found in water are ships, Boats, Plants, Submarines, Shells, etc."
     },
     {
-      "q": "3.\nUnit 3 Food\nChapter 6 - Fun with Pictures\nChapter 7 - The Food We Eat",
-      "a": "Detailed solution available."
+      "q": "There are many creatures in the poem \u201cOne little kitten\u201d. Which ones have you seen?",
+      "a": "I have seen cats, butterflies, rats, elephants, fishes, lizards, bees, donkeys"
     },
     {
-      "q": "4.\nUnit 4 Seasons\nChapter 8 - The Four Seasons\nChapter 9 - Anandi\u2019s Rainbow\nRelated Important Links for English (Mridang) Class 1\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 1.\nS.No.\nImportant Links for Class 1 English",
-      "a": "Detailed solution available."
+      "q": "There are many creatures in the poem \u201cOne little kitten\u201d. Which ones have you seen?",
+      "a": "I have seen cats, butterflies, rats, elephants, fishes, lizards, bees, donkeys."
     },
     {
-      "q": "1.\nClass 1 English NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Tell us about when you feel \u2014 sad, happy, brave, and nervous.",
+      "a": "1.\tI feel sad when I don\u2019t get the toy of my choice.\n2.\tI feel happy when I get chocolates, toffees, toys, etc.\n3.\tI feel brave when I speak the truth.\n4.\tI feel nervous when I have not completed my work."
     },
     {
-      "q": "2.\nClass 1 English Worksheet",
-      "a": "Detailed solution available."
+      "q": "b __ g",
+      "a": "a (bag)"
     },
     {
-      "q": "3.\nClass 1 English Grammar Solutions",
-      "a": "Detailed solution available."
+      "q": "c __ t",
+      "a": "o (cot)"
     },
     {
-      "q": "4.\nClass 1 English Revision Notes",
-      "a": "Detailed solution available."
+      "q": "h __ n",
+      "a": "e (hen)"
     },
     {
-      "q": "5.\nClass 1 English Important Questions",
-      "a": "Detailed solution available."
+      "q": "t __ p",
+      "a": "a (tap)"
+    },
+    {
+      "q": "c __ p",
+      "a": "a (cap)"
+    },
+    {
+      "q": "f __ x",
+      "a": "o (fox)"
+    },
+    {
+      "q": "t __ n",
+      "a": "i (tin)"
+    },
+    {
+      "q": "Who wrote the story \u201cLalu and Peelu\u201d?",
+      "a": "Vineeta Krishna wrote the story \u201cLalu and Peelu\u201d."
+    },
+    {
+      "q": "Name the chicks in the story.",
+      "a": "Lalu and Peelu were the names of the two chicks in the story."
+    },
+    {
+      "q": "Who liked yellow things?",
+      "a": "Peelu liked yellow things."
+    },
+    {
+      "q": "What did Lalu eat one day?",
+      "a": "One day Lalu ate red chilli."
+    },
+    {
+      "q": "Whose mouth started burning?",
+      "a": "Lalu\u2019s mouth started burning."
+    },
+    {
+      "q": "Who liked red things?",
+      "a": "Lalu liked red things."
+    },
+    {
+      "q": "Who brought a yellow laddu?",
+      "a": "Peelu brought a yellow laddu."
+    },
+    {
+      "q": "who kissed Peelu?",
+      "a": "Mother Hen and Lalu kissed Peelu."
+    },
+    {
+      "q": "Peelu brought a yellow laddu for Lalu. What are the other things Peelu could have brought that are both yellow and sweet? Name at least two.",
+      "a": "1.\tMoong dal barfi.\n2.\tJalebi\n3.\tBanana\n4.\tMango"
     }
   ],
   "4": [
     {
-      "q": "1.\nClass 1 The Cap-seller and the Monkeys Important Questions",
-      "a": "Detailed solution available."
+      "q": "What did the child see in the poem \u201cOnce I saw a little Bird\u201d?",
+      "a": "In the poem \u201cOnce I saw a little Bird\u201d, the child saw the little bird."
     },
     {
-      "q": "2.\nClass 1 The Cap-seller and the Monkeys Revision Notes\nConclusion\nNCERT Solutions for English Class 1 Chapter 4 The Cap-seller and the Monkeys is a comprehensive resource for understanding the lesson\u2019s concepts. With step-by-step explanations and examples, students can learn the concepts effectively. The solutions aid exam preparation with exercises and practice questions. Accessible in PDF format, students can review the material conveniently. These solutions for English Mridang Chapter 4 Class 1 enhance understanding, and exam performance, making it easier for students studying in Class 1. You can easily access and download the FREE Class 1 English Chapter 4 PDF from Vedantu updated for the 2026-27 syllabus. Students can refer to these solutions to perform better in their examinations.\nChapter-wise NCERT Solutions Class 1 English - Mridang\nAfter familiarising yourself with the Class 1 English Chapter 4 Question Answers, you can access comprehensive NCERT Solutions from all English Class 1 Mridang textbook chapters.\nChapter-wise NCERT Solutions for Class 1 English (Mridang)\nS. No\nUnit Name\nChapters",
-      "a": "Detailed solution available."
+      "q": "What was the little bird doing in the poem \u201cOnce I saw a little Bird\u201d?",
+      "a": "The little bird was sitting on a room\u2019s window."
     },
     {
-      "q": "1.\nUnit 1 My Family and Me\nChapter 1 - Two Little Hands\nChapter 2 - Greetings",
-      "a": "Detailed solution available."
+      "q": "Do you see any birds around your school or your house?",
+      "a": "Yes, I have seen birds around my school and house."
     },
     {
-      "q": "2.\nUnit 2 Life Around Us\nChapter 3 - Picture Time\nChapter 5 - A Farm",
-      "a": "Detailed solution available."
+      "q": "Have you tried talking to them?",
+      "a": "No, I never tried talking to them."
     },
     {
-      "q": "3.\nUnit 3 Food\nChapter 6 - Fun with Pictures\nChapter 7 - The Food We Eat",
-      "a": "Detailed solution available."
+      "q": "Who wrote the story \u201cMittu and the Yellow Mango\u201d?",
+      "a": "Chitra Narendran wrote the story \u201cMittu and the Yellow Mango\u201d."
     },
     {
-      "q": "4.\nUnit 4 Seasons\nChapter 8 - The Four Seasons\nChapter 9 - Anandi\u2019s Rainbow\nRelated Important Links for English (Mridang) Class 1\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 1.\nS.No.\nImportant Links for Class 1 English",
-      "a": "Detailed solution available."
+      "q": "What did Mittu see on the tree?",
+      "a": "Mittu saw a mango on the tree."
     },
     {
-      "q": "1.\nClass 1 English NCERT Book",
-      "a": "Detailed solution available."
+      "q": "What did the big black crow say?",
+      "a": "The black crow said, \u201cCaw, caw, go away. This is my tree,\u201d."
     },
     {
-      "q": "2.\nClass 1 English Worksheet",
-      "a": "Detailed solution available."
+      "q": "What did Mittu see under the tree?",
+      "a": "Mittu saw a red-colored balloon under the tree."
     },
     {
-      "q": "3.\nClass 1 English Grammar Solutions",
-      "a": "Detailed solution available."
+      "q": "What was the name of the parrot?",
+      "a": "The name of the parrot was \u201cMittu\u201d."
     },
     {
-      "q": "4.\nClass 1 English Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Do you like eating mangoes?",
+      "a": "Yes, I like eating Mangoes."
     },
     {
-      "q": "5.\nClass 1 English Important Questions",
-      "a": "Detailed solution available."
+      "q": "Do you like green mangoes? Why?",
+      "a": "No, I don\u2019t like green mangoes because I don\u2019t like their flavor."
+    },
+    {
+      "q": "Do you like yellow mangoes? Why?",
+      "a": "Yes, I like yellow mango because its flavor is sweet."
     }
   ],
   "5": [
     {
-      "q": "1.\nClass 1 A Farm Important Questions",
-      "a": "Detailed solution available."
+      "q": "How did the merry-go-round go in the poem \u201cMerry-Go-Round\u201d?",
+      "a": "The merry-go-round went round and round."
     },
     {
-      "q": "2.\nClass 1 A Farm Revision Notes\nConclusion\nNCERT Solutions for Class 1 English Chapter 5: A Farm provides a comprehensive and engaging learning experience for young children. By exploring farm life, students develop a strong foundation in language skills, a love for animals, and an appreciation for nature. With clear explanations, practice exercises, and a focus on fun, these solutions make learning about farms an enjoyable and enriching experience. You can easily access and download the FREE Class 1 English Chapter 5 PDF from Vedantu updated for the 2026-27 syllabus. Students can refer to these solutions to perform better in their examinations.\nChapter-wise NCERT Solutions Class 1 English - Mridang\nAfter familiarising yourself with the Class 1 English Chapter 5 Question Answers, you can access comprehensive NCERT Solutions from all English Class 1 Mridang textbook chapters.\nChapter-wise NCERT Solutions for Class 1 English (Mridang)\nS. No\nUnit Name\nChapters",
-      "a": "Detailed solution available."
+      "q": "How did the big brown horse go in the poem \u201cMerry-Go-Round\u201d?",
+      "a": "The big brown horse went up and down in the poem \u201cMerry-Go-Round\u201d."
     },
     {
-      "q": "1.\nUnit 1 My Family and Me\nChapter 1 - Two Little Hands\nChapter 2 - Greetings",
-      "a": "Detailed solution available."
+      "q": "Have you seen a merry-go-round?",
+      "a": "Yes, I have seen a merry-go-round."
     },
     {
-      "q": "2.\nUnit 2 Life Around Us\nChapter 3 - Picture Time\nChapter 4 - The Cap-seller and the Monkeys",
-      "a": "Detailed solution available."
+      "q": "Where have you seen a merry-go-round?",
+      "a": "I have seen a merry-go-round in the amusement park."
     },
     {
-      "q": "3.\nUnit 3 Food\nChapter 6 - Fun with Pictures\nChapter 7 - The Food We Eat",
-      "a": "Detailed solution available."
+      "q": "Would you like to go to a fair?",
+      "a": "Yes, I like to go to a fair."
     },
     {
-      "q": "4.\nUnit 4 Seasons\nChapter 8 - The Four Seasons\nChapter 9 - Anandi\u2019s Rainbow\nRelated Important Links for English (Mridang) Class 1\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 1.\nS.No.\nImportant Links for Class 1 English",
-      "a": "Detailed solution available."
+      "q": "Talk about the things you enjoy at a fair.",
+      "a": "I enjoy all the swings, especially the king wheel, roller coaster. I enjoy buying new toys, candies, etc. I also enjoy the magic show and the adventure car show at the fair. I enjoy eating the tasty food items there. In short, I enjoy the complete fair."
     },
     {
-      "q": "1.\nClass 1 English NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Who wrote the poem \u201cmerry-go-round\u201d?",
+      "a": "Dorothy W. Baruch wrote the poem \u201cmerry-go-round\u201d."
     },
     {
-      "q": "2.\nClass 1 English Worksheet",
-      "a": "Detailed solution available."
+      "q": "Who wrote the story \u201cCircle\u201d?",
+      "a": "Manorama Jafa wrote the story \u201cCircle\u201d."
     },
     {
-      "q": "3.\nClass 1 English Grammar Solutions",
-      "a": "Detailed solution available."
+      "q": "What did Grandmother and Mohini draw first?",
+      "a": "Grandmother and Mohini drew a circle first."
     },
     {
-      "q": "4.\nClass 1 English Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nClass 1 English Important Questions",
-      "a": "Detailed solution available."
+      "q": "What were the colors of the balloons that Mohini drew?",
+      "a": "Mohini drew Red, Blue, Green, and Yellow colored balloons."
     }
   ],
   "6": [
     {
-      "q": "1.\nClass 1 Fun with Pictures Important Questions",
-      "a": "Detailed solution available."
+      "q": "Where is the apple?",
+      "a": "The apple is on the tree."
     },
     {
-      "q": "2.\nClass 1 Fun with Pictures Revision Notes\nConclusion\n\"Fun with Pictures\" is an enjoyable chapter that young learners through engaging visual activities. Vedantu's NCERT Solutions for this chapter provide a comprehensive understanding, making learning fun and effective. Download the free PDF to help your child explore and interpret the world of pictures, ensuring a strong foundation in early English education.\nChapter-wise NCERT Solutions Class 1 English\nChapter-wise NCERT Solutions for Class 1 English (Mridang)\nS. No\nUnit Name\nChapters",
-      "a": "Detailed solution available."
+      "q": "Where is the boy?",
+      "a": "The boy is sitting near the apple tree."
     },
     {
-      "q": "1.\nUnit 1 My Family and Me\nChapter 1 - Two Little Hands\nChapter 2 - Greetings",
-      "a": "Detailed solution available."
+      "q": "How can the boy get the apple?",
+      "a": "The boy can get the apple by climbing on the apple tree."
     },
     {
-      "q": "2.\nUnit 2 Life Around Us\nChapter 3 - Picture Time\nChapter 4 - The Cap-seller and the Monkeys\nChapter 5 - A Farm",
-      "a": "Detailed solution available."
+      "q": "Do you like apples?",
+      "a": "Yes, I like apples a lot because apples are good for health."
     },
     {
-      "q": "3.\nUnit 3 Food\nChapter 7 - The Food We Eat",
-      "a": "Detailed solution available."
+      "q": "Have you ever climbed a fruit tree?",
+      "a": "No, I have never climbed a fruit tree."
     },
     {
-      "q": "4.\nUnit 4 Seasons\nChapter 8 - The Four Seasons\nChapter 9 - Anandi\u2019s Rainbow\nRelated Important Links for English Class 1\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 1\u2013\nS.No\nImportant Links for Class 1 English",
-      "a": "Detailed solution available."
+      "q": "The Poem \u201cOur Tree\u201d is written by whom?",
+      "a": "The Poem \u201cOur Tree\u201d is written by Pranab and Smita Chakravarti."
     },
     {
-      "q": "1.\nClass 1 English NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Where does the little bird see the fruit?",
+      "a": "The little bird sees the fruit on the tree."
     },
     {
-      "q": "2.\nClass 1 English Worksheet",
-      "a": "Detailed solution available."
+      "q": "What does she do?",
+      "a": "She eats the tasty fruit (berry)."
     },
     {
-      "q": "3.\nClass 1 English Grammar Solutions",
-      "a": "Detailed solution available."
+      "q": "What happens when she eats the berry?",
+      "a": "The bird flies tall and a berry seed falls on the ground."
     },
     {
-      "q": "4.\nClass 1 English NCERT Solutions",
-      "a": "Detailed solution available."
+      "q": "Where do birds live?",
+      "a": "Birds live in their nests (on the tree)."
     },
     {
-      "q": "5.\nClass 1 English Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Have you seen any birds near your house?",
+      "a": "Yes, I have seen birds near my house."
     },
     {
-      "q": "6.\nClass 1 English Important Questions",
-      "a": "Detailed solution available."
+      "q": "Do you know their names in English or in your own language?",
+      "a": "Yes, I know their names in English or in my own language."
+    },
+    {
+      "q": "Many \u2026\u2026\u2026\u2026\u2026. grew on the tree.",
+      "a": "mangoes"
+    },
+    {
+      "q": "Should trees be cut?",
+      "a": "No, trees should not be cut."
+    },
+    {
+      "q": "Name some trees which you have seen.",
+      "a": "I have seen Neem tree, Mango tree, Coconut tree, Banana tree, etc."
     }
   ],
   "7": [
@@ -449,52 +509,142 @@ export default {
   ],
   "9": [
     {
-      "q": "1.\nClass 1 Anandi\u2019s\u00a0 Rainbow\u00a0 Important Questions",
-      "a": "Detailed solution available."
+      "q": "What is the color of the sky?",
+      "a": "Class 1 English Unit 4 Chapter 1 Question Answer set 1"
     },
     {
-      "q": "2.\nClass 1 Anandi\u2019s\u00a0 Rainbow\u00a0 Revision Notes\nConclusion\nClass 1 Chapter 9 Anandi\u2019s Rainbow is a charming story that captivates young minds with its vibrant descriptions and teaches essential concepts like colours and creativity. NCERT Solutions provides a thorough understanding, making learning enjoyable and effective. Download the FREE PDF and let your child explore the beauty of rainbows through Anandi\u2019s adventure, ensuring a solid foundation in early English education.\nChapter-wise NCERT Solutions Class 1 English\nChapter-wise NCERT Solutions for Class 1 English (Mridang)\nS. No\nUnit Name\nChapters",
-      "a": "Detailed solution available."
+      "q": "What do the clouds bring?",
+      "a": "The clouds bring the rain."
     },
     {
-      "q": "1.\nUnit 1 My Family and Me\nChapter 1 - Two Little Hands\nChapter 2 - Greetings",
-      "a": "Detailed solution available."
+      "q": "What is the color of the clouds that bring us rain?",
+      "a": "The color of the clouds that bring us rain is grey or black."
     },
     {
-      "q": "2.\nUnit 2 Life Around Us\nChapter 3 - Picture Time\nChapter 4 - The Cap-seller and the Monkeys\nChapter 5 - A Farm",
-      "a": "Detailed solution available."
+      "q": "Do you like to dance and sing in the rain?",
+      "a": "Yes, I like to dance and sing in the rain."
     },
     {
-      "q": "3.\nUnit 3 Food\nChapter 6 - Fun with Pictures\nChapter 7 - The Food We Eat",
-      "a": "Detailed solution available."
+      "q": "What keeps you dry in the rain?",
+      "a": "Umbrella and raincoat keep me dry in the rain."
     },
     {
-      "q": "4.\nUnit 4 Seasons\nChapter 8 - The Four Seasons\nRelated Important Links for English Class 1\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 1\u2013\nS.No\nImportant Links for Class 1 English",
-      "a": "Detailed solution available."
+      "q": "What do you like to do when it rains? (stay in/go out)",
+      "a": "I like to go out in the rain."
     },
     {
-      "q": "1.\nClass 1 English NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Do you like puddles?",
+      "a": "No, I do not like puddles."
     },
     {
-      "q": "2.\nClass 1 English Worksheet",
-      "a": "Detailed solution available."
+      "q": "Which season do you like the most?",
+      "a": "Which season do you like the most?"
     },
     {
-      "q": "3.\nClass 1 English Grammar Solutions",
-      "a": "Detailed solution available."
+      "q": "What did Anandi see outside her window?",
+      "a": "Anandi saw a rainbow outside her window."
     },
     {
-      "q": "4.\nClass 1 English NCERT Solutions",
-      "a": "Detailed solution available."
+      "q": "Was she (Anandi) happy to see the rainbow?",
+      "a": "Yes, she (Anandi) was very happy to see the rainbow."
     },
     {
-      "q": "5.\nClass 1 English Revision Notes",
-      "a": "Detailed solution available."
+      "q": "What are the colors of the rainbow?",
+      "a": "Violet, indigo, blue, green, orange, red, yellow are the colors of the rainbow."
     },
     {
-      "q": "6.\nClass 1 English Important Questions",
-      "a": "Detailed solution available."
+      "q": "Who was Milli?",
+      "a": "Milli was Anandi\u2019s favorite cat."
+    },
+    {
+      "q": "What was the color of the sky?",
+      "a": "The color of the sky was blue."
+    }
+  ],
+  "10": [
+    {
+      "q": "Where does the Flying-man go?",
+      "a": "The flying-man goes up in the sky."
+    },
+    {
+      "q": "What does the child want to do?",
+      "a": "The child wants to go with the flying-man."
+    },
+    {
+      "q": "3.\tCan you guess who the Flying-man is? a.\tThe Flying-man is Superman. b.\tThe Flying-man is a pilot. c.\tThe Flying-man is an astronaut. d.\tThe Flying-man is Batman.",
+      "a": "(a) The Flying-Man is Superman. He is a very brave man. He helps people. He is great."
+    },
+    {
+      "q": "Have you seen an aeroplane?",
+      "a": "Yes, I have seen an aeroplane."
+    },
+    {
+      "q": "A person who sails a ship.",
+      "a": "A sailor."
+    },
+    {
+      "q": "A person who flies a spaceship.",
+      "a": "An astronaut."
+    },
+    {
+      "q": "A person who draws or paints.",
+      "a": "An artist."
+    },
+    {
+      "q": "A person who makes sick people well.",
+      "a": "A doctor"
+    },
+    {
+      "q": "A person who brings letters.",
+      "a": "A postman."
+    },
+    {
+      "q": "A person who grows crops.",
+      "a": "A farmer."
+    },
+    {
+      "q": "A person who makes clothes.",
+      "a": "A tailor."
+    },
+    {
+      "q": "A person who works in school.",
+      "a": "A teacher."
+    },
+    {
+      "q": "A person who checks teeth.",
+      "a": "A dentist."
+    },
+    {
+      "q": "A person who flies an aeroplane.",
+      "a": "A pilot."
+    },
+    {
+      "q": "Who was Kalu?",
+      "a": "Kalu was a tailor."
+    },
+    {
+      "q": "Who was Appu?",
+      "a": "Appu was an elephant."
+    },
+    {
+      "q": "Where was Kalu\u2019s shop?",
+      "a": "Kalu\u2019s (tailor) shop was near the river."
+    },
+    {
+      "q": "What trick did Kalu play on Appu?",
+      "a": "Kalu pricked a needle in Appu\u2019s trunk."
+    },
+    {
+      "q": "How did Kalu\u2019s clothes become wet?",
+      "a": "Appu threw water on Kalu\u2019s clothes through his trunk."
+    },
+    {
+      "q": "What games do you play with your friends?",
+      "a": "I play hide n seek, cricket, ludo, chess, etc with my friends."
+    },
+    {
+      "q": "Can you walk and make sounds like an elephant?",
+      "a": "Yes, I can walk and make sounds like an elephant."
     }
   ]
 };

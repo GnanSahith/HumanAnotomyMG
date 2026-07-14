@@ -1424,5 +1424,49 @@ export default {
       "q": "12.\nChapter 12 - Forests: Our Lifeline Solutions\nRelated Study Material Class 7 Science\nS. No\nImportant Study Material for Science Class 7\n1\nCBSE Class 7 Science Revision Notes\n2\nCBSE Class 7 Science Important Questions\n3\nCBSE Class 7 Science Sample Papers\n4\nCBSE Class 7 Science NCERT Exemplar Solutions\n5\nCBSE Class 7 Science Worksheets\n6\nCBSE Class 7 Science NCERT Books",
       "a": "Detailed solution available."
     }
+  ],
+  "17": [
+    {
+      "q": "Explain how animals dwelling in the forest help it grow and regenerate.",
+      "a": "Various types of animals (herbivores, carnivores, omnivores) live in forests and contribute to food chain. Following activities show how animals help forest grow and regenerate. Animals help in dispersal of seeds from one part of the forest to other part. Animal\u2019s excreta and their dead bodies when decomposed into soil act as manure for the plants. Microorganisms convert dead plants and leaves into humus which is rich in nutrients. Humus in soil provide necessary minerals for plant growth."
+    },
+    {
+      "q": "What are decomposers? Name any two of them. What do they do in the forest?",
+      "a": "The micro-organisms which convert the dead plants and animals to humus are known as decomposers. Examples: Fungi and Bacteria. Decomposers recycle and convert the dead matter into humus which mixes with forest soil and provide necessary nutrients to plants. Thus decomposers help in maintaining the necessary nutrient balance in the soil."
+    },
+    {
+      "q": "Explain the role of forest in maintaining the balance between oxygen and carbon dioxide in the atmosphere.",
+      "a": "Forests play an important role in maintaining the balance between oxygen and carbon dioxide in the atmosphere. Forest works like a self-sustaining system. Whatever is produced in the forest is utilized by different components of the forest. Animals during respiration take in oxygen and release carbon dioxide. Plants take in carbon dioxide and release oxygen through the process of photosynthesis. Even the waste is converted into beneficial substances in a forest. Due to this, there is no waste in a forest."
+    },
+    {
+      "q": "Fill in the blank: The insects, butterflies, honeybees and birds help flowering plants in _____________.",
+      "a": "The insects, butterflies, honeybees and birds help flowering plants in pollination."
+    },
+    {
+      "q": "Why should we worry about the conditions and issues related to forests far from us?",
+      "a": "Forests are very important resources. We should be careful and concerned about the issues related to forest due to following reasons: If there are no forests, there would be more floods and more soil erosion. Forests affect the global environment in a great way. For example; reduced forest cover in a particular area leads to global warming which affects the whole earth. Forests are the dwelling of many animals. Deforestation will endanger our life and environment. In the absence of trees and plants, the animals will not get food and shelter. Forests provide us large number of useful products including wood, fruits and medicines. These products would not be available in the absence of trees and plants."
+    }
+  ],
+  "18": [
+    {
+      "q": "Why should oils and fats be not released in the drain? Explain.",
+      "a": "Oil and fats can clog the drains reducing its effectiveness in filtering water. In open drains, they block the pores in the soil and thus hamper the filtration by soil. Hence, oil and fats should not be released in the drain."
+    },
+    {
+      "q": "Fill in the blank: Cleaning of water is a process of removing _________.",
+      "a": "Cleaning of water is a process of removing pollutant."
+    },
+    {
+      "q": "Describe the steps involved in getting clarified water from wastewater.",
+      "a": "Treatment of wastewater involves physical, chemical, and biological processes, which remove physical, chemical and biological matter that contaminates the wastewater. Following steps are involved: Wastewater is passed through bar screens which remove large objects like rags, sticks, cans, plastic packets, napkins etc. Water then goes through Grit and Sand removal tank, where sand, grit and pebbles settle down. Water is then allowed to settle in a tank where solids like faeces (called sludge) settle at the bottom and are removed with a scraper. A skimmer removes the floatable solids like oil and grease. Water so cleared is called clarified water. Sludge is used to produce biogas. Clarified water is then passed through an aerator tank where air is pumped into the water. It helps aerobic bacteria to grow which decompose organic matter like human waste. After several hours, the suspended microbes settle at the bottom of the tank as activated sludge. The water is then removed from the top. The dried activated sludge is used as manure. Water is removed from the top and is stored in a tank. The treated water has low level of organic material and suspended matter. It is discharged into a sea, a river or into the ground. Sometimes it is disinfected through chemicals like Chlorine and ozone and then distributed to towns."
+    },
+    {
+      "q": "Name two chemicals used to disinfect water.",
+      "a": "Chemicals like chlorine (Chlorine dioxide) and ozone (in the pharmaceutical industry) are commonly used to disinfect water."
+    },
+    {
+      "q": "Explain the function of bar screens in a wastewater treatment plant.",
+      "a": "Bar screens are used to remove large objects like rags, sticks, cans, plastic packets napkins, etc."
+    }
   ]
 };

@@ -477,44 +477,32 @@ export default {
   ],
   "5": [
     {
-      "q": "1.\nClass 12 Molecular Basis of Inheritance Important Questions",
-      "a": "Detailed solution available."
+      "q": "Group the following as nitrogenous bases and nucleosides: Adenine, Cytidine, Thymine, Guanosine, Uracil and Cytosine.",
+      "a": "Nitrogenous bases present in the list are adenine, thymine, uracil, and cytosine. Nucleosides present in the list are cytidine and guanosine."
     },
     {
-      "q": "2.\nClass 12\u00a0 Molecular Basis of Inheritance Exemplar Solutions",
-      "a": "Detailed solution available."
+      "q": "If the sequence of one strand of DNA is written as follows: 5\u2032-ATGCATGCATGCATGCATGCATGCATGC-3\u2032 Write down the sequence of complementary strand in 5\u2019\u21923\u2032 direction.",
+      "a": "The DNA strands are complementary to each other with respect to base sequence. Hence, if the sequence of one strand of DNA is 5\u2032- ATGCATGCATGCATGCATGCATGCATGC \u2212 3\u2019 Then, the sequence of complementary strand in 5\u2032 to 3\u2032 direction will be 3\u2032- TACGTACGTACGTACGTACGTACGTACG \u2212 5\u2019 Therefore, the sequence of nucleotides on DNA polypeptide in 5\u2032 to 3\u2032 direction is 5\u2032- GCATGCATGCATGCATGCATGCATGCAT\u2212 3\u2019"
     },
     {
-      "q": "3.\nClass 12\u00a0 Molecular Basis of Inheritance Revision Notes\nConclusion\nClass 12 Biology Chapter 5 Molecular Basis of Inheritance NCERT Solutions provides students with a comprehensive and in-depth understanding of genetic inheritance's intricate processes. With a focus on DNA replication, transcription, translation, and gene regulation, the Molecular Basis of Inheritance Class 12 PDF elucidates the molecular mechanisms underlying heredity. Overall, the Molecular Basis of Inheritance Class 12 NCERT Solutions empowers students to grasp the fundamental principles of molecular genetics and excel in their academic pursuits.\nNCERT Solutions for Class 12 Biology | Other Chapter-wise Links\nBelow are the other chapter-wise links for NCERT Solutions for Class 12 Biology.\nS.No.\nOther Chapter-wise Links for NCERT Solutions Class 12 Biology\n1\nChapter 1 - Sexual Reproduction in Flowering Plants Solutions\n2\nChapter 2 - Human Reproduction Solutions\n3\nChapter 3 - Reproductive Health Solutions\n4\nChapter 4 - Principles of Inheritance and Variation Solutions\n5\nChapter 6 - Evolution Solutions\n6\nChapter 7 - Human Health and Disease Solutions\n7\nChapter 8 - Microbes in Human Welfare Solutions\n8\nChapter 9 - Biotechnology Principles and Processes Solutions\n9\nChapter 10 - Biotechnology and Its Applications Solutions\n10\nChapter 11 - Organisms and Populations Solutions\n11\nChapter 12 - Ecosystem Solutions\n12\nChapter 13 - Biodiversity and Conservation Solutions\nOther Related Links for Class 12 Biology\nS.No.\nImportant Links for Class 12 Biology",
-      "a": "Detailed solution available."
+      "q": "If a double stranded DNA has 20 per cent of cytosine, calculate the per cent of adenine in the DNA.",
+      "a": "According to Chargaff\u2019s rule, the DNA molecule should have an equal ratio of pyrimidine (cytosine and thymine) and purine (adenine and guanine). It means that the number of adenine molecules is equal to thymine molecules and the number of guanine molecules is equal to cytosine molecules. % A = % T and % G = % C If DNA has 20% of cytosine, then according to the law, it would have 20% of guanine. Thus, percentage of G + C content = 40% The remaining 60% represents both A + T molecule. Since adenine and guanine are always present in equal numbers, the percentage of adenine molecule is 30%."
     },
     {
-      "q": "1.\nCBSE Class 12 Biology Important Questions",
-      "a": "Detailed solution available."
+      "q": "Depending upon the chemical nature of the template (DNA or RNA) and the nature of nucleic acids synthesised from it (DNA or RNA), list the types of nucleic acid polymerases.",
+      "a": "There are two different types of nucleic acid polymerases. DNA-dependent DNA polymerases DNA-dependent RNA polymerases The DNA-dependent DNA polymerases use a DNA template for synthesizing a new strand of DNA, whereas DNA-dependent RNA polymerases use a DNA template strand for synthesizing RNA."
     },
     {
-      "q": "2.\nNCERT Class 12 Biology Exemplar Solutions",
-      "a": "Detailed solution available."
+      "q": "List two essential roles of ribosome during translation.",
+      "a": "The important functions of ribosome during translation are as follows. Ribosome acts as the site where protein synthesis takes place from individual amino acids. It is made up of two subunits. The smaller subunit comes in contact with mRNA and forms a protein synthesizing complex whereas the larger subunit acts as an amino acid binding site. Ribosome acts as a catalyst for forming peptide bond. For example, 23s r-RNA in bacteria acts as a ribozyme."
     },
     {
-      "q": "3.\nCBSE Class 12\u00a0 Biology Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Why is the Human Genome project called a mega project?",
+      "a": "Human genome project was considered to be a mega project because it had a specific goal to sequence every base pair present in the human genome. It took around 13 years for its completion and got accomplished in year 2006. It was a large scale project, which aimed at developing new technology and generating new information in the field of genomic studies. As a result of it, several new areas and avenues have opened up in the field of genetics, biotechnology, and medical sciences. It provided clues regarding the understanding of human biology."
     },
     {
-      "q": "4.\nNCERT Books for Class 12 Biology",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Sample Papers for Class 12 Biology",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nCBSE Class 12 Biology Previous Year Question Paper",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nCBSE Class 12 Biology Syllabus",
-      "a": "Detailed solution available."
+      "q": "What is DNA fingerprinting? Mention its application.",
+      "a": "DNA fingerprinting is a technique used to identify and analyse the variations in various individuals at the level of DNA. It is based on variability and polymorphism in DNA sequences. Application It is used in forensic science to identify potential crime suspects. It is used to establish paternity and family relationships. It is used to identify and protect the commercial varieties of crops and livestock. It is used to find out the evolutionary history of an organism and trace out the linkages between groups of various organisms."
     }
   ],
   "6": [
@@ -785,84 +773,28 @@ export default {
   ],
   "9": [
     {
-      "q": "1. Self-replicating\nReplicates under nuclear control",
-      "a": "Detailed solution available."
+      "q": "From what you have learnt, can you tell whether enzymes are bigger or DNA is bigger in molecular size? How did you know?",
+      "a": "Enzymes are smaller in size than DNA molecules. We know this because DNA contains genetic information for the development and functioning of all living organisms. It contains instructions for the synthesis of proteins and DNA molecules. On the other hand, enzymes are proteins which are synthesised from a small stretch of DNA known as \u2018genes\u2019, which are involved in the production of the polypeptide chain."
     },
     {
-      "q": "2. Double stranded in a circular pattern\nLinear, circular, or double stranded",
-      "a": "Detailed solution available."
+      "q": "What would be the molar concentration of human DNA in a human cell?",
+      "a": "The molar concentration of human DNA in a human diploid cell is as follows: \u21d2 Total number of chromosomes \u00d7 6.023 \u00d7 10^23 \u21d2 46 \u00d7 6.023 \u00d7 10^23 \u21d2 2.77 \u00d7 10^23 moles Hence, the molar concentration of DNA in each diploid cell in humans is 2.77 \u00d7 10^23 moles."
     },
     {
-      "q": "3. Does not attach to histones\nThe protein is associated with histones.",
-      "a": "Detailed solution available."
+      "q": "Do eukaryotic cells have restriction endonucleases? Justify your answer.",
+      "a": "No, eukaryotic cells do not have restriction endonucleases. This is because the DNA of eukaryotes is highly methylated by a modification enzyme, called methylase. Methylation protects the DNA from the activity of restriction enzymes .These enzymes are present in prokaryotic cells where they help prevent the invasion of DNA by virus."
     },
     {
-      "q": "4. Contains a few genes for characteristics such as antibiotic resistance and fertility factor.\nControls the metabolism of cells by controlling the characters and proteins for that purpose.\n(b) RNA and DNA\nRNA\nDNA",
-      "a": "Detailed solution available."
+      "q": "Besides better aeration and mixing properties, what other advantages do stirred tank bioreactors have over shake flasks?",
+      "a": "The shake flask method is used for a small-scale production of biotechnological products in a laboratory. On the other hand, stirred tank bioreactors are used for a large-scale production of biotechnology products. Stirred tank bioreactors have several advantages over shake flasks. Some of them are Small volumes of culture can be taken out from the reactor for sampling or testing. It has a foam breaker for regulating the foam. It has a control system that regulates the temperature and pH."
     },
     {
-      "q": "1. Ribonucleic acid, with Pentose sugar in the form of Ribose\nThe sugar originating from Deoxyribonucleic Acid is called Deoxyribose.",
-      "a": "Detailed solution available."
+      "q": "Can you recall meiosis and indicate at what stage a recombinant DNA is made?",
+      "a": "Meiosis is a process that involves the reduction in the amount of genetic material. It is two types, namely meiosis I and meiosis II. During the pachytene stage of prophase I, crossing over of chromosomes takes place where the exchange of segments between non-sister chromatids of homologous chromosomes takes place. This results in the formation of recombinant DNA."
     },
     {
-      "q": "2. Single stranded\nDouble stranded",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3. Transfer information from DNA to proteins\nThe genetic material that makes up the human body",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4. Includes uracil and cytosine as Pyrimidine bases\nThe thymine and cytosine bases are Pyrimidines",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5. Stability reduced by the presence of 2 \u0301- OH group of RNA nucleotides\nMore stable because of double stranded nature and the presence of Thymine",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\u00a0 RNA polymerase is responsible for synthesis\nThe product of DNA polymerase\n(c) Exonuclease and Endonuclease\nExonuclease\nEndonuclease",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1. Remove nucleotides from the ends of the DNA.\nEliminate nucleotides at specific sites within DNA",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2. Produce blunt ends.\nCreates sticky ends.",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3. Pathogens aren't being restricted from entering.\nLimit the entry of pathogens.\nAction of Exonuclease, B. Action of endonuclease\nNCERT Solutions for Class 12 Biology Chapter 9 - Free PDF Download\nNCERT Class 12 Biology Chapter 9, focuses on Biotechnology: Principles and Processes. The first chapter of the Unit covers the theories and concepts that form Biotechnology\u2019s groundwork and standard practices in the field. Vedantu\u2019s NCERT Class 12 Biology Chapter 9 Solutions will help you answer the practice exercise questions quickly and understand the theories covered in the chapter and their applications in the real world. A far share of these questions are also frequently repeated in board exams and are essential for the entrance exams as well. These are fundamental lessons that a student will have to learn if they pursue Biology for further studies. This chapter demands a study that is focused on understanding the concepts, the methodology, and the practices. The subject-matter experts at Vedantu have prepared these NCERT Solutions for the convenient learning process of students. So, download the NCERT Class 12 Biology Chapter 9 Solutions PDF to master Chapter 9- Biotechnology: Principles and Processes.\nChapter 9 - Biotechnology: Principles and Processes\nChapter 9 Biotechnology: Principles and Processes, is based on Biotechnology\u2019s basic concepts, especially the various principles and practices that lay its foundations. This is the first of two chapters in Unit 9 of Class 12 Biology and is the theory part of this Unit.\nThe focal point of this chapter is the various norms and practices that are used in the field of Biotechnology. Students are expected to grasp some basic knowledge of the field and understand the fundamental concepts behind various common biomedical practices, namely, Recombinant DNA Technology, from this chapter.\nBenefits of NCERT Solutions for Class 12 Biology\nBiology is a difficult subject but with the help of our carefully curated and well-structured study material, it should become easy for students to understand the concepts rather than memorizing them. The following are some features of our NCERT Class 12 Biology Solutions.\nAccurate solutions that are curated properly, explained easily, and prepared as per CBSE Guidelines by experts of the topic.\nThe answers are detailed and connected to the theory and concepts in the syllabus.\nThe study material focuses on a problem-based understanding of the underlying concepts covered in the chapter.\nOur subject experts have covered all the important points in the solutions for the ease of learning of students, thereby, ensuring high scores.\nThe solutions are available online for free download in a PDF Format.\nHow are Vedantu's Study materials beneficial for exam preparation?\nVedantu's study materials are useful for all students and are optimized for learning of the concepts thoroughly. The solutions for each and every topic are prepared as per CBSE Guidelines. All the answers are ensured to contain the key points that are relevant to the question.\nThe study materials, solution keys, and other resources cover the sub-topics handpicked from the chapter with the highest relevance. These topics are the ones that have the most weightage in the chapter as well as for the exams. All the content and resources are exam-oriented, with due importance given to relevant topics in the subject.\nOur in-house experts are always available round the clock to answer the questions of students. Any doubts regarding any subject can be cleared right away by consulting our faculty. You can download our Vedantu app now and get your doubts cleared right away.\nConclusion\nNCERT Solutions play a crucial role in Class 12 exam prep. Start by thoroughly reading the textbook chapter. After that, solve the NCERT questions for Class 12 Chapter 9 - Biotechnology Principle and Processes. You can find detailed solutions on Vedantu, aligning with CBSE guidelines. Download the free NCERT Solutions for Class 12 Chapter 9 - Biotechnology Principle and Processes to guide your exam preparation with expert-reviewed answers.\nExplore Study Materials for Class 12 Chapter 9 - Biotechnology Principles and Processes\nS. No\nImportant Links for Class 12 Chapter 9 Biotechnology and Principles\n1\nChapter 9: Biotechnology Principles and Processes Important Questions\n2\nChapter 9: Biotechnology Principles and Processes Revision Notes\n3\nChapter 9: Biotechnology Principles and Processes NCERT Exemplar Solutions\nNCERT Solutions for Class 12 Biology | Chapter-wise Links\nGiven below are the chapter-wise links for NCERT Solutions for Class 12 Biology. These solutions are provided by the Biology experts at Vedantu in a detailed manner. You can download FREE PDFs of these chapter-wise solutions to be thoroughly familiar with the concepts.\nS.No.\nOther Chapter-wise Links for NCERT Solutions Class 12 Biology\n1\nChapter 1 - Sexual Reproduction in Flowering Plants Solutions\n2\nChapter 2 - Human Reproduction Solutions\n3\nChapter 3 - Reproductive Health Solutions\n4\nChapter 4 - Principles of Inheritance and Variation Solutions\n5\nChapter 5 - Molecular Basis of Inheritance Solutions\n6\nChapter 6 - Evolution Solutions\n7\nChapter 7 - Human Health and Disease Solutions\n8\nChapter 8 - Microbes in Human Welfare Solutions\n9\nChapter 10 - Biotechnology and Its Applications Solutions\n10\nChapter 11 - Organisms and Populations Solutions\n11\nChapter 12 - Ecosystem Solutions\n12\nChapter 13 - Biodiversity and Conservation Solutions\nOther Related Links for Class 12 Biology\nS.No.\nImportant Links for Class 12 Biology",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nCBSE Class 12 Biology Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nNCERT Class 12 Biology Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 12\u00a0 Biology Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nNCERT Books for Class 12 Biology",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Sample Papers for Class 12 Biology",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nCBSE Class 12 Biology Previous Year Question Paper",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nCBSE Class 12 Biology Syllabus",
-      "a": "Detailed solution available."
+      "q": "Can you think and answer how a reporter enzyme can be used to monitor transformation of host cells by foreign DNA in addition to a selectable marker?",
+      "a": "A reporter gene can be used to differentiate transformed cells by tracking down the activity of its co-responding genes (receptor gene). It can be used to monitor the transformation of host cells by foreign DNA. They act as a selectable marker to determine whether the host cell has taken up the foreign DNA or the foreign gene gets expressed in the cell. The researchers place the reporter gene and the foreign gene in the same DNA construct. Then, this combined DNA construct is inserted in the cell. Here, the reporter gene is used as a selectable marker to find out the successful uptake of genes of interest (foreign genes). An example of reporter genes includes lac Z gene, which encodes a green fluorescent protein in a jelly fish. The others, which appear blue in colour, indicate that cells do not carry foreign DNA."
     }
   ],
   "10": [
@@ -1223,5 +1155,90 @@ export default {
       "a": "Detailed solution available."
     }
   ],
-  "13": []
+  "13": [
+    {
+      "q": "What is the significance of the slope of regression in a species \u2212 area relationship?",
+      "a": "The slope of regression (z) has a great significance in order to find a species-area relationship. It has been found that in smaller areas (where the species-area relationship is analysed), the value of slopes of regression is similar regardless of the taxonomic group or the region. However, when a similar analysis is done in larger areas, then the slope of regression is much steeper."
+    },
+    {
+      "q": "Name the three important components of biodiversity.",
+      "a": "Biodiversity is the variety of living forms present in various ecosystems. It includes variability among life forms from all sources including land, air, and water. Three important components of biodiversity are: Genetic diversity Species diversity Ecosystem diversity."
+    },
+    {
+      "q": "Give three hypotheses for explaining why tropics show greatest levels of species richness.",
+      "a": "There are three different hypotheses proposed by scientists for explaining species richness in the tropics. Tropical latitudes receive more solar energy than temperate regions, which leads to high productivity and high species diversity. Tropical regions have less seasonal variations and have a more or less constant environment. This promotes the niche specialization and thus, high species richness. Temperate regions were subjected to glaciations during the ice age, while tropical regions remained undisturbed which led to an increase in the species diversity in this region."
+    },
+    {
+      "q": "How do ecologists estimate the total number of species present in the world?",
+      "a": "The diversity of living organisms present on the Earth is very vast. According to an estimate by researchers, it is about seven millions. The total number of species present in the world is calculated by ecologists by statistical comparison between a species richness of a well-studied group of insects of temperate and tropical regions. Then, these ratios are extrapolated with other groups of plants and animals to calculate the total species richness present on the Earth."
+    },
+    {
+      "q": "How is biodiversity important for ecosystem functioning?",
+      "a": "An ecosystem with high species diversity is much more stable than an ecosystem with low species diversity. Also, high biodiversity makes the ecosystem more stable in productivity and more resistant towards disturbances such as alien species invasions and floods. If an ecosystem is rich in biodiversity, then the ecological balance would not get affected. As we all know, various trophic levels are connected through food chains. If any organism or all organisms of any one trophic level is killed, then it will disrupt the entire food chain. For example, in a food chain, if all plants are killed, then all deer\u2019s will die due to the lack of food. If all deer\u2019s are dead, soon the tigers will also die. Therefore, it can be concluded that if an ecosystem is rich in species, then there will be other food alternatives at each trophic level which would not allow any organism to die due to the absence of their food resource. Hence, biodiversity plays an important role in maintaining the health and ecological balance of an ecosystem."
+    },
+    {
+      "q": "Among the ecosystem services are control of floods and soil erosion. How is this achieved by the biotic components of the ecosystem?",
+      "a": "The biotic components of an ecosystem include the living organisms such as plants and animals. Plants play a very important role in controlling floods and soil erosion. The roots of plants hold the soil particles together, thereby preventing the top layer of the soil to get eroded by wind or running water. The roots also make the soil porous, thereby allowing ground water infiltration and preventing floods. Hence, plants are able to prevent soil erosion and natural calamities such as floods and droughts. They also increase the fertility of soil and biodiversity."
+    },
+    {
+      "q": "What are sacred groves? What is their role in conservation?",
+      "a": "Sacred groves are tracts of forest which are regenerated around places of worship. Sacred groves are found in Rajasthan, Western Ghats of Karnataka and Maharashtra, Meghalaya and Madhya Pradesh. Sacred groves help in the protection of many rare, threatened, and endemic species of plants and animals found in an area. The process of deforestation is strictly prohibited in this region by tribal. Hence, the sacred grove biodiversity is a rich area."
+    },
+    {
+      "q": "Can you think of a situation where we deliberately want to make a species extinct? How would you justify it?",
+      "a": "Yes, there are various kinds of parasites and disease-causing microbes that we deliberately want to eradicate from the Earth. Since these micro-organisms are harmful to human beings, scientists are working hard to fight against them. Scientists have been able to eliminate small pox virus from the world through the use of vaccinations. This shows that humans deliberately want to make these species extinct. Several other eradication programmes such as polio and Hepatitis B vaccinations are aimed to eliminate these disease-causing microbes."
+    }
+  ],
+  "14": [
+    {
+      "q": "Define ecological pyramids.",
+      "a": "An ecological pyramid is a graphical representation of various ecological parameters such as the number of individuals present at each trophic level, the amount of energy, or the biomass present at each trophic level. Ecological pyramids represent producers at the base, while the apex represents the top level consumers present in the ecosystem. There are three types of pyramids: Pyramid of numbers Pyramid of energy Pyramid of biomass."
+    },
+    {
+      "q": "What is primary productivity? Give brief description of factors that affect primary productivity.",
+      "a": "It is defined as the amount of organic matter or biomass produced by producers per unit area over a period of time. Primary productivity of an ecosystem depends on the variety of environmental factors such as light, temperature, water, precipitation, etc. It also depends on the availability of nutrients and the availability of plants to carry out photosynthesis."
+    },
+    {
+      "q": "Write important features of a sedimentary cycle in an ecosystem.",
+      "a": "Sedimentary cycles have their reservoirs in the Earth\u2019s crust or rocks. Nutrient elements are found in the sediments of the Earth. Elements such as sulphur, phosphorus, potassium, and calcium have sedimentary cycles. Sedimentary cycles are very slow. They take a long time to complete their circulation and are considered as less perfect cycles. This is because during recycling, nutrient elements may get locked in the reservoir pool, thereby taking a very long time to come out and continue circulation. Thus, it usually goes out of circulation for a long time."
+    },
+    {
+      "q": "Outline salient features of carbon cycling in an ecosystem.",
+      "a": "The carbon cycle is an important gaseous cycle which has its reservoir pool in the atmosphere. All living organisms contain carbon as a major body constituent. Carbon is a fundamental element found in all living forms. All biomolecules such as carbohydrates, lipids, and proteins required for life processes are made of carbon. Carbon is incorporated into living forms through a fundamental process called \u2018photosynthesis\u2019. Photosynthesis uses sunlight and atmospheric carbon dioxide to produce a carbon compound called \u2018glucose\u2019. This glucose molecule is utilized by other living organisms. Thus, atmospheric carbon is incorporated in living forms. Now, it is necessary to recycle this absorbed carbon dioxide back into the atmosphere to complete the cycle. There are various processes by which carbon is recycled back into the atmosphere in the form of carbon dioxide gas. The process of respiration breaks down glucose molecules to produce carbon dioxide gas. The process of decomposition also releases carbon dioxide from dead bodies of plants and animals into the atmosphere. Combustion of fuels, industrialization, deforestation, volcanic eruptions, and forest fires act as other major sources of carbon dioxide."
+    }
+  ],
+  "15": [
+    {
+      "q": "What is the significance of the slope of regression in a species \u2212 area relationship?",
+      "a": "The slope of regression (z) has a great significance in order to find a species-area relationship. It has been found that in smaller areas (where the species-area relationship is analysed), the value of slopes of regression is similar regardless of the taxonomic group or the region. However, when a similar analysis is done in larger areas, then the slope of regression is much steeper."
+    },
+    {
+      "q": "Name the three important components of biodiversity.",
+      "a": "Biodiversity is the variety of living forms present in various ecosystems. It includes variability among life forms from all sources including land, air, and water. Three important components of biodiversity are: Genetic diversity Species diversity Ecosystem diversity."
+    },
+    {
+      "q": "Give three hypotheses for explaining why tropics show greatest levels of species richness.",
+      "a": "There are three different hypotheses proposed by scientists for explaining species richness in the tropics. Tropical latitudes receive more solar energy than temperate regions, which leads to high productivity and high species diversity. Tropical regions have less seasonal variations and have a more or less constant environment. This promotes the niche specialization and thus, high species richness. Temperate regions were subjected to glaciations during the ice age, while tropical regions remained undisturbed which led to an increase in the species diversity in this region."
+    },
+    {
+      "q": "How do ecologists estimate the total number of species present in the world?",
+      "a": "The diversity of living organisms present on the Earth is very vast. According to an estimate by researchers, it is about seven millions. The total number of species present in the world is calculated by ecologists by statistical comparison between a species richness of a well-studied group of insects of temperate and tropical regions. Then, these ratios are extrapolated with other groups of plants and animals to calculate the total species richness present on the Earth."
+    },
+    {
+      "q": "How is biodiversity important for ecosystem functioning?",
+      "a": "An ecosystem with high species diversity is much more stable than an ecosystem with low species diversity. Also, high biodiversity makes the ecosystem more stable in productivity and more resistant towards disturbances such as alien species invasions and floods. If an ecosystem is rich in biodiversity, then the ecological balance would not get affected. As we all know, various trophic levels are connected through food chains. If any organism or all organisms of any one trophic level is killed, then it will disrupt the entire food chain. For example, in a food chain, if all plants are killed, then all deer\u2019s will die due to the lack of food. If all deer\u2019s are dead, soon the tigers will also die. Therefore, it can be concluded that if an ecosystem is rich in species, then there will be other food alternatives at each trophic level which would not allow any organism to die due to the absence of their food resource. Hence, biodiversity plays an important role in maintaining the health and ecological balance of an ecosystem."
+    },
+    {
+      "q": "Among the ecosystem services are control of floods and soil erosion. How is this achieved by the biotic components of the ecosystem?",
+      "a": "The biotic components of an ecosystem include the living organisms such as plants and animals. Plants play a very important role in controlling floods and soil erosion. The roots of plants hold the soil particles together, thereby preventing the top layer of the soil to get eroded by wind or running water. The roots also make the soil porous, thereby allowing ground water infiltration and preventing floods. Hence, plants are able to prevent soil erosion and natural calamities such as floods and droughts. They also increase the fertility of soil and biodiversity."
+    },
+    {
+      "q": "What are sacred groves? What is their role in conservation?",
+      "a": "Sacred groves are tracts of forest which are regenerated around places of worship. Sacred groves are found in Rajasthan, Western Ghats of Karnataka and Maharashtra, Meghalaya and Madhya Pradesh. Sacred groves help in the protection of many rare, threatened, and endemic species of plants and animals found in an area. The process of deforestation is strictly prohibited in this region by tribal. Hence, the sacred grove biodiversity is a rich area."
+    },
+    {
+      "q": "Can you think of a situation where we deliberately want to make a species extinct? How would you justify it?",
+      "a": "Yes, there are various kinds of parasites and disease-causing microbes that we deliberately want to eradicate from the Earth. Since these micro-organisms are harmful to human beings, scientists are working hard to fight against them. Scientists have been able to eliminate small pox virus from the world through the use of vaccinations. This shows that humans deliberately want to make these species extinct. Several other eradication programmes such as polio and Hepatitis B vaccinations are aimed to eliminate these disease-causing microbes."
+    }
+  ]
 };

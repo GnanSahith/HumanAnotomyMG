@@ -5,7 +5,7 @@ export default function PricingView({ onBack }) {
     return (
         <div className="system-container fade-in-scale" style={{ 
             display: 'flex', flexDirection: 'column', height: '100vh', 
-            background: 'var(--bg-primary)', overflowY: 'auto'
+            background: 'var(--bg-primary)', overflowY: 'auto', paddingTop: '135px'
         }}>
             <div className="player-header">
                 <button className="icon-btn" onClick={onBack}>

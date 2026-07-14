@@ -19,24 +19,20 @@ export default {
   ],
   "2": [
     {
-      "q": "1.\nPolynomials Important Questions",
-      "a": "Detailed solution available."
+      "q": "Determine whether polynomials x\u00b3 + x\u00b2 + x + 1 has x + 1 a factor?",
+      "a": "Let p(x) = x\u00b3 + x\u00b2 + x + 1 Putting x + 1 = 0, we get, x = \u2013 1 Using remainder theorem, when p(x)= x\u00b3 + x\u00b2 + x + 1 is divided by x + 1, remainder is given by p(-1) = (-1)\u00b3 + (-1)\u00b2 + (-1) + 1 = \u2013 1 + 1 \u2013 1 + 1 = 0 Since, remainder p(-1) = 0, Hence x + 1 is a factor of x\u00b3 + x\u00b2 + x + 1."
     },
     {
-      "q": "2.\nPolynomials Revision Notes",
-      "a": "Detailed solution available."
+      "q": "Use the Factor Theorem to determine whether g(x) is a factor of p(x): p(x) = 2x\u00b3 + x\u00b2 \u2013 2x \u2013 1, g(x) = x + 1.",
+      "a": "p(x) = 2x\u00b3 + x\u00b2 \u2013 2x \u2013 1 and g(x) = x + 1 Putting x + 1 = 0, we get, x = -1 Using remainder theorem, when p(x) = 2x\u00b3 + x\u00b2 \u2013 2x \u2013 1 is divided by g(x) = x + 1, remainder is given by p(-1) = (-1)\u00b3 + (-1)\u00b2 + (-1) + 1 = \u2013 1 + 1 \u2013 1 + 1 = 0 Since, remainder p(-1) = 0, hence g(x) is a factor of p(x)."
     },
     {
-      "q": "3.\nPolynomials Important Formulas",
-      "a": "Detailed solution available."
+      "q": "Find the value of k, if x \u2013 1 is a factor of p(x) = x\u00b2 + x + k.",
+      "a": "p(x) = x\u00b2 + x + k Putting x \u2013 1 = 0, we get, x = 1 Using remainder theorem, When p(x) = x\u00b2 + x + k is divided by x \u2013 1, remainder is given by p(1) = (1)\u00b2 + (1) + k = 2 + k Since x \u2013 1 is a factor of p(x), hence remainder p(1) = 0 \u21d2 2 + k = 0 \u21d2 k = -2"
     },
     {
-      "q": "4.\nPolynomials NCERT Exemplar Solution",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nPolynomials RS Aggarwal Solutions\nChapter-Specific NCERT Solutions for Class 9 Maths\nGiven below are the\nchapter-wise NCERT Solutions for Class 9 Maths\n. Go through these chapter-wise solutions to be thoroughly familiar with the concepts.\nS.No.\nNCERT Solutions Class 9 Maths Chapter-wise List\n1\nChapter 1 - Number Systems\n2\nChapter 3 - Coordinate Geometry\n3\nChapter 4 - Linear Equations in Two Variables\n4\nChapter 5 - Introduction to Euclids Geometry\n5\nChapter 6 - Lines and Angles\n6\nChapter 7 - Triangles\n7\nChapter 8 - Quadrilaterals\n8\nChapter 9 - Circles\n9\nChapter 10 - Heron's Formula\n10\nChapter 11 - Surface Areas and Volumes\n11\nChapter 12 - Statistics\nImportant Study Materials for Class 9 Maths\nS. No\nImportant Related Links for CBSE Class 9 Maths\n1\nImportant Questions for CBSE Class 9 Math\n2\nRS Aggarwal Class 9 Solutions for Math Solutions\n3\nNCERT Class 9 Math Formulas\n4\nNCERT Class 9 Maths Revision Notes\n5\nNCERT Class 9 Maths Exemplar Solutions\n6\nRD Sharma Solutions for NCERT Class 9\n7\nCBSE Syllabus for Class 9 Maths\n8\nCBSE Class 9 Maths NCERT Book",
-      "a": "Detailed solution available."
+      "q": "Find the zero of the polynomial p(x) = x + 5.",
+      "a": "p(x) = x + 5 Putting p(x) = 0, we get x + 5 = 0 \u21d2 x = \u2013 5 Hence, x = \u2013 5 is a zero of the polynomial p(x)."
     }
   ],
   "3": [
@@ -493,6 +489,40 @@ export default {
     {
       "q": "8. A random survey of the number of children of various age groups playing in park was found as follows:\n$$\\boxed{\\begin{array}{*{0}{c}}\u00a0 {\\underline {{\\text{Age (in years)}}} }&{\\underline {{\\text{Number of children }}} }\u00a0 \u00a0 \u00a0 \\\\ \u00a0 {{\\text{1 - 2}}}&{\\text{5}} \\\\ \u00a0 {{\\text{2 - 3}}}&{\\text{3}} \\\\ \u00a0 {{\\text{3 - 5}}}&{\\text{6}} \\\\ {{\\text{5 - 7}}}&{{\\text{12}}} \\\\\u00a0 {{\\text{7 - 10}}}&{\\text{9}} \\\\ \u00a0 {{\\text{10 - 15}}}&{{\\text{10}}} \\\\ \u00a0 {{\\text{15 - 17}}}&{\\text{4}}\u00a0 \u00a0 \\end{array}}$$\nDraw a histogram to represent the data above.",
       "a": "Age (in years)\nFrequency (Number of Children)\nWidth of Class\nLength of Rectangle\n1-2\n5\n1\n$$\\dfrac{{5 \\times 1}}{1} = 5$$\n2-3\n3\n1\n$$\\dfrac{{3 \\times 1}}{1} = 3$$\n3-5\n6\n2\n$$\\dfrac{{6 \\times 1}}{2} = 3$$\n5-7\n12\n2\n$$\\dfrac{{12 \\times 1}}{2} = 6$$\n7-10\n9\n3\n$$\\dfrac{{9 \\times 1}}{3} = 3$$\n10-15\n10\n5\n$$\\dfrac{{10 \\times 1}}{5} = 2$$\n15-17\n4\n2\n$$\\dfrac{{4 \\times 1}}{2} = 2$$\n9. $$100$$ surnames were randomly picked up from a local telephone directory and a frequency distribution of the number of letters in the English alphabet in the surnames was found as follows:\nNumber of Letters\nNumber of Surnames\n1-4\n4-6\n6-8\n8-12\n12-20\n6\n30\n44\n16\n4\ni. Draw a histogram to depict the given information.\nAns:\nNumber of Letters\nFrequency (Number of Surnames)\nWidth of Class\nLength of Rectangle\n1-4\n6\n3\n$$\\dfrac{{6 \\times 2}}{3} = 4$$\n4-6\n30\n2\n$$\\dfrac{{30 \\times 2}}{2} = 30$$\n6-8\n44\n2\n$$\\dfrac{{44 \\times 2}}{2} = 44$$\n8-12\n16\n4\n$$\\dfrac{{16 \\times 2}}{4} = 8$$\n12-20\n4\n8\n$$\\dfrac{{4 \\times 2}}{8} = 1$$\nThe histogram can be generated using the number of letters on the x-axis and the fraction of the number of surnames per 2 letters interval on the y-axis, as well as an acceptable scale (1 unit = 4 students for the y axis).\nii. Write the class interval in which the maximum number of surnames lie.\nAns:\nThe maximum number of surnames in the class interval is 6-8 since it contains 44 surnames, which is the maximum for this data.\nOverview of Deleted Syllabus for CBSE Class 9 Maths Statistics\nChapter\nDropped Topics\nStatistics\n12.1 Introduction\n12.2 Collection of data\n12.3 Presentation of data\n12.5 Measure of central tendency\n12.6 Summary\nClass 9 Maths Chapter 12: Exercises Breakdown\nExercise\nNumber of Questions\nExercise 12.1\n9 Questions & Solutions\nConclusion\nMaths NCERT Class 9 Statistics Chapter has equipped you with valuable tools to transform raw data into meaningful insights. You've explored various methods for data collection and delved into the power of visual representations like bar graphs and histograms. By organizing data into frequency distributions, you've learned to summarize large datasets effectively. Furthermore, you've grasped the significance of central tendency measures (mean, median, mode) in understanding the \"typical\" value within a data set. In previous years exams, around 2-3 questions have been asked from Class 9 Maths Ch Statistics.\nOther Study Material for CBSE Class 9 Maths Chapter 12\nS. No\nImportant Links for Chapter 12 Statistics\n1\nClass 9 Statistics Important Questions\n2\nClass 9 Statistics Revision Notes\n3\nClass 9 Statistics Important Formulas\n4\nClass 9 Statistics NCERT Exemplar Solution\n5\nClass 9 Statistics RD Sharma Solutions\n6\nClass 9 Statistics RS Aggarwal Solutions\nChapter-Specific NCERT Solutions for Class 9 Maths\nGiven below are the chapter-wise NCERT Solutions for Class 9 Maths. Go through these chapter-wise solutions to be thoroughly familiar with the concepts.\nS.No.\nNCERT Solutions Class 9 Maths Chapter-wise List\n1\nChapter 1 - Number Systems\n2\nChapter 2 - Polynomials\n3\nChapter 3 - Coordinate Geometry\n4\nChapter 4 - Linear Equations in Two Variables\n5\nChapter 5 - Introduction to Euclids Geometry\n6\nChapter 6 - Lines and Angles\n7\nChapter 7 - Triangles\n8\nChapter 8 - Quadrilaterals\n9\nChapter 9 - Circles\n10\nChapter 10 - Heron's Formula\n11\nChapter 11 - Surface Areas and Volumes\nImportant Study Materials for CBSE Class 9 Maths\nS.No.\nImportant Related Links for CBSE Class 9 Maths\n1\nImportant Questions for CBSE Class 9 Math\n2\nRS Aggarwal Class 9 Solutions for Math book\n3\nNCERT Class 9 Math Formulas\n4\nNCERT Class 9 Maths Revision Notes\n5\nNCERT Class 9 Maths Exemplar Solutions\n6\nRD Sharma Solutions for NCERT Class 9"
+    }
+  ],
+  "15": [
+    {
+      "q": "What is meant by an Experiment in probability?",
+      "a": "Experiment: An operation which can produce some well-defined outcomes, is called an experiment."
+    },
+    {
+      "q": "What is meant by Random Experiment?",
+      "a": "Random Experiment: An experiment which, when repeated under identical conditions, do not produce the same outcomes every time, but if the outcomes produced is one out of the several possibilities, is known as a random experiment."
+    },
+    {
+      "q": "What is considered as an Event?",
+      "a": "Event: A possible outcome or combination of outcomes is called an event."
+    },
+    {
+      "q": "Differentiate between Sure Event and Impossible Event.",
+      "a": "Sure Event: If probability of an event is 1, then the event is called certain event or sure event.\nImpossible Event: If probability of an event is 0, then event is called an impossible event."
+    },
+    {
+      "q": "How did the concept of probability develop?",
+      "a": "The concept of probability developed in a very strange manner. In 1654, a gambler Chevalier de Mere, approached the well-known 17th century French philosopher and mathematician Blaise Pascal regarding certain dice problems. Pascal became interested in these problems, studied them and discussed them with another French mathematician, Pierre de Fermat. Both Pascal and Fermat solved the problems independently. This work was the beginning of Probability Theory."
+    },
+    {
+      "q": "What is trial in probability?",
+      "a": "A trial is an action which results in one or several outcomes."
+    },
+    {
+      "q": "What is an event in probability?",
+      "a": "An event for an experiment is the collection of some outcomes of the experiment."
+    },
+    {
+      "q": "What is the quantitative range of probability?",
+      "a": "The Probability of an event lies between 0 and 1 (0 and 1 inclusive)."
     }
   ]
 };

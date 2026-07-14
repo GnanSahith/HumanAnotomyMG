@@ -1,6 +1,11 @@
 import React, { useState, useMemo } from 'react';
-import { ArrowLeft, Search, Filter, PlayCircle, Lock, LayoutGrid, List } from 'lucide-react';
+import { ArrowLeft, Search, Filter, PlayCircle, Lock, LayoutGrid, List, Calculator, Hexagon, Ruler, PlusSquare, BarChart, Library } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
+
+const cleanTitle = (title) => {
+    if (!title) return '';
+    return title.replace(/(Practice|Exploration)?GR\.\s*(4-5|6-8|9-12)GRADES\s*(4-5|6-8|9-12)/gi, (m, t) => t ? t + ': ' : '');
+};
 
 export default function SimulationLibraryLayout({ 
     title, 
@@ -241,12 +246,33 @@ export default function SimulationLibraryLayout({
                                     width: viewMode === 'list' ? '300px' : '100%',
                                     position: 'relative', overflow: 'hidden', background: '#0a0a1a' 
                                 }}>
-                                    <img 
-                                        src={sim.thumbnail} 
-                                        alt={sim.title} 
-                                        style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 1, pointerEvents: 'none' }}
-                                        onError={(e) => { e.target.style.display = 'none'; }}
-                                    />
+                                    {sim.thumbnail ? (
+                                        <img 
+                                            src={sim.thumbnail} 
+                                            alt={sim.title} 
+                                            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 1, pointerEvents: 'none' }}
+                                            onError={(e) => { e.target.style.display = 'none'; }}
+                                        />
+                                    ) : (
+                                        <div style={{
+                                            width: '100%', height: '100%', position: 'absolute', top: 0, left: 0, zIndex: 1,
+                                            background: `linear-gradient(135deg, hsl(${Math.abs(sim.id ? sim.id.split('').reduce((a,b)=>((a<<5)-a)+b.charCodeAt(0),0) : 0)%360}, 70%, 25%) 0%, #0f172a 100%)`,
+                                            display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                            boxShadow: 'inset 0 0 20px rgba(0,0,0,0.5)'
+                                        }}>
+                                            {(() => {
+                                                const cat = (sim.category || '').toLowerCase();
+                                                let Icon = Library;
+                                                if (cat.includes('algebra')) Icon = Calculator;
+                                                else if (cat.includes('geometry')) Icon = Hexagon;
+                                                else if (cat.includes('measurement')) Icon = Ruler;
+                                                else if (cat.includes('operations')) Icon = PlusSquare;
+                                                else if (cat.includes('statistics') || cat.includes('data')) Icon = BarChart;
+                                                return <Icon size={80} color="rgba(255,255,255,0.15)" strokeWidth={1.5} />;
+                                            })()}
+                                            <PlayCircle size={40} color="rgba(255,255,255,0.4)" style={{ position: 'absolute' }} />
+                                        </div>
+                                    )}
                                     {sim.isLocked && (
                                         <div style={{
                                             position: 'absolute', top: 0, left: 0, right: 0, bottom: 0,

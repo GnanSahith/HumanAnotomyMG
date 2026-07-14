@@ -146,5 +146,59 @@ export default {
       "q": "What are the differences between broilers and layers and in their management?",
       "a": "Broilers:\n(i) They are maintained for getting meat.\n(ii) They are raised up to 6-7 weeks.\n(iii) They need less space and in this condition they grow fast and have low morality.\n(iv) They need food rich in proteins, adequate fat along with vitamin A and K.\nLayers:\n(i) They are needed for eggs.\n(ii) They start laying egg after 20 weeks.\n(iii) They need enough space, suitable temperature and high morality.\n(iv) They need restricted food with vitamins, minerals and micro-nutrients.\nIf there is low rainfall in a village throughout the year, what measures will you suggest to the farmers for better cropping?\n(i) Use nearby rivers directly, if available .\n(ii) Use canals if available and river lift system if flow of water is slow.\n(iii) Use tube wells, if possible.\n(iv) Use tanks and pounds which can store rain-water.\n(v) Reduce tilting. Enrich the soil with humus.\n(vi) Use of drought resistant variety of corps.\n\u00ab\nNCERT Solutions Class 9 Science Chapter 11\nLast Edited: September 3, 2023\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 9 Science Chapter 1 Matter in Our Surroundings\nNCERT Solutions for Class 9 Science Exploration Chapter 1 Entering the World of Secondary Science\nNCERT Solutions for Class 9 Science Chapter 2 Is Matter Around Us Pure\nNCERT Solutions for Class 9 Science Exploration Chapter 2 Cell: The Building Block of Life\nNCERT Solutions for Class 9 Science Exploration Chapter 3 Tissues in Action\nNCERT Solutions for Class 9 Science Chapter 3 Atoms and Molecules\nNCERT Solutions for Class 9 Science Exploration Chapter 4 Describing Motion Around Us\nNCERT Solutions for Class 9 Science Chapter 4 Structure of the Atom\nNCERT Solutions for Class 9 Science Chapter 5 The Fundamental Unit of Life\nNCERT Solutions for Class 9 Science Exploration Chapter 5 Exploring Mixtures and their Separation\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
     }
+  ],
+  "15": [
+    {
+      "q": "Explain any one method of crop production which ensures high yield.",
+      "a": "Hybridisation helps to increase the crop production. It involves crossing of inter-variety, inter-specific crossing, inter-generic crossing which give plants of desired characteristics, i.e., high yield of crops which are disease resistant and respond to fertilisers positively, adaptable to the environment, need less water for irrigation and have low maturity periods."
+    },
+    {
+      "q": "What is pasturage and how is it related to honey production?",
+      "a": "Pasturage is the availability of flowers for nectar and pollen collection for honeybee.\nThe kind and quality of honey is determined by the kind and quality of pasturage."
+    },
+    {
+      "q": "Why should preventive measures and biological control method be preferred for protecting crops?",
+      "a": "Resistant crops variety are useful and give higher yield. Biological control methods are safe, ecofriendly, long lasting and harmless to other forms of life, therefore should be preferred."
+    },
+    {
+      "q": "What is genetic manipulation? How is it useful in agricultural practices?",
+      "a": "The process refers to the transfer of genes from one organism to another, e.g. Bt Cotton is a genetically modified crop which carry bacterial genes, that protects this plant from insects. These are used in rice, maize, brinjal, cabbage, cauliflower to get protection from insects."
+    },
+    {
+      "q": "What are the advantages of inter-cropping and crop-rotation?",
+      "a": "Inter-Cropping:\n(i) Prevents pests and decreases the chances of spoiling of whole crops, therefore reduce losses and both crops can give better results.\n(ii) It can also deal with less monsoon or drought because crop which needs less water can easily survive.\nCrop-rotation:\n(i) Farmers can grow two or three crops in a year.\n(ii) Pulses take nitrogen directly from the atmosphere, and thus needed fewer amounts of fertilisers.\n(iii) Vegetables and fruits can be easily grown. It makes best use of land and nutrients present in the soil."
+    },
+    {
+      "q": "Why are manure and fertilizers used in fields?",
+      "a": "Manure and fertilizers supply nutrients to the soil and increases the fertility of the soil and thus increases the production. They overcome the nutritional deficiency of the soil."
+    },
+    {
+      "q": "Explain any one method of crop production which ensures high yield.",
+      "a": "Crop rotation is one of the methods of crop production that ensures high yield. It is the method of growing two or more varieties of crops on the same land in sequential seasons. A crop utilises some particular nutrients in larger quantities from the soil. Then, if the same crop is grown in subsequent seasons those nutrients will get depleted in the soil. Therefore, crops having different nutrient requirements are rotated. For example, legumes which have nitrogen-fixing bacteria in their root nodules supply the soil with nitrogen. Therefore, these legumes are rotated with nitrogen requiring cereals such as wheat and maize. This method reduces the need of fertilizers, thereby increasing the overall yield of crops."
+    },
+    {
+      "q": "Why are manures and fertilizers used in fields?",
+      "a": "Manures and fertilizers are used in fields to enrich the soil with the required nutrients. Manure helps in enriching the soil with organic matter and nutrients. This improves the fertility and structure of the soil. On the other hand, fertilizers ensure a healthy growth and development in plants. They are a good source of nitrogen, phosphorus, and potassium. To get an optimum yield, it is instructed to use a balanced combination of manures and fertilizers in the soil."
+    },
+    {
+      "q": "What are the advantages of inter-cropping and crop rotation?",
+      "a": "Inter-cropping and crop rotation both play an important role in increasing the yield of crops. Inter-cropping helps in preventing pests and diseases to spread throughout the field. It also increases soil fertility, whereas crop rotation prevents soil depletion, increases soil fertility, and reduces soil erosion. Both these methods reduce the need for fertilizers. It also helps in controlling weeds and controls the growth of pathogens and pests in crops."
+    },
+    {
+      "q": "What is genetic manipulation?",
+      "a": "Genetic manipulation is a process where the gene for a particular character is introduced inside the chromosome of a cell. When the gene for a particular character is introduced in a plant cell, a transgenic plant is produced. These transgenic plants exhibit characters governed by the newly introduced gene."
+    },
+    {
+      "q": "How do storage grain losses occur?",
+      "a": "Factors responsible for such losses are biotic\u2014 insects, rodents, fungi, mites and bacteria, and abiotic\u2014 inappropriate moisture and temperatures in the place of storage. These factors cause degradation in quality, loss in weight, poor germinability, discolouration of produce, all leading to poor marketability. These factors can be controlled by proper treatment and by systematic management of warehouses."
+    },
+    {
+      "q": "How do good animal husbandry practices benefit farmers?",
+      "a": "Cattle farming is one of the methods of animal husbandry that is most beneficial for farmers. Using this method, better breeds of draught animals can be produced. Such draught animals are engaged in agricultural fields for labour work such as carting, irrigation, tilling, etc."
+    },
+    {
+      "q": "For increasing production, what is common in poultry, fisheries and bee-keeping?",
+      "a": "The common factor for increasing production in poultry, fisheries, and bee keeping is the proper management techniques that are to be followed. Regular cleaning of farms is of utmost importance. Maintenance of temperature and prevention and cure of diseases is also required to increase the number of animals."
+    }
   ]
 };

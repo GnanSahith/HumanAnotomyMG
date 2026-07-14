@@ -140,6 +140,10 @@ export default function CustomProjectileMotion({
         return;
       }
       const realDt = (time - lastTimeRef.current) / 1000;
+      if (realDt <= 0) {
+        requestRef.current = requestAnimationFrame(updatePhysicsRef.current);
+        return;
+      }
       lastTimeRef.current = time;
       const safeDt = Math.min(realDt, 0.1);
       const dt = slowMotion ? safeDt * 0.4 : safeDt * 1.5;
@@ -171,7 +175,7 @@ export default function CustomProjectileMotion({
           ax,
           ay
         };
-        if (posRef.current.y <= 0) {
+        if (posRef.current.y <= 0 && timeRef.current > 0.1) {
           posRef.current.y = 0;
           break;
         }
@@ -202,7 +206,7 @@ export default function CustomProjectileMotion({
           y: visualY
         }]);
       }
-      if (posRef.current.y <= 0) {
+      if (posRef.current.y <= 0 && timeRef.current > 0.1) {
         setIsPlaying(false);
         return;
       }
@@ -211,6 +215,19 @@ export default function CustomProjectileMotion({
   });
   useEffect(() => {
     if (isPlaying) {
+      if (posRef.current.y <= 0 && timeRef.current > 0.1) {
+        timeRef.current = 0;
+        posRef.current = { x: 0, y: height };
+        velRef.current = { 
+            vx: velocity * Math.cos(angle * Math.PI / 180), 
+            vy: velocity * Math.sin(angle * Math.PI / 180) 
+        };
+        accRef.current = { ax: 0, ay: -gravity };
+        setPath([]);
+        lastPathPosRef.current = { x: 0, y: height * scale };
+        setProjectilePos({ x: 0, y: height * scale });
+        setVectors({ vx: velRef.current.vx, vy: velRef.current.vy, ax: 0, ay: -gravity });
+      }
       lastTimeRef.current = performance.now();
       requestRef.current = requestAnimationFrame(updatePhysicsRef.current);
     } else {
@@ -219,7 +236,7 @@ export default function CustomProjectileMotion({
     return () => {
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };
-  }, [isPlaying]);
+  }, [isPlaying, height, velocity, angle, gravity, scale]);
 
   // Render Helpers for Vectors
   const renderVector = (startX, startY, compX, compY, color, scaleFactor) => {

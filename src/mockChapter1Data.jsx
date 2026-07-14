@@ -1,7 +1,33 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ListChecks } from 'lucide-react';
 
 export const Chapter1PhysicsData = () => {
+  useEffect(() => {
+    const container = document.querySelector('.subject-content-container');
+    if (!container) return;
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-reading');
+        } else {
+          entry.target.classList.remove('is-reading');
+        }
+      });
+    }, {
+      root: container,
+      rootMargin: '-30% 0px -30% 0px',
+      threshold: 0
+    });
+
+    const blocks = document.querySelectorAll('.qna-block');
+    blocks.forEach(b => observer.observe(b));
+
+    const content = document.querySelector('.rich-chapter-content');
+    if (content) content.classList.add('reader-active');
+
+    return () => observer.disconnect();
+  }, []);
   const scrollToQ = (id) => {
     const el = document.getElementById(id);
     const container = document.querySelector('.subject-content-container');

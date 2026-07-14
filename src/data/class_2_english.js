@@ -161,22 +161,114 @@ export default {
   ],
   "7": [
     {
-      "q": "1.\nClass 2 This Is My Town Important Questions",
-      "a": "Detailed solution available."
+      "q": "Can you write some new words from the poem \u201cOn My Blackboard I Can Draw\u201d?",
+      "a": "Yes, I can write some new words from the poem \u201cOn My Blackboard I Can Draw\u201d. These new words are:\n1.\tGates\n2.\tWide\n3.\tLead\n4.\tChimney\n5.\tMarigolds\n6.\tStraight"
     },
     {
-      "q": "2.\nClass 2 This Is My Town Revision Notes\nConclusion\nNCERT Solutions for English Class 2 Chapter 7 This Is My Town is a comprehensive resource for understanding the poem\u2019s concepts. With step-by-step explanations and examples, students can learn the concepts effectively. The solutions aid exam preparation with exercises and practice questions. Accessible in PDF format, students can review the material conveniently. These solutions for English Mridang Chapter 7 Class 2 enhance understanding, and exam performance, making it easier for students studying in Class 2. You can easily access and download the FREE Class 2 English Chapter 7 PDF from Vedantu updated for the 2026-27 syllabus. Students can refer to these solutions to perform better in their examinations.\nChapter-wise NCERT Solutions Class 2 English - Mridang\nAfter familiarising yourself with the Class 2 English Chapter 7 Question Answers, you can access comprehensive NCERT Solutions from all English Class 2 Mridang textbook chapters.\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 9 My Name Solutions\nChapter 10 The Crow Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English (Mridang) Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2-\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
-      "a": "Detailed solution available."
+      "q": "Make sentences using the words gates, wide, marigolds, straight.",
+      "a": "1.\tPlease, open the gates.\n2.\tThis road is very wide.\n3.\tThese marigold flowers are beautiful.\n4.\tDraw a straight line."
+    },
+    {
+      "q": "How many windows does the house have in the poem \u201cOn My Blackboard I Can Draw\u201d?",
+      "a": "In the poem \u201cOn My Blackboard I Can Draw\u201d, the house has 5 little windows."
+    },
+    {
+      "q": "Where do the marigolds grow in the poem \u201cOn My Blackboard I Can Draw\u201d?",
+      "a": "The marigolds grow against the wall in the poem \u201cOn My Blackboard I Can Draw\u201d."
+    },
+    {
+      "q": "Can you write some new words from the story \u201cMake it shorter\u201d?",
+      "a": "Yes, I can write some new words from the story \u201cMake it shorter\u201d. These new words are:\n1.\tOrder\n2.\tRub\n3.\tPuzzle\n4.\tErase\n5.\tCourt"
+    },
+    {
+      "q": "Make sentences using the words order, rub, and puzzle.",
+      "a": "1.\tOrder one pizza for me.\n2.\tDon\u2019t rub these notes.\n3.\tThis puzzle is very difficult."
+    },
+    {
+      "q": "What did Akbar order one day?",
+      "a": "One day Akbar drew one line on the floor and ordered his ministers to make that line shorter without touching and rubbing any part of the line."
+    },
+    {
+      "q": "What did each minister do?",
+      "a": "Each minister kept on thinking about how to make the line short but, no one could succeed in making the line short except Birbal."
+    },
+    {
+      "q": "How did Birbal make the line shorter?",
+      "a": "Birbal made the Akbar\u2019s line shorter by drawing a longer line under the Akbar\u2019s line. He didn\u2019t touch the first line (Akbar\u2019s line)."
+    },
+    {
+      "q": "Who wrote the story \u201cThe mouse and the pencil\u201d?",
+      "a": "V.Suteyev wrote the story \u201cThe mouse and the pencil\u201d"
+    },
+    {
+      "q": "Describe the cat in your own words.",
+      "a": "The cat is of white color. It is very fat. It looks very active. It has a cute looking face with four whiskers. It has four legs and a long tail."
     }
   ],
   "8": [
     {
-      "q": "1.\nClass 2 A Show of Clouds Important Questions",
-      "a": "Detailed solution available."
+      "q": "What are the new words in the poem \u201cI am the music man\u201d that students can learn?",
+      "a": "The new words in the poem \u201cI am the music man\u201d that students can learn are:\n1.\tMusic man\n2.\tFar away\n3.\tPlay\n4.\tPiano\n5.\tDrum\n6.\tBoom"
     },
     {
-      "q": "2.\nClass 2 A Show of Clouds Revision Notes\nConclusion\nNCERT Solutions for English Class 2 Chapter 8 A Show of Clouds is a comprehensive resource for understanding the lesson\u2019s concepts. With step-by-step explanations and examples, students can learn the concepts effectively. The solutions aid exam preparation with exercises and practice questions. Accessible in PDF format, students can review the material conveniently. These solutions for English Mridang Chapter 8 Class 2 enhance understanding, and exam performance, making it easier for students studying in Class 2. You can easily access and download the FREE Class 2 English Chapter 8 PDF from Vedantu updated for the 2026-27 syllabus. Students can refer to these solutions to perform better in their examinations.\nChapter-wise NCERT Solutions Class 2 English - Mridang\nAfter familiarising yourself with the Class 2 English Chapter 8 Question Answers, you can access comprehensive NCERT Solutions from all English Class 2 Mridang textbook chapters.\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 9 My Name Solutions\nChapter 10 The Crow Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English (Mridang) Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2-\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
-      "a": "Detailed solution available."
+      "q": "Make sentences using the words music man, play, piano, and drum.",
+      "a": "1.\tHe is a music man.\n2.\tRadhika can play the piano.\n3.\tShe can play the drum."
+    },
+    {
+      "q": "What are the two instruments that the music man can play?",
+      "a": "Piano and drum are the two instruments that the music man can play."
+    },
+    {
+      "q": "Where does the music man come from?",
+      "a": "The music man comes from far away."
+    },
+    {
+      "q": "If the music man comes to you, what would you ask him to play for you.",
+      "a": "I would ask him to play flute for me."
+    },
+    {
+      "q": "What would you like to learn music, dance or karate?",
+      "a": "I would like to learn dance."
+    },
+    {
+      "q": "Which new words do students study in the story \u201cThe Mumbai musician\u201d?",
+      "a": "The new words that students study in the story \u201cThe Mumbai musician\u201d are:\n1.\tTired\n2.\tMusicians\n3.\tPeeped\n4.\tDelicious\n5.\tGhosts\n6.\tScare"
+    },
+    {
+      "q": "Make sentences using the words Tired, Musicians, Delicious.",
+      "a": "1.\tI am very tired.\n2.\tThese musicians are very great.\n3.\tThe food was very delicious."
+    },
+    {
+      "q": "Why did the farmer tell Goopu to see the world?",
+      "a": "The farmer told goopu to see the world because goopu had become old and could not carry load."
+    },
+    {
+      "q": "Why did Goopu, Doopu, and Furry want to go to Mumbai?",
+      "a": "Goopu, Doopu, and Furry wanted to go to Mumbai because they wanted to become musicians."
+    },
+    {
+      "q": "Why did the people in the house run away?",
+      "a": "All the people in the house ran away because all people thought that the ghosts had come to scare them."
+    },
+    {
+      "q": "Who was doopu in the story?",
+      "a": "Doopu was a dog in the story."
+    },
+    {
+      "q": "Who was furry in the story?",
+      "a": "Furry was a cat in the story."
+    },
+    {
+      "q": "Who was cuckooin the story?",
+      "a": "Cuckoo was a cock in the story."
+    },
+    {
+      "q": "Do you play any musical instrument?",
+      "a": "No, I don\u2019t play any musical instrument."
+    },
+    {
+      "q": "If not, which instrument do you want to learn?",
+      "a": "I want to learn guitar."
     }
   ],
   "9": [
@@ -195,12 +287,44 @@ export default {
   ],
   "10": [
     {
-      "q": "1.\nClass 2 The Crow Important Questions",
-      "a": "Detailed solution available."
+      "q": "Who wrote the poem \u201cStrange talk\u201d?",
+      "a": "L.E. Yates wrote the poem \u201cStrange talk\u201d."
     },
     {
-      "q": "2.\nClass 2 The Crow Revision Notes\nConclusion\nNCERT Solutions for English Class 2 Chapter 10 The Crow is a comprehensive resource for understanding the poem\u2019s concepts. With step-by-step explanations and examples, students can learn the concepts effectively. The solutions aid exam preparation with exercises and practice questions. Accessible in PDF format, students can review the material conveniently. These solutions for English Mridang Chapter 10 Class 2 enhance understanding, and exam performance, making it easier for students studying in Class 2. You can easily access and download the FREE Class 2 English Chapter 10 PDF from Vedantu updated for the 2026-27 syllabus. Students can refer to these solutions to perform better in their examinations.\nChapter-wise NCERT Solutions Class 2 English - Mridang\nAfter familiarising yourself with the Class 2 English Chapter 10 Question Answers, you can access comprehensive NCERT Solutions from all English Class 2 Mridang textbook chapters.\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 9 My Name Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English (Mridang) Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2-\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
-      "a": "Detailed solution available."
+      "q": "Can you find the new words from the poem \u201cStrange talk\u201d?",
+      "a": "Yes, the new words from the poem \u201cStrange talk\u201d are:\n1.\tInstead\n2.\tLack\n3.\tSty\n4.\tKennel\n5.\tRow\n6.\tMeant"
+    },
+    {
+      "q": "Make sentences using the following words: (is, are, have, has, and had)",
+      "a": "1.\tShe is my best friend.\n2.\tRam and Shyam are best friends.\n3.\tI have 5 pens.\n4.\tShe has a very beautiful doll.\n5.\tRavi had a car."
+    },
+    {
+      "q": "Find out the new words from the story \u201cThe grasshopper and the ants\u201d.",
+      "a": "The new words from the story \u201cThe grasshopper and the ants\u201d are:\n1.\tHardworking\n2.\tArrived\n3.\tStarve\n4.\tSlammed"
+    },
+    {
+      "q": "How did the grasshopper spend his days?",
+      "a": "The grasshopper spent his days singing songs and playing in the warm sunshine."
+    },
+    {
+      "q": "Did the grasshopper find food in winter?",
+      "a": "No, the grasshopper didn\u2019t find food in winter."
+    },
+    {
+      "q": "What did the ant tell the grasshopper when he asked for food?",
+      "a": "The ant was very angry. He called the grasshopper \u2018lazy\u2019 and asked him what were you doing in summer. Simultaneously, an ant asked the grasshopper to leave."
+    },
+    {
+      "q": "If you were asked to store things for the winter, what would you store? Name any three things.",
+      "a": "I would store all warm things like socks, a warm cap, a sweater, etc."
+    },
+    {
+      "q": "Which season do you like the best?",
+      "a": "I like the rainy season best."
+    },
+    {
+      "q": "When you hear winter and summer, what are the words that come to your mind? Write these words.",
+      "a": "1.\tSummer\na.\tIce-cream\nb.\tCotton clothes.\nc.\tAir conditioner\nd.\tCooler\ne.\tSoft drinks\n2.\tWinter\na.\tWarm clothes\nb.\tHeater\nc.\tCoffee\nd.\tBlanket\ne.\tShoes"
     }
   ],
   "11": [

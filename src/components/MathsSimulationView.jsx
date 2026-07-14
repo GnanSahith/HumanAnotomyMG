@@ -289,11 +289,23 @@ export default function MathsSimulationView({ onBack }) {
 
     const activeCategory = activeSimulation ? activeSimulation.category : null;
     const activeTopic = activeSimulation ? activeSimulation.parentTopic : null;
+
+    const activeTopicLabel = React.useMemo(() => {
+        if (!activeCategory || !activeTopic || !mathCurriculum[activeCategory]) return null;
+        const grades = mathCurriculum[activeCategory].grades || [];
+        for (const g of grades) {
+            const topic = g.topics.find(t => t.id === activeTopic);
+            if (topic) return topic.label;
+        }
+        return null;
+    }, [activeCategory, activeTopic]);
     
     // Determine the material index within the topic
     const topicMaterials = React.useMemo(() => {
         if (!activeTopic) return [];
-        return Object.values(mathSimulations || {}).filter(m => m.parentTopic === activeTopic);
+        return Object.entries(mathSimulations || {})
+            .filter(([_, m]) => m.parentTopic === activeTopic)
+            .map(([id, m]) => ({ ...m, id }));
     }, [activeTopic]);
 
     const activeMaterialIndex = React.useMemo(() => {
@@ -408,7 +420,10 @@ export default function MathsSimulationView({ onBack }) {
             }
             return defaultApproved;
         } catch (e) {
-            return [];
+            console.error('Error reading showcase_approved_maths_sims from localStorage:', e);
+            return [
+                'hkpdxysv','dmvzqbqj','b5apx95m','pnrnkvrj','wcdguqjf','wmmt7xhr','rh4usghq','t4fkp845','zdthcuav','d9mmpebw','ccra2fmc','dncz2ppm','hfefkxwu','njttrs7f','peyfxhzs','yacyvtjn','wnhzbdam','vgp6zrta','pqmvhxzq','daqswvxv','fhqqu6w6','fusbjz9b','yabgjfmd','tjkyk2hj','nyhvjcaq','mnruf8bu','qcrgez64','e4wvxtvh','nkckjvyv','jjdh8gf3'
+            ];
         }
     });
 
@@ -471,6 +486,7 @@ export default function MathsSimulationView({ onBack }) {
                 }}>
                     <button 
                         onClick={() => {
+                            setActiveSimulation(null);
                             setViewState('curriculum_grid');
                             setQuizState('idle');
                         }} 
@@ -497,7 +513,7 @@ export default function MathsSimulationView({ onBack }) {
                         }}
                     >
                         <ArrowLeft size={16} />
-                        {categoryData.label}
+                        Back
                     </button>
                     <h2 style={{ 
                         position: 'absolute',
@@ -514,7 +530,7 @@ export default function MathsSimulationView({ onBack }) {
                         whiteSpace: 'nowrap'
                     }}>
                         <Layers size={18} color="#0a84ff" />
-                        {activeTopicData ? activeTopicData.label : 'Mathematics Simulator'}
+                        {activeTopicLabel ? activeTopicLabel : (categoryData ? categoryData.label : 'Mathematics Simulator')}
                     </h2>
                 </div>
 
@@ -548,7 +564,7 @@ export default function MathsSimulationView({ onBack }) {
                                             <button
                                                 onClick={() => {
                                                     const openPart = () => {
-                                                        setActiveMaterialIndex(idx);
+                                                        setActiveSimulation(topicMaterials[idx]);
                                                         setQuizState('idle');
                                                     };
                                                     if (isLocked && handleLockedItemClick) {

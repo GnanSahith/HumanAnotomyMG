@@ -1,6 +1,60 @@
 export default {
-  "1": [],
-  "2": [],
+  "1": [
+    {
+      "q": "Determine whether each of the following relation are reflexive, symmetric and transitive: Relation R in the set A = {1, 2, 3\u2026 13, 14} defined as R = {(x, y): 3x \u2013 y = 0}",
+      "a": "A = {1, 2, 3 \u2026 13, 14}\nR = {(x, y): 3x \u2212 y = 0}\n\u2234 R = {(1, 3), (2, 6), (3, 9), (4, 12)}\nR is not reflexive since (1, 1), (2, 2) \u2026 (14, 14) \u2209 R.\nAlso, R is not symmetric as (1, 3) \u2208 R, but (3, 1) \u2209 R. [3(3) \u2212 1 \u2260 0]\nAlso, R is not transitive as (1, 3), (3, 9) \u2208 R, but (1, 9) \u2209 R. [3(1) \u2212 9 \u2260 0] Hence, R is neither reflexive, nor symmetric, nor transitive."
+    },
+    {
+      "q": "Show that the relation R in the set R of real numbers, defined as R = {(a, b): a \u2264 b\u00b2} is neither reflexive nor symmetric nor transitive.",
+      "a": "R = {(a, b): a \u2264 b\u00b2}\nIt can be observed that (1/2,1/2)\u2209R, since, 1/2>(1/2)\u00b2\n\u2234 R is not reflexive.\nNow, (1, 4) \u2208 R as 1 < 42 \nBut, 4 is not less than 12. \n\u2234 (4, 1) \u2209 R \u2234 R is not symmetric. \nNow, (3, 2), (2, 1.5) \u2208 R [as 3 < 2\u00b2 = 4 and 2 < (1.5)\u00b2 = 2.25] \nBut, 3 > (1.5)\u00b2 = 2.25\n\u2234 (3, 1.5) \u2209 R\n\u2234 R is not transitive.\nHence, R is neither reflexive, nor symmetric, nor transitive."
+    },
+    {
+      "q": "Check whether the relation R defined in the set {1, 2, 3, 4, 5, 6} as R = {(a, b): b = a + 1} is reflexive, symmetric or transitive.",
+      "a": "Let A = {1, 2, 3, 4, 5, 6}.\nA relation R is defined on set A as: R = {(a, b): b = a + 1}\n\u2234 R = {(1, 2), (2, 3), (3, 4), (4, 5), (5, 6)}\nWe can find (a, a) \u2209 R, where a \u2208 A.\nFor instance, (1, 1), (2, 2), (3, 3), (4, 4), (5, 5), (6, 6) \u2209 R\n\u2234 R is not reflexive.\nIt can be observed that (1, 2) \u2208 R, but (2, 1) \u2209 R.\n\u2234 R is not symmetric.\nNow, (1, 2), (2, 3) \u2208 R but, (1, 3) \u2209 R\n\u2234 R is not transitive.\nHence, R is neither reflexive, nor symmetric, nor transitive."
+    },
+    {
+      "q": "Show that the relation R in the set {1, 2, 3} given by R = {(1, 2), (2, 1)} is symmetric but neither reflexive nor transitive.",
+      "a": "Let A = {1, 2, 3}. A relation R on A is defined as R = {(1, 2), (2, 1)}.\nIt is clear that (1, 1), (2, 2), (3, 3) \u2209 R,\n\u2234 R is not reflexive.\nNow, as (1, 2) \u2208 R and (2, 1) \u2208 R, then R is symmetric.\nNow, (1, 2) and (2, 1) \u2208 R, however, (1, 1) \u2209 R,\n\u2234 R is not transitive.\nHence, R is symmetric but neither reflexive nor transitive."
+    },
+    {
+      "q": "Show that the relation R in the set A of all the books in a library of a college, given by R = {(x, y): x and y have same number of pages} is an equivalence relation.",
+      "a": "Set A is the set of all books in the library of a college.\nR = {x, y): x and y have the same number of pages}\nNow, R is reflexive since (x, x) \u2208 R as x and x has the same number of pages.\nLet (x, y) \u2208 R\n\u21d2 x and y have the same number of pages.\n\u21d2 y and x have the same number of pages.\n\u21d2 (y, x) \u2208 R\n\u2234 R is symmetric.\nNow, let (x, y) \u2208R and (y, z) \u2208 R.\n\u21d2 x and y and have the same number of pages and y and z have the same number of pages.\n\u21d2 x and z have the same number of pages.\n\u21d2 (x, z) \u2208 R \u2234 R is transitive.\nHence, R is an equivalence relation."
+    },
+    {
+      "q": "Show that the relation R in the set A of points in a plane given by R = {(P, Q): Distance of the point P from the origin is same as the distance of the point Q from the origin}, is an equivalence relation. Further, show that the set of all point related to a point P \u2260 (0, 0) is the circle passing through P with origin as centre.",
+      "a": "R = {(P, Q): Distance of point P from the origin is the same as the distance of point Q from the origin}\nClearly, (P, P) \u2208 R since the distance of point P from the origin is always the same as the distance of the same point P from the origin.\n\u2234 R is reflexive.\nNow, Let (P, Q) \u2208 R.\n\u21d2 The distance of point P from the origin is the same as the distance of point Q from the origin.\n\u21d2 The distance of point Q from the origin is the same as the distance of point P from the origin.\n\u21d2 (Q, P) \u2208 R, \u2234 R is symmetric.\nNow, Let (P, Q), (Q, S) \u2208 R.\n\u21d2 The distance of points P and Q from the origin is the same and also, the distance of points Q and S from the origin is the same.\n\u21d2 The distance of points P and S from the origin is the same.\n\u21d2 (P, S) \u2208 R \u2234 R is transitive.\nTherefore, R is an equivalence relation.\nThe set of all points related to P \u2260 (0, 0) will be those points whose distance from the origin is the same as the distance of point P from the origin.\nIn other words, if O (0, 0) is the origin and OP = k, then the set of all points related to P is at a distance of k from the origin.\nHence, this set of points forms a circle with the centre as the origin and this circle passes through point P."
+    },
+    {
+      "q": "Show that the relation R defined in the set A of all polygons as R = {(P1, P2): P1 and P2 have same number of sides}, is an equivalence relation. What is the set of all elements in A related to the right angle triangle T with sides 3, 4 and 5?",
+      "a": "R = {(P1, P2): P1 and P2 have same the number of sides}\nR is reflexive, Since (P1, P1) \u2208 R, as the same polygon has the same number of sides with itself.\nLet (P1, P2) \u2208 R.\n\u21d2 P1 and P2 have the same number of sides.\n\u21d2 P2 and P1 have the same number of sides.\n\u21d2 (P2, P1) \u2208 R,\n\u2234 R is symmetric.\nNow, Let (P1, P2), (P2, P3) \u2208 R.\n\u21d2 P1 and P2 have the same number of sides.\nAlso, P2 and P3 have the same number of sides.\n\u21d2 P1 and P3 have the same number of sides.\n\u21d2 (P1, P3) \u2208 R \u2234 R is transitive.\nHence, R is an equivalence relation.\nThe elements in A related to the right-angled triangle (T) with sides 3, 4, and 5 are those polygons which have 3 sides (Since T is a polygon with 3 sides).\nHence, the set of all elements in A related to triangle T is the set of all triangles."
+    },
+    {
+      "q": "Let L be the set of all lines in XY plane and R be the relation in L defined as R = {(L1, L2): L1 is parallel to L2}. Show that R is an equivalence relation. Find the set of all lines related to the line y = 2x + 4.",
+      "a": "R = {(L1, L2): L1 is parallel to L2}\nR is reflexive as any line L1 is parallel to itself\ni.e., (L1, L1) \u2208 R.\nNow, let (L1, L2) \u2208 R.\n\u21d2 L1 is parallel to L2\n\u21d2 L2 is parallel to L1.\n\u21d2 (L2, L1) \u2208 R\n\u2234 R is symmetric.\nNow, let (L1, L2), (L2, L3) \u2208 R.\n\u21d2 L1 is parallel to L2. Also, L2 is parallel to L3.\n\u21d2 L1 is parallel to L3.\n\u2234 R is transitive.\nHence, R is an equivalence relation.\nThe set of all lines related to the line y = 2x + 4 is the set of all lines that are parallel to the line y = 2x + 4.\nSlope of line y = 2x + 4 is m = 2\nIt is known that parallel lines have the same slopes.\nThe line parallel to the given line is of the form y = 2x + c, where c \u2208 R. Hence, the set of all lines related to the given line is given by y = 2x + c, where c \u2208 R."
+    },
+    {
+      "q": "Let f: {1, 3, 4} \u2192 {1, 2, 5} and g: {1, 2, 5} \u2192 {1, 3} be given by f = {(1, 2), (3, 5), (4, 1)} and g = {(1, 3), (2, 3), (5, 1)}. Write down gof.",
+      "a": "The functions f: {1, 3, 4} \u2192 {1, 2, 5} and\ng: {1, 2, 5} \u2192 {1, 3} are defined as\nf = {(1, 2), (3, 5), (4, 1)} and\ng = {(1, 3), (2, 3), (5, 1)}.\ngof(1) = g[f(1)] = g(2) = 3  [as f(1) = 2 and g(2) = 3]\ngof(3) = g[f(3)] = g(5) = 1  [as f(3) = 5 and g(5) = 1]\ngof(4) = g[f(4)] = g(1) = 3  [as f(4) = 1 and g(1) = 3]\n\u2234 gof = {(1, 3), (3, 1), (4, 3)}"
+    },
+    {
+      "q": "Show that the function f: R \u2192 R given by f(x) = x\u00b3 is injective.",
+      "a": "f: R \u2192 R is given as f(x) = x\u00b3.\nFor one \u2013 one Suppose f(x) = f(y), where x, y \u2208 R.\n\u21d2 x\u00b3 = y\u00b3         \u2026 (1)\nNow, we need to show that x = y.\nSuppose x \u2260 y, their cubes will also not be equal.\n\u21d2 x\u00b3 \u2260 y\u00b3\nHowever, this will be a contradiction to (1).\n\u2234 x = y Hence, f is injective."
+    }
+  ],
+  "2": [
+    {
+      "q": "Solve for x: 2 tan\u207b\u00b9(cos \u2061x) = tan\u207b\u00b9( 2cosec \u2061x)",
+      "a": "Given that 2tan\u207b\u00b9(cos\u2061x) = tan\u207b\u00b9(2cosec\u2061x)\n\u21d2 tan\u207b\u00b9(2cos\u2061x/(1-cos\u00b2x)) = tan\u207b\u00b9(2cosec\u2061x) [as 2 tan\u207b\u00b9x = tan\u207b\u00b9(2x/(1-x\u00b2)]\n\u21d2 2 cos\u2061x/(1 \u2013 cos\u00b2x) = 2cosec\u2061x\n\u21d2 2 cos\u2061x/(sin\u00b2x) = 2/sin\u2061x\n\u21d2 2 sin x.cos\u2061 x = 2 sin\u00b2 x\n\u21d2 2 sin\u2061 x.cos\u2061 x \u2013 2 sin\u00b2 x = 0\n\u21d2 2 sin\u2061 x (cos\u2061 x \u2013 sin\u2061 x) = 0\n\u21d2 2 sin\u2061 x = 0 or cos\u2061 x \u2013 sin\u2061 x = 0\nBut sin\u2061 x \u2260 0 as it does not satisfy the equation.\n\u2234 cos x \u2013 sin \u2061x = 0\n\u21d2 cos x = sin \u2061x\n\u21d2 tan x = 1\n\u2234 x = \u03c0/4"
+    },
+    {
+      "q": "Find the principal value of sin\u207b\u00b9(-1/2)",
+      "a": "Let sin\u207b\u00b9(-1/2) = y, then sin y = -1/2 = \u2013 sin(\u03c0/6) = sin(-\u03c0/6)\nWe know that the range of the principal value branch of sin\u207b\u00b9 is [-\u03c0/2, \u03c0/2] and sin(-\u03c0/6) = -1/2\nTherefore, the principal value of sin\u207b\u00b9(-1/2) is -\u03c0/6."
+    },
+    {
+      "q": "Find the principal value of tan\u207b\u00b9(\u22121).",
+      "a": "Let tan\u207b\u00b9(\u22121) = y.\nThen, tan\u2061 y = -1 = \u2013 tan(\u03c0/4) = tan(-\u03c0/4)\nWe know that the range of the principal value branch of tan\u207b\u00b9 is (-\u03c0/2,\u03c0/2) and tan(-\u03c0/4) = -1\nTherefore, the principal value of tan\u207b\u00b9(\u22121) is -\u03c0/4."
+    }
+  ],
   "3": [
     {
       "q": "1. A matrix is said to be an ordered rectangular array of numbers or functions. These numbers or functions in the array are called the elements or the entries of the matrix.",

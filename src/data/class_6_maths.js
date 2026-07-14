@@ -199,84 +199,36 @@ export default {
   ],
   "2": [
     {
-      "q": "1.\nClass 6 Lines and Angles Important Questions",
-      "a": "Detailed solution available."
+      "q": "Write the next three natural numbers after 10999.",
+      "a": "10,999 + 1 = 11,000 11,000 + 1 = 11,001 11,001 + 1 = 11,002"
     },
     {
-      "q": "2.\nClass 6 Lines and Angles Notes\nConclusion\nChapter 2 of Class 6 Maths, Lines and Angles, provides students with the foundational knowledge of geometry. By learning to identify and measure different lines and angles, students build a base for more advanced topics in mathematics. Consistent practice and understanding of the basic concepts will not only help in excelling in this chapter but also prepare students for future mathematical challenges.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Maths\u00a0 Chapter 2 Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Maths textbook chapters.\nS. No\nNCERT Solutions Class 6 Chapter-wise Maths PDF",
-      "a": "Detailed solution available."
+      "q": "Write the three whole numbers occurring just before 10001.",
+      "a": "10,001 \u2013 1 = 10,000 10,000 \u2013 1 = 9,999 9,999 \u2013 1 = 9,998"
     },
     {
-      "q": "1.\nChapter 1 - Patterns in Mathematics Solutions",
-      "a": "Detailed solution available."
+      "q": "Which is the smallest whole number?",
+      "a": "\u20180\u2019 (zero) is the smallest whole number."
     },
     {
-      "q": "2.\nChapter 3 - Number Play Solutions",
-      "a": "Detailed solution available."
+      "q": "How many whole numbers are there between 32 and 53?",
+      "a": "53 \u2013 32 \u2013 1 = 20 There are 20 whole numbers between 32 and 53."
     },
     {
-      "q": "3.\nChapter 4 - Data Handling and Presentation Solutions",
-      "a": "Detailed solution available."
+      "q": "Write the successor of 2440701.",
+      "a": "Successor of 2440701 is 2440701 + 1 = 2440702."
     },
     {
-      "q": "4.\nChapter 5 - Prime Time Solutions",
-      "a": "Detailed solution available."
+      "q": "Write the predecessor of 94.",
+      "a": "The predecessor of 94 is 94 \u2013 1 = 93."
     },
     {
-      "q": "5.\nChapter 6 - Perimeter and Area Solutions",
-      "a": "Detailed solution available."
+      "q": "If the product of two whole numbers is zero, can we say that one or both of them will be zero? Justify through examples.",
+      "a": "Yes, if we multiply any number with zero the resultant product will be zero. Examples: 2 x 0 = 0, 5 x 0 = 0, 9 x 0 = 0 If both numbers are zero, then the result also be zero. 0 x 0 = 0"
     },
     {
-      "q": "6.\nChapter 7 - Fractions Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 8 - Playing with Constructions Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 9 - Symmetry Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 10 - The Other Side of Zero Solutions\nRelated Important Links for Class 6\u00a0 Maths\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 6-\nS.No.\nImportant Links for Class 6 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 6 Maths NCERT Book",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 6 Maths Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 6 Maths Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 6 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Class 6 Maths Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 6 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 6 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 6 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nCBSE Class 6 Maths Formulas",
-      "a": "Detailed solution available."
+      "q": "If the product of two whole number is 1, can we say that one or both of them will be 1? Justify through examples.",
+      "a": "If only one number be 1 then the product cannot be 1. Examples: 5 x 1 = 5, 4 x 1 = 4, 8 x 1 = 8 If both number are 1, then the product is 1 1 x 1 = 1"
     }
   ],
   "3": [
@@ -547,162 +499,30 @@ export default {
   ],
   "4": [
     {
-      "q": "1.\nClass 6 Data Handling and Presentation Important Questions",
-      "a": "Detailed solution available."
+      "q": "How many lines can pass though: (a) one given point? (b) two given points?",
+      "a": "(a) Infinite number of lines can pass through one given point.\n(b) Only one line can pass through two given points."
     },
     {
-      "q": "2.\nClass 6 Data Handling and Presentation Notes\nConclusion\nNCERT Solutions for Class 6 Maths Chapter 4 Data Handling and Presentation provides a thorough understanding of how to organise, represent, and interpret data. These concepts not only enhance mathematical skills but also improve critical thinking by enabling students to draw conclusions based on real-life data. Practising these solutions ensures that students master data handling effectively.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Maths\u00a0 Chapters Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Maths textbook chapters.\nS. No\nNCERT Solutions Class 6 Chapter-wise Maths PDF",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nChapter 1 - Patterns in Mathematics Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nChapter 2 - Lines and Angles Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nChapter 3 - Number Play Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nChapter 5 - Prime Time Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nChapter 6 - Perimeter and Area Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 7 - Fractions Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 8 - Playing with Constructions Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 9 - Symmetry Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 10 - The Other Side of Zero Solutions\nRelated Important Links for Class 6\u00a0 Maths\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 6-\nS.No.\nImportant Links for Class 6 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 6 Maths NCERT Book",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 6 Maths Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 6 Maths Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 6 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Class 6 Maths Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 6 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 6 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 6 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nCBSE Class 6 Maths Formulas",
-      "a": "Detailed solution available."
+      "q": "Use strip and fasteners to make a triangle and a quadrilateral. Try to push inward at any one vertex of the triangle. Do the same to the quadrilateral. Is the triangle distorted? Is the quadrilateral distorted? Is the triangle rigid? Why is it that structures like electric towers make use of triangular shapes and not quadrilateral?",
+      "a": "No, the triangle is not distorted but the quadrilateral is distorted and also the triangle is rigid. Structures like electric towers make use of triangular shape so that they could not be distorted and they could be rigid."
     }
   ],
   "5": [
     {
-      "q": "1.\nClass 6 Prime Time Important Questions",
-      "a": "Detailed solution available."
+      "q": "What is the disadvantage in comparing line segments by mere observation?",
+      "a": "There may be chance of error due to improper viewing."
     },
     {
-      "q": "2.\nClass 6 Prime Time Notes\nConclusion\nChapter 5: Prime Time introduces students to the essential concepts of prime and composite numbers, which are foundational for many advanced mathematical topics. By practising factorization, understanding HCF and LCM, and identifying prime numbers, students can solidify their understanding of number theory. NCERT Solutions for this chapter is a valuable resource to clarify doubts and practice exercises.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Maths\u00a0 Chapters Question Answers, you can access comprehensive NCERT Solutions from all Class 6 Maths textbook chapters.\nS. No\nNCERT Solutions Class 6 Chapter-wise Maths PDF",
-      "a": "Detailed solution available."
+      "q": "Why is it better to use a divider than a ruler, while measuring the length of a line segment?",
+      "a": "It is better to use a divider than a ruler, because the thickness of the ruler may cause difficulties in reading off her length. However divider gives up accurate measurement."
     },
     {
-      "q": "1.\nChapter 1 - Patterns in Mathematics Solutions",
-      "a": "Detailed solution available."
+      "q": "There are two \u201cset-squares\u201d in your box. What are the measures of the angles that are formed at their corners? Do they have any angle measure that is common?",
+      "a": "One set-square has 45, 90, 45 and other set-square has 30, 60, 90. They have 90 as common angle."
     },
     {
-      "q": "2.\nChapter 2 - Lines and Angles Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nChapter 3 - Number Play Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nChapter 4 - Data Handling and Presentation Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nChapter 6 - Perimeter and Area Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nChapter 7 - Fractions Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nChapter 8 - Playing with Constructions Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nChapter 9 - Symmetry Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "9.\nChapter 10 - The Other Side of Zero Solutions\nRelated Important Links for Class 6\u00a0 Maths\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 6-\nS.No.\nImportant Links for Class 6 Maths",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "1.\nClass 6 Maths NCERT Book",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "2.\nCBSE Class 6 Maths Revision Notes",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "3.\nCBSE Class 6 Maths Important Questions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "4.\nCBSE Class 6 Maths Sample Papers",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "5.\nCBSE Class 6 Maths Worksheets",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "6.\nClass 6 Maths RS Aggarwal Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "7.\nClass 6 Maths RD Sharma Solutions",
-      "a": "Detailed solution available."
-    },
-    {
-      "q": "8.\nClass 6 Maths NCERT Exemplar Solutions",
-      "a": "Detailed solution available."
+      "q": "A figure is said to be regular if its sides are equal in length and angles are equal in measure. Can you identify the regular quadrilateral?",
+      "a": "A square is a regular quadrilateral."
     }
   ],
   "6": [
@@ -1911,7 +1731,20 @@ export default {
       "a": "Detailed solution available."
     }
   ],
-  "11": [],
+  "11": [
+    {
+      "q": "Cadets are marching in a parade. There are 5 cadets in a row. What is the rule, which gives the number of cadets, given the number of rows?",
+      "a": "Number of rows = n\nCadets in each row = 5\nTherefore, total number of cadets = 5n"
+    },
+    {
+      "q": "If there are 50 mangoes in a box, how will you write the total number of mangoes in terms of the number of boxes?",
+      "a": "Number of boxes = b\nNumber of mangoes in each box = 50\nTherefore, total number of mangoes = 50b"
+    },
+    {
+      "q": "The teacher distributes 5 pencils per student. Can you tell how many pencils are needed, given the number of students?",
+      "a": "Number of students = x\nNumber of pencils to each student = 5\nTherefore, total number of pencils needed are = 5x"
+    }
+  ],
   "12": [
     {
       "q": "1. There are 20 girls and 15 boys in a class.\n(a) What is the ratio of number of girls to the number of boys?",
@@ -2030,6 +1863,32 @@ export default {
       "a": "Anish made in 6 overs = 42 runs\n$\\therefore $\nAnish made in 1 overs\n$ = \\dfrac{{42}}{6} = 7$\nAnup made in 7 overs = 63\n$\\therefore $\nAnup made in 1 overs\n$ = \\dfrac{{63}}{7} = 9$\nHere,\n$ 9 > 7$\nThus, Anup made more runs per over.\nClass 6 Maths Chapter 12: Exercises Breakdown\nExercise\nNumber of Questions\nExercise 12.1\n16 Questions & Solutions\nExercise 12.2\n4 Questions & Solutions\nExercise 12.3\n11 Questions & Solutions\nConclusion\nIn conclusion, Class 6 Maths Ch 12 Ratio and Proportion is an essential part of your mathematical journey. This chapter helps build a strong foundation by teaching how to compare quantities using ratios and how to determine equality through proportions. It is important to focus on understanding the key concepts and practising the methods to simplify ratios and solve proportion problems effectively.\nFrom the previous year\u2019s question papers, typically, around 2-3, questions were asked from Class 6 Maths Ch 12, emphasizing its significance. These questions often involve practical applications of ratios and proportions, so ensure you are comfortable with both the theory and practical aspects.\nOther Study Material for CBSE Class 6 Maths Chapter 12\nS. No\nImportant Links for Chapter 12 Ratio and Proportion\n1\nClass 6 Ratio and Proportion Important Questions\n2\nClass 6 Ratio and Proportion Revision Notes\n3\nClass 6 Ratio and Proportion Important Formulas\n4\nClass 6 Ratio and Proportion NCERT Exemplar Solution\n5\nClass 6 Ratio and Proportion RD Sharma Solutions\n6\nClass 6 Ratio and Proportion RS Aggarwal Solutions\nChapter-Specific NCERT Solutions for Class 6 Maths\nGiven below are the chapter-wise NCERT Solutions for Class 6 Maths. Go through these chapter-wise solutions to be thoroughly familiar with the concepts.\nNCERT Solutions Class 6 Chapter-wise Maths PDF\nChapter 1 - Knowing Our Numbers\nChapter 2 - Whole Numbers\nChapter 3 - Playing with Numbers\nChapter 4 - Basic Geometrical Ideas\nChapter 5 - Understanding Elementary Shapes\nChapter 6 - Integers\nChapter 7 - Fractions\nChapter 8 - Decimals\nChapter 9 - Data Handling\nChapter 10 - Mensuration\nChapter 11 - Algebra"
     }
   ],
-  "13": [],
-  "14": []
+  "13": [
+    {
+      "q": "List any four symmetrical from your home or school.",
+      "a": "Notebook, Blackboard, Glass, Inkpot."
+    },
+    {
+      "q": "What is a line of symmetry?",
+      "a": "A figure has line symmetry if a line can be drawn dividing the figure into two identical parts. The line is called a line of symmetry."
+    },
+    {
+      "q": "How many line of symmetry does a figure have?",
+      "a": "A figure may have no line of symmetry, only one line of symmetry, two lines of symmetry or multiple lines of symmetry."
+    }
+  ],
+  "14": [
+    {
+      "q": "How to draw a circle of radius 3.2 cm?",
+      "a": "Steps of construction: (a) Open the compass for the required radius of 3.2 cm. (b) Make a point with a sharp pencil where we want the centre of circle to be. (c) Name it O. (d) Place the pointer of compasses on O. (e) Turn the compasses slowly to draw the circle. Hence, it is the required circle."
+    },
+    {
+      "q": "What is a ruler?",
+      "a": "A ruler ideally has no markings on it. However, the ruler in our instruments box is graduated into centimetres along one edge. It is use to draw line segments an to measure their lengths."
+    },
+    {
+      "q": "What is a Compass?",
+      "a": "A pair \u2013 a pointer on one end and a pencil on the other. It is use to mark off equal lengths nut not to measure them. It is also use to draw arcs and circles."
+    }
+  ]
 };
