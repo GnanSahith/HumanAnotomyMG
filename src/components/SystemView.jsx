@@ -28,7 +28,7 @@ export default function SystemView({ system, onBack, onSelectOrgan, activeOrganI
                         <h3>{t('Organs')}</h3>
                     </div>
                     <ul className="organ-list">
-                        {system.organs.length === 0 ? (
+                        {(!system?.organs || system.organs.length === 0) ? (
                             <li className="empty-organs">{t('No organs listed yet.')}</li>
                         ) : (
                             system.organs.map((organ) => {
@@ -69,20 +69,20 @@ export default function SystemView({ system, onBack, onSelectOrgan, activeOrganI
                                 <div className="glow-circle" />
                             </div>
                             <div className="system-overview-title">
-                                <h1>{t(system.name)}</h1>
-                                <p className="system-desc">{t(system.description)}</p>
+                                <h1>{t(system?.name || '')}</h1>
+                                <p className="system-desc">{t(system?.description || '')}</p>
                             </div>
                         </div>
 
                         <div className="system-organs-section">
                             <h3>{t('Organs in this System')}</h3>
-                            {system.organs.length === 0 ? (
+                            {(!system?.organs || system.organs.length === 0) ? (
                                 <div className="hint-card" style={{ marginTop: 16 }}>
                                     <span>{t('No organs listed yet. Check back later!')}</span>
                                 </div>
                             ) : (
                                 <div className="overview-organ-grid">
-                                    {system.organs.map((organ) => (
+                                    {(system.organs || []).map((organ) => (
                                         <div
                                             key={organ.id}
                                             className="overview-organ-card glass-panel"

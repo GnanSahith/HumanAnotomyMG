@@ -54,7 +54,7 @@ const AcademicsView = ({ onSelectSubject, onBack }) => {
             {/* Expanded Content (Subjects Grid) */}
             <div className="class-subjects-container">
               <div className="subjects-grid">
-                {cls.subjects.map((sub, idx) => {
+                {cls.subjects?.map((sub, idx) => {
                   const fullSubjectName = `${cls.fullName} ${sub}`;
                   return (
                     <div 

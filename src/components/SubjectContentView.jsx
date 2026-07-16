@@ -52,8 +52,8 @@ const SubjectContentView = ({ subject, onBack, onNavigateToSimulation }) => {
            </div>
         ) : (
           chapterList.length > 0 ? (
-            <div className="chapters-grid">
-              {chapterList.map((chapter) => (
+            <div className="chapter-list">
+              {(chapterList || []).map((chapter) => (
                 <div key={chapter.id} className="chapter-glass-card" onClick={() => setActiveChapter(chapter)}>
                   <div className="chapter-icon-box">
                     <FileText size={20} />

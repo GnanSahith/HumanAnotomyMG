@@ -332,7 +332,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
   return (
     <div className="reader-layout">
       <div className="rich-chapter-content fade-in-scale">
-        {validQuestions.map((qaObj, index) => {
+        {(validQuestions || []).map((qaObj, index) => {
           const num = index + 1;
           return (
             <div key={num} id={`q-${chapterNum}-${num}`} className="qna-block glass-panel">
@@ -348,7 +348,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
                     if (sims.length > 0) {
                       return (
                         <div style={{ marginTop: '12px' }}>
-                          {sims.map(sim => (
+                          {(sims || []).map(sim => (
                             <button 
                               key={sim.simId || sim.categoryId || sim.systemId}
                               onClick={() => onNavigateToSimulation?.(sim.module, sim.simId || sim.systemId, sim.categoryId)}
@@ -460,7 +460,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
       <div className="quick-nav-sidebar fade-in-scale">
         <h3>Index</h3>
         <div className="nav-grid">
-          {validQuestions.map((_, index) => {
+          {(validQuestions || []).map((_, index) => {
             const num = index + 1;
             return (
               <button key={num} onClick={() => scrollToQ(`q-${chapterNum}-${num}`)}>

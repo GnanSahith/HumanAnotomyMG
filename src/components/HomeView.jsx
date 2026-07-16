@@ -13,7 +13,7 @@ const HomeView = ({ systems, onSelectSystem }) => {
             </div>
 
             <div className="systems-grid">
-                {systems.map((system) => {
+                {(systems || []).map((system) => {
                     const IconComponent = Icons[system.iconName] || Icons.HelpCircle;
 
                     return (

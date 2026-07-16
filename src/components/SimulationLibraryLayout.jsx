@@ -10,8 +10,8 @@ const cleanTitle = (title) => {
 export default function SimulationLibraryLayout({ 
     title, 
     icon, 
-    simulations, 
-    filters, // e.g., [{ id: 'subject', label: 'SUBJECT', options: [{ id: 'motion', label: 'Motion' }] }]
+    simulations = [], 
+    filters = [], // e.g., [{ id: 'subject', label: 'SUBJECT', options: [{ id: 'motion', label: 'Motion' }] }]
     initialFilters = {},
     onSimulationClick, 
     onBack,
@@ -135,13 +135,13 @@ export default function SimulationLibraryLayout({
                     gap: '32px',
                     flexShrink: 0
                 }}>
-                    {filters.map(filterGroup => (
+                    {(filters || []).map(filterGroup => (
                         <div key={filterGroup.id}>
                             <h3 style={{ fontSize: '14px', fontWeight: 600, color: '#fff', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                                 {t(filterGroup.label)}
                             </h3>
                             <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                                {filterGroup.options.map(option => {
+                                {(filterGroup.options || []).map(option => {
                                     const isSelected = (selectedFilters[filterGroup.id] || []).includes(option.id);
                                     return (
                                         <label key={option.id} style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
@@ -210,7 +210,7 @@ export default function SimulationLibraryLayout({
                         gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '1fr',
                         gap: '24px'
                     }}>
-                        {filteredSimulations.map((sim) => (
+                        {(filteredSimulations || []).map((sim) => (
                             <div 
                                 key={sim.id}
                                 className="glass-panel"

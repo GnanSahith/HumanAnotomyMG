@@ -96,7 +96,7 @@ export default function DetailsView({ activeOrgan, activeSystem }) {
             options.push({ mesh: targetMesh, isCorrect: true });
             options.sort(() => Math.random() - 0.5);
             
-            const formattedOptions = options.map(opt => {
+            const formattedOptions = (options || []).map(opt => {
                 const optOrgan = activeSystem.organs.find(o => (o.modelSrc && o.modelSrc.includes(opt.mesh)) || o.name.en.toLowerCase() === cleanName(opt.mesh).toLowerCase());
                 
                 let label = optOrgan ? optOrgan.name.en : cleanName(opt.mesh);
@@ -179,10 +179,10 @@ export default function DetailsView({ activeOrgan, activeSystem }) {
                             </button>
                         </div>
                         <div style={{ fontSize: '16px', fontWeight: 600, marginBottom: '20px', lineHeight: 1.4, color: '#fff' }}>
-                            {quizQuestions[currentQuestionIdx].questionText}
+                            {quizQuestions[currentQuestionIdx]?.questionText}
                         </div>
                         <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', flex: 1, overflowY: 'auto', paddingRight: '8px' }}>
-                            {quizQuestions[currentQuestionIdx].options.map((opt, i) => {
+                            {(quizQuestions[currentQuestionIdx]?.options || []).map((opt, i) => {
                                 let bg = 'rgba(255,255,255,0.06)';
                                 let border = '1px solid rgba(255,255,255,0.05)';
                                 let opacity = 1;
