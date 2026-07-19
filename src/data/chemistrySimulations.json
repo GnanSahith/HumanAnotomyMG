@@ -403,7 +403,7 @@
         "title": "Molarity MG",
         "description": "Interactive Molarity simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molarity/latest/molarity_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_molarity-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_molarity.jpg",
         "category": "Solutions, Acids & Bases",
         "isNative": true
     },
@@ -488,7 +488,7 @@
         "title": "pH Scale MG",
         "description": "Interactive pH Scale simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/ph-scale/latest/ph-scale_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_ph-scale-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_ph_scale.jpg",
         "category": "Solutions, Acids & Bases",
         "isNative": true
     },
@@ -505,7 +505,7 @@
         "title": "pH Scale: Basics MG",
         "description": "Interactive pH Scale: Basics simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/ph-scale-basics/latest/ph-scale-basics_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_ph-scale-basics-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_ph_scale_basics.jpg",
         "category": "Solutions, Acids & Bases",
         "isNative": true
     },
