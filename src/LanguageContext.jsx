@@ -11,10 +11,10 @@ export const LanguageProvider = ({ children }) => {
     };
 
     // Helper function to safely get translations from the data structure
-    const t = (textObj) => {
+    const t = (textObj, fallback = null) => {
         if (!textObj) return '';
-        if (typeof textObj === 'string') return textObj; // Fallback if data isn't fully migrated yet
-        return textObj[currentLanguage] || textObj['en'] || '';
+        if (typeof textObj === 'string') return fallback || textObj; // Fallback if data isn't fully migrated yet
+        return textObj[currentLanguage] || textObj['en'] || fallback || '';
     };
 
     return (
