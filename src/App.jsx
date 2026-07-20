@@ -16,9 +16,11 @@ import MainLandingView from './components/MainLandingView';
 import AcademicsView from './components/AcademicsView';
 import SubjectContentView from './components/SubjectContentView';
 import PricingView from './components/PricingView';
+import ParentDashboardView from './components/ParentDashboardView';
 import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut, ArrowLeft } from 'lucide-react';
 import { useUser, UserButton } from '@clerk/clerk-react';
 import LoginModal from './components/LoginModal';
+import ParentLoginModal from './components/ParentLoginModal';
 import { useLanguage } from './LanguageContext';
 import SelectionTooltip from './components/SelectionTooltip';
 import Chatbot from './components/Chatbot';
@@ -45,6 +47,7 @@ function App() {
     return localStorage.getItem('logged_in_username') || '';
   });
   const [showLoginModal, setShowLoginModal] = useState(false);
+  const [showParentLoginModal, setShowParentLoginModal] = useState(false);
   const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
   const profileDropdownRef = useRef(null);
   
@@ -242,6 +245,25 @@ function App() {
                   </span>
                 )}
                 <button
+                  onClick={() => setShowParentLoginModal(true)}
+                  style={{
+                    background: 'rgba(255,255,255,0.1)',
+                    border: '1px solid rgba(255,255,255,0.2)',
+                    borderRadius: '20px',
+                    padding: '8px 16px',
+                    color: '#fff',
+                    cursor: 'pointer',
+                    fontWeight: 600,
+                    fontSize: '13px',
+                    transition: 'all 0.2s ease',
+                    marginLeft: '4px'
+                  }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)'; e.currentTarget.style.borderColor = '#0a84ff'; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'; }}
+                >
+                  Parent Dashboard
+                </button>
+                <button
                   onClick={handleLogout}
                   style={{
                     background: 'var(--accent)',
@@ -378,6 +400,8 @@ function App() {
             </SystemView>
           </div>
         ) : null
+      ) : appMode === 'dashboard' ? (
+        <ParentDashboardView onBack={handleReturnToPortal} />
       ) : null}
 
       {appMode === 'simulations' && cameFromQuestion && (
@@ -423,6 +447,15 @@ function App() {
               setLoggedInUsername(username);
           }
           setShowLoginModal(false);
+        }}
+      />
+
+      <ParentLoginModal 
+        isOpen={showParentLoginModal}
+        onClose={() => setShowParentLoginModal(false)}
+        onSuccess={() => {
+          setShowParentLoginModal(false);
+          setAppMode('dashboard');
         }}
       />
 

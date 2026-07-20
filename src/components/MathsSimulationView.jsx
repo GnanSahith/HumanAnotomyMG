@@ -442,18 +442,10 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
 
     const simArray = React.useMemo(() => {
         let arr = Object.entries(mathSimulations).map(([id, sim]) => ({ ...sim, id }));
-        if (accessLevel === 'ROOT') {
-            return arr;
-        } else {
-            return arr.filter(sim => approvedSims.includes(sim.id));
-        }
-    }, [accessLevel, approvedSims]);
+        return arr;
+    }, []);
 
     const handleSimClick = (sim) => {
-        if (accessLevel === 'CLERK') {
-            alert('Currently Locked');
-            return;
-        }
         setActiveSimulation(sim);
         setIsLoadingSim(true);
         setTimeout(() => setIsLoadingSim(false), 2000);

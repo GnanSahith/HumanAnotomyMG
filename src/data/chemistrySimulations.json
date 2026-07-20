@@ -46,7 +46,7 @@
         "title": "Balancing Act MG",
         "description": "Interactive Balancing Act simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/balancing-act/latest/balancing-act_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_balancing-act-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_balancing_act.jpg",
         "category": "Reactions & Stoichiometry",
         "isNative": true
     },
@@ -80,7 +80,7 @@
         "title": "Balloons and Static Electricity MG",
         "description": "Interactive Balloons and Static Electricity simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/balloons-and-static-electricity/latest/balloons-and-static-electricity_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_balloons-and-static-electricity-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_balloons_static.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
@@ -114,7 +114,7 @@
         "title": "Blackbody Spectrum MG",
         "description": "Interactive Blackbody Spectrum simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_blackbody-spectrum-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_blackbody_spectrum.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
@@ -233,7 +233,7 @@
         "title": "Coulomb's Law MG",
         "description": "Interactive Coulomb's Law simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_coulomb-s-law-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_coulombs_law.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
@@ -267,7 +267,7 @@
         "title": "Diffusion MG",
         "description": "Interactive Diffusion simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/diffusion/latest/diffusion_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_diffusion-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_diffusion.jpg",
         "category": "Thermodynamics & Gases",
         "isNative": true
     },
@@ -284,7 +284,7 @@
         "title": "Energy Forms and Changes MG",
         "description": "Interactive Energy Forms and Changes simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/energy-forms-and-changes/latest/energy-forms-and-changes_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_energy-forms-and-changes-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_energy_forms.jpg",
         "category": "Thermodynamics & Gases",
         "isNative": true
     },
@@ -301,7 +301,7 @@
         "title": "Fourier: Making Waves MG",
         "description": "Interactive Fourier: Making Waves simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/fourier-making-waves/latest/fourier-making-waves_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_fourier-making-waves-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_fourier_waves.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
@@ -352,7 +352,7 @@
         "title": "Isotopes and Atomic Mass MG",
         "description": "Interactive Isotopes and Atomic Mass simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/isotopes-and-atomic-mass/latest/isotopes-and-atomic-mass_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_isotopes-and-atomic-mass-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_isotopes_atomic_mass.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -420,7 +420,7 @@
         "title": "Molecule Polarity MG",
         "description": "Interactive Molecule Polarity simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molecule-polarity/latest/molecule-polarity_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_molecule-polarity-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_molecule_polarity.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -437,7 +437,7 @@
         "title": "Molecule Shapes MG",
         "description": "Interactive Molecule Shapes simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molecule-shapes/latest/molecule-shapes_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_molecule-shapes-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_molecule_shapes.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -454,7 +454,7 @@
         "title": "Molecule Shapes: Basics MG",
         "description": "Interactive Molecule Shapes: Basics simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/molecule-shapes-basics/latest/molecule-shapes-basics_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_molecule-shapes-basics-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_molecule_shapes_basics.jpg",
         "category": "Atoms & Molecules",
         "isNative": true
     },
@@ -522,7 +522,7 @@
         "title": "Quantum Coin Toss MG",
         "description": "Interactive Quantum Coin Toss simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/quantum-coin-toss/latest/quantum-coin-toss_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_quantum-coin-toss-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_quantum_coin_toss.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
@@ -539,7 +539,7 @@
         "title": "Quantum Measurement MG",
         "description": "Interactive Quantum Measurement simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/quantum-measurement/latest/quantum-measurement_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_quantum-measurement-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_quantum_measurement.jpg",
         "category": "Quantum & Advanced Chemistry",
         "isNative": true
     },
@@ -556,7 +556,7 @@
         "title": "Reactants, Products and Leftovers MG",
         "description": "Interactive Reactants, Products and Leftovers simulation (Native Custom Build)",
         "url": "https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_en.html",
-        "thumbnail": "/thumbnails/chem_thumb_reactants-products-and-leftovers-mg_gen.jpg",
+        "thumbnail": "/thumbnails/chem_reactants_products.jpg",
         "category": "Reactions & Stoichiometry",
         "isNative": true
     },

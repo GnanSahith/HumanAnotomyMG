@@ -23,6 +23,7 @@ const MainLandingView = ({ onSelectRoute, isSignedIn, isAuthenticated }) => {
           {isSimulationsLocked ? <Lock size={80} className="split-icon" style={{ color: '#ff4d4d' }} /> : <MonitorPlay size={80} className="split-icon" />}
           <h1>Simulations {isSimulationsLocked && '(Locked)'}</h1>
           <p>Interactive 3D models and practical simulations for Math, Physics, Chemistry, and Biology.</p>
+          
         </div>
       </div>
     </div>
