@@ -409,7 +409,7 @@ function App() {
       ) : appMode === 'dashboard' ? (
         <ParentDashboardView 
           onBack={handleReturnToPortal} 
-          onGoToSimulations={() => setAppMode('simulations')}
+          onGoToSimulations={(module, simId, categoryId) => handleNavigateToSimulation(module, simId, categoryId)}
           onLogout={() => {
             localStorage.removeItem('parent_logged_in');
             setAppMode('root');

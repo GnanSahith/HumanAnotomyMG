@@ -192,14 +192,14 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
           </h2>
           <div style={{ width: '100%', height: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '15px' }}>
              {[
-              { name: 'Wave on a String', views: 24, fill: '#bf5af2' },
-              { name: "Coulomb's Law", views: 18, fill: '#0a84ff' },
-              { name: 'Trigonometry Tour', views: 15, fill: '#30d158' },
-              { name: 'Human Heart 3D', views: 12, fill: '#ff453a' },
+              { name: 'Wave on a String', views: 24, fill: '#bf5af2', module: 'physics', simId: 'wave-on-a-string_mg', categoryId: 'waves' },
+              { name: "Coulomb's Law", views: 18, fill: '#0a84ff', module: 'chemistry', simId: 'coulombs-law_mg', categoryId: 'general' },
+              { name: 'Molecule Shapes', views: 15, fill: '#30d158', module: 'chemistry', simId: 'molecule-shapes_mg', categoryId: 'general' },
+              { name: 'Human Heart 3D', views: 12, fill: '#ff453a', module: 'biology', simId: 'heart', categoryId: 'anatomy' },
              ].map((sim, idx) => (
                 <div 
                   key={idx} 
-                  onClick={onGoToSimulations}
+                  onClick={() => onGoToSimulations(sim.module, sim.simId, sim.categoryId)}
                   style={{ 
                     display: 'flex', alignItems: 'center', gap: '15px', padding: '8px', borderRadius: '12px',
                     cursor: 'pointer', transition: 'background 0.2s ease'
