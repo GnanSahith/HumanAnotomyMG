@@ -9,7 +9,7 @@ const recentActivity = [
   { id: 4, action: "Completed Assessment", target: "Chemical Bonding", score: "10/10", time: "Yesterday", icon: <Award size={18} color="#30d158" /> },
 ];
 
-const ParentDashboardView = ({ onBack }) => {
+const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
   const [timeRange, setTimeRange] = useState('weekly');
 
   return (
@@ -53,20 +53,52 @@ const ParentDashboardView = ({ onBack }) => {
           </div>
         </div>
 
-        <div style={{ display: 'flex', background: 'rgba(20,20,30,0.5)', borderRadius: '12px', padding: '4px', border: '1px solid rgba(255,255,255,0.05)', backdropFilter: 'blur(10px)' }}>
-          {['daily', 'weekly', 'monthly'].map(range => (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <div style={{ display: 'flex', background: 'rgba(20,20,30,0.5)', borderRadius: '12px', padding: '4px', border: '1px solid rgba(255,255,255,0.05)', backdropFilter: 'blur(10px)' }}>
+            {['daily', 'weekly', 'monthly'].map(range => (
+              <button
+                key={range}
+                onClick={() => setTimeRange(range)}
+                style={{
+                  background: timeRange === range ? 'rgba(255,255,255,0.1)' : 'transparent',
+                  border: 'none', borderRadius: '8px', padding: '6px 16px', color: timeRange === range ? '#fff' : 'rgba(255,255,255,0.5)',
+                  fontSize: '13px', fontWeight: timeRange === range ? 600 : 400, cursor: 'pointer', transition: 'all 0.2s ease',
+                  textTransform: 'capitalize'
+                }}
+              >
+                {range}
+              </button>
+            ))}
+          </div>
+          {onGoToSimulations && (
             <button
-              key={range}
-              onClick={() => setTimeRange(range)}
+              onClick={onGoToSimulations}
               style={{
-                background: timeRange === range ? 'rgba(255,255,255,0.1)' : 'transparent',
-                border: 'none', borderRadius: '8px', padding: '8px 16px', color: timeRange === range ? '#fff' : 'rgba(255,255,255,0.5)',
-                fontSize: '13px', fontWeight: 600, cursor: 'pointer', transition: 'all 0.2s ease', textTransform: 'capitalize'
+                background: 'linear-gradient(135deg, #bf5af2, #0a84ff)',
+                border: 'none', borderRadius: '12px', padding: '10px 20px', color: '#fff',
+                fontSize: '14px', fontWeight: 600, cursor: 'pointer', transition: 'all 0.2s ease',
+                boxShadow: '0 4px 14px rgba(10,132,255,0.3)'
               }}
+              onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+              onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
             >
-              {range}
+              View Simulations
             </button>
-          ))}
+          )}
+          {onLogout && (
+            <button
+              onClick={onLogout}
+              style={{
+                background: 'rgba(255,69,58,0.1)', border: '1px solid rgba(255,69,58,0.2)',
+                borderRadius: '12px', padding: '10px 16px', color: '#ff453a',
+                fontSize: '14px', fontWeight: 600, cursor: 'pointer', transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,69,58,0.2)'; e.currentTarget.style.borderColor = 'rgba(255,69,58,0.4)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,69,58,0.1)'; e.currentTarget.style.borderColor = 'rgba(255,69,58,0.2)'; }}
+            >
+              Sign Out
+            </button>
+          )}
         </div>
       </div>
 

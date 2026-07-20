@@ -245,7 +245,13 @@ function App() {
                   </span>
                 )}
                 <button
-                  onClick={() => setShowParentLoginModal(true)}
+                  onClick={() => {
+                    if (localStorage.getItem('parent_logged_in') === 'true') {
+                      setAppMode('dashboard');
+                    } else {
+                      setShowParentLoginModal(true);
+                    }
+                  }}
                   style={{
                     background: 'rgba(255,255,255,0.1)',
                     border: '1px solid rgba(255,255,255,0.2)',
@@ -401,7 +407,14 @@ function App() {
           </div>
         ) : null
       ) : appMode === 'dashboard' ? (
-        <ParentDashboardView onBack={handleReturnToPortal} />
+        <ParentDashboardView 
+          onBack={handleReturnToPortal} 
+          onGoToSimulations={() => setAppMode('simulations')}
+          onLogout={() => {
+            localStorage.removeItem('parent_logged_in');
+            setAppMode('root');
+          }}
+        />
       ) : null}
 
       {appMode === 'simulations' && cameFromQuestion && (

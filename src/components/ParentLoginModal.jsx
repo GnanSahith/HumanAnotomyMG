@@ -21,6 +21,7 @@ const ParentLoginModal = ({ isOpen, onClose, onSuccess }) => {
     e.preventDefault();
     if (username === 'Charan Kumar parent' && password === 'CK parent') {
       setError('');
+      localStorage.setItem('parent_logged_in', 'true');
       onSuccess();
     } else {
       setError('Invalid parent credentials. Please try again.');
