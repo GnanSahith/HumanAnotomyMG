@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, Clock, BookOpen, Activity, Award, User, Target, TrendingUp, Calendar } from 'lucide-react';
+import CertificatesModal from './CertificatesModal';
 import { useLanguage } from '../LanguageContext';
 
 const recentActivity = [
@@ -11,6 +12,7 @@ const recentActivity = [
 
 const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
   const [timeRange, setTimeRange] = useState('weekly');
+  const [showCertificatesModal, setShowCertificatesModal] = useState(false);
 
   return (
     <div style={{ 
@@ -183,7 +185,7 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
         
-        {/* Top Simulations */}
+         {/* Top Simulations */}
         <div style={{ background: 'rgba(20, 20, 30, 0.4)', backdropFilter: 'blur(20px)', borderRadius: '24px', padding: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
           <h2 style={{ fontSize: '18px', margin: '0 0 20px 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
             <Activity size={18} color="#30d158" /> Top Simulations
@@ -195,7 +197,16 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
               { name: 'Trigonometry Tour', views: 15, fill: '#30d158' },
               { name: 'Human Heart 3D', views: 12, fill: '#ff453a' },
              ].map((sim, idx) => (
-                <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                <div 
+                  key={idx} 
+                  onClick={onGoToSimulations}
+                  style={{ 
+                    display: 'flex', alignItems: 'center', gap: '15px', padding: '8px', borderRadius: '12px',
+                    cursor: 'pointer', transition: 'background 0.2s ease'
+                  }}
+                  onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
+                  onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
+                >
                   <div style={{ width: '120px', fontSize: '13px', color: 'rgba(255,255,255,0.8)' }}>{sim.name}</div>
                   <div style={{ flex: 1, height: '20px', background: 'rgba(255,255,255,0.05)', borderRadius: '10px', overflow: 'hidden' }}>
                     <div style={{ width: `${(sim.views / 24) * 100}%`, height: '100%', background: sim.fill, borderRadius: '10px' }}></div>
@@ -212,11 +223,26 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
             <h2 style={{ fontSize: '18px', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
               <User size={18} color="#ff9f0a" /> Recent Activity
             </h2>
-            <button style={{ background: 'transparent', border: 'none', color: '#0a84ff', fontSize: '13px', cursor: 'pointer', fontWeight: 600 }}>View All</button>
+            <button 
+              onClick={() => setShowCertificatesModal(true)}
+              style={{ background: 'transparent', border: 'none', color: '#0a84ff', fontSize: '13px', cursor: 'pointer', fontWeight: 600 }}
+            >
+              View Certificates
+            </button>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
             {recentActivity.map(item => (
-              <div key={item.id} style={{ display: 'flex', alignItems: 'center', gap: '16px', padding: '12px', background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.02)' }}>
+              <div 
+                key={item.id} 
+                onClick={() => setShowCertificatesModal(true)}
+                style={{ 
+                  display: 'flex', alignItems: 'center', gap: '16px', padding: '12px', 
+                  background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.02)',
+                  cursor: 'pointer', transition: 'all 0.2s ease'
+                }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.02)'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
+                onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.background = 'rgba(255,255,255,0.03)'; }}
+              >
                 <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                   {item.icon}
                 </div>
@@ -234,6 +260,11 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
         </div>
 
       </div>
+      
+      <CertificatesModal 
+        isOpen={showCertificatesModal} 
+        onClose={() => setShowCertificatesModal(false)} 
+      />
     </div>
   );
 };
