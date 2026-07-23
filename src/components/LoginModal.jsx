@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { X, Lock, User, ArrowRight, Code, GraduationCap } from 'lucide-react';
-import { SignIn } from '@clerk/clerk-react';
-import { dark } from '@clerk/themes';
+import { X, Lock, User, ArrowRight, Code, GraduationCap, Mail } from 'lucide-react';
+import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
+import { auth, db } from '../firebase';
+import { doc, setDoc } from 'firebase/firestore';
 
 const VALID_CREDENTIALS = [
     { username: 'CharanKumar@MG', password: 'Charan@MG' },
@@ -14,9 +15,12 @@ const VALID_CREDENTIALS = [
 
 export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 'student' }) {
     const [activeTab, setActiveTab] = useState(defaultTab); // 'administrator' or 'student'
+    const [isRegistering, setIsRegistering] = useState(false);
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
+    const [email, setEmail] = useState('');
     const [error, setError] = useState('');
+    const [loading, setLoading] = useState(false);
 
     // Reset tab if defaultTab changes when modal opens
     React.useEffect(() => {
@@ -36,6 +40,31 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
             onSuccess(username);
         } else {
             setError('Invalid username or password');
+        }
+    };
+
+    const handleStudentAuth = async (e) => {
+        e.preventDefault();
+        setError('');
+        setLoading(true);
+        try {
+            if (isRegistering) {
+                const userCredential = await createUserWithEmailAndPassword(auth, email, password);
+                // Create user doc in firestore
+                await setDoc(doc(db, 'users', userCredential.user.uid), {
+                    email: email,
+                    role: 'student',
+                    createdAt: new Date().toISOString()
+                });
+                onSuccess(userCredential.user.email);
+            } else {
+                const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                onSuccess(userCredential.user.email);
+            }
+        } catch (err) {
+            setError(err.message.replace('Firebase: ', ''));
+        } finally {
+            setLoading(false);
         }
     };
 
@@ -185,56 +214,104 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
                         </form>
                     </>
                 ) : (
-                    <div style={{ display: 'flex', justifyContent: 'center', margin: '0 -20px' }}>
-                        <SignIn 
-                            routing="hash" 
-                            appearance={{
-                                baseTheme: dark,
-                                variables: {
-                                    colorPrimary: '#6B4EFF',
-                                    colorBackground: 'transparent',
-                                    colorInputBackground: 'rgba(255,255,255,0.05)',
-                                    colorInputText: '#fff',
-                                    colorText: '#fff',
-                                },
-                                elements: {
-                                    card: {
-                                        boxShadow: 'none',
-                                        background: 'transparent',
-                                    },
-                                    headerTitle: {
-                                        fontSize: '24px',
-                                        fontWeight: '700',
-                                    },
-                                    headerSubtitle: {
-                                        color: 'rgba(255,255,255,0.6)',
-                                    },
-                                    socialButtonsBlockButton: {
-                                        backgroundColor: 'rgba(255,255,255,0.05)',
+                    <div style={{ padding: '0 20px' }}>
+                        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
+                            <div style={{
+                                width: '64px', height: '64px', borderRadius: '16px',
+                                background: 'linear-gradient(135deg, rgba(107,78,255,0.2) 0%, rgba(107,78,255,0.05) 100%)',
+                                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                                margin: '0 auto 16px', border: '1px solid rgba(107,78,255,0.3)'
+                            }}>
+                                <GraduationCap size={32} color="#6B4EFF" />
+                            </div>
+                            <h2 style={{ margin: '0 0 8px 0', color: '#fff', fontSize: '24px', fontWeight: 700 }}>
+                                {isRegistering ? 'Create Account' : 'Student Login'}
+                            </h2>
+                            <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '14px' }}>
+                                Access your personalized learning dashboard
+                            </p>
+                        </div>
+
+                        <form onSubmit={handleStudentAuth} style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                            <div style={{ position: 'relative' }}>
+                                <div style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.4)' }}>
+                                    <Mail size={18} />
+                                </div>
+                                <input 
+                                    type="email" 
+                                    placeholder="Student Email" 
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    required
+                                    style={{
+                                        width: '100%', padding: '14px 16px 14px 44px',
+                                        background: 'rgba(255,255,255,0.05)',
                                         border: '1px solid rgba(255,255,255,0.1)',
-                                        transition: 'all 0.2s',
-                                        '&:hover': {
-                                            backgroundColor: 'rgba(255,255,255,0.1)',
-                                        }
-                                    },
-                                    formButtonPrimary: {
-                                        backgroundColor: '#6B4EFF',
-                                        '&:hover': {
-                                            backgroundColor: '#583bd6',
-                                        }
-                                    },
-                                    footerActionText: {
-                                        color: 'rgba(255,255,255,0.6)',
-                                    },
-                                    footerActionLink: {
-                                        color: '#6B4EFF',
-                                        '&:hover': {
-                                            color: '#8b75ff',
-                                        }
-                                    }
-                                }
-                            }}
-                        />
+                                        borderRadius: '12px', color: '#fff', fontSize: '15px',
+                                        outline: 'none', transition: 'border-color 0.2s', boxSizing: 'border-box'
+                                    }}
+                                    onFocus={(e) => e.target.style.borderColor = 'rgba(107,78,255,0.5)'}
+                                    onBlur={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
+                                />
+                            </div>
+
+                            <div style={{ position: 'relative' }}>
+                                <div style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', color: 'rgba(255,255,255,0.4)' }}>
+                                    <Lock size={18} />
+                                </div>
+                                <input 
+                                    type="password" 
+                                    placeholder="Password" 
+                                    value={password}
+                                    onChange={(e) => setPassword(e.target.value)}
+                                    required
+                                    style={{
+                                        width: '100%', padding: '14px 16px 14px 44px',
+                                        background: 'rgba(255,255,255,0.05)',
+                                        border: '1px solid rgba(255,255,255,0.1)',
+                                        borderRadius: '12px', color: '#fff', fontSize: '15px',
+                                        outline: 'none', transition: 'border-color 0.2s', boxSizing: 'border-box'
+                                    }}
+                                    onFocus={(e) => e.target.style.borderColor = 'rgba(107,78,255,0.5)'}
+                                    onBlur={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
+                                />
+                            </div>
+
+                            {error && (
+                                <div style={{ color: '#ff4d4d', fontSize: '13px', textAlign: 'center', background: 'rgba(255,77,77,0.1)', padding: '8px', borderRadius: '8px' }}>
+                                    {error}
+                                </div>
+                            )}
+
+                            <button 
+                                type="submit"
+                                disabled={loading}
+                                style={{
+                                    width: '100%', padding: '16px', marginTop: '8px',
+                                    background: '#6B4EFF', color: '#fff', border: 'none',
+                                    borderRadius: '12px', fontSize: '16px', fontWeight: 600,
+                                    cursor: loading ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center',
+                                    justifyContent: 'center', gap: '8px', transition: 'all 0.2s',
+                                    opacity: loading ? 0.7 : 1
+                                }}
+                                onMouseEnter={(e) => { if(!loading) e.currentTarget.style.background = '#583bd6' }}
+                                onMouseLeave={(e) => { if(!loading) e.currentTarget.style.background = '#6B4EFF' }}
+                            >
+                                {loading ? 'Processing...' : (isRegistering ? 'Create Account' : 'Sign In')} <ArrowRight size={18} />
+                            </button>
+
+                            <button
+                                type="button"
+                                onClick={() => setIsRegistering(!isRegistering)}
+                                style={{
+                                    background: 'none', border: 'none', color: 'rgba(255,255,255,0.6)',
+                                    cursor: 'pointer', fontSize: '14px', marginTop: '8px',
+                                    textDecoration: 'underline'
+                                }}
+                            >
+                                {isRegistering ? 'Already have an account? Sign In' : 'Need an account? Register'}
+                            </button>
+                        </form>
                     </div>
                 )}
             </div>

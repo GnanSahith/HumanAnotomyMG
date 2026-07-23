@@ -18,7 +18,8 @@ import SubjectContentView from './components/SubjectContentView';
 import PricingView from './components/PricingView';
 import ParentDashboardView from './components/ParentDashboardView';
 import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut, ArrowLeft } from 'lucide-react';
-import { useUser, UserButton } from '@clerk/clerk-react';
+import { onAuthStateChanged, signOut } from 'firebase/auth';
+import { auth } from './firebase';
 import LoginModal from './components/LoginModal';
 import ParentLoginModal from './components/ParentLoginModal';
 import { useLanguage } from './LanguageContext';
@@ -27,7 +28,21 @@ import Chatbot from './components/Chatbot';
 
 function App() {
   const { currentLanguage, toggleLanguage, t } = useLanguage();
-  const { isSignedIn } = useUser();
+  const [user, setUser] = useState(null);
+  const isSignedIn = !!user;
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+      if (currentUser) {
+        setIsAuthenticated(true);
+        setLoggedInUsername(currentUser.email);
+        localStorage.setItem('human_anatomy_auth', 'true');
+        localStorage.setItem('logged_in_username', currentUser.email);
+      }
+    });
+    return () => unsubscribe();
+  }, []);
   const [appMode, setAppMode] = useState('root'); // 'root', 'academics', 'subject_content', 'simulations', 'pricing'
   const [activeSubject, setActiveSubject] = useState(null);
   const [isLanding, setIsLanding] = useState(true);
@@ -131,12 +146,15 @@ function App() {
     setIsProfileDropdownOpen(false);
   };
 
-  const handleLogout = () => {
+  const handleLogout = async () => {
+    if (isSignedIn) {
+      await signOut(auth);
+    }
     localStorage.removeItem('human_anatomy_auth');
     localStorage.removeItem('logged_in_username');
     setIsAuthenticated(false);
     setLoggedInUsername('');
-    handleReturnToPortal();
+    setAppMode('root');
   };
 
   const handleRouteSelect = (route) => {
@@ -288,17 +306,31 @@ function App() {
                 </button>
               </div>
             ) : isSignedIn ? (
-              <UserButton 
-                afterSignOutUrl="/"
-                appearance={{
-                  elements: {
-                    userButtonAvatarBox: {
-                      width: '40px',
-                      height: '40px'
-                    }
-                  }
-                }}
-              />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                <div style={{
+                  width: '36px', height: '36px', borderRadius: '50%',
+                  background: 'var(--accent)', color: '#fff',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontWeight: 'bold', fontSize: '18px'
+                }}>
+                  {user?.email?.charAt(0).toUpperCase()}
+                </div>
+                <button
+                  onClick={handleLogout}
+                  style={{
+                    background: 'rgba(255, 77, 77, 0.1)',
+                    border: '1px solid rgba(255, 77, 77, 0.2)',
+                    borderRadius: '20px',
+                    padding: '8px 16px',
+                    color: '#ff4d4d',
+                    cursor: 'pointer',
+                    display: 'flex', alignItems: 'center', gap: '6px',
+                    fontWeight: '600'
+                  }}
+                >
+                  Logout <LogOut size={16} />
+                </button>
+              </div>
             ) : (
               <button
                 onClick={() => setShowLoginModal(true)}

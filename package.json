@@ -10,8 +10,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@clerk/clerk-react": "^5.61.8",
-    "@clerk/themes": "^2.4.57",
     "@gltf-transform/core": "^4.3.0",
     "@gltf-transform/functions": "^4.3.0",
     "@google/generative-ai": "^0.24.1",
@@ -24,6 +22,7 @@
     "cheerio": "^1.2.0",
     "cloudinary": "^2.10.0",
     "fbx2gltf": "^0.9.7-p1",
+    "firebase": "^12.16.0",
     "katex": "^0.16.46",
     "lucide-react": "^0.577.0",
     "matter-js": "^0.20.0",
