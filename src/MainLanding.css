@@ -91,6 +91,7 @@
 @media (max-width: 900px) {
   .split-landing-container {
     flex-direction: column;
+    padding-top: 70px;
   }
   .split-half {
     width: 100%;

@@ -1475,7 +1475,7 @@ model-viewer {
   }
 
   .mygnan-container {
-    padding: 0px !important;
+    padding: 90px 16px 16px 16px !important;
     justify-content: flex-start !important;
     align-items: center;
     flex: 1 !important;
