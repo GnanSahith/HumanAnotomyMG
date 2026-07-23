@@ -336,7 +336,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
           const num = index + 1;
           return (
             <div key={num} id={`q-${chapterNum}-${num}`} className="qna-block glass-panel">
-              <div className="question-text" style={{ display: 'flex', alignItems: 'flex-start', fontSize: '1.15rem', fontWeight: 600, marginBottom: '15px', color: 'var(--text-primary)' }}>
+              <div className="question-text" style={{ display: 'flex', alignItems: 'flex-start', fontWeight: 600, marginBottom: '15px', color: 'var(--text-primary)' }}>
                 <span className="q-badge" style={{ textTransform: 'uppercase', flexShrink: 0, marginTop: '2px' }}>Q {chapterNum}.{num}</span> 
                 <div style={{ marginLeft: '12px', width: '100%' }}>
                   <ReactMarkdown remarkPlugins={[remarkMath]} rehypePlugins={[rehypeKatex]}>
@@ -382,7 +382,7 @@ export const GenericChapterData = ({ chapter, subjectName = 'Physics', className
               </div>
               <div className="answer-block">
                 <h4 className="answer-heading" style={{ textTransform: 'none', marginBottom: '15px' }}>Answer:</h4>
-                <div className="answer-content" style={{ fontWeight: 'normal', fontSize: '1rem', textTransform: 'none', lineHeight: '1.7' }}>
+                <div className="answer-content" style={{ fontWeight: 'normal', textTransform: 'none', lineHeight: '1.7' }}>
                   {(qaObj.a === 'Detailed solution available.' || qaObj.a.trim().length < 10) ? (
                     <div style={{
                       textAlign: 'center', padding: '30px 20px',
