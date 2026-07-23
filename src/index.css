@@ -1423,18 +1423,55 @@ model-viewer {
   /* NEW MOBILE STRUCTURE OVERRIDES */
 
   .global-header-pill {
-    padding: 12px 12px;
+    padding: 10px 12px;
     width: 96%;
     top: 16px;
     border-radius: 16px;
+    gap: 10px;
+    justify-content: space-between;
   }
   
   .global-header-pill img {
-    height: 32px !important;
+    height: 28px !important;
   }
   
+  .header-actions {
+    gap: 8px !important;
+  }
+
+  .hide-on-mobile {
+    display: none !important;
+  }
+  
+  .show-on-mobile {
+    display: inline-block !important;
+  }
+
+  .header-actions button {
+    padding: 8px !important;
+    border-radius: 50% !important;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .custom-dropdown-container span {
     display: none !important;
+  }
+  
+  .user-chip-text {
+    padding: 8px !important;
+    width: 36px;
+    height: 36px;
+    border-radius: 50% !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .user-chip-text svg {
+    margin-left: 0;
   }
 
   .mygnan-container {

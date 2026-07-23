@@ -17,11 +17,12 @@ import AcademicsView from './components/AcademicsView';
 import SubjectContentView from './components/SubjectContentView';
 import PricingView from './components/PricingView';
 import ParentDashboardView from './components/ParentDashboardView';
-import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut, ArrowLeft } from 'lucide-react';
+import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut, ArrowLeft, LayoutDashboard, User } from 'lucide-react';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 import { auth } from './firebase';
 import LoginModal from './components/LoginModal';
 import ParentLoginModal from './components/ParentLoginModal';
+import DeveloperPanel from './components/DeveloperPanel';
 import { useLanguage } from './LanguageContext';
 import SelectionTooltip from './components/SelectionTooltip';
 import Chatbot from './components/Chatbot';
@@ -30,6 +31,7 @@ function App() {
   const { currentLanguage, toggleLanguage, t } = useLanguage();
   const [user, setUser] = useState(null);
   const isSignedIn = !!user;
+  const [isMobileView, setIsMobileView] = useState(false);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -185,8 +187,38 @@ function App() {
     setAppMode('simulations');
   };
 
+  const isIframe = new URLSearchParams(window.location.search).get('mobile_sim') === 'true';
+
+  if (isMobileView) {
+    return (
+      <div style={{ width: '100vw', height: '100vh', background: '#12121a', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
+        <DeveloperPanel isMobileView={isMobileView} setIsMobileView={setIsMobileView} />
+        <div style={{
+          width: '375px',
+          height: '812px',
+          border: '14px solid #000',
+          borderRadius: '40px',
+          overflow: 'hidden',
+          boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)',
+          position: 'relative'
+        }}>
+          {/* iPhone style notch */}
+          <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '120px', height: '25px', background: '#000', borderBottomLeftRadius: '16px', borderBottomRightRadius: '16px', zIndex: 9999 }}></div>
+          <iframe 
+            src={window.location.pathname + '?mobile_sim=true'}
+            style={{ width: '100%', height: '100%', border: 'none', background: 'var(--bg-primary)' }}
+            title="Mobile Simulator"
+          />
+        </div>
+      </div>
+    );
+  }
+
   return (
-    <div className={`app-container ${appMode === 'simulations' && (activeModule === 'maths' || activeModule === 'chemistry' || activeModule === 'physics') ? 'maths-view-active' : ''}`}>
+    <div 
+      className={`app-container ${appMode === 'simulations' && (activeModule === 'maths' || activeModule === 'chemistry' || activeModule === 'physics') ? 'maths-view-active' : ''}`}
+    >
+      {!isIframe && <DeveloperPanel isMobileView={isMobileView} setIsMobileView={setIsMobileView} />}
       {/* Background blobs for Apple Vision Pro style feeling */}
       <div className="bg-blob blob-1"></div>
       <div className="bg-blob blob-2"></div>
@@ -202,7 +234,7 @@ function App() {
             style={{ height: '45px', objectFit: 'contain' }} 
           />
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+        <div className="header-actions" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
             <div className="custom-dropdown-container" ref={dropdownRef} onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}>
               <Globe size={18} />
               <span>
@@ -244,8 +276,9 @@ function App() {
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                 {loggedInUsername === 'GnanSahith@MG' ? (
                   <div className="custom-dropdown-container" ref={profileDropdownRef} onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}>
-                    <span style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                      {loggedInUsername.replace('@MG', '')} <ChevronDown size={12} />
+                    <span className="user-chip-text" style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span className="hide-on-mobile">{loggedInUsername.replace('@MG', '')}</span> <ChevronDown size={12} className="hide-on-mobile" />
+                      <User size={16} className="show-on-mobile" style={{ display: 'none' }} />
                     </span>
                     {isProfileDropdownOpen && (
                       <div className="custom-dropdown-menu" style={{ width: '150px' }}>
@@ -258,8 +291,9 @@ function App() {
                     )}
                   </div>
                 ) : (
-                  <span style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px' }}>
-                    {loggedInUsername.replace('@MG', '')}
+                  <span className="user-chip-text" style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px' }}>
+                    <span className="hide-on-mobile">{loggedInUsername.replace('@MG', '')}</span>
+                    <User size={16} className="show-on-mobile" style={{ display: 'none' }} />
                   </span>
                 )}
                 <button
@@ -285,7 +319,8 @@ function App() {
                   onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)'; e.currentTarget.style.borderColor = '#0a84ff'; }}
                   onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'; }}
                 >
-                  Parent Dashboard
+                  <span className="hide-on-mobile">Parent Dashboard</span>
+                  <LayoutDashboard size={16} className="show-on-mobile" style={{ display: 'none' }} />
                 </button>
                 <button
                   onClick={handleLogout}
@@ -302,7 +337,7 @@ function App() {
                     transition: 'all 0.2s ease'
                   }}
                 >
-                  Logout <LogOut size={16} />
+                  <span className="hide-on-mobile">Logout</span> <LogOut size={16} />
                 </button>
               </div>
             ) : isSignedIn ? (
@@ -328,7 +363,7 @@ function App() {
                     fontWeight: '600'
                   }}
                 >
-                  Logout <LogOut size={16} />
+                  <span className="hide-on-mobile">Logout</span> <LogOut size={16} />
                 </button>
               </div>
             ) : (
