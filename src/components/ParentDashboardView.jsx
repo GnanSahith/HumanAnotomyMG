@@ -4,7 +4,7 @@ import CertificatesModal from './CertificatesModal';
 import { useLanguage } from '../LanguageContext';
 import { mockStudents } from '../data/mockStudents';
 import { db } from '../firebase';
-import { collection, query, getDocs, orderBy, limit } from 'firebase/firestore';
+import { collection, query, getDocs, orderBy, limit, addDoc, serverTimestamp } from 'firebase/firestore';
 
 const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
   const [timeRange, setTimeRange] = useState('weekly');
@@ -169,6 +169,35 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
                 </select>
                 <ChevronDown size={16} style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#6B4EFF' }} />
               </div>
+              
+              <button 
+                onClick={async () => {
+                  if(window.confirm('Inject 30m of test data for ' + selectedStudent.username + '?')) {
+                    const testSims = [
+                      { target: 'Projectile Motion MG', mod: 'physics', time: 420 },
+                      { target: 'Forces and Motion MG', mod: 'physics', time: 300 },
+                      { target: 'Balancing Act MG', mod: 'chemistry', time: 480 },
+                      { target: 'Energy Skate Park MG', mod: 'physics', time: 360 },
+                      { target: 'Wave on a String MG', mod: 'physics', time: 240 }
+                    ];
+                    for (const sim of testSims) {
+                      await addDoc(collection(db, 'users', selectedStudent.username, 'activityLogs'), {
+                          type: 'SESSION_DURATION',
+                          details: { module: sim.mod, target: sim.target, durationSeconds: sim.time },
+                          timestamp: serverTimestamp()
+                      });
+                    }
+                    window.location.reload();
+                  }
+                }}
+                style={{
+                  background: 'rgba(48,209,88,0.2)', border: '1px solid rgba(48,209,88,0.5)',
+                  borderRadius: '8px', padding: '6px 12px', color: '#30d158',
+                  fontSize: '13px', fontWeight: 600, cursor: 'pointer', marginLeft: '12px'
+                }}
+              >
+                + Inject 30m Test Data
+              </button>
             </h1>
             <p style={{ margin: '4px 0 0 0', color: 'rgba(255,255,255,0.5)', fontSize: '14px' }}>
               Monitoring progress for <span style={{ color: '#fff', fontWeight: 600 }}>{selectedStudent.username}</span> | Grade: {selectedStudent.grade}
