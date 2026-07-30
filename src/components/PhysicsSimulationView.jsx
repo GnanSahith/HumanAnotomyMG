@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, PlayCircle, Atom, Search, X, Lock, Eye, EyeOff } from 'lucide-react';
 import SimulationHeader from './SimulationHeader';
+import AnalyticsTracker from './AnalyticsTracker';
 import physicsSimulations from '../data/physicsSimulations.json';
 import { useLanguage } from '../LanguageContext';
 import CustomPendulumLab from './simulations/CustomPendulumLab';
@@ -193,6 +194,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
 
     return (
         <div className="maths-sim-container fade-in" style={{ paddingBottom: '0', flex: 1, minHeight: 0, overflowY: 'hidden', display: 'flex', flexDirection: 'column' }}>
+            <AnalyticsTracker username={loggedInUsername} contextName={activeSimulation.title} module="physics" />
             {/* ── Unified Simulation Header ── */}
             <SimulationHeader
                 title={activeSimulation.title}

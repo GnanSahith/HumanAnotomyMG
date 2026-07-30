@@ -1,18 +1,114 @@
-import React, { useState } from 'react';
-import { ArrowLeft, Clock, BookOpen, Activity, Award, User, Target, TrendingUp, Calendar } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { ArrowLeft, Clock, BookOpen, Activity, Award, User, Target, TrendingUp, Calendar, ChevronDown } from 'lucide-react';
 import CertificatesModal from './CertificatesModal';
 import { useLanguage } from '../LanguageContext';
-
-const recentActivity = [
-  { id: 1, action: "Completed Assessment", target: "Algebra Basics", score: "9/10", time: "2 hours ago", icon: <Award size={18} color="#30d158" /> },
-  { id: 2, action: "Explored Simulation", target: "Molecule Shapes", score: null, time: "5 hours ago", icon: <Activity size={18} color="#0a84ff" /> },
-  { id: 3, action: "Studied Module", target: "Quantum Physics", score: null, time: "Yesterday", icon: <BookOpen size={18} color="#bf5af2" /> },
-  { id: 4, action: "Completed Assessment", target: "Chemical Bonding", score: "10/10", time: "Yesterday", icon: <Award size={18} color="#30d158" /> },
-];
+import { mockStudents } from '../data/mockStudents';
+import { db } from '../firebase';
+import { collection, query, getDocs, orderBy, limit } from 'firebase/firestore';
 
 const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
   const [timeRange, setTimeRange] = useState('weekly');
   const [showCertificatesModal, setShowCertificatesModal] = useState(false);
+  const [selectedStudent, setSelectedStudent] = useState(mockStudents[0]);
+  
+  const [stats, setStats] = useState({
+      totalSeconds: 0,
+      mostActiveSubject: 'None',
+      simulationsExplored: 0,
+      streak: '0 Days'
+  });
+  const [activities, setActivities] = useState([]);
+  const [subjectData, setSubjectData] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+      const fetchAnalytics = async () => {
+          if (!selectedStudent) return;
+          setLoading(true);
+          try {
+              const q = query(
+                  collection(db, 'users', selectedStudent.username, 'activityLogs'),
+                  orderBy('timestamp', 'desc'),
+                  limit(50)
+              );
+              const snapshot = await getDocs(q);
+              
+              let totalSecs = 0;
+              const subjectCount = {};
+              const uniqueSims = new Set();
+              const recent = [];
+
+              snapshot.forEach(doc => {
+                  const data = doc.data();
+                  if (data.type === 'SESSION_DURATION') {
+                      totalSecs += data.details.durationSeconds || 0;
+                      
+                      const mod = data.details.module || 'unknown';
+                      subjectCount[mod] = (subjectCount[mod] || 0) + (data.details.durationSeconds || 0);
+                      
+                      if (data.details.target) {
+                          uniqueSims.add(data.details.target);
+                      }
+
+                      let dateString = 'Just now';
+                      if (data.timestamp) {
+                          const date = data.timestamp.toDate();
+                          dateString = date.toLocaleDateString() + ' ' + date.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                      }
+
+                      recent.push({
+                          id: doc.id,
+                          action: "Explored Simulation",
+                          target: data.details.target,
+                          score: Math.floor((data.details.durationSeconds || 0) / 60) + "m",
+                          time: dateString,
+                          icon: <Activity size={18} color="#0a84ff" />
+                      });
+                  }
+              });
+
+              let topSubject = 'None';
+              let maxTime = 0;
+              const sData = [];
+              const colors = ['#bf5af2', '#0a84ff', '#30d158', '#ff9f0a'];
+              let colorIdx = 0;
+
+              for (const [subj, time] of Object.entries(subjectCount)) {
+                  if (time > maxTime) {
+                      maxTime = time;
+                      topSubject = subj.charAt(0).toUpperCase() + subj.slice(1);
+                  }
+                  sData.push({
+                      name: subj.charAt(0).toUpperCase() + subj.slice(1),
+                      value: Math.floor((time / Math.max(1, totalSecs)) * 100),
+                      color: colors[colorIdx % colors.length]
+                  });
+                  colorIdx++;
+              }
+
+              setStats({
+                  totalSeconds: totalSecs,
+                  mostActiveSubject: topSubject,
+                  simulationsExplored: uniqueSims.size,
+                  streak: totalSecs > 0 ? '1 Day' : '0 Days'
+              });
+              setSubjectData(sData);
+              setActivities(recent.slice(0, 10));
+
+          } catch (err) {
+              console.error("Error fetching analytics", err);
+          }
+          setLoading(false);
+      };
+      
+      fetchAnalytics();
+  }, [selectedStudent]);
+
+  const formatTime = (totalSeconds) => {
+      const hours = Math.floor(totalSeconds / 3600);
+      const minutes = Math.floor((totalSeconds % 3600) / 60);
+      return `${hours}h ${minutes}m`;
+  };
 
   return (
     <div style={{ 
@@ -46,11 +142,36 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
             <ArrowLeft size={20} />
           </button>
           <div>
-            <h1 style={{ margin: 0, fontSize: '28px', fontWeight: 700, background: 'linear-gradient(135deg, #fff, #a0a0a0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
+            <h1 style={{ margin: 0, fontSize: '28px', fontWeight: 700, background: 'linear-gradient(135deg, #fff, #a0a0a0)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent', display: 'flex', alignItems: 'center', gap: '12px' }}>
               Student Analytics
+              <div style={{ position: 'relative', display: 'inline-block' }}>
+                <select 
+                  value={selectedStudent.username}
+                  onChange={(e) => setSelectedStudent(mockStudents.find(s => s.username === e.target.value))}
+                  style={{
+                    background: 'rgba(107, 78, 255, 0.2)',
+                    border: '1px solid rgba(107, 78, 255, 0.5)',
+                    color: '#fff',
+                    padding: '6px 32px 6px 12px',
+                    borderRadius: '8px',
+                    fontSize: '16px',
+                    fontWeight: 600,
+                    appearance: 'none',
+                    cursor: 'pointer',
+                    outline: 'none'
+                  }}
+                >
+                  {mockStudents.map(s => (
+                    <option key={s.username} value={s.username} style={{ background: '#1c1c24' }}>
+                      {s.username}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown size={16} style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none', color: '#6B4EFF' }} />
+              </div>
             </h1>
             <p style={{ margin: '4px 0 0 0', color: 'rgba(255,255,255,0.5)', fontSize: '14px' }}>
-              Monitoring progress for <span style={{ color: '#fff', fontWeight: 600 }}>Alex Student</span>
+              Monitoring progress for <span style={{ color: '#fff', fontWeight: 600 }}>{selectedStudent.username}</span> | Grade: {selectedStudent.grade}
             </p>
           </div>
         </div>
@@ -72,21 +193,6 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
               </button>
             ))}
           </div>
-          {onGoToSimulations && (
-            <button
-              onClick={onGoToSimulations}
-              style={{
-                background: 'linear-gradient(135deg, #bf5af2, #0a84ff)',
-                border: 'none', borderRadius: '12px', padding: '10px 20px', color: '#fff',
-                fontSize: '14px', fontWeight: 600, cursor: 'pointer', transition: 'all 0.2s ease',
-                boxShadow: '0 4px 14px rgba(10,132,255,0.3)'
-              }}
-              onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
-              onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}
-            >
-              View Simulations
-            </button>
-          )}
           {onLogout && (
             <button
               onClick={onLogout}
@@ -107,10 +213,10 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
       {/* Summary Cards */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px' }}>
         {[
-          { title: 'Total Learning Time', value: '14h 45m', subtitle: '+2.5h from last week', icon: <Clock size={24} color="#0a84ff" />, bg: 'rgba(10,132,255,0.1)', border: 'rgba(10,132,255,0.3)' },
-          { title: 'Most Active Subject', value: 'Mathematics', subtitle: '45% of total time', icon: <Target size={24} color="#bf5af2" />, bg: 'rgba(191,90,242,0.1)', border: 'rgba(191,90,242,0.3)' },
-          { title: 'Simulations Explored', value: '34', subtitle: 'Top 10% of class', icon: <Activity size={24} color="#30d158" />, bg: 'rgba(48,209,88,0.1)', border: 'rgba(48,209,88,0.3)' },
-          { title: 'Current Streak', value: '5 Days', subtitle: 'Personal best: 12 days', icon: <TrendingUp size={24} color="#ff9f0a" />, bg: 'rgba(255,159,10,0.1)', border: 'rgba(255,159,10,0.3)' }
+          { title: 'Total Learning Time', value: formatTime(stats.totalSeconds), subtitle: loading ? 'Loading...' : 'Live tracking active', icon: <Clock size={24} color="#0a84ff" />, bg: 'rgba(10,132,255,0.1)', border: 'rgba(10,132,255,0.3)' },
+          { title: 'Most Active Subject', value: stats.mostActiveSubject, subtitle: 'Based on time spent', icon: <Target size={24} color="#bf5af2" />, bg: 'rgba(191,90,242,0.1)', border: 'rgba(191,90,242,0.3)' },
+          { title: 'Simulations Explored', value: stats.simulationsExplored, subtitle: 'Unique interactions', icon: <Activity size={24} color="#30d158" />, bg: 'rgba(48,209,88,0.1)', border: 'rgba(48,209,88,0.3)' },
+          { title: 'Current Streak', value: stats.streak, subtitle: 'Active learning days', icon: <TrendingUp size={24} color="#ff9f0a" />, bg: 'rgba(255,159,10,0.1)', border: 'rgba(255,159,10,0.3)' }
         ].map((stat, i) => (
           <div key={i} style={{ 
             background: 'rgba(20, 20, 30, 0.4)', backdropFilter: 'blur(20px)', borderRadius: '24px', padding: '24px',
@@ -124,27 +230,27 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
               </div>
               <div style={{ color: 'rgba(255,255,255,0.6)', fontSize: '13px', fontWeight: 600 }}>{stat.title}</div>
             </div>
-            <div style={{ fontSize: '28px', fontWeight: 800, marginBottom: '4px' }}>{stat.value}</div>
+            <div style={{ fontSize: '28px', fontWeight: 800, marginBottom: '4px' }}>{loading ? '...' : stat.value}</div>
             <div style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px' }}>{stat.subtitle}</div>
           </div>
         ))}
       </div>
 
-      {/* Main Charts Area (Replaced Recharts with glowing pure CSS placeholders to prevent React 19 crashes) */}
+      {/* Main Charts Area */}
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 350px', gap: '20px' }}>
         
         {/* Activity Over Time */}
         <div style={{ background: 'rgba(20, 20, 30, 0.4)', backdropFilter: 'blur(20px)', borderRadius: '24px', padding: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
             <h2 style={{ fontSize: '18px', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <Calendar size={18} color="#0a84ff" /> Learning Activity (Minutes)
+              <Calendar size={18} color="#0a84ff" /> Weekly Activity Trend
             </h2>
           </div>
           <div style={{ width: '100%', height: '300px', display: 'flex', alignItems: 'flex-end', justifyContent: 'space-between', gap: '10px', padding: '20px 0' }}>
             {/* CSS Bar Chart fallback */}
-            {[45, 120, 80, 150, 95, 180, 210].map((val, idx) => (
+            {[0, 0, stats.totalSeconds > 0 ? 120 : 0, 0, 0, 0, 0].map((val, idx) => (
               <div key={idx} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-                <div style={{ width: '100%', height: `${(val / 210) * 100}%`, background: 'linear-gradient(to top, rgba(10,132,255,0.1), rgba(10,132,255,0.8))', borderRadius: '8px 8px 0 0', position: 'relative' }}></div>
+                <div style={{ width: '100%', height: `${Math.max(5, (val / 120) * 100)}%`, background: 'linear-gradient(to top, rgba(10,132,255,0.1), rgba(10,132,255,0.8))', borderRadius: '8px 8px 0 0', position: 'relative' }}></div>
                 <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.5)' }}>{['M', 'T', 'W', 'T', 'F', 'S', 'S'][idx]}</div>
               </div>
             ))}
@@ -158,18 +264,17 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
           </h2>
           <div style={{ width: '100%', flex: 1, minHeight: '200px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
              {/* Simple CSS Donut representation */}
-             <div style={{ width: '150px', height: '150px', borderRadius: '50%', background: 'conic-gradient(#bf5af2 0% 45%, #0a84ff 45% 75%, #30d158 75% 90%, #ff9f0a 90% 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-               <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: '#1c1c24' }}></div>
-             </div>
+             {subjectData.length > 0 ? (
+               <div style={{ width: '150px', height: '150px', borderRadius: '50%', background: 'conic-gradient(#bf5af2 0% 45%, #0a84ff 45% 75%, #30d158 75% 100%)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                 <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: '#1c1c24' }}></div>
+               </div>
+             ) : (
+               <div style={{ color: 'rgba(255,255,255,0.3)', fontSize: '14px' }}>No Data Available</div>
+             )}
           </div>
           {/* Custom Legend */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginTop: '10px' }}>
-            {[
-              { name: 'Mathematics', value: 45, color: '#bf5af2' },
-              { name: 'Physics', value: 30, color: '#0a84ff' },
-              { name: 'Chemistry', value: 15, color: '#30d158' },
-              { name: 'Biology', value: 10, color: '#ff9f0a' }
-            ].map(subject => (
+            {subjectData.map(subject => (
               <div key={subject.name} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                   <div style={{ width: '10px', height: '10px', borderRadius: '50%', background: subject.color }}></div>
@@ -183,45 +288,13 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
 
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '20px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '20px' }}>
         
-         {/* Top Simulations */}
-        <div style={{ background: 'rgba(20, 20, 30, 0.4)', backdropFilter: 'blur(20px)', borderRadius: '24px', padding: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
-          <h2 style={{ fontSize: '18px', margin: '0 0 20px 0', display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <Activity size={18} color="#30d158" /> Top Simulations
-          </h2>
-          <div style={{ width: '100%', height: '250px', display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '15px' }}>
-             {[
-              { name: 'Wave on a String', views: 24, fill: '#bf5af2', module: 'physics', simId: 'wave-on-a-string_mg', categoryId: 'waves' },
-              { name: "Coulomb's Law", views: 18, fill: '#0a84ff', module: 'chemistry', simId: 'coulombs-law_mg', categoryId: 'general' },
-              { name: 'Molecule Shapes', views: 15, fill: '#30d158', module: 'chemistry', simId: 'molecule-shapes_mg', categoryId: 'general' },
-              { name: 'Human Heart 3D', views: 12, fill: '#ff453a', module: 'biology', simId: 'heart', categoryId: 'anatomy' },
-             ].map((sim, idx) => (
-                <div 
-                  key={idx} 
-                  onClick={() => onGoToSimulations(sim.module, sim.simId, sim.categoryId)}
-                  style={{ 
-                    display: 'flex', alignItems: 'center', gap: '15px', padding: '8px', borderRadius: '12px',
-                    cursor: 'pointer', transition: 'background 0.2s ease'
-                  }}
-                  onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
-                  onMouseLeave={(e) => e.currentTarget.style.background = 'transparent'}
-                >
-                  <div style={{ width: '120px', fontSize: '13px', color: 'rgba(255,255,255,0.8)' }}>{sim.name}</div>
-                  <div style={{ flex: 1, height: '20px', background: 'rgba(255,255,255,0.05)', borderRadius: '10px', overflow: 'hidden' }}>
-                    <div style={{ width: `${(sim.views / 24) * 100}%`, height: '100%', background: sim.fill, borderRadius: '10px' }}></div>
-                  </div>
-                  <div style={{ width: '30px', fontSize: '13px', fontWeight: 600, textAlign: 'right' }}>{sim.views}</div>
-                </div>
-             ))}
-          </div>
-        </div>
-
         {/* Recent Activity List */}
         <div style={{ background: 'rgba(20, 20, 30, 0.4)', backdropFilter: 'blur(20px)', borderRadius: '24px', padding: '24px', border: '1px solid rgba(255,255,255,0.05)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px' }}>
             <h2 style={{ fontSize: '18px', margin: 0, display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <User size={18} color="#ff9f0a" /> Recent Activity
+              <User size={18} color="#ff9f0a" /> Live Activity Feed
             </h2>
             <button 
               onClick={() => setShowCertificatesModal(true)}
@@ -231,16 +304,17 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
             </button>
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-            {recentActivity.map(item => (
+            {loading ? (
+                <div style={{ textAlign: 'center', padding: '20px', color: 'rgba(255,255,255,0.5)' }}>Syncing live data...</div>
+            ) : activities.length > 0 ? activities.map(item => (
               <div 
                 key={item.id} 
-                onClick={() => setShowCertificatesModal(true)}
                 style={{ 
                   display: 'flex', alignItems: 'center', gap: '16px', padding: '12px', 
                   background: 'rgba(255,255,255,0.03)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.02)',
-                  cursor: 'pointer', transition: 'all 0.2s ease'
+                  transition: 'all 0.2s ease'
                 }}
-                onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.02)'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
+                onMouseEnter={(e) => { e.currentTarget.style.transform = 'scale(1.01)'; e.currentTarget.style.background = 'rgba(255,255,255,0.06)'; }}
                 onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.background = 'rgba(255,255,255,0.03)'; }}
               >
                 <div style={{ width: '40px', height: '40px', borderRadius: '10px', background: 'rgba(255,255,255,0.05)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -255,7 +329,11 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
                   <div style={{ fontSize: '12px', color: 'rgba(255,255,255,0.4)', marginTop: item.score ? '2px' : '0' }}>{item.time}</div>
                 </div>
               </div>
-            ))}
+            )) : (
+                <div style={{ textAlign: 'center', padding: '40px', color: 'rgba(255,255,255,0.4)', background: 'rgba(0,0,0,0.2)', borderRadius: '12px' }}>
+                    No activity recorded for this student yet.
+                </div>
+            )}
           </div>
         </div>
 

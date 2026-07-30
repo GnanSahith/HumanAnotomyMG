@@ -3,6 +3,7 @@ import { X, Lock, User, ArrowRight, Code, GraduationCap, Mail } from 'lucide-rea
 import { signInWithEmailAndPassword, createUserWithEmailAndPassword } from 'firebase/auth';
 import { auth, db } from '../firebase';
 import { doc, setDoc } from 'firebase/firestore';
+import { mockStudents } from '../data/mockStudents';
 
 const VALID_CREDENTIALS = [
     { username: 'CharanKumar@MG', password: 'Charan@MG' },
@@ -46,6 +47,13 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
     const handleStudentAuth = async (e) => {
         e.preventDefault();
         setError('');
+
+        const isMockStudent = mockStudents.find(s => s.username === email && s.password === password);
+        if (isMockStudent) {
+            onSuccess(isMockStudent.username);
+            return;
+        }
+
         setLoading(true);
         try {
             if (isRegistering) {
@@ -238,8 +246,8 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
                                     <Mail size={18} />
                                 </div>
                                 <input 
-                                    type="email" 
-                                    placeholder="Student Email" 
+                                    type="text" 
+                                    placeholder="Student Email or Username" 
                                     value={email}
                                     onChange={(e) => setEmail(e.target.value)}
                                     required

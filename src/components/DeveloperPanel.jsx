@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Settings, Smartphone, Monitor } from 'lucide-react';
+import { Settings, Smartphone, Monitor, User } from 'lucide-react';
 
 export default function DeveloperPanel({ isMobileView, setIsMobileView }) {
     const [isVisible, setIsVisible] = useState(false);
@@ -17,6 +17,19 @@ export default function DeveloperPanel({ isMobileView, setIsMobileView }) {
     }, []);
 
     if (!isLocalhost || isIframe) return null;
+
+    const handleDevLogin = (username) => {
+        localStorage.setItem('human_anatomy_auth', 'true');
+        localStorage.setItem('logged_in_username', username);
+        window.location.reload();
+    };
+
+    const handleParentDevLogin = (username) => {
+        localStorage.setItem('human_anatomy_auth', 'true');
+        localStorage.setItem('logged_in_username', username);
+        localStorage.setItem('parent_logged_in', 'true');
+        window.location.reload();
+    };
 
     return (
         <div style={{
@@ -63,28 +76,83 @@ export default function DeveloperPanel({ isMobileView, setIsMobileView }) {
                 Dev Tools
             </h3>
 
-            <button
-                onClick={() => setIsMobileView(!isMobileView)}
-                style={{
-                    width: '100%',
-                    padding: '10px',
-                    background: isMobileView ? 'rgba(107,78,255,0.2)' : 'rgba(255,255,255,0.05)',
-                    border: `1px solid ${isMobileView ? '#6B4EFF' : 'rgba(255,255,255,0.1)'}`,
-                    borderRadius: '8px',
-                    color: isMobileView ? '#6B4EFF' : '#fff',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: '8px',
-                    cursor: 'pointer',
-                    fontSize: '13px',
-                    fontWeight: 600,
-                    transition: 'all 0.2s'
-                }}
-            >
-                {isMobileView ? <Monitor size={16} /> : <Smartphone size={16} />}
-                {isMobileView ? 'Desktop View' : 'Mobile View'}
-            </button>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <button
+                    onClick={() => setIsMobileView(!isMobileView)}
+                    style={{
+                        width: '100%',
+                        padding: '10px',
+                        background: isMobileView ? 'rgba(107,78,255,0.2)' : 'rgba(255,255,255,0.05)',
+                        border: `1px solid ${isMobileView ? '#6B4EFF' : 'rgba(255,255,255,0.1)'}`,
+                        borderRadius: '8px',
+                        color: isMobileView ? '#6B4EFF' : '#fff',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '8px',
+                        cursor: 'pointer',
+                        fontSize: '13px',
+                        fontWeight: 600,
+                        transition: 'all 0.2s'
+                    }}
+                >
+                    {isMobileView ? <Monitor size={16} /> : <Smartphone size={16} />}
+                    {isMobileView ? 'Desktop View' : 'Mobile View'}
+                </button>
+
+                <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                    <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.5)', textTransform: 'uppercase', letterSpacing: '0.5px', marginBottom: '4px' }}>Fast Login</div>
+                    {['GnanSahith@MG', 'CharanKumar@MG'].map(user => (
+                        <button
+                            key={user}
+                            onClick={() => handleDevLogin(user)}
+                            style={{
+                                width: '100%',
+                                padding: '8px',
+                                background: 'rgba(255,255,255,0.05)',
+                                border: '1px solid rgba(255,255,255,0.1)',
+                                borderRadius: '8px',
+                                color: '#fff',
+                                display: 'flex',
+                                alignItems: 'center',
+                                gap: '8px',
+                                cursor: 'pointer',
+                                fontSize: '12px',
+                                transition: 'all 0.2s'
+                            }}
+                            onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.1)'}
+                            onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(255,255,255,0.05)'}
+                        >
+                            <User size={14} />
+                            {user.split('@')[0]}
+                        </button>
+                    ))}
+                    
+                    <button
+                        onClick={() => handleParentDevLogin('CharanKumar@MG')}
+                        style={{
+                            width: '100%',
+                            padding: '8px',
+                            background: 'rgba(10, 132, 255, 0.1)',
+                            border: '1px solid rgba(10, 132, 255, 0.3)',
+                            borderRadius: '8px',
+                            color: '#0a84ff',
+                            display: 'flex',
+                            alignItems: 'center',
+                            gap: '8px',
+                            cursor: 'pointer',
+                            fontSize: '12px',
+                            transition: 'all 0.2s',
+                            marginTop: '4px'
+                        }}
+                        onMouseEnter={(e) => e.currentTarget.style.background = 'rgba(10, 132, 255, 0.2)'}
+                        onMouseLeave={(e) => e.currentTarget.style.background = 'rgba(10, 132, 255, 0.1)'}
+                    >
+                        <User size={14} />
+                        Charan (Parent)
+                    </button>
+                </div>
+            </div>
         </div>
     );
 }

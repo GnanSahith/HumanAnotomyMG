@@ -274,7 +274,7 @@ function App() {
 
             {isAuthenticated ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                {loggedInUsername === 'GnanSahith@MG' ? (
+                {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01'].includes(loggedInUsername) ? (
                   <div className="custom-dropdown-container" ref={profileDropdownRef} onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}>
                     <span className="user-chip-text" style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
                       <span className="hide-on-mobile">{loggedInUsername.replace('@MG', '')}</span> <ChevronDown size={12} className="hide-on-mobile" />
@@ -282,6 +282,7 @@ function App() {
                     </span>
                     {isProfileDropdownOpen && (
                       <div className="custom-dropdown-menu" style={{ width: '150px' }}>
+                        <div className="dropdown-item" style={{ color: '#0a84ff', fontWeight: 600, borderBottom: '1px solid rgba(255,255,255,0.1)', marginBottom: '4px', paddingBottom: '8px' }} onClick={(e) => { e.stopPropagation(); setIsProfileDropdownOpen(false); setAppMode('dashboard'); }}>Student Analytics</div>
                         <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('CharanKumar@MG'); }}>CharanKumar</div>
                         <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('SandhyaRekha@MG'); }}>SandhyaRekha</div>
                         <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('VishnuKranthi@MG'); }}>VishnuKranthi</div>

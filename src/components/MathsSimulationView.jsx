@@ -8,6 +8,7 @@ import {
 } from 'lucide-react';
 import { mathCurriculum } from '../data/mathCurriculum';
 import mathSimulations from '../data/mathSimulations.json';
+import AnalyticsTracker from './AnalyticsTracker';
 
 const GeoGebraPlayer = ({ ggbUrl, id }) => {
     const containerRef = React.useRef(null);
@@ -472,6 +473,7 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
 
     return (
             <div className="maths-layout" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
+                <AnalyticsTracker username={loggedInUsername} contextName={specificMaterialTitle} module="maths" />
                 <div className="ios-header glass-panel" style={{ 
                     position: 'relative',
                     height: '46px', 

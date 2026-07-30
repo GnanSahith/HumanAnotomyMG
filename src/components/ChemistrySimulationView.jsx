@@ -4,6 +4,7 @@ import chemistrySimulations from '../data/chemistrySimulations.json';
 import { useLanguage } from '../LanguageContext';
 import SimulationLibraryLayout from './SimulationLibraryLayout';
 import SimulationHeader from './SimulationHeader';
+import AnalyticsTracker from './AnalyticsTracker';
 
 import CustomBalancingAct from './simulations/CustomBalancingAct';
 import CustomBalloonsandStaticElectricity from './simulations/CustomBalloonsandStaticElectricity';
@@ -183,6 +184,7 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
 
     return (
         <div className="maths-sim-container fade-in" style={{ paddingBottom: '0', flex: 1, minHeight: 0, overflowY: 'hidden', display: 'flex', flexDirection: 'column' }}>
+            <AnalyticsTracker username={loggedInUsername} contextName={activeSimulation.title} module="chemistry" />
             {/* ── Unified Simulation Header ── */}
             <SimulationHeader
                 title={activeSimulation.title}
