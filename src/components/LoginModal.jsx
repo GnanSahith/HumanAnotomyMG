@@ -30,7 +30,7 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
 
     if (!isOpen) return null;
 
-    const handleLogin = (e) => {
+    const handleLogin = async (e) => {
         e.preventDefault();
         const isValid = VALID_CREDENTIALS.some(
             (cred) => cred.username === username && cred.password === password
@@ -38,7 +38,21 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
 
         if (isValid) {
             setError('');
-            onSuccess(username);
+            setLoading(true);
+            const mockEmail = `${username.toLowerCase().replace(/[^a-z0-9]/g, '')}@admin.local`;
+            try {
+                await signInWithEmailAndPassword(auth, mockEmail, password);
+                onSuccess(username);
+            } catch (err) {
+                try {
+                    await createUserWithEmailAndPassword(auth, mockEmail, password);
+                    onSuccess(username);
+                } catch (regErr) {
+                    onSuccess(username);
+                }
+            } finally {
+                setLoading(false);
+            }
         } else {
             setError('Invalid username or password');
         }
@@ -50,7 +64,26 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
 
         const isMockStudent = mockStudents.find(s => s.username === email && s.password === password);
         if (isMockStudent) {
-            onSuccess(isMockStudent.username);
+            setLoading(true);
+            const mockEmail = `${isMockStudent.username.toLowerCase()}@student.local`;
+            try {
+                await signInWithEmailAndPassword(auth, mockEmail, isMockStudent.password);
+                onSuccess(isMockStudent.username);
+            } catch (err) {
+                try {
+                    await createUserWithEmailAndPassword(auth, mockEmail, isMockStudent.password);
+                    await setDoc(doc(db, 'users', isMockStudent.username), {
+                        email: mockEmail,
+                        role: 'student',
+                        createdAt: new Date().toISOString()
+                    });
+                    onSuccess(isMockStudent.username);
+                } catch (regErr) {
+                    onSuccess(isMockStudent.username);
+                }
+            } finally {
+                setLoading(false);
+            }
             return;
         }
 
