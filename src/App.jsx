@@ -297,32 +297,34 @@ function App() {
                     <User size={16} className="show-on-mobile" style={{ display: 'none' }} />
                   </span>
                 )}
-                <button
-                  onClick={() => {
-                    if (localStorage.getItem('parent_logged_in') === 'true') {
-                      setAppMode('dashboard');
-                    } else {
-                      setShowParentLoginModal(true);
-                    }
-                  }}
-                  style={{
-                    background: 'rgba(255,255,255,0.1)',
-                    border: '1px solid rgba(255,255,255,0.2)',
-                    borderRadius: '20px',
-                    padding: '8px 16px',
-                    color: '#fff',
-                    cursor: 'pointer',
-                    fontWeight: 600,
-                    fontSize: '13px',
-                    transition: 'all 0.2s ease',
-                    marginLeft: '4px'
-                  }}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)'; e.currentTarget.style.borderColor = '#0a84ff'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'; }}
-                >
-                  <span className="hide-on-mobile">Parent Dashboard</span>
-                  <LayoutDashboard size={16} className="show-on-mobile" style={{ display: 'none' }} />
-                </button>
+                {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01', 'CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG'].includes(loggedInUsername) && (
+                  <button
+                    onClick={() => {
+                      if (localStorage.getItem('parent_logged_in') === 'true') {
+                        setAppMode('dashboard');
+                      } else {
+                        setShowParentLoginModal(true);
+                      }
+                    }}
+                    style={{
+                      background: 'rgba(255,255,255,0.1)',
+                      border: '1px solid rgba(255,255,255,0.2)',
+                      borderRadius: '20px',
+                      padding: '8px 16px',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      fontWeight: 600,
+                      fontSize: '13px',
+                      transition: 'all 0.2s ease',
+                      marginLeft: '4px'
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)'; e.currentTarget.style.borderColor = '#0a84ff'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'; }}
+                  >
+                    <span className="hide-on-mobile">Parent Dashboard</span>
+                    <LayoutDashboard size={16} className="show-on-mobile" style={{ display: 'none' }} />
+                  </button>
+                )}
                 <button
                   onClick={handleLogout}
                   style={{
