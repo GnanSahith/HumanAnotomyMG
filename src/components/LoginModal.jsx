@@ -41,11 +41,25 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
             setLoading(true);
             const mockEmail = `${username.toLowerCase().replace(/[^a-z0-9]/g, '')}@admin.local`;
             try {
+                const sessionToken = Date.now().toString() + Math.random().toString(36).substring(2);
+                localStorage.setItem('current_session_id', sessionToken);
+                
                 await signInWithEmailAndPassword(auth, mockEmail, password);
+                await setDoc(doc(db, 'users', username), {
+                    currentSessionId: sessionToken
+                }, { merge: true });
                 onSuccess(username);
             } catch (err) {
                 try {
+                    const sessionToken = Date.now().toString() + Math.random().toString(36).substring(2);
+                    localStorage.setItem('current_session_id', sessionToken);
+                    
                     await createUserWithEmailAndPassword(auth, mockEmail, password);
+                    await setDoc(doc(db, 'users', username), {
+                        role: 'admin',
+                        createdAt: new Date().toISOString(),
+                        currentSessionId: sessionToken
+                    }, { merge: true });
                     onSuccess(username);
                 } catch (regErr) {
                     onSuccess(username);
@@ -67,15 +81,25 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
             setLoading(true);
             const mockEmail = `${isMockStudent.username.toLowerCase()}@student.local`;
             try {
+                const sessionToken = Date.now().toString() + Math.random().toString(36).substring(2);
+                localStorage.setItem('current_session_id', sessionToken);
+                
                 await signInWithEmailAndPassword(auth, mockEmail, isMockStudent.password);
+                await setDoc(doc(db, 'users', isMockStudent.username), {
+                    currentSessionId: sessionToken
+                }, { merge: true });
                 onSuccess(isMockStudent.username);
             } catch (err) {
                 try {
+                    const sessionToken = Date.now().toString() + Math.random().toString(36).substring(2);
+                    localStorage.setItem('current_session_id', sessionToken);
+                    
                     await createUserWithEmailAndPassword(auth, mockEmail, isMockStudent.password);
                     await setDoc(doc(db, 'users', isMockStudent.username), {
                         email: mockEmail,
                         role: 'student',
-                        createdAt: new Date().toISOString()
+                        createdAt: new Date().toISOString(),
+                        currentSessionId: sessionToken
                     });
                     onSuccess(isMockStudent.username);
                 } catch (regErr) {
@@ -90,16 +114,25 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
         setLoading(true);
         try {
             if (isRegistering) {
+                const sessionToken = Date.now().toString() + Math.random().toString(36).substring(2);
+                localStorage.setItem('current_session_id', sessionToken);
+                
                 const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-                // Create user doc in firestore
                 await setDoc(doc(db, 'users', userCredential.user.uid), {
                     email: email,
                     role: 'student',
-                    createdAt: new Date().toISOString()
+                    createdAt: new Date().toISOString(),
+                    currentSessionId: sessionToken
                 });
                 onSuccess(userCredential.user.email);
             } else {
+                const sessionToken = Date.now().toString() + Math.random().toString(36).substring(2);
+                localStorage.setItem('current_session_id', sessionToken);
+                
                 const userCredential = await signInWithEmailAndPassword(auth, email, password);
+                await setDoc(doc(db, 'users', userCredential.user.uid), {
+                    currentSessionId: sessionToken
+                }, { merge: true });
                 onSuccess(userCredential.user.email);
             }
         } catch (err) {

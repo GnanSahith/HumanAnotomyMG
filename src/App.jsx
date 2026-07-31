@@ -19,7 +19,8 @@ import PricingView from './components/PricingView';
 import ParentDashboardView from './components/ParentDashboardView';
 import { ChevronRight, Globe, ChevronDown, Sun, Moon, LogOut, ArrowLeft, LayoutDashboard, User } from 'lucide-react';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
-import { auth } from './firebase';
+import { doc, onSnapshot } from 'firebase/firestore';
+import { auth, db } from './firebase';
 import LoginModal from './components/LoginModal';
 import ParentLoginModal from './components/ParentLoginModal';
 import DeveloperPanel from './components/DeveloperPanel';
@@ -154,10 +155,27 @@ function App() {
     }
     localStorage.removeItem('human_anatomy_auth');
     localStorage.removeItem('logged_in_username');
+    localStorage.removeItem('current_session_id');
     setIsAuthenticated(false);
     setLoggedInUsername('');
     setAppMode('root');
   };
+
+  useEffect(() => {
+    if (isAuthenticated && loggedInUsername) {
+      const unsub = onSnapshot(doc(db, 'users', loggedInUsername), (docSnap) => {
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          const localSession = localStorage.getItem('current_session_id');
+          if (data.currentSessionId && localSession && data.currentSessionId !== localSession) {
+             alert('You have been logged out because your account was accessed from another device.');
+             handleLogout();
+          }
+        }
+      });
+      return () => unsub();
+    }
+  }, [isAuthenticated, loggedInUsername]);
 
   const handleRouteSelect = (route) => {
     if (route === 'simulations') {
