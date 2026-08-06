@@ -4,7 +4,7 @@ import CertificatesModal from './CertificatesModal';
 import { useLanguage } from '../LanguageContext';
 import { mockStudents } from '../data/mockStudents';
 import { db } from '../firebase';
-import { collection, query, getDocs, orderBy, limit, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, getDocs, orderBy, limit, addDoc, serverTimestamp, doc, getDoc } from 'firebase/firestore';
 
 const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
   const [timeRange, setTimeRange] = useState('weekly');
@@ -15,7 +15,8 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
       totalSeconds: 0,
       mostActiveSubject: 'None',
       simulationsExplored: 0,
-      streak: '0 Days'
+      streak: '0 Days',
+      lastLogin: 'Loading...'
   });
   const [activities, setActivities] = useState([]);
   const [subjectData, setSubjectData] = useState([]);
@@ -31,7 +32,19 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
                   orderBy('timestamp', 'desc'),
                   limit(50)
               );
-              const snapshot = await getDocs(q);
+              const [snapshot, userDocSnap] = await Promise.all([
+                  getDocs(q),
+                  getDoc(doc(db, 'users', selectedStudent.username))
+              ]);
+              
+              let lastLoginStr = 'Never Logged In';
+              if (userDocSnap.exists()) {
+                  const ud = userDocSnap.data();
+                  if (ud.lastLogin) {
+                      const lDate = new Date(ud.lastLogin);
+                      lastLoginStr = lDate.toLocaleDateString() + ' ' + lDate.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+                  }
+              }
               
               let totalSecs = 0;
               const subjectCount = {};
@@ -90,7 +103,8 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
                   totalSeconds: totalSecs,
                   mostActiveSubject: topSubject,
                   simulationsExplored: uniqueSims.size,
-                  streak: totalSecs > 0 ? '1 Day' : '0 Days'
+                  streak: totalSecs > 0 ? '1 Day' : '0 Days',
+                  lastLogin: lastLoginStr
               });
               setSubjectData(sData);
               setActivities(recent.slice(0, 10));
@@ -243,9 +257,9 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '24px' }}>
         {[
           { title: 'Total Learning Time', value: formatTime(stats.totalSeconds), subtitle: loading ? 'Loading...' : 'Live tracking active', icon: <Clock size={24} color="#0a84ff" />, bg: 'rgba(10,132,255,0.1)', border: 'rgba(10,132,255,0.3)' },
+          { title: 'Last Login', value: stats.lastLogin, subtitle: 'Most recent sign in', icon: <Activity size={24} color="#30d158" />, bg: 'rgba(48,209,88,0.1)', border: 'rgba(48,209,88,0.3)' },
           { title: 'Most Active Subject', value: stats.mostActiveSubject, subtitle: 'Based on time spent', icon: <Target size={24} color="#bf5af2" />, bg: 'rgba(191,90,242,0.1)', border: 'rgba(191,90,242,0.3)' },
-          { title: 'Simulations Explored', value: stats.simulationsExplored, subtitle: 'Unique interactions', icon: <Activity size={24} color="#30d158" />, bg: 'rgba(48,209,88,0.1)', border: 'rgba(48,209,88,0.3)' },
-          { title: 'Current Streak', value: stats.streak, subtitle: 'Active learning days', icon: <TrendingUp size={24} color="#ff9f0a" />, bg: 'rgba(255,159,10,0.1)', border: 'rgba(255,159,10,0.3)' }
+          { title: 'Simulations Explored', value: stats.simulationsExplored, subtitle: 'Unique interactions', icon: <Trophy size={24} color="#ff9f0a" />, bg: 'rgba(255,159,10,0.1)', border: 'rgba(255,159,10,0.3)' }
         ].map((stat, i) => (
           <div key={i} style={{ 
             background: 'rgba(20, 20, 30, 0.4)', backdropFilter: 'blur(20px)', borderRadius: '24px', padding: '24px',

@@ -46,7 +46,8 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
                 
                 await signInWithEmailAndPassword(auth, mockEmail, password);
                 await setDoc(doc(db, 'users', username), {
-                    currentSessionId: sessionToken
+                    currentSessionId: sessionToken,
+                    lastLogin: new Date().toISOString()
                 }, { merge: true });
                 onSuccess(username);
             } catch (err) {
@@ -58,7 +59,8 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
                     await setDoc(doc(db, 'users', username), {
                         role: 'admin',
                         createdAt: new Date().toISOString(),
-                        currentSessionId: sessionToken
+                        currentSessionId: sessionToken,
+                        lastLogin: new Date().toISOString()
                     }, { merge: true });
                     onSuccess(username);
                 } catch (regErr) {
@@ -86,7 +88,8 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
                 
                 await signInWithEmailAndPassword(auth, mockEmail, isMockStudent.password);
                 await setDoc(doc(db, 'users', isMockStudent.username), {
-                    currentSessionId: sessionToken
+                    currentSessionId: sessionToken,
+                    lastLogin: new Date().toISOString()
                 }, { merge: true });
                 onSuccess(isMockStudent.username);
             } catch (err) {
@@ -99,7 +102,8 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
                         email: mockEmail,
                         role: 'student',
                         createdAt: new Date().toISOString(),
-                        currentSessionId: sessionToken
+                        currentSessionId: sessionToken,
+                        lastLogin: new Date().toISOString()
                     });
                     onSuccess(isMockStudent.username);
                 } catch (regErr) {
@@ -122,7 +126,8 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
                     email: email,
                     role: 'student',
                     createdAt: new Date().toISOString(),
-                    currentSessionId: sessionToken
+                    currentSessionId: sessionToken,
+                    lastLogin: new Date().toISOString()
                 });
                 onSuccess(userCredential.user.email);
             } else {
@@ -131,7 +136,8 @@ export default function LoginModal({ isOpen, onClose, onSuccess, defaultTab = 's
                 
                 const userCredential = await signInWithEmailAndPassword(auth, email, password);
                 await setDoc(doc(db, 'users', userCredential.user.uid), {
-                    currentSessionId: sessionToken
+                    currentSessionId: sessionToken,
+                    lastLogin: new Date().toISOString()
                 }, { merge: true });
                 onSuccess(userCredential.user.email);
             }
