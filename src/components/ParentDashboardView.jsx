@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Clock, BookOpen, Activity, Award, User, Target, TrendingUp, Calendar, ChevronDown } from 'lucide-react';
+import { ArrowLeft, Clock, BookOpen, Activity, Award, User, Target, TrendingUp, Calendar, ChevronDown, Trophy } from 'lucide-react';
 import CertificatesModal from './CertificatesModal';
 import { useLanguage } from '../LanguageContext';
 import { mockStudents } from '../data/mockStudents';
