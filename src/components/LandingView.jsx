@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Microscope, FlaskConical, Atom, Sigma, ArrowRight, BookOpen } from 'lucide-react';
+import { Microscope, FlaskConical, Atom, Sigma, ArrowRight, BookOpen, Lock } from 'lucide-react';
 import { useLanguage } from '../LanguageContext';
 
 export default function LandingView({ onEnter, loggedInUsername }) {
@@ -9,6 +9,10 @@ export default function LandingView({ onEnter, loggedInUsername }) {
     const isRestrictedUser = loggedInUsername === 'MyGnanAD';
 
     const handleBiologyClick = () => {
+        if (loggedInUsername !== 'GnanSahith@MG') {
+            alert("Biology simulations are temporarily disabled for maintenance.");
+            return;
+        }
         setIsAnimatingOut(true);
         setTimeout(() => {
             onEnter('biology');
@@ -50,14 +54,24 @@ export default function LandingView({ onEnter, loggedInUsername }) {
             <div className="mygnan-grid">
                 
                 {/* BIOLOGY - The active application portal */}
-                <div className="mygnan-card glass-panel mygnan-card-active" onClick={handleBiologyClick}>
+                <div 
+                    className={`mygnan-card glass-panel ${loggedInUsername === 'GnanSahith@MG' ? 'mygnan-card-active' : ''}`} 
+                    onClick={handleBiologyClick}
+                    style={loggedInUsername !== 'GnanSahith@MG' ? { opacity: 0.5, cursor: 'not-allowed', filter: 'grayscale(0.8)' } : {}}
+                >
                     <div className="mygnan-card-header">
                         <div className="mygnan-icon-container">
-                            <Microscope size={38} color="#0a84ff" />
+                            {loggedInUsername !== 'GnanSahith@MG' ? <Lock size={38} color="#ff4d4d" /> : <Microscope size={38} color="#0a84ff" />}
                         </div>
-                        <div style={{ background: 'rgba(10,132,255,0.2)', padding: '8px 16px', borderRadius: '100px', display: 'flex', alignItems: 'center', gap: '8px', color: '#fff', fontSize: '13px', fontWeight: 600, border: '1px solid rgba(10,132,255,0.3)' }}>
-                            Active Module <ArrowRight size={14} />
-                        </div>
+                        {loggedInUsername === 'GnanSahith@MG' ? (
+                            <div style={{ background: 'rgba(10,132,255,0.2)', padding: '8px 16px', borderRadius: '100px', display: 'flex', alignItems: 'center', gap: '8px', color: '#fff', fontSize: '13px', fontWeight: 600, border: '1px solid rgba(10,132,255,0.3)' }}>
+                                Active Module <ArrowRight size={14} />
+                            </div>
+                        ) : (
+                            <div style={{ background: 'rgba(255,77,77,0.1)', padding: '8px 16px', borderRadius: '100px', display: 'flex', alignItems: 'center', gap: '8px', color: '#ff4d4d', fontSize: '13px', fontWeight: 600, border: '1px solid rgba(255,77,77,0.3)' }}>
+                                Maintenance
+                            </div>
+                        )}
                     </div>
                     <div className="mygnan-title">
                         <h2>{t('Biology')}</h2>
