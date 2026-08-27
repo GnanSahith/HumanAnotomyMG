@@ -488,7 +488,6 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
                     <button 
                         onClick={() => {
                             setActiveSimulation(null);
-                            setViewState('curriculum_grid');
                             setQuizState('idle');
                         }} 
                         className="back-btn" 
