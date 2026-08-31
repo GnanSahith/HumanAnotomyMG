@@ -1,5 +1,5 @@
 import React from 'react';
-import { BookOpen, MonitorPlay, Lock } from 'lucide-react';
+import { BookOpen, GraduationCap, Globe, Library, MonitorPlay, Lock } from 'lucide-react';
 import '../MainLanding.css';
 
 const MainLandingView = ({ onSelectRoute, isSignedIn, isAuthenticated }) => {
@@ -7,11 +7,22 @@ const MainLandingView = ({ onSelectRoute, isSignedIn, isAuthenticated }) => {
 
   return (
     <div className="split-landing-container">
-      <div className="split-half academics-half" onClick={() => onSelectRoute('academics')}>
-        <div className="split-content">
-          <BookOpen size={80} className="split-icon" />
-          <h1>Academics</h1>
-          <p>Comprehensive study materials, NCERT solutions, concepts, and board preparation.</p>
+      <div className="split-half academics-half">
+        <div className="board-quadrant" onClick={() => onSelectRoute('academics')}>
+          <BookOpen size={48} className="board-icon" />
+          <h2>CBSE</h2>
+        </div>
+        <div className="board-quadrant" onClick={() => onSelectRoute('academics')}>
+          <GraduationCap size={48} className="board-icon" />
+          <h2>ICSE</h2>
+        </div>
+        <div className="board-quadrant" onClick={() => onSelectRoute('academics')}>
+          <Globe size={48} className="board-icon" />
+          <h2>IB</h2>
+        </div>
+        <div className="board-quadrant" onClick={() => onSelectRoute('academics')}>
+          <Library size={48} className="board-icon" />
+          <h2>Cambridge</h2>
         </div>
       </div>
       <div 
