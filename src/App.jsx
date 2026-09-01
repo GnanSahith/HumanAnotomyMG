@@ -39,9 +39,14 @@ function App() {
       setUser(currentUser);
       if (currentUser) {
         setIsAuthenticated(true);
-        setLoggedInUsername(currentUser.email);
+        const storedUsername = localStorage.getItem('logged_in_username');
+        if (!storedUsername) {
+          setLoggedInUsername(currentUser.email);
+          localStorage.setItem('logged_in_username', currentUser.email);
+        } else {
+          setLoggedInUsername(storedUsername);
+        }
         localStorage.setItem('human_anatomy_auth', 'true');
-        localStorage.setItem('logged_in_username', currentUser.email);
       }
     });
     return () => unsubscribe();
