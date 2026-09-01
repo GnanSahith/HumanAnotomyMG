@@ -68,6 +68,14 @@ export const chaptersData = {
         "title": "Inverse Trigonometric Functions"
       },
       {
+        "id": "c3",
+        "title": "Matrices"
+      },
+      {
+        "id": "c4",
+        "title": "Determinants"
+      },
+      {
         "id": "c5",
         "title": "Continuity and Differentiability"
       },
@@ -160,6 +168,14 @@ export const chaptersData = {
       {
         "id": "c14",
         "title": "Biomolecules"
+      },
+      {
+        "id": "c15",
+        "title": "Polymers"
+      },
+      {
+        "id": "c16",
+        "title": "Chemistry in Everyday Life"
       }
     ],
     "Biology": [
@@ -222,6 +238,10 @@ export const chaptersData = {
       {
         "id": "c15",
         "title": "Biodiversity and Conservation"
+      },
+      {
+        "id": "c16",
+        "title": "Environmental Issues"
       }
     ],
     "English": [
@@ -252,6 +272,34 @@ export const chaptersData = {
       {
         "id": "c7",
         "title": "The Interview"
+      },
+      {
+        "id": "c8",
+        "title": "Going Places"
+      },
+      {
+        "id": "c9",
+        "title": "My Mother at Sixty-six"
+      },
+      {
+        "id": "c10",
+        "title": "An Elementary School Classroom in a Slum"
+      },
+      {
+        "id": "c11",
+        "title": "Keeping Quiet"
+      },
+      {
+        "id": "c12",
+        "title": "A Thing of Beauty"
+      },
+      {
+        "id": "c13",
+        "title": "A Roadside Stand"
+      },
+      {
+        "id": "c14",
+        "title": "Aunt Jennifer's Tigers"
       }
     ],
     "Business Studies": [
@@ -272,12 +320,20 @@ export const chaptersData = {
         "title": "Planning"
       },
       {
+        "id": "c5",
+        "title": "Organising"
+      },
+      {
         "id": "c6",
         "title": "Staffing"
       },
       {
         "id": "c7",
         "title": "Directing"
+      },
+      {
+        "id": "c8",
+        "title": "Controlling"
       },
       {
         "id": "c9",
@@ -290,139 +346,348 @@ export const chaptersData = {
       {
         "id": "c11",
         "title": "Marketing"
+      },
+      {
+        "id": "c12",
+        "title": "Consumer Protection"
       }
     ],
-    "Economics": [],
-    "Accountancy": [
+    "Economics": [
       {
         "id": "c1",
-        "title": "Accountancy Chapter 1"
+        "title": "Introduction to Macroeconomics"
       },
       {
         "id": "c2",
-        "title": "Accountancy Chapter 2"
+        "title": "National Income Accounting"
+      },
+      {
+        "id": "c3",
+        "title": "Money and Banking"
+      },
+      {
+        "id": "c4",
+        "title": "Income Determination"
+      },
+      {
+        "id": "c5",
+        "title": "The Government Budget and the Economy"
       },
       {
         "id": "c6",
-        "title": "Accountancy Chapter 6"
+        "title": "Open Economy Macroeconomics"
+      },
+      {
+        "id": "c7",
+        "title": "Indian Economy on the Eve of Independence"
+      },
+      {
+        "id": "c8",
+        "title": "Indian Economy 1950-1990"
+      },
+      {
+        "id": "c9",
+        "title": "Liberalisation, Privatisation and Globalisation"
+      },
+      {
+        "id": "c10",
+        "title": "Poverty"
+      },
+      {
+        "id": "c11",
+        "title": "Human Capital Formation"
+      },
+      {
+        "id": "c12",
+        "title": "Rural Development"
+      },
+      {
+        "id": "c13",
+        "title": "Employment"
+      },
+      {
+        "id": "c14",
+        "title": "Infrastructure"
+      },
+      {
+        "id": "c15",
+        "title": "Environment and Sustainable Development"
+      },
+      {
+        "id": "c16",
+        "title": "Comparative Development Experiences of India and its Neighbours"
+      }
+    ],
+    "Accountancy": [
+      {
+        "id": "c1",
+        "title": "Accounting for Not-for-Profit Organisations"
+      },
+      {
+        "id": "c2",
+        "title": "Accounting for Partnership: Basic Concepts"
+      },
+      {
+        "id": "c3",
+        "title": "Reconstitution of a Partnership Firm - Admission of a Partner"
+      },
+      {
+        "id": "c4",
+        "title": "Retirement/Death of a Partner"
+      },
+      {
+        "id": "c5",
+        "title": "Dissolution of Partnership Firm"
+      },
+      {
+        "id": "c6",
+        "title": "Accounting for Share Capital"
+      },
+      {
+        "id": "c7",
+        "title": "Issue and Redemption of Debentures"
+      },
+      {
+        "id": "c8",
+        "title": "Financial Statements of a Company"
+      },
+      {
+        "id": "c9",
+        "title": "Analysis of Financial Statements"
+      },
+      {
+        "id": "c10",
+        "title": "Accounting Ratios"
+      },
+      {
+        "id": "c11",
+        "title": "Cash Flow Statement"
       }
     ],
     "History": [
       {
         "id": "c1",
-        "title": "History Chapter 1"
+        "title": "Bricks, Beads and Bones"
       },
       {
         "id": "c2",
-        "title": "History Chapter 2"
+        "title": "Kings, Farmers and Towns"
       },
       {
         "id": "c3",
-        "title": "History Chapter 3"
+        "title": "Kinship, Caste and Class"
       },
       {
         "id": "c4",
-        "title": "History Chapter 4"
+        "title": "Thinkers, Beliefs and Buildings"
       },
       {
         "id": "c5",
-        "title": "History Chapter 5"
+        "title": "Through the Eyes of Travellers"
       },
       {
         "id": "c6",
-        "title": "History Chapter 6"
+        "title": "Bhakti-Sufi Traditions"
       },
       {
         "id": "c7",
-        "title": "History Chapter 7"
+        "title": "An Imperial Capital: Vijayanagara"
       },
       {
         "id": "c8",
-        "title": "History Chapter 8"
+        "title": "Peasants, Zamindars and the State"
       },
       {
         "id": "c9",
-        "title": "History Chapter 9"
+        "title": "Kings and Chronicles"
       },
       {
         "id": "c10",
-        "title": "History Chapter 10"
+        "title": "Colonialism and the Countryside"
       },
       {
         "id": "c11",
-        "title": "History Chapter 11"
+        "title": "Rebels and the Raj"
       },
       {
         "id": "c12",
-        "title": "History Chapter 12"
+        "title": "Colonial Cities"
+      },
+      {
+        "id": "c13",
+        "title": "Mahatma Gandhi and the Nationalist Movement"
+      },
+      {
+        "id": "c14",
+        "title": "Understanding Partition"
+      },
+      {
+        "id": "c15",
+        "title": "Framing the Constitution"
       }
     ],
     "Geography": [
       {
         "id": "c1",
-        "title": "Geography Chapter 1"
+        "title": "Human Geography Nature and Scope"
       },
       {
         "id": "c2",
-        "title": "Geography Chapter 2"
+        "title": "The World Population"
       },
       {
         "id": "c3",
-        "title": "Geography Chapter 3"
+        "title": "Population Composition"
       },
       {
         "id": "c4",
-        "title": "Geography Chapter 4"
+        "title": "Human Development"
       },
       {
         "id": "c5",
-        "title": "Geography Chapter 5"
+        "title": "Primary Activities"
       },
       {
         "id": "c6",
-        "title": "Geography Chapter 6"
+        "title": "Secondary Activities"
       },
       {
         "id": "c7",
-        "title": "Geography Chapter 7"
+        "title": "Tertiary and Quaternary Activities"
       },
       {
         "id": "c8",
-        "title": "Geography Chapter 8"
+        "title": "Transport and Communication"
       },
       {
         "id": "c9",
-        "title": "Geography Chapter 9"
+        "title": "International Trade"
+      },
+      {
+        "id": "c10",
+        "title": "Human Settlements"
+      },
+      {
+        "id": "c11",
+        "title": "Population: Distribution, Density, Growth and Composition"
+      },
+      {
+        "id": "c12",
+        "title": "Migration"
+      },
+      {
+        "id": "c13",
+        "title": "Human Development (India)"
+      },
+      {
+        "id": "c14",
+        "title": "Human Settlements (India)"
+      },
+      {
+        "id": "c15",
+        "title": "Land Resources and Agriculture"
+      },
+      {
+        "id": "c16",
+        "title": "Water Resources"
+      },
+      {
+        "id": "c17",
+        "title": "Mineral and Energy Resources"
+      },
+      {
+        "id": "c18",
+        "title": "Manufacturing Industries"
+      },
+      {
+        "id": "c19",
+        "title": "Planning and Sustainable Development in Indian Context"
+      },
+      {
+        "id": "c20",
+        "title": "Transport and Communication (India)"
+      },
+      {
+        "id": "c21",
+        "title": "International Trade (India)"
+      },
+      {
+        "id": "c22",
+        "title": "Geographical Perspective on Selected Issues and Problems"
       }
     ],
     "Political Science": [
       {
         "id": "c1",
-        "title": "Political Science Chapter 1"
+        "title": "The Cold War Era"
       },
       {
         "id": "c2",
-        "title": "Political Science Chapter 2"
+        "title": "The End of Bipolarity"
       },
       {
         "id": "c3",
-        "title": "Political Science Chapter 3"
+        "title": "US Hegemony in World Politics"
       },
       {
         "id": "c4",
-        "title": "Political Science Chapter 4"
+        "title": "Alternative Centres of Power"
       },
       {
         "id": "c5",
-        "title": "Political Science Chapter 5"
+        "title": "Contemporary South Asia"
       },
       {
         "id": "c6",
-        "title": "Political Science Chapter 6"
+        "title": "International Organisations"
       },
       {
         "id": "c7",
-        "title": "Political Science Chapter 7"
+        "title": "Security in the Contemporary World"
+      },
+      {
+        "id": "c8",
+        "title": "Environment and Natural Resources"
+      },
+      {
+        "id": "c9",
+        "title": "Globalisation"
+      },
+      {
+        "id": "c10",
+        "title": "Challenges of Nation Building"
+      },
+      {
+        "id": "c11",
+        "title": "Era of One-Party Dominance"
+      },
+      {
+        "id": "c12",
+        "title": "Politics of Planned Development"
+      },
+      {
+        "id": "c13",
+        "title": "India's External Relations"
+      },
+      {
+        "id": "c14",
+        "title": "Challenges to and Restoration of Congress System"
+      },
+      {
+        "id": "c15",
+        "title": "The Crisis of Democratic Order"
+      },
+      {
+        "id": "c16",
+        "title": "Rise of Popular Movements"
+      },
+      {
+        "id": "c17",
+        "title": "Regional Aspirations"
+      },
+      {
+        "id": "c18",
+        "title": "Recent Developments in Indian Politics"
       }
     ]
   },
@@ -483,6 +748,10 @@ export const chaptersData = {
       {
         "id": "c14",
         "title": "Oscillations"
+      },
+      {
+        "id": "c15",
+        "title": "Waves"
       }
     ],
     "Maths": [
@@ -589,12 +858,24 @@ export const chaptersData = {
         "title": "Hydrogen"
       },
       {
+        "id": "c10",
+        "title": "The s-Block Elements"
+      },
+      {
+        "id": "c11",
+        "title": "The p-Block Elements"
+      },
+      {
         "id": "c12",
         "title": "Organic Chemistry - Some Basic Principles and Techniques"
       },
       {
         "id": "c13",
         "title": "Hydrocarbons"
+      },
+      {
+        "id": "c14",
+        "title": "Environmental Chemistry"
       }
     ],
     "Biology": [
@@ -669,248 +950,488 @@ export const chaptersData = {
       {
         "id": "c18",
         "title": "Body Fluids and Circulation"
+      },
+      {
+        "id": "c19",
+        "title": "Excretory Products and their Elimination"
+      },
+      {
+        "id": "c20",
+        "title": "Locomotion and Movement"
+      },
+      {
+        "id": "c21",
+        "title": "Neural Control and Coordination"
+      },
+      {
+        "id": "c22",
+        "title": "Chemical Coordination and Integration"
       }
     ],
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "The Portrait of a Lady"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "We're Not Afraid to Die"
       },
       {
         "id": "c3",
-        "title": "English Chapter 3"
+        "title": "Discovering Tut: the Saga Continues"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "Landscape of the Soul"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "The Ailing Planet"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "The Browning Version"
+      },
+      {
+        "id": "c7",
+        "title": "The Adventure"
+      },
+      {
+        "id": "c8",
+        "title": "Silk Road"
+      },
+      {
+        "id": "c9",
+        "title": "A Photograph"
+      },
+      {
+        "id": "c10",
+        "title": "The Voice of the Rain"
+      },
+      {
+        "id": "c11",
+        "title": "Childhood"
+      },
+      {
+        "id": "c12",
+        "title": "Father to Son"
+      },
+      {
+        "id": "c13",
+        "title": "The Summer of the Beautiful White Horse"
+      },
+      {
+        "id": "c14",
+        "title": "The Address"
+      },
+      {
+        "id": "c15",
+        "title": "Ranga's Marriage"
+      },
+      {
+        "id": "c16",
+        "title": "Albert Einstein at School"
+      },
+      {
+        "id": "c17",
+        "title": "Mother's Day"
+      },
+      {
+        "id": "c18",
+        "title": "The Ghat of the Only World"
+      },
+      {
+        "id": "c19",
+        "title": "Birth"
+      },
+      {
+        "id": "c20",
+        "title": "The Tale of Melon City"
       }
     ],
     "Business Studies": [
       {
         "id": "c1",
-        "title": "Business Studies Chapter 1"
+        "title": "Business, Trade and Commerce"
       },
       {
         "id": "c2",
-        "title": "Business Studies Chapter 2"
+        "title": "Forms of Business Organisation"
       },
       {
         "id": "c3",
-        "title": "Business Studies Chapter 3"
+        "title": "Private, Public and Global Enterprises"
       },
       {
         "id": "c4",
-        "title": "Business Studies Chapter 4"
+        "title": "Business Services"
       },
       {
         "id": "c5",
-        "title": "Business Studies Chapter 5"
+        "title": "Emerging Modes of Business"
       },
       {
         "id": "c6",
-        "title": "Business Studies Chapter 6"
+        "title": "Social Responsibilities of Business and Business Ethics"
       },
       {
         "id": "c7",
-        "title": "Business Studies Chapter 7"
+        "title": "Formation of a Company"
       },
       {
         "id": "c8",
-        "title": "Business Studies Chapter 8"
+        "title": "Sources of Business Finance"
       },
       {
         "id": "c9",
-        "title": "Business Studies Chapter 9"
+        "title": "Small Business"
       },
       {
         "id": "c10",
-        "title": "Business Studies Chapter 10"
+        "title": "Internal Trade"
+      },
+      {
+        "id": "c11",
+        "title": "International Business"
       }
     ],
     "Economics": [
       {
         "id": "c1",
-        "title": "Economics Chapter 1"
+        "title": "Introduction to Microeconomics"
       },
       {
         "id": "c2",
-        "title": "Economics Chapter 2"
+        "title": "Theory of Consumer Behaviour"
       },
       {
         "id": "c3",
-        "title": "Economics Chapter 3"
+        "title": "Production and Costs"
       },
       {
         "id": "c4",
-        "title": "Economics Chapter 4"
+        "title": "The Theory of the Firm under Perfect Competition"
+      },
+      {
+        "id": "c5",
+        "title": "Market Equilibrium"
       },
       {
         "id": "c6",
-        "title": "Economics Chapter 6"
+        "title": "Non-Competitive Markets"
+      },
+      {
+        "id": "c7",
+        "title": "Introduction to Statistics"
       },
       {
         "id": "c8",
-        "title": "Economics Chapter 8"
+        "title": "Collection of Data"
+      },
+      {
+        "id": "c9",
+        "title": "Organisation of Data"
+      },
+      {
+        "id": "c10",
+        "title": "Presentation of Data"
+      },
+      {
+        "id": "c11",
+        "title": "Measures of Central Tendency"
+      },
+      {
+        "id": "c12",
+        "title": "Measures of Dispersion"
+      },
+      {
+        "id": "c13",
+        "title": "Correlation"
+      },
+      {
+        "id": "c14",
+        "title": "Index Numbers"
+      },
+      {
+        "id": "c15",
+        "title": "Use of Statistical Tools"
       }
     ],
     "Accountancy": [
       {
         "id": "c1",
-        "title": "Accountancy Chapter 1"
+        "title": "Introduction to Accounting"
       },
       {
         "id": "c2",
-        "title": "Accountancy Chapter 2"
+        "title": "Theory Base of Accounting"
       },
       {
         "id": "c3",
-        "title": "Accountancy Chapter 3"
+        "title": "Recording of Transactions - I"
       },
       {
         "id": "c4",
-        "title": "Accountancy Chapter 4"
+        "title": "Recording of Transactions - II"
+      },
+      {
+        "id": "c5",
+        "title": "Bank Reconciliation Statement"
       },
       {
         "id": "c6",
-        "title": "Accountancy Chapter 6"
+        "title": "Trial Balance and Rectification of Errors"
       },
       {
         "id": "c7",
-        "title": "Accountancy Chapter 7"
+        "title": "Depreciation, Provisions and Reserves"
+      },
+      {
+        "id": "c8",
+        "title": "Bill of Exchange"
+      },
+      {
+        "id": "c9",
+        "title": "Financial Statements - I"
+      },
+      {
+        "id": "c10",
+        "title": "Financial Statements - II"
+      },
+      {
+        "id": "c11",
+        "title": "Accounts from Incomplete Records"
+      },
+      {
+        "id": "c12",
+        "title": "Applications of Computers in Accounting"
+      },
+      {
+        "id": "c13",
+        "title": "Computerised Accounting System"
       }
     ],
     "History": [
       {
         "id": "c1",
-        "title": "History Chapter 1"
+        "title": "From the Beginning of Time"
       },
       {
         "id": "c2",
-        "title": "History Chapter 2"
+        "title": "Writing and City Life"
       },
       {
         "id": "c3",
-        "title": "History Chapter 3"
+        "title": "An Empire Across Three Continents"
       },
       {
         "id": "c4",
-        "title": "History Chapter 4"
+        "title": "The Central Islamic Lands"
       },
       {
         "id": "c5",
-        "title": "History Chapter 5"
+        "title": "Nomadic Empires"
       },
       {
         "id": "c6",
-        "title": "History Chapter 6"
+        "title": "The Three Orders"
       },
       {
         "id": "c7",
-        "title": "History Chapter 7"
+        "title": "Changing Cultural Traditions"
+      },
+      {
+        "id": "c8",
+        "title": "Confrontation of Cultures"
+      },
+      {
+        "id": "c9",
+        "title": "The Industrial Revolution"
+      },
+      {
+        "id": "c10",
+        "title": "Displacing Indigenous Peoples"
+      },
+      {
+        "id": "c11",
+        "title": "Paths to Modernisation"
       }
     ],
     "Geography": [
       {
         "id": "c1",
-        "title": "Geography Chapter 1"
+        "title": "Geography as a Discipline"
       },
       {
         "id": "c2",
-        "title": "Geography Chapter 2"
+        "title": "The Origin and Evolution of the Earth"
       },
       {
         "id": "c3",
-        "title": "Geography Chapter 3"
+        "title": "Interior of the Earth"
       },
       {
         "id": "c4",
-        "title": "Geography Chapter 4"
+        "title": "Distribution of Oceans and Continents"
       },
       {
         "id": "c5",
-        "title": "Geography Chapter 5"
+        "title": "Minerals and Rocks"
       },
       {
         "id": "c6",
-        "title": "Geography Chapter 6"
+        "title": "Geomorphic Processes"
       },
       {
         "id": "c7",
-        "title": "Geography Chapter 7"
+        "title": "Landforms and their Evolution"
       },
       {
         "id": "c8",
-        "title": "Geography Chapter 8"
+        "title": "Composition and Structure of Atmosphere"
       },
       {
         "id": "c9",
-        "title": "Geography Chapter 9"
+        "title": "Solar Radiation, Heat Balance and Temperature"
       },
       {
         "id": "c10",
-        "title": "Geography Chapter 10"
+        "title": "Atmospheric Circulation and Weather Systems"
       },
       {
         "id": "c11",
-        "title": "Geography Chapter 11"
+        "title": "Water in the Atmosphere"
       },
       {
         "id": "c12",
-        "title": "Geography Chapter 12"
+        "title": "World Climate and Climate Change"
+      },
+      {
+        "id": "c13",
+        "title": "Water (Oceans)"
+      },
+      {
+        "id": "c14",
+        "title": "Movements of Ocean Water"
+      },
+      {
+        "id": "c15",
+        "title": "Life on the Earth"
+      },
+      {
+        "id": "c16",
+        "title": "Biodiversity and Conservation"
+      },
+      {
+        "id": "c17",
+        "title": "India - Location"
+      },
+      {
+        "id": "c18",
+        "title": "Structure and Physiography"
+      },
+      {
+        "id": "c19",
+        "title": "Drainage System"
+      },
+      {
+        "id": "c20",
+        "title": "Climate"
+      },
+      {
+        "id": "c21",
+        "title": "Natural Vegetation"
+      },
+      {
+        "id": "c22",
+        "title": "Soils"
+      },
+      {
+        "id": "c23",
+        "title": "Natural Hazards and Disasters"
       }
     ],
     "Political Science": [
       {
         "id": "c1",
-        "title": "Political Science Chapter 1"
+        "title": "Constitution: Why and How?"
       },
       {
         "id": "c2",
-        "title": "Political Science Chapter 2"
+        "title": "Rights in the Indian Constitution"
       },
       {
         "id": "c3",
-        "title": "Political Science Chapter 3"
+        "title": "Election and Representation"
       },
       {
         "id": "c4",
-        "title": "Political Science Chapter 4"
+        "title": "Executive"
       },
       {
         "id": "c5",
-        "title": "Political Science Chapter 5"
+        "title": "Legislature"
       },
       {
         "id": "c6",
-        "title": "Political Science Chapter 6"
+        "title": "Judiciary"
       },
       {
         "id": "c7",
-        "title": "Political Science Chapter 7"
+        "title": "Federalism"
       },
       {
         "id": "c8",
-        "title": "Political Science Chapter 8"
+        "title": "Local Governments"
       },
       {
         "id": "c9",
-        "title": "Political Science Chapter 9"
+        "title": "Constitution as a Living Document"
       },
       {
         "id": "c10",
-        "title": "Political Science Chapter 10"
+        "title": "The Philosophy of the Constitution"
+      },
+      {
+        "id": "c11",
+        "title": "Political Theory: An Introduction"
+      },
+      {
+        "id": "c12",
+        "title": "Freedom"
+      },
+      {
+        "id": "c13",
+        "title": "Equality"
+      },
+      {
+        "id": "c14",
+        "title": "Social Justice"
+      },
+      {
+        "id": "c15",
+        "title": "Rights"
+      },
+      {
+        "id": "c16",
+        "title": "Citizenship"
+      },
+      {
+        "id": "c17",
+        "title": "Nationalism"
+      },
+      {
+        "id": "c18",
+        "title": "Secularism"
+      },
+      {
+        "id": "c19",
+        "title": "Peace"
+      },
+      {
+        "id": "c20",
+        "title": "Development"
       }
     ]
   },
@@ -971,6 +1492,10 @@ export const chaptersData = {
       {
         "id": "c14",
         "title": "Statistics"
+      },
+      {
+        "id": "c15",
+        "title": "Probability"
       }
     ],
     "Science": [
@@ -988,7 +1513,7 @@ export const chaptersData = {
       },
       {
         "id": "c4",
-        "title": "Carbon and Its Compounds"
+        "title": "Carbon and its Compounds"
       },
       {
         "id": "c5",
@@ -1012,7 +1537,7 @@ export const chaptersData = {
       },
       {
         "id": "c10",
-        "title": "Light – Reflection and Refraction"
+        "title": "Light - Reflection and Refraction"
       },
       {
         "id": "c11",
@@ -1027,68 +1552,208 @@ export const chaptersData = {
         "title": "Magnetic Effects of Electric Current"
       },
       {
+        "id": "c14",
+        "title": "Sources of Energy"
+      },
+      {
         "id": "c15",
         "title": "Our Environment"
+      },
+      {
+        "id": "c16",
+        "title": "Management of Natural Resources"
       }
     ],
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "A Letter to God"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "Nelson Mandela: Long Walk to Freedom"
       },
       {
         "id": "c3",
-        "title": "English Chapter 3"
+        "title": "Two Stories about Flying"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "From the Diary of Anne Frank"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "The Hundred Dresses - I"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "The Hundred Dresses - II"
       },
       {
         "id": "c7",
-        "title": "English Chapter 7"
+        "title": "Glimpses of India"
       },
       {
         "id": "c8",
-        "title": "English Chapter 8"
+        "title": "Mijbil the Otter"
       },
       {
         "id": "c9",
-        "title": "English Chapter 9"
+        "title": "Madam Rides the Bus"
+      },
+      {
+        "id": "c10",
+        "title": "The Sermon at Benares"
+      },
+      {
+        "id": "c11",
+        "title": "The Proposal"
+      },
+      {
+        "id": "c12",
+        "title": "Dust of Snow"
+      },
+      {
+        "id": "c13",
+        "title": "Fire and Ice"
+      },
+      {
+        "id": "c14",
+        "title": "A Tiger in the Zoo"
+      },
+      {
+        "id": "c15",
+        "title": "How to Tell Wild Animals"
+      },
+      {
+        "id": "c16",
+        "title": "The Ball Poem"
+      },
+      {
+        "id": "c17",
+        "title": "Amanda!"
+      },
+      {
+        "id": "c18",
+        "title": "Animals"
+      },
+      {
+        "id": "c19",
+        "title": "The Trees"
+      },
+      {
+        "id": "c20",
+        "title": "Fog"
+      },
+      {
+        "id": "c21",
+        "title": "The Tale of Custard the Dragon"
+      },
+      {
+        "id": "c22",
+        "title": "For Anne Gregory"
       }
     ],
     "Social Science": [
       {
         "id": "c1",
-        "title": "Social Science Chapter 1"
+        "title": "The Rise of Nationalism in Europe"
       },
       {
         "id": "c2",
-        "title": "Social Science Chapter 2"
+        "title": "Nationalism in India"
       },
       {
         "id": "c3",
-        "title": "Social Science Chapter 3"
+        "title": "The Making of a Global World"
       },
       {
         "id": "c4",
-        "title": "Social Science Chapter 4"
+        "title": "The Age of Industrialisation"
       },
       {
         "id": "c5",
-        "title": "Social Science Chapter 5"
+        "title": "Print Culture and the Modern World"
+      },
+      {
+        "id": "c6",
+        "title": "Resources and Development"
+      },
+      {
+        "id": "c7",
+        "title": "Forest and Wildlife Resources"
+      },
+      {
+        "id": "c8",
+        "title": "Water Resources"
+      },
+      {
+        "id": "c9",
+        "title": "Agriculture"
+      },
+      {
+        "id": "c10",
+        "title": "Minerals and Energy Resources"
+      },
+      {
+        "id": "c11",
+        "title": "Manufacturing Industries"
+      },
+      {
+        "id": "c12",
+        "title": "Lifelines of National Economy"
+      },
+      {
+        "id": "c13",
+        "title": "Power Sharing"
+      },
+      {
+        "id": "c14",
+        "title": "Federalism"
+      },
+      {
+        "id": "c15",
+        "title": "Democracy and Diversity"
+      },
+      {
+        "id": "c16",
+        "title": "Gender, Religion and Caste"
+      },
+      {
+        "id": "c17",
+        "title": "Popular Struggles and Movements"
+      },
+      {
+        "id": "c18",
+        "title": "Political Parties"
+      },
+      {
+        "id": "c19",
+        "title": "Outcomes of Democracy"
+      },
+      {
+        "id": "c20",
+        "title": "Challenges to Democracy"
+      },
+      {
+        "id": "c21",
+        "title": "Development"
+      },
+      {
+        "id": "c22",
+        "title": "Sectors of the Indian Economy"
+      },
+      {
+        "id": "c23",
+        "title": "Money and Credit"
+      },
+      {
+        "id": "c24",
+        "title": "Globalisation and the Indian Economy"
+      },
+      {
+        "id": "c25",
+        "title": "Consumer Rights"
       }
     ]
   },
@@ -1141,6 +1806,14 @@ export const chaptersData = {
       {
         "id": "c12",
         "title": "Heron's Formula"
+      },
+      {
+        "id": "c13",
+        "title": "Surface Areas and Volumes"
+      },
+      {
+        "id": "c14",
+        "title": "Statistics"
       },
       {
         "id": "c15",
@@ -1197,6 +1870,14 @@ export const chaptersData = {
         "title": "Sound"
       },
       {
+        "id": "c13",
+        "title": "Why do We Fall Ill"
+      },
+      {
+        "id": "c14",
+        "title": "Natural Resources"
+      },
+      {
         "id": "c15",
         "title": "Improvement in Food Resources"
       }
@@ -1204,61 +1885,185 @@ export const chaptersData = {
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "The Fun They Had"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "The Sound of Music"
       },
       {
         "id": "c3",
-        "title": "English Chapter 3"
+        "title": "The Little Girl"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "A Truly Beautiful Mind"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "The Snake and the Mirror"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "My Childhood"
+      },
+      {
+        "id": "c7",
+        "title": "Packing"
       },
       {
         "id": "c8",
-        "title": "English Chapter 8"
+        "title": "Reach for the Top"
       },
       {
         "id": "c9",
-        "title": "English Chapter 9"
+        "title": "The Bond of Love"
+      },
+      {
+        "id": "c10",
+        "title": "Kathmandu"
+      },
+      {
+        "id": "c11",
+        "title": "If I Were You"
+      },
+      {
+        "id": "c12",
+        "title": "The Road Not Taken"
+      },
+      {
+        "id": "c13",
+        "title": "Wind"
+      },
+      {
+        "id": "c14",
+        "title": "Rain on the Roof"
+      },
+      {
+        "id": "c15",
+        "title": "The Lake Isle of Innisfree"
+      },
+      {
+        "id": "c16",
+        "title": "A Legend of the Northland"
+      },
+      {
+        "id": "c17",
+        "title": "No Men Are Foreign"
+      },
+      {
+        "id": "c18",
+        "title": "The Duck and the Kangaroo"
+      },
+      {
+        "id": "c19",
+        "title": "On Killing a Tree"
+      },
+      {
+        "id": "c20",
+        "title": "The Snake Trying"
+      },
+      {
+        "id": "c21",
+        "title": "A Slumber Did My Spirit Seal"
       }
     ],
     "Social Science": [
       {
         "id": "c1",
-        "title": "Social Science Chapter 1"
+        "title": "The French Revolution"
       },
       {
         "id": "c2",
-        "title": "Social Science Chapter 2"
+        "title": "Socialism in Europe and the Russian Revolution"
       },
       {
         "id": "c3",
-        "title": "Social Science Chapter 3"
+        "title": "Nazism and the Rise of Hitler"
       },
       {
         "id": "c4",
-        "title": "Social Science Chapter 4"
+        "title": "Forest Society and Colonialism"
       },
       {
         "id": "c5",
-        "title": "Social Science Chapter 5"
+        "title": "Pastoralists in the Modern World"
       },
       {
         "id": "c6",
-        "title": "Social Science Chapter 6"
+        "title": "Peasants and Farmers"
+      },
+      {
+        "id": "c7",
+        "title": "History and Sport: The Story of Cricket"
+      },
+      {
+        "id": "c8",
+        "title": "Clothing: A Social History"
+      },
+      {
+        "id": "c9",
+        "title": "India - Size and Location"
+      },
+      {
+        "id": "c10",
+        "title": "Physical Features of India"
+      },
+      {
+        "id": "c11",
+        "title": "Drainage"
+      },
+      {
+        "id": "c12",
+        "title": "Climate"
+      },
+      {
+        "id": "c13",
+        "title": "Natural Vegetation and Wildlife"
+      },
+      {
+        "id": "c14",
+        "title": "Population"
+      },
+      {
+        "id": "c15",
+        "title": "Democracy in the Contemporary World"
+      },
+      {
+        "id": "c16",
+        "title": "What is Democracy? Why Democracy?"
+      },
+      {
+        "id": "c17",
+        "title": "Constitutional Design"
+      },
+      {
+        "id": "c18",
+        "title": "Electoral Politics"
+      },
+      {
+        "id": "c19",
+        "title": "Working of Institutions"
+      },
+      {
+        "id": "c20",
+        "title": "Democratic Rights"
+      },
+      {
+        "id": "c21",
+        "title": "The Story of Village Palampur"
+      },
+      {
+        "id": "c22",
+        "title": "People as Resource"
+      },
+      {
+        "id": "c23",
+        "title": "Poverty as a Challenge"
+      },
+      {
+        "id": "c24",
+        "title": "Food Security in India"
       }
     ]
   },
@@ -1317,8 +2122,16 @@ export const chaptersData = {
         "title": "Direct and Inverse Proportions"
       },
       {
+        "id": "c14",
+        "title": "Factorisation"
+      },
+      {
         "id": "c15",
         "title": "Introduction to Graphs"
+      },
+      {
+        "id": "c16",
+        "title": "Playing with Numbers"
       }
     ],
     "Science": [
@@ -1385,82 +2198,162 @@ export const chaptersData = {
       {
         "id": "c16",
         "title": "Light"
+      },
+      {
+        "id": "c17",
+        "title": "Stars and the Solar System"
+      },
+      {
+        "id": "c18",
+        "title": "Pollution of Air and Water"
       }
     ],
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "The Best Christmas Present in the World"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "The Tsunami"
       },
       {
         "id": "c3",
-        "title": "English Chapter 3"
+        "title": "Glimpses of the Past"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "Bepin Choudhury's Lapse of Memory"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "The Summit Within"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "This is Jody's Fawn"
       },
       {
         "id": "c7",
-        "title": "English Chapter 7"
+        "title": "A Visit to Cambridge"
       },
       {
         "id": "c8",
-        "title": "English Chapter 8"
+        "title": "A Short Monsoon Diary"
       },
       {
         "id": "c9",
-        "title": "English Chapter 9"
+        "title": "The Great Stone Face - I"
       },
       {
         "id": "c10",
-        "title": "English Chapter 10"
+        "title": "The Great Stone Face - II"
       }
     ],
     "Social Science": [
       {
         "id": "c1",
-        "title": "Social Science Chapter 1"
+        "title": "How, When and Where"
       },
       {
         "id": "c2",
-        "title": "Social Science Chapter 2"
+        "title": "From Trade to Territory"
       },
       {
         "id": "c3",
-        "title": "Social Science Chapter 3"
+        "title": "Ruling the Countryside"
       },
       {
         "id": "c4",
-        "title": "Social Science Chapter 4"
+        "title": "Tribals, Dikus and the Vision of a Golden Age"
+      },
+      {
+        "id": "c5",
+        "title": "When People Rebel"
       },
       {
         "id": "c6",
-        "title": "Social Science Chapter 6"
+        "title": "Weavers, Iron Smelters and Factory Owners"
       },
       {
         "id": "c7",
-        "title": "Social Science Chapter 7"
+        "title": "Civilising the Native, Educating the Nation"
       },
       {
         "id": "c8",
-        "title": "Social Science Chapter 8"
+        "title": "Women, Caste and Reform"
+      },
+      {
+        "id": "c9",
+        "title": "The Making of the National Movement"
+      },
+      {
+        "id": "c10",
+        "title": "India After Independence"
+      },
+      {
+        "id": "c11",
+        "title": "Resources"
       },
       {
         "id": "c12",
-        "title": "Social Science Chapter 12"
+        "title": "Land, Soil, Water, Natural Vegetation and Wildlife Resources"
+      },
+      {
+        "id": "c13",
+        "title": "Mineral and Power Resources"
+      },
+      {
+        "id": "c14",
+        "title": "Agriculture"
+      },
+      {
+        "id": "c15",
+        "title": "Industries"
+      },
+      {
+        "id": "c16",
+        "title": "Human Resources"
+      },
+      {
+        "id": "c17",
+        "title": "The Indian Constitution"
+      },
+      {
+        "id": "c18",
+        "title": "Understanding Secularism"
+      },
+      {
+        "id": "c19",
+        "title": "Why do we need a Parliament?"
+      },
+      {
+        "id": "c20",
+        "title": "Understanding Laws"
+      },
+      {
+        "id": "c21",
+        "title": "Judiciary"
+      },
+      {
+        "id": "c22",
+        "title": "Understanding Our Criminal Justice System"
+      },
+      {
+        "id": "c23",
+        "title": "Understanding Marginalisation"
+      },
+      {
+        "id": "c24",
+        "title": "Confronting Marginalisation"
+      },
+      {
+        "id": "c25",
+        "title": "Public Facilities"
+      },
+      {
+        "id": "c26",
+        "title": "Law and Social Justice"
       }
     ]
   },
@@ -1521,6 +2414,10 @@ export const chaptersData = {
       {
         "id": "c14",
         "title": "Symmetry"
+      },
+      {
+        "id": "c15",
+        "title": "Visualising Solid Shapes"
       }
     ],
     "Science": [
@@ -1577,6 +2474,18 @@ export const chaptersData = {
         "title": "Motion and Time"
       },
       {
+        "id": "c14",
+        "title": "Electric Current and its Effects"
+      },
+      {
+        "id": "c15",
+        "title": "Light"
+      },
+      {
+        "id": "c16",
+        "title": "Water: A Precious Resource"
+      },
+      {
         "id": "c17",
         "title": "Forests: Our Lifeline"
       },
@@ -1588,85 +2497,165 @@ export const chaptersData = {
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "Three Questions"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "A Gift of Chappals"
       },
       {
         "id": "c3",
-        "title": "English Chapter 3"
+        "title": "Gopal and the Hilsa Fish"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "The Ashes That Made Trees Bloom"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "Quality"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "Expert Detectives"
       },
       {
         "id": "c7",
-        "title": "English Chapter 7"
+        "title": "The Invention of Vita-Wonk"
       },
       {
         "id": "c8",
-        "title": "English Chapter 8"
+        "title": "Fire: Friend and Foe"
       },
       {
         "id": "c9",
-        "title": "English Chapter 9"
+        "title": "A Bicycle in Good Repair"
       },
       {
         "id": "c10",
-        "title": "English Chapter 10"
+        "title": "The Story of Cricket"
       }
     ],
     "Social Science": [
       {
         "id": "c1",
-        "title": "Social Science Chapter 1"
+        "title": "Tracing Changes Through a Thousand Years"
       },
       {
         "id": "c2",
-        "title": "Social Science Chapter 2"
+        "title": "New Kings and Kingdoms"
       },
       {
         "id": "c3",
-        "title": "Social Science Chapter 3"
+        "title": "The Delhi Sultans"
       },
       {
         "id": "c4",
-        "title": "Social Science Chapter 4"
+        "title": "The Mughal Empire"
       },
       {
         "id": "c5",
-        "title": "Social Science Chapter 5"
+        "title": "Rulers and Buildings"
       },
       {
         "id": "c6",
-        "title": "Social Science Chapter 6"
+        "title": "Towns, Traders and Craftspersons"
       },
       {
         "id": "c7",
-        "title": "Social Science Chapter 7"
+        "title": "Tribes, Nomads and Settled Communities"
       },
       {
         "id": "c8",
-        "title": "Social Science Chapter 8"
+        "title": "Devotional Paths to the Divine"
       },
       {
         "id": "c9",
-        "title": "Social Science Chapter 9"
+        "title": "The Making of Regional Cultures"
       },
       {
         "id": "c10",
-        "title": "Social Science Chapter 10"
+        "title": "Eighteenth-Century Political Formations"
+      },
+      {
+        "id": "c11",
+        "title": "Environment"
+      },
+      {
+        "id": "c12",
+        "title": "Inside Our Earth"
+      },
+      {
+        "id": "c13",
+        "title": "Our Changing Earth"
+      },
+      {
+        "id": "c14",
+        "title": "Air"
+      },
+      {
+        "id": "c15",
+        "title": "Water"
+      },
+      {
+        "id": "c16",
+        "title": "Natural Vegetation and Wildlife"
+      },
+      {
+        "id": "c17",
+        "title": "Human Environment - Settlement, Transport and Communication"
+      },
+      {
+        "id": "c18",
+        "title": "Human Environment Interactions"
+      },
+      {
+        "id": "c19",
+        "title": "Life in the Temperate Grasslands"
+      },
+      {
+        "id": "c20",
+        "title": "Life in the Deserts"
+      },
+      {
+        "id": "c21",
+        "title": "On Equality"
+      },
+      {
+        "id": "c22",
+        "title": "Role of the Government in Health"
+      },
+      {
+        "id": "c23",
+        "title": "How the State Government Works"
+      },
+      {
+        "id": "c24",
+        "title": "Growing up as Boys and Girls"
+      },
+      {
+        "id": "c25",
+        "title": "Women Change the World"
+      },
+      {
+        "id": "c26",
+        "title": "Understanding Media"
+      },
+      {
+        "id": "c27",
+        "title": "Understanding Advertising"
+      },
+      {
+        "id": "c28",
+        "title": "Markets Around Us"
+      },
+      {
+        "id": "c29",
+        "title": "A Shirt in the Market"
+      },
+      {
+        "id": "c30",
+        "title": "Struggles for Equality"
       }
     ]
   },
@@ -1732,7 +2721,7 @@ export const chaptersData = {
     "Science": [
       {
         "id": "c1",
-        "title": "Food: Where Does It Come From?"
+        "title": "Food: Where Does it Come From?"
       },
       {
         "id": "c2",
@@ -1744,7 +2733,7 @@ export const chaptersData = {
       },
       {
         "id": "c4",
-        "title": "Sorting Materials Into Groups"
+        "title": "Sorting Materials into Groups"
       },
       {
         "id": "c5",
@@ -1777,90 +2766,182 @@ export const chaptersData = {
       {
         "id": "c12",
         "title": "Electricity and Circuits"
+      },
+      {
+        "id": "c13",
+        "title": "Fun with Magnets"
+      },
+      {
+        "id": "c14",
+        "title": "Water"
+      },
+      {
+        "id": "c15",
+        "title": "Air Around Us"
+      },
+      {
+        "id": "c16",
+        "title": "Garbage In, Garbage Out"
       }
     ],
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "Who Did Patrick's Homework?"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "How the Dog Found Himself a New Master!"
       },
       {
         "id": "c3",
-        "title": "English Chapter 3"
+        "title": "Taro's Reward"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "An Indian - American Woman in Space"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "A Different Kind of School"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "Who I Am"
       },
       {
         "id": "c7",
-        "title": "English Chapter 7"
+        "title": "Fair Play"
       },
       {
         "id": "c8",
-        "title": "English Chapter 8"
+        "title": "A Game of Chance"
       },
       {
         "id": "c9",
-        "title": "English Chapter 9"
+        "title": "Desert Animals"
       },
       {
         "id": "c10",
-        "title": "English Chapter 10"
+        "title": "The Banyan Tree"
       }
     ],
     "Social Science": [
       {
         "id": "c1",
-        "title": "Social Science Chapter 1"
+        "title": "What, Where, How and When?"
       },
       {
         "id": "c2",
-        "title": "Social Science Chapter 2"
+        "title": "On The Trail of the Earliest People"
       },
       {
         "id": "c3",
-        "title": "Social Science Chapter 3"
+        "title": "From Gathering to Growing Food"
       },
       {
         "id": "c4",
-        "title": "Social Science Chapter 4"
+        "title": "In the Earliest Cities"
       },
       {
         "id": "c5",
-        "title": "Social Science Chapter 5"
+        "title": "What Books and Burials Tell Us"
       },
       {
         "id": "c6",
-        "title": "Social Science Chapter 6"
+        "title": "Kingdoms, Kings and an Early Republic"
       },
       {
         "id": "c7",
-        "title": "Social Science Chapter 7"
+        "title": "New Questions and Ideas"
       },
       {
         "id": "c8",
-        "title": "Social Science Chapter 8"
+        "title": "Ashoka, The Emperor Who Gave Up War"
       },
       {
         "id": "c9",
-        "title": "Social Science Chapter 9"
+        "title": "Vital Villages, Thriving Towns"
       },
       {
         "id": "c10",
-        "title": "Social Science Chapter 10"
+        "title": "Traders, Kings and Pilgrims"
+      },
+      {
+        "id": "c11",
+        "title": "New Empires and Kingdoms"
+      },
+      {
+        "id": "c12",
+        "title": "Buildings, Paintings and Books"
+      },
+      {
+        "id": "c13",
+        "title": "The Earth in the Solar System"
+      },
+      {
+        "id": "c14",
+        "title": "Globe: Latitudes and Longitudes"
+      },
+      {
+        "id": "c15",
+        "title": "Motions of the Earth"
+      },
+      {
+        "id": "c16",
+        "title": "Maps"
+      },
+      {
+        "id": "c17",
+        "title": "Major Domains of the Earth"
+      },
+      {
+        "id": "c18",
+        "title": "Major Landforms of the Earth"
+      },
+      {
+        "id": "c19",
+        "title": "Our Country - India"
+      },
+      {
+        "id": "c20",
+        "title": "India: Climate, Vegetation and Wildlife"
+      },
+      {
+        "id": "c21",
+        "title": "Understanding Diversity"
+      },
+      {
+        "id": "c22",
+        "title": "Diversity and Discrimination"
+      },
+      {
+        "id": "c23",
+        "title": "What is Government?"
+      },
+      {
+        "id": "c24",
+        "title": "Key Elements of a Democratic Government"
+      },
+      {
+        "id": "c25",
+        "title": "Panchayati Raj"
+      },
+      {
+        "id": "c26",
+        "title": "Rural Administration"
+      },
+      {
+        "id": "c27",
+        "title": "Urban Administration"
+      },
+      {
+        "id": "c28",
+        "title": "Rural Livelihoods"
+      },
+      {
+        "id": "c29",
+        "title": "Urban Livelihoods"
       }
     ]
   },
@@ -1883,12 +2964,44 @@ export const chaptersData = {
         "title": "Parts and Wholes"
       },
       {
+        "id": "c5",
+        "title": "Does it Look the Same?"
+      },
+      {
         "id": "c6",
         "title": "Be My Multiple, I'll be Your Factor"
       },
       {
+        "id": "c7",
+        "title": "Can You See the Pattern?"
+      },
+      {
+        "id": "c8",
+        "title": "Mapping Your Way"
+      },
+      {
+        "id": "c9",
+        "title": "Boxes and Sketches"
+      },
+      {
+        "id": "c10",
+        "title": "Tenths and Hundredths"
+      },
+      {
+        "id": "c11",
+        "title": "Area and its Boundary"
+      },
+      {
+        "id": "c12",
+        "title": "Smart Charts"
+      },
+      {
         "id": "c13",
         "title": "Ways to Multiply and Divide"
+      },
+      {
+        "id": "c14",
+        "title": "How Big? How Heavy?"
       }
     ],
     "EVS": [
@@ -1984,55 +3097,143 @@ export const chaptersData = {
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "Ice-cream Man"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "Wonderful Waste!"
       },
       {
         "id": "c3",
-        "title": "English Chapter 3"
+        "title": "Teamwork"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "Flying Together"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "My Shadow"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "Robinson Crusoe"
       },
       {
         "id": "c7",
-        "title": "English Chapter 7"
+        "title": "Crying"
       },
       {
         "id": "c8",
-        "title": "English Chapter 8"
+        "title": "My Elder Brother"
       },
       {
         "id": "c9",
-        "title": "English Chapter 9"
+        "title": "The Lazy Frog"
       },
       {
         "id": "c10",
-        "title": "English Chapter 10"
+        "title": "Rip Van Winkle"
+      },
+      {
+        "id": "c11",
+        "title": "Class Discussion"
+      },
+      {
+        "id": "c12",
+        "title": "The Talkative Barber"
+      },
+      {
+        "id": "c13",
+        "title": "Topsy-turvy Land"
+      },
+      {
+        "id": "c14",
+        "title": "Gulliver's Travels"
+      },
+      {
+        "id": "c15",
+        "title": "Nobody's Friend"
+      },
+      {
+        "id": "c16",
+        "title": "The Little Bully"
+      },
+      {
+        "id": "c17",
+        "title": "Sing a Song of People"
+      },
+      {
+        "id": "c18",
+        "title": "Around the World"
+      },
+      {
+        "id": "c19",
+        "title": "Malu Bhalu"
+      },
+      {
+        "id": "c20",
+        "title": "Who Will be Ningthou?"
       }
     ]
   },
   "Class 4": {
     "Maths": [
       {
+        "id": "c1",
+        "title": "Building with Bricks"
+      },
+      {
+        "id": "c2",
+        "title": "Long and Short"
+      },
+      {
+        "id": "c3",
+        "title": "A Trip to Bhopal"
+      },
+      {
+        "id": "c4",
+        "title": "Tick-Tick-Tick"
+      },
+      {
+        "id": "c5",
+        "title": "The Way The World Looks"
+      },
+      {
+        "id": "c6",
+        "title": "The Junk Seller"
+      },
+      {
+        "id": "c7",
+        "title": "Jugs and Mugs"
+      },
+      {
+        "id": "c8",
+        "title": "Carts and Wheels"
+      },
+      {
         "id": "c9",
         "title": "Halves and Quarters"
       },
       {
+        "id": "c10",
+        "title": "Play with Patterns"
+      },
+      {
         "id": "c11",
         "title": "Tables and Shares"
+      },
+      {
+        "id": "c12",
+        "title": "How Heavy? How Light?"
+      },
+      {
+        "id": "c13",
+        "title": "A Field and Fences"
+      },
+      {
+        "id": "c14",
+        "title": "Smart Charts"
       }
     ],
     "EVS": [
@@ -2148,39 +3349,87 @@ export const chaptersData = {
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "Wake Up!"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "Neha's Alarm Clock"
+      },
+      {
+        "id": "c3",
+        "title": "Noses"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "The Little Fir Tree"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "Run!"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "Nasruddin's Aim"
       },
       {
         "id": "c7",
-        "title": "English Chapter 7"
+        "title": "Why?"
       },
       {
         "id": "c8",
-        "title": "English Chapter 8"
+        "title": "Alice in Wonderland"
       },
       {
         "id": "c9",
-        "title": "English Chapter 9"
+        "title": "Don't be Afraid of the Dark"
       },
       {
         "id": "c10",
-        "title": "English Chapter 10"
+        "title": "Helen Keller"
+      },
+      {
+        "id": "c11",
+        "title": "The Donkey"
+      },
+      {
+        "id": "c12",
+        "title": "I had a Little Pony"
+      },
+      {
+        "id": "c13",
+        "title": "The Milkman's Cow"
+      },
+      {
+        "id": "c14",
+        "title": "Hiawatha"
+      },
+      {
+        "id": "c15",
+        "title": "The Scholar's Mother Tongue"
+      },
+      {
+        "id": "c16",
+        "title": "A Watering Rhyme"
+      },
+      {
+        "id": "c17",
+        "title": "The Giving Tree"
+      },
+      {
+        "id": "c18",
+        "title": "Books"
+      },
+      {
+        "id": "c19",
+        "title": "Going to Buy a Book"
+      },
+      {
+        "id": "c20",
+        "title": "The Naughty Boy"
+      },
+      {
+        "id": "c21",
+        "title": "Pinocchio"
       }
     ]
   },
@@ -2189,6 +3438,10 @@ export const chaptersData = {
       {
         "id": "c1",
         "title": "Where to Look From"
+      },
+      {
+        "id": "c2",
+        "title": "Fun with Numbers"
       },
       {
         "id": "c3",
@@ -2229,6 +3482,10 @@ export const chaptersData = {
       {
         "id": "c12",
         "title": "Can We Share?"
+      },
+      {
+        "id": "c13",
+        "title": "Smart Charts!"
       },
       {
         "id": "c14",
@@ -2336,48 +3593,149 @@ export const chaptersData = {
     "English": [
       {
         "id": "c1",
-        "title": "English Chapter 1"
+        "title": "Good Morning"
       },
       {
         "id": "c2",
-        "title": "English Chapter 2"
+        "title": "The Magic Garden"
       },
       {
         "id": "c3",
-        "title": "English Chapter 3"
+        "title": "Bird Talk"
       },
       {
         "id": "c4",
-        "title": "English Chapter 4"
+        "title": "Nina and the Baby Sparrows"
       },
       {
         "id": "c5",
-        "title": "English Chapter 5"
+        "title": "Little by Little"
       },
       {
         "id": "c6",
-        "title": "English Chapter 6"
+        "title": "The Enormous Turnip"
       },
       {
         "id": "c7",
-        "title": "English Chapter 7"
+        "title": "Sea Song"
       },
       {
         "id": "c8",
-        "title": "English Chapter 8"
+        "title": "A Little Fish Story"
       },
       {
         "id": "c9",
-        "title": "English Chapter 9"
+        "title": "The Balloon Man"
       },
       {
         "id": "c10",
-        "title": "English Chapter 10"
+        "title": "The Yellow Butterfly"
+      },
+      {
+        "id": "c11",
+        "title": "Trains"
+      },
+      {
+        "id": "c12",
+        "title": "The Story of the Road"
+      },
+      {
+        "id": "c13",
+        "title": "Puppy and I"
+      },
+      {
+        "id": "c14",
+        "title": "Little Tiger, Big Tiger"
+      },
+      {
+        "id": "c15",
+        "title": "What's in the Mailbox?"
+      },
+      {
+        "id": "c16",
+        "title": "My Silly Sister"
+      },
+      {
+        "id": "c17",
+        "title": "Don't Tell"
+      },
+      {
+        "id": "c18",
+        "title": "He is My Brother"
+      },
+      {
+        "id": "c19",
+        "title": "How Creatures Move"
+      },
+      {
+        "id": "c20",
+        "title": "The Ship of the Desert"
       }
     ]
   },
   "Class 2": {
-    "Maths": [],
+    "Maths": [
+      {
+        "id": "c1",
+        "title": "What is Long, What is Round?"
+      },
+      {
+        "id": "c2",
+        "title": "Counting in Groups"
+      },
+      {
+        "id": "c3",
+        "title": "How Much Can You Carry?"
+      },
+      {
+        "id": "c4",
+        "title": "Counting in Tens"
+      },
+      {
+        "id": "c5",
+        "title": "Patterns"
+      },
+      {
+        "id": "c6",
+        "title": "Footprints"
+      },
+      {
+        "id": "c7",
+        "title": "Jugs and Mugs"
+      },
+      {
+        "id": "c8",
+        "title": "Tens and Ones"
+      },
+      {
+        "id": "c9",
+        "title": "My Funday"
+      },
+      {
+        "id": "c10",
+        "title": "Add Our Points"
+      },
+      {
+        "id": "c11",
+        "title": "Lines and Lines"
+      },
+      {
+        "id": "c12",
+        "title": "Give and Take"
+      },
+      {
+        "id": "c13",
+        "title": "The Longest Step"
+      },
+      {
+        "id": "c14",
+        "title": "Birds Come, Birds Go"
+      },
+      {
+        "id": "c15",
+        "title": "How Many Ponytails?"
+      }
+    ],
     "English": [
       {
         "id": "c1",
@@ -2420,12 +3778,44 @@ export const chaptersData = {
         "title": "Funny Bunny"
       },
       {
+        "id": "c11",
+        "title": "Mr. Nobody"
+      },
+      {
         "id": "c12",
         "title": "Curlylocks and the Three Bears"
       },
       {
         "id": "c13",
         "title": "On My Blackboard I can Draw"
+      },
+      {
+        "id": "c14",
+        "title": "Make it Shorter"
+      },
+      {
+        "id": "c15",
+        "title": "I am the Music Man"
+      },
+      {
+        "id": "c16",
+        "title": "The Mumbai Musicians"
+      },
+      {
+        "id": "c17",
+        "title": "Granny Granny Please Comb my Hair"
+      },
+      {
+        "id": "c18",
+        "title": "The Magic Porridge Pot"
+      },
+      {
+        "id": "c19",
+        "title": "Strange Talk"
+      },
+      {
+        "id": "c20",
+        "title": "The Grasshopper and the Ant"
       }
     ]
   },
@@ -2444,12 +3834,40 @@ export const chaptersData = {
         "title": "Addition"
       },
       {
+        "id": "c4",
+        "title": "Subtraction"
+      },
+      {
         "id": "c5",
         "title": "Numbers from Ten to Twenty"
       },
       {
+        "id": "c6",
+        "title": "Time"
+      },
+      {
+        "id": "c7",
+        "title": "Measurement"
+      },
+      {
+        "id": "c8",
+        "title": "Numbers from Twenty-one to Fifty"
+      },
+      {
+        "id": "c9",
+        "title": "Data Handling"
+      },
+      {
         "id": "c10",
         "title": "Patterns"
+      },
+      {
+        "id": "c11",
+        "title": "Numbers"
+      },
+      {
+        "id": "c12",
+        "title": "Money"
       },
       {
         "id": "c13",
@@ -2496,14 +3914,161 @@ export const chaptersData = {
       {
         "id": "c10",
         "title": "Circle"
+      },
+      {
+        "id": "c11",
+        "title": "If I Were an Apple"
+      },
+      {
+        "id": "c12",
+        "title": "Our Tree"
+      },
+      {
+        "id": "c13",
+        "title": "A Kite"
+      },
+      {
+        "id": "c14",
+        "title": "Sundari"
+      },
+      {
+        "id": "c15",
+        "title": "A Little Turtle"
+      },
+      {
+        "id": "c16",
+        "title": "The Tiger and the Mosquito"
+      },
+      {
+        "id": "c17",
+        "title": "Clouds"
+      },
+      {
+        "id": "c18",
+        "title": "Anandi's Rainbow"
+      },
+      {
+        "id": "c19",
+        "title": "Flying-Man"
+      },
+      {
+        "id": "c20",
+        "title": "The Tailor and his Friend"
       }
     ]
   },
   "NCERT Books": {
-    "All Books PDF": []
+    "All Books PDF": [
+      {
+        "id": "c1",
+        "title": "Complete Class 12 Textbooks"
+      },
+      {
+        "id": "c2",
+        "title": "Complete Class 11 Textbooks"
+      },
+      {
+        "id": "c3",
+        "title": "Complete Class 10 Textbooks"
+      },
+      {
+        "id": "c4",
+        "title": "Complete Class 9 Textbooks"
+      },
+      {
+        "id": "c5",
+        "title": "Complete Class 8 Textbooks"
+      },
+      {
+        "id": "c6",
+        "title": "Complete Class 7 Textbooks"
+      },
+      {
+        "id": "c7",
+        "title": "Complete Class 6 Textbooks"
+      },
+      {
+        "id": "c8",
+        "title": "Complete Class 5 Textbooks"
+      },
+      {
+        "id": "c9",
+        "title": "Complete Class 4 Textbooks"
+      },
+      {
+        "id": "c10",
+        "title": "Complete Class 3 Textbooks"
+      },
+      {
+        "id": "c11",
+        "title": "Complete Class 2 Textbooks"
+      },
+      {
+        "id": "c12",
+        "title": "Complete Class 1 Textbooks"
+      }
+    ]
   },
   "NCERT Exempler": {
-    "Maths Exemplar": [],
-    "Science Exemplar": []
+    "Maths Exemplar": [
+      {
+        "id": "c1",
+        "title": "Class 12 Maths Exemplar Solutions"
+      },
+      {
+        "id": "c2",
+        "title": "Class 11 Maths Exemplar Solutions"
+      },
+      {
+        "id": "c3",
+        "title": "Class 10 Maths Exemplar Solutions"
+      },
+      {
+        "id": "c4",
+        "title": "Class 9 Maths Exemplar Solutions"
+      },
+      {
+        "id": "c5",
+        "title": "Class 8 Maths Exemplar Solutions"
+      },
+      {
+        "id": "c6",
+        "title": "Class 7 Maths Exemplar Solutions"
+      },
+      {
+        "id": "c7",
+        "title": "Class 6 Maths Exemplar Solutions"
+      }
+    ],
+    "Science Exemplar": [
+      {
+        "id": "c1",
+        "title": "Class 12 Science Exemplar Solutions"
+      },
+      {
+        "id": "c2",
+        "title": "Class 11 Science Exemplar Solutions"
+      },
+      {
+        "id": "c3",
+        "title": "Class 10 Science Exemplar Solutions"
+      },
+      {
+        "id": "c4",
+        "title": "Class 9 Science Exemplar Solutions"
+      },
+      {
+        "id": "c5",
+        "title": "Class 8 Science Exemplar Solutions"
+      },
+      {
+        "id": "c6",
+        "title": "Class 7 Science Exemplar Solutions"
+      },
+      {
+        "id": "c7",
+        "title": "Class 6 Science Exemplar Solutions"
+      }
+    ]
   }
 };
