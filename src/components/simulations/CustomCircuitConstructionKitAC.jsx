@@ -215,7 +215,7 @@ export default function CustomCircuitConstructionKitAC({
     ctx.clearRect(0, 0, width, height);
     const data = dataRef.current;
     if (data.length === 0) return;
-    const drawGraph = (yFunc, color, label, yOffset, scale) => {
+    const drawGraph = (yFunc, color, label, yOffset, scale, labelOffset = 0) => {
       ctx.beginPath();
       ctx.strokeStyle = color;
       ctx.lineWidth = 2;
@@ -227,7 +227,7 @@ export default function CustomCircuitConstructionKitAC({
       ctx.stroke();
       ctx.fillStyle = color;
       ctx.font = '14px Arial';
-      ctx.fillText(label, 10, yOffset - 40);
+      ctx.fillText(label, 10, yOffset - 40 + labelOffset);
       ctx.beginPath();
       ctx.strokeStyle = '#444';
       ctx.lineWidth = 1;
@@ -235,9 +235,9 @@ export default function CustomCircuitConstructionKitAC({
       ctx.lineTo(width, yOffset);
       ctx.stroke();
     };
-    drawGraph(d => d.v1, '#ff5555', 'Source Voltage (V)', height / 4, 10);
-    drawGraph(d => d.v3, '#55ff55', 'Capacitor Voltage (V)', height / 4, 10);
-    drawGraph(d => -d.i, '#5555ff', 'Circuit Current (I)', 3 * height / 4, 50);
+    drawGraph(d => d.v1, '#ff5555', 'Source Voltage (V)', height / 4, 10, 0);
+    drawGraph(d => d.v3, '#55ff55', 'Capacitor Voltage (V)', height / 4, 10, 20);
+    drawGraph(d => -d.i, '#5555ff', 'Circuit Current (I)', 3 * height / 4, 20, 0);
   };
   const updateComponent = (index, field, value) => {
     const newComponents = [...components];

@@ -1603,7 +1603,7 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
         border: '1px solid rgba(255,255,255,0.1)',
         backdropFilter: 'blur(12px)'
       }}>
-          <canvas ref={canvasRef} width={800} height={500} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp} className="cursor-crosshair block" />
+          <canvas ref={canvasRef} width={800} height={500} style={{ width: "100%", height: "100%", maxHeight: "100%", objectFit: "contain" }} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp} className="cursor-crosshair block" />
         </div>
       </div>
       
