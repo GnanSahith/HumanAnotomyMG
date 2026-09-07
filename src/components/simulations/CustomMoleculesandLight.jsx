@@ -802,6 +802,38 @@ const darkenColor = (color, pct) => {
   }
   return color;
 };
+
+const drawSpring = (ctx, x1, y1, x2, y2, coils, radius, color) => {
+    ctx.beginPath();
+    ctx.moveTo(x1, y1);
+    ctx.lineTo(x2, y2);
+    ctx.strokeStyle = color;
+    ctx.lineWidth = radius;
+    ctx.lineCap = 'round';
+    ctx.stroke();
+};
+
+const drawDoubleBondSpring = (ctx, x1, y1, x2, y2, color) => {
+    const dx = x2 - x1;
+    const dy = y2 - y1;
+    const len = Math.sqrt(dx * dx + dy * dy);
+    const nx = -dy / len * 4;
+    const ny = dx / len * 4;
+    drawSpring(ctx, x1 + nx, y1 + ny, x2 + nx, y2 + ny, 9, 4, color);
+    drawSpring(ctx, x1 - nx, y1 - ny, x2 - nx, y2 - ny, 9, 4, color);
+};
+
+const drawTripleBondSpring = (ctx, x1, y1, x2, y2, color) => {
+    const dx = x2 - x1;
+    const dy = y2 - y1;
+    const len = Math.sqrt(dx * dx + dy * dy);
+    const nx = -dy / len * 6;
+    const ny = dx / len * 6;
+    drawSpring(ctx, x1, y1, x2, y2, 9, 4, color);
+    drawSpring(ctx, x1 + nx, y1 + ny, x2 + nx, y2 + ny, 9, 4, color);
+    drawSpring(ctx, x1 - nx, y1 - ny, x2 - nx, y2 - ny, 9, 4, color);
+};
+
 const draw = (state, canvas, ctx, draggedIndex = null) => {
   const w = canvas.width;
   const h = canvas.height;
