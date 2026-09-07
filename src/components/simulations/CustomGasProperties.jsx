@@ -95,7 +95,7 @@ export default function CustomGasProperties({
     }
     if (!isPlaying) {
       lastTimeRef.current = time;
-      requestRef.current = requestAnimationFrame(updatePhysics);
+      /* removed recursive RAF */
       return;
     }
     const dt = Math.min((time - lastTimeRef.current) / 16, 2); // Cap dt
@@ -192,7 +192,7 @@ export default function CustomGasProperties({
     let calcPressure = avgMomentum * 10 / (volumeWidth * containerHeight);
     setPressure(calcPressure.toFixed(2));
     renderCanvas();
-    requestRef.current = requestAnimationFrame(updatePhysics);
+    /* removed recursive RAF */
   };
   const renderCanvas = () => {
     const canvas = canvasRef.current;
@@ -223,7 +223,7 @@ export default function CustomGasProperties({
     ctx.fillRect(volumeWidth - 10, containerHeight / 2 - 20, 20, 40);
   };
   useEffect(() => {
-    requestRef.current = requestAnimationFrame(updatePhysics);
+    /* removed recursive RAF */
     return () => {
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };

@@ -35,7 +35,7 @@ export default function CustomForcesAndMotion({
     }
     if (!lastTimeRef.current) {
       lastTimeRef.current = time;
-      requestRef.current = requestAnimationFrame(updatePhysics);
+      /* removed recursive RAF */
       return;
     }
     const dt = (time - lastTimeRef.current) / 1000;
@@ -78,13 +78,13 @@ export default function CustomForcesAndMotion({
     setVelocityVisual(velRef.current);
     setFrictionForceVisual(frictionForce);
     setNetForceVisual(netForce);
-    requestRef.current = requestAnimationFrame(updatePhysics);
+    /* removed recursive RAF */
   };
 
   // Run physics infinitely
   useEffect(() => {
     lastTimeRef.current = performance.now();
-    requestRef.current = requestAnimationFrame(updatePhysics);
+    /* removed recursive RAF */
     return () => {
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };

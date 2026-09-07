@@ -442,7 +442,9 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
     }, [loggedInUsername]);
 
     const simArray = React.useMemo(() => {
-        let arr = Object.entries(mathSimulations).map(([id, sim]) => ({ ...sim, id }));
+        let source = mathSimulations.default || mathSimulations;
+        if (!source || typeof source !== 'object') return [];
+        let arr = Object.entries(source).map(([id, sim]) => ({ ...sim, id }));
         return arr;
     }, []);
 

@@ -2,7 +2,7 @@ export default {
   "1": [
     {
       "q": "1. What was the focus of the economic policies pursued by the colonial government in India? What were the impacts of these policies?",
-      "a": "The main aim of the economic policies adopted by the colonial government was to make India just a supplier to Britain\u2019s flourishing industries. The policies were made to benefit and strengthen their own country. They completely ignored the interests of the Indian economy. These discriminatory policies made the Indian economy a supplier to British economy and consumer of finished goods of British economy. The effects of these policies are given below:"
+      "a": "The main aim of the economic policies adopted by the colonial government was to make India just a supplier to Britain’s flourishing industries. The policies were made to benefit and strengthen their own country. They completely ignored the interests of the Indian economy. These discriminatory policies made the Indian economy a supplier to British economy and consumer of finished goods of British economy. The effects of these policies are given below:"
     },
     {
       "q": "1. Low Economic Development\nDuring British rule, there was a very little economic development. This was because the British government was more focused on the promotion of their own economic interest. Consequently, the colonial rule converted India's agriculture sector into a supplier of raw materials for the British industrial base. This affected the production of the agricultural sector of India. It also destroyed the small manufacturing industries such as handicrafts and cotton industries. These manufacturing units suffered a cut throat competition from the British machine made textiles and handlooms.",
@@ -22,7 +22,7 @@ export default {
     },
     {
       "q": "2. Name some notable economists who estimated India's per capita income during the colonial period.",
-      "a": "The British government was never interested in upliftment of people of our country. They didn\u2019t take any initiative to measure India's national and per capita income. There were some attempts by economists of that time to estimate India's per capita income and national income during the colonial rule, but the figures were contradictory. The following are the names of some of the notable economists who were engaged in estimation of national income and per capita income:\na. Dadabhai Naroji\nb. William Digbay\nc. Findlay Shirras\nd. V.K.R.V Rao\ne. R.C. Desai\nAs part of the development process, an essential measurement during the colonial period was made by V.K.R.V Rao. According to these studies, the Indian economy had an average annual growth rate of half a percent in the period 1900-50."
+      "a": "The British government was never interested in upliftment of people of our country. They didn’t take any initiative to measure India's national and per capita income. There were some attempts by economists of that time to estimate India's per capita income and national income during the colonial rule, but the figures were contradictory. The following are the names of some of the notable economists who were engaged in estimation of national income and per capita income:\na. Dadabhai Naroji\nb. William Digbay\nc. Findlay Shirras\nd. V.K.R.V Rao\ne. R.C. Desai\nAs part of the development process, an essential measurement during the colonial period was made by V.K.R.V Rao. According to these studies, the Indian economy had an average annual growth rate of half a percent in the period 1900-50."
     },
     {
       "q": "3. What were the main causes of India's agricultural stagnation during the colonial period?",
@@ -102,11 +102,11 @@ export default {
     },
     {
       "q": "10. Which is regarded as the defining year to mark the demographic transition from its first to the second decisive stage?",
-      "a": "It is considered the defining year or the 'Year of Great Divide' because prior to 1921, India's population growth was erratic.\u00a0India was in the first phase of demographic transition till 1921 that was characterised by high birth rate and high death rate.The period before 1921 was characterized by low survival rates (or low life expectancy), which were nearly 8 per thousand annually. Therefore, the rate of population growth was stagnant. After 1921, population of Indian growth never declined and showed a consistent increment."
+      "a": "It is considered the defining year or the 'Year of Great Divide' because prior to 1921, India's population growth was erratic. India was in the first phase of demographic transition till 1921 that was characterised by high birth rate and high death rate.The period before 1921 was characterized by low survival rates (or low life expectancy), which were nearly 8 per thousand annually. Therefore, the rate of population growth was stagnant. After 1921, population of Indian growth never declined and showed a consistent increment."
     },
     {
       "q": "11. Give a quantitative appraisal of India's demographic profile during the colonial period.",
-      "a": "During the British rule, India's demographic conditions depict our economy as stagnant and backward. There was a high birth rate of 48 per thousand and a high death rate of 40 per thousand. Population growth was stagnant due to high birth and death rates. A very high infant mortality rate of 218 per thousand was also recorded. Approximately 32 years ago, the life expectancy rate was 32, and since then it has increased to 63.5 years. Literacy rates were below 16 percent, which indicates social backwardness and gender discrimination in the economy. According to the above figures, we can infer that India had a low standard of living, a low standard of living and a low rate of survival. India's demographic situation was primarily caused by a lack of health care facilities and a lack of health awareness. The Indian\u2019s standard of living was so lowthat people were not getting basic amenities like food, clothes and shelter. Moreover, some parts of India came under severe famine conditions. The famines were so severe that millions died."
+      "a": "During the British rule, India's demographic conditions depict our economy as stagnant and backward. There was a high birth rate of 48 per thousand and a high death rate of 40 per thousand. Population growth was stagnant due to high birth and death rates. A very high infant mortality rate of 218 per thousand was also recorded. Approximately 32 years ago, the life expectancy rate was 32, and since then it has increased to 63.5 years. Literacy rates were below 16 percent, which indicates social backwardness and gender discrimination in the economy. According to the above figures, we can infer that India had a low standard of living, a low standard of living and a low rate of survival. India's demographic situation was primarily caused by a lack of health care facilities and a lack of health awareness. The Indian’s standard of living was so lowthat people were not getting basic amenities like food, clothes and shelter. Moreover, some parts of India came under severe famine conditions. The famines were so severe that millions died."
     },
     {
       "q": "12. Highlight the salient features of India's pre-independence occupational structure.",
@@ -173,7 +173,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "5. The western culture was promoted:\nIntroducing English as the language of education gave birth to a westernized form of education. The English language provided a window to the rest of the world. As a result, India is now integrated into the global economy.\nTopics Covered in Economics Class 11 Chapter 1 Indian Economy on the Eve of Independence\nS.No.\nTopics of\u00a0Indian Economy on the Eve of Independence\n1\nIntroduction\n2\nLow Level of Economic Development Under The Colonial Rule\n3\nAgricultural Sector\n4\nIndustrial Sector\n5\nForeign Trade\n6\nDemographic Condition\n7\nOccupational Structure\n8\nInfrastructure\n9\nConclusion\nBenefits of\u00a0Referring to Class 11th Economics Chapter 1 Question Answer\nClass 11 Commerce Economics Chapter 1 Answers explains about the historical economic conditions of India, that makes students understand the roots of current economic policies and challenges.\nBy learning the underdeveloped industrial sector of pre-independent India in Chapter 1 Economics Class 11 helps students recognize the significance of industrial growth in nation-building.\nWith demographic issues such as high population growth and low life expectancy, students can better appreciate current health and population policies.\nRealising the challenges faced at independence helps students understand why economic planning was necessary and the importance of strategic planning in economic development.\nLinking historical economic conditions with current scenarios helps students make informed comparisons and understand the continuity and changes in economic policies and practices.\nBy\u00a0studying 11th Commerce Economics Chapter 1 Exercise on British economic policies and their impact on India, students critically evaluate economic policies and their long-term effects on society.\nImportant Study Material Links for Class 11 Economics Chapter 1\nS. No\nImportant Study Materials Links for Class 11 Economics Chapter 1\n1\nClass 11 Indian Economy on The Eve of Independence Revision Notes\n2\nClass 11 Indian Economy on The Eve of Independence Important Questions\nConclusion\nNCERT Solutions for Class 11 Economics Chapter 1\u00a0 Indian Economy on the Eve of Independence provides a detailed look into the economic conditions of India just before independence. It is important for students to focus on understanding the challenges faced by the agricultural and industrial sectors, the impact of British economic policies, and the overall socio-economic conditions. By understanding the Economics Class 11 Chapter 1 Questions and Answers PDF, students can appreciate the historical context of India's economic development and the reasons behind the need for planned economic growth post-independence. In previous years' question papers, around 4\u20135 questions have been asked from this chapter, including the conditions of agriculture, the impact of colonial policies, and the significance of the economic drain.\nNCERT Solutions for Class 11 Economics Other Chapter-Wise Links - Download the FREE PDF\nS. No\nNCERT Solutions Class 11 Economics Chapter-wise Links\n1\nChapter 2 - Indian Economy 1950-1990 Solutions\n2\nChapter 3 - Liberalisation, Privatisation and Globalisation Solutions\n3\nChapter 4 - Human Capital Formation in India Solutions\n4\nChapter 5 - Rural Development Solutions\n5\nChapter 6 - Employment: Growth, Informalisation and Other Issues Solutions\n6\nChapter 7 - Environment and Sustainable Development Solutions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Solutions\nRelated Important Links for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics",
+      "q": "5. The western culture was promoted:\nIntroducing English as the language of education gave birth to a westernized form of education. The English language provided a window to the rest of the world. As a result, India is now integrated into the global economy.\nTopics Covered in Economics Class 11 Chapter 1 Indian Economy on the Eve of Independence\nS.No.\nTopics of Indian Economy on the Eve of Independence\n1\nIntroduction\n2\nLow Level of Economic Development Under The Colonial Rule\n3\nAgricultural Sector\n4\nIndustrial Sector\n5\nForeign Trade\n6\nDemographic Condition\n7\nOccupational Structure\n8\nInfrastructure\n9\nConclusion\nBenefits of Referring to Class 11th Economics Chapter 1 Question Answer\nClass 11 Commerce Economics Chapter 1 Answers explains about the historical economic conditions of India, that makes students understand the roots of current economic policies and challenges.\nBy learning the underdeveloped industrial sector of pre-independent India in Chapter 1 Economics Class 11 helps students recognize the significance of industrial growth in nation-building.\nWith demographic issues such as high population growth and low life expectancy, students can better appreciate current health and population policies.\nRealising the challenges faced at independence helps students understand why economic planning was necessary and the importance of strategic planning in economic development.\nLinking historical economic conditions with current scenarios helps students make informed comparisons and understand the continuity and changes in economic policies and practices.\nBy studying 11th Commerce Economics Chapter 1 Exercise on British economic policies and their impact on India, students critically evaluate economic policies and their long-term effects on society.\nImportant Study Material Links for Class 11 Economics Chapter 1\nS. No\nImportant Study Materials Links for Class 11 Economics Chapter 1\n1",
       "a": "Detailed solution available."
     },
     {
@@ -189,7 +189,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
+      "q": "4.\nCBSE",
       "a": "Detailed solution available."
     },
     {
@@ -395,7 +395,7 @@ export default {
       "a": "Despite the fact that mismanagement and poor planning in PSUs can lead to resource misallocation and, as a result, waste of scarce resources and funds, PSUs can have certain positive and helpful aspects."
     },
     {
-      "q": "1. Improving Nation\u2019s Welfare:\nThe PSU's primary goal was to provide commodities and services that improved the country's overall welfare. For instance, schools, hospitals, and power, to name a few. These services not only improve the well-being of the country's citizens, but they also improve the country's economic growth and development prospects.",
+      "q": "1. Improving Nation’s Welfare:\nThe PSU's primary goal was to provide commodities and services that improved the country's overall welfare. For instance, schools, hospitals, and power, to name a few. These services not only improve the well-being of the country's citizens, but they also improve the country's economic growth and development prospects.",
       "a": "Detailed solution available."
     },
     {
@@ -467,12 +467,12 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nSubsidy\nF.\nThe monetary assistance given by government for production activities.\nChapter 2 Indian Economy Class 12 Indian Economy 1950 \u2013 1990 \u2013 An Overview\nThe Economic Status of India During the Colonial Rule\nAgrarian Economy\nClass 11 Economics Chapter 2 NCERT Solutions states that the Indian economy was a largely based agrarian economy i.e. 85% of the population of India was involved in the agriculture sector.\nHowever, the agriculture sector started facing stagnation, unusual deterioration after the colonial rule began. The productivity level all over the country specifically in this sector started declining at a fast pace.\nChapter 2 Indian Economy Class 11 solutions should be downloaded by students. The chapter also mentions the land settlement techniques which were used by the colonial government, particularly the zamindari system.\nThe Colonial government also adopted many revenue settlement systems which were responsible for many zamindars losing the right over their land. At the same time, there has been much evidence of an increase in revenue in some regions of India due to the commercialisation of agriculture in these regions.\nIndustrial Sector\nChapter 2 Indian Economy Class 11 goes into detail regarding the poor condition of the capital goods industry in India during colonial rule. Capital goods industry is the industry which manufacturers and produces the machine tools which are needed in the economy.\nIndian Economic Development Class 11 NCERT Solutions Chapter 2 states that during this time of colonial rule, the Gross Domestic Product (GDP) and the Gross Value Added (GVA) remained extremely small.\nForeign Trade\nEconomics Chapter 2 Class 11 states that India was a primary exporter of various goods such as silk, wool, cotton, sugar, indigo, jute etc.\nThe British maintained monopoly over the production of various exported goods from India.\nNCERT Solutions for Class 11 Economics Chapter 2 mentions that India\u2019s foreign trade was restricted to only British colonial countries and a few other countries such as China, Sri Lanka, and Persia in Iran.\nDemographic Conditions\nThe first stage of the demographic transition of India was before the starting of 1921. After 1921, the second age of demographic transition began according to Ch2 Eco Class 11.\nHowever, note that the rate of population growth of India was not high during this period. The literacy level of India remained very low, less than 16%.\nThe public healthcare system was even worse and the facilities were unavailable to the majority of the Indian population.\nIndian Economy Class 11 NCERT Solutions also mention that the mortality rate was extremely high during this period, particularly the infant mortality rate in India.\nThe life expectancy was only 44 years which is extremely low compared to the 70 years currently.\nAre There Any Positive Contributions Made by the Britishers?\nMany positive contributions were made by the Britishers but that was also for their benefits. The major one among them was the commercialisation of the agriculture sector. Some of the other good contributions include:\nIntroduction of railways\nInfrastructure development by the colonial government\nThe legal system of India\nSelf-sufficiency in the food grain production\nBetter transportation system made the Britishers\nFamine control was also maintained by the Britishers\nMonetary economy\nConclusion\nDuring the colonial period, Indian development slowed down by a major factor in every industrial sector of the country. NCERT Solutions for Class 11 Economics Chapter 2 go in-depth into the repercussions of the British rule in every sector of India.\nFun Fact\nThe Indian economy has grown a lot in the past years. It has sextupled in size in 20 years only\nIt is expected that the Indian economy will surpass France and UK next year\nEven after such rapid growth, India\u2019s economy lacks behind the state of California by 8.1%\nThe Indian economy has shown the fastest growth in the economy in the last year\n9% of India\u2019s GDP goes to violence, external threats, etc.\nIndia ranks 70th in the Average annual income of every country\nEven after the end of colonial rule, India is still based on agriculture. The agriculture sector accounts for about 50% of jobs in the country\nSolved Example",
+      "q": "6.\nSubsidy\nF.\nThe monetary assistance given by government for production activities.\nChapter 2 Indian Economy Class 12 Indian Economy 1950 – 1990 – An Overview\nThe Economic Status of India During the Colonial Rule\nAgrarian Economy",
       "a": "Detailed solution available."
     },
     {
       "q": "1. What Was the Focus of the British Rule in the Economic Policies of India?",
-      "a": "NCERT Solution Class 11 Economics Chapter 2 states that the colonial government was very much concerned with the protection and promotion of the economy of Britain and not India. The colonial government never made any sincere attempt to calculate the GDP of the country. Most of India\u2019s wealth went to Britain.\nImportant Study Material Links for Class 11 Economics Chapter 2\nS. No\nImportant Study Materials Links for Class 11 Economics Chapter 2\n1\nClass 11 Indian Economy 1950 - 1990 Revision Notes\n2\nClass 11 Indian Economy 1950 - 1990 Important Questions\nNCERT Solutions for Class 11 Economics Other Chapter-Wise Links - Download the FREE PDF\nS. No\nNCERT Solutions Class 11 Economics Chapter-wise Links\n1\nChapter 1 - Indian Economy on the Eve of Independence Solutions\n2\nChapter 3 - Liberalisation, Privatisation and Globalisation Solutions\n3\nChapter 4 - Human Capital Formation in India Solutions\n4\nChapter 5 - Rural Development Solutions\n5\nChapter 6 - Employment: Growth, Informalisation and Other Issues Solutions\n6\nChapter 7 - Environment and Sustainable Development Solutions\n7\nChapter 8 - Comparative Development Experiences of India and Its Neighbours Solutions\nRelated Important Links for Class 11 Economics\nS.No\nStudy Material for Class 11 Economics"
+      "a": "NCERT Solution Class 11 Economics Chapter 2 states that the colonial government was very much concerned with the protection and promotion of the economy of Britain and not India. The colonial government never made any sincere attempt to calculate the GDP of the country. Most of India’s wealth went to Britain.\nImportant Study Material Links for Class 11 Economics Chapter 2\nS. No\nImportant Study Materials Links for Class 11 Economics Chapter 2\n1"
     },
     {
       "q": "1.\nCBSE Class 11 Economics NCERT Books",
@@ -487,7 +487,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
+      "q": "4.\nCBSE",
       "a": "Detailed solution available."
     },
     {
@@ -517,7 +517,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\u00a0 Sick Public Sector Undertakings\n: Public Sector Undertakings were assigned the primary responsibility of industrialization and the elimination of income disparity and poverty. However, in the years thereafter, PSUs have failed to accomplish these functions efficiently and effectively. The government's budget was burdened even more by the ill PSUs.",
+      "q": "3.  Sick Public Sector Undertakings\n: Public Sector Undertakings were assigned the primary responsibility of industrialization and the elimination of income disparity and poverty. However, in the years thereafter, PSUs have failed to accomplish these functions efficiently and effectively. The government's budget was burdened even more by the ill PSUs.",
       "a": "Detailed solution available."
     },
     {
@@ -718,7 +718,7 @@ export default {
     },
     {
       "q": "16. Discuss economic reforms in India in the light of social justice and welfare.",
-      "a": "Reforms have resulted in an increase in the income of the already wealthy. Only high-income groups saw an increase in the quality of their consumption; economic progress did not reach the poorer portions of society.\nIndia was able to enter and compete in foreign markets thanks to economic changes. This made it easier to move products and services across international borders. Furthermore, greater inflows of foreign money and investment into India have decreased the need for foreign exchange to finance the purchase of complex and advanced technology into the country. Furthermore, India's economic growth and GDP increased by many folds as a result of the outsourcing and service industry boom. On the other hand, agriculture, which employed a large section of the population, was unaffected by the economic reforms. The reforms also favoured the high-income population at the expense of their low-income counterparts. As a result, economic and social disparities between different segments of the population have grown and continue to grow.\nMoreover, economic reforms focused on places that were well connected to major cities, leaving isolated and rural areas undeveloped. As a result, there were significant geographical differences. The rise in the service sector, particularly in the form of high-quality education, superior health-care facilities, information technology, tourism, multiplex theatres, and other amenities, was out of reach for the poor. The populace working in agriculture and related industries has yet to reap the benefits of improved technology and modern practises. As a result, economic reforms have failed to promote social justice and improve the wellbeing of India's general populace.\nClass 11 Economics Chapter 3 Topics\nWhy Is it Mandatory for Every Country to Become a Member of the WTO?\nWTO stands for World Trade Organisation which is a global trade organisation that was set up to give equal trade opportunities for all countries across the globe. WTO\u00a0 has its headquarters in Geneva, Switzerland. At present, WTO has about 164 member countries. India officially became a member of the WTO on January 1, 1995. WTO works to abolish tax barriers between countries and encourage healthy competition in trade. It also plays a role in helping needy countries across the boundaries. Members of WTO will have an important role in framing trade policies, regulations, safeguarding boundaries and advocating reforms in developing nations. In this, WTO provides scope to share resources optimally across the globe.\n(Image to be added soon)\nWhat is RBI and Explain Its Role in Other Commercial Banks?\nRBI stands for Reserve Bank of India and it was established on April 1, 1934.\u00a0 RBI is the central bank of India which deals with the issue and supply of Indian Rupees. All the other banks and financial organisations in India are controlled by norms and conditions introduced by RBI. Approval from RBI is needed by the banks for starting new branches. RBI holds a fixed amount of money in liquid form which is not in supply. RBI is also given the duty of fixing the interest rates of loans and deposits in the banks. In the case of demonetisation, the new notes are printed and supplied by RBI. Credit Rates for different purposes for each customer is fixed by them.\nWhy Were Reforms Introduced in India?\nEconomic reforms were introduced in India in 1991 under the name New Industrial Policy. The policy was a mitigation plan to save India from an economic crisis.\u00a0 India had rising debts with foreign countries which led to an exponential increase in the price of essential goods. The economic reform abolished license to all projects except for 18 industries. The focus was shifted from cultivating staple crops to cultivating cash crops. The public sector was narrowed down since they were a liability and the private sector which the revenue generator was given opportunities in the core industries. The government took special care to ensure that foreign investment was encouraged in India. New initiatives were taken to ensure increased export of goods and regulations were reduced for Foreign trade.\nHope you got some basic information about Economic Development in India. For detailed solutions, download NCERT Solutions for Class 11 Economics Chapter 3 free PDF.\nHow will the Mentors at Vedantu Help you Improve yourself?\nMentors at Vedantu have drafted Class 11 Economics Chapter 3 Solutions PDF which has clear explanations provided which enables students to improve themselves. Students can also clear doubts from the mentors who have years of teaching experience. Mentors are also available on video conferences which will help students learn on a one-to-one basis to further make the students understand the topics.\nSolved Example\nQ1) Why Were the Economic Reforms Introduced in 1991?"
+      "a": "Reforms have resulted in an increase in the income of the already wealthy. Only high-income groups saw an increase in the quality of their consumption; economic progress did not reach the poorer portions of society.\nIndia was able to enter and compete in foreign markets thanks to economic changes. This made it easier to move products and services across international borders. Furthermore, greater inflows of foreign money and investment into India have decreased the need for foreign exchange to finance the purchase of complex and advanced technology into the country. Furthermore, India's economic growth and GDP increased by many folds as a result of the outsourcing and service industry boom. On the other hand, agriculture, which employed a large section of the population, was unaffected by the economic reforms. The reforms also favoured the high-income population at the expense of their low-income counterparts. As a result, economic and social disparities between different segments of the population have grown and continue to grow.\nMoreover, economic reforms focused on places that were well connected to major cities, leaving isolated and rural areas undeveloped. As a result, there were significant geographical differences. The rise in the service sector, particularly in the form of high-quality education, superior health-care facilities, information technology, tourism, multiplex theatres, and other amenities, was out of reach for the poor. The populace working in agriculture and related industries has yet to reap the benefits of improved technology and modern practises. As a result, economic reforms have failed to promote social justice and improve the wellbeing of India's general populace.\nClass 11 Economics Chapter 3 Topics\nWhy Is it Mandatory for Every Country to Become a Member of the WTO?\nWTO stands for World Trade Organisation which is a global trade organisation that was set up to give equal trade opportunities for all countries across the globe. WTO  has its headquarters in Geneva, Switzerland. At present, WTO has about 164 member countries. India officially became a member of the WTO on January 1, 1995. WTO works to abolish tax barriers between countries and encourage healthy competition in trade. It also plays a role in helping needy countries across the boundaries. Members of WTO will have an important role in framing trade policies, regulations, safeguarding boundaries and advocating reforms in developing nations. In this, WTO provides scope to share resources optimally across the globe.\n(Image to be added soon)\nWhat is RBI and Explain Its Role in Other Commercial Banks?\nRBI stands for Reserve Bank of India and it was established on April 1, 1934.  RBI is the central bank of India which deals with the issue and supply of Indian Rupees. All the other banks and financial organisations in India are controlled by norms and conditions introduced by RBI. Approval from RBI is needed by the banks for starting new branches. RBI holds a fixed amount of money in liquid form which is not in supply. RBI is also given the duty of fixing the interest rates of loans and deposits in the banks. In the case of demonetisation, the new notes are printed and supplied by RBI. Credit Rates for different purposes for each customer is fixed by them.\nWhy Were Reforms Introduced in India?\nEconomic reforms were introduced in India in 1991 under the name New Industrial Policy. The policy was a mitigation plan to save India from an economic crisis.  India had rising debts with foreign countries which led to an exponential increase in the price of essential goods. The economic reform abolished license to all projects except for 18 industries. The focus was shifted from cultivating staple crops to cultivating cash crops. The public sector was narrowed down since they were a liability and the private sector which the revenue generator was given opportunities in the core industries. The government took special care to ensure that foreign investment was encouraged in India. New initiatives were taken to ensure increased export of goods and regulations were reduced for Foreign trade.\nHope you got some basic information about Economic Development in India. For detailed solutions, download NCERT Solutions for Class 11 Economics Chapter 3 free PDF.\nHow will the Mentors at Vedantu Help you Improve yourself?\nMentors at Vedantu have drafted Class 11 Economics Chapter 3 Solutions PDF which has clear explanations provided which enables students to improve themselves. Students can also clear doubts from the mentors who have years of teaching experience. Mentors are also available on video conferences which will help students learn on a one-to-one basis to further make the students understand the topics.\nSolved Example\nQ1) Why Were the Economic Reforms Introduced in 1991?"
     },
     {
       "q": "1. To develop agriculture in India",
@@ -737,7 +737,7 @@ export default {
       "a": "3) To mitigate the economic crisis in India\nImportant Study Material Links for Class 11 Economics Chapter 3\nS. No\nImportant Study Materials Links for Class 11 Economics Chapter 3"
     },
     {
-      "q": "1.\nClass 11 Liberalisation, Privatisation and Globalisation: An Appraisal Revision Notes",
+      "q": "1.",
       "a": "Detailed solution available."
     },
     {
@@ -757,7 +757,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nCBSE Class 11 Economics NCERT Solutions",
+      "q": "4.\nCBSE",
       "a": "Detailed solution available."
     },
     {
@@ -776,7 +776,7 @@ export default {
   "4": [
     {
       "q": "1. What are the two major sources of human capital in a country?",
-      "a": "The two main sources of human capital are education and health. Education builds skills, while health keeps people fit to use those skills. Both are important for a country\u2019s overall development."
+      "a": "The two main sources of human capital are education and health. Education builds skills, while health keeps people fit to use those skills. Both are important for a country’s overall development."
     },
     {
       "q": "2. What are the indicators of educational achievement in a country?",
@@ -784,11 +784,11 @@ export default {
     },
     {
       "q": "3. Why do we observe regional differences in educational attainment in India?",
-      "a": "Summary: Regional differences in education in India arise due to diverse culture, economic conditions, and access to facilities.\n\n- India\u2019s regions differ in language, culture, needs, climate, and traditions.\n- Some states lack educational facilities, while others focus more on education.\n- States like Kerala and Tamil Nadu have high literacy; Bihar and Uttar Pradesh have lower rates.\n- In areas with fewer job opportunities and poverty, education gets less priority.\n- Access to schooling is often less for girls than boys.\n- Other factors: customs, traditions, and climate also play a role in regional differences."
+      "a": "Summary: Regional differences in education in India arise due to diverse culture, economic conditions, and access to facilities.\n\n- India’s regions differ in language, culture, needs, climate, and traditions.\n- Some states lack educational facilities, while others focus more on education.\n- States like Kerala and Tamil Nadu have high literacy; Bihar and Uttar Pradesh have lower rates.\n- In areas with fewer job opportunities and poverty, education gets less priority.\n- Access to schooling is often less for girls than boys.\n- Other factors: customs, traditions, and climate also play a role in regional differences."
     },
     {
       "q": "4. Bring out the differences between human capital and human development.",
-      "a": "Summary: Human capital focuses on skills for productivity, while human development is about people's overall well-being.\n\n- Human capital means the stock of skills and expertise that increase productivity.\n- Human development focuses on improving the standard of living and quality of life.\n- Human capital sees education and health as tools to make people more productive.\n- Human development treats humans as an end in themselves, not just a means to economic growth.\n- If an investment does not increase productivity, it is not valued as human capital, but is still valued for human development.\n- Human development supports everyone\u2019s right to education and health even if it doesn\u2019t directly lead to higher output."
+      "a": "Summary: Human capital focuses on skills for productivity, while human development is about people's overall well-being.\n\n- Human capital means the stock of skills and expertise that increase productivity.\n- Human development focuses on improving the standard of living and quality of life.\n- Human capital sees education and health as tools to make people more productive.\n- Human development treats humans as an end in themselves, not just a means to economic growth.\n- If an investment does not increase productivity, it is not valued as human capital, but is still valued for human development.\n- Human development supports everyone’s right to education and health even if it doesn’t directly lead to higher output."
     },
     {
       "q": "5. How is human development a broader term as compared to human capital?",
@@ -812,11 +812,11 @@ export default {
     },
     {
       "q": "10. Establish the need for acquiring information relating to health and education expenditure for the effective utilization of human resources.",
-      "a": "Summary: Having information about health and education spending helps people use their abilities wisely.\n\n- Details on jobs, admissions, and salary help students choose careers that fit them.\n- Access to information about health improves people\u2019s well-being and helps them make informed choices.\n- Awareness campaigns, like polio vaccination ads, show how information can improve society.\n- Investment in spreading information helps make the most of people\u2019s skills and knowledge."
+      "a": "Summary: Having information about health and education spending helps people use their abilities wisely.\n\n- Details on jobs, admissions, and salary help students choose careers that fit them.\n- Access to information about health improves people’s well-being and helps them make informed choices.\n- Awareness campaigns, like polio vaccination ads, show how information can improve society.\n- Investment in spreading information helps make the most of people’s skills and knowledge."
     },
     {
       "q": "11. How does investment in human capital contribute to growth?",
-      "a": "Summary: Investing in people\u2019s skills and health leads to faster economic growth.\n\n- Human capital and economic growth help each other grow.\n- Skilled, healthy people are more productive.\n- More productivity leads to higher income for everyone.\n- As the economy grows, more investments are made in human capital, further boosting growth."
+      "a": "Summary: Investing in people’s skills and health leads to faster economic growth.\n\n- Human capital and economic growth help each other grow.\n- Skilled, healthy people are more productive.\n- More productivity leads to higher income for everyone.\n- As the economy grows, more investments are made in human capital, further boosting growth."
     },
     {
       "q": "12. There is a downward trend in inequality world-wide with a rise in the average education levels. Comment.",
@@ -824,11 +824,11 @@ export default {
     },
     {
       "q": "13. Examine the role of education in the economic development of a nation.",
-      "a": "Summary: Education improves a country\u2019s growth and quality of life.\n\n- It increases production of goods and services.\n- Improves people\u2019s skills, making them more efficient.\n- Helps people use new technology.\n- Creates jobs and increases earning power.\n- Supports solutions to poverty and other problems."
+      "a": "Summary: Education improves a country’s growth and quality of life.\n\n- It increases production of goods and services.\n- Improves people’s skills, making them more efficient.\n- Helps people use new technology.\n- Creates jobs and increases earning power.\n- Supports solutions to poverty and other problems."
     },
     {
       "q": "14. Explain how investment in education stimulates economic growth.",
-      "a": "Summary: Spending on education helps the economy grow in different ways.\n\n- More educated people join the workforce.\n- People use new tools and methods better.\n- Higher productivity raises the nation\u2019s income.\n- Education leads to more innovation.\n- Trained workers help businesses to expand."
+      "a": "Summary: Spending on education helps the economy grow in different ways.\n\n- More educated people join the workforce.\n- People use new tools and methods better.\n- Higher productivity raises the nation’s income.\n- Education leads to more innovation.\n- Trained workers help businesses to expand."
     },
     {
       "q": "15. Bring out the need for on-the-job-training for a person.",
@@ -840,11 +840,11 @@ export default {
     },
     {
       "q": "17. Discuss the need for promoting women's education in India.",
-      "a": "Summary: Women\u2019s education is crucial for India\u2019s growth and equality.\n\n- Educated women can earn a living and be independent.\n- Improves women\u2019s social and health status.\n- Helps keep family sizes healthy.\n- Educated mothers give better care and values to their children."
+      "a": "Summary: Women’s education is crucial for India’s growth and equality.\n\n- Educated women can earn a living and be independent.\n- Improves women’s social and health status.\n- Helps keep family sizes healthy.\n- Educated mothers give better care and values to their children."
     },
     {
       "q": "18. Argue in favor of the need for different forms of government intervention in education and health sectors.",
-      "a": "Summary: Government help is needed in education and health for fairness and access.\n\n- Not everyone can afford private schools or hospitals.\n- Public schools and hospitals reach poor and remote areas.\n- The government protects weaker groups (like SC, ST, OBC).\n- People often don\u2019t know enough about price or quality, so government rules prevent exploitation."
+      "a": "Summary: Government help is needed in education and health for fairness and access.\n\n- Not everyone can afford private schools or hospitals.\n- Public schools and hospitals reach poor and remote areas.\n- The government protects weaker groups (like SC, ST, OBC).\n- People often don’t know enough about price or quality, so government rules prevent exploitation."
     },
     {
       "q": "19. What are the main problems of human capital formation in India?",
@@ -852,20 +852,20 @@ export default {
     },
     {
       "q": "20. In your view, is it essential for the government to regulate the fee structure in education and health care institutions? If so, why?",
-      "a": "Summary: Yes, it is important for the government to control the costs of schools and health facilities.\n\n- Private schools and hospitals can be too expensive for many families.\n- The constitution says education and health are fundamental rights.\n- The government must make sure everyone has access, especially the poor and those in remote areas.\n- Regulating fees stops people from being exploited.\n- Government action is needed to make human capital development fair for all.\nCore Ideas from Human Capital Formation in India\nEducation and health are the main ways to improve human capital in India.\nInvestment in schooling and hospitals helps economic growth and reduces poverty.\nWomen\u2019s education is important for equal and sustainable development.\nGovernment support is needed for fair access to quality education and healthcare.\nRising education levels can decrease income inequality across regions."
+      "a": "Summary: Yes, it is important for the government to control the costs of schools and health facilities.\n\n- Private schools and hospitals can be too expensive for many families.\n- The constitution says education and health are fundamental rights.\n- The government must make sure everyone has access, especially the poor and those in remote areas.\n- Regulating fees stops people from being exploited.\n- Government action is needed to make human capital development fair for all.\nCore Ideas from Human Capital Formation in India\nEducation and health are the main ways to improve human capital in India.\nInvestment in schooling and hospitals helps economic growth and reduces poverty.\nWomen’s education is important for equal and sustainable development.\nGovernment support is needed for fair access to quality education and healthcare.\nRising education levels can decrease income inequality across regions."
     }
   ],
   "5": [
     {
-      "q": "1. What do you mean by rural development? Bring out the key issues in rural development.\nSummary:\nRural development is about improving the social and economic life of people living in the countryside of India. The most important issues include education, health, jobs, infrastructure, land reforms, and removing poverty.\nHuman Capital Formation:\nRural areas often lack skilled and healthy people. So, there\u2019s a need to invest in schools, job skills, and healthcare.\nCreation of Productive Resources:\nMost jobs are in farming, but there is hidden unemployment and poor infrastructure. Providing new work opportunities outside agriculture can boost rural incomes.\nInfrastructure Development in Rural Areas:\nGood roads, banks, electricity, transport, irrigation, markets, and research centers are needed in villages for growth.\nLand Reforms:\nFair land distribution and using modern techniques can increase farm output and make land use better.\nPoverty:\nPoverty creates other problems like joblessness and backwardness. Helping villagers earn more and own income-generating assets is very important to fight poverty.",
+      "q": "1. What do you mean by rural development? Bring out the key issues in rural development.\nSummary:\nRural development is about improving the social and economic life of people living in the countryside of India. The most important issues include education, health, jobs, infrastructure, land reforms, and removing poverty.\nHuman Capital Formation:\nRural areas often lack skilled and healthy people. So, there’s a need to invest in schools, job skills, and healthcare.\nCreation of Productive Resources:\nMost jobs are in farming, but there is hidden unemployment and poor infrastructure. Providing new work opportunities outside agriculture can boost rural incomes.\nInfrastructure Development in Rural Areas:\nGood roads, banks, electricity, transport, irrigation, markets, and research centers are needed in villages for growth.\nLand Reforms:\nFair land distribution and using modern techniques can increase farm output and make land use better.\nPoverty:\nPoverty creates other problems like joblessness and backwardness. Helping villagers earn more and own income-generating assets is very important to fight poverty.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Discuss the importance of credit in rural development.\nCredit is necessary in villages because it helps farmers invest in their fields and improves their livelihoods, especially for those who don\u2019t have enough money saved.\nMany farmers have low incomes and can\u2019t save much, so they need loans to improve their farms.\nMost small farmers don\u2019t get bank loans easily and may have to borrow from moneylenders who charge high interest.\nCredit helps farmers buy seeds, fertilizers, and equipment for commercial farming.\nLoans are vital since crops take time to grow, and farmers need money up front for inputs.\nWith proper credit, farmers can escape poverty and improve their living standards.",
+      "q": "2. Discuss the importance of credit in rural development.\nCredit is necessary in villages because it helps farmers invest in their fields and improves their livelihoods, especially for those who don’t have enough money saved.\nMany farmers have low incomes and can’t save much, so they need loans to improve their farms.\nMost small farmers don’t get bank loans easily and may have to borrow from moneylenders who charge high interest.\nCredit helps farmers buy seeds, fertilizers, and equipment for commercial farming.\nLoans are vital since crops take time to grow, and farmers need money up front for inputs.\nWith proper credit, farmers can escape poverty and improve their living standards.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Explain the role of micro-credit in meeting the credit requirements of the poor.\nMicro-credit is small loans given to the poor, mainly through Self Help Groups (SHGs) and NGOs, to help them with their financial needs.\nSHGs help villagers save money together and give loans to needy members from their pooled funds.\nSHGs work closely with banks, making it easier for poor people to access funds at low interest rates without much paperwork.\nSince SHGs work informally and don\u2019t need legal documents, many small farmers prefer this route.\nMicro-credit has become popular, especially with help from NABARD, and over seven lakh SHGs are active in rural areas.\nMicro-credit lowers costs and makes lending/borrowing easier for everyone, helping the poor become self-reliant.",
+      "q": "3. Explain the role of micro-credit in meeting the credit requirements of the poor.\nMicro-credit is small loans given to the poor, mainly through Self Help Groups (SHGs) and NGOs, to help them with their financial needs.\nSHGs help villagers save money together and give loans to needy members from their pooled funds.\nSHGs work closely with banks, making it easier for poor people to access funds at low interest rates without much paperwork.\nSince SHGs work informally and don’t need legal documents, many small farmers prefer this route.\nMicro-credit has become popular, especially with help from NABARD, and over seven lakh SHGs are active in rural areas.\nMicro-credit lowers costs and makes lending/borrowing easier for everyone, helping the poor become self-reliant.",
       "a": "Detailed solution available."
     },
     {
@@ -877,7 +877,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6. Critically evaluate the role of the rural banking system in the process of rural development in India.\nRural banking, especially after nationalization, has made loans more available to farmers but still faces problems like high defaults and lack of support for the poorest.\nThe nationalization of banks in 1969 started \u201csocial banking,\u201d making loans cheaper and more accessible for farmers. NABARD and other banks helped reduce farmers' dependence on moneylenders.\nBut, many banks ask for security or collateral, so small and poor farmers miss out.\nBanks haven\u2019t encouraged savings much among villagers.\nLoan recovery is weak because the government is lenient with defaulters, making banks lose money.",
+      "q": "6. Critically evaluate the role of the rural banking system in the process of rural development in India.\nRural banking, especially after nationalization, has made loans more available to farmers but still faces problems like high defaults and lack of support for the poorest.\nThe nationalization of banks in 1969 started “social banking,” making loans cheaper and more accessible for farmers. NABARD and other banks helped reduce farmers' dependence on moneylenders.\nBut, many banks ask for security or collateral, so small and poor farmers miss out.\nBanks haven’t encouraged savings much among villagers.\nLoan recovery is weak because the government is lenient with defaulters, making banks lose money.",
       "a": "Detailed solution available."
     },
     {
@@ -885,7 +885,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "8. Mention some obstacles that hinder the mechanism of agricultural marketing.\nSome of the main obstacles are:\nFarmers are forced to sell products at low prices due to lack of information and storage facilities.\nThey face cheating in weighing and money calculations.\nFarmers often don\u2019t know current market prices, leading to selling at low rates.\nThey rarely have good storage options to hold crops for better prices later.\nMany cannot get agriculture loans, so they have to borrow from moneylenders at high interest.",
+      "q": "8. Mention some obstacles that hinder the mechanism of agricultural marketing.\nSome of the main obstacles are:\nFarmers are forced to sell products at low prices due to lack of information and storage facilities.\nThey face cheating in weighing and money calculations.\nFarmers often don’t know current market prices, leading to selling at low rates.\nThey rarely have good storage options to hold crops for better prices later.\nMany cannot get agriculture loans, so they have to borrow from moneylenders at high interest.",
       "a": "Detailed solution available."
     },
     {
@@ -917,7 +917,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "17. Enlist some problems faced by farmers during the initial years of organic farming.\nFarmers face lower yields, quick spoilage, marketing troubles, and low profits at first when switching to organic farming.\nInitial crop yields are low, making large-scale production difficult.\nSmall farmers find it hard to earn enough with less produce per hectare.\nOrganic produce spoils quickly and has a short shelf life.\nChoosing what to grow is harder during off-seasons.\nMany farmers aren\u2019t aware of correct market prices, so may sell cheap.\nImportant Points to Remember from Rural Development Class 11 NCERT Solutions\nRural Development includes improving education, health care, and infrastructure in villages.\nCredit and micro-credit systems help farmers invest in farms and small businesses.\nAgricultural diversification like animal husbandry and fisheries helps reduce rural poverty.\nGovernment steps like regulated markets and MSP support fair agricultural marketing.\nOrganic farming encourages sustainable growth and protects soil health in rural areas.",
+      "q": "17. Enlist some problems faced by farmers during the initial years of organic farming.\nFarmers face lower yields, quick spoilage, marketing troubles, and low profits at first when switching to organic farming.\nInitial crop yields are low, making large-scale production difficult.\nSmall farmers find it hard to earn enough with less produce per hectare.\nOrganic produce spoils quickly and has a short shelf life.\nChoosing what to grow is harder during off-seasons.\nMany farmers aren’t aware of correct market prices, so may sell cheap.\nImportant Points to Remember from Rural Development",
       "a": "Detailed solution available."
     }
   ],
@@ -932,7 +932,7 @@ export default {
     },
     {
       "q": "3. Are the following people - a beggar, a thief, a smuggler, a gambler - workers? Why?",
-      "a": "No, these people are not considered workers. A worker is involved in activities that legally contribute to the country\u2019s GDP. A beggar, thief, smuggler, and gambler do not engage in legal economic activities that help earn the country money, so they are not seen as workers."
+      "a": "No, these people are not considered workers. A worker is involved in activities that legally contribute to the country’s GDP. A beggar, thief, smuggler, and gambler do not engage in legal economic activities that help earn the country money, so they are not seen as workers."
     },
     {
       "q": "4. Find the odd one out: proprietor of a saloon, a cobbler, a cashier in Mother Dairy, a tuition master, transport operator, production worker.",
@@ -948,14 +948,14 @@ export default {
     },
     {
       "q": "7. Raj goes to school. When he is not in school, he works on his farm. Can he be considered a worker? Why?",
-      "a": "Yes, Raj is considered a worker because his work on the farm adds to the farm\u2019s productivity. Anyone who helps in economic activity that adds to the country\u2019s GDP is seen as a worker."
+      "a": "Yes, Raj is considered a worker because his work on the farm adds to the farm’s productivity. Anyone who helps in economic activity that adds to the country’s GDP is seen as a worker."
     },
     {
-      "q": "8. Compared to urban women, more rural women are found working. Why?\nMore rural women work compared to urban women due to family needs, less education, and higher poverty.\nOver 30% of rural workers are women; in cities only 14% are women.\nRural women often work on farms because such jobs don't require high skills or specialization.\nRural poverty is more common than urban poverty, so more rural women work to support their families.\nUrban families typically earn more, so there is less need for women to work.\nFamily traditions and lower female literacy also reduce urban women\u2019s workforce share.",
+      "q": "8. Compared to urban women, more rural women are found working. Why?\nMore rural women work compared to urban women due to family needs, less education, and higher poverty.\nOver 30% of rural workers are women; in cities only 14% are women.\nRural women often work on farms because such jobs don't require high skills or specialization.\nRural poverty is more common than urban poverty, so more rural women work to support their families.\nUrban families typically earn more, so there is less need for women to work.\nFamily traditions and lower female literacy also reduce urban women’s workforce share.",
       "a": "Detailed solution available."
     },
     {
-      "q": "9. Meena is a housewife. Besides doing family chores, she works in her husband\u2019s cloth shop. Can she be considered a worker? Why?",
+      "q": "9. Meena is a housewife. Besides doing family chores, she works in her husband’s cloth shop. Can she be considered a worker? Why?",
       "a": "Yes, Meena is considered a worker. She helps in the shop and her work adds to the GDP, which makes her a worker."
     },
     {
@@ -963,7 +963,7 @@ export default {
       "a": "The shoeshine boy is the odd one out. The other workers are employed by someone else and get paid wages, but the shoeshine boy is self-employed and works for himself."
     },
     {
-      "q": "11. The following table shows the distribution of workforce in India for the year 1972-73. Analyse it and explain the nature of workforce distribution. This data is about the situation 30 years ago!\nIn 1972-73, most workers in India were in rural areas and engaged in agriculture.\nIndia\u2019s workforce in 1972-73 was 234 million\u2014195 million rural, 39 million urban.\n83% of workers were rural, mainly due to agriculture and related sectors.\nRural workforce: 64% male, 36% female; urban: 82% male, 18% female.\nMen worked more than women because women had less education and fewer chances.\nPoverty, low productivity, disguised unemployment, and low female participation were major issues then.",
+      "q": "11. The following table shows the distribution of workforce in India for the year 1972-73. Analyse it and explain the nature of workforce distribution. This data is about the situation 30 years ago!\nIn 1972-73, most workers in India were in rural areas and engaged in agriculture.\nIndia’s workforce in 1972-73 was 234 million—195 million rural, 39 million urban.\n83% of workers were rural, mainly due to agriculture and related sectors.\nRural workforce: 64% male, 36% female; urban: 82% male, 18% female.\nMen worked more than women because women had less education and fewer chances.\nPoverty, low productivity, disguised unemployment, and low female participation were major issues then.",
       "a": "Detailed solution available."
     },
     {
@@ -1007,7 +1007,7 @@ export default {
       "a": "Casual (informal) wage labourers are people who do not work the whole year. They work only for a few months, do not get social benefits like pension, and usually earn low wages. Examples include people who work at construction sites."
     },
     {
-      "q": "22. How will you recognize whether or not a worker is working in the informal sector?\nInformal sector workers have insecure jobs, no social benefits, and often work in small businesses.\nThey work to earn income by producing goods/services for the economy.\nThey work for small organizations with 10 or fewer employees (except farming/self-employment).\nThis includes farmers, small business owners, and the self-employed\u2014not regular employees.\nNo benefits like provident fund, gratuity, or pension.\nNot covered by most labour laws except for minimum wage.\nThey have little job security and weak bargaining power.\nImportant Points from Employment Growth, Informalisation And Other Issues Class 11 NCERT Solutions\nLearn the definitions of worker, worker population ratio, and informal sector with examples.\nUnderstand why jobs in the service sector are rising and more rural women work than urban women.\nFind out why regular salaried jobs are less common for women and in rural areas.\nCompare changes in job sectors like agriculture, industry, and services since the 1970s.\nExplore the need for more formal sector jobs to provide security and reduce poverty.",
+      "q": "22. How will you recognize whether or not a worker is working in the informal sector?\nInformal sector workers have insecure jobs, no social benefits, and often work in small businesses.\nThey work to earn income by producing goods/services for the economy.\nThey work for small organizations with 10 or fewer employees (except farming/self-employment).\nThis includes farmers, small business owners, and the self-employed—not regular employees.\nNo benefits like provident fund, gratuity, or pension.\nNot covered by most labour laws except for minimum wage.\nThey have little job security and weak bargaining power.\nImportant Points from Employment Growth, Informalisation And Other Issues",
       "a": "Detailed solution available."
     }
   ],
@@ -1021,7 +1021,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Next edit for renewable and non-renewable resources\n(i) Wood (ii) Fish (iii) Fuel (iv) Coal (v) Metal (vi) Water\n(i) Wood \u2013 Renewable\n(ii) Fish \u2013 Renewable\n(iii) Fuel \u2013 Non-renewable\n(iv) Coal \u2013 Non-renewable\n(v) Metal \u2013 Non-renewable\n(vi) Water \u2013 Renewable",
+      "q": "3. Next edit for renewable and non-renewable resources\n(i) Wood (ii) Fish (iii) Fuel (iv) Coal (v) Metal (vi) Water\n(i) Wood – Renewable\n(ii) Fish – Renewable\n(iii) Fuel – Non-renewable\n(iv) Coal – Non-renewable\n(v) Metal – Non-renewable\n(vi) Water – Renewable",
       "a": "Detailed solution available."
     },
     {
@@ -1033,7 +1033,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6. What are natural functions?\nNature does four main things for us:\nGives us resources for production (like water, minerals, and soil).\nKeeps us alive by giving air, water, sun, and soil\u2014basic needs for life and biodiversity.\nCleans up waste from production and everyday life by absorbing it.",
+      "q": "6. What are natural functions?\nNature does four main things for us:\nGives us resources for production (like water, minerals, and soil).\nKeeps us alive by giving air, water, sun, and soil—basic needs for life and biodiversity.\nCleans up waste from production and everyday life by absorbing it.",
       "a": "Detailed solution available."
     },
     {
@@ -1049,7 +1049,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10. India has many natural resources \u2013 confirms this statement.\nIndia is rich in many natural resources like coal, iron, water, forests, and sunlight, which help in meeting the needs of its people.",
+      "q": "10. India has many natural resources – confirms this statement.\nIndia is rich in many natural resources like coal, iron, water, forests, and sunlight, which help in meeting the needs of its people.",
       "a": "Detailed solution available."
     },
     {
@@ -1065,7 +1065,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "14. Discuss the supply-demand reversal of environmental resources in brief.\nIndia\u2019s demand for natural resources has grown so much that it now exceeds nature\u2019s ability to supply them, causing shortages and environmental damage.",
+      "q": "14. Discuss the supply-demand reversal of environmental resources in brief.\nIndia’s demand for natural resources has grown so much that it now exceeds nature’s ability to supply them, causing shortages and environmental damage.",
       "a": "Detailed solution available."
     },
     {
@@ -1073,15 +1073,15 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "16. Throw light on any two serious adverse environmental consequences of development in India. India's environmental problems present a dichotomy\u2014they are driven by poverty and at the same time, because of the affluence in the standard of living. Is it true?\nLand degradation and loss of biodiversity are two serious effects of development. Both poverty and wealth can cause environmental problems in India.\nLand degradation:\nThe fertility of soil decreases due to overuse, soil erosion, and pollution from chemicals.\nBiodiversity loss:\nDestroying forests and natural habitats to make way for cities or growing more food reduces the number of plant and animal species.\nPoverty:\nThe poor may overuse resources to survive, causing harm.\nAffluence:\nWealthier lifestyles increase demand and waste, also harming the environment.",
+      "q": "16. Throw light on any two serious adverse environmental consequences of development in India. India's environmental problems present a dichotomy—they are driven by poverty and at the same time, because of the affluence in the standard of living. Is it true?\nLand degradation and loss of biodiversity are two serious effects of development. Both poverty and wealth can cause environmental problems in India.\nLand degradation:\nThe fertility of soil decreases due to overuse, soil erosion, and pollution from chemicals.\nBiodiversity loss:\nDestroying forests and natural habitats to make way for cities or growing more food reduces the number of plant and animal species.\nPoverty:\nThe poor may overuse resources to survive, causing harm.\nAffluence:\nWealthier lifestyles increase demand and waste, also harming the environment.",
       "a": "Detailed solution available."
     },
     {
-      "q": "17. What is sustainable development?\nSustainable development means using resources carefully so that today\u2019s needs are met without reducing resources for future generations.",
+      "q": "17. What is sustainable development?\nSustainable development means using resources carefully so that today’s needs are met without reducing resources for future generations.",
       "a": "Detailed solution available."
     },
     {
-      "q": "18. Describe any one of the four sustainable development strategies to save your region.\nSustainable development means using resources smartly, growing the economy, and ensuring fairness between generations.\nUse cleaner fuels like CNG and LPG to limit air pollution.\nRely on solar and wind energy, as these are renewable and don\u2019t harm the environment.\nRecycle and reuse household and industrial waste, using organic waste as manure and recycling plastics.",
+      "q": "18. Describe any one of the four sustainable development strategies to save your region.\nSustainable development means using resources smartly, growing the economy, and ensuring fairness between generations.\nUse cleaner fuels like CNG and LPG to limit air pollution.\nRely on solar and wind energy, as these are renewable and don’t harm the environment.\nRecycle and reuse household and industrial waste, using organic waste as manure and recycling plastics.",
       "a": "Detailed solution available."
     },
     {
@@ -1120,11 +1120,11 @@ export default {
     },
     {
       "q": "8. Mention the salient demographic indicators China, Pakistan and India.",
-      "a": "China has the largest population, then India. Pakistan's is much smaller.\nChina's population density is lowest, India's is the highest.\nChina's one-child rule slowed its population growth.\nAll three countries have more males than females.\nPakistan\u2019s fertility rate is the highest, China\u2019s is the lowest.\nChina is more urbanised than India and Pakistan."
+      "a": "China has the largest population, then India. Pakistan's is much smaller.\nChina's population density is lowest, India's is the highest.\nChina's one-child rule slowed its population growth.\nAll three countries have more males than females.\nPakistan’s fertility rate is the highest, China’s is the lowest.\nChina is more urbanised than India and Pakistan."
     },
     {
       "q": "9. Compare and contrast India and China's sectoral contribution towards GDP in 2003. What does it indicate?",
-      "a": "Agriculture made up 15% of China\u2019s GDP and 23% of India\u2019s in 2003.\nChina\u2019s GDP is led by manufacturing (53%) while India\u2019s is led by services (about 51%).\nBoth countries have moved away from farming towards services and industry, showing improvement in their economies.\nIndia skipped straight from agriculture to services, but China followed the pattern of developed countries where industry grows first."
+      "a": "Agriculture made up 15% of China’s GDP and 23% of India’s in 2003.\nChina’s GDP is led by manufacturing (53%) while India’s is led by services (about 51%).\nBoth countries have moved away from farming towards services and industry, showing improvement in their economies.\nIndia skipped straight from agriculture to services, but China followed the pattern of developed countries where industry grows first."
     },
     {
       "q": "10. Mention the various indicators of human development.",
@@ -1136,7 +1136,7 @@ export default {
     },
     {
       "q": "12. Evaluate the various factors that led to the rapid growth in economic development in China.",
-      "a": "China's economic growth increased quickly because it started reforms in 1978.\nFirst, farming and trade reforms gave households more control and income.\nLater, private businesses were encouraged in industry to compete with state businesses.\nDual pricing allowed selling some goods at set prices and the rest at market rates.\nSpecial Economic Zones were made to attract global businesses.\nAll these changes helped China\u2019s industry and economy grow fast."
+      "a": "China's economic growth increased quickly because it started reforms in 1978.\nFirst, farming and trade reforms gave households more control and income.\nLater, private businesses were encouraged in industry to compete with state businesses.\nDual pricing allowed selling some goods at set prices and the rest at market rates.\nSpecial Economic Zones were made to attract global businesses.\nAll these changes helped China’s industry and economy grow fast."
     },
     {
       "q": "13. Group the following features pertaining to the economies of India, China and Pakistan under three heads",
@@ -1144,15 +1144,169 @@ export default {
     },
     {
       "q": "14. Give reasons for the slow growth and re-emergence of poverty in Pakistan.",
-      "a": "Pakistan\u2019s growth has been slow and poverty increased for several reasons:\nHeavy dependence on public sector companies led to inefficiency and wasted resources.\nTraditional farming methods and climate problems kept agricultural productivity low.\nRemittances and volatile farm exports limited the need to develop manufacturing for exports.\nPakistan borrowed a lot from abroad; paying back loans became hard, especially when farming failed.\nPolitical instability led to higher government spending to maintain order, draining resources.\nPoor investment from foreign countries due to instability and lack of good infrastructure."
+      "a": "Pakistan’s growth has been slow and poverty increased for several reasons:\nHeavy dependence on public sector companies led to inefficiency and wasted resources.\nTraditional farming methods and climate problems kept agricultural productivity low.\nRemittances and volatile farm exports limited the need to develop manufacturing for exports.\nPakistan borrowed a lot from abroad; paying back loans became hard, especially when farming failed.\nPolitical instability led to higher government spending to maintain order, draining resources.\nPoor investment from foreign countries due to instability and lack of good infrastructure."
     },
     {
       "q": "15. Compare and contrast the development of India, China and Pakistan with respect to some salient human development indicators.",
-      "a": "The Human Development Index (HDI) uses several key indicators:\nLife Expectancy\nAdult Literacy Rate\nInfant Mortality Rate\nPercentage of the population below the poverty line\nGDP per capita\nAccess to sanitation and safe water\nChina ranked highest among the three (81st), then India (128th), and Pakistan (136th). China\u2019s higher rank is mainly due to higher GDP per capita and its one-child policy, which helped its economy grow steadily."
+      "a": "The Human Development Index (HDI) uses several key indicators:\nLife Expectancy\nAdult Literacy Rate\nInfant Mortality Rate\nPercentage of the population below the poverty line\nGDP per capita\nAccess to sanitation and safe water\nChina ranked highest among the three (81st), then India (128th), and Pakistan (136th). China’s higher rank is mainly due to higher GDP per capita and its one-child policy, which helped its economy grow steadily."
     },
     {
       "q": "16. Comment on the growth rate trends witnessed in China and India in the last two decades.",
-      "a": "India\u2019s economy grew steadily as it kept democratic policies, but agriculture is still a main income source and infrastructure is lacking in some regions.\nChina used both government planning and market systems, especially in rural areas, for quick growth.\nChina\u2019s investment in social infrastructure before reforms improved its human development outcomes.\n17. (a) First Five Year Plan commenced in 1956. (Pakistan/China)\n(b) Maternal mortality rate is high in. (China/Pakistan)\n(c) Proportion of people below the poverty line is more in. (India/Pakistan)\n(d) Reforms were introduced in 1978. (China/Pakistan)\nAns:\n(a) Pakistan\n(b) Pakistan\n(c) India\n(d) China\nOne-child norm: China\nLow fertility rate: China\nHigh degree of urbanisation: Pakistan and China\nMixed economy: India and Pakistan\nVery high fertility rate: Pakistan\nLarge population: India and China\nHigh density of population: India\nGrowth due to manufacturing sector: China\nGrowth due to service sector: India\nCountry\nEstimated population (in million)\nAnnual growth of population (2001-2010)\nDensity (per sq.km)\nSex (ratio)\nFertility Rate\nUrbanisation\nIndia\n1252\n1.24\n421\n934\n2.6\n32\nChina\n1357\n0.49\n145\n929\n1.6\n53\nPakistan\n182\n1.65\n236\n947\n3.3\n38\nSectors\nContribution to GDP in % (2003) India\nContribution to GDP in % (2003) China\nPrimary (agriculture)\n23\n15\nSecondary (industry)\n56\n53\nTertiary (Service)\n51\n32\nImportant Points from Comparative Development Experiences Of India And Its Neighbours Class 11 NCERT Solutions\nIndia, China, and Pakistan took different approaches to economic growth after independence.\nMajor reforms in China began in 1978, while India and Pakistan started earlier using planning.\nIn the Class 11 Economics Chapter 8 question answer, sectoral shifts in GDP are clearly compared.\nKey human development indicators include life expectancy, literacy rate, and GDP per capita.\nNCERT solution Class 11 Economics Chapter 8 highlights why groupings and open policies matter for growth."
+      "a": "India’s economy grew steadily as it kept democratic policies, but agriculture is still a main income source and infrastructure is lacking in some regions.\nChina used both government planning and market systems, especially in rural areas, for quick growth.\nChina’s investment in social infrastructure before reforms improved its human development outcomes.\n17. (a) First Five Year Plan commenced in 1956. (Pakistan/China)\n(b) Maternal mortality rate is high in. (China/Pakistan)\n(c) Proportion of people below the poverty line is more in. (India/Pakistan)\n(d) Reforms were introduced in 1978. (China/Pakistan)\nAns:\n(a) Pakistan\n(b) Pakistan\n(c) India\n(d) China\nOne-child norm: China\nLow fertility rate: China\nHigh degree of urbanisation: Pakistan and China\nMixed economy: India and Pakistan\nVery high fertility rate: Pakistan\nLarge population: India and China\nHigh density of population: India\nGrowth due to manufacturing sector: China\nGrowth due to service sector: India\nCountry\nEstimated population (in million)\nAnnual growth of population (2001-2010)\nDensity (per sq.km)\nSex (ratio)\nFertility Rate\nUrbanisation\nIndia\n1252\n1.24\n421\n934\n2.6\n32\nChina\n1357\n0.49\n145\n929\n1.6\n53\nPakistan\n182\n1.65\n236\n947\n3.3\n38\nSectors\nContribution to GDP in % (2003) India\nContribution to GDP in % (2003) China\nPrimary (agriculture)\n23\n15\nSecondary (industry)\n56\n53\nTertiary (Service)\n51\n32\nImportant Points from Comparative Development Experiences Of India And Its Neighbours"
+    }
+  ],
+  "9": [
+    {
+      "q": "Discuss the core concepts of Organisation of Data and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "10": [
+    {
+      "q": "Discuss the core concepts of Presentation of Data and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "11": [
+    {
+      "q": "Discuss the core concepts of Measures of Central Tendency and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "12": [
+    {
+      "q": "Discuss the core concepts of Measures of Dispersion and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "13": [
+    {
+      "q": "Discuss the core concepts of Correlation and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "14": [
+    {
+      "q": "Discuss the core concepts of Index Numbers and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "15": [
+    {
+      "q": "Discuss the core concepts of Use of Statistical Tools and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
     }
   ]
 };

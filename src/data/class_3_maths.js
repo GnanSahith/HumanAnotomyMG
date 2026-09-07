@@ -2,7 +2,7 @@ export default {
   "1": [
     {
       "q": "1. Some animals and birds got together to play a game. They wanted to make 2 teams. They decided that the captain of the first team will be the one with the longest name, i.e., the one with the most letters. The captain of the second team will be the one with the shortest name, i.e., the one with the fewest letters.\nFind out the captains of the 2 teams.\nFirst team : ______\nLetter count : ______\nSecond team : _______\nLetter count : _______",
-      "a": "First team : Elephant\nLetter count : 8\nSecond team : Ox\nLetter count : 2\nDo you know any animal having a longer name than the first team\u2019s captain?\nAns:\nYes, Crocodile which has letter count as 9."
+      "a": "First team : Elephant\nLetter count : 8\nSecond team : Ox\nLetter count : 2\nDo you know any animal having a longer name than the first team’s captain?\nAns:\nYes, Crocodile which has letter count as 9."
     },
     {
       "q": "2. Who has a longer name? Discuss.",
@@ -10,7 +10,7 @@ export default {
     },
     {
       "q": "3. Write down the names of some of your friends in the spaces given below and then answer the questions from a to f.",
-      "a": "Now let's take a sample name:\na. Tick \u2705 the longest name(s) and cross \u274cthe shortest name(s).\nAns:\nLongest name is Harshita\nShortest name is Raj\nb. Write the starting letter of your name. .......................................\nAns:\nMy starting letter is \u2018S\u2019.\nc. Count all the name(s) that have the same starting letter as yours. ______\nAns:\n1\nd. Which starting letter is the most used? Count the names that begin with it. ______\nAns:\nThe starting letter which is most used is \u2018R\u2019, there are 3 names beginning with letter \u2018R\u2019.\ne. Count the names with the same ending letter. ______...........................................................................................................\nAns:\nThere are 3 names ending with \u2018A\u2019: Harshita, Divya, and Garima.\nf. Write the letters that are not the starting letter of any name. ...........................................................................................................\nAns:\nThere are the letters which are not starting with these names: A, B, C, E, F, I, J, K, L, M, O, P, Q, T, U, V, W, X, Y, Z."
+      "a": "Now let's take a sample name:\na. Tick ✅ the longest name(s) and cross ❌the shortest name(s).\nAns:\nLongest name is Harshita\nShortest name is Raj\nb. Write the starting letter of your name. .......................................\nAns:\nMy starting letter is ‘S’.\nc. Count all the name(s) that have the same starting letter as yours. ______\nAns:\n1\nd. Which starting letter is the most used? Count the names that begin with it. ______\nAns:\nThe starting letter which is most used is ‘R’, there are 3 names beginning with letter ‘R’.\ne. Count the names with the same ending letter. ______...........................................................................................................\nAns:\nThere are 3 names ending with ‘A’: Harshita, Divya, and Garima.\nf. Write the letters that are not the starting letter of any name. ...........................................................................................................\nAns:\nThere are the letters which are not starting with these names: A, B, C, E, F, I, J, K, L, M, O, P, Q, T, U, V, W, X, Y, Z."
     },
     {
       "q": "4. Teji and Jojo are making numbers using these cards.\na. Write your roll number using number cards as shown above. Number cards are given at the end of the book.\nMy roll number is .............\nIts number name has ............. letters.\nb. Write some numbers and their number names in your notebook. How many letters does each have?",
@@ -18,14 +18,14 @@ export default {
     },
     {
       "q": "1. Write the number(s) between 1 and 99 that have the longest name.",
-      "a": "To find which number has the longest name among 73, 77, and 78:\nFind out\n(i) The number with the longest name is 98. It has two words: \"Ninety\" (6 letters) and \"Eight\" (5 letters).\n(ii) Another number with a long name is 70. It has one word: \"Seventy\" (7 letters).\nShe has grouped the cards into \u201cthose that eat food\u201d and \u201cthose that don't eat food\u201d. Jojo has arranged the same cards differently.\nWhat is common in each of the groups Jojo has made?\nAns:\nIn each of Jojo\u2019s groups, the items share a common characteristic or category, such as being pets or not being pets.\nGiven below are pictures of some household objects.\nWrite the names of the above objects in the two groups given below.\nAns:\nThings that need electricity\nThings that don\u2019t need electricity\nTV\nChair\nLamp\nBed\nFan\nClock\nPillow\nBlanket\nGroup the objects given above differently. Write them down in the space below.\nAns:\nThings that need for resting or sleeping\nThings that don\u2019t need for resting or sleeping\nBed\nTV\nPillow\nClock\nBlanket\nLamp\nChair\nFan\nLet us Do\nMala is going to school. Her mother has combed her hair.\nMala has two ponytails.\nLook at the children in your class.\nAll children comb their hair in different ways.\nLook and write down.\nAns:\nBenefits of NCERT Solutions for Class 3 Maths Chapter 1 What\u2019s in a Name?\nStudents will learn to identify and write numbers correctly, improving their number recognition skills.\nThe chapter helps students understand the correct order of numbers, such as which numbers come before or after others.\nBy comparing numbers, students will learn how to determine which numbers are bigger or smaller.\nThe exercises in the chapter make counting easier and help students practice counting in a fun way.\nSimple examples are used to make it easier for students to grasp basic maths concepts.\nUnderstanding these number concepts will help students with more advanced maths topics in the future.\nImportant Study Material Links for Class 3 Maths Chapter 1 - What\u2019s in a Name?\nS. No\nStudy Material Links for Chapter 1 What\u2019s in a Name?"
+      "a": "To find which number has the longest name among 73, 77, and 78:\nFind out\n(i) The number with the longest name is 98. It has two words: \"Ninety\" (6 letters) and \"Eight\" (5 letters).\n(ii) Another number with a long name is 70. It has one word: \"Seventy\" (7 letters).\nShe has grouped the cards into “those that eat food” and “those that don't eat food”. Jojo has arranged the same cards differently.\nWhat is common in each of the groups Jojo has made?\nAns:\nIn each of Jojo’s groups, the items share a common characteristic or category, such as being pets or not being pets.\nGiven below are pictures of some household objects.\nWrite the names of the above objects in the two groups given below.\nAns:\nThings that need electricity\nThings that don’t need electricity\nTV\nChair\nLamp\nBed\nFan\nClock\nPillow\nBlanket\nGroup the objects given above differently. Write them down in the space below.\nAns:\nThings that need for resting or sleeping\nThings that don’t need for resting or sleeping\nBed\nTV\nPillow\nClock\nBlanket\nLamp\nChair\nFan\nLet us Do\nMala is going to school. Her mother has combed her hair.\nMala has two ponytails.\nLook at the children in your class.\nAll children comb their hair in different ways.\nLook and write down.\nAns:\nBenefits of NCERT Solutions for Class 3 Maths Chapter 1 What’s in a Name?\nStudents will learn to identify and write numbers correctly, improving their number recognition skills.\nThe chapter helps students understand the correct order of numbers, such as which numbers come before or after others.\nBy comparing numbers, students will learn how to determine which numbers are bigger or smaller.\nThe exercises in the chapter make counting easier and help students practice counting in a fun way.\nSimple examples are used to make it easier for students to grasp basic maths concepts.\nUnderstanding these number concepts will help students with more advanced maths topics in the future.\nImportant Study Material Links for Class 3 Maths Chapter 1 - What’s in a Name?\nS. No\nStudy Material Links for Chapter 1 What’s in a Name?"
     },
     {
-      "q": "1.\nClass 3 What\u2019s in a Name? Worksheets",
+      "q": "1.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 What\u2019s in a Name? Revision Notes\nConclusion\nNCERT Solutions for Class 3 Maths Chapter 1, \"What\u2019s in a Name?\" provides an easy way for students to learn about numbers and their order. The chapter helps students understand how to identify and write numbers correctly, and how to compare which numbers are bigger or smaller. Fun and engaging exercises make practising these skills enjoyable and effective. By using these solutions, students build a strong foundation in basic number concepts, which prepares them for more complex math topics in the future.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 1 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS. No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 2: Toy Joy Solutions\n2\nChapter 3: Double Century Solutions\n3\nChapter 4: Vacation with My Nani Maa Solutions\n4\nChapter 5: Fun with Shapes Solutions\n5\nChapter 6: House of Hundreds - I Solutions\n6\nChapter 7: Raksha Bandhan Solutions\n7\nChapter 8: Fair Share Solutions\n8\nChapter 9: House of Hundreds - II Solutions\n9\nChapter 10: Fun at Class Party! Solutions\n10\nChapter 11: Filling and Lifting Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS. No\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -33,7 +33,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -41,7 +41,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 3 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     }
   ],
@@ -51,7 +51,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -61,8 +61,8 @@ export default {
   ],
   "3": [
     {
-      "q": "1. Try these on Kittu\u2019s home:\n(a) 10 less than 34 is __________.",
-      "a": "We have to subtract 10 from 34.\nTherefore, 10 less than 34 is 24.\n(b)\n$$53 - 20 = $$\n_________\nAns:\nWe have to subtract 20 from 53.\n$$53 - 20 = 33$$\n(c) 11 more than 31 is ________.\nAns:\nWe have to add 11 in 31.\nTherefore, 11 more than 31 is 42.\n(d) 11 less than 66 is _________.\nAns:\nWe have to subtract 11 from 66.\nTherefore, 11 less than 66 is 55.\n(e)\n$$62 + 13 = $$\n________\nAns:\nWe have to add 62 in 13.\nTherefore, $$62 + 13 = 75$$\n(f) 23 less than 89 is ________.\nAns:\nWe have to subtract 23 from 89.\nTherefore, 23 less than 89 is 66.\n(g) 10 and 40 more is ________.\nAns:\nWe have to add 10 to 40.\nTherefore, 10 and 40 more is 50.\n(h) 9 added to 28 gives ________.\nAns:\nWe have to add 9 for 28.\nTherefore, 9 added to 28 gives 37.\n(i) The sum of 9 and 44 is ________.\nAns:\nWe have to add 9 for 44.\nTherefore, The sum of 9 and 44 is 53.\n(j) Reducing 98 by 34 gives ________.\nAns:\nWe have to subtract 34 from 98.\nTherefore,Reducing 98 by 34 gives 64.\n(k) 4 and 37 more is ________.\nAns:\nWe have to add 37 in 4.\nTherefore, 4 and 37 more is 41.\n(l) Take 35 away from 83. We get _______.\nAns:\nWe have to subtract 35 from 83.\nTherefore, Take 35 away from 83. We get 48.\n2.Hey! I have something more interesting for you. Ma told me, there are things to eat in some rooms. Help me find those room numbers. Mark them in my home. See what you get!\nE.g., $$47 = 37 + 10$$\n37 + 9 = ___\nAns:\nWe have to add 37 in 9 to get the missing number.\nTherefore, $$37 + 9 = 46$$\n62 - 30 = _____\nAns\n: We have to subtract 30 from 62 to get the missing number.\nTherefore, $$62 - 30 = 32$$\n_____ = 46 + 28\nAns:\nWe have to add 46 in 28 to get the missing number.\nTherefore,\n$$74 = 46 + 28$$\n_____ = 87 \u2013 14\nAns:\nWe have to subtract 14 from 87 to get the missing number.\nTherefore,\u00a0 $$73 = 87 - 14$$\n62 - _____ = 43\nAns:\nWe have to find a number so that subtracting that number from 62 will give 43. Therefore, subtract 43 from 62.\n$$62 - 19 = 43$$\n36 = _____ - 8\nAns:\nWe have to find a number so that subtracting 8 from that number, we get 36 therefore, add 8 in 36.\nTherefore, $$36 = 44 - 8$$\n45 + ____ = 99\nAns:\nWe have to find the number so that the sum of 45 and number should be 99. Therefore, subtract 45 from 99.\n$$45 + 54 = 99$$\n43 + ____ = 74\nAns:\nWe have to find a number so that adding number in 43 and get 74 therefore, subtracting 43 from 74\n$$43 + 31 = 74$$\n_____ + 26 = 75\nAns:\nWe have to find a number so that adding the number in 26 will give s=us 75. Therefore, subtracting 26 from 75\n$$49 + 26 = 75$$\n100 = ___ + 50\nAns:\nWe have to find a number so that adding a number in 50 will give 100. Therefore, subtracting 50 from 100\n$$100 = 50 + 50$$\n___ - 1 = 1\nAns:\nWe have to find a number so that subtracting 1 from that number gives us 1. Therefore, we can put 2 in the blank to get,\n$$2 - 1 = 1$$\n57 - ____ = 20\nAns:\nWe have to find a number so that subtracting that number from 57 will give us 20. Therefore, subtracting 20 from 57\n$$57 - 37 = 20$$"
+      "q": "1. Try these on Kittu’s home:\n(a) 10 less than 34 is __________.",
+      "a": "We have to subtract 10 from 34.\nTherefore, 10 less than 34 is 24.\n(b)\n$$53 - 20 = $$\n_________\nAns:\nWe have to subtract 20 from 53.\n$$53 - 20 = 33$$\n(c) 11 more than 31 is ________.\nAns:\nWe have to add 11 in 31.\nTherefore, 11 more than 31 is 42.\n(d) 11 less than 66 is _________.\nAns:\nWe have to subtract 11 from 66.\nTherefore, 11 less than 66 is 55.\n(e)\n$$62 + 13 = $$\n________\nAns:\nWe have to add 62 in 13.\nTherefore, $$62 + 13 = 75$$\n(f) 23 less than 89 is ________.\nAns:\nWe have to subtract 23 from 89.\nTherefore, 23 less than 89 is 66.\n(g) 10 and 40 more is ________.\nAns:\nWe have to add 10 to 40.\nTherefore, 10 and 40 more is 50.\n(h) 9 added to 28 gives ________.\nAns:\nWe have to add 9 for 28.\nTherefore, 9 added to 28 gives 37.\n(i) The sum of 9 and 44 is ________.\nAns:\nWe have to add 9 for 44.\nTherefore, The sum of 9 and 44 is 53.\n(j) Reducing 98 by 34 gives ________.\nAns:\nWe have to subtract 34 from 98.\nTherefore,Reducing 98 by 34 gives 64.\n(k) 4 and 37 more is ________.\nAns:\nWe have to add 37 in 4.\nTherefore, 4 and 37 more is 41.\n(l) Take 35 away from 83. We get _______.\nAns:\nWe have to subtract 35 from 83.\nTherefore, Take 35 away from 83. We get 48.\n2.Hey! I have something more interesting for you. Ma told me, there are things to eat in some rooms. Help me find those room numbers. Mark them in my home. See what you get!\nE.g., $$47 = 37 + 10$$\n37 + 9 = ___\nAns:\nWe have to add 37 in 9 to get the missing number.\nTherefore, $$37 + 9 = 46$$\n62 - 30 = _____\nAns\n: We have to subtract 30 from 62 to get the missing number.\nTherefore, $$62 - 30 = 32$$\n_____ = 46 + 28\nAns:\nWe have to add 46 in 28 to get the missing number.\nTherefore,\n$$74 = 46 + 28$$\n_____ = 87 – 14\nAns:\nWe have to subtract 14 from 87 to get the missing number.\nTherefore,  $$73 = 87 - 14$$\n62 - _____ = 43\nAns:\nWe have to find a number so that subtracting that number from 62 will give 43. Therefore, subtract 43 from 62.\n$$62 - 19 = 43$$\n36 = _____ - 8\nAns:\nWe have to find a number so that subtracting 8 from that number, we get 36 therefore, add 8 in 36.\nTherefore, $$36 = 44 - 8$$\n45 + ____ = 99\nAns:\nWe have to find the number so that the sum of 45 and number should be 99. Therefore, subtract 45 from 99.\n$$45 + 54 = 99$$\n43 + ____ = 74\nAns:\nWe have to find a number so that adding number in 43 and get 74 therefore, subtracting 43 from 74\n$$43 + 31 = 74$$\n_____ + 26 = 75\nAns:\nWe have to find a number so that adding the number in 26 will give s=us 75. Therefore, subtracting 26 from 75\n$$49 + 26 = 75$$\n100 = ___ + 50\nAns:\nWe have to find a number so that adding a number in 50 will give 100. Therefore, subtracting 50 from 100\n$$100 = 50 + 50$$\n___ - 1 = 1\nAns:\nWe have to find a number so that subtracting 1 from that number gives us 1. Therefore, we can put 2 in the blank to get,\n$$2 - 1 = 1$$\n57 - ____ = 20\nAns:\nWe have to find a number so that subtracting that number from 57 will give us 20. Therefore, subtracting 20 from 57\n$$57 - 37 = 20$$"
     },
     {
       "q": "4. Now work out the steps in your mind. Write the answers directly in the boxes.\n$$33 + 42 = \\_\\_\\_$$",
@@ -70,7 +70,7 @@ export default {
     },
     {
       "q": "5. A shopkeeper, Rafi had 153 candles. Paras gave him 237 more candles. How many candles does Rafi have now?",
-      "a": "Rafi has 153 candles and Paras gave 237 candles.\nTotal candles with Rafi is\u00a0 $$237 + 153 = 390$$"
+      "a": "Rafi has 153 candles and Paras gave 237 candles.\nTotal candles with Rafi is  $$237 + 153 = 390$$"
     },
     {
       "q": "6. A train compartment is carrying 132 people. Another compartment is carrying 129 people. In all, how many people are there in both the compartments?",
@@ -94,7 +94,7 @@ export default {
     },
     {
       "q": "11. You can also play it. Here are the cards for you. Work out the combination. Place the cards in the right boxes\n(a)",
-      "a": "(b)\nAns:\nNCERT Solutions Class 3 Maths Chapter 3\u2013 Free PDF Download\nMathematics induces reasoning, creativity, abstract or spatial thinking, critical thinking, problem-solving ability and even effective communication skills. The NCERT Class 3 mathematics syllabus has some very wisely selected topics to nurture the above skills. It targets to upgrade the student\u2019s numerical ability and mathematical proficiency. For a wholesome learning experience download free pdf for Class 3 Chapter 3 Solution that can be of great value if you are trying to excel in your school examinations.\nThe overall concept of NCERT Class 3 Maths Chapter 3 is focused on adding and subtracting numbers by writing them vertically and horizontally. Easy download of NCERT Class 3 Math Chapter 3 Solution is available for a better grip on the chapter. Students will grow interested and practise more to ace I the subject.\nImportance of NCERT Solutions for Class 3 Maths Chapter 3\nChapter 3 of the class 3 Maths syllabus is \u2018Give and Take\u2019. This chapter is one of the fundamental and widely used concepts that is covered in the class 3 maths syllabus since it introduces the basic ideas of addition and subtraction. A very crucial chapter in Class 3 mathematics, Give and Take lets students understand the topic through real-life actions and situations and makes the learning fun and engaging.\nThe solutions given in this chapter are designed to suit the needs of students who are in class 3 and are meant to be relatable and interesting. Vedantu\u2019s expert teachers have made it certain that students reading and learning the topics covered under this chapter will surely perform great in their exams if they practise the given solutions alongside. So let\u2019s get started with the learning!\nAn Overview of Class 3 Maths Chapter 3- Give and Take\nThe chapter deals with all the detailed basic operations like addition, subtraction and expansion of 2-digit numbers. NCERT Chapter 3 Give and Take teaches the properties of whole numbers like place value. An array of fun exercises including the use of token cards to help students with visual estimation of numbers and column addition without regrouping. To follow a stepwise approach towards estimating the result of operation follows NCERT Maths Class 3 Chapter 3 solutions. The following exercises have been solved in CBSE Class 3 Maths Chapter 3 Solutions:\nMaths Class 3 Chapter 3: Exercises\nPage29-30: Give and Take\nPage 30-32: Find My Food\nPage 33-34: Adding Made Easy\nPage 34-35: Mango Chilli Game\nPage 36-38: Let Me Tell You a Story\nPage 39-42: How Many Bulbs?\nPage 42: Practice Time\nPage 42-43: Mind Bus Game\nPage 43: Can You Solve The Puzzle?\nPage 44: Find MIthoo\u2019s Bag\nPage 45: Card Game\nBenefits of NCERT Solutions for Class 3 Maths\nThe NCERT Solutions For Class 3 Maths have been curated as per strict CBSE norms to serve the purpose of success in examinations.\nArranged topic-wise for easy searching\nThe content is of high quality, error-free and has precise reasoning\nProficient subject experts provide strong concepts, tips and chapter insights\nImportant definitions and formulas included for a refresher\nA chronological approach towards easy understanding\nNCERT Solutions for Class 3 Maths Chapter 3 is specially curated to answer even the slightest doubt of the students.\nImportant Questions and Answers of Ch 3 Class 3 Maths"
+      "a": "(b)\nAns:\nNCERT Solutions Class 3 Maths Chapter 3– Free PDF Download\nMathematics induces reasoning, creativity, abstract or spatial thinking, critical thinking, problem-solving ability and even effective communication skills. The NCERT Class 3 mathematics syllabus has some very wisely selected topics to nurture the above skills. It targets to upgrade the student’s numerical ability and mathematical proficiency. For a wholesome learning experience download free pdf for Class 3 Chapter 3 Solution that can be of great value if you are trying to excel in your school examinations.\nThe overall concept of NCERT Class 3 Maths Chapter 3 is focused on adding and subtracting numbers by writing them vertically and horizontally. Easy download of NCERT Class 3 Math Chapter 3 Solution is available for a better grip on the chapter. Students will grow interested and practise more to ace I the subject.\nImportance of NCERT Solutions for Class 3 Maths Chapter 3\nChapter 3 of the class 3 Maths syllabus is ‘Give and Take’. This chapter is one of the fundamental and widely used concepts that is covered in the class 3 maths syllabus since it introduces the basic ideas of addition and subtraction. A very crucial chapter in Class 3 mathematics, Give and Take lets students understand the topic through real-life actions and situations and makes the learning fun and engaging.\nThe solutions given in this chapter are designed to suit the needs of students who are in class 3 and are meant to be relatable and interesting. Vedantu’s expert teachers have made it certain that students reading and learning the topics covered under this chapter will surely perform great in their exams if they practise the given solutions alongside. So let’s get started with the learning!\nAn Overview of Class 3 Maths Chapter 3- Give and Take\nThe chapter deals with all the detailed basic operations like addition, subtraction and expansion of 2-digit numbers. NCERT Chapter 3 Give and Take teaches the properties of whole numbers like place value. An array of fun exercises including the use of token cards to help students with visual estimation of numbers and column addition without regrouping. To follow a stepwise approach towards estimating the result of operation follows NCERT Maths Class 3 Chapter 3 solutions. The following exercises have been solved in CBSE Class 3 Maths Chapter 3 Solutions:\nMaths Class 3 Chapter 3: Exercises\nPage29-30: Give and Take\nPage 30-32: Find My Food\nPage 33-34: Adding Made Easy\nPage 34-35: Mango Chilli Game\nPage 36-38: Let Me Tell You a Story\nPage 39-42: How Many Bulbs?\nPage 42: Practice Time\nPage 42-43: Mind Bus Game\nPage 43: Can You Solve The Puzzle?\nPage 44: Find MIthoo’s Bag\nPage 45: Card Game\nBenefits of NCERT Solutions for Class 3 Maths\nThe NCERT Solutions For Class 3 Maths have been curated as per strict CBSE norms to serve the purpose of success in examinations.\nArranged topic-wise for easy searching\nThe content is of high quality, error-free and has precise reasoning\nProficient subject experts provide strong concepts, tips and chapter insights\nImportant definitions and formulas included for a refresher\nA chronological approach towards easy understanding\nNCERT Solutions for Class 3 Maths Chapter 3 is specially curated to answer even the slightest doubt of the students.\nImportant Questions and Answers of Ch 3 Class 3 Maths"
     },
     {
       "q": "1. What is the Importance of Chapter 3 Maths Class 3 Important?",
@@ -102,7 +102,7 @@ export default {
     },
     {
       "q": "2. What Do You Learn from Give and Take NCERT Class 3 Maths Chapter 3?",
-      "a": "Class 3 Maths Chapter 3 Give and Take teaches you to:\nAdd and subtract numbers by writing them vertically and horizontally with and without regrouping.\nFrame problems for addition and subtraction.\nExpand a\u00a0 number using the concept of place value."
+      "a": "Class 3 Maths Chapter 3 Give and Take teaches you to:\nAdd and subtract numbers by writing them vertically and horizontally with and without regrouping.\nFrame problems for addition and subtraction.\nExpand a  number using the concept of place value."
     },
     {
       "q": "3. Find the Answers to the Following:\n17 less than 93 =\n68 - 13 =\nTake away 9 from 55=\nWhat is the difference between 24 and 12?\n8 when added to 18, gives=\nReducing 100 by 25 gives=\n30, and 20 more is=\n15 less than 45 is=\nThe sum of 23 and 7 is=\n12 more than 24 is=",
@@ -110,7 +110,7 @@ export default {
     },
     {
       "q": "5. A Herd of 12 Sheep was Walking on the Road. 10 More Sheep Joined them on the Field. How Many Sheep Were There Altogether?",
-      "a": "12 sheep were there in the herd.\n10 more sheep joined them.\nTherefore, the herd now has (12+10) = 22 sheep.\nAre you finding these problems interesting? Then download your own free PDF of Class 3 Chapter 3 Solution by Vedantu. You will surely become a pro in \u2018Give and Take\u2019 sums in no time.\nAccess other Chapters of NCERT Solutions for Class 3 Maths\nChapter 1 - Where To Look From\nChapter 2 - Fun with Numbers\nChapter 4 - Long And Short\nChapter 5 - Shapes And Designs\nChapter 6 - Fun With Give And Take\nChapter 7 - Time Goes On\nChapter 8 - Who Is Heavier\nChapter 9 - How Many Times\nChapter 10 - Play With Patterns\nChapter 11 - Jugs And Mugs\nChapter 12 - Can We Share\nChapter 13 - Smart Charts\nChapter 14 - Rupees And Paise\nConclusion\nVedantu's\nNCERT Solutions for Class 3 Maths Chapter 3\n- \"Give and Take\" are an exceptional educational resource that empowers young learners to grasp the fundamental concepts of mathematics effortlessly. Through their interactive and engaging approach, Vedantu simplifies complex mathematical problems, fostering a deeper understanding and love for learning. These solutions provide a comprehensive platform for students to develop essential mathematical skills, problem-solving abilities, and critical thinking. By offering a systematic and well-structured learning experience, Vedantu ensures that students build a strong foundation in mathematics from an early age. With Vedantu's support, students can confidently embrace the subject, setting the stage for future academic success."
+      "a": "12 sheep were there in the herd.\n10 more sheep joined them.\nTherefore, the herd now has (12+10) = 22 sheep.\nAre you finding these problems interesting? Then download your own free PDF of Class 3 Chapter 3 Solution by Vedantu. You will surely become a pro in ‘Give and Take’ sums in no time.\nAccess other Chapters of NCERT Solutions for Class 3 Maths\nChapter 1 - Where To Look From\nChapter 2 - Fun with Numbers\nChapter 4 - Long And Short\nChapter 5 - Shapes And Designs\nChapter 6 - Fun With Give And Take\nChapter 7 - Time Goes On\nChapter 8 - Who Is Heavier\nChapter 9 - How Many Times\nChapter 10 - Play With Patterns\nChapter 11 - Jugs And Mugs\nChapter 12 - Can We Share\nChapter 13 - Smart Charts\nChapter 14 - Rupees And Paise\nConclusion\nVedantu's\nNCERT Solutions for Class 3 Maths Chapter 3\n- \"Give and Take\" are an exceptional educational resource that empowers young learners to grasp the fundamental concepts of mathematics effortlessly. Through their interactive and engaging approach, Vedantu simplifies complex mathematical problems, fostering a deeper understanding and love for learning. These solutions provide a comprehensive platform for students to develop essential mathematical skills, problem-solving abilities, and critical thinking. By offering a systematic and well-structured learning experience, Vedantu ensures that students build a strong foundation in mathematics from an early age. With Vedantu's support, students can confidently embrace the subject, setting the stage for future academic success."
     }
   ],
   "4": [
@@ -128,34 +128,34 @@ export default {
     },
     {
       "q": "4. Use the tens frame to solve the following.\n(i) 6 + 8 = .............",
-      "a": "(ii) 5 + 10 = .............\nAns:\n(iii) 9 \u2013 6 = .............\nAns:\n(iv) 18 \u2013 9 = .............\nAns:"
+      "a": "(ii) 5 + 10 = .............\nAns:\n(iii) 9 – 6 = .............\nAns:\n(iv) 18 – 9 = .............\nAns:"
     },
     {
       "q": "5. Nandini and Chirag have got their stamps to show to their friends and Nani Maa.\nHow many stamps do they have now?\nNandini, Chirag and Nani Maa figured out the answer in three different ways using their ginladi:",
       "a": "Chirag and Nandini together have 22 stamps."
     },
     {
-      "q": "6. Nani Maa\u2019s brother gives them 30 stamps. How many stamps do they have now?\nAs of right now, they have 52 stamps overall.",
-      "a": "Stamps they have now = 52\nThey now have 52 stamps. Nandini and Chirag count and find that they have 37 stamps with faces of famous persons and the remaining with pictures of monuments.\nHow many stamps with pictures of monuments do they have?\nAns:\nStamps they will have next time = 75\nNumber of more stamps they will need = 23\nThey have 15 stamps with pictures of monuments. Can you find other ways of doing it?\nHow many more stamps will they need? Figure it out using the number line.\nAns:\n7. (i) Solve using a ginladi.\na. 34 + 6\nAns:\nb. 23 + 12\nAns:\nc. 33 \u2013 5\nAns:\nd. 42 \u2013 15\nAns:\n(ii) A frog is jumping on the ginladi. He is at 7. He wants to jump 10 beads at a time. Mark the beads that he will jump on and write the numbers.\nAns:\nFrog Jumps 10 beads at a time.\n(iii) The frog again jumps forward by 10 each time. Mark all the places where the frog will land.\nAns:\nAt 23, the frog leaps ahead ten times every time.\n(iv)\u00a0 The grasshopper jumps backwards by 10 each time. Mark all the beads that the grasshopper will jump on and write numbers.\nAns:"
+      "q": "6. Nani Maa’s brother gives them 30 stamps. How many stamps do they have now?\nAs of right now, they have 52 stamps overall.",
+      "a": "Stamps they have now = 52\nThey now have 52 stamps. Nandini and Chirag count and find that they have 37 stamps with faces of famous persons and the remaining with pictures of monuments.\nHow many stamps with pictures of monuments do they have?\nAns:\nStamps they will have next time = 75\nNumber of more stamps they will need = 23\nThey have 15 stamps with pictures of monuments. Can you find other ways of doing it?\nHow many more stamps will they need? Figure it out using the number line.\nAns:\n7. (i) Solve using a ginladi.\na. 34 + 6\nAns:\nb. 23 + 12\nAns:\nc. 33 – 5\nAns:\nd. 42 – 15\nAns:\n(ii) A frog is jumping on the ginladi. He is at 7. He wants to jump 10 beads at a time. Mark the beads that he will jump on and write the numbers.\nAns:\nFrog Jumps 10 beads at a time.\n(iii) The frog again jumps forward by 10 each time. Mark all the places where the frog will land.\nAns:\nAt 23, the frog leaps ahead ten times every time.\n(iv)  The grasshopper jumps backwards by 10 each time. Mark all the beads that the grasshopper will jump on and write numbers.\nAns:"
     },
     {
       "q": "8. Some ants are carrying big leaves to their homes. They will eat these leaves in the rainy season. Nani Maa can tell how many ants there are without looking under the leaves. Can you also tell how many ants there are under the leaves?\nFill in the answers in the boxes provided.",
-      "a": "The quantity of ants tempting the leaves to tinder.\nNumber of ants under first leave = 25 \u2013 4 = 21\nAnts on second leave total = 66 \u2013 51 = 15.\nAnts on third leave total = 83 \u2013 73 = 10"
+      "a": "The quantity of ants tempting the leaves to tinder.\nNumber of ants under first leave = 25 – 4 = 21\nAnts on second leave total = 66 – 51 = 15.\nAnts on third leave total = 83 – 73 = 10"
     },
     {
-      "q": "9.\u00a0 Fill in the tables by jumping as instructed.",
+      "q": "9.  Fill in the tables by jumping as instructed.",
       "a": "Detailed solution available."
     },
     {
       "q": "10. Adding and Subtracting Smartly with the Number Grid\nUse the number grid to answer the following. Show your thinking by drawing arrows in the grid.\na. Nandini is at 45. She gets 34. She will land on ..........",
-      "a": "45 + 34 = 79\nb. Chirag is at 75. He gets 56. He will land on ..........\nAns:\nChirag is seventy-five. 56 can't be moved forward by him. He thus goes backwards by 56.\n75 \u2013 56 = 19\nc. Nandini is at 30. She gets 66. She will land on ..........\nAns:\nNandini is thirty years old. She receives 66. She'll touch down at 30 + 66 = 96.\nd. Chirag is at 89. He gets 63. He will land on ..........\nAns:\nChirag is currently 89 years old. He travels 63 backwards because he is unable to move 63 forward. 89 \u2013 63 = 26"
+      "a": "45 + 34 = 79\nb. Chirag is at 75. He gets 56. He will land on ..........\nAns:\nChirag is seventy-five. 56 can't be moved forward by him. He thus goes backwards by 56.\n75 – 56 = 19\nc. Nandini is at 30. She gets 66. She will land on ..........\nAns:\nNandini is thirty years old. She receives 66. She'll touch down at 30 + 66 = 96.\nd. Chirag is at 89. He gets 63. He will land on ..........\nAns:\nChirag is currently 89 years old. He travels 63 backwards because he is unable to move 63 forward. 89 – 63 = 26"
     },
     {
       "q": "11. Magic Sum\nNandini and Chirag find some puzzles that Nani Maa has solved. Observe the numbers. What do you notice? Fill in the boxes below. In each puzzle, all numbers 1-9 are there. The numbers in each row add up to the number in the box on the right. The numbers in each column add up to the number in the box below.\nAdd the numbers in the blue boxes and the numbers in the red boxes in each of the puzzles. What do you find?\nNani Maa was doing something in the newspaper. Nandini and Chirag looked into what she was doing.",
-      "a": "Magic magic magic!!!\nWith numbers 1 to 9\nAdd the numbers in a line\nFrom left to right\nAnd from top to bottom\nDid you find the magic?\nNow, try from right to left\nAnd from bottom to top\nIsn\u2019t it magical?\nThere is something more,\nsomething more\nAdd the numbers on the diagonal\nIsn\u2019t it magical?\nAns:\nFill in the blanks to complete the Magic square\nAns:"
+      "a": "Magic magic magic!!!\nWith numbers 1 to 9\nAdd the numbers in a line\nFrom left to right\nAnd from top to bottom\nDid you find the magic?\nNow, try from right to left\nAnd from bottom to top\nIsn’t it magical?\nThere is something more,\nsomething more\nAdd the numbers on the diagonal\nIsn’t it magical?\nAns:\nFill in the blanks to complete the Magic square\nAns:"
     },
     {
-      "q": "12. Nandini and Chirag went to their Nani Maa\u2019s field. Nani Maa has two fields.\nNani Maa has plucked 25 red radishes and 36 white radishes. How many total radishes has she plucked? Nandini starts by drawing the problem on the ground.",
+      "q": "12. Nandini and Chirag went to their Nani Maa’s field. Nani Maa has two fields.\nNani Maa has plucked 25 red radishes and 36 white radishes. How many total radishes has she plucked? Nandini starts by drawing the problem on the ground.",
       "a": ""
     },
     {
@@ -179,7 +179,7 @@ export default {
       "a": ""
     },
     {
-      "q": "17. This game is to be played between two children. The first player should say a number between 1 and 10. The second player adds a number between 1 and 10 to the first player\u2019s number. The first player again adds a number between 1 and 10 to the previous sum. The player to reach 100 first is the winner. An example is given here: Player 1 wins this round! Play this game with your friends.",
+      "q": "17. This game is to be played between two children. The first player should say a number between 1 and 10. The second player adds a number between 1 and 10 to the first player’s number. The first player again adds a number between 1 and 10 to the previous sum. The player to reach 100 first is the winner. An example is given here: Player 1 wins this round! Play this game with your friends.",
       "a": "Player 1 wins this round!"
     },
     {
@@ -191,7 +191,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Vacation with My Nani Maa Revision Notes\nConclusion\nIn conclusion, Chapter 4, \"Vacation with My Nani Maa,\" helps students learn basic math concepts like counting, addition, and subtraction in a fun and engaging way. Through relatable examples and enjoyable activities, students build a strong foundation in math, making the subject enjoyable and easy to understand. This chapter not only strengthens their math skills but also encourages them to see the practical side of learning.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 4 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 5: Fun with Shapes Solutions\n5\nChapter 6: House of Hundreds - I Solutions\n6\nChapter 7: Raksha Bandhan Solutions\n7\nChapter 8: Fair Share Solutions\n8\nChapter 9: House of Hundreds - II Solutions\n9\nChapter 10: Fun at Class Party! Solutions\n10\nChapter 11: Filling and Lifting Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -199,7 +199,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -209,11 +209,11 @@ export default {
   ],
   "5": [
     {
-      "q": "1. Make Amma\u2019s rangoli on the dots given below.",
+      "q": "1. Make Amma’s rangoli on the dots given below.",
       "a": ""
     },
     {
-      "q": "2. Name the shapes drawn in Amma\u2019s rangoli:",
+      "q": "2. Name the shapes drawn in Amma’s rangoli:",
       "a": "Circle, Triangle, and Square."
     },
     {
@@ -226,7 +226,7 @@ export default {
     },
     {
       "q": "5. Try to make the following objects using shape cutouts.",
-      "a": "Students should do it themselves.\n6.\n(i) Collect some cardboard boxes and open them up carefully. What shapes do you see in the flattened boxes?\nAns:\nStudents should do it themselves.\n(ii) Make an Envelope. Use a square piece of paper and fold it as shown in the picture.\nAns:\nStudents should do it themselves.\n(iii)\nWhy did the two children get different shapes? Discuss. Name any three objects that have rectangular faces.\nAns:\nBook, Tabletops, Bricks.\n(iv) Trace all the faces of any cuboidal object. (example \u2014 sharpener or eraser)\n(a) How many different faces did you get? __________________\n(b) What shapes are these faces? __________________\n(c) Did you get a square? __________________\n(d) Can you get six different rectangles by tracing a cuboid? __________________\n(e) Can a cuboid have a face like a triangle? __________________\n(f) The faces of a cuboid are __________________ or __________________ in shape.\nAns:\n(a) How many different faces did you get?\nSix\n(b) What shapes are these faces?\nRectangle and square\n(e) Did you get a square?\nNo\n(d) Can you get six different rectangles by tracing a cuboid?\nNo\n(e) Can a cuboid have a face like a triangle?\nNo\n(f) The faces of a cuboid are\nrectangular\nor\nsquare\n.\n(v)\u00a0 Construct the rectangles using the sides given below:\nAns:\n(vi) Draw 3 bigger rectangles around this small rectangle.\nAns:"
+      "a": "Students should do it themselves.\n6.\n(i) Collect some cardboard boxes and open them up carefully. What shapes do you see in the flattened boxes?\nAns:\nStudents should do it themselves.\n(ii) Make an Envelope. Use a square piece of paper and fold it as shown in the picture.\nAns:\nStudents should do it themselves.\n(iii)\nWhy did the two children get different shapes? Discuss. Name any three objects that have rectangular faces.\nAns:\nBook, Tabletops, Bricks.\n(iv) Trace all the faces of any cuboidal object. (example — sharpener or eraser)\n(a) How many different faces did you get? __________________\n(b) What shapes are these faces? __________________\n(c) Did you get a square? __________________\n(d) Can you get six different rectangles by tracing a cuboid? __________________\n(e) Can a cuboid have a face like a triangle? __________________\n(f) The faces of a cuboid are __________________ or __________________ in shape.\nAns:\n(a) How many different faces did you get?\nSix\n(b) What shapes are these faces?\nRectangle and square\n(e) Did you get a square?\nNo\n(d) Can you get six different rectangles by tracing a cuboid?\nNo\n(e) Can a cuboid have a face like a triangle?\nNo\n(f) The faces of a cuboid are\nrectangular\nor\nsquare\n.\n(v)  Construct the rectangles using the sides given below:\nAns:\n(vi) Draw 3 bigger rectangles around this small rectangle.\nAns:"
     },
     {
       "q": "7. Count and write the number of rectangles in the following picture.",
@@ -313,7 +313,7 @@ export default {
       "a": "A circle is a simple, closed shape where every point on the curve is equidistant from a fixed point called the centre. This distance from the centre to any point on the circle is known as the radius. The shape is perfectly round, with no edges or corners.\nA rectangle, on the other hand, is a four-sided polygon with opposite sides that are equal in length and all angles that are right angles (90 degrees). Unlike a circle, a rectangle has straight edges and four corners, or vertices."
     },
     {
-      "q": "22. Look at these two shapes and discuss their similarities and differences. Tick \u00fc the appropriate word.",
+      "q": "22. Look at these two shapes and discuss their similarities and differences. Tick ü the appropriate word.",
       "a": ""
     },
     {
@@ -334,7 +334,7 @@ export default {
     },
     {
       "q": "27. Each of these shapes can be the odd one out.\nHow is each one odd? Discuss",
-      "a": "Red Shape (Circle within a Square)\nOdd Based on Shape\n: The red shape is unique because it contains both a square and a circle, whereas all other shapes are singular shapes.\nOdd Based on Colour\n: It is the only shape that combines two different shapes in one (circle inside a square).\nOrange Rectangle\nOdd Based on Shape\n: The orange rectangle is the only shape that is not equilateral, meaning its sides are not all of equal length.\nOdd Based on Shape Type\n: It\u2019s the only shape that is not symmetric along both axes (it is symmetric only along its vertical axis).\nBlue Triangle\nOdd Based on Corners\n: The blue triangle is the only shape with three sides and three corners, while the others have four sides.\nOdd Based on Type of Angles\n: It's the only shape that includes angles less than 90 degrees.\nGreen Square\nOdd Based on Colour\n: The green square is the only shape with no additional features (like the circle inside the red square) and is purely one colour.\nOdd Based on Symmetry\n: It\u2019s the only shape that is perfectly symmetric along both its horizontal and vertical axes without any inner shape or additional elements."
+      "a": "Red Shape (Circle within a Square)\nOdd Based on Shape\n: The red shape is unique because it contains both a square and a circle, whereas all other shapes are singular shapes.\nOdd Based on Colour\n: It is the only shape that combines two different shapes in one (circle inside a square).\nOrange Rectangle\nOdd Based on Shape\n: The orange rectangle is the only shape that is not equilateral, meaning its sides are not all of equal length.\nOdd Based on Shape Type\n: It’s the only shape that is not symmetric along both axes (it is symmetric only along its vertical axis).\nBlue Triangle\nOdd Based on Corners\n: The blue triangle is the only shape with three sides and three corners, while the others have four sides.\nOdd Based on Type of Angles\n: It's the only shape that includes angles less than 90 degrees.\nGreen Square\nOdd Based on Colour\n: The green square is the only shape with no additional features (like the circle inside the red square) and is purely one colour.\nOdd Based on Symmetry\n: It’s the only shape that is perfectly symmetric along both its horizontal and vertical axes without any inner shape or additional elements."
     },
     {
       "q": "28. To complete the rectangle, tick the appropriate shapes from the left side to fill the gaps in the shape on the right side.",
@@ -361,7 +361,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Fun with Shapes Revision Notes\nConclusion\nIn conclusion, the NCERT Solutions for Class 3 Maths Chapter 5, \"Fun with Shapes,\" provides a valuable resource for young learners to explore and understand basic geometric concepts. Through clear explanations and engaging activities, students can easily grasp the properties of various shapes, develop problem-solving skills, and build a solid foundation in geometry. These solutions not only make learning enjoyable but also ensure that students are well-prepared for future mathematical challenges.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 5 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 6: House of Hundreds - I Solutions\n6\nChapter 7: Raksha Bandhan Solutions\n7\nChapter 8: Fair Share Solutions\n8\nChapter 9: House of Hundreds - II Solutions\n9\nChapter 10: Fun at Class Party! Solutions\n10\nChapter 11: Filling and Lifting Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -369,7 +369,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -411,11 +411,11 @@ export default {
       "a": ""
     },
     {
-      "q": "9. Make the number slider as shown in the picture. Increase or decrease the number as given below:\na. 285 \u2013 increase the number by one\nb. 147 \u2013 increase the number by ten\nc. 367 \u2013 decrease the number by 2\nd. 289 \u2013 decrease the number by 10\ne. 290 \u2013 increase the number by 20",
+      "q": "9. Make the number slider as shown in the picture. Increase or decrease the number as given below:\na. 285 – increase the number by one\nb. 147 – increase the number by ten\nc. 367 – decrease the number by 2\nd. 289 – decrease the number by 10\ne. 290 – increase the number by 20",
       "a": "(a)\n(b)\n(c)\n(d)\n(e)"
     },
     {
-      "q": "10. Write down any number name. Count the number of letters in that number name and write the name of that new number down. Keep repeating \u2014 what happens?",
+      "q": "10. Write down any number name. Count the number of letters in that number name and write the name of that new number down. Keep repeating — what happens?",
       "a": ""
     },
     {
@@ -439,7 +439,7 @@ export default {
       "a": "400 is more."
     },
     {
-      "q": "12. Teji and Jojo are hungry after all the running around. They go to Farooq Chacha\u2019s Sweet Shop.\nHow many pieces of Mysore Pak are in one tray? .................\nb. How many pieces of Mysore Pak are there in total? .................\nc. How many ladoos does chacha have in the trays? .................\nd. How many dhoklas does chacha have? .................\ne. Chacha is going to fill the tray with more laddoos. How many more laddoos will make the tray full? .................\nf. How many total laddoos will he have after the last tray is full? .................\ng. Mark the following numbers on the number line below: 423, 487, 438, 476.",
+      "q": "12. Teji and Jojo are hungry after all the running around. They go to Farooq Chacha’s Sweet Shop.\nHow many pieces of Mysore Pak are in one tray? .................\nb. How many pieces of Mysore Pak are there in total? .................\nc. How many ladoos does chacha have in the trays? .................\nd. How many dhoklas does chacha have? .................\ne. Chacha is going to fill the tray with more laddoos. How many more laddoos will make the tray full? .................\nf. How many total laddoos will he have after the last tray is full? .................\ng. Mark the following numbers on the number line below: 423, 487, 438, 476.",
       "a": "(a) 1100\n(b) 445\n(c) 469\n(d) 470\n(e) 31\n(f) 500 laddoos.\n(g)"
     },
     {
@@ -447,7 +447,7 @@ export default {
       "a": ""
     },
     {
-      "q": "14. Arvind Dada has to deliver sweets from Farooq Chacha\u2019s shop to different houses. Colour the houses to which he has to deliver sweets. The house numbers are: 209, 228, 242, 258, 267, 276, 290, 315, 346, 367, 389, 395.",
+      "q": "14. Arvind Dada has to deliver sweets from Farooq Chacha’s shop to different houses. Colour the houses to which he has to deliver sweets. The house numbers are: 209, 228, 242, 258, 267, 276, 290, 315, 346, 367, 389, 395.",
       "a": ""
     },
     {
@@ -476,7 +476,7 @@ export default {
     },
     {
       "q": "21. Number hunt Write the numbers between 200 and 300 that have 5 as a digit. Is 245 one such number? Write the other numbers.",
-      "a": "The numbers with 5 as a digit that fall between 200 and 300 are:\nNumbers 205\u2013215, 225\u2013235\u2013245, 255\u2013265, 275\u2013285, 295\nIndeed, 245 is one such number."
+      "a": "The numbers with 5 as a digit that fall between 200 and 300 are:\nNumbers 205–215, 225–235–245, 255–265, 275–285, 295\nIndeed, 245 is one such number."
     },
     {
       "q": "22. Compare the following numbers and use the signs >, < appropriately",
@@ -511,7 +511,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 House of Hundreds - I Revision Notes\nConclusion\nThe NCERT Solutions for Class 3 Maths Chapter 6: House of Hundreds - I offer a comprehensive and effective way to master the concept of place value. By breaking down the topic into clear, manageable sections and providing ample practice opportunities, these solutions ensure that students develop a solid understanding of how numbers are structured using hundreds, tens, and units. The visual aids and structured approach not only make learning engaging but also lay a strong foundation for future mathematical skills.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 6 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 7: Raksha Bandhan Solutions\n7\nChapter 8: Fair Share Solutions\n8\nChapter 9: House of Hundreds - II Solutions\n9\nChapter 10: Fun at Class Party! Solutions\n10\nChapter 11: Filling and Lifting Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -519,7 +519,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -529,7 +529,7 @@ export default {
   ],
   "7": [
     {
-      "q": "1. Tomorrow is Gopal\u2019s favourite festival. Gopal and Dhara are very excited. Their beloved Atya (father\u2019s sister) is visiting them today. They have cleaned and decorated their house. Carefully observe Gopal\u2019s house. What do you find interesting here?",
+      "q": "1. Tomorrow is Gopal’s favourite festival. Gopal and Dhara are very excited. Their beloved Atya (father’s sister) is visiting them today. They have cleaned and decorated their house. Carefully observe Gopal’s house. What do you find interesting here?",
       "a": "Here, there are a tonne of leaves, glasses, flowers, and pomegranates."
     },
     {
@@ -545,24 +545,24 @@ export default {
       "a": ""
     },
     {
-      "q": "5. Distribute all the kaju katlis equally among 4 people. How many kaju katlis will each get? Let us do this in the picture given below. Strike out the kaju katas from the tray and draw them on the plates.\nEach will get ........ kaju katlis.\n16 \u00f7 4 = ........",
-      "a": "Each will get\n4\nkaju katlis.\n16 \u00f7 4 =\n4"
+      "q": "5. Distribute all the kaju katlis equally among 4 people. How many kaju katlis will each get? Let us do this in the picture given below. Strike out the kaju katas from the tray and draw them on the plates.\nEach will get ........ kaju katlis.\n16 ÷ 4 = ........",
+      "a": "Each will get\n4\nkaju katlis.\n16 ÷ 4 =\n4"
     },
     {
-      "q": "6. Distribute all the 15 pedals in plates equally among 5 people. How many pedals will each get?\n15 equally shared by 5 is ........ each.\n15 \u00f7 5 = ........ .",
-      "a": "15 equally shared by 5 is\n3\neach.\n15 \u00f7 5 =\n3\n."
+      "q": "6. Distribute all the 15 pedals in plates equally among 5 people. How many pedals will each get?\n15 equally shared by 5 is ........ each.\n15 ÷ 5 = ........ .",
+      "a": "15 equally shared by 5 is\n3\neach.\n15 ÷ 5 =\n3\n."
     },
     {
-      "q": "7. Each cycle needs 2 wheels. How many cycles can be fitted with 12 wheels?\n12 equally divided by 2 is .........\nLet us Think Let Us Think 12 \u00f7 2 = .........",
-      "a": "12 equally divided by 2 is\n6\nLet us Think Let Us Think 12 \u00f7 2 =\n6"
+      "q": "7. Each cycle needs 2 wheels. How many cycles can be fitted with 12 wheels?\n12 equally divided by 2 is .........\nLet us Think Let Us Think 12 ÷ 2 = .........",
+      "a": "12 equally divided by 2 is\n6\nLet us Think Let Us Think 12 ÷ 2 =\n6"
     },
     {
-      "q": "8. Look at the picture carefully. Count the number of jalebis\nThere are ........ jalebis\nHow did you count? Discuss with your friends. Counting in groups, we see there are six groups of four jalebis each,\nAre there enough jalebis for everyone in Dhara\u2019s family to have four each? Share your thoughts in the class. How many jalebis should Dhara buy so that everyone can get four each?",
-      "a": "No 24 jalebis are not enough for everyone in Dhara\u2019s family to have four each.\nTotal members of Dhara\u2019s family = 9\nSo we need 3 more groups of 4 jalebis.\n4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 =\n36\nDhara should buy\n36\njalebis so that everyone gets four each."
+      "q": "8. Look at the picture carefully. Count the number of jalebis\nThere are ........ jalebis\nHow did you count? Discuss with your friends. Counting in groups, we see there are six groups of four jalebis each,\nAre there enough jalebis for everyone in Dhara’s family to have four each? Share your thoughts in the class. How many jalebis should Dhara buy so that everyone can get four each?",
+      "a": "No 24 jalebis are not enough for everyone in Dhara’s family to have four each.\nTotal members of Dhara’s family = 9\nSo we need 3 more groups of 4 jalebis.\n4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 + 4 =\n36\nDhara should buy\n36\njalebis so that everyone gets four each."
     },
     {
-      "q": "9. Plants in the garden Dhara and Gopal see a flower bed on their way home. Dhara: The number of plants is 6 + 6 + 6 + 6 + 6 + 6 + 6 + 6 = ..... 8 times 6 =\n= 8 \u00d7 6 =\nGopal: No, it is 8 + 8 + 8 + 8 + 8 + 8 = 6 \u00d7 8 Who do you think is correct?",
-      "a": "Dhara: The number of plants is\n6 + 6 + 6 + 6 + 6 + 6 + 6 + 6 = 48\n8 times 6 = 8 \u00d7 6 = 48\nGopal: No, it is 8 + 8 + 8 + 8 + 8 + 8\n6 \u00d7 8 = 48\nDhara and Gopal both are correct."
+      "q": "9. Plants in the garden Dhara and Gopal see a flower bed on their way home. Dhara: The number of plants is 6 + 6 + 6 + 6 + 6 + 6 + 6 + 6 = ..... 8 times 6 =\n= 8 × 6 =\nGopal: No, it is 8 + 8 + 8 + 8 + 8 + 8 = 6 × 8 Who do you think is correct?",
+      "a": "Dhara: The number of plants is\n6 + 6 + 6 + 6 + 6 + 6 + 6 + 6 = 48\n8 times 6 = 8 × 6 = 48\nGopal: No, it is 8 + 8 + 8 + 8 + 8 + 8\n6 × 8 = 48\nDhara and Gopal both are correct."
     },
     {
       "q": "10. Can you complete this equal grouping and write it as multiplication? Can you find more equal groups of different sizes? Draw them and write them as multiplication.",
@@ -605,7 +605,7 @@ export default {
       "a": "Gopal is skipping\n9\nsteps.\nAfter 27 he will jump on\n36\n,\n45\n."
     },
     {
-      "q": "8. What times table can you construct from Gopal\u2019s jumps? Make it in your notebook.",
+      "q": "8. What times table can you construct from Gopal’s jumps? Make it in your notebook.",
       "a": ""
     },
     {
@@ -621,7 +621,7 @@ export default {
       "a": "Times-5 table using sticks\nMake times-6 to times-10 tables using the sticks method shown above"
     },
     {
-      "q": "16.\u00a0 Multiplication Table\nLook at the times-5 table. What patterns do you see? Guess what will be the last digits of 11 \u00d7 5 and 12 \u00d7 5. Give 3 examples of numbers that when taken 5 times give an answer ending with\n(i) 0 ....... ....... .......\n(ii) 5 ....... ....... .......\nWithout finding the answer, can you tell the last digits of 18 \u00d7 5, 23 \u00d7 5, 32 \u00d7 5, 50 \u00d7 5. Look at the times tables of 2, 3, 5. They have a relation between them. Can you see it?",
+      "q": "16.  Multiplication Table\nLook at the times-5 table. What patterns do you see? Guess what will be the last digits of 11 × 5 and 12 × 5. Give 3 examples of numbers that when taken 5 times give an answer ending with\n(i) 0 ....... ....... .......\n(ii) 5 ....... ....... .......\nWithout finding the answer, can you tell the last digits of 18 × 5, 23 × 5, 32 × 5, 50 × 5. Look at the times tables of 2, 3, 5. They have a relation between them. Can you see it?",
       "a": "(i) 0\n4, 6, 8\n(ii) 5\n3, 5, 7"
     },
     {
@@ -630,15 +630,15 @@ export default {
     },
     {
       "q": "18. Draw pictures for each of the following problems in your notebook. Use counting, number line jumps or any other method to solve the problems.\na. There are 5 jars with 4 cookies in each jar. How many cookies are there?",
-      "a": "b. An idli vessel contains 6 idli plates. In each plate, we can make 4 idlis. How many idlis can be cooked in one go?\nAns:\nc. 30 cookies are to be distributed among 5 children equally. How many cookies will each child get?\nAns:\nd. Roro starts from 0 and takes 6 jumps to reach 18. All his jumps are of the same size. What is the size of Roro\u2019s jump?\nAns:\ne. Toto does not take jumps of the same size and still reaches 18 in 6 jumps. How did Toto jump?\nAns:\nf. Suma saves ` 8 every day. After how many days will she have ` 56?\nAns:\ng. Mary has 63 sea shells. She gives 7 sea shells to each of her 5 friends. How many does she have left?\nAns:"
+      "a": "b. An idli vessel contains 6 idli plates. In each plate, we can make 4 idlis. How many idlis can be cooked in one go?\nAns:\nc. 30 cookies are to be distributed among 5 children equally. How many cookies will each child get?\nAns:\nd. Roro starts from 0 and takes 6 jumps to reach 18. All his jumps are of the same size. What is the size of Roro’s jump?\nAns:\ne. Toto does not take jumps of the same size and still reaches 18 in 6 jumps. How did Toto jump?\nAns:\nf. Suma saves ` 8 every day. After how many days will she have ` 56?\nAns:\ng. Mary has 63 sea shells. She gives 7 sea shells to each of her 5 friends. How many does she have left?\nAns:"
     },
     {
-      "q": "19. Solve the following problems. Try constructing a word problem.\na. 4 \u00d7 9\nb. 32 \u00f7 8\nc. 6 \u00d7 7\nd. 45 \u00f7 5",
-      "a": "(a) 4 \u00d7 9 = 36\n(b) 32 \u00f7 8 = 4\n(c) 6 \u00d7 7 = 42\n(d) 45 \u00f7 5 = 9"
+      "q": "19. Solve the following problems. Try constructing a word problem.\na. 4 × 9\nb. 32 ÷ 8\nc. 6 × 7\nd. 45 ÷ 5",
+      "a": "(a) 4 × 9 = 36\n(b) 32 ÷ 8 = 4\n(c) 6 × 7 = 42\n(d) 45 ÷ 5 = 9"
     },
     {
-      "q": "20. Help Bhim! Bhim will need ........ spokes. Think and share with your friends how you found the answer. Let us see how Bhim did it. 10 wheels will need:\n5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 10 \u00d7 5 = ........ spokes.\nAnother 10 wheels will be needed ........ \u00d7 ........ = ........ spokes.\nSo, the total number of spokes needed is ........ + ........ = ........ spokes.",
-      "a": "5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 10 \u00d7 5 =\n50\nspokes\nAnother 10 wheels will need 10 \u00d7 5 =\n50\nspokes.\nSo, the total number of spokes needed is 50 + 50 =\n100\nspokes."
+      "q": "20. Help Bhim! Bhim will need ........ spokes. Think and share with your friends how you found the answer. Let us see how Bhim did it. 10 wheels will need:\n5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 10 × 5 = ........ spokes.\nAnother 10 wheels will be needed ........ × ........ = ........ spokes.\nSo, the total number of spokes needed is ........ + ........ = ........ spokes.",
+      "a": "5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 + 5 = 10 × 5 =\n50\nspokes\nAnother 10 wheels will need 10 × 5 =\n50\nspokes.\nSo, the total number of spokes needed is 50 + 50 =\n100\nspokes."
     },
     {
       "q": "21.",
@@ -654,35 +654,35 @@ export default {
     },
     {
       "q": "24. A spider has 8 legs.\n5 spiders will have ........ legs.\n10 spiders will have ........ legs.\n15 spiders will have ........ legs.",
-      "a": "Spider Leg Calculation\nLegs per Spider: 8\nFor 5 Spiders\n:\nTotal legs: 8 \u00d7 5 = 40 legs\nFor 10 Spiders\n:\nTotal legs: 8 \u00d7 10 = 80 legs\nFor 15 Spiders\n:\nTotal legs: 40 (from 5 spiders) + 80 (from 10 spiders) = 120 legs\nSummary\n:\n5 spiders will have 40 legs.\n10 spiders will have 80 legs.\n15 spiders will have 120 legs."
+      "a": "Spider Leg Calculation\nLegs per Spider: 8\nFor 5 Spiders\n:\nTotal legs: 8 × 5 = 40 legs\nFor 10 Spiders\n:\nTotal legs: 8 × 10 = 80 legs\nFor 15 Spiders\n:\nTotal legs: 40 (from 5 spiders) + 80 (from 10 spiders) = 120 legs\nSummary\n:\n5 spiders will have 40 legs.\n10 spiders will have 80 legs.\n15 spiders will have 120 legs."
     },
     {
       "q": "25. How many legs will 23 spiders have?",
-      "a": "Spider Leg Calculation\nLegs per Spider: 8\nFor 10 Spiders:\nTotal legs: 10 \u00d7 8 = 80 legs\nFor the Next 10 Spiders:\nTotal legs: 10 \u00d7 8 = 80 legs\nFor 3 Spiders:\nTotal legs: 3 \u00d7 8 = 24 legs\nTotal Legs for 23 Spiders:\nCombined legs: 80 (from first 10 spiders) + 80 (from next 10 spiders) + 24 (from 3 spiders) = 184 legs"
+      "a": "Spider Leg Calculation\nLegs per Spider: 8\nFor 10 Spiders:\nTotal legs: 10 × 8 = 80 legs\nFor the Next 10 Spiders:\nTotal legs: 10 × 8 = 80 legs\nFor 3 Spiders:\nTotal legs: 3 × 8 = 24 legs\nTotal Legs for 23 Spiders:\nCombined legs: 80 (from first 10 spiders) + 80 (from next 10 spiders) + 24 (from 3 spiders) = 184 legs"
     },
     {
       "q": "26. A group of spiders have 32 legs. How many spiders are there in the group?",
-      "a": "1 spider have = 8 legs\n2 spiders have = 2 \u00d7 8 = 16 legs\n3 spiders have = 3 \u00d7 8 = 24 legs\n4 spiders have = 4 \u00d7 8 = 32 legs\nSo, 4 spiders are in the group."
+      "a": "1 spider have = 8 legs\n2 spiders have = 2 × 8 = 16 legs\n3 spiders have = 3 × 8 = 24 legs\n4 spiders have = 4 × 8 = 32 legs\nSo, 4 spiders are in the group."
     },
     {
       "q": "27. Here is a 3-wheeled auto rickshaw. How many wheels are there in\na. 18 auto rickshaws?\nb. 34 auto rickshaws?",
-      "a": "(a) Calculation for 18 Auto Rickshaws:\nWheels per Auto Rickshaw\n: 3\nFor 10 Auto Rickshaws\n:\nTotal wheels: 3 \u00d7 10 = 30 wheels\nFor 8 Auto Rickshaws\n:\nTotal wheels: 3 \u00d7 8 = 24 wheels\nTotal Wheels for 18 Auto Rickshaws\n:\nCombined wheels: 30 (from 10 auto rickshaws) + 24 (from 8 auto rickshaws) = 54 wheels\n(b) Calculation for 34 Auto Rickshaws:\nFor 10 Auto Rickshaws\n:\nTotal wheels: 3 \u00d7 10 = 30 wheels\nFor the Next 10 Auto Rickshaws\n:\nTotal wheels: 3 \u00d7 10 = 30 wheels\nFor the Next 10 Auto Rickshaws\n:\nTotal wheels: 3 \u00d7 10 = 30 wheels\nFor 4 Auto Rickshaws\n:\nTotal wheels: 3 \u00d7 4 = 12 wheels\nTotal Wheels for 34 Auto Rickshaws\n:\nCombined wheels: 30 + 30 + 30 + 12 = 102 wheels"
+      "a": "(a) Calculation for 18 Auto Rickshaws:\nWheels per Auto Rickshaw\n: 3\nFor 10 Auto Rickshaws\n:\nTotal wheels: 3 × 10 = 30 wheels\nFor 8 Auto Rickshaws\n:\nTotal wheels: 3 × 8 = 24 wheels\nTotal Wheels for 18 Auto Rickshaws\n:\nCombined wheels: 30 (from 10 auto rickshaws) + 24 (from 8 auto rickshaws) = 54 wheels\n(b) Calculation for 34 Auto Rickshaws:\nFor 10 Auto Rickshaws\n:\nTotal wheels: 3 × 10 = 30 wheels\nFor the Next 10 Auto Rickshaws\n:\nTotal wheels: 3 × 10 = 30 wheels\nFor the Next 10 Auto Rickshaws\n:\nTotal wheels: 3 × 10 = 30 wheels\nFor 4 Auto Rickshaws\n:\nTotal wheels: 3 × 4 = 12 wheels\nTotal Wheels for 34 Auto Rickshaws\n:\nCombined wheels: 30 + 30 + 30 + 12 = 102 wheels"
     },
     {
       "q": "28. Auto rickshaws in a garage have a total of 36 wheels. How many auto rickshaws are there in the garage?",
-      "a": "10 auto rickshaws have = 30 wheels\n2 more auto rickshaws have = 2 \u00d7 3 = 6 wheels\nSo\n12\nauto rickshaws have 36 wheels"
+      "a": "10 auto rickshaws have = 30 wheels\n2 more auto rickshaws have = 2 × 3 = 6 wheels\nSo\n12\nauto rickshaws have 36 wheels"
     },
     {
       "q": "29. There is a line of 55 ants (one ant has 6 legs). What is the total number of legs in the line?",
-      "a": "Ant Leg Calculation\nLegs per Ant: 6\nFor 5 Ants:\nTotal legs: 5 \u00d7 6 = 30 legs\nFor 10 Ants:\nTotal legs: 10 \u00d7 6 = 60 legs\nFor 40 Ants (10 ants each in four groups):\nTotal legs: 60 \u00d7 4 = 240 legs\nFor 50 Ants:\nTotal legs: 240 (from 40 ants) + 60 (from 10 ants) = 300 legs\nFor 55 Ants:\nTotal legs: 300 (from 50 ants) + 30 (from 5 ants) = 330 legs\nTotal Legs:\nThere are 330 legs in total for 55 ants."
+      "a": "Ant Leg Calculation\nLegs per Ant: 6\nFor 5 Ants:\nTotal legs: 5 × 6 = 30 legs\nFor 10 Ants:\nTotal legs: 10 × 6 = 60 legs\nFor 40 Ants (10 ants each in four groups):\nTotal legs: 60 × 4 = 240 legs\nFor 50 Ants:\nTotal legs: 240 (from 40 ants) + 60 (from 10 ants) = 300 legs\nFor 55 Ants:\nTotal legs: 300 (from 50 ants) + 30 (from 5 ants) = 330 legs\nTotal Legs:\nThere are 330 legs in total for 55 ants."
     },
     {
       "q": "30. Micky, the mouse, can see 48 legs of cows in the shed. How many cows are there in the shed?",
-      "a": "Cow Leg Calculation\nLegs per Cow: 4\nFor 10 Cows:\nTotal legs: 10 \u00d7 4 = 40 legs\nFor 2 Cows:\nTotal legs: 2 \u00d7 4 = 8 legs\nTotal Number of Cows:\nNumber of cows = 10 (from the first group) + 2 (from the second group) = 12 cows\nConclusion:\nThere are 12 cows in the shed."
+      "a": "Cow Leg Calculation\nLegs per Cow: 4\nFor 10 Cows:\nTotal legs: 10 × 4 = 40 legs\nFor 2 Cows:\nTotal legs: 2 × 4 = 8 legs\nTotal Number of Cows:\nNumber of cows = 10 (from the first group) + 2 (from the second group) = 12 cows\nConclusion:\nThere are 12 cows in the shed."
     },
     {
       "q": "31. Karry, the crow, can see 24 horns of cows in the shed. What is the total number of legs in the shed?",
-      "a": "1 cow has = 2 horns\nSo 10 cows have = 2 \u00d7 10 = 20 horns\nand 2 cows have = 2 \u00d7 2 = 4 horns\nSo, 10 + 2 = 12 cow has 24 horns\n1 cows have = 4 legs\n10 cows have = 10 \u00d7 4 = 40 legs\n2 more cows have = 2 \u00d7 4 = 8 legs\nSo 12 cows have = 40 + 8 = 48 legs\nThe total number of legs in the shed is 48."
+      "a": "1 cow has = 2 horns\nSo 10 cows have = 2 × 10 = 20 horns\nand 2 cows have = 2 × 2 = 4 horns\nSo, 10 + 2 = 12 cow has 24 horns\n1 cows have = 4 legs\n10 cows have = 10 × 4 = 40 legs\n2 more cows have = 2 × 4 = 8 legs\nSo 12 cows have = 40 + 8 = 48 legs\nThe total number of legs in the shed is 48."
     },
     {
       "q": "32. A frog is at 0. It takes jumps of only 7. What would be the largest number that the frog will reach before crossing 50?",
@@ -697,16 +697,16 @@ export default {
       "a": ""
     },
     {
-      "q": "35. One wall hanging costs 42. How much do two wall hangings cost? Two wall hangings cost ` 42 + ` 42 = 2 \u00d7 ` 42 The cost of the two wall hangings: ..........",
-      "a": "Two wall-hangings cost \u20b9 42 + \u20b9 42 = 2 \u00d7 42\nThe cost of the two wall hangings = \u20b9 84."
+      "q": "35. One wall hanging costs 42. How much do two wall hangings cost? Two wall hangings cost ` 42 + ` 42 = 2 × ` 42 The cost of the two wall hangings: ..........",
+      "a": "Two wall-hangings cost ₹ 42 + ₹ 42 = 2 × 42\nThe cost of the two wall hangings = ₹ 84."
     },
     {
-      "q": "36. One Rabdi cup costs ` 75. Preeti buys 5 cups of Rabdi. She has her mother\u2019s purse which has only 100 notes. How many ` 100 notes should she give the shopkeeper? How much will the shopkeeper then return to Preeti? What is the total cost of 5 cups of Rabdi?",
+      "q": "36. One Rabdi cup costs ` 75. Preeti buys 5 cups of Rabdi. She has her mother’s purse which has only 100 notes. How many ` 100 notes should she give the shopkeeper? How much will the shopkeeper then return to Preeti? What is the total cost of 5 cups of Rabdi?",
       "a": ""
     },
     {
-      "q": "37. Dhruv lives near the sea. He thought of making a necklace for each of his three friends. He looked for sea shells the whole day. He collected 112 seashells by the evening. Now, he has many different coloured and shiny shells.\nHe took 28 shells for one necklace. 112 \u2013 28 = 84 Now he was left with 84 shells. Again he took 28 more shells for the second necklace.\n\u2022 How many shells are left now?\n\u2022 Then he took shells for the third necklace.\n\u2022 So he was left with ........... shells.\n\u2022 Are the shells enough for making necklaces for all his friends? ...........\n\u2022 How many necklaces can Dhruv make from 112 shells? ...........",
-      "a": "He took 28 shells for one necklace 112 \u2013 28 = 84\nAgain he took 28 more shells for the second necklace.\n\u2022 How many shells are left now?\n84 \u2013 28 = 56\nAns\n: 56 shells\n\u2022 Then he took shells for the third necklace.\n\u2022 So he was left with 56 \u2013 28 = 28 shells.\nAns\n: 28 shells\n\u2022 Are the shells enough for making necklaces for all his friends?\nAns\n: Yes\nHow many necklaces can Dhruv make from 112 shells?\nAns:\n4"
+      "q": "37. Dhruv lives near the sea. He thought of making a necklace for each of his three friends. He looked for sea shells the whole day. He collected 112 seashells by the evening. Now, he has many different coloured and shiny shells.\nHe took 28 shells for one necklace. 112 – 28 = 84 Now he was left with 84 shells. Again he took 28 more shells for the second necklace.\n• How many shells are left now?\n• Then he took shells for the third necklace.\n• So he was left with ........... shells.\n• Are the shells enough for making necklaces for all his friends? ...........\n• How many necklaces can Dhruv make from 112 shells? ...........",
+      "a": "He took 28 shells for one necklace 112 – 28 = 84\nAgain he took 28 more shells for the second necklace.\n• How many shells are left now?\n84 – 28 = 56\nAns\n: 56 shells\n• Then he took shells for the third necklace.\n• So he was left with 56 – 28 = 28 shells.\nAns\n: 28 shells\n• Are the shells enough for making necklaces for all his friends?\nAns\n: Yes\nHow many necklaces can Dhruv make from 112 shells?\nAns:\n4"
     },
     {
       "q": "38. Kannu makes a necklace of 17 sea-shells. How many such necklaces can be made using 100 sea shells?",
@@ -717,19 +717,19 @@ export default {
       "a": "Marble Distribution\nTotal Marbles\n: 127\nFirst Turn\n:\nDhruv gives 10 marbles to each of his three friends.\nTotal marbles given: 10 + 10 + 10 = 30\nMarbles remaining: 127 - 30 = 97\nSecond Turn\n:\nDhruv gives 10 marbles to each of his three friends again.\nTotal marbles given: 10 + 10 + 10 = 30\nMarbles remaining: 97 - 30 = 67\nThird Turn\n:\nDhruv gives 10 marbles to each of his three friends again.\nTotal marbles given: 10 + 10 + 10 = 30\nMarbles remaining: 67 - 30 = 37\nFourth Turn\n:\nDhruv gives 10 marbles to each of his three friends again.\nTotal marbles given: 10 + 10 + 10 = 30\nMarbles remaining: 37 - 30 = 7\nTotal Marbles Given to Each Friend\n:\nMarbles given in all turns: 10 + 10 + 10 + 10 = 40\nDistribution of Remaining Marbles\n:\nDhruv distributes the remaining 7 marbles, giving 1 marble to each friend:\nFirst distribution: 7 - 3 = 4 marbles left\nSecond distribution: 4 - 3 = 1 marble left\nFinal Count\n:\nEach friend receives 40 marbles from the initial distributions.\nPlus 1 marble from each of the two additional distributions.\nTotal marbles each friend gets: 40 + 1 + 1 = 42 marbles."
     },
     {
-      "q": "40. Preeti has a ` 500 note and wants to exchange it for lower denomination notes. How many notes will she get if she wants\u2014\n(i) All 50 rupees notes?\n(ii) All 20 rupees notes?\n(iii) All 10 rupees notes",
-      "a": "(i)\nUsing \u20b950 Notes\nFor \u20b9500, the breakdown with \u20b950 notes is as follows:\nAfter receiving the first \u20b950 note, \u20b9500 - \u20b950 leaves \u20b9450.\nAfter the second \u20b950 note, \u20b9450 - \u20b950 leaves \u20b9400.\nAfter the third \u20b950 note, \u20b9400 - \u20b950 leaves \u20b9350.\nAfter the fourth \u20b950 note, \u20b9350 - \u20b950 leaves \u20b9300.\nAfter the fifth \u20b950 note, \u20b9300 - \u20b950 leaves \u20b9250.\nAfter the sixth \u20b950 note, \u20b9250 - \u20b950 leaves \u20b9200.\nAfter the seventh \u20b950 note, \u20b9200 - \u20b950 leaves \u20b9150.\nAfter the eighth \u20b950 note, \u20b9150 - \u20b950 leaves \u20b9100.\nAfter the ninth \u20b950 note, \u20b9100 - \u20b950 leaves \u20b950.\nAfter the tenth \u20b950 note, \u20b950 - \u20b950 leaves \u20b90.\nThus, she will receive 10 \u20b950 notes for \u20b9500.\n(ii)\nUsing \u20b920 Notes\nFor \u20b9100, the breakdown with \u20b920 notes is:\nAfter receiving the first \u20b920 note, \u20b9100 - \u20b920 leaves \u20b980.\nAfter the second \u20b920 note, \u20b980 - \u20b920 leaves \u20b960.\nAfter the third \u20b920 note, \u20b960 - \u20b920 leaves \u20b940.\nAfter the fourth \u20b920 note, \u20b940 - \u20b920 leaves \u20b920.\nAfter the fifth \u20b920 note, \u20b920 - \u20b920 leaves \u20b90.\nSo, for \u20b9100, she will receive 5 \u20b920 notes. For \u20b9500, the calculation is:\n5 notes per \u20b9100, so for \u20b9500: 5 + 5 + 5 + 5 + 5 = 25 \u20b920 notes.\n(iii)\nUsing \u20b910 Notes\nFor \u20b950, the breakdown with \u20b910 notes is:\nAfter receiving the first \u20b910 note, \u20b950 - \u20b910 leaves \u20b940.\nAfter the second \u20b910 note, \u20b940 - \u20b910 leaves \u20b930.\nAfter the third \u20b910 note, \u20b930 - \u20b910 leaves \u20b920.\nAfter the fourth \u20b910 note, \u20b920 - \u20b910 leaves \u20b910.\nAfter the fifth \u20b910 note, \u20b910 - \u20b910 leaves \u20b90.\nThus, for \u20b950, she will receive 5 \u20b910 notes. For \u20b9100, she will need:\n5 notes for each \u20b950, so 5 + 5 = 10 \u20b910 notes. For \u20b9500, she will receive:\n10 notes per \u20b9100, so for \u20b9500: 10 + 10 + 10 + 10 + 10 = 50 \u20b910 notes."
+      "q": "40. Preeti has a ` 500 note and wants to exchange it for lower denomination notes. How many notes will she get if she wants—\n(i) All 50 rupees notes?\n(ii) All 20 rupees notes?\n(iii) All 10 rupees notes",
+      "a": "(i)\nUsing ₹50 Notes\nFor ₹500, the breakdown with ₹50 notes is as follows:\nAfter receiving the first ₹50 note, ₹500 - ₹50 leaves ₹450.\nAfter the second ₹50 note, ₹450 - ₹50 leaves ₹400.\nAfter the third ₹50 note, ₹400 - ₹50 leaves ₹350.\nAfter the fourth ₹50 note, ₹350 - ₹50 leaves ₹300.\nAfter the fifth ₹50 note, ₹300 - ₹50 leaves ₹250.\nAfter the sixth ₹50 note, ₹250 - ₹50 leaves ₹200.\nAfter the seventh ₹50 note, ₹200 - ₹50 leaves ₹150.\nAfter the eighth ₹50 note, ₹150 - ₹50 leaves ₹100.\nAfter the ninth ₹50 note, ₹100 - ₹50 leaves ₹50.\nAfter the tenth ₹50 note, ₹50 - ₹50 leaves ₹0.\nThus, she will receive 10 ₹50 notes for ₹500.\n(ii)\nUsing ₹20 Notes\nFor ₹100, the breakdown with ₹20 notes is:\nAfter receiving the first ₹20 note, ₹100 - ₹20 leaves ₹80.\nAfter the second ₹20 note, ₹80 - ₹20 leaves ₹60.\nAfter the third ₹20 note, ₹60 - ₹20 leaves ₹40.\nAfter the fourth ₹20 note, ₹40 - ₹20 leaves ₹20.\nAfter the fifth ₹20 note, ₹20 - ₹20 leaves ₹0.\nSo, for ₹100, she will receive 5 ₹20 notes. For ₹500, the calculation is:\n5 notes per ₹100, so for ₹500: 5 + 5 + 5 + 5 + 5 = 25 ₹20 notes.\n(iii)\nUsing ₹10 Notes\nFor ₹50, the breakdown with ₹10 notes is:\nAfter receiving the first ₹10 note, ₹50 - ₹10 leaves ₹40.\nAfter the second ₹10 note, ₹40 - ₹10 leaves ₹30.\nAfter the third ₹10 note, ₹30 - ₹10 leaves ₹20.\nAfter the fourth ₹10 note, ₹20 - ₹10 leaves ₹10.\nAfter the fifth ₹10 note, ₹10 - ₹10 leaves ₹0.\nThus, for ₹50, she will receive 5 ₹10 notes. For ₹100, she will need:\n5 notes for each ₹50, so 5 + 5 = 10 ₹10 notes. For ₹500, she will receive:\n10 notes per ₹100, so for ₹500: 10 + 10 + 10 + 10 + 10 = 50 ₹10 notes."
     },
     {
-      "q": "41. There are ten number cards from 1\u201310. There are five sealed envelopes. Each has two cards On the top of each envelope the multiplication of the numbers contained in it is written. The 5th envelope contains the cards 5 and 9. The number 5 \u00d7 9 = 45 is written on the envelope.\nIdentify the number of cards inside each of the envelopes.",
-      "a": "Benefits of NCERT Solutions for Class 3 Maths Chapter 7 Raksha Bandhan\nHelps students understand numbers and arithmetic by relating them to the Raksha Bandhan festival, making the learning experience more engaging and relevant.\nProvides practice problems that involve real-life scenarios, such as gifts and sweets, helping students see how maths is used in everyday situations.\nOffers step-by-step solutions and explanations that clarify basic arithmetic concepts like addition and subtraction, reinforcing students\u2019 comprehension.\nIncludes fun activities and examples tied to the festival, making maths more enjoyable and memorable for young learners.\nBuilds a strong foundation in basic arithmetic that is essential for more advanced maths concepts in later grades.\nImportant Study Material Links for Maths Chapter 7 Class 3 - Raksha Bandhan\nS.No.\nImportant Study Material Links for Chapter 7 Raksha Bandhan"
+      "q": "41. There are ten number cards from 1–10. There are five sealed envelopes. Each has two cards On the top of each envelope the multiplication of the numbers contained in it is written. The 5th envelope contains the cards 5 and 9. The number 5 × 9 = 45 is written on the envelope.\nIdentify the number of cards inside each of the envelopes.",
+      "a": "Benefits of NCERT Solutions for Class 3 Maths Chapter 7 Raksha Bandhan\nHelps students understand numbers and arithmetic by relating them to the Raksha Bandhan festival, making the learning experience more engaging and relevant.\nProvides practice problems that involve real-life scenarios, such as gifts and sweets, helping students see how maths is used in everyday situations.\nOffers step-by-step solutions and explanations that clarify basic arithmetic concepts like addition and subtraction, reinforcing students’ comprehension.\nIncludes fun activities and examples tied to the festival, making maths more enjoyable and memorable for young learners.\nBuilds a strong foundation in basic arithmetic that is essential for more advanced maths concepts in later grades.\nImportant Study Material Links for Maths Chapter 7 Class 3 - Raksha Bandhan\nS.No.\nImportant Study Material Links for Chapter 7 Raksha Bandhan"
     },
     {
       "q": "1.\nClass 3 Raksha Bandhan Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Raksha Bandhan Revision Notes\nConclusion\nThe NCERT Solutions for Class 3 Maths Chapter 7: Raksha Bandhan provides a vibrant and engaging approach to learning basic arithmetic. By incorporating the festive context of Raksha Bandhan, these solutions make mathematical concepts like addition and subtraction more relatable and enjoyable. Students benefit from practical problem-solving exercises and culturally relevant examples that enhance their understanding and application of numbers in everyday life.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 7 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 6: House of Hundreds - I Solutions\n7\nChapter 8: Fair Share Solutions\n8\nChapter 9: House of Hundreds - II Solutions\n9\nChapter 10: Fun at Class Party! Solutions\n10\nChapter 11: Filling and Lifting Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -737,7 +737,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -747,15 +747,15 @@ export default {
   ],
   "8": [
     {
-      "q": "4.\nLet us Do\nQuestion 1. Tick (\u2713) the objects that show quarters.",
-      "a": "wer:\nQuestion 2. Draw lines to make a quarter of the whole.\nAnswer:\nQuestion 3. Draw the remaining three quarters and complete the whole.\nAnswer:\nQuestion 4. Draw the remaining quarters to compete the whole\nAnswer:\nHalf of quarter?\nTick (\u2713) the appropriate word to fill the blanks below.\nShabnam has coloured half/a quarter of the birds.\nMukta has coloured half/a quarter of the birds.\nShabnam has coloured half/double the number of birds that Mukta has coloured.\nLakshanya and Peehu have 16 flowers each\nAnswer:\nQuarters and Whole\nLet us Do:\nQuestion 1. Tick (\u2713) the shapes below that show three-quarters.\nAnswer:\nQuestion 2. Colour the shapes below to show the fractions as instructed.\nAnswer:\nQuestion 3. Draw lines and colour the shapes below to show the fractions as instructed.\nAnswer:\nQuestion 4. Here is a rectangle which shows quarters. Discuss how.\nAnswer:\nTotal blocks = 16\n4 blocks are orange\n4 blocks are blue\n4 blocks are green\n4 blocks are yellow\n4 blocks are one-quarter of 16 blocks\nSo, a rectangle is showing quarters.\nQuestion 5. Show quarters and halves in different ways in the grids given below.\nAnswer:\nQuestion 6. Use the fraction cards from your book to form a whole.\nAnswer:\nDo yourself.\nBenefits of NCERT Solutions for Class 3 Maths Chapter 8 Fair Share\nThe solutions explain how to divide things equally in a simple way, helping students understand fair sharing.\nEach problem is solved step-by-step, making it easier for students to follow and solve similar problems on their own.\nStudents get more practice with dividing and sharing, improving their math skills.\nThe solutions cover important questions, making them helpful for revising and preparing for exams.\nChecking answers using the solutions builds confidence in solving maths problems correctly.\nYou can also check out Class 3 Maths Fair Share Revision Notes for quick revision of this chapter.\nConclusion\nThe NCERT Solutions for Class 3 Maths Chapter 8 \"Fair Share\" make learning the concept of equal division easy and enjoyable for students. With clear step-by-step explanations, these solutions help children understand how to divide objects or quantities equally. They provide useful practice, improve math skills, and build confidence in solving problems. These solutions are a great tool for exam preparation and ensuring students grasp the core concepts of fair sharing effectively.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 8 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS. No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 6: House of Hundreds - I Solutions\n7\nChapter 7: Raksha Bandhan Solutions\n8\nChapter 9: House of Hundreds - II Solutions\n9\nChapter 10: Fun at Class Party! Solutions\n10\nChapter 11: Filling and Lifting Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS. No\nImportant Links for Class 3 Maths"
+      "q": "4.\nLet us Do\nQuestion 1. Tick (✓) the objects that show quarters.",
+      "a": "wer:\nQuestion 2. Draw lines to make a quarter of the whole.\nAnswer:\nQuestion 3. Draw the remaining three quarters and complete the whole.\nAnswer:\nQuestion 4. Draw the remaining quarters to compete the whole\nAnswer:\nHalf of quarter?\nTick (✓) the appropriate word to fill the blanks below.\nShabnam has coloured half/a quarter of the birds.\nMukta has coloured half/a quarter of the birds.\nShabnam has coloured half/double the number of birds that Mukta has coloured.\nLakshanya and Peehu have 16 flowers each\nAnswer:\nQuarters and Whole\nLet us Do:\nQuestion 1. Tick (✓) the shapes below that show three-quarters.\nAnswer:\nQuestion 2. Colour the shapes below to show the fractions as instructed.\nAnswer:\nQuestion 3. Draw lines and colour the shapes below to show the fractions as instructed.\nAnswer:\nQuestion 4. Here is a rectangle which shows quarters. Discuss how.\nAnswer:\nTotal blocks = 16\n4 blocks are orange\n4 blocks are blue\n4 blocks are green\n4 blocks are yellow\n4 blocks are one-quarter of 16 blocks\nSo, a rectangle is showing quarters.\nQuestion 5. Show quarters and halves in different ways in the grids given below.\nAnswer:\nQuestion 6. Use the fraction cards from your book to form a whole.\nAnswer:\nDo yourself.\nBenefits of NCERT Solutions for Class 3 Maths Chapter 8 Fair Share\nThe solutions explain how to divide things equally in a simple way, helping students understand fair sharing.\nEach problem is solved step-by-step, making it easier for students to follow and solve similar problems on their own.\nStudents get more practice with dividing and sharing, improving their math skills.\nThe solutions cover important questions, making them helpful for revising and preparing for exams.\nChecking answers using the solutions builds confidence in solving maths problems correctly.\nYou can also check out"
     },
     {
       "q": "1.\nClass 3 Maths NCERT Book",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -763,7 +763,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 3 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     }
   ],
@@ -814,7 +814,7 @@ export default {
     },
     {
       "q": "5. Match the following such that all the conditions are met.",
-      "a": "wer:\nThe Number Detective\nLet us have some fun, with numbers and patterns, everyone!\nLook at the hundreds \u2013 \u00a0 100, 200, 300\nCan you find all the hundreds?\n____,____, ____, ____, ____, ____\nAns:\nSome numbers are special, let's explore, 789, 345 and 123 what more?\n____,____, ____, ____.\nAns:\nJojo wonders why they're so neat, Teji says 876 and 321 too have the same beat!\nNow, numbers that repeat, just the same, 11, 22, 33, have twin digits. 111, 222, 333 are triplet digits.\nCan you find more such numbers that follow the pattern?\n____,____, ____, ____, ____.\nAns:\nHere are more numbers that look the same, from left to right, and right to left: 353, 868:\nAns:\nTeji likes numbers with zeroes. She knows numbers like 210, 404 and 800.\nWrite more such numbers: ____,____, ____, ____, ____.\nAns:\nLet us Do"
+      "a": "wer:\nThe Number Detective\nLet us have some fun, with numbers and patterns, everyone!\nLook at the hundreds –   100, 200, 300\nCan you find all the hundreds?\n____,____, ____, ____, ____, ____\nAns:\nSome numbers are special, let's explore, 789, 345 and 123 what more?\n____,____, ____, ____.\nAns:\nJojo wonders why they're so neat, Teji says 876 and 321 too have the same beat!\nNow, numbers that repeat, just the same, 11, 22, 33, have twin digits. 111, 222, 333 are triplet digits.\nCan you find more such numbers that follow the pattern?\n____,____, ____, ____, ____.\nAns:\nHere are more numbers that look the same, from left to right, and right to left: 353, 868:\nAns:\nTeji likes numbers with zeroes. She knows numbers like 210, 404 and 800.\nWrite more such numbers: ____,____, ____, ____, ____.\nAns:\nLet us Do"
     },
     {
       "q": "1. I have 6 blank paper slips. I can write 100, 10 or 1 on each of them. What numbers can I make with these 6 slips? Discuss.\na. What will you write on these slips for making 231?",
@@ -822,7 +822,7 @@ export default {
     },
     {
       "q": "2. Make other numbers.\nWhat is the largest number that can be made? ......................\nAre there numbers which can not be made using these slips? Find out. What is the smallest number that can be made? ......................",
-      "a": "wer:\n600\nis the largest number that can be made.\n6\nis the smallest number that can be made.\nMy numbers\nTake the digits 3 and 8 and make as many 2 or 3-digit numbers as you can. You can repeat the digits.\nArrange the numbers Smaller to greater \u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026\u2026.\nSmallest number:\nLargest number:\nAns:\n2 digit numbers\n3 digit numbers\n33\n333\n88\n338\n38\n388\n83\n838, 833, 383, 888, 883\nArrange the numbers Smaller to greater\n333, 338, 383, 388, 833, 838, 883, 888\nSmallest number.\n333\nLargest number."
+      "a": "wer:\n600\nis the largest number that can be made.\n6\nis the smallest number that can be made.\nMy numbers\nTake the digits 3 and 8 and make as many 2 or 3-digit numbers as you can. You can repeat the digits.\nArrange the numbers Smaller to greater ………………………….\nSmallest number:\nLargest number:\nAns:\n2 digit numbers\n3 digit numbers\n33\n333\n88\n338\n38\n388\n83\n838, 833, 383, 888, 883\nArrange the numbers Smaller to greater\n333, 338, 383, 388, 833, 838, 883, 888\nSmallest number.\n333\nLargest number."
     },
     {
       "q": "888.\nLet us Think\nTeji is making numbers using words! She shows the blue cards and says it is 12. She shows the yellow cards and says 14. Why?\nFigure out what Teji is doing.",
@@ -833,15 +833,15 @@ export default {
       "a": "wer:"
     },
     {
-      "q": "2. Think of other words for 0\u20139.\nMake new cards for the numbers 15, 27, and 94.",
-      "a": "wer:\nBenefits of NCERT Solutions for Class 3 Maths Chapter 9 House of Hundreds - II\nEasy to Understand:\nThe solutions explain big number ideas in a way that\u2019s easy to get.\nStep-by-Step Help:\nEach question is solved step by step, so you can learn how to do it on your own.\nMore Practice:\nYou get lots of practice problems that help you get better at using big numbers.\nReady for Exams:\nPractising with these solutions makes you more confident and ready for your exams.\nStudy Anytime:\nThe solutions are in a FREE PDF, so you can study whenever you want, wherever you are.\nImportant Study Material for Maths Class 3 Chapter 9 - House of Hundreds - II\nS.No.\nImportant Study Material Links for Chapter 9 House of Hundreds - II"
+      "q": "2. Think of other words for 0–9.\nMake new cards for the numbers 15, 27, and 94.",
+      "a": "wer:\nBenefits of NCERT Solutions for Class 3 Maths Chapter 9 House of Hundreds - II\nEasy to Understand:\nThe solutions explain big number ideas in a way that’s easy to get.\nStep-by-Step Help:\nEach question is solved step by step, so you can learn how to do it on your own.\nMore Practice:\nYou get lots of practice problems that help you get better at using big numbers.\nReady for Exams:\nPractising with these solutions makes you more confident and ready for your exams.\nStudy Anytime:\nThe solutions are in a FREE PDF, so you can study whenever you want, wherever you are.\nImportant Study Material for Maths Class 3 Chapter 9 - House of Hundreds - II\nS.No.\nImportant Study Material Links for Chapter 9 House of Hundreds - II"
     },
     {
       "q": "1.\nClass 3 House of Hundreds - II Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 House of Hundreds - II Revision Notes\nConclusion\nNCERT Solutions for Class 3 Maths Chapter 9, House of Hundreds - II, are a great way to learn about big numbers. These solutions make it easy to understand and practise, helping you get better at maths. With these handy solutions, students will\u00a0 be ready for exams and can study whenever they like.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 9 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 3 textbook chapters.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 6: House of Hundreds - I Solutions\n7\nChapter 7: Raksha Bandhan Solutions\n8\nChapter 8: Fair Share Solutions\n9\nChapter 10: Fun at Class Party! Solutions\n10\nChapter 11: Filling and Lifting Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3\u2013\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -849,7 +849,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -857,7 +857,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 3 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -884,14 +884,14 @@ export default {
     },
     {
       "q": "5. Now the length between the two knots is one metre. Check again whether the rope measures one metre.\nMeasure your height by marking one metre on the wall of your class.\nWrite the names of your friends whose heights are more than one metre and whose heights are less than one metre.\nCircle the tallest among these children:\nWho is the tallest among them? Discuss.",
-      "a": "wer:\nWrite the names of the objects around you, whose length is one metre, more than one metre, and less than one metre.\nAnswer:\nLet us Do\nQuestion 1. Find the lengths of different objects by using one metre, half meter, and quarter metre ropes. Write their names and tick (\u2713) in the appropriate boxes.\nAnswer:\nQuestion 2. Mark a line on the floor as a Start line and then mark another line one metre from the Start line. Stand on the Start line and jump. Write the names of children who jump more than a quarter of a metre, half of a metre and a metre.\nAnswer:\nDo yourself.\nQuestion 3. Take a ball or disc and try to throw it as far as you can. Now measure how far the throw was.\nAnswer:\nDo yourself.\nLet us Do\nQuestion 1. Measure the height of your teacher or parent using a metre long rope or a strip.\nAnswer:\nDo yourself.\nQuestion 2. Estimate and cut one-metre long wool or thread. Ask your friends to do the same. Now verify with the help of the metre rope whose estimate is the closest.\nAnswer:\nDo yourself.\nQuestion 3. Cut a one-metre long rope into 4 equal pieces. How many cuts did you make?\nAnswer:\nQuestion 4. How many footsteps fit into a metre rope?\nAnswer:\nDo yourself.\nQuestion 5. Use a metre rope to find how long is a side of the class wall.\nAnswer:\nDo yourself.\nBenefits of NCERT Solutions for Class 3 Maths Chapter 10 Fun at Class Party!\nEngaging Learning\n: The solutions use fun, party-related examples to make learning about maths enjoyable and relatable.\nClear Explanations\n: Each problem is solved with step-by-step instructions, making it easier to understand concepts like addition and subtraction.\nPractical Application\n: The chapter uses real-life scenarios to help students see how maths is used in everyday activities, like planning a party.\nImproved Skills\n: Practice problems help strengthen basic arithmetic skills, building a solid foundation for future maths topics.\nImportant Study Material Links for Maths Chapter 10 Class 3 - Fun at Class Party!\nS.No.\nImportant Study Material Links for Chapter 10 Fun at Class Party!"
+      "a": "wer:\nWrite the names of the objects around you, whose length is one metre, more than one metre, and less than one metre.\nAnswer:\nLet us Do\nQuestion 1. Find the lengths of different objects by using one metre, half meter, and quarter metre ropes. Write their names and tick (✓) in the appropriate boxes.\nAnswer:\nQuestion 2. Mark a line on the floor as a Start line and then mark another line one metre from the Start line. Stand on the Start line and jump. Write the names of children who jump more than a quarter of a metre, half of a metre and a metre.\nAnswer:\nDo yourself.\nQuestion 3. Take a ball or disc and try to throw it as far as you can. Now measure how far the throw was.\nAnswer:\nDo yourself.\nLet us Do\nQuestion 1. Measure the height of your teacher or parent using a metre long rope or a strip.\nAnswer:\nDo yourself.\nQuestion 2. Estimate and cut one-metre long wool or thread. Ask your friends to do the same. Now verify with the help of the metre rope whose estimate is the closest.\nAnswer:\nDo yourself.\nQuestion 3. Cut a one-metre long rope into 4 equal pieces. How many cuts did you make?\nAnswer:\nQuestion 4. How many footsteps fit into a metre rope?\nAnswer:\nDo yourself.\nQuestion 5. Use a metre rope to find how long is a side of the class wall.\nAnswer:\nDo yourself.\nBenefits of NCERT Solutions for Class 3 Maths Chapter 10 Fun at Class Party!\nEngaging Learning\n: The solutions use fun, party-related examples to make learning about maths enjoyable and relatable.\nClear Explanations\n: Each problem is solved with step-by-step instructions, making it easier to understand concepts like addition and subtraction.\nPractical Application\n: The chapter uses real-life scenarios to help students see how maths is used in everyday activities, like planning a party.\nImproved Skills\n: Practice problems help strengthen basic arithmetic skills, building a solid foundation for future maths topics.\nImportant Study Material Links for Maths Chapter 10 Class 3 - Fun at Class Party!\nS.No.\nImportant Study Material Links for Chapter 10 Fun at Class Party!"
     },
     {
       "q": "1.\nClass 3 Fun at Class Party! Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Fun at Class Party! Revision Notes\nConclusion\nCBSE Class 3 Chapter 10, \"Fun at Class Party!,\" helps students learn basic math concepts like counting, addition, and subtraction in a fun and engaging way. Through relatable examples and enjoyable activities, students build a strong foundation in math, making the subject enjoyable and easy to understand. This chapter not only strengthens their math skills but also encourages them to see the practical side of learning.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 10 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 6: House of Hundreds - I Solutions\n7\nChapter 7: Raksha Bandhan Solutions\n8\nChapter 8: Fair Share Solutions\n9\nChapter 9: House of Hundreds - II Solutions\n10\nChapter 11: Filling and Lifting Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -899,7 +899,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -917,11 +917,11 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Fill in the blanks with \u2018more\u2019 or \u2018less\u2019.\na. Nita\u2019s glass holds ............. milk than Monu\u2019s glass.\nb. Monu\u2019s glass holds ............. milk than Nita\u2019s glass.\nc. Ritu\u2019s glass holds ............. milk than Nita\u2019s glass.",
+      "q": "3. Fill in the blanks with ‘more’ or ‘less’.\na. Nita’s glass holds ............. milk than Monu’s glass.\nb. Monu’s glass holds ............. milk than Nita’s glass.\nc. Ritu’s glass holds ............. milk than Nita’s glass.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Tick\u00a0 the right name.\na. Nita/Monu/Ritu\u2019s glass holds the most milk.\nb. Nita/Monu/Ritu\u2019s glass holds the least milk.",
+      "q": "4. Tick  the right name.\na. Nita/Monu/Ritu’s glass holds the most milk.\nb. Nita/Monu/Ritu’s glass holds the least milk.",
       "a": "wer:"
     },
     {
@@ -933,15 +933,15 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "3. a. Nita\u2019s glass holds\nless\nmilk than Monu\u2019s glass.\nb. Monu\u2019s glass holds\nmore\nmilk than Nita\u2019s glass.\nc. Ritu\u2019s glass holds\nmore\nmilk than Nita\u2019s glass.",
+      "q": "3. a. Nita’s glass holds\nless\nmilk than Monu’s glass.\nb. Monu’s glass holds\nmore\nmilk than Nita’s glass.\nc. Ritu’s glass holds\nmore\nmilk than Nita’s glass.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. a. Nita/Monu/Ritu\u2019s glass holds the most milk.\nb. Nita/Monu/Ritu\u2019s glass holds the least milk.\nQuestion 2\nLet us Do\nGet three vessels (like a small bowl , glass , and bottle\u00a0 ) of different sizes from your home. Guess: how many small bowls will fill the glass? How many glasses will fill the bottle? First, guess and then pour water from one vessel into another to check if your guess is correct.\nVessel\nMy guess for the number of small bowls\nHow many bowls\nGlass\n2\n2\nBottle\n4\n4",
+      "q": "4. a. Nita/Monu/Ritu’s glass holds the most milk.\nb. Nita/Monu/Ritu’s glass holds the least milk.\nQuestion 2\nLet us Do\nGet three vessels (like a small bowl , glass , and bottle  ) of different sizes from your home. Guess: how many small bowls will fill the glass? How many glasses will fill the bottle? First, guess and then pour water from one vessel into another to check if your guess is correct.\nVessel\nMy guess for the number of small bowls\nHow many bowls\nGlass\n2\n2\nBottle\n4\n4",
       "a": "Detailed solution available."
     },
     {
-      "q": "1. Fill in the blanks with \u2018the most\u2019 or \u2018the least\u2019.\na. The glass holds ............. water.\nb. The bottle holds ............. water.",
+      "q": "1. Fill in the blanks with ‘the most’ or ‘the least’.\na. The glass holds ............. water.\nb. The bottle holds ............. water.",
       "a": "a. the least\nb. the most"
     },
     {
@@ -1005,7 +1005,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "1. Tick\u00a0 the appropriate word in the sentences given below.\na) The glass holds\nmore than/less than\n1 litre.\nb) The bowl holds\nmore than/less than\n1 litre.\nc) The jug holds\nmore than/less than/exactly\n1 litre.",
+      "q": "1. Tick  the appropriate word in the sentences given below.\na) The glass holds\nmore than/less than\n1 litre.\nb) The bowl holds\nmore than/less than\n1 litre.\nc) The jug holds\nmore than/less than/exactly\n1 litre.",
       "a": "Detailed solution available."
     },
     {
@@ -1017,7 +1017,7 @@ export default {
       "a": "wers:"
     },
     {
-      "q": "1. a. The glass holds less than 1 litre.\nb. The bowl holds less than 1 litre.\nc. The jug holds more exactly 1 litre.\nQuestion 5\nLet us Think\nLook at the picture and tick\u00a0 the appropriate word.\na) The mug holds a\nlitre/half litre\nof water.\nb) The glass holds a\nlitre/half litre/quarter litre\nof water.",
+      "q": "1. a. The glass holds less than 1 litre.\nb. The bowl holds less than 1 litre.\nc. The jug holds more exactly 1 litre.\nQuestion 5\nLet us Think\nLook at the picture and tick  the appropriate word.\na) The mug holds a\nlitre/half litre\nof water.\nb) The glass holds a\nlitre/half litre/quarter litre\nof water.",
       "a": "wer:\na) The mug holds a half litre of water.\nb) The glass holds a quarter litre of water.\nQuestion 6\nLet us Explore\nFirst, guess and check with the 1-litre bottle.\na) How much water does a bucket hold at your home:\nmore than/less than/equal to 1 litre.\nb) How much water does a mug hold at your home:\nless than/more than/equal to half a litre.\nc) How much water does a glass hold:\nless than/more than/equal to a quarter litre.\nAnswers:\na. more than 1 litre.\nb. equal to 1 litre.\nc. less than 1 litre.\nQuestion 7\nLet us Do"
     },
     {
@@ -1033,7 +1033,7 @@ export default {
       "a": "Start by finding objects in your home that have a label indicating they weigh 1 kilogram. Common items include:\nA packet of salt\nA bag of rice\nA pack of flour (like wheat or atta)\nA 1 kg sugar packet"
     },
     {
-      "q": "5. Can you guess which of these things are likely to be lighter or heavier than 1 Kilogram? Put a tick\u00a0 mark in the appropriate box.",
+      "q": "5. Can you guess which of these things are likely to be lighter or heavier than 1 Kilogram? Put a tick  mark in the appropriate box.",
       "a": "wer:"
     },
     {
@@ -1049,11 +1049,11 @@ export default {
       "a": "wer:\nI. Weigh the Red ball against the Orange ball:\nIf one is heavier, set it aside as a potential heaviest. The other is lighter.\nIf they balance, both are of equal weight.\nII. Weigh the heavier ball (from Step 1) against the Green ball:\nIf the Green ball is heavier, it's the heaviest, and the other is the middle-weight.\nIf the Green ball is lighter, the ball from Step 1 is the heaviest, and the Green ball is the lightest.\nBenefits of NCERT Solutions for Class 3 Maths Chapter 11 Filling and Lifting\nClear Understanding:\nThe solutions offer easy-to-understand explanations, helping students grasp the concepts of capacity and volume effectively.\nStep-by-Step Guidance:\nEach problem is solved with detailed steps, making it easier for students to follow and learn how to approach similar questions.\nInteractive Learning:\nThe solutions include engaging activities that make learning fun and keep students interested in the subject.\nExam Preparation:\nThese solutions provide a solid foundation, helping students to prepare confidently for exams by practising key concepts.\nAccessible Anytime:\nAvailable in a FREE PDF, students can access the solutions anytime, allowing for flexible learning at their own pace.\nImportant Study Material for Class 3 Maths Chapter 11 - Filling and Lifting\nS. No\nImportant Study Material Links for Chapter 11 Filling and Lifting"
     },
     {
-      "q": "1.\nClass 3 Filling and Lifting worksheets",
+      "q": "1.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Filling and Lifting Revision Notes\nConclusion\nNCERT Solutions for Class 3 Maths Chapter 11, \"Filling and Lifting,\" is important study material for students. They provide clear explanations of the story, helping students understand the main ideas and details. Focus on key aspects such as the story's characters, plot, and moral lesson. It\u2019s important to pay attention to vocabulary and sentence structure as well. In previous years, the chapter typically had about 2-3 questions in the question paper, covering comprehension and vocabulary. Using these solutions can help you answer these questions confidently and improve your overall language skills.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 11 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 3 textbook chapters.\nS. No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 6: House of Hundreds - I Solutions\n7\nChapter 7: Raksha Bandhan Solutions\n8\nChapter 8: Fair Share Solutions\n9\nChapter 9: House of Hundreds - II Solutions\n10\nChapter 10: Fun at Class Party! Solutions\n11\nChapter 12: Give and Take Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3 \u2013\nS. No\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -1061,7 +1061,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -1069,7 +1069,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 3 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     }
   ],
@@ -1079,19 +1079,19 @@ export default {
       "a": "wer\n:\nKishan runs a big plant nursery where he puts different varieties of plants. Villagers often come and take saplings from him to grow in their houses."
     },
     {
-      "q": "1. Kishan had 364 saplings of different herbs and flowers. Then he went to his friend\u2019s village and brought 52 saplings from there. How many saplings does he have now?\nLet us draw a box diagram for the problem.\n364 saplings + 52 saplings = _____ saplings\n364 + 52 = ______\nYou can also use a number line to solve it.",
+      "q": "1. Kishan had 364 saplings of different herbs and flowers. Then he went to his friend’s village and brought 52 saplings from there. How many saplings does he have now?\nLet us draw a box diagram for the problem.\n364 saplings + 52 saplings = _____ saplings\n364 + 52 = ______\nYou can also use a number line to solve it.",
       "a": "wer\n:"
     },
     {
-      "q": "2. Kishan has got an order to deliver 230 saplings to a school. He has packed 75 saplings in an open box. How many more saplings does he need to pack?\nWe write the given problem as a box diagram:\nSubtracting 5 ones from 10 ones, we are left with 5 ones.\nNow we have to take away 70. Remember opening a hundreds block gives us 10 blocks of 10s.\nKishan has \u2026\u2026\u2026\u2026. saplings now.\nLet us Do\nDraw box diagrams, as shown above to solve the following problems. Then use HTO blocks or a number line to solve the problems.\nQuestion 1. Kishan has 456 saplings in August. He distributed 63 saplings. How many saplings are left with him?",
-      "a": "wer\n: Box Diagram\nQuestion 2. Kishan has a collection of 309 saplings. He gets 80 more saplings of flowering plants. How many saplings does he have now?\nAnswer\n: Box diagram\nQuestion 3. Kishan has 270 saplings of herbs and his friend has 36 saplings of herbs. How many more saplings does Kishan have than his friend?\nAnswer\n: Box diagram\nWrite word problems using the numbers given in the box diagrams below and solve them. You can take help from the pictures for appropriate contexts.\nAnswer\n:\nThere are 234 boys and 156 girls in a school. How many total students are in the school?\nAnswer\n:\nIn a library there are 356 books in which 138 books are for children. How many are not for children?\nAnswer\n:\nIn a truck 305 sacks can be load. If 210 sacks have been loaded than how many more sacks can be loaded?\nAnswer\n:\nUse the grid below to solve the following questions. Colour your answers in the grid.\nAnswer\n:\nDo as directed.\nAnswer\n:\nMany years ago, in the Village \u2018Jadupur\u2019, people exchanged things based on their need. Shaamu Kaka gave 5 sacks of rice to Dariya Didi. She in return gave 10 sacks of vegetables. Dariya Didi got 2 sarees from Bablu Dada by giving 5 sacks of onions.\nLike this, people in the village exchanged their things. Shamu Kaka got vegetables for the rice he gave. Dariya Didi gave lots of onions to Bablu Dada for the two sarees. Discuss in class why people in this village had to give different quantities while exchanging things.\nThese days we use money in exchange for things we need. Notes and coins come in different values which are used to buy different things.\nFor example, one 10-rupee note can buy one Hawa Mithai or ten toffees.\nOne Hawa Mithai costs more than a toffee.\nSalma buys two bottles of milk for \u20b9 100. Kiran buys a basket of pomegranates for \u20b9 100.\nCircle the one that costs more: a milk bottle or a pomegranate?\nThink of two things that we can buy using the same note.\nAnswer\n:\nMatch the notes and coins in the two columns that have the same values.\nAnswer:\nUse the following notes and coins to buy the things given below. Find at least two ways of giving the money. You may use the notes and coins more than once.\nAnswer:\nAnswer\n:\n5\nWe can buy a dress or school bag or a pair of shoes or some big packets of chocolates with \u20b9 500.\nIn the morning, Peter uncle has \u20b9 465 in his money box. By afternoon, he has \u20b9 756. How much has he earned since morning?\nToday, Peter uncle sold rice for \u20b9 640 and sugar for \u20b9 215. How much money has he earned from this sale?\nAnswer\n:\nAnswer\n:\nCombining both money, we got\nAnswer\n:\nSolve by using number line.\nAnswer\n:\nLet us Do\nSolve the following problems using box diagrams. Estimate the answers. Then use notes of \u20b9 100s, \u20b9 10s and \u20b91 is or a number line to solve the problems.\nQuestion 1. One day Peter uncle earned \u20b9 650. The next day he earned \u20b9 250 more. How much money had he earned by the second day?\nAnswer\n:\nQuestion 2. Reena bought groceries for \u20b9 209. She gave a \u20b9 500 note to Peter uncle. How much money should Peter uncle return to Reena?\nAnswer\n:\nQuestion 3. Shireen has \u20b9 150 in her piggy bank. She puts \u20b9 100 every week in her piggy bank. How much money does she have at the end of four weeks?\nAnswer\n:\nQuestion 4. Peter uncle saved \u20b9 250 in the first month, \u20b9 125 in the second month and \u20b9 350 in the third month. How much has he saved in these three months?\nAnswer\n:\nEstimate the answers to the nearest hundred. Share your thinking in the class.\nAnswer\n:\nCompare the given problem statements in each row, without calculating. Circle the one that is more. Share your thinking in class.\nAnswer\n:\nFind the pairs that are equal. Share your thinking in class.\nAnswer\n:\nFill in the boxes with appropriate numbers.\nAnswer\n:\nMake cards with numbers 0-5. Make two 3-digit numbers using these cards. Add the two numbers and subtract the two numbers. Rearrange the cards and try to get a bigger sum. Rearrange the cards and try to get a smaller difference.\nCheck with your friends who has got the biggest sum and smallest difference.\nLet us Do\n(a) 265 + 9\nAnswer\n: 265 + 9 =\n274\n(b) 405 + 56\nAnswer\n: 405 + 56 =\n461\n(c) 825 + 175\nAnswer\n: 825 + 175 =\n1000\n(d) 600 \u2013 82\nAnswer\n: 600 \u2013 82 =\n518\n(e) 568 \u2013 5\nAnswer\n: 568 \u2013 5 =\n563\n(f) 653 \u2013 356\nAnswer\n: 653 \u2013 356 =\n297\nBenefits of NCERT Solutions for Class 3 Maths Chapter 12 Give and Take\nClear Explanations:\nThe solutions offer easy-to-understand explanations for addition and subtraction, making these concepts simple to grasp.\nPractical Examples:\nLearn with real-life scenarios, like handling money, to see how maths applies to everyday situations.\nStep-by-Step Guidance:\nEach problem is broken down into clear steps, helping students learn the correct method and build confidence.\nImproved Skills:\nRegular practice with these solutions strengthens arithmetic skills and prepares students for more advanced topics.\nImportant Study Material Links for Maths Chapter 12 Class 3 - Give and Take\nS.No.\nImportant Study Material Links for Chapter 12 Give and Take"
+      "q": "2. Kishan has got an order to deliver 230 saplings to a school. He has packed 75 saplings in an open box. How many more saplings does he need to pack?\nWe write the given problem as a box diagram:\nSubtracting 5 ones from 10 ones, we are left with 5 ones.\nNow we have to take away 70. Remember opening a hundreds block gives us 10 blocks of 10s.\nKishan has …………. saplings now.\nLet us Do\nDraw box diagrams, as shown above to solve the following problems. Then use HTO blocks or a number line to solve the problems.\nQuestion 1. Kishan has 456 saplings in August. He distributed 63 saplings. How many saplings are left with him?",
+      "a": "wer\n: Box Diagram\nQuestion 2. Kishan has a collection of 309 saplings. He gets 80 more saplings of flowering plants. How many saplings does he have now?\nAnswer\n: Box diagram\nQuestion 3. Kishan has 270 saplings of herbs and his friend has 36 saplings of herbs. How many more saplings does Kishan have than his friend?\nAnswer\n: Box diagram\nWrite word problems using the numbers given in the box diagrams below and solve them. You can take help from the pictures for appropriate contexts.\nAnswer\n:\nThere are 234 boys and 156 girls in a school. How many total students are in the school?\nAnswer\n:\nIn a library there are 356 books in which 138 books are for children. How many are not for children?\nAnswer\n:\nIn a truck 305 sacks can be load. If 210 sacks have been loaded than how many more sacks can be loaded?\nAnswer\n:\nUse the grid below to solve the following questions. Colour your answers in the grid.\nAnswer\n:\nDo as directed.\nAnswer\n:\nMany years ago, in the Village ‘Jadupur’, people exchanged things based on their need. Shaamu Kaka gave 5 sacks of rice to Dariya Didi. She in return gave 10 sacks of vegetables. Dariya Didi got 2 sarees from Bablu Dada by giving 5 sacks of onions.\nLike this, people in the village exchanged their things. Shamu Kaka got vegetables for the rice he gave. Dariya Didi gave lots of onions to Bablu Dada for the two sarees. Discuss in class why people in this village had to give different quantities while exchanging things.\nThese days we use money in exchange for things we need. Notes and coins come in different values which are used to buy different things.\nFor example, one 10-rupee note can buy one Hawa Mithai or ten toffees.\nOne Hawa Mithai costs more than a toffee.\nSalma buys two bottles of milk for ₹ 100. Kiran buys a basket of pomegranates for ₹ 100.\nCircle the one that costs more: a milk bottle or a pomegranate?\nThink of two things that we can buy using the same note.\nAnswer\n:\nMatch the notes and coins in the two columns that have the same values.\nAnswer:\nUse the following notes and coins to buy the things given below. Find at least two ways of giving the money. You may use the notes and coins more than once.\nAnswer:\nAnswer\n:\n5\nWe can buy a dress or school bag or a pair of shoes or some big packets of chocolates with ₹ 500.\nIn the morning, Peter uncle has ₹ 465 in his money box. By afternoon, he has ₹ 756. How much has he earned since morning?\nToday, Peter uncle sold rice for ₹ 640 and sugar for ₹ 215. How much money has he earned from this sale?\nAnswer\n:\nAnswer\n:\nCombining both money, we got\nAnswer\n:\nSolve by using number line.\nAnswer\n:\nLet us Do\nSolve the following problems using box diagrams. Estimate the answers. Then use notes of ₹ 100s, ₹ 10s and ₹1 is or a number line to solve the problems.\nQuestion 1. One day Peter uncle earned ₹ 650. The next day he earned ₹ 250 more. How much money had he earned by the second day?\nAnswer\n:\nQuestion 2. Reena bought groceries for ₹ 209. She gave a ₹ 500 note to Peter uncle. How much money should Peter uncle return to Reena?\nAnswer\n:\nQuestion 3. Shireen has ₹ 150 in her piggy bank. She puts ₹ 100 every week in her piggy bank. How much money does she have at the end of four weeks?\nAnswer\n:\nQuestion 4. Peter uncle saved ₹ 250 in the first month, ₹ 125 in the second month and ₹ 350 in the third month. How much has he saved in these three months?\nAnswer\n:\nEstimate the answers to the nearest hundred. Share your thinking in the class.\nAnswer\n:\nCompare the given problem statements in each row, without calculating. Circle the one that is more. Share your thinking in class.\nAnswer\n:\nFind the pairs that are equal. Share your thinking in class.\nAnswer\n:\nFill in the boxes with appropriate numbers.\nAnswer\n:\nMake cards with numbers 0-5. Make two 3-digit numbers using these cards. Add the two numbers and subtract the two numbers. Rearrange the cards and try to get a bigger sum. Rearrange the cards and try to get a smaller difference.\nCheck with your friends who has got the biggest sum and smallest difference.\nLet us Do\n(a) 265 + 9\nAnswer\n: 265 + 9 =\n274\n(b) 405 + 56\nAnswer\n: 405 + 56 =\n461\n(c) 825 + 175\nAnswer\n: 825 + 175 =\n1000\n(d) 600 – 82\nAnswer\n: 600 – 82 =\n518\n(e) 568 – 5\nAnswer\n: 568 – 5 =\n563\n(f) 653 – 356\nAnswer\n: 653 – 356 =\n297\nBenefits of NCERT Solutions for Class 3 Maths Chapter 12 Give and Take\nClear Explanations:\nThe solutions offer easy-to-understand explanations for addition and subtraction, making these concepts simple to grasp.\nPractical Examples:\nLearn with real-life scenarios, like handling money, to see how maths applies to everyday situations.\nStep-by-Step Guidance:\nEach problem is broken down into clear steps, helping students learn the correct method and build confidence.\nImproved Skills:\nRegular practice with these solutions strengthens arithmetic skills and prepares students for more advanced topics.\nImportant Study Material Links for Maths Chapter 12 Class 3 - Give and Take\nS.No.\nImportant Study Material Links for Chapter 12 Give and Take"
     },
     {
       "q": "1.\nClass 3 Give and Take Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Give and Take Revision Notes\nConclusion\nNCERT Solutions for Class 3 Maths Chapter 12, Give and Take, provides clear explanations and practical examples to help students master addition and subtraction. These solutions make learning engaging and accessible, building essential arithmetic skills and preparing students for future maths challenges.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 12 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 6: House of Hundreds - I Solutions\n7\nChapter 7: Raksha Bandhan Solutions\n8\nChapter 8: Fair Share Solutions\n9\nChapter 9: House of Hundreds - II Solutions\n10\nChapter 10: Fun at Class Party! Solutions\n11\nChapter 11: Filling and Lifting Solutions\n12\nChapter 13: Time Goes On Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -1099,7 +1099,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -1113,7 +1113,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Time Goes On Revision Notes\nConclusion\nCBSE Class 3 Chapter 13, \"Time Goes On,\" helps students learn basic math concepts of time and clock reading in a fun and engaging way. Through relatable examples and enjoyable activities, students build a strong foundation in math, making the subject enjoyable and easy to understand. This chapter not only strengthens their math skills but also encourages them to see the practical side of learning.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 13 Question Answers, you can access comprehensive NCERT Solutions for all Chapters in Class 3 Maths.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 6: House of Hundreds - I Solutions\n7\nChapter 7: Raksha Bandhan Solutions\n8\nChapter 8: Fair Share Solutions\n9\nChapter 9: House of Hundreds - II Solutions\n10\nChapter 10: Fun at Class Party! Solutions\n11\nChapter 11: Filling and Lifting Solutions\n12\nChapter 12: Give and Take Solutions\n13\nChapter 14: The Surajkund Fair Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3.\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -1121,11 +1121,11 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nCBSE Class 3 Maths Worksheets",
+      "q": "3.\nCBSE",
       "a": "Detailed solution available."
     }
   ],
@@ -1140,14 +1140,14 @@ export default {
     },
     {
       "q": "2. Trace these rangolis on a paper. Fold the tracing paper in such a way that one half of the rangoli lies exactly on the other half.",
-      "a": "Let us Do\nEnjoy making rangolis\nQuestion 1. Draw and complete the symmetrical rangolis given below.\na.\nAnswer\n:\nb.\nAnswer\n:\nc.\nAnswer\n:\nQuestion 2. Draw some more rangolis in your notebook that are symmetrical.\nAnswer:\nMake Masks!\nTit for Tat\nSoni gets her picture made by a painter\nLet us Think\nQuestion 1. What is the trick the painter is playing? Find things for the painter to draw so that he can no longer play the trick. Draw three such things here.\nAnswer:\nThe painter is playing the trick of making halves of symmetrical figures.\nThree such things are\nThe Mirror Game\nSoni and Avi started playing this game. Let us play with them.\nHas Avi placed the counters at the right places? Check it by placing the mirror on the line drawn.\nLet us Explore\nQuestion 1. Pick the odd one out and give reasons.\nAnswer:\nThis pattern is\u00a0 odd one out because the figures of pair is the not mirror images of each other.\nQuestion 2. Fill 4 boxes with red colour and 3 with blue colour in such a way that one side is the mirror image of the other.\nIn how many ways can you fill it?\nThink, think!\nAnswer:\nIt can be filled in so many ways.\nQuestion 3. Make Micy\u2019s side the same as that of Catty\u2019s side. You can rearrange only three balls in Micy\u2019s side.\nAnswer\n:\nQuestion 4. Which shape cutouts would fit in the given shape without overlapping and without gaps?\nAnswer\n: Rangometry shapes like hexagons, squares and triangles could be fit in the given shape without overlapping and without gaps.\nTiling the paths\nLet us Do\nQuestion 1. Use rangometry shapes to fill the shapes with no gaps and overlaps.\nAnswer\n:\nMaking Tiles, Creating Paths\nSoni and Avi have started making their own tiles by joining different shapes.\nLet us Do\nQuestion 1. Use two or more rangometry shapes to create your tiles. Now trace the tiles to create different paths.\nAnswer\n:\nQuestion 2. Try making these paths.\nAnswer:\nTry yourself with the help of Teachers/Parents\nGiant Wheel\nRead the conversation between Soni and Avi and mark the place they are talking about.\nSearch for Dada and Dadi\nSoni and Avi\u2019s Dada and Dadi were missing. They hear their announcement.\nLet us Do\nQuestion 1. Help Soni and Avi read the map and find the following:\na. Which place does the \ud83c\udfd6\ufe0fsign show?\nAnswer:\nThe\n\ud83c\udfd6\ufe0f\nsign shows the place chaupal.\nb. Circle the picture in the map that shows the play area?\nAnswer:\nDo yourself.\nc. Which place does the \ud83c\udd7f\ufe0f sign show?\nAnswer:\nThe\n\ud83c\udd7f\ufe0f\nsign shows for parking.\nd. How many exit routes are there in the fair?\nAnswer:\nOne\nQuestion 3. An uncle asks Dada ji the way to the ATM. Tell him the way to the ATM from the chaupal.\nAnswer:\nWalk on the golden line.\nTurn right on the red lane.\nStalls will be seen on the way. Pass the stalls and see ATM.\nLet us Do\nQuestion 1. There are two ways to go out of the Surajkund fair.\nOne seems to be a maze and the other goes straight there.\nFollow the maze with Soni and Avi to exit the fair.\nAnswer:\nQuestion 2. Share the way you went through the maze. Write the things you found on the way.\nAnswer:\nI found diamond, star and cat on the way.\nBenefits of NCERT Solutions for Class 3 Maths Chapter 14 The Surajkund Fair\nClear Concept Explanation\n: NCERT solutions provide easy-to-understand explanations for key concepts like\nsymmetry\n,\npatterns\n, and\ndesigns\n, helping students grasp these topics quickly.\nStep-by-Step Solutions\n: Each problem is solved in a clear, step-by-step manner, ensuring students learn the correct method to approach questions.\nReal-Life Application\n: The chapter connects maths concepts with real-life examples from the fair, making learning more engaging and relatable for students.\nPractice Questions\n: NCERT solutions offer a wide range of\npractice problems\n, allowing students to strengthen their understanding and improve problem-solving skills.\nBoosts Creativity\n: The focus on\ndesigns and symmetry\nhelps enhance students' creativity, encouraging them to apply maths concepts in creative tasks.\nImportant Study Material for Class 3 Maths Chapter 14 - The Surajkund Fair\nS.No.\nImportant Study Material Links for Chapter 14 The Surajkund Fair"
+      "a": "Let us Do\nEnjoy making rangolis\nQuestion 1. Draw and complete the symmetrical rangolis given below.\na.\nAnswer\n:\nb.\nAnswer\n:\nc.\nAnswer\n:\nQuestion 2. Draw some more rangolis in your notebook that are symmetrical.\nAnswer:\nMake Masks!\nTit for Tat\nSoni gets her picture made by a painter\nLet us Think\nQuestion 1. What is the trick the painter is playing? Find things for the painter to draw so that he can no longer play the trick. Draw three such things here.\nAnswer:\nThe painter is playing the trick of making halves of symmetrical figures.\nThree such things are\nThe Mirror Game\nSoni and Avi started playing this game. Let us play with them.\nHas Avi placed the counters at the right places? Check it by placing the mirror on the line drawn.\nLet us Explore\nQuestion 1. Pick the odd one out and give reasons.\nAnswer:\nThis pattern is  odd one out because the figures of pair is the not mirror images of each other.\nQuestion 2. Fill 4 boxes with red colour and 3 with blue colour in such a way that one side is the mirror image of the other.\nIn how many ways can you fill it?\nThink, think!\nAnswer:\nIt can be filled in so many ways.\nQuestion 3. Make Micy’s side the same as that of Catty’s side. You can rearrange only three balls in Micy’s side.\nAnswer\n:\nQuestion 4. Which shape cutouts would fit in the given shape without overlapping and without gaps?\nAnswer\n: Rangometry shapes like hexagons, squares and triangles could be fit in the given shape without overlapping and without gaps.\nTiling the paths\nLet us Do\nQuestion 1. Use rangometry shapes to fill the shapes with no gaps and overlaps.\nAnswer\n:\nMaking Tiles, Creating Paths\nSoni and Avi have started making their own tiles by joining different shapes.\nLet us Do\nQuestion 1. Use two or more rangometry shapes to create your tiles. Now trace the tiles to create different paths.\nAnswer\n:\nQuestion 2. Try making these paths.\nAnswer:\nTry yourself with the help of Teachers/Parents\nGiant Wheel\nRead the conversation between Soni and Avi and mark the place they are talking about.\nSearch for Dada and Dadi\nSoni and Avi’s Dada and Dadi were missing. They hear their announcement.\nLet us Do\nQuestion 1. Help Soni and Avi read the map and find the following:\na. Which place does the 🏖️sign show?\nAnswer:\nThe\n🏖️\nsign shows the place chaupal.\nb. Circle the picture in the map that shows the play area?\nAnswer:\nDo yourself.\nc. Which place does the 🅿️ sign show?\nAnswer:\nThe\n🅿️\nsign shows for parking.\nd. How many exit routes are there in the fair?\nAnswer:\nOne\nQuestion 3. An uncle asks Dada ji the way to the ATM. Tell him the way to the ATM from the chaupal.\nAnswer:\nWalk on the golden line.\nTurn right on the red lane.\nStalls will be seen on the way. Pass the stalls and see ATM.\nLet us Do\nQuestion 1. There are two ways to go out of the Surajkund fair.\nOne seems to be a maze and the other goes straight there.\nFollow the maze with Soni and Avi to exit the fair.\nAnswer:\nQuestion 2. Share the way you went through the maze. Write the things you found on the way.\nAnswer:\nI found diamond, star and cat on the way.\nBenefits of NCERT Solutions for Class 3 Maths Chapter 14 The Surajkund Fair\nClear Concept Explanation\n: NCERT solutions provide easy-to-understand explanations for key concepts like\nsymmetry\n,\npatterns\n, and\ndesigns\n, helping students grasp these topics quickly.\nStep-by-Step Solutions\n: Each problem is solved in a clear, step-by-step manner, ensuring students learn the correct method to approach questions.\nReal-Life Application\n: The chapter connects maths concepts with real-life examples from the fair, making learning more engaging and relatable for students.\nPractice Questions\n: NCERT solutions offer a wide range of\npractice problems\n, allowing students to strengthen their understanding and improve problem-solving skills.\nBoosts Creativity\n: The focus on\ndesigns and symmetry\nhelps enhance students' creativity, encouraging them to apply maths concepts in creative tasks.\nImportant Study Material for Class 3 Maths Chapter 14 - The Surajkund Fair\nS.No.\nImportant Study Material Links for Chapter 14 The Surajkund Fair"
     },
     {
       "q": "1.\nClass 3 The Surajkund Fair Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 The Surajkund Fair Revision Notes\nConclusion\nNCERT Solutions for Class 3 Maths Chapter 14,\nThe Surajkund Fair\n, provide a comprehensive and engaging way for students to learn key concepts like symmetry, patterns, and shapes. By connecting mathematical ideas with real-life scenarios, these solutions make learning more relatable and fun. With clear explanations and ample practice questions, students can strengthen their understanding, enhance creativity, and prepare effectively for exams.\nChapter-wise NCERT Solutions Class 3 Maths\nAfter familiarising yourself with the Class 3 Maths Chapter 14 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 3 textbook chapters.\nS.No\nClass 3 Maths Chapter-wise Links for NCERT Solutions\n1\nChapter 1: What\u2019s in a Name? Solutions\n2\nChapter 2: Toy Joy Solutions\n3\nChapter 3: Double Century Solutions\n4\nChapter 4: Vacation with My Nani Maa Solutions\n5\nChapter 5: Fun with Shapes Solutions\n6\nChapter 6: House of Hundreds - I Solutions\n7\nChapter 7: Raksha Bandhan Solutions\n8\nChapter 8: Fair Share Solutions\n9\nChapter 9: House of Hundreds - II Solutions\n10\nChapter 10: Fun at Class Party! Solutions\n11\nChapter 11: Filling and Lifting Solutions\n12\nChapter 12: Give and Take Solutions\n13\nChapter 13: Time Goes On Solutions\nRelated Important Links for Maths Class 3\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 3 \u2013\nS.No.\nImportant Links for Class 3 Maths",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -1155,7 +1155,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 3 Maths Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {

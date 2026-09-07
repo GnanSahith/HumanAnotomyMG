@@ -80,10 +80,8 @@ const CustomFaradaysLawInner = ({
     const graphCtx = graphCanvas.getContext('2d');
     let animationFrameId;
     const draw = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(draw);
-      return;
-    }
+      
+    
       const now = performance.now();
       const dt = (now - state.current.lastTime) / 1000;
       state.current.lastTime = now;

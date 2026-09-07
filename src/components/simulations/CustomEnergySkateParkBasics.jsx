@@ -966,6 +966,9 @@ function CustomEnergySkateParkBasicsInner({
     }
   };
   const handlePointerUp = e => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     const p = physicsRef.current;
     if (p.isDraggingReferenceLine) {
       p.isDraggingReferenceLine = false;

@@ -80,13 +80,14 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
             
             if (stored) {
                 const parsed = JSON.parse(stored);
+                if (!Array.isArray(parsed) || parsed.length === 0) return defaultApproved;
                 const merged = Array.from(new Set([...parsed, ...defaultApproved]));
                 localStorage.setItem('showcase_approved_chemistry_sims', JSON.stringify(merged));
                 return merged;
             }
             return defaultApproved;
         } catch (e) {
-            return [];
+            return ["acid-base-solutions_mg"]; // Fallback
         }
     });
 
@@ -110,7 +111,9 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
     }, [loggedInUsername]);
 
     const simArray = React.useMemo(() => {
-        let arr = chemistrySimulations.map(sim => ({ ...sim, id: sim.id || sim.title.replace(/\s+/g, '') }));
+        const source = chemistrySimulations.default || chemistrySimulations;
+        if (!Array.isArray(source)) return [];
+        let arr = source.map(sim => ({ ...sim, id: sim.id || (sim.title ? sim.title.replace(/\s+/g, '') : 'sim') }));
         if (accessLevel === 'ROOT') {
             return arr;
         } else {

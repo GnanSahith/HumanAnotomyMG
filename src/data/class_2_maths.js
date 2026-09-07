@@ -5,7 +5,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Day at the Beach Revision Notes\nConclusion\nThe NCERT Solutions for Class 2 Maths Chapter 1, \"A Day at the Beach,\" makes math learning fun and easy for students. Using simple examples and enjoyable activities, this chapter helps students understand basic ideas like counting, grouping, and comparing numbers. The colourful pictures and clear explanations keep students interested, making it easier for them to understand the lessons. These solutions provide a good start to math learning, helping students feel confident as they move on to new topics.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter going through the Class 2 Maths Chapter 1 Question Answers, students can find detailed NCERT Solutions for all chapters in the Class 2 Joyful-Mathematics textbook.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -29,7 +29,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "6.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -45,7 +45,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -53,7 +53,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -61,7 +61,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -75,7 +75,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Shapes Around Us Revision Notes\nConclusion\nThe NCERT Solutions for Class 2 Maths Chapter 2, \"Shapes Around Us,\" provides a fun and easy introduction to different shapes. With straightforward explanations and simple examples, students can easily recognise and understand the shapes they encounter in their daily lives. The exercises in the chapter offer practice opportunities to reinforce learning and help students remember the concepts. These solutions make learning about shapes enjoyable and lay the groundwork for more advanced geometry topics in the future.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter going through the Class 2 Maths Chapter 2 Question Answers, students can find detailed NCERT Solutions for all chapters in the Class 2 Joyful-Mathematics textbook.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -99,7 +99,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "6.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -115,7 +115,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -123,7 +123,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -131,7 +131,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -145,7 +145,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Fun with Numbers Revision Notes\nConclusion\nNCERT Solutions for Class 2 Maths Chapter 3, \"Fun with Numbers,\" offers an engaging way for students to explore basic number concepts. The solutions provide clear explanations and practical examples, helping children understand and work with numbers confidently. By practising the exercises in this chapter, students can develop a solid foundation in number skills that will support their future maths learning. Overall, this chapter makes learning about numbers enjoyable and prepares students for more advanced mathematical concepts playfully and effectively.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter going through the Class 2 Maths Chapter 3 Question Answers, students can find detailed NCERT Solutions for all chapters in the Class 2 Joyful-Mathematics textbook.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -169,7 +169,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "6.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -185,7 +185,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -193,7 +193,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -201,7 +201,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -215,7 +215,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Shadow Story (Togalu) Revision Notes\nConclusion\nThe NCERT Solutions for Class 2 Maths Chapter 4, \"Shadow Story (Togalu),\" make learning about shadows simple and enjoyable. Through clear explanations and engaging activities, students can understand how shadows are created and how they change with light. The chapter helps students connect these ideas to their daily lives and improves their observation skills. With these solutions, students gain a solid grasp of basic science concepts, preparing them for more advanced topics in the future. The fun and interactive nature of the chapter makes learning about shadows both interesting and easy.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter going through the Class 2 Maths Chapter 4 Question Answers, students can find detailed NCERT Solutions for all chapters in the Class 2 Joyful-Mathematics textbook.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -239,7 +239,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "6.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -255,7 +255,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -263,7 +263,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -271,7 +271,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -285,7 +285,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Playing with Lines Revision Notes\nConclusion\nNCERT Solutions for Class 2 Maths Chapter 5, \"Playing with Lines,\" by Vedantu makes learning about lines both fun and easy. The solutions provide clear explanations and engaging activities that help students understand and draw straight and curved lines. By practising with these solutions, children build a solid foundation in basic geometry while enjoying creative exercises. Overall, Vedantu\u2019s approach ensures that students learn essential maths concepts in an enjoyable and effective way.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter familiarising yourself with the Class 2 Maths Chapter 5 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 2 Joyful-Mathematics textbook chapters.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -309,7 +309,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "6.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -325,7 +325,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -333,7 +333,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -341,7 +341,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -355,7 +355,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Decoration for Festival Revision Notes\nConclusion\nNCERT Solutions for Class 2 Maths Chapter 6, \"Decoration for Festival,\" by Vedantu helps young students understand and apply shapes and patterns to create festive decorations. With clear, step-by-step guidance, students can easily grasp how to use geometric shapes in fun and creative ways. This chapter not only makes maths learning enjoyable, but also shows how these skills are used in real-life activities like decorating for festivals. By following these solutions, students gain confidence and enjoy the process of making their celebrations special.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter familiarising yourself with the Class 2 Maths Chapter 6 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 2 Joyful-Mathematics textbook chapters.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -379,7 +379,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "6.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "6.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -395,7 +395,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -403,7 +403,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -411,7 +411,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -421,11 +421,11 @@ export default {
   ],
   "7": [
     {
-      "q": "1.\nClass 2 Maths Rani\u2019s Gift Important Questions",
+      "q": "1.\nClass 2 Maths Rani’s Gift Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Rani\u2019s Gift Revision Notes\nConclusion\nNCERT Solutions for Class 2 Maths Chapter 7, \"Rani\u2019s Gift,\" by Vedantu introduces young learners to the concept of capacity through a fun and engaging story. The chapter helps students understand how to measure and compare the amount of liquid in different containers, laying a strong foundation for future learning in mathematics. With its interactive activities and visual aids, the chapter not only enhances practical understanding but also fosters critical thinking and problem-solving skills. This early exposure to measurement concepts ensures that students are better prepared for more complex mathematical challenges in the future.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter familiarising yourself with the Class 2 Maths Chapter 7 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 2 Joyful-Mathematics textbook chapters.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -465,7 +465,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -473,7 +473,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -481,7 +481,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -495,7 +495,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Grouping and Sharing Revision Notes\nConclusion\nVedantu\u2019s NCERT Solutions for Class 2 Maths Chapter 8, \"Grouping and Sharing,\" provides a clear and engaging way for young learners to master these essential maths concepts. By using relatable examples and interactive practice, these solutions help students understand how to group items into equal sets and share them fairly. The step-by-step guidance builds confidence and improves classroom learning, making maths fun and accessible. With Vedantu\u2019s support, children can confidently apply these skills in everyday situations and strengthen their maths foundations.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter familiarising yourself with the Class 2 Maths Chapter 8 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 2 Joyful-Mathematics textbook chapters.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -523,7 +523,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "7.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "7.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -535,7 +535,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -543,7 +543,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -551,7 +551,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -565,7 +565,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Which Season is It?\u00a0 Revision Notes\nConclusion\nVedantu's NCERT Solutions for Chapter 9, \"Which Season is It?\" provide a clear and enjoyable way for Class 2 students to learn about the different seasons. The solutions help students understand the unique features of each season, from weather changes to suitable activities and clothing. With engaging exercises and simple explanations, these solutions make it easy for young learners to grasp and remember seasonal concepts. Overall, Vedantu's approach makes learning about seasons both fun and educational, supporting students in applying this knowledge to their everyday lives.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter familiarising yourself with the Class 2 Maths Chapter 9 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 2 Joyful-Mathematics textbook chapters.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -593,7 +593,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "7.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "7.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -605,7 +605,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -613,7 +613,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -621,7 +621,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -635,7 +635,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Fun at the Fair Revision Notes\nConclusion\nNCERT Solutions for Class 2 Maths Chapter 10, 'Fun at the Fair,' by Vedantu provides an engaging approach to learning key maths concepts. Through the exciting fair theme, students practise counting, pattern recognition, and simple addition in a fun and relatable way. This approach not only helps build foundational math skills but also makes learning enjoyable, setting a positive tone for future maths learning.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter familiarising yourself with the Class 2 Maths Chapter 10 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 2 Joyful-Mathematics textbook chapters.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -663,7 +663,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "7.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "7.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -675,7 +675,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 11 Data Handling Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -683,7 +683,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -691,7 +691,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -705,7 +705,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Data Handling Revision Notes\nConclusion\nThe NCERT solutions for Class 2 Maths Chapter 11 Data Handling by Vedantu offer a clear and engaging way to learn data handling. By practising with these solutions, students gain essential skills in collecting, organising, and interpreting data, laying a strong foundation for future maths topics. These solutions make learning enjoyable and help build confidence, preparing students well for their exams and everyday problem-solving.\nChapter-wise NCERT Solutions Class 2 Maths - Joyful-Mathematics\nAfter familiarising yourself with the Class 2 Maths Chapter 11 Question Answers, you can access comprehensive NCERT Solutions from all Maths Class 2 Joyful-Mathematics textbook chapters.\nS. No\nClass 2 Maths Chapter-wise Links for NCERT Solutions",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -733,7 +733,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "7.\nChapter 7 Rani\u2019s Gift Solutions",
+      "q": "7.\nChapter 7 Rani’s Gift Solutions",
       "a": "Detailed solution available."
     },
     {
@@ -745,7 +745,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "10.\nChapter 10 Fun at Fair Solutions\nRelated Important Links for Maths Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for Maths Class 2 \u2013\nS. No\nImportant Links for Class 2 Maths",
+      "q": "10.\nChapter 10 Fun at Fair Solutions\nRelated Important Links for Maths Class 2\nAlong with this,",
       "a": "Detailed solution available."
     },
     {
@@ -753,7 +753,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Maths Worksheet",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -761,12 +761,100 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 2 Maths Revision Notes",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
       "q": "5.\nClass 2 Maths Important Questions",
       "a": "Detailed solution available."
+    }
+  ],
+  "12": [
+    {
+      "q": "Discuss the core concepts of Give and Take and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "13": [
+    {
+      "q": "Discuss the core concepts of The Longest Step and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "14": [
+    {
+      "q": "Discuss the core concepts of Birds Come, Birds Go and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "15": [
+    {
+      "q": "Discuss the core concepts of How Many Ponytails? and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
     }
   ]
 };

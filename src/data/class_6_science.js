@@ -2,11 +2,11 @@ export default {
   "1": [
     {
       "q": "Name the following: The nutrients which mainly give energy to our body.",
-      "a": "The nutrients which mainly give energy to our body \u2013 Carbohydrates and Fats"
+      "a": "The nutrients which mainly give energy to our body – Carbohydrates and Fats"
     },
     {
       "q": "Name the following: The nutrients that are needed for the growth and maintenance of our body.",
-      "a": "The nutrients that are needed for the growth and maintenance of our body \u2013 Proteins"
+      "a": "The nutrients that are needed for the growth and maintenance of our body – Proteins"
     },
     {
       "q": "Name two foods each rich in: (a) Fats (b) Starch (c) Dietary fibre (d) Protein",
@@ -32,7 +32,7 @@ export default {
     },
     {
       "q": "Find the odd one out from the following: Chair, Bed, Table, Baby, Cupboard",
-      "a": "Baby: Rest others are made up of wood and are non \u2013 living things."
+      "a": "Baby: Rest others are made up of wood and are non – living things."
     },
     {
       "q": "Find the odd one out from the following: Rose, Jasmine, Boat, Marigold, Lotus",
@@ -142,7 +142,7 @@ export default {
     },
     {
       "q": "While measuring the length of a knitting needle, the reading of the scale at one end is 3.0 cm and at the other end is 33.1 cm. What is the length of the needle?",
-      "a": "The length of the needle = 33.1 cm \u2013 3.0 cm = 30.1 cm"
+      "a": "The length of the needle = 33.1 cm – 3.0 cm = 30.1 cm"
     },
     {
       "q": "Write the similarities and differences between the motion of a bicycle and a ceiling fan that has been switched on.",
@@ -206,18 +206,18 @@ export default {
     },
     {
       "q": "10. Read the following story titled 'Intelligent Leela' and tick the most appropriate options. Provide a suitable title of your choice for the paragraph.\nLeela was working on the farm with her father when she realised that they left their drinking water at home. Before her father got thirsty, she went to a nearby pond to fetch water. She noticed the water was muddy and unfit for drinking. She kept the water for some time to allow settling and then filtered/decanted the water using a piece of muslin cloth. After boiling the water, she filtered it again to ensure it was fit for drinking. She served it to her father, who appreciated her efforts.",
-      "a": "Title Suggestion:\n\"Leela\u2019s Clever Water Purification Process\"\nBenefits of NCERT Solutions for Class 6 Science Chapter 9 Methods of Separation in Everyday Life\nUnderstand the definitions of mixtures, solutions, and separation methods.\nVisualise the processes through real-life examples like separating sand from water.\nPerform small experiments at home to apply these methods practically.\nRevise key terms such as decantation, filtration, and evaporation frequently.\nDraw diagrams to illustrate methods like sieving and filtration.\nImportant Study Material Links for Science Chapter 9 Class 6 Methods of Separation in Everyday Life\nS.No.\nImportant Study Material Links for Chapter 9"
+      "a": "Title Suggestion:\n\"Leela’s Clever Water Purification Process\"\nBenefits of NCERT Solutions for Class 6 Science Chapter 9 Methods of Separation in Everyday Life\nUnderstand the definitions of mixtures, solutions, and separation methods.\nVisualise the processes through real-life examples like separating sand from water.\nPerform small experiments at home to apply these methods practically.\nRevise key terms such as decantation, filtration, and evaporation frequently.\nDraw diagrams to illustrate methods like sieving and filtration.\nImportant Study Material Links for Science Chapter 9 Class 6 Methods of Separation in Everyday Life\nS.No.\nImportant Study Material Links for Chapter 9"
     },
     {
       "q": "1.\nClass 6 Methods of Separation in Everyday Life Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 6 Methods of Separation in Everyday Life Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nClass 6 Methods of Separation in Everyday Life Worksheet\nConclusion\nChapter 9 of Class 6 Science students can learn how essential separation methods are for making mixtures useful and safe in our daily lives. It helps in building a practical understanding of how to apply these techniques in real-life situations, from cooking to cleaning. Vedantu's revision notes make it easier to grasp these concepts with relatable examples and simple explanations, helping students apply their knowledge effectively.\nChapter-wise NCERT Solutions Class 6 Science\nAfter familiarising yourself with the Class 6 Science Chapter 9 Question Answers, you can access comprehensive NCERT Solutions from all Science Class 6 textbook chapters.\nS.No.\nClass 6 Science Chapter Wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 4: Exploring Magnets Solutions\n5\nChapter 5: Measurement of Length and Motion Solutions\n6\nChapter 6: Materials Around Us Solutions\n7\nChapter 7: Temperature and its Measurement Solutions\n8\nChapter 8: A Journey through States of Water Solutions\n9\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n10\nChapter 11: Nature\u2019s Treasures Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS.No.\nImportant Links for Class 6 Science",
+      "q": "3.",
       "a": "Detailed solution available."
     },
     {
@@ -225,7 +225,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 6 Science Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -233,7 +233,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 6 Science Worksheets",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -256,7 +256,7 @@ export default {
     },
     {
       "q": "How many poles a magnet has?",
-      "a": "Each magnet has two magnetic poles\u2014North and South."
+      "a": "Each magnet has two magnetic poles—North and South."
     }
   ],
   "11": [
@@ -269,11 +269,11 @@ export default {
       "a": "(i) Nature has all the resources to meet human needs. [F]\nExplanation:\nNature does not have all the resources to meet human needs. Some resources are limited and need to be managed carefully.\n(ii) Machines are a resource found in nature. [F]\nExplanation Machines are not found in nature; they are human-made resources.\n(iii) Natural gas is a non-renewable resource. [T]\nExplanation:\nThis statement is true. Natural gas is a non-renewable resource because it cannot be replenished quickly.\n(iv) Air is a renewable resource. [T]\nExplanation:\nThis statement is true. Air is considered a renewable resource as it is constantly being replenished through natural processes."
     },
     {
-      "q": "3. Fill in the blanks using the most appropriate option\u2014\n(i) A fuel that is commonly used in two-wheelers like scooters or bikes is.........\n(a) Kerosene\n(b) Petrol\n(c) Diesel\n(d) LPG",
+      "q": "3. Fill in the blanks using the most appropriate option—\n(i) A fuel that is commonly used in two-wheelers like scooters or bikes is.........\n(a) Kerosene\n(b) Petrol\n(c) Diesel\n(d) LPG",
       "a": "A fuel that is commonly used in two-wheelers like scooters or bikes is (b) Petrol.\n(ii) An example of a renewable resource is ..................\n(a) Coal\n(b) Water\n(c) Natural gas\n(d) Petrol\nAns:\nAn example of a renewable resource is (b) Water."
     },
     {
-      "q": "4. Classify the following as renewable or non-renewable resources\u2014coal, natural gas, forests, and minerals.",
+      "q": "4. Classify the following as renewable or non-renewable resources—coal, natural gas, forests, and minerals.",
       "a": "Coal\n: Non-renewable\nNatural Gas\n: Non-renewable\nForests\n: Renewable\nMinerals\n: Non-renewable"
     },
     {
@@ -294,7 +294,7 @@ export default {
     },
     {
       "q": "9. How can you contribute towards enhancing the green cover of your locality? Make a list of actions to be taken.",
-      "a": "Plant Trees\n: Participate in or organise tree-planting drives in your community.\nSupport Local Green Initiatives\n: Join local environmental groups or support community green projects.\nMaintain Gardens\n: Grow and maintain plants in your garden or community green spaces.\nEducate Others\n: Raise awareness about the importance of trees and green spaces.\nAvoid Deforestation\n: Advocate against deforestation and support sustainable land use practices.\nIn the given illustration, we see that food is being cooked. Answer the following questions\u2014\n(i) What type of energy is being used for cooking?\nAns:\nThe energy being used for cooking in the image is\nsolar energy\n, which is harnessed from sunlight.\n(ii) Name one benefit and one drawback of using this type of energy for cooking.\nAns:\nBenefit\n: Solar energy is a renewable and environmentally friendly source of energy. It does not emit any harmful gases or pollutants during cooking.\nDrawback\n: Solar cooking is dependent on sunlight, so it cannot be used at night or on cloudy days, which limits its availability and consistency."
+      "a": "Plant Trees\n: Participate in or organise tree-planting drives in your community.\nSupport Local Green Initiatives\n: Join local environmental groups or support community green projects.\nMaintain Gardens\n: Grow and maintain plants in your garden or community green spaces.\nEducate Others\n: Raise awareness about the importance of trees and green spaces.\nAvoid Deforestation\n: Advocate against deforestation and support sustainable land use practices.\nIn the given illustration, we see that food is being cooked. Answer the following questions—\n(i) What type of energy is being used for cooking?\nAns:\nThe energy being used for cooking in the image is\nsolar energy\n, which is harnessed from sunlight.\n(ii) Name one benefit and one drawback of using this type of energy for cooking.\nAns:\nBenefit\n: Solar energy is a renewable and environmentally friendly source of energy. It does not emit any harmful gases or pollutants during cooking.\nDrawback\n: Solar cooking is dependent on sunlight, so it cannot be used at night or on cloudy days, which limits its availability and consistency."
     },
     {
       "q": "11. Cutting down trees on a large scale impacts the quality of the soil. Why do you think it is so?",
@@ -302,14 +302,14 @@ export default {
     },
     {
       "q": "12. Explain two ways in which human activities pollute the air. Propose one action that can help in reducing air pollution.",
-      "a": "Burning fossil fuels\n: Vehicles, factories, and power plants burn fossil fuels like coal, oil, and gas, releasing harmful gases like carbon dioxide (CO\u2082), sulphur dioxide (SO\u2082), and nitrogen oxides (NO\u2093) into the air, contributing to air pollution and climate change.\nIndustrial emissions\n: Factories release pollutants, including chemicals, smoke, and particulate matter, into the atmosphere, affecting air quality and human health.\nAction to reduce air pollution\n: Encouraging the use of renewable energy sources, such as solar and wind power, can significantly reduce air pollution by minimising dependence on fossil fuels and reducing industrial emissions."
+      "a": "Burning fossil fuels\n: Vehicles, factories, and power plants burn fossil fuels like coal, oil, and gas, releasing harmful gases like carbon dioxide (CO₂), sulphur dioxide (SO₂), and nitrogen oxides (NOₓ) into the air, contributing to air pollution and climate change.\nIndustrial emissions\n: Factories release pollutants, including chemicals, smoke, and particulate matter, into the atmosphere, affecting air quality and human health.\nAction to reduce air pollution\n: Encouraging the use of renewable energy sources, such as solar and wind power, can significantly reduce air pollution by minimising dependence on fossil fuels and reducing industrial emissions."
     },
     {
       "q": "13. A family uses solar panels to generate electricity, a gas stove to cook food, and a windmill for pumping water from a well. What would happen if there were no sunlight for a week?",
       "a": "If there were no sunlight for a week, the solar panels would not generate electricity, leading to a power shortage for the family. They would need an alternative energy source, such as stored electricity or a backup generator, to fulfil their energy needs. The gas stove and windmill would not be affected by the lack of sunlight, so cooking food and pumping water could continue normally."
     },
     {
-      "q": "14. Fill up the blanks using the following terms\u2014 (fossil fuels, forest, air, petroleum, coal, water, and nonrenewable resource)",
+      "q": "14. Fill up the blanks using the following terms— (fossil fuels, forest, air, petroleum, coal, water, and nonrenewable resource)",
       "a": ""
     },
     {
@@ -318,7 +318,7 @@ export default {
     },
     {
       "q": "16. Propose a plan to use less water in your school. What steps would you take to make this plan happen and how would it help the environment?",
-      "a": "Plan to Use Less Water in School\nObjective\n: To reduce water usage in the school and promote water conservation, benefiting the environment by preserving this valuable resource.\nSteps to Implement the Plan\n:\nInstall Water-Saving Devices\n: Equip all faucets, toilets, and urinals with low-flow devices to reduce water wastage.\nRepair Leaks\n: Conduct regular checks for leaks in water pipes, faucets, and bathrooms, ensuring timely repairs to prevent water wastage.\nEducate Students and Staff\n: Launch an awareness campaign about the importance of water conservation, teaching students and staff to use water mindfully, like turning off taps while washing hands or using minimal water during cleaning.\nRainwater Harvesting\n: Set up a rainwater harvesting system to collect and store rainwater, which can be used for gardening, cleaning, and other non-potable purposes.\nWater-Efficient Landscaping\n: Replace water-intensive plants in the school garden with native, drought-resistant species, which require less watering.\nMonitor Water Usage\n: Install water metres in key areas of the school to track water consumption and identify areas for further improvement.\nHow It Helps the Environment\n:\nReduces the depletion of freshwater resources.\nDecreases the energy required for water treatment and distribution, lowering the school\u2019s carbon footprint.\nPrevents water wastage, ensuring more water is available for future use and reducing stress on local water bodies.\nLEARNING FURTHER\nRainwater harvesting is an age-old practice in India. Find out some of the traditional rainwater harvesting techniques being used in your state or other parts of the country.\nAns\n: India has a rich history of traditional rainwater harvesting techniques that vary across different regions, based on local climatic conditions and terrain. Here are some traditional methods used in different parts of the country:\nKund\n(Rajasthan and Gujarat): Kunds are small circular underground structures used to collect rainwater in sandy, arid regions. They have a catchment area to collect and channel water into the kund, where it is stored for later use, especially during droughts.\nJohads\n(Rajasthan): Johads are small earthen check dams built to collect rainwater. These help in recharging groundwater and are highly effective in areas with low rainfall.\nZing\n(Ladakh): Zings are small tanks that collect the melted water from glaciers. The water is diverted to fields through a network of channels, making agriculture possible in the cold, arid region.\nAhar-Pyne\n(Bihar): This traditional technique includes two structures: the\nAhar\n, which is a reservoir, and the\nPyne\n, a channel that distributes the water to agricultural fields. This method is commonly used for irrigation.\nBamboo Drip Irrigation\n(Meghalaya): This system involves using bamboo pipes to carry water from mountain streams to farmlands. It is an efficient way of collecting and transporting water in hilly areas.\nEri\n(Tamil Nadu): The\nEri\nsystem is an ancient water management technique where tanks and lakes are constructed to store and manage rainwater for irrigation purposes. This also helps in recharging groundwater levels.\nThese traditional methods showcase how people in different parts of India have adapted to their environment and effectively managed rainwater harvesting for centuries.\nInvestigate the effect of air pollution on human health by interacting with your elders or community members and identify the main sources of air pollution in your local area. Based on your findings, suggest two practical steps that your school or community could take to help reduce air pollution.\nAns\n: Upon interacting with elders and community members, I discovered that air pollution significantly affects human health. The common health problems associated with air pollution include respiratory issues like asthma, bronchitis, and allergies, as well as cardiovascular diseases. Prolonged exposure to polluted air can lead to more severe health conditions, especially in children and the elderly.\nMain Sources of Air Pollution in the Local Area\n:\nVehicle emissions from cars, buses, and trucks.\nIndustrial pollution from factories and manufacturing units.\nBurning of garbage and agricultural waste.\nTwo Practical Steps to Reduce Air Pollution\n:\nEncourage Carpooling and Cycling\n: Schools can promote carpooling among students and staff, and encourage cycling to reduce vehicular emissions. Setting up a \"no car day\" once a week could also help.\nPlanting Trees Around the School\n: Organising tree plantation drives in the community and school can help absorb pollutants like carbon dioxide and improve air quality.\nPrepare a list of the names and uses of important minerals and rocks that are used in your village/town/city for various purposes.\nAns\n: Here is a list of important minerals and rocks used in my town/city:\nGranite\n: Used in construction, particularly for building floors, countertops, and monuments due to its strength and durability.\nLimestone\n: Commonly used in cement production, as well as in the construction of buildings and roads.\nMarble\n: Popular for use in sculpting, construction of buildings, and decorative purposes, especially for flooring and tabletops.\nSandstone\n: Used in the construction of buildings, walls, and sometimes as decorative stones.\nQuartz\n: Widely used in glass-making and also in electronics for its piezoelectric properties.\nGypsum\n: Used in making plaster of Paris and in the construction industry for drywall or plasterboards.\nYou are an eco-club monitor. Organise a tree plantation drive in your school with the help of your teacher. List the steps required for organising this activity. Prepare a one-page report listing the names of the trees planted along with their importance.\nAns\n:\nSteps to Organise a Tree Plantation Drive\n:\nGet Permission\n: Seek permission from the school administration to organise the event.\nInvolve Teachers and Students\n: Collaborate with teachers, students, and volunteers from different classes.\nChoose a Location\n: Identify suitable areas within the school campus where trees can be planted.\nSelect the Trees\n: Choose tree species suitable for the local climate and environment. Ensure they are native trees that benefit the ecosystem.\nGather Materials\n: Arrange saplings, shovels, water, and compost or fertilisers.\nAssign Roles\n: Distribute responsibilities, such as digging, planting, watering, and labelling the trees, among volunteers.\nEducate\n: Provide information to participants about the importance of each tree and how to care for them.\nTree Plantation Drive Report\nDate\n: 13/09/2024\nLocation\n: XYZ\nAs part of the school eco-club initiative, we successfully organised a tree plantation drive to contribute to the greening of our campus and to help combat air pollution. With the help of teachers and student volunteers, we planted the following trees:"
+      "a": "Plan to Use Less Water in School\nObjective\n: To reduce water usage in the school and promote water conservation, benefiting the environment by preserving this valuable resource.\nSteps to Implement the Plan\n:\nInstall Water-Saving Devices\n: Equip all faucets, toilets, and urinals with low-flow devices to reduce water wastage.\nRepair Leaks\n: Conduct regular checks for leaks in water pipes, faucets, and bathrooms, ensuring timely repairs to prevent water wastage.\nEducate Students and Staff\n: Launch an awareness campaign about the importance of water conservation, teaching students and staff to use water mindfully, like turning off taps while washing hands or using minimal water during cleaning.\nRainwater Harvesting\n: Set up a rainwater harvesting system to collect and store rainwater, which can be used for gardening, cleaning, and other non-potable purposes.\nWater-Efficient Landscaping\n: Replace water-intensive plants in the school garden with native, drought-resistant species, which require less watering.\nMonitor Water Usage\n: Install water metres in key areas of the school to track water consumption and identify areas for further improvement.\nHow It Helps the Environment\n:\nReduces the depletion of freshwater resources.\nDecreases the energy required for water treatment and distribution, lowering the school’s carbon footprint.\nPrevents water wastage, ensuring more water is available for future use and reducing stress on local water bodies.\nLEARNING FURTHER\nRainwater harvesting is an age-old practice in India. Find out some of the traditional rainwater harvesting techniques being used in your state or other parts of the country.\nAns\n: India has a rich history of traditional rainwater harvesting techniques that vary across different regions, based on local climatic conditions and terrain. Here are some traditional methods used in different parts of the country:\nKund\n(Rajasthan and Gujarat): Kunds are small circular underground structures used to collect rainwater in sandy, arid regions. They have a catchment area to collect and channel water into the kund, where it is stored for later use, especially during droughts.\nJohads\n(Rajasthan): Johads are small earthen check dams built to collect rainwater. These help in recharging groundwater and are highly effective in areas with low rainfall.\nZing\n(Ladakh): Zings are small tanks that collect the melted water from glaciers. The water is diverted to fields through a network of channels, making agriculture possible in the cold, arid region.\nAhar-Pyne\n(Bihar): This traditional technique includes two structures: the\nAhar\n, which is a reservoir, and the\nPyne\n, a channel that distributes the water to agricultural fields. This method is commonly used for irrigation.\nBamboo Drip Irrigation\n(Meghalaya): This system involves using bamboo pipes to carry water from mountain streams to farmlands. It is an efficient way of collecting and transporting water in hilly areas.\nEri\n(Tamil Nadu): The\nEri\nsystem is an ancient water management technique where tanks and lakes are constructed to store and manage rainwater for irrigation purposes. This also helps in recharging groundwater levels.\nThese traditional methods showcase how people in different parts of India have adapted to their environment and effectively managed rainwater harvesting for centuries.\nInvestigate the effect of air pollution on human health by interacting with your elders or community members and identify the main sources of air pollution in your local area. Based on your findings, suggest two practical steps that your school or community could take to help reduce air pollution.\nAns\n: Upon interacting with elders and community members, I discovered that air pollution significantly affects human health. The common health problems associated with air pollution include respiratory issues like asthma, bronchitis, and allergies, as well as cardiovascular diseases. Prolonged exposure to polluted air can lead to more severe health conditions, especially in children and the elderly.\nMain Sources of Air Pollution in the Local Area\n:\nVehicle emissions from cars, buses, and trucks.\nIndustrial pollution from factories and manufacturing units.\nBurning of garbage and agricultural waste.\nTwo Practical Steps to Reduce Air Pollution\n:\nEncourage Carpooling and Cycling\n: Schools can promote carpooling among students and staff, and encourage cycling to reduce vehicular emissions. Setting up a \"no car day\" once a week could also help.\nPlanting Trees Around the School\n: Organising tree plantation drives in the community and school can help absorb pollutants like carbon dioxide and improve air quality.\nPrepare a list of the names and uses of important minerals and rocks that are used in your village/town/city for various purposes.\nAns\n: Here is a list of important minerals and rocks used in my town/city:\nGranite\n: Used in construction, particularly for building floors, countertops, and monuments due to its strength and durability.\nLimestone\n: Commonly used in cement production, as well as in the construction of buildings and roads.\nMarble\n: Popular for use in sculpting, construction of buildings, and decorative purposes, especially for flooring and tabletops.\nSandstone\n: Used in the construction of buildings, walls, and sometimes as decorative stones.\nQuartz\n: Widely used in glass-making and also in electronics for its piezoelectric properties.\nGypsum\n: Used in making plaster of Paris and in the construction industry for drywall or plasterboards.\nYou are an eco-club monitor. Organise a tree plantation drive in your school with the help of your teacher. List the steps required for organising this activity. Prepare a one-page report listing the names of the trees planted along with their importance.\nAns\n:\nSteps to Organise a Tree Plantation Drive\n:\nGet Permission\n: Seek permission from the school administration to organise the event.\nInvolve Teachers and Students\n: Collaborate with teachers, students, and volunteers from different classes.\nChoose a Location\n: Identify suitable areas within the school campus where trees can be planted.\nSelect the Trees\n: Choose tree species suitable for the local climate and environment. Ensure they are native trees that benefit the ecosystem.\nGather Materials\n: Arrange saplings, shovels, water, and compost or fertilisers.\nAssign Roles\n: Distribute responsibilities, such as digging, planting, watering, and labelling the trees, among volunteers.\nEducate\n: Provide information to participants about the importance of each tree and how to care for them.\nTree Plantation Drive Report\nDate\n: 13/09/2024\nLocation\n: XYZ\nAs part of the school eco-club initiative, we successfully organised a tree plantation drive to contribute to the greening of our campus and to help combat air pollution. With the help of teachers and student volunteers, we planted the following trees:"
     },
     {
       "q": "1. Neem (Azadirachta indica)\nImportance: Neem is known for its air-purifying qualities and medicinal properties. It helps in reducing pollution and provides shade.",
@@ -337,19 +337,19 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "5. Banyan (Ficus benghalensis)\nImportance: The banyan tree provides ample shade, supports wildlife, and helps in soil conservation.\nThe tree plantation drive was a great success, and all participants gained a better understanding of the importance of trees in maintaining a healthy environment. These trees will contribute to cleaner air, provide shade, and enhance the overall beauty of the school campus. We will continue to nurture the trees and conduct regular drives to expand green spaces in our community.\nBenefits of NCERT Solutions for Class 6 Science Chapter 11 Nature\u2019s Treasures\nThe NCERT solutions provide clear and detailed explanations of the topics covered in Chapter 11, helping students grasp concepts about natural resources and their significance in our daily lives.\nEach solution is explained in a step-by-step manner, which simplifies complex concepts, making it easier for students to follow and understand the topic thoroughly.\nThe solutions help strengthen the basic understanding of the chapter, which is essential for building a solid foundation in science.\nStudents can use the solutions for quick revision before tests and exams, ensuring that they cover all important points and questions from the chapter.\nWith NCERT solutions, students can independently solve problems and clarify their doubts, enhancing their confidence in the subject.\nBy practising the solutions, students can manage their time better during exams by getting familiar with the question patterns and formats.\nImportant Study Material Links for Science Chapter 11 Class 6\nS. No\nImportant Study Material Links for Chapter 11",
+      "q": "5. Banyan (Ficus benghalensis)\nImportance: The banyan tree provides ample shade, supports wildlife, and helps in soil conservation.\nThe tree plantation drive was a great success, and all participants gained a better understanding of the importance of trees in maintaining a healthy environment. These trees will contribute to cleaner air, provide shade, and enhance the overall beauty of the school campus. We will continue to nurture the trees and conduct regular drives to expand green spaces in our community.\nBenefits of NCERT Solutions for Class 6 Science Chapter 11 Nature’s Treasures\nThe NCERT solutions provide clear and detailed explanations of the topics covered in Chapter 11, helping students grasp concepts about natural resources and their significance in our daily lives.\nEach solution is explained in a step-by-step manner, which simplifies complex concepts, making it easier for students to follow and understand the topic thoroughly.\nThe solutions help strengthen the basic understanding of the chapter, which is essential for building a solid foundation in science.\nStudents can use the solutions for quick revision before tests and exams, ensuring that they cover all important points and questions from the chapter.\nWith NCERT solutions, students can independently solve problems and clarify their doubts, enhancing their confidence in the subject.\nBy practising the solutions, students can manage their time better during exams by getting familiar with the question patterns and formats.\nImportant Study Material Links for Science Chapter 11 Class 6\nS. No\nImportant Study Material Links for Chapter 11",
       "a": "Detailed solution available."
     },
     {
-      "q": "1.\nClass 6 Nature\u2019s Treasures Important Questions",
+      "q": "1.\nClass 6 Nature’s Treasures Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 6 Nature\u2019s Treasures Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nClass 6 Nature\u2019s Treasures Worksheet\nConclusion\nThe NCERT Solutions for Class 6 Science Chapter 11, \"Nature\u2019s Treasures,\" offers students a clear and easy-to-understand approach to learning about natural resources and their importance in our lives. By providing step-by-step answers, these solutions help build a strong foundation in science and ensure that students are well-prepared for exams. They also support independent learning and quick revision, making it easier for students to review key concepts. With these solutions, students can effectively manage their time and enhance their understanding, making learning more enjoyable and productive.\nChapter-wise NCERT Solutions Class 6 Science\nS. No\nClass 6 Science Chapter wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 4: Exploring Magnets Solutions\n5\nChapter 5: Measurement of Length and Motion Solutions\n6\nChapter 6: Materials Around Us Solutions\n7\nChapter 7: Temperature and its Measurement Solutions\n8\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n10\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n11\nChapter 12: Beyond Earth Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
+      "q": "3.",
       "a": "Detailed solution available."
     },
     {
@@ -357,7 +357,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 6 Science Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -365,7 +365,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 6 Science Worksheets",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
@@ -391,11 +391,11 @@ export default {
       "a": "Sirius is the brighter star. It is the brightest star in the night sky, while the Pole Star (Polaris) is not as bright as Sirius."
     },
     {
-      "q": "6. An artist\u2019s representation of the Solar System is given in Fig. 12.12. Is the order of the planets correct? If not, write the correct order in the boxes in the figure.",
+      "q": "6. An artist’s representation of the Solar System is given in Fig. 12.12. Is the order of the planets correct? If not, write the correct order in the boxes in the figure.",
       "a": "The order from the Sun is Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune."
     },
     {
-      "q": "7. A portion of the night sky with stars is shown in Fig. 12.13. Look carefully and identify the groups of stars that form the patterns\u2014the Big Dipper and the Little Dipper. Draw lines to connect the stars for these patterns and label them. Also, identify and label the Pole Star. You may refer to Fig. 12.4 for help",
+      "q": "7. A portion of the night sky with stars is shown in Fig. 12.13. Look carefully and identify the groups of stars that form the patterns—the Big Dipper and the Little Dipper. Draw lines to connect the stars for these patterns and label them. Also, identify and label the Pole Star. You may refer to Fig. 12.4 for help",
       "a": ""
     },
     {
@@ -407,12 +407,12 @@ export default {
       "a": "Stars fade away at dawn and become visible again at dusk due to the Earth's rotation. During the day, the Sun's light scatters in Earth's atmosphere, making the sky bright and obscuring the light from other stars. As the Sun sets, the sky darkens, allowing the light from the stars to become visible again. Thus, stars are not seen during the day because the Sun's light overwhelms their faint light."
     },
     {
-      "q": "10. During a clear night, try to observe the Big Dipper 3\u20134 times at an interval of 2 to 3 hours. Also, try to locate the Pole Star each time. Does the Big Dipper appear to move? Draw a rough sketch to illustrate this, mentioning the time in each case.",
-      "a": "Observation:\nTime 1: The Big Dipper is positioned at a certain spot in the sky.\nTime 2: After 2\u20133 hours, the Big Dipper will be in a different position in the sky.\nTime 3: After another 2\u20133 hours, the Big Dipper will have moved further.\nExplanation:\nThe Big Dipper appears to move across the sky due to the Earth's rotation. However, the Pole Star (Polaris) remains relatively fixed in the sky. This is because Polaris is located near the North Celestial Pole, so it does not shift significantly in our sky."
+      "q": "10. During a clear night, try to observe the Big Dipper 3–4 times at an interval of 2 to 3 hours. Also, try to locate the Pole Star each time. Does the Big Dipper appear to move? Draw a rough sketch to illustrate this, mentioning the time in each case.",
+      "a": "Observation:\nTime 1: The Big Dipper is positioned at a certain spot in the sky.\nTime 2: After 2–3 hours, the Big Dipper will be in a different position in the sky.\nTime 3: After another 2–3 hours, the Big Dipper will have moved further.\nExplanation:\nThe Big Dipper appears to move across the sky due to the Earth's rotation. However, the Pole Star (Polaris) remains relatively fixed in the sky. This is because Polaris is located near the North Celestial Pole, so it does not shift significantly in our sky."
     },
     {
       "q": "11. Think about the night sky and write a poem or a story on it.",
-      "a": "A Starry Night\nIn the hush of evening\u2019s grace,\nThe sky unveils its velvet face,\nStars emerge in twinkling dance,\nCasting dreams in cosmic trance.\nThe moon drapes silver threads of light,\nAcross the canvas of the night,\nGalaxies in distant song,\nWhisper secrets, soft and long.\nConstellations weave their tales,\nIn celestial, timeless trails,\nThe Big Dipper, steadfast, bright,\nGuides the wanderers through the night.\nBeneath the canvas, dreams take flight,\nIn the quiet of the starry night,\nThe universe in endless span,\nA symphony for every man.\nSo gaze upon the heavens high,\nAnd let your heart with wonder fly,\nFor in the night\u2019s eternal dome,\nThe stars invite us to come home.\nLEARNING FURTHER\nTry to find out the names of planets in your local language. Also, find out the stories associated with stars and constellations in your region. Present these stories in a pictorial form.\nAns:\nThe names of planets can vary depending on the local language. Here are a few examples in Hindi:\nMercury: \u092c\u0941\u0927 (Budh)\nVenus: \u0936\u0941\u0915\u094d\u0930 (Shukra)\nEarth: \u092a\u0943\u0925\u094d\u0935\u0940 (Prithvi)\nMars: \u092e\u0902\u0917\u0932 (Mangal)\nJupiter: \u092c\u0943\u0939\u0938\u094d\u092a\u0924\u093f (Brihaspati)\nSaturn: \u0936\u0928\u093f\u0926\u0947\u0935 (Shani)\nUranus: \u0905\u0930\u0941\u0923 (Arun)\nNeptune: \u0935\u0930\u0941\u0923 (Varun)\nIf there is a planetarium or a science museum nearby, then you can visit it, especially if a night sky observation session is scheduled by them. You will get to see the Moon, the planets, and the stars through a telescope. If you visit the planetarium during the daytime, you can also see their models, pictures, and sky shows.\nAns:\nDo it Yourself\nFind out if the increasing light pollution is causing problems for humans, wildlife and the environment. Write an action that you would take at the personal level to control light pollution.\nAns:\nImpact of Increasing Light Pollution"
+      "a": "A Starry Night\nIn the hush of evening’s grace,\nThe sky unveils its velvet face,\nStars emerge in twinkling dance,\nCasting dreams in cosmic trance.\nThe moon drapes silver threads of light,\nAcross the canvas of the night,\nGalaxies in distant song,\nWhisper secrets, soft and long.\nConstellations weave their tales,\nIn celestial, timeless trails,\nThe Big Dipper, steadfast, bright,\nGuides the wanderers through the night.\nBeneath the canvas, dreams take flight,\nIn the quiet of the starry night,\nThe universe in endless span,\nA symphony for every man.\nSo gaze upon the heavens high,\nAnd let your heart with wonder fly,\nFor in the night’s eternal dome,\nThe stars invite us to come home.\nLEARNING FURTHER\nTry to find out the names of planets in your local language. Also, find out the stories associated with stars and constellations in your region. Present these stories in a pictorial form.\nAns:\nThe names of planets can vary depending on the local language. Here are a few examples in Hindi:\nMercury: बुध (Budh)\nVenus: शुक्र (Shukra)\nEarth: पृथ्वी (Prithvi)\nMars: मंगल (Mangal)\nJupiter: बृहस्पति (Brihaspati)\nSaturn: शनिदेव (Shani)\nUranus: अरुण (Arun)\nNeptune: वरुण (Varun)\nIf there is a planetarium or a science museum nearby, then you can visit it, especially if a night sky observation session is scheduled by them. You will get to see the Moon, the planets, and the stars through a telescope. If you visit the planetarium during the daytime, you can also see their models, pictures, and sky shows.\nAns:\nDo it Yourself\nFind out if the increasing light pollution is causing problems for humans, wildlife and the environment. Write an action that you would take at the personal level to control light pollution.\nAns:\nImpact of Increasing Light Pollution"
     },
     {
       "q": "1. Problems for Humans:\nHealth Issues\n: Light pollution can disrupt circadian rhythms, leading to sleep disorders and other health problems such as increased stress and risk of chronic diseases.\nMental Well-being\n: Excessive artificial light can contribute to mental fatigue, anxiety, and depression, affecting overall well-being.",
@@ -431,11 +431,11 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 6 Beyond Earth Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3.\nClass 6 Beyond Earth Worksheet\nConclusion\nNCERT Solutions for Class 6 Science Chapter 12, \"Beyond Earth,\" is an excellent resource for young learners. They help students grasp essential concepts about space, planets, and stars through clear explanations and practice questions. These solutions make it easier to understand and remember key ideas, improve problem-solving skills, and prepare for exams. By using these solutions, students can study effectively at home, revise important topics, and stay aligned with their curriculum. Overall, they provide a solid foundation for learning about the fascinating world beyond Earth.\nChapter-wise NCERT Solutions Class 6 Science\nS. No\nClass 6 Science Chapter wise NCERT Solutions links\n1\nChapter 1: The Wonderful World of Science Solutions\n2\nChapter 2: Diversity in the Living World Solutions\n3\nChapter 3: Mindful Eating: A Path to a Healthy Body Solutions\n4\nChapter 4: Exploring Magnets Solutions\n5\nChapter 5: Measurement of Length and Motion Solutions\n6\nChapter 6: Materials Around Us Solutions\n7\nChapter 7: Temperature and its Measurement Solutions\n8\nChapter 8: A Journey through States of Water Solutions\n8\nChapter 9: Methods of Separation in Everyday Life Solutions\n10\nChapter 10: Living Creatures: Exploring their Characteristics Solutions\n11\nChapter 11: Nature\u2019s Treasures Solutions\nRelated Important Links for Class 6 Science\nAlong with this, students can also download additional study materials provided by Vedantu for Science Class 6-\nS. No\nImportant Links for Class 6 Science",
+      "q": "3.",
       "a": "Detailed solution available."
     },
     {
@@ -443,7 +443,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 6 Science Revision Notes",
+      "q": "2.",
       "a": "Detailed solution available."
     },
     {
@@ -451,12 +451,100 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "4.\nClass 6 Science Worksheets",
+      "q": "4.",
       "a": "Detailed solution available."
     },
     {
       "q": "5.\nClass 6 Science Sample Papers",
       "a": "Detailed solution available."
+    }
+  ],
+  "13": [
+    {
+      "q": "Discuss the core concepts of Fun with Magnets and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "14": [
+    {
+      "q": "Discuss the core concepts of Water and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "15": [
+    {
+      "q": "Discuss the core concepts of Air Around Us and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "16": [
+    {
+      "q": "Discuss the core concepts of Garbage In, Garbage Out and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
     }
   ]
 };

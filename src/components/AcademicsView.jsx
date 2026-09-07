@@ -13,13 +13,11 @@ const AcademicsView = ({ onSelectSubject, onBack }) => {
     { id: 'class_8', label: 'Class 8', fullName: 'NCERT Solutions for class 8', subjects: ['Maths', 'Science', 'English', 'Social Science'] },
     { id: 'class_7', label: 'Class 7', fullName: 'NCERT Solutions for class 7', subjects: ['Maths', 'Science', 'English', 'Social Science'] },
     { id: 'class_6', label: 'Class 6', fullName: 'NCERT Solutions for class 6', subjects: ['Maths', 'Science', 'English', 'Social Science'] },
-    { id: 'class_5', label: 'Class 5', fullName: 'NCERT Solutions for class 5', subjects: ['Maths', 'EVS', 'English'] },
-    { id: 'class_4', label: 'Class 4', fullName: 'NCERT Solutions for class 4', subjects: ['Maths', 'EVS', 'English'] },
-    { id: 'class_3', label: 'Class 3', fullName: 'NCERT Solutions for Class 3', subjects: ['Maths', 'EVS', 'English'] },
+    { id: 'class_5', label: 'Class 5', fullName: 'NCERT Solutions for class 5', subjects: ['Maths', 'English'] },
+    { id: 'class_4', label: 'Class 4', fullName: 'NCERT Solutions for class 4', subjects: ['Maths', 'English'] },
+    { id: 'class_3', label: 'Class 3', fullName: 'NCERT Solutions for Class 3', subjects: ['Maths', 'English'] },
     { id: 'class_2', label: 'Class 2', fullName: 'NCERT Solutions for Class 2', subjects: ['Maths', 'English'] },
     { id: 'class_1', label: 'Class 1', fullName: 'NCERT Solutions for Class 1', subjects: ['Maths', 'English'] },
-    { id: 'books', label: 'NCERT Books', fullName: 'NCERT Books', subjects: ['All Books PDF'] },
-    { id: 'exempler', label: 'NCERT Exempler', fullName: 'NCERT Exempler', subjects: ['Maths Exemplar', 'Science Exemplar'] },
   ];
 
   return (

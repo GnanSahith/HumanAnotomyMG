@@ -422,6 +422,7 @@ function CustomColorVisionInner({
   // REFERENCES FOR PHYSICS ANIMATION LOOP (avoiding closure staleness)
   // --------------------------------------------------------------------------
   const canvasRef = useRef(null);
+  const lastTimeRef = useRef(null);
   const settingsRef = useRef({});
   const particlesRef = useRef([]);
   const splashesRef = useRef([]);
@@ -513,7 +514,7 @@ function CustomColorVisionInner({
     const updatePhysics = () => {
     if (!isPlayingRef.current) {
       if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
-      requestRef.current = requestAnimationFrame(updatePhysics);
+      /* removed recursive RAF */
       return;
     }
       const settings = settingsRef.current;

@@ -257,7 +257,7 @@ export default function CustomDiffusion({
     const state = stateRef.current;
     if (!isPlayingRef.current) {
       drawCanvas();
-      requestRef.current = requestAnimationFrame(updatePhysics);
+      /* removed recursive RAF */
       return;
     }
     const p = particlesRef.current;
@@ -318,10 +318,10 @@ export default function CustomDiffusion({
         bRight: p.filter(part => part.type === 'B' && part.x > hw).length
       });
     }
-    requestRef.current = requestAnimationFrame(updatePhysics);
+    /* removed recursive RAF */
   };
   useEffect(() => {
-    requestRef.current = requestAnimationFrame(updatePhysics);
+    /* removed recursive RAF */
     return () => cancelAnimationFrame(requestRef.current);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

@@ -60,10 +60,7 @@ const CustomNeonLightsInner = ({
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     const draw = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(draw);
-      return;
-    }
+    
       const now = performance.now();
       if (state.current.lastTime === 0) state.current.lastTime = now;
       const dt = (now - state.current.lastTime) / 1000;

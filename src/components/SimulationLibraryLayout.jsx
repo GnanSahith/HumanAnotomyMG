@@ -16,7 +16,7 @@ export default function SimulationLibraryLayout({
     onSimulationClick, 
     onBack,
     handleLockedItemClick,
-    extractSearchText = (sim) => sim.title + ' ' + (sim.description || ''),
+    extractSearchText = (sim) => (sim.title || '') + ' ' + (sim.description || ''),
     matchFilter = (sim, filterId, selectedOptionIds) => true // callback to let parent decide how to filter
 }) {
     const { t } = useLanguage();

@@ -406,6 +406,9 @@ const CustomEnergySkatePark = ({
     s.lastMouseY = y;
   };
   const handlePointerUp = e => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     const s = stateRef.current;
     if (s.dragTarget) {
       if (s.dragTarget === 'skater') {

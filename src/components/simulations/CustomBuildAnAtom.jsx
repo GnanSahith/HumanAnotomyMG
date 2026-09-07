@@ -219,7 +219,10 @@ export default function CustomBuildAnAtom({
   }, [particlesRef.current.length]); // Trigger when particles change
 
   const handlePointerDown = e => {
-    const rect = canvasRef.current.getBoundingClientRect();
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
+    
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
@@ -273,8 +276,11 @@ export default function CustomBuildAnAtom({
     };
   };
   const handlePointerMove = e => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     if (!dragInfoRef.current.isDragging) return;
-    const rect = canvasRef.current.getBoundingClientRect();
+    
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     const idx = dragInfoRef.current.particleIndex;
@@ -284,6 +290,9 @@ export default function CustomBuildAnAtom({
     }
   };
   const handlePointerUp = e => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     if (!dragInfoRef.current.isDragging) return;
     const idx = dragInfoRef.current.particleIndex;
     if (idx < 0) return;

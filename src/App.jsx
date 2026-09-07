@@ -173,8 +173,10 @@ function App() {
           const data = docSnap.data();
           const localSession = localStorage.getItem('current_session_id');
           if (data.currentSessionId && localSession && data.currentSessionId !== localSession) {
-             alert('You have been logged out because your account was accessed from another device.');
-             handleLogout();
+             if (loggedInUsername !== 'gnansahithmg@admin.local') {
+               alert('You have been logged out because your account was accessed from another device.');
+               handleLogout();
+             }
           }
         }
       });

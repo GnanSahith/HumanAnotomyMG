@@ -335,6 +335,9 @@ const CustomBuoyancy = ({
     if (block.y + halfSide > canvas.height) block.y = canvas.height - halfSide;
   };
   const handlePointerUp = () => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     const block = blockRef.current;
     block.isDragging = false;
   };

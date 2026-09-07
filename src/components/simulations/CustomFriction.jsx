@@ -135,12 +135,18 @@ const CustomFriction = ({
     return () => cancelAnimationFrame(requestRef.current);
   }, []);
   const handlePointerDown = e => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     e.target.setPointerCapture(e.pointerId);
     stateRef.current.isDragging = true;
     stateRef.current.lastMouseX = e.clientX;
     updateDOM();
   };
   const handlePointerMove = e => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     const s = stateRef.current;
     if (!s.isDragging) return;
     const dx = (e.clientX - s.lastMouseX) * (canvas.width / rect.width);
@@ -153,6 +159,9 @@ const CustomFriction = ({
     updateDOM();
   };
   const handlePointerUp = e => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     stateRef.current.isDragging = false;
     stateRef.current.lastMouseX = null;
     e.target.releasePointerCapture(e.pointerId);

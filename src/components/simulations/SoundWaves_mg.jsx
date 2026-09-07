@@ -15,6 +15,7 @@ export default function CustomSoundWaves({ onBack, title, isPlaying: globalIsPla
     const [amplitude, setAmplitude] = useState(1.0);
     
     const canvasRef = useRef(null);
+    const lastTimeRef = useRef(null);
     const requestRef = useRef(null);
     const timeRef = useRef(0);
     const imageDataRef = useRef(null);
@@ -69,22 +70,22 @@ export default function CustomSoundWaves({ onBack, title, isPlaying: globalIsPla
     const updatePhysics = () => {
     if (!isPlayingRef.current) {
       if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
-      requestRef.current = requestAnimationFrame(updatePhysics);
+      /* removed recursive RAF */
       return;
     }
         if (!isPlaying) {
-            requestRef.current = requestAnimationFrame(updatePhysics);
+            /* removed recursive RAF */
             return;
         }
 
         timeRef.current += 0.1;
         renderCanvas();
 
-        requestRef.current = requestAnimationFrame(updatePhysics);
+        /* removed recursive RAF */
     };
 
     useEffect(() => {
-        requestRef.current = requestAnimationFrame(updatePhysics);
+        /* removed recursive RAF */
         return () => {
             if (requestRef.current) cancelAnimationFrame(requestRef.current);
         };

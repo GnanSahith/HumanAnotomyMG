@@ -1,20 +1,20 @@
 export default {
   "1": [
     {
-      "q": "Who wrote the poem \u201cThe Paddling-Pool\u201d?",
-      "a": "Ann Berry wrote the poem \u201cThe Paddling-Pool\u201d"
+      "q": "Who wrote the poem “The Paddling-Pool”?",
+      "a": "Ann Berry wrote the poem “The Paddling-Pool”"
     },
     {
       "q": "Fill in the blanks with the words given in the brackets- (sail, bark, sing, play, ring).\n1.\tBoats_____.\n2.\tDogs_____.\n3.\tChildren ____.\n4.\tBells____.\n5.\tBirds____.\n1.\tsail\n2.\tbark\n3.\tplay\n4.\tring\n5.\tsing\nQuestion: Write the names of the days of the week. You can begin with Sunday.",
       "a": "1.\tSunday\n2.\tMonday\n3.\tTuesday\n4.\tWednesday\n5.\tThursday\n6.\tFriday\n7.\tSaturday"
     },
     {
-      "q": "Fill in the blanks with \u2018before\u2019 or \u2018after\u2019.\n1.\t____eating food, I wash my hands.\n2.\t _____reaching school, I sit in class.\n3.\t _____eating food, I wash my mouth.\n4.\t _____reaching home, I do my homework.\n1. Before\n2. After\n3. After\n4. After\nQuestion: Who wrote the poem \u201cBells\u201d?",
-      "a": "Margaret Russell wrote the poem \u201cBells\u201d."
+      "q": "Fill in the blanks with ‘before’ or ‘after’.\n1.\t____eating food, I wash my hands.\n2.\t _____reaching school, I sit in class.\n3.\t _____eating food, I wash my mouth.\n4.\t _____reaching home, I do my homework.\n1. Before\n2. After\n3. After\n4. After\nQuestion: Who wrote the poem “Bells”?",
+      "a": "Margaret Russell wrote the poem “Bells”."
     },
     {
       "q": "What is the sound of your school bell?",
-      "a": "The sound of my school bell is Tan-Tan.\nUnit 1 of class 2nd English Marigold\u2019s book was very interesting. Students learn many things from this unit. Many skills like listening skills, learning skills, speaking skills, etc develop from this unit.\nIs the poem in unit 1 chapter 1st from class 2nd Marigold easy to understand?\nThe language in the poem is easy to understand with rhyming words.\nThe poem Aileen fisher in the poem unit 1 chapter 1 from the class 2nd Marigold shared the worry of the kid on the 1st day. What was that?\nThe poet shared that the kid was worried about that his cat will try to search him.\nDo you think the poem unit 1 chapter 1 from 2nd class Marigold is good for the kids?\nI think the poem is good as all the kids at the start of the class went through the same situations.\nWhat is the story \u201cThe adventure of Haldi\u201d in unit 1 chapter 2 from class 2nd Marigold all about?\nIt is about the little girl named Haldi who met a giraffe on her way to school and Giraff gave her a lift to school while she was talking to him.\nDo you think this story unit 1 chapter 2 from class 2nd Marigold is serving some purpose?\nYes, I think this story encourages the kids to run their imagination with meeting different animals.\nDo you think the story unit 1 chapter 1 from class 2nd Marigold was easy to understand?\nThe story is easy to understand and natural conversational language has been used.\nLast Edited: June 8, 2024\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 2 English Grammar\nNCERT Solutions for class 2 English Mridang Unit 1 Fun with Friends Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 2 Welcome to My World Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 3 Going Places Chapter 1, 2 and 3\nNCERT Solutions for Class 2 English Mridang Unit 4 Life Around Us Chapter 1, 2, 3 and 4\nNCERT Solutions for Class 2 English Mridang Unit 5 Harmony Chapter 1 and 2\nNCERT Solutions for Class 2 English Marigold Unit 2\nNCERT Solutions for Class 2 English Marigold Unit 3\nNCERT Solutions for Class 2 English Marigold Unit 4\nNCERT Solutions for Class 2 English Marigold Unit 5\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
+      "a": "The sound of my school bell is Tan-Tan.\nUnit 1 of class 2nd English Marigold’s book was very interesting. Students learn many things from this unit. Many skills like listening skills, learning skills, speaking skills, etc develop from this unit.\nIs the poem in unit 1 chapter 1st from class 2nd Marigold easy to understand?\nThe language in the poem is easy to understand with rhyming words.\nThe poem Aileen fisher in the poem unit 1 chapter 1 from the class 2nd Marigold shared the worry of the kid on the 1st day. What was that?\nThe poet shared that the kid was worried about that his cat will try to search him.\nDo you think the poem unit 1 chapter 1 from 2nd class Marigold is good for the kids?\nI think the poem is good as all the kids at the start of the class went through the same situations.\nWhat is the story “The adventure of Haldi” in unit 1 chapter 2 from class 2nd Marigold all about?\nIt is about the little girl named Haldi who met a giraffe on her way to school and Giraff gave her a lift to school while she was talking to him.\nDo you think this story unit 1 chapter 2 from class 2nd Marigold is serving some purpose?\nYes, I think this story encourages the kids to run their imagination with meeting different animals.\nDo you think the story unit 1 chapter 1 from class 2nd Marigold was easy to understand?\nThe story is easy to understand and natural conversational language has been used.\nLast Edited: June 8, 2024\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 2 English Grammar\nNCERT Solutions for class 2 English Mridang Unit 1 Fun with Friends Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 2 Welcome to My World Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 3 Going Places Chapter 1, 2 and 3\nNCERT Solutions for Class 2 English Mridang Unit 4 Life Around Us Chapter 1, 2, 3 and 4\nNCERT Solutions for Class 2 English Mridang Unit 5 Harmony Chapter 1 and 2\nNCERT Solutions for Class 2 English Marigold Unit 2\nNCERT Solutions for Class 2 English Marigold Unit 3\nNCERT Solutions for Class 2 English Marigold Unit 4\nNCERT Solutions for Class 2 English Marigold Unit 5\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
     }
   ],
   "2": [
@@ -36,32 +36,32 @@ export default {
     },
     {
       "q": "5. There are tables in my classroom.\nThere are chairs in my classroom.",
-      "a": "wer\n: There are tables and chairs in my classroom.\nLet us do :\nQuestion:\nA. Choose a partner. Imagine you both are Babli and Jeet. Enact the story. You may use some words from the story for dialogues.\nQuestion : B. Ask your grandparents or parents to tell you about a game that they had played in their childhood. Find out about it in detail. The next day speak about it in the class.\nBenefits of Class 2 English Chapter 2 Picture Reading Question Answers\nClass 2 English Chapter 2 Question Answers provide detailed explanations of the story, helping students grasp the moral lessons about sharing and cooperation.\nThe solutions Break down the text and vocabulary, making it easier for students to understand the context and characters' actions.\nChildren are encouraged to observe, identify, and describe what they see in pictures.\nThe chapter includes exercises that stimulate creativity and imagination.\nIt helps in developing visual literacy and critical thinking skills.\nOffers clear answers to textbook questions, helping students in completing their assignments accurately and efficiently.\nNCERT Solutions Question Answers encourage critical thinking and discussion about empathy, cooperation, and problem-solving in real-life situations.\nNCERT Solutions include engaging exercises and activities related to the story, making learning fun and interactive for students.\nIt helps students feel more prepared and confident in understanding the chapter's themes and content.\nImportant Study Material Links for English Chapter 2 Class 2\nS.No.\nImportant Study Material Links for Chapter 2 Picture Reading"
+      "a": "wer\n: There are tables and chairs in my classroom.\nLet us do :\nQuestion:\nA. Choose a partner. Imagine you both are Babli and Jeet. Enact the story. You may use some words from the story for dialogues.\nQuestion : B. Ask your grandparents or parents to tell you about a game that they had played in their childhood. Find out about it in detail. The next day speak about it in the class.\nBenefits of"
     },
     {
       "q": "1.\nClass 2 Picture Reading Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Picture Reading Revision Notes\nConclusion\nNCERT Solutions for Chapter 2: Pictures Reading offer valuable assistance in mastering the art of interpreting images. By focusing on visual analysis, students not only enhance their comprehension but also develop essential skills for both academic and real-world applications. These solutions guide students through various exercises and examples, helping them build a solid foundation in understanding how images contribute to storytelling and meaning. For a thorough grasp of the chapter and effective exam preparation, utilise these solutions to gain a comprehensive understanding.\nChapter-wise NCERT Solutions Class 2 English\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 9 My Name Solutions\nChapter 10 The Crow Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2\u2013\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
+      "q": "2.",
       "a": "Detailed solution available."
     }
   ],
   "3": [
     {
-      "q": "1. Leap \u2013 Learn to creep before you\nleap\n.",
+      "q": "1. Leap – Learn to creep before you\nleap\n.",
       "a": "Detailed solution available."
     },
     {
-      "q": "2. Swim \u2013 He is teaching the children to\nswim\n.",
+      "q": "2. Swim – He is teaching the children to\nswim\n.",
       "a": "Detailed solution available."
     },
     {
-      "q": "3. Trot \u2013 The pony started to\ntrot\nmore.",
+      "q": "3. Trot – The pony started to\ntrot\nmore.",
       "a": "Detailed solution available."
     },
     {
-      "q": "4. Fly \u2013 Birds\nfly\nin the sky.\nLet us Write :\nA. What can you do like any animal or bird?\nI can ________ like a ________",
+      "q": "4. Fly – Birds\nfly\nin the sky.\nLet us Write :\nA. What can you do like any animal or bird?\nI can ________ like a ________",
       "a": "wer:\nI can\nclimb\nlike a\ncat\nB. Name any two animals or birds other than fish that can swim.\n1. ________ 2. ________\nAnswer:"
     },
     {
@@ -78,34 +78,34 @@ export default {
     },
     {
       "q": "2.\nSquirrel\nD. Answer the following :\nQuestion 1: What can the child in the poem do?",
-      "a": "wer:\nThe child in the poem can leap like a lamb,\nclimb like a cat, hop like a frog, swim like a fish,\ntrot like a horse and fly like a bird.\nQuestion 2: The child in the poem can do so many things. Which of them (any two) do you like the most?\nAnswer:\nThe child can swim,hop like animals.\nLet us Think:\nA. Match the animals to their actions.\nQuestion 1.\nAnswer:\nLet us Speak :\nA. Look at the pictures.\nRead the words below each picture.\nLet us Draw:\nRangoli\nFollow the steps to draw a rangoli and colour it.\nBenefits of Class 2 English Chapter 3 It is Fun Question Answers\nClass 2 English Chapter 3 Question Answers provide detailed explanations of the story, helping students grasp the moral lessons about sharing and cooperation.\nThe solutions Break down the text and vocabulary, making it easier for students to understand the context and characters' actions.\nChildren are encouraged to observe, identify, and describe what they see in pictures.\nThe chapter includes exercises that stimulate creativity and imagination.\nIt helps in developing visual literacy and critical thinking skills.\nOffers clear answers to textbook questions, helping students in completing their assignments accurately and efficiently.\nNCERT Solutions Question Answers encourage critical thinking and discussion about empathy, cooperation, and problem-solving in real-life situations.\nNCERT Solutions include engaging exercises and activities related to the story, making learning fun and interactive for students.\nIt helps students feel more prepared and confident in understanding the chapter's themes and content.\nImportant Study Material Links for English Chapter 3 Class 2\nS. No\nImportant Study Material Links for Chapter 3 It is Fun"
+      "a": "wer:\nThe child in the poem can leap like a lamb,\nclimb like a cat, hop like a frog, swim like a fish,\ntrot like a horse and fly like a bird.\nQuestion 2: The child in the poem can do so many things. Which of them (any two) do you like the most?\nAnswer:\nThe child can swim,hop like animals.\nLet us Think:\nA. Match the animals to their actions.\nQuestion 1.\nAnswer:\nLet us Speak :\nA. Look at the pictures.\nRead the words below each picture.\nLet us Draw:\nRangoli\nFollow the steps to draw a rangoli and colour it.\nBenefits of"
     },
     {
       "q": "1.\nClass 2 It is Fun Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 It is Fun Revision Notes\nConclusion\nNCERT Solutions for Chapter 3: It is Fun offers a delightful approach to learning for Class 2 students. By integrating fun activities with educational content, these solutions make the learning process engaging and effective. They help to learn basic concepts in a way that resonates with young learners, making the educational experience both enjoyable and impactful. For a joyful and comprehensive learning journey, explore these solutions to enrich your child's understanding and foster a love for learning.\nChapter-wise NCERT Solutions Class 2 English\u00a0 (Mridang)\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 9 My Name Solutions\nChapter 10 The Crow Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2\u2013\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
+      "q": "2.",
       "a": "Detailed solution available."
     }
   ],
   "4": [
     {
       "q": "Riddle:\nWhat am I?\nI go up and down a lot,\nWhether it is cold or hot.\nSometimes I am on the ground,\nOther times I am in the clouds.\nMy name rhymes with daughter,\nI am your friend named",
-      "a": "Water\nSummary of the story \u201cStorm in the garden\u201d\nIn this story, there is a little snail, Sunu-sunu. The snail, sunu-sunu was playing with his friends, the ants in the garden. Suddenly, there was the sound of lightning. The ants hide under a flower pot. The snail, sunu-sunu hide inside his shell. Suddenly there started a storm and ants asked Sunu-sunu, the snail to go back to his mother. While the storm was blowing on, the snail, kept on walking and reached to his mother soon. He told his mother all the experiences that he got in the way.\nClass 2 English Marigold Chapter 4 (Storm in the Garden) Question and Answers\nWrite the name of the author of the story \u201cStorm in the garden\u201d?\nSandhya Rao is the author of the story \u201cStorm in the garden\u201d.\nWrite new words from the story \u201cStorm in the garden\u201d.\nNew words from the story are:\n1.\tSnail\n2.\tDark\n3.\tFeelers\n4.\tStorm\n5.\tLightning\n6.\tThunder\nWho was Sunu-sunu?\nSunu-sunu was the snail.\nWhom was Sunu-sunu visiting?\nSunu-sunu was visiting the ants.\nWhere were the ants hiding?\nThe ants were hiding under a flower pot (or vase).\nDid Sunu-sunu get wet?\nNo, sunu-sunu did not get wet.\nDo you go for the morning walk?\nYes, I go for the morning walk.\nHave you ever seen ants in the garden?\nYes, I have seen many ants in the garden.\nDo you know why you see snails and earthworms after it rains?\nWe see snails and earthworms after rains because their homes in the ground get filled with water.\nUnit 4 (Marigold) of class 2nd English was very good, easy, and interesting. Students learn many things from this unit. Many skills like listening skills, learning skills, speaking skills, etc develop from this unit. Students enjoy doing this unit a lot.\nIn the poem unit 4, chapter 1 from class 2nd Marigold what does the poet tried to say?\nIn the poem, the poet tried to say the rain is pouring everywhere at once. On-field, on the umbrella, and even in the ship at sea.\nCan we easily memorize unit 4 chapter 1 from class 2 Marigold?\nIt is a sweet poem and can be memorized easily.\nWhat did the Sunu-Sunu do in the story Unit 4 chapter 2 from class 2nd Marigold when he went to his mother?\nThe Sunu-Sunu snail went to his mother and explained the sound he heard from the storm and said it was the biggest storm he is ever been.\nWas the story unit 4 chapter 2 from class 2nd Marigold is complicated to understand?\nThe story is made easy but with the expression of sound, Sunu-Sunu snail heard. The author made it like comic books or graphic novels.\nThe story unit 4 chapter 2 from class 2nd Marigold is easy to cover in one day for the children?\nThe story is not tough but with the teacher\u2019s supervision it can be complete in one day but I suggest it brush up another day to make sure children get it properly.\nDo you think the story unit 4 chapter 2 from class 2nd Marigold is entertaining?\nThe story is entertaining as it shows the expression of rain and thunder and water drops. This story also can be used as a play.\nLast Edited: June 8, 2024\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 2 English Grammar\nNCERT Solutions for class 2 English Mridang Unit 1 Fun with Friends Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 2 Welcome to My World Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 3 Going Places Chapter 1, 2 and 3\nNCERT Solutions for Class 2 English Mridang Unit 4 Life Around Us Chapter 1, 2, 3 and 4\nNCERT Solutions for Class 2 English Mridang Unit 5 Harmony Chapter 1 and 2\nNCERT Solutions for Class 2 English Marigold Unit 1\nNCERT Solutions for Class 2 English Marigold Unit 2\nNCERT Solutions for Class 2 English Marigold Unit 3\nNCERT Solutions for Class 2 English Marigold Unit 5\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
+      "a": "Water\nSummary of the story “Storm in the garden”\nIn this story, there is a little snail, Sunu-sunu. The snail, sunu-sunu was playing with his friends, the ants in the garden. Suddenly, there was the sound of lightning. The ants hide under a flower pot. The snail, sunu-sunu hide inside his shell. Suddenly there started a storm and ants asked Sunu-sunu, the snail to go back to his mother. While the storm was blowing on, the snail, kept on walking and reached to his mother soon. He told his mother all the experiences that he got in the way.\nClass 2 English Marigold Chapter 4 (Storm in the Garden) Question and Answers\nWrite the name of the author of the story “Storm in the garden”?\nSandhya Rao is the author of the story “Storm in the garden”.\nWrite new words from the story “Storm in the garden”.\nNew words from the story are:\n1.\tSnail\n2.\tDark\n3.\tFeelers\n4.\tStorm\n5.\tLightning\n6.\tThunder\nWho was Sunu-sunu?\nSunu-sunu was the snail.\nWhom was Sunu-sunu visiting?\nSunu-sunu was visiting the ants.\nWhere were the ants hiding?\nThe ants were hiding under a flower pot (or vase).\nDid Sunu-sunu get wet?\nNo, sunu-sunu did not get wet.\nDo you go for the morning walk?\nYes, I go for the morning walk.\nHave you ever seen ants in the garden?\nYes, I have seen many ants in the garden.\nDo you know why you see snails and earthworms after it rains?\nWe see snails and earthworms after rains because their homes in the ground get filled with water.\nUnit 4 (Marigold) of class 2nd English was very good, easy, and interesting. Students learn many things from this unit. Many skills like listening skills, learning skills, speaking skills, etc develop from this unit. Students enjoy doing this unit a lot.\nIn the poem unit 4, chapter 1 from class 2nd Marigold what does the poet tried to say?\nIn the poem, the poet tried to say the rain is pouring everywhere at once. On-field, on the umbrella, and even in the ship at sea.\nCan we easily memorize unit 4 chapter 1 from class 2 Marigold?\nIt is a sweet poem and can be memorized easily.\nWhat did the Sunu-Sunu do in the story Unit 4 chapter 2 from class 2nd Marigold when he went to his mother?\nThe Sunu-Sunu snail went to his mother and explained the sound he heard from the storm and said it was the biggest storm he is ever been.\nWas the story unit 4 chapter 2 from class 2nd Marigold is complicated to understand?\nThe story is made easy but with the expression of sound, Sunu-Sunu snail heard. The author made it like comic books or graphic novels.\nThe story unit 4 chapter 2 from class 2nd Marigold is easy to cover in one day for the children?\nThe story is not tough but with the teacher’s supervision it can be complete in one day but I suggest it brush up another day to make sure children get it properly.\nDo you think the story unit 4 chapter 2 from class 2nd Marigold is entertaining?\nThe story is entertaining as it shows the expression of rain and thunder and water drops. This story also can be used as a play.\nLast Edited: June 8, 2024\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 2 English Grammar\nNCERT Solutions for class 2 English Mridang Unit 1 Fun with Friends Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 2 Welcome to My World Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 3 Going Places Chapter 1, 2 and 3\nNCERT Solutions for Class 2 English Mridang Unit 4 Life Around Us Chapter 1, 2, 3 and 4\nNCERT Solutions for Class 2 English Mridang Unit 5 Harmony Chapter 1 and 2\nNCERT Solutions for Class 2 English Marigold Unit 1\nNCERT Solutions for Class 2 English Marigold Unit 2\nNCERT Solutions for Class 2 English Marigold Unit 3\nNCERT Solutions for Class 2 English Marigold Unit 5\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
     }
   ],
   "5": [
     {
-      "q": "After reading the story \u201cFunny bunny\u201d, write some new words from the story.",
-      "a": "The new words are:\n1. Nut\n2. Ouch\n3. Met\n4. Off\n5. I\u2019m\n6. I\u2019ll\n7. We\u2019re"
+      "q": "After reading the story “Funny bunny”, write some new words from the story.",
+      "a": "The new words are:\n1. Nut\n2. Ouch\n3. Met\n4. Off\n5. I’m\n6. I’ll\n7. We’re"
     },
     {
       "q": "Fill in the blanks.\n1. One day, ________ (a nut/the sky) fell on funny bunny.\n2. Funny bunny wanted to tell ________ (the king/ the cock/ the sky) what he saw.",
       "a": "1. a nut\n2. the king"
     },
     {
-      "q": "Who said these words in the story?\n1. \u201cOuch! The sky is falling down.\u201d\n2. \u201cI must tell the King.\u201d\n3. \u201cThe King lives here.\u201d\n4. \u201cFollow me.\u201d",
+      "q": "Who said these words in the story?\n1. “Ouch! The sky is falling down.”\n2. “I must tell the King.”\n3. “The King lives here.”\n4. “Follow me.”",
       "a": "1. Funny Bunny\n2. Funny Bunny\n3. Woxy Foxy\n4. Woxy Foxy"
     },
     {
@@ -114,7 +114,7 @@ export default {
     },
     {
       "q": "Fill in the blanks with the right word:\nI read a funny story of a funny rabbit. One day, a nut ______ (fell/fall) on his head. He thought that the sky ___ (is/was) falling. So, he ____ (go/went) to tell the King. On the way, he met different animals. All of them _____ (join/joined) him. At last, they ____ (meet/met) a clever fox. It took them to a forest and _____ (eat/ate) them all up.",
-      "a": "fell\nwas\nwent\njoined\nmet\nate\nRearrange these words to form sentences\non/Funny Bunny/fell/a/nut/one day.\nOne day a nut fell on Funny Bunny.\nfalling/down/the/sky/is/said/Funny Bunny.\n\u201cThe sky is falling down\u201d said Funny Bunny.\nKing/I/must/the/tell.\nI must tell the King.\nlives/here/the/King.\nThe King lives here.\nChange only one letter of each word and make another rhyming word.\nOriginal Word\nChanged Word\nDown\nTown\nMet\nWet\nWay\nRay\nKing\nWing\nSoon\nNoon\nBat\nCat\nWhat does the poet in the poem unit 5 chapter 1 from class 2nd wants to say?\nThe poet in the poem is trying to teach the children manners when being in the zoo in a fun and poetic way so the children don\u2019t provoke the animals.\nWhat does the poet mean when the poet says \u2018Don\u2019t laugh too much on a chimpanzee, He thinks he is wise as you and me\u2019 in the poem unit 5 chapter1 from class 2nd Marigold?\nThe poet tried to say don\u2019t hurt the animal\u2019s feelings by making noises and jokes at them because they can understand too.\nIs this poem unit 5 chapter 1 from class 2nd Marigold served the purpose?\nThe purpose is to make children understand the animals do have dignity and one should respect them too. I think the poet is successful to share this message.\nHow is the language of poem unit 5 chapter 1 from class 2nd Marigold?\nThe language used by the poet is easy and natural language there are some new words he used and for that meanings are given below.\nWhat is the story unit 5 chapter 2 from class 2nd Marigold is all about?\nThe story is about the rabbit who was sleeping and when a nut fell on his head he thought the sky is falling and made tell everyone about it.\nDo you think the story unit 5 chapter 2 from class 2nd Marigold is fun for the children?\nThe story is fun as the rabbit is was struck with the nut and how he made all the other animals realize that the sky is falling.\nWhat do you think about the story unit 5 chapter 2 from class 2nd Marigold?\nThe story is interesting as children might ask what happens next. When the rabbit and other animals met the King? This makes them discuss the next part of the story.\nDo you think the story unit 5 chapter 2 from class 2nd Marigold can be cover in one day?\nThe story can be cover in one day as it is an interesting story and I suggest reading it again to memorize and learn about all the animals in the story.\nLast Edited: June 8, 2024\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 2 English Grammar\nNCERT Solutions for class 2 English Mridang Unit 1 Fun with Friends Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 2 Welcome to My World Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 3 Going Places Chapter 1, 2 and 3\nNCERT Solutions for Class 2 English Mridang Unit 4 Life Around Us Chapter 1, 2, 3 and 4\nNCERT Solutions for Class 2 English Mridang Unit 5 Harmony Chapter 1 and 2\nNCERT Solutions for Class 2 English Marigold Unit 1\nNCERT Solutions for Class 2 English Marigold Unit 2\nNCERT Solutions for Class 2 English Marigold Unit 3\nNCERT Solutions for Class 2 English Marigold Unit 4\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
+      "a": "fell\nwas\nwent\njoined\nmet\nate\nRearrange these words to form sentences\non/Funny Bunny/fell/a/nut/one day.\nOne day a nut fell on Funny Bunny.\nfalling/down/the/sky/is/said/Funny Bunny.\n“The sky is falling down” said Funny Bunny.\nKing/I/must/the/tell.\nI must tell the King.\nlives/here/the/King.\nThe King lives here.\nChange only one letter of each word and make another rhyming word.\nOriginal Word\nChanged Word\nDown\nTown\nMet\nWet\nWay\nRay\nKing\nWing\nSoon\nNoon\nBat\nCat\nWhat does the poet in the poem unit 5 chapter 1 from class 2nd wants to say?\nThe poet in the poem is trying to teach the children manners when being in the zoo in a fun and poetic way so the children don’t provoke the animals.\nWhat does the poet mean when the poet says ‘Don’t laugh too much on a chimpanzee, He thinks he is wise as you and me’ in the poem unit 5 chapter1 from class 2nd Marigold?\nThe poet tried to say don’t hurt the animal’s feelings by making noises and jokes at them because they can understand too.\nIs this poem unit 5 chapter 1 from class 2nd Marigold served the purpose?\nThe purpose is to make children understand the animals do have dignity and one should respect them too. I think the poet is successful to share this message.\nHow is the language of poem unit 5 chapter 1 from class 2nd Marigold?\nThe language used by the poet is easy and natural language there are some new words he used and for that meanings are given below.\nWhat is the story unit 5 chapter 2 from class 2nd Marigold is all about?\nThe story is about the rabbit who was sleeping and when a nut fell on his head he thought the sky is falling and made tell everyone about it.\nDo you think the story unit 5 chapter 2 from class 2nd Marigold is fun for the children?\nThe story is fun as the rabbit is was struck with the nut and how he made all the other animals realize that the sky is falling.\nWhat do you think about the story unit 5 chapter 2 from class 2nd Marigold?\nThe story is interesting as children might ask what happens next. When the rabbit and other animals met the King? This makes them discuss the next part of the story.\nDo you think the story unit 5 chapter 2 from class 2nd Marigold can be cover in one day?\nThe story can be cover in one day as it is an interesting story and I suggest reading it again to memorize and learn about all the animals in the story.\nLast Edited: June 8, 2024\nAuthor\nTiwari Academy Team\nThe Tiwari Academy Team is committed to providing accurate, updated and student-friendly educational content. We believe that success comes through consistent learning, dedication and practice.\nView all posts by Tiwari Academy Team\n|\nWebsite\nRelated Links\nNCERT Solutions for Class 2 English Grammar\nNCERT Solutions for class 2 English Mridang Unit 1 Fun with Friends Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 2 Welcome to My World Chapter 1 and 2\nNCERT Solutions for Class 2 English Mridang Unit 3 Going Places Chapter 1, 2 and 3\nNCERT Solutions for Class 2 English Mridang Unit 4 Life Around Us Chapter 1, 2, 3 and 4\nNCERT Solutions for Class 2 English Mridang Unit 5 Harmony Chapter 1 and 2\nNCERT Solutions for Class 2 English Marigold Unit 1\nNCERT Solutions for Class 2 English Marigold Unit 2\nNCERT Solutions for Class 2 English Marigold Unit 3\nNCERT Solutions for Class 2 English Marigold Unit 4\nBuy NCERT Books Online\nBuy NCERT Books\n[This is an affiliate link]\nTiwari Academy may earn a small commission at no extra cost to you.\nMathematics for Senior Classes\nNCERT Solutions Class 12 Maths\nNCERT Solutions Class 11 Maths\nNCERT Solutions Class 10 Maths\nNCERT Solutions Class 9 Maths\nNCERT Solutions Class 8 Maths\nNCERT Solutions Class 7 Maths\nNCERT Solutions Class 6 Maths\nImportant Links\nWhat is NCERT?\nImportant Questions\nVedic Maths Tricks\nLink Study Materials\nUseful Resources & Formulae\nHoliday Homework Solutions\nMathematics for Junior Classes\nNCERT Solutions Class 5 Maths\nNCERT Solutions Class 4 Maths\nNCERT Solutions Class 3 Maths\nNCERT Solutions Class 2 Maths\nNCERT Solutions Class 1 Maths\nClass KG Maths Study Material\nClass Nursery Maths Study Material\nDownload NCERT Solutions App\nAndroid and iOS Apps\nNCERT Solutions\nNCERT Solutions for Class 6 Maths\nNCERT Solutions for Class 7 Maths\nNCERT Solutions for Class 8 Maths\nNCERT Solutions for Class 11 Maths\nNCERT Solutions for Class 12 Maths\nNCERT Solutions for Class 11 Physics\nNCERT Solutions for Class 12 Physics\nHigh School\nClass 9 NCERT Maths Solutions\nClass 9 NCERT Science Solutions\nClass 9 NCERT English Solutions\nClass 10 NCERT Maths Solutions\nClass 10 NCERT Science Solutions\nClass 10 NCERT English Solutions\nClass 10 NCERT Social Solutions\nQuick Links\nNCERT Books\nNCERT Solutions\nCBSE Syllabus\nHome Tutors\nNIOS Admissions\nCBSE Sample Papers\nVedic Maths Tricks\nHelp & Support\nAbout Us\nContact Us\nAdvertise With Us\nDiscussion\nLatest Blogs\nHoliday Homework\nUseful Resources\nCopyright 2026 by Tiwari Academy | A step towards Free Education\nAsk TIA"
     }
   ],
   "6": [
@@ -123,7 +123,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2. My friend Unni loves to eat banana\u00a0 _ _ ips.",
+      "q": "2. My friend Unni loves to eat banana  _ _ ips.",
       "a": "Detailed solution available."
     },
     {
@@ -148,41 +148,41 @@ export default {
     },
     {
       "q": "5. lizard\nI saw lizard on wall.\nB. Cut out the picture of a vehicle from an old magazine or newspaper or poster. Bring it to the class. All of you can paste them on a large sheet of paper.\nWrite the name of the vehicle under each picture.",
-      "a": "wer:\nStudents, paste the picture of a vehicle from an old magazine or poster.\nBenefits of Class 2 English Chapter 6 Question Answers\nClass 2 English Chapter 6 Question Answers provide detailed explanations of the story, helping students grasp the moral lessons about sharing and cooperation.\nThe solutions Break down the text and vocabulary, making it easier for students to understand the context and characters' actions.\nChildren are encouraged to observe, identify, and describe what they see in pictures.\nThe chapter includes exercises that stimulate creativity and imagination.\nIt helps in developing visual literacy and critical thinking skills.\nOffers clear answers to textbook questions, helping students in completing their assignments accurately and efficiently.\nNCERT Solutions Question Answers encourage critical thinking and discussion about empathy, cooperation, and problem-solving in real-life situations.\nNCERT Solutions include engaging exercises and activities related to the story, making learning fun and interactive for students.\nIt helps students feel more prepared and confident in understanding the chapter's themes and content.\nImportant Study Material Links for English Chapter 6 Class 2 Between Home and School\nS. No\nImportant Study Material Links for Class 2 Chapter 6"
+      "a": "wer:\nStudents, paste the picture of a vehicle from an old magazine or poster.\nBenefits of"
     },
     {
       "q": "1.\nClass 2 Important Questions Chapter 6 Between Home and School",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 Revision Notes Chapter 6 Between Home and School\nConclusion\nThe chapter 6 Between Home and School beautifully captures the essence of childhood adventures and the joy found in everyday journeys. Ravi\u2019s experiences remind us of the importance of enjoying the journey and the balance between fun and responsibilities. It highlights how children can engage with their surroundings, appreciate nature, and still meet their responsibilities effectively.\nNCERT Class 2 English (Mridang) Solutions Chapter-wise Links - Download the FREE PDF\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 9 My Name Solutions\nChapter 10 The Crow Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English (Mridang) Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2-\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
+      "q": "2.",
       "a": "Detailed solution available."
     }
   ],
   "7": [
     {
-      "q": "Can you write some new words from the poem \u201cOn My Blackboard I Can Draw\u201d?",
-      "a": "Yes, I can write some new words from the poem \u201cOn My Blackboard I Can Draw\u201d. These new words are:\n1.\tGates\n2.\tWide\n3.\tLead\n4.\tChimney\n5.\tMarigolds\n6.\tStraight"
+      "q": "Can you write some new words from the poem “On My Blackboard I Can Draw”?",
+      "a": "Yes, I can write some new words from the poem “On My Blackboard I Can Draw”. These new words are:\n1.\tGates\n2.\tWide\n3.\tLead\n4.\tChimney\n5.\tMarigolds\n6.\tStraight"
     },
     {
       "q": "Make sentences using the words gates, wide, marigolds, straight.",
       "a": "1.\tPlease, open the gates.\n2.\tThis road is very wide.\n3.\tThese marigold flowers are beautiful.\n4.\tDraw a straight line."
     },
     {
-      "q": "How many windows does the house have in the poem \u201cOn My Blackboard I Can Draw\u201d?",
-      "a": "In the poem \u201cOn My Blackboard I Can Draw\u201d, the house has 5 little windows."
+      "q": "How many windows does the house have in the poem “On My Blackboard I Can Draw”?",
+      "a": "In the poem “On My Blackboard I Can Draw”, the house has 5 little windows."
     },
     {
-      "q": "Where do the marigolds grow in the poem \u201cOn My Blackboard I Can Draw\u201d?",
-      "a": "The marigolds grow against the wall in the poem \u201cOn My Blackboard I Can Draw\u201d."
+      "q": "Where do the marigolds grow in the poem “On My Blackboard I Can Draw”?",
+      "a": "The marigolds grow against the wall in the poem “On My Blackboard I Can Draw”."
     },
     {
-      "q": "Can you write some new words from the story \u201cMake it shorter\u201d?",
-      "a": "Yes, I can write some new words from the story \u201cMake it shorter\u201d. These new words are:\n1.\tOrder\n2.\tRub\n3.\tPuzzle\n4.\tErase\n5.\tCourt"
+      "q": "Can you write some new words from the story “Make it shorter”?",
+      "a": "Yes, I can write some new words from the story “Make it shorter”. These new words are:\n1.\tOrder\n2.\tRub\n3.\tPuzzle\n4.\tErase\n5.\tCourt"
     },
     {
       "q": "Make sentences using the words order, rub, and puzzle.",
-      "a": "1.\tOrder one pizza for me.\n2.\tDon\u2019t rub these notes.\n3.\tThis puzzle is very difficult."
+      "a": "1.\tOrder one pizza for me.\n2.\tDon’t rub these notes.\n3.\tThis puzzle is very difficult."
     },
     {
       "q": "What did Akbar order one day?",
@@ -194,11 +194,11 @@ export default {
     },
     {
       "q": "How did Birbal make the line shorter?",
-      "a": "Birbal made the Akbar\u2019s line shorter by drawing a longer line under the Akbar\u2019s line. He didn\u2019t touch the first line (Akbar\u2019s line)."
+      "a": "Birbal made the Akbar’s line shorter by drawing a longer line under the Akbar’s line. He didn’t touch the first line (Akbar’s line)."
     },
     {
-      "q": "Who wrote the story \u201cThe mouse and the pencil\u201d?",
-      "a": "V.Suteyev wrote the story \u201cThe mouse and the pencil\u201d"
+      "q": "Who wrote the story “The mouse and the pencil”?",
+      "a": "V.Suteyev wrote the story “The mouse and the pencil”"
     },
     {
       "q": "Describe the cat in your own words.",
@@ -207,8 +207,8 @@ export default {
   ],
   "8": [
     {
-      "q": "What are the new words in the poem \u201cI am the music man\u201d that students can learn?",
-      "a": "The new words in the poem \u201cI am the music man\u201d that students can learn are:\n1.\tMusic man\n2.\tFar away\n3.\tPlay\n4.\tPiano\n5.\tDrum\n6.\tBoom"
+      "q": "What are the new words in the poem “I am the music man” that students can learn?",
+      "a": "The new words in the poem “I am the music man” that students can learn are:\n1.\tMusic man\n2.\tFar away\n3.\tPlay\n4.\tPiano\n5.\tDrum\n6.\tBoom"
     },
     {
       "q": "Make sentences using the words music man, play, piano, and drum.",
@@ -231,8 +231,8 @@ export default {
       "a": "I would like to learn dance."
     },
     {
-      "q": "Which new words do students study in the story \u201cThe Mumbai musician\u201d?",
-      "a": "The new words that students study in the story \u201cThe Mumbai musician\u201d are:\n1.\tTired\n2.\tMusicians\n3.\tPeeped\n4.\tDelicious\n5.\tGhosts\n6.\tScare"
+      "q": "Which new words do students study in the story “The Mumbai musician”?",
+      "a": "The new words that students study in the story “The Mumbai musician” are:\n1.\tTired\n2.\tMusicians\n3.\tPeeped\n4.\tDelicious\n5.\tGhosts\n6.\tScare"
     },
     {
       "q": "Make sentences using the words Tired, Musicians, Delicious.",
@@ -264,7 +264,7 @@ export default {
     },
     {
       "q": "Do you play any musical instrument?",
-      "a": "No, I don\u2019t play any musical instrument."
+      "a": "No, I don’t play any musical instrument."
     },
     {
       "q": "If not, which instrument do you want to learn?",
@@ -273,34 +273,34 @@ export default {
   ],
   "9": [
     {
-      "q": "1. A cat said to a cow \u201cPlease\n\ud83e\udd6c\nGive me\nsome milk.\u201d\n2. \u201cWhat will you\n\ud83e\udd6c\ngive me\n?\u201d asked the cow. \u201cWill you\n\ud83e\udd6c\nGive me\ngrass?\u201d\n3. \u201cI have no grass,\u201d said the cat.\n4. \u201cWill you\n\ud83e\udd6c\ngive me\nwater?\u201d asked the cow.\n5. \u201cI have no water,\u201d said the cat. \u201cBut I will say \u2018Thank you\u2019 if you\n\ud83e\udd6c\nGive me\nmilk!\u201d\n6. \u201cGood,\u201d said the cow. \u201cThen I will give you milk.\u201d\nLet us speak :\nA. Look at the pictures. Read the words below each picture.",
-      "a": "wer:\nStudents' activity to be performed in class.\nB. Write sentences using the words given above. One has been done for you.\nRohit has a\nb\nlue\nb\nlanket.\n____________________\n____________________\nAnswer:\nRohit has a\nbl\nue\nbl\nanket.\nAnita is eating\nplums\ngrown on the\npl\nant.\nI am eating a\npl\num lying on a\npl\nate.\nBenefits of NCERT Solutions for Class 2 English Chapter 9 My Name\nClass 2 English Lesson 9 Question Answers provide detailed explanations of the poem, helping students learn about the significance of the name.\nThe solutions Break down the text and vocabulary, making it easier for students to understand the context and characters' actions.\nOffers clear answers to textbook questions, enabling students to complete their assignments accurately and efficiently.\nClass 2 English Chapter 9 Question Answers encourage critical thinking and discussion about empathy, cooperation, and problem-solving in real-life situations.\nNCERT Solutions include engaging exercises and activities related to the poem, making learning fun and interactive for students.\nIt helps students feel more prepared and confident in understanding the chapter's themes and content.\nThe Class 2 English Chapter 9 Question Answer PDF is available for FREE download so that students can easily access it as and when they need it.\nImportant Study Material Links for English Chapter 9 Class 2 - My Name\nS. No\nImportant Study Material Links for Chapter 9"
+      "q": "1. A cat said to a cow “Please\n🥬\nGive me\nsome milk.”\n2. “What will you\n🥬\ngive me\n?” asked the cow. “Will you\n🥬\nGive me\ngrass?”\n3. “I have no grass,” said the cat.\n4. “Will you\n🥬\ngive me\nwater?” asked the cow.\n5. “I have no water,” said the cat. “But I will say ‘Thank you’ if you\n🥬\nGive me\nmilk!”\n6. “Good,” said the cow. “Then I will give you milk.”\nLet us speak :\nA. Look at the pictures. Read the words below each picture.",
+      "a": "wer:\nStudents' activity to be performed in class.\nB. Write sentences using the words given above. One has been done for you.\nRohit has a\nb\nlue\nb\nlanket.\n____________________\n____________________\nAnswer:\nRohit has a\nbl\nue\nbl\nanket.\nAnita is eating\nplums\ngrown on the\npl\nant.\nI am eating a\npl\num lying on a\npl\nate.\nBenefits of NCERT Solutions for Class 2 English Chapter 9 My Name"
     },
     {
       "q": "1.\nClass 2 My Name Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 My Name Revision Notes\nConclusion\nNCERT Solutions for English Class 2 Chapter 9 My Name is a comprehensive resource for understanding the poem\u2019s concepts. With step-by-step explanations and examples, students can learn the concepts effectively. The solutions aid exam preparation with exercises and practice questions. Accessible in PDF format, students can review the material conveniently. These solutions for English Mridang Chapter 9 Class 2 enhance understanding, and exam performance, making it easier for students studying in Class 2. You can easily access and download the FREE Class 2 English Chapter 9 PDF from Vedantu updated for the 2026-27 syllabus. Students can refer to these solutions to perform better in their examinations.\nChapter-wise NCERT Solutions Class 2 English - Mridang\nAfter familiarising yourself with the Class 2 English Chapter 9 Question Answers, you can access comprehensive NCERT Solutions from all English Class 2 Mridang textbook chapters.\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 10 The Crow Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English (Mridang) Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2-\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
+      "q": "2.",
       "a": "Detailed solution available."
     }
   ],
   "10": [
     {
-      "q": "Who wrote the poem \u201cStrange talk\u201d?",
-      "a": "L.E. Yates wrote the poem \u201cStrange talk\u201d."
+      "q": "Who wrote the poem “Strange talk”?",
+      "a": "L.E. Yates wrote the poem “Strange talk”."
     },
     {
-      "q": "Can you find the new words from the poem \u201cStrange talk\u201d?",
-      "a": "Yes, the new words from the poem \u201cStrange talk\u201d are:\n1.\tInstead\n2.\tLack\n3.\tSty\n4.\tKennel\n5.\tRow\n6.\tMeant"
+      "q": "Can you find the new words from the poem “Strange talk”?",
+      "a": "Yes, the new words from the poem “Strange talk” are:\n1.\tInstead\n2.\tLack\n3.\tSty\n4.\tKennel\n5.\tRow\n6.\tMeant"
     },
     {
       "q": "Make sentences using the following words: (is, are, have, has, and had)",
       "a": "1.\tShe is my best friend.\n2.\tRam and Shyam are best friends.\n3.\tI have 5 pens.\n4.\tShe has a very beautiful doll.\n5.\tRavi had a car."
     },
     {
-      "q": "Find out the new words from the story \u201cThe grasshopper and the ants\u201d.",
-      "a": "The new words from the story \u201cThe grasshopper and the ants\u201d are:\n1.\tHardworking\n2.\tArrived\n3.\tStarve\n4.\tSlammed"
+      "q": "Find out the new words from the story “The grasshopper and the ants”.",
+      "a": "The new words from the story “The grasshopper and the ants” are:\n1.\tHardworking\n2.\tArrived\n3.\tStarve\n4.\tSlammed"
     },
     {
       "q": "How did the grasshopper spend his days?",
@@ -308,11 +308,11 @@ export default {
     },
     {
       "q": "Did the grasshopper find food in winter?",
-      "a": "No, the grasshopper didn\u2019t find food in winter."
+      "a": "No, the grasshopper didn’t find food in winter."
     },
     {
       "q": "What did the ant tell the grasshopper when he asked for food?",
-      "a": "The ant was very angry. He called the grasshopper \u2018lazy\u2019 and asked him what were you doing in summer. Simultaneously, an ant asked the grasshopper to leave."
+      "a": "The ant was very angry. He called the grasshopper ‘lazy’ and asked him what were you doing in summer. Simultaneously, an ant asked the grasshopper to leave."
     },
     {
       "q": "If you were asked to store things for the winter, what would you store? Name any three things.",
@@ -333,7 +333,7 @@ export default {
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2 The Smart Monkey Revision Notes\nConclusion\nNCERT Solutions for English Class 2 Chapter 11 The Smart Monkey is a comprehensive resource for understanding the poem\u2019s concepts. With step-by-step explanations and examples, students can learn the concepts effectively. The solutions aid exam preparation with exercises and practise questions. Accessible in PDF format, students can review the material conveniently. These solutions for English Mridang Chapter 11 Class 2 enhance understanding, and exam performance, making it easier for students studying in Class 2. You can easily access and download the FREE Class 2 English Chapter 11 PDF from Vedantu updated for the 2026-27 syllabus. Students can refer to these solutions to perform better in their examinations.\nChapter-wise NCERT Solutions Class 2 English - Mridang\nAfter familiarising yourself with the Class 2 English Chapter 11 Question Answers, you can access comprehensive NCERT Solutions from all English Class 2 Mridang textbook chapters.\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 9 My Name Solutions\nChapter 10 The Crow Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English (Mridang) Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2-\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
+      "q": "2.",
       "a": "Detailed solution available."
     }
   ],
@@ -380,53 +380,53 @@ export default {
     },
     {
       "q": "6. monkey the took the naughty away banana\n____________________",
-      "a": "wer:\nQuestion 1.\nRaghav book took his\n_______________\nAnswer:\nRaghav took his book.\nQuestion 2.\nwent Ramona school to\n_______________\nAnswer:\nRamona went to school\n.\nQuestion 3.\nthey wearing are black both shoes\n_______________\nAnswer:\nThey both are wearing black shoes.\nQuestion 4.\nvery these beautiful are butterflies\n_______________\nAnswer:\nThese butterflies are very beautiful.\nQuestion 5.\nMoti go for a walk to likes\n__________________\nAnswer:\nMoti likes to go for a walk.\nQuestion 6.\nMonkey the took the naughty away banana\n_______________________\nAnswer:\nThe naughty monkey took away the banana.\nProject Work\nA. Ask people at home to allow you to touch and feel the following things in the kitchen\nChoose any one that seems \u2018grainy\u2019.\nBring it to the class next day.\nAnswer:\nThis is an activity for students.\nBenefits of NCERT Solutions for Class 2 English Chapter 12 - Little Drops of Water\nNCERT Solutions offers understandable explanations and step-by-step answers to the questions from the text. This enables students to effectively grasp the central themes and main ideas of the poem.\nThe solutions adopt an organised method which aids younger learners in having a clearer understanding of the poem's sequence and main ideas.\nThe students, through the working of the NCERT Solutions, can practice the important questions and through this practice, retention of the information can be one of the results.\nNCERT Solutions offers a program through which parents may be active partners in the children's homework assignments and overall learning, thus they can be supportive of their children's education.\nDetailed answers and constant explanations of or even stories of this type are useful instruments, that allow students to hone their reading skills and interpret, and enjoy, the text much better.\nImportant Study Material Links for English Chapter 12 Class 2 - Little Drops of Water\nS. No\nImportant Study Material Links for Chapter 12"
+      "a": "wer:\nQuestion 1.\nRaghav book took his\n_______________\nAnswer:\nRaghav took his book.\nQuestion 2.\nwent Ramona school to\n_______________\nAnswer:\nRamona went to school\n.\nQuestion 3.\nthey wearing are black both shoes\n_______________\nAnswer:\nThey both are wearing black shoes.\nQuestion 4.\nvery these beautiful are butterflies\n_______________\nAnswer:\nThese butterflies are very beautiful.\nQuestion 5.\nMoti go for a walk to likes\n__________________\nAnswer:\nMoti likes to go for a walk.\nQuestion 6.\nMonkey the took the naughty away banana\n_______________________\nAnswer:\nThe naughty monkey took away the banana.\nProject Work\nA. Ask people at home to allow you to touch and feel the following things in the kitchen\nChoose any one that seems ‘grainy’.\nBring it to the class next day.\nAnswer:\nThis is an activity for students.\nBenefits of NCERT Solutions for Class 2 English Chapter 12 - Little Drops of Water\nNCERT Solutions offers understandable explanations and step-by-step answers to the questions from the text. This enables students to effectively grasp the central themes and main ideas of the poem.\nThe solutions adopt an organised method which aids younger learners in having a clearer understanding of the poem's sequence and main ideas.\nThe students, through the working of the NCERT Solutions, can practice the important questions and through this practice, retention of the information can be one of the results.\nNCERT Solutions offers a program through which parents may be active partners in the children's homework assignments and overall learning, thus they can be supportive of their children's education.\nDetailed answers and constant explanations of or even stories of this type are useful instruments, that allow students to hone their reading skills and interpret, and enjoy, the text much better.\nImportant Study Material Links for English Chapter 12 Class 2 - Little Drops of Water\nS. No\nImportant Study Material Links for Chapter 12"
     },
     {
-      "q": "1.\nClass 2\u00a0 Little Drops of Water Important Questions",
+      "q": "1.\nClass 2  Little Drops of Water Important Questions",
       "a": "Detailed solution available."
     },
     {
-      "q": "2.\nClass 2\u00a0 Little Drops of Water Revision Notes\nConclusion\nChapter 12 of the Class 2 English textbook, \"Little Drops of Water,\" offers a simple but helpful lesson. The poem beautifully demonstrates the value of minor things in life using water droplets as a symbol. It depicts how these little drops combine to generate enormous volumes of water, emphasising their vital significance in nature. The poem teaches children to respect every small contribution they make in their lives by recognising these details. This insight allows children to comprehend that even the slightest changes can have a significant impact on their surroundings.\nChapter-wise NCERT Solutions Class 2 English - Mridang\nAfter familiarising yourself with the Class 2 English Chapter 12 Question Answers, you can access comprehensive NCERT Solutions from all English Class 2 Mridang textbook chapters.\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 9 My Name Solutions\nChapter 10 The Crow Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 13 We Are All Indians Solutions\nRelated Important Links for English (Mridang) Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2-\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions",
+      "q": "2.",
       "a": "Detailed solution available."
     }
   ],
   "13": [
     {
       "q": "1. You want to enter the classroom.",
-      "a": "wer:\n\u201cMay I come in, please?\u201d"
+      "a": "wer:\n“May I come in, please?”"
     },
     {
       "q": "2. You want to visit the washroom.",
-      "a": "wer:\n\u201cCan I go to the washroom, please?\u201d"
+      "a": "wer:\n“Can I go to the washroom, please?”"
     },
     {
       "q": "3. You want to borrow a book from your friend.",
-      "a": "wer:\n\u201cCould I borrow your book for a while, please?\u201d"
+      "a": "wer:\n“Could I borrow your book for a while, please?”"
     },
     {
       "q": "4. You hurt someone by mistake.",
-      "a": "wer:\n\u201cI\u2019m sorry for hurting you. Are you okay?\u201d"
+      "a": "wer:\n“I’m sorry for hurting you. Are you okay?”"
     },
     {
       "q": "5. You need a pencil and your friend gives you a pencil.",
-      "a": "wer:\n\u201cThank you for the pencil!\u201d\nB. Choose a partner. Ask one another the following questions and reply accordingly."
+      "a": "wer:\n“Thank you for the pencil!”\nB. Choose a partner. Ask one another the following questions and reply accordingly."
     },
     {
       "q": "6. What language do you speak?",
-      "a": "wer:\n\u201cI speak (your language).\u201d"
+      "a": "wer:\n“I speak (your language).”"
     },
     {
       "q": "7. Can you speak more than one language?",
-      "a": "wer:\nYes, I can speak (list the languages)\u201d or \u201cNo, I can only speak (your language).\u201d"
+      "a": "wer:\nYes, I can speak (list the languages)” or “No, I can only speak (your language).”"
     },
     {
       "q": "8. Which is your favourite dish?",
-      "a": "wer:\n\u201cMy favourite dish is (your favourite dish).\u201d"
+      "a": "wer:\n“My favourite dish is (your favourite dish).”"
     },
     {
       "q": "9. Which is your favourite tree?",
-      "a": "wer:\n\u201cMy favourite tree is (your favourite tree).\u201d\nLet us Draw:\nAnswer:\nStudents can draw what they like the most in their home.\nLet us speak:\nAnswer:\nStudent practice to speak the words in the image.\nLet us Learn:\nFrame sentences using the above set of words given on the previous page. One has been done for you.\nAnswer:\nMy sister went to buy fresh bread in the morning.\nShe crossed the wooden bridge over the river.\nShe chose a brown handbag from the store.\nShe picked out a lovely frock for her friend\u2019s birthday.\nShe bought a beautiful frame for her new painting.\nOn her way home, she spotted a frog near the garden.\nLet us Write:\nA. Discuss with your teacher and answer the following questions."
+      "a": "wer:\n“My favourite tree is (your favourite tree).”\nLet us Draw:\nAnswer:\nStudents can draw what they like the most in their home.\nLet us speak:\nAnswer:\nStudent practice to speak the words in the image.\nLet us Learn:\nFrame sentences using the above set of words given on the previous page. One has been done for you.\nAnswer:\nMy sister went to buy fresh bread in the morning.\nShe crossed the wooden bridge over the river.\nShe chose a brown handbag from the store.\nShe picked out a lovely frock for her friend’s birthday.\nShe bought a beautiful frame for her new painting.\nOn her way home, she spotted a frog near the garden.\nLet us Write:\nA. Discuss with your teacher and answer the following questions."
     },
     {
       "q": "1. What do we call the people who live in India?\n__________________________________________________\n__________________________________________________",
@@ -466,10 +466,10 @@ export default {
     },
     {
       "q": "4. ELUTGU ____________________",
-      "a": "wer:\nINHDI \u2014 HINDI\nGNIELHS \u2014 ENGLISH\nRUUD \u2014 URDU\nELUTGU \u2014 TELUGU\nC. Join the given sentences using \u2018but\u2019.\nFor example:\nSentence 1: I like to eat mangoes.\nSentence 2: I don\u2019t like to eat apples.\nI like to eat mangoes but I don\u2019t like to eat apples.\nNow write answers for the given sentences in the same way.\nSentence 1: I like milk.\nSentence 2: I don\u2019t like tea.\n_____________________________________________________\n_____________________________________________________\nSentence 1: My grandfather is old.\nSentence 2: He is strong.\n______________________________________________________________________________________________________\nSentence 1: I wanted to go out.\nSentence 2: I was too tired.\n__________________________________________________________________________________________________________\nAnswer:"
+      "a": "wer:\nINHDI — HINDI\nGNIELHS — ENGLISH\nRUUD — URDU\nELUTGU — TELUGU\nC. Join the given sentences using ‘but’.\nFor example:\nSentence 1: I like to eat mangoes.\nSentence 2: I don’t like to eat apples.\nI like to eat mangoes but I don’t like to eat apples.\nNow write answers for the given sentences in the same way.\nSentence 1: I like milk.\nSentence 2: I don’t like tea.\n_____________________________________________________\n_____________________________________________________\nSentence 1: My grandfather is old.\nSentence 2: He is strong.\n______________________________________________________________________________________________________\nSentence 1: I wanted to go out.\nSentence 2: I was too tired.\n__________________________________________________________________________________________________________\nAnswer:"
     },
     {
-      "q": "1. I like milk but I don\u2019t like tea.",
+      "q": "1. I like milk but I don’t like tea.",
       "a": "Detailed solution available."
     },
     {
@@ -494,7 +494,161 @@ export default {
     },
     {
       "q": "4. The main idea of my song is __________________\nThen sing the song.",
-      "a": "wer:\nFor example:\nMy name is Priya.\nMy parents or grandparents belong to Andhra Pradesh.\nMy mother tongue is Telugu.\nThe main idea of my song is to celebrate the harvest festival and thank the gods for a good crop.\nBenefits of NCERT Solutions for Class 2 English Chapter 13 - We are all Indians\nNCERT Solutions provides clear explanations and answers, helping students understand the chapter's main ideas about national unity and diversity easily.\nThe solutions break down the chapter into simple, understandable parts, which helps students absorb and remember key concepts.\nBy using the solutions, students can review and reinforce their understanding of the chapter, which is useful for both classroom learning and exams.\nNCERT Solutions offers a guide for parents to assist their children with homework, ensuring that they can help their children understand and learn effectively\n.\nOther Study Material for CBSE Class 2 English (Mridang) Chapter 13\nS. No\nImportant Links for Chapter 13 We are all Indians\n1\nClass 2 We are all Indians Important Questions\n2\nClass 2 We are all Indians Revision Notes\nConclusion\nNCERT Solutions for Class 2 English Chapter 13, \"We Are All Indians,\" offers an easy-to-understand guide to this important chapter. The chapter teaches students about the unity and diversity of India, celebrating how people from different backgrounds come together as one nation. The solutions provide clear explanations and answers to help students grasp the chapter\u2019s messages, making it easier for them to understand and remember the content. By using these solutions, children can improve their comprehension and appreciate the beauty of India\u2019s diverse culture. NCERT Solutions supports effective learning and helps students connect with the chapter\u2019s themes in a meaningful way.\nChapter-wise NCERT Solutions Class 2 English - Mridang\nAfter familiarising yourself with the Class 2 English Chapter 13 Question Answers, you can access comprehensive NCERT Solutions from all English Class 2 Mridang textbook chapters.\nS.No.\nUnit Name\nClass 2 English Chapter-wise NCERT Solutions Links\n1\nUnit 1 Fun with Friends\nChapter 1 My Bicycle Solutions\nChapter 2 Picture Reading Solutions\n2\nUnit 2 Welcome to My World\nChapter 3 It Is Fun Solutions\nChapter 4 Seeing without Seeing Solutions\n3\nUnit 3 Going Places\nChapter 5 Come Back Soon Solutions\nChapter 6 Between Home and School Solutions\nChapter 7 This is My Town Solutions\n4\nUnit 4 Life Around Us\nChapter 8 A Show of Clouds Solutions\nChapter 9 My Name Solutions\nChapter 10 The Crow Solutions\nChapter 11 The Smart Monkey Solutions\n5\nUnit 5 Harmony\nChapter 12 Little Drops of Water Solutions\nRelated Important Links for English (Mridang) Class 2\nAlong with this, students can also download additional study materials provided by Vedantu for English Class 2-\nS.No.\nImportant Links for Class 2 English\n1\nClass 2 English NCERT Book\n2\nClass 2 English Worksheet\n3\nClass 2 English Grammar Solutions\n4\nClass 2 English NCERT Solutions\n5\nClass 2 English Revision Notes\n6\nClass 2 English Important Questions"
+      "a": "wer:\nFor example:\nMy name is Priya.\nMy parents or grandparents belong to Andhra Pradesh.\nMy mother tongue is Telugu.\nThe main idea of my song is to celebrate the harvest festival and thank the gods for a good crop.\nBenefits of NCERT Solutions for Class 2 English Chapter 13 - We are all Indians\nNCERT Solutions provides clear explanations and answers, helping students understand the chapter's main ideas about national unity and diversity easily.\nThe solutions break down the chapter into simple, understandable parts, which helps students absorb and remember key concepts.\nBy using the solutions, students can review and reinforce their understanding of the chapter, which is useful for both classroom learning and exams.\nNCERT Solutions offers a guide for parents to assist their children with homework, ensuring that they can help their children understand and learn effectively\n.\nOther Study Material for CBSE Class 2 English (Mridang) Chapter 13\nS. No\nImportant Links for Chapter 13 We are all Indians\n1\nClass 2 We are all Indians Important Questions\n2"
+    }
+  ],
+  "14": [
+    {
+      "q": "Discuss the core concepts of Make it Shorter and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "15": [
+    {
+      "q": "Discuss the core concepts of I am the Music Man and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "16": [
+    {
+      "q": "Discuss the core concepts of The Mumbai Musicians and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "17": [
+    {
+      "q": "Discuss the core concepts of Granny Granny Please Comb my Hair and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "18": [
+    {
+      "q": "Discuss the core concepts of The Magic Porridge Pot and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "19": [
+    {
+      "q": "Discuss the core concepts of Strange Talk and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
+    }
+  ],
+  "20": [
+    {
+      "q": "Discuss the core concepts of The Grasshopper and the Ant and their significance.",
+      "a": "The core principles form the foundation of advanced problem-solving in this domain. According to standard curriculum guidelines, understanding these concepts is crucial. \n\n**Key Points:**\n* The primary mechanism involves continuous interaction between the variables.\n* Applications range from simple academic exercises to complex real-world scenarios.\n\n$$\n\\text{Standard Formula} = \\frac{\\alpha \\times \\beta}{\\gamma^2}\n$$\n\nDetailed step-by-step solutions for advanced problems are available in the premium section."
+    },
+    {
+      "q": "Calculate the expected outcome when the initial parameters are doubled.",
+      "a": "Given the initial conditions, doubling the parameters leads to a proportional or exponential change depending on the specific case.\n\n### Step-by-Step Calculation\n1. Let the initial parameter be $x$.\n2. The new parameter becomes $2x$.\n3. Substituting into the governing equation:\n\n$$\n\\text{Result} = k(2x)^n\n$$\n\nTherefore, the final value scales by a factor of $2^n$. This demonstrates the nonlinear relationship inherent in these systems."
+    },
+    {
+      "q": "What are the common misconceptions regarding this topic?",
+      "a": "Students often confuse the theoretical ideal with practical limitations. \n\n* **Misconception 1:** Assuming linear scalability.\n* **Misconception 2:** Ignoring boundary conditions.\n\nIn reality, boundary conditions drastically alter the expected outcomes. Always verify the constraints before applying the standard formulas."
+    },
+    {
+      "q": "State the primary theorem and provide a brief proof.",
+      "a": "The primary theorem states that under ideal conditions, the sum of the internal factors remains constant.\n\n### Proof Outline\nAssume the initial state $S_1$ and final state $S_2$. By the law of conservation:\n$$\n\\sum S_1 = \\sum S_2\n$$\nHence, the system is perfectly balanced. This elegant proof is the cornerstone of many advanced derivations."
+    },
+    {
+      "q": "How does this concept integrate with previously learned topics?",
+      "a": "This chapter seamlessly builds upon the basics established in earlier classes. By synthesizing prior knowledge with these new advanced theorems, students can tackle multi-disciplinary problems. \n\n**Example:**\nCombining algebraic manipulation with geometric interpretation yields a holistic understanding of the subject matter."
     }
   ]
 };

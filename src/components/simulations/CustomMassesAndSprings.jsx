@@ -211,12 +211,12 @@ export default function CustomMassesAndSprings({ onBack, title, isPlaying: globa
     const updatePhysics = (time) => {
     if (!isPlayingRef.current) {
       if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = time;
-      requestRef.current = requestAnimationFrame(updatePhysics);
+      /* removed recursive RAF */
       return;
     }
         if (!lastTimeRef.current) {
             lastTimeRef.current = time;
-            requestRef.current = requestAnimationFrame(updatePhysics);
+            /* removed recursive RAF */
             return;
         }
 
@@ -225,7 +225,7 @@ export default function CustomMassesAndSprings({ onBack, title, isPlaying: globa
 
         if (!isPlaying && !physicsRef.current.some(p => p.isDragging)) {
             updateVisuals();
-            requestRef.current = requestAnimationFrame(updatePhysics);
+            /* removed recursive RAF */
             return;
         }
 
@@ -304,12 +304,12 @@ export default function CustomMassesAndSprings({ onBack, title, isPlaying: globa
 
         updateVisuals();
 
-        requestRef.current = requestAnimationFrame(updatePhysics);
+        /* removed recursive RAF */
     };
 
     useEffect(() => {
         lastTimeRef.current = performance.now();
-        requestRef.current = requestAnimationFrame(updatePhysics);
+        /* removed recursive RAF */
         return () => {
             if (requestRef.current) cancelAnimationFrame(requestRef.current);
         };

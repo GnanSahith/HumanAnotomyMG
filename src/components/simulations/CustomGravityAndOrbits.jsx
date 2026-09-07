@@ -168,6 +168,7 @@ const CustomGravityAndOrbits = ({
   const [daysPassed, setDaysPassed] = useState(0);
   const requestRef = useRef();
   const canvasRef = useRef(null);
+  const lastTimeRef = useRef(null);
   const [windowSize, setWindowSize] = useState({
     w: window.innerWidth,
     h: window.innerHeight
@@ -198,7 +199,7 @@ const CustomGravityAndOrbits = ({
   const updatePhysics = () => {
     if (!isPlayingRef.current) {
       if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
-      requestRef.current = requestAnimationFrame(updatePhysics);
+      /* removed recursive RAF */
       return;
     }
     if (!isPlaying) return;
@@ -408,7 +409,10 @@ const CustomGravityAndOrbits = ({
     return null;
   };
   const handlePointerDown = e => {
-    const rect = canvasRef.current.getBoundingClientRect();
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
+    
     const mouseX = e.clientX - rect.left - rect.width / 2;
     const mouseY = e.clientY - rect.top - rect.height / 2;
     const bodies = stateRef.current.bodies;
@@ -427,8 +431,11 @@ const CustomGravityAndOrbits = ({
     }
   };
   const handlePointerMove = e => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     if (!stateRef.current.draggingId) return;
-    const rect = canvasRef.current.getBoundingClientRect();
+    
     const mouseX = e.clientX - rect.left - rect.width / 2;
     const mouseY = e.clientY - rect.top - rect.height / 2;
     const state = stateRef.current;
@@ -478,6 +485,9 @@ const CustomGravityAndOrbits = ({
     }
   };
   const handlePointerUp = () => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const rect = canvas.getBoundingClientRect();
     if (stateRef.current.draggingId) {
       stateRef.current.draggingId = null;
       // Resume if it was playing

@@ -24,6 +24,7 @@ function Customphys_12Inner({ onBack, title = "Hooke's Law" }) {
     const [potentialEnergy, setPotentialEnergy] = useState(0); // in Joules
     
     const canvasRef = useRef(null);
+    const lastTimeRef = useRef(null);
     const engineRef = useRef(null);
     const massRef = useRef(null);
     const midMassRef = useRef(null); // For series
@@ -60,7 +61,7 @@ function Customphys_12Inner({ onBack, title = "Hooke's Law" }) {
         const updatePhysics = () => {
     if (!isPlayingRef.current) {
       if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
-      requestRef.current = requestAnimationFrame(updatePhysics);
+      /* removed recursive RAF */
       return;
     }
             Matter.Engine.update(engine, 1000 / 60);
