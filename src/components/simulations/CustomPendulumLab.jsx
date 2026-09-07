@@ -36,7 +36,7 @@ export default function CustomPendulumLab({
     }
     if (!lastTimeRef.current) {
       lastTimeRef.current = time;
-      /* removed recursive RAF */
+      requestRef.current = requestAnimationFrame(updatePhysics);
       return;
     }
     const dt = (time - lastTimeRef.current) / 1000; // Delta time in seconds
@@ -62,12 +62,12 @@ export default function CustomPendulumLab({
       x: Math.sin(thetaRef.current) * visualL,
       y: Math.cos(thetaRef.current) * visualL
     });
-    /* removed recursive RAF */
+    requestRef.current = requestAnimationFrame(updatePhysics);
   };
   useEffect(() => {
     if (isPlaying) {
       lastTimeRef.current = performance.now();
-      /* removed recursive RAF */
+      requestRef.current = requestAnimationFrame(updatePhysics);
     } else {
       // Even if paused, we want to update the visual position if parameters change
       const visualL = length * 1.5;

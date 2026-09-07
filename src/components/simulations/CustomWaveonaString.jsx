@@ -46,7 +46,7 @@ function CustomWaveOnAStringInner({
   };
   const updatePhysics = () => {
     if (!isPlayingRef.current) {
-      /* removed recursive RAF */
+      requestRef.current = requestAnimationFrame(updatePhysics);
       return;
     }
     const dt = 0.1; // small stable time step
@@ -95,10 +95,10 @@ function CustomWaveOnAStringInner({
     yPrevRef.current = [...y];
     yRef.current = [...yNext];
     setPoints([...yNext]);
-    /* removed recursive RAF */
+    requestRef.current = requestAnimationFrame(updatePhysics);
   };
   useEffect(() => {
-    /* removed recursive RAF */
+    requestRef.current = requestAnimationFrame(updatePhysics);
     return () => {
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };

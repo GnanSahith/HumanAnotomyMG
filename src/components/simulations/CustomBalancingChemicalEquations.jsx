@@ -410,7 +410,7 @@ export default function CustomBalancingChemicalEquations({
     border: "1px solid rgba(255,255,255,0.1)"
   }}>
       {/* Top Bar */}
-      <div style={{
+            <div style={{ display: "none",
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'flex-end',

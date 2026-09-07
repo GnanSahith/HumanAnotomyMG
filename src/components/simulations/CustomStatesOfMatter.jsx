@@ -17,7 +17,6 @@ export default function CustomStatesOfMatter({
   const [temperature, setTemperature] = useState(20); // K (relative representation)
   const [phase, setPhase] = useState('Solid');
   const canvasRef = useRef(null);
-  const lastTimeRef = useRef(null);
   const requestRef = useRef(null);
   const particlesRef = useRef([]);
 
@@ -113,13 +112,9 @@ export default function CustomStatesOfMatter({
     initParticles(phase, substance, temperature);
   }, [phase, substance]);
   const updatePhysics = () => {
-    if (!isPlayingRef.current) {
-      if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
-      /* removed recursive RAF */
-      return;
-    }
+    
     if (!isPlaying) {
-      /* removed recursive RAF */
+      requestRef.current = requestAnimationFrame(updatePhysics);
       return;
     }
     const subParams = substances[substance];
@@ -214,7 +209,7 @@ export default function CustomStatesOfMatter({
       }
     }
     renderCanvas();
-    /* removed recursive RAF */
+    requestRef.current = requestAnimationFrame(updatePhysics);
   };
   const renderCanvas = () => {
     const canvas = canvasRef.current;
@@ -238,7 +233,7 @@ export default function CustomStatesOfMatter({
     }
   };
   useEffect(() => {
-    /* removed recursive RAF */
+    requestRef.current = requestAnimationFrame(updatePhysics);
     return () => {
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };

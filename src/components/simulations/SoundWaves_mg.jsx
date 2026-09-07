@@ -15,7 +15,6 @@ export default function CustomSoundWaves({ onBack, title, isPlaying: globalIsPla
     const [amplitude, setAmplitude] = useState(1.0);
     
     const canvasRef = useRef(null);
-    const lastTimeRef = useRef(null);
     const requestRef = useRef(null);
     const timeRef = useRef(0);
     const imageDataRef = useRef(null);
@@ -68,24 +67,20 @@ export default function CustomSoundWaves({ onBack, title, isPlaying: globalIsPla
     };
 
     const updatePhysics = () => {
-    if (!isPlayingRef.current) {
-      if (lastTimeRef && lastTimeRef.current !== undefined) lastTimeRef.current = performance.now();
-      /* removed recursive RAF */
-      return;
-    }
+    
         if (!isPlaying) {
-            /* removed recursive RAF */
+            requestRef.current = requestAnimationFrame(updatePhysics);
             return;
         }
 
         timeRef.current += 0.1;
         renderCanvas();
 
-        /* removed recursive RAF */
+        requestRef.current = requestAnimationFrame(updatePhysics);
     };
 
     useEffect(() => {
-        /* removed recursive RAF */
+        requestRef.current = requestAnimationFrame(updatePhysics);
         return () => {
             if (requestRef.current) cancelAnimationFrame(requestRef.current);
         };
@@ -108,7 +103,7 @@ export default function CustomSoundWaves({ onBack, title, isPlaying: globalIsPla
             color: '#fff', position: 'relative', overflow: 'hidden'
         }}>
             {/* Top Bar */}
-            <div style={{
+            <div style={{ display: "none",
                 padding: '16px 24px',
                 display: 'flex', alignItems: 'center', justifyContent: 'space-between',
                 borderBottom: '1px solid rgba(255,255,255,0.05)',

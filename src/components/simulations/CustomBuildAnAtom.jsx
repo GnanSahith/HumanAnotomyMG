@@ -222,7 +222,7 @@ export default function CustomBuildAnAtom({
     const canvas = canvasRef.current;
     if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
-    
+    const rect = canvasRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
@@ -280,7 +280,7 @@ export default function CustomBuildAnAtom({
     if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
     if (!dragInfoRef.current.isDragging) return;
-    
+    const rect = canvasRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     const idx = dragInfoRef.current.particleIndex;
