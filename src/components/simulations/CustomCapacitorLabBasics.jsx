@@ -404,10 +404,7 @@ const CustomCapacitorLabBasicsInner = () => {
   useEffect(() => {
     let animId;
     const tick = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(tick);
-      return;
-    }
+    
       const canvas = canvasRef.current;
       if (!canvas) {
         animId = requestAnimationFrame(tick);

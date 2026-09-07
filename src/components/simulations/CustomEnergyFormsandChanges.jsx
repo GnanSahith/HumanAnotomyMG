@@ -158,10 +158,7 @@ export default function CustomEnergyFormsAndChanges({
   useEffect(() => {
     let lastTime = performance.now();
     const update = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(update);
-      return;
-    }
+    
       const dt = (time - lastTime) / 1000;
       lastTime = time;
       if (isRunning) {

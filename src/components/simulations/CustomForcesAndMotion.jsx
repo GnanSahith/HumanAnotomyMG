@@ -29,10 +29,7 @@ export default function CustomForcesAndMotion({
   const [frictionForceVisual, setFrictionForceVisual] = useState(0);
   const [netForceVisual, setNetForceVisual] = useState(0);
   const updatePhysics = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(updatePhysics);
-      return;
-    }
+    
     if (!lastTimeRef.current) {
       lastTimeRef.current = time;
       requestRef.current = requestAnimationFrame(updatePhysics);

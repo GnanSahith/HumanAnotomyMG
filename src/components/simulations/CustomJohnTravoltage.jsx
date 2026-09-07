@@ -339,10 +339,7 @@ function CustomJohnTravoltageInner() {
       };
     };
     const loop = timestamp => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(loop);
-      return;
-    }
+    
       let dt = (timestamp - lastTime) / 1000;
       if (dt > 0.1) dt = 0.1; // clamp delta to protect physics calculations
       lastTime = timestamp;

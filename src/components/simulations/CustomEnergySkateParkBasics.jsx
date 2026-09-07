@@ -844,10 +844,7 @@ function CustomEnergySkateParkBasicsInner({
     let animFrameId;
     let frameCount = 0;
     const tick = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(tick);
-      return;
-    }
+    
       const p = physicsRef.current;
       const settings = settingsRef.current;
       frameCount++;

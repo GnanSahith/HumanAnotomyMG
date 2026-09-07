@@ -352,10 +352,7 @@ function CustomRutherfordScatteringInner({
     }];
     let lastFrameTime = performance.now();
     const loop = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(loop);
-      return;
-    }
+    
       const deltaMs = time - lastFrameTime;
       lastFrameTime = time;
 

@@ -1284,10 +1284,7 @@ export default function CustomCircuitConstructionKitDC({
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     const render = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(render);
-      return;
-    }
+    
       const width = canvas.width;
       const height = canvas.height;
       ctx.clearRect(0, 0, width, height);

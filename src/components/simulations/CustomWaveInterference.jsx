@@ -25,10 +25,7 @@ export default function CustomWaveInterference({
   const containerWidth = 600;
   const containerHeight = 600;
   const renderCanvas = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(renderCanvas);
-      return;
-    }
+    
     if (!isPlaying) {
       requestRef.current = requestAnimationFrame(renderCanvas);
       return;

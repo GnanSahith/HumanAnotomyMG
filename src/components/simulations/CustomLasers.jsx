@@ -43,10 +43,7 @@ const CustomLasersInner = () => {
     const C = 350;
     const STIM_PROB = 0.04;
     const draw = currentTime => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(draw);
-      return;
-    }
+    
       const dt = Math.min((currentTime - state.current.lastTime) / 1000, 0.05);
       state.current.lastTime = currentTime;
       const {

@@ -82,10 +82,7 @@ function CustomNormalModesInner({
     let animationFrame;
     let lastTime = performance.now();
     const animate = currentTime => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(animate);
-      return;
-    }
+    
       const realDelta = (currentTime - lastTime) / 1000;
       const delta = realDelta * speed;
       lastTime = currentTime;

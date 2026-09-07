@@ -249,10 +249,7 @@ const CustomBuoyancyBasics = ({
       ctx.fillText(`Liquid Vol: ${currentLiquidVol.toFixed(1)} L`, 20, state.liquid.level + 30);
     };
     const loop = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(loop);
-      return;
-    }
+    
       const dt = Math.min(time - lastTime, 32);
       lastTime = time;
       if (isPlaying) updatePhysics(dt);

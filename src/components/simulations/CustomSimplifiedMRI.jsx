@@ -660,10 +660,7 @@ const CustomSimplifiedMRIInner = () => {
       }
     };
     const loop = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(loop);
-      return;
-    }
+    
       const dt = Math.min((time - lastTime) / 1000.0, 0.1); // Cap delta to prevent Euler explosion
       lastTime = time;
       const state = simStateRef.current;

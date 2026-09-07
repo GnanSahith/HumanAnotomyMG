@@ -91,10 +91,7 @@ export default function CustomBuildAnAtom({
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     const render = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(render);
-      return;
-    }
+    
       // Clear
       ctx.clearRect(0, 0, canvas.width, canvas.height);
       const cx = canvas.width / 2;
@@ -222,7 +219,7 @@ export default function CustomBuildAnAtom({
     const canvas = canvasRef.current;
     if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
-    const rect = canvasRef.current.getBoundingClientRect();
+    
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
 
@@ -280,7 +277,7 @@ export default function CustomBuildAnAtom({
     if (!canvas) return;
     const rect = canvas.getBoundingClientRect();
     if (!dragInfoRef.current.isDragging) return;
-    const rect = canvasRef.current.getBoundingClientRect();
+    
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     const idx = dragInfoRef.current.particleIndex;

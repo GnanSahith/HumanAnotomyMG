@@ -263,10 +263,7 @@ export default function CustomBendingLight({
   // --- Main Draw & Physics Update Loop ---
   useEffect(() => {
     const render = timestamp => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(render);
-      return;
-    }
+    
       const canvas = canvasRef.current;
       if (!canvas) return;
       const ctx = canvas.getContext('2d');

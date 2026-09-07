@@ -153,10 +153,7 @@ export default function CustomBuildANucleus() {
     let animationFrameId;
     let lastTime = performance.now();
     const render = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(render);
-      return;
-    }
+    
       const dt = (time - lastTime) / 1000;
       lastTime = time;
       const canvas = canvasRef.current;

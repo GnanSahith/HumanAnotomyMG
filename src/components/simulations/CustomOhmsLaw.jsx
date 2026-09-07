@@ -86,10 +86,7 @@ const CustomOhmsLawInner = () => {
     };
     let animationId;
     const animate = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(animate);
-      return;
-    }
+    
       drawCircuit();
       animationId = requestAnimationFrame(animate);
     };

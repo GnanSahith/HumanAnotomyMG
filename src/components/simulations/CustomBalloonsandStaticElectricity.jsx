@@ -275,10 +275,7 @@ export default function CustomBalloonsandStaticElectricity({
       ctx.fillText(type === 'pos' ? '+' : '-', x, y);
     };
     const render = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(render);
-      return;
-    }
+    
       const s = stateRef.current;
       const now = performance.now();
       const dt = Math.min((now - s.lastTime) / 1000, 0.03); // cap dt to avoid physics explosions

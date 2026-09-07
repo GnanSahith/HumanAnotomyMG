@@ -413,10 +413,7 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
     let animId;
     let t = 0;
     const draw = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(draw);
-      return;
-    }
+    
       const canvas = canvasRef.current;
       if (!canvas) return;
       const ctx = canvas.getContext('2d');

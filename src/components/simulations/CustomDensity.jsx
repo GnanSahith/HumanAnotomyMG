@@ -135,10 +135,7 @@ export default function CustomDensity({
     });
     window.addEventListener('touchend', handleMouseUp);
     const updateAndDraw = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(updateAndDraw);
-      return;
-    }
+    
       if (lastTimeRef.current != null) {
         const dt = (time - lastTimeRef.current) / 1000;
         const deltaT = Math.min(dt, 0.05);

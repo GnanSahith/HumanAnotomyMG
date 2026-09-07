@@ -163,10 +163,7 @@ export default function CustomConcentration({
     };
     let animationId;
     const animate = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(animate);
-      return;
-    }
+    
       draw();
       animationId = requestAnimationFrame(animate);
     };

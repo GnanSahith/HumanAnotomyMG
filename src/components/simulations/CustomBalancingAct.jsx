@@ -1299,10 +1299,7 @@ export default function CustomBalancingAct({
       setProp(state, 'stars', state.stars.filter(s => s.y < 550));
     };
     const update = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(update);
-      return;
-    }
+    
       if (!running) return;
       const state = simStateRef.current;
       const dt = 1 / 60;

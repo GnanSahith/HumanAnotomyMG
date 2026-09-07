@@ -52,10 +52,7 @@ const CustomMicrowavesInner = ({
     let animationFrameId;
     let lastTime = performance.now();
     const render = currentTime => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(render);
-      return;
-    }
+    
       const deltaTime = (currentTime - lastTime) / 1000;
       lastTime = currentTime;
       const canvas = canvasRef.current;

@@ -1245,10 +1245,7 @@ function CustomMoleculesandLightInner({
     if (!canvas) return;
     let animId;
     const runLoop = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(runLoop);
-      return;
-    }
+    
       const state = stateRef.current;
       if (state) {
         if (state.isPlaying) {

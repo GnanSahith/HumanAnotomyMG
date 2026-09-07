@@ -30,10 +30,7 @@ export default function CustomPendulumLab({
     y: 0
   });
   const updatePhysics = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(updatePhysics);
-      return;
-    }
+    
     if (!lastTimeRef.current) {
       lastTimeRef.current = time;
       requestRef.current = requestAnimationFrame(updatePhysics);

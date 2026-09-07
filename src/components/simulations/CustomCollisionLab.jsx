@@ -799,10 +799,7 @@ function CustomCollisionLabInner({
   useEffect(() => {
     let lastTime = performance.now();
     const tick = now => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(tick);
-      return;
-    }
+    
       // Delta time capped at 0.1s to prevent extreme jumps during lag spikes
       const dt = Math.min((now - lastTime) / 1000, 0.1);
       lastTime = now;

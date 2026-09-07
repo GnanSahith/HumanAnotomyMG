@@ -170,10 +170,7 @@ export default function CustomAcidBaseSolutions({
     const canvas = canvasRef.current;
     const ctx = canvas.getContext('2d');
     const animate = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(animate);
-      return;
-    }
+    
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       // Draw background gradient

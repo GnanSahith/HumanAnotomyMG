@@ -196,10 +196,7 @@ export default function CustomBuildAMolecule() {
     const ctx = canvas.getContext('2d');
     let animationFrameId;
     const renderLoop = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(renderLoop);
-      return;
-    }
+    
       draw(ctx, canvasSize.width, canvasSize.height);
       animationFrameId = requestAnimationFrame(renderLoop);
     };

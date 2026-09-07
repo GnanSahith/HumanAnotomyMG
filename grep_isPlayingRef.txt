@@ -1,0 +1,174 @@
+src/components/simulations/CustomAcidBaseSolutions.jsx:10:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomAcidBaseSolutions.jsx:12:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomAcidBaseSolutions.jsx:173:    if (!isPlayingRef.current) {
+src/components/simulations/CustomAtomicInteractions.jsx:20:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomAtomicInteractions.jsx:22:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomAtomicInteractions.jsx:263:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBalancingAct.jsx:300:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBalancingAct.jsx:302:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBalancingAct.jsx:1302:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBalloonsandStaticElectricity.jsx:10:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBalloonsandStaticElectricity.jsx:12:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBalloonsandStaticElectricity.jsx:278:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBendingLight.jsx:155:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBendingLight.jsx:157:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBendingLight.jsx:266:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBlackbodySpectrum.jsx:7:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBlackbodySpectrum.jsx:9:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBlackbodySpectrum.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBuildAMolecule.jsx:45:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBuildAMolecule.jsx:47:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBuildAMolecule.jsx:199:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBuildANucleus.jsx:78:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBuildANucleus.jsx:80:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBuildANucleus.jsx:156:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBuildAnAtom.jsx:69:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBuildAnAtom.jsx:71:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBuildAnAtom.jsx:94:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBuoyancy.jsx:71:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBuoyancy.jsx:73:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBuoyancy.jsx:287:    if (!isPlayingRef.current) {
+src/components/simulations/CustomBuoyancyBasics.jsx:23:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomBuoyancyBasics.jsx:25:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomBuoyancyBasics.jsx:252:    if (!isPlayingRef.current) {
+src/components/simulations/CustomCapacitorLabBasics.jsx:407:    if (!isPlayingRef.current) {
+src/components/simulations/CustomCapacitorLabBasics.jsx:1602:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomCapacitorLabBasics.jsx:1604:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomCircuitConstructionKitAC.jsx:134:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomCircuitConstructionKitAC.jsx:136:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomCircuitConstructionKitAC.jsx:183:    if (!isPlayingRef.current) {
+src/components/simulations/CustomCircuitConstructionKitDC.jsx:165:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomCircuitConstructionKitDC.jsx:167:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomCircuitConstructionKitDC.jsx:1287:    if (!isPlayingRef.current) {
+src/components/simulations/CustomCircuitConstructionKitDCVirtualLab.jsx:138:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomCircuitConstructionKitDCVirtualLab.jsx:140:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomCircuitConstructionKitDCVirtualLab.jsx:416:    if (!isPlayingRef.current) {
+src/components/simulations/CustomCollisionLab.jsx:208:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomCollisionLab.jsx:210:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomCollisionLab.jsx:802:    if (!isPlayingRef.current) {
+src/components/simulations/CustomColorVision.jsx:415:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomColorVision.jsx:417:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomConcentration.jsx:57:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomConcentration.jsx:59:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomConcentration.jsx:166:    if (!isPlayingRef.current) {
+src/components/simulations/CustomDensity.jsx:19:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomDensity.jsx:21:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomDensity.jsx:138:    if (!isPlayingRef.current) {
+src/components/simulations/CustomDiffusion.jsx:47:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomDiffusion.jsx:61:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomDiffusion.jsx:258:    if (!isPlayingRef.current) {
+src/components/simulations/CustomEnergyFormsandChanges.jsx:101:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomEnergyFormsandChanges.jsx:103:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomEnergyFormsandChanges.jsx:161:    if (!isPlayingRef.current) {
+src/components/simulations/CustomEnergySkateParkBasics.jsx:847:    if (!isPlayingRef.current) {
+src/components/simulations/CustomEnergySkateParkBasics.jsx:1802:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomEnergySkateParkBasics.jsx:1804:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomFaradaysLaw.jsx:511:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomFaradaysLaw.jsx:513:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomForcesAndMotion.jsx:10:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomForcesAndMotion.jsx:12:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomForcesAndMotion.jsx:32:    if (!isPlayingRef.current) {
+src/components/simulations/CustomFourierMakingWaves.jsx:19:    if (!isPlayingRef.current) {
+src/components/simulations/CustomFourierMakingWaves.jsx:195:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomFourierMakingWaves.jsx:197:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomGasProperties.jsx:10:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomGasProperties.jsx:12:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomGasProperties.jsx:92:    if (!isPlayingRef.current) {
+src/components/simulations/CustomGravityAndOrbits.jsx:163:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomGravityAndOrbits.jsx:165:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomIsotopesAndAtomicMass.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomIsotopesAndAtomicMass.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomIsotopesAndAtomicMass.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomJohnTravoltage.jsx:342:    if (!isPlayingRef.current) {
+src/components/simulations/CustomJohnTravoltage.jsx:1074:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomJohnTravoltage.jsx:1076:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomLasers.jsx:46:    if (!isPlayingRef.current) {
+src/components/simulations/CustomLasers.jsx:371:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomLasers.jsx:373:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMassesAndSprings.jsx:9:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMassesAndSprings.jsx:11:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMassesandSpringsBasics.jsx:111:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMassesandSpringsBasics.jsx:119:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMassesandSpringsBasics.jsx:772:    if (!isPlayingRef.current) {
+src/components/simulations/CustomMassesandSpringsBasics.jsx:785:      if (isPlayingRef.current) {
+src/components/simulations/CustomMassesandSpringsBasics.jsx:816:      if (isPlayingRef.current) {
+src/components/simulations/CustomMembraneTransport.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMembraneTransport.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMembraneTransport.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomMicrowaves.jsx:11:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMicrowaves.jsx:13:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMicrowaves.jsx:55:    if (!isPlayingRef.current) {
+src/components/simulations/CustomModelsOfHydrogenAtom.jsx:244:    if (!isPlayingRef.current) {
+src/components/simulations/CustomModelsOfHydrogenAtom.jsx:693:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomModelsOfHydrogenAtom.jsx:695:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomModelsoftheHydrogenAtom.jsx:521:    if (!isPlayingRef.current) {
+src/components/simulations/CustomModelsoftheHydrogenAtom.jsx:1408:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomModelsoftheHydrogenAtom.jsx:1410:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMolarity.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMolarity.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMolarity.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomMoleculePolarity.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMoleculePolarity.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMoleculePolarity.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomMoleculeShapes.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMoleculeShapes.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMoleculeShapes.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomMoleculeShapesBasics.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMoleculeShapesBasics.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMoleculeShapesBasics.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomMoleculesandLight.jsx:1142:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomMoleculesandLight.jsx:1144:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomMoleculesandLight.jsx:1248:    if (!isPlayingRef.current) {
+src/components/simulations/CustomNeonLights.jsx:428:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomNeonLights.jsx:430:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomNormalModes.jsx:85:    if (!isPlayingRef.current) {
+src/components/simulations/CustomNormalModes.jsx:1188:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomNormalModes.jsx:1190:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomOhmsLaw.jsx:89:    if (!isPlayingRef.current) {
+src/components/simulations/CustomOhmsLaw.jsx:320:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomOhmsLaw.jsx:322:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomPendulumLab.jsx:10:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomPendulumLab.jsx:12:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomPendulumLab.jsx:33:    if (!isPlayingRef.current) {
+src/components/simulations/CustomPhScale.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomPhScale.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomPhScale.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomPhScaleBasics.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomPhScaleBasics.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomPhScaleBasics.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomPhotoelectricEffect.jsx:468:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomPhotoelectricEffect.jsx:470:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomProjectileMotion.jsx:10:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomProjectileMotion.jsx:12:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomQuantumCoinToss.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomQuantumCoinToss.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomQuantumCoinToss.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomQuantumMeasurement.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomQuantumMeasurement.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomQuantumMeasurement.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomReactantsProductsAndLeftovers.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomReactantsProductsAndLeftovers.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomReactantsProductsAndLeftovers.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/CustomRutherfordScattering.jsx:149:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomRutherfordScattering.jsx:151:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomRutherfordScattering.jsx:355:    if (!isPlayingRef.current) {
+src/components/simulations/CustomSimplifiedMRI.jsx:663:    if (!isPlayingRef.current) {
+src/components/simulations/CustomSimplifiedMRI.jsx:1598:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomSimplifiedMRI.jsx:1600:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomStatesOfMatter.jsx:10:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomStatesOfMatter.jsx:12:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomStatesOfMatterBasics.jsx:11:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomStatesOfMatterBasics.jsx:13:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomWaveInterference.jsx:10:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomWaveInterference.jsx:12:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomWaveInterference.jsx:28:    if (!isPlayingRef.current) {
+src/components/simulations/CustomWaveonaString.jsx:32:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/CustomWaveonaString.jsx:34:    isPlayingRef.current = isPlaying;
+src/components/simulations/CustomWaveonaString.jsx:48:    if (!isPlayingRef.current) {
+src/components/simulations/Customphys_12.jsx:511:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/Customphys_12.jsx:513:    isPlayingRef.current = isPlaying;
+src/components/simulations/GenericSim.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/GenericSim.jsx:10:    isPlayingRef.current = isPlaying;
+src/components/simulations/GenericSim.jsx:25:    if (!isPlayingRef.current) {
+src/components/simulations/SoundWaves_mg.jsx:8:  const isPlayingRef = useRef(isPlaying);
+src/components/simulations/SoundWaves_mg.jsx:10:    isPlayingRef.current = isPlaying;

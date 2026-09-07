@@ -16,10 +16,7 @@ function CustomFourierMakingWavesInner({
     let animationFrame;
     let lastTime = performance.now();
     const animate = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(animate);
-      return;
-    }
+    
       if (playing) {
         const delta = (time - lastTime) / 1000;
         setTimeOffset(prev => prev + delta * 2);

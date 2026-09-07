@@ -123,7 +123,7 @@ const MoleculeCluster = ({
   if (config.layout === 'pair') {
     const el = Object.keys(config.atoms)[0];
     return <div style={{
-      display: 'flex',
+      
       alignItems: 'center'
     }}>
         <Atom element={el} size={24} />
@@ -140,7 +140,7 @@ const MoleculeCluster = ({
       position: 'relative',
       width: '50px',
       height: '45px',
-      display: 'flex',
+      
       justifyContent: 'center',
       alignItems: 'center'
     }}>
@@ -182,7 +182,7 @@ const MoleculeCluster = ({
       position: 'relative',
       width: '40px',
       height: '40px',
-      display: 'flex',
+      
       justifyContent: 'center',
       alignItems: 'center'
     }}>
@@ -214,7 +214,7 @@ const MoleculeCluster = ({
       position: 'relative',
       width: '50px',
       height: '50px',
-      display: 'flex',
+      
       justifyContent: 'center',
       alignItems: 'center'
     }}>
@@ -259,7 +259,7 @@ const MoleculeCluster = ({
   }
   if (config.layout === 'linear') {
     return <div style={{
-      display: 'flex',
+      
       alignItems: 'center'
     }}>
         <Atom element="O" size={26} />
@@ -280,7 +280,7 @@ const CoefficientControl = ({
   label
 }) => {
   return <div style={{
-    display: 'flex',
+    
     alignItems: 'center',
     justifyContent: 'flex-end',
     backgroundColor: 'rgba(15, 23, 42, 0.5)',
@@ -294,7 +294,7 @@ const CoefficientControl = ({
       fontWeight: 'bold'
     }}>{label}</span>
       <div style={{
-      display: 'flex',
+      
       alignItems: 'center',
       backgroundColor: '#334155',
       borderRadius: '8px',
@@ -397,7 +397,7 @@ export default function CustomBalancingChemicalEquations({
     return true;
   }, [coeffs, reactantsCount, productsCount, reaction.elements]);
   return <div style={{
-    display: 'flex',
+    
     flexDirection: 'column',
     height: '100vh',
     backgroundColor: "rgba(255,255,255,0.05)",
@@ -410,8 +410,8 @@ export default function CustomBalancingChemicalEquations({
     border: "1px solid rgba(255,255,255,0.1)"
   }}>
       {/* Top Bar */}
-            <div style={{ display: "none",
-      display: 'flex',
+            <div style={{ display: "none", 
+      
       alignItems: 'center',
       justifyContent: 'flex-end',
       padding: '15px 20px',
@@ -427,7 +427,7 @@ export default function CustomBalancingChemicalEquations({
       </div>
 
       <div style={{
-      display: 'flex',
+      
       flex: 1,
       overflow: 'hidden'
     }}>
@@ -435,14 +435,14 @@ export default function CustomBalancingChemicalEquations({
         <div style={{
         flex: 2.5,
         padding: '20px',
-        display: 'flex',
+        
         flexDirection: 'column',
         alignItems: 'center',
         overflowY: 'auto'
       }}>
           {/* Balancing Scales */}
           <div style={{
-          display: 'flex',
+          
           justifyContent: 'center',
           marginBottom: '40px',
           gap: '30px',
@@ -456,7 +456,7 @@ export default function CustomBalancingChemicalEquations({
             if (rightCount > leftCount) tilt = 15; // tilt right
 
             return <div key={el} style={{
-              display: 'flex',
+              
               flexDirection: 'column',
               alignItems: 'center',
               width: '150px'
@@ -470,7 +470,7 @@ export default function CustomBalancingChemicalEquations({
                     {el} Atoms
                   </span>
                   <div style={{
-                display: 'flex',
+                
                 alignItems: 'center',
                 justifyContent: 'center',
                 height: '80px'
@@ -484,7 +484,7 @@ export default function CustomBalancingChemicalEquations({
                   }}>{leftCount}</span>
                     </div>
                     <div style={{
-                  display: 'flex',
+                  
                   flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'flex-end',
@@ -503,7 +503,7 @@ export default function CustomBalancingChemicalEquations({
                     transformOrigin: 'center',
                     transition: 'transform 0.3s ease',
                     zIndex: 2,
-                    display: 'flex',
+                    
                     justifyContent: 'center',
                     alignItems: 'center'
                   }}>
@@ -514,7 +514,7 @@ export default function CustomBalancingChemicalEquations({
                       width: '24px',
                       height: '24px',
                       borderRadius: '50%',
-                      display: 'flex',
+                      
                       justifyContent: 'center',
                       alignItems: 'center',
                       color: '#fff',
@@ -547,7 +547,7 @@ export default function CustomBalancingChemicalEquations({
 
           {/* Molecule Visualization */}
           <div style={{
-          display: 'flex',
+          
           flexDirection: 'row',
           backgroundColor: 'rgba(255, 255, 255, 0.03)',
           borderRadius: '20px',
@@ -558,7 +558,7 @@ export default function CustomBalancingChemicalEquations({
         }}>
             <div style={{
             flex: 1,
-            display: 'flex',
+            
             flexDirection: 'column',
             alignItems: 'center'
           }}>
@@ -572,13 +572,13 @@ export default function CustomBalancingChemicalEquations({
                 Reactants
               </h2>
               <div style={{
-              display: 'flex',
+              
               flexWrap: 'wrap',
               justifyContent: 'center',
               gap: '15px'
             }}>
                 {reaction.reactants.map(r => <div key={r.id} style={{
-                display: 'flex',
+                
                 flexWrap: 'wrap',
                 justifyContent: 'center',
                 gap: '10px',
@@ -593,7 +593,7 @@ export default function CustomBalancingChemicalEquations({
                     {Array.from({
                   length: coeffs[r.id] || 0
                 }).map((_, i) => <div key={i} style={{
-                  display: 'flex',
+                  
                   justifyContent: 'center',
                   alignItems: 'center',
                   width: '60px',
@@ -607,7 +607,7 @@ export default function CustomBalancingChemicalEquations({
 
             <div style={{
             width: '60px',
-            display: 'flex',
+            
             justifyContent: 'center',
             alignItems: 'center'
           }}>
@@ -620,7 +620,7 @@ export default function CustomBalancingChemicalEquations({
 
             <div style={{
             flex: 1,
-            display: 'flex',
+            
             flexDirection: 'column',
             alignItems: 'center'
           }}>
@@ -634,13 +634,13 @@ export default function CustomBalancingChemicalEquations({
                 Products
               </h2>
               <div style={{
-              display: 'flex',
+              
               flexWrap: 'wrap',
               justifyContent: 'center',
               gap: '15px'
             }}>
                 {reaction.products.map(p => <div key={p.id} style={{
-                display: 'flex',
+                
                 flexWrap: 'wrap',
                 justifyContent: 'center',
                 gap: '10px',
@@ -655,7 +655,7 @@ export default function CustomBalancingChemicalEquations({
                     {Array.from({
                   length: coeffs[p.id] || 0
                 }).map((_, i) => <div key={i} style={{
-                  display: 'flex',
+                  
                   justifyContent: 'center',
                   alignItems: 'center',
                   width: '60px',
@@ -674,7 +674,7 @@ export default function CustomBalancingChemicalEquations({
         flex: 1,
         backgroundColor: "rgba(255,255,255,0.05)",
         borderLeft: '1px solid #334155',
-        display: 'flex',
+        
         flexDirection: 'column',
         overflowY: 'auto',
         backdropFilter: "blur(12px)",
@@ -774,7 +774,7 @@ export default function CustomBalancingChemicalEquations({
             border: '1px solid #22c55e',
             padding: '15px',
             borderRadius: '12px',
-            display: 'flex',
+            
             justifyContent: 'center',
             alignItems: 'center'
           }}>

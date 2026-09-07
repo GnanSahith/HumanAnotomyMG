@@ -284,10 +284,7 @@ const CustomBuoyancy = ({
     const ctx = canvas.getContext('2d');
     let lastTime = performance.now();
     const loop = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(loop);
-      return;
-    }
+    
       const dt = Math.min((time - lastTime) / 1000, 0.05);
       lastTime = time;
       if (isPlaying) updatePhysics(dt);

@@ -518,10 +518,7 @@ function CustomModelsoftheHydrogenAtomInner({
     // Radii of Bohr orbits in pixels (n = 1 to 6)
     const bohrRadii = [0, 45, 80, 115, 145, 170, 190];
     const updateAndDraw = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(updateAndDraw);
-      return;
-    }
+    
       if (!canvas || !ctx) return;
       const width = canvas.width;
       const height = canvas.height;

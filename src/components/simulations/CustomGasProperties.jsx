@@ -89,10 +89,7 @@ export default function CustomGasProperties({
     scaleVelocitiesToTemperature(particlesRef.current, temperature);
   }, [temperature]);
   const updatePhysics = time => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(updatePhysics);
-      return;
-    }
+    
     if (!isPlaying) {
       lastTimeRef.current = time;
       requestRef.current = requestAnimationFrame(updatePhysics);

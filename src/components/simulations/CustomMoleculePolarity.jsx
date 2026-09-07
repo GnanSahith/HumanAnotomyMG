@@ -22,10 +22,7 @@ export default function CustomMoleculePolarity({ onBack, title, isPlaying: globa
         const ctx = canvas.getContext('2d');
         
         const animate = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(animate);
-      return;
-    }
+    
             if (isPlaying) {
                 stateRef.current.time += 0.05;
             }

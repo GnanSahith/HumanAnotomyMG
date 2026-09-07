@@ -260,10 +260,7 @@ const CustomAtomicInteractions = ({
     const ctx = canvas.getContext('2d');
     let animationId;
     const render = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(render);
-      return;
-    }
+    
       if (canvasSize.width > 0 && canvasSize.height > 0) {
         drawSimulation(ctx, canvasSize.width, canvasSize.height);
       }

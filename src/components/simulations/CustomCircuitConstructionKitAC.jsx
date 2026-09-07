@@ -180,10 +180,7 @@ export default function CustomCircuitConstructionKitAC({
   useEffect(() => {
     let animationFrameId;
     const tick = () => {
-    if (!isPlayingRef.current) {
-      requestAnimationFrame(tick);
-      return;
-    }
+    
       if (running && mnaRef.current) {
         for (let i = 0; i < 10; i++) {
           timeRef.current += DT;
