@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Play, Pause, RotateCcw, Settings2, ArrowLeft } from 'lucide-react';
-function CustomBlackbodySpectrumInner() {
+function CustomBlackbodySpectrumInner({ onBack, title, isPlaying: globalIsPlaying, syncPlayState }) {
   const [localIsPlaying, setLocalIsPlaying] = useState(false);
   const isPlaying = typeof globalIsPlaying !== 'undefined' ? globalIsPlaying : localIsPlaying;
   const setIsPlaying = typeof syncPlayState === 'function' ? syncPlayState : setLocalIsPlaying;

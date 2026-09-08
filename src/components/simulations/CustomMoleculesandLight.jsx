@@ -1382,7 +1382,8 @@ function CustomMoleculesandLightInner({
       position: 'absolute',
       inset: 0,
       zIndex: 1,
-      pointerEvents: 'none'
+      pointerEvents: 'none',
+      display: 'flex'
     }}>
         {/* Left Section: Controls */}
         <div className="w-full xl:w-80 flex flex-col gap-5 shrink-0 xl:overflow-y-auto xl:pr-1">

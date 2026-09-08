@@ -398,7 +398,7 @@ export default function CustomBalancingChemicalEquations({
   }, [coeffs, reactantsCount, productsCount, reaction.elements]);
   return <div style={{
     
-    flexDirection: 'column',
+    display: 'flex', flexDirection: 'column',
     height: '100vh',
     backgroundColor: "rgba(255,255,255,0.05)",
     color: '#f8fafc',
@@ -436,7 +436,7 @@ export default function CustomBalancingChemicalEquations({
         flex: 2.5,
         padding: '20px',
         
-        flexDirection: 'column',
+        display: 'flex', flexDirection: 'column',
         alignItems: 'center',
         overflowY: 'auto'
       }}>
@@ -457,7 +457,7 @@ export default function CustomBalancingChemicalEquations({
 
             return <div key={el} style={{
               
-              flexDirection: 'column',
+              display: 'flex', flexDirection: 'column',
               alignItems: 'center',
               width: '150px'
             }}>
@@ -485,7 +485,7 @@ export default function CustomBalancingChemicalEquations({
                     </div>
                     <div style={{
                   
-                  flexDirection: 'column',
+                  display: 'flex', flexDirection: 'column',
                   alignItems: 'center',
                   justifyContent: 'flex-end',
                   width: '60px',
@@ -559,7 +559,7 @@ export default function CustomBalancingChemicalEquations({
             <div style={{
             flex: 1,
             
-            flexDirection: 'column',
+            display: 'flex', flexDirection: 'column',
             alignItems: 'center'
           }}>
               <h2 style={{
@@ -621,7 +621,7 @@ export default function CustomBalancingChemicalEquations({
             <div style={{
             flex: 1,
             
-            flexDirection: 'column',
+            display: 'flex', flexDirection: 'column',
             alignItems: 'center'
           }}>
               <h2 style={{
@@ -675,7 +675,7 @@ export default function CustomBalancingChemicalEquations({
         backgroundColor: "rgba(255,255,255,0.05)",
         borderLeft: '1px solid #334155',
         
-        flexDirection: 'column',
+        display: 'flex', flexDirection: 'column',
         overflowY: 'auto',
         backdropFilter: "blur(12px)",
         border: "1px solid rgba(255,255,255,0.1)"
