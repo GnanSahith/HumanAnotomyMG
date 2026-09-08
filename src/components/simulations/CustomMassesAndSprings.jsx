@@ -470,7 +470,7 @@ export default function CustomMassesAndSprings({ onBack, title, isPlaying: globa
 
             {/* SVG Main View */}
             <div style={{ flex: 1, position: 'relative', overflow: 'hidden' }}>
-            <svg ref={svgRef} viewBox="-800 0 1600 800" preserveAspectRatio="xMidYMid slice" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1 }}>
+            <svg ref={svgRef} viewBox="-800 0 1600 800" preserveAspectRatio="xMidYMid meet" style={{ position: 'absolute', inset: 0, width: '100%', height: '100%', zIndex: 1 }}>
                 <defs>
                     <radialGradient id="massGradient" cx="30%" cy="30%" r="70%">
                         <stop offset="0%" stopColor="#2ecc71" />

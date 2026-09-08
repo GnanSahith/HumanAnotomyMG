@@ -250,7 +250,7 @@ const CustomBeersLawLab = () => {
     }}>
             <canvas ref={canvasRef} width={canvasSize.width} height={canvasSize.height} style={{
         width: '100%',
-        height: '100%',
+        height: '100%', objectFit: 'contain',
         display: 'block',
         objectFit: "contain"
       }} />

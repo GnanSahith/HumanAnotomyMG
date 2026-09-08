@@ -252,7 +252,7 @@ const CustomPhotoelectricEffectInner = () => {
           <canvas ref={canvasRef} width={800} height={550} style={{
           display: 'block',
           width: '100%',
-          height: '100%'
+          height: '100%', objectFit: 'contain'
         }} />
         </div>
       </div>
@@ -483,7 +483,7 @@ export default function CustomPhotoelectricEffect({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomPhotoelectricEffectInner onBack={null} title={""} />
+                 <CustomPhotoelectricEffectInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

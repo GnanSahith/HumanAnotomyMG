@@ -687,7 +687,7 @@ const CustomGravityAndOrbits = ({
         }}>
                     <canvas ref={canvasRef} style={{
             width: '100%',
-            height: '100%',
+            height: '100%', objectFit: 'contain',
             display: 'block',
             cursor: 'crosshair',
             borderRadius: '16px',

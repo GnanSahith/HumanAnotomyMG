@@ -1331,7 +1331,7 @@ export default function CustomRutherfordScattering({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomRutherfordScatteringInner onBack={null} title={""} />
+                 <CustomRutherfordScatteringInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

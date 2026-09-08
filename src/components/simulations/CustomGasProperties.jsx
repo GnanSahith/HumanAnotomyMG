@@ -300,7 +300,7 @@ export default function CustomGasProperties({
                     {/* The internal rendering uses maxContainerWidth / containerHeight as the physical boundaries, but we should make sure the canvas itself is sized based on its layout or container dimensions. However, keeping the internal canvas width/height synced with maxContainerWidth is fine for this specific simulation logic, so we will use maxContainerWidth but could use canvasSize if we want full bleed. But the logic heavily depends on maxContainerWidth. Let's use maxContainerWidth / containerHeight for canvas, wrapped in the flexible container to not break logic. Or we can just resize canvas and adapt logic. Since prompt says "dynamically set the canvas internal resolution", let's use canvasSize.width, height, and we'll change the bounding box to match the container. Wait, if we change the canvas size, the physics boundaries need to update. Let's keep it maxContainerWidth for canvas since it's a "box" simulation. */}
                     <canvas ref={canvasRef} width={maxContainerWidth} height={containerHeight} style={{
             width: '100%',
-            height: '100%',
+            height: '100%', objectFit: 'contain',
             display: 'block',
             position: 'absolute',
             top: 0,

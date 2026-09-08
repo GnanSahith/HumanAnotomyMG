@@ -516,7 +516,7 @@ export default function Customphys_12({
         <div style={{ width: '100%', height: '100%', position: 'relative', background: '#0a0a1a', overflow: 'hidden' }}>
             
             <div style={{ position: 'absolute', inset: 0, zIndex: 1, pointerEvents: 'auto' }}>
-                 <Customphys_12Inner onBack={null} title={""} />
+                 <Customphys_12Inner onBack={onBack} title={title} />
             </div>
         </div>
     );

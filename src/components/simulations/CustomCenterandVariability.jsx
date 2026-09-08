@@ -1184,7 +1184,7 @@ export default function CustomCenterandVariability({
       display: 'flex',
       flexDirection: 'column'
     }}>
-                 <CustomCenterandVariabilityInner onBack={null} title={""} />
+                 <CustomCenterandVariabilityInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

@@ -81,13 +81,13 @@ export default function CustomMoleculeShapes({ onBack, title, isPlaying: globalI
 
             <div style={{ flex: 1, display: 'flex', padding: '20px', gap: '20px', overflow: 'hidden' }}>
                 <div style={{ flex: 1, position: 'relative', borderRadius: '16px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
-                    <canvas ref={canvasRef} width={800} height={600} style={{ width: '100%', height: '100%', display: 'block', background: '#000' }} />
+                    <canvas ref={canvasRef} width={800} height={600} style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block', background: '#000' }} />
                 </div>
 
                 <div style={{ width: '300px', background: 'rgba(255,255,255,0.05)', borderRadius: '16px', padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px', overflowY: 'auto' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
                         <Settings2 size={20} color="#bf5af2" />
-                        <h3 style={{ margin: 0 }}>Simulation Controls</h3>
+                        <h3 style={{ margin: 0 }}>Molecule Shapes Controls</h3>
                     </div>
                     
                     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>

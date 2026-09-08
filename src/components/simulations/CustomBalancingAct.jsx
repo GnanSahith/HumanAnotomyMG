@@ -1510,27 +1510,23 @@ export default function CustomBalancingAct({
   return <div style={{
     width: '100%',
     height: '100%',
-    position: 'relative',
+    position: 'absolute',
+    inset: 0,
+    display: 'flex',
+    flexDirection: 'row',
     background: '#0a0a1a',
     overflow: 'hidden'
   }} >
       
-
-      
-
       {/* Main Workspace viewport */}
       <main style={{
       flex: 1,
       position: 'relative',
       zIndex: 1
     }}>
-        {/* Canvas display wrapper - Full Screen Left Side */}
         <div style={{
         position: 'absolute',
-        left: 0,
-        right: '380px',
-        top: 0,
-        bottom: 0,
+        inset: 0,
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -1589,9 +1585,78 @@ export default function CustomBalancingAct({
               </div>}
           </div>
         </div>
-
-        {/* Right Side Floating Control panel */}
-        
       </main>
+
+      {/* Right Side Floating Control panel */}
+      <aside style={{
+        width: '380px',
+        background: 'rgba(20, 20, 30, 0.8)',
+        borderLeft: '1px solid rgba(255, 255, 255, 0.1)',
+        display: 'flex',
+        flexDirection: 'column',
+        padding: '20px',
+        gap: '20px',
+        overflowY: 'auto'
+      }}>
+        <div style={{ display: 'flex', gap: '10px' }}>
+          <button onClick={() => handleModeChange('intro')} style={{ flex: 1, padding: '10px', background: currentMode === 'intro' ? '#3498db' : '#2c3e50', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Intro</button>
+          <button onClick={() => handleModeChange('lab')} style={{ flex: 1, padding: '10px', background: currentMode === 'lab' ? '#3498db' : '#2c3e50', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Lab</button>
+          <button onClick={() => handleModeChange('game')} style={{ flex: 1, padding: '10px', background: currentMode === 'game' ? '#3498db' : '#2c3e50', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Game</button>
+        </div>
+
+        <div style={{ background: 'rgba(255,255,255,0.05)', padding: '15px', borderRadius: '12px' }}>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#fff', marginBottom: '10px', cursor: 'pointer' }}>
+            <input type="checkbox" checked={showMarks} onChange={(e) => setShowMarks(e.target.checked)} />
+            Show Marks
+          </label>
+          <label style={{ display: 'flex', alignItems: 'center', gap: '10px', color: '#fff', cursor: 'pointer' }}>
+            <input type="checkbox" checked={pillarsOn} onChange={(e) => setPillarsOn(e.target.checked)} />
+            Pillars On (Lock Seesaw)
+          </label>
+        </div>
+
+        {currentMode === 'game' && (
+          <div style={{ background: 'rgba(255,255,255,0.05)', padding: '15px', borderRadius: '12px', color: '#fff' }}>
+            <h3 style={{ margin: '0 0 10px 0' }}>Score: {gameScore}</h3>
+            {gameLevel === null ? (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <button onClick={() => selectLevel(1)} style={{ padding: '10px', background: '#34495e', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Level 1: Predict</button>
+                <button onClick={() => selectLevel(2)} style={{ padding: '10px', background: '#34495e', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Level 2: Balance</button>
+                <button onClick={() => selectLevel(3)} style={{ padding: '10px', background: '#34495e', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Level 3: Mystery</button>
+                <button onClick={() => selectLevel(4)} style={{ padding: '10px', background: '#34495e', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Level 4: Complex</button>
+              </div>
+            ) : (
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <h4 style={{ margin: 0 }}>Level {gameLevel} - Challenge {challengeIndex + 1}</h4>
+                <p style={{ fontSize: '14px', color: '#aaa', margin: 0 }}>{getActiveChallenge()?.question}</p>
+                
+                {getActiveChallenge()?.type === 'predict' && gamePhase === 'question' && (
+                  <div style={{ display: 'flex', gap: '5px' }}>
+                     <button onClick={() => setGamePrediction('left')} style={{ flex: 1, padding: '5px', background: gamePrediction === 'left' ? '#3498db' : '#2c3e50', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}>Left</button>
+                     <button onClick={() => setGamePrediction('balance')} style={{ flex: 1, padding: '5px', background: gamePrediction === 'balance' ? '#3498db' : '#2c3e50', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}>Balance</button>
+                     <button onClick={() => setGamePrediction('right')} style={{ flex: 1, padding: '5px', background: gamePrediction === 'right' ? '#3498db' : '#2c3e50', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}>Right</button>
+                  </div>
+                )}
+                
+                {getActiveChallenge()?.type === 'mystery' && gamePhase === 'question' && (
+                  <div style={{ display: 'flex', gap: '5px', flexWrap: 'wrap' }}>
+                    {getActiveChallenge()?.choices.map(c => (
+                      <button key={c} onClick={() => setMysteryMassGuess(c)} style={{ flex: '1 0 40%', padding: '5px', background: mysteryMassGuess === c ? '#3498db' : '#2c3e50', color: '#fff', borderRadius: '4px', cursor: 'pointer' }}>{c} kg</button>
+                    ))}
+                  </div>
+                )}
+
+                <p style={{ fontSize: '14px', color: gamePhase === 'correct' ? '#2ecc71' : gamePhase === 'incorrect' ? '#e74c3c' : '#fff' }}>{gameMessage}</p>
+
+                {gamePhase === 'question' && <button onClick={handleCheckAnswer} style={{ padding: '10px', background: '#2ecc71', color: '#fff', borderRadius: '8px', fontWeight: 'bold', cursor: 'pointer' }}>Check Answer</button>}
+                {gamePhase === 'correct' && <button onClick={handleNextChallenge} style={{ padding: '10px', background: '#3498db', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Next Challenge</button>}
+                {gamePhase === 'incorrect' && <button onClick={handleTryAgain} style={{ padding: '10px', background: '#f39c12', color: '#fff', borderRadius: '8px', cursor: 'pointer' }}>Try Again</button>}
+                
+                <button onClick={() => { setGameLevel(null); resetSimulation(true); }} style={{ padding: '5px', background: 'transparent', border: '1px solid #7f8c8d', color: '#ccc', borderRadius: '8px', marginTop: '10px', cursor: 'pointer' }}>Back to Levels</button>
+              </div>
+            )}
+          </div>
+        )}
+      </aside>
     </div>;
 }

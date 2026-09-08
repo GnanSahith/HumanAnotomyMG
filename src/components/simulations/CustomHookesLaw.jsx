@@ -1050,7 +1050,7 @@ export default function CustomHookesLaw({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomHookesLawInner onBack={null} title={""} />
+                 <CustomHookesLawInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

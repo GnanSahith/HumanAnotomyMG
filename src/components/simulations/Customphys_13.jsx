@@ -326,7 +326,7 @@ export default function Customphys_13({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <Customphys_13Inner onBack={null} title={""} />
+                 <Customphys_13Inner onBack={onBack} title={title} />
             </div>
         </div>;
 }

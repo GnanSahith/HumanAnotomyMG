@@ -319,7 +319,7 @@ export default function CustomWaveInterference({
           left: 0,
           display: 'block',
           width: '100%',
-          height: '100%'
+          height: '100%', objectFit: 'contain'
         }} />
                 </div>
             </div>

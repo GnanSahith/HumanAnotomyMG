@@ -82,7 +82,7 @@ function CustomBlackbodySpectrumInner() {
       }}>
                     <canvas ref={canvasRef} width={800} height={600} style={{
           width: '100%',
-          height: '100%',
+          height: '100%', objectFit: 'contain',
           display: 'block',
           objectFit: "contain"
         }} />
@@ -180,14 +180,7 @@ function CustomBlackbodySpectrumInner() {
                 </div>
             </div>
 
-            <div style={{
-      flex: 1,
-      position: 'relative',
-      zIndex: 1,
-      pointerEvents: 'auto'
-    }}>
-                 <CustomBlackbodySpectrumInner />
-            </div>
+            
         </div>;
 }
 export default CustomBlackbodySpectrumInner;

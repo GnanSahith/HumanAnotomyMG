@@ -1835,7 +1835,7 @@ export default function CustomEnergySkateParkBasics({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomEnergySkateParkBasicsInner onBack={null} title={""} />
+                 <CustomEnergySkateParkBasicsInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

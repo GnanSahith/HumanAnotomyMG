@@ -209,7 +209,7 @@ const CustomLasersInner = () => {
           <canvas ref={canvasRef} width={800} height={400} style={{
           display: 'block',
           width: '100%',
-          height: '100%'
+          height: '100%', objectFit: 'contain'
         }} />
         </div>
       </div>
@@ -383,7 +383,7 @@ export default function CustomLasers({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomLasersInner onBack={null} title={""} />
+                 <CustomLasersInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

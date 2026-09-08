@@ -1648,7 +1648,7 @@ ctx.fillText(`${c.value}Ω`, 0, 22); ctx.restore();
         border: '1px solid rgba(255,255,255,0.1)',
         backdropFilter: 'blur(12px)'
       }}>
-          <canvas ref={canvasRef} width={1200} height={750} style={{ width: "100%", height: "100%", maxHeight: "100%", objectFit: "contain" }} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp} className="cursor-crosshair block" />
+          <canvas ref={canvasRef} width={1200} height={750} style={{ width: "100%", height: "100%", objectFit: 'contain', maxHeight: "100%", objectFit: "contain" }} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp} className="cursor-crosshair block" />
         </div>
       </div>
       

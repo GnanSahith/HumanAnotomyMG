@@ -1610,7 +1610,7 @@ export default function CustomSimplifiedMRI({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomSimplifiedMRIInner onBack={null} title={""} />
+                 <CustomSimplifiedMRIInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

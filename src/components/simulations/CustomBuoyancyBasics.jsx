@@ -396,7 +396,7 @@ const CustomBuoyancyBasics = ({
     }}>
           <canvas ref={canvasRef} width={canvasSize.width} height={canvasSize.height} style={{
         width: '100%',
-        height: '100%',
+        height: '100%', objectFit: 'contain',
         display: 'block',
         cursor: simState.current?.isDragging ? 'grabbing' : 'grab',
       }} />

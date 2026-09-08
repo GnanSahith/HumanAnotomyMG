@@ -352,7 +352,7 @@ export default function CustomBuildAnAtom({
   const containerStyle = {
     display: 'flex',
     flexDirection: 'column',
-    height: '100%',
+    height: '100%', position: 'absolute', inset: 0,
     width: '100%',
     backgroundColor: '#0a0a1a',
     color: '#ffffff',
@@ -423,7 +423,7 @@ export default function CustomBuildAnAtom({
           touchAction: 'none',
           cursor: 'grab',
           width: "100%",
-          height: "100%",
+          height: "100%", objectFit: 'contain',
           objectFit: "contain"
         }} />
           {protons > 0 && showStable && <div style={{
@@ -507,7 +507,7 @@ export default function CustomBuildAnAtom({
           }}>
                 <div style={{
               width: `${Math.min(100, protons * 10)}%`,
-              height: '100%',
+              height: '100%', position: 'absolute', inset: 0,
               background: '#ff0055',
               borderRadius: '2px',
               transition: 'width 0.3s'
@@ -538,7 +538,7 @@ export default function CustomBuildAnAtom({
           }}>
                 <div style={{
               width: `${Math.min(100, neutrons * 10)}%`,
-              height: '100%',
+              height: '100%', position: 'absolute', inset: 0,
               background: '#777',
               borderRadius: '2px',
               transition: 'width 0.3s'
@@ -569,7 +569,7 @@ export default function CustomBuildAnAtom({
           }}>
                 <div style={{
               width: `${Math.min(100, electrons * 10)}%`,
-              height: '100%',
+              height: '100%', position: 'absolute', inset: 0,
               background: '#0096ff',
               borderRadius: '2px',
               transition: 'width 0.3s'

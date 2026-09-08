@@ -415,7 +415,7 @@ function CustomModelsOfHydrogenAtomInner() {
               </div>
               <canvas ref={spectrometerRef} width={800} height={100} style={{
             width: '100%',
-            height: '100%'
+            height: '100%', objectFit: 'contain'
           }} />
            </div>
         </div>

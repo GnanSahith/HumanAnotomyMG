@@ -549,7 +549,7 @@ const CustomEnergySkatePark = ({
       }}>
                     <canvas ref={canvasRef} width={800} height={600} style={{
           width: '100%',
-          height: '100%',
+          height: '100%', objectFit: 'contain',
           display: 'block',
           cursor: 'crosshair',
           background: 'radial-gradient(circle, #1a1a3a 0%, #0a0a1a 100%)',

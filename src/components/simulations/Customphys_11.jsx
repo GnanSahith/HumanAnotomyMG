@@ -287,7 +287,7 @@ export default function Customphys_11({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <Customphys_11Inner onBack={null} title={""} />
+                 <Customphys_11Inner onBack={onBack} title={title} />
             </div>
         </div>;
 }

@@ -1420,7 +1420,7 @@ export default function CustomModelsoftheHydrogenAtom({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomModelsoftheHydrogenAtomInner onBack={null} title={""} />
+                 <CustomModelsoftheHydrogenAtomInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

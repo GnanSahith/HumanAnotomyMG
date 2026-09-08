@@ -257,7 +257,7 @@ export default function CustomBuildANucleus() {
   const stability = getStability(protons, neutrons);
   return <div style={{
     width: '100%',
-    height: '100%',
+    height: '100%', position: 'absolute', inset: 0,
     display: 'flex',
     flexDirection: 'column',
     background: '#0a0a1a',
@@ -315,7 +315,7 @@ export default function CustomBuildANucleus() {
             
             <canvas ref={canvasRef} width={canvasSize.width} height={canvasSize.height} style={{
         width: '100%',
-        height: '100%',
+        height: '100%', position: 'absolute', inset: 0, objectFit: 'contain',
         display: 'block',
         background: 'radial-gradient(circle at center, #1e293b 0%, #0f172a 100%)',
         objectFit: "contain"

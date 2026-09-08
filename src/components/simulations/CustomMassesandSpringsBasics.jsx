@@ -1012,6 +1012,7 @@ function CustomMassesandSpringsBasicsInner({
             width: '100%',
             height: '100%',
             maxHeight: '640px',
+            objectFit: 'contain',
             background: '#0a0a0f',
             borderRadius: '16px',
             border: '1px solid rgba(255, 255, 255, 0.08)',
@@ -1254,7 +1255,7 @@ export default function CustomMassesandSpringsBasics({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomMassesandSpringsBasicsInner onBack={null} title={""} />
+                 <CustomMassesandSpringsBasicsInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

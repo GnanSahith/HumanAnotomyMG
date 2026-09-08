@@ -547,7 +547,7 @@ export default function CustomFaradaysLaw({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomFaradaysLawInner onBack={null} title={""} />
+                 <CustomFaradaysLawInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

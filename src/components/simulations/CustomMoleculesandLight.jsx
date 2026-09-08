@@ -1710,7 +1710,7 @@ export default function CustomMoleculesandLight({
       zIndex: 1,
       pointerEvents: 'auto'
     }}>
-                 <CustomMoleculesandLightInner onBack={null} title={""} />
+                 <CustomMoleculesandLightInner onBack={onBack} title={title} />
             </div>
         </div>;
 }

@@ -339,7 +339,7 @@ export default function CustomCircuitConstructionKitAC({
         top: '20px',
         right: '20px',
         width: '340px',
-        bottom: '20px',
+        bottom: '90px',
         background: 'rgba(20, 20, 30, 0.8)',
         border: '1px solid rgba(255,255,255,0.1)',
         backdropFilter: 'blur(12px)',
