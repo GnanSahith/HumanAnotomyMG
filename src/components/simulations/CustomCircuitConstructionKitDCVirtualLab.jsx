@@ -517,12 +517,22 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
             // Labels
             ctx.fillStyle = '#ffffff';
             ctx.font = 'bold 8px sans-serif';
-            ctx.fillText('-', 14, 3);
-            ctx.fillText('+', 8 + bodyL - 8, 3);
+            ctx.save();
+     ctx.translate(L / 2, 0);
+     if (Math.abs(theta) > Math.PI / 2 + 0.1) { ctx.rotate(Math.PI); }
+     ctx.textAlign = 'center';
+     ctx.fillText('-', -bodyL/2 + 6, 3);
+     ctx.fillText('+', bodyL/2 - 6, 3);
+     ctx.restore();
             if (showVal) {
               ctx.fillStyle = '#000000';
               ctx.font = '9px sans-serif';
-              ctx.fillText(`${c.value}V`, 8 + bodyL * 0.22, 3);
+              ctx.save();
+     ctx.translate(L / 2, 0);
+     if (Math.abs(theta) > Math.PI / 2 + 0.1) { ctx.rotate(Math.PI); }
+     ctx.textAlign = 'center';
+     ctx.fillText(`${c.value}V`, 0, 12);
+     ctx.restore();
             }
           } else if (c.type === 'resistor') {
             const bodyL = L / 2;
@@ -566,7 +576,14 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
             if (showVal) {
               ctx.fillStyle = '#94a3b8';
               ctx.font = '9px sans-serif';
-              ctx.fillText(`${c.value}Ω`, L / 2 - 8, -12);
+              
+              ctx.save();
+              ctx.translate(L / 2, 0);
+              if (Math.abs(theta) > Math.PI / 2 + 0.1) {
+                  ctx.rotate(Math.PI);
+              }
+              ctx.textAlign = 'center';
+ctx.fillText(`${c.value}Ω`, 0, -12); ctx.restore();
             }
           } else if (c.type === 'lightbulb') {
             const bulbCenter = L / 2;
@@ -626,7 +643,14 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
             if (showVal) {
               ctx.fillStyle = '#94a3b8';
               ctx.font = '9px sans-serif';
-              ctx.fillText(`${c.value}Ω`, bulbCenter - 8, 18);
+              
+              ctx.save();
+              ctx.translate(bulbCenter, 0);
+              if (Math.abs(theta) > Math.PI / 2 + 0.1) {
+                  ctx.rotate(Math.PI);
+              }
+              ctx.textAlign = 'center';
+ctx.fillText(`${c.value}Ω`, 0, 18); ctx.restore();
             }
           } else if (c.type === 'switch') {
             // Wood block base
@@ -696,7 +720,14 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
             if (showVal) {
               ctx.fillStyle = '#64748b';
               ctx.font = '9px monospace';
-              ctx.fillText(`${c.value}V`, L / 2 - 12, -24);
+              
+              ctx.save();
+              ctx.translate(L / 2, 0);
+              if (Math.abs(theta) > Math.PI / 2 + 0.1) {
+                  ctx.rotate(Math.PI);
+              }
+              ctx.textAlign = 'center';
+ctx.fillText(`${c.value}V`, 0, -24); ctx.restore();
             }
           } else if (c.type === 'resistor') {
             ctx.beginPath();
@@ -714,7 +745,14 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
             if (showVal) {
               ctx.fillStyle = '#64748b';
               ctx.font = '9px monospace';
-              ctx.fillText(`${c.value}Ω`, L / 2 - 10, -14);
+              
+              ctx.save();
+              ctx.translate(L / 2, 0);
+              if (Math.abs(theta) > Math.PI / 2 + 0.1) {
+                  ctx.rotate(Math.PI);
+              }
+              ctx.textAlign = 'center';
+ctx.fillText(`${c.value}Ω`, 0, -14); ctx.restore();
             }
           } else if (c.type === 'lightbulb') {
             ctx.beginPath();
@@ -739,7 +777,14 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
             if (showVal) {
               ctx.fillStyle = '#64748b';
               ctx.font = '9px monospace';
-              ctx.fillText(`${c.value}Ω`, L / 2 - 10, 22);
+              
+              ctx.save();
+              ctx.translate(L / 2, 0);
+              if (Math.abs(theta) > Math.PI / 2 + 0.1) {
+                  ctx.rotate(Math.PI);
+              }
+              ctx.textAlign = 'center';
+ctx.fillText(`${c.value}Ω`, 0, 22); ctx.restore();
             }
           } else if (c.type === 'switch') {
             ctx.beginPath();
@@ -1603,7 +1648,7 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
         border: '1px solid rgba(255,255,255,0.1)',
         backdropFilter: 'blur(12px)'
       }}>
-          <canvas ref={canvasRef} width={800} height={500} style={{ width: "100%", height: "100%", maxHeight: "100%", objectFit: "contain" }} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp} className="cursor-crosshair block" />
+          <canvas ref={canvasRef} width={1200} height={750} style={{ width: "100%", height: "100%", maxHeight: "100%", objectFit: "contain" }} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleMouseDown} onTouchMove={handleMouseMove} onTouchEnd={handleMouseUp} className="cursor-crosshair block" />
         </div>
       </div>
       
@@ -1709,7 +1754,7 @@ export default function CustomCircuitConstructionKitDCVirtualLab({
       position: 'absolute',
       top: '100px',
       right: '20px',
-      bottom: '20px',
+      bottom: '90px',
       width: '320px',
       background: 'rgba(20, 20, 30, 0.8)',
       border: '1px solid rgba(255,255,255,0.1)',

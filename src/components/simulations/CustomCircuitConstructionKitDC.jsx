@@ -954,13 +954,13 @@ export default function CustomCircuitConstructionKitDC({
     } = getMouseCoordinates(e);
     if (dragging.type === 'voltmeterRed') {
       setVoltmeterRed({
-        x: Math.max(10, Math.min(790, x)),
-        y: Math.max(10, Math.min(590, y))
+        x: Math.max(10, Math.min(1150, x)),
+        y: Math.max(10, Math.min(750, y))
       });
     } else if (dragging.type === 'voltmeterBlack') {
       setVoltmeterBlack({
-        x: Math.max(10, Math.min(790, x)),
-        y: Math.max(10, Math.min(590, y))
+        x: Math.max(10, Math.min(1150, x)),
+        y: Math.max(10, Math.min(750, y))
       });
     } else if (dragging.type === 'voltmeterBox') {
       setVoltmeterBox({
@@ -969,8 +969,8 @@ export default function CustomCircuitConstructionKitDC({
       });
     } else if (dragging.type === 'ammeterProbe') {
       setAmmeterProbe({
-        x: Math.max(10, Math.min(790, x)),
-        y: Math.max(10, Math.min(590, y))
+        x: Math.max(10, Math.min(1150, x)),
+        y: Math.max(10, Math.min(750, y))
       });
     } else if (dragging.type === 'terminal') {
       const {
@@ -1010,8 +1010,8 @@ export default function CustomCircuitConstructionKitDC({
       }
 
       // Constrain inside canvas
-      targetX = Math.max(10, Math.min(790, targetX));
-      targetY = Math.max(10, Math.min(590, targetY));
+      targetX = Math.max(10, Math.min(1150, targetX));
+      targetY = Math.max(10, Math.min(750, targetY));
       setComponents(prev => prev.map(c => {
         if (c.id === compId) {
           return termNum === 1 ? {
@@ -1800,10 +1800,26 @@ export default function CustomCircuitConstructionKitDC({
         if (c.type === 'battery') valText = `${c.value.toFixed(1)} V`;
         if (c.type === 'resistor' || c.type === 'bulb') valText = `${c.value.toFixed(1)} \u03A9`;
         if (c.isBurnedOut) valText = 'BURNED OUT';
-        ctx.fillText(c.label, len / 2, 28);
-        if (valText) {
-          ctx.fillText(valText, len / 2, 40);
+        
+        ctx.save();
+        ctx.rotate(-angle);
+        ctx.textAlign = 'center';
+        ctx.textBaseline = 'middle';
+        
+        const cx = dx / 2;
+        const cy = dy / 2;
+        let nx = -dy / len;
+        let ny = dx / len;
+        if (ny < 0 || (ny === 0 && nx < 0)) {
+           nx = -nx;
+           ny = -ny;
         }
+        
+        ctx.fillText(c.label, cx + nx * 28, cy + ny * 28);
+        if (valText) {
+          ctx.fillText(valText, cx + nx * 40, cy + ny * 40);
+        }
+        ctx.restore();
 
         // 5. Draw Flame / Burnout animation
         if (c.isBurnedOut) {
@@ -2014,7 +2030,7 @@ export default function CustomCircuitConstructionKitDC({
       alignItems: 'center',
       justifyContent: 'center'
     }}>
-        <canvas ref={canvasRef} width={800} height={600} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd} style={{
+        <canvas ref={canvasRef} width={1200} height={800} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onTouchStart={handleTouchStart} onTouchMove={handleTouchMove} onTouchEnd={handleTouchEnd} style={{
         width: '100%',
         height: '100%',
         maxHeight: '100%',
@@ -2087,7 +2103,7 @@ export default function CustomCircuitConstructionKitDC({
       top: '20px',
       right: '20px',
       width: '320px',
-      maxHeight: 'calc(100% - 110px)',
+      maxHeight: 'calc(100% - 110px)', marginBottom: '80px',
       overflowY: 'auto',
       background: 'rgba(20, 20, 30, 0.8)',
       border: '1px solid rgba(255,255,255,0.1)',
