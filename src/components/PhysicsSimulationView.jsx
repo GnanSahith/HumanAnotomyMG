@@ -241,7 +241,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
                         justifyContent: 'center'
                     }}>
                         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-                        {activeSimulation.isNative ? ( activeSimulation.id === 'physics-background-check_mg' ? <CustomBackgroundCheck key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} /> :
+                        {activeSimulation.isNative ? ( activeSimulation.id === 'physics-background-check_mg' ? <CustomBackgroundCheck type="physics" key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} /> :
                             activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_2_mg' ? <CustomForcesAndMotion key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_3_mg' ? <CustomGravityAndOrbits key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 

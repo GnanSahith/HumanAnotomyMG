@@ -221,7 +221,7 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
 
                 <div style={{ flex: 1, width: '100%', background: '#000', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-                        {activeSimulation.id === 'background-check_mg' ? <CustomBackgroundCheck key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} /> :
+                        {activeSimulation.id === 'background-check_mg' ? <CustomBackgroundCheck type="chemistry" key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} /> :
                         activeSimulation.id === 'balancing-act_mg' ? <CustomBalancingAct key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
                         activeSimulation.id === 'balloons-and-static-electricity_mg' ? <CustomBalloonsandStaticElectricity key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
                         activeSimulation.id === 'blackbody-spectrum_mg' ? <CustomBlackbodySpectrum key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :

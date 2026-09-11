@@ -355,7 +355,7 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
         }
     };
 
-    const renderActiveModule = () => { if (activeSimulation && activeSimulation.id === "maths-background-check_mg") { return <CustomMathsBackgroundCheck onBack={() => {}} title="Maths Test" />; }
+    const renderActiveModule = () => { if (activeSimulation && activeSimulation.id === "maths-background-check_mg") { return <div className="maths-test-wrapper" style={{ width: "100%", height: "100%", position: "relative", background: "linear-gradient(rgba(10, 10, 20, 0.95), rgba(10, 10, 20, 0.95)), url(\/bg_maths.jpg)", backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}><style>{` .maths-test-wrapper > div { background: transparent !important; } `}</style><GeoGebraPlayer key="maths-test" ggbUrl="https://res.cloudinary.com/dy1gyundx/raw/upload/v1777918727/math_simulations/hkpdxysv.ggb" id="maths-test" /></div>; }
         if (topicMaterials.length > 0) {
             const currentMaterial = topicMaterials[activeMaterialIndex] || topicMaterials[0];
             return (
