@@ -1,5 +1,14 @@
 {
-    "phys_1_mg": {
+    "0": {
+        "id": "physics-background-check_mg",
+        "title": "Physics Background Check Preview",
+        "description": "A test simulation to preview the new barely-visible physics background.",
+        "url": "",
+        "thumbnail": "/bg_chem_physics.jpg",
+        "category": "Test",
+        "isNative": true
+    },
+    "1": {
         "title": "Projectile Motion MG",
         "description": "Interactive Projectile Motion simulation (Native Custom Build)",
         "url": "/simulations/projectile-motion_en.html",
@@ -7,7 +16,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_2_mg": {
+    "2": {
         "title": "Forces and Motion MG",
         "description": "Interactive Forces and Motion simulation (Native Custom Build)",
         "url": "/simulations/forces-and-motion-basics_en.html",
@@ -15,7 +24,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_3_mg": {
+    "3": {
         "title": "Gravity and Orbits MG",
         "description": "Interactive Gravity and Orbits simulation (Native Custom Build)",
         "url": "/simulations/gravity-and-orbits_en.html",
@@ -23,7 +32,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_4_mg": {
+    "4": {
         "title": "Friction MG",
         "description": "Interactive Friction simulation (Native Custom Build)",
         "url": "/simulations/friction_en.html",
@@ -31,7 +40,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_5_mg": {
+    "5": {
         "title": "Energy Skate Park MG",
         "description": "Interactive Energy Skate Park simulation (Native Custom Build)",
         "url": "/simulations/energy-skate-park_en.html",
@@ -39,7 +48,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_6_mg": {
+    "6": {
         "title": "Masses and Springs MG",
         "description": "Interactive Masses and Springs simulation (Native Custom Build)",
         "url": "/simulations/masses-and-springs_en.html",
@@ -47,7 +56,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_7_mg": {
+    "7": {
         "title": "Pendulum Lab MG",
         "description": "Interactive Pendulum Lab simulation (Native Custom Build)",
         "url": "/simulations/pendulum-lab_en.html",
@@ -55,7 +64,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_8_mg": {
+    "8": {
         "title": "Balancing Act MG",
         "description": "Interactive Balancing Act simulation (Native Custom Build)",
         "url": "/simulations/balancing-act_en.html",
@@ -63,7 +72,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_9_mg": {
+    "9": {
         "title": "Collision Lab MG",
         "description": "Interactive Collision Lab simulation (Native Custom Build)",
         "url": "/simulations/collision-lab_en.html",
@@ -71,7 +80,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_10_mg": {
+    "10": {
         "title": "Center and Variability MG",
         "description": "Interactive Center and Variability simulation (Native Custom Build)",
         "url": "/simulations/center-and-variability_en.html",
@@ -79,7 +88,7 @@
         "category": "Motion & Mechanics",
         "isNative": true
     },
-    "phys_11_mg": {
+    "11": {
         "title": "Energy Skate Park: Basics MG",
         "description": "Interactive Energy Skate Park: Basics simulation (Native Custom Build)",
         "url": "/simulations/energy-skate-park-basics_en.html",
@@ -87,7 +96,7 @@
         "category": "Work, Energy & Power",
         "isNative": true
     },
-    "phys_12_mg": {
+    "12": {
         "title": "Hooke's Law MG",
         "description": "Interactive Hooke's Law simulation (Native Custom Build)",
         "url": "/simulations/hookes-law_en.html",
@@ -95,7 +104,7 @@
         "category": "Work, Energy & Power",
         "isNative": true
     },
-    "phys_13_mg": {
+    "13": {
         "title": "Masses and Springs: Basics MG",
         "description": "Interactive Masses and Springs: Basics simulation (Native Custom Build)",
         "url": "/simulations/masses-and-springs-basics_en.html",
@@ -103,7 +112,7 @@
         "category": "Work, Energy & Power",
         "isNative": true
     },
-    "phys_14_mg": {
+    "14": {
         "title": "States of Matter MG",
         "description": "Interactive States of Matter simulation (Native Custom Build)",
         "url": "/simulations/states-of-matter_en.html",
@@ -111,7 +120,7 @@
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
-    "phys_15_mg": {
+    "15": {
         "title": "States of Matter: Basics MG",
         "description": "Interactive States of Matter: Basics simulation (Native Custom Build)",
         "url": "/simulations/states-of-matter-basics_en.html",
@@ -119,7 +128,7 @@
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
-    "phys_16_mg": {
+    "16": {
         "title": "Gas Properties MG",
         "description": "Interactive Gas Properties simulation (Native Custom Build)",
         "url": "/simulations/gas-properties_en.html",
@@ -127,7 +136,7 @@
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
-    "phys_17_mg": {
+    "17": {
         "title": "Diffusion MG",
         "description": "Interactive Diffusion simulation (Native Custom Build)",
         "url": "/simulations/diffusion_en.html",
@@ -135,7 +144,7 @@
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
-    "phys_18_mg": {
+    "18": {
         "title": "Energy Forms and Changes MG",
         "description": "Interactive Energy Forms and Changes simulation (Native Custom Build)",
         "url": "/simulations/energy-forms-and-changes_en.html",
@@ -143,7 +152,7 @@
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
-    "phys_19_mg": {
+    "19": {
         "title": "Blackbody Spectrum MG",
         "description": "Interactive Blackbody Spectrum simulation (Native Custom Build)",
         "url": "/simulations/blackbody-spectrum_en.html",
@@ -151,7 +160,7 @@
         "category": "Heat & Thermodynamics",
         "isNative": true
     },
-    "phys_20_mg": {
+    "20": {
         "title": "Wave on a String MG",
         "description": "Interactive Wave on a String simulation (Native Custom Build)",
         "url": "/simulations/wave-on-a-string_en.html",
@@ -159,7 +168,7 @@
         "category": "Sound & Waves",
         "isNative": true
     },
-    "phys_21_mg": {
+    "21": {
         "title": "Wave Interference MG",
         "description": "Interactive Wave Interference simulation (Native Custom Build)",
         "url": "/simulations/wave-interference_en.html",
@@ -167,7 +176,7 @@
         "category": "Sound & Waves",
         "isNative": true
     },
-    "phys_22_mg": {
+    "22": {
         "title": "Sound Waves MG",
         "description": "Interactive Sound Waves simulation (Native Custom Build)",
         "url": "/simulations/sound-waves_en.html",
@@ -175,7 +184,7 @@
         "category": "Sound & Waves",
         "isNative": true
     },
-    "phys_23_mg": {
+    "23": {
         "title": "Normal Modes MG",
         "description": "Interactive Normal Modes simulation (Native Custom Build)",
         "url": "/simulations/normal-modes_en.html",
@@ -183,7 +192,7 @@
         "category": "Sound & Waves",
         "isNative": true
     },
-    "phys_24_mg": {
+    "24": {
         "title": "Fourier: Making Waves MG",
         "description": "Interactive Fourier: Making Waves simulation (Native Custom Build)",
         "url": "/simulations/fourier-making-waves_en.html",
@@ -191,7 +200,7 @@
         "category": "Sound & Waves",
         "isNative": true
     },
-    "phys_25_mg": {
+    "25": {
         "title": "Circuit Construction Kit: DC MG",
         "description": "Interactive Circuit Construction Kit: DC simulation (Native Custom Build)",
         "url": "/simulations/circuit-construction-kit-dc_en.html",
@@ -199,7 +208,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_26_mg": {
+    "26": {
         "title": "Circuit Construction Kit: DC - Virtual Lab MG",
         "description": "Interactive Circuit Construction Kit: DC - Virtual Lab simulation (Native Custom Build)",
         "url": "/simulations/circuit-construction-kit-dc-virtual-lab_en.html",
@@ -207,7 +216,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_27_mg": {
+    "27": {
         "title": "Circuit Construction Kit: AC MG",
         "description": "Interactive Circuit Construction Kit: AC simulation (Native Custom Build)",
         "url": "/simulations/circuit-construction-kit-ac_en.html",
@@ -215,7 +224,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_28_mg": {
+    "28": {
         "title": "Charges and Fields MG",
         "description": "Interactive Charges and Fields simulation (Native Custom Build)",
         "url": "/simulations/charges-and-fields_en.html",
@@ -223,7 +232,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_29_mg": {
+    "29": {
         "title": "Faraday's Law MG",
         "description": "Interactive Faraday's Law simulation (Native Custom Build)",
         "url": "/simulations/faradays-law_en.html",
@@ -231,7 +240,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_30_mg": {
+    "30": {
         "title": "Ohm's Law MG",
         "description": "Interactive Ohm's Law simulation (Native Custom Build)",
         "url": "/simulations/ohms-law_en.html",
@@ -239,7 +248,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_31_mg": {
+    "31": {
         "title": "Coulomb's Law MG",
         "description": "Interactive Coulomb's Law simulation (Native Custom Build)",
         "url": "/simulations/coulombs-law_en.html",
@@ -247,7 +256,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_32_mg": {
+    "32": {
         "title": "John Travoltage MG",
         "description": "Interactive John Travoltage simulation (Native Custom Build)",
         "url": "/simulations/john-travoltage_en.html",
@@ -255,7 +264,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_33_mg": {
+    "33": {
         "title": "Capacitor Lab: Basics MG",
         "description": "Interactive Capacitor Lab: Basics simulation (Native Custom Build)",
         "url": "/simulations/capacitor-lab-basics_en.html",
@@ -263,7 +272,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_34_mg": {
+    "34": {
         "title": "Resistance in a Wire MG",
         "description": "Interactive Resistance in a Wire simulation (Native Custom Build)",
         "url": "/simulations/resistance-in-a-wire_en.html",
@@ -271,7 +280,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_35_mg": {
+    "35": {
         "title": "Balloons and Static Electricity MG",
         "description": "Interactive Balloons and Static Electricity simulation (Native Custom Build)",
         "url": "/simulations/balloons-and-static-electricity_en.html",
@@ -279,7 +288,7 @@
         "category": "Electricity & Magnets",
         "isNative": true
     },
-    "phys_36_mg": {
+    "36": {
         "title": "Bending Light MG",
         "description": "Interactive Bending Light simulation (Native Custom Build)",
         "url": "/simulations/bending-light_en.html",
@@ -287,7 +296,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_37_mg": {
+    "37": {
         "title": "Color Vision MG",
         "description": "Interactive Color Vision simulation (Native Custom Build)",
         "url": "/simulations/color-vision_en.html",
@@ -295,7 +304,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_38_mg": {
+    "38": {
         "title": "Molecules and Light MG",
         "description": "Interactive Molecules and Light simulation (Native Custom Build)",
         "url": "/simulations/molecules-and-light_en.html",
@@ -303,7 +312,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_39_mg": {
+    "39": {
         "title": "Rutherford Scattering MG",
         "description": "Interactive Rutherford Scattering simulation (Native Custom Build)",
         "url": "/simulations/rutherford-scattering_en.html",
@@ -311,7 +320,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_40_mg": {
+    "40": {
         "title": "Models of the Hydrogen Atom MG",
         "description": "Interactive Models of the Hydrogen Atom simulation (Native Custom Build)",
         "url": "/simulations/models-of-the-hydrogen-atom_en.html",
@@ -319,7 +328,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_41_mg": {
+    "41": {
         "title": "Photoelectric Effect MG",
         "description": "Interactive Photoelectric Effect simulation (Native Custom Build)",
         "url": "/simulations/photoelectric_en.html",
@@ -327,7 +336,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_42_mg": {
+    "42": {
         "title": "Lasers MG",
         "description": "Interactive Lasers simulation (Native Custom Build)",
         "url": "/simulations/lasers_en.html",
@@ -335,7 +344,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_43_mg": {
+    "43": {
         "title": "Neon Lights MG",
         "description": "Interactive Neon Lights simulation (Native Custom Build)",
         "url": "/simulations/neon-lights-and-other-discharge-lamps_en.html",
@@ -343,7 +352,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_44_mg": {
+    "44": {
         "title": "Microwaves MG",
         "description": "Interactive Microwaves simulation (Native Custom Build)",
         "url": "/simulations/microwaves_en.html",
@@ -351,7 +360,7 @@
         "category": "Light & Quantum",
         "isNative": true
     },
-    "phys_45_mg": {
+    "45": {
         "title": "Simplified MRI MG",
         "description": "Interactive Simplified MRI simulation (Native Custom Build)",
         "url": "/simulations/mri_en.html",

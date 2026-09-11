@@ -355,7 +355,7 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
         }
     };
 
-    const renderActiveModule = () => {
+    const renderActiveModule = () => { if (activeSimulation && activeSimulation.id === "maths-background-check_mg") { return <CustomMathsBackgroundCheck onBack={() => {}} title="Maths Test" />; }
         if (topicMaterials.length > 0) {
             const currentMaterial = topicMaterials[activeMaterialIndex] || topicMaterials[0];
             return (

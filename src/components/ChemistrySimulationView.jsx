@@ -6,6 +6,7 @@ import SimulationLibraryLayout from './SimulationLibraryLayout';
 import SimulationHeader from './SimulationHeader';
 import AnalyticsTracker from './AnalyticsTracker';
 
+import CustomBackgroundCheck from "./simulations/CustomBackgroundCheck";
 import CustomBalancingAct from './simulations/CustomBalancingAct';
 import CustomBalloonsandStaticElectricity from './simulations/CustomBalloonsandStaticElectricity';
 import CustomBlackbodySpectrum from './simulations/CustomBlackbodySpectrum';
@@ -76,7 +77,7 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
     const [approvedSims, setApprovedSims] = useState(() => {
         try {
             const stored = localStorage.getItem('showcase_approved_chemistry_sims');
-            const defaultApproved = ["acid-base-solutions_mg","atomic-interactions_mg","balancing-act_mg","balancing-chemical-equations_mg","balloons-and-static-electricity_mg","beers-law-lab_mg","blackbody-spectrum_mg","build-a-molecule_mg","build-a-nucleus_mg","build-an-atom_mg","buoyancy_mg","buoyancy-basics_mg","concentration_mg","coulombs-law_mg","density_mg","diffusion_mg","energy-forms-and-changes_mg","fourier-making-waves_mg","gas-properties_mg","gases-intro_mg","isotopes-and-atomic-mass_mg","membrane-transport_mg","models-of-the-hydrogen-atom_mg","molarity_mg","molecule-polarity_mg","molecule-shapes_mg","molecule-shapes-basics_mg","molecules-and-light_mg","ph-scale_mg","ph-scale-basics_mg","quantum-coin-toss_mg","quantum-measurement_mg","reactants-products-and-leftovers_mg","rutherford-scattering_mg","states-of-matter_mg","states-of-matter-basics_mg","wave-on-a-string_mg"];
+            const defaultApproved = ["background-check_mg", "acid-base-solutions_mg","atomic-interactions_mg","balancing-act_mg","balancing-chemical-equations_mg","balloons-and-static-electricity_mg","beers-law-lab_mg","blackbody-spectrum_mg","build-a-molecule_mg","build-a-nucleus_mg","build-an-atom_mg","buoyancy_mg","buoyancy-basics_mg","concentration_mg","coulombs-law_mg","density_mg","diffusion_mg","energy-forms-and-changes_mg","fourier-making-waves_mg","gas-properties_mg","gases-intro_mg","isotopes-and-atomic-mass_mg","membrane-transport_mg","models-of-the-hydrogen-atom_mg","molarity_mg","molecule-polarity_mg","molecule-shapes_mg","molecule-shapes-basics_mg","molecules-and-light_mg","ph-scale_mg","ph-scale-basics_mg","quantum-coin-toss_mg","quantum-measurement_mg","reactants-products-and-leftovers_mg","rutherford-scattering_mg","states-of-matter_mg","states-of-matter-basics_mg","wave-on-a-string_mg"];
             
             if (stored) {
                 const parsed = JSON.parse(stored);
@@ -220,7 +221,8 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
 
                 <div style={{ flex: 1, width: '100%', background: '#000', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-                        {activeSimulation.id === 'balancing-act_mg' ? <CustomBalancingAct key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
+                        {activeSimulation.id === 'background-check_mg' ? <CustomBackgroundCheck key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} /> :
+                        activeSimulation.id === 'balancing-act_mg' ? <CustomBalancingAct key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
                         activeSimulation.id === 'balloons-and-static-electricity_mg' ? <CustomBalloonsandStaticElectricity key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
                         activeSimulation.id === 'blackbody-spectrum_mg' ? <CustomBlackbodySpectrum key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :
                         activeSimulation.id === 'coulombs-law_mg' ? <CustomCoulombsLaw key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> :

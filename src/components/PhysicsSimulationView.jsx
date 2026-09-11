@@ -5,6 +5,7 @@ import AnalyticsTracker from './AnalyticsTracker';
 import physicsSimulations from '../data/physicsSimulations.json';
 import { useLanguage } from '../LanguageContext';
 import CustomPendulumLab from './simulations/CustomPendulumLab';
+import CustomBackgroundCheck from "./simulations/CustomBackgroundCheck";
 import CustomProjectileMotion from './simulations/CustomProjectileMotion';
 import CustomForcesAndMotion from './simulations/CustomForcesAndMotion';
 import CustomGravityAndOrbits from './simulations/CustomGravityAndOrbits';
@@ -82,7 +83,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
     const [approvedSims, setApprovedSims] = useState(() => {
         try {
             const stored = localStorage.getItem('showcase_approved_physics_sims');
-            const defaultApproved = Array.from({ length: 45 }, (_, i) => `phys_${i + 1}_mg`);
+            const defaultApproved = ["physics-background-check_mg", ...Array.from({ length: 45 }, (_, i) => `phys_${i + 1}_mg`)];
             
             // If there's stored data, we merge in the defaults to ensure the newly approved ones show up
             if (stored) {
@@ -240,7 +241,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
                         justifyContent: 'center'
                     }}>
                         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
-                        {activeSimulation.isNative ? (
+                        {activeSimulation.isNative ? ( activeSimulation.id === 'physics-background-check_mg' ? <CustomBackgroundCheck key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} /> :
                             activeSimulation.id === 'phys_1_mg' ? <CustomProjectileMotion key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_2_mg' ? <CustomForcesAndMotion key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
                             activeSimulation.id === 'phys_3_mg' ? <CustomGravityAndOrbits key={simKey} onBack={handleBackToLibrary} title={activeSimulation.title} isPlaying={isPlaying} onTogglePlay={handleTogglePlay} syncPlayState={setIsPlaying} /> : 
