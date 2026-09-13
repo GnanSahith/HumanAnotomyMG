@@ -122,7 +122,7 @@ export default function SimulationLibraryLayout({
             </div>
 
             {/* Main Content Area */}
-            <div style={{ display: 'flex', flex: 1, minHeight: 0, padding: '8px 24px 24px 24px', gap: '24px' }}>
+            <div style={{ display: 'flex', flex: 1, minHeight: 0, padding: '0px 8px 8px 24px', gap: '8px' }}>
                 
                 {/* Left Sidebar Filters */}
                 <div className="glass-panel" style={{ 
@@ -130,6 +130,7 @@ export default function SimulationLibraryLayout({
                     overflowY: 'auto',
                     padding: '24px 16px',
                     borderRadius: '24px',
+                    margin: '16px 0',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '32px',
@@ -172,14 +173,14 @@ export default function SimulationLibraryLayout({
                 </div>
 
                 {/* Right Results Grid */}
-                <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '16px', padding: '16px' }}>
                     
                     {/* Grid */}
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
                         gap: '16px',
-                        alignItems: 'start',
+                        alignItems: 'stretch',
                         alignContent: 'start',
                         marginBottom: 'auto'
                     }}>
