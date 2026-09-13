@@ -67,7 +67,7 @@ export default function SimulationLibraryLayout({
         <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, overflow: 'hidden' }} className="fade-in">
             {/* Top Navigation Bar */}
             <div className="glass-panel" style={{ 
-                padding: '10px 24px', 
+                padding: '8px 24px', 
                 borderBottom: '1px solid rgba(255,255,255,0.1)', 
                 display: 'flex', 
                 alignItems: 'center', 
@@ -81,7 +81,7 @@ export default function SimulationLibraryLayout({
                             display: 'flex', alignItems: 'center', gap: '8px',
                             background: 'rgba(255, 255, 255, 0.1)',
                             border: '1px solid rgba(255, 255, 255, 0.2)',
-                            padding: '8px 16px', borderRadius: '100px',
+                            padding: '6px 16px', borderRadius: '100px',
                             color: '#fff', cursor: 'pointer',
                             transition: 'all 0.2s'
                         }}
@@ -106,7 +106,7 @@ export default function SimulationLibraryLayout({
                         onChange={(e) => setSearchQuery(e.target.value)}
                         style={{
                             width: '100%',
-                            padding: '12px 20px 12px 48px',
+                            padding: '8px 20px 8px 48px',
                             background: 'rgba(0,0,0,0.4)',
                             border: '1px solid rgba(255,255,255,0.1)',
                             borderRadius: '100px',
@@ -122,14 +122,14 @@ export default function SimulationLibraryLayout({
             </div>
 
             {/* Main Content Area */}
-            <div style={{ display: 'flex', flex: 1, minHeight: 0 }}>
+            <div style={{ display: 'flex', flex: 1, minHeight: 0, padding: '24px', gap: '24px' }}>
                 
                 {/* Left Sidebar Filters */}
                 <div className="glass-panel" style={{ 
                     width: '240px', 
-                    borderRight: '1px solid rgba(255,255,255,0.1)', 
                     overflowY: 'auto',
                     padding: '24px 16px',
+                    borderRadius: '24px',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '32px',
@@ -172,13 +172,15 @@ export default function SimulationLibraryLayout({
                 </div>
 
                 {/* Right Results Grid */}
-                <div style={{ flex: 1, overflowY: 'auto', padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '16px' }}>
                     
                     {/* Grid */}
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
-                        gap: '12px',
+                        gap: '16px',
+                        alignItems: 'start',
+                        alignContent: 'start',
                         marginBottom: 'auto'
                     }}>
                         {(filteredSimulations || []).map((sim) => (
