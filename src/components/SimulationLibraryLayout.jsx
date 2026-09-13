@@ -67,7 +67,7 @@ export default function SimulationLibraryLayout({
         <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, overflow: 'hidden' }} className="fade-in">
             {/* Top Navigation Bar */}
             <div className="glass-panel" style={{ 
-                padding: '16px 24px', 
+                padding: '10px 24px', 
                 borderBottom: '1px solid rgba(255,255,255,0.1)', 
                 display: 'flex', 
                 alignItems: 'center', 
@@ -126,10 +126,10 @@ export default function SimulationLibraryLayout({
                 
                 {/* Left Sidebar Filters */}
                 <div className="glass-panel" style={{ 
-                    width: '300px', 
+                    width: '240px', 
                     borderRight: '1px solid rgba(255,255,255,0.1)', 
                     overflowY: 'auto',
-                    padding: '24px',
+                    padding: '24px 16px',
                     display: 'flex',
                     flexDirection: 'column',
                     gap: '32px',
@@ -178,7 +178,8 @@ export default function SimulationLibraryLayout({
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
-                        gap: '12px'
+                        gap: '12px',
+                        marginBottom: 'auto'
                     }}>
                         {(filteredSimulations || []).map((sim) => (
                             <div 
