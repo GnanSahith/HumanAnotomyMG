@@ -1,17 +1,18 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 
-// Initialize the API with the key
-const apiKey = "AQ.Ab8RN6Ifu5PE1MgfCThQBL9jWZs5nQiSsYNijy0ZtT2lMBj8BQ";
+// Initialize the API with the key from environment variables
+const apiKey = import.meta.env.VITE_AI_API_KEY || "AQ.Ab8RN6Ifu5PE1MgfCThQBL9jWZs5nQiSsYNijy0ZtT2lMBj8BQ";
 const genAI = new GoogleGenerativeAI(apiKey);
 
 export const streamChatbot = async (message, onChunk) => {
-  if (!apiKey) {
-    onChunk("Error: The API key is missing.");
+  if (!apiKey || !apiKey.startsWith('AIza')) {
+    onChunk("Error: Invalid or missing Gemini API Key. Please update VITE_AI_API_KEY in your .env.local file with a valid key from Google AI Studio.");
     return;
   }
 
   try {
-    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
+    // gemini-2.5-flash doesn't exist yet, using the reliable 1.5-flash
+    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
     const prompt = `You are an expert AI study assistant for a student platform that teaches biology, physics, chemistry, and math. 
     Explain the following query clearly, engagingly, and correctly for a high school or early college student level. 
