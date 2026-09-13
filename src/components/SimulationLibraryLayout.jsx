@@ -172,7 +172,7 @@ export default function SimulationLibraryLayout({
                 </div>
 
                 {/* Right Results Grid */}
-                <div style={{ flex: 1, overflowY: 'auto', padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                <div style={{ flex: 1, overflowY: 'auto', padding: '16px 24px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', gap: '16px' }}>
                     
                     {/* Grid */}
                     <div style={{
@@ -180,8 +180,7 @@ export default function SimulationLibraryLayout({
                         gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
                         gap: '16px',
                         alignItems: 'start',
-                        alignContent: 'start',
-                        height: 'max-content'
+                        alignContent: 'start', gridAutoRows: 'min-content', margin: 0, padding: 0
                     }}>
                         {(filteredSimulations || []).map((sim) => (
                             <div 
@@ -216,8 +215,8 @@ export default function SimulationLibraryLayout({
                                 }}
                             >
                                 <div style={{ 
-                                    paddingBottom: viewMode === 'list' ? '0' : '75%',
-                                    height: viewMode === 'list' ? '100%' : '0',
+                                    minHeight: viewMode === 'list' ? '100%' : '220px',
+                                    height: viewMode === 'list' ? '100%' : '220px',
                                     width: viewMode === 'list' ? '300px' : '100%',
                                     position: 'relative', overflow: 'hidden', background: '#0a0a1a' 
                                 }}>
