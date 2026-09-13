@@ -172,43 +172,13 @@ export default function SimulationLibraryLayout({
                 </div>
 
                 {/* Right Results Grid */}
-                <div style={{ flex: 1, overflowY: 'auto', padding: '32px', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                <div style={{ flex: 1, overflowY: 'auto', padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
                     
-                    {/* Results Header */}
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-                        <h2 style={{ fontSize: '20px', margin: 0, fontWeight: 600, color: '#fff' }}>
-                            {filteredSimulations.length} {t('results')}
-                        </h2>
-                        <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-                            <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'rgba(255,255,255,0.7)' }}>
-                                <span style={{ fontSize: '14px' }}>Sort by:</span>
-                                <select 
-                                    value={sortBy}
-                                    onChange={(e) => setSortBy(e.target.value)}
-                                    style={{ background: 'rgba(0,0,0,0.4)', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '6px 12px', borderRadius: '8px', outline: 'none' }}
-                                >
-                                    <option value="newest">Newest</option>
-                                    <option value="az">A-Z</option>
-                                </select>
-                            </div>
-                            <div style={{ display: 'flex', background: 'rgba(0,0,0,0.4)', borderRadius: '8px', border: '1px solid rgba(255,255,255,0.1)', overflow: 'hidden' }}>
-                                <button 
-                                    onClick={() => setViewMode('grid')}
-                                    style={{ padding: '8px', background: viewMode === 'grid' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: viewMode === 'grid' ? '#fff' : 'rgba(255,255,255,0.5)', cursor: 'pointer' }}
-                                ><LayoutGrid size={18} /></button>
-                                <button 
-                                    onClick={() => setViewMode('list')}
-                                    style={{ padding: '8px', background: viewMode === 'list' ? 'rgba(255,255,255,0.1)' : 'transparent', border: 'none', color: viewMode === 'list' ? '#fff' : 'rgba(255,255,255,0.5)', cursor: 'pointer' }}
-                                ><List size={18} /></button>
-                            </div>
-                        </div>
-                    </div>
-
                     {/* Grid */}
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(300px, 1fr))' : '1fr',
-                        gap: '24px'
+                        gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
+                        gap: '12px'
                     }}>
                         {(filteredSimulations || []).map((sim) => (
                             <div 
@@ -243,7 +213,7 @@ export default function SimulationLibraryLayout({
                                 }}
                             >
                                 <div style={{ 
-                                    height: viewMode === 'list' ? '100%' : '180px', 
+                                    height: viewMode === 'list' ? '100%' : '140px', 
                                     width: viewMode === 'list' ? '300px' : '100%',
                                     position: 'relative', overflow: 'hidden', background: '#0a0a1a' 
                                 }}>
@@ -286,9 +256,9 @@ export default function SimulationLibraryLayout({
                                         </div>
                                     )}
                                 </div>
-                                <div style={{ padding: '20px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-                                    <h3 style={{ margin: '0 0 8px 0', fontSize: '18px', color: '#fff', fontWeight: 600 }}>{sim.title}</h3>
-                                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '13px', lineHeight: '1.5', display: '-webkit-box', WebkitLineClamp: 2, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
+                                <div style={{ padding: '12px 16px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                    <h3 style={{ margin: '0 0 6px 0', fontSize: '16px', color: '#fff', fontWeight: 600 }}>{sim.title}</h3>
+                                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '12px', lineHeight: '1.4', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                                         {sim.description}
                                     </p>
                                 </div>
