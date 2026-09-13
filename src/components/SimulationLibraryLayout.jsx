@@ -178,7 +178,8 @@ export default function SimulationLibraryLayout({
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
-                        gap: '12px'
+                        gap: '12px',
+                        alignItems: 'start'
                     }}>
                         {(filteredSimulations || []).map((sim) => (
                             <div 
@@ -213,7 +214,8 @@ export default function SimulationLibraryLayout({
                                 }}
                             >
                                 <div style={{ 
-                                    height: viewMode === 'list' ? '100%' : '140px', 
+                                    aspectRatio: viewMode === 'list' ? 'auto' : '16/9',
+                                    height: viewMode === 'list' ? '100%' : 'auto',
                                     width: viewMode === 'list' ? '300px' : '100%',
                                     position: 'relative', overflow: 'hidden', background: '#0a0a1a' 
                                 }}>
@@ -221,7 +223,7 @@ export default function SimulationLibraryLayout({
                                         <img 
                                             src={sim.thumbnail} 
                                             alt={sim.title} 
-                                            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 1, pointerEvents: 'none' }}
+                                            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 1, pointerEvents: 'none', transform: 'scale(1.1)' }}
                                             onError={(e) => { e.target.style.display = 'none'; }}
                                         />
                                     ) : (
@@ -256,7 +258,7 @@ export default function SimulationLibraryLayout({
                                         </div>
                                     )}
                                 </div>
-                                <div style={{ padding: '12px 16px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                <div style={{ padding: '12px 16px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
                                     <h3 style={{ margin: '0 0 6px 0', fontSize: '16px', color: '#fff', fontWeight: 600 }}>{sim.title}</h3>
                                     <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '12px', lineHeight: '1.4', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                                         {sim.description}
