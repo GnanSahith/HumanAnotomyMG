@@ -90,7 +90,7 @@ export default function SimulationLibraryLayout({
                     >
                         <ArrowLeft size={18} /> {t('Back')}
                     </button>
-                    <h1 style={{ fontSize: '24px', margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '16px', color: '#fff' }}>
+                    <h1 style={{ fontSize: '24px', margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '12px', color: '#fff' }}>
                         {icon}
                         {t(title)}
                     </h1>
@@ -140,11 +140,11 @@ export default function SimulationLibraryLayout({
                             <h3 style={{ fontSize: '14px', fontWeight: 600, color: '#fff', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '1px' }}>
                                 {t(filterGroup.label)}
                             </h3>
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
                                 {(filterGroup.options || []).map(option => {
                                     const isSelected = (selectedFilters[filterGroup.id] || []).includes(option.id);
                                     return (
-                                        <label key={option.id} style={{ display: 'flex', alignItems: 'center', gap: '16px', cursor: 'pointer' }}>
+                                        <label key={option.id} style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}>
                                             <input 
                                                 type="checkbox" 
                                                 style={{ display: 'none' }}
@@ -172,15 +172,13 @@ export default function SimulationLibraryLayout({
                 </div>
 
                 {/* Right Results Grid */}
-                <div style={{ flex: 1, overflowY: 'auto', padding: '16px 24px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', gap: '16px' }}>
+                <div style={{ flex: 1, overflowY: 'auto', padding: '16px 24px', display: 'flex', flexDirection: 'column', gap: '16px' }}>
                     
                     {/* Grid */}
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
-                        gap: '16px',
-                        alignItems: 'start',
-                        alignContent: 'start', gridAutoRows: 'min-content', margin: 0, padding: 0
+                        gap: '12px'
                     }}>
                         {(filteredSimulations || []).map((sim) => (
                             <div 
@@ -215,8 +213,7 @@ export default function SimulationLibraryLayout({
                                 }}
                             >
                                 <div style={{ 
-                                    minHeight: viewMode === 'list' ? '100%' : '220px',
-                                    height: viewMode === 'list' ? '100%' : '220px',
+                                    height: viewMode === 'list' ? '100%' : '140px', 
                                     width: viewMode === 'list' ? '300px' : '100%',
                                     position: 'relative', overflow: 'hidden', background: '#0a0a1a' 
                                 }}>
@@ -224,7 +221,7 @@ export default function SimulationLibraryLayout({
                                         <img 
                                             src={sim.thumbnail} 
                                             alt={sim.title} 
-                                            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 1, pointerEvents: 'none', transform: 'scale(1.1)' }}
+                                            style={{ width: '100%', height: '100%', objectFit: 'cover', position: 'absolute', top: 0, left: 0, zIndex: 1, pointerEvents: 'none' }}
                                             onError={(e) => { e.target.style.display = 'none'; }}
                                         />
                                     ) : (
@@ -259,8 +256,8 @@ export default function SimulationLibraryLayout({
                                         </div>
                                     )}
                                 </div>
-                                <div style={{ padding: '12px 16px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
-                                    <h3 style={{ margin: '0 0 4px 0', fontSize: '16px', color: '#fff', fontWeight: 600 }}>{sim.title}</h3>
+                                <div style={{ padding: '12px 16px', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+                                    <h3 style={{ margin: '0 0 6px 0', fontSize: '16px', color: '#fff', fontWeight: 600 }}>{sim.title}</h3>
                                     <p style={{ margin: 0, color: 'rgba(255,255,255,0.6)', fontSize: '12px', lineHeight: '1.4', display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical', overflow: 'hidden' }}>
                                         {sim.description}
                                     </p>
