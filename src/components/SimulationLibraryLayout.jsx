@@ -180,7 +180,8 @@ export default function SimulationLibraryLayout({
                         gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
                         gap: '16px',
                         alignItems: 'start',
-                        alignContent: 'start'
+                        alignContent: 'start',
+                        height: 'max-content'
                     }}>
                         {(filteredSimulations || []).map((sim) => (
                             <div 
@@ -215,8 +216,8 @@ export default function SimulationLibraryLayout({
                                 }}
                             >
                                 <div style={{ 
-                                    aspectRatio: viewMode === 'list' ? 'auto' : '4/3',
-                                    height: viewMode === 'list' ? '100%' : 'auto',
+                                    paddingBottom: viewMode === 'list' ? '0' : '75%',
+                                    height: viewMode === 'list' ? '100%' : '0',
                                     width: viewMode === 'list' ? '300px' : '100%',
                                     position: 'relative', overflow: 'hidden', background: '#0a0a1a' 
                                 }}>
