@@ -180,7 +180,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
     if (!activeSimulation) {
         return (
             <SimulationLibraryLayout
-                title={t('nav.physicsSimulations', "Physics Simulations")}
+                title={t('nav.physicsSimulations', "Physics Simulations (Updated)")}
                 subtitle={t('physics.subtitle', "Interactive physics experiments and demonstrations")}
                 simulations={simArray}
                 onSimulationClick={handleSimClick}
