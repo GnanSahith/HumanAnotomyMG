@@ -122,7 +122,7 @@ export default function SimulationLibraryLayout({
             </div>
 
             {/* Main Content Area */}
-            <div style={{ display: 'flex', flex: 1, minHeight: 0, padding: '24px', gap: '24px' }}>
+            <div style={{ display: 'flex', flex: 1, minHeight: 0, padding: '8px 24px 24px 24px', gap: '24px' }}>
                 
                 {/* Left Sidebar Filters */}
                 <div className="glass-panel" style={{ 
