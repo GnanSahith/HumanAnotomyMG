@@ -299,7 +299,7 @@ function App() {
 
             {isAuthenticated ? (
               <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01'].includes(loggedInUsername) ? (
+                {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01', 'gnansahithmg@admin.local', 'mygnanad@admin.local', 'mgroot01@admin.local'].includes(loggedInUsername) ? (
                   <div className="custom-dropdown-container" ref={profileDropdownRef} onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}>
                     <span className="user-chip-text" style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
                       <span className="hide-on-mobile">{loggedInUsername.replace('@MG', '')}</span> <ChevronDown size={12} className="hide-on-mobile" />
@@ -322,7 +322,7 @@ function App() {
                     <User size={16} className="show-on-mobile" style={{ display: 'none' }} />
                   </span>
                 )}
-                {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01', 'CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG'].includes(loggedInUsername) && (
+                {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01', 'gnansahithmg@admin.local', 'mygnanad@admin.local', 'mgroot01@admin.local', 'CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG', 'charankumarmg@student.local', 'sandhyarekhamg@student.local', 'vishnukranthimg@student.local'].includes(loggedInUsername) && (
                   <button
                     onClick={() => {
                       if (localStorage.getItem('parent_logged_in') === 'true') {
