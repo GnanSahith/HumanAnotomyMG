@@ -64,9 +64,17 @@ export function DigestiveScene3Panel({ onGrabMesh, onReleaseMesh, setIsDragging,
 
                 const getMat = (m) => { 
                     const c = m.clone(); 
+                    
                     if (c.isMeshStandardMaterial) {
                         c.roughness = 0.95;
                         c.metalness = 0.0;
+                        c.side = THREE.DoubleSide;
+                        
+                        if (c.map && c.color && c.color.r < 0.2 && c.color.g < 0.2 && c.color.b < 0.2) {
+                            c.color.setHex(0xffffff);
+                        } else if (!c.map && c.color && c.color.r < 0.2 && c.color.g < 0.2 && c.color.b < 0.2) {
+                            c.color.setHex(0xccaaaa);
+                        }
                     }
                     c.emissiveIntensity = 0; 
                     return c; 

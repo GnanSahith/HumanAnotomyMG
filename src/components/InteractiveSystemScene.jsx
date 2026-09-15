@@ -63,27 +63,26 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, ac
                         });
                     }
                     
+                    
                     c.roughness = 0.95; 
                     c.metalness = 0.0;
+                    c.side = THREE.DoubleSide; // Fix inverted normal issues causing black meshes
+                    c.flatShading = false;
                     
                     // CRITICAL FBX FIXES to reveal original realistic textures:
-                    // 1. Disable vertex colors. FBX exporters frequently export empty vertex color arrays as pure black, tinting the whole model black.
                     c.vertexColors = false; 
                     
-                    // 2. Fix base color multiplication.
                     if (c.map) {
-                        // If it has a texture map but the base color is black/very dark, it will tint the texture black!
-                        // We must reset the base color to white so the authentic texture shines through naturally.
-                        if (c.color && c.color.r < 0.1 && c.color.g < 0.1 && c.color.b < 0.1) {
+                        if (c.color && c.color.r < 0.2 && c.color.g < 0.2 && c.color.b < 0.2) {
                             c.color.setHex(0xffffff);
                         }
-                    } else if (c.color && c.color.r < 0.05 && c.color.g < 0.05 && c.color.b < 0.05) {
-                        // If it has NO texture map, and it is pitch black, it's a broken material export.
-                        // We set it to a neutral light color so we can at least see the geometry shading.
-                        c.color.setHex(0xdddddd);
+                    } else if (c.color && c.color.r < 0.2 && c.color.g < 0.2 && c.color.b < 0.2) {
+                        // If it has NO texture map, and it is absurdly dark, it's a broken material export.
+                        c.color.setHex(0xccaaaa); // A pleasant generic flesh/organic tone instead of pure grey
                     }
                     
                     c.emissiveIntensity = 0; 
+ 
                     return c; 
                 };
 

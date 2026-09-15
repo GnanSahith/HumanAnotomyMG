@@ -33,8 +33,9 @@ function BoxScene({ onSelectPart, setActiveBoxName }) {
         const getMat = (m) => { 
             const c = m.clone(); 
             if (c.isMeshStandardMaterial) {
-                c.roughness = 0.95; 
-                c.metalness = 0.0;
+                c.roughness = 0.95;
+c.metalness = 0.0;
+c.side = THREE.DoubleSide;
             }
             c.emissiveIntensity = 0; 
             return c; 

@@ -5,8 +5,6 @@ import { OrbitControls, Environment, Bounds, Center } from '@react-three/drei';
 import { Loader } from './InteractiveDigestiveView_v2';
 import { InteractiveSystemScene } from './InteractiveSystemScene';
 
-import InteractiveWrapper from './InteractiveWrapper';
-
 export default function ModelViewer({ activeOrgan, activeSystem }) {
     const [isLoading, setIsLoading] = useState(false);
     const [isDragging, setIsDragging] = useState(false);
@@ -21,11 +19,31 @@ export default function ModelViewer({ activeOrgan, activeSystem }) {
         }
     }, [activeOrgan]);
 
-    const handleLoad = () => {
-        setIsLoading(false);
+    // Use a robust effect to capture the model-viewer load event
+    useEffect(() => {
         const viewer = viewerRef.current;
-        // Rely exclusively on the authentic internal mapped textures
-    };
+        if (!viewer) return;
+
+        const onModelLoad = () => {
+            setIsLoading(false);
+            if (viewer.model && viewer.model.materials) {
+                viewer.model.materials.forEach(material => {
+                    // Force a completely matte organic look
+                    material.pbrMetallicRoughness.setRoughnessFactor(0.95);
+                    material.pbrMetallicRoughness.setMetallicFactor(0.01);
+                    
+                    // Fix black models
+                    const baseColor = material.pbrMetallicRoughness.baseColorFactor;
+                    if (baseColor && baseColor[0] < 0.1 && baseColor[1] < 0.1 && baseColor[2] < 0.1) {
+                        material.pbrMetallicRoughness.setBaseColorFactor([0.9, 0.9, 0.9, baseColor[3] !== undefined ? baseColor[3] : 1.0]);
+                    }
+                });
+            }
+        };
+
+        viewer.addEventListener('load', onModelLoad);
+        return () => viewer.removeEventListener('load', onModelLoad);
+    }, [activeOrgan]);
 
     return (
         <div className="viewer-container glass-panel">
@@ -50,10 +68,10 @@ export default function ModelViewer({ activeOrgan, activeSystem }) {
                                 style={{ touchAction: 'none' }}
                                 gl={{ antialias: true, powerPreference: 'high-performance' }}
                             >
-                                <ambientLight intensity={1.2} />
-                                <directionalLight position={[5, 10, 15]} intensity={1.5} />
-                                <directionalLight position={[-5, 5, -15]} intensity={0.8} />
-                                <pointLight position={[0, -10, 0]} intensity={0.5} />
+                                <ambientLight intensity={2.5} />
+                                <directionalLight position={[10, 20, 15]} intensity={2.0} />
+                                <directionalLight position={[-10, 10, -15]} intensity={1.5} />
+                                <pointLight position={[0, -10, 0]} intensity={1.0} />
 
                                 <Suspense fallback={<Loader />}>
                                     <Bounds fit clip margin={1.2}>
@@ -114,10 +132,9 @@ export default function ModelViewer({ activeOrgan, activeSystem }) {
                             alt={`A 3D model of ${activeOrgan.name}`}
                             auto-rotate
                             camera-controls
-                            shadow-intensity="0.5"
+                            shadow-intensity="0.3"
                             exposure="1.0"
                             environment-image="neutral"
-                            onLoad={handleLoad}
                             style={{ width: '100%', height: '100%' }}
                         ></model-viewer>
                     )}
