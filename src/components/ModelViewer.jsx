@@ -28,16 +28,11 @@ export default function ModelViewer({ activeOrgan, activeSystem }) {
             setIsLoading(false);
             if (viewer.model && viewer.model.materials) {
                 viewer.model.materials.forEach(material => {
-                    // Force a completely matte organic look
+                    // Moderate organic shine
                     material.pbrMetallicRoughness.setRoughnessFactor(0.5);
                     material.pbrMetallicRoughness.setMetallicFactor(0.1);
                     
-                    // Fix black models
-                    const baseColor = material.pbrMetallicRoughness.baseColorFactor;
-                    if (baseColor && baseColor[0] < 0.1 && baseColor[1] < 0.1 && baseColor[2] < 0.1) {
-                        material.pbrMetallicRoughness.setBaseColorFactor([0.9, 0.9, 0.9, baseColor[3] !== undefined ? baseColor[3] : 1.0]);
-                    }
-                });
+                                    });
             }
         };
 

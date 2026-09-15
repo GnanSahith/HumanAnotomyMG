@@ -57,7 +57,6 @@ export function DigestiveScene3Panel({ onGrabMesh, onReleaseMesh, setIsDragging,
                 geometry.applyMatrix4(child.matrixWorld);
                 
                 // Perfectly center the origin pivot point so expansion animations are flawless 
-                geometry.computeVertexNormals();
                 geometry.computeBoundingBox();
                 const center = new THREE.Vector3();
                 geometry.boundingBox.getCenter(center);
@@ -65,19 +64,13 @@ export function DigestiveScene3Panel({ onGrabMesh, onReleaseMesh, setIsDragging,
 
                 const getMat = (m) => { 
                     const c = m.clone(); 
-                    
                     if (c.isMeshStandardMaterial) {
                         c.roughness = 0.5;
                         c.metalness = 0.1;
-                        c.side = THREE.DoubleSide;
-                        
-                        if (c.map && c.color && c.color.r < 0.2 && c.color.g < 0.2 && c.color.b < 0.2) {
-                            c.color.setHex(0xffffff);
-                        } else if (!c.map && c.color && c.color.r < 0.2 && c.color.g < 0.2 && c.color.b < 0.2) {
-                            c.color.setHex(0xccaaaa);
-                        }
+                    } else if (c.isMeshPhongMaterial) {
+                        c.shininess = 30;
+                        if (c.specular) c.specular.setHex(0x333333);
                     }
-                    c.emissiveIntensity = 0; 
                     return c; 
                 };
                 const mat = Array.isArray(child.material) ? child.material.map(getMat) : getMat(child.material);

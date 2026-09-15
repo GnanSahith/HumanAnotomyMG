@@ -33,7 +33,6 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, ac
                 const geometry = child.geometry.clone();
                 geometry.applyMatrix4(child.matrixWorld);
                 
-                geometry.computeVertexNormals();
                 geometry.computeBoundingBox();
                 const center = new THREE.Vector3();
                 geometry.boundingBox.getCenter(center);
@@ -46,44 +45,19 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, ac
                 }
 
                 const getMat = (m, childName = '') => { 
-                    if (!m) return new THREE.MeshStandardMaterial({ color: 0xdddddd, roughness: 0.95, metalness: 0.0 });
+                    if (!m) return new THREE.MeshStandardMaterial({ color: 0xffffff });
+                    const c = m.clone();
                     
-                    let c;
-                    if (m.isMeshStandardMaterial) {
-                        c = m.clone();
-                    } else {
-                        // Upgrade legacy/FBX materials to Standard for consistent PBR look
-                        c = new THREE.MeshStandardMaterial({
-                            color: m.color ? m.color.clone() : new THREE.Color(0xffffff),
-                            map: m.map || null,
-                            normalMap: m.normalMap || null,
-                            emissiveMap: m.emissiveMap || null,
-                            transparent: m.transparent || false,
-                            opacity: m.opacity !== undefined ? m.opacity : 1,
-                            side: m.side !== undefined ? m.side : THREE.FrontSide
-                        });
+                    // Non-destructively apply moderate organic shine
+                    if (c.isMeshStandardMaterial) {
+                        c.roughness = 0.5;
+                        c.metalness = 0.1;
+                    } else if (c.isMeshPhongMaterial) {
+                        c.shininess = 30;
+                        if (c.specular) c.specular.setHex(0x333333);
                     }
                     
-                    
-                    c.roughness = 0.5; 
-                    c.metalness = 0.1;
-                    c.side = THREE.DoubleSide; // Fix inverted normal issues causing black meshes
-                    c.flatShading = false;
-                    
-                    // CRITICAL FBX FIXES to reveal original realistic textures:
-                    c.vertexColors = false; 
-                    
-                    if (c.map) {
-                        if (c.color && c.color.r < 0.2 && c.color.g < 0.2 && c.color.b < 0.2) {
-                            c.color.setHex(0xffffff);
-                        }
-                    } else if (c.color && c.color.r < 0.2 && c.color.g < 0.2 && c.color.b < 0.2) {
-                        // If it has NO texture map, and it is absurdly dark, it's a broken material export.
-                        c.color.setHex(0xccaaaa); // A pleasant generic flesh/organic tone instead of pure grey
-                    }
-                    
-                    c.emissiveIntensity = 0; 
- 
+                    // Don't force DoubleSide, don't force vertexColors off, don't mess with their colors!
                     return c; 
                 };
 

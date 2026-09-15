@@ -47,7 +47,6 @@ function DigestiveScene({ onSelectPart, setActiveOrganName, setIsDragging }) {
             if (c.isMeshStandardMaterial) {
                 c.roughness = 0.5;
 c.metalness = 0.1;
-c.side = THREE.DoubleSide;
             }
             c.emissiveIntensity = 0; 
             return c; 
