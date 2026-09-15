@@ -24,15 +24,20 @@ export default function ModelViewer({ activeOrgan, activeSystem }) {
         const viewer = viewerRef.current;
         if (!viewer) return;
 
-        const onModelLoad = () => {
+                const onModelLoad = () => {
             setIsLoading(false);
             if (viewer.model && viewer.model.materials) {
                 viewer.model.materials.forEach(material => {
-                    // Moderate organic shine
+                    // Gentle organic shine
                     material.pbrMetallicRoughness.setRoughnessFactor(0.5);
                     material.pbrMetallicRoughness.setMetallicFactor(0.1);
                     
-                                    });
+                    // Fix black models by overriding dark base colors
+                    const baseColor = material.pbrMetallicRoughness.baseColorFactor;
+                    if (baseColor && baseColor[0] < 0.1 && baseColor[1] < 0.1 && baseColor[2] < 0.1) {
+                        material.pbrMetallicRoughness.setBaseColorFactor([1.0, 1.0, 1.0, baseColor[3] !== undefined ? baseColor[3] : 1.0]);
+                    }
+                });
             }
         };
 

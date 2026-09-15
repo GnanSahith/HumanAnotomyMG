@@ -44,7 +44,35 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, ac
                     nodeName = 'Salivary_Glands';
                 }
 
-                const getMat = (m) => { return m || new THREE.MeshStandardMaterial(); };
+                const getMat = (m) => { 
+                    const c = new THREE.MeshStandardMaterial();
+                    if (m) {
+                        if (m.map) c.map = m.map;
+                        if (m.normalMap) c.normalMap = m.normalMap;
+                        if (m.color && (m.color.r > 0.05 || m.color.g > 0.05 || m.color.b > 0.05)) {
+                            c.color.copy(m.color);
+                        } else {
+                            // If base color is pitch black, it ruins textures. Force white.
+                            c.color.setHex(0xffffff);
+                        }
+                    } else {
+                        c.color.setHex(0xffffff);
+                    }
+                    
+                    // FIX BLOCKY/PIXELATED MODELS:
+                    c.flatShading = false;
+                    
+                    // FIX PITCH BLACK MODELS:
+                    c.vertexColors = false;
+                    c.side = THREE.DoubleSide;
+                    
+                    // FIX EXTREME SHINE / PLASTIC LOOK (gentle organic shine instead)
+                    c.roughness = 0.5;
+                    c.metalness = 0.1;
+                    
+                    c.needsUpdate = true;
+                    return c; 
+                };
 
                 let mat;
                 if (!child.material) {
