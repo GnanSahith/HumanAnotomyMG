@@ -65,8 +65,8 @@ export function DigestiveScene3Panel({ onGrabMesh, onReleaseMesh, setIsDragging,
                 const getMat = (m) => { 
                     const c = m.clone(); 
                     if (c.isMeshStandardMaterial) {
-                        c.roughness = 0.85;
-                        c.metalness = 0.1;
+                        c.roughness = 0.95;
+                        c.metalness = 0.0;
                     }
                     c.emissiveIntensity = 0; 
                     return c; 

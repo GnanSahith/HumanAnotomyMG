@@ -45,7 +45,7 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, ac
                 }
 
                 const getMat = (m, childName = '') => { 
-                    if (!m) return new THREE.MeshStandardMaterial({ color: 0xdddddd, roughness: 0.85, metalness: 0.1 });
+                    if (!m) return new THREE.MeshStandardMaterial({ color: 0xdddddd, roughness: 0.95, metalness: 0.0 });
                     
                     let c;
                     if (m.isMeshStandardMaterial) {
@@ -63,8 +63,8 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, ac
                         });
                     }
                     
-                    c.roughness = 0.85; 
-                    c.metalness = 0.1;
+                    c.roughness = 0.95; 
+                    c.metalness = 0.0;
                     
                     // CRITICAL FBX FIXES to reveal original realistic textures:
                     // 1. Disable vertex colors. FBX exporters frequently export empty vertex color arrays as pure black, tinting the whole model black.

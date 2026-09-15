@@ -115,7 +115,7 @@ export default function ModelViewer({ activeOrgan, activeSystem }) {
                             auto-rotate
                             camera-controls
                             shadow-intensity="0.5"
-                            exposure="0.6"
+                            exposure="1.0"
                             environment-image="neutral"
                             onLoad={handleLoad}
                             style={{ width: '100%', height: '100%' }}
