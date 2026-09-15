@@ -29,8 +29,8 @@ export default function ModelViewer({ activeOrgan, activeSystem }) {
             if (viewer.model && viewer.model.materials) {
                 viewer.model.materials.forEach(material => {
                     // Force a completely matte organic look
-                    material.pbrMetallicRoughness.setRoughnessFactor(0.95);
-                    material.pbrMetallicRoughness.setMetallicFactor(0.01);
+                    material.pbrMetallicRoughness.setRoughnessFactor(0.5);
+                    material.pbrMetallicRoughness.setMetallicFactor(0.1);
                     
                     // Fix black models
                     const baseColor = material.pbrMetallicRoughness.baseColorFactor;

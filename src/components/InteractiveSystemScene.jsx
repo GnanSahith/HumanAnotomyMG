@@ -33,6 +33,7 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, ac
                 const geometry = child.geometry.clone();
                 geometry.applyMatrix4(child.matrixWorld);
                 
+                geometry.computeVertexNormals();
                 geometry.computeBoundingBox();
                 const center = new THREE.Vector3();
                 geometry.boundingBox.getCenter(center);
@@ -64,8 +65,8 @@ function InteractiveSceneCore({ scene, onSelectPart, setIsDragging, labelRef, ac
                     }
                     
                     
-                    c.roughness = 0.95; 
-                    c.metalness = 0.0;
+                    c.roughness = 0.5; 
+                    c.metalness = 0.1;
                     c.side = THREE.DoubleSide; // Fix inverted normal issues causing black meshes
                     c.flatShading = false;
                     
