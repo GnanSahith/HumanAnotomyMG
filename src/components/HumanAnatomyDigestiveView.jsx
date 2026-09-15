@@ -62,17 +62,7 @@ export function DigestiveScene3Panel({ onGrabMesh, onReleaseMesh, setIsDragging,
                 geometry.boundingBox.getCenter(center);
                 geometry.translate(-center.x, -center.y, -center.z);
 
-                const getMat = (m) => { 
-                    const c = m.clone(); 
-                    if (c.isMeshStandardMaterial) {
-                        c.roughness = 0.5;
-                        c.metalness = 0.1;
-                    } else if (c.isMeshPhongMaterial) {
-                        c.shininess = 30;
-                        if (c.specular) c.specular.setHex(0x333333);
-                    }
-                    return c; 
-                };
+                const getMat = (m) => { return m || new THREE.MeshStandardMaterial(); };
                 const mat = Array.isArray(child.material) ? child.material.map(getMat) : getMat(child.material);
                 
                 const cleanMesh = new THREE.Mesh(geometry, mat);

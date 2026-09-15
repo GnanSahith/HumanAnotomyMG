@@ -42,15 +42,7 @@ function DigestiveScene({ onSelectPart, setActiveOrganName, setIsDragging }) {
     // Clone scene once — geometry + textures shared (no VRAM duplication)
     const ownScene = React.useMemo(() => {
         const clone = scene.clone(true);
-        const getMat = (m) => { 
-            const c = m.clone(); 
-            if (c.isMeshStandardMaterial) {
-                c.roughness = 0.5;
-c.metalness = 0.1;
-            }
-            c.emissiveIntensity = 0; 
-            return c; 
-        };
+        const getMat = (m) => { return m || new THREE.MeshStandardMaterial(); };
         clone.traverse((child) => {
             if (!child.isMesh) return;
             if (Array.isArray(child.material)) {
