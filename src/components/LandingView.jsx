@@ -9,7 +9,8 @@ export default function LandingView({ onEnter, loggedInUsername }) {
     const isRestrictedUser = loggedInUsername === 'MyGnanAD';
 
     const handleBiologyClick = () => {
-        if (loggedInUsername !== 'GnanSahith@MG') {
+        const hasBiologyAccess = ['GnanSahith@MG', 'MyGnanAD', 'MGRoot01'].includes(loggedInUsername);
+        if (!hasBiologyAccess) {
             alert("Biology simulations are temporarily disabled for maintenance.");
             return;
         }
@@ -55,15 +56,15 @@ export default function LandingView({ onEnter, loggedInUsername }) {
                 
                 {/* BIOLOGY - The active application portal */}
                 <div 
-                    className={`mygnan-card glass-panel ${loggedInUsername === 'GnanSahith@MG' ? 'mygnan-card-active' : ''}`} 
+                    className={`mygnan-card glass-panel ${['GnanSahith@MG', 'MyGnanAD', 'MGRoot01'].includes(loggedInUsername) ? 'mygnan-card-active' : ''}`} 
                     onClick={handleBiologyClick}
-                    style={loggedInUsername !== 'GnanSahith@MG' ? { opacity: 0.5, cursor: 'not-allowed', filter: 'grayscale(0.8)' } : {}}
+                    style={!['GnanSahith@MG', 'MyGnanAD', 'MGRoot01'].includes(loggedInUsername) ? { opacity: 0.5, cursor: 'not-allowed', filter: 'grayscale(0.8)' } : {}}
                 >
                     <div className="mygnan-card-header">
                         <div className="mygnan-icon-container">
-                            {loggedInUsername !== 'GnanSahith@MG' ? <Lock size={38} color="#ff4d4d" /> : <Microscope size={38} color="#0a84ff" />}
+                            {!['GnanSahith@MG', 'MyGnanAD', 'MGRoot01'].includes(loggedInUsername) ? <Lock size={38} color="#ff4d4d" /> : <Microscope size={38} color="#0a84ff" />}
                         </div>
-                        {loggedInUsername === 'GnanSahith@MG' ? (
+                        {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01'].includes(loggedInUsername) ? (
                             <div style={{ background: 'rgba(10,132,255,0.2)', padding: '8px 16px', borderRadius: '100px', display: 'flex', alignItems: 'center', gap: '8px', color: '#fff', fontSize: '13px', fontWeight: 600, border: '1px solid rgba(10,132,255,0.3)' }}>
                                 Active Module <ArrowRight size={14} />
                             </div>
