@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowLeft, Play, Pause, RotateCcw, Atom, FlaskConical } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowLeft, Play, Pause, RotateCcw, Atom, FlaskConical, Info, X } from 'lucide-react';
 
 /**
  * SimulationHeader — Universal header for all simulations.
@@ -21,6 +21,16 @@ export default function SimulationHeader({
     onReset,
     subject = 'physics',
 }) {
+    const [showVideoModal, setShowVideoModal] = useState(false);
+    
+    let helpVideoUrl = null;
+    if (title && title.includes('Circuit Construction Kit')) {
+        helpVideoUrl = '/videos/Circuit Construction Kit.mp4';
+    } else if (title && title.includes('Masses and Springs')) {
+        helpVideoUrl = '/videos/Masses and Springs.mp4';
+    } else if (title && title.includes('States of Matter')) {
+        helpVideoUrl = '/videos/States of Matter.mp4';
+    }
     const isChemistry = subject === 'chemistry';
     const accentColor  = isChemistry ? '#ff375f' : '#bf5af2';
     const accentRgb    = isChemistry ? '255,55,95' : '191,90,242';
@@ -86,7 +96,7 @@ export default function SimulationHeader({
                 position: 'absolute',
                 left: '50%',
                 transform: 'translateX(-50%)',
-                pointerEvents: 'none',
+                pointerEvents: 'auto',
             }}>
                 <div style={{
                     padding: '6px',
@@ -116,6 +126,31 @@ export default function SimulationHeader({
                 }}>
                     {title || 'Simulation'}
                 </h2>
+                {helpVideoUrl && (
+                    <button
+                        onClick={() => setShowVideoModal(true)}
+                        title="How to use this simulation"
+                        style={{
+                            background: 'rgba(255,255,255,0.1)',
+                            border: '1px solid rgba(255,255,255,0.2)',
+                            borderRadius: '50%',
+                            width: '28px',
+                            height: '28px',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            cursor: 'pointer',
+                            color: '#fff',
+                            pointerEvents: 'auto',
+                            transition: 'all 0.2s',
+                            marginLeft: '4px'
+                        }}
+                        onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)' }}
+                        onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)' }}
+                    >
+                        <Info size={16} />
+                    </button>
+                )}
             </div>
 
             {/* ── RIGHT: Play/Pause + Reset ── */}
@@ -195,7 +230,62 @@ export default function SimulationHeader({
                     <RotateCcw size={13} />
                     Reset
                 </button>
+            
             </div>
+            {/* ── VIDEO MODAL ── */}
+            {showVideoModal && helpVideoUrl && (
+                <div style={{
+                    position: 'fixed',
+                    top: 0, left: 0, right: 0, bottom: 0,
+                    background: 'rgba(0,0,0,0.8)',
+                    zIndex: 9999,
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    backdropFilter: 'blur(10px)'
+                }}>
+                    <div style={{
+                        width: '80%',
+                        maxWidth: '1000px',
+                        background: '#1c1c24',
+                        borderRadius: '16px',
+                        border: `1px solid rgba(${accentRgb}, 0.3)`,
+                        overflow: 'hidden',
+                        position: 'relative',
+                        boxShadow: '0 20px 40px rgba(0,0,0,0.5)'
+                    }}>
+                        <div style={{
+                            display: 'flex',
+                            justifyContent: 'space-between',
+                            alignItems: 'center',
+                            padding: '16px 24px',
+                            borderBottom: '1px solid rgba(255,255,255,0.1)',
+                            background: 'rgba(0,0,0,0.2)'
+                        }}>
+                            <h3 style={{ margin: 0, color: '#fff', fontSize: '18px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                <Info size={20} color={accentColor} /> Help Video
+                            </h3>
+                            <button
+                                onClick={() => setShowVideoModal(false)}
+                                style={{
+                                    background: 'none', border: 'none', color: '#fff',
+                                    cursor: 'pointer', padding: '4px', display: 'flex'
+                                }}
+                            >
+                                <X size={24} />
+                            </button>
+                        </div>
+                        <div style={{ width: '100%', aspectRatio: '16/9', background: '#000' }}>
+                            <video 
+                                src={helpVideoUrl} 
+                                controls 
+                                autoPlay 
+                                style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
         </div>
     );
 }
