@@ -435,7 +435,7 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
 
     const accessLevel = React.useMemo(() => {
         const rootUsers = ['GnanSahith@MG', 'MGRoot01', 'MyGnanAD'];
-        const approvedUsers = ['CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG'];
+        const approvedUsers = ['CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG', 'Kumar', 'Rekha'];
         if (rootUsers.includes(loggedInUsername)) return 'ROOT';
         if (approvedUsers.includes(loggedInUsername)) return 'APPROVED_ONLY';
         return 'CLERK';
