@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { createPortal } from 'react-dom';
 import { ArrowLeft, Play, Pause, RotateCcw, Atom, FlaskConical, Info, X } from 'lucide-react';
 
 /**
@@ -25,11 +26,11 @@ export default function SimulationHeader({
     
     let helpVideoUrl = null;
     if (title && title.includes('Circuit Construction Kit')) {
-        helpVideoUrl = '/videos/Circuit Construction Kit.mp4';
+        helpVideoUrl = '/videos/circuit-construction-kit.mp4';
     } else if (title && title.includes('Masses and Springs')) {
-        helpVideoUrl = '/videos/Masses and Springs.mp4';
+        helpVideoUrl = '/videos/masses-and-springs.mp4';
     } else if (title && title.includes('States of Matter')) {
-        helpVideoUrl = '/videos/States of Matter.mp4';
+        helpVideoUrl = '/videos/states-of-matter.mp4';
     }
     const isChemistry = subject === 'chemistry';
     const accentColor  = isChemistry ? '#ff375f' : '#bf5af2';
@@ -233,12 +234,13 @@ export default function SimulationHeader({
             
             </div>
             {/* ── VIDEO MODAL ── */}
-            {showVideoModal && helpVideoUrl && (
+            
+            {showVideoModal && helpVideoUrl && createPortal(
                 <div style={{
                     position: 'fixed',
                     top: 0, left: 0, right: 0, bottom: 0,
                     background: 'rgba(0,0,0,0.8)',
-                    zIndex: 9999,
+                    zIndex: 999999,
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
@@ -284,8 +286,7 @@ export default function SimulationHeader({
                             />
                         </div>
                     </div>
-                </div>
-            )}
+                </div>, document.body)}
         </div>
     );
 }
