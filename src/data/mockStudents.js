@@ -7,4 +7,6 @@ export const mockStudents = [
     { username: 'GOWTHAM', password: 'GOWTHAM@123', grade: '9 th', parent: '(Office)', phone: '' },
     { username: 'SAHITI', password: 'SAHITI@123', grade: '5 th', parent: '(Office)', phone: '' },
     { username: 'KrishnaBava', password: 'KrishnaBava@123', grade: '', parent: '', phone: '' },
+    { username: 'Kumar', password: 'kumar@MG', grade: '', parent: '', phone: '' },
+    { username: 'Rekha', password: 'Rekha@MG', grade: '', parent: '', phone: '' }
 ];

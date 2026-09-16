@@ -503,6 +503,8 @@ function App() {
         ) : null
       ) : appMode === 'dashboard' ? (
         <ParentDashboardView 
+          isStudentView={localStorage.getItem('parent_logged_in') !== 'true'}
+          studentUsername={loggedInUsername}
           onBack={handleReturnToPortal} 
           onGoToSimulations={(module, simId, categoryId) => handleNavigateToSimulation(module, simId, categoryId)}
           onLogout={() => {

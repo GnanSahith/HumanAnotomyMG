@@ -6,10 +6,16 @@ import { mockStudents } from '../data/mockStudents';
 import { db } from '../firebase';
 import { collection, query, getDocs, orderBy, limit, addDoc, serverTimestamp, doc, getDoc } from 'firebase/firestore';
 
-const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
+const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout, isStudentView, studentUsername }) => {
   const [timeRange, setTimeRange] = useState('weekly');
   const [showCertificatesModal, setShowCertificatesModal] = useState(false);
-  const [selectedStudent, setSelectedStudent] = useState(mockStudents[0]);
+  const [selectedStudent, setSelectedStudent] = useState(() => {
+    if (isStudentView && studentUsername) {
+      const student = mockStudents.find(s => s.username === studentUsername);
+      if (student) return student;
+    }
+    return mockStudents[0];
+  });
   
   const [stats, setStats] = useState({
       totalSeconds: 0,
@@ -21,6 +27,15 @@ const ParentDashboardView = ({ onBack, onGoToSimulations, onLogout }) => {
   const [activities, setActivities] = useState([]);
   const [subjectData, setSubjectData] = useState([]);
   const [loading, setLoading] = useState(true);
+  
+  useEffect(() => {
+      if (isStudentView && studentUsername) {
+          const student = mockStudents.find(s => s.username === studentUsername);
+          if (student && student.username !== selectedStudent?.username) {
+              setSelectedStudent(student);
+          }
+      }
+  }, [isStudentView, studentUsername]);
 
   useEffect(() => {
       const fetchAnalytics = async () => {
