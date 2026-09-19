@@ -547,156 +547,104 @@ const CustomGravityAndOrbits = ({
       }}></span>}
             </span>
         </label>;
+  
   return <div style={{
     width: '100%',
     height: '100%',
-    position: 'relative',
-    background: '#0a0a1a'
+    display: 'flex',
+    background: '#0a0a1a',
+    overflow: 'hidden',
+    color: '#fff',
+    fontFamily: "'Inter', sans-serif"
   }}>
-            {/* Left Panel: Toggles and Time */}
-            
+    {/* LEFT PANEL (15%) - Formula Area */}
+    <div style={{ width: '15%', height: '100%', borderRight: '1px solid rgba(255,255,255,0.1)', background: 'rgba(20,20,30,0.9)', padding: '20px', display: 'flex', flexDirection: 'column', overflowY: 'auto' }}>
+      <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: '10px' }}>
+        <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 600, color: '#9b59b6' }}>A Brief About Gravity</h3>
+        <button 
+          title="Gravity is an attractive force that exists between all objects with mass. It is what keeps the planets in orbit around the Sun and the Moon around the Earth." 
+          style={{ cursor: 'pointer', background: 'transparent', border: 'none', color: '#fff', fontSize: '16px' }}
+        >ℹ️</button>
+      </div>
+      
+      <p style={{ fontSize: '12px', color: '#aaa', lineHeight: 1.4, marginBottom: '20px' }}>
+        Newton's law of universal gravitation states that every particle attracts every other particle in the universe with a force proportional to the product of their masses and inversely proportional to the square of the distance between their centers.
+      </p>
 
-            {/* Right Panel: Scenarios */}
-            <div style={{
-      position: 'absolute',
-      top: '20px',
-      right: '20px',
-      background: 'rgba(20, 20, 30, 0.8)',
-      border: '1px solid rgba(255,255,255,0.1)',
-      backdropFilter: 'blur(12px)',
-      padding: '20px',
-      borderRadius: '16px',
-      width: '260px',
-      zIndex: 10,
-      color: 'white',
-      fontFamily: "'Inter', sans-serif"
-    }}>
-                <h3 style={{
-        margin: '0 0 15px 0',
-        fontSize: '16px',
-        borderBottom: '1px solid rgba(255,255,255,0.1)',
-        paddingBottom: '10px'
-      }}>
-                    Scenarios
-                </h3>
-                
-                <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '10px',
-        marginBottom: '20px'
-      }}>
-                    {[{
-          id: SCENARIOS.SUN_EARTH,
-          label: 'Sun and Earth'
-        }, {
-          id: SCENARIOS.SUN_EARTH_MOON,
-          label: 'Sun, Earth, and Moon'
-        }, {
-          id: SCENARIOS.EARTH_MOON,
-          label: 'Earth and Moon'
-        }, {
-          id: SCENARIOS.EARTH_SATELLITE,
-          label: 'Earth and Satellite'
-        }].map(s => <button key={s.id} onClick={() => setScenario(s.id)} style={{
-          background: scenario === s.id ? 'rgba(52, 152, 219, 0.4)' : 'rgba(255,255,255,0.05)',
-          border: `1px solid ${scenario === s.id ? '#3498db' : 'rgba(255,255,255,0.1)'}`,
-          color: 'white',
-          padding: '10px 15px',
-          borderRadius: '8px',
-          cursor: 'pointer',
-          textAlign: 'left',
-          transition: 'all 0.2s',
-          fontSize: '14px'
-        }} onMouseEnter={e => {
-          if (scenario !== s.id) e.currentTarget.style.background = 'rgba(255,255,255,0.1)';
-        }} onMouseLeave={e => {
-          if (scenario !== s.id) e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
-        }}>
-                            {s.label}
-                        </button>)}
-                </div>
+      <div style={{ marginBottom: '20px' }}>
+        <h4 style={{ margin: '0 0 10px 0', fontSize: '14px', color: '#fff' }}>Formula</h4>
+        <div style={{ background: '#000', padding: '15px 10px', borderRadius: '8px', fontSize: '14px', textAlign: 'center', fontFamily: 'monospace' }}>
+          F = G * (m1 * m2) / r²
+        </div>
+      </div>
+    </div>
 
-                <h3 style={{
-        margin: '0 0 15px 0',
-        fontSize: '16px',
-        borderBottom: '1px solid rgba(255,255,255,0.1)',
-        paddingBottom: '10px'
-      }}>
-                    Global Properties
-                </h3>
-                
-                {/* Gravity Toggle */}
-                <div style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '12px',
-        padding: '12px',
-        background: 'rgba(0,0,0,0.3)',
-        borderRadius: '8px',
-        cursor: 'pointer'
-      }} onClick={() => setGravityEnabled(!gravityEnabled)}>
-                    <div style={{
-          width: '40px',
-          height: '24px',
-          background: gravityEnabled ? '#2ecc71' : 'rgba(255,255,255,0.2)',
-          borderRadius: '12px',
-          position: 'relative',
-          transition: 'background 0.3s'
-        }}>
-                        <div style={{
-            position: 'absolute',
-            top: '2px',
-            left: gravityEnabled ? '18px' : '2px',
-            width: '20px',
-            height: '20px',
-            background: 'white',
-            borderRadius: '50%',
-            transition: 'left 0.3s'
-          }} />
-                    </div>
-                    <span style={{
-          fontSize: '14px',
-          fontWeight: '500'
-        }}>Gravity {gravityEnabled ? 'ON' : 'OFF'}</span>
-                </div>
-            </div>
+    {/* CENTER PANEL (70%) - Simulation Area */}
+    <div style={{ width: '70%', height: '100%', position: 'relative' }}>
+      
+      <div style={{ position: 'absolute', top: '20px', left: '20px', zIndex: 10, display: 'flex', alignItems: 'center', gap: '15px' }}>
+        <button onClick={onBack} style={{ background: 'rgba(255,255,255,0.1)', border: 'none', color: '#fff', padding: '10px', borderRadius: '50%', cursor: 'pointer', display: 'flex' }}>
+          <ArrowLeft size={20} />
+        </button>
+        <div>
+          <h2 style={{ margin: 0, fontSize: '20px' }}>{title || 'Gravity and Orbits'}</h2>
+        </div>
+      </div>
 
-            {/* Canvas Container */}
-            <div style={{
-      position: 'absolute',
-      inset: 0,
-      zIndex: 1
-    }}>
-                
-            <div style={{
-        position: 'absolute',
-        top: '80px',
-        bottom: '20px',
-        left: '20px',
-        right: '390px',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
-      }}>
-                <div style={{
-          width: 800,
-          height: 600,
-          transform: `scale(${Math.min(Math.max(windowSize.w - 410, 100) / 800, Math.max(windowSize.h - 100, 100) / 600)})`,
-          transformOrigin: 'center center'
-        }}>
-                    <canvas ref={canvasRef} style={{
-            width: '100%',
-            height: '100%', objectFit: 'contain',
-            display: 'block',
-            cursor: 'crosshair',
-            borderRadius: '16px',
-            boxShadow: '0 10px 30px rgba(0,0,0,0.5)'
-          }} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerLeave={handlePointerUp} />
-                </div>
-            </div>
-        
-            </div>
-        </div>;
+      <div style={{ position: 'absolute', top: '20px', right: '20px', zIndex: 10, display: 'flex', gap: '10px' }}>
+        <button onClick={() => setIsPlaying(!isPlaying)} style={{ background: isPlaying ? 'rgba(231,76,60,0.2)' : 'rgba(46,204,113,0.2)', color: isPlaying ? '#e74c3c' : '#2ecc71', border: `1px solid ${isPlaying ? '#e74c3c' : '#2ecc71'}`, padding: '10px 20px', borderRadius: '8px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 'bold' }}>
+          {isPlaying ? <><Pause size={18} /> Pause</> : <><Play size={18} /> Play</>}
+        </button>
+        <button onClick={() => {
+            setScenario(scenario); // Re-trigger scenario reset
+            if (scenario === 'custom') setScenario('sun_earth');
+        }} style={{ background: 'rgba(255,255,255,0.1)', border: '1px solid rgba(255,255,255,0.2)', color: '#fff', padding: '10px 20px', borderRadius: '8px', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '8px', fontWeight: 'bold' }}>
+          <RotateCcw size={18} /> Reset
+        </button>
+      </div>
+
+      <div style={{ position: 'absolute', top: '80px', bottom: '20px', left: '20px', right: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <canvas ref={canvasRef} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain', display: 'block', cursor: 'crosshair', borderRadius: '16px' }} onPointerDown={handlePointerDown} onPointerMove={handlePointerMove} onPointerUp={handlePointerUp} onPointerLeave={handlePointerUp} />
+        </div>
+      </div>
+    </div>
+
+    {/* RIGHT PANEL (15%) - Parameters Area */}
+    <div style={{ width: '15%', height: '100%', borderLeft: '1px solid rgba(255,255,255,0.1)', background: 'rgba(20,20,30,0.9)', padding: '20px', display: 'flex', flexDirection: 'column', gap: '20px', overflowY: 'auto' }}>
+      <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 600, color: '#fff', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
+        <Settings2 size={16} style={{ display: 'inline', verticalAlign: 'middle', marginRight: '5px' }} /> Scenarios
+      </h3>
+
+      <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+        {[
+          { id: SCENARIOS.SUN_EARTH, label: 'Sun & Earth' },
+          { id: SCENARIOS.SUN_EARTH_MOON, label: 'Sun, Earth, Moon' },
+          { id: SCENARIOS.EARTH_MOON, label: 'Earth & Moon' },
+          { id: SCENARIOS.EARTH_SATELLITE, label: 'Earth & Satellite' }
+        ].map(s => (
+          <button key={s.id} onClick={() => setScenario(s.id)} style={{
+            background: scenario === s.id ? 'rgba(52, 152, 219, 0.4)' : 'rgba(255,255,255,0.05)',
+            border: `1px solid ${scenario === s.id ? '#3498db' : 'rgba(255,255,255,0.1)'}`,
+            color: 'white', padding: '10px', borderRadius: '8px', cursor: 'pointer', textAlign: 'left', fontSize: '12px'
+          }}>
+            {s.label}
+          </button>
+        ))}
+      </div>
+
+      <h3 style={{ margin: '10px 0 0 0', fontSize: '16px', fontWeight: 600, color: '#fff', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
+        Global
+      </h3>
+
+      <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '12px', background: 'rgba(0,0,0,0.3)', borderRadius: '8px', cursor: 'pointer' }} onClick={() => setGravityEnabled(!gravityEnabled)}>
+        <div style={{ width: '40px', height: '24px', background: gravityEnabled ? '#2ecc71' : 'rgba(255,255,255,0.2)', borderRadius: '12px', position: 'relative' }}>
+          <div style={{ position: 'absolute', top: '2px', left: gravityEnabled ? '18px' : '2px', width: '20px', height: '20px', background: 'white', borderRadius: '50%' }} />
+        </div>
+        <span style={{ fontSize: '14px', fontWeight: '500' }}>Gravity {gravityEnabled ? 'ON' : 'OFF'}</span>
+      </div>
+    </div>
+  </div>;
 };
+
 export default CustomGravityAndOrbits;
