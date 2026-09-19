@@ -339,7 +339,7 @@ function App() {
       className="mobile-settings-modal"
       onClick={(e) => e.stopPropagation()}
       style={{
-        background: 'linear-gradient(145deg, #1e293b, #0f172a)', // Solid dark, barely any glass
+        background: 'rgba(15, 23, 42, 0.75)', backdropFilter: 'blur(24px)', WebkitBackdropFilter: 'blur(24px)', // Restored frosted glass
         border: '1px solid rgba(255,255,255,0.15)',
         borderRadius: '24px',
         padding: '30px 24px',
