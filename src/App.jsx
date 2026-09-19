@@ -260,80 +260,142 @@ function App() {
             style={{ height: '45px', objectFit: 'contain' }} 
           />
         </div>
-        
         <div className="header-actions" style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
-            
-            <div className="custom-dropdown-container" ref={dropdownRef} onClick={() => setIsSettingsOpen(!isSettingsOpen)}>
-                <button
-                  style={{
-                    background: 'rgba(255, 255, 255, 0.1)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    borderRadius: '50%',
-                    width: '40px',
-                    height: '40px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'var(--text-primary)',
-                    cursor: 'pointer',
-                    transition: 'all 0.3s ease'
-                  }}
-                  className="settings-btn"
-                >
-                  <Settings size={20} />
-                </button>
-                
-                {isSettingsOpen && (
-                  <div className="custom-dropdown-menu" style={{ width: '220px', padding: '10px', right: 0 }}>
-                    {/* Theme Toggle inside settings */}
-                    <div className="dropdown-item" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} onClick={(e) => { e.stopPropagation(); setTheme(theme === 'dark' ? 'light' : 'dark'); }}>
-                      <span>Theme</span>
-                      {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
-                    </div>
-                    
-                    {/* Language Switcher inside settings */}
-                    <div style={{ padding: '8px 12px', borderBottom: '1px solid rgba(255,255,255,0.1)', marginBottom: '4px' }}>
-                      <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginBottom: '4px' }}>Language</div>
-                      <div style={{ display: 'flex', gap: '4px' }}>
-                        <button className={`dropdown-item ${currentLanguage === 'en' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('en'); }}>EN</button>
-                        <button className={`dropdown-item ${currentLanguage === 'hi' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('hi'); }}>HI</button>
-                        <button className={`dropdown-item ${currentLanguage === 'te' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('te'); }}>TE</button>
-                      </div>
-                    </div>
+            <div className="custom-dropdown-container hide-on-mobile" ref={dropdownRef} onClick={() => setIsLangDropdownOpen(!isLangDropdownOpen)}>
+              <Globe size={18} />
+              <span>
+                {currentLanguage === 'en' ? 'English' : currentLanguage === 'hi' ? 'हिन्दी' : 'తెలుగు'}
+              </span>
+              <ChevronDown size={16} className={`dropdown-chevron ${isLangDropdownOpen ? 'open' : ''}`} />
 
-                    {/* Parent Dashboard inside settings */}
-                    {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01', 'gnansahithmg@admin.local', 'mygnanad@admin.local', 'mgroot01@admin.local', 'CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG', 'charankumarmg@student.local', 'sandhyarekhamg@student.local', 'vishnukranthimg@student.local'].includes(loggedInUsername) && (
-                      <div className="dropdown-item" onClick={(e) => {
-                        e.stopPropagation();
-                        setIsSettingsOpen(false);
-                        if (localStorage.getItem('parent_logged_in') === 'true') {
-                          setAppMode('dashboard');
-                        } else {
-                          setShowParentLoginModal(true);
-                        }
-                      }}>
-                        <LayoutDashboard size={16} style={{ marginRight: '8px', verticalAlign: 'text-bottom' }} />
-                        Parent Dashboard
-                      </div>
-                    )}
-                    
-                    {/* User Profile Fast Switch (Root only) */}
-                    {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01', 'gnansahithmg@admin.local', 'mygnanad@admin.local', 'mgroot01@admin.local'].includes(loggedInUsername) ? (
-                      <div style={{ padding: '8px 12px' }}>
-                        <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginBottom: '4px' }}>Switch User</div>
+              {isLangDropdownOpen && (
+                <div className="custom-dropdown-menu">
+                  <div className={`dropdown-item ${currentLanguage === 'en' ? 'active' : ''}`} onClick={(e) => { e.stopPropagation(); toggleLanguage('en'); setIsLangDropdownOpen(false); }}>English</div>
+                  <div className={`dropdown-item ${currentLanguage === 'hi' ? 'active' : ''}`} onClick={(e) => { e.stopPropagation(); toggleLanguage('hi'); setIsLangDropdownOpen(false); }}>हिन्दी</div>
+                  <div className={`dropdown-item ${currentLanguage === 'te' ? 'active' : ''}`} onClick={(e) => { e.stopPropagation(); toggleLanguage('te'); setIsLangDropdownOpen(false); }}>తెలుగు</div>
+                </div>
+              )}
+            </div>
+
+            <button className="hide-on-mobile"
+              onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+              style={{
+                background: 'rgba(255, 255, 255, 0.1)',
+                border: '1px solid rgba(255, 255, 255, 0.2)',
+                borderRadius: '50%',
+                width: '40px',
+                height: '40px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: 'var(--text-primary)',
+                cursor: 'pointer',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.2)'; e.currentTarget.style.color = 'var(--accent)'; }}
+              onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255, 255, 255, 0.1)'; e.currentTarget.style.color = 'var(--text-primary)'; }}
+            >
+              {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+            </button>
+
+            
+            {/* MOBILE ONLY SETTINGS MENU */}
+            <div className="custom-dropdown-container show-on-mobile" style={{ display: 'none' }} onClick={(e) => { e.stopPropagation(); setIsSettingsOpen(!isSettingsOpen); }}>
+              <button
+                style={{
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)',
+                  borderRadius: '50%',
+                  width: '34px',
+                  height: '34px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  color: 'var(--text-primary)',
+                  cursor: 'pointer'
+                }}
+              >
+                <Settings size={18} />
+              </button>
+              
+              {isSettingsOpen && (
+                <div className="custom-dropdown-menu" style={{ width: '200px', padding: '10px', right: 0 }}>
+                  <div className="dropdown-item" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} onClick={(e) => { e.stopPropagation(); setTheme(theme === 'dark' ? 'light' : 'dark'); setIsSettingsOpen(false); }}>
+                    <span>Theme</span>
+                    {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+                  </div>
+                  
+                  <div style={{ padding: '8px 12px', borderBottom: '1px solid rgba(255,255,255,0.1)', marginBottom: '4px' }}>
+                    <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginBottom: '4px' }}>Language</div>
+                    <div style={{ display: 'flex', gap: '4px' }}>
+                      <button className={`dropdown-item ${currentLanguage === 'en' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('en'); setIsSettingsOpen(false); }}>EN</button>
+                      <button className={`dropdown-item ${currentLanguage === 'hi' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('hi'); setIsSettingsOpen(false); }}>HI</button>
+                      <button className={`dropdown-item ${currentLanguage === 'te' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('te'); setIsSettingsOpen(false); }}>TE</button>
+                    </div>
+                  </div>
+
+                  {isAuthenticated && (
+                    <div style={{ padding: '8px 12px', fontSize: '12px', color: 'var(--text-secondary)' }}>
+                      User: <strong style={{color: '#fff'}}>{loggedInUsername.replace('@MG', '')}</strong>
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+
+            {isAuthenticated ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01', 'gnansahithmg@admin.local', 'mygnanad@admin.local', 'mgroot01@admin.local'].includes(loggedInUsername) ? (
+                  <div className="custom-dropdown-container hide-on-mobile" ref={profileDropdownRef} onClick={() => setIsProfileDropdownOpen(!isProfileDropdownOpen)}>
+                    <span className="user-chip-text hide-on-mobile" style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span className="hide-on-mobile">{loggedInUsername.replace('@MG', '')}</span> <ChevronDown size={12} className="hide-on-mobile" />
+                      <User size={16} className="show-on-mobile" style={{ display: 'none' }} />
+                    </span>
+                    {isProfileDropdownOpen && (
+                      <div className="custom-dropdown-menu" style={{ width: '150px' }}>
+                        <div className="dropdown-item" style={{ color: '#0a84ff', fontWeight: 600, borderBottom: '1px solid rgba(255,255,255,0.1)', marginBottom: '4px', paddingBottom: '8px' }} onClick={(e) => { e.stopPropagation(); setIsProfileDropdownOpen(false); setAppMode('dashboard'); }}>Student Analytics</div>
                         <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('CharanKumar@MG'); }}>CharanKumar</div>
                         <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('SandhyaRekha@MG'); }}>SandhyaRekha</div>
+                        <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('VishnuKranthi@MG'); }}>VishnuKranthi</div>
                         <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('MyGnanAD'); }}>MyGnanAD</div>
-                      </div>
-                    ) : (
-                      <div style={{ padding: '8px 12px', fontSize: '13px', color: 'var(--text-secondary)' }}>
-                        Logged in as: <br/><strong style={{color: '#fff'}}>{loggedInUsername.replace('@MG', '')}</strong>
+                        <div className="dropdown-item" onClick={(e) => { e.stopPropagation(); handleFastSwitch('MGRoot01'); }}>MGRoot01</div>
                       </div>
                     )}
                   </div>
+                ) : (
+                  <span className="user-chip-text hide-on-mobile" style={{ fontSize: '12px', fontWeight: 600, color: '#fff', background: 'rgba(255,255,255,0.2)', padding: '4px 8px', borderRadius: '8px' }}>
+                    <span className="hide-on-mobile">{loggedInUsername.replace('@MG', '')}</span>
+                    <User size={16} className="show-on-mobile" style={{ display: 'none' }} />
+                  </span>
                 )}
-              </div>
-            {isAuthenticated ? (
+                {['GnanSahith@MG', 'MyGnanAD', 'MGRoot01', 'gnansahithmg@admin.local', 'mygnanad@admin.local', 'mgroot01@admin.local', 'CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG', 'charankumarmg@student.local', 'sandhyarekhamg@student.local', 'vishnukranthimg@student.local'].includes(loggedInUsername) && (
+                  <button className="hide-on-mobile"
+                    onClick={() => {
+                      if (localStorage.getItem('parent_logged_in') === 'true') {
+                        setAppMode('dashboard');
+                      } else {
+                        setShowParentLoginModal(true);
+                      }
+                    }}
+                    style={{
+                      background: 'rgba(255,255,255,0.1)',
+                      border: '1px solid rgba(255,255,255,0.2)',
+                      borderRadius: '20px',
+                      padding: '8px 16px',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      fontWeight: 600,
+                      fontSize: '13px',
+                      transition: 'all 0.2s ease',
+                      marginLeft: '4px'
+                    }}
+                    onMouseEnter={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)'; e.currentTarget.style.borderColor = '#0a84ff'; }}
+                    onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.2)'; }}
+                  >
+                    <span className="hide-on-mobile">Parent Dashboard</span>
+                    <LayoutDashboard size={16} className="show-on-mobile" style={{ display: 'none' }} />
+                  </button>
+                )}
                 <button
                   onClick={handleLogout}
                   style={{
@@ -351,27 +413,55 @@ function App() {
                 >
                   <span className="hide-on-mobile">Logout</span> <LogOut size={16} />
                 </button>
-            ) : (
+              </div>
+            ) : isSignedIn ? (
+              <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+                <div style={{
+                  width: '36px', height: '36px', borderRadius: '50%',
+                  background: 'var(--accent)', color: '#fff',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontWeight: 'bold', fontSize: '18px'
+                }}>
+                  {user?.email?.charAt(0).toUpperCase()}
+                </div>
                 <button
-                  onClick={() => setShowLoginModal(true)}
+                  onClick={handleLogout}
                   style={{
-                    background: 'var(--accent)',
-                    border: 'none',
+                    background: 'rgba(255, 77, 77, 0.1)',
+                    border: '1px solid rgba(255, 77, 77, 0.2)',
                     borderRadius: '20px',
-                    padding: '8px 20px',
-                    color: '#fff',
+                    padding: '8px 16px',
+                    color: '#ff4d4d',
                     cursor: 'pointer',
-                    fontWeight: 600,
-                    fontSize: '14px',
-                    display: 'flex', alignItems: 'center', gap: '8px',
-                    transition: 'all 0.2s ease'
+                    display: 'flex', alignItems: 'center', gap: '6px',
+                    fontWeight: '600'
                   }}
                 >
-                  <span className="hide-on-mobile">Login</span> <LogOut size={16} />
+                  <span className="hide-on-mobile">Logout</span> <LogOut size={16} />
                 </button>
+              </div>
+            ) : (
+              <button
+                onClick={() => setShowLoginModal(true)}
+                style={{
+                  background: 'var(--accent)',
+                  border: 'none',
+                  borderRadius: '20px',
+                  padding: '8px 20px',
+                  color: '#fff',
+                  cursor: 'pointer',
+                  fontWeight: 600,
+                  fontSize: '14px',
+                  transition: 'all 0.2s ease',
+                  boxShadow: '0 4px 14px 0 rgba(10, 132, 255, 0.39)',
+                  marginLeft: '8px'
+                }}
+              >
+                Sign In
+              </button>
             )}
-        </div>
-      </header>
+          </div>
+        </header>
 
       {/* Breadcrumbs for deep navigation */}
       {activeSystem && (

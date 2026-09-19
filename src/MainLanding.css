@@ -447,3 +447,32 @@
     transform: scale(0.85) !important; /* Lock to base scale */
   }
 }
+
+@media (max-width: 900px) {
+  /* Kill hover entirely on mobile */
+  .board-quadrant:hover, .disabled-board:hover, .split-half:hover, .simulations-half:hover {
+    transform: none !important;
+    background: inherit;
+    box-shadow: none !important;
+  }
+  .board-quadrant:hover .board-icon, .split-half:hover .split-icon {
+    transform: none !important;
+  }
+
+  /* Add POP animations strictly on active (click) for mobile */
+  .board-quadrant:active {
+    background: rgba(59, 130, 246, 0.2) !important;
+    border-color: rgba(59, 130, 246, 0.5) !important;
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.4) !important;
+    transform: scale(0.96) !important;
+    transition: transform 0.1s ease, box-shadow 0.1s ease !important;
+  }
+  .board-quadrant:active .board-icon {
+    transform: scale(0.8) !important;
+  }
+  
+  .split-half:active .split-content {
+    transform: scale(0.96) !important;
+    transition: transform 0.1s ease !important;
+  }
+}
