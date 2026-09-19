@@ -956,7 +956,7 @@ p {
 /* ========================================= */
 /* MOBILE RESPONSIVE FIXES (THE "GLITCH" PATCH) */
 /* ========================================= */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* 1. Fix Mathematics Portal Padding & Crowding */
   .maths-layout {
     padding: 80px 16px 20px 16px !important;
@@ -1241,7 +1241,7 @@ model-viewer {
 /* =========================================================================
    MOBILE RESPONSIVENESS (9:16)
    ========================================================================= */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   /* Top Navigation */
   
@@ -1722,7 +1722,7 @@ model-viewer {
 .grid-on-desktop { display: grid !important; }
 
 /* Mobile View (Max Width 768px) */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* Visibility */
   .hide-on-mobile { display: none !important; }
   .show-on-mobile { display: block !important; }
@@ -1769,7 +1769,7 @@ model-viewer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   /* Make header action buttons slightly smaller on mobile to prevent overflow */
   .header-actions button,
   .header-actions .custom-dropdown-container {
