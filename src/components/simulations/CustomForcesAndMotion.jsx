@@ -190,6 +190,7 @@ Motion is the change in position of an object with respect to time."
           <linearGradient id="boxGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#8d6e63" /><stop offset="100%" stopColor="#5d4037" /></linearGradient>
           <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#2a2a35" /><stop offset="100%" stopColor="#12121A" /></linearGradient>
           <pattern id="woodPattern" width="200" height="40" patternUnits="userSpaceOnUse" patternTransform={`translate(${groundOffset}, 0)`}><path d="M0 10 Q 50 20 100 10 T 200 10 M0 30 Q 50 40 100 30 T 200 30" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="2" /></pattern>
+          <pattern id="hazardStripe" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="10" height="20" fill="#f1c40f"/><rect x="10" width="10" height="20" fill="#222"/></pattern>
         </defs>
 
         <g transform="translate(0, 100)">
@@ -220,9 +221,34 @@ Motion is the change in position of an object with respect to time."
             </g>
             <rect x="-60" y="-20" width="120" height="10" rx="4" fill="#ff375f" />
             
-            {/* The Crate - Replaced with the more industrial looking box per user spec implicitly by text (needs PNG for full effect) */}
-            <rect x="-50" y="-120" width="100" height="100" rx="8" fill="url(#boxGrad)" stroke="#4e342e" strokeWidth="4" />
-            <text x="0" y="-55" fill="#fff" fontSize="24" fontWeight="bold" textAnchor="middle">{mass} kg</text>
+            {/* The Industrial Metal Box on Wheels */}
+            {/* Trolley Base */}
+            <rect x="-80" y="-30" width="160" height="15" rx="5" fill="url(#hazardStripe)" stroke="#2c3e50" strokeWidth="3" />
+            
+            {/* Trolley Wheels */}
+            <g transform="translate(-50, -10)">
+              <circle cx="0" cy="0" r="16" fill="#2c3e50" stroke="#7f8c8d" strokeWidth="4" />
+              <circle cx="0" cy="0" r="6" fill="#f1c40f" />
+              <line x1="0" y1="-16" x2="0" y2="16" stroke="#bdc3c7" strokeWidth="3" transform={`rotate(${boxX * 1.5})`} />
+            </g>
+            <g transform="translate(50, -10)">
+              <circle cx="0" cy="0" r="16" fill="#2c3e50" stroke="#7f8c8d" strokeWidth="4" />
+              <circle cx="0" cy="0" r="6" fill="#f1c40f" />
+              <line x1="0" y1="-16" x2="0" y2="16" stroke="#bdc3c7" strokeWidth="3" transform={`rotate(${boxX * 1.5})`} />
+            </g>
+            
+            {/* Main Metal Box */}
+            <rect x="-60" y="-130" width="120" height="100" rx="12" fill="#95a5a6" stroke="#7f8c8d" strokeWidth="4" />
+            <rect x="-50" y="-120" width="100" height="80" rx="8" fill="#ecf0f1" stroke="#bdc3c7" strokeWidth="2" />
+            <path d="M -40 -110 L 40 -110 M -40 -100 L 40 -100 M -40 -90 L 40 -90" stroke="#bdc3c7" strokeWidth="4" strokeLinecap="round" />
+            
+            {/* Side handles/bumpers */}
+            <rect x="-70" y="-95" width="10" height="30" rx="5" fill="#3498db" stroke="#2980b9" strokeWidth="3" />
+            <rect x="60" y="-95" width="10" height="30" rx="5" fill="#e74c3c" stroke="#c0392b" strokeWidth="3" />
+
+            {/* Mass Label */}
+            <rect x="-35" y="-75" width="70" height="30" rx="6" fill="#2c3e50" />
+            <text x="0" y="-55" fill="#fff" fontSize="18" fontWeight="bold" textAnchor="middle">{mass} kg</text>
             
             {renderArrow(0, -160, appliedForce, '#ff9f0a', `Applied: ${Math.round(appliedForce)}N`, 0.4)}
             {renderArrow(0, 15, frictionForceVisual, '#ff375f', `Friction: ${Math.round(frictionForceVisual)}N`, 0.4, 25)}

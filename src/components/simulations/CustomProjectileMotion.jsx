@@ -343,10 +343,9 @@ export default function CustomProjectileMotion({
 
         <clipPath id="simBoxClip"><rect x="-400" y="-1050" width="2800" height="1300" rx="24" /></clipPath>
         <g clipPath="url(#simBoxClip)">
-          <rect x="-400" y="-1050" width="2800" height="1050" fill="#151522" />
-          <rect x="-400" y="-1050" width="2800" height="1050" fill="url(#svgGrid)" />
-          <rect x="-400" y="0" width="2800" height="250" fill="#132e1b" />
-          <line x1="-400" y1="0" x2="2400" y2="0" stroke="#30d158" strokeWidth="6" />
+          <image href="/assets/physics_landscape_bg.jpg" x="-400" y="-1050" width="2800" height="1300" preserveAspectRatio="xMidYMid slice" />
+          {/* Subtle overlay to ensure trail visibility */}
+          <rect x="-400" y="-1050" width="2800" height="1300" fill="rgba(0,0,0,0.3)" />
         </g>
 
         <rect x="-400" y="-1050" width="2800" height="1300" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="6" rx="24" />
@@ -367,10 +366,31 @@ export default function CustomProjectileMotion({
         
         {/* Launcher */}
         <g transform={`translate(0, ${-(height * scale)}) rotate(${-angle})`}>
-          <rect x="-30" y="-30" width="130" height="60" fill="rgba(255,255,255,0.1)" rx="12" />
-          <circle cx="0" cy="0" r="38" fill="var(--accent)" />
+          {/* Hopper / Basket Rack */}
+          <path d="M -80 -90 L -20 -30 M -100 -70 L -40 -10 M -120 -50 L -60 10 M -70 -100 L -130 -40" stroke="#7f8c8d" strokeWidth="6" strokeLinecap="round" />
+          {/* Tennis balls in basket */}
+          <circle cx="-70" cy="-70" r="12" fill="#f1c40f" />
+          <circle cx="-90" cy="-50" r="12" fill="#f1c40f" />
+          <circle cx="-50" cy="-50" r="12" fill="#f1c40f" />
+          <circle cx="-70" cy="-30" r="12" fill="#f1c40f" />
+          
+          {/* Main orange body */}
+          <path d="M -50 25 L 90 20 L 100 -20 L -50 -25 Z" fill="#e67e22" stroke="#d35400" strokeWidth="4" strokeLinejoin="round" />
+          
+          {/* Back housing */}
+          <path d="M -70 35 L -30 30 L -30 -30 L -70 -35 Z" fill="#2c3e50" stroke="#1a252f" strokeWidth="4" strokeLinejoin="round" />
+          
+          {/* Front spinning wheels (black tires) */}
+          <circle cx="100" cy="-30" r="28" fill="#2c3e50" stroke="#7f8c8d" strokeWidth="6" />
+          <circle cx="100" cy="30" r="28" fill="#2c3e50" stroke="#7f8c8d" strokeWidth="6" />
+          
+          {/* Side panel detailing */}
+          <circle cx="-50" cy="0" r="18" fill="#34495e" stroke="#1a252f" strokeWidth="3" />
+          <circle cx="0" cy="0" r="12" fill="#34495e" stroke="#1a252f" strokeWidth="2" />
+          <circle cx="40" cy="0" r="12" fill="#34495e" stroke="#1a252f" strokeWidth="2" />
+          
           {/* Angle Label inside launcher */}
-          <text x="0" y="10" fill="#fff" fontSize="24" textAnchor="middle" transform={`rotate(${angle})`}>{angle}°</text>
+          <text x="-50" y="7" fill="#fff" fontSize="20" fontWeight="bold" textAnchor="middle" transform={`rotate(${angle})`}>{angle}°</text>
         </g>
         {/* Angle Label near launcher */}
         <text x="60" y={-(height * scale) - 60} fill="#f1c40f" fontSize="30">Angle: {angle}°</text>
