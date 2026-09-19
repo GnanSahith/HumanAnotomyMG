@@ -52,11 +52,12 @@
   backdrop-filter: blur(5px);
 }
 
-.board-quadrant:hover {
-  background: rgba(59, 130, 246, 0.1);
-  border-color: rgba(59, 130, 246, 0.3);
-  box-shadow: 0 10px 40px rgba(59, 130, 246, 0.15);
-  transform: translateY(-5px);
+.board-quadrant:active {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.5);
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.4);
+  transform: scale(0.96); /* Pop in effect */
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
 .board-icon {
@@ -68,8 +69,8 @@
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.board-quadrant:hover .board-icon {
-  transform: translateY(-8px) scale(1.05);
+.board-quadrant:active .board-icon {
+  transform: scale(1.1); /* Icon pops out slightly */
 }
 
 .board-quadrant h2 {
@@ -96,14 +97,14 @@
   position: relative;
 }
 
-.disabled-board:hover {
+.disabled-board:active {
   transform: none;
   background: rgba(255, 255, 255, 0.02);
   border-color: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-.disabled-board:hover .board-icon {
+.disabled-board:active .board-icon {
   transform: none;
 }
 
@@ -127,11 +128,11 @@
 }
 
 /* Expand the hovered half to take up 60% of the screen */
-.split-half:hover {
+.split-half:active {
   flex: 1.3;
 }
 
-.simulations-half:hover {
+.simulations-half:active {
   background: rgba(234, 179, 8, 0.08);
 }
 
@@ -147,8 +148,9 @@
 }
 
 /* Slightly scale up the content on hover */
-.split-half:hover .split-content {
-  transform: scale(1.05);
+.split-half:active .split-content {
+  transform: scale(0.96);
+  transition: transform 0.1s ease;
 }
 
 .split-icon {
@@ -165,8 +167,8 @@
   filter: drop-shadow(0 0 20px rgba(234, 179, 8, 0.4));
 }
 
-.split-half:hover .split-icon {
-  transform: translateY(-10px);
+.split-half:active .split-icon {
+  transform: scale(1.1);
 }
 
 .split-half h1 {
@@ -187,20 +189,106 @@
 @media (max-width: 900px) {
   .split-landing-container {
     flex-direction: column;
-    padding-top: 70px;
+    position: fixed !important;
+    top: 0; left: 0; right: 0; bottom: 0;
+    height: 100dvh !important;
+    padding-top: 65px; /* Clear the top header */
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
   }
+  
+  /* Give Academics ~60% and Simulations ~40% */
   .split-half {
     width: 100%;
     border-right: none;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    padding: 0 !important;
   }
-  .split-half h1 {
-    font-size: 3rem;
+  
+  .academics-half {
+    flex: 1.2 !important; /* Slightly taller */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
+  
+  .simulations-half {
+    flex: 0.8 !important; /* Slightly shorter */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: none;
+  }
+
+  /* Compact 2x2 Grid for Academics */
+  .board-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    padding: 0 1rem;
+    margin: 0;
+  }
+  
+  /* Shrink cards to fit */
+  .board-quadrant {
+    padding: 0.75rem;
+    justify-content: center;
+    border-radius: 16px;
+  }
+  
+  /* Hide paragraphs on mobile to save vertical space! */
+  .board-quadrant p {
+    display: none;
+  }
+  
+  /* Scale down Icons and Text */
+  .board-icon {
+    margin-bottom: 0.25rem;
+    transform: scale(0.65) !important;
+  }
+  
+  .board-quadrant h2 {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  
+  .coming-soon-badge {
+    top: 8px;
+    right: 8px;
+    font-size: 0.5rem;
+    padding: 2px 6px;
+  }
+
+  /* Compact Simulations Half */
+  .split-content {
+    padding: 1rem;
+    margin: 0;
+  }
+  
   .split-icon {
-    width: 60px;
-    height: 60px;
-    margin-bottom: 1rem;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .split-half h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .simulations-half p {
+    font-size: 0.9rem;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+  
+  /* Disable hover expansions on mobile */
+  .split-half:active {
+    flex: inherit !important;
+  }
+  .split-half:active .split-content {
+    transform: none !important;
   }
 }
 
@@ -231,5 +319,131 @@
   .split-icon {
     transform: scale(0.8);
     margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  /* 1. FORCE SYMMETRY: Equal width and height for all 4 quadrants */
+  .board-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important; /* Forces exactly 50/50 width regardless of text length */
+    align-items: stretch;
+  }
+  
+  .board-quadrant {
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 1 / 1; /* Forces them to be perfect squares */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  /* Prevent 'Cambridge' from stretching the box */
+  .board-quadrant h2 {
+    font-size: 1.2rem !important;
+    word-break: break-word;
+  }
+
+  /* 2. COMPLETELY KILL HOVER ANIMATIONS ON MOBILE */
+  .board-quadrant:active, 
+  .disabled-board:active {
+    transform: none !important;
+    background: rgba(255, 255, 255, 0.02) !important;
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  }
+
+  .board-quadrant:active .board-icon,
+  .disabled-board:active .board-icon {
+    transform: scale(0.65) !important; /* Keep it at the shrunk mobile scale */
+  }
+
+  .split-half:active,
+  .simulations-half:active {
+    background: transparent !important;
+    flex: inherit !important;
+  }
+
+  .split-half:active .split-icon {
+    transform: none !important;
+  }
+
+  .split-half:active .split-content {
+    transform: none !important;
+  }
+  
+  /* Maintain the specific subtle tints without hover changes */
+  .academics-half {
+    background: rgba(59, 130, 246, 0.03) !important;
+  }
+  .simulations-half {
+    background: rgba(234, 179, 8, 0.03) !important;
+  }
+}
+
+@media (max-width: 900px) {
+  /* 1. FORCE EXACTLY 50/50 SPLIT */
+  .academics-half {
+    flex: 1 !important; /* Exactly 50% */
+  }
+  
+  .simulations-half {
+    flex: 1 !important; /* Exactly 50% */
+  }
+
+  /* 2. CENTER EVERYTHING VERTICALLY */
+  .split-landing-container {
+    padding-top: 55px !important; /* slightly less top padding */
+    padding-bottom: 0 !important;
+  }
+  
+  .split-half {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  /* 3. ABSOLUTELY NUKE ALL ANIMATIONS SO HOVER CANNOT HAPPEN */
+  .board-quadrant,
+  .board-icon,
+  .split-half,
+  .split-content,
+  .split-icon,
+  .disabled-board {
+    
+    
+  }
+
+  /* Because we removed transition, let's also hardcode the hover states to match the normal states exactly */
+  .board-quadrant:active .board-icon,
+  .disabled-board:active .board-icon {
+    transform: scale(0.65) !important;
+  }
+
+  .split-half:active .split-icon {
+    /* Base scale for mobile split-icon was 40px width. We don't use transform for it on mobile. */
+    transform: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Override any residual transform changes on hover */
+  .board-quadrant:active, .board-quadrant:active {
+    transform: none !important;
+  }
+  .board-quadrant:active .board-icon, .board-quadrant:active .board-icon {
+    transform: scale(0.65) !important; /* Lock to mobile scale */
+  }
+  
+  .split-half:active, .split-half:active {
+    transform: none !important;
+  }
+  .split-half:active .split-content, .split-half:active .split-content {
+    transform: none !important;
+  }
+  .split-half:active .split-icon, .split-half:active .split-icon {
+    transform: scale(0.85) !important; /* Lock to base scale */
   }
 }

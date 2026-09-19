@@ -1710,3 +1710,84 @@ model-viewer {
   }
 }
 
+
+/* =========================================================================
+   UNIVERSAL RESPONSIVE HELPER UTILITIES (ADDED FOR EASY LAYOUT ADJUSTMENTS)
+   ========================================================================= */
+
+/* Desktop & General (Mobile-First Overrides Below) */
+.hide-on-desktop { display: none !important; }
+.show-on-desktop { display: block !important; }
+.flex-on-desktop { display: flex !important; }
+.grid-on-desktop { display: grid !important; }
+
+/* Mobile View (Max Width 768px) */
+@media (max-width: 768px) {
+  /* Visibility */
+  .hide-on-mobile { display: none !important; }
+  .show-on-mobile { display: block !important; }
+  .flex-on-mobile { display: flex !important; }
+  .hide-on-desktop { display: block !important; } /* Restore on mobile */
+  
+  /* Flexbox Overrides */
+  .mobile-flex-col {
+    flex-direction: column !important;
+  }
+  .mobile-flex-row {
+    flex-direction: row !important;
+  }
+  .mobile-items-start {
+    align-items: flex-start !important;
+  }
+  .mobile-items-center {
+    align-items: center !important;
+  }
+  .mobile-justify-between {
+    justify-content: space-between !important;
+  }
+  
+  /* Sizing and Spacing */
+  .mobile-w-full {
+    width: 100% !important;
+  }
+  .mobile-h-auto {
+    height: auto !important;
+  }
+  .mobile-p-4 {
+    padding: 16px !important;
+  }
+  .mobile-m-0 {
+    margin: 0 !important;
+  }
+  
+  /* Typography */
+  .mobile-text-sm {
+    font-size: 14px !important;
+  }
+  .mobile-text-center {
+    text-align: center !important;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Make header action buttons slightly smaller on mobile to prevent overflow */
+  .header-actions button,
+  .header-actions .custom-dropdown-container {
+    width: 34px !important;
+    height: 34px !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  
+  .header-actions .custom-dropdown-container {
+    width: auto !important; /* Allow globe icon to fit */
+    padding: 0 8px !important;
+  }
+
+  .header-actions svg {
+    width: 18px !important;
+    height: 18px !important;
+  }
+}
