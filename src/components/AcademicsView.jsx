@@ -3,7 +3,7 @@ import { ChevronDown, BookOpen, ArrowLeft } from 'lucide-react';
 import '../Academics.css';
 
 const AcademicsView = ({ onSelectSubject, onBack }) => {
-  const [expandedClass, setExpandedClass] = useState('class_12');
+  const [expandedClass, setExpandedClass] = useState(window.innerWidth > 900 ? 'class_12' : null);
 
   const ncertClasses = [
     { id: 'class_12', label: 'Class 12', fullName: 'NCERT Solutions for Class 12', subjects: ['Physics', 'Maths', 'Chemistry', 'Biology', 'English', 'Business Studies', 'Economics', 'Accountancy', 'History', 'Geography', 'Political Science'] },
