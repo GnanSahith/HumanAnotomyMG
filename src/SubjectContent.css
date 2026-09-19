@@ -675,3 +675,44 @@
     margin-right: 10px;
   }
 }
+
+
+
+@media (max-width: 900px) {
+  /* Fix huge top padding */
+  .subject-content-container {
+    padding-top: 85px !important; /* Reduced from 135px */
+    padding-bottom: 50px !important;
+  }
+  
+  /* Fix breadcrumb wrapping */
+  .content-breadcrumbs {
+    flex-wrap: wrap;
+    row-gap: 4px;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  /* Reduce gap above the content area */
+  .reader-layout {
+    margin-top: 20px !important; /* Reduced from 60px */
+  }
+  
+  /* Reduce font sizes for headers on mobile */
+  .content-main-title {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .content-subtitle {
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Make the back button smaller */
+  .back-btn {
+    margin-bottom: 15px;
+    padding: 6px 12px;
+    font-size: 0.85rem;
+  }
+}
