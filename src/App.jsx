@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { createPortal } from 'react-dom';
 import { systemsData } from './data';
 import LandingView from './components/LandingView';
 import HomeView from './components/HomeView';
@@ -318,29 +319,86 @@ function App() {
                 <Settings size={18} />
               </button>
               
-              {isSettingsOpen && (
-                <div className="custom-dropdown-menu" style={{ width: '200px', padding: '10px', right: 0 }}>
-                  <div className="dropdown-item" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }} onClick={(e) => { e.stopPropagation(); setTheme(theme === 'dark' ? 'light' : 'dark'); setIsSettingsOpen(false); }}>
-                    <span>Theme</span>
-                    {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
-                  </div>
-                  
-                  <div style={{ padding: '8px 12px', borderBottom: '1px solid rgba(255,255,255,0.1)', marginBottom: '4px' }}>
-                    <div style={{ fontSize: '12px', color: 'var(--text-secondary)', marginBottom: '4px' }}>Language</div>
-                    <div style={{ display: 'flex', gap: '4px' }}>
-                      <button className={`dropdown-item ${currentLanguage === 'en' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('en'); setIsSettingsOpen(false); }}>EN</button>
-                      <button className={`dropdown-item ${currentLanguage === 'hi' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('hi'); setIsSettingsOpen(false); }}>HI</button>
-                      <button className={`dropdown-item ${currentLanguage === 'te' ? 'active' : ''}`} style={{ padding: '4px 8px', flex: 1, textAlign: 'center' }} onClick={(e) => { e.stopPropagation(); toggleLanguage('te'); setIsSettingsOpen(false); }}>TE</button>
-                    </div>
-                  </div>
+              {isSettingsOpen && createPortal(
+  <div 
+    className="mobile-settings-overlay fade-in-scale"
+    onClick={(e) => { e.stopPropagation(); setIsSettingsOpen(false); }}
+    style={{
+      position: 'fixed',
+      top: 0, left: 0, right: 0, bottom: 0,
+      background: 'rgba(0,0,0,0.85)',
+      backdropFilter: 'blur(10px)',
+      WebkitBackdropFilter: 'blur(10px)',
+      zIndex: 99999,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center'
+    }}
+  >
+    <div 
+      className="mobile-settings-modal"
+      onClick={(e) => e.stopPropagation()}
+      style={{
+        background: 'linear-gradient(145deg, #1e293b, #0f172a)', // Solid dark, barely any glass
+        border: '1px solid rgba(255,255,255,0.15)',
+        borderRadius: '24px',
+        padding: '30px 24px',
+        width: '85%',
+        maxWidth: '340px',
+        boxShadow: '0 30px 60px rgba(0,0,0,0.8), inset 0 1px 0 rgba(255,255,255,0.1)',
+        color: 'var(--text-primary)',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '20px'
+      }}
+    >
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <h3 style={{ margin: 0, fontSize: '1.4rem', fontWeight: 800 }}>Settings</h3>
+        <button 
+          onClick={() => setIsSettingsOpen(false)} 
+          style={{ background: 'transparent', border: 'none', color: '#fff', cursor: 'pointer', padding: '5px' }}
+        >
+          ✕
+        </button>
+      </div>
+      
+      <div 
+        style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '16px', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)', cursor: 'pointer' }}
+        onClick={() => { setTheme(theme === 'dark' ? 'light' : 'dark'); }}
+      >
+        <span style={{ fontSize: '1.1rem', fontWeight: 600 }}>Theme</span>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--accent)' }}>
+          {theme === 'dark' ? <><Sun size={20} /> Dark</> : <><Moon size={20} /> Light</>}
+        </div>
+      </div>
+      
+      <div style={{ padding: '16px', background: 'rgba(255,255,255,0.05)', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+        <div style={{ fontSize: '1rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '12px' }}>Language</div>
+        <div style={{ display: 'flex', gap: '8px' }}>
+          <button 
+            style={{ flex: 1, padding: '12px', borderRadius: '10px', border: 'none', background: currentLanguage === 'en' ? 'var(--accent)' : 'rgba(255,255,255,0.1)', color: currentLanguage === 'en' ? '#fff' : 'var(--text-primary)', fontWeight: 'bold', fontSize: '1rem', transition: 'all 0.2s' }}
+            onClick={() => { toggleLanguage('en'); setIsSettingsOpen(false); }}
+          >EN</button>
+          <button 
+            style={{ flex: 1, padding: '12px', borderRadius: '10px', border: 'none', background: currentLanguage === 'hi' ? 'var(--accent)' : 'rgba(255,255,255,0.1)', color: currentLanguage === 'hi' ? '#fff' : 'var(--text-primary)', fontWeight: 'bold', fontSize: '1rem', transition: 'all 0.2s' }}
+            onClick={() => { toggleLanguage('hi'); setIsSettingsOpen(false); }}
+          >HI</button>
+          <button 
+            style={{ flex: 1, padding: '12px', borderRadius: '10px', border: 'none', background: currentLanguage === 'te' ? 'var(--accent)' : 'rgba(255,255,255,0.1)', color: currentLanguage === 'te' ? '#fff' : 'var(--text-primary)', fontWeight: 'bold', fontSize: '1rem', transition: 'all 0.2s' }}
+            onClick={() => { toggleLanguage('te'); setIsSettingsOpen(false); }}
+          >TE</button>
+        </div>
+      </div>
 
-                  {isAuthenticated && (
-                    <div style={{ padding: '8px 12px', fontSize: '12px', color: 'var(--text-secondary)' }}>
-                      User: <strong style={{color: '#fff'}}>{loggedInUsername.replace('@MG', '')}</strong>
-                    </div>
-                  )}
-                </div>
-              )}
+      {isAuthenticated && (
+        <div style={{ textAlign: 'center', fontSize: '0.95rem', color: 'var(--text-secondary)', marginTop: '5px' }}>
+          Logged in as <strong style={{color: '#fff', fontSize: '1.05rem'}}>{loggedInUsername.replace('@MG', '')}</strong>
+        </div>
+      )}
+    </div>
+  </div>,
+  document.body
+)}
             </div>
 
             {isAuthenticated ? (
