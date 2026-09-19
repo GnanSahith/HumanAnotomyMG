@@ -1444,7 +1444,10 @@ model-viewer {
     gap: 8px !important;
   }
 
-  .hide-on-mobile {
+  .hide-on-mobile,
+  .header-actions .hide-on-mobile,
+  .header-actions button.hide-on-mobile,
+  .header-actions div.hide-on-mobile {
     display: none !important;
   }
   
@@ -1724,7 +1727,12 @@ model-viewer {
 /* Mobile View (Max Width 768px) */
 @media (max-width: 900px) {
   /* Visibility */
-  .hide-on-mobile { display: none !important; }
+  .hide-on-mobile,
+  .header-actions .hide-on-mobile,
+  .header-actions button.hide-on-mobile,
+  .header-actions div.hide-on-mobile {
+    display: none !important;
+  }
   .show-on-mobile { display: block !important; }
   .flex-on-mobile { display: flex !important; }
   .hide-on-desktop { display: block !important; } /* Restore on mobile */
