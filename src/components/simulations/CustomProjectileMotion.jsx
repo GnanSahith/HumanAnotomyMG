@@ -343,9 +343,9 @@ export default function CustomProjectileMotion({
 
         <clipPath id="simBoxClip"><rect x="-400" y="-1050" width="2800" height="1300" rx="24" /></clipPath>
         <g clipPath="url(#simBoxClip)">
-          <image href="/assets/physics_landscape_bg.jpg" x="-400" y="-1050" width="2800" height="1300" preserveAspectRatio="xMidYMid slice" />
-          {/* Subtle overlay to ensure trail visibility */}
-          <rect x="-400" y="-1050" width="2800" height="1300" fill="rgba(0,0,0,0.3)" />
+          <image href="/assets/physics_landscape_bg.jpg" x="-400" y="-1050" width="2800" height="1300" preserveAspectRatio="xMidYMid slice" opacity="0.15" />
+          {/* Heavy dark overlay to ensure simulation elements pop and background doesn't dominate */}
+          <rect x="-400" y="-1050" width="2800" height="1300" fill="rgba(15, 15, 26, 0.85)" />
         </g>
 
         <rect x="-400" y="-1050" width="2800" height="1300" fill="none" stroke="rgba(255,255,255,0.15)" strokeWidth="6" rx="24" />
