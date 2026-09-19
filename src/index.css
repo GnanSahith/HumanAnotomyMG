@@ -1804,45 +1804,51 @@ model-viewer {
 
 @media (max-width: 900px) {
   
-  /* Restored 1-column layout ("Old Style") but optimized for space */
+  
+  /* Condensed 1-column layout to fit all 4 cards on one mobile screen without scrolling */
   .mygnan-container {
-    padding-top: 65px !important; /* Less dead space at the top */
+    padding-top: 60px !important; /* Absolute minimum safe area */
   }
 
   .mygnan-grid {
     display: flex !important;
     flex-direction: column !important;
-    gap: 16px !important;
-    padding: 0 16px 20px 16px !important;
-    margin-top: 10px !important;
+    gap: 8px !important; /* Squeezed gap */
+    padding: 0 12px 10px 12px !important;
+    margin-top: 5px !important;
+    height: 100dvh !important;
+    overflow: hidden !important; /* Force no scrolling */
+    justify-content: space-evenly !important; /* Distribute them evenly in the available space */
   }
 
   .mygnan-card {
-    min-height: 140px !important;
-    padding: 20px !important; /* Bulky padding */
+    min-height: 0 !important; /* Allow shrinking */
+    padding: 12px 14px !important; /* Much tighter padding */
     display: flex !important;
     flex-direction: column !important;
-    align-items: center !important;
     justify-content: center !important;
-    gap: 12px !important;
+    gap: 6px !important; /* Tighter gap between header and text */
+    flex: 1 !important; /* Allow cards to stretch slightly to fill evenly, or shrink */
   }
 
   .mygnan-card-header {
     display: flex !important;
-    flex-direction: row !important; /* Side by side icon and pill like old style */
+    flex-direction: row !important; 
     align-items: center !important;
     justify-content: space-between !important;
     width: 100% !important;
   }
 
   .mygnan-card-header > div:nth-child(2) {
-    font-size: 0.8rem !important; /* Restore pill size */
-    padding: 6px 12px !important;
+    font-size: 0.7rem !important; /* Smaller pill */
+    padding: 4px 8px !important;
     margin-bottom: 0 !important;
   }
   
   .mygnan-card-header > div:nth-child(2) svg {
-    display: inline-block !important; /* Restore arrow */
+    display: inline-block !important;
+    width: 12px !important;
+    height: 12px !important;
   }
 
   .mygnan-title {
@@ -1851,27 +1857,32 @@ model-viewer {
   }
 
   .mygnan-title h2 {
-    font-size: 1.6rem !important; /* Bulky text */
+    font-size: 1.25rem !important; /* Tighter title */
     text-align: left !important;
-    margin: 0 0 8px 0 !important;
+    margin: 0 0 4px 0 !important;
   }
 
   .mygnan-title p {
-    display: block !important; /* Restore paragraph */
-    font-size: 0.95rem !important;
+    display: block !important; 
+    font-size: 0.8rem !important; /* Tighter text */
     text-align: left !important;
-    line-height: 1.4 !important;
+    line-height: 1.25 !important; /* Tighter line height */
     color: var(--text-secondary) !important;
+    margin: 0 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important; /* Max 2 lines to guarantee it fits */
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
   }
 
   .mygnan-icon-container {
-    width: 50px !important;
-    height: 50px !important;
-    margin: 0 !important; /* Left align */
+    width: 36px !important; /* Smaller icon */
+    height: 36px !important;
+    margin: 0 !important; 
   }
 
   .mygnan-icon-container svg {
-    width: 26px !important;
-    height: 26px !important;
+    width: 20px !important;
+    height: 20px !important;
   }
 }
