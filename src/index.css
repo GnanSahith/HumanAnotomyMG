@@ -2115,7 +2115,7 @@ model-viewer {
 
   /* Remove all inner borders and padding to stretch the canvas to the edges */
   .sim-content-wrapper {
-    padding: 60px 0 0 0 !important; /* Prevent canvas text from hiding under the overlay header */
+    padding: 0 !important;
     border-radius: 0 !important;
   }
 

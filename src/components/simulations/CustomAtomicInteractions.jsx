@@ -65,7 +65,7 @@ const CustomAtomicInteractions = ({
     // Draw Atoms
     const atomRadius = 30;
     const fixedAtomX = width * 0.2;
-    const atomY = atomAreaHeight / 2;
+    const atomY = Math.max(atomAreaHeight / 2, 120);
     // Scale distance for visual
     const visualDistanceScale = 80;
     const movableAtomX = fixedAtomX + distance * visualDistanceScale;
