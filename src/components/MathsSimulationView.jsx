@@ -293,6 +293,7 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
     const [currentQuestionIdx, setCurrentQuestionIdx] = useState(0);
     const [score, setScore] = useState(0);
     const [userChoice, setUserChoice] = useState(null);
+    const [showMobilePanels, setShowMobilePanels] = useState(false);
 
     const activeCategory = activeSimulation ? activeSimulation.category : null;
     const activeTopic = activeSimulation ? activeSimulation.parentTopic : null;
@@ -536,9 +537,34 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
                         <Layers size={18} color="#0a84ff" />
                         {activeTopicLabel ? activeTopicLabel : (categoryData ? categoryData.label : 'Mathematics Simulator')}
                     </h2>
+                    <button 
+                        className="maths-panel-toggle"
+                        onClick={() => setShowMobilePanels(!showMobilePanels)}
+                        style={{ 
+                            position: 'absolute',
+                            right: '12px',
+                            top: '50%',
+                            transform: 'translateY(-50%)',
+                            padding: '6px 14px', 
+                            background: showMobilePanels ? '#0a84ff' : 'rgba(255,255,255,0.1)', 
+                            borderRadius: '100px', 
+                            border: 'none', 
+                            color: '#fff', 
+                            alignItems: 'center', 
+                            justifyContent: 'center',
+                            gap: '6px', 
+                            cursor: 'pointer', 
+                            transition: 'all 0.2s', 
+                            fontSize: '13px',
+                            fontWeight: 600,
+                            lineHeight: 'normal'
+                        }}
+                    >
+                        Panels {showMobilePanels ? '▴' : '▾'}
+                    </button>
                 </div>
 
-                <div className="maths-grid">
+                <div className={`maths-grid ${showMobilePanels ? 'show-panels' : ''}`}>
                     
                     <aside className="glass-panel" style={{
                         display: 'flex', 
