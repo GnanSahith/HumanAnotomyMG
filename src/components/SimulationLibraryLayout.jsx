@@ -24,6 +24,7 @@ export default function SimulationLibraryLayout({
     const [selectedFilters, setSelectedFilters] = useState(initialFilters); // { filterId: [optionId1, optionId2] }
     const [viewMode, setViewMode] = useState('grid');
     const [sortBy, setSortBy] = useState('newest');
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
     const toggleFilter = (filterId, optionId) => {
         setSelectedFilters(prev => {
@@ -74,7 +75,7 @@ export default function SimulationLibraryLayout({
                 justifyContent: 'space-between',
                 flexShrink: 0
             }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                <div className="sim-library-header-left">
                     <button 
                         onClick={onBack}
                         style={{
@@ -97,7 +98,7 @@ export default function SimulationLibraryLayout({
                 </div>
 
                 {/* Search Bar */}
-                <div style={{ position: 'relative', width: '400px' }}>
+                <div className="sim-library-search-container">
                     <Search size={18} color="rgba(255,255,255,0.5)" style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)' }} />
                     <input 
                         type="text" 
@@ -119,23 +120,20 @@ export default function SimulationLibraryLayout({
                         onBlur={(e) => e.target.style.borderColor = 'rgba(255,255,255,0.1)'}
                     />
                 </div>
+                <button className="sim-mobile-filter-btn" onClick={() => setIsSidebarOpen(true)}>
+                    <Filter size={20} />
+                </button>
             </div>
 
             {/* Main Content Area */}
-            <div style={{ display: 'flex', flex: 1, minHeight: 0, padding: '0px 8px 8px 24px', gap: '8px' }}>
+            <div className="sim-library-main-content">
                 
                 {/* Left Sidebar Filters */}
-                <div className="glass-panel" style={{ 
-                    width: '240px', 
-                    overflowY: 'auto',
-                    padding: '24px 16px',
-                    borderRadius: '24px',
-                    margin: '16px 0',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    gap: '32px',
-                    flexShrink: 0
-                }}>
+                <div className={`glass-panel sim-library-sidebar ${isSidebarOpen ? 'open' : ''}`}>
+                    <div className="sim-sidebar-header-mobile">
+                            <h3>Filters</h3>
+                            <button onClick={() => setIsSidebarOpen(false)}>×</button>
+                        </div>
                     {(filters || []).map(filterGroup => (
                         <div key={filterGroup.id}>
                             <h3 style={{ fontSize: '14px', fontWeight: 600, color: '#fff', marginBottom: '16px', textTransform: 'uppercase', letterSpacing: '1px' }}>
@@ -176,14 +174,7 @@ export default function SimulationLibraryLayout({
                 <div style={{ flex: 1, overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '16px', padding: '16px' }}>
                     
                     {/* Grid */}
-                    <div style={{
-                        display: 'grid',
-                        gridTemplateColumns: viewMode === 'grid' ? 'repeat(auto-fill, minmax(240px, 1fr))' : '1fr',
-                        gap: '16px',
-                        alignItems: 'stretch',
-                        alignContent: 'start',
-                        marginBottom: 'auto'
-                    }}>
+                    <div className={`sim-library-grid ${viewMode === 'list' ? 'list-view' : ''}`}>
                         {(filteredSimulations || []).map((sim) => (
                             <div 
                                 key={sim.id}
