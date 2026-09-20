@@ -201,7 +201,7 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
                 subject="chemistry"
             />
 
-            <div style={{ padding: '0 16px 16px 16px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="fade-in">
+            <div style={{ padding: '0 16px 16px 16px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="sim-content-wrapper fade-in">
                 {/* Admin-only approval toggle */}
                 {loggedInUsername !== 'MGRoot01' && (
                     <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px', flexShrink: 0 }}>
