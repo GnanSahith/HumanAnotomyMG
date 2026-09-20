@@ -53,6 +53,7 @@ import CustomMicrowaves from './simulations/CustomMicrowaves';
 import CustomSimplifiedMRI from './simulations/CustomSimplifiedMRI';
 
 import SimulationLibraryLayout from './SimulationLibraryLayout';
+import DeviceOrientationGate from './DeviceOrientationGate';
 
 export default function PhysicsSimulationView({ onBack, handleLockedItemClick, isSignedIn, initialSimulationId, initialCategory }) {
     const { t } = useLanguage();
@@ -194,6 +195,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
     }
 
     return (
+        <DeviceOrientationGate>
         <div className="maths-sim-container fade-in" style={{ paddingBottom: '0', flex: 1, minHeight: 0, overflowY: 'hidden', display: 'flex', flexDirection: 'column' }}>
             <AnalyticsTracker username={loggedInUsername} contextName={activeSimulation.title} module="physics" />
             {/* ── Unified Simulation Header ── */}
@@ -327,5 +329,6 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
                 </div>
             </div>
         </div>
+        </DeviceOrientationGate>
     );
 }

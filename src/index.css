@@ -2075,3 +2075,17 @@ model-viewer {
     padding-top: 70px;
   }
 }
+
+@media (max-width: 900px) {
+  .sim-library-title {
+    font-size: 17px !important;
+  }
+  .sim-library-header-left {
+    justify-content: flex-start !important;
+    gap: 12px !important;
+  }
+  .sim-library-topbar {
+    padding: 8px 12px !important;
+    gap: 10px !important;
+  }
+}

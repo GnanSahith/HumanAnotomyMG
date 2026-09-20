@@ -3,6 +3,7 @@ import { ArrowLeft, FlaskConical, Lock, Eye, EyeOff } from 'lucide-react';
 import chemistrySimulations from '../data/chemistrySimulations.json';
 import { useLanguage } from '../LanguageContext';
 import SimulationLibraryLayout from './SimulationLibraryLayout';
+import DeviceOrientationGate from './DeviceOrientationGate';
 import SimulationHeader from './SimulationHeader';
 import AnalyticsTracker from './AnalyticsTracker';
 
@@ -187,6 +188,7 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
     }
 
     return (
+        <DeviceOrientationGate>
         <div className="maths-sim-container fade-in" style={{ paddingBottom: '0', flex: 1, minHeight: 0, overflowY: 'hidden', display: 'flex', flexDirection: 'column' }}>
             <AnalyticsTracker username={loggedInUsername} contextName={activeSimulation.title} module="chemistry" />
             {/* ── Unified Simulation Header ── */}
@@ -276,5 +278,6 @@ activeSimulation.id === 'isotopes-and-atomic-mass_mg' ? <CustomIsotopesAndAtomic
                 </div>
             </div>
         </div>
+        </DeviceOrientationGate>
     );
 }

@@ -84,7 +84,7 @@ export default function SimulationLibraryLayout({
                     >
                         <ArrowLeft size={18} /> {t('Back')}
                     </button>
-                    <h1 style={{ fontSize: '24px', margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '12px', color: '#fff' }}>
+                    <h1 className="sim-library-title" style={{ fontSize: '24px', margin: 0, fontWeight: 700, display: 'flex', alignItems: 'center', gap: '12px', color: '#fff' }}>
                         {icon}
                         {t(title)}
                     </h1>
