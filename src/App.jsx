@@ -34,6 +34,7 @@ function App() {
   const [user, setUser] = useState(null);
   const isSignedIn = !!user;
   const [isMobileView, setIsMobileView] = useState(false);
+  const [isMobileLandscape, setIsMobileLandscape] = useState(false);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
@@ -220,17 +221,56 @@ function App() {
     return (
       <div style={{ width: '100vw', height: '100vh', background: '#12121a', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'relative' }}>
         <DeveloperPanel isMobileView={isMobileView} setIsMobileView={setIsMobileView} />
+        
+        {/* Rotation Toggle Button */}
+        <button 
+          onClick={() => setIsMobileLandscape(!isMobileLandscape)}
+          style={{
+            position: 'absolute',
+            top: '20px',
+            right: '20px',
+            background: 'rgba(255,255,255,0.1)',
+            border: '1px solid rgba(255,255,255,0.2)',
+            color: '#fff',
+            padding: '10px 20px',
+            borderRadius: '12px',
+            cursor: 'pointer',
+            fontWeight: 'bold',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            zIndex: 10000
+          }}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+          {isMobileLandscape ? 'Rotate to Portrait' : 'Rotate to Landscape'}
+        </button>
+
         <div style={{
-          width: '375px',
-          height: '812px',
+          width: isMobileLandscape ? '812px' : '375px',
+          height: isMobileLandscape ? '375px' : '812px',
           border: '14px solid #000',
           borderRadius: '40px',
           overflow: 'hidden',
           boxShadow: '0 25px 50px -12px rgba(0,0,0,0.5)',
-          position: 'relative'
+          position: 'relative',
+          transition: 'all 0.3s ease-in-out'
         }}>
           {/* iPhone style notch */}
-          <div style={{ position: 'absolute', top: 0, left: '50%', transform: 'translateX(-50%)', width: '120px', height: '25px', background: '#000', borderBottomLeftRadius: '16px', borderBottomRightRadius: '16px', zIndex: 9999 }}></div>
+          <div style={{ 
+            position: 'absolute', 
+            top: isMobileLandscape ? '50%' : 0, 
+            left: isMobileLandscape ? 0 : '50%', 
+            transform: isMobileLandscape ? 'translateY(-50%)' : 'translateX(-50%)', 
+            width: isMobileLandscape ? '25px' : '120px', 
+            height: isMobileLandscape ? '120px' : '25px', 
+            background: '#000', 
+            borderBottomLeftRadius: isMobileLandscape ? '0' : '16px', 
+            borderBottomRightRadius: isMobileLandscape ? '16px' : '16px', 
+            borderTopRightRadius: isMobileLandscape ? '16px' : '0', 
+            zIndex: 9999,
+            transition: 'all 0.3s ease-in-out'
+          }}></div>
           <iframe 
             src={window.location.pathname + '?mobile_sim=true'}
             style={{ width: '100%', height: '100%', border: 'none', background: 'var(--bg-primary)' }}
