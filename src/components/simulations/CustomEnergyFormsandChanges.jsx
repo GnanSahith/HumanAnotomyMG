@@ -292,7 +292,7 @@ const reset = () => {
             </div>
             
             {/* 3. Floating Right Control Panel */}
-            <div style={{ position: 'absolute', right: '40px', top: '20px', bottom: '20px', width: '340px', background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', padding: '24px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '24px', color: '#fff' }}>
+            <div className="floating-controls-panel" style={{ position: 'absolute', right: '40px', top: '20px', bottom: '20px', width: '340px', background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(12px)', WebkitBackdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '16px', padding: '24px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '24px', color: '#fff' }}>
                 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px' }}>
                     <Settings2 color="rgba(255,255,255,0.7)" size={20} />

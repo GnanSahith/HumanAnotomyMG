@@ -2150,3 +2150,57 @@ model-viewer {
     font-size: 15px !important;
   }
 }
+
+/* =========================================================================
+   FLOATING CONTROLS PANEL OVERRIDES
+   ========================================================================= */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  .floating-controls-panel {
+    top: 70px !important;
+    right: 15px !important;
+    bottom: auto !important; /* Disconnect from bottom to allow clean resize */
+    width: 260px !important; /* Make it very small */
+    height: 180px !important; /* Default starting height */
+    padding: 12px !important;
+    gap: 12px !important;
+    
+    /* Allow user to resize it by dragging bottom right corner */
+    resize: both; 
+    overflow: auto !important;
+    
+    /* Ensure it overlays above other things */
+    z-index: 1000;
+  }
+
+  /* Shrink text inside the panel so it fits nicely when small */
+  .floating-controls-panel label,
+  .floating-controls-panel span,
+  .floating-controls-panel p,
+  .floating-controls-panel div {
+    font-size: 11px !important;
+  }
+  
+  .floating-controls-panel h4,
+  .floating-controls-panel h3 {
+    font-size: 13px !important;
+    margin-bottom: 4px !important;
+  }
+  
+  .floating-controls-panel input[type="range"] {
+    margin: 4px 0 !important;
+  }
+}
+
+/* Make Chatbot smaller on mobile */
+@media (max-width: 900px) {
+  .chatbot-fab {
+    width: 44px !important;
+    height: 44px !important;
+    bottom: 12px !important;
+    right: 12px !important;
+  }
+  .chatbot-fab svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}

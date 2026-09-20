@@ -440,10 +440,7 @@ export default function CustomDiffusion({
                 </div>}
 
             {/* 3. Floating Right Control Panel */}
-            <div style={{
-        position: 'absolute',
-        right: '40px',
-        top: '20px',
+            <div className="floating-controls-panel" style={{ position: 'absolute', right: '40px', top: '20px',
         bottom: '20px',
         width: '340px',
         background: 'rgba(255,255,255,0.05)',

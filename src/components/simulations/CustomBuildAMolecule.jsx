@@ -463,10 +463,7 @@ export default function CustomBuildAMolecule() {
       }} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} onMouseLeave={handleMouseUp} />
             
             {/* 3. Floating Right Control Panel */}
-            <div style={{
-        position: 'absolute',
-        right: '40px',
-        top: '20px',
+            <div className="floating-controls-panel" style={{ position: 'absolute', right: '40px', top: '20px',
         bottom: 'auto',
         maxHeight: 'calc(100% - 150px)',
         width: '340px',

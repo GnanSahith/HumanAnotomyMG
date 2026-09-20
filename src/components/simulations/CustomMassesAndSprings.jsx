@@ -585,7 +585,7 @@ export default function CustomMassesAndSprings({ onBack, title, isPlaying: globa
             )}
 
             {/* Right Control Panel */}
-            <div style={{ ...panelStyle, position: 'absolute', right: '40px', top: '20px', bottom: '20px', width: '340px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <div className="floating-controls-panel" style={{ ...panelStyle, position: 'absolute', right: '40px', top: '20px', bottom: '20px', width: '340px', overflowY: 'auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '12px' }}>
                     <Settings2 size={20} color="rgba(255,255,255,0.7)" />
                     <h3 style={{ margin: 0, fontSize: '16px', fontWeight: 600, color: 'rgba(255,255,255,0.9)' }}>Simulation Parameters</h3>
