@@ -1,4 +1,4 @@
-import className="chatbot-fab"  React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { X, Send, Bot, User, Minimize2, Maximize2, Volume2, Pause, Play, Square } from 'lucide-react';
 import { streamChatbot } from '../services/aiService';
 
