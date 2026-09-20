@@ -292,9 +292,9 @@ Motion is the change in position of an object with respect to time."
       <div>
         <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '8px' }}>
           <label style={{ fontSize: '12px', color: 'rgba(255,255,255,0.7)' }}>Surface Friction</label>
-          <span style={{ fontSize: '12px', color: '#ff375f', fontWeight: 700 }}>{frictionCoefficient.toFixed(2)}</span>
+          <span style={{ fontSize: '12px', color: '#ff375f', fontWeight: 700 }}>{frictionMu.toFixed(2)}</span>
         </div>
-        <input type="range" min="0" max="0.8" step="0.05" value={frictionCoefficient} onChange={e => setFrictionCoefficient(Number(e.target.value))} style={{ width: '100%', accentColor: '#ff375f' }} />
+        <input type="range" min="0" max="0.8" step="0.05" value={frictionMu} onChange={e => setFrictionMu(Number(e.target.value))} style={{ width: '100%', accentColor: '#ff375f' }} />
         <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '10px', color: '#666', marginTop: '4px' }}>
           <span>Ice</span>
           <span>Wood</span>
@@ -306,9 +306,9 @@ Motion is the change in position of an object with respect to time."
         <button onClick={() => {
           setAppliedForce(0);
           setMass(50);
-          setFrictionCoefficient(0.3);
+          setFrictionMu(0.3);
           velRef.current = 0;
-          boxPosRef.current = 0;
+          posRef.current = 0;
         }} style={{ width: '100%', padding: '10px', background: 'rgba(255,255,255,0.1)', color: '#fff', border: '1px solid rgba(255,255,255,0.2)', borderRadius: '8px', cursor: 'pointer', fontSize: '13px', fontWeight: 'bold' }}>
           Reset All
         </button>
