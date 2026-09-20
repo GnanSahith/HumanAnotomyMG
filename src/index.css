@@ -2262,3 +2262,41 @@ model-viewer {
     max-height: 45%;
   }
 }
+
+/* =========================================================================
+   MATHS EDGE-TO-EDGE LANDSCAPE OPTIMIZATIONS
+   ========================================================================= */
+@media screen and (orientation: landscape) and (max-height: 600px) {
+  /* Remove all padding from layout since global header is hidden */
+  .maths-layout {
+    padding: 0 !important;
+  }
+  
+  /* Make ios-header sit tightly at top */
+  .maths-layout .ios-header {
+    margin: 0 !important;
+    border-radius: 0 !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    height: 40px !important;
+  }
+
+  /* Remove all padding and gap from grid */
+  .maths-grid {
+    padding: 0 !important;
+    gap: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  /* Make the central simulation container truly edge-to-edge */
+  .maths-grid > div.glass-panel {
+    border-radius: 0 !important;
+    border: none !important;
+  }
+  
+  /* Hide the inner title bar (NUMBER PATTERNS WITH ADDITION) to save vertical space */
+  .maths-grid > div.glass-panel > div:first-child {
+    display: none !important;
+  }
+}
