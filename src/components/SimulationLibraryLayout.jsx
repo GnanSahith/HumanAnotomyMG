@@ -65,16 +65,9 @@ export default function SimulationLibraryLayout({
     }, [simulations, searchQuery, selectedFilters, filters, matchFilter, extractSearchText, sortBy]);
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, overflow: 'hidden' }} className="fade-in">
+        <div style={{ display: 'flex', flexDirection: 'column', height: '100%', minHeight: 0, overflow: 'hidden' }} className="fade-in sim-library-wrapper">
             {/* Top Navigation Bar */}
-            <div className="glass-panel" style={{ 
-                padding: '8px 24px', 
-                borderBottom: '1px solid rgba(255,255,255,0.1)', 
-                display: 'flex', 
-                alignItems: 'center', 
-                justifyContent: 'space-between',
-                flexShrink: 0
-            }}>
+            <div className="glass-panel sim-library-topbar">
                 <div className="sim-library-header-left">
                     <button 
                         onClick={onBack}

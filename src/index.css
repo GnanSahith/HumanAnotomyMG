@@ -2069,3 +2069,9 @@ model-viewer {
         padding: 10px !important;
     }
 }
+
+@media (max-width: 900px) {
+  .sim-library-wrapper {
+    padding-top: 70px;
+  }
+}
