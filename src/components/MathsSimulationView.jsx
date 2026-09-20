@@ -276,6 +276,7 @@ const getBadgeInfo = (title) => {
 };
 
 import SimulationLibraryLayout from './SimulationLibraryLayout';
+import DeviceOrientationGate from './DeviceOrientationGate';
 
 export default function MathsSimulationView({ onBack, handleLockedItemClick, isSignedIn, initialSimulationId, initialCategory }) {
     const { t } = useLanguage();
@@ -474,6 +475,7 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
     const specificMaterialTitle = activeSimulation.title;
 
     return (
+        <DeviceOrientationGate>
             <div className="maths-layout" style={{ display: 'flex', flexDirection: 'column', height: '100%' }}>
                 <AnalyticsTracker username={loggedInUsername} contextName={specificMaterialTitle} module="maths" />
                 <div className="ios-header glass-panel" style={{ 
@@ -853,5 +855,6 @@ export default function MathsSimulationView({ onBack, handleLockedItemClick, isS
                     </aside>
                 </div>
             </div>
+        </DeviceOrientationGate>
         );
 }
