@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, PlayCircle, Atom, Search, X, Lock, Eye, EyeOff } from 'lucide-react';
+import { ArrowLeft, PlayCircle, Atom, Search, X, Lock,EyeOff } from 'lucide-react';
 import SimulationHeader from './SimulationHeader';
 import AnalyticsTracker from './AnalyticsTracker';
 import physicsSimulations from '../data/physicsSimulations.json';
@@ -81,35 +81,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
 
 
     const loggedInUsername = localStorage.getItem('logged_in_username') || '';
-    const [approvedSims, setApprovedSims] = useState(() => {
-        try {
-            const stored = localStorage.getItem('showcase_approved_physics_sims');
-            const defaultApproved = ["physics-background-check_mg", ...Array.from({ length: 45 }, (_, i) => `phys_${i + 1}_mg`)];
-            
-            // If there's stored data, we merge in the defaults to ensure the newly approved ones show up
-            if (stored) {
-                const parsed = JSON.parse(stored);
-                const merged = Array.from(new Set([...parsed, ...defaultApproved]));
-                localStorage.setItem('showcase_approved_physics_sims', JSON.stringify(merged));
-                return merged;
-            }
-            
-            return defaultApproved;
-        } catch (e) {
-            return [];
-        }
-    });
 
-    const toggleApproval = () => {
-        if (!activeSimulation) return;
-        setApprovedSims(prev => {
-            const newArr = prev.includes(activeSimulation.id) 
-                ? prev.filter(id => id !== activeSimulation.id)
-                : [...prev, activeSimulation.id];
-            localStorage.setItem('showcase_approved_physics_sims', JSON.stringify(newArr));
-            return newArr;
-        });
-    };
     const subjectOptions = React.useMemo(() => {
         const categories = new Set(Object.values(physicsSimulations).map(s => s.category).filter(Boolean));
         return Array.from(categories).map(cat => ({ id: cat, label: cat }));
@@ -151,28 +123,12 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
         return true;
     };
 
-    const accessLevel = React.useMemo(() => {
-        const rootUsers = ['GnanSahith@MG', 'MGRoot01', 'MyGnanAD'];
-        const approvedUsers = ['CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG', 'Kumar', 'Rekha'];
-        if (rootUsers.includes(loggedInUsername)) return 'ROOT';
-        if (approvedUsers.includes(loggedInUsername)) return 'APPROVED_ONLY';
-        return 'CLERK';
-    }, [loggedInUsername]);
 
     const simArray = React.useMemo(() => {
-        let arr = Object.entries(physicsSimulations).map(([id, sim]) => ({ ...sim, id }));
-        if (accessLevel === 'ROOT') {
-            return arr;
-        } else {
-            return arr.filter(sim => approvedSims.includes(sim.id) && sim.isNative);
-        }
-    }, [accessLevel, approvedSims]);
+        return Object.entries(physicsSimulations).map(([id, sim]) => ({ ...sim, id }));
+    }, []);
 
     const handleSimClick = (sim) => {
-        if (accessLevel === 'CLERK') {
-            alert('Currently Locked');
-            return;
-        }
         setActiveSimulation(sim);
         setIsLoadingSim(true);
         setTimeout(() => setIsLoadingSim(false), 4500);
@@ -209,24 +165,7 @@ export default function PhysicsSimulationView({ onBack, handleLockedItemClick, i
             />
 
             <div style={{ padding: '0 16px 16px 16px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="sim-content-wrapper fade-in">
-                    {/* Admin-only approval toggle */}
-                    {!activeSimulation.isNative && loggedInUsername !== 'MGRoot01' && (
-                        <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px', flexShrink: 0 }}>
-                            <button
-                                onClick={toggleApproval}
-                                style={{
-                                    display: 'flex', alignItems: 'center', gap: '8px',
-                                    background: approvedSims.includes(activeSimulation.id) ? 'rgba(48,209,88,0.2)' : 'rgba(255,255,255,0.05)',
-                                    border: approvedSims.includes(activeSimulation.id) ? '1px solid rgba(48,209,88,0.4)' : '1px solid rgba(255,255,255,0.1)',
-                                    padding: '6px 14px', borderRadius: '100px',
-                                    color: approvedSims.includes(activeSimulation.id) ? '#30d158' : 'rgba(255,255,255,0.7)',
-                                    cursor: 'pointer', transition: 'all 0.2s', fontWeight: 500, fontSize: '13px',
-                                }}
-                            >
-                                {approvedSims.includes(activeSimulation.id) ? <><Eye size={14} /> Approved for Showcase</> : <><EyeOff size={14} /> Hidden from Showcase</>}
-                            </button>
-                        </div>
-                    )}
+
 
                     {/* The Simulation Container */}
                     <div style={{

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ArrowLeft, FlaskConical, Lock, Eye, EyeOff } from 'lucide-react';
+import { ArrowLeft, FlaskConical, Lock,EyeOff } from 'lucide-react';
 import chemistrySimulations from '../data/chemistrySimulations.json';
 import { useLanguage } from '../LanguageContext';
 import SimulationLibraryLayout from './SimulationLibraryLayout';
@@ -75,53 +75,14 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
 
 
     const loggedInUsername = localStorage.getItem('logged_in_username') || '';
-    const [approvedSims, setApprovedSims] = useState(() => {
-        try {
-            const stored = localStorage.getItem('showcase_approved_chemistry_sims');
-            const defaultApproved = ["background-check_mg", "acid-base-solutions_mg","atomic-interactions_mg","balancing-act_mg","balancing-chemical-equations_mg","balloons-and-static-electricity_mg","beers-law-lab_mg","blackbody-spectrum_mg","build-a-molecule_mg","build-a-nucleus_mg","build-an-atom_mg","buoyancy_mg","buoyancy-basics_mg","concentration_mg","coulombs-law_mg","density_mg","diffusion_mg","energy-forms-and-changes_mg","fourier-making-waves_mg","gas-properties_mg","gases-intro_mg","isotopes-and-atomic-mass_mg","membrane-transport_mg","models-of-the-hydrogen-atom_mg","molarity_mg","molecule-polarity_mg","molecule-shapes_mg","molecule-shapes-basics_mg","molecules-and-light_mg","ph-scale_mg","ph-scale-basics_mg","quantum-coin-toss_mg","quantum-measurement_mg","reactants-products-and-leftovers_mg","rutherford-scattering_mg","states-of-matter_mg","states-of-matter-basics_mg","wave-on-a-string_mg"];
-            
-            if (stored) {
-                const parsed = JSON.parse(stored);
-                if (!Array.isArray(parsed) || parsed.length === 0) return defaultApproved;
-                const merged = Array.from(new Set([...parsed, ...defaultApproved]));
-                localStorage.setItem('showcase_approved_chemistry_sims', JSON.stringify(merged));
-                return merged;
-            }
-            return defaultApproved;
-        } catch (e) {
-            return ["acid-base-solutions_mg"]; // Fallback
-        }
-    });
 
-    const toggleApproval = () => {
-        if (!activeSimulation) return;
-        setApprovedSims(prev => {
-            const newArr = prev.includes(activeSimulation.id) 
-                ? prev.filter(id => id !== activeSimulation.id)
-                : [...prev, activeSimulation.id];
-            localStorage.setItem('showcase_approved_chemistry_sims', JSON.stringify(newArr));
-            return newArr;
-        });
-    };
 
-    const accessLevel = React.useMemo(() => {
-        const rootUsers = ['GnanSahith@MG', 'MGRoot01', 'MyGnanAD'];
-        const approvedUsers = ['CharanKumar@MG', 'SandhyaRekha@MG', 'VishnuKranthi@MG', 'Kumar', 'Rekha'];
-        if (rootUsers.includes(loggedInUsername)) return 'ROOT';
-        if (approvedUsers.includes(loggedInUsername)) return 'APPROVED_ONLY';
-        return 'CLERK';
-    }, [loggedInUsername]);
 
     const simArray = React.useMemo(() => {
         const source = chemistrySimulations.default || chemistrySimulations;
         if (!Array.isArray(source)) return [];
-        let arr = source.map(sim => ({ ...sim, id: sim.id || (sim.title ? sim.title.replace(/\s+/g, '') : 'sim') }));
-        if (accessLevel === 'ROOT') {
-            return arr;
-        } else {
-            return arr.filter(sim => approvedSims.includes(sim.id));
-        }
-    }, [accessLevel, approvedSims]);
+        return source.map(sim => ({ ...sim, id: sim.id || (sim.title ? sim.title.replace(/\s+/g, '') : 'sim') }));
+    }, []);
     const subjectOptions = React.useMemo(() => {
         const categories = new Set(chemistrySimulations.map(s => s.category).filter(Boolean));
         return Array.from(categories).map(cat => ({ id: cat, label: cat }));
@@ -162,10 +123,6 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
     };
 
     const handleSimClick = (sim) => {
-        if (accessLevel === 'CLERK') {
-            alert('Currently Locked');
-            return;
-        }
         setActiveSimulation(sim);
         setIsLoadingSim(true);
         setTimeout(() => setIsLoadingSim(false), 4500);
@@ -202,24 +159,7 @@ export default function ChemistrySimulationView({ onBack, handleLockedItemClick,
             />
 
             <div style={{ padding: '0 16px 16px 16px', display: 'flex', flexDirection: 'column', flex: 1, minHeight: 0 }} className="sim-content-wrapper fade-in">
-                {/* Admin-only approval toggle */}
-                {loggedInUsername !== 'MGRoot01' && (
-                    <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: '8px', flexShrink: 0 }}>
-                        <button
-                            onClick={toggleApproval}
-                            style={{
-                                display: 'flex', alignItems: 'center', gap: '8px',
-                                background: approvedSims.includes(activeSimulation.id) ? 'rgba(48,209,88,0.2)' : 'rgba(255,255,255,0.05)',
-                                border: approvedSims.includes(activeSimulation.id) ? '1px solid rgba(48,209,88,0.4)' : '1px solid rgba(255,255,255,0.1)',
-                                padding: '6px 14px', borderRadius: '100px',
-                                color: approvedSims.includes(activeSimulation.id) ? '#30d158' : 'rgba(255,255,255,0.7)',
-                                cursor: 'pointer', transition: 'all 0.2s', fontWeight: 500, fontSize: '13px',
-                            }}
-                        >
-                            {approvedSims.includes(activeSimulation.id) ? <><Eye size={14} /> Approved for Showcase</> : <><EyeOff size={14} /> Hidden from Showcase</>}
-                        </button>
-                    </div>
-                )}
+
 
                 <div style={{ flex: 1, width: '100%', background: '#000', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.5)', position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
