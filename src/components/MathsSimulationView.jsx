@@ -17,16 +17,18 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
     React.useEffect(() => {
         let isMounted = true;
         let resizeObserver = null;
-        const targetW = 800;
-        const targetH = 500;
+        let ggbAppletInstance = null;
 
         function initApplet() {
+            const parent = wrapperRef.current?.parentElement;
+            const initW = parent ? parent.clientWidth : 800;
+            const initH = parent ? parent.clientHeight : 500;
             if (!containerRef.current || !isMounted) return;
             
             const parameters = {
                 "id": `ggbApplet_${id}`,
-                "width": targetW,
-                "height": targetH,
+                "width": initW,
+                "height": initH,
                 "showMenuBar": false,
                 "showAlgebraInput": false,
                 "showToolBar": false,
@@ -56,6 +58,7 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
             containerRef.current.innerHTML = ''; // Prevent duplicates
             containerRef.current.id = containerId;
             applet.inject(containerId);
+            ggbAppletInstance = applet;
         }
 
         if (!window.GGBApplet) {
@@ -75,7 +78,7 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
             setTimeout(() => { if (isMounted) initApplet(); }, 50);
         }
 
-        // Dynamically scale the applet using ResizeObserver
+        // Dynamically resize the applet without CSS scaling to eliminate letterboxing
         if (window.ResizeObserver && wrapperRef.current) {
             const parent = wrapperRef.current.parentElement;
             if (parent) {
@@ -85,15 +88,16 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
                         const wrapperW = entry.contentRect.width || parent.clientWidth || 800;
                         const wrapperH = entry.contentRect.height || parent.clientHeight || 600;
 
-                        // Calculate scale
-                        const scale = Math.min(wrapperW / targetW, wrapperH / targetH);
-
-                        // Apply scaling and transform
-                        wrapperRef.current.style.width = `${targetW}px`;
-                        wrapperRef.current.style.height = `${targetH}px`;
-                        wrapperRef.current.style.transform = `translate(-50%, -50%) scale(${scale})`;
-                        wrapperRef.current.style.transformOrigin = 'center center';
-                        wrapperRef.current.style.flexShrink = '0';
+                        wrapperRef.current.style.width = '100%';
+                        wrapperRef.current.style.height = '100%';
+                        wrapperRef.current.style.position = 'relative';
+                        wrapperRef.current.style.left = '0';
+                        wrapperRef.current.style.top = '0';
+                        wrapperRef.current.style.transform = 'none';
+                        
+                        if (window[`ggbApplet_${id}`]) {
+                            window[`ggbApplet_${id}`].setSize(wrapperW, wrapperH);
+                        }
                     }
                 });
                 resizeObserver.observe(parent);
@@ -114,8 +118,6 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
                 width: '100%', 
                 height: '100%', 
                 position: 'relative',
-                background: '#fff',
-                filter: 'invert(0.92) hue-rotate(180deg) brightness(1.1) contrast(0.9)',
                 overflow: 'hidden'
             }}
         >

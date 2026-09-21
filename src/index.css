@@ -2263,40 +2263,43 @@ model-viewer {
   }
 }
 
+
 /* =========================================================================
-   MATHS EDGE-TO-EDGE LANDSCAPE OPTIMIZATIONS
+   MATHS FULL-SCREEN MOBILE OVERRIDES (ALWAYS LANDSCAPE VIA GATE)
    ========================================================================= */
-@media screen and (orientation: landscape) and (max-height: 600px) {
-  /* Remove all padding from layout since global header is hidden */
-  .maths-layout {
+@media (max-width: 900px) {
+  .app-container.maths-view-active .maths-layout {
     padding: 0 !important;
   }
   
-  /* Make ios-header sit tightly at top */
-  .maths-layout .ios-header {
+  .app-container.maths-view-active .maths-layout .ios-header {
     margin: 0 !important;
     border-radius: 0 !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-top: none !important;
-    height: 40px !important;
+    border: none !important;
+    border-bottom: 1px solid rgba(255,255,255,0.1) !important;
   }
 
-  /* Remove all padding and gap from grid */
-  .maths-grid {
+  .app-container.maths-view-active .maths-grid {
     padding: 0 !important;
     gap: 0 !important;
     border-radius: 0 !important;
   }
 
-  /* Make the central simulation container truly edge-to-edge */
-  .maths-grid > div.glass-panel {
+  .app-container.maths-view-active .maths-grid > div.glass-panel {
     border-radius: 0 !important;
     border: none !important;
+    background: transparent !important; /* Remove the glass background entirely */
   }
   
   /* Hide the inner title bar (NUMBER PATTERNS WITH ADDITION) to save vertical space */
-  .maths-grid > div.glass-panel > div:first-child {
+  .app-container.maths-view-active .maths-grid > div.glass-panel > div:first-child {
     display: none !important;
+  }
+
+  /* Force the GeoGebra wrapper to take 100% of the screen */
+  .app-container.maths-view-active .maths-grid > div.glass-panel > div:last-child {
+    flex: 1 !important;
+    width: 100% !important;
+    height: 100% !important;
   }
 }
