@@ -271,9 +271,6 @@
   from { transform: translateY(0px); }
   to { transform: translateY(-15px); }
 }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
 
 /* STATS STRIP */
 .stats-strip {
