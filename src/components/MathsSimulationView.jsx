@@ -17,7 +17,7 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
     React.useEffect(() => {
         let isMounted = true;
         let resizeObserver = null;
-        let ggbAppletInstance = null;
+        
 
         function initApplet() {
             const parent = wrapperRef.current?.parentElement;
@@ -58,7 +58,7 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
             containerRef.current.innerHTML = ''; // Prevent duplicates
             containerRef.current.id = containerId;
             applet.inject(containerId);
-            ggbAppletInstance = applet;
+            
         }
 
         if (!window.GGBApplet) {
@@ -95,7 +95,7 @@ const GeoGebraPlayer = ({ ggbUrl, id }) => {
                         wrapperRef.current.style.top = '0';
                         wrapperRef.current.style.transform = 'none';
                         
-                        if (window[`ggbApplet_${id}`]) {
+                        if (window[`ggbApplet_${id}`] && typeof window[`ggbApplet_${id}`].setSize === 'function') {
                             window[`ggbApplet_${id}`].setSize(wrapperW, wrapperH);
                         }
                     }
