@@ -210,14 +210,14 @@
 }
 .floating-cards-container {
   position: relative;
-  width: 360px;
-  height: 360px;
+  width: 100%;
+  max-width: 420px;
   transform-style: preserve-3d;
   animation: slowPan 15s ease-in-out infinite alternate;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  align-items: center;
+  gap: 2.5rem;
+  align-items: start;
 }
 @keyframes slowPan {
   0% { transform: rotateX(5deg) rotateY(-10deg); }
@@ -225,7 +225,7 @@
 }
 .float-card {
   width: 100%;
-  padding: 1.25rem;
+  padding: 1.5rem;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -234,7 +234,7 @@
   backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
-  animation: float 6s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite alternate;
 }
 .card-icon-bg {
   width: 48px; height: 48px;
@@ -248,13 +248,13 @@
 .card-physics { animation-delay: 0s; }
 .card-physics .card-icon-bg { color: #3b82f6; box-shadow: 0 0 20px rgba(59, 130, 246, 0.2); }
 
-.card-chemistry { animation-delay: 1.5s; margin-top: 40px; }
+.card-chemistry { animation-delay: -1s; margin-top: 3rem; }
 .card-chemistry .card-icon-bg { color: #f97316; box-shadow: 0 0 20px rgba(249, 115, 22, 0.2); }
 
-.card-math { animation-delay: 3s; }
+.card-math { animation-delay: -2s; }
 .card-math .card-icon-bg { color: #22c55e; box-shadow: 0 0 20px rgba(34, 197, 94, 0.2); }
 
-.card-biology { animation-delay: 4.5s; margin-top: 40px; }
+.card-biology { animation-delay: -3s; margin-top: 3rem; }
 .card-biology .card-icon-bg { color: #a855f7; box-shadow: 0 0 20px rgba(168, 85, 247, 0.2); }
 
 .central-glow {
@@ -268,7 +268,9 @@
 }
 
 @keyframes float {
-  0% { transform: translateY(0px); }
+  from { transform: translateY(0px); }
+  to { transform: translateY(-15px); }
+}
   50% { transform: translateY(-10px); }
   100% { transform: translateY(0px); }
 }
@@ -277,7 +279,7 @@
 .stats-strip {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 2.5rem;
   max-width: 1200px;
   margin: 0 auto 6rem auto;
   padding: 2rem 3rem;
@@ -342,7 +344,7 @@
 .subject-cards-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  gap: 2.5rem;
 }
 .subject-card {
   position: relative;
@@ -585,7 +587,7 @@
   }
   .stats-strip {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 2.5rem;
   }
   .about-grid {
     grid-template-columns: 1fr;
@@ -609,7 +611,7 @@
   .hero-highlight { font-size: 3rem; }
   .section-title, .cta-container h2 { font-size: 2.25rem; }
   .floating-cards-container {
-    width: 300px; height: 300px;
+    width: 100%; max-width: 340px;
   }
   .float-card {
     width: 100%; padding: 1rem;
