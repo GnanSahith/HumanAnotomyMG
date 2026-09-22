@@ -89,8 +89,6 @@
   display: flex;
   align-items: center;
   padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
   width: 100%;
 }
 .hero-background {
@@ -133,6 +131,8 @@
   z-index: 1;
   display: flex;
   width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   align-items: center;
   gap: 4rem;
 }
