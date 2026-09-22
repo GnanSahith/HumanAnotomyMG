@@ -23,15 +23,15 @@ import '../MainLanding.css';
 const MainLandingView = ({ onSelectRoute }) => {
   return (
     <div className="landing-page-container">
+      {/* Global Page Background instead of just hero */}
+      <div className="page-background">
+        <div className="hero-orb orb-primary"></div>
+        <div className="hero-orb orb-secondary"></div>
+        <div className="hero-grid-overlay"></div>
+      </div>
       
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-background">
-          <div className="hero-orb orb-primary"></div>
-          <div className="hero-orb orb-secondary"></div>
-          <div className="hero-grid-overlay"></div>
-        </div>
-        
         <div className="hero-content">
           <div className="hero-text" data-aos="fade-up">
             <div className="hero-badge">Next-Generation Learning</div>
@@ -99,7 +99,7 @@ const MainLandingView = ({ onSelectRoute }) => {
       </section>
 
       {/* Stats Strip Section */}
-      <section className="stats-strip glass-panel">
+      <section className="stats-strip">
          <div className="stat-item" data-aos="fade-up" data-aos-delay="100">
             <div className="stat-icon text-blue"><Users size={28} /></div>
             <div>
